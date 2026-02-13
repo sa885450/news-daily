@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron'); 
-const shell = require('shelljs');
+const { execSync } = require('child_process'); // 🟢 換成 Node 內建核心，徹底解決 Git 找不到的問題
 
 const { generateHTMLReport } = require('./ui'); 
 
@@ -35,7 +35,7 @@ const CONFIG = {
 const genAI = new GoogleGenerativeAI(CONFIG.geminiKey);
 const parser = new Parser();
 
-// --- 🟢 新增：Log 輔助小工具 ---
+// --- 🟢 Log 輔助小工具 ---
 function log(icon, message) {
     const time = new Date().toLocaleTimeString('zh-TW', { hour12: false });
     console.log(`[${time}] ${icon} ${message}`);
@@ -51,7 +51,7 @@ async function fetchRSS(url) {
         const response = await axios.get(url, { headers: CONFIG.headers, timeout: 15000 });
         return await parser.parseString(response.data);
     } catch (e) { 
-        log('⚠️', `RSS 讀取失敗: ${url}`); // 使用新的 log 格式
+        log('⚠️', `RSS 讀取失敗: ${url}`);
         return { items: [] }; 
     }
 }
@@ -117,18 +117,19 @@ function cleanupOldReports() {
 
 function pushToGitHub() {
     log('📤', "正在執行 Git Push...");
-    if (!shell.which('git')) {
-        log('❌', '系統未安裝 git，無法上傳！');
-        return;
-    }
-    shell.exec('git add news_bot.db reports/');
-    shell.exec(`git commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`);
-    const pushResult = shell.exec('git push');
-
-    if (pushResult.code !== 0) {
-        log('❌', 'Git Push 失敗，請檢查網路或權限。');
-    } else {
+    try {
+        // 🟢 使用內建指令，不再依賴外部套件
+        execSync('git add news_bot.db reports/');
+        execSync(`git commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`);
+        execSync('git push');
         log('✅', 'Git Push 成功！網站已更新。');
+    } catch (error) {
+        const errMsg = error.stdout ? error.stdout.toString() : error.message;
+        if (errMsg.includes('nothing to commit') || errMsg.includes('沒有變更')) {
+            log('💤', '資料庫無變動，跳過上傳。');
+        } else {
+            log('❌', `Git Push 失敗: 請確認本機 Git 權限。(${errMsg.substring(0, 50)})`);
+        }
     }
 }
 
@@ -138,15 +139,14 @@ async function runTask() {
     cleanupOldReports(); 
     
     let allMatchedNews = [];
-    let scanCount = 0; // 統計用
-    let newCount = 0;  // 統計用
+    let scanCount = 0; 
+    let newCount = 0;  
 
     if (CONFIG.sources.length === 0) {
         log('⚠️', "警告：未設定 NEWS_SOURCES，請檢查 .env 檔案。");
     }
 
     for (const source of CONFIG.sources) {
-        // log('📦', `掃描來源: ${source.name}`); // 這行可以註解掉以免 log 太多
         const feed = await fetchRSS(source.url);
         scanCount += feed.items.length;
         
@@ -217,27 +217,24 @@ async function runTask() {
         log('💤', "無新符合關鍵字的新聞，跳過處理。");
     }
 
-    // 🟢 顯示下次執行時間
+    // 🟢 修正：下次執行時間精準顯示為下個小時的 00 分
     const nextRun = new Date();
     nextRun.setHours(nextRun.getHours() + 1);
-    nextRun.setMinutes(13);
+    nextRun.setMinutes(0);
     nextRun.setSeconds(0);
     log('🔜', `等待下一次排程... (預計 ${nextRun.toLocaleTimeString()})`);
 }
 
 // --- 排程設定 ---
 log('🕰️', "新聞機器人主程式已啟動 (PM2 Mode)");
-log('📅', "排程設定：每小時 13 分執行一次");
+log('📅', "排程設定：每小時 00 分執行一次");
 
-// 🟢 心跳檢查：每 30 分鐘印出一行 Log，證明程式沒死
+// 心跳檢查：每 10 分鐘印出一行 Log
 cron.schedule('*/10 * * * *', () => {
     log('💓', '系統待命運作中 (Heartbeat)...');
 });
 
-// 主排程
-cron.schedule('13 * * * *', () => {
+// 主排程：每小時的 00 分執行
+cron.schedule('0 * * * *', () => {
     runTask();
 });
-
-// 啟動時立即跑一次測試 (想測的話把下面這行的 // 拿掉)
-// runTask();
