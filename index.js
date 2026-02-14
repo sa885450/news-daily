@@ -168,3 +168,187 @@ function cleanupOldReports() {
     const now = Date.now();
     const expiry = 7 * 24 * 60 * 60 * 1000;
     files.forEach(file => {
+        const filePath = path.join(reportsDir, file);
+        const stats = fs.statSync(filePath);
+        // 注意：我們不會刪除 index.html，只刪除舊格式的檔案
+        if (file !== 'index.html' && now - stats.mtimeMs > expiry) {
+            fs.unlinkSync(filePath);
+            log('🧹', `已清理過期報表: ${file}`);
+        }
+    });
+}
+
+function pushToGitHub() {
+    log('📤', "正在執行 Git Push...");
+    // 🟢 絕對路徑：確保 PM2 能找到 Git
+    const gitPath = '"C:\\Program Files\\Git\\cmd\\git.exe"'; 
+
+    try {
+        execSync(`${gitPath} add news_bot.db reports/`);
+        execSync(`${gitPath} commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`);
+        execSync(`${gitPath} push origin main`);
+        log('✅', 'Git Push 成功！網站已更新。');
+    } catch (error) {
+        const stdoutMsg = error.stdout ? error.stdout.toString() : '';
+        const stderrMsg = error.stderr ? error.stderr.toString() : '';
+        const errMsg = stderrMsg || stdoutMsg || error.message;
+
+        if (errMsg.includes('nothing to commit') || stdoutMsg.includes('nothing to commit') || errMsg.includes('沒有變更')) {
+            log('💤', '資料庫無變動，跳過上傳。');
+        } else {
+            log('❌', `Git Push 失敗: ${errMsg.trim()}`);
+        }
+    }
+}
+
+// --- 核心任務函式 ---
+async function runTask() {
+    log('🚀', `啟動排程任務...`);
+    cleanupOldReports(); 
+    
+    let allMatchedNews = [];
+    let scanCount = 0; 
+    let newCount = 0;  
+
+    if (CONFIG.sources.length === 0) {
+        log('⚠️', "警告：未設定 NEWS_SOURCES，請檢查 .env 檔案。");
+    }
+
+    // ==========================================
+    // 🟢 1. 處理特殊通道：鉅亨網 API (多分類版)
+    // ==========================================
+    const cnyesNews = await fetchCnyesAPI(2); // 抓 2 頁
+    scanCount += cnyesNews.length;
+
+    for (const item of cnyesNews) {
+        if (isAlreadyRead(item.link)) continue;
+        
+        const targetText = `${item.title} ${item.contentSnippet || ""}`;
+        if (matchesAny(targetText, CONFIG.excludeRegex)) {
+            saveArticle(item.title, item.link, item.source);
+            continue;
+        }
+
+        if ((!process.env.KEYWORDS) || matchesAny(targetText, CONFIG.includeRegex)) {
+            // API 已有內文，直接使用
+            allMatchedNews.push({ 
+                source: item.source, 
+                title: item.title, 
+                content: item.content, 
+                url: item.link 
+            });
+            newCount++;
+        }
+        saveArticle(item.title, item.link, item.source);
+    }
+
+    // ==========================================
+    // 🔵 2. 處理常規通道：其他網站的 RSS
+    // ==========================================
+    for (const source of CONFIG.sources) {
+        if (source.name === "鉅亨網") continue; // 避開 RSS 裡的鉅亨網
+        
+        const feed = await fetchRSS(source.url);
+        scanCount += feed.items.length;
+        
+        for (const item of feed.items) {
+            if (isAlreadyRead(item.link)) continue;
+            
+            const targetText = `${item.title} ${item.contentSnippet || ""}`;
+            if (matchesAny(targetText, CONFIG.excludeRegex)) {
+                saveArticle(item.title, item.link, source.name);
+                continue;
+            }
+            
+            if ((!process.env.KEYWORDS) || matchesAny(targetText, CONFIG.includeRegex)) {
+                let isDuplicate = false;
+                for (let existing of allMatchedNews) {
+                    if (stringSimilarity.compareTwoStrings(item.title, existing.title) > CONFIG.similarityThreshold) {
+                        isDuplicate = true; break;
+                    }
+                }
+                if (!isDuplicate) {
+                    const text = await fetchContent(item.link);
+                    if (text) {
+                        allMatchedNews.push({ source: source.name, title: item.title, content: text, url: item.link });
+                        newCount++;
+                    }
+                }
+            }
+            saveArticle(item.title, item.link, source.name);
+        }
+    }
+    
+    log('📊', `掃描統計: 掃描 ${scanCount} 則 / 新增 ${newCount} 則`);
+
+    if (allMatchedNews.length > 0) {
+        try {
+            const fullSummary = await getSummary(allMatchedNews.slice(0, 50));
+            
+            // 🟢 修正：使用更穩定的 JSON 解析邏輯 (修復 ID0/ID1 與 其他分類問題)
+            let summaryToShow = fullSummary;
+            try {
+                // 嘗試抓取 JSON 區塊
+                const jsonMatch = fullSummary.match(/```json([\s\S]*?)```/) || fullSummary.match(/\[\s*\{.*\}\s*\]/s);
+                
+                if (jsonMatch) {
+                    const jsonStr = jsonMatch[1] || jsonMatch[0];
+                    const categories = JSON.parse(jsonStr);
+                    
+                    // 建立 ID -> Category 的對照表
+                    const catMap = {};
+                    categories.forEach(c => {
+                        if (c.id !== undefined) catMap[c.id] = c.category;
+                    });
+
+                    // 填入分類 (若沒對應到則預設為"其他")
+                    allMatchedNews.forEach((n, i) => { n.category = catMap[i] || "其他"; });
+
+                    // 將 JSON 從顯示的摘要中移除，避免網頁顯示原始碼
+                    summaryToShow = fullSummary.replace(jsonMatch[0], "").trim();
+                    summaryToShow = summaryToShow.replace(/```json/g, "").replace(/```/g, "").trim();
+                } else {
+                    log('⚠️', "AI 未回傳有效的 JSON 分類表，將全部標記為「其他」。");
+                    allMatchedNews.forEach(n => n.category = "其他");
+                }
+            } catch (e) {
+                log('❌', `JSON 解析失敗: ${e.message}`);
+                allMatchedNews.forEach(n => n.category = "其他");
+            }
+
+            // 生成網頁
+            const { fileName } = generateHTMLReport(summaryToShow, allMatchedNews);
+            
+            pushToGitHub();
+
+            const githubUser = "sa885450";
+            const repoName = "news-daily";
+            const cloudUrl = `https://${githubUser}.github.io/${repoName}/reports/`; 
+
+            await sendDiscord(`**📅 本機排程報告 (${new Date().toLocaleTimeString()})**\n\n${summaryToShow}\n\n🌐 **儀表板連結**: ${cloudUrl}`);
+            log('✅', "任務圓滿完成！");
+        } catch (err) { log('❌', `處理失敗: ${err.message}`); }
+    } else {
+        log('💤', "無新符合關鍵字的新聞，跳過處理。");
+    }
+
+    const nextRun = new Date();
+    nextRun.setHours(nextRun.getHours() + 1);
+    nextRun.setMinutes(0);
+    nextRun.setSeconds(0);
+    log('🔜', `等待下一次排程... (預計 ${nextRun.toLocaleTimeString()})`);
+}
+
+// --- 排程設定 ---
+log('🕰️', "新聞機器人主程式已啟動 (PM2 Mode)");
+log('📅', "排程設定：每小時 00 分執行一次");
+
+// 心跳檢查：每 10 分鐘
+cron.schedule('*/10 * * * *', () => {
+    log('💓', '系統待命運作中 (Heartbeat)...');
+});
+
+// 主排程：每小時 00 分
+cron.schedule('0 * * * *', () => {
+    runTask();
+});
