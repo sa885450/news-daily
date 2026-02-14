@@ -10,14 +10,12 @@
             .news-card.hidden { display: none; }
             @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
             .animate-fade { animation: fadeIn 0.4s ease forwards; }
-            .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
         </style>
         <script>
             function filterCategory(cat) {
                 const cards = document.querySelectorAll('.news-card');
                 const btns = document.querySelectorAll('.filter-btn');
                 
-                // 1. 切換按鈕樣式
                 btns.forEach(btn => {
                     if (btn.innerText.trim() === cat) {
                         btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300';
@@ -26,12 +24,10 @@
                     }
                 });
 
-                // 2. 切換卡片顯示 (帶動畫)
                 cards.forEach(card => {
                     card.classList.remove('animate-fade');
                     if (cat === '全部' || card.dataset.category === cat) {
                         card.classList.remove('hidden');
-                        // 稍微延遲加上動畫 class 讓瀏覽器重繪
                         setTimeout(() => card.classList.add('animate-fade'), 10);
                     } else {
                         card.classList.add('hidden');
@@ -45,7 +41,7 @@
             <header class="text-center mb-10">
                 <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月14日星期六</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月15日星期日</p>
             </header>
             
             <div class="sticky top-4 z-50 mb-10">
@@ -86,11 +82,8 @@
 
             <section class="mb-12">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-                        <svg class="w-64 h-64 text-indigo-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/></svg>
-                    </div>
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        你好，我是資深金融分析師與網站編輯。以下是針對今日新聞內容的市場總體情緒分析及核心事件摘要。<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：-0.1</b> <span class="text-2xl">⚪</span> <b class="text-slate-500">中性觀察</b> <b class="text-indigo-600 font-bold">中立</b><br>> <b class="text-indigo-600 font-bold">分析師點評</b>：市場情緒目前呈現「內冷外熱」與「地緣政治憂慮」並存的狀態。雖然國內適逢春節與情人節，博弈與地方消費活動熱絡，為社會氛圍注入活水；然而在宏觀經濟層面，WTO 對中國貿易順差的警告預示了全球貿易壁壘可能升級，加上烏克蘭仍高度依賴國際金援，顯示地緣政治與全球貿易體系的結構性風險依然存在，抵銷了節慶帶來的正面效應。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件分析</h3><br>*   <b class="text-indigo-600 font-bold">WTO 警告中國成長模式：貿易衝突風險升溫</b><br>    WTO 秘書長指出中國 1.2 兆美元的貿易順差已達全球無法吸收的程度，並呼籲其改變出口導向模式。這暗示未來歐美市場可能採取更嚴厲的反傾銷或貿易保護措施，對全球供應鏈及中國中長期成長動能構成壓力。<br><br>*   <b class="text-indigo-600 font-bold">烏克蘭獲 IMF 貸款條件放寬：經濟續命關鍵</b><br>    烏克蘭政府與 IMF 就 82 億美元貸款達成共識並獲得條件放寬（如稅收門檻調整）。這筆資金不僅是烏克蘭維持國防與民生的救命錢，更是解鎖歐盟 900 億歐元後續援助的關鍵信用指標，反映出東歐局勢對國際財政支援的極高依賴。<br><br>*   <b class="text-indigo-600 font-bold">春節與情人節效應：博弈與地方經濟活絡</b><br>    適逢農曆年假與情人節，大樂透開出 1.9 億頭獎及多注加碼紅包，加上屏東高樹蜜棗節等地方推廣活動，顯示民間消費動能與節慶經濟在短期內表現強勁，有助於帶動內需零售與觀光周邊效益。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">3. 新聞分類標記</h3><br><b class="text-indigo-600 font-bold">[ID:0] 大樂透春節加碼第2天 他這樣投注一次抱走7注大紅包</b><br>台彩透露一名幸運兒透過系統包牌（7連碰、8連碰）花費1900元，精準命中7注春節大紅包，總獎金達500萬元。此事件凸顯春節期間高漲的博弈氣氛。<br><br><br><b class="text-indigo-600 font-bold">[ID:1] 1.2兆美元順差全球凍未條！WTO籲中國改變成長模式</b><br>WTO 秘書長呼籲中國改變出口導向模式，警告空前的貿易順差將引發更多貿易壁壘。去年中國出口成長 5.5% 而進口持平，引發各國對低價傾銷的擔憂。<br>CATEGORIES_START [ID:1]:金融 CATEGORIES_END<br><br><b class="text-indigo-600 font-bold">[ID:2] 過年馬上「棗」到幸福！情人節高樹鄉蜜棗評鑑 黃金泉奪冠</b><br>屏東縣高樹鄉舉辦蜜棗評鑑與農產市集，結合情人節與春節主題推廣在地「綠寶石」蜜棗，由農友黃金泉奪冠，旨在提升在地農產的市場價值。<br>CATEGORIES_START [ID:2]:社會 CATEGORIES_END<br><br><b class="text-indigo-600 font-bold">[ID:3] 2/14 大樂透頭獎1注獨得！ 1.9億獎落高雄 今彩539開2注 大紅包開25組</b><br>大樂透頭獎 1.9 億元於高雄小港開出，今彩 539 亦有兩注頭獎。春節加碼活動持續進行，目前大紅包已累積送出 76 組。<br>CATEGORIES_START [ID:3]:社會 CATEGORIES_END<br><br><b class="text-indigo-600 font-bold">[ID:4] 大樂透頭獎1注獨得1.9億 今彩539頭獎2注中獎</b><br>（內容與 ID:3 相似，確認 1.9 億頭獎由高雄「億來發彩券行」開出，並更新各項加碼獎項之剩餘組數。）<br>CATEGORIES_START [ID:4]:社會 CATEGORIES_END<br><br><b class="text-indigo-600 font-bold">[ID:5] 烏克蘭與IMF達成共識 82億美元貸款條件放寬</b><br>烏克蘭與 IMF 就 82 億美元貸款計畫達成結構性修正，放寬了原本嚴苛的徵稅門檻。此協議對於烏克蘭獲取歐盟後續 900 億歐元援助至關重要。<br>CATEGORIES_START [ID:5]:金融 CATEGORIES_END
+                        您好，我是您的資深金融分析師與網站編輯。以下為您整理的今日市場動態與核心事件分析：<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">⚖️ 市場總體情緒：+0.1 <span class="text-2xl">⚪</span> <b class="text-slate-500">中性觀察</b> 中立</h3>目前正值農曆春節連假，市場實體經濟活動（如旅遊與內需消費）極為活絡，帶動服務業與相關產業的預期。然而，社會安全事件與潛在的貿易競爭壓力抵銷了部分利多，整體市場情緒呈現中立偏向謹慎樂觀。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">核心事件分析</h3><br><b class="text-indigo-600 font-bold">1. 台美貿易協議下，本土乳業強化品牌保衛戰</b><br>隨著台美貿易協議簽署，美國零關稅乳製品正式進入台灣市場。農業部對此表示，雖然進口產品具備價格競爭力，但政府已祭出配套措施，規定自今年 7 月起，唯有在地生產的生乳可標示為「鮮乳」，與進口長效乳進行市場區隔。目前台灣國產鮮乳市佔率近九成，業者認為本土乳品的小包裝規格與新鮮度更符合台灣小家庭需求，對於抵禦美、紐等國的競爭保持審慎樂觀。<br><br><b class="text-indigo-600 font-bold">2. 紫南宮錢母遭大規模仿冒，廟方與警全力查緝</b><br>南投竹山紫南宮著名的龍年「錢母」與相關紀念幣遭不法份子仿冒，並於網路平台販售。警方在台中查獲 434 件仿冒品，儘管嫌犯尚未落網，但廟方指出仿冒品作工粗糙，包含木馬雕刻缺少牙齒、字體印刷錯誤及包裝顏色不符等明顯特徵。廟方特別強調，所有錢母皆為免費發放且具商標權，從未授權任何機構販售，呼籲信眾提高警覺。<br><br><b class="text-indigo-600 font-bold">3. 桃園機場旅運量破紀錄，春節出遊潮全面爆發</b><br>農曆春節連假首日，桃園國際機場湧現驚人人潮，單日旅客量預估達 16.7 萬人次，正式突破 2019 年疫情前的最高紀錄。機場公司與交通部呼籲，旅客應善用即時人潮查詢系統，並提早抵達機場辦理報到與安檢。此外，高速公路局亦提醒，隨著民眾南下返鄉與出遊需求激增，國道流量預計在週二達到高峰，建議民眾利用公共運輸或避開尖峰時段。<br><br><b class="text-indigo-600 font-bold">4. 宜蘭發生包裹爆炸疑案，警方追緝可疑涉案人</b><br>宜蘭縣發生一起針對性的社會安全事件。一對七旬姐弟在開啟一件未署名且由專人送達的包裹時，包裹突然發生爆炸，導致兩人手腳受傷送醫。警方初步調查已排除惡作劇或隨機犯案的可能性，並掌握到近日有陌生人在案發社區徘徊的線索。目前受害者狀況穩定，警方正全力調閱監視器追查特定嫌疑人。<br><br><b class="text-indigo-600 font-bold">5. 總統視察春節醫療韌性，強化急診分流機制</b><br>為確保春節九天連假期間醫療資源不崩潰，總統賴清德親自視察台北市醫療體系的應變準備。衛生福利部今年投入 16 億元補貼基層診所與急重症中心（UCC）在假日開診，以舒緩急診室約 1.5 至 1.7 倍的暴增負擔。政府呼籲，輕、中度症狀患者應優先利用健保署 App 尋找鄰近診所，確保重症醫療資源能用於關鍵救護。<br><br>---
                     </div>
                 </div>
             </section>
@@ -98,126 +91,105 @@
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
                 
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
+             data-category="金融">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
+                        金融
                     </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
+                    <span class="text-slate-400 text-xs">上午04:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">大樂透春節加碼第2天  他這樣投注一次抱走7注大紅包</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Local milk to remain competitive post-US trade pact</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://ec.ltn.com.tw/article/breakingnews/5343830" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/focus/breakingnews/5343805" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
             </div>
         </div>
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
+                    <span class="text-slate-400 text-xs">上午04:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">1.2兆美元順差全球凍未條！WTO籲中國改變成長模式</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Authorities seize counterfeit temple coins, horse figures</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://ec.ltn.com.tw/article/breakingnews/5343756" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/focus/breakingnews/5343806" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
             </div>
         </div>
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
+                    <span class="text-slate-400 text-xs">上午04:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">過年馬上「棗」到幸福！情人節高樹鄉蜜棗評鑑 黃金泉奪冠</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Lai inspects holiday medical facilities</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/life/breakingnews/5343816" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/focus/breakingnews/5343800" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
             </div>
         </div>
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
+                    <span class="text-slate-400 text-xs">上午04:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">2/14 大樂透頭獎1注獨得！ 1.9億獎落高雄 今彩539開2注  大紅包開25組</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Record travelers expected over holiday period</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/society/breakingnews/5343814" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/focus/breakingnews/5343803" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
             </div>
         </div>
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
+                    <span class="text-slate-400 text-xs">上午04:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">大樂透頭獎1注獨得1.9億  今彩539頭獎2注中獎</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Two elderly siblings injured by exploding parcel in Yilan</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://ec.ltn.com.tw/article/breakingnews/5343810" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="其他">
-            <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        其他
-                    </span>
-                    <span class="text-slate-400 text-xs">下午11:00</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">烏克蘭與IMF達成共識 82億美元貸款條件放寬</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
-                </div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/world/breakingnews/5343782" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/focus/breakingnews/5343804" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
