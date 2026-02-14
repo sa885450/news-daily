@@ -132,7 +132,8 @@ function generateHTMLReport(summary, newsData) {
 
     const reportsDir = './reports';
     if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir);
-    const fileName = `report_${new Date().toISOString().split('T')[0]}.html`;
+    // 🟢 改成固定的檔名 index.html
+const fileName = 'index.html';
     const filePath = path.join(reportsDir, fileName);
     fs.writeFileSync(filePath, html);
 
