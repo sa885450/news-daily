@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron'); 
-const { execSync } = require('child_process'); // 🟢 換成 Node 內建核心，徹底解決 Git 找不到的問題
+const { execSync } = require('child_process'); 
 
 const { generateHTMLReport } = require('./ui'); 
 
@@ -66,6 +66,55 @@ async function fetchContent(url) {
     } catch (e) { return null; }
 }
 
+// ==========================================
+// 🟢 升級版：支援多分類、多頁數的鉅亨網 API 爬蟲
+// ==========================================
+async function fetchCnyesAPI(pagesToFetch = 2) {
+    const categories = ['tw_stock', 'wd_stock', 'tech']; 
+    const limit = 30; 
+    
+    let allNews = [];
+    let fetchedIds = new Set(); 
+
+    log('🔍', `準備抓取鉅亨網 API：共 ${categories.length} 個分類，每分類 ${pagesToFetch} 頁...`);
+
+    for (const cat of categories) {
+        for (let page = 1; page <= pagesToFetch; page++) {
+            const url = `https://api.cnyes.com/media/api/v1/newslist/category/${cat}?page=${page}&limit=${limit}`;
+            try {
+                const response = await axios.get(url, {
+                    headers: {
+                        'Origin': 'https://news.cnyes.com/',
+                        'Referer': 'https://news.cnyes.com/',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    },
+                    timeout: 15000
+                });
+
+                if (response.data && response.data.items && response.data.items.data) {
+                    for (const news of response.data.items.data) {
+                        if (!fetchedIds.has(news.newsId)) {
+                            fetchedIds.add(news.newsId);
+                            allNews.push({
+                                title: news.title,
+                                link: `https://news.cnyes.com/news/id/${news.newsId}`,
+                                contentSnippet: news.summary, 
+                                content: news.content ? news.content.replace(/<[^>]*>?/gm, '').substring(0, 2500) : '', 
+                                pubDate: new Date(news.publishAt * 1000).toISOString(),
+                                source: `鉅亨網(${cat})` 
+                            });
+                        }
+                    }
+                }
+                await new Promise(r => setTimeout(r, 1000));
+            } catch (e) {
+                log('⚠️', `鉅亨網 API (${cat} 第 ${page} 頁) 抓取失敗: ${e.message}`);
+            }
+        }
+    }
+    return allNews;
+}
+
 async function sendDiscord(content) {
     if (!CONFIG.discordWebhook) return;
     const chunks = content.match(/[\s\S]{1,1900}/g) || [];
@@ -117,18 +166,22 @@ function cleanupOldReports() {
 
 function pushToGitHub() {
     log('📤', "正在執行 Git Push...");
+    const gitPath = '"C:\\Program Files\\Git\\cmd\\git.exe"'; 
+
     try {
-        // 🟢 使用內建指令，不再依賴外部套件
-        execSync('git add news_bot.db reports/');
-        execSync(`git commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`);
-        execSync('git push');
+        execSync(`${gitPath} add news_bot.db reports/`);
+        execSync(`${gitPath} commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`);
+        execSync(`${gitPath} push origin main`);
         log('✅', 'Git Push 成功！網站已更新。');
     } catch (error) {
-        const errMsg = error.stdout ? error.stdout.toString() : error.message;
-        if (errMsg.includes('nothing to commit') || errMsg.includes('沒有變更')) {
+        const stdoutMsg = error.stdout ? error.stdout.toString() : '';
+        const stderrMsg = error.stderr ? error.stderr.toString() : '';
+        const errMsg = stderrMsg || stdoutMsg || error.message;
+
+        if (errMsg.includes('nothing to commit') || stdoutMsg.includes('nothing to commit') || errMsg.includes('沒有變更')) {
             log('💤', '資料庫無變動，跳過上傳。');
         } else {
-            log('❌', `Git Push 失敗: 請確認本機 Git 權限。(${errMsg.substring(0, 50)})`);
+            log('❌', `Git Push 失敗: ${errMsg.trim()}`);
         }
     }
 }
@@ -146,7 +199,40 @@ async function runTask() {
         log('⚠️', "警告：未設定 NEWS_SOURCES，請檢查 .env 檔案。");
     }
 
+    // ==========================================
+    // 🟢 1. 處理特殊通道：鉅亨網 API (多分類版)
+    // ==========================================
+    const cnyesNews = await fetchCnyesAPI(2); 
+    scanCount += cnyesNews.length;
+
+    for (const item of cnyesNews) {
+        if (isAlreadyRead(item.link)) continue;
+        
+        const targetText = `${item.title} ${item.contentSnippet || ""}`;
+        if (matchesAny(targetText, CONFIG.excludeRegex)) {
+            // 注意這裡：來源名稱會自動標註是哪個板塊 (例如: 鉅亨網(tw_stock))
+            saveArticle(item.title, item.link, item.source);
+            continue;
+        }
+
+        if ((!process.env.KEYWORDS) || matchesAny(targetText, CONFIG.includeRegex)) {
+            allMatchedNews.push({ 
+                source: item.source, 
+                title: item.title, 
+                content: item.content, 
+                url: item.link 
+            });
+            newCount++;
+        }
+        saveArticle(item.title, item.link, item.source);
+    }
+
+    // ==========================================
+    // 🔵 2. 處理常規通道：其他網站的 RSS
+    // ==========================================
     for (const source of CONFIG.sources) {
+        if (source.name === "鉅亨網") continue; 
+        
         const feed = await fetchRSS(source.url);
         scanCount += feed.items.length;
         
@@ -217,7 +303,6 @@ async function runTask() {
         log('💤', "無新符合關鍵字的新聞，跳過處理。");
     }
 
-    // 🟢 修正：下次執行時間精準顯示為下個小時的 00 分
     const nextRun = new Date();
     nextRun.setHours(nextRun.getHours() + 1);
     nextRun.setMinutes(0);
@@ -238,3 +323,6 @@ cron.schedule('*/10 * * * *', () => {
 cron.schedule('0 * * * *', () => {
     runTask();
 });
+
+// pushToGitHub(); // 🟢 強制測試 Git
+// runTask();
