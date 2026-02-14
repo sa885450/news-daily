@@ -2,25 +2,22 @@ require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const Database = require('better-sqlite3');
 const axios = require('axios');
-const cron = require('node-cron'); // 🟢 新增：排程控制套件
+const cron = require('node-cron'); 
 
 const db = new Database('news_bot.db');
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// 建議把 flash 放前面省配額，避免 429 報錯
 const modelCandidates = [
     "gemini-1.5-flash",        
     "gemini-2.0-flash",        
     "gemini-1.5-pro"
 ];
 
-// --- 🟢 新增：Log 輔助小工具 ---
 function log(icon, message) {
     const time = new Date().toLocaleTimeString('zh-TW', { hour12: false });
     console.log(`[${time}] ${icon} ${message}`);
 }
 
-// 輔助函式：延遲執行
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function getWeeklyDeepDive(articles) {
@@ -47,7 +44,6 @@ async function getWeeklyDeepDive(articles) {
 async function runWeeklyTask() {
     log('📅', `啟動週報生成任務...`);
     
-    // 抓取過去 7 天的資料，稍微放寬到 100 筆，讓 AI 總結更全面
     const last7Days = db.prepare(`
         SELECT title, source FROM articles 
         WHERE created_at >= date('now', '-7 days')
@@ -56,7 +52,7 @@ async function runWeeklyTask() {
 
     if (last7Days.length === 0) {
         log('⚠️', "無資料，跳過本次週報。");
-        return; // 🔴 移除 db.close()，讓程式繼續活著
+        return; 
     }
 
     try {
@@ -76,20 +72,14 @@ async function runWeeklyTask() {
     }
 }
 
-// --- 🟢 排程設定 ---
+// --- 排程設定 ---
 log('🕰️', "週報機器人已啟動 (PM2 Mode)，正在背景待命...");
 log('📅', "排程設定：每週日早上 9:00 執行");
 
-// 預設排程：每週日早上 9:00 執行
-// Cron 格式：分 時 日 月 星期 (0 代表星期日)
 cron.schedule('0 9 * * 0', () => {
     runWeeklyTask();
 });
 
-// 心跳檢查 (每天中午 12 點印一行，證明它還活著就好)
 cron.schedule('0 12 * * *', () => {
     log('💓', '週報系統待命運作中 (Heartbeat)...');
 });
-
-// 💡 測試用：取消下面這行的註解，存檔重啟後就會馬上發送一篇週報
-// runWeeklyTask();

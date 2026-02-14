@@ -9,7 +9,7 @@ function generateHTMLReport(summary, newsData) {
         year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' 
     });
     
-    // UI 格式化邏輯：識別情緒圖示並放大
+    // UI 格式化邏輯
     const formattedSummary = summary
         .replace(/\n/g, '<br>')
         .replace(/🟢/g, '<span class="text-2xl animate-pulse">🟢</span> <b class="text-green-600">利多趨勢</b>')
@@ -28,7 +28,7 @@ function generateHTMLReport(summary, newsData) {
         </button>
     `).join('');
 
-    // 生成新聞卡片 (加入 data-category 屬性)
+    // 生成新聞卡片
     const articlesHtml = newsData.map(n => `
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
              data-category="${n.category || '其他'}">
@@ -64,14 +64,12 @@ function generateHTMLReport(summary, newsData) {
             .news-card.hidden { display: none; }
             @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
             .animate-fade { animation: fadeIn 0.4s ease forwards; }
-            .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
         </style>
         <script>
             function filterCategory(cat) {
                 const cards = document.querySelectorAll('.news-card');
                 const btns = document.querySelectorAll('.filter-btn');
                 
-                // 1. 切換按鈕樣式
                 btns.forEach(btn => {
                     if (btn.innerText.trim() === cat) {
                         btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300';
@@ -80,12 +78,10 @@ function generateHTMLReport(summary, newsData) {
                     }
                 });
 
-                // 2. 切換卡片顯示 (帶動畫)
                 cards.forEach(card => {
                     card.classList.remove('animate-fade');
                     if (cat === '全部' || card.dataset.category === cat) {
                         card.classList.remove('hidden');
-                        // 稍微延遲加上動畫 class 讓瀏覽器重繪
                         setTimeout(() => card.classList.add('animate-fade'), 10);
                     } else {
                         card.classList.add('hidden');
@@ -110,9 +106,6 @@ function generateHTMLReport(summary, newsData) {
 
             <section class="mb-12">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-                        <svg class="w-64 h-64 text-indigo-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/></svg>
-                    </div>
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
                         ${formattedSummary}
                     </div>
@@ -132,8 +125,9 @@ function generateHTMLReport(summary, newsData) {
 
     const reportsDir = './reports';
     if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir);
-    // 🟢 改成固定的檔名 index.html
-const fileName = 'index.html';
+
+    // 🟢 關鍵修正：固定檔名為 index.html
+    const fileName = 'index.html'; 
     const filePath = path.join(reportsDir, fileName);
     fs.writeFileSync(filePath, html);
 
