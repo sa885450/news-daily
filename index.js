@@ -20,6 +20,10 @@ virtualConsole.on("error", () => {});
 const db = new Database('news_bot.db');
 db.exec(`CREATE TABLE IF NOT EXISTS articles (id INTEGER PRIMARY KEY AUTOINCREMENT, url TEXT UNIQUE, title TEXT, source TEXT, category TEXT, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)`);
 
+// 🟢 優化 2：SQL 預編譯 (提升大量掃描時的效能)
+const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
+const insertArticleStmt = db.prepare('INSERT INTO articles (title, url, source, category) VALUES (?, ?, ?, ?)');
+
 // 2. 設定區
 const CONFIG = {
     geminiKey: process.env.GEMINI_API_KEY,
@@ -42,8 +46,19 @@ function log(icon, message) {
 }
 
 // --- 資料庫與工具功能 ---
-function isAlreadyRead(url) { return !!db.prepare('SELECT id FROM articles WHERE url = ?').get(url); }
-function saveArticle(title, url, source) { db.prepare('INSERT INTO articles (title, url, source) VALUES (?, ?, ?)').run(title, url, source); }
+// 🟢 優化 2：改用預編譯語句執行查詢
+function isAlreadyRead(url) { 
+    return !!checkUrlStmt.get(url); 
+}
+
+function saveArticle(title, url, source, category = '其他') { 
+    try {
+        insertArticleStmt.run(title, url, source, category);
+    } catch (e) {
+        // 忽略重複鍵值錯誤 (UNIQUE constraint failed)
+    }
+}
+
 function matchesAny(text, regexArray) { return regexArray.length === 0 ? false : regexArray.some(re => re.test(text)); }
 
 async function fetchRSS(url) {
@@ -162,26 +177,40 @@ ${blob}`;
 }
 
 function cleanupOldReports() {
+    // 1. 清理 HTML 檔案
     const reportsDir = './reports';
-    if (!fs.existsSync(reportsDir)) return;
-    const files = fs.readdirSync(reportsDir);
-    const now = Date.now();
-    const expiry = 7 * 24 * 60 * 60 * 1000;
-    files.forEach(file => {
-        const filePath = path.join(reportsDir, file);
-        const stats = fs.statSync(filePath);
-        // 注意：我們不會刪除 index.html，只刪除舊格式的檔案
-        if (file !== 'index.html' && now - stats.mtimeMs > expiry) {
-            fs.unlinkSync(filePath);
-            log('🧹', `已清理過期報表: ${file}`);
+    if (fs.existsSync(reportsDir)) {
+        const files = fs.readdirSync(reportsDir);
+        const now = Date.now();
+        const expiry = 7 * 24 * 60 * 60 * 1000;
+        files.forEach(file => {
+            const filePath = path.join(reportsDir, file);
+            const stats = fs.statSync(filePath);
+            if (file !== 'index.html' && now - stats.mtimeMs > expiry) {
+                fs.unlinkSync(filePath);
+                log('🧹', `已清理過期報表: ${file}`);
+            }
+        });
+    }
+
+    // 🟢 優化 1：資料庫自動瘦身 (保留 30 天)
+    try {
+        const result = db.prepare("DELETE FROM articles WHERE created_at < date('now', '-30 days')").run();
+        if (result.changes > 0) {
+            log('🗄️', `資料庫瘦身完成，已刪除 ${result.changes} 筆過期紀錄。`);
         }
-    });
+    } catch (e) {
+        log('⚠️', `資料庫清理失敗: ${e.message}`);
+    }
 }
 
 function pushToGitHub() {
     log('📤', "正在執行 Git Push...");
-    // 🟢 絕對路徑：確保 PM2 能找到 Git
-    const gitPath = '"C:\\Program Files\\Git\\cmd\\git.exe"'; 
+    
+    // 🟢 優化 3：優先讀取環境變數，讀不到才用預設絕對路徑
+    const gitPath = process.env.GIT_EXECUTABLE_PATH 
+        ? `"${process.env.GIT_EXECUTABLE_PATH}"` 
+        : '"C:\\Program Files\\Git\\cmd\\git.exe"';
 
     try {
         execSync(`${gitPath} add news_bot.db reports/`);
@@ -225,6 +254,7 @@ async function runTask() {
         
         const targetText = `${item.title} ${item.contentSnippet || ""}`;
         if (matchesAny(targetText, CONFIG.excludeRegex)) {
+            // API 來源自帶分類資訊，直接存入
             saveArticle(item.title, item.link, item.source);
             continue;
         }
@@ -285,7 +315,7 @@ async function runTask() {
         try {
             const fullSummary = await getSummary(allMatchedNews.slice(0, 50));
             
-            // 🟢 修正：使用更穩定的 JSON 解析邏輯 (修復 ID0/ID1 與 其他分類問題)
+            // 🟢 修正：使用更穩定的 JSON 解析邏輯
             let summaryToShow = fullSummary;
             try {
                 // 嘗試抓取 JSON 區塊
@@ -352,3 +382,6 @@ cron.schedule('*/10 * * * *', () => {
 cron.schedule('0 * * * *', () => {
     runTask();
 });
+
+// 測試用：取消註解下方這行可立即執行一次
+// runTask();
