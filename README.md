@@ -21,9 +21,21 @@ news-daily/
     ├── ai.js          #    Gemini AI 分析
     ├── ui.js          #    HTML 生成
     └── git.js         #    Git 自動化部署
-	
 
 📝 更新日誌 (Changelog)
+v2.1.1 - 穩定性與 UI 修復 (2026-02-15)
+🐛 問題修復 (Bug Fixes)：
+
+RSS 讀取增強：解決部分網站 (如 TechNews) 因防爬機制導致的 403 Forbidden 錯誤。
+
+在 config.js 加入偽裝瀏覽器 Headers (User-Agent, Accept, Referer)。
+
+優化 crawler.js 抓取邏輯，強制使用 Axios 預處理請求。
+
+UI 篩選修復：修正儀表板分類按鈕點擊無效的問題。
+
+改用 data-filter 屬性進行精確比對，解決文字空格導致的判定失誤。
+
 v2.1.0 - 市場熱度視覺化 (2026-02-15)
 🔥 新增關鍵字熱力圖 (Keyword Heatmap)：
 
@@ -79,4 +91,3 @@ v1.0.0 - 專案初始化
 整合 SQLite 資料庫儲存歷史新聞。
 
 實作基礎 HTML 報表生成。
-	
