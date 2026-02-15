@@ -4,7 +4,8 @@
         <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AI 智能儀表板</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
             body { font-family: 'Inter', 'Noto Sans TC', sans-serif; }
             .news-card.hidden { display: none; }
@@ -23,19 +24,29 @@
         <div class="max-w-6xl mx-auto px-4 pt-10 relative">
             <div class="absolute top-0 right-0 mt-2 mr-2 z-50"><select onchange="if(this.value) window.location.href=this.value" class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50"><option value="index.html">🏠 返回首頁</option><option value="report_2026-02-15.html" selected>📅 今天 2026-02-15</option></select></div>
             <header class="text-center mb-10">
-                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.3</div>
+                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.4</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月15日星期日</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
+                <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
+                    <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
+                    <button onclick="searchKeyword('川普')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普</button> <button onclick="searchKeyword('和平理事會')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#和平理事會</button> <button onclick="searchKeyword('加薩')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#加薩</button> <button onclick="searchKeyword('巴勒斯坦')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#巴勒斯坦</button> <button onclick="searchKeyword('中東和平協議')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#中東和平協議</button> <button onclick="searchKeyword('高盛')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#高盛</button>
+                </div>
             </header>
             
-            <section class="mb-10 animate-fade">
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100">
+            <section class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade">
+                <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 近 7 日市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日指數: <span class="text-red-500 text-base">0.15</span></div>
+                        <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.25</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex flex-col">
+                    <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">🧭</span> 五力分析</h3>
+                    <div class="flex-grow relative">
+                        <canvas id="radarChart"></canvas>
                     </div>
                 </div>
             </section>
@@ -50,146 +61,13 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>市場情緒溫度計：</b> 本日情緒指數定於 0.15。市場呈現『謹慎的樂觀』，雖然整體 AI 趨勢未改，但高盛提出的『創造性破壞』警告，使得投資者開始對科技股的估值與長期競爭優勢（護城河）進行重新評估。軟體板塊的震盪反映了市場正處於從盲目擴張轉向精確選股的轉折點。<br><br><b>增量變化分析：</b> 作為首日初始分析，我們建立以『AI 護城河測試』為基準的觀察模型。目前的市場變革在於 AI 不再僅是單純的利多因子，而是成為區分『技術受益者』與『技術受害者』的試金石。今日觀察到資金正從結構性弱勢的軟體服務轉移，尋找具備更強韌商業壁壘的標的。<br><br><b>關鍵事件掃描：</b><br>1. <b>高盛警告 AI 創造性破壞：</b> 強調 AI 可能削弱傳統軟體企業的護城河，投資者需警惕『技術墊腳石』風險。<br>2. <b>軟體板塊受壓：</b> 市場出現明顯的板塊輪動，缺乏 AI 整合優勢的企業面臨估值下修。<br>3. <b>操作風險示警：</b> 羅浮宮詐騙案揭露大型機構在管理流程上的漏洞，雖屬個別事件，但提醒了對文化資產與服務業投資的內部控制風險。<br>4. <b>民間消費心理：</b> 春節期間大樂透活動熱絡，反映短期民間消費信心與流動性充沛，對內需板塊有微弱正面支撐。<br><br><b>操作建議：</b> 策略上建議對科技持倉進行『汰弱留強』。應避開業務易被生成式 AI 替代的傳統中間軟體商，轉而關注掌握獨家數據源（Data Moat）或具備垂直整合能力的領先者。鑑於市場正進行壓力測試，建議保留 15% 的現金水位，待軟體板塊超賣訊號出現後，再行介入具備轉型潛力的龍頭股。
+                        <b>市場情緒溫度計：</b> 本日情緒指數微升至 0.25。市場從昨日對 AI 軟體股估值的擔憂，部分轉向對地緣政治風險緩解的期待。川普針對加薩重建的 50 億美元承諾，雖具備高度政治色彩，但釋放了區域穩定化與重建商機的訊號，有助於降低全球市場的風險溢酬。<br><br><b>增量變化分析：</b> 相較於昨日「AI 護城河測試」引發的技術性震盪，今日增量在於「地緣政治重建紅利」。市場正從單純的科技成長邏輯，擴展至宏觀政策導向的防禦性復甦。雖然高盛提出的『創造性破壞』警示仍在科技股上空盤旋，但外部政經環境的穩定預期，正為資金提供了一個相對安全的避風港，緩解了昨日軟體板塊帶來的恐慌情緒。<br><br><b>關鍵事件掃描：</b> 川普擬透過『和平理事會』啟動 50 億美元加薩重建計畫。此舉若落實，將帶動相關基建、原材料需求，並可能重塑中東地區的經貿版圖。此外，應持續追蹤此政策對能源價格及美債避險買盤的稀釋作用。<br><br><b>操作建議：</b> 建議維持 AI 硬體核心持股以確保成長動能，但須留意昨日震盪後的軟體板塊修復力度。針對地緣政治轉向，可適度留意全球基建龍頭及通訊基礎設施標的。在『精確選股』轉折點上，應避開缺乏實質現金流支撐的 AI 概念股，轉向具備政策紅利保護的實體資產與具備定價權的技術龍頭。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技" data-title="ai「創造性破壞」引爆美股護城河測試！高盛警告：「這兩大類」企業恐淪為技術墊腳石" data-content="&lt;p&gt;高盛合夥人 rich privorotsky 近日警告，一場由人工智慧（ai）驅動的「創造性破壞」正在全球同步上演，本質上是對企業「護城河」的全面壓力測試。過去被視為股市長期利多的 ai，如今反而成為檢驗企業競爭優勢是否真正穩固的試金石。&lt;/p&gt;
-
-&lt;p&gt;市場震盪並非單一事件所致，而是呈現出板塊輪動式的壓力傳導。上週率先受到衝擊的是軟體類股，本週初壓力轉向保險與財富管理類股，下半週則擴散至房地產服務與物流板塊。&lt;/p&gt;
-
-&lt;p&gt;對此，privorotsky 認為，市場瀰漫「先賣出、後提問」的情緒，使拋售速度加快，卻缺乏明確的單一催化劑。他指出，這波調整更像是一場「護城河檢查」。&lt;/p&gt;
-
-&lt;p&gt;市場核心問題在於：企業的商業模式能否抵禦技術顛覆？若出現大規模自動化或機器人大軍，既有公司是否會被迅速取代？若不積極投資或併購 ai 技術，是否將失去市場地位？&lt;/p&gt;
-
-&lt;p&gt;privorotsky 也特別提醒投資人留意美國主要股指所對應的商品交易顧問訊號。高盛預估，商品交易顧問在未來一週內可能拋售約 15 億至 20 億美元的美股；若標普 500 指數跌破中期關鍵門檻 6,723 點，拋售壓力恐進一步擴大。&lt;/p&gt;
-
-&lt;p&gt;privorotsky 認為，ai 並未讓市場「躺著賺」，反而讓那些依賴既有經驗與知識優勢建立護城河的企業，面臨前所未有的挑戰。&lt;/p&gt;
-
-&lt;p&gt;在多數原本被視為護城河的領域，技術進步正迅速削弱既有優勢，新進入者得以更低成本挑戰龍頭企業。一旦市場對 ai 顛覆的擔憂升溫，科技與軟體公司的終端估值便首當其衝。&lt;/p&gt;
-
-&lt;p&gt;他指出，估值倍數是市場中最難錨定的變數，一旦開始受到質疑，修正往往難以止步。&lt;/p&gt;
-
-&lt;p&gt;目前上市公司本益比已從逾 30 倍（未來 24 個月預估混合值）回落至 20 倍出頭，但私募投資組合的估值仍維持在更高水準。動盪因而從公開市場向私募市場蔓延，並進一步波及私募信貸與槓桿貸款市場。&lt;/p&gt;
-
-&lt;h6&gt;成長衝擊浮現 債市走強&lt;/h6&gt;
-
-&lt;p&gt;過去一週，美債殖利率下行，循環股相對防禦股遭到拋售。不過，高盛認為，當前市場表現類似一次短期「成長衝擊」。收益率曲線趨於平坦，債券價格持續走高。&lt;/p&gt;
-
-&lt;p&gt;同時，美國 1 月 cpi 年增率降至 2.4%，核心 cpi 降至四年來低點，通膨壓力減弱。市場對通膨的擔憂緩解，與「ai 將比預期更快顛覆多個產業」的敘事相互呼應。&lt;/p&gt;
-
-&lt;p&gt;高盛認為，部分領域最終可能出現實質性通縮，因為既有「食利者」正在失去定價權。&lt;/p&gt;
-
-&lt;h6&gt;投資策略：尋找真正的護城河&lt;/h6&gt;
-
-&lt;p&gt;在當前市場充滿不確定性的背景下，privorotsky 建議投資人把焦點放在真正具備競爭壁壘的企業，以及擁有實體資產支撐的標的。&lt;/p&gt;
-
-&lt;p&gt;他指出，航太產業的布局時點逐漸浮現，具備全球訂單能見度與技術門檻優勢的企業值得留意，如空中巴士。&lt;/p&gt;
-
-&lt;p&gt;privorotsky 認為，工業類股整體表現可望受惠於資本支出循環回溫，但關鍵在於挑選受長期投資動能帶動的公司，而不是僅依賴景氣短波動的周期性股票。&lt;/p&gt;
-
-&lt;p&gt;在資產配置上，privorotsky 偏向看多具備實質價值支撐的資產類別。不過，對於近期已大幅上漲的大宗商品，並不建議此時追價。&lt;/p&gt;
-
-&lt;p&gt;同時，他也相對看好歐洲不動產投資信託，尤其是德國住宅市場相關標的，但對辦公室類型不動產投資信託則持審慎甚至迴避態度。&lt;/p&gt;
-
-&lt;p&gt;至於銀行股，privorotsky 則認為風險正在累積，主要來自四個面向：首先，歐洲銀行股已成為市場擁擠交易；其次，市場尚未充分反映 ai 對金融業務模式的潛在衝擊，以及淨利差可能收窄的壓力；第三，在通縮與美元轉弱情境下，利率曲線變化恐對銀行獲利不利；最後，美國政治變數升溫，若監管環境趨嚴，將進一步壓抑銀行股評價。&lt;/p&gt;
-
-&lt;h6&gt;商品交易顧問賣壓觸發點逼近&lt;/h6&gt;
-
-&lt;p&gt;privorotsky 也提醒投資人，須關注商品交易顧問的技術性賣出訊號。&lt;/p&gt;
-
-&lt;p&gt;在北美市場中，預期賣壓最重的將是納斯達克 100 指數，而非標普 500 指數。目前標普 500 已跌破 50 日均線（6895 點）及商品交易顧問短期閾值（6911 點）。&lt;/p&gt;
-
-&lt;p&gt;好消息是，拋售規模仍然溫和。高盛估計，未來一週 cta 可能拋售 15 億至 20 億美元的美股資產。&lt;/p&gt;
-
-&lt;p&gt;此外，標普 500 仍高於中期門檻 6723 點約 110 點，跌破該水準將加速拋售幅度。&lt;/p&gt;
-
-&lt;p&gt;privorotsky 總結指出，隨著 ai 持續降低產業進入門檻，市場將呈現明顯的贏家與輸家分化格局。他坦言無法預測未來航運或其他產業的具體樣貌，但可以確定的是，終端估值倍數正受到結構性質疑。&lt;/p&gt;
-
-&lt;p&gt;在此環境下，真正具備護城河與有形價值支撐的企業將更具吸引力；相較之下，新興市場仍被視為相對清晰的避風港，全球資金輪動將持續影響各區域的相對表現。&lt;/p&gt;
-">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技</span><span class="text-slate-400 text-xs">下午11:01</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI「創造性破壞」引爆美股護城河測試！高盛警告：「這兩大類」企業恐淪為技術墊腳石</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345138" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="大樂透大獎陸續開出 台彩盤點這些彩券行特別旺" data-content="大樂透大獎陸續開出 台彩盤點這些彩券行特別旺
-
-            2026/02/15 22:34
-                
-
-
-                                    
-                                
-            
-
-            
-                台彩表示，大樂透春節加碼期間，全國各地彩券行紛紛開出大獎。（記者鄭琪芳攝）
-〔記者鄭琪芳／台北報導〕大樂透春節加碼期間，全國各地彩券行紛紛開出大獎，台彩指出，新竹縣湖口鄉「金彩商行」，繼12日開出7注大、小紅包，14日又開出1注小紅包；台北市中山區「寶鴻彩券行｣曾於去年5月30日開出1.86億元頭獎，2月14日也開出1注小紅包；金門縣金湖鎮「財神到彩券行｣則是同1天開出2注小紅包，且分屬兩張不同彩券；台中市大里區「爆米發彩券行｣，去年共開出6次春節大、小紅包，今年2月14日再度開出小紅包。
-另，位於高雄市新興區的「亞伯上億彩券行｣，2月14日情人節當天，開出1注春節大紅包和6注小紅包，7注大、小紅包屬於同1張彩券，該彩券以自選號碼購買1組8連碰（包牌8個號碼，1400元）和1組9連碰（包牌9個號碼，4200元），且多期投注10期，總投注金額5.6萬元，其中8連碰的8個包牌號碼有6個對中大紅包獎號，另1個對中小紅包獎號，共對中1注大紅包及6注小紅包，總獎金合計148萬3333元。    
-    
-    
-    
-
-台彩表示，今年小年夜大樂透頭獎無人中獎，明晚頭獎上看1.2億元。大樂透春節加碼480組100萬元春節大紅包和800組10萬元小紅包獎項，今晚分別送出26組和37組，大紅包有20組為1注獨得100萬元，5組2注均分、各得50萬元，另有1組3注均分、各得33.33萬元；小紅包則有32組為1注獨得10萬元，4組2注均分、各得5萬元，1組3注均分、各得3.33萬元。而今彩539頭獎則無人中獎。
-台彩表示，截至今晚為止，大樂透春節大紅包累計已送出102組，春節小紅包獎項累計送出141組，大、小紅包剩餘組數分別為378組和659組，除夕夜（16日）開獎的大樂透頭獎上看1.2億元，還會繼續加開9個大紅包獎號和1個小紅包獎號，只要對中大紅包獎號中任6個就可得100萬元獎項，如對中任5個大紅包獎號同時對中小紅包獎號，則對中10萬元小紅包獎項。此外，今彩539頭獎加碼活動持續到元宵節，頭獎單注獎金提高為1000萬元。                
-    一手掌握經濟脈動
-    點我訂閱自由財經youtube頻道
-
-                
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-                
-
-
-
-                                
-            
-            
-
-
-        
-
-        
-
-        
-
-
-
-
-
-        
-        今日熱門新聞
-
-
-
-        
-        
-
-        
-        
-            看更多！請加入自由財經粉絲團
-            
-        
-        
-                    
-            
-            
-            網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">大樂透大獎陸續開出 台彩盤點這些彩券行特別旺</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344395" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="2/15 大樂透、今彩539頭獎均摃龜 大紅包開26組" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="川普：和平理事會將宣布50億美元加薩重建承諾" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -208,247 +86,19 @@
 
 
     
-	2026/02/15 22:22
-	即時新聞／綜合報導
+	2026/02/16 01:36
+	中央社
             
                         
             
-    
-        
-        2月15日開獎的大樂透及今彩539頭獎均摃龜。（本報合成）
-    
 
-2月15日開獎的大樂透及今彩539頭獎均摃龜，大樂透春節大紅包開出26組，春節小紅包開出37組。第115000016期大樂透中獎號碼「03、06、11、18、25、28，特別號：35。頭獎摃龜；貳獎摃龜；參獎共138注中獎，每注可得2萬6003元；肆獎共214注中獎，每注可得1萬0779元；伍獎共5102注中獎，每注可得2000元；陸獎共5865注中獎，每注可得1000元；柒獎共5萬3983注中獎，每注可得400元；普獎共8萬2253注中獎，每注可得400元。    
+美國總統川普今天敦促哈瑪斯依照他為戰後加薩提出的計畫推動解除武裝，並透露他的和平理事會成員國已經承諾將為此一巴勒斯坦領土重建工作提供50億美元資金。法新社報導，川普於和平理事會（board of peace）19日在華府召開創始會議前，在自家社群平台真實社群（truth social）發文指出：「非常重要的是，哈瑪斯（hamas）必須堅守其全面且立即解除武裝的承諾。」    
     
     
     
-第115000016期49樂合彩中獎號碼為「03、06、11、18、25、28」。四合6注中獎，可得20萬元；三合共113注中獎，每注可得1萬2500元；二合共2619注中獎，每注可得1250元。第115000040期今彩539中獎號碼為「11、13、18、22、34」。頭獎摃龜；貳獎共292注中獎，每注可得2萬元；參獎共9817注中獎，每注可得300元；肆獎共10萬7333注中獎，每注可得50元。第115000040期39樂合彩中獎號碼為「11、13、18、22、34」。四合共開出1注，每注可得21萬2500元；三合共153注中獎，每注可得1萬1250元；二合共8454注中獎，每注可得1125元。第115000040期3星彩中獎號碼為「045」。壹獎共44注中獎，每注可得5000元。第115000040期4星彩中獎號碼為「5099」。壹獎共5注中獎，每注可得5萬元。第115000016期大樂透春節大紅包中獎號碼「08、14、17、24、28、29、41、42、43」，春節小紅包：35。本期加碼開獎結果，大紅包共開出26組，總中獎注數33注，其中20組為單注獨得，另有5組由2注平分；小紅包則開出37組，總中獎注數為43注中獎，其中32組為單注中獎，4組為2注均分，1組為3注均分。大紅包累計開出102組、剩餘378組，小紅包累計開出141組、剩餘659組。下期（2月16日）持續加開。相關連結請見︰「大樂透春節加碼大紅包．小紅包」開獎結果確切中獎號碼以台彩網站公告為主，請見「台灣彩券網站」。
-
-        
-        
-        大樂透、49樂合彩中獎號碼。（擷取自台彩官網）
-    
-        
-        
-        今彩539、39樂合彩中獎號碼。（擷取自台彩官網）
-    
-        
-        
-        大樂透加碼春節大小紅包開獎號碼。（擷取自台彩官網）
-    
-                
-
-
+哈瑪斯2023年10月突襲以色列而引爆加薩（gaza）戰爭，解除武裝是美國斡旋以色列與這個巴勒斯坦伊斯蘭主義運動組織達成的停火協議當中第二階段的關鍵內容。雙方於去年10月同意停火計畫。聯合國於去年11月表決通過支持這項計畫。停火協議第二階段規定，以色列部隊將逐步從加薩撤離，而哈瑪斯則應予解除武裝，同時由一支國際穩定部隊（international stabilization force）進駐以確保安全。哈瑪斯雖曾多次表示解除武裝是「紅線」，但也已經示意可能考慮將武器移交給未來的巴勒斯坦治理當局。雙方至今仍每天互控對方違反停火協議。原本成立和平理事會是為監督加薩重建，但其章程似乎未將角色侷限於此一巴勒斯坦領土上。川普今天在發文中表示：「和平理事會擁有無限潛力。」該理事會上個月在瑞士達沃斯（davos）的世界經濟論壇（world economic forum）年會場邊首度開會，預計19日在美國首都召開創始會議。成員國被要求支付10億美元成為理事會永久成員，而2022年入侵烏克蘭的俄羅斯總統普丁（vladimir putin）受邀加入，引發外界批評。包括法國、英國在內的美國主要盟友都表達疑慮。川普表示，屆時將會正式宣布成員國承諾的這50億美元資金，同時各國也「已經承諾派遣數千人員加入國際穩定部隊和當地警察部隊，以維護加薩人民的安全與和平」。川普也提到這個組織將與聯合國合作。他表示：「和平理事會將成為史上最具影響力國際機構。」一個巴勒斯坦技術官僚組成的過渡委員會已經根據停火計畫設立，目標接管目前滿目瘡痍的加薩走廊（gaza strip）治理事務。（編譯：何宏儒）1150216
 
             
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-        
-        社會今日熱門
-
-
-
-    
-
-
-
-        
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">2/15 大樂透、今彩539頭獎均摃龜 大紅包開26組</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/society/breakingnews/5344386" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="小年夜大樂透頭獎摃龜  春節大紅包開出26組" data-content="2026/02/15 22:07
-                
-
-
-                                    
-                                
-            
-
-            
-                台彩表示，今晚大樂透頭獎摃龜，春節大紅包開出26組。（記者鄭琪芳攝）
-〔記者鄭琪芳／台北報導〕小年夜（15日）開獎的大樂透，頭獎摃龜，台彩預估下期（16日）大樂透頭獎上看1.2億元；大樂透春節大紅包則開出26組，總中獎注數33注，其中20組為單注中獎，5組為2注均分，1組為3注均分；小紅包開出37組，總中獎注數43注，其中32組為單注中獎，4組為2注均分，1組為3注均分。
-台彩表示，截至本期為止，累積開出春節大紅包組數為102組、剩餘378組，累積開出春節小紅包組數為141組、剩餘659組，下期將繼續加開大紅包及小紅包獎項。    
-    
-    
-    
-
-本期大樂透中獎號碼「03、06、11、18、25、28」，特別號「35」；49樂合彩獎號「03、06、11、18、25、28」。大樂透春節大紅包中獎號碼「08、14、17、24、28、29、41、42、43」；小紅包獎號「35」。
-另，本期今彩539中獎號碼「11、13、18、22、34」，本期今彩539頭獎摃龜；39樂合彩中獎號碼「11、13、18、22、34」。本期3星彩中獎號碼「045」；4星彩中獎號碼「5099」。                
-    一手掌握經濟脈動
-    點我訂閱自由財經youtube頻道
-
-                
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-                
-
-
-
-                                
-            
-            
-
-
-        
-
-        
-
-        
-
-
-
-
-
-        
-        今日熱門新聞
-
-
-
-        
-        
-
-        
-        
-            看更多！請加入自由財經粉絲團
-            
-        
-        
-                    
-            
-            
-            網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">小年夜大樂透頭獎摃龜  春節大紅包開出26組</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344384" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="社會" data-title="羅浮宮爆門票詐騙！內鬼聯手導遊10年削3.8億 警方逮9人" data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-    
-
-
-
-
-
-
-
-    
-	2026/02/15 21:57
-	編譯林家宇／綜合報導
-            
-                        
-            
-    
-        
-        法國警方破獲從事羅浮宮票券詐欺長達10年的犯罪網絡。（美聯社）
-    
-
-據巴黎檢察官辦公室14日聲明，法國警方在一起針對羅浮宮票券詐欺的調查案中逮捕9人，造成的收益損失上看1千萬歐元（約台幣3.8億元）。遭羈押的涉案者包括2名羅浮宮官員、數名導遊和一名疑似策畫主謀。警方還扣押了近100萬歐元現金及近50萬歐元的銀行帳戶資金。    
-    
-    
-    
-本起詐欺案的調查始於2024年12月，羅浮宮館方當時注意到，2名中國籍導遊疑似讓中國團客重複使用博物館的單程票券。經過1年多追查，警方查獲背後存在一個完整的犯罪網絡，行賄羅浮宮官員，每日以欺詐手段接待入館的團客可達20組，犯行長達10年之久。羅浮宮近來諸事不順，去年10月19日在光天化日之下遭竊賊盜走估計價值1億200萬美元的王冠珠寶，引發國際震驚，後來還接連發生約400本珍稀書籍文獻因管線漏水受損及罷工等爭議，在在使得這座全球最多遊客造訪的博物館在行政管理層面受到嚴密檢視。
-
-                
 
 
 
@@ -549,42 +199,75 @@
 
 網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">社會</span><span class="text-slate-400 text-xs">下午11:01</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">羅浮宮爆門票詐騙！內鬼聯手導遊10年削3.8億 警方逮9人</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">川普：和平理事會將宣布50億美元加薩重建承諾</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344377" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344417" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>樂透</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('歐元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>歐元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
         
         <script>
+            // 趨勢圖
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: ["02-15"],
                     datasets: [{
-                        label: '市場情緒指數 (-1.0 ~ 1.0)',
-                        data: [0.15],
+                        label: '情緒指數',
+                        data: [0.25],
                         borderColor: '#64748b',
-                        backgroundColor: '#64748b20', // 透明度
+                        backgroundColor: '#64748b20',
                         borderWidth: 3,
                         pointBackgroundColor: '#fff',
                         pointBorderColor: '#64748b',
                         pointRadius: 5,
                         fill: true,
-                        tension: 0.4 // 曲線平滑度
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // 🟢 雷達圖初始化
+            const radarCtx = document.getElementById('radarChart').getContext('2d');
+            new Chart(radarCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['政策', '資金', '基本面', '國際', '技術'],
+                    datasets: [{
+                        label: '今日強度',
+                        data: [0.7,0.55,0.52,0.75,0.53],
+                        fill: true,
+                        backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
+                        borderColor: 'rgb(79, 70, 229)',
+                        pointBackgroundColor: 'rgb(79, 70, 229)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(79, 70, 229)'
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                        y: { min: -1, max: 1, grid: { color: '#f1f5f9' } },
-                        x: { grid: { display: false } }
+                        r: {
+                            angleLines: { color: '#f1f5f9' },
+                            grid: { color: '#f1f5f9' },
+                            pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' },
+                            suggestedMin: 0,
+                            suggestedMax: 1,
+                            ticks: { backdropColor: 'transparent', display: false } // 隱藏刻度背景
+                        }
                     },
                     plugins: { legend: { display: false } }
                 }
