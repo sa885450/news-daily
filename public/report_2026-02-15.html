@@ -29,7 +29,7 @@
                 <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('川普')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普</button> <button onclick="searchKeyword('和平理事會')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#和平理事會</button> <button onclick="searchKeyword('加薩')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#加薩</button> <button onclick="searchKeyword('巴勒斯坦')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#巴勒斯坦</button> <button onclick="searchKeyword('中東和平協議')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#中東和平協議</button> <button onclick="searchKeyword('高盛')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#高盛</button>
+                    <button onclick="searchKeyword('川普')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普</button> <button onclick="searchKeyword('五角大廈')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#五角大廈</button> <button onclick="searchKeyword('和平理事會')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#和平理事會</button> <button onclick="searchKeyword('哈瑪斯')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#哈瑪斯</button> <button onclick="searchKeyword('維洛尼卡三號')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#維洛尼卡三號</button> <button onclick="searchKeyword('加薩')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#加薩</button>
                 </div>
             </header>
             
@@ -37,7 +37,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.25</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.35</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
@@ -61,151 +61,29 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>市場情緒溫度計：</b> 本日情緒指數微升至 0.25。市場從昨日對 AI 軟體股估值的擔憂，部分轉向對地緣政治風險緩解的期待。川普針對加薩重建的 50 億美元承諾，雖具備高度政治色彩，但釋放了區域穩定化與重建商機的訊號，有助於降低全球市場的風險溢酬。<br><br><b>增量變化分析：</b> 相較於昨日「AI 護城河測試」引發的技術性震盪，今日增量在於「地緣政治重建紅利」。市場正從單純的科技成長邏輯，擴展至宏觀政策導向的防禦性復甦。雖然高盛提出的『創造性破壞』警示仍在科技股上空盤旋，但外部政經環境的穩定預期，正為資金提供了一個相對安全的避風港，緩解了昨日軟體板塊帶來的恐慌情緒。<br><br><b>關鍵事件掃描：</b> 川普擬透過『和平理事會』啟動 50 億美元加薩重建計畫。此舉若落實，將帶動相關基建、原材料需求，並可能重塑中東地區的經貿版圖。此外，應持續追蹤此政策對能源價格及美債避險買盤的稀釋作用。<br><br><b>操作建議：</b> 建議維持 AI 硬體核心持股以確保成長動能，但須留意昨日震盪後的軟體板塊修復力度。針對地緣政治轉向，可適度留意全球基建龍頭及通訊基礎設施標的。在『精確選股』轉折點上，應避開缺乏實質現金流支撐的 AI 概念股，轉向具備政策紅利保護的實體資產與具備定價權的技術龍頭。
+                        <b>情緒溫度：</b>市場情緒指數由 0.25 進一步升至 0.35。地緣政治格局進入「強力執法」與「高額重建」並行的階段，投資人對不確定性的忍受度因政策目標明確化而有所提升。<br><br><b>增量分析：</b>相較於昨日僅停留在重建承諾的「訊號期」，今日進入了「執行力驗證期」。五角大廈在全球範圍（從加勒比海到印度洋）跨海追緝制裁油輪，顯示美軍對川普封鎖令的強制執行力，這可能短期拉升地緣政治緊張，但長遠確立了能源秩序的穩定預期。同時，和平理事會具體的 50 億美元重建金額與哈瑪斯解武要求掛鉤，將地緣衝突轉化為可量化的經濟發展計畫，這對基礎建設、國防與跨國融資板塊形成利多。<br><br><b>關鍵事件：</b>美軍成功攔截並登上違反制裁的「維洛尼卡三號」油輪；川普宣布將於 19 日和平理事會創始會議公布 50 億美元加薩重建細節。<br><br><b>操作建議：</b>策略上應維持「防禦性成長」配置。配置重心可向具備國際重建合約能力的工程龍頭傾斜。能源市場需關注制裁強度對油價的支撐作用。科技板塊若持續受高盛『創造性破壞』報告壓制，資金可能持續流入此類受宏觀政策保障的實體資產與防禦性板塊。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="川普：和平理事會將宣布50億美元加薩重建承諾" data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-    
-
-
-
-
-
-
-
-    
-	2026/02/16 01:36
-	中央社
-            
-                        
-            
-
-美國總統川普今天敦促哈瑪斯依照他為戰後加薩提出的計畫推動解除武裝，並透露他的和平理事會成員國已經承諾將為此一巴勒斯坦領土重建工作提供50億美元資金。法新社報導，川普於和平理事會（board of peace）19日在華府召開創始會議前，在自家社群平台真實社群（truth social）發文指出：「非常重要的是，哈瑪斯（hamas）必須堅守其全面且立即解除武裝的承諾。」    
-    
-    
-    
-哈瑪斯2023年10月突襲以色列而引爆加薩（gaza）戰爭，解除武裝是美國斡旋以色列與這個巴勒斯坦伊斯蘭主義運動組織達成的停火協議當中第二階段的關鍵內容。雙方於去年10月同意停火計畫。聯合國於去年11月表決通過支持這項計畫。停火協議第二階段規定，以色列部隊將逐步從加薩撤離，而哈瑪斯則應予解除武裝，同時由一支國際穩定部隊（international stabilization force）進駐以確保安全。哈瑪斯雖曾多次表示解除武裝是「紅線」，但也已經示意可能考慮將武器移交給未來的巴勒斯坦治理當局。雙方至今仍每天互控對方違反停火協議。原本成立和平理事會是為監督加薩重建，但其章程似乎未將角色侷限於此一巴勒斯坦領土上。川普今天在發文中表示：「和平理事會擁有無限潛力。」該理事會上個月在瑞士達沃斯（davos）的世界經濟論壇（world economic forum）年會場邊首度開會，預計19日在美國首都召開創始會議。成員國被要求支付10億美元成為理事會永久成員，而2022年入侵烏克蘭的俄羅斯總統普丁（vladimir putin）受邀加入，引發外界批評。包括法國、英國在內的美國主要盟友都表達疑慮。川普表示，屆時將會正式宣布成員國承諾的這50億美元資金，同時各國也「已經承諾派遣數千人員加入國際穩定部隊和當地警察部隊，以維護加薩人民的安全與和平」。川普也提到這個組織將與聯合國合作。他表示：「和平理事會將成為史上最具影響力國際機構。」一個巴勒斯坦技術官僚組成的過渡委員會已經根據停火計畫設立，目標接管目前滿目瘡痍的加薩走廊（gaza strip）治理事務。（編譯：何宏儒）1150216
-
-            
-
-
-
-            
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-        
-        國際今日熱門
-
-
-
-    
-
-
-
-        
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-網友回應">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="從加勒比海追到印度洋　五角大廈：美軍登上受制裁油輪" data-content="從加勒比海追到印度洋　五角大廈：美軍登上受制裁油輪2026/2/16 02:08（中央社華盛頓15日綜合外電報導）美國戰爭部今天表示，美軍在印度洋登上一艘油輪，該油輪違反總統川普對被制裁船隻在加勒比海實施的封鎖令並且逃逸。法新社報導，五角大廈（pentagon）在社群平台x上表示，懸掛巴拿馬國旗的維洛尼卡三號（veronica iii）「試圖違抗川普總統的隔離措施，企圖悄悄脫身。我們從加勒比海一路追蹤到印度洋，最後接近並將其攔截」。一段美軍搭乘直升機登船的畫面隨文上傳。五角大廈約一週前也曾以類似方式攔截艾奎拉二號（aquila ii）油輪。川普去年12月下令對所有前往及離開委內瑞拉的受制裁油輪實施「封鎖」。目前至少已有9艘船隻遭到扣押。然而，近幾個月被扣押的船隻僅占全球受制裁並且試圖予以規避的「影子艦隊」（shadow fleet）總數極小部分。根據美國海岸防衛隊（u.s. coast guard）一名高階官員說法，這類船隻全球總數多達800艘。追蹤並通報原油輸運情況的tankerstrackers.com資料顯示，維洛尼卡三號於美國特種部隊突襲並且俘虜時任委內瑞拉領袖馬杜洛（nicolas maduro）的1月3日離開委內瑞拉，船上裝載約190萬桶原油。美國財政部外國資產管制辦公室（office of foreign assets control）網站指出，這艘船被列入與伊朗有關的美國制裁名單。五角大廈在x上強調：「戰爭部將會剝奪非法分子及其代理人海域行動自由。」（編譯：何宏儒）1150216本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">川普：和平理事會將宣布50億美元加薩重建承諾</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午03:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">從加勒比海追到印度洋　五角大廈：美軍登上受制裁油輪</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344417" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602160003.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="宏觀政策" data-title="川普：和平理事會將宣布50億美元加薩重建承諾" data-content="2026/2/16 01:26（中央社佛羅里達州西棕櫚灘15日綜合外電報導）美國總統川普今天敦促哈瑪斯依照他為戰後加薩提出的計畫推動解除武裝，並透露他的和平理事會成員國已經承諾將為此一巴勒斯坦領土重建工作提供50億美元資金。法新社報導，川普於和平理事會（board of peace）19日在華府召開創始會議前，在自家社群平台真實社群（truth social）發文指出：「非常重要的是，哈瑪斯（hamas）必須堅守其全面且立即解除武裝的承諾。」哈瑪斯2023年10月突襲以色列而引爆加薩（gaza）戰爭，解除武裝是美國斡旋以色列與這個巴勒斯坦伊斯蘭主義運動組織達成的停火協議當中第二階段的關鍵內容。雙方於去年10月同意停火計畫。聯合國於去年11月表決通過支持這項計畫。停火協議第二階段規定，以色列部隊將逐步從加薩撤離，而哈瑪斯則應予解除武裝，同時由一支國際穩定部隊（international stabilization force）進駐以確保安全。哈瑪斯雖曾多次表示解除武裝是「紅線」，但也已經示意可能考慮將武器移交給未來的巴勒斯坦治理當局。雙方至今仍每天互控對方違反停火協議。原本成立和平理事會是為監督加薩重建，但其章程似乎未將角色侷限於此一巴勒斯坦領土上。川普今天在發文中表示：「和平理事會擁有無限潛力。」該理事會上個月在瑞士達沃斯（davos）的世界經濟論壇（world economic forum）年會場邊首度開會，預計19日在美國首都召開創始會議。成員國被要求支付10億美元成為理事會永久成員，而2022年入侵烏克蘭的俄羅斯總統普丁（vladimir putin）受邀加入，引發外界批評。包括法國、英國在內的美國主要盟友都表達疑慮。川普表示，屆時將會正式宣布成員國承諾的這50億美元資金，同時各國也「已經承諾派遣數千人員加入國際穩定部隊和當地警察部隊，以維護加薩人民的安全與和平」。川普也提到這個組織將與聯合國合作。他表示：「和平理事會將成為史上最具影響力國際機構。」一個巴勒斯坦技術官僚組成的過渡委員會已經根據停火計畫設立，目標接管目前滿目瘡痍的加薩走廊（gaza strip）治理事務。（編譯：何宏儒）1150216本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">宏觀政策</span><span class="text-slate-400 text-xs">上午03:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">川普：和平理事會將宣布50億美元加薩重建承諾</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602160002.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -219,12 +97,12 @@
                     labels: ["02-15"],
                     datasets: [{
                         label: '情緒指數',
-                        data: [0.25],
-                        borderColor: '#64748b',
-                        backgroundColor: '#64748b20',
+                        data: [0.35],
+                        borderColor: '#dc2626',
+                        backgroundColor: '#dc262620',
                         borderWidth: 3,
                         pointBackgroundColor: '#fff',
-                        pointBorderColor: '#64748b',
+                        pointBorderColor: '#dc2626',
                         pointRadius: 5,
                         fill: true,
                         tension: 0.4
@@ -246,7 +124,7 @@
                     labels: ['政策', '資金', '基本面', '國際', '技術'],
                     datasets: [{
                         label: '今日強度',
-                        data: [0.7,0.55,0.52,0.75,0.53],
+                        data: [0.75,0.45,0.6,0.4,0.5],
                         fill: true,
                         backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
                         borderColor: 'rgb(79, 70, 229)',
