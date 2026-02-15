@@ -9,7 +9,7 @@
             body { font-family: 'Inter', 'Noto Sans TC', sans-serif; }
             .news-card.hidden { display: none; }
             @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-            .animate-fade { animation: fadeIn 0.4s ease forwards; }
+            .animate-fade { animation: fadeIn 0.4s ease forwards; opacity: 0; }
         </style>
         <script>
             function filterCategory(cat) {
@@ -78,38 +78,158 @@
                 </div>
             </div>
 
-            <section class="mb-12">
+            <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        作為頂尖避險基金經理人與首席分析師，我針對今日市場動態進行深度掃描。當前市場正處於一個極為關鍵的「敘事轉型期」：通膨放緩的宏觀利多與科技權值股的結構性疲勞正在激烈碰撞。<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：+0.2</b> <span class="text-2xl animate-pulse">🟢</span> <b class="text-green-600">利多趨勢</b> <b class="text-indigo-600 font-bold">（利多，但伴隨高度謹慎）</b><br>*分析：* 儘管 CPI 數據錄得利多，顯示去通膨路徑明確，但市場對權值股的「疲勞感」抵消了宏觀面的漲幅。資金正在進行大規模的內部換手，而非單邊撤出，這反映出一種「動態防禦」的心理。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件深度分析</h3><br><b class="text-indigo-600 font-bold">① 美國 1 月 CPI 低於預期，確認去通膨路徑</b><br>美國 1 月 CPI 年增率降至 2.4%，核心 CPI 亦同步回落，這標誌著通膨壓力已實質性地受控。這項數據不僅緩解了市場對於聯準會（Fed）長期高利率（Higher for Longer）的恐懼，也直接導致公債殖利率下滑，為市場評價面提供了支撐。然而，市場反應的平淡，反映出宏觀利多已被部分定價。<br><br><b class="text-indigo-600 font-bold">② 利率路徑重塑：2026 年降息預期升溫</b><br>受通膨數據推動，掉期市場對 2026 年的降息預期轉趨激進，隱含全年降息幅度約 60 個基點。這對長天期資產本應是極大提振，但科技權值股的疲軟顯示出，目前市場的關注焦點已從「貨幣寬鬆」轉向「基本面獲利的可持續性」。<br><br><b class="text-indigo-600 font-bold">③ 科技權值股疲勞：亞馬遜連跌紀錄的警示</b><br>亞馬遜連續九個交易日走低，創下 20 年來罕見紀錄，這不僅是個別企業的問題，更是整體「大科技擁擠交易」動能衰竭的訊號。當市場領頭羊（Mag 7 成員）無法對利多消息做出正面反應時，通常預示著指數短期內面臨技術性修正壓力，標普 500 指數在 50 日與 100 日均線間的震盪將是關鍵觀察點。<br><br><b class="text-indigo-600 font-bold">④ 風格因子交易量暴增：資金大挪移進行式</b><br>過去 20 個交易日，風格因子成交量增幅高達 27.7 倍，遠超大盤整體的成交增長。這代表避險基金與機構法人正在進行劇烈的「換股操作」（Sector Rotation）。資金正從漲幅已高的成長型因子，轉向價值、低波動或高品質因子，這種結構性變動比指數波動更具參考價值。<br><br><b class="text-indigo-600 font-bold">⑤ 「抗 AI 衝擊」策略：從整體看多轉向精細化選股</b><br>高盛推出的多空配對策略，標誌著 AI 投資進入 2.0 階段。市場不再盲目追逐所有軟體股，而是開始區分「護城河型企業」（如掌握底層算力與資安接口的微軟、Crowdstrike）與「易被取代型企業」（如流程管理類的 SaaS）。這種「去偽存真」的過程將導致軟體板塊內部的嚴重分化。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">💡 投資建議與策略</h3><br>1.  <b class="text-indigo-600 font-bold">策略性增持「防禦型科技」資產</b>：<br>    在科技板塊內部進行汰弱留強。優先配置於具備「高轉置成本」與「監管/合規護城河」的網路安全（Cybersecurity）與雲端基礎設施龍頭（MSFT, ORCL），同時對流程自動化（Workflow automation）相關標的保持避險或減碼觀點。<br><br>2.  <b class="text-indigo-600 font-bold">配置板塊輪動的受益者</b>：<br>    鑑於資金正從科技權值股流出，且利率環境趨向寬鬆，建議關注評價面處於低位、且對利率敏感的「防禦性價值股」（如公用事業、特選生技板塊）。這類資產能有效對沖科技股震盪帶來的風險。<br><br>3.  <b class="text-indigo-600 font-bold">監控技術面關鍵支撐與情緒指標</b>：<br>    目前標普 500 已破 50 日線並尋求 100 日線支撐。在成交量集中於風格因子的情況下，投資者應避免在指數回測期間過度槓桿，建議利用 VIX 或相關避險工具管理下行風險，直至科技權值股出現止跌止穩訊號。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">新聞分類標記 (JSON)</h3>
+                        你好，我是你的首席分析師。針對今日市場訊息，我已完成深度掃描。<br><br>當前全球市場正處於「地緣政治高壓」與「中國通縮輸出」的雙重夾擊中。以下是針對核心事件的專業分析與策略佈局建議：<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：-0.3</b> <span class="text-2xl animate-pulse">🔴</span> <b class="text-red-600">利空警戒</b> <b class="text-indigo-600 font-bold">（偏向利空 / 審慎警戒）</b><br>*分析：儘管美日台股表現強勁，但烏俄能源戰升級造成的通膨隱憂，以及中國內需失速導致的結構性通縮，正為全球供應鏈與宏觀經濟增添不確定性。*<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件深度分析</h3><br>*   <b class="text-indigo-600 font-bold">烏克蘭精準打擊俄國能源心臟：黑海物流鏈面臨中斷風險</b><br>    烏克蘭改變戰術，精準襲擊俄羅斯達曼港（Taman）能源轉運站。該港口去年處理逾 416 萬公噸石油產品，是俄國極其重要的戰略門戶。此次攻擊不僅標誌著「能源戰」的重新啟動，更可能導致黑海地區原油與糧食出口的風險溢價（Risk Premium）再度攀升，短期內將支撐國際油價走勢。<br><br>*   <b class="text-indigo-600 font-bold">中國股市「紅盤夢」破碎：結構性通縮與需求疲軟雙殺</b><br>    摩根士丹利與野村證券同步發出警告，中國 PPI 已連續 40 個月負成長，陷入長期通縮陷阱。去年 Q4 企業獲利預警激增，尤其在房地產與消費領域表現最差。在缺乏大規模有效刺激與內需持續萎縮的背景下，中國股市與全球主要股市（如台灣、韓國、日本）的脫鉤現象將進一步加劇，資金持續外流風險高。<br><br>*   <b class="text-indigo-600 font-bold">中美台地緣政治升級：美方鷹派智庫對台在野陣營發出警告</b><br>    美國對華鷹派智庫建議取消阻礙國防預算案之政客簽證。此舉顯示華府對台灣軍備節奏的高度關注，反映出地緣政治風險已深入至政經運作底層。對於投資人而言，需留意此類政治摩擦是否引發科技產業鏈的法規遵循風險或市場對台海穩定性的重新評估。<br><br>*   <b class="text-indigo-600 font-bold">亞洲市場表現極端分化：台、韓、日成避風港</b><br>    對比 MSCI 中國指數微漲 0.8%，韓國（+30.7%）、台灣（+16%）及日本（+13.1%）的漲幅反映了全球資金正在進行「去中國化」配置。半導體與 AI 產業鏈的紅利持續向民主價值同盟轉移，這種「資本大遷徙」在 2026 年上半年仍將是市場主旋律。<br><br>*   <b class="text-indigo-600 font-bold">環境與社會治理（ESG）成本上升：海洋保育與公共衛生壓力</b><br>    新北市接獲大量鯨豚海龜擱淺通報，反映出近海生態環境惡化。雖然屬於社會面向，但在全球 ESG 投資準則日益嚴苛的當下，地方政府對海洋保育的投入與法規限制，未來可能間接影響沿海基礎建設與相關產業的營運成本。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">💡 投資建議與策略</h3><br>1.  <b class="text-indigo-600 font-bold">能源避險與原油多頭佈局</b>：<br>    鑑於烏克蘭針對俄羅斯戰略能源基礎設施的攻擊頻率增加，黑海供應鏈轉趨脆弱。建議適度配置能源 ETF 或原油期貨作為避險工具，應對潛在的供應中斷。<br><br>2.  <b class="text-indigo-600 font-bold">減持中國連動資產，聚焦「半導體民主同盟」</b>：<br>    中國內需數據（PMI/PPI）持續走弱，顯示結構性崩壞短期難以扭轉。應維持「減碼」或「空頭」思維；資金應鎖定在受惠於 AI 硬體升級與美日台技術結盟的龍頭企業。<br><br>3.  <b class="text-indigo-600 font-bold">地緣政治風險預警系統化</b>：<br>    投資者需監控美國對台、對華制裁名單的擴大趨勢。特別是涉及軍事採購、高科技禁運相關的政治動向，這將直接影響相關權值股的法人持股信心。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">新聞分類標記</h3><br>1.  <b class="text-indigo-600 font-bold">[ID:0]</b> 社會<br>2.  <b class="text-indigo-600 font-bold">[ID:1]</b> 其他（地緣政治/能源）<br>3.  <b class="text-indigo-600 font-bold">[ID:2]</b> 金融<br>4.  <b class="text-indigo-600 font-bold">[ID:3]</b> 社會（流行文化）<br>5.  <b class="text-indigo-600 font-bold">[ID:4]</b> 其他（政治）
                     </div>
                 </div>
             </section>
             
-            <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
+            <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
                 
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="科技">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        科技
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午07:00</span>
+                    <span class="text-slate-400 text-xs">下午08:01</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">高盛推出「抗AI衝擊」多空名單：做多雲端資安「這6股」、放空「這4檔」熱門軟體股</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">新北去年接獲52件擱淺通報 海龜41件最多</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.cnyes.com/news/id/6345128" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/life/breakingnews/5344324" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                    閱讀全文 
+                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
+             data-category="其他">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                        其他
+                    </span>
+                    <span class="text-slate-400 text-xs">下午08:01</span>
+                </div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">不打民宅只打戰略門戶！烏克蘭重啟能源戰 俄羅斯達曼港陷火海</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end">
+                <a href="https://news.ltn.com.tw/news/world/breakingnews/5344253" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                    閱讀全文 
+                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
+             data-category="金融">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                        金融
+                    </span>
+                    <span class="text-slate-400 text-xs">下午08:01</span>
+                </div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">中國股市年假過後開紅盤？分析師潑冷水：別作夢</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end">
+                <a href="https://ec.ltn.com.tw/article/breakingnews/5344318" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                    閱讀全文 
+                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
+             data-category="社會">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                        社會
+                    </span>
+                    <span class="text-slate-400 text-xs">下午08:01</span>
+                </div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《中華一番》最新劇情超扯 小當家被賜死靠這招「復活」？</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end">
+                <a href="https://ent.ltn.com.tw/news/breakingnews/5344314" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                    閱讀全文 
+                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
+             data-category="其他">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                        其他
+                    </span>
+                    <span class="text-slate-400 text-xs">下午08:01</span>
+                </div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">大場面來啦！川普重用智庫高層撂話 取消親中藍白政客及家屬美簽！</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end">
+                <a href="https://news.ltn.com.tw/news/politics/breakingnews/5344296" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
             </div>
         </div>
             </div>
+
+            
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
+                <h3 class="text-xl font-black text-slate-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度 (今日觸發)
+                </h3>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
+                    
+                <div class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-default">
+                    <span>AI</span>
+                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span>
+                </div>
+            
+                <div class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-default">
+                    <span>川普</span>
+                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
+                </div>
+            
+                <div class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-default">
+                    <span>股市</span>
+                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
+                </div>
+            
+                <div class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-default">
+                    <span>防疫</span>
+                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
+                </div>
+            
+                <div class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-default">
+                    <span>疫情</span>
+                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
+                </div>
+            
+                </div>
+            </section>
+        
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
                 自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions
