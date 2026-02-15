@@ -4,7 +4,7 @@
         <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AI 智能儀表板</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
             body { font-family: 'Inter', 'Noto Sans TC', sans-serif; }
             .news-card.hidden { display: none; }
@@ -12,656 +12,184 @@
             .animate-fade { animation: fadeIn 0.4s ease forwards; opacity: 0; }
         </style>
         <script>
-            // 全域變數，紀錄目前的篩選狀態
-            let currentCategory = '全部';
-            let currentSearch = '';
-
-            // 核心篩選邏輯：同時考慮分類與搜尋關鍵字
-            function applyFilters() {
-                const cards = document.querySelectorAll('.news-card');
-                const searchLower = currentSearch.toLowerCase();
-                
-                cards.forEach(card => {
-                    card.classList.remove('animate-fade');
-                    const cardCat = card.dataset.category;
-                    const cardTitle = card.dataset.title;
-                    const cardContent = card.dataset.content;
-
-                    // 判斷分類是否符合
-                    const catMatch = (currentCategory === '全部' || cardCat === currentCategory);
-                    // 判斷關鍵字是否符合 (搜尋標題或內文)
-                    const searchMatch = !currentSearch || cardTitle.includes(searchLower) || cardContent.includes(searchLower);
-
-                    if (catMatch && searchMatch) {
-                        card.classList.remove('hidden');
-                        requestAnimationFrame(() => {
-                            setTimeout(() => card.classList.add('animate-fade'), 10);
-                        });
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            }
-
-            function filterCategory(targetCat) {
-                currentCategory = targetCat;
-                
-                // 更新按鈕樣式
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    if (btn.dataset.filter === targetCat) {
-                        btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300';
-                    } else {
-                        btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600';
-                    }
-                });
-                
-                applyFilters();
-            }
-
-            function searchNews(value) {
-                currentSearch = value.trim();
-                applyFilters();
-            }
-
-            function searchKeyword(keyword) {
-                // 將點擊的關鍵字填入搜尋框
-                const searchInput = document.getElementById('search-input');
-                searchInput.value = keyword;
-                currentSearch = keyword;
-                
-                // 自動切換到"全部"分類以顯示所有結果
-                filterCategory('全部');
-                
-                // 捲動到新聞列表
-                document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            let currentCategory='全部', currentSearch='';
+            function applyFilters(){ const lower=currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c=>{ const matchCat=(currentCategory==='全部'||c.dataset.category===currentCategory); const matchSearch=!currentSearch||c.dataset.title.includes(lower)||c.dataset.content.includes(lower); if(matchCat&&matchSearch){c.classList.remove('hidden');setTimeout(()=>c.classList.add('animate-fade'),10);}else{c.classList.add('hidden');c.classList.remove('animate-fade');} }); }
+            function filterCategory(c){currentCategory=c;document.querySelectorAll('.filter-btn').forEach(b=>b.className=b.dataset.filter===c?'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300':'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600');applyFilters();}
+            function searchNews(v){currentSearch=v.trim();applyFilters();}
+            function searchKeyword(k){document.getElementById('search-input').value=k;searchNews(k);filterCategory('全部');document.getElementById('news-grid').scrollIntoView({behavior:'smooth'});}
         </script>
     </head>
     <body class="bg-[#f8fafc] text-slate-900 min-h-screen pb-20">
         <div class="max-w-6xl mx-auto px-4 pt-10 relative">
-            
-            
-
+            <div class="absolute top-0 right-0 mt-2 mr-2 z-50"><select onchange="if(this.value) window.location.href=this.value" class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50"><option value="index.html">🏠 返回首頁</option><option value="report_2026-02-15.html" selected>📅 今天 2026-02-15</option></select></div>
             <header class="text-center mb-10">
-                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report</div>
+                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.3</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                 <p class="text-slate-500 font-medium text-lg">2026年2月15日星期日</p>
             </header>
             
+            <section class="mb-10 animate-fade">
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 近 7 日市場情緒走勢</h3>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日指數: <span class="text-red-500 text-base">0.15</span></div>
+                    </div>
+                    <div class="h-64 w-full">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
             <div class="sticky top-4 z-50 mb-10">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-4 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/50 w-fit mx-auto">
-                    <div class="flex flex-wrap gap-2 justify-center">
-                        
-        <button onclick="filterCategory('全部')" data-filter="全部"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm
-            bg-indigo-600 text-white border-indigo-600 shadow-indigo-200">
-            全部
-        </button>
-    
-        <button onclick="filterCategory('科技')" data-filter="科技"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm
-            bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600">
-            科技
-        </button>
-    
-        <button onclick="filterCategory('金融')" data-filter="金融"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm
-            bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600">
-            金融
-        </button>
-    
-        <button onclick="filterCategory('社會')" data-filter="社會"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm
-            bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600">
-            社會
-        </button>
-    
-        <button onclick="filterCategory('其他')" data-filter="其他"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm
-            bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600">
-            其他
-        </button>
-    
-                    </div>
-                    
-                    <div class="relative w-full md:w-48 transition-all focus-within:w-64">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-slate-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                            </svg>
-                        </div>
-                        <input type="text" id="search-input" oninput="searchNews(this.value)" 
-                            class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner" 
-                            placeholder="搜尋新聞...">
-                    </div>
+                    <div class="flex flex-wrap gap-2 justify-center"><button onclick="filterCategory('全部')" data-filter="全部" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-indigo-600 text-white border-indigo-600">全部</button><button onclick="filterCategory('科技')" data-filter="科技" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">科技</button><button onclick="filterCategory('金融')" data-filter="金融" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">金融</button><button onclick="filterCategory('社會')" data-filter="社會" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">社會</button><button onclick="filterCategory('其他')" data-filter="其他" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">其他</button></div>
+                    <div class="relative w-full md:w-48 transition-all focus-within:w-64"><div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><svg class="w-4 h-4 text-slate-400" aria-hidden="true" fill="none" viewBox="0 0 20 20"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/></svg></div><input type="text" id="search-input" oninput="searchNews(this.value)" class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner" placeholder="搜尋新聞..."></div>
                 </div>
             </div>
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        你好，我是你的首席分析師。針對目前的市場訊息，我們正處於一個極其關鍵的<b class="text-indigo-600 font-bold">結構性轉折點</b>。<br><br>以下是針對當前市場訊息的「高權重市場掃描」報告：<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：-0.1</b> <span class="text-2xl">⚪</span> <b class="text-slate-500">中性觀察</b> <b class="text-indigo-600 font-bold">中立偏審慎</b><br>> <b class="text-indigo-600 font-bold">分析師簡評</b>：雖然台美貿易協定帶來了長期的政策紅利，但美銀（BofA）提出的「全球資產大輪動」警告了科技權值股的估值壓力。市場目前正處於「AI 敘事轉向」與「資金回流實體經濟」的交接期，波動性將顯著放大。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件深度分析</h3><br>*   <b class="text-indigo-600 font-bold">「華爾街」轉向「主街」：可負擔性政治引發資產大輪動</b><br>    美銀指出，隨著政治重心轉向解決民生活成本（Affordability），資金正從過去的高估值成長股撤離，流入價值股、小型股與實體經濟相關資產。這標誌著過去十年以「寬鬆資金+科技擴張」為主的獲利模式正在動搖。<br><br>*   <b class="text-indigo-600 font-bold">AI 敘事危機：從「AI 驚嘆」進入「AI 致貧」階段</b><br>    市場對 AI 的看法出現結構性轉變。超大規模企業（Hyperscalers）的高額債務與資本支出，已引發融資成本上升的疑慮。尤其當 AI 開始衝擊印度軟體龍頭與服務業時，投資人開始反思其「破壞性成本」而非僅看成長紅利。<br><br>*   <b class="text-indigo-600 font-bold">日元與日股相關性轉正：全球去槓桿的導火線</b><br>    自 2005 年以來，日元與日經指數相關性首度轉正，這通常是結構性多頭的徵兆。然而，必須嚴密監控日元匯率，一旦日元升破 145 關卡，可能引發大規模的日元利差交易（Carry Trade）平倉，造成全球市場去槓桿衝擊。<br><br>*   <b class="text-indigo-600 font-bold">台美對等貿易協定（ART）與投資 MOU 正式落地</b><br>    台美已完成簽署對等貿易協定與投資 MOU。最核心的影響在於「晶片條款」，美方將對台晶片關稅調降至 15% 且不疊加，這為台灣半導體產業鏈提供了長期的政策避風港，降低了地緣政治帶來的關稅不確定性。<br><br>*   <b class="text-indigo-600 font-bold">新興市場與原物料異軍突起</b><br>    在資金輪動中，白銀、南韓 KOSPI、巴西股市及能源類股表現亮眼。這反映了全球資金正在尋找通膨環境下的避險所與具備製造業基礎的實體資產，而非僅依賴美股七巨頭的財富效應。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">3. 💡 投資建議與策略</h3><br>1.  <b class="text-indigo-600 font-bold">防禦性調倉：降低高溢價科技股比例</b><br>    鑑於 AI 敘事面臨修正壓力，建議獲利了結部分高本益比的軟體與 AI 硬體股，並將資金轉向具備現金流支持的「小型價值股」與「能源、區域性銀行」等實體經濟板塊。<br>2.  <b class="text-indigo-600 font-bold">匯率風險監控：以 145 為日元預警線</b><br>    目前全球流動性高度敏感，操作上應密切關注日元走勢。若日元快速升值，應立即降低投資組合的槓桿率，以防範去槓桿引發的系統性下殺。<br>3.  <b class="text-indigo-600 font-bold">政策紅利長線布局：半導體供應鏈</b><br>    雖然短期科技股承壓，但台美簽署的 15% 晶片關稅優惠是實質利多。應利用市場因 AI 疑慮而回調的時機，挑選受惠於供應鏈合作、且具備實質訂單支撐的半導體權值股進行長線配置。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">4. 新聞分類標記</h3><br>1.  <b class="text-indigo-600 font-bold">【金融】</b> 2026 全球資產大輪動，美銀指出三大關鍵變化。<br>2.  <b class="text-indigo-600 font-bold">【科技】</b> 台美簽署對等貿易協定，投資 MOU 含晶片關稅優惠。<br>3.  <b class="text-indigo-600 font-bold">【社會】</b> 春節焦慮感倍增，醫師提醒心理健康管理。<br>4.  <b class="text-indigo-600 font-bold">【社會】</b> 新竹彩券行開出百萬大獎，「財神敲門」軼聞引熱議。<br>5.  <b class="text-indigo-600 font-bold">【社會】</b> 2/15 大樂透、大紅包等各類獎號出爐資訊。
+                        <b>市場情緒溫度計：</b> 本日情緒指數定於 0.15。市場呈現『謹慎的樂觀』，雖然整體 AI 趨勢未改，但高盛提出的『創造性破壞』警告，使得投資者開始對科技股的估值與長期競爭優勢（護城河）進行重新評估。軟體板塊的震盪反映了市場正處於從盲目擴張轉向精確選股的轉折點。<br><br><b>增量變化分析：</b> 作為首日初始分析，我們建立以『AI 護城河測試』為基準的觀察模型。目前的市場變革在於 AI 不再僅是單純的利多因子，而是成為區分『技術受益者』與『技術受害者』的試金石。今日觀察到資金正從結構性弱勢的軟體服務轉移，尋找具備更強韌商業壁壘的標的。<br><br><b>關鍵事件掃描：</b><br>1. <b>高盛警告 AI 創造性破壞：</b> 強調 AI 可能削弱傳統軟體企業的護城河，投資者需警惕『技術墊腳石』風險。<br>2. <b>軟體板塊受壓：</b> 市場出現明顯的板塊輪動，缺乏 AI 整合優勢的企業面臨估值下修。<br>3. <b>操作風險示警：</b> 羅浮宮詐騙案揭露大型機構在管理流程上的漏洞，雖屬個別事件，但提醒了對文化資產與服務業投資的內部控制風險。<br>4. <b>民間消費心理：</b> 春節期間大樂透活動熱絡，反映短期民間消費信心與流動性充沛，對內需板塊有微弱正面支撐。<br><br><b>操作建議：</b> 策略上建議對科技持倉進行『汰弱留強』。應避開業務易被生成式 AI 替代的傳統中間軟體商，轉而關注掌握獨家數據源（Data Moat）或具備垂直整合能力的領先者。鑑於市場正進行壓力測試，建議保留 15% 的現金水位，待軟體板塊超賣訊號出現後，再行介入具備轉型潛力的龍頭股。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-                
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="金融"
-             data-title="2026全球資產大輪動該如何理解？美銀指出「三大」關鍵變化"
-             data-content="&lt;p&gt;2026 年開年之際，全球金融市場正出現顯著風格轉變。美國銀行 (&lt;a data-symbol-template=&quot;uss:bac:stock:common&quot; href=&quot;#&quot;&gt;bac-us&lt;/a&gt;) 策略師 michael hartnett 團隊最新報告指出，資金正加速撤離過去數年最受追捧的明星資產，一場由政治與資產估值共同驅動的「大輪動」正在展開。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技" data-title="ai「創造性破壞」引爆美股護城河測試！高盛警告：「這兩大類」企業恐淪為技術墊腳石" data-content="&lt;p&gt;高盛合夥人 rich privorotsky 近日警告，一場由人工智慧（ai）驅動的「創造性破壞」正在全球同步上演，本質上是對企業「護城河」的全面壓力測試。過去被視為股市長期利多的 ai，如今反而成為檢驗企業競爭優勢是否真正穩固的試金石。&lt;/p&gt;
 
-&lt;p&gt;報告認為，這波變化的核心關鍵，在於美國總統川普所主導的「可負擔性」政治。隨著中期選舉壓力升溫，政策重心轉向回應民生成本問題，市場開始重新定價，從過去偏向「華爾街」資本市場利益，轉為傾向「主街」實體經濟與一般民眾。&lt;/p&gt;
+&lt;p&gt;市場震盪並非單一事件所致，而是呈現出板塊輪動式的壓力傳導。上週率先受到衝擊的是軟體類股，本週初壓力轉向保險與財富管理類股，下半週則擴散至房地產服務與物流板塊。&lt;/p&gt;
 
-&lt;p&gt;今年以來，黃金上漲 13.4%，石油上漲 9.5%，國際股票上揚 8.7%；相較之下，美股小跌 0.2%，比特幣則重挫 25%。&lt;/p&gt;
+&lt;p&gt;對此，privorotsky 認為，市場瀰漫「先賣出、後提問」的情緒，使拋售速度加快，卻缺乏明確的單一催化劑。他指出，這波調整更像是一場「護城河檢查」。&lt;/p&gt;
 
-&lt;p&gt;美國銀行指出，川普政府的政策轉向，將在市場上帶來三項具有指標意義的結構性變化：&lt;/p&gt;
+&lt;p&gt;市場核心問題在於：企業的商業模式能否抵禦技術顛覆？若出現大規模自動化或機器人大軍，既有公司是否會被迅速取代？若不積極投資或併購 ai 技術，是否將失去市場地位？&lt;/p&gt;
 
-&lt;p&gt;第一，美國大盤成長股向小型價值股的歷史性輪動已開啟；&lt;/p&gt;
+&lt;p&gt;privorotsky 也特別提醒投資人留意美國主要股指所對應的商品交易顧問訊號。高盛預估，商品交易顧問在未來一週內可能拋售約 15 億至 20 億美元的美股；若標普 500 指數跌破中期關鍵門檻 6,723 點，拋售壓力恐進一步擴大。&lt;/p&gt;
 
-&lt;p&gt;第二，ai 敘事正從「ai 驚嘆」轉向「ai 致貧」，科技股面臨壓力；&lt;/p&gt;
+&lt;p&gt;privorotsky 認為，ai 並未讓市場「躺著賺」，反而讓那些依賴既有經驗與知識優勢建立護城河的企業，面臨前所未有的挑戰。&lt;/p&gt;
 
-&lt;p&gt;第三，日元與日股的相關性自 2005 年以來首次轉正，這是結構性多頭市場的特徵。但需警覺日元升值過快（跌破 145）引發全球去槓桿。&lt;/p&gt;
+&lt;p&gt;在多數原本被視為護城河的領域，技術進步正迅速削弱既有優勢，新進入者得以更低成本挑戰龍頭企業。一旦市場對 ai 顛覆的擔憂升溫，科技與軟體公司的終端估值便首當其衝。&lt;/p&gt;
 
-&lt;h6&gt;&lt;strong&gt;「可負擔性」政策主導　資金轉向實體經濟&lt;/strong&gt;&lt;/h6&gt;
+&lt;p&gt;他指出，估值倍數是市場中最難錨定的變數，一旦開始受到質疑，修正往往難以止步。&lt;/p&gt;
 
-&lt;p&gt;美銀分析，當前市場走勢的關鍵變數，在於政治層面對生活成本「可負擔性」議題的回應。&lt;/p&gt;
+&lt;p&gt;目前上市公司本益比已從逾 30 倍（未來 24 個月預估混合值）回落至 20 倍出頭，但私募投資組合的估值仍維持在更高水準。動盪因而從公開市場向私募市場蔓延，並進一步波及私募信貸與槓桿貸款市場。&lt;/p&gt;
 
-&lt;p&gt;該行表示，在中期選舉壓力升高之下，美國總統川普的政策取向，已明顯從資本市場導向，轉為更強調民眾實際生活壓力，進而觸發資金由「華爾街」流向「主街」的結構性調整。&lt;/p&gt;
+&lt;h6&gt;成長衝擊浮現 債市走強&lt;/h6&gt;
 
-&lt;p&gt;在此背景下，受惠於通膨環境與全球製造業回溫的資產表現相對強勢。自去年 10 月底以來，白銀漲幅達 56%，南韓 kospi 指數上揚 34%，巴西股市上漲 30%；原物料類股上升 25%，能源類股上漲 20%，美國區域性銀行股也累計上漲 19%。&lt;/p&gt;
+&lt;p&gt;過去一週，美債殖利率下行，循環股相對防禦股遭到拋售。不過，高盛認為，當前市場表現類似一次短期「成長衝擊」。收益率曲線趨於平坦，債券價格持續走高。&lt;/p&gt;
 
-&lt;p&gt;相較之下，過去被視為「財富效應」象徵的科技龍頭與高風險投機標的則明顯承壓。「美股七巨頭」股價平均下跌 8%，比特幣重挫 41%，而受到 ai 衝擊疑慮影響的軟體板塊也下滑 30%。&lt;/p&gt;
+&lt;p&gt;同時，美國 1 月 cpi 年增率降至 2.4%，核心 cpi 降至四年來低點，通膨壓力減弱。市場對通膨的擔憂緩解，與「ai 將比預期更快顛覆多個產業」的敘事相互呼應。&lt;/p&gt;
 
-&lt;p&gt;報告指出，這波資產重分配，反映市場正在為一個政策重心轉移的新階段定價，從偏重金融與資本利得，轉向強調製造業與民生成本。&lt;/p&gt;
+&lt;p&gt;高盛認為，部分領域最終可能出現實質性通縮，因為既有「食利者」正在失去定價權。&lt;/p&gt;
 
-&lt;p&gt;除非出現重大變數，例如銀行股重挫推升信貸利差、ai 龍頭企業縮減資本支出，或關稅政策出現顯著變動，否則此一趨勢短期內不易逆轉。&lt;/p&gt;
+&lt;h6&gt;投資策略：尋找真正的護城河&lt;/h6&gt;
 
-&lt;h6&gt;&lt;strong&gt;ai&lt;/strong&gt;&lt;strong&gt; 敘&lt;/strong&gt;&lt;strong&gt;事轉折：從熱潮追捧到成本反思&lt;/strong&gt;&lt;/h6&gt;
+&lt;p&gt;在當前市場充滿不確定性的背景下，privorotsky 建議投資人把焦點放在真正具備競爭壁壘的企業，以及擁有實體資產支撐的標的。&lt;/p&gt;
 
-&lt;p&gt;美銀也指出，市場對 ai 的看法正出現明顯變化，從先前盲目追捧的「ai 驚嘆」（ai-awe），轉向審視其成本與破壞的「ai 致貧」（ai-poor）。&lt;/p&gt;
+&lt;p&gt;他指出，航太產業的布局時點逐漸浮現，具備全球訂單能見度與技術門檻優勢的企業值得留意，如空中巴士。&lt;/p&gt;
 
-&lt;p&gt;研究報告指出，當前 ai 競賽所需資本規模遠超以往。過去 5 個月內，相關超大規模企業的債務發行總額高達 1,700 億美元，明顯高於 2020 至 2024 年間每年平均約 300 億美元的水準。同時，公司債利差持續擴大，顯示融資成本上升、資金環境趨於緊縮。&lt;/p&gt;
+&lt;p&gt;privorotsky 認為，工業類股整體表現可望受惠於資本支出循環回溫，但關鍵在於挑選受長期投資動能帶動的公司，而不是僅依賴景氣短波動的周期性股票。&lt;/p&gt;
 
-&lt;p&gt;2025 年第一季，印度科技產業率先感受到 ai 帶來的衝擊。包括 infosys 與 tata consultancy services 在內的龍頭企業股價表現疲弱，至今尚未明顯回穩。近期，這股影響更進一步擴散至保險經紀、財富管理、不動產服務與物流等領域。&lt;/p&gt;
+&lt;p&gt;在資產配置上，privorotsky 偏向看多具備實質價值支撐的資產類別。不過，對於近期已大幅上漲的大宗商品，並不建議此時追價。&lt;/p&gt;
 
-&lt;p&gt;報告指出，在反思 ai 成本的市場敘事下，若無重大獲利改善或政策利多，資金與情緒難以迅速翻轉。例如，若有 ai 超大型企業宣布縮減資本支出，可能成為關鍵轉折點。&lt;/p&gt;
+&lt;p&gt;同時，他也相對看好歐洲不動產投資信託，尤其是德國住宅市場相關標的，但對辦公室類型不動產投資信託則持審慎甚至迴避態度。&lt;/p&gt;
 
-&lt;p&gt;不過，短期而言，這類消息恐加深市場對 ai 產業鏈投資放緩與成長預期下修的疑慮，進一步衝擊硬體、半導體與軟體類股，導致更劇烈的價格波動。&lt;/p&gt;
+&lt;p&gt;至於銀行股，privorotsky 則認為風險正在累積，主要來自四個面向：首先，歐洲銀行股已成為市場擁擠交易；其次，市場尚未充分反映 ai 對金融業務模式的潛在衝擊，以及淨利差可能收窄的壓力；第三，在通縮與美元轉弱情境下，利率曲線變化恐對銀行獲利不利；最後，美國政治變數升溫，若監管環境趨嚴，將進一步壓抑銀行股評價。&lt;/p&gt;
 
-&lt;p&gt;從產業與市場循環的角度來看，這類標誌性事件往往出現在趨勢高度一致、投入最為激進的階段。&lt;/p&gt;
+&lt;h6&gt;商品交易顧問賣壓觸發點逼近&lt;/h6&gt;
 
-&lt;p&gt;一旦主要參與者由擴張轉向收縮，或意味著產業正從「資本無上限競逐」的軍備階段，過渡至強調效率與獲利能力的新周期。&lt;/p&gt;
+&lt;p&gt;privorotsky 也提醒投資人，須關注商品交易顧問的技術性賣出訊號。&lt;/p&gt;
 
-&lt;h6&gt;&lt;strong&gt;日&lt;/strong&gt;&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt;成全球流動性風向球&lt;/strong&gt;&lt;/h6&gt;
+&lt;p&gt;在北美市場中，預期賣壓最重的將是納斯達克 100 指數，而非標普 500 指數。目前標普 500 已跌破 50 日均線（6895 點）及商品交易顧問短期閾值（6911 點）。&lt;/p&gt;
 
-&lt;p&gt;同時，根據美銀，日元走勢已躍升為影響全球資產價格的重要變數。&lt;/p&gt;
+&lt;p&gt;好消息是，拋售規模仍然溫和。高盛估計，未來一週 cta 可能拋售 15 億至 20 億美元的美股資產。&lt;/p&gt;
 
-&lt;p&gt;美銀強調，日元與日經 225 指數之間的價格相關性，自 2005 年以來首度轉為正值，這在技術面上具有高度象徵性。&lt;/p&gt;
+&lt;p&gt;此外，標普 500 仍高於中期門檻 6723 點約 110 點，跌破該水準將加速拋售幅度。&lt;/p&gt;
 
-&lt;p&gt;從歷史經驗觀察，當一國貨幣與股市同時上漲時，往往對應一段較長期的多頭行情。例如，日本">
+&lt;p&gt;privorotsky 總結指出，隨著 ai 持續降低產業進入門檻，市場將呈現明顯的贏家與輸家分化格局。他坦言無法預測未來航運或其他產業的具體樣貌，但可以確定的是，終端估值倍數正受到結構性質疑。&lt;/p&gt;
+
+&lt;p&gt;在此環境下，真正具備護城河與有形價值支撐的企業將更具吸引力；相較之下，新興市場仍被視為相對清晰的避風港，全球資金輪動將持續影響各區域的相對表現。&lt;/p&gt;
+">
             <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        金融
-                    </span>
-                    <span class="text-slate-400 text-xs">下午10:03</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">2026全球資產大輪動該如何理解？美銀指出「三大」關鍵變化</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)
-                </div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技</span><span class="text-slate-400 text-xs">下午11:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI「創造性破壞」引爆美股護城河測試！高盛警告：「這兩大類」企業恐淪為技術墊腳石</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.cnyes.com/news/id/6345242" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345138" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="科技"
-             data-title="晶片條款未寫入台美貿易協定？經貿辦：「投資mou」含晶片關稅優惠"
-             data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="大樂透大獎陸續開出 台彩盤點這些彩券行特別旺" data-content="大樂透大獎陸續開出 台彩盤點這些彩券行特別旺
 
-    
+            2026/02/15 22:34
+                
 
 
-
-
-
-
-
-    
-	2026/02/15 21:52
-	記者陳政宇／台北報導
+                                    
+                                
             
-                        
+
             
+                台彩表示，大樂透春節加碼期間，全國各地彩券行紛紛開出大獎。（記者鄭琪芳攝）
+〔記者鄭琪芳／台北報導〕大樂透春節加碼期間，全國各地彩券行紛紛開出大獎，台彩指出，新竹縣湖口鄉「金彩商行」，繼12日開出7注大、小紅包，14日又開出1注小紅包；台北市中山區「寶鴻彩券行｣曾於去年5月30日開出1.86億元頭獎，2月14日也開出1注小紅包；金門縣金湖鎮「財神到彩券行｣則是同1天開出2注小紅包，且分屬兩張不同彩券；台中市大里區「爆米發彩券行｣，去年共開出6次春節大、小紅包，今年2月14日再度開出小紅包。
+另，位於高雄市新興區的「亞伯上億彩券行｣，2月14日情人節當天，開出1注春節大紅包和6注小紅包，7注大、小紅包屬於同1張彩券，該彩券以自選號碼購買1組8連碰（包牌8個號碼，1400元）和1組9連碰（包牌9個號碼，4200元），且多期投注10期，總投注金額5.6萬元，其中8連碰的8個包牌號碼有6個對中大紅包獎號，另1個對中小紅包獎號，共對中1注大紅包及6注小紅包，總獎金合計148萬3333元。    
     
-        
-        台美於美東時間2月12日簽署台美對等貿易協定後合影。圖左起為美國商務部長盧特尼克、美國貿易代表葛里爾、美國在台協會執行理事藍鶯、駐美代表俞大㵢、行政院副院長鄭麗君、行政院政委楊珍妮。（行政院提供）
+    
     
 
-針對外界關心232關稅優惠（俗稱「台美晶片條款」）及供應鏈合作未列入台美「對等貿易協定（art）」文本一事，行政院經貿談判辦公室今（15日）澄清，談判團隊已多次對外說明，並一再強調相關文件將依程序併送國會審議，並不存在所謂黑箱或不透明問題。經貿辦表示，我方於歷次台美談判會議後，均清楚向外界說明，台美談判係分別與美方不同機關進行。我方分別與美國貿易代表署洽簽「對等貿易協定（art）」，並與美國商務部推動供應鏈合作，迄今已完成並簽署「對等貿易協定（art）」及「投資mou」兩份文件，兩者性質與內容各有不同。    
-    
-    
-    
-經貿辦進一步指出，「台美對等貿易協定（art）」已於2月12日和美國貿易代表署完成簽署，主要處理關稅與非關稅障礙、貿易便捷化、經濟安全、勞動保障及環境保護，以及商業機會等議題；協定中亦載明，美方將我方對等關稅調降至15%且不疊加，並提供部分品項的對等關稅豁免。「投資mou」含晶片關稅優惠至於「投資mou」，則於1月15日和商務部完成簽署，內容包括我方以「台灣模式」對美投資進行供應鏈合作，以及美方提供我方232條款優惠待遇與雙向投資規劃，並同樣明確載明對等稅率為15%且不疊加。經貿辦強調，我方於1月15日簽署投資mou後，即召開記者會說明mou內容並發布新聞稿，並表示mou將和art併送立法院，美方亦同步公布相關事實文件。該mou屬政策與合作架構性文件，內容並未涉及個別廠商的投資金額。此外，經貿辦說明，我方於本次2月赴美簽署art期間，也與美國商務部就雙方國內程序進行工作會商。美方表示就已簽署的投資mou正在進行內部行政程序，我方表示，後續將依「條約締結法」，於「台美對等貿易協定」完成簽署後，併同「台美投資mou」一併送交國會審議，確保資訊公開透明並接受國會監督。
+台彩表示，今年小年夜大樂透頭獎無人中獎，明晚頭獎上看1.2億元。大樂透春節加碼480組100萬元春節大紅包和800組10萬元小紅包獎項，今晚分別送出26組和37組，大紅包有20組為1注獨得100萬元，5組2注均分、各得50萬元，另有1組3注均分、各得33.33萬元；小紅包則有32組為1注獨得10萬元，4組2注均分、各得5萬元，1組3注均分、各得3.33萬元。而今彩539頭獎則無人中獎。
+台彩表示，截至今晚為止，大樂透春節大紅包累計已送出102組，春節小紅包獎項累計送出141組，大、小紅包剩餘組數分別為378組和659組，除夕夜（16日）開獎的大樂透頭獎上看1.2億元，還會繼續加開9個大紅包獎號和1個小紅包獎號，只要對中大紅包獎號中任6個就可得100萬元獎項，如對中任5個大紅包獎號同時對中小紅包獎號，則對中10萬元小紅包獎項。此外，今彩539頭獎加碼活動持續到元宵節，頭獎單注獎金提高為1000萬元。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
 
                 
 
 
 
+                                
             
             
 
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
 
         
 
+        
 
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
+        
 
 
 
 
 
         
-        政治今日熱門
-
-
-
-    
+        今日熱門新聞
 
 
 
         
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
         
-    
 
-
-
-
-
-
-
-
-
-
-
-網友回應">
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        科技
-                    </span>
-                    <span class="text-slate-400 text-xs">下午10:03</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">晶片條款未寫入台美貿易協定？經貿辦：「投資MOU」含晶片關稅優惠</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
-                </div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">大樂透大獎陸續開出 台彩盤點這些彩券行特別旺</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/politics/breakingnews/5344378" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344395" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="社會"
-             data-title="每逢農曆春節焦慮感倍增 醫提醒「留一點時間給自己」"
-             data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-            
-    
-    
-    
-    
-    
-
-    
-        每逢農曆春節焦慮感倍增 醫提醒「留一點時間給自己」
-        
-        2026/02/15 21:45
-    
-    
-    
-    
-    
-
-
-
-        
-            每到農曆春節焦慮感就大增，醫師提醒，記得留一點時間給自己，圖為示意圖。（初見心理諮商所提供）
-〔記者鄭淑婷／桃園報導〕今年農曆春節假期長達9天，不少人卻是焦慮感十足，尤其面對大掃除、各項傳統習俗，親友團聚時又得被檢視、比較1年的表現，放假比不放假還累，衛福部桃園醫院精神部主任蘇柏文提醒，許多人年假行程安排得很滿，但千萬不要忘了，「要留一點時間給自己」，讓自己有喘息的空間。
-住在楊梅區的李小姐說，自己是嫁到大家庭，長輩很重視傳統習俗，每到過年從採買、大掃除、準備拜拜用品、接待親朋好友，放假比上班還要累人，現在想到過年就會害怕；桃園區張先生說，過年親朋好友團聚很開心，但又不免會觸碰到結婚、生子、工作、薪水等問題，原本應該是團聚放鬆的日子，在比較之餘突然會陷入「自己好像一事無成」的感傷。    
-    
-    
-    
-
-蘇柏文表示，冬季會加重憂鬱情緒，加上許多人過年有經濟及家庭或是工作趕工的壓力，年前門診人數往往會比平時多個3、4成，不過，對於一般的年節壓力，民眾通常不會求助身心門診，而是選擇把壓力積在心裡。
-他指出，台灣的過年文化就是大掃除、全家團圓、一起走春，在行禮如儀之際，年假每天排得滿檔，卻經常忘記好好照顧自己而感到壓力，不妨問問自己「如果可以放假，想做些什麼事」，並留一點時間給自己，即使只是好好睡一覺，有些情緒時也可撥通電話，跟願意傾聽、懂你的朋友聊聊；而親友相聚聊天時，若是察覺問題不妥，讓自己感到不適，「也要先把自己安頓好」，可以顧左右短暫離開將話題結束，或是明確向對方設立一個界線。
-蘇柏文表示，春節是放鬆與團聚的時刻，學會照顧自己、善用合適的醫療資源，才能讓假期過得更安心，也讓身心真正得到休息。                        
-
-    ☆健康新聞不漏接，按讚追蹤粉絲頁。
-    
-    ☆更多重要醫藥新聞訊息，請上自由健康網。
-
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-        
-                            
-        
-        
-        
-
-    
-
-    
-
-    
-    
-
-    
-    
-    發燒新聞">
-            <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        社會
-                    </span>
-                    <span class="text-slate-400 text-xs">下午10:03</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">每逢農曆春節焦慮感倍增 醫提醒「留一點時間給自己」</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
-                </div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://health.ltn.com.tw/article/breakingnews/5338967" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="社會"
-             data-title="網友直擊「財神爺瘋狂敲門」 新竹彩券行開出百萬大獎"
-             data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-    
-
-
-
-
-
-
-
-    網友直擊「財神爺瘋狂敲門」 新竹彩券行開出百萬大獎
-	2026/02/15 21:14
-	記者廖雪茹／新竹報導
-            
-                        
-            
-    
-        
-        獲「財神爺敲門」的彩券行，不但買氣上揚，更幸運地真的開出「大樂透春節大紅包」100萬元大獎。（記者廖雪茹攝）
-    
-
-新竹市一家彩券行日前被網友直擊，「財神爺」人偶氣球立在拉下鐵捲門的店外，被風吹得看似「猛敲門」；沒想到，擋也擋不住的財氣很快地就應驗，彩券行不但買氣上揚，更幸運地開出「大樂透春節大紅包」100萬元大獎，讓店家直呼「敲門財神好靈驗」！一名網友日前在threads發出影片分享，經過新竹市一家還沒營業的彩券行時，外頭的財神爺氣球被風吹得就像在瘋狂敲門並想要進去一樣，讓他笑說，「誰家的彩券行還不趕快來開門，財神爺已經在敲門了！」逗趣貼文引發網友熱烈迴響，笑喊「第一次看到這種財神強迫你要發財的店家」、「財神爺暗示的很明顯，去這家買，應該有驚喜」。    
-    
-    
-    
-但這不是開玩笑，好事真的發生了！這家店-鑫億公益彩券行今天證實，網路社群上的財神爺猛敲門畫面曝光後，來客明顯成長，業績增加約3、4成，其中不少人專程來跟財神爺拍照，13日更開出「大樂透春節大紅包」100萬元大獎，讓店家開心直呼「敲門財神好靈驗」！每到農曆新年，許多民眾都會到彩券行試試手氣，希望贏大獎過好年。春節9天連假第二天，這家彩券行就傳來好消息，上門客人都希望沾沾喜氣，許願自己就是下一位幸運兒！
-
-        
-        
-        財神爺氣球被風吹的就像在敲彩券行的門。（擷取自threads）
-    
-        
-        
-        獲「財神爺敲門」的彩券行，不但買氣上揚，更幸運地真的開出「大樂透春節大紅包」100萬元大獎。（記者廖雪茹攝）
-    
-        
-        
-        網路社群上的財神爺猛敲門畫面曝光後，來客明顯成長。（記者廖雪茹攝）
-    
-                
-
-
-
-            
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-        
-        社會今日熱門
-
-
-
-    
-
-
-
-        
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        社會
-                    </span>
-                    <span class="text-slate-400 text-xs">下午10:03</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">網友直擊「財神爺瘋狂敲門」 新竹彩券行開出百萬大獎</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
-                </div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/society/breakingnews/5344362" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="社會"
-             data-title="小年夜來對獎！2/15大樂透、大小紅包、今彩539、3星彩、4星彩獎號出爐"
-             data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="2/15 大樂透、今彩539頭獎均摃龜 大紅包開26組" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -680,39 +208,33 @@
 
 
     
-	2026/02/15 20:56
+	2026/02/15 22:22
 	即時新聞／綜合報導
             
                         
             
     
         
-        大樂透開獎號碼。（擷取自三立inews《全民i彩券》）
+        2月15日開獎的大樂透及今彩539頭獎均摃龜。（本報合成）
     
 
-今天（2月15日）台彩各項開獎獎項及獎號。大樂透：03、06、11、18、25、28，特別號：35。    
+2月15日開獎的大樂透及今彩539頭獎均摃龜，大樂透春節大紅包開出26組，春節小紅包開出37組。第115000016期大樂透中獎號碼「03、06、11、18、25、28，特別號：35。頭獎摃龜；貳獎摃龜；參獎共138注中獎，每注可得2萬6003元；肆獎共214注中獎，每注可得1萬0779元；伍獎共5102注中獎，每注可得2000元；陸獎共5865注中獎，每注可得1000元；柒獎共5萬3983注中獎，每注可得400元；普獎共8萬2253注中獎，每注可得400元。    
     
     
     
-大紅包：08、14、17、24、28、29、41、42、43。小紅包：35。49樂合彩：03、06、11、18、25、28。今彩539：11、13、18、22、34。39樂合彩：11、13、18、22、34。3星彩：045。4星彩：5099。
+第115000016期49樂合彩中獎號碼為「03、06、11、18、25、28」。四合6注中獎，可得20萬元；三合共113注中獎，每注可得1萬2500元；二合共2619注中獎，每注可得1250元。第115000040期今彩539中獎號碼為「11、13、18、22、34」。頭獎摃龜；貳獎共292注中獎，每注可得2萬元；參獎共9817注中獎，每注可得300元；肆獎共10萬7333注中獎，每注可得50元。第115000040期39樂合彩中獎號碼為「11、13、18、22、34」。四合共開出1注，每注可得21萬2500元；三合共153注中獎，每注可得1萬1250元；二合共8454注中獎，每注可得1125元。第115000040期3星彩中獎號碼為「045」。壹獎共44注中獎，每注可得5000元。第115000040期4星彩中獎號碼為「5099」。壹獎共5注中獎，每注可得5萬元。第115000016期大樂透春節大紅包中獎號碼「08、14、17、24、28、29、41、42、43」，春節小紅包：35。本期加碼開獎結果，大紅包共開出26組，總中獎注數33注，其中20組為單注獨得，另有5組由2注平分；小紅包則開出37組，總中獎注數為43注中獎，其中32組為單注中獎，4組為2注均分，1組為3注均分。大紅包累計開出102組、剩餘378組，小紅包累計開出141組、剩餘659組。下期（2月16日）持續加開。相關連結請見︰「大樂透春節加碼大紅包．小紅包」開獎結果確切中獎號碼以台彩網站公告為主，請見「台灣彩券網站」。
 
         
         
-        大樂透大、小紅包開獎號碼。（擷取自三立inews《全民i彩券》）
+        大樂透、49樂合彩中獎號碼。（擷取自台彩官網）
     
         
         
-        今彩539、39樂合彩開獎號碼。（擷取自三立inews《全民i彩券》）
+        今彩539、39樂合彩中獎號碼。（擷取自台彩官網）
     
         
         
-        3星彩開獎號碼。（擷取自三立inews《全民i彩券》）
-
-    
-        
-        
-        4星彩開獎號碼。（擷取自三立inews《全民i彩券》）
-
+        大樂透加碼春節大小紅包開獎號碼。（擷取自台彩官網）
     
                 
 
@@ -815,95 +337,258 @@
 
 網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        社會
-                    </span>
-                    <span class="text-slate-400 text-xs">下午10:03</span>
-                </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">小年夜來對獎！2/15大樂透、大小紅包、今彩539、3星彩、4星彩獎號出爐</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
-                </div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">2/15 大樂透、今彩539頭獎均摃龜 大紅包開26組</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.ltn.com.tw/news/society/breakingnews/5344358" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
-                    閱讀全文 
-                    <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
-            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/society/breakingnews/5344386" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-            </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="小年夜大樂透頭獎摃龜  春節大紅包開出26組" data-content="2026/02/15 22:07
+                
+
+
+                                    
+                                
+            
 
             
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
-                <h3 class="text-xl font-black text-slate-800 mb-4 flex items-center">
-                    <span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度 (點擊篩選)
-                </h3>
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
-                    
-                <button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>樂透</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span>
-                </button>
+                台彩表示，今晚大樂透頭獎摃龜，春節大紅包開出26組。（記者鄭琪芳攝）
+〔記者鄭琪芳／台北報導〕小年夜（15日）開獎的大樂透，頭獎摃龜，台彩預估下期（16日）大樂透頭獎上看1.2億元；大樂透春節大紅包則開出26組，總中獎注數33注，其中20組為單注中獎，5組為2注均分，1組為3注均分；小紅包開出37組，總中獎注數43注，其中32組為單注中獎，4組為2注均分，1組為3注均分。
+台彩表示，截至本期為止，累積開出春節大紅包組數為102組、剩餘378組，累積開出春節小紅包組數為141組、剩餘659組，下期將繼續加開大紅包及小紅包獎項。    
+    
+    
+    
+
+本期大樂透中獎號碼「03、06、11、18、25、28」，特別號「35」；49樂合彩獎號「03、06、11、18、25、28」。大樂透春節大紅包中獎號碼「08、14、17、24、28、29、41、42、43」；小紅包獎號「35」。
+另，本期今彩539中獎號碼「11、13、18、22、34」，本期今彩539頭獎摃龜；39樂合彩中獎號碼「11、13、18、22、34」。本期3星彩中獎號碼「045」；4星彩中獎號碼「5099」。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
             
-                <button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>關稅</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span>
-                </button>
             
-                <button onclick="searchKeyword('放假')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>放假</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>川普</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>股市</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>AI</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>黃金</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('白銀')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>白銀</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>美元</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('比特幣')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>比特幣</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                <button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all hover:scale-105 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-500">
-                    <span>半導體</span>
-                    <span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span>
-                </button>
-            
-                </div>
-            </section>
+
+
         
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
             
-            <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
-                自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions
-            </footer>
+        
+        
+                    
+            
+            
+            網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午11:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">小年夜大樂透頭獎摃龜  春節大紅包開出26組</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344384" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="社會" data-title="羅浮宮爆門票詐騙！內鬼聯手導遊10年削3.8億 警方逮9人" data-content="限制級
+        
+            您即將進入之新聞內容 需滿18歲 方可瀏覽。
+        
+        
+        
+            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
+        
+    
+
+    
+
+
+
+
+
+
+
+    
+	2026/02/15 21:57
+	編譯林家宇／綜合報導
+            
+                        
+            
+    
+        
+        法國警方破獲從事羅浮宮票券詐欺長達10年的犯罪網絡。（美聯社）
+    
+
+據巴黎檢察官辦公室14日聲明，法國警方在一起針對羅浮宮票券詐欺的調查案中逮捕9人，造成的收益損失上看1千萬歐元（約台幣3.8億元）。遭羈押的涉案者包括2名羅浮宮官員、數名導遊和一名疑似策畫主謀。警方還扣押了近100萬歐元現金及近50萬歐元的銀行帳戶資金。    
+    
+    
+    
+本起詐欺案的調查始於2024年12月，羅浮宮館方當時注意到，2名中國籍導遊疑似讓中國團客重複使用博物館的單程票券。經過1年多追查，警方查獲背後存在一個完整的犯罪網絡，行賄羅浮宮官員，每日以欺詐手段接待入館的團客可達20組，犯行長達10年之久。羅浮宮近來諸事不順，去年10月19日在光天化日之下遭竊賊盜走估計價值1億200萬美元的王冠珠寶，引發國際震驚，後來還接連發生約400本珍稀書籍文獻因管線漏水受損及罷工等爭議，在在使得這座全球最多遊客造訪的博物館在行政管理層面受到嚴密檢視。
+
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+        
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+        國際今日熱門
+
+
+
+    
+
+
+
+        
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">社會</span><span class="text-slate-400 text-xs">下午11:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">羅浮宮爆門票詐騙！內鬼聯手導遊10年削3.8億 警方逮9人</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344377" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div></div>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>樂透</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('歐元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>歐元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            
+            <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
+        </div>
+        
+        <script>
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["02-15"],
+                    datasets: [{
+                        label: '市場情緒指數 (-1.0 ~ 1.0)',
+                        data: [0.15],
+                        borderColor: '#64748b',
+                        backgroundColor: '#64748b20', // 透明度
+                        borderWidth: 3,
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#64748b',
+                        pointRadius: 5,
+                        fill: true,
+                        tension: 0.4 // 曲線平滑度
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { min: -1, max: 1, grid: { color: '#f1f5f9' } },
+                        x: { grid: { display: false } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        </script>
     </body>
     </html>
