@@ -15,7 +15,6 @@
             function filterCategory(cat) {
                 const cards = document.querySelectorAll('.news-card');
                 const btns = document.querySelectorAll('.filter-btn');
-                
                 btns.forEach(btn => {
                     if (btn.innerText.trim() === cat) {
                         btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300';
@@ -23,7 +22,6 @@
                         btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600';
                     }
                 });
-
                 cards.forEach(card => {
                     card.classList.remove('animate-fade');
                     if (cat === '全部' || card.dataset.category === cat) {
@@ -83,7 +81,7 @@
             <section class="mb-12">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        身為避險基金經理人與首席分析師，我針對今日微軟（Microsoft）AI 執行長蘇萊曼（Mustafa Suleyman）引發市場熱議的深度預測，進行以下高權重掃描分析：<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：+0.4</b> <span class="text-2xl animate-pulse">🟢</span> <b class="text-green-600">利多趨勢</b> <b class="text-indigo-600 font-bold">（偏向利多，但伴隨結構性風險）</b><br>*分析：* 市場對 AI 帶來的生產力革命持樂觀態度，特別是對於企業利潤率（Profit Margins）的潛在提升。然而，對於勞動力市場可能出現的劇烈震盪以及隨之而來的政治監管壓力，市場仍存有隱憂。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件深度分析</h3><br>*   <b class="text-indigo-600 font-bold">微軟領袖發出最後通牒：18 個月內的白領自動化轉型</b><br>    微軟 AI 執行長明確指出，白領專業工作（如律師、會計師、行銷人員）將在未來 12 至 18 個月內面臨 AI 的全面挑戰。這不僅僅是工具性的輔助，而是「人類等級」的任務執行。這代表企業端的軟體採購邏輯將從「輔助工具」轉向「替代性勞動力」，對於 SaaS 行業的定價模型將產生顛覆性影響。<br><br>*   <b class="text-indigo-600 font-bold">軟體工程領域的先驗效應與生產力矛盾</b><br>    蘇萊曼指出 AI 已接管絕大部分程式設計工作。這是一個關鍵的領先指標（Leading Indicator）。雖然產出增加，但員工面臨「AI 疲勞」，這預示著企業在轉型初期可能面臨人才流失與組織文化重構的挑戰，管理成本可能短期內不降反升。<br><br>*   <b class="text-indigo-600 font-bold">全球資本開支（CapEx）的剛性需求</b><br>    儘管政界出現質疑聲音，但大型科技公司在 2025 年的資料中心投資已達數千億美元級別。這顯示 AI 基礎設施的需求具備極強的剛性，且受到川普政府親基礎建設政策的支撐，這為伺服器、電力設備與先進製程晶片提供了長線支撐。<br><br>*   <b class="text-indigo-600 font-bold">政治角力：經濟地震與監管紅線</b><br>    美國參議員桑德斯提出的「資料中心暫停令」雖然在當前政治氛圍下難以落實，但這標誌著 AI 發展已進入政治深水區。未來「勞工保護」可能成為反托拉斯法之外，另一個針對科技巨頭（Big Tech）的監管重點，這對於估值溢價（Valuation Premium）可能構成壓制。<br><br>*   <b class="text-indigo-600 font-bold">AI 新創與巨頭的共生競爭結構</b><br>    微軟透過對 OpenAI 與 Anthropic 的戰略投資，幾乎鎖定了次世代勞動力自動化的入場券。Anthropic 執行長對入門級職缺消失的警告，印證了 AI 正在重塑產業鏈的底層邏輯——初級技能的商業價值正在迅速歸零。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">3. 💡 投資建議與策略</h3><br>*   <b class="text-indigo-600 font-bold">配置方向：專注於具備「AI 調度能力」的龍頭企業</b><br>    投資者應避開純粹依賴低階白領勞動力輸出的服務型公司，轉而配置能將 AI 深度整合進業務流程的龍頭。微軟、Adobe 等已具備成熟生態系的平台商，將是第一波自動化浪潮的受益者。<br><br>*   <b class="text-indigo-600 font-bold">避險策略：監測勞動力數據與政策轉折點</b><br>    密切關注非農就業報告中「專業與商業服務」類別的失業率變動。若失業率在 AI 普及下異常升高，引發大規模社會反彈或加稅議案，應適度增加防禦性資產（如公用事業或黃金）的配置。<br><br>*   <b class="text-indigo-600 font-bold">產業鏈結構變動：電力與冷卻系統的長期溢價</b><br>    既然資料中心建設已成定局，且政治力量難以完全阻斷，則與資料中心相關的基礎建設（如電網升級、液冷技術）將擁有比終端軟體更確定的增長空間，建議作為組合中的「硬資產」支撐。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">4. 新聞分類標記</h3><br>*   <b class="text-indigo-600 font-bold">微軟 AI CEO 談自動化趨勢</b>：【科技】<br>*   <b class="text-indigo-600 font-bold">白領職位 18 個月內受威脅</b>：【社會】<br>*   <b class="text-indigo-600 font-bold">桑德斯提議暫停資料中心建設</b>：【金融】<br>*   <b class="text-indigo-600 font-bold">川普推動資料中心建設背景</b>：【社會】<br>*   <b class="text-indigo-600 font-bold">Anthropic 與 OpenAI 的產業地位</b>：【科技】<br><br>---<br><br><b class="text-indigo-600 font-bold">JSON 分類區塊：</b>
+                        你好。我是你的首席分析師。針對今日市場訊息，我已完成深度掃描與權重評估。雖然目前提供的資訊集中於政治與社會動盪，但作為宏觀經理人，我們必須透視表象，分析其對「政策穩定性」與「市場風險溢價」的實質影響。<br><br>以下是今日的掃描報告：<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">1. 市場總體情緒</h3><b class="text-indigo-600 font-bold">情緒分數：-0.4</b> <span class="text-2xl animate-pulse">🔴</span> <b class="text-red-600">利空警戒</b>（利空 / 謹慎）<br><b class="text-indigo-600 font-bold">分析短評：</b> 美國政治兩極化再度升級，且涉及高度敏感的種族議題，這將顯著推升 2026 年期中選舉前夕的政治風險溢價。市場不喜歡不確定性，尤其是涉及社會動盪與潛在政策癱瘓的訊號，這對美元穩定性與長天期美債殖利率將產生擾動。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">2. 核心事件深度分析</h3><br>#<h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">I. 政治極化升級對宏觀政策穩定性的衝擊</h3>川普與歐巴馬的直接交鋒，標誌著美國政治對立進入非理性階段。對於避險基金而言，這意味著財政政策（如稅改續約）在國會通過的難度增加。政治內耗會稀釋政府處理經濟議題的集中力，市場將開始重新評估「主權信用風險」的微幅上升。<br><br>#<h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">II. 2026 期中選舉之民意轉向預期</h3>歐巴馬預測此舉將傷及共和黨選情。若民主黨在期中選舉奪回控制權的預期升溫，市場將預先反應「監管強化」與「綠能補貼回歸」的交易邏輯；反之，若共和黨選情受損但仍維持強勢，則可能引發更大規模的政局撕裂。<br><br>#<h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">III. 社會動盪隱憂與消費信心影響</h3>涉及種族歧視的爭議影片極易引發社會抗議甚至騷亂。歷史數據顯示，大規模社會不穩定會直接抑制短期零售數據與消費者信心指數（CCI），對非必需消費品板塊構成短期下行壓力。<br><br>#<h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">IV. 社群平台監管壓力與科技板塊估值</h3>川普透過 Truth Social 發布此類內容，將再次激起國會對於「社群媒體內容審查」與「Section 230 免責條款」的辯論。這對 Meta、Alphabet 以及新興社群平台構成法律合規風險，恐引發科技板塊的估值修正。<br><br>#<h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">V. 外資對美資產的風險偏好調整</h3>全球主權基金在配置美股時，高度依賴美國政局的穩定與法治形象。此類「小丑鬧劇」（如歐巴馬所言）若常態化，可能導致長線資本（Long-only Funds）階段性流向歐股或日股，以規避美國國內政治黑天鵝。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">3. 💡 投資建議與策略</h3><br>1.  <b class="text-indigo-600 font-bold">波動率對沖策略</b>：鑑於政治修辭轉向極端化，建議增持 VIX 指數看漲期權或黃金等避險資產，以對沖潛在的社會衝突引發的市場跳空風險。<br>2.  <b class="text-indigo-600 font-bold">板塊配置防禦</b>：在政治高度不確定的環境下，資金傾向回流至「現金流穩定」的防禦性板塊，如公用事業（Utilities）與醫療保健（Healthcare），應暫避高度依賴政策補貼或政治敏感度高的產業。<br>3.  <b class="text-indigo-600 font-bold">監控「川普交易」與「反川普交易」的轉折</b>：若民調數據顯示此類事件確實導致共和黨支持率下滑，投資者應考慮減持受惠於放鬆管制（Deregulated）的金融股，轉向關注可能因選情變動而受益的基礎建設與環境治理標的。<br><br>---<br><br><h3 class="text-lg font-bold text-slate-800 mt-6 mb-3 border-l-4 border-indigo-500 pl-3 bg-indigo-50/50 py-1">4. 新聞分類標記</h3>
                     </div>
                 </div>
             </section>
@@ -91,21 +89,21 @@
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
                 
         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" 
-             data-category="科技">
+             data-category="社會">
             <div>
                 <div class="flex items-center justify-between mb-4">
                     <span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                        科技
+                        社會
                     </span>
-                    <span class="text-slate-400 text-xs">下午04:00</span>
+                    <span class="text-slate-400 text-xs">下午04:45</span>
                 </div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI取代白領倒數？微軟AI CEO：「這些工作」12至18個月內恐被自動化</h3>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">首度回應川普歧視影片 歐巴馬：恐傷共和黨選情</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tech)
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報
                 </div>
             </div>
             <div class="pt-4 border-t border-slate-50 flex justify-end">
-                <a href="https://news.cnyes.com/news/id/6345153" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
+                <a href="https://news.ltn.com.tw/news/world/breakingnews/5344175" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700 transition-colors">
                     閱讀全文 
                     <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 </a>
