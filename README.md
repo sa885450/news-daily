@@ -26,6 +26,14 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.6.1 - 週報 AI 引擎穩定性強化 (2026-02-16)
+- **🛡️ 實作 API 指數退避重試 (Exponential Backoff)**：
+  - 針對 Gemini API 不穩定的問題，在 `lib/ai.js` 中實作重試機制 (Retry)。當請求失敗時，會自動等待 2s/4s/8s 後重試，大幅降低 `AI 模型全數失敗` 的機率。
+- **⏳ Map-Reduce 批次延遲 (Batch Throttling)**：
+  - 在階層式總結的迴圈中加入 `sleep(3000)`，強制在每批次分析間休息 3 秒，避免觸發 API 的 RPM (Rate Per Minute) 限制。
+- **⚙️ AI 安全設定放寬**：
+  - 將 Gemini 的 Safety Filter 設為 `BLOCK_NONE`，防止新聞內容因涉及敏感詞彙（如戰爭、犯罪）而被 AI 拒絕處理。
+
 ### v2.6.0 - 階層式總結與權重過濾 (2026-02-16)
 - **🧠 實作 AI 階層式總結 (Map-Reduce AI)**：
   - 解決週報新聞量過大 (2500+) 導致的 Gemini Token 限制問題。
