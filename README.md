@@ -26,6 +26,14 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.5.0 - 雙 AI 引擎架構 (2026-02-16)
+- **🧠 引入 OpenAI 支援**：
+  - 解決 Gemini 免費版額度不足導致週報失敗的問題。
+  - `weekly.js` 全面切換至 OpenAI API (`gpt-4o` / `gpt-3.5-turbo`)，提供更穩定的長文本分析能力。
+  - `lib/ai.js` 新增 `getOpenAISummary` 函式，專門處理週報摘要。
+- **⚙️ 設定檔更新**：
+  - `lib/config.js` 新增 `openaiKey` 與 `openaiModel` 設定。
+
 ### v2.4.2 - 週報與 AI 容錯修復 (2026-02-16)
 - **🐛 修復 AI 分析崩潰問題 (Fix TypeError)**：
   - 修正 `lib/ai.js` 中 `getSummary` 函式。當新聞資料缺失 `content` 欄位時（如週報讀取歷史資料），自動降級使用 `title` 作為分析素材，防止 `substring` 方法導致程式崩潰。
