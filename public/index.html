@@ -26,21 +26,21 @@
             <header class="text-center mb-10">
                 <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.8</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 06:00</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 07:00</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('阿里巴巴')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                    <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #OpenAI
+        </button> <button onclick="searchKeyword('阿里巴巴')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #阿里巴巴<span class="text-xs ml-1 opacity-70">(BABA)</span>
-        </button> <button onclick="searchKeyword('蘋果')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #蘋果<span class="text-xs ml-1 opacity-70">(AAPL)</span>
+        </button> <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+        </button> <button onclick="searchKeyword('Microsoft')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #Microsoft<span class="text-xs ml-1 opacity-70">(MSFT)</span>
+        </button> <button onclick="searchKeyword('Apple')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #Apple<span class="text-xs ml-1 opacity-70">(AAPL)</span>
         </button> <button onclick="searchKeyword('NVIDIA')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #NVIDIA<span class="text-xs ml-1 opacity-70">(NVDA)</span>
-        </button> <button onclick="searchKeyword('SPDR 黃金 ETF')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #SPDR 黃金 ETF<span class="text-xs ml-1 opacity-70">(GLD)</span>
-        </button> <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
-        </button> <button onclick="searchKeyword('Qwen 3.5')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Qwen 3.5
         </button>
                 </div>
             </header>
@@ -49,7 +49,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.85</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.88</span></div>
                     </div>
                     <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
@@ -68,37 +68,141 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度決策報告：從「終端狂熱」過渡至「代理泡沫」的獲利了結預警</h3><p><b>1. 增量分析與比較：</b>昨日報告重點在於蘋果（Apple）突襲式活動引發的「終端應用變現」預期，將市場情緒推向高點。今日阿里巴巴發布 Qwen 3.5 模型，進一步將競爭維度提升至「代理 AI」（Agentic AI）與「極致成本優化」（降低 60% 成本）。這種從硬體神格化轉向軟體代理自動化的過程，顯示市場已進入「概念全覆蓋」階段。相較於昨日關注的物理基礎設施，今日的「降價競爭」信號預示著 AI 賽道利潤空間可能因內捲而壓縮，這是估值泡沫化的典型前兆。</p><p><b>2. 泡沫風險警示與防禦布局：</b>當市場無視地緣政治緊張（如立法院國防預算爭議）而一味追逐 AI 應用新名詞時，風險控管專家必須提醒：當前的技術溢價已嚴重透支未來三至五年的盈利預期。<b>建議操作策略：</b>(1) 針對 AI 概念股實施 15-20% 的階梯式獲利了結；(2) 資金應適度撤出高 Beta 科技股，轉向具備抗通膨性質的黃金（GLD）或電信等防禦性標的；(3) 嚴密關注國防與地緣政治動態，防範系統性修正的突然降臨。</p></div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度決策報告：從「降價內捲」轉向「代理權威」與「宏觀過熱」的風險預警</h3><p><b>1. 增量分析與比較：</b>相較於昨日關注阿里巴巴 Qwen 3.5 帶來的「成本削減與利潤壓縮」焦慮，今日 OpenAI 延攬 Peter Steinberger 強化「多代理系統（Multi-agent）」的動作，將市場情緒從底層成本競爭拉回至頂層「軟體霸權」的軍備競賽。然而，這種從硬體變現（昨日 Apple 邏輯）到軟體代理（今日 OpenAI 邏輯）的無縫切換，正是「概念泡沫化」的典型特徵：市場拒絕任何利空回檔，轉向尋找下一個敘事支撐點。</p><p><b>2. 宏觀面之「極度貪婪」信號：</b>台灣 GDP 成長預期衝破 34 年紀錄，與中國「保 5 難」形成強烈對比。這種「東升西降」的極端脫鉤雖有利於台股基本面，但當「外資越喊越高」且經濟數據達到歷史頂點時，往往伴隨著情緒指標的「超買溢價」。歷史經驗顯示，當宏觀經濟利多被全面定價（Priced-in）後，任何微小的代理系統瑕疵或地緣政治波動都可能觸發大規模獲利回吐。</p><p><b>3. 泡沫風險警示與配置建議：</b>目前市場處於「終端狂熱」與「代理泡沫」的重疊期。<b>風險控管建議：</b>1. <b>適度獲利了結</b>：對於近期漲幅過大、本益比脫離常態之 AI 概念股應減持。2. <b>防禦性轉換</b>：將資金導向具備「穩定現金流」與「低 Beta」性質的資產，如黃金或基礎建設相關標的。3. <b>警惕毛利拐點</b>：昨日提到之內捲信號（Alibaba 降價）依然是長期隱憂，需防範 AI 產業在用戶增長的表象下，出現毛利率崩塌的風險。</p></div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="風險控管" data-title="阿里巴巴發布新款qwen3.5模型瞄準「代理ai時代」" data-content="&lt;p&gt;阿里巴巴 (alibaba) 週一 (15 日) 宣布推出新一代人工智慧模型 qwen3.5，主打可獨立執行複雜任務，並鎖定「代理&nbsp;ai」(agentic ai) 應用場景。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="openclaw創辦人加入openai 「多代理」將是未來核心方向" data-content="&lt;p&gt;openai 延攬 openclaw 創辦人 peter steinberger，openai 執行長阿特曼 (sam altman) 表示，steinberger 將加入團隊，負責打造「下一代」個人 ai 代理，並強調多代理 (multi-agent) 將是未來核心方向，相關能力可望很快成為 openai 產品的重要一環。&lt;/p&gt;
 
-&lt;p&gt;阿里巴巴表示，qwen3.5 在效能與成本方面大幅升級，使用成本較前一代降低 60%，處理大型工作負載的能力則提升至前一代的 8 倍，同時新增可跨手機與桌面應用程式自主採取行動的「視覺代理能力」。&lt;/p&gt;
+&lt;p&gt;阿特曼上週日在社群平台 x 發文宣布這項人事消息，形容 steinberger 是「天才」，並稱他對於「高度智慧的代理彼此互動、協作，替人們完成實用任務」有許多前瞻想法。&lt;/p&gt;
 
-&lt;p&gt;阿里巴巴指出，qwen3.5 是為代理&nbsp;ai 時代所打造，目標是讓開發者與企業在相同運算資源下，能更快推進專案並完成更多任務，並在推論成本效率上建立新標竿。&lt;/p&gt;
+&lt;p&gt;阿特曼同時透露，openclaw 將以開源專案形式延續，並由 openai 支援。他表示，未來將會是高度多代理的世界，而 openai 也希望在推動產品發展的同時，持續支持開源生態。&lt;/p&gt;
 
-&lt;p&gt;多項基準測試顯示，qwen3.5 的表現優於前一代版本，並在部分指標上超越美國競爭對手模型，包括 gpt-5.2、claude opus 4.5 與 gemini 3 pro。&lt;/p&gt;
+&lt;p&gt;steinberger 週一也在 x 發文證實加入 openai，表示自己希望「把代理帶給每個人」，並稱 openclaw 正在成為一個更基礎的存在，將保持開放與獨立，且才剛起步。&lt;/p&gt;
 
-&lt;p&gt;此次發布也反映中國 ai 模型市場競爭進一步升溫。字節跳動日前推出 doubao 2.0，作為其聊天機器人 app 的重大升級版本，並同樣將新模型定位為適用於 ai 代理時代。doubao 目前仍是中國用戶規模最大的聊天機器人產品，用戶數接近 2 億。&lt;/p&gt;
+&lt;p&gt;steinberger 在個人網站的文章中指出，他完全可以想像 openclaw 有機會發展成一家「科技巨頭」，但他坦言，打造公司本身並沒有讓他感到興奮。&lt;/p&gt;
 
-&lt;p&gt;阿里巴巴近月積極推動 qwen 聊天機器人 app 擴張。路透報導指出，本月稍早阿里巴巴透過發放優惠券活動，鼓勵消費者直接在 qwen 聊天機器人內購買食品與飲料，帶動活躍用戶數在短期內成長 7 倍，但過程中亦出現部分系統故障。&lt;/p&gt;
+&lt;p&gt;他說，自己更想做的是「改變世界」，而與 openai 合作是將這項技術快速推向大眾的最佳途徑。他強調自己本質上是一名建造者，加入 openai 是因為認同其使命，也認為那裡是最適合投入建造的地方，並直言若未來不再符合初衷，他也會選擇離開。&lt;/p&gt;
 
-&lt;p&gt;值得注意的是，阿里巴巴在 qwen3.5 的官方公告中並未提及 deepseek。&lt;/p&gt;
+&lt;p&gt;steinberger 過去最為人熟知的身分，是 pdf 處理公司 pspdfkit 的創辦人。他在退休後於 2025 年底重新出山推出 openclaw，並一度因其 ai 代理在社群平台上的表現引發熱潮。該專案曾短暫使用 moltbot 名稱，之後又改名為 clawdbot，最終以 openclaw 定名。&lt;/p&gt;
 
-&lt;p&gt;不過，市場普遍認為，deepseek 去年在全球市場取得突破後，已成為中國 ai 模型競爭格局的重要推動力量。&lt;/p&gt;
+&lt;p&gt;值得注意的是，steinberger 對於人工通用智慧 (agi) 的發展方向也持有不同觀點。&lt;/p&gt;
 
-&lt;p&gt;阿里巴巴 (baba-us) 去年曾在 deepseek 爆紅後迅速推出 qwen 2.5-max，並宣稱其能力優於 deepseek 的熱門模型之一。&lt;/p&gt;
+&lt;p&gt;他認為，agi 更理想的形態應是「專精式智慧」，而非完全泛用的單一智慧。他在今年 2 月接受 y combinator podcast 訪問時指出，單一個體的能力終究有限，但人類社會透過分工專精才得以完成像 iphone 或太空探索等高度複雜的成果，這也是他看好多代理協作模式的原因之一。&lt;/p&gt;
 ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">風險控管</span><span class="text-slate-400 text-xs">上午06:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">阿里巴巴發布新款Qwen3.5模型瞄準「代理AI時代」</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午07:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">OpenClaw創辦人加入OpenAI 「多代理」將是未來核心方向</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345749" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345743" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="風險控管" data-title="正港東升西降》外資越喊越高 台灣gdp成長拚破34年紀錄" data-content="正港東升西降》經濟大省齊降目標 中國保5難以為繼                        
+                    
+                                    
+                        
+                            正港東升西降》外資越喊越高 台灣gdp成長拚破34年紀錄                        
+                    
+                            
+        
+
+        
+
+        
+        
+
+        
+        
+        
+        
+
+        
+                
+        
+        
+
+            
+
+            2026/02/17 06:30
+                
+
+
+                                    
+                                
+            
+
+            
+                （數據整理︰記者高嘉和）
+〔記者高嘉和/綜合報導〕全球人工智慧（ai）熱潮持續，外資機構對台灣2026年經濟展望「越喊越高」。自2026年1月起，各大外資銀行陸續發布最新經濟預測，從最初的4字頭（4%）一路向上加碼，近期更喊出逾8%成長率，台灣有望連續2年經濟成長破8%，將是1992年以來首見。
+中共總書記習近平在2021年喊出「東升西降」政治概念，即所謂東方文明代表的中華人民共和國崛起，將會取代以美國為代表的西方文明，但已遭到民主國家提防與圍堵；反而是台海兩岸經濟成長出現「東升西降」逆轉，台灣有望連續2年經濟成長率超過中國！    
+    
+    
+    
+
+星展銀行︰有機會挑戰6~7%
+今年1月初，星展銀行（dbs）經濟學家馬鐵英率先將台灣2026年gdp成長預測上調至4.8%，並預期台灣將持續領先香港、新加坡與韓國等其他亞洲四小龍。馬鐵英還分析，若半導體關稅獲得豁免，台灣成長率甚至有望挑戰6%至7%高水準。
+瑞銀︰4%上調至6.9%
+2月初，瑞銀（ubs）也宣布大幅上調台灣2026年gdp預測至6.9%，遠高先前市場共識的4%。瑞銀投資銀行高級亞洲及中國經濟學家鄧維慎形容，台灣已超越越南，成為「亞洲增長最強的經濟體」；瑞銀更樂觀預測，在ai蓬勃發展的情境下，若生產力加速提升，未來兩年台灣經濟成長率甚至可能加速至8.5%以上。
+美國銀行︰上調翻倍至8%
+美國銀行（bofa）接著發布最新報告，基於全球對台灣科技產品的需求「熱絡」，將台灣今年gdp成長率預測從原先的4.5%，一口氣上修3.5個百分點至8%。美銀分析師指出，台灣企業生產的科技硬體面臨強勁的全球需求，加上匯率趨穩及台美達成貿易協議等利多因素，ai動能正開始向更廣泛的經濟層面擴散。
+西進成長腰斬 ai重返榮耀
+台灣在1990年代前，經濟成長率動輒破8%、甚至衝破10%，但隨著開放台商赴中投資，且中國加入世界貿易組織（wto）後成為世界工廠，台灣不只傳產業、連科技業也加速西進，經濟成長明顯煞車，平均成長率腰斬不到4%；但隨著美中經貿對抗加劇、供應鏈分流與台商返台投資，加上ai需求爆發，台灣去年經濟成長率大增至8.68%，若今年成長再度破8%，將打破34年來的新紀錄。
+相關新聞請見
+正港東升西降》經濟大省齊降目標 中國保5難以為繼                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
+            
+            
+
+
+        
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">風險控管</span><span class="text-slate-400 text-xs">上午07:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">正港東升西降》外資越喊越高 台灣GDP成長拚破34年紀錄</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344683" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('匯率')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>匯率</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -107,13 +211,13 @@
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.85], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.88], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.7,0.9,0.8,0.75,0.85], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.6,0.95,0.85,0.75,0.9], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
