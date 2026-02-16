@@ -29,7 +29,7 @@
                 <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('東元 (TECO)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#東元 (TECO)</button> <button onclick="searchKeyword('交通部高公局')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#交通部高公局</button> <button onclick="searchKeyword('經濟部印研中心')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#經濟部印研中心</button> <button onclick="searchKeyword('鴻海')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#鴻海</button> <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('Google (Gemini)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Google (Gemini)</button> <button onclick="searchKeyword('澤倫斯基')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#澤倫斯基</button>
+                    <button onclick="searchKeyword('輝達 (NVIDIA)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#輝達 (NVIDIA)</button> <button onclick="searchKeyword('賴清德')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#賴清德</button> <button onclick="searchKeyword('黑石集團 (Blackstone)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#黑石集團 (Blackstone)</button> <button onclick="searchKeyword('南亞科')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#南亞科</button> <button onclick="searchKeyword('印度政府')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#印度政府</button> <button onclick="searchKeyword('阿特曼 (Sam Altman)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#阿特曼 (Sam Altman)</button> <button onclick="searchKeyword('盧比歐 (Marco Rubio)')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#盧比歐 (Marco Rubio)</button>
                 </div>
             </header>
             
@@ -37,7 +37,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.52</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.68</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
@@ -61,155 +61,206 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>情緒溫度：</b>市場情緒由昨日的 0.48 升至 0.52。情緒轉折點在於 AI 從「技術概念」正式跨入「政府公務優化」與「跨境大型基建營收」階段。儘管俄烏地緣政治利空（產線受創）依然存在，但 AI 帶來的實質獲利預期支撐了投資信心。<br><br><b>增量分析：</b>與昨日相比，今日新增了「基建變現」與「公共服務滲透」兩個關鍵變量。昨日重點在於 AI Agent 的軟體想像空間，今日則出現了具體的財報推動力：東元（TECO）取得馬來西亞與東南亞合計逾 35 億元的資料中心訂單，顯示台灣 AI 供應鏈已從「零組件供應」轉向「系統整合輸出」。此外，政府機構（高公局、印研中心）大規模導入 AI 進行流量預測與文化保存，顯示 AI 應用的滲透率已跨越技術鴻溝，進入社會運作底層。地緣風險方面，烏克蘭軍工產線受損提醒了供應鏈在衝突地區的物理脆弱性，但短期內尚未對全球電子業供需產生結構性衝擊。<br><br><b>關鍵事件：</b>1. 東元接連取得東南亞資料中心大單，2025 年營運動能強勁。2. 交通部與經濟部全面推動 AI 導入公共事業與傳統文化轉型。3. 烏克蘭長程飛彈產線遭毀，地緣政治風險溢價上升。<br><br><b>操作建議：</b>維持「AI 基建」配置，特別關注具備跨境系統整合能力的機電與雲端工程股（如東元、鴻海鏈）。隨農曆春節將至，內需消費與觀光流動性增加，可留意 AI 於零售與交通管理的效率提升對相關軟體股的激勵。避險方面，由於地緣衝突（烏克蘭）仍具不確定性，建議保持 10% 左右的防禦性標的或現金比例。
+                        <b>情緒溫度：</b>市場情緒由昨日的 0.52 進一步攀升至 0.68。驅動力由「系統整合獲利」轉向「上游硬體缺貨」與「國家級基建大擴張」。<br><br><b>增量分析：</b>與昨日相比，市場變數從單純的 AI 應用滲透，演變為對關鍵零組件（記憶體）的供應鏈恐慌。今日新增「全球記憶體雙缺」訊號，顯示 AI 基礎建設的需求已觸及最底層商品。與此同時，黑石集團對印度 12 億美元的注資，證明了 AI 基建的全球版圖正在從東南亞（昨日 TECO 案例）擴散至南亞次大陸。最顯著的增量在於台灣宏觀數據：總統重申 7.71% 的超高經濟成長預期與 1.25 兆元的國防預算，這為市場提供了極強的財政支撐信心，足以對沖日本央行可能的升息陰影。<br><br><b>關鍵事件：</b>1. 記憶體市場面臨 DRAM/NAND 罕見雙缺，台廠（南亞科、華邦電、旺宏）報價看漲。2. 黑石集團領投 Neysa 12 億美元擴展印度 GPU 算力雲。3. 賴清德總統強調台灣高成長率並推動 8 年國防特預算。4. 黃仁勳缺席印度 AI 峰會，但 OpenAI 與 Google 巨頭悉數到場，顯示印度戰略地位提升。<br><br><b>操作建議：</b>1. <b>核心配置：</b>加碼佈局記憶體族群，捕捉合約價上漲的利潤。2. <b>策略鎖定：</b>關注與印度 AI 基建掛鉤的供應鏈，此為繼東南亞後的下一個金礦。3. <b>風險預警：</b>留意日圓升息可能引發的流動性收縮，以及美國對中歐地緣外交（盧比歐訪中歐）可能引發的區域板塊變動。建議維持高持股比率，但需針對日圓匯率變動進行動態避險。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技" data-title="ai讓擺攤賣春聯的失業？印研中心克服缺漏讓ai生成18萬字碑帖 歷代名家春聯進你家" data-content="&lt;p&gt;大年初一象徵迎春納福，家家戶戶門前的春聯不僅是年節風景，更承載世代相傳的文化記憶，如今這項傳統藝術竟也能由 ai 「代筆」？經濟部印刷研究中心研發數位書法技術，系統性蒐集 18 萬字碑帖，透過生成式 ai 解析運筆邏輯與藝術風格。結合精密製程與 ai 技術，除克服過去字帖缺漏限制，更能生成風格一致的新字形，讓傳統書法以科技形式走進家家戶戶，讓科技更添「年味」。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體與記憶體" data-title="〈馬年景氣展望〉a推升記憶體缺貨 台廠報價看漲、獲利動能延續" data-content="&lt;p&gt;ai 基礎建設方興未艾，全球記憶體市場面臨數十年罕見的「雙缺」局面，dram 、nand 與 nor flash 同步吃緊。業界普遍預期，ai 時代下，高階記憶體用量只增不減，且在各家業者聚焦高價值產品下，短期 ddr4、ddr3、mlc/slc nand 以及 nor flash 的合約價將穩中向上，有利南亞科 (2408-tw)、華邦電 (2344-tw)、旺宏 (2337-tw) 與力積電 (6770-tw) 營運。&lt;/p&gt;
 
-&lt;p&gt;經濟部產業技術司表示，為讓書法藝術以嶄新形式融入生活，經濟部轄下印刷研究中心運用生成式人工智慧與精緻印刷技術，為傳統文化注入新生命。&lt;/p&gt;
+&lt;p&gt;業界分析，ai 伺服器、高效能運算與雲端資料中心持續擴建，運算架構也大改革，使單機記憶體用量大幅提升，帶動 dram、高頻寬記憶體 (hbm) 以及 nand flash 需求同步成長，加上大廠將資源著重在高階產品，造成記憶體產業出現結構性缺口，預計這波缺貨潮至少延續至 2027 年。&lt;/p&gt;
 
-&lt;p&gt;在 ai 輔助下，系統能臨摹仿真書法名家的風格筆觸，重現作品中的線條張力與整體氣韻。研發團隊與書法典藏企業合作，系統性蒐集近 18 萬字、涵蓋各朝代的碑帖、卷軸與拓片，將珍貴資源轉化為 ai 學習素材。透過生成式 ai 進行字形結構標註、筆路重建及風格嵌入，深入解析書法中的結構比例、行筆節奏與風格特徵，讓系統能理解書寫背後的運筆邏輯。相較於過去受限於文字缺漏，僅能複製既有字帖，此技術可依需求生成風格一致的新字形，提升應用彈性。&lt;/p&gt;
+&lt;p&gt;研究機構分析，在記憶體產業過去的超級循環中，供需缺口頂多落在中個位數水準，但目前短缺程度與持續時間明顯更為嚴峻，且 ai 相關應用正進一步推升需求。&lt;/p&gt;
 
-&lt;p&gt;為使 ai 生成成果真實呈現，印刷研究中心結合多年印刷專業，透過精密製程呈現墨色層次、筆觸細節與紙張質感，讓 ai 春聯接近手寫書法的藝術效果。透過科技與工藝整合，傳統書法不再僅止於典藏展示，而能實際走入家庭生活。&lt;/p&gt;
+&lt;p&gt;業界普遍認為，由於現階段原廠受限建廠週期、投資金額與良率爬坡時間拉長等因素，即便已有業者加碼資本支出，短期內仍難以快速補足產能。相關預測顯示，2026 至 2027 年間，通用型 dram 仍可維持約 7% 的供給缺口。&lt;/p&gt;
 
-&lt;p&gt;ai 臨摹核心目標並非取代創作，而是透過科技協助文化資產保存與延伸。印刷研究中心期盼以科技為橋梁，讓融合文化底蘊與創新技術的春聯，為新年增添深厚文化氣息與祝福。&lt;/p&gt;
+&lt;p&gt;在此背景下，台灣記憶體族群可望同步受惠，包括南亞科、華邦電、旺宏與力積電，皆有機會在報價續漲與稼動率滿載下，帶動營運動能續強，尤其毛利率表現可望更強勢。&lt;/p&gt;
+
+&lt;p&gt;華邦電日前即表示，在供給端結構性收縮影響下，即便公司啟動擴產計畫，短期內仍難以完全補足市場缺口，並預期第二季產品價格漲幅可望與第一季相當，下半年也穩健，整體價格趨勢穩健向上，預估首季毛利率將超越去年第三季的歷史紀錄 51%，南亞科也預期第一季毛利率將再優於上季的 49%，凸顯漲價紅利延續。&lt;/p&gt;
+
+&lt;p&gt;此外，隨著大廠陸續淡出 slc nand 領域，旺宏與華邦電也大啖轉單潮，雙雙擴增 slc nand 產能，同時 nor flash 缺貨情況也遠超預期，目前報價漲幅已經超越 ddr4，成為台廠產品中報價最強勢的產品，有助推升兩家業者營運。&lt;/p&gt;
+
+&lt;p&gt;力積電也藉由出售銅鑼廠與美光 (mu-us) 結盟，一舉精進現有的利基型 dram 製程技術，更與美光簽下 dram 先進封裝的協議，晉身為先進記憶體業者，看好過往投資的 3d 晶圓堆疊 (wafer on wafer)、中介層等，都將成為未來營運活水。&lt;/p&gt;
+
+&lt;p&gt;業界認為，短期內記憶體缺貨格局仍將延續，價格支撐力道可望維持，但隨著下半年供給逐步釋出、需求成長趨於理性，漲價幅度也將收斂，須密切觀察各家記憶體業者的擴產策略以及 ai 帶來的成長動能。&lt;/p&gt;
 ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI讓擺攤賣春聯的失業？印研中心克服缺漏讓AI生成18萬字碑帖 歷代名家春聯進你家</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體與記憶體</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">〈馬年景氣展望〉A推升記憶體缺貨 台廠報價看漲、獲利動能延續</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345573" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6342185" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="工業基建" data-title="春節及228連假 ai、大數據建議國道好走時段避免壅塞" data-content="&lt;p&gt;今 (2026) 年農曆春節連假長達 9 日，由小年夜前一日放假至初六 (2 日 14~22 日)，另 228 連假為 3 日 (2 月 27 日~ 3 月 1 日)。交通部高速公路局表示，經檢視歷年春節及 228 連假國道交通狀況，並透過 ai 及大數據分析，預估春節初一至初五為假期交通尖峰日，南向車流集中於初一至初三，北向車流集中初三至初五。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="AI 基礎建設" data-title="全球ai大咖飛印度參加峰會！卻少了黃仁勳" data-content="&lt;p&gt;&lt;br&gt;
+openai 執行長阿特曼 (sam altman)、alphabet(googl-us) 執行長皮查伊 (sundar pichai) 等科技巨頭本周齊聚印度新德里，出席由印度政府主辦的「ai impact summit」，凸顯全球大型科技公司正加速布局這個被視為關鍵成長市場。不過，原先備受矚目的輝達 (nvda-us) 執行長黃仁勳則臨時取消行程，為峰會增添變數。&lt;/p&gt;
 
-&lt;p&gt;高公局建議用路人可多搭乘國道客運、台鐵及高鐵 (2633-tw)，如仍需使用國道，建議可利用以下好走時段：&lt;/p&gt;
+&lt;p&gt;印度總理莫迪 (narendra modi) 將親自為峰會揭幕。分析指出，在美印關係逐步重啟並朝貿易協議邁進之際，這場 ai 高峰會不僅具有產業意義，也帶有濃厚的地緣政治色彩。&lt;/p&gt;
 
-&lt;h6&gt;一、春節連假：&lt;/h6&gt;
+&lt;h6&gt;科技巨頭齊聚 印度成 ai 新戰場&lt;/h6&gt;
 
-&lt;p&gt;(一) 西部國道部分：2 月 17 日 (初一) 至 19 日 (初三)，上午時段南向車流量大，桃園、新竹及彰化瓶頸路段易有壅塞情形，建議用路人早上 6 時前或中午 12 時後出發；初三至 2 月 21 日 (初五)，下午時段北向車流量大，南投、彰化、苗栗、新竹及桃園瓶頸路段易有壅塞情形；其中，初三、初四北向新竹、苗栗路段甚至有可能壅塞至隔日凌晨，建議中部地區北向用路人中午 12 時前出發，南部地區北向用路人提早至早上 9 時前出發。&lt;/p&gt;
+&lt;p&gt;本屆峰會重要與會者包括 openai 執行長阿特曼、alphabet 執行長皮查伊、anthropic 執行長阿莫戴 (dario amodei) 與 google deepmind 執行長哈薩比斯 (demis hassabis) 等人。業界人士指出，這場峰會象徵全球科技公司對印度市場潛力的高度肯定。&lt;/p&gt;
 
-&lt;p&gt;(二) 國 5 部分：2 月 17 日 (初一) 至 19 日 (初三)，預估上午 5 時起南向車流即逐漸湧現，並持續至下午，建議用路人早上 5 時前或下午 5 時後出發；2、2 月 18 日 (初二) 至 21 日 (初五)，預估上午 9 時起北向車流即逐漸湧現，並持續至深夜，甚至隔日凌晨。建議用路人上午 9 時前出發。&lt;/p&gt;
+&lt;p&gt;印度政府近年明確提出打造科技強國的目標，已核准約 180 億美元的半導體計畫，積極建立本土供應鏈，並鼓勵包括蘋果在內的跨國企業擴大在印度製造。創投資金持續湧入新創市場，ipo 活動也顯著升溫。&lt;/p&gt;
 
-&lt;h6&gt;二、和平紀念日連假：&lt;/h6&gt;
+&lt;p&gt;在 ai 領域，基礎建設、用戶規模與人才儲備成為三大焦點。去年 12 月，亞馬遜 (amzn-us)、微軟(msft-us) 與英特爾 (intc-us) 已承諾在印度興建 ai 相關資料中心與晶片設施。印度同時是 chatgpt 的重要市場之一，openai 與 perplexity 等業者更提供免費服務搶占用戶與訓練資料來源。&lt;/p&gt;
 
-&lt;p&gt;(一) 西部國道：2 月 27 日及 2 月 28 日，南向用路人建議早上 6 時前或中午 12 時後出發；2 月 28 日及 3 月 1 日，中部地區北向用路人建議中午 12 時前出發，南部地區北向用路人建議上午 9 時前出發。&lt;/p&gt;
+&lt;p&gt;此外，印度也被視為「ai 人才工廠」。當地近年設立大量全球能力中心 (gcc)，超過六成新設 gcc 聚焦 ai、資料與數位工程領域，顯示國際企業正將研發與高階職能轉向印度。&lt;/p&gt;
 
-&lt;p&gt;(二) 國 5 部分：2 月 27 日及 2 月 28 日，南向用路人建議上午 5 時前或下午 5 時後出發；2 月 28 日及 3 月 1 日，北向用路人建議上午 9 時前出發。&lt;/p&gt;
+&lt;h6&gt;黃仁勳臨時缺席 峰會焦點轉移&lt;/h6&gt;
 
-&lt;p&gt;另高公局預估和平紀念日連假第 1、2 日為南向尖峰日，第 2、3 日為北向尖峰日，預估部分路段將出現長時段之壅塞。&lt;/p&gt;
+&lt;p&gt;原本外界預期輝達執行長黃仁勳將成為本屆峰會最大亮點之一，並計畫在新德里對媒體發表談話。不過，輝達透過印度公關單位表示，黃仁勳因「不可預見的情況」將不會出席此次峰會。&lt;/p&gt;
 
-&lt;p&gt;高公局建議用路人於出發前利用高速公路 1968app 查詢即時路況，適時改走替代道路，以避開國道壅塞路段及時段。交通部公路局則表示，本次春節連續假期，推出 88 條國道客運享原票價 6 折之優惠措施，如有返鄉旅運需求之民眾建議搭乘公共運輸。&lt;/p&gt;
+&lt;p&gt;雖然輝達缺席，但在全球 ai 投資熱潮延續之際，各大科技公司仍可能於峰會期間宣布在印度的重大投資計畫。對新德里而言，此次高峰會不僅是吸引資金與技術的舞台，更是宣示印度成為全球 ai 樞紐的重要一步。&lt;/p&gt;
 ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">工業基建</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">春節及228連假 AI、大數據建議國道好走時段避免壅塞</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">AI 基礎建設</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">全球AI大咖飛印度參加峰會！卻少了黃仁勳</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345372" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345535" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="〈潛力股〉東元布局ai腳步未停歇 資料中心接案穩健成長" data-content="&lt;p&gt;東元 (1504-tw) 積極布局 ai 資料中心領域，2025 年 7 月取得馬來西亞 11.7 億元資料中心機電工程案、8 月與鴻海 (2317-tw) 換股合作，今年 2 月再取得東南亞資料中心 25 億元大單。東元指出，其工程整合能力與執行力已獲國際客戶認可，預期今年資料中心接案將穩健成長。&nbsp;&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="宏觀經濟" data-title="app時代恐終結！專家：人機互動迎來顛覆性變革 僅20%app能活過ai智能體競爭" data-content="&lt;p&gt;開源 ai 智能體 openclaw 創辦人 peter steinberg 說，「未來五年內，80% 的應用程式可能消失」，並認為目前多數 app 本質是數據管理工具，而個人智能體（personal agent）能以更有效率的方式接管用戶需求，例如根據睡眠品質和壓力水平動態調整健身計畫、控製家居設備，其決策能力遠超過單一 app。&lt;/p&gt;
 
-&lt;p&gt;東元 2025 年 3 月併購馬來西亞 ncl energy 機電工程公司後，於同年 7 月取得 2 項當地資料中心標案，建置容量達 178mw，合約總值約新台幣 11.7 億元。&nbsp;&lt;/p&gt;
+&lt;p&gt;這項預言得到特斯拉執行長馬斯克呼應，且更激進地指未來五到六年，作業系統和應用將徹底消失，手機僅作為顯示終端，ai 實時生成用戶所需內容。&lt;/p&gt;
 
-&lt;p&gt;東元指出，雪蘭莪州 elmina business parl 案，工程內容包含伺服器機房安裝與超大規模光纖網通系統設施建置；柔佛心山 sedenak tech park 案，則同樣聚焦超大規模資料中心的光纖解決方案施工。&nbsp;&lt;/p&gt;
+&lt;p&gt;多位產業專家指出，這場變革並非空談，而是技術演進的必然趨勢。&lt;/p&gt;
 
-&lt;p&gt;此外，東元於 2025 年 7 月與鴻海換股合作，透過策略聯盟，整合雙方在 ai 伺服器、機電與資通訊優勢，攜手搶攻 ai 資料中心商機。董事長利明献指出，東元專案小組持續與鴻海對接，針對鴻海於美國俄亥俄州的 aidc 進行合作，預期今年起效益將逐步顯現。&nbsp;&lt;/p&gt;
+&lt;p&gt;中歐國際工商學院教授譚寅亮分析，智能體時代將形成「意圖經濟」，ai 成為唯一超級入口，app 退化為提供服務的插件 (api)，僅負責執行指令。&lt;/p&gt;
 
-&lt;p&gt;東元今年深化 ai 資料中心腳步未停歇，本月 5 日再宣布，成功承攬美國 csp 業者位於馬來西亞與泰國的超大規模資料中心專案，2 項標案總金額達新台幣 25 億元。馬來西亞案場項目為機電系統工程，預計 2027 年 4 月完工；泰國專案則為超大規模光纖網通系統工程，預計 2026 年 12 月完工。&nbsp;&lt;/p&gt;
+&lt;p&gt;馬斯克所說的「作業系統消失」，實則是作業系統的存在感弱化，底層系統依然存在，但用戶交互方式從圖標點擊轉向「agent 對話 + 自動執行」，這意味著傳統以使用者介面 (ui) 為核心的開發模式將被顛覆，開發者需聚焦後端 api 回應速度、資料結構品質與大模型適配性。&lt;/p&gt;
 
-&lt;p&gt;整體而言，東元今年資料中心業務聚焦台灣、馬來西亞與泰國，相關效益將優先發酵，美國市場預計最快明年開始貢獻。&nbsp;&lt;/p&gt;
+&lt;p&gt;在這場變革中，僅有少數 app 有望留存。steinberg 預測，依賴攝影機、gps 等硬體感測器的即時數據擷取類應用可能存活。&lt;/p&gt;
 
-&lt;p&gt;東元蛇年紅盤日以 53 元開出，封關日則收 79.8 元，蛇年漲幅達 50.57%。另外，東元於 2025 年 10 月 21 日股價最高衝上 127.5 元，創歷史新天價。至於東元最新營收表現，1 月營收 46.44 億元，月減 17.98%，年增 7.91%。&nbsp;&lt;/p&gt;
+&lt;p&gt;諮詢機構久遠謙長合夥人王逸洲則指出，社交軟體、打車外賣等線下履約循環應用，以及創作工具類平台更具韌性。值得注意的是，智慧硬體的策略地位顯著提升。&lt;/p&gt;
+
+&lt;p&gt;譚寅亮舉例，當使用者凝視冰箱，智慧眼鏡可透過分析存貨主動推薦食譜並完成食材採購，實現「感知 - 互動 - 執行」的無縫銜接。他強調，生物資料處理需在本地完成以保障安全，邊緣運算節點的重要性隨之凸顯。&lt;/p&gt;
+
+&lt;p&gt;然而，變革伴隨巨大風險。steinberg 坦言，若使用者持續授權智能體執行危險操作，可能導致「自我毀滅式」後果。&lt;/p&gt;
+
+&lt;p&gt;譚寅亮也警告，當銀行卡、社群帳號等權限集中於單一智能體，駭客只需攻破一個入口即可操控使用者資產與社會關係，引發「單點崩盤」危機。此外，ai 生成內容恐加劇訊息繭房效應，威脅認知多樣性。&lt;/p&gt;
+
+&lt;p&gt;產業觀察人士指出，這場變革將重塑網路生態，傳統廣告模式失效，取而代之的是「競價推薦優先順序」和服務佣金機制。對於一般用戶，這既是效率提升的機遇，也需警惕技術失控的隱憂。&lt;/p&gt;
+
+&lt;p&gt;對此 steinberg 說，未來的贏家，於那些讓 ai 真正聽懂並值得信任的服務商。」&lt;/p&gt;
 ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">〈潛力股〉東元布局AI腳步未停歇 資料中心接案穩健成長</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">宏觀經濟</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">APP時代恐終結！專家：人機互動迎來顛覆性變革 僅20%APP能活過AI智能體競爭</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tech)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6344753" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6343918" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？" data-content="農曆新春佳節，全民瘋彩券，網路流傳「詢問 ai 選刮刮樂號碼特別容易中獎」的都市傳說，究竟是 ai 真的「自帶財氣」，還是純屬巧合，台灣彩券親自進行實測，實測 ai 界兩大霸主 chatgpt 與 gemini，選擇兩款 2026 年新春限定刮刮樂進行 pk，看看誰是真正的數位財神爺？
-
-round 1 率先來測萬眾矚目的新春限定刮刮樂「2,000 萬超級紅包」，每張售價 2,000 元，每本共有 19 張，頭獎高達 2,000 萬元，分別輸入指令後，依照 chatgpt 與 gemini 各自給出的建議號碼，分別購買尾號 1 號及 13 號，結果分別刮中 1,000 元及 2,000 元，本回合由 gemini 勝出。
-
-round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，這款刮刮樂有 550 個最高獎金 10 萬元，平均每 2 張就有 1 張中獎，輸入指令後，依照 chatgpt 與 gemini 各自給出的建議號碼，分別選擇尾號 24 號及 16 號，分別中了 300 元及 200 元，這回合由 chatgpt 扳回一城。
-總結實測結果，雖然中得的獎金還不到原地退休的程度，但有趣的是，這幾張依 ai 建議號碼選購的刮刮樂都有中獎，代表無論是 chatgpt 還是 gemini，提供的數字皆為隨機運算的結果，是否「靈驗」仍屬巧合，實際刮刮樂儀式感才是春節期間最大收穫。
-
-（首圖來源：ai 生成）
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-                    x
-                    5
-                
-                
-                    x
-                    
-                
-            
-            您的咖啡贊助將是讓我們持續走下去的動力
-            總金額共新臺幣 0 元
-            
-            《關於請喝咖啡的 q & a》
-        
-        
-        
-            留給我們的話
-                
-            
-        
-        
-    
-
-
-            
-            
-            
-
-            
-			 
-	
-		
-		
-		科技新知，時時更新">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="盧比歐訪中歐深化合作　聚焦能源與國防" data-content="盧比歐訪中歐深化合作　聚焦能源與國防2026/2/16 11:22（中央社布達佩斯15日綜合外電報導）美國國務卿盧比歐（marco rubio）今天對斯洛伐克和匈牙利展開訪問行程，承諾將深化與中歐的合作。這兩國的保守派領袖與美國總統川普關係密切。斯洛伐克與匈牙利一樣，仰賴俄羅斯石油和天然氣，與歐洲聯盟（european union）其他成員國的關係並不融洽。路透社報導，盧比歐此行與斯國總統佩拉格利尼（peter pellegrini）及總理費佐（robert fico）見面，討論能源和國防議題。這是7年來，首度有美國國務卿訪問斯洛伐克。斯國與與烏克蘭接壤，人口約550萬人。盧比歐行程第2站是匈牙利，他預定明天會晤總理奧班（viktor orban）。美國強硬保守派認為，奧班是川普在移民政策及支持基督教保守主義方面的榜樣。奧班將面對4月選舉，但目前民調落後，可能失去執政地位。而盧比歐12日離開華府前表示，川普非常支持奧班。盧比歐表示：「在川普總統的領導下，我們政府不僅會以斯洛伐克、還會以整個中歐，作為我們與歐洲乃至全世界互動的重要一環。」自莫斯科2022年全面入侵烏克蘭後，其他歐盟國家多已尋求替代能源，包括向美國購買天然氣，但斯洛伐克和匈牙利仍繼續向俄羅斯購買石油與天然氣，美方對此表示批評。盧比歐指出，這次短暫訪問，將會討論相關議題。在核能合作方面，斯洛伐克上月與美國簽署協議。費佐表示，他希望明年能與美國西屋電氣（westinghouse）達成協議，共組企業聯盟，於2040年前在斯洛伐克新建一座核電廠。匈牙利和斯洛伐克已將國防支出提升至國內生產毛額（gdp）的2%，但距離北大西洋公約組織（nato）的5%目標，還有很大差距。去年北約在川普施壓下，同意於2035年前達到此一水準。（編譯：紀錦玲）1150216本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI 靈氣大對決！ChatGPT vs. Gemini 誰是 2026 年最強財神？</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">盧比歐訪中歐深化合作　聚焦能源與國防</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602160065.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="黑石集團注資 12 億美元，助力 neysa 拓印度 ai 運算能力" data-content="在印度，人工智慧基礎設施發展正迅速加快，主要受惠於大型民間投資與政府支援的計畫。近期，美國私募股權公司黑石集團（blackstone）宣布，將對印度人工智慧基礎設施新創公司 neysa 提供最高 12 億美元融資，以因應全球對運算資源日益增加的需求。
+
+neysa 聚焦 gpu 雲端運算，規畫將現有 1,200 個 gpu 擴充至超過 2 萬個，以滿足企業、研究人員與公共部門客戶需求。根據黑石估計，印度目前 gpu 部署數量不足 6 萬個，預期未來幾年將成長至超過 200 萬個。此一成長主要受政府需求、金融與醫療等受監管產業推動，以及國內人工智慧模型開發帶動。
+neysa 執行長 sharad sanghi 表示，公司計劃在未來 1 年把運算能力提升 3 倍，並將大部分資金投入大型 gpu 叢集部署，包括運算、網路與儲存設施；另有部分資金用於研發其軟體平台。
+這項投資也呼應正在新德里舉行的 2026 年印度人工智慧影響峰會。峰會於 2 月 15 日至 20 日舉行，討論自動化、5g 到 6g 的過渡，以及人工智慧在客戶互動中的應用等主題。峰會強調落地執行的重要性，並涵蓋公共利益、治理、氣候韌性與教育等領域的人工智慧應用。
+此外，安德拉邦也規畫建立「ai 資料城市」，目標縮小與美國及中國的差距，並取得 1,750 億美元的數位成長投資協議。這些發展讓印度在全球南方國家中，被視為公平部署人工智慧的領先者之一，並呈現「民間資本」與「政策驅動基礎設施」結合的趨勢。
+
+blackstone backs neysa in up to $1.2b financing as india pushes to build domestic ai infrastructure
+
+（首圖來源：shutterstock）
+延伸閱讀：
+
+印度擬建巨型數據城，欲縮小與美中 ai 差距
+印度 ai 峰會將登場，輝達：黃仁勳不克出席
+台達電投資 27 億元，印度擴建新廠
+供應鏈重組？《蘋果在中國》麥吉：印度仍難取代中國
+不拚量、拚單價，印手機市場高階化加速、蘋果價值市占創新高">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">黑石集團注資 12 億美元，助力 Neysa 拓印度 AI 運算能力</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/16/chatgpt-vs-gemini/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/neysa-blackstone/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="烏克蘭長程反擊利器受創 澤倫斯基證實巡弋飛彈產線被俄軍炸毀" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="央行升息在即 高市早苗大選後首會日銀總裁" data-content="央行升息在即 高市早苗大選後首會日銀總裁
+
+            2026/02/16 11:55
+                
+
+
+                                    
+                                
+            
+
+            
+                日本首相高市早苗（右）與日銀總裁植田和男（左）將於週一（16日）舉行會談。（路透資料照）
+〔財經頻道／綜合報導〕日本央行（boj，日銀）總裁植田和男（kazuo ueda）與首相高市早苗（sanae takaichi）預計將於週一（16日）舉行雙邊會談，這將是執政黨在大選贏得壓倒性的勝利後，雙方首次會晤，這次會談可能會成為討論日銀升息計劃的場合。
+《路透》報導，日本政府表示，高市和植田的會議將在日本時間下午5點（台灣時間下午4點）召開。市場普遍預測，隨著日圓疲軟、生活成本上升，可能會促使日本央行最快3月或4月上調利率。    
+    
+    
+    
+
+兩人曾在11月舉行的面對面會談為日銀12月的升息奠定了基礎，會談即將登場之際，由於市場普遍認為高市將反對日銀提前升息，日銀匯率低迷。
+植田在11月會議之後向記者表示，首相「似乎認可了」他的解釋，即日本央行正在逐步升息，以確保日本經濟平穩地實現通膨目標。一個月後，日銀將短期政策利率上調到30年來最高點0.75％。
+高市帶領自民黨在2月8日的國會選舉拿下歷史性的勝利，加劇了市場對於這名鴿派首相是否會再次呼籲日銀維持低利率的關注。
+一些分析師認為，日圓近期的反彈可能會改變政府對於未來升息步伐的看法，日圓在1月貶至接近具有重要心理意義的160大關後，上週回升近3％，創下2024年11月以來最大升幅。週一亞洲早盤，日圓兌美元匯率大約在153上下。
+根據日本法律，日本央行在名義上享有獨立性，但這並未使其免受政治壓力的影響，過去日銀就曾面臨政府施壓要求擴大貨幣支持，以提振疲軟的經濟。日圓走勢長期以來是日銀採取行動的關鍵觸發因素，因為政界人士會向央行施壓，要求採取措施影響市場走向。
+高市以提倡擴張性財政、貨幣政策文明，上任到目前為止，他一直對日銀的政策保持沉默，但在競選期間，高市的發言被市場解讀為宣揚日圓疲軟的好處。高市還有權提名今年日銀9名成員的理事會當中，空缺的2名理事人選，這可能會影響未來央行的政策辯論。
+在植田領導下，日銀在2024年結束了央行大規模的刺激計劃，並多次上調短期利率，包括去年12月的升息。由於通膨已連續近4年超過2％目標，日銀強調，隨時準備繼續升息。市場則普遍預期，4月再次升息的可能性約為80％。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
+            
+            
+
+
+        
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">央行升息在即 高市早苗大選後首會日銀總裁</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344576" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="4年前震毀！花蓮玉里高寮大橋除夕通車 紓解車潮" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -219,21 +270,7 @@ round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，�
         
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -242,118 +279,137 @@ round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，�
 
 
     
-
-
-    
+	2026/02/16 11:35
+	記者游太郎／花蓮報導
             
-
+                        
+            
     
-    
-    
-    
-
-    
-        烏克蘭長程反擊利器受創 澤倫斯基證實巡弋飛彈產線被俄軍炸毀
         
-        2026/02/16 10:26
-
-    
+        花蓮縣玉里鎮高寮大橋全力趕工後，提前在春節前通車。（記者游太郎攝）
     
 
-    
-    
-    
-
-
-
-
-        
-            圖為烏克蘭自主研發的 fp-5「紅鶴」（flamingo）巡弋飛彈。（翻攝自 fire point）〔編譯陳成良／綜合報導〕俄羅斯近期將打擊目標延伸至烏克蘭後方軍工設施。烏克蘭總統澤倫斯基14日證實，俄軍飛彈摧毀了一條關鍵的「紅鶴」（flamingo）巡弋飛彈生產線，直接衝擊烏克蘭反擊俄國本土的長程打擊能力。儘管產線已遷移並恢復運作，但事件顯示俄軍正企圖削弱烏克蘭的自主反擊手段。據《defence blog》與烏克蘭媒體報導，澤倫斯基在慕尼黑安全會議坦言，這場精準打擊導致烏克蘭自行研發的 fp-5「紅鶴」巡弋飛彈產量一度陷入停擺。這款被視為烏克蘭重要長程打擊工具的產線受創，顯示俄軍正將戰略焦點從前線交火，轉向鏟除能威脅其本土的生產源頭。    
+2022年9月18日池上地震造成花蓮縣玉里鎮高寮大橋受損嚴重，經3年多來重建後，因應春節連續假期車流疏運需求，高寮大橋於今日上午8時起開放通行，提供返鄉及旅遊車潮使用，藉此提升花蓮南區的交通順暢度，同時封閉大橋下便道，請用路人注意。池上地震造成花蓮縣玉里鎮高寮、崙天及玉長3座大橋被震，原橋兩端居民只能靠臨時鋼便橋通行，其中高寮大橋重建進度最快，經花蓮縣政府協調承包商全力趕工，終於在春節前通車，至於崙天、玉長大橋也在趕工中，可望在今年7、8月通車。    
     
     
     
-「紅鶴」巡弋飛彈是烏克蘭試圖建立自主長程反擊戰力的核心計畫。根據官方宣稱，該飛彈射程高達3000公里，具備從烏克蘭境內打擊俄國縱深目標的潛力。雖然今年2月12日烏方表示曾成功擊毀俄境內彈藥庫（該戰果尚未獲得俄方證實），但多份專業報告也指出，該飛彈在面對俄軍防空網時仍具脆弱性，且其導引系統的精準度尚待戰場驗證。俄軍戰略轉向 鎖定自主防禦能力報導分析，俄軍此舉意味著戰爭已進入削弱長期作戰產能的新階段，利用情報優勢鎖定烏克蘭有限的先進武器工廠。這款由建築師與遊戲設計師等非典型專家研發的系統，雖然被標榜具備大重量戰頭與超長射程，但在生產線遭遇系統性攻擊的情況下，維持穩定產量已成為烏軍的一大挑戰。澤倫斯基強調，擴大飛彈產量仍是烏克蘭當前的最高優先事項。他透露，受損的生產線已經完成遷移，目前已經恢復生產，但未透露具體的新地點。這項在戰火中求存的軍工計畫，不僅象徵烏克蘭試圖降低對外援助依賴的決心，更成為其在長期戰事中維持對俄威懾的關鍵支柱            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
+縣府建設處指出，春節前許多花蓮南區鄉親關心高寮大橋通車時間，縣長徐榛蔚日前巡視後，指示施工單位務須於年前通車，經玉里鎮公所向縣府建設課查詢，縣府於14日下午派員現地勘查工程及安全維護設施後，確認於今日上午8時開放通行。玉里鎮長龔文俊表示，目前高寮大橋部分後續工事仍將於年後持續施作，考量春節期間民眾往來頻繁，鎮公所協調相關單位採取「階段性開放」措施，以兼顧工程進度與交通需求。
 
-        
-
-        
-        
-        
-        相關新聞
-
-
-    
-
-    
-
-    
-    
-
-    
-
-    今日熱門">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">烏克蘭長程反擊利器受創 澤倫斯基證實巡弋飛彈產線被俄軍炸毀</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/def/breakingnews/5344522" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="mlb》不希望大都會再加價！ 狄亞茲親曝21.9億轉戰道奇理由" data-content="2026/02/16 10:23
                 
 
 
-    
-            
-            
-                狄亞茲。（資料照，美聯社）
-〔體育中心／綜合報導〕明星終結者狄亞茲（edwin díaz）休賽季從效力6年的大都會，以3年6900萬美元合約（約新台幣21.9億）轉戰衛冕軍道奇，今天他在受訪時也提到原因，並間接回應大都會老闆的說法。
-報導指出，大都會曾向狄亞茲提出一張3年6600萬美元的報價，但他馬上就接受道奇多300萬美元的報價，還沒有給大都會任何討價還價的機會。有消息指出，大都會願意支付6600萬美元以上的報價來留下狄亞茲，但另一個消息來源則表示，狄亞茲團隊不希望大都會大幅提高報價，最終狄亞茲便改披衛冕軍戰袍。        
-    
-        
-    
 
-大都會老闆寇恩（steve cohen）在日前接受採訪時，表示自己對於狄亞茲的舉動感到困惑，「很明顯，這是他個人的決定。我認為我們開出了一份相當體面的報價。」
-狄亞茲並未直接回覆寇恩的說法，但他在受訪時表示：「我認為道奇隊在招募我這方面做得很好。最終，我選擇來到這裡。我對大都會球團、球員、工作人員及老闆深表尊重。他們對我非常好。我對他們沒有任何負面評價。但最終，我人在這裡。」                                
+            
+            
+
+            
+            
+            			
+
+			
+            
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法
 
-            
-            
-            
-
-
-
-            
-
-            
-
-            
         
-        推薦新聞
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
 
         
+        生活今日熱門
+
+
+
+    
+
+
+
         
-        網友回應">
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">MLB》不希望大都會再加價！ 狄亞茲親曝21.9億轉戰道奇理由</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">4年前震毀！花蓮玉里高寮大橋除夕通車 紓解車潮</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344530" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344549" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="除夕貼春聯  命理師揭「黃金時段」提醒7大禁忌" data-content="楊登醒嵙提醒民眾，貼春聯一定要把舊春聯撕下來再將新春聯貼上，撕破象徵除舊佈新，不可直接貼在舊春聯上面。（記者蔡淑媛攝）
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="重申力推國防特別預算 賴清德：確保台灣經濟發展人民安全" data-content="賴清德總統（左）今天到新北市金山承天宮參拜，他強調新年新目標，「讓國家更安全、經濟更發展，人民的生活安居樂業」。（記者俞肇福攝）
     
 
-歲末年終家家戶戶都會貼春聯，命理師楊登嵙建議，貼春聯的時間最好是除夕早上6點到中午12點之間，這時間陽氣最旺，由於中午12點之後要拜祖先、地基主，所以除夕中午12點前貼春聯最佳最旺。台中市名門命理教育協會創會理事長楊登嵙指出，今年2月11日（農曆12月24日）送神開始，為新年大掃除的開始，有空就要打掃，直到2026年2月16日農曆12月29日除夕，要打掃好才貼春聯，而且一定把舊春聯撕下來，撕破，象徵除舊佈新，再將新春聯貼上，不可直接貼在舊春聯之上。    
+今天（16日）是除夕，賴清德總統今天在新北市金山承天宮受訪談到新年新目標時表示，台美關稅已經談定，今年的經濟成長率，主計總處預估高達7．71％；他強調，經濟好了，一定要讓國家更安全，所以提出8年1.25兆元國防特別預算，面對中國威脅，台灣一定要自立自強，自助才有可能人助，也只有集體防禦、責任分擔，才有辦法確保印太的和平穩定。他和團隊會加緊腳步，把每一項工作都做好，「讓國家更安全、經濟更發展，人民的生活安居樂業」。賴總統表示，非常感謝過去一年百工百業、全國民眾都在崗位上認真努力，在經濟方面，政府交出了一張亮眼的成績單，去年第四季經濟成長率高達12．86％、全年經濟成長率達到8．68％，可以說是國際都很稱羨。    
     
     
     
-楊登嵙也提醒貼春聯7項禁忌，春聯不能隨便亂貼，否則會引發不吉利。1上下聯勿貼錯，春聯通常有3幅，兩幅直聯一幅橫聯，直聯的其中一幅果最後一字是仄聲字，就是上聯，平聲為下聯。2、大門口不貼春，居家大門口不要單貼一個「春」字，可以貼福、招財進寶等，因為在古代，只有聲色場所會在門口貼春，否則容易招來爛桃花。3大門口不倒貼春聯，依照古禮，「倒」與「到」是同義字，「財」倒過來貼，是財到的意思，但大門口不可以把財倒過來貼，表示把財倒光光的意思；大門口「福」字不能倒貼，否則會把福氣倒光，但窗、內門或水缸、酒缸等器具則可以倒過來貼，代表財到、福到，從民俗上講，古代只在水缸、酒缸等存放東西的缸上貼「倒福」。4單數才吉利，門口大門貼春聯，要貼單數，單數象徵吉祥，不要貼到雙數了，因為單數1、3、5為陽，偶數2、4、6為陰，偶數容易招陰，與供奉神明數目一樣，要單數要陽，整個家裡所貼的春聯數目則不計算陰陽。5舊春聯要撕下來，把舊春聯撕下來，撕破，表示除舊佈新的意思。不可直接把新春聯貼在舊春聯之上，以達到轉新好運。6不可有不吉利的字，春聯應講求個性化，應該把自己的感受、喜好、自己家的特點和期望都寫進去。寫春聯的時候還要注意，如滅、絕、死、亡等字是絕對不要出現，而且同音字意義不好也不要出現。7喪事不可貼春聯，家裡有喪事未滿一年不貼春聯，否則好像也在慶祝；也不可包粽子，意寓包中，一個接一個，那就糟糕了。
+賴清德提到，關稅已經談定，今年的經濟成長率，主計總處預估高達7．71％，國際機構也有預估台灣今年的經濟成長率會超過8％，換句話說情勢非常好，關稅談判底定，對台灣的經濟發展是一個新的局面，所以他會率領團隊馬不停蹄，推動各項經濟建設，讓國家經濟能夠持續發展，因此他籲請朝野立法院黨團，要好好來審查預算，讓預算盡速能夠完成審議，助台灣經濟發展一臂之力。賴清德指出，經濟好了，一定要讓國家更安全，所以在國防預算方面提出了特別預算，8年1．25兆元，平均1年就是156○億元，要各位國人同胞報告，日本2○26年的國防預算高達1．8兆台幣，韓國高達1．4兆台幣，都比台灣要來得多，以台灣的經濟實力，絕對有能力來編列這樣的特別預算、保護國家安全，尤其是面對中國的威脅，一定要自立自強，只有自助才有可能人助，也只有集體防禦、責任分擔，才有辦法確保印太的和平穩定。賴清德說，另外，要把人民照顧好，未來新的一年，他會持續來關注中小微企業面臨的各項問題，也會來幫助基層的民眾，照顧他們的生活，讓他們也都能夠安居樂業，「這是後續他要做的工作，可以說事情很多，但團隊會馬不停蹄、加緊腳步，把每一項工作都做好，讓國家更安全、經濟更發展，人民的生活能夠安居樂業」。
 
                 
 
@@ -372,36 +428,187 @@ round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，�
     點我下載app　
     按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">除夕貼春聯  命理師揭「黃金時段」提醒7大禁忌</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">重申力推國防特別預算 賴清德：確保台灣經濟發展人民安全</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344505" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5344553" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="八點檔男星開3年計程車 小年夜宣布停業" data-content="黃少谷宣布重拾歌手身分。（翻攝自臉書）
-〔記者李紹綾／台北報導〕樂團出身的八點檔男星黃少谷，在疫情後期一度因演藝工作停擺，2022年毅然斜槓當起多元計程車司機，還同時兼做房仲。如今他宣布重拾歌手身分，正式停開計程車，為這段三年「運轉人生」畫下句點。
-黃少谷在臉書發文寫下：「今年開始停止計程車的業務了，謝謝大家這三年來的支持！」回顧當初轉行的心境，他坦言那是疫情後期的選擇，卻也因此「載著客人去許多我不可能會的地方，信義區的高級住宅，新店的幽靜社區⋯，走過好多地方，看過好多不一樣的風景。這也是我人生中非常不一樣的篇章」。    
-    
-    
-    
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="自由說新聞》百萬伊朗人串連「最後戰役」！美伊談判前夕川普再極限施壓" data-content="自由說新聞》百萬伊朗人串連「最後戰役」！美伊談判前夕川普再極限施壓
+	2026/02/16 11:26
+	
+            
+                        
+            
+訂閱【自由追新聞】全新的視界！新聞話題不漏接，快訂閱youtube 【自由追新聞】，記得開啟小鈴鐺哦！
 
-三年來，黃少谷在車陣中穿梭，也在人生低谷裡找方向。他特別點名感謝車隊公司與長官同事，「不管是在任何方面，都給我100%的支持，滴水之恩，來日將湧泉相報」。
-至於那些曾經上車的乘客，黃少谷真誠道謝：「每個上我車的客人，我真的非常感謝，我也很抱歉，我不太會跟陌生人交流，所以我只會安安靜靜的開著車。」
-黃少谷也提到，在迷惘或懷疑的時候，是網友的留言與鼓勵讓他撐下去，「看到大家的留言跟安慰，心裡總是會充滿勇氣」，如今決定回歸歌手身分，房仲的業務仍會繼續，他希望未來大家繼續支持。                
+
+
+
+            
+
+
+
+            
+            
+
+            
+            
+            			
+
 			
-			
-		                                
+            
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">八點檔男星開3年計程車 小年夜宣布停業</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">自由說新聞》百萬伊朗人串連「最後戰役」！美伊談判前夕川普再極限施壓</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ent.ltn.com.tw/news/breakingnews/5344446" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344591" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="10:50宜蘭近海規模3.8地震 最大震度4級" data-content="限制級
+        
+            您即將進入之新聞內容 需滿18歲 方可瀏覽。
+        
+        
+        
+            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
+        
+    
+
+    
+
+
+
+
+
+
+
+    
+	2026/02/16 11:04
+	即時新聞／綜合報導
+            
+                        
+            
+    
+        
+        宜蘭近海今日10:50發生規模3.8地震，最大震度4級。（圖擷取自中央氣象署）
+    
+
+宜蘭縣近海今天上午10時50分發生芮氏規模3.8有感地震，最大震度花蓮縣和平4級。根據中央氣象署資料顯示，今天上午10時50分在宜蘭縣近海發生芮氏規模3.8地震，地震深度為7.7公里，震央位於宜蘭縣政府南方44.7公里。    
+    
+各地測得最大震度花蓮縣和平4級，宜蘭縣3級，南投縣1級。
+
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+        
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+        生活今日熱門
+
+
+
+    
+
+
+
+        
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">10:50宜蘭近海規模3.8地震 最大震度4級</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344568" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">4</span></button><button onclick="searchKeyword('放假')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>放假</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('疫情')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>疫情</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('軍工')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>軍工</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('地震')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>地震</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('匯率')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>匯率</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('核能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>核能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -415,7 +622,7 @@ round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，�
                     labels: ["02-15","02-16"],
                     datasets: [{
                         label: '情緒指數',
-                        data: [0.48,0.52],
+                        data: [0.48,0.68],
                         borderColor: '#dc2626',
                         backgroundColor: '#dc262620',
                         borderWidth: 3,
@@ -442,7 +649,7 @@ round 2 選擇 q 版生肖主題，每張售價 200 元的「金馬報喜」，�
                     labels: ['政策', '資金', '基本面', '國際', '技術'],
                     datasets: [{
                         label: '今日強度',
-                        data: [0.6,0.5,0.7,0.4,0.55],
+                        data: [0.75,0.82,0.88,0.45,0.6],
                         fill: true,
                         backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
                         borderColor: 'rgb(79, 70, 229)',
