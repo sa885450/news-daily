@@ -2,16 +2,15 @@ require('dotenv').config();
 const { getSummary } = require('./lib/ai');
 const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler');
 const { generateHTMLReport } = require('./lib/ui');
-const { log } = require('./lib/utils');
+const { log, sendDiscord } = require('./lib/utils'); // 🟢 1. 引入 sendDiscord
 const { pushToGitHub } = require('./lib/git');
-const db = require('./lib/db'); // 🟢 引入更新後的 db
+const db = require('./lib/db');
 const config = require('./lib/config');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron');
 
 function matchesAny(text, regexArray) { return regexArray.length === 0 ? false : regexArray.some(re => re.test(text)); }
 
-// 計算關鍵字熱度 (保持原樣)
 function calculateKeywordStats(newsData) {
     let stats = {};
     config.rawKeywords.forEach(k => stats[k] = 0);
@@ -29,7 +28,7 @@ function calculateKeywordStats(newsData) {
 }
 
 async function runTask() {
-    log('🚀', `啟動排程任務 (v2.3.0)...`);
+    log('🚀', `啟動排程任務 (v2.7.1)...`); // 🟢 更新版本號
     
     // 清理舊資料
     try {
@@ -38,7 +37,7 @@ async function runTask() {
     } catch (e) {}
 
     let allMatchedNews = [];
-    let fetchedUrls = new Set(); // 用來避免本次執行重複抓取
+    let fetchedUrls = new Set(); 
 
     // 1. 抓取鉅亨網
     const cnyesNews = await fetchCnyesAPI(2);
@@ -65,7 +64,6 @@ async function runTask() {
             if (matchesAny(targetText, config.excludeRegex)) { db.saveArticle(item.title, item.link, source.name); continue; }
             
             if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
-                // 簡易標題比對去重
                 let isDuplicate = false;
                 for (let existing of allMatchedNews) {
                     if (stringSimilarity.compareTwoStrings(item.title, existing.title) > config.similarityThreshold) {
@@ -88,30 +86,50 @@ async function runTask() {
 
     if (allMatchedNews.length > 0) {
         try {
-            // 🟢 步驟 1: 取得昨日總結 (增量分析用)
             const lastSummary = db.getLastSummary();
 
-            // 🟢 步驟 2: AI 分析 (回傳 JSON: { summary, sentiment_score, categories })
+            // AI 分析
             const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary);
-            
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
-            // 🟢 步驟 3: 更新分類
+            // 更新分類
             const catMap = {};
             if (aiResult.categories) {
                 aiResult.categories.forEach(c => { if (c.id !== undefined) catMap[c.id] = c.category; });
                 allMatchedNews.forEach((n, i) => { n.category = catMap[i] || "其他"; });
             }
 
-            // 🟢 步驟 4: 儲存今日統計數據 (供明日比較與畫圖)
             db.saveDailyStats(aiResult.sentiment_score, aiResult.summary);
-
-            // 🟢 步驟 5: 取得歷史數據 (畫圖用)
             const recentStats = db.getRecentStats(7);
 
-            // 步驟 6: 生成報表
+            // 生成報表
             const keywordStats = calculateKeywordStats(allMatchedNews);
             generateHTMLReport(aiResult, allMatchedNews, keywordStats, recentStats);
+
+            // 🟢 2. 發送 Discord 通知 (新增邏輯)
+            try {
+                const dateStr = new Date().toLocaleDateString('zh-TW');
+                const sentimentIcon = aiResult.sentiment_score > 0 ? '🔥' : '❄️';
+                // 移除 HTML 標籤並限制長度
+                const cleanSummary = (aiResult.summary || "無摘要").replace(/<[^>]*>/g, '').substring(0, 800) + '...';
+                const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/`;
+
+                const discordMsg = `
+# 📅 **AI 每日新聞快報** (${dateStr})
+---
+**今日情緒**: ${sentimentIcon} ${aiResult.sentiment_score}
+
+## 📝 **重點摘要**
+${cleanSummary}
+
+🔗 [查看完整圖表與五力分析](${reportUrl})
+                `.trim();
+
+                log('📤', '正在發送 Discord 通知...');
+                await sendDiscord(discordMsg);
+            } catch (discordErr) {
+                log('⚠️', `Discord 通知發送失敗: ${discordErr.message}`);
+            }
             
             // 部署
             pushToGitHub();
@@ -123,5 +141,5 @@ async function runTask() {
     }
 }
 
-log('🕰️', "新聞機器人啟動 v2.3");
+log('🕰️', "新聞機器人啟動 v2.7.1");
 cron.schedule('0 * * * *', () => runTask());
