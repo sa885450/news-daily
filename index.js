@@ -2,7 +2,7 @@ require('dotenv').config();
 const { getSummary } = require('./lib/ai');
 const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler');
 const { generateHTMLReport } = require('./lib/ui');
-const { log, sendDiscord } = require('./lib/utils'); // 🟢 1. 引入 sendDiscord
+const { log, sendDiscord } = require('./lib/utils');
 const { pushToGitHub } = require('./lib/git');
 const db = require('./lib/db');
 const config = require('./lib/config');
@@ -28,12 +28,10 @@ function calculateKeywordStats(newsData) {
 }
 
 async function runTask() {
-    log('🚀', `啟動排程任務 (v2.7.1)...`); // 🟢 更新版本號
+    log('🚀', `啟動排程任務 (v2.8.0)...`);
     
-    // 清理舊資料
     try {
-        const result = db.cleanupOldArticles();
-        if (result.changes > 0) log('🗄️', `資料庫瘦身完成，刪除 ${result.changes} 筆。`);
+        db.cleanupOldArticles();
     } catch (e) {}
 
     let allMatchedNews = [];
@@ -86,10 +84,13 @@ async function runTask() {
 
     if (allMatchedNews.length > 0) {
         try {
-            const lastSummary = db.getLastSummary();
+            // 🟢 取得昨日數據 (含分數)
+            const lastStats = db.getLastStats();
+            const lastSummary = lastStats ? lastStats.summary : null;
+            const lastScore = lastStats ? lastStats.sentiment_score : 0;
 
-            // AI 分析
-            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary);
+            // 🟢 AI 分析 (傳入 lastScore 觸發自適應 Persona)
+            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore);
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
             // 更新分類
@@ -102,22 +103,26 @@ async function runTask() {
             db.saveDailyStats(aiResult.sentiment_score, aiResult.summary);
             const recentStats = db.getRecentStats(7);
 
-            // 生成報表
             const keywordStats = calculateKeywordStats(allMatchedNews);
             generateHTMLReport(aiResult, allMatchedNews, keywordStats, recentStats);
 
-            // 🟢 2. 發送 Discord 通知 (新增邏輯)
+            // 發送 Discord
             try {
                 const dateStr = new Date().toLocaleDateString('zh-TW');
                 const sentimentIcon = aiResult.sentiment_score > 0 ? '🔥' : '❄️';
-                // 移除 HTML 標籤並限制長度
                 const cleanSummary = (aiResult.summary || "無摘要").replace(/<[^>]*>/g, '').substring(0, 800) + '...';
                 const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/`;
+                
+                // 🟢 在 Discord 訊息加入關鍵實體代碼
+                const entityTags = (aiResult.entities || [])
+                    .map(e => e.ticker ? `**${e.name}(${e.ticker})**` : e.name)
+                    .join(', ');
 
                 const discordMsg = `
 # 📅 **AI 每日新聞快報** (${dateStr})
 ---
 **今日情緒**: ${sentimentIcon} ${aiResult.sentiment_score}
+**關注焦點**: ${entityTags || '無'}
 
 ## 📝 **重點摘要**
 ${cleanSummary}
@@ -131,7 +136,6 @@ ${cleanSummary}
                 log('⚠️', `Discord 通知發送失敗: ${discordErr.message}`);
             }
             
-            // 部署
             pushToGitHub();
             log('✅', "任務圓滿完成！");
 
@@ -141,5 +145,5 @@ ${cleanSummary}
     }
 }
 
-log('🕰️', "新聞機器人啟動 v2.7.1");
+log('🕰️', "新聞機器人啟動 v2.8.0");
 cron.schedule('0 * * * *', () => runTask());
