@@ -26,6 +26,15 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.5.2 - SQLite 數據脫水演算法與 AI 自動備援 (2026-02-16)
+- **📉 SQLite 數據脫水演算法**：
+  - 更新 `lib/db.js`。針對週報海量數據（2500+），引入 `GROUP BY SUBSTR(title, 1, 12)` 演算法，在資料庫層級自動過濾 90% 的重複轉載內容。
+- **🧬 AI 自動備援機制 (Fallback)**：
+  - 優化 `weekly.js`。系統現在會動態偵測 `OPENAI_API_KEY` 是否存在。
+  - 若 OpenAI 額度不足或未設定，系統將自動無縫切換回 Gemini 引擎，確保週報不中斷。
+- **⚙️ AI 容錯增強**：
+  - `lib/ai.js` 中的 Gemini 流程已強化對缺失 `content` 欄位數據的支援。
+
 ### v2.5.0 - 雙 AI 引擎架構 (2026-02-16)
 - **🧠 引入 OpenAI 支援**：
   - 解決 Gemini 免費版額度不足導致週報失敗的問題。
