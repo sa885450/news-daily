@@ -24,12 +24,12 @@
         <div class="max-w-6xl mx-auto px-4 pt-10 relative">
             <div class="absolute top-0 right-0 mt-2 mr-2 z-50"><select onchange="if(this.value) window.location.href=this.value" class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50"><option value="index.html">🏠 返回首頁</option><option value="report_2026-02-16.html" selected>📅 今天 2026-02-16</option><option value="report_2026-02-15.html" >📜 2026-02-15</option></select></div>
             <header class="text-center mb-10">
-                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.4</div>
+                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.7</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一 · 更新於 19:01</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('Peter Steinberger')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Peter Steinberger</button> <button onclick="searchKeyword('國網中心')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#國網中心</button> <button onclick="searchKeyword('災防科技中心')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#災防科技中心</button> <button onclick="searchKeyword('OpenClaw')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenClaw</button>
+                    <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('HSBC')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#HSBC</button> <button onclick="searchKeyword('Sony')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Sony</button> <button onclick="searchKeyword('Vite')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Vite</button> <button onclick="searchKeyword('TypeScript')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#TypeScript</button> <button onclick="searchKeyword('印太戰略智庫')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#印太戰略智庫</button>
                 </div>
             </header>
             
@@ -37,17 +37,13 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.68</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.65</span></div>
                     </div>
-                    <div class="h-64 w-full">
-                        <canvas id="sentimentChart"></canvas>
-                    </div>
+                    <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
                 <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex flex-col">
                     <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">🧭</span> 五力分析</h3>
-                    <div class="flex-grow relative">
-                        <canvas id="radarChart"></canvas>
-                    </div>
+                    <div class="flex-grow relative"><canvas id="radarChart"></canvas></div>
                 </div>
             </section>
 
@@ -60,252 +56,314 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <h3>今日增量分析：從「地緣主權」擴展至「在地民主化」與「生態賦能」</h3><p>相較於昨日聚焦於印度的 AI 霸權野心與全球法規風險，今日市場動態顯示 AI 發展正進入<b>「在地化滲透」</b>與<b>「開源生態整合」</b>的新階段。</p><b>1. AI 代理人的大眾化：從極客到日常</b><br>OpenAI 吸收 OpenClaw 發起人 Peter Steinberger，並將專案轉向基金會運作，這不僅是技術收購，更是戰略性的生態擴張。這呼應了昨日提到的「規模化落地」，但更強調 AI 代理（Agents）的<b>易用性（Democratization）</b>，意圖將 AI 從專業工具轉向全民通用的「數位管家」。<br><br><b>2. 主權 AI 的文化落地：台灣經驗的補完</b><br>昨日探討區域主權，今日台灣「落雨小幫手」App 的升級則具體展現了<b>「可信任 AI」在在地語言與文化上的競爭力</b>。支援台語語音查詢不僅是技術門檻的降低，更是主權 AI 在具體民生應用上的防禦機制，確保本地數據與文化的解釋權不被外部通用模型稀釋。<br><br><b>3. 跨領域範式轉移：從科學發現到資產定價</b><br>AI 在古生物學的無監督學習應用，象徵 AI 已經超越單純的語言處理，進入<b>科學實證（Deep Tech）</b>的深度應用。另一方面，史上最貴皮卡丘卡片的成交，反映出資本市場在科技劇變期，資金流向極度稀缺性資產的趨勢，這與 AI 帶來的資產重新評價週期息息相關。
-                    </div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>今日增量分析：從「代理人普及化」轉向「產業價值鏈重構」與「產權防禦機制」</h3><p>相較於昨日聚焦於 OpenAI 對 AI 代理人（Agents）的生態收購與大眾化，今日市場動態顯示 AI 已從單純的技術工具演進為<b>產業結構的重塑者</b>與<b>新型治理規則的觸發點</b>。</p><b>1. 軟體業估值重估：從「顛覆恐慌」到「效率賦能」</b><br>昨日提到的規模化落地今日在軟體類股有具體反映。匯豐等機構駁斥了 AI 取代軟體業的極端論調，指出 AI 實質上是透過嵌入企業應用來擴大總體定址市場（TAM）。這標誌著市場正從盲目恐慌轉向理性評估 AI 如何作為增效利器，對於 SaaS 產業而言，這是一個從「生存危機」轉向「定價權重構」的關鍵期。<br><br><b>2. 開源開發生態的典範轉移</b><br>今日 JavaScript 生態調查顯示，TypeScript 成為主流且 AI 開始主導架構決策。這呼應了昨日的「生態整合」，但層次更深：AI 不再僅是外部輔助，而是內化於開發底層（如 Vite 對 webpack 的超越）。這意味著未來的技術護城河將建立在 AI 與核心工具鏈的深度耦合之上。<br><br><b>3. AI 治理與產權防禦的技術化</b><br>索尼推出的 AI 歌曲分析技術，代表了產權保護與 AI 創作之間的博弈進入「技術對抗技術」的新階段。這補充了昨日法規風險的討論，顯示大廠正透過開發偵測工具來建立產業準則。<br><br><b>4. 地緣政治與軟實力的 AI 化</b><br>印太戰略智庫利用 AI 影像技術進行政治傳播，顯示 AI 代理的易用性（Democratization）已跨足至地緣政治敘事，AI 成為推動特定意識形態與軟實力的加速器。</div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技AI" data-title="openclaw發起人加入openai，專案將轉為基金會、維持開源獨立" data-content="近期爆紅的個人ai代理專案openclaw專案發起人peter steinberger宣布加入openai，對於可執行任務的ai代理，未來將致力推向更普及的應用型態。他同時表示，openclaw將轉為基金會架構，以維持開源與專案獨立性，openai則會持續提供支持與資源。
-peter steinberger在x的貼文說明，他希望打造連一般使用者都能輕鬆上手的代理，甚至連他的母親都能使用。為達成這個目標，他認為需要更完善的安全考量，以及取得最新模型與研究成果的管道，因此選擇加入openai加速推動。
-他也提到，openclaw雖然有機會發展為一家大型公司，但自己更傾向專注於建造與實作，而非再度投入公司經營。peter steinberger指出，過去已投入13年在創業與公司經營上，這次希望把重心放在將代理帶給更多人。他並提及前一週在舊金山與多家主要實驗室交流，接觸相關人員與尚未公開的研究內容。
-peter steinberger強調，openclaw必須維持開源與自由發展，因此正著手將專案轉為基金會架構。他指出，openai已贊助該專案，並承諾讓他能持續投入社群與專案運作。基金會未來也將以支援更多模型與廠商為目標，並希望讓使用者能以自己的方式掌握資料。
-openai執行長sam altman則在x上表示，peter steinberger將協助推進下一代個人代理，並認為多代理之間的互動很快會成為openai產品的重要能力。sam altman也明確表達，openclaw會在基金會架構下以開源專案形式延續，openai將持續給予支持，並將開源視為多代理趨勢下的重要一環。
-目前雙方尚未公開更多合作細節，例如職銜或商業條件。就已公開資訊來看，這次人員加入與專案基金會化的安排，促使openclaw在維持開源獨立的前提下，仍能取得大型研究機構的模型與安全資源，同時也有助於openai擴展個人代理與多代理能力的布局。">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技趨勢" data-title="ai恐慌壓垮軟體股後還持續擴散 但市場真的錯了嗎？" data-content="&lt;p&gt;華爾街主流機構近日集體發聲，駁斥市場對 ai 顛覆軟體業的恐慌。在經歷數月劇烈調整，多家投行分析指出軟體類股估值已遭過度打壓，ai 技術實際上正成為行業增效利器，而非替代品。&lt;/p&gt;
+
+&lt;p&gt;本輪拋售源自於市場對「ai 取代軟體」的誤讀。滙豐 (hsbc) 最新報告直言論調存在邏輯缺陷，軟體巨頭正透過將 ai 嵌入企業應用擴大市場總量 (tam)，而非被取代。&lt;/p&gt;
+
+&lt;p&gt;大型軟體商憑藉數十年累積的私有資料、領域知識和優化程式碼構築護城河，其核心價值遠超通用 ai 生成方案，尤其在金融、製造等精密領域，ai 的「幻覺」問題與不可重複性難以滿足嚴苛的系統精度要求。&lt;/p&gt;
+
+&lt;p&gt;估值回檔已成事實。高盛數據顯示，軟體產業本益比已從高峰 51 倍驟降至 27 倍，不僅脫離「最貴族群」標籤，甚至低於媒體、汽車等傳統產業。&lt;/p&gt;
+
+&lt;p&gt;摩根士丹利證實，本輪拋售有嚴重同質化傾向，也就是基本面穩健的公司遭遇無差別打擊，部分優質標的估值修復空間龐大。&lt;/p&gt;
+
+&lt;p&gt;ai 的真實價值正在顯現。摩根士丹利調查顯示，74%-90% 分析師認為未來兩年​​ai 將透過降本增效提升利潤率，而非直接拉動營收成長。採用 ai 的「領先企業」獲利修正幅度比「受干擾企業」高出 102%，息稅前利潤率擴張速度顯著跑贏大盤。&lt;/p&gt;
+
+&lt;p&gt;相反地，被貼上「ai 受害者」標籤的公司面臨評等下調壓力，反映市場正從概念炒作轉向關注實際回報率 (roi)。&lt;/p&gt;
+
+&lt;p&gt;法人機構策略隨之分化。德意志銀行指出軟體股的 ai 風險折價過高，今年來的跌幅超 20%、估值壓縮 21%，並透過彈性評分卡篩選出 crm、intu 等低估標的。&lt;/p&gt;
+
+&lt;p&gt;高盛則推出配對交易策略，做多具備 ai 賦能能力的結構性受益企業，像是資料庫服務商，同時做空易被自動化取代的流程型軟體公司。該策略自 2023 年實施以來，多頭組合銷售額翻倍，空頭組合陷入停滯。&lt;/p&gt;
+
+&lt;p&gt;值得關注的是，ai 帶來的增量市場集中在資料中心等基礎設施領域，而 89% 的採用者主要透過效率提升而獲益。&lt;/p&gt;
+
+&lt;p&gt;hsbc 指出，全球 2000 強企業正將 ai 嵌入既有平台創造新收入來源，典型案例包括 sap 的智慧供應鏈模組、甲骨文的自動化財務報告系統。這些進化證明 ai 不是軟體終結者，而是打開新成長曲線的鑰匙。&lt;/p&gt;
+
+&lt;p&gt;目前軟體股呈現冰火兩重天；一邊是微軟 azure ai 服務年收入突破百億美元，另一邊是傳統 erp 廠商艱難轉型。&lt;/p&gt;
+
+&lt;p&gt;分析師普遍認為，隨著市場認知改善，具備資料壁壘和垂直場景深耕能力的企業，將率先走出陰霾。&lt;/p&gt;
+">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技AI</span><span class="text-slate-400 text-xs">下午06:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">OpenClaw發起人加入OpenAI，專案將轉為基金會、維持開源獨立</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技趨勢</span><span class="text-slate-400 text-xs">下午07:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI恐慌壓垮軟體股後還持續擴散 但市場真的錯了嗎？</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6343842" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="市場估值" data-title="typescript成主流語法，建置工具vite超車webpack" data-content="javascript大調查state of javascript邁入第10屆，官方在最新2025報告結論歸納出三個面向，概括javascript生態系的趨勢轉變，第一是typescript從輔助工具走向語言本體，成為主流語法；第二是前端建置工具由長年主力webpack，逐步讓位給以vite為代表的新工具鏈；第三則是ai不再只是附加或嘗鮮性質的存在，而是開始改變寫程式與做架構決策的工作方式。
+該報告的結語由全端網頁框架nuxt核心團隊負責人daniel roe撰寫，他在結論中直言「typescript has won」，並將這場勝利定義為語言層面的全面普及，而非某種打包工具之爭。報告也把2025年的工具變動，放在執行環境對typescript支援逐步到位的脈絡下解讀，daniel roe提到，deno與bun早已把typescript支援納入執行環境。node.js近年也補上型別剝除等能力，讓typescript在日常開發中更容易落地並降低採用門檻。
+使用統計呈現出開發者的使用日常，受訪者平均有77%的時間花在撰寫typescript，代表許多團隊已將型別化開發視為預設選項，而針對瀏覽器的javascript程式碼平均有86%會經過建置步驟（下圖）。由於typescript等型別化程式碼通常需要在建置階段進行型別剝除與轉譯，型別化開發與建置流程高度綁定，也因此影響了開發者對建置工具的選擇。
+
+在建置工具方面，官方在結語中提到，今年vite下載量已超越webpack，同時vitest使用量也明顯上升，vite工具鏈正在擴大版圖。vite團隊正以rust為基礎打造更快的打包核心，且vite本身已採用rolldown。調查結果呈現，受訪者平均使用4.1種建置工具，顯示不少人仍在嘗試多種工具，是否會走向更集中仍待觀察。
+ai則是另一個被明確量化的變數，受訪者產出的程式碼中，ai生成的占比顯著成長，從20%升至29%，顯示ai已從輔助角色走向可觀的產能來源。daniel roe也把結論重點放在更深層的改變，也就是ai可能重塑開發者閱讀文件、撰寫程式與選定架構的方式，並點名以代理為導向的做法正在成長。cursor與zed等主打ai輔助的編輯器熱度持續上升，不過還未達撼動vs code主流地位的程度。
+
+測試工具的變動也呼應了工具鏈重新整併的趨勢，bun test是本次亮點，呈現測試執行器被直接納入執行環境的走向，並提到node與deno也各自提供對應機制。另一方面，調查發現受訪者平均會用到4.4種測試工具，反映許多團隊仍在尋找更理想的測試執行器與工具組合，測試生態尚未完全定型。">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">市場估值</span><span class="text-slate-400 text-xs">下午07:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">TypeScript成主流語法，建置工具Vite超車webpack</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>iThome</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.ithome.com.tw/news/173968" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.ithome.com.tw/news/173966" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="政策治理" data-title="國網中心助落雨小幫手 app 升級，語音問天氣台語也能通" data-content="生成式人工智慧（ai）應用走入生活，災防科技中心於 2020 年結合產官學打造氣象預報 app「落雨小幫手」，至今已吸引民眾下載逾 37 萬次，這回國網中心加入合作，協助 app 升級，新增 ai 火金姑天氣問答功能，不僅支援文字輸入，更提供語音查詢，大幅降低使用門檻，長輩們用台語問火金姑未來 3 天是否會降雨，它也能聽得懂。
-
-主權ai已受到全球重視，台灣於2023年啟動「可信任生成式人工智慧對話引擎」（trustworthy ai dialogue engine，taide）計畫，打造以繁體中文為核心的開源生成式ai模型，融入在地語言、價值觀、風俗習慣等元素，使ai能理解和回應在地使用者需求。
-國科會轄下國研院國網中心在2024年承接taide計畫後，開始建立taiwan ai rap平台，內含多款開源語言模型，並整合算力等資源，提供從訓練、微調到部署的一站式解決方案，迄今已有ai火金姑天氣問答等初步應用成果。
-落雨小幫手app為國家災害防救科技中心結合產官學合作開發，2020年上線至今累計逾37萬次下載，2025年11月底，新增ai火金姑語音問答功能，成為亮點。國網中心技術總監林昀德表示，天氣資訊與日常生活密切相關，為了讓生成式ai走入百工百業、回應民眾需求，國網中心與災防科技中心合作，將app功能擴充，不再侷限於點選查詢，用戶可透過語音直接問天氣。
-「火金姑」名稱別具意涵，林昀德透露，國科會主委吳誠文想起童謠「西北雨直直落」，歌詞「日頭暗揣無路，趕緊來火金姑，做好心來照路」，意指螢火蟲可在昏暗中用微光指路，呼應這項ai天氣問答功能，為民眾提供生活即時指引，如外出是否需要帶雨傘。
-林昀德說，taide模型原先主要是處理文字的問與答，這次導入學界的語音模型後，「火金姑」能理解中文與台語。高齡族群或不熟悉鍵盤的使用者，只要開口就能獲得天氣資訊，大幅降低操作門檻。
-在資料量上，落雨小幫手app擴大預報時間。林昀德指出，原先災防科技中心提供過去30分鐘至未來3小時的天氣資訊，這次也與中央氣象署合作，將預報時間延長至未來3天，方便民眾掌握完整天氣變化。
-林昀德表示，由於資料來自災防科技中心及氣象署，各單位格式不一，加上資料量龐大，所以災防科技中心與國網中心團隊花費不少時間討論格式對齊、篩選與轉換資料，「用戶提1個問題，後端可能跑了多個步驟，這些都是國網中心幫忙開發跟串接」。
-國網中心也負責優化整體工作流程、建立檢索增強生成（rag）向量資料庫及建立ai代理人服務，同時設計過濾機制，擋下與天氣無關的提問，降低系統負載，也避免錯誤回答。
-ai火金姑的智慧語音問答功能歷時約5個月完成開發，林昀德坦言，過程中團隊與時間賽跑，常常加班，但成員都充滿拚勁，「發表會前，剛好碰到鳳凰颱風，同仁想到民眾會關心相關訊息，因此自發加班去串接氣象署的颱風資料」，國網中心團隊從用戶角度思考，致力讓資訊更完備。
-林昀德說，新版taide模型已有支援文字與圖片辨識功能，國網中心也有自主開發太魯閣語、鄒語等原住民語模型，未來若災防科技中心有需要，可以新增這些語音輸入服務。此外，也將規劃開放民眾可以上傳颱風衛星圖或淹水照片等，系統能進一步回答相關問題。
-（作者：趙敏雅；首圖來源：網頁截圖）
-延伸閱讀：
-
-落實主權 ai，國科會展示 taiwan ai rap 與 taide 應用成果
-災防中心推落雨 app，可接收半小時內降雨預報
-
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-                    x
-                    5
-                
-                
-                    x
-                    
-                
-            
-            您的咖啡贊助將是讓我們持續走下去的動力
-            總金額共新臺幣 0 元
-            
-            《關於請喝咖啡的 q & a》
-        
-        
-        
-            留給我們的話
-                
-            
-        
-        
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="產業鏈分析" data-title="楊烈好大面子改編國歌拍mv 「川普、高市早苗」都來了" data-content="楊烈把國歌改成台語歌詞。（印太戰略智庫提供）
+〔娛樂頻道／綜合報導〕楊烈今（16日）除夕正式發表全新單曲《寶島頌》mv，改編自國歌熟悉的旋律，並親自填上台語歌詞，歌詞裡則描繪了台灣人面對風雨的勇氣。
+這首《寶島頌》mv是由印太戰略智庫企劃，結合ai影像技術，將全球民主盟友集結成一支「跨國管弦樂團」，多位國際領袖化身為超現實樂團成員：美國總統川普擔綱指揮，日本首相高市早苗化身武士擊鼓，小泉進次郎則變身《科學小飛俠》中的鐵雄彈奏貝斯。    
+    
+    
     
 
+透過ai技術，高市早苗（左）在mv裡變身鼓手。（印太戰略智庫提供）
+楊烈分享《寶島頌》創作靈感表示：「用一首特別的歌，向大家拜年，國際社會上支持台灣的力量越來越大，世界正在關注台灣。我們更要彼此守望、彼此珍惜。願大家新的一年，心中有光、收穫滿滿。」這首歌曲也為今年3月啟航的「楊烈世界巡迴演唱會」暖身，巡演將在台北、台中、台南、高雄及日本演出，期盼將台灣的聲音傳向世界。
+結合ai技術，川普在mv裡變成指揮。（印太戰略智庫提供））
+透過ai技術打造的樂團陣容，包含化身羅賓漢鍵盤手的澤倫斯基、變身《喬琪姑娘》小提琴手的日本經濟安保大臣小野田紀美；美國國務卿盧比歐與國防部長赫格塞斯則分別化身《火星大王》與《無敵鐵金剛》投入演奏。法國總統馬克宏以《凡爾賽玫瑰》奧斯卡的扮相亮相，連印太戰略智庫執行長矢板明夫也幽默出鏡，化身「哆啦a夢」擔任售票員。
 
-            
-            
-            
-
-            
-			 
-	
-		
-		
-		科技新知，時時更新">
+mv彩蛋安排在結尾，當民主樂團在寶島形狀的舞台上閃耀時，觀眾席出現了橫跨時空的民主陣容：從李登輝、安倍晉三到蔡英文與賴清德，這幕同框象徵著民主價值的世代傳承與鞏固，並且具象化國際社會對台灣的堅定支持。                
+			
+			
+		                                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">政策治理</span><span class="text-slate-400 text-xs">下午06:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">國網中心助落雨小幫手 App 升級，語音問天氣台語也能通</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">產業鏈分析</span><span class="text-slate-400 text-xs">下午07:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">楊烈好大面子改編國歌拍MV 「川普、高市早苗」都來了</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/watchapp-ncdr-nat/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ent.ltn.com.tw/news/breakingnews/5344817" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="產業發展" data-title="始祖鳥是不是最古老鳥類？ai 重新分類 2 億年前足跡" data-content="德國亥姆霍茲柏林中心（helmholtz-zentrum berlin）與英國研究團隊利用無需人工標註的人工智慧（ai）分析約 2 億年前的恐龍足跡，並在《pnas》期刊發表研究成果。
-
-這項研究為「最古老的鳥類」爭論提供新見解，聚焦三疊紀晚期至侏羅紀早期（約 2.3 億至 1.7 億年前）類似鳥類的足跡，是否真正源自鳥類。
-傳統上，最古老的鳥類化石被認為是約 1.5 億年前的始祖鳥（archaeopteryx）。在此之前的鳥類足跡（例如蘇格蘭斯凱島的三指足跡，約 1.7 億年前）則引發分類爭議。這些足跡究竟屬於鳥腳類、獸腳類，或是非鳥型恐龍的足跡，一直是科學界的熱議話題。若這些約 2 億年前的痕跡確實來自鳥類，則意味著在三疊紀末的大規模滅絕之前，鳥類可能已經存在。
-研究團隊採用機器學習技術，自動提取足跡的形狀特徵，並將其自然地分類為 8 種特徵模式。結果顯示，三疊紀晚期至侏羅紀早期的類鳥足跡，與化石鳥類及現生鳥類群體更為接近，並形成與非鳥型獸腳類距離較遠的群集，為鳥類早期演化提供形態學證據。
-不過，研究也指出限制，包括可能存在非鳥型恐龍（如特定獸腳類）也具有類似鳥的足跡，或因濕潤地面變形造成相似性。研究團隊認為，若要取得決定性證據，仍需發掘同時代的鳥類骨骼化石。
-
-“最古の鳥”論争に決着か　約2億年前の恐竜の足跡を「人間が教えないai」で分析　独・英チームがpnas誌で発表
-
-（首圖來源：nobutamura http://paleoexhibit.blogspot.com/ http://spinops.blogspot.com/, cc by-sa 3.0, via wikimedia commons）
-延伸閱讀：
-
-推翻物種衰落說，《科學》：小行星撞擊前恐龍好得很
-刺圈龍外型宛若刺蝟，科學家指堪稱長相最怪恐龍
-打破電影迷思，化石揭密恐龍叫聲可能如鳥鳴
-撇除其他可能性，研究：只有隕石撞擊才能讓恐龍滅絕">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">產業發展</span><span class="text-slate-400 text-xs">下午06:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">始祖鳥是不是最古老鳥類？AI 重新分類 2 億年前足跡</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/archaeopteryx/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="比kobe、喬丹神卡還狂！ 史上最貴「皮卡丘」創5.16億天價" data-content="2026/02/16 17:06
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="每人1年嗑掉39公斤！最愛吃豬肉的東南亞國家是「它」" data-content="2026/02/16 18:35
                 
 
 
-    
+                                    
+                                
             
+
             
-                插畫家皮卡丘總價達5.16億，打破交易卡史上最高紀錄。（圖片取自x）
-〔體育中心／綜合報導〕史上最昂貴的交易卡出爐！一張極稀有的「插畫家皮卡丘」（pikachu illustrator）卡片以總額1649萬2000美元（約新台幣5.16億元）成交，創下交易卡片史上的最高標價。
-根據報導指出，該張卡片是稀有的「插畫家皮卡丘」（pikachu illustrator），最初是 1998年漫畫雜誌《快樂快樂月刊》（コロコロコミック）系列比賽的獎品，由皮卡丘的原創設計師西田敦子親手繪製。        
+                外媒指出，越南人均豬肉消費量約39公斤。（歐新社）
+〔財經頻道／綜合報導〕越南官方最新統計顯示，2025年越南豬肉消費量位居世界第四，在東南亞排名第一，人均消費量達 39 公斤。
+《越南快訊》報導，豬肉在越南人的日常飲食佔主導地位，數據顯示，越南國內豬肉消費量逐年增加，2021年，人​​均消費量約為30公斤；2024年約為37公斤；去年則持續攀升至約39公斤，豬肉消費量位居世界第四、東南亞第一。    
     
-        
+    
     
 
-該卡片於2月16日由紐澤西州的《goldin》拍賣行售出，當年僅有39張頒發給比賽獲勝者，另有兩張在2020年代初期由寶可夢公司的前員工售出。且全球僅生產過41張（相比之下，光是在2025年，寶可夢公司就印製超過750億張寶可夢卡），因此使該張卡成為現存最稀有的卡片之一。
-根據鑑定公司《psa》的紀錄，此次售出的版本是唯一獲得「gem mt 10」的最高等級稀世珍品。本張卡的價格起初緩慢升至600萬美元左右，但在2月16日截標前湧入大量出價，最終落槌價為1330萬美元，加上買家要支付給拍賣行24%的手續費，總額約1649萬美元。
-該張皮卡丘神卡成為歷史上最高的交易卡，先前交易卡紀錄是2007-08年《upper deck》《exquisite collection》的喬丹（michael jordan）與布萊恩（kobe bryant）的1/1logoman雙簽卡，以1293.2萬美元結標，當時打破過往《topps》1952年曼托（mickey mantle）球員卡1260萬美元紀錄（但曼托卡在計算通膨的情況下為1353萬8481美元）。
-布萊恩與喬丹logoman雙簽卡是先前交易卡的史上最高價。（圖片取自x）
-此外，本張卡的持有者也是矚目焦點，該卡片的主人為美國網紅羅根·保羅（logan paul），他在2021年以現金加同款鑑定pas9級的卡片，以總值約530萬美元購入這張插畫家皮卡丘，該價格在當時也創下了紀錄。保羅在直播中將卡片交給了新主人：a.j. scaramucci，他是一位風險投資家，也是前白宮通訊聯絡主任anthony scaramucci之子。
-寶可夢電子遊戲系列在過去十年中一直難以推出廣受好評的作品，但此次創紀錄的拍賣象徵著實體寶可夢卡牌作為收藏愛好和投機市場的持續火爆。然而，由於零售店內卡片相對稀缺，在美國等國家，購物者之間經常發生爭執。
-2025年8月，東京澀谷區的一家麥當勞也發生了類似事件，一些顧客大量購買快樂兒童餐，希望能獲得限量版寶可夢卡牌，結果購買者卻將食物丟棄，然後將卡片以高價在網上轉售。
-插畫家皮卡丘總價達5.16億，打破交易卡史上最高紀錄。（圖片取自x）                                
+報導說，隨著春節到來，越南豬肉需求量預計將增加10%至15%。目前市場上活豬的價格約為每公斤7萬1000至7萬4000越南盾（約台幣85.2至88.8元）。儘管價格比上個月略有下降，專家認為價格仍然偏高。1月份一度飆升至每公斤8萬1000越南盾（約台幣97.2元），相當罕見。
+報導說，對越南消費者而言，豬肉是必需品之一。因此，如果豬肉價格上漲過高，不僅會直接影響人們的生活，還會影響全國的消費者物價指數（cpi）。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法
 
-            
-            
-            
+                
 
 
 
+                                
+            
             
 
-            
-
-            
-        
-        推薦新聞
 
         
+
         
-        網友回應">
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午06:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">比Kobe、喬丹神卡還狂！ 史上最貴「皮卡丘」創5.16億天價</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午07:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">每人1年嗑掉39公斤！最愛吃豬肉的東南亞國家是「它」</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344771" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344810" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="索尼新技術可分析ai生成歌曲 揪出音樂原創與抄襲占比" data-content="限制級
+        
+            您即將進入之新聞內容 需滿18歲 方可瀏覽。
+        
+        
+        
+            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
+        
+    
+
+    
+
+
+
+
+
+
+
+    
+	2026/02/16 18:15
+	中央社
+            
+                        
+            
+    
+        
+        索尼開發出新技術，可辨識ai在生成歌曲時引據原創音樂及占比。（法新社檔案照）
+    
+
+索尼集團公司開發出一項新技術，可辨識人工智慧（ai）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向ai開發商求償。「日經亞洲」（nikkei asia）報導，索尼集團公司（sony group corp.）這項技術能分析ai在學習及生成音樂的過程中，使用了哪些音樂家的歌曲，並量化每首原創作品的貢獻程度，例如這首歌有「3成的音樂是來自披頭四（the beatles）、1成是來自皇后合唱團（queen）」。    
+    
+    
+    
+如果ai開發商同意在分析方面進行合作，索尼集團將藉由連接開發商的基礎模型系統取得資料。若無法取得合作，這項技術能透過比對ai生成音樂與現存音樂，推估前者所使用的原創作品。隨著ai熱潮興起，ai開發商被控未經同意利用受版權保護的音樂、影片及著作訓練ai模型的案例也日益增加。在音樂產業，使用知名歌手聲音的ai生成歌曲已在網路上廣為流傳。索尼集團認為，這項技術將有助建立一項機制，根據貢獻比例將ai生成音樂獲得的收益分配給原創詞曲創作者。這項技術是由索尼集團旗下研發團隊sony ai開發，相關論文已獲國際會議接受。索尼集團也研發出防止ai模仿動畫及其角色風格（例如吉卜力工作室），或直接生成其學習過圖像的方法。這項技術未來也可應用於影片、遊戲和角色等其他領域。索尼集團表示，公司尚未決定何時將此系統投入實際應用。索尼集團預期，ai開發企業會將這項技術導入自家模型，內容產業公司則能在授權談判中運用該技術。然而，目前尚不清楚ai開發商是否會為保護版權積極採用這項技術。部分業界人士指出，ai公司以提升ai模型性能為首要目標，對預防侵犯智慧財產權較不感興趣。（編譯：洪培英）1150216
+
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+        
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+        國際今日熱門
+
+
+
+    
+
+
+
+        
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午07:01</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">索尼新技術可分析AI生成歌曲 揪出音樂原創與抄襲占比</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344740" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('颱風')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>颱風</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('生成式AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>生成式AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">4</span></button><button onclick="searchKeyword('快訊')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>快訊</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
         
         <script>
-            // 趨勢圖
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: {
-                    labels: ["02-15","02-16"],
-                    datasets: [{
-                        label: '情緒指數',
-                        data: [0.48,0.68],
-                        borderColor: '#dc2626',
-                        backgroundColor: '#dc262620',
-                        borderWidth: 3,
-                        pointBackgroundColor: '#fff',
-                        pointBorderColor: '#dc2626',
-                        pointRadius: 5,
-                        fill: true,
-                        tension: 0.4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } },
-                    plugins: { legend: { display: false } }
-                }
+                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.65], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
-
-            // 🟢 雷達圖初始化
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: {
-                    labels: ['政策', '資金', '基本面', '國際', '技術'],
-                    datasets: [{
-                        label: '今日強度',
-                        data: [0.75,0.6,0.85,0.65,0.8],
-                        fill: true,
-                        backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
-                        borderColor: 'rgb(79, 70, 229)',
-                        pointBackgroundColor: 'rgb(79, 70, 229)',
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: 'rgb(79, 70, 229)'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            angleLines: { color: '#f1f5f9' },
-                            grid: { color: '#f1f5f9' },
-                            pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' },
-                            suggestedMin: 0,
-                            suggestedMax: 1,
-                            ticks: { backdropColor: 'transparent', display: false } // 隱藏刻度背景
-                        }
-                    },
-                    plugins: { legend: { display: false } }
-                }
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.4,0.7,0.8,0.6,0.85], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
     </body>
