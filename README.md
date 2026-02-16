@@ -26,6 +26,16 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.6.0 - 階層式總結與權重過濾 (2026-02-16)
+- **🧠 實作 AI 階層式總結 (Map-Reduce AI)**：
+  - 解決週報新聞量過大 (2500+) 導致的 Gemini Token 限制問題。
+  - 新增 `lib/ai.js/getWeeklySummary`，採用分批處理（Batch Processing）邏輯，先對新聞分組產生小摘要，再匯總為最終週報。
+- **⚖️ 引入分數權重過濾 (Keyword Weighting)**：
+  - 在 `weekly.js` 實作權重演算法，根據 `.env` 關鍵字命中率對新聞進行評分。
+  - 確保只有權重最高的前 120 則新聞進入 AI 分析流程，大幅提升週報精準度。
+- **🧹 移除 OpenAI 依賴**：
+  - 驗證並移除了不必要的 OpenAI 程式碼，回歸純淨的 Gemini 架構，降低維護成本與付費門檻。
+
 ### v2.5.2 - SQLite 數據脫水演算法與 AI 自動備援 (2026-02-16)
 - **📉 SQLite 數據脫水演算法**：
   - 更新 `lib/db.js`。針對週報海量數據（2500+），引入 `GROUP BY SUBSTR(title, 1, 12)` 演算法，在資料庫層級自動過濾 90% 的重複轉載內容。
