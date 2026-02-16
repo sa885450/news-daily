@@ -111,7 +111,7 @@ async function runTask() {
                 const dateStr = new Date().toLocaleDateString('zh-TW');
                 const sentimentIcon = aiResult.sentiment_score > 0 ? '🔥' : '❄️';
                 const cleanSummary = (aiResult.summary || "無摘要").replace(/<[^>]*>/g, '').substring(0, 800) + '...';
-                const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/`;
+                const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/public/`;
                 
                 // 🟢 在 Discord 訊息加入關鍵實體代碼
                 const entityTags = (aiResult.entities || [])
