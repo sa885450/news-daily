@@ -29,7 +29,7 @@
                 <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#台積電</button> <button onclick="searchKeyword('魯比歐')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#魯比歐</button> <button onclick="searchKeyword('高市早苗')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#高市早苗</button> <button onclick="searchKeyword('川普')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普</button> <button onclick="searchKeyword('季辛格')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#季辛格</button> <button onclick="searchKeyword('經濟部')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#經濟部</button>
+                    <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('Peter Steinberger')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Peter Steinberger</button> <button onclick="searchKeyword('國網中心')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#國網中心</button> <button onclick="searchKeyword('災防科技中心')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#災防科技中心</button> <button onclick="searchKeyword('OpenClaw')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenClaw</button>
                 </div>
             </header>
             
@@ -37,7 +37,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.65</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.68</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
@@ -61,89 +61,42 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>情緒溫度：</b>市場情緒由昨日的 0.72 微幅修正至 0.65。雖然「生產力收穫」的論調仍在，但「AI 泡沫論」與「量子技術威脅」的雜音開始浮現，使市場進入高位震盪的審慎期。<br><br><b>增量分析：</b>與昨日相比，市場出現三點關鍵增量：<br>1. <b>從「技術樂觀」轉向「商業考驗」</b>：昨日焦點在 J 曲線起飛，今日季辛格（Pat Gelsinger）的言論引發對 GPU 投資回報率（ROI）的重新評估，並將「量子運算」視為潛在的技術性破壞因子。<br>2. <b>地緣政治聯盟結構化</b>：昨日重點為 PCB 供應鏈，今日增量在於「台美日」半導體戰略軸心的進一步鞏固。台積電熊本二廠升級至 3 奈米並獲川普與高市早苗背書，將 AI 產業的動能由單純的「企業獲利」轉向「地緣政治安全」，這為台積電等核心標的提供了更強的估值防禦性。<br>3. <b>應用端由深度向廣度擴散</b>：經濟部推動 AI 寫春聯及民間 AI 挑號應用，顯示生成式 AI 正從高門檻生產力工具下沉至大眾文化應用，這是產業進入成熟擴散期的前兆，但也隱含炒作過熱的預警。<br><br><b>關鍵事件：</b>台積電熊本廠製程升級引發戰略溢價；美外交首長魯比歐鞏固川普政府在歐盟的右翼影響力；季辛格提出 AI 泡沫警示。<br><br><b>操作建議：</b>建議投資組合由「純 AI 硬體」轉向「地緣戰略受益者」。台積電在美日雙方政策加持下，長線護城河極深，可逢回調加碼；對於二線 AI 零組件則需留意泡沫論帶來的波動，建議分批獲利了結，並開始關注量子運算相關的研發佈局標的。
+                        <h3>今日增量分析：從「地緣主權」擴展至「在地民主化」與「生態賦能」</h3><p>相較於昨日聚焦於印度的 AI 霸權野心與全球法規風險，今日市場動態顯示 AI 發展正進入<b>「在地化滲透」</b>與<b>「開源生態整合」</b>的新階段。</p><b>1. AI 代理人的大眾化：從極客到日常</b><br>OpenAI 吸收 OpenClaw 發起人 Peter Steinberger，並將專案轉向基金會運作，這不僅是技術收購，更是戰略性的生態擴張。這呼應了昨日提到的「規模化落地」，但更強調 AI 代理（Agents）的<b>易用性（Democratization）</b>，意圖將 AI 從專業工具轉向全民通用的「數位管家」。<br><br><b>2. 主權 AI 的文化落地：台灣經驗的補完</b><br>昨日探討區域主權，今日台灣「落雨小幫手」App 的升級則具體展現了<b>「可信任 AI」在在地語言與文化上的競爭力</b>。支援台語語音查詢不僅是技術門檻的降低，更是主權 AI 在具體民生應用上的防禦機制，確保本地數據與文化的解釋權不被外部通用模型稀釋。<br><br><b>3. 跨領域範式轉移：從科學發現到資產定價</b><br>AI 在古生物學的無監督學習應用，象徵 AI 已經超越單純的語言處理，進入<b>科學實證（Deep Tech）</b>的深度應用。另一方面，史上最貴皮卡丘卡片的成交，反映出資本市場在科技劇變期，資金流向極度稀缺性資產的趨勢，這與 AI 帶來的資產重新評價週期息息相關。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技半導體" data-title="商業模式尚未成形，龐大投資面臨考驗，ai 泡沫是否出現？各界爭論升溫" data-content="生成式 ai 帶來的龐大投資潮，讓全球資料中心、gpu 供應鏈與雲端業者幾乎呈現全面爆發的景象。人們把它比擬為電力、網路後的下一場基礎建設革命，也有人警告這是一個持續膨脹的科技泡沫。
-更複雜的是，英特爾前執行長季辛格（pat gelsinger）近期在《金融時報》指出，戳破泡沫的關鍵未必來自需求崩壞，可能來自量子運算的突破。在gpu熱潮方興未艾的當下，他主張未來兩年量子科技可能迎來臨界點，而這項技術一旦成熟，將會直接撼動gpu所建立的ai運算秩序，因為許多以矩陣乘法堆疊的ai模型架構，可能不再需要gpu主導。
-從雲端營收到算力限制  ai投資不會成泡影
-事實上，季辛格是少數同時承認ai潛能、又強調其物理極限的人。他指出，即使產業喊得震天價響，要蓋2gw等級的ai資料中心、要大幅擴充ai運算基礎，但真正能決定投資速度的不是熱情，也不是gpu的供給量，而是最基本的電力。他說，即便建築、地板、空調設備都能率先完工，「只要沒有電，沒有人會下單採購數十億美元等級的ai晶片」。全球能源每年成長僅約3～4%，不可能無限擴張，因此電力將成為天然調節力量，防止ai產業過度膨脹，使其不易形成泡沫。
-在他眼中，ai投資不像網路泡沫那般由想像驅動。雲端供應商如今擁有真實營收、成熟商業模式、現成客戶與可計算的需求，使投資即便波動，也不太可能化為幻影。
-相較季辛格的觀點，矽谷深科技（deep tech）創投公司playground global合夥人巴雷特（peter barrett）的觀點似乎有所矛盾。他認為ai「同時被低估，也被高估」。短期來看，資本部署確實不夠有效率，許多基礎模型與基礎建設投資未必能回本。然而長期來看，ai的效用將大幅超越今日的表現。
-他把當前的時代比喻為「ai的dos時代」，雖然介面粗糙、效率不佳，但正是下一波應用的前奏。巴雷特相信，未來ai將以全然不同的方式運作，並為硬體、架構帶來新需求。換言之，今天看似過度建設的部份，可能在為下一個技術世代打地基。
-投資過度  成本回收有疑問
-相對的，對於ai泡沫是否形成？最知名的反方當屬電影《大賣空》主角原型，以放空次貸聞名的麥可‧貝瑞（michael burry），他的觀點多來自賽恩資產管理公司（scion）前投資協理菲爾‧克里夫頓（phil clifton）的研究。
-菲爾認為，儘管美國民調與政策研究機構皮尤研究中心（pew research）指出，約6成美國人每週與ai互動數次，但需求端帶來的經濟效益仍低於市場預期。
-從投資面來看，英國資產管理集團man group的統計顯示，雲端服務巨頭的資本支出在4年內成長4倍，且未來5年預計再投入約3兆美元，卻未反映出相應的營收成長。該研究並將此現象比擬為2000年的光纖泡沫，當年基礎建設速度遠超過實際使用量，產能利用率一度跌至5％，電信價格更在一年內下滑70％。
-菲爾也指出，微軟因供給過剩取消2gw資料中心案，並質疑輝達客戶是否能從高額投資中回收成本。尤其伺服器折舊被延長到6年，但gpu一年一代，舊晶片往往在尚未完全攤提前功能就落後、效能變差。批評者也質疑輝達同時強調「最新晶片性能更好」與「舊晶片仍具經濟價值」的論述存在矛盾。基於這些論述，麥可．貝瑞警告投資人不要忽視泡沫訊號，特別是在企業普遍相信ai指數型成長能無限持續的時刻。
-
-▲ 在雲端資本支出快速擴張下，市場開始質疑輝達客戶是否能從高額ai基礎建設投資中順利回收成本，泡沫風險再度浮上檯面。（source：unsplash）
-應用深度不足  ai商業模式尚待驗證
-中研院院士段錦泉更直言：「ai泡沫已經形成。」在他的分析中，泡沫的根源並非技術，而是成本過高與商業模式未成熟。
-他指出，大模型雖能產生令人驚豔的結果，但本質仍是黑盒子。對金融、醫療等高風險領域而言，「看起來合理」並不足以成為決策依據。段錦泉引用麥肯錫為國際信貸組合經理協會（iacpm）所做的調查指出，ai在多數金融機構的應用仍停留在業務簡化與內容生成，真正納入作業流程的比例極低，離影響核心決策仍有差距。
-他認為，ai本應是知識密集產業，如今卻成為超級資本密集產業。投資ai所需的資本甚至可能高於建一座汽車工廠。砸了這麼多錢，企業到底該怎麼賺回來？人們是否願意長期付費使用ai產品與服務？隨著新型高效晶片問世，gpu市場使是否會面臨產能過剩與價值重估的挑戰？種種疑問讓他相信ai泡沫已現。
-ai是否形成泡沫，各方意見分歧，但無論如何， ai發展前景不在於誰喊得最大聲，而在於技術與商業模式是否能撐得起現有的資本投入。
-（本文由 貿易知識庫 授權轉載；首圖來源：unsplash）
-延伸閱讀：
-
-華爾街為何不怕 ai 泡沫？投行看好 2026 美股續漲的兩大理由
-ai 投資越多為什麼越像泡沫？納德拉解釋供應端驅動的隱憂
-戳破 ai 泡沫！魏哲家揭客戶用數據說話：他們非常有錢，甚至比台積還好
-全球 ai 依賴晶片，台灣供應鏈成風險節點！ai 泡沫疑慮升溫
-取代 gpu？季辛格：ai 泡沫真正的引爆點是量子運算
-
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-           ">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技AI" data-title="openclaw發起人加入openai，專案將轉為基金會、維持開源獨立" data-content="近期爆紅的個人ai代理專案openclaw專案發起人peter steinberger宣布加入openai，對於可執行任務的ai代理，未來將致力推向更普及的應用型態。他同時表示，openclaw將轉為基金會架構，以維持開源與專案獨立性，openai則會持續提供支持與資源。
+peter steinberger在x的貼文說明，他希望打造連一般使用者都能輕鬆上手的代理，甚至連他的母親都能使用。為達成這個目標，他認為需要更完善的安全考量，以及取得最新模型與研究成果的管道，因此選擇加入openai加速推動。
+他也提到，openclaw雖然有機會發展為一家大型公司，但自己更傾向專注於建造與實作，而非再度投入公司經營。peter steinberger指出，過去已投入13年在創業與公司經營上，這次希望把重心放在將代理帶給更多人。他並提及前一週在舊金山與多家主要實驗室交流，接觸相關人員與尚未公開的研究內容。
+peter steinberger強調，openclaw必須維持開源與自由發展，因此正著手將專案轉為基金會架構。他指出，openai已贊助該專案，並承諾讓他能持續投入社群與專案運作。基金會未來也將以支援更多模型與廠商為目標，並希望讓使用者能以自己的方式掌握資料。
+openai執行長sam altman則在x上表示，peter steinberger將協助推進下一代個人代理，並認為多代理之間的互動很快會成為openai產品的重要能力。sam altman也明確表達，openclaw會在基金會架構下以開源專案形式延續，openai將持續給予支持，並將開源視為多代理趨勢下的重要一環。
+目前雙方尚未公開更多合作細節，例如職銜或商業條件。就已公開資訊來看，這次人員加入與專案基金會化的安排，促使openclaw在維持開源獨立的前提下，仍能取得大型研究機構的模型與安全資源，同時也有助於openai擴展個人代理與多代理能力的布局。">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技半導體</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">商業模式尚未成形，龐大投資面臨考驗，AI 泡沫是否出現？各界爭論升溫</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技AI</span><span class="text-slate-400 text-xs">下午06:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">OpenClaw發起人加入OpenAI，專案將轉為基金會、維持開源獨立</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>iThome</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/ai-bubbles-debate/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.ithome.com.tw/news/173968" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="經部展示 ai 臨摹科技寫春聯，可生成風格一致新字形" data-content="慶祝農曆新年，家家戶戶掛上春聯。經濟部今天表示，為讓傳統書法藝術以嶄新形式走進民眾生活，轄下印刷研究中心蒐集近 18 萬字的書法資源，運用生成式人工智慧與精緻印刷技術，不但可呈現手寫書法效果，還能生成風格一致的新字形。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="政策治理" data-title="國網中心助落雨小幫手 app 升級，語音問天氣台語也能通" data-content="生成式人工智慧（ai）應用走入生活，災防科技中心於 2020 年結合產官學打造氣象預報 app「落雨小幫手」，至今已吸引民眾下載逾 37 萬次，這回國網中心加入合作，協助 app 升級，新增 ai 火金姑天氣問答功能，不僅支援文字輸入，更提供語音查詢，大幅降低使用門檻，長輩們用台語問火金姑未來 3 天是否會降雨，它也能聽得懂。
 
-經濟部產業技術司透過新聞稿表示，在ai的輔助下，除了可臨摹仿真書法名家的風格筆觸，重現書法作品中所展現的線條張力與整體氣韻，也與書法碑帖典藏企業合作，系統性蒐集近18萬字、涵蓋各朝代的書法碑帖、卷軸與拓片，將長期珍藏於典藏體系中的書法資源，轉化為可供人工智慧學習與分析的數位素材。
-技術司指出，透過生成式ai技術，針對書法字樣進行字形結構標註、筆路重建及風格嵌入等多層次學習，深入解析書法中蘊含的結構比例、行筆節奏與風格特徵，讓系統不僅能「看見」字形，更能理解書寫背後的運筆邏輯與藝術表現。
-技術司進一步說，相較於過去苦於文字缺漏，僅能固定複製既有字帖，這項技術可依不同文字需求生成風格一致的新字形，讓傳統書法在保有原有精神的同時，具備更高的應用彈性。
-技術司表示，為使ai生成的書法成果能真實呈現在民眾眼前，印刷研究中心進一步結合多年累積的印刷專業，透過精密製程呈現墨色層次、筆觸細節與紙張質感，讓最終完成的ai春聯在整體感覺上，能接近手寫書法的藝術效果。
-技術司補充，ai臨摹科技的核心目標並非取代人文創作，而是透過科技手段協助文化資產保存、延伸與再應用，讓珍貴的書法藝術能在現代社會中持續被理解、被欣賞。
-（首圖來源：經濟部產業技術司）
+主權ai已受到全球重視，台灣於2023年啟動「可信任生成式人工智慧對話引擎」（trustworthy ai dialogue engine，taide）計畫，打造以繁體中文為核心的開源生成式ai模型，融入在地語言、價值觀、風俗習慣等元素，使ai能理解和回應在地使用者需求。
+國科會轄下國研院國網中心在2024年承接taide計畫後，開始建立taiwan ai rap平台，內含多款開源語言模型，並整合算力等資源，提供從訓練、微調到部署的一站式解決方案，迄今已有ai火金姑天氣問答等初步應用成果。
+落雨小幫手app為國家災害防救科技中心結合產官學合作開發，2020年上線至今累計逾37萬次下載，2025年11月底，新增ai火金姑語音問答功能，成為亮點。國網中心技術總監林昀德表示，天氣資訊與日常生活密切相關，為了讓生成式ai走入百工百業、回應民眾需求，國網中心與災防科技中心合作，將app功能擴充，不再侷限於點選查詢，用戶可透過語音直接問天氣。
+「火金姑」名稱別具意涵，林昀德透露，國科會主委吳誠文想起童謠「西北雨直直落」，歌詞「日頭暗揣無路，趕緊來火金姑，做好心來照路」，意指螢火蟲可在昏暗中用微光指路，呼應這項ai天氣問答功能，為民眾提供生活即時指引，如外出是否需要帶雨傘。
+林昀德說，taide模型原先主要是處理文字的問與答，這次導入學界的語音模型後，「火金姑」能理解中文與台語。高齡族群或不熟悉鍵盤的使用者，只要開口就能獲得天氣資訊，大幅降低操作門檻。
+在資料量上，落雨小幫手app擴大預報時間。林昀德指出，原先災防科技中心提供過去30分鐘至未來3小時的天氣資訊，這次也與中央氣象署合作，將預報時間延長至未來3天，方便民眾掌握完整天氣變化。
+林昀德表示，由於資料來自災防科技中心及氣象署，各單位格式不一，加上資料量龐大，所以災防科技中心與國網中心團隊花費不少時間討論格式對齊、篩選與轉換資料，「用戶提1個問題，後端可能跑了多個步驟，這些都是國網中心幫忙開發跟串接」。
+國網中心也負責優化整體工作流程、建立檢索增強生成（rag）向量資料庫及建立ai代理人服務，同時設計過濾機制，擋下與天氣無關的提問，降低系統負載，也避免錯誤回答。
+ai火金姑的智慧語音問答功能歷時約5個月完成開發，林昀德坦言，過程中團隊與時間賽跑，常常加班，但成員都充滿拚勁，「發表會前，剛好碰到鳳凰颱風，同仁想到民眾會關心相關訊息，因此自發加班去串接氣象署的颱風資料」，國網中心團隊從用戶角度思考，致力讓資訊更完備。
+林昀德說，新版taide模型已有支援文字與圖片辨識功能，國網中心也有自主開發太魯閣語、鄒語等原住民語模型，未來若災防科技中心有需要，可以新增這些語音輸入服務。此外，也將規劃開放民眾可以上傳颱風衛星圖或淹水照片等，系統能進一步回答相關問題。
+（作者：趙敏雅；首圖來源：網頁截圖）
 延伸閱讀：
 
-ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
-春節補財庫全攻略！盤點全台六大財神廟「這間還有神明點鈔機」
+落實主權 ai，國科會展示 taiwan ai rap 與 taide 應用成果
+災防中心推落雨 app，可接收半小時內降雨預報
 
 
 				
@@ -208,61 +161,57 @@ ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
 		
 		科技新知，時時更新">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">經部展示 AI 臨摹科技寫春聯，可生成風格一致新字形</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">政策治理</span><span class="text-slate-400 text-xs">下午06:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">國網中心助落雨小幫手 App 升級，語音問天氣台語也能通</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/ai-uses-technology-to-write-spring-festival-couplets/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/watchapp-ncdr-nat/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="總體經濟" data-title="魯比歐籲歐洲挺川普捍衛西方價值 謝金河：句句指向中國" data-content="美國國務卿魯比歐（左）15日訪問斯洛伐克，會晤總理費佐（右）。（法新社）
-    
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="產業發展" data-title="始祖鳥是不是最古老鳥類？ai 重新分類 2 億年前足跡" data-content="德國亥姆霍茲柏林中心（helmholtz-zentrum berlin）與英國研究團隊利用無需人工標註的人工智慧（ai）分析約 2 億年前的恐龍足跡，並在《pnas》期刊發表研究成果。
 
-美國國務卿魯比歐（marco rubio）15日在斯洛伐克首都布拉第斯拉瓦（bratislava）表示，華府並不希望歐洲成為美國的「附庸」（vassal），而是尋求建立更強健的夥伴關係。此行他接連會晤斯洛伐克與匈牙利的右翼領袖，旨在鞏固川普政府在歐洲的盟友網絡，並呼籲歐洲各國擁抱川普對全球秩序「復興」的願景。對此，財信傳媒集團董事長謝金河表示，魯比歐這場演講可能是今年最精彩的一場演講，他的話鋒句句指向中國，這次魯比歐正在喚醒歐洲！謝金河在臉書po文表示，昨晚半夜打開手機看到美國國務卿魯比歐在德國慕尼黑安全會議上的演講，相對於去年美國副總統范斯火力全開，大大數落歐洲國家，讓歐洲各國很受傷，這次魯比歐把歷史縱深拉到250年前，而且不斷強調美國和歐洲系出同源，必須為守護共同價值奮戰！    
-    
-    
-    
-謝金河分析，魯比歐的演講數度贏來熱烈掌聲，最後所有人都起立致敬！這個演講征服歐洲人的心，魯比歐也為未來的世界定調。他從蘇聯共產主義的擴張談起，然後世界陷入全球化的迷思，他批評有些國家保護自己的市場，卻大規模補貼來削弱別國的產業。有些國家不斷擴大社會福利體系，卻犧牲掉自身的防衛能力，於此同時，有些國家卻進行最大規模且最快速的軍事擴張，且毫不猶豫運用軍事力量追求自身利益。謝金河指出，魯比歐也批評聯合國的失能，包括美國動用b2轟炸機對伊朗丟擲14枚飛彈才解決伊朗核子問題。聯合國無法處理委內瑞拉毒梟問題，只好靠美國特種部隊才能搞定！他強調不能讓那些公開威脅民眾安全，又破壞全球穩定的人，躲在自己也不相信的抽象國際法背後逃避責任！謝金河續指，魯比歐說：不希望盟友變得軟弱，因為盟友軟弱，只會讓我們自己更脆弱！他把歐洲拉在一起，並且呼籲共同承擔責任，這一席話深深打動歐洲人的心。對比上次范斯的演講，魯比歐更技高一籌，魯比歐身高只有175公分，他的父母在1956年從古巴移民到美國，是古巴裔的美國人。他曾是川普的競爭對手，沒想到川普2.0他深受川普的信任，除了國務卿，也是國家安全顧問，他身兼多職，影響力與日俱增。謝金河說，他在魯比歐的推文上看到魯比歐po出一張照片，他把自己包得像木乃伊，他說每一次和川普坐空軍一號出國，發現年近80歲的川普從不睡覺，而且頻發推文，還會去看別人在幹什麼？他說他睏得要命，把自己從頭到腳都包起來，川普還會來「巡房」，這張照片很有看點！謝金河直言，魯比歐這場演講可能是今年最精彩的一場演講，他的話鋒句句指向中國，同樣也參加這次論壇的王毅仍然高調威脅日本、台灣，並且向美國喊話，王毅把自己的焦慮投射在別的國家身上。令人叫好的是日本的小泉進次郎回應，美日同盟不是選項，而是骨架，安保戰略全面升級，分岐可以談，但底線不讓！蟄伏幾十年的日本終於挺身而出，這是地緣政治的第一個變數，這次魯比歐正在喚醒歐洲！
+這項研究為「最古老的鳥類」爭論提供新見解，聚焦三疊紀晚期至侏羅紀早期（約 2.3 億至 1.7 億年前）類似鳥類的足跡，是否真正源自鳥類。
+傳統上，最古老的鳥類化石被認為是約 1.5 億年前的始祖鳥（archaeopteryx）。在此之前的鳥類足跡（例如蘇格蘭斯凱島的三指足跡，約 1.7 億年前）則引發分類爭議。這些足跡究竟屬於鳥腳類、獸腳類，或是非鳥型恐龍的足跡，一直是科學界的熱議話題。若這些約 2 億年前的痕跡確實來自鳥類，則意味著在三疊紀末的大規模滅絕之前，鳥類可能已經存在。
+研究團隊採用機器學習技術，自動提取足跡的形狀特徵，並將其自然地分類為 8 種特徵模式。結果顯示，三疊紀晚期至侏羅紀早期的類鳥足跡，與化石鳥類及現生鳥類群體更為接近，並形成與非鳥型獸腳類距離較遠的群集，為鳥類早期演化提供形態學證據。
+不過，研究也指出限制，包括可能存在非鳥型恐龍（如特定獸腳類）也具有類似鳥的足跡，或因濕潤地面變形造成相似性。研究團隊認為，若要取得決定性證據，仍需發掘同時代的鳥類骨骼化石。
 
-                
+“最古の鳥”論争に決着か　約2億年前の恐竜の足跡を「人間が教えないai」で分析　独・英チームがpnas誌で発表
 
+（首圖來源：nobutamura http://paleoexhibit.blogspot.com/ http://spinops.blogspot.com/, cc by-sa 3.0, via wikimedia commons）
+延伸閱讀：
 
-
-            
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法">
+推翻物種衰落說，《科學》：小行星撞擊前恐龍好得很
+刺圈龍外型宛若刺蝟，科學家指堪稱長相最怪恐龍
+打破電影迷思，化石揭密恐龍叫聲可能如鳥鳴
+撇除其他可能性，研究：只有隕石撞擊才能讓恐龍滅絕">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">總體經濟</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">魯比歐籲歐洲挺川普捍衛西方價值 謝金河：句句指向中國</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">產業發展</span><span class="text-slate-400 text-xs">下午06:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">始祖鳥是不是最古老鳥類？AI 重新分類 2 億年前足跡</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5344634" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/archaeopteryx/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="運動部》史上最高後勤規格 6400萬元力挺台灣隊備戰經典賽" data-content="2026/02/16 13:41
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="比kobe、喬丹神卡還狂！ 史上最貴「皮卡丘」創5.16億天價" data-content="2026/02/16 17:06
                 
 
 
     
             
             
-                本屆經典賽台灣隊投手群由王建民及林岳平兩位12強賽冠軍教練帶領，期盼再創佳績。（運動部提供）
-〔記者梁偉銘／綜合報導〕2026年第6屆世界棒球經典賽今年3月將在日本展開預賽，台灣隊自1月15日於國家運動訓練中心開訓後，全隊2月15日完成第1階段集訓，運動部表示，team taiwan春節不鬆懈持續備戰，本屆以總計6400萬元的史上最高後勤規格全力支援。
-為了讓台灣隊無後顧之憂，運動部非常重視本次經典賽，秉持「史上最高後勤規格，全力支援 」的原則，先前已經核定補助職棒聯盟辦理情蒐計畫1600萬元，以及包含代表隊與超過40人以上的行政後勤醫療團隊所需的組訓計畫經費4400多萬元。        
+                插畫家皮卡丘總價達5.16億，打破交易卡史上最高紀錄。（圖片取自x）
+〔體育中心／綜合報導〕史上最昂貴的交易卡出爐！一張極稀有的「插畫家皮卡丘」（pikachu illustrator）卡片以總額1649萬2000美元（約新台幣5.16億元）成交，創下交易卡片史上的最高標價。
+根據報導指出，該張卡片是稀有的「插畫家皮卡丘」（pikachu illustrator），最初是 1998年漫畫雜誌《快樂快樂月刊》（コロコロコミック）系列比賽的獎品，由皮卡丘的原創設計師西田敦子親手繪製。        
     
         
     
 
-考量本屆賽會於日本及美國舉辦，除了大會安排膳宿外，另依據我國代表隊的飲食特殊性，搭配適合運動員營養的膳食及貼近台灣料理口味，運動部將增額補助代表隊餐費，由職棒聯盟於賽會期間額外安排提供符合代表隊習慣的客製化餐點，讓選手全心投入訓練及參賽，組訓計畫補助經費將提高至4550萬元。此外，運動部也全額補助代表隊選手各項旅平險、意外險及失能險，預估總補助金額達到6400萬元。
-運動部表示，雖然本屆經典賽未在我國舉辦，屆時勢必會有眾多球迷前往日本及美國，親自到場為我國球員吶喊加油，也相信在team taiwan奮力表現以及球迷支持打氣下，全隊將團結一心爭取最佳表現，為國人帶來感動與驕傲，也讓世界看見台灣。
-短暫休息2天年假後，台灣隊2月18日將前往台北大巨蛋報到，自2月19日開啟第2階段訓練，並於2月26日及27日與日本職棒福岡軟銀鷹、北海道日本火腿鬥士進行2場交流賽。國內2場交流賽結束，台灣隊再赴日本宮崎，參與3月2日及3日與日本職棒歐力士猛牛及福岡軟銀鷹的2場官辦熱身賽；接著轉往東京，3月5日在本屆經典賽賽事亮相。                                
+該卡片於2月16日由紐澤西州的《goldin》拍賣行售出，當年僅有39張頒發給比賽獲勝者，另有兩張在2020年代初期由寶可夢公司的前員工售出。且全球僅生產過41張（相比之下，光是在2025年，寶可夢公司就印製超過750億張寶可夢卡），因此使該張卡成為現存最稀有的卡片之一。
+根據鑑定公司《psa》的紀錄，此次售出的版本是唯一獲得「gem mt 10」的最高等級稀世珍品。本張卡的價格起初緩慢升至600萬美元左右，但在2月16日截標前湧入大量出價，最終落槌價為1330萬美元，加上買家要支付給拍賣行24%的手續費，總額約1649萬美元。
+該張皮卡丘神卡成為歷史上最高的交易卡，先前交易卡紀錄是2007-08年《upper deck》《exquisite collection》的喬丹（michael jordan）與布萊恩（kobe bryant）的1/1logoman雙簽卡，以1293.2萬美元結標，當時打破過往《topps》1952年曼托（mickey mantle）球員卡1260萬美元紀錄（但曼托卡在計算通膨的情況下為1353萬8481美元）。
+布萊恩與喬丹logoman雙簽卡是先前交易卡的史上最高價。（圖片取自x）
+此外，本張卡的持有者也是矚目焦點，該卡片的主人為美國網紅羅根·保羅（logan paul），他在2021年以現金加同款鑑定pas9級的卡片，以總值約530萬美元購入這張插畫家皮卡丘，該價格在當時也創下了紀錄。保羅在直播中將卡片交給了新主人：a.j. scaramucci，他是一位風險投資家，也是前白宮通訊聯絡主任anthony scaramucci之子。
+寶可夢電子遊戲系列在過去十年中一直難以推出廣受好評的作品，但此次創紀錄的拍賣象徵著實體寶可夢卡牌作為收藏愛好和投機市場的持續火爆。然而，由於零售店內卡片相對稀缺，在美國等國家，購物者之間經常發生爭執。
+2025年8月，東京澀谷區的一家麥當勞也發生了類似事件，一些顧客大量購買快樂兒童餐，希望能獲得限量版寶可夢卡牌，結果購買者卻將食物丟棄，然後將卡片以高價在網上轉售。
+插畫家皮卡丘總價達5.16億，打破交易卡史上最高紀錄。（圖片取自x）                                
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法
@@ -285,63 +234,13 @@ ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
         
         網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">運動部》史上最高後勤規格 6400萬元力挺台灣隊備戰經典賽</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午06:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">比Kobe、喬丹神卡還狂！ 史上最貴「皮卡丘」創5.16億天價</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344664" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="自由開講》台美日的晶片與戰略聯盟讓台灣更強大安全" data-content="◎ 林正二
-在日本眾議院改選投票前，除了台積電董事長魏哲家給日首相高市早苗送上大禮，宣布台積熊本第2座晶圓廠，擬改採3奈米製程量產，而有助於高市選情的提升外，美國總統川普亦發文力挺高市早苗，稱許高市是「強而有力且睿智的領導人」 ，肯定高市及其執政聯盟的施政表現，給予全面背書。美國總統川普（右）在日本眾議院大選前，便公開表態支持日本首相高市早苗（左），選後也透過社群平台恭賀高市取得壓倒性勝利。（美聯社檔案照）
-在日本大選前，台灣與美國對高市早苗的支持，彰顯了台美日經濟、政治與戰略上的緊密關係。高市與魏哲家會面後發文指出，3奈米不僅可用於資料中心，也是高市內閣列為戰略領域的ai機器人與自動駕駛所需的世界最先端半導體技術，對日本強化全球半導體供應鏈韌性及經濟安全保障，具有重大意義。
-此外，台灣晶片亦可增強日本的軍工產業，打造性能更好的武器，有助於高市的「台灣有事、日本有事」戰略強化。同樣的，未來台積電在美國增建的五廠，將能協助美國建立完整的半導體供應鏈，促進再工業化，並強化美國防工業，出售、提供更多先進武器給我國，增進我「抗中保台」的力量，鞏固美國在西太平洋的利益。台灣晶片亦可增強日本的軍工產業，打造性能更好的武器；圖為台積電董事長魏哲家（左二）5日與日本首相高市早苗（右二）會面，洽談推進熊本第二座晶圓廠製程技術相關事宜。（歐新社）
-台灣透過全球首屈一指的半導體產業鏈，已將台美日的安全關係與經濟利益緊扣在一起。在全球化各國經濟互動密切與安全息息相關的時代，台海的安穩及印太區域的自由開放，攸關印太各國與歐美國家的利益。因此，在全球化各國經濟互動、影響越來越密切時，中國在亞太地區的武力擴張，已威脅到台灣與亞太各國的和平安穩與經濟發展，台灣的安危已經跟美日菲韓澳等國的經貿及戰略利益緊密相連。    
-    
-    
-    
-
-有鑒於此，除了我國編列1.25兆國防預算加強台美軍事合作及強化「美日同盟」跟台灣的關係外，美總統川普更於日前簽署史上最強的挺台撥款法案，編列14.5億美元專款支援台灣的安全，同時高市亦已加強美日軍事與經濟合作，落實「台灣有事、日本有事」的戰略。此外，近年我也不斷加強跟美、日等國的經濟與高科技合作，藉由台灣跟美日的晶片聯盟，建立更緊密的「互利共生」關係，讓我國更強大安全。我國已在印太戰略上，透過軍事與經濟的互動合作，跟美日更緊密的聯結在一起，提升了抗衡中國的力量。
-然而，在台灣積極走向世界時，國民黨卻不斷地向欲併吞我國的極權中國輸誠交流。而在中國經濟萎縮不振，消費銳減、失業率高升不下時，藍營竟然還想跟中國加強經濟、民生與產業等合作，簡直是要將台灣推向懸崖。藍白10次阻擋政府的總預算與國防特別預算。（資料照）
-跟馬英九執政時鎖進中國相較，台灣這幾年在民進黨執政下，遠離中國、大幅減少對中投資，加強在美日投資建蓋半導體工廠及增加晶片等出口，走向世界的結果，去年台灣經濟成長率8.26%，全世界排名第二，國民平均所得，亦已從2010年19090美元提升到現在的39477美元，遠超過馬政府時代。「事實勝於雄辯」，建議賴政府加強政策宣導，釐清事實，以駁斥藍營的「親中疑美」論，凝聚國人更堅實的國家認同共識，支持政府提升國防力量，持續加強跟美日等國的合作，台灣將更為強大安穩。
-（作者為退休駐美外交官員）
-自由開講》是一個提供民眾對話的電子論壇，不論是對政治、經濟或社會、文化等新聞議題，有意見想表達、有話不吐不快，都歡迎你熱烈投稿。請勿一稿多投，文長700字內為優，來稿請附真實姓名（必寫。有筆名請另註）、職業、聯絡電話、e─mail帳號。本報有錄取及刪修權，不付稿酬；錄用與否將不另行通知。投稿信箱：ltntalk@gmail.com                
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">自由開講》台美日的晶片與戰略聯盟讓台灣更強大安全</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://talk.ltn.com.tw/article/breakingnews/5339061" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="盤點過年刮刮樂中獎妙招：ai挑號、聽「花家黑魔法」真的比較會中？" data-content="tnl 編輯
-                                        
-                                                                                tnl編輯部專用帳號，發表每天整理的新聞、重點新聞分析整理。
-                                                                                
-                                    
-                                
-                  我們想讓你知道的是
-                  
-                    每到農曆新年，彩券行門口總是排起長龍。有人讓ai幫忙挑號，有人播放《花木蘭》配樂施展「花家黑魔法」，也有人堅持買整本、挑幸運尾數再去拜拜集氣。這些流傳一年的中獎妙招，究竟真能替運氣加分，還是只是節慶氛圍下的集體想像？
-                  
-                
-                              
-              
-              
-              
-                  每到過年，彩券行門口總是人潮滿滿，紅通通的刮刮樂成了年節儀式的一部分。圍爐後一起刮、尾牙時輪流對獎，笑聲與嘆息交錯，也讓各種「集氣妙招」在網路上瘋傳：ai挑號、施展「花家黑魔法」、買整本、拜拜過火爐等方法真的能提高機率，或是心理作用？刮刮樂集氣妙招有哪些？真的有用嗎？「ai選號」助攻《中時新聞網》指出，網路近期流傳「ai挑號比較容易中獎」的說法，引發討論；為此，台灣彩券實測讓兩套ai挑選刮刮樂尾號。
-第一回合選2000元的「2000萬超級紅包」，chatgpt建議尾號1，gemini建議尾號13；結果分別中1000元與2000元。第二回合改選200元的「金馬報喜」，chatgpt挑24號中300元，gemini選16號中200元。看似「都有中獎」，但這並不代表ai具備預測能力。台彩強調，刮刮樂的號碼與獎項在印製時就已隨機配置，ai提供的只是隨機數字，本質與自行挑選無異，並不存在所謂「自帶財氣」。開運神曲「花家黑魔法」除了科技加持，社群上還流行一種另類開運儀式：在抽獎、尾牙或刮刮樂前播放迪士尼動畫《花木蘭》的歌曲〈以妳為榮〉，被戲稱為「花家黑魔法」。不少人分享「播放後真的中獎」，也有人坦言只是圖個心安。《yahoo社群》指出，這股風潮迅速在社群發酵，從科技業、服務業到學生社團，只要在留言區寫下「已播放」、「祖先請上線」、「今晚靠你了」，彷彿完成一次集體加持。
-然而，這類儀式真正改變的不是機率，而是情緒。在等待開獎的緊張時刻，一首熟悉的配樂，讓同事、朋友與家人在年末壓力中，多了一份默契與期待。其實這類儀式的功能，不在於改變機率，而在於創造共同記憶。在等待開獎的彩券行老闆三招秘訣：買整本、挑尾數、拜完再刮《tvbs新聞網》報導，位於台北士林的「飛來發彩券行」曾經開出威力彩頭獎28.7億，且每年刮刮樂都會有中百萬，老闆黃偉祺分享3招中獎秘訣：直接買整本刮刮樂挑幸運尾數，如5（give me five）、6（六六大順）、7（lucky 7）、8（發發發）、9（長長久久）。買回家先拜拜、過火爐再刮全新妙招每年都層出不窮，例如過去網路曾則流傳「刮刮樂選尾數4比較容易中獎」的說法。《民視新聞網》指出，彩券行員工曾對此發文澄清，強調刮刮樂本質就是純靠運氣，與數字吉不吉利毫無關聯。
-明知期望值為負，為何過年還是忍不住開刮？若明知期望值為負，為何仍有大批民眾趨之若鶩？網友與《風傳媒》從心理學角度分析，歸納出以下幾點：首先是「賭徒謬誤」。連續幾次沒中後，容易產生「接下來不太可能再沒中的錯覺」的錯覺；其次是「近失效應」。彩卷製造商在票面刻意製造「差一點就中頭獎」的排列，會帶來比完全沒中更強烈的情緒波動，進一步刺激再買一張的衝動。再來是倖存者偏差。社群上充斥中獎照片，卻鮮少有人分享虧損，刺激閱聽者嘗試的慾望；再來是多巴胺刺激，即使尚未中獎，期待本身就會帶來快感。此外，台彩在過年期間營造濃厚的節慶氛圍，也形塑了一種消費習慣：當年終、紅包到手時，就想買幾張碰碰運氣。「小賭怡情」成為年節社交的一部分，當這種行為與團聚、熱鬧、期待連結在一起，它就不再只是購買行為，而是一種儀式感。「見好就收」才是真正妙招在刮刮樂高峰期，也出現另一波「反刮」聲浪。不少過來人坦言，這套機制讓人贏小錢時想贏更大，輸小錢時想翻本，最終情緒失控。有人形容：「贏小錢讓你輸錢，輸小錢讓你全部輸光。」或許真正有效的妙招，只有四個字：見好就收。將刮刮樂定位為過年娛樂與公益參與，而非獲利工具；事先設定預算，不加碼、不追本；贏了懂得停手，輸了坦然接受。當它只是節慶氣氛的一部分，而不是翻身機會，快樂就會多於焦慮。過年買刮刮樂，本無可厚非。重要的是，在熱鬧背後，仍保有清醒的判斷。畢竟，真正能守住財運的，不是尾數、神曲或ai，而是理性與節制。新聞來源刮刮樂、大樂透選號秘密公開！彩券行員工全招了「這買法」提升中獎（民視新聞網）威力彩今衝13.5億！彩券行湧千人搶買　一群好姊妹集資買3千張（tvbs新聞網）過年瘋刮刮樂他「堅決不買」！過來人曝驚人理由：看過 1 慘案從此收山（風傳媒）過年尾牙必聽中獎神曲《花木蘭》！網友實測狂播「老祖宗，保佑我」：真的會中（yahoo社群）網瘋傳「ai選刮刮樂易中獎」 台彩實測結果曝光（中時新聞網）延伸閱讀用ai選刮刮樂是否有效？我們實測了claude、gemini、chatgpt和deepseek刮刮樂攻略：從期望值來看，怎麼買「比較不會」賠錢？《數學大觀念3數學算什麼？》：大部分和樂透開獎有關的偽科學，通常都是「賭徒謬誤」的變體【加入關鍵評論網會員">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">盤點過年刮刮樂中獎妙招：AI挑號、聽「花家黑魔法」真的比較會中？</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>關鍵評論網</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.thenewslens.com/article/264821" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344771" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>樂透</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('軍工')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>軍工</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('生成式AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>生成式AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('颱風')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>颱風</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('生成式AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>生成式AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -355,7 +254,7 @@ ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
                     labels: ["02-15","02-16"],
                     datasets: [{
                         label: '情緒指數',
-                        data: [0.48,0.65],
+                        data: [0.48,0.68],
                         borderColor: '#dc2626',
                         backgroundColor: '#dc262620',
                         borderWidth: 3,
@@ -382,7 +281,7 @@ ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
                     labels: ['政策', '資金', '基本面', '國際', '技術'],
                     datasets: [{
                         label: '今日強度',
-                        data: [0.75,0.58,0.82,0.7,0.55],
+                        data: [0.75,0.6,0.85,0.65,0.8],
                         fill: true,
                         backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
                         borderColor: 'rgb(79, 70, 229)',
