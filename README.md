@@ -26,6 +26,16 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.6.2 - 雙金鑰架構與穩定性強化 (2026-02-16)
+- **🔑 實作雙金鑰架構 (Dual-Key Architecture)**：
+  - 新增 `GEMINI_WEEKLY_API_KEY` 支援。
+  - 將日報與週報的 API 配額完全隔離，解決週報執行時因請求量大而導致日報被 Rate Limit 的問題。
+- **❄️ API 冷卻機制 (Throttling)**：
+  - 在 `lib/ai.js` 的 Map-Reduce 迴圈中加入 **4秒強制冷卻**。
+  - 配合指數退避重試機制，顯著提升長文本分析的成功率。
+- **🛡️ 系統容錯升級**：
+  - 優化 `weekly.js` 的錯誤捕捉與日誌輸出，現在能清楚顯示當前使用的金鑰指紋，方便除錯。
+
 ### v2.6.1 - 週報 AI 引擎穩定性強化 (2026-02-16)
 - **🛡️ 實作 API 指數退避重試 (Exponential Backoff)**：
   - 針對 Gemini API 不穩定的問題，在 `lib/ai.js` 中實作重試機制 (Retry)。當請求失敗時，會自動等待 2s/4s/8s 後重試，大幅降低 `AI 模型全數失敗` 的機率。
