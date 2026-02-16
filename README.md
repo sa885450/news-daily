@@ -25,6 +25,13 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+...
+### v2.4.1 - 週報機器人修復 (2026-02-16)
+- **🐛 修正 WeeklyBot 資料庫連線錯誤**：
+  - 將 `weekly.js` 重構為模組化架構，改用 `lib/db.js` 存取資料庫，解決 `no such table: articles` 錯誤。
+  - 將 `sendDiscord` 函式抽離至 `lib/utils.js` 供全域共用。
+  - 週報現在會自動調用 Gemini AI 進行「一週重點回顧」並發送到 Discord。
+
 ### v2.4.0 - AI 邏輯深化與多維度分析 (2026-02-15)
 - **🧠 實體識別 (Entity Recognition)**：
   - AI 自動提取新聞中的關鍵實體（公司、人物、機構）。
