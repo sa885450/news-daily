@@ -24,12 +24,22 @@
         <div class="max-w-6xl mx-auto px-4 pt-10 relative">
             <div class="absolute top-0 right-0 mt-2 mr-2 z-50"><select onchange="if(this.value) window.location.href=this.value" class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50"><option value="index.html">🏠 返回首頁</option><option value="report_2026-02-16.html" selected>📅 今天 2026-02-16</option><option value="report_2026-02-15.html" >📜 2026-02-15</option></select></div>
             <header class="text-center mb-10">
-                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.7</div>
+                <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.8</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一 · 更新於 20:00</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一 · 更新於 21:00</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#台積電</button> <button onclick="searchKeyword('Fed')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Fed</button> <button onclick="searchKeyword('Christopher Waller')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Christopher Waller</button> <button onclick="searchKeyword('黃仁勳')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#黃仁勳</button> <button onclick="searchKeyword('NVIDIA')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#NVIDIA</button> <button onclick="searchKeyword('Apple')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Apple</button>
+                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+        </button> <button onclick="searchKeyword('Fed')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #Fed
+        </button> <button onclick="searchKeyword('新黃金公司')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #新黃金公司<span class="text-xs ml-1 opacity-70">(NGD-US)</span>
+        </button> <button onclick="searchKeyword('輝達')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #輝達<span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
+        </button> <button onclick="searchKeyword('美國國債')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #美國國債
+        </button>
                 </div>
             </header>
             
@@ -37,7 +47,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.68</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.85</span></div>
                     </div>
                     <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
@@ -56,12 +66,20 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>今日增量分析：從「價值鏈重構」深化至「主權 AI 設施」與「貨幣政策現實校準」</h3><p>相較於昨日聚焦在 AI 代理人普及化與軟體估值重估，今日市場動態顯示 AI 競爭已推升至<b>國家戰略層級（Sovereign AI）</b>，同時伴隨著宏觀環境對於降息預期的理性修正。</p><b>1. 硬體供應鏈的實質支撐：從「預期」轉為「獲利驗證」</b><br>昨日市場在討論軟體業的賦能，今日則轉向核心硬體。台積電即將發布的財報成為市場定海神針，外資積極回流反映了市場對 2nm 與 CoWoS 產能短缺的溢價認可。這驗證了 AI 價值鏈重構中，底層算力基礎設施仍是目前最穩固的價值捕捉點。<br><b>2. 地緣政治下的主權 AI 與市場擴張</b><br>黃仁勳提出的「主權 AI」概念，將 AI 從純商業競爭提升至國家基礎設施層級。這意味著 AI 的總體定址市場（TAM）將不再僅限於大型雲端服務供應商（CSP），而是擴展至各國政府撥款，進一步緩解了市場對於單一產業循環見頂的擔憂。<br><b>3. 宏觀逆風：聯準會的冷靜劑</b><br>與 AI 產業熱度相反，Fed 理事 Waller 的言論為市場過熱的降息預期降溫。這暗示著儘管產業基本面強勁，但估值擴張（Multiples Expansion）短期內將受到利率環境的壓制。投資策略上應從「普漲預期」轉向「績優成長性」的選股邏輯，重點關注具備實質議價能力的硬體龍頭與受惠於國家主權需求的 AI 設備商。</div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度決策報告：主權 AI 狂熱與估值修正的臨界點</h3><p><b>1. 增量分析與比較：</b>昨日市場核心仍在於 AI 代理人（AI Agents）的軟體想像空間，而今日動態已正式轉向「<b>主權 AI 基礎設施</b>」的剛性需求驗證。台積電（2330.TW）的產能溢價成為市場對沖宏觀不確定性的唯一護城河。相較於昨日的軟體估值重估，今日市場更具備「硬體獲利支撐」的特質，但也伴隨著極度貪婪的情緒偏離。</p><p><b>2. 風險警告與泡沫徵兆：</b>當前市場進入「Sovereign AI」的軍備競賽階段，雖然推升了硬體供應鏈價值，但<b>降息預期的理性修正（校準）</b>正悄然抬頭。新黃金公司（NGD-US）EPS 預估遭下修，反映出通膨與成本壓力對部分資源型企業的侵蝕，這是一個警訊：高估值未必能被所有產業消受。</p><p><b>3. 防禦性戰略配置：</b>身為風險控管專家，本報告強烈警告投資人，當前技術指標已處於超買區間。建議如下：<br/>- <b>獲利了結：</b>分批減碼已獲利逾 30% 的 AI 硬體飆股。<br/>- <b>轉向防禦：</b>增加抗通膨債券或高股息防禦性資產配置。<br/>- <b>關注動態：</b>高度警戒 Fed 對降息路徑的鷹派轉向，預防資金流向突變引發的踩踏。</p></div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="除夕夜地牛翻身！台中近海19:00規模4.0地震 最大震度3級" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="鉅亨速報 - factset 最新調查：新黃金公司(ngd-us)eps預估下修至0.62元，預估目標價為13.11元" data-content="&lt;p&gt;根據factset最新調查，共6位分析師，對新黃金公司(ngd-us)做出2025年eps預估：中位數由0.63元下修至0.62元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.11元。&lt;/p&gt;&lt;p&gt;※本篇提及eps與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估eps&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;0.68(0.68)&lt;/td&gt;&lt;td&gt;1.67&lt;/td&gt;&lt;td&gt;1.35&lt;/td&gt;&lt;td&gt;1.25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;0.45(0.45)&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0.92&lt;/td&gt;&lt;td&gt;1.16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;0.6(0.6)&lt;/td&gt;&lt;td&gt;1.35&lt;/td&gt;&lt;td&gt;1.18&lt;/td&gt;&lt;td&gt;1.2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;0.62(0.63)&lt;/td&gt;&lt;td&gt;1.4&lt;/td&gt;&lt;td&gt;1.27&lt;/td&gt;&lt;td&gt;1.2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;14.74億&lt;/td&gt;&lt;td&gt;25.87億&lt;/td&gt;&lt;td&gt;24.99億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;14.54億&lt;/td&gt;&lt;td&gt;25.18億&lt;/td&gt;&lt;td&gt;24.57億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;14.63億&lt;/td&gt;&lt;td&gt;25.41億&lt;/td&gt;&lt;td&gt;24.78億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;14.60億&lt;/td&gt;&lt;td&gt;25.20億&lt;/td&gt;&lt;td&gt;24.78億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;eps&lt;/td&gt;&lt;td&gt;0.21&lt;/td&gt;&lt;td&gt;-0.10&lt;/td&gt;&lt;td&gt;-0.09&lt;/td&gt;&lt;td&gt;0.14&lt;/td&gt;&lt;/">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午09:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.62元，預估目標價為13.11元</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345788" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="不想再被親戚問到失眠 精神科醫授3招可全身而退" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -71,7 +89,20 @@
         
     
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,30 +111,46 @@
 
 
     
-	2026/02/16 19:12
-	即時新聞／綜合報導
             
-                        
-            
+    
+    
+    
+    
+    
+
     
         
-        除夕晚上7點台中市近海點發生芮氏規模4.0有感地震，最大震度3級。（擷取自中央氣象署網站）
+        
+        2026/02/16 20:12
+    
+    
+    
+    
     
 
-台中市近海今晚（16日）7點發生芮氏規模4.0有感地震，最大震度3級。中央氣象署資料顯示，這起地震震央位於台中市政府西北西方26.0公里處，地震深度21.6公里。各地測得最大震度在台中市、彰化縣3級；苗栗縣、南投縣、雲林縣及嘉義市1級。
-
-                
 
 
+        
+            過年面對長輩連珠炮式問候、作息大亂、開工焦慮，精神科醫師分享3招「生存建議」，瓦解連假身心債。（情境照）
+〔記者劉婉君／台南報導〕春節連假親戚問候、作息大亂、開工焦慮讓你覺得放假反而更累？奇美醫院精神醫學部主治醫師朱家俊分享3招「生存建議」，瓦解連假身心債。
+第1招：針對社交減壓，設置「情緒斷點」，別讓交感神經暴走。    
+    
+    
+    
 
-            
-            
+朱家俊表示，長輩連珠炮式的問候，常觸動大腦防禦機制，交感神經會因「戰或逃」反應而亢奮，導致肌肉緊繃、心跳加速。面對隱私話題時，與其尷尬沉默，不如不失禮的「句點式」回應，例如「還在努力中，有好消息一定通知您！」或順勢把球丟回去，「我比較想聽聽看您的退休生活，怎麼安排得這麼豐富？」
+當空氣凝結或焦慮上升時，可藉故「去一下廁所」、「去洗把臉」或「下樓倒垃圾」，透過5至10分鐘的物理隔離，設置情緒斷點，洗臉、吹吹風等簡單的感官刺激，也能有效截斷大腦的壓力迴路，讓副交感神經重新接手，找回平靜感。
+第2招：「2小時底線」及數位減法，避開社交時差的神經陷阱。
+朱家俊說，過年期間打牌、追劇、過度飲食的亢奮，會讓大腦持續分泌多巴胺，形成「假性體力」錯覺，這種透支，常會在連假末期演變成嚴重的疲憊與情緒不穩定。
+他建議，即使熬夜，隔天起床時間也不宜變動超過2小時，在起床後立即接觸自然陽光，藉此校正生理時鐘，避免收假後大腦運作效率下降或注意力難以集中。且睡前1小時放下手機，避免藍光抑制褪黑激素。酒精雖能助眠，卻會破壞深層睡眠，讓身體無法得到真正的修復。
+第3招：心理收心，給大腦一點「甜頭」，減少開工抗拒。
+朱家俊指出，收假前1天，整理一下雜物或準備好隔天上班的背包，具秩序感的動作，能向大腦傳遞訊號「混亂即將結束，秩序正在回來」。開工第1天規劃一些生活的小甜頭，例如到期盼已久的餐廳用餐、買杯平常捨不得喝的咖啡、散步，讓大腦覺得「開工不只是受苦」，而是另一種節奏的開始。
+朱家俊表示，新的一年，最好的開運方式，是學會辨識自己的極限，適時將「優先權」還給自己。假期結束後有持續的倦怠感、難以平復的焦慮，或怎麼睡都睡不飽，都是身心發出的求救訊號，如果感到痛苦，甚至難以重回生活軌道，務必尋求專業醫師或心理師協助，及早處理情緒的起伏，避免短暫的壓力累積成心靈風暴。                        
 
-            
-            
-            			
+    ☆健康新聞不漏接，按讚追蹤粉絲頁。
+    
+    ☆更多重要醫藥新聞訊息，請上自由健康網。
 
-			
             
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
@@ -111,95 +158,30 @@
 
         
 
-
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
         
-        生活今日熱門
-
-
-
-    
-
-
-
+                            
         
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
         
+        
+
     
 
+    
 
+    
+    
 
-
-
-
-
-
-
-
-
-網友回應">
+    
+    
+    發燒新聞">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">下午08:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">除夕夜地牛翻身！台中近海19:00規模4.0地震 最大震度3級</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">下午09:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">不想再被親戚問到失眠 精神科醫授3招可全身而退</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344822" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://health.ltn.com.tw/article/breakingnews/5328472" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('地震')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>地震</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('放假')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>放假</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -208,13 +190,13 @@
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.68], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.85], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.45,0.72,0.85,0.6,0.8], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.45,0.92,0.85,0.78,0.88], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
