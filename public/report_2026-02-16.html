@@ -29,7 +29,7 @@
                 <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('台光電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#台光電</button> <button onclick="searchKeyword('Google')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Google</button> <button onclick="searchKeyword('川普政府')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普政府</button> <button onclick="searchKeyword('施凱爾')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#施凱爾</button> <button onclick="searchKeyword('金像電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#金像電</button> <button onclick="searchKeyword('馬杜洛')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#馬杜洛</button> <button onclick="searchKeyword('史丹佛大學')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#史丹佛大學</button>
+                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#台積電</button> <button onclick="searchKeyword('魯比歐')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#魯比歐</button> <button onclick="searchKeyword('高市早苗')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#高市早苗</button> <button onclick="searchKeyword('川普')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#川普</button> <button onclick="searchKeyword('季辛格')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#季辛格</button> <button onclick="searchKeyword('經濟部')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#經濟部</button>
                 </div>
             </header>
             
@@ -37,7 +37,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.72</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.65</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
@@ -61,185 +61,287 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>情緒溫度：</b>市場情緒由昨日的 0.68 攀升至 0.72。動能來源由「基建需求」進一步升級為「生產力實質收穫」，AI 應用的變現能力與產業鏈上游的高速成長獲得數據支撐。<br><br><b>增量分析：</b>與昨日相比，市場出現三點關鍵增量：<br>1. <b>從「建設期」跨入「收穫期」</b>：昨日關注點在基建擴張，今日史丹佛經濟學家指出美 AI 生產力進入「J 曲線起飛階段」，這為高估值提供了基本面合理性。<br>2. <b>PCB 供應鏈全面爆發</b>：昨日提到的硬體缺貨今日在 PCB 領域得到具體營收印證，台光電、金像電等上游供應商營收創下新高，證實 AI 浪潮已滲透至電子全產業鏈。<br>3. <b>法制風險具象化</b>：今日新增英國嚴格監管政策與 Google 被控侵權案件，顯示 AI 發展在效率提升的同時，正面臨越來越大的倫理與版權訴訟成本。<br><br><b>關鍵事件：</b>美國耗資 30 億美元對委內瑞拉採取軍事行動，顯示地緣政治不確定性增加，恐對財政預算與通膨預期產生干擾；同時，英國針對 AI 實施《線上安全法》象徵監管紅利期可能縮短。<br><br><b>操作建議：</b>持續看好 AI 上游關鍵零組件（PCB/CCL/記憶體），特別是具備新產能釋放優勢的權值股。短期需注意地緣政治引發的軍事支出對美債收益率的擾動，並警惕 AI 合規性訴訟對軟體龍頭（如 Google）的估值壓制。
+                        <b>情緒溫度：</b>市場情緒由昨日的 0.72 微幅修正至 0.65。雖然「生產力收穫」的論調仍在，但「AI 泡沫論」與「量子技術威脅」的雜音開始浮現，使市場進入高位震盪的審慎期。<br><br><b>增量分析：</b>與昨日相比，市場出現三點關鍵增量：<br>1. <b>從「技術樂觀」轉向「商業考驗」</b>：昨日焦點在 J 曲線起飛，今日季辛格（Pat Gelsinger）的言論引發對 GPU 投資回報率（ROI）的重新評估，並將「量子運算」視為潛在的技術性破壞因子。<br>2. <b>地緣政治聯盟結構化</b>：昨日重點為 PCB 供應鏈，今日增量在於「台美日」半導體戰略軸心的進一步鞏固。台積電熊本二廠升級至 3 奈米並獲川普與高市早苗背書，將 AI 產業的動能由單純的「企業獲利」轉向「地緣政治安全」，這為台積電等核心標的提供了更強的估值防禦性。<br>3. <b>應用端由深度向廣度擴散</b>：經濟部推動 AI 寫春聯及民間 AI 挑號應用，顯示生成式 AI 正從高門檻生產力工具下沉至大眾文化應用，這是產業進入成熟擴散期的前兆，但也隱含炒作過熱的預警。<br><br><b>關鍵事件：</b>台積電熊本廠製程升級引發戰略溢價；美外交首長魯比歐鞏固川普政府在歐盟的右翼影響力；季辛格提出 AI 泡沫警示。<br><br><b>操作建議：</b>建議投資組合由「純 AI 硬體」轉向「地緣戰略受益者」。台積電在美日雙方政策加持下，長線護城河極深，可逢回調加碼；對於二線 AI 零組件則需留意泡沫論帶來的波動，建議分批獲利了結，並開始關注量子運算相關的研發佈局標的。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體/PCB" data-title="〈馬年景氣展望〉pcb廠持續擴廠投產 ai應用及低軌衛星板具高度成長性" data-content="&lt;p&gt;2025 年電子產業景氣由 ai 的浪潮帶動出復甦後高度成長的榮景，上游的玻纖布、 ccl 及、pcb 全製程甚至耗材廠在 ai 加持之下，包括台光電 (2383-tw)、臻鼎 - ky(4958-tw)、金像電 (2368-tw) 及健鼎 (3044-tw) 營收強勁創新高。但同時，pcb 廠的生產在海內外廠區新產能加碼的供給量開出但市場玻纖布、記憶體大缺影響，也都是今年的 pcb 產業重大變數。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技半導體" data-title="商業模式尚未成形，龐大投資面臨考驗，ai 泡沫是否出現？各界爭論升溫" data-content="生成式 ai 帶來的龐大投資潮，讓全球資料中心、gpu 供應鏈與雲端業者幾乎呈現全面爆發的景象。人們把它比擬為電力、網路後的下一場基礎建設革命，也有人警告這是一個持續膨脹的科技泡沫。
+更複雜的是，英特爾前執行長季辛格（pat gelsinger）近期在《金融時報》指出，戳破泡沫的關鍵未必來自需求崩壞，可能來自量子運算的突破。在gpu熱潮方興未艾的當下，他主張未來兩年量子科技可能迎來臨界點，而這項技術一旦成熟，將會直接撼動gpu所建立的ai運算秩序，因為許多以矩陣乘法堆疊的ai模型架構，可能不再需要gpu主導。
+從雲端營收到算力限制  ai投資不會成泡影
+事實上，季辛格是少數同時承認ai潛能、又強調其物理極限的人。他指出，即使產業喊得震天價響，要蓋2gw等級的ai資料中心、要大幅擴充ai運算基礎，但真正能決定投資速度的不是熱情，也不是gpu的供給量，而是最基本的電力。他說，即便建築、地板、空調設備都能率先完工，「只要沒有電，沒有人會下單採購數十億美元等級的ai晶片」。全球能源每年成長僅約3～4%，不可能無限擴張，因此電力將成為天然調節力量，防止ai產業過度膨脹，使其不易形成泡沫。
+在他眼中，ai投資不像網路泡沫那般由想像驅動。雲端供應商如今擁有真實營收、成熟商業模式、現成客戶與可計算的需求，使投資即便波動，也不太可能化為幻影。
+相較季辛格的觀點，矽谷深科技（deep tech）創投公司playground global合夥人巴雷特（peter barrett）的觀點似乎有所矛盾。他認為ai「同時被低估，也被高估」。短期來看，資本部署確實不夠有效率，許多基礎模型與基礎建設投資未必能回本。然而長期來看，ai的效用將大幅超越今日的表現。
+他把當前的時代比喻為「ai的dos時代」，雖然介面粗糙、效率不佳，但正是下一波應用的前奏。巴雷特相信，未來ai將以全然不同的方式運作，並為硬體、架構帶來新需求。換言之，今天看似過度建設的部份，可能在為下一個技術世代打地基。
+投資過度  成本回收有疑問
+相對的，對於ai泡沫是否形成？最知名的反方當屬電影《大賣空》主角原型，以放空次貸聞名的麥可‧貝瑞（michael burry），他的觀點多來自賽恩資產管理公司（scion）前投資協理菲爾‧克里夫頓（phil clifton）的研究。
+菲爾認為，儘管美國民調與政策研究機構皮尤研究中心（pew research）指出，約6成美國人每週與ai互動數次，但需求端帶來的經濟效益仍低於市場預期。
+從投資面來看，英國資產管理集團man group的統計顯示，雲端服務巨頭的資本支出在4年內成長4倍，且未來5年預計再投入約3兆美元，卻未反映出相應的營收成長。該研究並將此現象比擬為2000年的光纖泡沫，當年基礎建設速度遠超過實際使用量，產能利用率一度跌至5％，電信價格更在一年內下滑70％。
+菲爾也指出，微軟因供給過剩取消2gw資料中心案，並質疑輝達客戶是否能從高額投資中回收成本。尤其伺服器折舊被延長到6年，但gpu一年一代，舊晶片往往在尚未完全攤提前功能就落後、效能變差。批評者也質疑輝達同時強調「最新晶片性能更好」與「舊晶片仍具經濟價值」的論述存在矛盾。基於這些論述，麥可．貝瑞警告投資人不要忽視泡沫訊號，特別是在企業普遍相信ai指數型成長能無限持續的時刻。
 
-&lt;p&gt;同時，pcb 廠得以加速、加碼投資海內外新產能，也是獲來自資本市場活躍的籌資能力大力挹注，2025 年包括了金像電及臻鼎完成各逾新台幣百億元的籌資完成，同時，去年營收也改寫新高的定穎 (3715-tw)，也完成旗下中國大陸湖北黃石的超穎電子在上海 a 股的上市掛牌籌資案募集人民幣 8.967 億元 (折合新台幣 38.46 億元)，又爲台廠 pcb 業在兩岸 t+a 繼臻鼎之後再增一例。&lt;/p&gt;
-
-&lt;p&gt;臻鼎 - ky 指出，客戶在 ai 伺服器、光通訊、 ic 載板及 ai 應用產品等高階應用相關需求維持強勁，預期相關營收貢獻將逐漸放大。同時，隨著淮安、泰國及高雄的高階產能陸續開出並逐步發揮效益，近期有 10 個廠在動工建設中，預計資本支出達 500 億元以上，2026 年將高速成長，營收表現可望再創新高。&lt;/p&gt;
-
-&lt;p&gt;而台灣 pcb 的海內外雙掛牌，預計 2026 年還會有欣興蘇州 ic 載板廠的規劃在香港 ipo 的正式提出，pcb 業者的市場籌資也更國際化、更趨多元。 pcb 產業界人士指出，就產品的應用上，20256 年在 ai 及低軌衛星應用的成長性仍持續且不容置疑。&lt;/p&gt;
-
-&lt;p&gt;金像電在伺服器板客戶大量的訂單湧入之下，公司持續推動台灣、泰國及中國大陸蘇州三地產能的擴充，今年最先開出的新產能將是在桃園楊梅租用楊梅現成廠房建置新產能，金像電指出，楊梅新建置產能在今年第三季開出 。&lt;/p&gt;
-
-&lt;p&gt;金像電向永準實業租用楊梅現成廠房、約 3432 坪，支援既有營運與接單。同時，金像電董事會通過，除去年通過以 72 億元資本支出案，向中環 (2323-tw) 購置中壢工業區土地及廠房外，昨日再通過追加 104 億元的資本支出，將在台灣、中國大陸蘇州及泰國積極建立新產能。 金像電向中環購入的中壢工業區廠房及土地後，廠房並已啟動程序業，後續將進行新廠建置，預計相關產能預計 2028 年開始貢獻營運所需。&lt;/p&gt;
-
-&lt;p&gt;金像電及高技 (5439-tw) 2025 年都在桃園中壢及龜山購地擴廠，2025 年初高技在桃園以 5.6 億元取得桃園龜山廠房及土地，2025 年投資 10 億元資本支出；而金像電包括第二季的蘇州廠、下半年的泰國廠新產能開出，並以 16 億元向中環買下桃園中壢廠，新產能有機會再提升金像電單月產值再向上。金像電買下的中壢新廠房包括土地 4113 坪，廠房 3329 坪。&lt;/p&gt;
-
-&lt;p&gt;由於 ai 運算需求快速擴張的帶動下，全球 pcb 產業正迎來新一波結構性成長。根據 tpca(台灣電路板協會)&nbsp; 與工研院產科國際所最新分析，儘管 2025 年全球經濟仍面臨地緣政治、美國關稅政策與匯率波動等不確定因素，但 ai 伺服器與高效能運算需求持續放量， 2026 年全球產值可望進一步攀升。&lt;/p&gt;
-
-&lt;p&gt;tpca 指出，2025 年全球 pcb 產值預估將達 923.6 億美元，年成長率高達 15.4%；展望 2026 年，產值可望進一步攀升至 1,052 億美元，年增 13.9%，顯示 ai 正成為驅動產業升級與價值重構的關鍵引擎。&lt;/p&gt;
-
-&lt;p&gt;&nbsp;&lt;/p&gt;
-">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體/PCB</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">〈馬年景氣展望〉PCB廠持續擴廠投產 AI應用及低軌衛星板具高度成長性</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6337284" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="人工智慧" data-title="美軍擄走馬杜洛 美國政府耗資近30億美元" data-content="&lt;p&gt;在今年年初強行擄走委內瑞拉總統馬杜洛夫婦時，川普政府稱此次行動簡潔周密，在空中支援下，大約 60 名特種部隊士兵乘直升機降落在加拉加斯，擊退安保人員，綁走目標，隨後又快速返回美軍軍艦上，整個過程僅用數小時完成。&lt;/p&gt;
-
-&lt;p&gt;然而，據《彭博》上周六（14 日）計算，美國在加勒比海地區的軍事部署耗資接近 30 億美元。自去年 11 月中旬至今年 1 月中旬期間，部署在那裡的艦艇作戰成本最高時每天超過 2,000 萬美元。&lt;/p&gt;
-
-&lt;p&gt;《彭博》分析了五角大廈的營運成本資料、艦船追蹤數據、衛星照片和公開部署公告，揭示了美軍在行動開始前數月，艦船和飛機是如何被調往加勒比海。這番行動悄然消耗了數十億美元，並可能削弱了美國在其他地區的實力。&lt;/p&gt;
-
-&lt;p&gt;儘管大部分費用來自已撥付的國防預算，但作戰行動&mdash;&mdash;從飛行時間到武器發射，再到額外津貼，都需要額外支出。&lt;/p&gt;
-
-&lt;p&gt;美國戰略與國際問題研究中心（csis）mark cancian 說：「美國國防部預算中沒有應對意外行動的應急資金，衝突會帶來額外的成本。」&lt;/p&gt;
-
-&lt;p&gt;去年夏季，數十艘美國海軍艦艇、戰機、無人機和後勤船隻開始在拉丁美洲周邊集結，這是名為「南方之矛」的軍事集結行動的一部分。&lt;/p&gt;
-
-&lt;p&gt;在其規模最大時，這一部署佔美國海軍水面艦隊總數 20%，在全球其他地區危機頻發之際佔用了關鍵軍事資源。&lt;/p&gt;
-
-&lt;p&gt;白宮堅稱，圍繞委內瑞拉的行動並未增加美國納稅人的負擔，因為參與部隊原本就已部署在外。與此同時，在美國與伊朗的關係緊張之際，另一支航母打擊群被派往中東，而加勒比海行動的核心艦艇「福特號」航母也已被指派加入打擊群。&lt;/p&gt;
-
-&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;
-">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">人工智慧</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">美軍擄走馬杜洛 美國政府耗資近30億美元</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345602" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="美國 ai 生產力「起飛階段」來了？學者：這只是 j 曲線開始" data-content="在近期的經濟討論中，ai 的影響力逐漸成為焦點，尤其是在生產力提升方面。
-
-根據史丹佛大學的經濟學家 erik brynjolfsson 分析，美國生產力在 2025 年成長約 2.7%，幾乎是過去 10 年 1.4% 年均成長率的 2 倍。brynjolfsson 將此視為生產力的「起飛階段」，並指出經濟正進入 ai 採用的「收穫階段」。
-這波生產力激增也與所謂的「j 曲線效應」相符。該理論認為，在 ai 的影響反映到總體經濟資料之前，會先出現一段初期滯後。apollo 的首席經濟學家 torsten slok 也提到，ai 的影響可能需要時間才會在總體資料中顯現，且在部分產業中，ai 可能強化勞動力，而非完全取代。
-不過，brynjolfsson 的生產力成長預測，與一些較保守的官方估計形成對比。penn wharton 預算模型預測，ai 帶來的年度生產力成長僅增加 0.1 到 0.2 個百分點，並估計到 2035 年累計成長 1.5%。國會預算辦公室則預估，ai 每年將為總要素生產力成長貢獻 0.1 個百分點，最終到 2036 年使產出提高 1 個百分點。
-值得注意的是，2025 年的生產力成長，發生在就業成長意外偏慢的背景下。根據勞工部修訂資料，2025 年就業成長僅 181,000 個，遠低於最初估計的 584,000 個與 2024 年的 146 萬個。這種經濟擴張與就業成長之間的脫節，也引發外界對 ai 是否正在實質取代勞動力的質疑。
-gartner 預測，到 2025 年，75% 的客戶服務互動將涉及 ai 協助，讓人類客服得以專注於更複雜的任務。
-
-one of stanford’s original ai gurus says productivity liftoff has begun after doubling in 2025 amid transition to ‘harvest phase’ along j-curve
-
-（首圖來源：pixabay）
+▲ 在雲端資本支出快速擴張下，市場開始質疑輝達客戶是否能從高額ai基礎建設投資中順利回收成本，泡沫風險再度浮上檯面。（source：unsplash）
+應用深度不足  ai商業模式尚待驗證
+中研院院士段錦泉更直言：「ai泡沫已經形成。」在他的分析中，泡沫的根源並非技術，而是成本過高與商業模式未成熟。
+他指出，大模型雖能產生令人驚豔的結果，但本質仍是黑盒子。對金融、醫療等高風險領域而言，「看起來合理」並不足以成為決策依據。段錦泉引用麥肯錫為國際信貸組合經理協會（iacpm）所做的調查指出，ai在多數金融機構的應用仍停留在業務簡化與內容生成，真正納入作業流程的比例極低，離影響核心決策仍有差距。
+他認為，ai本應是知識密集產業，如今卻成為超級資本密集產業。投資ai所需的資本甚至可能高於建一座汽車工廠。砸了這麼多錢，企業到底該怎麼賺回來？人們是否願意長期付費使用ai產品與服務？隨著新型高效晶片問世，gpu市場使是否會面臨產能過剩與價值重估的挑戰？種種疑問讓他相信ai泡沫已現。
+ai是否形成泡沫，各方意見分歧，但無論如何， ai發展前景不在於誰喊得最大聲，而在於技術與商業模式是否能撐得起現有的資本投入。
+（本文由 貿易知識庫 授權轉載；首圖來源：unsplash）
 延伸閱讀：
 
-比蒸汽機、電力、電腦更猛，小摩：市場低估 ai 生產力繁榮
-ai 沒有這麼狂，mit：十年內 ai 對生產力與經濟貢獻很低">
+華爾街為何不怕 ai 泡沫？投行看好 2026 美股續漲的兩大理由
+ai 投資越多為什麼越像泡沫？納德拉解釋供應端驅動的隱憂
+戳破 ai 泡沫！魏哲家揭客戶用數據說話：他們非常有錢，甚至比台積還好
+全球 ai 依賴晶片，台灣供應鏈成風險節點！ai 泡沫疑慮升溫
+取代 gpu？季辛格：ai 泡沫真正的引爆點是量子運算
+
+
+				
+				
+				
+
+
+		
+            
+			                
+                
+                
+                
+        
+            
+                想請我們喝幾杯咖啡？
+            
+            
+                每杯咖啡 65 元
+            
+            
+                
+                    x
+                    1
+                
+                
+                    x
+                    3
+                
+                
+           ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">美國 AI 生產力「起飛階段」來了？學者：這只是 J 曲線開始</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技半導體</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">商業模式尚未成形，龐大投資面臨考驗，AI 泡沫是否出現？各界爭論升溫</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/16/erik-brynjolfsson/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/ai-bubbles-debate/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="國際宏觀" data-title="google 挨告！npr 前主持人控 notebooklm ai 聲音「幾乎是我」" data-content="美國全國公共廣播電台（npr）前主持人大衛‧格林（david greene）近日控告 google，指控其 ai podcast 工具 notebooklm 使用的男性合成聲音與他的聲音極為相似，且未經他同意。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="經部展示 ai 臨摹科技寫春聯，可生成風格一致新字形" data-content="慶祝農曆新年，家家戶戶掛上春聯。經濟部今天表示，為讓傳統書法藝術以嶄新形式走進民眾生活，轄下印刷研究中心蒐集近 18 萬字的書法資源，運用生成式人工智慧與精緻印刷技術，不但可呈現手寫書法效果，還能生成風格一致的新字形。
 
-根據《華盛頓郵報》報導，格林在朋友、家人與同事提醒下，開始懷疑該聲音的相似性，並表示這種模仿影響了他的名譽。
-格林強調：「我的聲音是我身分中最重要的部分。」但 google 否認相關指控，並在聲明中表示，notebooklm 的男性聲音是基於一位專業演員的表現，與格林無關。
-此案並非首例，過去也曾發生類似爭議。例如，openai 曾因女演員史嘉蕾‧喬韓森（scarlett johansson）抱怨 chatgpt 的聲音模仿了她的聲音，而撤回該聲音。
-法律專家預測，當 notebooklm 這類生成式 ai 工具普及，類似控告可能增加。此案影響不僅限於格林個人，也涉及 ai 技術發展、使用者同意與補償等議題，凸顯技術創新與創作權益之間的緊張關係。
-
-longtime npr host david greene sues google over notebooklm voice
-
-（首圖來源：google）
+經濟部產業技術司透過新聞稿表示，在ai的輔助下，除了可臨摹仿真書法名家的風格筆觸，重現書法作品中所展現的線條張力與整體氣韻，也與書法碑帖典藏企業合作，系統性蒐集近18萬字、涵蓋各朝代的書法碑帖、卷軸與拓片，將長期珍藏於典藏體系中的書法資源，轉化為可供人工智慧學習與分析的數位素材。
+技術司指出，透過生成式ai技術，針對書法字樣進行字形結構標註、筆路重建及風格嵌入等多層次學習，深入解析書法中蘊含的結構比例、行筆節奏與風格特徵，讓系統不僅能「看見」字形，更能理解書寫背後的運筆邏輯與藝術表現。
+技術司進一步說，相較於過去苦於文字缺漏，僅能固定複製既有字帖，這項技術可依不同文字需求生成風格一致的新字形，讓傳統書法在保有原有精神的同時，具備更高的應用彈性。
+技術司表示，為使ai生成的書法成果能真實呈現在民眾眼前，印刷研究中心進一步結合多年累積的印刷專業，透過精密製程呈現墨色層次、筆觸細節與紙張質感，讓最終完成的ai春聯在整體感覺上，能接近手寫書法的藝術效果。
+技術司補充，ai臨摹科技的核心目標並非取代人文創作，而是透過科技手段協助文化資產保存、延伸與再應用，讓珍貴的書法藝術能在現代社會中持續被理解、被欣賞。
+（首圖來源：經濟部產業技術司）
 延伸閱讀：
 
-ai 生成 podcast 教賣枕頭、棉被，助攻寢具南霸天業績翻倍
-notebooklm 手機版升級，資訊圖表與簡報支援自訂選項
-google 官方建議 40 個 ai 實用技巧：日常生活輕鬆活用人工智慧
-notebooklm「資料表」一鍵整理表格，付費用戶優先使用
-notebooklm 對話紀錄跨裝置使用，ai ultra 訂閱用戶獲最高用量">
+ai 靈氣大對決！chatgpt vs. gemini 誰是 2026 年最強財神？
+春節補財庫全攻略！盤點全台六大財神廟「這間還有神明點鈔機」
+
+
+				
+				
+				
+
+
+		
+            
+			                
+                
+                
+                
+        
+            
+                想請我們喝幾杯咖啡？
+            
+            
+                每杯咖啡 65 元
+            
+            
+                
+                    x
+                    1
+                
+                
+                    x
+                    3
+                
+                
+                    x
+                    5
+                
+                
+                    x
+                    
+                
+            
+            您的咖啡贊助將是讓我們持續走下去的動力
+            總金額共新臺幣 0 元
+            
+            《關於請喝咖啡的 q & a》
+        
+        
+        
+            留給我們的話
+                
+            
+        
+        
+    
+
+
+            
+            
+            
+
+            
+			 
+	
+		
+		
+		科技新知，時時更新">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">國際宏觀</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">Google 挨告！NPR 前主持人控 NotebookLM AI 聲音「幾乎是我」</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">經部展示 AI 臨摹科技寫春聯，可生成風格一致新字形</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/notebooklm-npr/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/ai-uses-technology-to-write-spring-festival-couplets/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="英國重手對 ai 與社群實施嚴格規範，兒童安全問題不得免責" data-content="英國首相施凱爾（keir starmer）（見首圖）宣布，政府將對 ai 聊天機器人與社群媒體平台實施更嚴格的安全規範，強調「沒有任何線上平台可以在兒童安全問題上獲得免責權」。此一新政策旨在加強對兒童的保護，特別是在近期有關 grok ai 聊天機器人生成假裸體圖片的爭議之後。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="總體經濟" data-title="魯比歐籲歐洲挺川普捍衛西方價值 謝金河：句句指向中國" data-content="美國國務卿魯比歐（左）15日訪問斯洛伐克，會晤總理費佐（右）。（法新社）
+    
 
-根據新提案，所有 ai 聊天機器人提供商必須遵守《線上安全法》的規定，負責監控並防止非法內容傳播。這項措施的推出，代表政府在保護兒童免受線上危害方面的努力進一步升級。
-此外，政府也規畫補上法律漏洞，防止兒童使用虛擬私人網路（vpn）非法存取色情內容，限制兒童使用線上聊天機器人，並考慮禁止 16 歲以下兒童使用社群媒體。這些措施旨在降低兒童在網路上面臨的風險。
-施凱爾表示，政府將於 2023 年 3 月啟動公共諮詢，徵求家長與年輕人的意見，並透過《兒童福祉與學校法案》引入新權力，以便迅速更新法律，因應不斷變化的線上行為。
-新規定也包含在兒童過世後保留其社群媒體與線上資料，以回應 jools’ law 運動的呼籲。這場運動源於一位母親的悲劇：她的兒子在 14 歲時因參加網路挑戰而喪生，卻無法取得其線上活動資料以釐清死因。新規定將要求在可能與死因相關的情況下，於 5 天內保留這些資料，以協助更多家庭獲得答案。
-
-uk’s starmer wants ai chatbots to follow online safety rules
-no free pass for internet platforms on child safety, starmer says
-
-（首圖來源：kirsty o’connor / no 10 downing street, ogl 3, via wikimedia commons）
-延伸閱讀：
-
-社群媒體影響兒童專注力，研究指可能促使 adhd 病例增加
-「等到 8 年級運動」掀全美潮流，如何正確教孩子用智慧手機？
-法國會委員會建議，禁止 15 歲以下兒童使用社群媒體
-前研究員作證，meta 更看重 vr 獲利勝於兒童安全
-澳洲將禁青少年用社群媒體，軟體辨識年齡待考驗">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">英國重手對 AI 與社群實施嚴格規範，兒童安全問題不得免責</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/uks-starmer-wants-ai-chatbots-to-follow-online-safety-rules/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="八點檔男星過年忙翻天 餐廳端菜洗碗兼當活招牌：比拍戲累" data-content="〔記者李紹綾／台北報導〕今天是除夕，許多人期待放假團圓，但對正在演出三立八點檔《百味人生》的林佑星來說，過年卻是全年最忙碌的時刻之一。他笑說，別人過年是走春、休息，他的過年關鍵字只有一句話：「微笑地面對客人。」
-林佑星過年不休息，在自家餐廳端菜、洗碗。（三立提供）
-林佑星透露，老家位於新北市新店，家中經營餐廳多年，規模約20桌，幾乎全年無休。除夕與初二是他「一定要回家端菜」的日子，「一年正常就是除夕、初二、母親節，這幾天一定要回去幫忙。」除夕夜餐廳更是翻兩輪營業，第一輪5點半進場，一路忙到7點半收桌，8點立刻迎接第二輪，兩輪下來將近50桌。    
+美國國務卿魯比歐（marco rubio）15日在斯洛伐克首都布拉第斯拉瓦（bratislava）表示，華府並不希望歐洲成為美國的「附庸」（vassal），而是尋求建立更強健的夥伴關係。此行他接連會晤斯洛伐克與匈牙利的右翼領袖，旨在鞏固川普政府在歐洲的盟友網絡，並呼籲歐洲各國擁抱川普對全球秩序「復興」的願景。對此，財信傳媒集團董事長謝金河表示，魯比歐這場演講可能是今年最精彩的一場演講，他的話鋒句句指向中國，這次魯比歐正在喚醒歐洲！謝金河在臉書po文表示，昨晚半夜打開手機看到美國國務卿魯比歐在德國慕尼黑安全會議上的演講，相對於去年美國副總統范斯火力全開，大大數落歐洲國家，讓歐洲各國很受傷，這次魯比歐把歷史縱深拉到250年前，而且不斷強調美國和歐洲系出同源，必須為守護共同價值奮戰！    
     
     
     
+謝金河分析，魯比歐的演講數度贏來熱烈掌聲，最後所有人都起立致敬！這個演講征服歐洲人的心，魯比歐也為未來的世界定調。他從蘇聯共產主義的擴張談起，然後世界陷入全球化的迷思，他批評有些國家保護自己的市場，卻大規模補貼來削弱別國的產業。有些國家不斷擴大社會福利體系，卻犧牲掉自身的防衛能力，於此同時，有些國家卻進行最大規模且最快速的軍事擴張，且毫不猶豫運用軍事力量追求自身利益。謝金河指出，魯比歐也批評聯合國的失能，包括美國動用b2轟炸機對伊朗丟擲14枚飛彈才解決伊朗核子問題。聯合國無法處理委內瑞拉毒梟問題，只好靠美國特種部隊才能搞定！他強調不能讓那些公開威脅民眾安全，又破壞全球穩定的人，躲在自己也不相信的抽象國際法背後逃避責任！謝金河續指，魯比歐說：不希望盟友變得軟弱，因為盟友軟弱，只會讓我們自己更脆弱！他把歐洲拉在一起，並且呼籲共同承擔責任，這一席話深深打動歐洲人的心。對比上次范斯的演講，魯比歐更技高一籌，魯比歐身高只有175公分，他的父母在1956年從古巴移民到美國，是古巴裔的美國人。他曾是川普的競爭對手，沒想到川普2.0他深受川普的信任，除了國務卿，也是國家安全顧問，他身兼多職，影響力與日俱增。謝金河說，他在魯比歐的推文上看到魯比歐po出一張照片，他把自己包得像木乃伊，他說每一次和川普坐空軍一號出國，發現年近80歲的川普從不睡覺，而且頻發推文，還會去看別人在幹什麼？他說他睏得要命，把自己從頭到腳都包起來，川普還會來「巡房」，這張照片很有看點！謝金河直言，魯比歐這場演講可能是今年最精彩的一場演講，他的話鋒句句指向中國，同樣也參加這次論壇的王毅仍然高調威脅日本、台灣，並且向美國喊話，王毅把自己的焦慮投射在別的國家身上。令人叫好的是日本的小泉進次郎回應，美日同盟不是選項，而是骨架，安保戰略全面升級，分岐可以談，但底線不讓！蟄伏幾十年的日本終於挺身而出，這是地緣政治的第一個變數，這次魯比歐正在喚醒歐洲！
 
-他笑稱自己過年身兼多職，不只要端菜、送菜，還得當「活招牌」和客人合照，「客人要拍照，我當然要很和氣地說謝謝、謝謝。」甚至連洗碗都一手包辦。他細算，平均一桌至少20個碗，兩輪加起來將近1000個碗盤，還不包含杯子。
-被問到「拍戲比較累還是過年比較累？」林佑星毫不猶豫回答：「過年比較累，完全不一樣。」談到家人分工，他笑說媽媽一語道破現實：「你現在就剩這個功能了。」老婆與孩子過年也會到餐廳幫忙顧櫃檯，或到附近走走，現在大兒子長大了，甚至會陪著一起端菜，成了最佳小幫手。
-林佑星過年不休息，在自家餐廳端菜、洗碗。（三立提供）
-雖然過年行程滿檔，林佑星仍不忘顧及家人心情。他表示，原本打算大年初一在家休息，但後來覺得對老婆和孩子有點抱歉，便承諾「你們想去哪，我都帶你們去。」只是想到指南宮或宜蘭的人潮，就讓他忍不住苦笑。他也努力協調拍戲時程，希望能爭取初三、初四多帶家人走春放風。
-至於紅包，他笑說：「我都這麼辛苦了！」但該給的還是會給。過去包給爸爸的紅包，常被原封不動轉包給孫子，媽媽則會笑著收下，說要拿去「打八圈」，林佑星也認為：「過年就是孝順。」
-對林佑星而言，過年雖然忙碌、勞心又勞力、還得破財，但能一家人聚在一起、一起撐起家業，就是最真實也最踏實的年味。他笑說自己其實「不期待過年」，卻年年準時到位，用行動詮釋什麼叫做責任與團圓。                
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
 			
-			
-		                                
+            
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">八點檔男星過年忙翻天 餐廳端菜洗碗兼當活招牌：比拍戲累</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">總體經濟</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">魯比歐籲歐洲挺川普捍衛西方價值 謝金河：句句指向中國</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ent.ltn.com.tw/news/breakingnews/5344618" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5344634" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="65歲資深玉女歌手回春啦！最美長輩圖被瘋傳" data-content="周思潔過年應景推出ai「恭喜發財」影片。（萊格悠國際文化提供）
-〔記者陳慧玲／台北報導〕65歲資深玉女歌手周思潔馬年出新招，透過ai技術，將42年前錄唱的賀歲歌曲重新剪輯，變成熱鬧應景的「恭喜發財」賀年影片，如同「最美長輩圖」被瘋傳。
-迎接馬年，周思潔團隊翻出她過去在《大聯歡 82》演唱的一系列新年歌曲，結合ai技術重新變成賀歲影片，儘管已是42年前唱的歌，但她的聲音聽起來完全沒有過時的年代感，依然充滿活力與喜氣。    
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="運動部》史上最高後勤規格 6400萬元力挺台灣隊備戰經典賽" data-content="2026/02/16 13:41
+                
+
+
+    
+            
+            
+                本屆經典賽台灣隊投手群由王建民及林岳平兩位12強賽冠軍教練帶領，期盼再創佳績。（運動部提供）
+〔記者梁偉銘／綜合報導〕2026年第6屆世界棒球經典賽今年3月將在日本展開預賽，台灣隊自1月15日於國家運動訓練中心開訓後，全隊2月15日完成第1階段集訓，運動部表示，team taiwan春節不鬆懈持續備戰，本屆以總計6400萬元的史上最高後勤規格全力支援。
+為了讓台灣隊無後顧之憂，運動部非常重視本次經典賽，秉持「史上最高後勤規格，全力支援 」的原則，先前已經核定補助職棒聯盟辦理情蒐計畫1600萬元，以及包含代表隊與超過40人以上的行政後勤醫療團隊所需的組訓計畫經費4400多萬元。        
+    
+        
+    
+
+考量本屆賽會於日本及美國舉辦，除了大會安排膳宿外，另依據我國代表隊的飲食特殊性，搭配適合運動員營養的膳食及貼近台灣料理口味，運動部將增額補助代表隊餐費，由職棒聯盟於賽會期間額外安排提供符合代表隊習慣的客製化餐點，讓選手全心投入訓練及參賽，組訓計畫補助經費將提高至4550萬元。此外，運動部也全額補助代表隊選手各項旅平險、意外險及失能險，預估總補助金額達到6400萬元。
+運動部表示，雖然本屆經典賽未在我國舉辦，屆時勢必會有眾多球迷前往日本及美國，親自到場為我國球員吶喊加油，也相信在team taiwan奮力表現以及球迷支持打氣下，全隊將團結一心爭取最佳表現，為國人帶來感動與驕傲，也讓世界看見台灣。
+短暫休息2天年假後，台灣隊2月18日將前往台北大巨蛋報到，自2月19日開啟第2階段訓練，並於2月26日及27日與日本職棒福岡軟銀鷹、北海道日本火腿鬥士進行2場交流賽。國內2場交流賽結束，台灣隊再赴日本宮崎，參與3月2日及3日與日本職棒歐力士猛牛及福岡軟銀鷹的2場官辦熱身賽；接著轉往東京，3月5日在本屆經典賽賽事亮相。                                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+            
+            
+            
+
+
+
+            
+
+            
+
+            
+        
+        推薦新聞
+
+        
+        
+        網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">運動部》史上最高後勤規格 6400萬元力挺台灣隊備戰經典賽</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344664" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="自由開講》台美日的晶片與戰略聯盟讓台灣更強大安全" data-content="◎ 林正二
+在日本眾議院改選投票前，除了台積電董事長魏哲家給日首相高市早苗送上大禮，宣布台積熊本第2座晶圓廠，擬改採3奈米製程量產，而有助於高市選情的提升外，美國總統川普亦發文力挺高市早苗，稱許高市是「強而有力且睿智的領導人」 ，肯定高市及其執政聯盟的施政表現，給予全面背書。美國總統川普（右）在日本眾議院大選前，便公開表態支持日本首相高市早苗（左），選後也透過社群平台恭賀高市取得壓倒性勝利。（美聯社檔案照）
+在日本大選前，台灣與美國對高市早苗的支持，彰顯了台美日經濟、政治與戰略上的緊密關係。高市與魏哲家會面後發文指出，3奈米不僅可用於資料中心，也是高市內閣列為戰略領域的ai機器人與自動駕駛所需的世界最先端半導體技術，對日本強化全球半導體供應鏈韌性及經濟安全保障，具有重大意義。
+此外，台灣晶片亦可增強日本的軍工產業，打造性能更好的武器，有助於高市的「台灣有事、日本有事」戰略強化。同樣的，未來台積電在美國增建的五廠，將能協助美國建立完整的半導體供應鏈，促進再工業化，並強化美國防工業，出售、提供更多先進武器給我國，增進我「抗中保台」的力量，鞏固美國在西太平洋的利益。台灣晶片亦可增強日本的軍工產業，打造性能更好的武器；圖為台積電董事長魏哲家（左二）5日與日本首相高市早苗（右二）會面，洽談推進熊本第二座晶圓廠製程技術相關事宜。（歐新社）
+台灣透過全球首屈一指的半導體產業鏈，已將台美日的安全關係與經濟利益緊扣在一起。在全球化各國經濟互動密切與安全息息相關的時代，台海的安穩及印太區域的自由開放，攸關印太各國與歐美國家的利益。因此，在全球化各國經濟互動、影響越來越密切時，中國在亞太地區的武力擴張，已威脅到台灣與亞太各國的和平安穩與經濟發展，台灣的安危已經跟美日菲韓澳等國的經貿及戰略利益緊密相連。    
     
     
     
 
-周思潔旗袍造型拜年。（萊格悠國際文化提供）
-在影片中周思潔其中一套緊身旗袍造型，襯托出她玲瓏有致的s型曲線，看不出歲月痕跡，讓人難以置信她已經65歲；另一套「馴馬女」造型她也很喜歡，周思潔笑說自己看了這組照片也感到心動，希望今年有機會親自騎馬奔馳在草原上，展現「馬不停蹄、正面向上」的精神。
-周思潔在ai影片中騎馬，她希望有機會能真正騎在馬背上。（萊格悠國際文化提供）                
-			
-			
-		                                
+有鑒於此，除了我國編列1.25兆國防預算加強台美軍事合作及強化「美日同盟」跟台灣的關係外，美總統川普更於日前簽署史上最強的挺台撥款法案，編列14.5億美元專款支援台灣的安全，同時高市亦已加強美日軍事與經濟合作，落實「台灣有事、日本有事」的戰略。此外，近年我也不斷加強跟美、日等國的經濟與高科技合作，藉由台灣跟美日的晶片聯盟，建立更緊密的「互利共生」關係，讓我國更強大安全。我國已在印太戰略上，透過軍事與經濟的互動合作，跟美日更緊密的聯結在一起，提升了抗衡中國的力量。
+然而，在台灣積極走向世界時，國民黨卻不斷地向欲併吞我國的極權中國輸誠交流。而在中國經濟萎縮不振，消費銳減、失業率高升不下時，藍營竟然還想跟中國加強經濟、民生與產業等合作，簡直是要將台灣推向懸崖。藍白10次阻擋政府的總預算與國防特別預算。（資料照）
+跟馬英九執政時鎖進中國相較，台灣這幾年在民進黨執政下，遠離中國、大幅減少對中投資，加強在美日投資建蓋半導體工廠及增加晶片等出口，走向世界的結果，去年台灣經濟成長率8.26%，全世界排名第二，國民平均所得，亦已從2010年19090美元提升到現在的39477美元，遠超過馬政府時代。「事實勝於雄辯」，建議賴政府加強政策宣導，釐清事實，以駁斥藍營的「親中疑美」論，凝聚國人更堅實的國家認同共識，支持政府提升國防力量，持續加強跟美日等國的合作，台灣將更為強大安穩。
+（作者為退休駐美外交官員）
+自由開講》是一個提供民眾對話的電子論壇，不論是對政治、經濟或社會、文化等新聞議題，有意見想表達、有話不吐不快，都歡迎你熱烈投稿。請勿一稿多投，文長700字內為優，來稿請附真實姓名（必寫。有筆名請另註）、職業、聯絡電話、e─mail帳號。本報有錄取及刪修權，不付稿酬；錄用與否將不另行通知。投稿信箱：ltntalk@gmail.com                
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午01:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">65歲資深玉女歌手回春啦！最美長輩圖被瘋傳</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">自由開講》台美日的晶片與戰略聯盟讓台灣更強大安全</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ent.ltn.com.tw/news/breakingnews/5344615" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://talk.ltn.com.tw/article/breakingnews/5339061" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="盤點過年刮刮樂中獎妙招：ai挑號、聽「花家黑魔法」真的比較會中？" data-content="tnl 編輯
+                                        
+                                                                                tnl編輯部專用帳號，發表每天整理的新聞、重點新聞分析整理。
+                                                                                
+                                    
+                                
+                  我們想讓你知道的是
+                  
+                    每到農曆新年，彩券行門口總是排起長龍。有人讓ai幫忙挑號，有人播放《花木蘭》配樂施展「花家黑魔法」，也有人堅持買整本、挑幸運尾數再去拜拜集氣。這些流傳一年的中獎妙招，究竟真能替運氣加分，還是只是節慶氛圍下的集體想像？
+                  
+                
+                              
+              
+              
+              
+                  每到過年，彩券行門口總是人潮滿滿，紅通通的刮刮樂成了年節儀式的一部分。圍爐後一起刮、尾牙時輪流對獎，笑聲與嘆息交錯，也讓各種「集氣妙招」在網路上瘋傳：ai挑號、施展「花家黑魔法」、買整本、拜拜過火爐等方法真的能提高機率，或是心理作用？刮刮樂集氣妙招有哪些？真的有用嗎？「ai選號」助攻《中時新聞網》指出，網路近期流傳「ai挑號比較容易中獎」的說法，引發討論；為此，台灣彩券實測讓兩套ai挑選刮刮樂尾號。
+第一回合選2000元的「2000萬超級紅包」，chatgpt建議尾號1，gemini建議尾號13；結果分別中1000元與2000元。第二回合改選200元的「金馬報喜」，chatgpt挑24號中300元，gemini選16號中200元。看似「都有中獎」，但這並不代表ai具備預測能力。台彩強調，刮刮樂的號碼與獎項在印製時就已隨機配置，ai提供的只是隨機數字，本質與自行挑選無異，並不存在所謂「自帶財氣」。開運神曲「花家黑魔法」除了科技加持，社群上還流行一種另類開運儀式：在抽獎、尾牙或刮刮樂前播放迪士尼動畫《花木蘭》的歌曲〈以妳為榮〉，被戲稱為「花家黑魔法」。不少人分享「播放後真的中獎」，也有人坦言只是圖個心安。《yahoo社群》指出，這股風潮迅速在社群發酵，從科技業、服務業到學生社團，只要在留言區寫下「已播放」、「祖先請上線」、「今晚靠你了」，彷彿完成一次集體加持。
+然而，這類儀式真正改變的不是機率，而是情緒。在等待開獎的緊張時刻，一首熟悉的配樂，讓同事、朋友與家人在年末壓力中，多了一份默契與期待。其實這類儀式的功能，不在於改變機率，而在於創造共同記憶。在等待開獎的彩券行老闆三招秘訣：買整本、挑尾數、拜完再刮《tvbs新聞網》報導，位於台北士林的「飛來發彩券行」曾經開出威力彩頭獎28.7億，且每年刮刮樂都會有中百萬，老闆黃偉祺分享3招中獎秘訣：直接買整本刮刮樂挑幸運尾數，如5（give me five）、6（六六大順）、7（lucky 7）、8（發發發）、9（長長久久）。買回家先拜拜、過火爐再刮全新妙招每年都層出不窮，例如過去網路曾則流傳「刮刮樂選尾數4比較容易中獎」的說法。《民視新聞網》指出，彩券行員工曾對此發文澄清，強調刮刮樂本質就是純靠運氣，與數字吉不吉利毫無關聯。
+明知期望值為負，為何過年還是忍不住開刮？若明知期望值為負，為何仍有大批民眾趨之若鶩？網友與《風傳媒》從心理學角度分析，歸納出以下幾點：首先是「賭徒謬誤」。連續幾次沒中後，容易產生「接下來不太可能再沒中的錯覺」的錯覺；其次是「近失效應」。彩卷製造商在票面刻意製造「差一點就中頭獎」的排列，會帶來比完全沒中更強烈的情緒波動，進一步刺激再買一張的衝動。再來是倖存者偏差。社群上充斥中獎照片，卻鮮少有人分享虧損，刺激閱聽者嘗試的慾望；再來是多巴胺刺激，即使尚未中獎，期待本身就會帶來快感。此外，台彩在過年期間營造濃厚的節慶氛圍，也形塑了一種消費習慣：當年終、紅包到手時，就想買幾張碰碰運氣。「小賭怡情」成為年節社交的一部分，當這種行為與團聚、熱鬧、期待連結在一起，它就不再只是購買行為，而是一種儀式感。「見好就收」才是真正妙招在刮刮樂高峰期，也出現另一波「反刮」聲浪。不少過來人坦言，這套機制讓人贏小錢時想贏更大，輸小錢時想翻本，最終情緒失控。有人形容：「贏小錢讓你輸錢，輸小錢讓你全部輸光。」或許真正有效的妙招，只有四個字：見好就收。將刮刮樂定位為過年娛樂與公益參與，而非獲利工具；事先設定預算，不加碼、不追本；贏了懂得停手，輸了坦然接受。當它只是節慶氣氛的一部分，而不是翻身機會，快樂就會多於焦慮。過年買刮刮樂，本無可厚非。重要的是，在熱鬧背後，仍保有清醒的判斷。畢竟，真正能守住財運的，不是尾數、神曲或ai，而是理性與節制。新聞來源刮刮樂、大樂透選號秘密公開！彩券行員工全招了「這買法」提升中獎（民視新聞網）威力彩今衝13.5億！彩券行湧千人搶買　一群好姊妹集資買3千張（tvbs新聞網）過年瘋刮刮樂他「堅決不買」！過來人曝驚人理由：看過 1 慘案從此收山（風傳媒）過年尾牙必聽中獎神曲《花木蘭》！網友實測狂播「老祖宗，保佑我」：真的會中（yahoo社群）網瘋傳「ai選刮刮樂易中獎」 台彩實測結果曝光（中時新聞網）延伸閱讀用ai選刮刮樂是否有效？我們實測了claude、gemini、chatgpt和deepseek刮刮樂攻略：從期望值來看，怎麼買「比較不會」賠錢？《數學大觀念3數學算什麼？》：大部分和樂透開獎有關的偽科學，通常都是「賭徒謬誤」的變體【加入關鍵評論網會員">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午02:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">盤點過年刮刮樂中獎妙招：AI挑號、聽「花家黑魔法」真的比較會中？</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>關鍵評論網</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.thenewslens.com/article/264821" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('放假')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>放假</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('匯率')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>匯率</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>樂透</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('軍工')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>軍工</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('生成式AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>生成式AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -253,7 +355,7 @@ no free pass for internet platforms on child safety, starmer says
                     labels: ["02-15","02-16"],
                     datasets: [{
                         label: '情緒指數',
-                        data: [0.48,0.72],
+                        data: [0.48,0.65],
                         borderColor: '#dc2626',
                         backgroundColor: '#dc262620',
                         borderWidth: 3,
@@ -280,7 +382,7 @@ no free pass for internet platforms on child safety, starmer says
                     labels: ['政策', '資金', '基本面', '國際', '技術'],
                     datasets: [{
                         label: '今日強度',
-                        data: [0.55,0.78,0.85,0.45,0.7],
+                        data: [0.75,0.58,0.82,0.7,0.55],
                         fill: true,
                         backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
                         borderColor: 'rgb(79, 70, 229)',
