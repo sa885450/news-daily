@@ -25,7 +25,13 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
-...
+
+### v2.4.2 - 週報與 AI 容錯修復 (2026-02-16)
+- **🐛 修復 AI 分析崩潰問題 (Fix TypeError)**：
+  - 修正 `lib/ai.js` 中 `getSummary` 函式。當新聞資料缺失 `content` 欄位時（如週報讀取歷史資料），自動降級使用 `title` 作為分析素材，防止 `substring` 方法導致程式崩潰。
+- **🤖 週報機器人穩定性提升**：
+  - 優化 `weekly.js` 的錯誤處理流程，確保與新版 `lib/db.js` 相容。
+
 ### v2.4.1 - 週報機器人修復 (2026-02-16)
 - **🐛 修正 WeeklyBot 資料庫連線錯誤**：
   - 將 `weekly.js` 重構為模組化架構，改用 `lib/db.js` 存取資料庫，解決 `no such table: articles` 錯誤。
