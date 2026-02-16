@@ -26,19 +26,19 @@
             <header class="text-center mb-10">
                 <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.8</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 03:00</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 04:00</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('Google / DeepMind')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Google / DeepMind<span class="text-xs ml-1 opacity-70">(GOOGL)</span>
-        </button> <button onclick="searchKeyword('Apple')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Apple<span class="text-xs ml-1 opacity-70">(AAPL)</span>
-        </button> <button onclick="searchKeyword('Valar Atomics')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Valar Atomics
-        </button> <button onclick="searchKeyword('歐股 Stoxx 600')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #歐股 Stoxx 600<span class="text-xs ml-1 opacity-70">(^STOXX)</span>
-        </button> <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                    <button onclick="searchKeyword('Apple Inc.')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #Apple Inc.<span class="text-xs ml-1 opacity-70">(AAPL)</span>
+        </button> <button onclick="searchKeyword('立法院')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #立法院
+        </button> <button onclick="searchKeyword('美國在台協會 (AIT)')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #美國在台協會 (AIT)
+        </button> <button onclick="searchKeyword('外交部')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #外交部
+        </button> <button onclick="searchKeyword('交通部高速公路局')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #交通部高速公路局
         </button>
                 </div>
             </header>
@@ -47,7 +47,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.88</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.85</span></div>
                     </div>
                     <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
@@ -66,159 +66,31 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度決策報告：從硬體神格化到人力極限的泡沫警訊</h3><p><b>1. 增量分析與比較：</b>昨日市場聚焦於<b>能源機動化 (Valar Atomics)</b> 與硬體作為「硬通貨」的資產化現象，這代表了對物理基礎的實質渴望。今日則進一步演化至「<b>人力資本神格化</b>」。當 DeepMind 等 AI 領袖的工作節奏被提升至心理預期的高度，這標誌著市場情緒已從基本面轉向「個人崇拜與品牌溢價」。</p><p><b>2. 泡沫風險警示：</b>歐股軟體類股昨日的重挫顯示 AI 的「破壞性創新」已開始反噬傳統軟體業利潤。當市場開始將 Apple AirTag 2 這種線性更新過度解讀為生態無敵時，反映出估值邏輯已嚴重脫離現實。這種從實體資產轉向心理崇拜的演進，是典型的<b>泡沫末端跡象</b>。</p><p><b>3. 避險決策建議：</b>市場極度貪婪，技術指標顯示已進入超買區。建議投資人採取「<b>適度獲利了結</b>」策略，將資金部位向防禦性資產（如高現金流銀行股、公共事業）傾斜，以應對 AI 敘事從「全面受惠」轉向「產業洗牌」所帶來的劇烈波動。</p></div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度決策報告：當「突擊式驚喜」遭遇地緣溢價的泡沫邊界</h3><p><b>1. 增量分析與比較：</b>昨日報告警示了「硬體神格化」引發的估值過熱，今日市場則進一步轉向「消息面狂熱」。蘋果（Apple）突襲式宣布 3 月 4 日的體驗活動，將市場對消費電子復甦的預期推至頂點。相較於昨日關注的物理基礎設施（Valar Atomics），今日重點轉向<b>終端應用的資本變現預期</b>，這通常是市場過熱、散戶全面進場的末端徵兆。</p><p><b>2. 泡沫風險警示：</b>儘管蘋果新品傳聞提振市場情緒，但我們必須注意<b>國防預算與地緣政治緊張</b>的並行現象。立法院將國防特別預算列為首要任務，且美方退役官員對台灣內部政治背景的強硬表態，暗示著資金成本與地緣溢價正在悄然上升。當市場僅聚焦於 iPhone 或 AirTag 的線性更新，而忽視外部防禦性支出的急迫性時，這便是典型的「選擇性無視」風險。</p><p><b>3. 專家操作建議：</b>目前市場貪婪指數已進入高階震盪區（0.85）。建議投資人針對近期漲幅過大的科技硬體股進行<b>適度獲利了結（Profit-taking）</b>。應將重心移往「防禦性資產」及「實質政策受益股」（如國防軍工、電信基礎建設）。在 Apple 特別活動利多兌現前，應嚴格執行止盈策略，避免在高位承接市場情緒溢價後的賣壓回踩。</p></div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="風險控管" data-title="東部海域規模4.7地震　最大震度新北、宜蘭2級" data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-    
-
-
-
-
-
-
-
-    
-	2026/02/17 02:54
-	中央社
-            
-                        
-            
-
-中央氣象署最新資訊，今天凌晨2時23分發生芮氏規模4.7地震，深度62.9公里，震央位於宜蘭縣政府東南東方29.0公里（台灣東部海域），最大震度宜蘭縣、新北市2級。（編輯：陳彥鈞）1150217
-
-            
-
-
-
-            
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-
-
-    
-
-    
-
-
-    
-
-    
-
-
-相關新聞
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-        
-        生活今日熱門
-
-
-
-    
-
-
-
-        
-		
-				
-			
-		
-		
-		
-
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">風險控管</span><span class="text-slate-400 text-xs">上午03:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">東部海域規模4.7地震　最大震度新北、宜蘭2級</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344899" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="人工智慧" data-title="市場擔憂ai衝擊軟體業　歐股收盤走勢分歧" data-content="2026/02/17 02:12
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技" data-title="蘋果突襲宣布 3／4 舉辦特別體驗活動！傳聞新品名單一次看" data-content="2026/02/17 03:28
+                文／記者吳佩樺
                 
 
-
-                                    
-                                
             
 
             
-                〔中央社〕由於市場憂心人工智慧（ai）可能對工業軟體造成顛覆性影響，相關科技類股因此承壓，抵消了銀行股的反彈漲勢，歐洲股市主要指數今天收盤走勢分歧。倫敦ftse 100指數小升27.34點或0.26%，收10473.69點。    
+                蘋果宣布3月4日舉行蘋果體驗活動。（圖／翻攝網路）
+近期蘋果新品傳聞滿天飛，就在外界不斷猜測之際，蘋果稍早突襲發出邀請函，宣布將於3 月4日在美國紐約、英國倫敦與中國上海同步舉辦「apple experience」活動，限制受邀者參加。雖然官方沒有透露具體內容，但市場普遍解讀，這場活動很可能與即將登場的新品有關。
+值得注意的是，這次邀請函使用的名稱為「apple experience」，而不是過去發表新品常見的「apple event」，蘋果也沒有提到會安排線上直播，因此關於新品的實際發布形式和後續動向，值得持續關注。    
     
-法蘭克福dax指數下挫113.97點或0.46%，收24800.91點。巴黎cac 40指數微漲4.76點或0.06%，收8316.50點。（編譯：陳彥鈞）1150217                
-    一手掌握經濟脈動
-    點我訂閱自由財經youtube頻道
+    
+    
+
+根據傳聞，蘋果在最近將有一波新品潮，包括iphone 17e、第12代ipad 、 m4 ipad air，以及升級m5 pro、m5 max晶片的 macbook pro，還有採用m5晶片的macbook air等，另外也有消息指出，蘋果正準備推出一款採用iphone晶片的全新低價版macbook，鎖定更入門的使用族群，這次「apple experience」邀請函上的蘋果logo以黃、綠、藍三色組成，便被推測是低價版macbook的配色。
+蘋果上半年傳聞新品
+● iphone 17e● 第12代ipad ● m4 ipad air● 低價版macbook ● m5 pro、m5 max晶片的 macbook pro● m5晶片的macbook air● 新款mac studio● 新版studio display● 新款mac mini(可能今年稍晚)
+
+《你可能還想看》
+恐成盤子！專家勸蘋果這些產品現在別買了、關鍵原因曝光
 
                 
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
@@ -229,47 +101,116 @@
 
 
 
+                
                                 
-            
-            
-
-
-        
-
-        
-
-        
-
-
-
-
-
-        
-        今日熱門新聞
-
-
-
-        
-        
-
-        
-        
-            看更多！請加入自由財經粉絲團
-            
-        
-        
                     
+
             
+        
+
+        
+        
+
+        
+        
+        
+        
+
+
+        
+        
+    熱門文章
+    
+
+
+
+        
+        
+
+
+
+        
+
+        
+
+        
+        
+            看更多！加入3c科技粉絲團
             
-            網友回應">
+        
+
+        
+        
+
+    網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">人工智慧</span><span class="text-slate-400 text-xs">上午03:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">市場擔憂AI衝擊軟體業　歐股收盤走勢分歧</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">蘋果突襲宣布 3／4 舉辦特別體驗活動！傳聞新品名單一次看</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344896" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://3c.ltn.com.tw/news/65009" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="國防" data-title="《taipei times》 review status of relatives of opposition: ex-marine" data-content="retired us marine corps officer grant newsham is pictured in an undated photograph.
+photo: screen grab from newsham’s x account
+    
+
+defense: the us should cancel the us visas or green cards of relatives of kmt and tpp lawmakers who have been blocking the budget, grant newsham saidby sam garcia / staff writer, with cnaa retired us marine corps officer has suggested canceling the us green cards and visas of relatives of opposition taiwanese lawmakers who have been stalling the review of a proposed nt$1.25 trillion （us$39.7 billion） special defense budget.the executive yuan has proposed the budget for major weapons purchases over eight years, from this year to 2033.however, opposition lawmakers have refused to review the proposal, demanding that president william lai （賴清德） first appear before the legislative yuan to answer questions about the proposed budget.on thursday last week, 37 bipartisan us lawmakers sent a letter to legislative speaker han kuo-yu （韓國瑜）, the heads of the chinese nationalist party （kmt） and the taiwan’s people party, as well as the democratic progressive party （dpp） caucus whip, expressing concern about the legislature stalling proposed defense spending.the letter urged “taiwan to pass the full special defense budget,” as “the threat posed by communist china against taiwan has never been greater,” us senator pete ricketts, who led the letter, wrote on x.us representative anna paulina luna, who also signed the letter, posted it on x, writing; “i stand with my colleagues in congress urging the legislative yuan to back president lai and fund his full defense budget proposal.”grant newsham, a retired us marine corps officer who currently serves as senior research fellow at the japan forum for strategic studies, on saturday shared luna’s x post, adding that they should also ask the us department of state to cancel us visas and green cards of relatives of kmt and tpp lawmakers.“this congressional support is important. but too many kmt / tpp politicians are pro-prc. more effective ... cancel usa visas and green cards of kmt/tpp politicians’ relatives,” newsham said, referring to the people’s republic of china.newsham previously testified before the us congress and has decades of experience in the indo-pacific region, having served as an intelligence officer in the marine forces pacific and helping japan establish its amphibious forces, us congressional documents show.he has long been involved in us military strategy in the indo-pacific regio">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">國防</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Review status of relatives of opposition: ex-Marine</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/focus/breakingnews/5344854" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="《taipei times》 special defense budget top priority: han" data-content="legislative speaker han kuo-yu, center, and deputy legislative speaker johnny chiang, back center, walk to a news conference at the legislative yuan in taipei on nov. 12 last year.
+photo: lo pei-de, taipei times
+    
+
+teamwork: all parties should prioritize national defense and key security issues, which requires cooperation and long-term, stable support, the dpp’s chen pei-yu saidby lin che-yuan and sam garcia / staff reporter, with staff writera proposed nt$1.25 trillion （us$39.66 billion） special defense budget would be a top priority for the legislative yuan when it reconvenes after the lunar new year holiday, legislative speaker han kuo-yu （韓國瑜） said yesterday after a group of 37 us lawmakers sent letters to taiwanese politicians expressing concern over the stalled budget.chinese nationalist party （kmt） members han and deputy legislative speaker johnny chiang （江啟臣） in a statement said they would help party caucuses deliberate about the special defense budget, adding that they value open, candid and sincere exchanges with the us congress and take us lawmakers’ concerns seriously.taiwan-us relations are built on shared values of democracy, and protecting peace and stability in the indo-pacific region, han said.as a long-valued partner, the legislature treasures its close relationship with washington and the us congress’ support of taiwan, he said.taiwan is situated in a complicated geopolitical environment, and he and chiang have always been concerned about national defense, diplomacy and overseas chinese affairs, han said, adding that they would work with allies to protect peace, stability and prosperity in the taiwan strait.nations always have different viewpoints, and the ability to find consensus through rational debate is the sign of a mature democracy, han said.regardless of political party or stance, all legislators support safeguarding the nation, bolstering defense, and protecting national security, social stability and economic prosperity, he added.as the nation’s highest representative body, the legislative yuan would adhere to open, transparent and lawful procedures in reviewing bills and seeking cross-party consensus, while rational deliberation would strengthen public support for national defense, han said.the legislature would consider national defense needs and public opinions while reviewing the special defense budget, he said.“taiwan is committed to self-defense and protecting regional peace and stability,” he said.the nt$1.25 trillion">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Special defense budget top priority: Han</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/focus/breakingnews/5344852" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="《taipei times》 freeway bureau warns of heavy holiday traffic" data-content="vehicles travel along the sun yat-sen freeway （freeway no. 1） near taipei yesterday morning.
+photo: cna
+    
+
+hot and cold: seasonal winds were expected to affect taiwan today, with the cwa urging people to remain alert to big day-night temperature drops/ staff writer, with cnathe freeway bureau yesterday warned of heavy traffic and potential congestion on 12 major sections of freeways and highways today, the first day of the lunar new year, when people typically make courtesy calls to relatives and friends, or visit temples and scenic spots.traffic volume on national highways reached 50.6 million vehicle-kilometers as of 3pm yesterday, lunar new year’s eve, the bureau said in a statement.it forecast total traffic volume for yesterday would reach 92 million vehicle-kilometers, which it said was within the expected range.a vehicle-kilometer is a measure of traffic flow representing the movement of a vehicle over 1km.on the first day of the lunar new year, traffic on national highways is expected to reach 122 million vehicle-kilometers, 1.3 times the average daily volume of 93 million vehicle-kilometers, it said.southbound traffic is projected to total 67 million vehicle-kilometers, 1.4 times the usual daily average, it added.key congestion hot spots include the national sun yat-sen freeway （national freeway no. 1） section between yangmei （楊梅） and hsinchu city, the changhua city and puyan （埔鹽） interchanges, and the yuanshan （圓山） and dahua （大華） interchanges; the formosa freeway （national freeway no. 3） sections between new taipei city’s tucheng district （土城） and hsinchu county’s guansi township （關西）, kuaiguan （快官） and wufen （霧峰） interchanges, and caotun （草屯） and wufeng interchanges; and the taichung circular line’s （freeway no. 4） tanzih （潭子） and fongshih （豐勢） interchanges.other hot spots include the chiang wei-shui memorial freeway’s （freeway no. 5） nangang （南港） and touchen （頭城） interchanges, and the section between yilan county and new taipei city’s pinglin district （坪林）; the shuishalian freeway’s （freeway no. 6） dong caotun （東草屯） and wufeng interchanges; and freeway no. 10’s dingjin （鼎金） and yanchao （燕巢） interchanges, and the section between kaohsiung’s renwu （仁武） and zuoying （左營） districts.the bureau recommends that southbound drivers on western freeways depart before 6am or after midday, while southbound drivers on freeway no. 5 should aim to leave before 5am or after 5pm to avoid congestion.separately, the central weather administration （cwa） said that ">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Freeway Bureau warns of heavy holiday traffic</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/focus/breakingnews/5344853" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="《taipei times》 us, japan envoys present new year dishes" data-content="seated from left, american institute in taiwan director raymond greene, minister of foreign affairs lin chia-lung and japan-taiwan exchange association chief representative kazuyuki katayama hold lunar new year couplets in a photograph with a group of young taiwanese farmers at the ministry of foreign affairs in taipei on feb. 4.
+photo: cna
+    
+
+/ staff writer, with cnarepresentatives to taiwan from the us and japan earlier this month showcased signature new year dishes from their countries, including japanese mochi and kentucky bourbon, ahead of the arrival of the year of the horse that begins today.minister of foreign affairs lin chia-lung （林佳龍）, american institute in taiwan （ait） director raymond greene and japan-taiwan exchange association chief representative kazuyuki katayama on feb. 4 showcased foods commonly eaten in their countries to celebrate the new year at an event at the ministry of foreign affairs’ headquarters in taipei.katayama said that unlike taiwan, which celebrates the lunar new year, japan celebrates the new year according to the gregorian calendar on jan. 1 each year.one of the most iconic new year foods in japan include soba noodles, which symbolize longevity because of their length, he said.mochi is another new year’s dish that symbolizes longevity because of its stretchy texture, he added.the japanese envoy prepared three kinds of mochi: isobe yaki — grilled mochi dipped in soy sauce and wrapped in a sheet of dried seaweed; kinako mochi — glutinous rice cakes coated with roasted soybean powder; and zenzai — sweet red bean soup with mochi.greene presented an “american plate” featuring a variety of snacks, including apples, cheeses and kentucky bourbon, as he introduced american foods for the new year.unlike japanese and taiwanese, americans generally regard thanksgiving and christmas as more important traditional occasions for family gatherings than the new year, an ait official said.when celebrating the new year, americans tend to spend time with close friends and enjoy a glass of wine and snacks as refreshments, he said.greene highlighted blanton’s single-barrel bourbon from kentucky, saying the smooth, sweet whiskey is made from at least 50 percent corn, one of the most iconic us agricultural commodities.blanton’s bourbon bottles also feature a small galloping horse, as bourbon is closely linked to the kentucky derby, making it a fitting drink to mark the year of the horse on the lunar calendar, he added.lin also invited a grou">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 US, Japan envoys present New Year dishes</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/focus/breakingnews/5344855" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="《taipei times》 anti-inflammatory diet, therapy help manage arthritis" data-content="the bandaged injured hand of japanese prime minister sanae takaichi is seen as she waves to the public upon her arrival to deliver a campaign speech ahead of the house of representatives election at rekisen park in tokyo on feb. 7.
+photo: afp
+    
+
+by william hetherington / staff writerdoctors advised people with rheumatoid arthritis to manage the condition with an anti-inflammatory diet and appropriate cold and heat therapy during flare-ups, after japanese prime minister sanae takaichi was briefly hospitalized when her symptoms worsened.takaichi, who led the liberal democratic party （ldp） to a sweeping victory in the house of representatives election earlier this month, was admitted to hospital on friday after her rheumatoid arthritis flared up. she had earlier canceled a television interview on feb. 1 due to severe hand pain, and on saturday reassured the public about her condition on social media.japanese media reported that she sought treatment at a hospital in shinjuku, tokyo, saying her symptoms intensified during the election campaign and that she only had time for a full examination after the vote. the ldp said frequent handshaking during the campaign aggravated her condition. she has previously been pictured with bandaged fingers.rheumatoid arthritis is a chronic autoimmune disease in which the immune system attacks the joints, causing inflammation, swelling and damage to joints and tendons.it most commonly affects people aged 30 to 50 and is two to three times more prevalent in women, taoyuan armed forces general hospital said.about 80 percent of patients first develop symptoms in the small joints of the hands and wrists, typically in a symmetrical pattern. early signs include joint pain, swelling and prolonged morning stiffness. as the disease progresses, it can lead to joint deformity, muscle atrophy, reduced mobility and complications affecting other organs, it said.a medical evaluation is recommended for those who experience morning stiffness lasting more than one hour for more than six weeks, swelling in multiple joint areas for more than six weeks, rheumatoid nodules or symmetrical joint swelling, it said.an evaluation might include x-rays to assess joint erosion and a blood test to detect the autoantibody known as rheumatoid factor, it said.physicians advise patients to rest for at least 10 minutes each hour during daily activities, perform gentle stretching exercises such as yoga, tai chi, cycling or aquatic exercise, and apply ice during">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午04:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">《TAIPEI TIMES》 Anti-inflammatory diet, therapy help manage arthritis</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/focus/breakingnews/5344857" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('地震')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>地震</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">6</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -278,13 +219,13 @@
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.88], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                data: { labels: ["02-15","02-16"], datasets: [{ label: '情緒指數', data: [0.48,0.85], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.5,0.95,0.85,0.6,0.9], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.4,0.9,0.85,0.6,0.7], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
