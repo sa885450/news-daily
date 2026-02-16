@@ -26,6 +26,11 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.6.3 - 修復日報生成錯誤 (2026-02-16)
+- **🐛 修復 `ensureDir is not a function` 錯誤**：
+  - 在 `lib/utils.js` 中重新實作並導出 `ensureDir` 函式。
+  - 解決因模組重構導致日報生成 HTML 時，無法確認 `public/` 目錄存在而崩潰的問題。
+
 ### v2.6.2 - 雙金鑰架構與穩定性強化 (2026-02-16)
 - **🔑 實作雙金鑰架構 (Dual-Key Architecture)**：
   - 新增 `GEMINI_WEEKLY_API_KEY` 支援。
