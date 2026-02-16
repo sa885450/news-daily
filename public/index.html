@@ -29,7 +29,7 @@
                 <p class="text-slate-500 font-medium text-lg">2026年2月16日星期一</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('Western Digital')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Western Digital</button> <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('Microsoft')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Microsoft</button> <button onclick="searchKeyword('台積電')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#台積電</button> <button onclick="searchKeyword('Tesla')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Tesla</button> <button onclick="searchKeyword('美軍')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#美軍</button>
+                    <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#OpenAI</button> <button onclick="searchKeyword('Sam Altman')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Sam Altman</button> <button onclick="searchKeyword('Elon Musk')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Elon Musk</button> <button onclick="searchKeyword('Tim Cook')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#Tim Cook</button> <button onclick="searchKeyword('龔明鑫')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#龔明鑫</button> <button onclick="searchKeyword('谷立言')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#谷立言</button> <button onclick="searchKeyword('農業部')" class="px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md text-sm font-bold hover:bg-indigo-100 transition-colors shadow-sm">#農業部</button>
                 </div>
             </header>
             
@@ -37,7 +37,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.45</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.48</span></div>
                     </div>
                     <div class="h-64 w-full">
                         <canvas id="sentimentChart"></canvas>
@@ -61,158 +61,108 @@
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                     <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                        <b>情緒溫度：</b>市場情緒由昨日的 0.42 略微回升至 0.45。雖然地緣政治的軍事摩擦（美軍攔截油輪）依然存在，但 AI 產業供應鏈的「極端稀缺性」為市場提供了強大的基本面支撐。<br><br><b>增量分析：</b>與昨日相比，市場從單純的「避險情緒」轉向「結構性缺貨恐慌」。昨日焦點在於地緣政治對能源的威脅，今日則由記憶體（DRAM 飆漲 75%）與儲存硬體（威騰 2026 年產能售罄）的數據引爆。這顯示 AI 需求已從軟體層次下沉至物理層次的產能爭奪，形成「實體溢價」對沖「政治折價」。微軟高層對 AI 取代白領的言論進一步強化了企業加速導入 AI 的緊迫感，但也可能引發長期社會成本的擔憂。<br><br><b>關鍵事件：</b>1. 威騰電子宣布 2026 年硬碟產能全數售罄；2. AI 巨頭搶產能導致 DRAM 價格暴漲 75%；3. 美軍於印度洋攔截違規油輪，印證昨日地緣政治升壓預期；4. OpenAI 延攬 Peter Steinberger 強化個人代理 (Agent) 佈局。<br><br><b>操作建議：</b>策略應由「純防禦」轉向「資源稀缺型進攻」。建議加碼記憶體與儲存設備相關權值股，以應對 2026 年前的結構性缺貨利潤；對於半導體龍頭如台積電，應效法大戶策略維持核心配置。同時需高度關注油價，若美軍軍事動作導致能源供應鏈斷裂，需立即啟動黃金或能源期貨的多頭對沖。
+                        <b>情緒溫度：</b>市場情緒由昨日的 0.45 微幅升至 0.48。雖然供應鏈短缺的恐慌依然存在，但 AI 應用從「基礎設施層」向「應用代理（Agent）」與「傳統產業轉型」落地的成功案例，抵消了部分對通膨與地緣政治依賴的擔憂。<br><br><b>增量分析：</b>與昨日「結構性缺貨恐慌」相比，今日新增了「政策鏈結深化」與「應用價值實證」兩大維度。昨日重點在於硬體物理溢價，今日則看到 OpenAI 積極佈局個人 AI 代理（OpenClaw 創辦人加盟），顯示軟體端進程並未受阻。同時，台灣傳產（億進寢具）透過 AI 實現業績翻倍，證明 AI 賦能已具備跨行業變現能力。然而，台美貿易協定帶來的能源「親美」轉向，雖在政策上利多，卻也讓市場開始定價「能源過度集中」的地緣政治風險，形成另一種形式的政治折價。<br><br><b>關鍵事件：</b>1. OpenAI 延攬 OpenClaw 創辦人發展個人代理，AI 競賽進入終端應用期。2. 馬斯克與庫克同步警告晶片與記憶體危機，短缺問題從 DRAM 擴散至資料中心與手機全產業鏈。3. 台灣能源採購與貿易協定加速脫鉤特定區域，轉向美方，能源成本與安全係數成為長期變數。<br><br><b>操作建議：</b>持續看好具備定價權的記憶體供應商與先進封裝板塊，應對「晶片危機」帶來的估值支撐。對沖方面，需留意台灣能源與食品貿易政策調整對本地相關產業的結構性衝擊。建議增持具有 AI 落地變現能力的傳產領頭羊與 AI 代理開發商。
                     </div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="ai巨頭搶空產能引爆「記憶體末日」 dram價飆75%打亂供應鏈" data-content="&lt;p&gt;包括馬斯克與庫克 在內，越來越多科技領袖齊聲發出預警，一場全球性危機正在醞釀：記憶體晶片短缺已開始重創企業獲利、打亂營運規劃，並推高從筆電、智慧型手機到汽車與資料中心等各類產品的價格，而且這波供應緊縮情勢還將進一步惡化。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="科技AI" data-title="台灣能源採購過於「親美」恐成隱憂？地緣政治專家這麼看能源安全係數" data-content="&lt;p&gt;台美於美東時間 12 日簽訂對等關稅貿易協定，我方預計對美採購含石油、天然氣及電力設備等規模達 848 億美元。經濟部長龔明鑫表示擬調整對卡達採購天然氣的比例，對美採購天然氣佔比可望上升至 25%，美原油維持佔比 60%，協定生效後，會否導致台灣的能源來源過於「親美」？成國家安全的另一隱憂？地緣政治專家吳嘉隆於 8 日接受專訪時，即搶先對台灣「能源依賴 vs. 地緣政治」議題，提供獨到解析。&lt;/p&gt;
 
-&lt;p&gt;自 2026 年初以來，特斯拉 (&lt;a data-symbol-template=&quot;uss:tsla:stock:common&quot; href=&quot;#&quot;&gt;tsla-us&lt;/a&gt;) 、蘋果 (&lt;a data-symbol-template=&quot;uss:aapl:stock:common&quot; href=&quot;#&quot;&gt;aapl-us&lt;/a&gt;) 以及數十家大型企業相繼釋放訊號，指出 dram（動態隨機存取記憶體）&mdash;&mdash;這項幾乎所有科技產品的核心基礎零組件&mdash;&mdash;的短缺將限制產能。&lt;/p&gt;
+&lt;p&gt;首先，台美對等貿易協定文本中列入國防預算達 gdp 的 3%，引發外界議論。行政院長卓榮泰說，政府在今年預算中就已達成這個目標，和關稅談判沒有關係，談判過程也絲毫沒有談到軍購，軍購另外提出不對稱軍購特別條例，是另外基於國安需要提出，和談判無關。&lt;/p&gt;
 
-&lt;p&gt;庫克表示，這將壓縮 iphone 的利潤率；美光科技則形容這一瓶頸「前所未見」；馬斯克則點出問題的棘手程度，直言特斯拉可能必須自建記憶體晶圓廠。他在 1 月底時表示：「我們只有兩個選擇：撞上晶片荒高牆，或是自己建一座晶圓廠。」&lt;/p&gt;
+&lt;p&gt;另一方面，我方從 2025 到 2029 年將對美採購石油、天然氣、電力設備和民用航空器等，預計金額將達 848 億美元。卓榮泰表示，台灣模式赴美投資 2500 億元是產業自主布局，政府另提供 2500 億元信貸保證；採購則是基於國家需求、財政考量和全球採購試場分布平均化，我方也可轉單、調整內容。&lt;/p&gt;
 
-&lt;p&gt;造成供應緊縮的核心原因，在於 ai 數據中心的爆發式建設。為了運行聊天機器人及其他應用程式，alphabet(&lt;a data-symbol-template=&quot;uss:googl:stock:common&quot; href=&quot;#&quot;&gt;googl-us&lt;/a&gt;) 與 openai 等公司正蠶食鯨吞記憶體晶片的產能，他們採購了數百萬計的輝達 ai 加速器，而每台加速器都配備了極高容量的記憶體。這導致消費性電子產品製造商，只能被迫與他人爭奪從三星電子和美光流出的剩餘微薄產量。&lt;/p&gt;
+&lt;p&gt;在能源供應上，龔明鑫表示，未來會減少從自卡達的天然氣採購，增加對美採購，用於台灣發電需要。行政院秘書長張惇涵補充，以中油公司 2025 年天然氣對外採購為例，前四名的國家分別是卡達 33%、澳洲 33%、美國 10%、巴布亞紐幾內亞 7.9%，前四名就占了整體天然氣採購的 85%。&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;「記憶體末日」：失控的價格飆漲&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;行政院秘書長張惇涵反問，台灣如果要採購天然氣，船從東邊進來比較安全，還是從西邊進來比較安全？答案「不言而喻」。&lt;/p&gt;
 
-&lt;p&gt;隨之而來的價格飆升，已隱約顯現出當年威瑪共和國惡性通貨膨脹的影子。某種特定型號的 dram 價格在去年 12 月至今年 1 月間暴漲了 75%，進一步加速了整個年終購物季的漲勢。越來越多零售商與代理商甚至每天都在更動價格。業界已有人開始用「記憶體末日」(rammageddon) 一詞，來形容眼前的混亂局面。&lt;/p&gt;
+&lt;p&gt;針對美台協議中涉及的大規模能源採購，吳嘉隆分析，台灣能源高達 95% 依賴進口，一直是國家安全的最大破口。此次承諾增購美國阿拉斯加等地的液化天然氣，實則為戰略性的能源安全轉型。透過將能源補給線從易受封鎖的西邊海域，轉向東北方的國際水域，反而有助於台灣提升「能源安全係數」。&lt;/p&gt;
 
-&lt;p&gt;晶片設備供應商 lam research 執行長 tim archer 本月在南韓一場會議上表示：「我們正站在一個前所未有變局的門檻上。從現在到本世紀末的需求規模，將超越過去任何時期，事實上也會壓倒所有其他需求來源。」&lt;/p&gt;
+&lt;p&gt;能源供給該從東或西來？和張惇涵的「不言而喻」持相同看法，吳嘉隆於受訪時指出，此舉不僅降低對中東航道的依賴，更在中共演習頻傳的當下，利用琉球群島一線的國際水域建立安全通道，確保戰時能源不斷鏈。&lt;/p&gt;
 
-&lt;p&gt;令人憂心的是，即便 ai 巨頭尚未全面啟動其資料中心建設計畫，價格已大幅飆升、供應也日益枯竭。alphabet(&lt;a data-symbol-template=&quot;uss:googl:stock:common&quot; href=&quot;#&quot;&gt;googl-us&lt;/a&gt;) 與 亞馬遜 (&lt;a data-symbol-template=&quot;uss:amzn:stock:common&quot; href=&quot;#&quot;&gt;amzn-us&lt;/a&gt;) 近日分別宣布，今年將展開規模高達 1,850 億美元與 2,000 億美元的建設行動，單年度資本支出金額之高，為企業史上罕見。&lt;/p&gt;
+&lt;p&gt;吳嘉隆直言，台灣能源自給率僅約 5%，若遭受海空封鎖，庫存通常僅能支撐兩週。過去台灣能源高度依賴中東航線，經由台灣海峽西側進口，極易在軍事衝突中被切斷。然而，若將採購來源轉向美國，運輸路線將改走台灣東北方向，並經由日本琉球群島進入宜蘭、花蓮與基隆一帶，反而相對自西側安全&nbsp;。&lt;/p&gt;
 
-&lt;p&gt;追蹤半導體產業的伯恩斯坦分析師 mark li 警告，記憶體晶片價格正呈「拋物線式」上升。這將為三星、美光與 sk 海力士帶來豐厚利潤，但在未來數月，其他電子產業將為此付出沉重代價。&lt;/p&gt;
+&lt;p&gt;吳嘉隆認為，觀察近期中共圍台演習可發現，宜蘭以東的東北方海域多屬國際水域，是目前唯一較難被完全封鎖的「破口」。將能源進口重心移往此區，能讓台灣在面臨封鎖威脅時，依然具備與國際接軌的補給通道。因此，增加對美能源依賴，表面上是增加進口比例，實質上是優化「能源安全係數」。&lt;/p&gt;
 
-&lt;p&gt;聯想集團執行長楊元慶在財報會議後的訪談中直言：「這種供需之間的結構性失衡，絕非短期的市場波動。」他強調，這場供應緊縮至少會持續到今年年底。&lt;/p&gt;
+&lt;p&gt;此外，吳嘉隆認為能源議題不應單獨看待，應與經貿、國安團隊整合談判。在台美協議中，台灣承諾龐大投資，理應換取更高額度的軍事援助。他建議政府應將經濟與國安議題「綑綁交易」，例如要求美方將對台軍事援助提升至 20 億至 30 億美元規模，此次談判團隊未能把握機會「喊價」，有點可惜。&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;遊戲巨頭戰略受阻 新機延期與售價調漲壓力&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;這場供應衝擊正威脅整條產品線的獲利能力，並打亂企業的長期規劃。&lt;/p&gt;
-
-&lt;p&gt;據悉，索尼集團正考慮將下一代 playstation 遊戲主機的發表時間推遲至 2028 年甚至 2029 年。對於索尼而言，這將嚴重干擾其原定透過硬體世代更迭來維持用戶黏著度的精確佈局。&lt;/p&gt;
-
-&lt;p&gt;與此同時，競爭對手任天堂也面臨挑戰；其新一代 switch 2 主機在 2025 年帶動了大量的存儲卡需求，進而加劇了市場供需失衡。消息指出，任天堂正研議於 2026 年調漲該裝置的售價。對此，索尼與任天堂的發言人均未回應置評請求。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;供應鏈秩序重組：合約縮短與出貨下修&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;面對失控的市況，供應鏈端的議價模式已發生根本性轉變。一名筆記型電腦製造商經理表示，三星電子近期已將記憶體供應合約的審查週期，從往年的「年度審核」縮短為「季度審核」。&lt;/p&gt;
-
-&lt;p&gt;而在智慧型手機領域，衝擊更為直接。據中國媒體《界面新聞》報導，包括 小米、oppo 及 傳音控股 在內的中國手機大廠，正紛紛下調 2026 年的出貨目標，其中 oppo 的預期減幅甚至高達 20%。相關企業目前皆未對此報導做出回應。&lt;/p&gt;
-
-&lt;p&gt;這股壓力也重創了美股科技板塊。思科 (cis">
+&lt;p&gt;對於能源依賴過於「親美」的說法，吳嘉隆認為是多慮，他強調，能源安全是防禦同盟的基石，當台灣具備穩定的能源補給，與關鍵產能地位時，第一島鏈的戰略韌性將大幅強化。此次能源採購計畫，不僅滿足了美國的出口需求，更為台灣建構了一條不受中共干擾的能源生命線，提升了台灣在面對地緣政治衝擊時的生存能力。&lt;/p&gt;
+">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI巨頭搶空產能引爆「記憶體末日」 DRAM價飆75%打亂供應鏈</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">科技AI</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">台灣能源採購過於「親美」恐成隱憂？地緣政治專家這麼看能源安全係數</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345500" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345154" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="AI 產業" data-title="威騰電子：2026 年硬碟產能全數售罄，消費者市場面臨嚴重短缺" data-content="隨著人工智慧（ai）需求的激增，全球最大硬碟製造商之一的威騰電子（western digital）宣布其硬碟生產能力已經在 2026 年整年內完全承諾，幾乎沒有可供消費市場的存貨。根據威騰電子執行長 irving tan 在最近季度財報電話會議中表示，「我們幾乎已經售罄 2026 年的所有存儲容量」。
-tan 指出，大部分儲存空間已分配給公司的「前七大客戶」，其中三家企業甚至已經與威騰電子簽訂 2027 年及 2028 年的供貨協議。此外，這些硬體公司優先滿足一般消費者的動機也在減弱。根據威騰電子的說法，由於企業客戶需求激增，消費者市場如今僅占公司收入的 5%。
-隨著 ai 產業的快速增長，ai 公司持續搶購電腦硬體。從處理器到遊戲主機的各類產品價格飆升，就是因為 ai 公司消耗了供應鏈資源。
-目前科技業早已因 ai 公司需求而出現記憶體短缺，個人電腦製造商不得不幾乎定期調漲 ram 價格以應對短缺。據報導，像 sony 這樣的遊戲主機廠商甚至考慮將下一代 playstation 的推出時間延後至 2027 年之後，希望到時 ai 相關硬體短缺能有所緩解。
-隨著威騰電子最新消息出爐，看來 ai 公司對記憶體與儲存需求的持續增長將沒有終點。除非投資人因擔心 ai 的承諾無法兌現而撤回資金，但至少目前來看，硬體短缺和消費者價格上漲的現象仍將持續。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="個人ai代理競賽升溫！openclaw創辦人加入openai" data-content="&lt;p&gt;openai 執行長阿特曼 (sam altman) 周日 (15 日) 宣布，開源人工智慧 (ai) 代理工具 openclaw 創辦人史坦柏格 (peter steinberger) 將加入 openai，協助推動下一代個人代理產品發展。阿特曼在社群平台 x 發文指出，openclaw 未來將「以基金會形式作為開源專案存在」，openai 將持續提供支持。&lt;/p&gt;
 
+&lt;p&gt;史坦柏格也在個人網站表示，加入 openai 是為了站在人工智慧研發的最前線，並持續實踐其願景。他強調，openclaw 保持開源與自由發展對他而言至關重要，「我認為 openai 是最適合延續這項理念並擴大影響力的地方。」&lt;/p&gt;
 
+&lt;p&gt;openclaw 前身為 clawdbot 與 moltbot，自去年 11 月推出以來迅速走紅，因其可自主完成任務而備受矚目，包括整理電子郵件、預訂餐廳、辦理航班報到，甚至可透過 whatsapp 與 slack 等通訊平台下達指令。該專案在 github 累積超過 10 萬顆星標，一周內吸引逾 200 萬名訪客，形成「病毒式」擴散。&lt;/p&gt;
 
-（首圖來源：western-digital）
+&lt;p&gt;值得注意的是，openclaw 亦在中國迅速擴散，可與深度求索 (deepseek) 等中國語言模型搭配使用，並透過客製化設定整合當地通訊應用軟體。百度 (badu-us)(09888-hk) 也表示，計畫讓其手機 app 用戶可直接使用 openclaw 功能。&lt;/p&gt;
+
+&lt;p&gt;不過，openclaw 的快速崛起也伴隨爭議。曾有用戶反映，在開放 imessage 權限後，代理程式一度大量發送訊息。資安專家警告，這類工具同時具備存取私人資料、對外通訊與接觸不受信內容三項特性，構成潛在風險。有研究人員形容這是 ai 的「致命三重奏」。中國工信部也曾就其在當地快速擴散提出警示，指出若設定不當，相關開源代理可能引發資安漏洞與資料外洩。&lt;/p&gt;
+
+&lt;p&gt;在競爭層面，生成式 ai 市場正快速升溫。openai 估值已達約 5,000 億美元，並持續延攬頂尖人才。今年 5 月，openai 以逾 60 億美元收購前蘋果 (aapl-us) 設計師艾夫 (jony ive) 創立的 ai 裝置新創 io。meta(meta-us)與 google(googl-us)同樣投入巨額資金擴大 ai 團隊。另一方面，anthropic 估值約 3,800 億美元，旗下 claude 系列模型近來在企業市場取得進展。&lt;/p&gt;
+
+&lt;p&gt;史坦柏格表示，他的下一步目標是打造「連我母親都能使用的 ai 代理」，這意味著更高的安全標準與更成熟的模型支援。隨著 openclaw 轉型為基金會型開源專案並獲 openai 背書，個人 ai 代理的競逐戰，正進入新階段。&lt;/p&gt;
+">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">個人AI代理競賽升溫！OpenClaw創辦人加入OpenAI</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tech)</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345512" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="美豬降稅後價格仍高於加拿大，對國產豬影響有限" data-content="台美對等貿易協定已簽署，美國豬肉關稅調降。農業部 15 日說，美豬降稅後，價格仍高於競爭對手加拿大，對國產豬肉影響有限。
+
+根據台美對等貿易協定，豬肉品項關稅減半且有緩衝期（第3年調整至6.3%至10%），調製豬肉及重要雜碎（如豬腳）為關稅減半或降至10%。
+農業部發布新聞稿，對美國豬肉降稅後，美豬價格仍將高於加拿大豬肉，未來將與加拿大、歐洲及巴拉圭等國豬肉競爭；因民國114年11月西班牙豬肉因非洲豬瘟無法出口，美豬也有優先取代西班牙進口份額（約18%）的可能，因國產豬肉品質優良及風味深受國人青睞，台灣豬必然仍是國人消費的第一選擇。
+農業部統計，113年美豬進口占總進口量7.9%，排序第4，僅占國人豬肉消費量未及1%，114年占比降至6.7%，排序降為第6。
+農業部說，養豬產業在110至113年百億基金投入後，已奠定強本革新穩固基礎，隨後更繼續執行114至117年養豬接續中程計畫，4年總共將投入新台幣50.52億元，未來也將依總統指示成立農安基金，擴編韌性特別預算，擴大輔導養豬全面轉型升級，落實豬肉溯源及提升品質。
+（作者：汪淑芬；首圖來源：pixabay）
 延伸閱讀：
 
-sam altman 重磅宣布！openclaw 創辦人 peter steinberger 加入 openai
-微軟高層直言：ai 可在 18 個月內取代所有白領工作
-
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-                    x
-                    5
-                
-                
-                    x
-                    
-                
-            
-            您的咖啡贊助將是讓我們持續走下去的動力
-            總金額共新臺幣 0 元
-            
-            《關於請喝咖啡的 q & a》
-        
-        
-        
-            留給我們的話
-                
-            
-        
-        
-    
-
-
-            
-            
-            
-
-            
-			 
-	
-		
-		
-		科技新知，時時更新">
+對美順差飆升下仍守住糧食安全，台美對等貿易協定達成最大挑戰
+改善勞動條件不僅為了台美對等貿易協定，而是提高產業競爭力
+儘早調整產業結構，才能落實台美「經濟繁榮夥伴對話」共識
+讓半導體競爭對手國開始傷腦筋的台美關稅談判
+台美對等關稅談判，對台灣經濟未來的可能影響">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">AI 產業</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">威騰電子：2026 年硬碟產能全數售罄，消費者市場面臨嚴重短缺</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">美豬降稅後價格仍高於加拿大，對國產豬影響有限</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/western-digital-hard-drives/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/prices-of-us-pork-after-tax-reduction/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="sam altman 重磅宣布！openclaw 創辦人 peter steinberger 加入 openai" data-content="openclaw 創辦人 peter steinberger 將加入 openai，而該開源機器人專案將以基金會形式運作。
-openai 執行長 sam altman 週日（15 日）於社群平台 x 上發文表示，「peter steinberger 將加入 openai，推動下一代個人代理（personal agents）的發展。」並補充表示「openclaw 將以基金會形式持續作為開源專案存在，openai 也會繼續提供支持。」
-altman 指出，peter steinberger 是一位擁有卓越遠見與大量創新構想的天才，對於未來高度智慧代理彼此互動、為人們完成各種實用任務有著深刻見解，「我們預期，這很快就會成為我們產品的核心」。他也表示，未來將是一個高度多代理（multi-agent）的世界，在這樣的發展趨勢中支持開源生態系至關重要。
-openclaw（前身為 clawdbot 或 moltbot）被形容為一款能協助處理電子郵件、與保險公司交涉、辦理航班報到，以及執行各類繁瑣任務的智慧助理。
-自去年 11 月首次推出以來，openclaw 迅速爆紅。根據 steinberger 在部落格中的說法，該專案在程式碼託管平台 github 上已累積超過 10 萬顆星標，並在單週內吸引 200 萬名訪客。
-隨著人氣攀升，openclaw 也受到監管關注。中國官方警告，若設定不當，這類開源 ai 代理可能帶來重大資安風險，使使用者暴露於網路攻擊與資料外洩之中。
-steinberger 週日在部落格中表示，加入 openai 將使他能實現將 ai 代理推向大眾的目標，而不必承擔經營公司的壓力，「對我而言，openclaw 保持開源並擁有自由發展的空間一直都非常重要，最終我認為 openai 是最適合延續我願景並擴大其影響力的地方。我想改變世界，而不是建立一間大型公司，與 openai 合作是將這一願景帶給每個人的最快方式。」
-這一高調聘任對 openai 意義重大，因為該公司近期面臨來自 meta 等競爭對手的挑戰，與特斯拉執行長馬斯克（elon musk）的關係也出現了公開分歧，而具體合約細節尚未公開。
-
-peter steinberger is joining openai to drive the next generation of personal agents. he is a genius with a lot of amazing ideas about the future of very smart agents interacting with each other to do very useful things for people. we expect this will quickly become core to our…
-— sam altman (@sama) february 15, 2026
-
-
-openclaw founder steinberger joins openai, open-source bot becomes foundation
-openclaw founder peter steinberger is joining openai
-
-（首圖來源：openclaw）
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="能源貿易" data-title="ai 生成 podcast 教賣枕頭、棉被，助攻寢具南霸天業績翻倍" data-content="沿著台南高鐵站駛過台江國家公園，抵達坐落在水鳥保育區旁的億進寢具，它是寢具南霸天，在去年房地產不景氣時，它靠著 ai 助攻，讓枕頭、棉被等品項業績逆勢成長，去年第三、四季試驗期，銷售額最高較前一年同期翻近一倍。
+在今年商周《ai創新百強》評選中，它一舉拿下銀質獎，成為中小企業傳產用ai創新賦能的代表。
+它證明，用ai能提高銷售戰力，幫員工賺更多錢。
+過去，它培訓一名門市銷售人員，得請公司的「超業」擔任講師，但，高手會賣，卻不等於會教，很多高手抗拒上台。更別說，一次兩小時的課，有員工在台下打瞌睡，有人根本無法理解講師的話，勞師動眾，卻無法達到預期成效。
+而且，門市不能停止營業，一次培訓只有三分之一的人能上到課，剩下的人，則用錄影回訓，「回去你有沒有看（影片），我不曉得，看了吸收程度怎麼樣，我也不知道。時間久了，sop的落差就會跑出來，」負責導入ai的億進寢具副總經理柯智正說。
+一集20分鐘音頻，讓人不知不覺學完
+但，要怎麼改變？他認為，與其逼員工上課，不如讓人在「不知不覺中就學完」。
+所以，他做的不是傳統簡報，而是蒐羅各種知識，包含公司內部教材、自己閱讀的外部書籍，加上銷售sop餵給notebooklm，生成每一集約二十分鐘的podcast、圖文與短影音，同一個知識，還分成消費者、銷售顧問的視角，員工可以重複收聽、也可以跟ai互動聊天解惑。
+若打開他們的ai教練「枕頭哥」聲音頻道，二十多項教材從賣枕頭、床墊，到如何替顧客挑選合適的寢具高度，甚至連廠拍特賣會的作戰計畫都有，「耳機掛著二十分鐘，這段聽完了還不錯，繼續聽下一段，很多知識就在無形當中灌輸進去，」億進寢具台南健康店店長楊雅棋說。
+「員工都說，培訓變好玩了，」柯智正笑著說。
+新人縮短上場時間，戰力不輸老鳥
+但，一開始推動不容易，因為他們有不少資深門市人員，這群人也會懷疑：「我本來就會賣東西，難道ai比我還厲害？」他採取的第一步，不是跟員工聊ai是什麼，而是由他帶頭，針對枕頭這一品項進行測試，親自聽教材、參加銷售競賽，還邀請所有的區域主管跟店長全數參加。
+結果出人意料，銷售競賽第一名，竟然由一位入職不到半年的新人拿下，「結果一公告，老同仁也受到衝擊，怎麼好幾個新人業績都跳上去了，」柯智正說。
+當新人追上舊人，舊人也必須跑起來，他進一步把ai教材擴大到賣棉被。當所有人開始衝刺，業績成長更是驚人，即使天氣還沒轉冷的10月裡，棉被銷售額就已經較前一年同期提高98%。
+這樣的成果，不僅他們新人的七大學程全面ai化，所有人在一週內同時完成複訓，認知快速對齊，教材還被重複收聽。新進同仁上場的時間，也從原本需要三個月，縮短到兩個月，還讓他們擁有不輸資深業務的戰力。
+「我們績效有30%個人業績、70%團體績效，但這30%，就算你是新人，也可以自己掌握，」柯智正說，當員工個人績效變高了，店長也輕鬆，大家一起領到更高的報酬。
+這位文科出身、身為家族第二代的副總經理，甚至用ai自學線上搶答系統、拍貼互動app，並直接用在賣場體驗裡。
+「以前一個人頂多創造兩、三倍的貢獻，但是有了ai加持，以後一個人可能會創造100倍的貢獻，」柯智正說，ai並不是取代人，而是把人員素養「平均值」，從60分拉到80分，透過拉高全體戰力，他希望ai能帶動今年的銷售業績，甚至擴大營運據點。
+億進證明了，無論大小企業都能善用ai，快速為員工加值，為企業打造下個成長契機。
+（作者：吳美欣；本文由《商業周刊》授權轉載；首圖來源：億進寢具）
 延伸閱讀：
 
-微軟高層直言：ai 可在 18 個月內取代所有白領工作
-海底沉積物變建材！康乃爾大學團隊開發「海底 3d 列印」新工法
+只賣你座位和行李托運、執行長被馬斯克罵「笨蛋」！超陽春廉航淨利率飆15％
+高市早苗輾壓式勝利，台灣和日本關係會變怎樣？
+刪掉15年資歷，面試反而接到手軟！「履歷醫美」是什麼？
 
 
 				
@@ -277,293 +227,45 @@ openclaw founder peter steinberger is joining openai
 		
 		科技新知，時時更新">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">Sam Altman 重磅宣布！OpenClaw 創辦人 Peter Steinberger 加入 OpenAI</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">能源貿易</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI 生成 Podcast 教賣枕頭、棉被，助攻寢具南霸天業績翻倍</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/openclaw-peter-steinberger-joins-openai/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/16/yijin-bedding-doubles-sales-by-training-staff-with-ai/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="能源儲存" data-title="微軟高層直言：ai 可在 18 個月內取代所有白領工作" data-content="微軟 ai 執行長 mustafa suleyman 接受《financial times》youtube 訪談時表示，人工智慧（ai）可在 12 至 18 個月內取代大多數白領工作。
-當主持人詢問 mustafa suleyman 對通用人工智慧（agi）的看法時，他表示，「我們將在大多數、甚至所有專業任務上達到人類水準的表現，那些坐在電腦前工作的職位，亦即白領工作，無論是律師、會計師、專案經理或行銷人員，其中大多數任務將在未來 12 到 18 個月內被 ai 完全自動化。
-anthropic 執行長 dario amodei 也曾說過，ai 將在五年內消滅一半的入門級白領工作；ford motor company 執行長 jim farley 也認同這一預測，並稱「ai 將讓許多白領人士被拋在後面」；甚至科學界也對此感到憂慮，麻省理工學院（mit）一項模擬研究顯示，ai 可能取代美國 11.7% 勞動力，涵蓋多個產業，而不僅限於科技業。
-然而，也有人對這些預測持較為懷疑的態度。雖然去年曾出現所謂「ai 驅動裁員」增加的說法，但部分研究人員指出，實際原因可能是企業經營表現不佳，卻將責任歸咎於過度誇大的 ai 能力。
-另一項 mit 研究顯示，95% 的企業生成式 ai 應用對損益並無可衡量的影響；此外，pricewaterhousecoopers 報告指出，55% 的執行長在部署 ai 工具後並未看到任何實質效益。
-不過 suleyman 仍對 ai 在幾乎所有應用場景中的潛力充滿信心，表示未來將會有數十億個數位心智，會出現許多不同的模型譜系。創建一個新模型將會像製作一檔 podcast 或撰寫部落格文章一樣容易，為地球上每一個機構、組織與個人設計符合其需求的 ai，將成為可能。
-在該節目中，suleyman 與主持人討論公司如何實現「人本超級智慧」（humanist superintelligence）的目標，也談及「人工能力智慧」（artificial capable intelligence）這一概念，這是 suleyman 為介於基礎大型語言模型（llms）與 agi 之間的 ai 發展階段所提出的術語。
-
-
-microsoft’s ai boss says ai can replace every white-collar job in 18 months — ‘we’re going to have a human-level performance on most, if not all, professional tasks’
-
-（首圖來源：freepik）
-延伸閱讀：
-
-海底沉積物變建材！康乃爾大學團隊開發「海底 3d 列印」新工法
-
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-                    x
-                    5
-                
-                
-                    x
-                    
-                
-            
-            您的咖啡贊助將是讓我們持續走下去的動力
-            總金額共新臺幣 0 元
-            
-            《關於請喝咖啡的 q & a》
-        
-        
-        
-            留給我們的話
-                
-            
-        
-        
-    
-
-
-            
-            
-            
-
-            
-			 
-	
-		
-		
-		科技新知，時時更新">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">能源儲存</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">微軟高層直言：AI 可在 18 個月內取代所有白領工作</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/16/microsoft-ai-can-replace-every-white-collar-job-in-18-months/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="六成台積電、二成逆向重押，台股名家劉友威的財富配置心法曝光" data-content="在台股投資圈，大戶級投資名家劉友威的名號早已如雷貫耳。他被上世紀 80 年代四大主力之一、人稱「阿不拉」的游淮銀重用，隨後轉往法人機構屢建戰功，即使退休，憑其大戶實力及精準眼光，仍活躍於市場，意見與觀點也深受市場重視。
-在劉友威的印象中，走進國立藝專第一天，畢業於台南一中的藝專同學李安就跟他打了聲招呼：「我知道你。你是高雄中學畢業的，但是也沒考上大學。」語畢，兩位同樣來自升學名校的「落榜生」相視一笑。
-大學落榜又怎樣？每一條路，都有各自的風景與養分，即使，那是旁人眼裡的一條偏僻岔路……劉友威今年72歲了，這些年他忍不住想，如果聯考時沒把《馬關條約》和《辛丑條約》搞混，「我應該能考進政大，然後，走上多數雄中人該走的那條路。」
-左營眷村出身的劉友威，家境不寬裕，兒時自信仰賴於那張寫著「品學兼優」的獎狀。但進入學霸如雲的雄中後，成績忽然變成後段班，「很不適應，也開始自我放逐」，他開始把心思放在「賺錢」這事上，「我辦聯誼，男同學一人收50元，扣掉成本，每次能賺300多元哩！」
-「生意」愈做愈旺，很快就被當地角頭要求分一杯羹；被迫與地痞愈走愈近的劉友威，成了老師眼裡的問題人物。落榜後會去報考國立藝專，也和當年某位老師的奚落有關，「劉友威，你最多只能考上私立大學，不然，也可以去考國立藝專。」
-
-在投資圈，劉友威對「高價股」的判斷尤受重視，而法人與主力匯聚的高價股，也是各方角力、彼此算計的終極人性戰場；劉友威對此自剖，「成長的過程，確實讓我對人性更敏感、更理解」。不僅高中時就要在資優生和小流氓間游走，初入社會那些年，他更是看盡百態、嘗盡冷暖。
-「我那時住在北部親戚家裡，」劉友威的北漂日常是這樣的，9點開始，他在新莊工業區沿路按電鈴賣膠帶，受到冷眼還算好，慘遭羞辱不意外，「警衛拿了我的名片，看也沒看就直接丟在地上」。
-就這麼一路賣到傍晚5點，入夜後，他成了那卡西酒廊的小弟，在新莊某俱樂部端盤子、遞毛巾。下班已是半夜兩點，「回到家不敢洗熱水澡。日式老宅，熱水器一點火，親戚全都被吵醒……畢竟是寄人籬下。」
-都說「千金難買窮滋味」，窮過，讓劉友威知道機會來時必須掌握，也知道掙到手的財富必須有守。如今，他把六成資產放在最安穩且兼具成長性的台積電股票，以此為財富核心；另外兩成資金則專攻機會財，短線操作，或是在股市非理性急殺時一舉逆向重押。
-在每一條路上認真挖掘資產的劉友威，早已遠遠超越財富自由的門檻，「但，我還是常常覺得錢不夠用喔！」原來，在六成核心資產與兩成短線持股外，「剩下的20%財富，我用來捐錢，看到有需要的地方就盡量幫助。」20年來，他以每年百萬元以上的手筆，長期支援劉民和牧師在各國打造戒毒中心。
-劉友威的想法很簡單，「上帝知道自己不夠公平，所以要藉由我們的手，讓這個世界更公平一些……上帝讓我跟其他同學走不同的路，是希望我們用不同的方式回饋社會。」
-劉友威優游投資世界之餘，長期捐助戒毒中心力行公益，在截然不同的賽局中，活出了無可取代、屬於自己的寶藏人生。
-（本文由《今周刊》授權轉載；首圖為示意圖，來源：image on freepik）
-
-				
-				
-				
-
-
-		
-            
-			                
-                
-                
-                
-        
-            
-                想請我們喝幾杯咖啡？
-            
-            
-                每杯咖啡 65 元
-            
-            
-                
-                    x
-                    1
-                
-                
-                    x
-                    3
-                
-                
-                    x
-                    5
-                
-                
-                    x
-                    
-                
-            
-            您的咖啡贊助將是讓我們持續走下去的動力
-            總金額共新臺幣 0 元
-            
-            《關於請喝咖啡的 q & a》
-        
-        
-        
-            留給我們的話
-                
-            
-        
-        
-    
-
-
-            
-            
-            
-
-            
-			 
-	
-		
-		
-		科技新知，時時更新">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">六成台積電、二成逆向重押，台股名家劉友威的財富配置心法曝光</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/16/how-liu-youwei-turned-his-life-around/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="（圖輯）全糖女神全恩菲主場爆紅！韓援女神帶動新北國王應援新高潮" data-content="（圖輯）全糖女神全恩菲主場爆紅！韓援女神帶動新北國王應援新高潮
-            2026/02/16 08:52
-                
-
-
-    
-            
-            
-                粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力十足。（記者王藝菘攝）
-〔記者王藝菘／台北報導〕新北國王昨（15）日主場再掀熱潮，場上拚戰精彩，場邊同樣吸睛。啦啦隊new taipei queens三名韓籍成員全恩菲、李貞潤、金泰琳再度合體應援，其中甫正式加盟的「全糖女神」全恩菲，以甜美外型與舞台爆發力成為全場焦點，舉手投足都引來球迷熱烈歡呼。
-全恩菲自去年底以聖誕主題賽事嘉賓身分初登國王主場後，便憑藉清新氣質與自然互動圈粉無數，如今正式披上queens戰袍，更展現升級版舞台魅力。她身穿黑色應援戰袍、綁起俐落雙丸子頭，高舉金色彩球隨節奏舞動，動作乾淨俐落、眼神自信到位，完美詮釋性感與力量感兼具的舞台風格。        
-    
-        
-    
-
-不僅如此，全恩菲在不同橋段也展現甜美反差。換上粉色系造型時，她以招牌燦笑與可愛手勢向球迷致意，親和力瞬間拉滿，讓現場氣氛升溫。從強烈舞曲到互動橋段，她都能自在切換狀態，展現成熟舞台掌控力，也讓球迷見識到「全糖」不只甜，更有層次。
-全恩菲表示，能與李貞潤、金泰琳一起在主場應援，是很珍惜也很開心的經驗，希望用更好的表現回饋大家支持。隨著她持續在主場亮相，這股甜而不膩、辣而不張揚的韓援魅力，正逐步成為國王主場最亮眼的風景。
-粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力十足。（記者王藝菘攝）粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力十足。（記者王藝菘攝）粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力滿分。（記者王藝菘攝）全恩菲與隊友同場演出，韓援合體應援畫面吸吸睛 。（記者王藝菘攝）粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力滿分。（記者王藝菘攝）換上粉色甜美造型，全恩菲應援畫面吸睛 。（記者王藝菘攝）換上粉色甜美造型，全恩菲以可愛手勢向球迷打招呼，親和力滿分。（記者王藝菘攝）燈光映照下，全恩菲（中）展現自信神情與俐落舞姿，舞台魅力全面釋放。（記者王藝菘攝）全恩菲（圖右）身穿黑色應援服，氣勢十足，炒熱現場氣氛。（記者王藝菘攝）全恩菲身穿黑色應援服，氣勢十足，炒熱現場氣氛。（記者王藝菘攝）全恩菲身穿黑色應援服高舉金色彩球，氣勢十足，炒熱現場氣氛。（記者王藝菘攝）全恩菲身穿黑色應援服，炒熱現場氣氛。（記者王藝菘攝）全恩菲身穿黑色應援服，炒熱現場氣氛。（記者王藝菘攝）                                
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-            
-            
-            
-
-
-
-            
-
-            
-
-            
-        
-        推薦新聞
-
-        
-        
-        網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">（圖輯）全糖女神全恩菲主場爆紅！韓援女神帶動新北國王應援新高潮</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://sports.ltn.com.tw/news/breakingnews/5344322" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="apec廣州交鋒！美力推ai與海事監控技術 劍指中國擴張" data-content="2026/02/16 08:23
-                
-
-
-                                    
-                                
-            
-
-            
-                雖然美國總統川普（左）預計4月訪問北京，中國國家主席習近平（右）也將在11月主持apec領袖峰會，但雙方在實質議題上的競爭卻愈發白熱化。（路透檔案照）〔國際新聞中心／綜合報導〕儘管2026年亞太經濟合作會議（apec）由中國主辦，但川普政府並未因此趨於低調。在近日於廣州召開的第一次資深官員會議中，美方官員積極推廣美國的人工智慧（ai）與海域監控技術，力圖在數位治理與海洋權利兩大領域，正面抗衡中國日益擴張，美中科技與地緣政治的角力戰火，已直接延燒至中國家門口。路透報導，雖然美國總統川普預計4月訪問北京，中國國家主席習近平也將在11月主持apec領袖峰會，但雙方在實質議題上的競爭卻愈發白熱化。美國apec資深官員梅斯（casey mace）在廣州會議上宣布，川普政府已設立一筆2000萬美元（約新台幣6.3億元）的專項基金，旨在協助亞太區域夥伴採用符合美國標準的ai技術。    
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="ai對記憶體需求暴增 正加劇晶片危機" data-content="愈來愈多科技產業領袖警告，晶片危機正在醞釀之中。（路透資料照）
+〔財經頻道／綜合報導〕包括特斯拉執行長馬斯克（elon musk）、蘋果執行長庫克（tim cook）在內，愈來愈多科技產業領袖警告，一場全球危機正在醞釀之中，記憶體晶片短缺將重創利潤，打亂企業的計劃，並推高從筆記型電腦、智慧手機到汽車和資料中心等所有產品的價格，而且這種短缺只會愈演愈烈。
+《彭博》報導，自2026年初以來，特斯拉、蘋果以及其他十幾家大型企業都表示，作為幾乎所有技術基礎組件的dram（動態隨機存取記憶體）短缺將限制產能。庫克警告，這將擠壓iphone的利潤；美光科技（micron technology）稱這一瓶頸「前所未見」。    
     
     
     
-這項舉措被視為美國鞏固新興技術領導地位的關鍵一步，更是對中國「數位威權」輸出的直接反制。美國國務院1名發言人直言不諱地指出：「中國的ai技術壯大了中國共產黨的宣傳機器與審查制度，其ai治理願景本質上是尋求威權鎮壓。」川普去年7月簽署行政命令，確立「確保美國ai技術、標準及治理模式能在全球各地採用」的戰略目標。美方此次在廣州強力推銷，旨在警告亞太國家，選擇中國技術可能面臨的政治風險，並試圖在制定全球ai規則的賽局中，防堵北京掌握話語權。儘管中方駁斥相關指控並呼籲合作，但美方抗中立場鮮明，絲毫沒有妥協跡象。除了虛擬世界的ai戰場，美方在實體海域與中國較勁的態勢同樣激烈。針對太平洋區域日益嚴重的非法、未經通報及無管制（iuu）捕撈問題，美國將矛頭直指中國，並向亞太國家推銷由美國民間研發的高科技監控解決方案。美國國務院海洋環境與科學事務部門代理首席副助卿裴利（ruth perry）向路透表示，罕見地以嚴厲措辭點名中國。她指出，中國擁有多達1萬8000艘遠洋漁船的龐大船隊，對許多小型濱海國家的執法能力構成重大挑戰，也嚴重威脅區域糧食安全與海域主權。「許多國家都受到負面影響，中國正是罪魁禍首。」裴利更引述報導暗示，這些捕撈活動背後涉及不尋常的「國家層級協調行動」，暗指北京當局可能利用漁船遂行灰色地帶擴張。為此，美方在apec會議中大力推廣包括衛星船舶追蹤、ai數據分析、聲學探測系統，以及配備感測器的智慧海洋浮標等技術。美方希望透過輸出這些技術，協助亞太國家建立自己的「海域感知」能力，進而構築防堵中國海上擴張的科技圍牆。分析指出，川普政府選在中國主辦的apec會議上，毫不避諱地針對中國的科技輸出與海洋活動進行反制，顯示美中競爭已結構化且常態化。即使兩國領袖即將互訪，但在關鍵的戰略利益與國際規則制定權上，華府將持續採取「全政府」策略，在每一個多邊場域壓縮北京的戰略空間。                
+
+馬斯克也點出了問題的棘手之處，並宣佈，特斯拉將不得不自行建造一座記憶體工廠。馬斯克在1月底表示，現在有2個選擇，不是遇到晶片瓶頸，就是要建一座晶圓廠。
+造成這種供應緊張的根本原因在於ai資料中心的建置，像alphabet和openai這樣的公司正在大量收購記憶體晶片，他們採購數百萬個搭載海量記憶體的輝達ai加速器，用於運行聊天機器人和其他應用程式，進而佔據了記憶體晶片愈來愈多的產能。這使得消費性電子產品製造商不得不爭奪來自三星電子（ samsung electronics）和美光等公司日益減少的晶片供應。
+由於這一情況引發的價格飆升，似乎可以看到惡性通膨的影子。其中一款dram從12月到1月價格飆升了75％，並在整個假期期間加速了價格上漲。愈來愈多的零售商和中盤商每天都在調整價格，更有一些人形容即將到來的局面是「記憶體末日」（rammageddon）。
+晶片設備供應商科林研發（lam research）執行長亞契（tim archer）本（2）月在南韓的一次會議上表示，現在正站在一個前所未有巨大變革的開端，從現在開始到2030年前，產業面臨的需求規模將超過以往任何時刻，事實上他將壓倒所有其他需求來源。
+令人擔憂的是，在ai巨頭真正開始推進資料中心建設計劃之前，價格就已經飆升，供應也已告急。研究機構伯恩斯坦（bernstein）分析師亞洲半導體分析師李馬克（mark li）警告，記憶體晶片價格正在呈「拋物線式」上漲。雖然這將為三星、美光和sk海力士（sk hynix）帶來豐厚的利潤，但未來幾個月，其他電子企業將付出慘痛的代價。
+聯想集團（lenovo）執行長楊元慶上週發表財報後接受訪問時表示，供需之間的這種結構性失衡，並非只是短期波動，這種供應緊張的局面至少會持續到年底。
+這種混亂也正威脅整個產線的獲利能力，並影響企業的長期計劃。知情人士透露，索尼集團（sony group）正在考慮將下一代playstation遊戲機的發表時間延後到2028年甚至是2029年，這將嚴重打亂索尼的策略。其主要競爭對手任天堂（nintendo）也正考慮在2026年調漲switch 2的價格。任天堂在2025年發表新款switch 2，導致記憶體需求狂飆，帶動了記憶體的銷售。
+一家筆記型電腦製造商的經理表示，三星最近開始每季左右審查一次記憶體供應合約，而不是過去常見的一年一審。中媒報導也揭露，包括小米、oppo在內的中國智慧手機製造商正在下調2026年的出貨目標，其中oppo下調幅度高達20％。
+思科（cisco）上週公佈財測，獲利預期疲軟，並指出，記憶體短缺是造成該公司股價出現近4年來最大跌幅的原因之一。高通（qualcomm）和安謀（arm）也接連警告，未來可能還會出現更多負面影響。
+現在的情況讓人回憶起近年來最大的供應鏈中斷事件之一，疫情期間汽車基礎、電源管理晶片的短缺，導致從福特（ford）到福斯（volkswagen）等汽車製造商陷入癱瘓，迫使智慧手機製造商以高價囤積晶片，並引發包括美國在內，各國大力吸引廠商建立本土晶片製造廠。
+這一次，記憶體短缺則源自於產業向ai的轉型，meta、alphabet、微軟（microsoft）和亞馬遜（amazon）等公司正在斥巨資建設能夠訓練、託管ai演算法的資料中心，將支出從2024年的2170億美元（約新台幣6.85兆元），提高到去年的約3600億美元（約新台幣11.3兆元），預計到2026年將達到6500億美元（約新台幣20.5兆元）。                
     一手掌握經濟脈動
     點我訂閱自由財經youtube頻道
 
                 
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
-    按我看活動辦法
-
-                
-
-
-
-                                
-            
-            
-
-
-        
-
-        
-
-        
-
-
-
-
-
-        
-        今日熱門新聞
-
-
-
-        
-        
-
-        
-        
-            看更多！請加入自由財經粉絲團
-            
-        
-        
-                    
-            
-            
-            網友回應">
+    按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">APEC廣州交鋒！美力推AI與海事監控技術 劍指中國擴張</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI對記憶體需求暴增 正加劇晶片危機</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344424" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344443" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="「美不視歐洲為附庸」！魯比歐訪中歐 籲挺川普捍衛西方價值" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="漏網鏡頭》谷立言優雅動筷吃年菜  林佳龍「吃貨」上身用手抓蝦" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -581,168 +283,35 @@ microsoft’s ai boss says ai can replace every white-collar job in 18 months �
 
 
 
-    「美不視歐洲為附庸」！魯比歐訪中歐 籲挺川普捍衛西方價值
-	2026/02/16 08:11
-	國際新聞中心／綜合報導
+    漏網鏡頭》谷立言優雅動筷吃年菜  林佳龍「吃貨」上身用手抓蝦
+	2026/02/16 09:00
+	記者黃靖媗／台北報導
             
                         
             
     
         
-        美國國務卿魯比歐（左）15日訪問斯洛伐克，會晤總理費佐（右）。（法新社）
-    
-
-美國國務卿魯比歐（marco rubio）15日在斯洛伐克首都布拉第斯拉瓦（bratislava）表示，華府並不希望歐洲成為美國的「附庸」（vassal），而是尋求建立更強健的夥伴關係。此行他接連會晤斯洛伐克與匈牙利的右翼領袖，旨在鞏固川普政府在歐洲的盟友網絡，並呼籲歐洲各國擁抱川普對全球秩序「復興」的願景。法新社報導，魯比歐在結束德國慕尼黑安全會議（msc）的行程後轉往中歐訪問。他在慕尼黑發表演說時警告，西方文明正面臨大規模移民，以及文化、工業衰退的「抹除」危機，呼籲歐洲領袖團結一致支持川普，共同捍衛西方價值。    
-    
-    
-    
-隨後在斯洛伐克的簡短訪問中，魯比歐進一步闡述美方立場：「我們不要求歐洲成為美國的附庸。我們希望成為你們的夥伴，我們希望與歐洲合作，與盟友合作。」他強調，在跨大西洋關係動盪之際，一個「強大的歐洲」符合美國利益，並駁斥美國將因歐洲更加獨立自主而感到威脅的說法。魯比歐首站會晤斯洛伐克總理費佐（robert fico）。費佐被視為川普在歐洲堅定的民族主義盟友之一，雙方關係密切。費佐在記者會上稱讚川普對烏克蘭戰爭的態度「理性且務實」（rational and pragmatic），儘管他也坦言，衝突在短期內恐難以解決。魯比歐則回應，美國的角色是「推動結束這場非常致命、血腥且代價高昂的戰爭」。此外，2人也針對核能合作進行討論。針對日前政治新聞網站politico引述匿名外交官報導，費佐在造訪川普的海湖莊園（mar-a-lago）後，對川普的精神狀態表示擔憂一事，華府與布拉第斯拉瓦方面均已嚴正否認。結束斯洛伐克行程後，魯比歐16日將飛往布達佩斯，會見匈牙利總理奧班（viktor orban）。奧班目前正面臨自2010年重新掌權以來最嚴峻的挑戰，他領導的青年民主黨（fidesz）在民調中落後於反對派領袖馬格雅（peter magyar）的自由黨（tisza）。川普曾公開稱讚奧班是「強而有力的領袖」，並在4月12日匈牙利國會大選前表態支持他。奧班的言論與川普的「讓美國再次偉大」（maga）運動高度共鳴，包括反移民、反lgbtq權利，以及反對「性別意識形態」等立場，深受美國保守派推崇。奧班也宣布計畫下週前往華府，參加川普「和平理事會」（board of peace）的首次會議。能源議題也是魯比歐此行的重點。斯洛伐克與匈牙利自2022年俄烏戰爭爆發以來，仍試圖與克里姆林宮維持友好關係，並高度依賴俄羅斯化石燃料，使得兩國在歐盟內部陷入與其他國家對立的僵局。美國正試圖加強與這兩個右翼盟友的能源連結，以鞏固雙邊關係。
-
-                
-
-
-
-            
-            
-
-            
-            
-            			
-
-			
-            
-    不用抽 不用搶 現在用app看新聞 保證天天中獎　
-    點我下載app　
-    按我看活動辦法
-
-        
-
-
-
-    
+        ait處長谷立言（左）與外交部長林佳龍日前在一場團圓飯的宴席中相互敬酒。（外交部提供）
 
     
 
 
-    
-
-    
-
-
-相關新聞
 
 
 
-
-
-
-
-
-
-
+台灣正值農曆春節，外交部長林佳龍特別邀請美國在台協會（ait）處長谷立言與日本駐台代表片山和之，一起享用除夕團圓飯，品嚐由台灣農業青年大使自行栽種、養殖的台灣美味食材烹調而成的年菜。沒想到林佳龍看到10多道美味佳餚，竟在谷立言與片山和之面前台灣魂上身，直接化身「吃貨」，將外交禮儀拋諸腦後，毫無部長包袱地埋頭猛吃，與身旁的谷立言形成鮮明對比。谷立言、片山和之、林佳龍3人落座後，現場的農業青年大使依序介紹各項菜品，並主動分菜、夾菜給作客的谷立言與片山和之，坐在兩人中間的林佳龍則沒有要管兩人，也不等現場的農青大使分菜，主動動筷出擊，夾取自己要吃的菜色。    
     
     
-
+    
+在看到第一道有食用花點綴的沙拉冷盤「原香米果瑞海盤」時，林佳龍只關心「這花可以吃嗎？」。在品嚐第二道菜梅醬雞肉「春梅報喜金鳳凰」時，林佳龍就已經進入「吃貨」狀態，在谷立言優雅地夾起一口雞肉，並細嚼慢嚥地吃完的同時，林佳龍已經連吞兩大口，滿足地用手擦一下嘴角，驚嘆「這是雞肉」。在農青大使介紹菜色「檸香胡椒躍鮮蝦」當中的泰國蝦養殖過程時，林佳龍也不忘邊聽邊吃，一旁谷立言優雅地使用筷子吃蝦，林佳龍則接地氣地直接用手抓起蝦尾，絲毫不放過一點剩餘的蝦肉，看起來真的吃得很香。下一道則是農青大使用30年老茶燉煮的茶香東坡肉「茶韻東坡富貴肉」，3人皆非常認真地吃肉，林佳龍更是吃到盤底朝天，一點東坡肉都沒有剩下，連農業青年大使已經開始介紹下一道菜「桂圓好事雙味捲」都沒注意到，連聲誇讚東坡肉「真的很好吃！入口即融！」。
 
 
 
 
         
-        國際今日熱門
-
-
-
-    
-
-
-
         
-		
-				
-			
-		
-		
-		
+        外交部長林佳龍邀請美國在台協會（ait）處長谷立言與日本駐台代表片山和之，一起享用除夕團圓飯，品嚐由台灣農業青年大使自行栽種、養殖的台灣美味食材烹調而成的年菜。（外交部提供）
 
-    
-
-
-
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-        看更多！請加入自由時報粉絲團
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-網友回應">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">「美不視歐洲為附庸」！魯比歐訪中歐 籲挺川普捍衛西方價值</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344421" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="又一艘！美軍千里追擊 從加勒比海追到印度洋攔截違規油輪" data-content="限制級
-        
-            您即將進入之新聞內容 需滿18歲 方可瀏覽。
-        
-        
-        
-            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
-        
-    
-
-    
-
-
-
-
-
-
-
-    又一艘！美軍千里追擊 從加勒比海追到印度洋攔截違規油輪
-	2026/02/16 08:11
-	國際新聞中心／綜合報導
-            
-                        
-            
-    
-        
-        美軍在印度洋成功攔截並登上懸掛巴拿馬國旗的油輪「維羅尼卡3號」。（法新社）
-    
-
-美國戰爭部（國防部）15日宣布，美軍在印度洋成功攔截並登上1艘懸掛巴拿馬國旗的油輪「維羅尼卡3號」（veronica iii）。該船因違反美國總統川普對委內瑞拉實施的制裁封鎖令，企圖逃離加勒比海，最終仍遭美軍跨海鎖定並登船控制。這是美軍繼上週後，執行的第二起類似海上攔截行動。五角大廈在社群平台x上發布聲明指出，「維羅尼卡3號」企圖藐視川普發布的「隔離令」（quarantine），「我們從加勒比海一路追蹤至印度洋，並將其攔停。」隨文附上的影片畫面顯示，美軍部隊搭乘直升機，從空中強行登上該艘油輪進行控制。    
-    
-    
-    
-就在約1週前，美軍甫以類似手法攔截另一艘違規油輪「天鷹2號」（aquila ii）。根據tankerstrackers.com的數據，「維羅尼卡3號」載有約190萬桶原油。敏感的是，該船於今年1月3日駛離委內瑞拉，而當天正是委內瑞拉總統馬杜羅（nicolas maduro）遭美軍特種部隊突襲捕獲的日子。此外，美國財政部外國資產管制辦公室（ofac）的資料顯示，這艘船早已因涉及伊朗相關事務，而被列入制裁名單。川普去年12月下令對進出委內瑞拉的受制裁油輪實施「封鎖」（blockade）。截至目前為止，已有至少9艘船隻遭到美方扣押。五角大廈在聲明中罕見地使用「戰爭部」（department of war）一詞，措辭強硬地表示：「戰爭部將剝奪非法行為者及其代理人在海域的行動自由。」儘管美軍近期加強執法力度，但遭扣押的船隻恐怕只是龐大非法運輸網絡的冰山一角。1名美國海岸防衛隊高層官員透露，全球目前約有高達800艘屬於「影子船隊」（shadow fleet）的船隻正在運作，試圖規避國際制裁。we defend the homeland forward. distance does not protect you.overnight, u.s. forces conducted a right-of-visit, maritime interdiction and boarding of the veronica iii without incident in the indopacom area of responsibility.the vessel tried to defy president trump’s… pic.twitter.com/tran3clr9g— department of war ???????? （@deptofwar） february 15, 2026 
-
-        
-        
-        維羅尼卡3號油輪因違反美國總統川普對委內瑞拉實施的制裁封鎖令，試圖逃離加勒比海，最終仍遭美軍跨海鎖定並登船控制。（法新社）
     
                 
 
@@ -794,7 +363,7 @@ microsoft’s ai boss says ai can replace every white-collar job in 18 months �
 
 
         
-        國際今日熱門
+        政治今日熱門
 
 
 
@@ -845,21 +414,49 @@ microsoft’s ai boss says ai can replace every white-collar job in 18 months �
 
 網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">又一艘！美軍千里追擊 從加勒比海追到印度洋攔截違規油輪</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">漏網鏡頭》谷立言優雅動筷吃年菜  林佳龍「吃貨」上身用手抓蝦</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344418" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5343137" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="科學家嘗試從真菌和廢料堆中尋找新的稀土解決方案" data-content="科學家嘗試從真菌和廢料堆中尋找新的稀土解決方案圖像來源，getty imagesauthor, 克里斯·巴拉紐克（chris baraniuk）28 分鐘前隨著各國开始重视稀土礦藏的取得，科學家指出，這些備受覬覦的原材料其實近在眼前——甚至完全不需要傳統採礦就可獲得。在奧地利一間實驗室裡，兩位科學家正觀察一種真菌的生長。發育中的真菌會形成龐大的微觀網絡，稱為菌絲體（mycelia），鑽入四周的縫隙，搜尋、蔓延並攝取養分。真菌透過數以百萬計、類似根系的纖細菌絲汲取營養，某些真菌也會吸收其他物質——那些人類想要的東西。維也納大學（university of vienna）的這個實驗室裡，這株實驗用真菌被放在培養皿和透明塑膠袋中，生長於特製黏土之上，黏土刻意摻入了稀土元素。這些搶手的元素被廣泛用於電池、磁體、可再生能源設備和各類科技產品。研究人員想知道真菌能否替他們「萃取」出稀土。「或許我們真的能把資源回收。」該校高分子與複合材料工程研究組負責人亞歷山大·畢斯馬克（alexander bismarck）說。所謂稀土，是指17種性質彼此相近的金屬元素，如鏑、釔、鈧等。儘管稱為「稀土」，它們其實並不稀少，而是幾乎遍佈地表各處。真正的挑戰在於，多數地點的濃度都很低，難以大量提取。隨著稀土用途日益廣泛，全球關注度不斷攀升。美國總統特朗普表示，美國將斥資120億美元建立稀土「戰略儲備」，並積極尋求取得烏克蘭和格陵蘭的稀土礦藏。目前，中國在稀土產業中居於主導地位，約70%的稀土開採與90%的加工都在中國境內完成。世界各地的研究團隊正在尋找取得這些元素的新途徑——從利用真菌的力量，到從龐大的工業廢棄物堆中分離稀土的技術。所有發達經濟體都在不同程度上需要稀土，包括美國在內的許多國家，或許可以在本土從廢棄物中回收更多所需稀土，藉此減少甚至免除在國際間為爭奪稀土而角力。畢斯馬克表示，維也納大學實驗室內的真菌需要數週才能長成。他和同事、材料科學家米契爾·瓊斯（mitchell jones）展望未來能在更大規模上運用真菌，例如從遭工業污染的土地中回收稀土。「我們真的可以在相當大的區域進行，而且可用現有農機設備輕鬆收集這些生物質，」瓊斯也坦承這條路還很漫長，「說到底，現在仍有些想象的成分。」圖像來源，getty images圖像加註文字，在野外，像牛肝菌這類真菌物種能自然收集稀土元素。本質上，這是一場對真菌的「再賦能」。真菌在生態系中扮演重要角色，但也可能引發疾病，或在實驗室裡污染容器和樣本。不過，讓真菌替人類工作可能是個好主意：它們生命力強、能在黑暗中存活，且生長速度遠快於大多數植物，因此特別適合用來清理工業污染場址——這稱為生物修復（bioremediation）。而在這個案例中，修復同時伴隨有用礦物的回收。畢斯馬克和瓊斯把此構想稱為「真菌採礦（mycomining）」，並於2024年發表論文闡述。採集之後，真菌可以被加工成沼氣作燃料燃燒，並再從生成的灰燼中分離稀土。畢斯馬克和瓊斯強調，這種回收稀土的方式也許頂多是補充性手段。舉例而言，在溶解的電子廢棄物（舊電腦與其他設備）中，鈰的濃度可能高達5.5萬億分之一（ppb）；但在真菌體內，鈰的濃度可能僅約 350ppb。此外，大規模栽培真菌可能帶來環境風險。「你是否會改變當地的自然微生物群落？這樣又可不可以？」瓊斯說。不只他們在研究真菌。亞利桑那大學的奧娜·斯諾延博斯—韋斯特（oona snoeyenbos-west）表示，她計劃創辦一家新創公司，探索利用真菌進行生物修復與關鍵礦物（特別是稀土和銅）的生物回收。她說，真菌可從工業區及受污染地區取得，這些真菌或已在基因方面適應了吸收相對較高濃度的稀土。圖像來源，mitchell jones圖像加註文字，在實驗室中，曲霉屬（aspergillus）的真菌被用作「真菌採礦（mycomining）」稀土的模型系統之一。威斯康辛大學麥迪遜分校（university of wisconsin–madison）環境研究副教授、《稀土前線》（rare earth frontiers）的作者朱莉·克林格（julie klinger）認為，這些新路徑值得嘗試：「想辦法在不挖坑的情況下取得所需材料，我認為這正是我們的方向。」她提到一項2025年的研究指出，美國工業所需的大量關鍵礦物（包含稀土）其實已散落在美國各地的廢棄物堆中。「若我們以全新角度看待廢棄物，關於稀缺與豐裕的圖像會截然不同。」約15年前，法國公司羅地亞（rhodia）宣佈，已開發出從報廢螢光燈管中萃取稀土的流程。之後羅地亞被索爾維（solvay）收購。索爾維的發言人表示，隨著led照明普及，丟棄的螢光燈管大幅減少，公司如今已不再以該方式回收稀土。但可利用的廢料依然很多。採礦後的尾礦可能是稀土的「熱點」，例如美國加州的山口關（mountain pass）稀土礦尾礦。克林格建議，可直接再加工尾礦，以取得其中殘留的稀土。「我認為我們所需的一切稀土，都在廢棄物裡。」得州萊斯大學（rice university）化學、電腦科學與材料科學納米工程教授詹姆斯·圖爾（james tour）說。他和同事開發出一種流程，可從多種來源（包括廢棄磁體）回收稀土。該方法名為瞬間焦耳加熱（flash joule heating）：透過電流讓材料在極短時間內升至高溫；材料的電阻產生焦耳熱，使其溫度達數百甚至數千攝氏度。被加熱材料中的目標元素會與含氯化合物鍵結。「我們讓它黏上氯，接著它會以氣相形式揮發出來，我們再把它捕捉。」將該技術授權進行產業應用的metallium公司執行長麥可·沃爾許（michael walshe）說。圖爾補充：「我認為這能適用於所有稀土磁體。我們已在幾種最常見的型號上測過，都有效。」圖像來源，getty images圖像加註文字，作為傳統採礦來源的稀土礦石，在處理過程中需要耗費大量能源與資源。這套瞬間焦耳加熱技術也能應用於含稀土的燃煤灰（coal ash）與鋁土礦赤泥（bauxite residue／red">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="谷立言帶「波本威士忌」迎新年 讚這道在地台菜最美味！" data-content="日本駐台代表片山和之（右）準備海邊燒/海苔燒麻糬、黃豆粉麻糬、麻糬紅豆湯3種日本麻糬，指名將黃豆粉麻糬給ait處長谷立言（左）享用、海苔燒麻糬給外交部長林佳龍品嚐，自己則吃麻糬紅豆湯。（外交部提供）
+    
+
+今日為農曆除夕，馬年將至。外交部長林佳龍特別邀請美國在台協會（ait）處長谷立言、日本台灣交流協會台北事務所代表片山和之共襄盛舉，享用由台灣農業青年大使自行栽種、烹調的台灣道地年菜。谷立言在享用完年菜後，特別表示對檸檬胡椒蝦的喜愛；片山和之則最愛茶香東坡肉與沙拉冷盤，與林佳龍口味相似。谷立言喜愛檸檬胡椒蝦、片山和之最愛茶香東坡肉農青代表葉佳欣首先以中、英、日語三語歡迎林佳龍、谷立言、片山和之。接著三人依序享用農青大使準備的8道菜品與2種飲品。8道菜品分別為沙拉冷盤「原香米果瑞海盤」、梅醬雞肉「春梅報喜金鳳凰」、檸檬胡椒蝦「檸香胡椒躍鮮蝦」、茶香東坡肉「茶韻東坡富貴肉」、腐皮捲桂圓甜米糕「桂圓好事雙味捲」、茶葉菜脯雞湯「三代同堂團圓盅」、紅白草莓與橘子水果拼盤、福馬造型仙草凍與麻糬「馬吉黑金幸福桌」，飲品則是冷飲迎春梅釀與熱飲青心烏龍。    
+    
+    
+    
+在品嚐到草莓、橘子水果拼盤時，農青大使特別介紹，現場的「台農一號」草莓有美國媽媽、日本爸爸，是冬天限定的水果；在介紹甜點仙草凍與客家麻糬時，谷立言也特別注意到用仙草凍做成的小黑馬，讚嘆「這個馬很漂亮」。享用完農青大使準備的佳餚後，林佳龍指出，茶香東坡肉有「媽媽的滋味」，是他最喜歡的一道菜；片山和之表示，特別喜歡沙拉冷盤與東坡肉；谷立言說，他很喜歡檸檬胡椒蝦，當中胡椒與檸檬的平衡相當好，且相當脆，每道菜品都很好吃，讓他感受到過年氛圍。負責製作茶香東坡肉的農青代表葉佳欣表示，這道東坡肉特別之處在於使用拉拉山高山紅茶燉煮，與傳統東坡肉相比，口感更清爽；製作出受到谷立言好評的檸檬胡椒蝦的農青陳廷瑋則說，蝦子產於屏東里港，有好的水質環境與飼料調配，蝦子吃起來才會脆口香甜。接著，輪到片山和之與谷立言展示兩人準備的日本、美國「年菜」。片山和之與谷立言展示日本、美國「年菜」片山和之表示，日本自明治維新後，過年都是過陽曆年，傳統上會準備什錦冷菜、蕎麥麵、麻糬，他今天特別準備海邊燒/海苔燒麻糬（磯部焼き）、黃豆粉麻糬（きな粉餅）、麻糬紅豆湯（ぜんざい）3種日本麻糬。谷立言介紹美國「年菜」指出，美國通常是過感恩節、聖誕節，沒有正式過年的習慣，只會非正式地與朋友喝酒、吃零食，因此他特別準備美國巴頓波本威士忌。他說明，巴頓波本威士忌產自美國肯塔基州，由當地飲食玉米釀製而成，與台灣菜很搭，且波本常被與肯塔基州當地賽馬聯想，因此他選擇巴頓波本威士忌。林佳龍盼美日台關係「馳騁寰宇、龍總馬吉」最後，林佳龍總結說，美日台就像家人，期待美日台關係在新的一年「馳騁寰宇，龍總馬吉」。
+
+        
+        
+        馬年將至，外交部長林佳龍特別邀請美國在台協會處長谷立言、日本台灣交流協會台北事務所代表片山和之共襄盛舉，享用由台灣農業青年大使自行栽種、烹調的台灣道地年菜。（外交部提供）
+    
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">科學家嘗試從真菌和廢料堆中尋找新的稀土解決方案</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>BBC中文</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">谷立言帶「波本威士忌」迎新年 讚這道在地台菜最美味！</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.bbc.com/zhongwen/articles/cq57207v9pno/trad?at_medium=RSS&at_campaign=rss" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5343138" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">7</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('稀土')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>稀土</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('核能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>核能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('疫情')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>疫情</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -873,7 +470,7 @@ microsoft’s ai boss says ai can replace every white-collar job in 18 months �
                     labels: ["02-15","02-16"],
                     datasets: [{
                         label: '情緒指數',
-                        data: [0.48,0.45],
+                        data: [0.48,0.48],
                         borderColor: '#dc2626',
                         backgroundColor: '#dc262620',
                         borderWidth: 3,
@@ -900,7 +497,7 @@ microsoft’s ai boss says ai can replace every white-collar job in 18 months �
                     labels: ['政策', '資金', '基本面', '國際', '技術'],
                     datasets: [{
                         label: '今日強度',
-                        data: [0.4,0.48,0.85,0.35,0.52],
+                        data: [0.65,0.5,0.75,0.45,0.55],
                         fill: true,
                         backgroundColor: 'rgba(79, 70, 229, 0.2)', // Indigo-600 with opacity
                         borderColor: 'rgb(79, 70, 229)',
