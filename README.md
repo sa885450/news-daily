@@ -26,6 +26,14 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v2.7.0 - UI 細節優化與 Discord 診斷 (2026-02-16)
+- **🕰️ 儀表板顯示更新時間**：
+  - 更新 `lib/ui.js`，現在標題下方會顯示「YYYY-MM-DD · 更新於 HH:mm」，讓資訊時效性一目了然。
+- **📢 Discord 通知系統診斷**：
+  - 強化 `lib/utils.js` 中的 `sendDiscord` 函式。
+  - 增加環境變數檢查：若 `.env` 遺漏 `DISCORD_WEBHOOK_URL`，會明確提示警告。
+  - 增加錯誤細節捕捉：若發送失敗，會印出 Discord API 回傳的具體錯誤碼與訊息 (如 400 Bad Request)，方便除錯。
+
 ### v2.6.3 - 修復日報生成錯誤 (2026-02-16)
 - **🐛 修復 `ensureDir is not a function` 錯誤**：
   - 在 `lib/utils.js` 中重新實作並導出 `ensureDir` 函式。
