@@ -33,6 +33,12 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v3.0.3 - 徹底修復編碼問題 (2026-02-17)
+- **🔥 重建模板檔案 (Rebuild Templates)**：
+  - 發現 PowerShell 寫入檔案時的 BOM 問題導致 EJS 解析異常。
+  - 使用 Node.js 原生 `fs` 模組重建 `views/index.ejs`，確保為純淨的 UTF-8 (No BOM) 格式。
+  - 經 Hex Dump 驗證，生成的 HTML 標題與圖表數據現已完全正常。
+
 ### v3.0.2 - 編碼異常修復與顯示修正 (2026-02-17)
 - **🔣 修復中文亂碼問題 (Fix Character Encoding)**：
   - 修正 `views/index.ejs` 因檔案寫入過程導致的 UTF-8 編碼異常，還原所有中文標籤與說明文字。

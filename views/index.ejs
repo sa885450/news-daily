@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI ?箄?銵冽</title>
+    <title>AI 智能儀表板</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link
@@ -37,11 +37,11 @@
         }
     </style>
     <script>
-        let currentCategory = '?券', currentSearch = '';
-        function applyFilters() { const lower = currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c => { const matchCat = (currentCategory === '?券' || c.dataset.category === currentCategory); const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower); if (matchCat && matchSearch) { c.classList.remove('hidden'); setTimeout(() => c.classList.add('animate-fade'), 10); } else { c.classList.add('hidden'); c.classList.remove('animate-fade'); } }); }
+        let currentCategory = '全部', currentSearch = '';
+        function applyFilters() { const lower = currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c => { const matchCat = (currentCategory === '全部' || c.dataset.category === currentCategory); const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower); if (matchCat && matchSearch) { c.classList.remove('hidden'); setTimeout(() => c.classList.add('animate-fade'), 10); } else { c.classList.add('hidden'); c.classList.remove('animate-fade'); } }); }
         function filterCategory(c) { currentCategory = c; document.querySelectorAll('.filter-btn').forEach(b => b.className = b.dataset.filter === c ? 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300' : 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600'); applyFilters(); }
         function searchNews(v) { currentSearch = v.trim(); applyFilters(); }
-        function searchKeyword(k) { document.getElementById('search-input').value = k; searchNews(k); filterCategory('?券'); document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' }); }
+        function searchKeyword(k) { document.getElementById('search-input').value = k; searchNews(k); filterCategory('全部'); document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' }); }
     </script>
 </head>
 
@@ -52,10 +52,10 @@
             <div class="absolute top-0 right-0 mt-2 mr-2 z-50">
                 <select onchange="if(this.value) window.location.href=this.value"
                     class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50">
-                    <option value="index.html">?? 餈?擐?</option>
+                    <option value="index.html">🏠 返回首頁</option>
                     <% historyFiles.forEach(function(f) { %>
                         <option value="<%= f.filename %>" <%=f.isToday ? 'selected' : '' %>>
-                            <%= f.isToday ? '?? 隞予' : '??' %>
+                            <%= f.isToday ? '📅 今天' : '📜' %>
                                 <%= f.label %>
                         </option>
                         <% }); %>
@@ -67,12 +67,12 @@
                     <div
                         class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">
                         AI Insight Report v3.0</div>
-                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">?箄?啗??銵冽</h1>
+                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
                         <%= fullDateStr %>
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
-                        <span class="text-sm font-bold text-slate-400 flex items-center mr-2">?? AI ?釣撖阡?:</span>
+                        <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         <% entities.forEach(function(e) { %>
                             <button onclick="searchKeyword('<%= e.name %>')"
                                 class="px-3 py-1 <%= e.colorClass %> border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
@@ -88,9 +88,9 @@
                 <section class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade">
                     <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                         <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">??</span>
-                                撣??韏啣</h3>
-                            <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">隞: <span
+                            <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span>
+                                市場情緒走勢</h3>
+                            <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="<%= todayScore > 0 ? 'text-red-500' : 'text-green-500' %> text-base">
                                     <%= todayScore %>
                                 </span></div>
@@ -98,8 +98,8 @@
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex flex-col">
-                        <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">?妣</span>
-                            鈭???</h3>
+                        <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">🧭</span>
+                            五力分析</h3>
                         <div class="flex-grow relative"><canvas id="radarChart"></canvas></div>
                     </div>
                 </section>
@@ -110,7 +110,7 @@
                         <div class="flex flex-wrap gap-2 justify-center">
                             <% categories.forEach(function(cat) { %>
                                 <button onclick="filterCategory('<%= cat %>')" data-filter="<%= cat %>"
-                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm <%= cat === '?券' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 border-slate-200' %>">
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm <%= cat === '全部' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 border-slate-200' %>">
                                     <%= cat %>
                                 </button>
                                 <% }); %>
@@ -123,7 +123,7 @@
                                 </svg></div>
                             <input type="text" id="search-input" oninput="searchNews(this.value)"
                                 class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner"
-                                placeholder="???啗?...">
+                                placeholder="搜尋新聞...">
                         </div>
                     </div>
                 </div>
@@ -132,8 +132,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <%- summary.replace(/\n/g, '<br>' ) %>
-                        </div>
+                            <%- summary.replace(/\n/g, '<br>' ) %></div>
                     </div>
                 </section>
 
@@ -141,12 +140,12 @@
                     style="animation-delay: 0.1s;">
                     <% newsData.forEach(function(n) { %>
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="<%= n.category || '?嗡?' %>" data-title="<%= n.title.toLowerCase() %>"
+                            data-category="<%= n.category || '其他' %>" data-title="<%= n.title.toLowerCase() %>"
                             data-content="<%= (n.content || '').toLowerCase() %>">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        <%= n.category || '?嗡?' %>
+                                        <%= n.category || '其他' %>
                                     </span><span class="text-slate-400 text-xs">
                                         <%= n.timeStr %>
                                     </span></div>
@@ -161,7 +160,7 @@
                             </div>
                             <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="<%= n.url %>"
                                     target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">?梯??冽?
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -173,7 +172,7 @@
                 <% if (sortedKeywords.length> 0) { %>
                     <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
                         <h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span
-                                class="text-2xl mr-2">?</span> 撣?摮摨?/h3>
+                                class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3>
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             <% sortedKeywords.forEach(function(k) { %>
@@ -192,7 +191,7 @@
 
                         <footer
                             class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
-                            ?芸????頂蝯?繚 Powered by Gemini 2.5 & EJS Engine</footer>
+                            自動化生成系統 · Powered by Gemini 2.5 & EJS Engine</footer>
     </div>
 
     <script>
@@ -202,7 +201,7 @@
             data: {
                 labels: <%- JSON.stringify(chartLabels) %>,
                 datasets: [{
-                    label: '???',
+                    label: '情緒指數',
                     data: <%- JSON.stringify(chartScores) %>,
                     borderColor: '<%= chartColor %>',
                     backgroundColor: '<%= chartColor %>20',
@@ -220,9 +219,9 @@
         new Chart(radarCtx, {
             type: 'radar',
             data: {
-                labels: ['?輻?', '鞈?', '?箸??, '??', '?銵?],
+                labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
-                    label: '隞撘瑕漲',
+                    label: '今日強度',
                     data: <%- JSON.stringify(radarData) %>,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
