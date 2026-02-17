@@ -79,11 +79,19 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 03:00
+                        2026年2月18日星期三 · 更新於 05:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('可口可樂歐洲合夥公司')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #可口可樂歐洲合夥公司
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(CCEP-US)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('卡夫亨氏')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #卡夫亨氏
@@ -92,9 +100,9 @@
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('防特網')"
+                            <button onclick="searchKeyword('Fortinet')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #防特網
+                                #Fortinet
                                     
                                         <span class="text-xs ml-1 opacity-70">(FTNT-US)</span>
                                         
@@ -108,28 +116,10 @@
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Cadence')"
+                            <button onclick="searchKeyword('聯準會')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Cadence
+                                #聯準會
                                     
-                                        <span class="text-xs ml-1 opacity-70">(CDNS-US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Applovin')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Applovin
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(APP-US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('道瓊工業指數')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #道瓊工業指數
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(.DJI)</span>
-                                        
                             </button>
                             
                     </div>
@@ -142,7 +132,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-green-500 text-base">
-                                    -0.65
+                                    -0.35
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -178,7 +168,7 @@
                                     <span>
                                         美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
+                                        1
                                     </span>
                                 </button>
                                 
@@ -187,7 +177,7 @@
                                     <span>
                                         半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
+                                        1
                                     </span>
                                 </button>
                                 
