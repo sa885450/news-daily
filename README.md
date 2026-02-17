@@ -12,19 +12,37 @@ news-daily/
 ├── .env               # 🔑 設定檔
 ├── package.json       # 📦 套件設定
 ├── public/            # 🌐 靜態資源目錄 (原 reports)
-│   └── index.html     #    生成的儀表板 (最新)
+│   ├── index.html     #    生成的儀表板 (最新)
 │   └── report_*.html  #    歷史報表存檔
+├── tests/             # 🧪 驗證與測試腳本
+│   ├── test_discord.js    #    Discord 告警測試
+│   └── test_ai_failure.js #    AI 失敗模擬測試
 └── lib/               # 🧠 核心邏輯庫
     ├── config.js      #    設定檔載入器
     ├── utils.js       #    通用工具 (Log, Discord)
     ├── db.js          #    資料庫操作
     ├── crawler.js     #    爬蟲與 API 抓取
-    ├── ai.js          #    Gemini AI 分析
+    ├── ai.js          #    Gemini AI 分析 (Retry & Fallback)
     ├── ui.js          #    HTML 生成
     └── git.js         #    Git 自動化部署
 ```
 
 ## 📝 更新日誌 (Changelog)
+
+### v2.9.1 - 自動化驗證腳本 (2026-02-17)
+- **🧪 新增驗證工具 (Verification Tools)**：
+  - 建立 `tests/test_discord.js`：用於測試 Discord Webhook 連線與告警發送功能。
+  - 建立 `tests/test_ai_failure.js`：用於模擬 API Key 失效或配額不足的情境，驗證重試 (Retry) 與降級 (Fallback) 機制是否正常運作。
+
+### v2.9.0 - AI 韌性強化與容錯升級 (2026-02-17)
+- **🦾 強化 AI 重試與降級機制 (Robust Retry & Fallback)**：
+  - 更新 `lib/ai.js`。針對 Gemini API 的 `429 Too Many Requests` 實作更激進的 **10秒冷卻** 策略。
+  - 新增 **JSON Mode 自動降級**：若因 Safety Settings 導致 JSON 模式失敗，AI 會自動切換至純文字模式重試並嘗試提取 JSON，大幅減少 `Safety Blocked` 錯誤。
+- **🚨 嚴重錯誤即時通知**：
+  - 更新 `lib/utils.js` 新增 `sendDiscordError`。
+  - 當 AI 模型經多次重試仍全數失敗，或週報全批次失敗時，系統會立即發送 Discord 告警，並附上最後一次的錯誤訊息。
+- **🛡️ 週報部份容錯**：
+  - `getWeeklySummary` 現在允許**部分批次失敗**。只要有任一批次成功，週報流程就會繼續執行，不再因為單一批次的網路波動而直接拋出錯誤。
 
 ### v2.8.0 - 深度分析與數據挖掘 (2026-02-16)
 - **🧠 自適應 Persona (Adaptive Persona)**：
