@@ -8,6 +8,7 @@ const db = require('./lib/db');
 const config = require('./lib/config');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron');
+const { version } = require('./package.json');
 
 function matchesAny(text, regexArray) { return regexArray.length === 0 ? false : regexArray.some(re => re.test(text)); }
 
@@ -28,7 +29,7 @@ function calculateKeywordStats(newsData) {
 }
 
 async function runTask() {
-    log('🚀', `啟動排程任務 (v3.0.0)...`);
+    log('🚀', `啟動排程任務 (v${version})...`);
 
     try {
         db.cleanupOldArticles();
@@ -168,5 +169,5 @@ ${cleanSummary}
     }
 }
 
-log('🕰️', "新聞機器人啟動 v3.0.0");
+log('🕰️', `新聞機器人啟動 v${version}`);
 cron.schedule('0 * * * *', () => runTask());

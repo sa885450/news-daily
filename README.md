@@ -33,6 +33,10 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v4.0.1 - 程式碼優化 (2026-02-18)
+- **🔧 動態版本號 (Dynamic Versioning)**：
+  - 修改 `index.js`，改為直接讀取 `package.json` 的 `version` 欄位，避免手動更新不一致的問題。
+
 ### v4.0.0 - 互動式儀表板與深度分析 (2026-02-18)
 - **📊 互動式關鍵字趨勢 (Interactive Insights)**：
   - 新增關鍵字點擊功能，彈出視窗顯示該關鍵字過去 14 天的熱度走勢圖。
