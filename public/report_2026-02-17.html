@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI ?箄?銵冽</title>
+    <title>AI 智能儀表板</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link
@@ -37,11 +37,11 @@
         }
     </style>
     <script>
-        let currentCategory = '?券', currentSearch = '';
-        function applyFilters() { const lower = currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c => { const matchCat = (currentCategory === '?券' || c.dataset.category === currentCategory); const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower); if (matchCat && matchSearch) { c.classList.remove('hidden'); setTimeout(() => c.classList.add('animate-fade'), 10); } else { c.classList.add('hidden'); c.classList.remove('animate-fade'); } }); }
+        let currentCategory = '全部', currentSearch = '';
+        function applyFilters() { const lower = currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c => { const matchCat = (currentCategory === '全部' || c.dataset.category === currentCategory); const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower); if (matchCat && matchSearch) { c.classList.remove('hidden'); setTimeout(() => c.classList.add('animate-fade'), 10); } else { c.classList.add('hidden'); c.classList.remove('animate-fade'); } }); }
         function filterCategory(c) { currentCategory = c; document.querySelectorAll('.filter-btn').forEach(b => b.className = b.dataset.filter === c ? 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300' : 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600'); applyFilters(); }
         function searchNews(v) { currentSearch = v.trim(); applyFilters(); }
-        function searchKeyword(k) { document.getElementById('search-input').value = k; searchNews(k); filterCategory('?券'); document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' }); }
+        function searchKeyword(k) { document.getElementById('search-input').value = k; searchNews(k); filterCategory('全部'); document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' }); }
     </script>
 </head>
 
@@ -52,20 +52,20 @@
             <div class="absolute top-0 right-0 mt-2 mr-2 z-50">
                 <select onchange="if(this.value) window.location.href=this.value"
                     class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50">
-                    <option value="index.html">?? 餈?擐?</option>
+                    <option value="index.html">🏠 返回首頁</option>
                     
                         <option value="report_2026-02-17.html" selected>
-                            ?? 隞予
+                            📅 今天
                                 2026-02-17
                         </option>
                         
                         <option value="report_2026-02-16.html" >
-                            ??
+                            📜
                                 2026-02-16
                         </option>
                         
                         <option value="report_2026-02-15.html" >
-                            ??
+                            📜
                                 2026-02-15
                         </option>
                         
@@ -77,18 +77,34 @@
                     <div
                         class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">
                         AI Insight Report v3.0</div>
-                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">?箄?啗??銵冽</h1>
+                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月17日星期二 · 更新於 23:00
+                        2026年2月18日星期三 · 更新於 00:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
-                        <span class="text-sm font-bold text-slate-400 flex items-center mr-2">?? AI ?釣撖阡?:</span>
+                        <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('愛彼迎')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #愛彼迎
+                            <button onclick="searchKeyword('超微半導體')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #超微半導體
                                     
-                                        <span class="text-xs ml-1 opacity-70">(ABNB-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(AMD-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Crowdstrike 控股')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Crowdstrike 控股
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(CRWD-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('莫德納')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #莫德納
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(MRNA-US)</span>
                                         
                             </button>
                             
@@ -100,34 +116,28 @@
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('SailPoint, Inc.')"
+                            <button onclick="searchKeyword('新思科技')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #SailPoint, Inc.
+                                #新思科技
                                     
-                                        <span class="text-xs ml-1 opacity-70">(SAIL-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(SNPS-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Palo Alto Networks')"
+                            <button onclick="searchKeyword('MongoDB 公司')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Palo Alto Networks
+                                #MongoDB 公司
                                     
-                                        <span class="text-xs ml-1 opacity-70">(PANW-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(MDB-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('美敦力')"
+                            <button onclick="searchKeyword('直覺')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #美敦力
+                                #直覺
                                     
-                                        <span class="text-xs ml-1 opacity-70">(MDT-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(INTU-US)</span>
                                         
-                            </button>
-                            
-                            <button onclick="searchKeyword('Fed')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Fed
-                                    
                             </button>
                             
                     </div>
@@ -136,18 +146,18 @@
                 <section class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade">
                     <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                         <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">??</span>
-                                撣??韏啣</h3>
-                            <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">隞: <span
-                                    class="text-green-500 text-base">
-                                    -0.2
+                            <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span>
+                                市場情緒走勢</h3>
+                            <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
+                                    class="text-red-500 text-base">
+                                    0.35
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-100 flex flex-col">
-                        <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">?妣</span>
-                            鈭???</h3>
+                        <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">🧭</span>
+                            五力分析</h3>
                         <div class="flex-grow relative"><canvas id="radarChart"></canvas></div>
                     </div>
                 </section>
@@ -158,7 +168,7 @@
                         <div class="flex flex-wrap gap-2 justify-center">
                             
                                 <button onclick="filterCategory('全部')" data-filter="全部"
-                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-indigo-600 text-white border-indigo-600">
                                     全部
                                 </button>
                                 
@@ -191,7 +201,7 @@
                                 </svg></div>
                             <input type="text" id="search-input" oninput="searchNews(this.value)"
                                 class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner"
-                                placeholder="???啗?...">
+                                placeholder="搜尋新聞...">
                         </div>
                     </div>
                 </div>
@@ -200,8 +210,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>宏觀決策報告：從「無差別恐慌」轉向「結構性分歧」</h3><p><b>1. 增量分析：昨日是「結構性清算」，今日則是「防禦性輪動」的開端。</b></p><p>相較於昨日提及的零售與金融業無差別拋售，今日市場呈現明顯的結構性分歧。昨日的恐慌核心在於對經濟衰退與個人去槓桿的恐懼；今日市場則顯示出「防禦性買盤」回流非典型成長股。例如，<b>愛彼迎 (ABNB)</b> 在盤中逆勢上漲逾 5%，反映出資金正從過熱的 AI 半導體鏈轉向具備現金流支撐的服務性消費領域。這驗證了市場情緒已從「盲目清算」過渡至「價值尋求」。</p><p><b>2. 市場警訊：半導體板塊的技術性破位。</b></p><p>今日<b>費城半導體指數 (SOX)</b> 大跌 1.44%，顯示半導體產業的估值修正尚未見底。與昨日提及的「AI 顛覆恐懼」相呼應，當前的賣壓已不只是情緒化，而是技術面的破位（近一週跌幅擴大）。同時，資訊安全領域如 <b>SailPoint (SAIL)</b> 遭目標價調降，顯示高成長軟體股也面臨分析師對終端需求韌性的重新評估。</p><p><b>3. 避險基金經理人展望：尋找結構性支撐。</b></p><p>當前市場情緒雖處於中性偏負面 (-0.2)，但並非全面看淡。結構性機會存在於：<br/>(1) <b>服務業韌性</b>：如 ABNB 代表的旅遊需求仍存。<br/>(2) <b>醫療科技穩定性</b>：MDT 等防禦型權值股在波動中展現韌性。<br/>(3) <b>資安防禦</b>：雖然目標價下修，但絕大多數分析師仍維持積極評級，顯示數位轉型中的安全需求仍是結構性剛需。建議避險策略應維持「縮減半導體曝險，增持具備現金流的服務與醫療板塊」。</p>
-                        </div>
+                            <h3>宏觀決策報告：從「防禦性輪動」演變為「成長股結構性修正」</h3><p><b>1. 增量分析：昨日的警告已成現實，技術性破位由點及面。</b></p><p>昨日報告中提到的「半導體板塊技術性破位」在今日全面擴散。相較於昨日資金仍留在服務性消費（如 ABNB），今日市場出現了顯著的<b>成長股集體清算</b>。包括半導體（AMD、SNPS、AMKR）、軟體即服務 SaaS（INTU、CRWD、MDB）以及光學通訊（COHR）在內的關鍵領漲板塊，均出現了驚人的一致性跌幅（均在 -5% 左右）。這顯示市場已不滿足於局部防禦，而是正在進行大規模的風險資產重新定價。</p><p><b>2. 市場警訊：費城半導體指數（SOX）的大幅重挫。</b></p><p>SOX 盤中下跌逾 2%，且多檔核心成份股跌幅逾 5%，這已非正常的漲多拉回，而是結構性獲利了結。昨日提及的「價值尋求」今日轉向了生物科技領域，<b>莫德納 (MRNA)</b> 逆勢上漲逾 5%，成為資金避風港。這種現象驗證了資金正極力規避「AI 擁擠交易」，並尋求具備獨立催化劑或超跌反彈特性的板塊。</p><p><b>3. 結構性機會與避險配置。</b></p><p>目前操作策略應轉向『保守防禦』。在科技股完成技術性築底前，建議減少對高 Beta 值半導體與 SaaS 的曝險。結構性機會目前縮限於具備防禦屬性的醫療生技與現金流強勁的非循環性消費。重點關注 SOX 是否能在 7900 點附近獲得支撐，否則市場可能進入更大規模的評價修復期。</p></div>
                     </div>
                 </section>
 
@@ -209,55 +218,27 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="宏觀策略" data-title="盤中速報 - 愛彼迎(abnb-us)大漲5.06%，報127.49美元"
-                            data-content="&amp;lt;p&amp;gt;愛彼迎(abnb-us)截至台北時間17日22:41股價上漲6.14美元，報127.49美元，漲幅5.06%，成交量510,969（股），盤中最高價127.49美元、最低價122.08美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.08%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.24%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.01%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.62%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;愛彼迎(abnb-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.03%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-7.13%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-0.55%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-3%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-10.59%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        宏觀策略
-                                    </span><span class="text-slate-400 text-xs">
-                                        下午11:00
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346237"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">?梯??冽?
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="半導體" data-title="盤中速報 - 費城半導體大跌1.44%，報8020.31點"
-                            data-content="&amp;lt;p&amp;gt;截至台北時間17日10:30，費城半導體下跌117.55點（或1.44%），暫報8020.31點。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;近 1 週：-0.3%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 1 月：+2.65%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 3 月：+19.48%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 6 月：+41.46%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;今年以來：+14.89%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;焦點個股&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;費城半導體成分股以安可(amkr-us)領跌。安可(amkr-us)下跌7.97%；連貫(cohr-us)下跌3.68%；泰瑞達(ter-us)下跌2.67%；美光科技(mu-us)下跌2.64%；超微半導體(amd-us)下跌2.56%。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;部分成分股表現相對穩健，思佳訊半導體(swks-us)上漲2.26%；和康電訊(mtsi-us)上漲2.16%；科沃(qrvo-us)上漲1.86%；凌雲邏輯(crus-us)上漲1.81%；芯源系統(mpwr-us)上漲1.34%。&amp;lt;/p&amp;gt;">
+                            data-category="半導體" data-title="盤中速報 - 直覺(intu-us)大跌5.04%，報379.26美元"
+                            data-content="&amp;lt;p&amp;gt;直覺(intu-us)截至台北時間17日23:12股價下跌20.14美元，報379.26美元，跌幅5.04%，成交量941,115（股），盤中最高價397.00美元、最低價379.00美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.39%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.54%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-1.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-2.32%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;直覺(intu-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-8.71%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-26.75%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-39.71%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-44.28%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-39.71%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         半導體
                                     </span><span class="text-slate-400 text-xs">
-                                        下午11:00
+                                        上午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 費城半導體大跌1.44%，報8020.31點
+                                    盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346235"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346253"
                                     target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">?梯??冽?
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -265,27 +246,223 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="旅遊消費" data-title="鉅亨速報 - factset 最新調查：sailpoint, inc.sail-us的目標價調降至26元，幅度約3.7%"
-                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共21位分析師，對sailpoint, inc.(sail-us)提出目標價估值：中位數由27元下修至26元，調降幅度3.7%。其中最高估值31.7元，最低估值20元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;綜合評級 - 共有21位分析師給予sailpoint, inc.評價：積極樂觀19位、保持中立2位、保守悲觀0位。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;sailpoint, inc.今(17日)收盤價為15.92元。近5日股價上漲3.7%，標普指數下跌1.85%股價漲幅表現優於大盤。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;資料來源：factset，數據僅供參考，不作為投資建議。&amp;lt;/p&amp;gt;">
+                            data-category="軟體雲端" data-title="盤中速報 - 新思科技(snps-us)大跌5.03%，報415.1美元"
+                            data-content="&amp;lt;p&amp;gt;新思科技(snps-us)截至台北時間17日23:03股價下跌21.99美元，報415.10美元，跌幅5.03%，成交量342,195（股），盤中最高價426.84美元、最低價415.10美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.35%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.63%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-1.04%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-2.31%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;新思科技(snps-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-0.41%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-15.34%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+12.12%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-29.26%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-6.95%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        旅遊消費
+                                        軟體雲端
                                     </span><span class="text-slate-400 text-xs">
-                                        下午11:00
+                                        上午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    鉅亨速報 - Factset 最新調查：SailPoint, Inc.SAIL-US的目標價調降至26元，幅度約3.7%
+                                    盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346221"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346252"
                                     target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">?梯??冽?
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="生物科技" data-title="盤中速報 - 超微半導體(amd-us)大跌5.02%，報196.91美元"
+                            data-content="&amp;lt;p&amp;gt;超微半導體(amd-us)截至台北時間17日22:56股價下跌10.42美元，報196.91美元，跌幅5.02%，成交量5,977,710（股），盤中最高價205.30美元、最低價196.85美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.31%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.7%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-1.16%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-2.39%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;超微半導體(amd-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-4.02%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-10.57%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-16%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+16.79%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-3.19%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        生物科技
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346249"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="宏觀策略" data-title="盤中速報 - crowdstrike控股(crwd-us)大跌5.03%，報408.01美元"
+                            data-content="&amp;lt;p&amp;gt;crowdstrike控股(crwd-us)截至台北時間17日22:55股價下跌21.63美元，報408.01美元，跌幅5.03%，成交量461,692（股），盤中最高價425.88美元、最低價408.01美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.38%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.76%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-1.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-2.41%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;crowdstrike控股(crwd-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+5.29%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-5.34%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-20.07%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+0.41%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-8.35%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        宏觀策略
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346248"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 安可(amkr-us)大跌5.07%，報45.08美元"
+                            data-content="&amp;lt;p&amp;gt;安可(amkr-us)截至台北時間17日22:54股價下跌2.41美元，報45.08美元，跌幅5.07%，成交量815,902（股），盤中最高價47.09美元、最低價45.08美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.35%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.76%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-1.02%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-2.21%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;安可(amkr-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-9.6%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-1.08%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+49.87%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+99.83%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+20.26%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346247"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - mongodb公司(mdb-us)大跌5.05%，報349.81美元"
+                            data-content="&amp;lt;p&amp;gt;mongodb公司(mdb-us)截至台北時間17日22:52股價下跌18.59美元，報349.81美元，跌幅5.05%，成交量179,553（股），盤中最高價364.00美元、最低價348.44美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.25%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.65%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.86%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-1.82%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;mongodb公司(mdb-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+2.97%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-7.84%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+4.48%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+68.79%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-12.22%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346246"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 費城半導體大跌2.03%，報7972.56點"
+                            data-content="&amp;lt;p&amp;gt;截至台北時間17日10:51，費城半導體下跌165.3點（或2.03%），暫報7972.56點。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;近 1 週：-0.3%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 1 月：+2.65%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 3 月：+19.48%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 6 月：+41.46%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;今年以來：+14.89%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;焦點個股&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;費城半導體成分股以連貫(cohr-us)領跌。連貫(cohr-us)下跌5.55%；安可(amkr-us)下跌4.42%；超微半導體(amd-us)下跌4.12%；英特格(entg-us)下跌3.72%；和康電訊(mtsi-us)下跌3.05%。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;部分成分股表現相對穩健，高通(qcom-us)上漲0.31%；凌雲邏輯(crus-us)上漲0.26%。&amp;lt;/p&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 費城半導體大跌2.03%，報7972.56點
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346245"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 連貫(cohr-us)大跌5.24%，報205.85美元"
+                            data-content="&amp;lt;p&amp;gt;連貫(cohr-us)截至台北時間17日22:50股價下跌11.38美元，報205.85美元，跌幅5.24%，成交量798,423（股），盤中最高價212.75美元、最低價205.80美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.2%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.68%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.81%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-1.82%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;連貫(cohr-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-10.41%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+13.71%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+55.91%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+132.58%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+17.7%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346244"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 莫德納(mrna-us)大漲5.04%，報44.36美元"
+                            data-content="&amp;lt;p&amp;gt;莫德納(mrna-us)截至台北時間17日22:48股價上漲2.13美元，報44.36美元，漲幅5.04%，成交量1,073,525（股），盤中最高價44.36美元、最低價42.21美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.13%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.5%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.71%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-1.59%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;莫德納(mrna-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.67%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+0.96%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+70.49%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+50.71%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+43.2%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 莫德納(MRNA-US)大漲5.04%，報44.36美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346243"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -297,7 +474,7 @@
                 
                     <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
                         <h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span
-                                class="text-2xl mr-2">?</span> 撣?摮摨?/h3>
+                                class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3>
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
@@ -306,16 +483,7 @@
                                     <span>
                                         半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
-                                    </span>
-                                </button>
-                                
-                                <button onclick="searchKeyword('AI')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        AI
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        9
                                     </span>
                                 </button>
                                 
@@ -324,7 +492,7 @@
                                     <span>
                                         美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        8
                                     </span>
                                 </button>
                                 
@@ -334,7 +502,7 @@
 
                         <footer
                             class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
-                            ?芸????頂蝯?繚 Powered by Gemini 2.5 & EJS Engine</footer>
+                            自動化生成系統 · Powered by Gemini 2.5 & EJS Engine</footer>
     </div>
 
     <script>
@@ -344,13 +512,13 @@
             data: {
                 labels: ["02-15","02-16","02-17"],
                 datasets: [{
-                    label: '???',
-                    data: [0.48,0.88,-0.2],
-                    borderColor: '#64748b',
-                    backgroundColor: '#64748b20',
+                    label: '情緒指數',
+                    data: [0.48,0.88,0.35],
+                    borderColor: '#dc2626',
+                    backgroundColor: '#dc262620',
                     borderWidth: 3,
                     pointBackgroundColor: '#fff',
-                    pointBorderColor: '#64748b',
+                    pointBorderColor: '#dc2626',
                     pointRadius: 5,
                     fill: true,
                     tension: 0.4
@@ -362,10 +530,10 @@
         new Chart(radarCtx, {
             type: 'radar',
             data: {
-                labels: ['?輻?', '鞈?', '?箸??, '??', '?銵?],
+                labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
-                    label: '隞撘瑕漲',
-                    data: [0.5,0.4,0.5,0.5,0.3],
+                    label: '今日強度',
+                    data: [0.5,0.3,0.2,0.5,0.2],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
