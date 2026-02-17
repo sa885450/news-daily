@@ -26,21 +26,21 @@
             <header class="text-center mb-10">
                 <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.8</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 11:00</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 12:00</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
-        </button> <button onclick="searchKeyword('鴻海')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #鴻海<span class="text-xs ml-1 opacity-70">(2317.TW)</span>
-        </button> <button onclick="searchKeyword('MSCI')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #MSCI<span class="text-xs ml-1 opacity-70">(MSCI)</span>
-        </button> <button onclick="searchKeyword('Sony')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Sony<span class="text-xs ml-1 opacity-70">(SONY)</span>
-        </button> <button onclick="searchKeyword('Microsoft')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Microsoft<span class="text-xs ml-1 opacity-70">(MSFT)</span>
+        </button> <button onclick="searchKeyword('OpenAI')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #OpenAI
         </button> <button onclick="searchKeyword('川普')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #川普
+        </button> <button onclick="searchKeyword('xAI (Grok)')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #xAI (Grok)
+        </button> <button onclick="searchKeyword('MSCI')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #MSCI
+        </button> <button onclick="searchKeyword('Pokémon Company')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #Pokémon Company<span class="text-xs ml-1 opacity-70">(7974.T)</span>
         </button>
                 </div>
             </header>
@@ -49,7 +49,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.88</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.85</span></div>
                     </div>
                     <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
@@ -68,87 +68,61 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度風險報告：警惕「被迫買盤」驅動的末端行情與地緣交易風險</h3><p><b>1. 增量分析與比較：今日核心矛盾從「產能過剩」進一步演向「估值溢價的強行灌水」。</b></p><p>相較於昨日聚焦於長週期資本支出的「產能陷阱」，今日市場展現出典型的情緒過熱與被動買盤推升：<br>● <b>MSCI 權重調整的心理槓桿（ID:0）：</b>外資需在 2 月底前補足部位，這種「非理性被迫買盤」往往在指數高檔區間營造出「強者恆強」的假象，使市場無視技術面乖離過大的警訊。<br>● <b>地緣政治的「資產價格化」（ID:1, 2, 5）：</b>川普將俄烏、伊核以及對台軍售全數納入「談判桌」作為籌碼。這意味著昨日擔憂的供應鏈韌性，今日已質變為「政治變數風險」，地緣政治的突然轉向可能隨時引發避險資金撤離。</p><p><b>2. 潛在泡沫警訊：AI 的成本轉折點與政治不確定性。</b><br>Sony 開發辨識 AI 原創音樂占比的技術（ID:4），標誌著 AI 產業正從「無償學習」進入「高額侵權賠償」時代，這將大幅壓縮軟體業者的利潤。同時，對台軍售成為峰會籌碼，顯示台股護國神山群的「溢價」極度依賴美中兩大國的政治博弈結果。</p><p><b>3. 風險控管建議：建議適度獲利了結。</b><br>當市場陷入「MSCI 加持」與「金馬行情」的集體狂熱時，建議投資人：<br>● <b>減持乖離過高標的：</b>針對權值股台積電、鴻海進行 15-20% 的預防性獲利了結。<br>● <b>增持防禦性資產：</b>配置黃金或美元等避險工具，以對沖 4 月峰會前可能出現的政治波動。<br>● <b>監控 AI 法律風險：</b>關注 AI 軟體應用端的法律成本上升，避免過度追逐無實質獲利支撐的 AI 代理人題材。</p></div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度風險報告：末端狂歡與「地緣投名狀」的雙重夾擊</h3><p><b>1. 增量分析：從昨日的「被迫買盤」升級為今日的「資產泡沫化」與「成本外部化」。</b></p><p>相較於昨日聚焦於 MSCI 調權引發的被動買盤，今日市場呈現出更為危險的訊號：<br>● <b>非理性投機的終端表徵（ID:0）：</b>皮卡丘卡片拍出 5.2 億天價，反映出市場流動性已氾濫至極端非生產性資產，這是典型的「博傻理論」末端徵兆。<br>● <b>台積電的「地緣政治稅」具體化（ID:4）：</b>台美協定雖簽署但晶片被排除在外，外媒揭露台積電恐需額外承擔 1,000 億美元的「投名狀」式支出。這將從本質上改變台積電的資本結構與獲利能力，市場目前的「強者恆強」邏輯並未反映此潛在的高額支出風險。<br>● <b>監管與成本陷阱（ID:2, 3）：</b>歐盟對 Grok 的調查及印度為 AI 支付的 560 億美元代價，預示 AI 產業已進入「高投入、高監管、低利潤回報」的轉折點。</p><p><b>2. 風險控管建議：</b><br>市場情緒已進入極度貪婪區間（0.85），建議投資者<b>適度獲利了結 20%-30% 的高乖離科技標的</b>。資產配置應轉向防禦性資產（如黃金或高現金流股），警惕由川普極限施壓（ID:1, 5）引發的地緣政治黑天鵝導致之估值快速崩塌。</p></div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="金融市場" data-title="msci加持！台股「護國神山群」迎金馬行情 0050擁主場優勢一起飛" data-content="&lt;p&gt;msci 明晟公司於農曆年前公布最新季調結果，雖台股在 msci 全球新興市場指數、亞洲 (日本除外) 指數權重雙雙下滑，但在全球標準型指數 (msci acwi) 權重由 2.40% 上調至 2.41%，外資須在 2 月 26 日尾盤前補足部位，台積電 (2330-tw)、鴻海 (2317-tw) 等市值大、流動性強的標的將會優先受惠，法人樂觀看待年後台股護國神山群「強者恆強」，而市值型 etf 擁有絕對「主場優勢」，投資人可透過布局元大台灣 50 (0050-tw) 等人氣標的，在金馬年跟著龍頭一起飛。&lt;/p&gt;
-
-&lt;p&gt;加權股價指數蛇年完美封關，收在 33605.71 點創下歷史新高，全年累計飆漲 10080.3 點，根據證交所統計，上市公司總市值衝破 109 兆元，較龍年封關增加約 34 兆元，增幅約&nbsp;45%。法人指出，想要參與台股市值成長的報酬率，投資 0050 這樣的市值型 etf 是最直接的方式。&lt;/p&gt;
-
-&lt;p&gt;台股身為全球 ai 硬體最強供應鏈，當輝達執行長黃仁勳來台宴請企業大老，合照就被外界稱為是「0050 實體見面會」，投資 0050 就等於投資台灣產業競爭力。隨著權值股的含金量大幅提升，獲利能力持續創高，將吸引資金持續湧進，推動 0050 價格上漲。&lt;/p&gt;
-
-&lt;p&gt;0050 追蹤的臺灣 50 指數與時俱進汰弱留強，堅定持有穩定上漲的優質企業，是績效長期領先的重要因素。0050 於 2025 年績效為市值型 etf 第一，在有全年績效的台股 etf 中贏過 89%，且 0050 並非僅取得大盤報酬，在資金青睞指標權值股下，台灣 50 指數 2025 年含息報酬率 37.5%，再度超越加權股價指數含息報酬率 29.5%，近十年更是 509.1% 對上 399.3% 的顯著差異。&lt;/p&gt;
-
-&lt;p&gt;對於一般投資人而言，不需要花時間研究個股與眾多 etf，透過 0050 即可直接且高效率參與台股行情，並取得高度可預期的報酬。長期推崇指數化投資的政大財經教授周冠男也表示，沒有訊息且理性的投資人，「都應該」只買全市場市值型投資組合。在 ai 浪潮下，持有涵蓋全市場龍頭的 0050，是省時省力的最佳策略。&lt;/p&gt;
-
-&lt;p&gt;理財專家指出，0050 投資台灣上市市值最大的 50 家龍頭企業，包括台積電、聯發科、中信金、國泰金等，也很適合小朋友理財的入門選擇，剛出生的寶寶就可以開證券帳戶，7 歲以下的小朋友不用到現場，由父母雙方代理臨櫃辦理；7 歲以上則要小孩、父母一起到現場。建議可以把握馬年新春，幫孩子開啟人生第一個證券帳戶，透過 0050 見證投資複利威力。&lt;/p&gt;
-
-&lt;p class=&quot;warning&quot;&gt;※免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險，自負盈虧。&lt;/p&gt;
-">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="宏觀風險" data-title="聖杯級皮卡丘卡片拍出5.2億元　刷新世界紀錄" data-content="2026/2/17 11:27（2/17 11:51 更新）
+                      
+                          
+                          
+                          
+                      被譽為「聖杯」級的稀有「插畫家皮卡丘」卡片。（圖取自instagram.com/loganpaul）（中央社紐約16日綜合外電報導）美國摔角與網路紅人保羅一張被譽為「聖杯」級的稀有「插畫家皮卡丘」卡片，在經過41天競標，今天以1650萬美元（約新台幣5.2億元）成交。美聯社報導，保羅（logan paul）2021年以當時創下金氏世界紀錄的527萬5000美元（約新台幣1.6億元）購入這張卡。他後來替這張卡加上鑽石項鍊和專屬展示盒，並佩戴著它在2022年的「摔角狂熱38」（wrestlemania 38）大賽亮相。戈丁拍賣公司（goldin auctions）今天拍賣過程透過影音平台youtube直播，金氏世界紀錄審核員凱遜（sarah casson）也出席見證。凱遜證實，這張「插畫家皮卡丘」（pikachu illustrator）卡片成交價不僅創下寶可夢卡片紀錄，也翻新所有集換式卡片的最高成交價。得標的是風險投資家、前白宮聯絡室主任安東尼．史卡拉穆奇（anthony scaramucci）之子a.j.史卡拉穆奇（a.j. scaramucci）。保羅親手把卡片掛在對方脖子上時也不由得驚呼：「我的天啊，這太瘋狂了！」「插畫家皮卡丘」是皮卡丘原設計師西田敦子於1998 年為1場比賽所繪製，據信全球僅有數十張，而保羅擁有的這張據信是唯一獲得完美品級10分的版本。（實習編譯：羅薇佳/核稿：蔡佳敏）1150217本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">金融市場</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">MSCI加持！台股「護國神山群」迎金馬行情 0050擁主場優勢一起飛</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6343186" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="川普將間接參與核談判 呼籲伊朗理性一點" data-content="&lt;p&gt;美國與伊朗伊 17 日在日內瓦舉行第二輪核談判，川普表示自己將間接地參與對話，並重提去年 6 月會談破局後突襲伊朗的事，稱德黑蘭也想達成協議，因為不想再面臨談崩的後果。&lt;/p&gt;
-
-&lt;p&gt;川普周一 (16 日) 在空軍一號上告訴記者：「我會間接參與這些會談。這些會談非常重要。」&lt;/p&gt;
-
-&lt;p&gt;對於協議前景，川普稱伊朗曾提出強硬談判，但最終換來美國出動 b-2 轟炸機，摧毀伊朗的核能力。他希望伊朗接下來「更理性一點」，因為德黑蘭不會想承擔無法達成協議的後果。&lt;/p&gt;
-
-&lt;p&gt;美國國務卿魯比歐（marco rubio）同日稍早時表示，與伊朗達成協議將有困難，但同時指會希望達成協議，不會預估談判結果。&lt;/p&gt;
-
-&lt;p&gt;魯比歐出訪匈牙利布達佩斯時稱，伊朗由激進的什葉派神職人員統治與負責決策，「這些人完全基於神學制定政策。他們就是這樣作決定，所以與伊朗達成協議將是困難的。」&lt;/p&gt;
-">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">川普將間接參與核談判 呼籲伊朗理性一點</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
-            </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345974" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
-        </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="AI產業" data-title="日內瓦會談前夕　川普促烏快點與俄達成協議" data-content="日內瓦會談前夕　川普促烏快點與俄達成協議2026/2/17 09:45（中央社美國空軍一號16日綜合外電報導）經美國斡旋下，烏克蘭與俄羅斯將於17日在瑞士日內瓦舉行第3輪三方會談，美國總統川普（donald trump）今天表示，他希望烏克蘭能在會談前儘速與俄羅斯達成協議。綜合法新社和路透社報導，川普搭乘美國總統專機「空軍一號」返回華府時對媒體說：「烏克蘭最好快點上談判桌。」川普致力於終結這場自俄羅斯2022年2月全面入侵烏克蘭所引發的衝突，之前在阿布達比的兩輪談判雖達成換囚協議，但未取得任何突破戲性進展。雙方雖在公開場合表示討論富有成效，但在最關鍵的領土議題上仍存有巨大分歧。俄方在談判中始終堅持要求烏克蘭在領土和政治作出大規模讓步；烏方斷然拒絕，認為這無異於「投降」。這次日內瓦會談，將首度聚焦這場戰爭中最棘手的問題，也就是俄占領的烏國領土未來何去何從。美方代表團成員將包括川普首席特使魏科夫（steve witkoff）及女婿庫許納（jared kushner）；俄方則由前文化部長梅丁思基（vladimir medinsky）率團。烏克蘭方面派出國家安全與國防委員會主席烏梅洛夫（rustem umerov），並有多名官員隨行參與會談。（編譯：蔡佳敏）1150217日內瓦會談前夕　川普促烏快點與俄達成協議2026/02/17 09:452026/02/17 08:512026/02/13 22:24本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
-            <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">AI產業</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">日內瓦會談前夕　川普促烏快點與俄達成協議</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">宏觀風險</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">聖杯級皮卡丘卡片拍出5.2億元　刷新世界紀錄</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602170044.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602170066.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="github actions引入ai代理工作流程，自動化程式儲存庫維護任務" data-content="github代理式工作流程（agentic workflows）進入技術預覽階段，該功能可將儲存庫中的部分例行維護與協作工作，交由ai代理在自動化工作流程平臺github actions內執行。適用情境涵蓋議題（issue）分流與標記、拉取請求檢視、持續整合失敗原因分析，以及文件與程式碼品質維護等，讓使用者以自然語言描述的方式定義自動化作業，降低撰寫與維護複雜工作流程設定的門檻。
-github agentic workflows將工作流程的主要內容改為markdown檔案，由人以自然語言寫出要達成的目標與判斷方式，同時保留一段以yaml表示的前置設定，用來宣告觸發條件、權限、可用工具與允許的輸出範圍。markdown工作流程並非要取代github actions，而是透過github cli擴充套件gh aw進行編譯，產生對應的鎖定檔.lock.yml，最終仍以標準github actions工作流程形式在儲存庫內執行並留存紀錄。
-工作流程預設以唯讀權限執行，避免ai代理直接取得任意寫入能力。如果開發者需建立議題、留言、拉取請求或套用標籤等寫入操作，必須透過safe-outputs安全輸出機制，以預先核准且經清理驗證的方式完成。此外還納入沙箱化執行、網路隔離，以及相依套件以sha雜湊固定等措施，降低執行環境與供應鏈風險。
-官方強調，使用者可用不同的程式開發代理引擎，執行同一套工作流程格式，例如copilot cli、claude code或openai codex，使工作流程描述與背後的推理引擎保持相對獨立。
-這項機制建立在github actions既有的事件模型之上，可因議題與拉取請求事件啟動，也支援排程執行或手動觸發，另外也提供以留言指令啟動的形式，讓工作流程能在議題或留言串中被呼叫，但仍受前述權限與安全輸出護欄的限制。
-github agentic workflows內建github mcp整合，讓工作流程以可控方式存取儲存庫、議題、拉取請求及actions等資源，藉此取得脈絡資訊並執行對應操作。此外，gh aw提供mcp-server指令，能將工作流程管理功能以mcp工具形式開放給代理使用。網頁搜尋或瀏覽器自動化等能力也可納入流程，但須改用外部mcp伺服器，且仍須在工作流程中明確宣告，並受網路權限等護欄機制限制。
-github表示，agentic workflows由github、microsoft research與azure core upstream合作推動，並以開源方式釋出程式碼，採mit授權。">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="美伊日內瓦核子談判　川普本人將間接參加協商" data-content="美伊日內瓦核子談判　川普本人將間接參加協商2026/2/17 10:25（中央社華盛頓16日綜合外電報導）美國和伊朗預定17日開始在日內瓦（geneva）舉行核計畫談判，美國總統川普今天表示，他將以「間接」方式參加會談，並說他認為德黑蘭（tehran）有意與美方達成協議。路透社報導，川普在總統專機空軍一號（air force one）對媒體表示：「我會間接參加談判，這些會談非常重要。」會談前夕，美伊緊張情勢持續升高，美國已在中東部署第2艘航空母艦。美方官員告訴路透社說，若談判破裂，美軍已做好準備，可能展開持久性軍事行動。至於達成協議有多少機會，川普說，伊朗雖想要以強硬態度來談判，但去年夏天美國空襲伊朗核設施，伊朗已嚐到強硬的苦果。川普指出，此次，伊朗有動力想要談判。他說：「我認為他們不希望承擔協議未成的後果。」美國認為，伊朗在本土進行鈾濃縮作業，這可能成為伊朗取得核武的途徑。去年6月美國與以色列聯手攻擊伊朗核設施之前，華府要求德黑蘭放棄鈾濃縮，雙方談判因此陷入僵局。伊朗民防組織今天在南部的帕爾斯（pars）特殊經濟能源園區舉辦防止化學事件演習，以加強此區面對可能發生化學事故的應變能力。（編譯：紀錦玲）1150217美伊日內瓦核子談判　川普本人將間接參加協商2026/02/17 10:252026/02/16 09:312026/02/15 21:22本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">GitHub Actions引入AI代理工作流程，自動化程式儲存庫維護任務</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>iThome</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">美伊日內瓦核子談判　川普本人將間接參加協商</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.ithome.com.tw/news/173970" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602170049.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="sony 新技術可分析 ai 生成歌曲，辨識原創音樂與占比" data-content="sony 集團公司開發出一項新技術，可辨識人工智慧（ai）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向ai開發商求償。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="grok疑生成性ai深偽圖　歐盟監管機構正式調查" data-content="2026/2/17 10:13（2/17 10:46 更新）
+                      
+                          
+                          
+                          
+                      人工智慧聊天機器人grok上個月因回應用戶要求，在x大量生成經ai修改、近乎裸露的真實人物影像，引發全球廣泛憤怒與多國調查。（圖取自unsplash圖庫）（中央社都柏林17日綜合外電報導）愛爾蘭資料保護委員會（dpc）今天宣布，已經開始正式調查社群平台x的人工智慧聊天機器人grok處理個人資料的方式，以及可能生成包括兒童在內，有害的性圖片與影像。路透社報導，x在歐洲聯盟（eu）的總部位於愛爾蘭，因此dpc是這間美國公司在歐盟的主要監管機構。根據「歐盟一般資料保護規則」（gdpr），監管機關可對違規企業處以最多達其全球營收4%的罰款。dpc在聲明中表示，昨天已通知x啟動調查，目的在於判斷x在處理相關個資時，是否履行gdpr規定的義務。grok上個月因回應用戶要求，在x大量生成經ai修改、近乎裸露的真實人物影像，引發全球廣泛憤怒與多國調查。x宣布將限制grok帳號在平台生成這類影像，但路透社本月稍早發現，只要用戶提示，grok仍可繼續生成這類內容。美國總統川普及其政府成員曾批評歐盟監管美國科技公司，並將歐盟的罰款形容為一種變相徵稅；x擁有人、全球首富馬斯克（elon musk）也多次表達對於歐盟監管措施的不滿。dpc副專員陶艾爾（graham doyle）表示，「自數週前媒體首次報導，指稱x用戶可在平台上透過@grok帳號生成真實人物，包括兒童的性化影像以來，dpc一直與xiuc（x位在愛爾蘭的公司名）保持聯繫。」陶艾爾指出，「作為xiuc在歐盟與歐洲經濟區的主要監管機關，dpc已經啟動大規模調查」。他補充，調查會檢視xiuc是否遵守gdpr所規定的部分「基本義務」。歐盟執委會（ec）1月26日已經啟動調查，評估grok是否在歐盟散布非法內容，例如經操控的性化影像；英國資料保護監管機構本月3日也正式開始調查grok處理個資以及可能生成有害的性化圖片與影像。法新社也已經報導dpc正式就此調查x，但截至今晚尚未獲得x回應。愛爾蘭的監管機構2025年4月已向x展開另一項調查，審查x使用特定個資訓練ai模型。（編譯：楊惟敬）1150217grok疑生成性ai深偽圖　歐盟監管機構正式調查2026/02/17 10:132026/02/16 12:312026/02/14 15:17本網站之文字、圖片及影音，非經授權，不得轉載、公開播送或公開傳輸及利用。">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">Grok疑生成性AI深偽圖　歐盟監管機構正式調查</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>中央社</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.cna.com.tw/news/aopl/202602170048.aspx" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="人工智慧" data-title="全球談 ai 未來，印度卻先為它付出 560 億美元代價" data-content="在印度新德里舉行的 ai 影響峰會 2026 吸引了數萬名與會者，包括 20 位國家元首、45 個部長級代表團，以及科技領袖如 openai 的山姆·阿特曼（sam altman）和 google 的桑達爾·皮查伊（sundar pichai）。此次峰會聚焦人工智慧所帶來的挑戰，包括失業、機器人、監管、能源需求與倫理風險，並旨在建立全球治理框架、吸引投資，包括 11 億美元的政府創業基金。
 
-「日經亞洲」（nikkei asia）報導，sony集團公司（sony group corp.）這項技術能分析ai在學習及生成音樂的過程中，使用了哪些音樂家的歌曲，並量化每首原創作品的貢獻程度，例如這首歌有「三成的音樂是來自披頭四（the beatles）、一成是來自皇后合唱團（queen）」。
-如果ai開發商同意在分析方面進行合作，sony集團將藉由連接開發商的基礎模型系統取得資料。若無法取得合作，這項技術能透過比對ai生成音樂與現存音樂，推估前者所使用的原創作品。
-隨著ai熱潮興起，ai開發商被控未經同意利用受版權保護的音樂、影片及著作訓練ai模型的案例也日益增加。在音樂產業，使用知名歌手聲音的ai生成歌曲已在網路上廣為流傳。
-sony集團認為，這項技術將有助建立一項機制，根據貢獻比例將ai生成音樂獲得的收益分配給原創詞曲創作者。
-這項技術是由sony集團旗下研發團隊sony ai開發，相關論文已獲國際會議接受。sony集團也研發出防止ai模仿動畫及其角色風格（例如吉卜力工作室），或直接生成其學習過圖像的方法。
-這項技術未來也可應用於影片、遊戲和角色等其他領域。sony集團表示，公司尚未決定何時將此系統投入實際應用。
-sony集團預期，ai開發企業會將這項技術導入自家模型，內容產業公司則能在授權談判中運用該技術。
-然而，目前尚不清楚ai開發商是否會為保護版權積極採用這項技術。部分業界人士指出，ai公司以提升ai模型性能為首要目標，對預防侵犯智慧財產權較不感興趣。
-（譯者：洪培英；首圖來源：shutterstock）
+市場對人工智慧自動化可能破壞成長的擔憂加劇，印度的 it 與外包類股近期損失約 560 億美元市值。投資者對印度科技服務產業的信心受到影響，尤其是在 anthropic pbc 推出的工具被視為對其商業模式的威脅後，塔塔諮詢服務公司（tcs）和印孚瑟斯（infosys）等公司的市值大幅下滑。
+摩根大通（jpmorgan）的分析師指出，客戶重新分配支出，以及工具在客戶服務、軟體開發與技術支援中取代例行任務，可能導致印度相關產業的成長目標未能實現。
+峰會上，與會者討論生成式人工智慧對印度外包產業的威脅，這可能在提高生產力的同時擴大社會經濟差距。與會者也關注人工智慧的有害應用，如 grok 的深度偽造禁令、版權違規與網路釣魚詐騙等問題。此外，人工智慧資料中心的基礎設施壓力可能在 2030 年前使電力使用量翻倍，並加劇水資源短缺。
+在監管方面，韓國的新人工智慧披露法、歐盟的高風險人工智慧法案，以及全球對問責制的呼籲，與對過度監管的警告形成對比。與會者也討論人工通用智慧（agi）的倫理問題，並提到 openai 等公司的高層辭職事件。
+
+ai scare’s $56 billion hit tests resilience of india’s it stocks
+
+（首圖來源：shutterstock）
 延伸閱讀：
 
-不靠雲端串流，sony 新遊戲裝置將直接跑 ps5 遊戲預計 2027 登場
-舊音樂時代產物？其實 itunes 可能比你想像的還要受歡迎
-不只放歌那麼簡單，ai 如何為音樂治療量身打造情緒處方箋
+chatgpt 在印度每週 1 億人使用，成亞洲最大市場
+黑石集團注資 12 億美元，助力 neysa 拓印度 ai 運算能力
+印度擬建巨型數據城，欲縮小與美中 ai 差距
+印度 ai 峰會將登場，輝達：黃仁勳不克出席
 
 
 				
@@ -213,13 +187,113 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
 		
 		科技新知，時時更新">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">Sony 新技術可分析 AI 生成歌曲，辨識原創音樂與占比</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">人工智慧</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">全球談 AI 未來，印度卻先為它付出 560 億美元代價</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/17/sonys-new-technology-can-analyze-ai-to-generate-songs/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/17/indias-ai-cost/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="習近平擋得住？ 新一輪對台軍售成四月峰會籌碼川普證實「談判中」" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="台美貿易協定「重點在台積電」！外媒：台積電恐需追加投資 1,000 億美元" data-content="台灣與美國於 2 月 13 日正式簽署「台美對等貿易協定」，使台灣輸美商品的關稅水準調整到與其他主要貿易夥伴一致，但外媒金融時報（ft）指出，最關鍵的晶片卻被排除在協議之外。
+該協議是建立在台灣科技企業將在美國投資 2,500 億美元設立晶片產能，以換取晶片關稅豁免，但這筆投資細節仍有限，也對台積電的未來發展方向留下諸多疑問。市場都在猜測，這將如何影響台積電的資本支出承諾與製造版圖。
+業界人士猜測，由於美國總統川普不希望台灣議題影響他與中國建立穩定關係，華府不太可能在四月會面中國領導人習近平前公布一月協議的完整內容。
+美國商務部長盧特尼克（howard lutnick）表示，台積電先前在美國建廠的承諾中，已有 1,000 億美元納入本次計畫。據知情人士透露，台積電供應鏈相關投資約 300 億美元，其他台廠如鴻海也在美擴產、組裝 ai 伺服器，但這類工廠與先進晶片廠相比，資本投入較少，預計總花費不超過 200 億美元，因此仍存在 1,000 億美元缺口，這只有台積電能填補。
+半導體業內人士直言，「在這份台灣貿易協議中，整個重點就是台積電」。
+台積電先前已宣布，計畫在亞利桑那州投資 1,650 億美元建設六座晶圓廠、兩座先進封裝廠及一座研發設施；2025 年底，首座工廠已開始為輝達與蘋果量產。
+盧特尼克指出，台積電將「更大規模」地擴張，目標是在川普總統任內，將台灣整條晶片供應鏈及生產的 40% 移至美國。
+兩位熟悉台積電計畫的人士透露，公司將再投入 1,000 億美元興建另外四座晶圓廠。
+半導體諮詢公司 semianalysis 分析師 sravan kundojjala 表示，台積電的 1,650 億美元承諾，根據狹義解釋僅涵蓋直接晶片進口，即可享受到 2032 年的免關稅。2032 年之後，隨著晶圓廠建設完成，2.5 倍建設倍數消失，將產生缺口，需要在 2035 年前再建四座晶圓廠，以維持完整覆蓋。
+kundojjala 認為，台積電在亞利桑那州的土地交易顯示其擴張規模之大。該公司最近收購了 900 英畝土地，緊鄰已有一座運營中的晶圓廠、一座完成的晶圓廠外殼以及正在建設中的第三座晶圓廠的 1,100 英畝地塊。
+不過觀察人士認為，即便台積電大舉在美擴產，整體量能仍將遠小於台灣。台積電先前預期，當亞利桑那園區在 2030 年初完全建成時，美國的先進製程產能（2 奈米及以下晶片）預計占全球的 30%。
+
+tsmc’s us investment plans at heart of $250bn puzzle for chip sector
+tsmc considers an additional $100 billion investment into arizona fabs to bolster american chipmaking efforts — move would help tsmc’s chips avoid tariffs due to local production
+
+（首圖來源：科技新報）
+延伸閱讀：
+
+iphone 17e 快來了？蘋果 3 月 4 日舉行春季發表會，哪些新品值得期待？
+為提高晶片產量，安世半導體從 invest international 獲 6,000 萬美元貸款">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">台美貿易協定「重點在台積電」！外媒：台積電恐需追加投資 1,000 億美元</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/17/tsmc-us-investment/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="中國盟友被打趴！川普極限施壓 古巴經濟快崩潰了" data-content="中國盟友被打趴！川普極限施壓 古巴經濟快崩潰了
+
+            2026/02/17 11:40
+                
+
+
+                                    
+                                
+            
+
+            
+                古巴總統狄亞士-卡奈面臨來自美總統川普的極限施壓。（法新社）
+〔財經頻道／綜合報導〕中國盟友-古巴自從委內瑞拉總統馬杜羅遭美國活捉後，川普隨即斷共委國石油輸往古巴，造成當地經濟更為嚴峻。川普表示，國務卿魯比歐在內的美國政府官員正在與古巴政權進行磋商，古巴受到禁運，沒有石油，沒有資金，什麼都沒有，古巴應該接受協議，因為這構成人道威脅。
+《彭博》17日報導，自1月初美國逮捕委內瑞拉總統馬杜羅以來，古巴政府失去了主要支持者，古巴的日常生活陷入停滯。當時川普簽署一項行政命令，對向古巴出售石油的國家加徵更多關稅。這還不包括美國在1960年代對古巴實施的嚴厲經濟封鎖，該封鎖在歐巴馬總統短暫放鬆後，又被川普恢復。    
+    
+    
+    
+
+美國國務卿魯比歐14日接受彭博採訪時表示，自馬杜羅下台以來，美國一直在努力調整，川普政府願意提供更多的人道援助。
+川普則表示，包括國務卿魯比歐在內的美國政府官員，正在與古巴共產黨政權進行磋商，因為古巴正面臨日益惡化的經濟狀況。他說，「古巴絕對應該達成協議，因為這構成人道威脅。與此同時，古巴受到禁運，沒有石油，沒有資金，什麼都沒有。」
+當被問及是否對古巴領導人考慮採取類似於逮捕馬杜羅的行動時，川普表示，沒有必要這樣做。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
+            
+            
+
+
+        
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">中國盟友被打趴！川普極限施壓 古巴經濟快崩潰了</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5345074" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="等到了！美俄亥俄州男子養牌22年 終於抱走1億元" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -229,21 +303,7 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
         
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -252,67 +312,130 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
 
 
     
-
-
+	2026/02/17 11:09
+	即時新聞／綜合報導
+            
+                        
+            
     
+        
+        美國俄亥俄州男子養牌22年，最終抱走頭獎350萬美元。（美聯社）
+    
+
+終於等到了！美國俄亥俄州亞克朗（akron）1名男子，22年來都用同組號碼購買州內發行的「經典樂透（classic lotto）」，如今抱走頭獎350萬美元（約新台幣1.1億元）。據《upi》報導，這名幸運男子透露，他在亞克朗布朗街（brown street）的加油站商店mapco，像往常一樣以6、8、16、20、26、45等6個號碼下注，最終中了大獎。    
+    
+    
+    
+男子表示，這22年來他只有中過一些小獎，但自己很固執並未更改養牌號碼。在前往領獎時，男子笑稱他打算用這筆錢購買房屋、修繕居家健身房和游泳池。
+
+                
+
+
+
+            
             
 
-    
-    
-    
-    
+            
+            
+            			
 
-    
-        習近平擋得住？ 新一輪對台軍售成四月峰會籌碼川普證實「談判中」
-        
-        2026/02/17 10:17
-
-    
-    
-
-    
-    
-    
-
-
-
-
-        
-            美國總統川普（左）16日證實，正與中國國家主席習近平（右）就對台軍售議題進行「談論」。儘管習近平罕見撂重話施壓，川普仍強調雙方關係良好，外界解讀他將把軍售案當作四月訪中峰會的談判籌碼。（路透資料照）〔編譯陳成良／綜合報導〕隨著美中領袖峰會預定於4月登場，台灣議題再度成為兩強博弈的核心籌碼。美國總統川普16日在空軍一號上證實，面對中國國家主席習近平日前的強烈施壓，雙方正就對台軍售議題進行「談論」，他強調雖然與習近平關係良好，但將「很快做出決定」。外界解讀，川普此舉意在將對台軍售案與即將到來的領袖峰會掛鉤，展現其一貫的「交易式外交」風格。習近平罕見撂重話 川普：正與中方談判中據《彭博》報導，川普向隨行記者透露：「我正在和他（習近平）談論這件事（軍售）。我們談得很愉快，很快就會做出決定。」    
-    
-    
-    
-這一表態的背景，源於兩人2月4日的通話。據中方官媒釋出訊息，習近平在通話中罕見使用具體且強硬的措辭，警告美方在對台軍售問題上必須「謹慎行事」，並強調台灣問題是美中關係重中之重。這與習近平過去通常僅重申原則性立場的作法大不相同，顯示在美國去年底剛批准創紀錄軍售案後，北京對於華府可能發動的「新一輪」挺台動作感到高度焦慮。新一輪軍售呼之欲出？華府兩手策略曝光川普此刻的「猶豫」，實則反映了華府精密的兩手策略。就在上週，美國才剛與台灣簽署了一項具歷史意義的貿易協定，不僅削減關稅，更引導數十億美元資金投入美國能源與科技項目，實質強化了美台經濟連結。英國《金融時報》本月稍早曾披露，除了去年12月已批准、總值達110億美元（約新台幣3420億元）的軍售案外，華府正準備「新一輪」對台軍售。當時北京隨即發動大規模實彈演習，模擬封鎖台灣主要港口以示抗議。分析指出，川普將在4月訪問中國並與習近平會面。依照川普過去的執政風格，此時將對台軍售案由「自動導航」轉為「總統親自決定」，極可能是為了在峰會前累積談判籌碼，既不把話說死，又保留了隨時批准軍售以制衡北京的權力。            
+			
+            
     不用抽 不用搶 現在用app看新聞 保證天天中獎　
     點我下載app　
     按我看活動辦法
 
         
 
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
         
+        國際今日熱門
+
+
+
+    
+
+
+
         
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
         
-        相關新聞
-
-
     
 
-    
 
-    
-    
 
-    
 
-    今日熱門">
+
+
+
+
+
+
+
+網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">習近平擋得住？ 新一輪對台軍售成四月峰會籌碼川普證實「談判中」</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">等到了！美俄亥俄州男子養牌22年 終於抱走1億元</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/def/breakingnews/5345001" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5345011" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="車潮湧現！屏東警近9點就啟動枋寮調撥車道 ai網頁懶人包助順暢" data-content="限制級
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="力挺「歐版川普」！魯比歐親自為匈總理奧班站台迎戰「回歸歐洲」" data-content="限制級
         
             您即將進入之新聞內容 需滿18歲 方可瀏覽。
         
@@ -330,26 +453,26 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
 
 
 
-    
-	2026/02/17 10:08
-	記者陳彥廷／屏東報導
+    力挺「歐版川普」！魯比歐親自為匈總理奧班站台迎戰「回歸歐洲」
+	2026/02/17 11:02
+	編譯陳成良／綜合報導
             
                         
             
     
         
-        屏東警方今年設計羅集所有交通資訊的懶人包，供民眾出遊一站式閱覽。（警方提供）
+        美國國務卿魯比歐（左）16日親赴布達佩斯，與有「歐洲版川普」之稱的匈牙利總理奧班（右）握手致意。（路透）
     
 
-台1線自屏東市出發接台26線至墾丁鵝鑾鼻公園的屏鵝公路為往返旅遊盛地墾丁的要道，今日早上7時至8時監測車流已達2757pcu（小客車當量、即每小時2757輛車通過），明顯超過道路容量。為確保通行效率與行車安全，警察局自7時起即啟動整體疏導應變，以情境管理思維整合智慧交控，並在8點48分啟動調撥車道與事故快排機制，當地商家是歡呼「車潮出現」。屏東縣警察局指出，針對以往枋寮五岔路口的瓶頸路段，警方於南下尖峰日啟動台1線水底寮至嘉和路段（台1線436.5至445.5公里）的南下調撥車道，調撥北上內側車道供南下車流使用；同時還會配合林邊交流道分流措施，將國道南下車潮引導至台17線，避免車流過度集中於台1線，維持整體路網運作效能。    
+匈牙利將於4月12日舉行國會大選，這場選舉已超越單純的內政層次，演變為華府與布魯塞爾（歐盟）在歐洲心臟地帶的角力場。美國國務卿魯比歐16日親赴布達佩斯，公開力挺被戲稱為「歐洲版川普」的現任總理奧班（viktor orbán），與主張「回歸西方」的反對派領袖馬加爾（péter magyar）形成激烈的路線拉鋸。美卿罕見「公然助選」：你的成功就是美國成功據《美聯社》報導，魯比歐在布達佩斯與奧班會面時，打破了外交官通常避免介入他國內政的慣例，毫不避諱地展現川普政府對這位匈牙利強人的絕對支持。魯比歐直言，奧班與川普擁有「非常、非常緊密的個人關係」，並對奧班說出了一句極具分量的政治承諾：「川普總統深切致力於你的成功，因為你的成功就是我們的成功。」    
     
     
     
-此外，警方也啟用「智慧號誌交控系統」，針對台1線主要路段實施全線360秒長綠號誌連鎖，並於易壅塞路段機動部署疏導崗位，由員警採手控號誌即時調整，提升車流通過率、降低回堵擴大風險。而為降低事故造成二次回堵風險，警局另編組「交通快暢部隊」，針對易壅塞路段、熱門景點及大型活動周邊，強化事故快速排除與交通導引，爭取黃金處置時間，讓車流恢復順暢、用路更安心。今年警方也順應ai潮流，創新推出「春節不踩雷（屏東車潮＆活動交通）」的專屬交通資訊網頁整合屏鵝公路即時路況預警、調撥車道管制動態、替代道路視覺化導引，並串聯google maps提供觀光景點及大型活動停車場「一鍵導航」服務，涵蓋屏東市、潮州鎮、東港鎮及內埔鄉等四大年街導引資訊，協助民眾快速抵達停車地點，減少繞行尋位與違停併排情形，提升交通秩序與行人安全，展現科技警政與民眾有感服務的溫度，民眾可在警察局及交通隊臉書粉專點擊網頁連結（ https://pingtungtraff-kpl2qbrx.manus.space/  ）。
+奧班自2010年執政以來，不僅在國內推行保守民族主義路線，更將川普的「讓美國再次偉大」（maga）口號改編為「讓歐洲再次偉大」（make europe great again）。他在俄烏戰爭爆發後，持續維持與俄羅斯的能源與政治聯繫，甚至在川普回鍋後獲得美國給予的能源制裁豁免，成為美歐制裁網中一個特殊的戰略節點 。面對強勢執政與來自華府的強力加持，奧班正面臨執政16年來最嚴峻的挑戰。由前執政黨內部人士馬加爾領導的「蒂薩黨」（tisza），在最新民調中聲勢領先。馬加爾16日在造勢大會上宣示，若當選將終止匈牙利「漂離歐盟」的狀態，並批評奧班政府的親俄立場導致國家在西方陣營中遭到孤立。馬扎爾強調：「匈牙利的位置在歐洲。」他承諾將修復與歐盟的關係，解凍因法治爭議遭凍結的資金，並試圖將這場選舉定義為「向東（靠攏俄羅斯）還是向西（回歸歐盟）」的歷史選擇。地緣政治角力 牽動普廷在歐布局報導分析，這場選舉結果將直接連動地緣政治局勢。若奧班連任，意味著川普路線在歐洲獲得強而有力的政治盟友，且普廷在歐盟內部可能繼續保有一個具影響力的施力點；反之，若馬扎爾勝出，則可能代表匈牙利將重新歸隊西方主流陣營，歐盟對抗俄羅斯的陣線或將更加一致。魯比歐此行還簽署了美匈核能合作協議，顯示華府正透過能源與政治支持，試圖鞏固這位歐洲盟友的地位，以抗衡歐盟內部的反川普勢力。
 
         
         
-        警方於枋寮五岔路口啟動調撥車道。（警方提供）
+        匈牙利反對派領袖馬加爾（peter magyar）有望挑戰掌權16年的現任總理奧班。（路透）
     
                 
 
@@ -401,7 +524,7 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
 
 
         
-        生活今日熱門
+        國際今日熱門
 
 
 
@@ -452,13 +575,65 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
 
 網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午11:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">車潮湧現！屏東警近9點就啟動枋寮調撥車道 AI網頁懶人包助順暢</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">力挺「歐版川普」！魯比歐親自為匈總理奧班站台迎戰「回歸歐洲」</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/life/breakingnews/5344998" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5345038" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="台女「早發性大腸癌」發生率飆升185.44%，為何「年輕」竟成最危險陷阱？" data-content="鄭鴻鈞
+                                        
+                                                                                台東基督教醫院副院長、 和信治癌中心醫院顧問醫師，《癌症防治法》立法參與者，現於台東推動「癌症篩檢守門人聯盟」的拓荒醫者。發起「健康台灣守門人聯盟」，試圖結合基層診所與物流力量，建立偏鄉癌症篩檢聯盟。從當年推動全國性立法，到如今仍在南迴線上奔走。
+                                                                                
+                                    
+                                
+                  我們想讓你知道的是
+                  
+                    台灣早發性大腸癌發生率遽增，居全球前列。醫師警告，手搖飲等西化飲食與生活習慣是關鍵。年輕族群常因輕忽血便等警訊而延誤診斷，錯失黃金治療期。呼籲正視身體警訊、調整習慣並提早篩檢。
+                  
+                
+                              
+              
+              
+              
+                  在我的門診裡，這幾年出現了一個讓我非常憂心的現象：那些年輕、充滿活力的臉孔，竟然越來越多。原本大家印象中65歲以上才會得的「老年病」，現在20、30歲就確診的病人早已不是新聞。提到年輕人大腸癌，很多人都會想到余天先生的女兒余苑綺。她不吸菸、不喝酒、愛運動也愛吃蔬果，卻在31歲時確診，抗癌八年遺憾離世。很多人問我：「醫生，她生活這麼健康，為什麼還會得癌症？」
+台灣的數據衝擊：爆發式的成長其實，這正是我想告訴大家的：台灣大腸癌的面貌已經徹底改變了。根據統計，從1990年到2019年這三十年間，台灣女性早發性大腸癌（50歲以下）的發生率，竟然飆升了185.44%！這個增幅讓台灣被標註為全球早發性大腸癌發病率最高的地區之一。雖然我們台灣的醫療技術很強，死亡與發生比（mir）的改善幅度高達56.86%，位居全球領先地位，這代表我們「救得回來」的病人很多。但讓我們擔憂的是，我們的「預防端」失守了。我們跟美國有什麼不同？如果你看美國的數據，他們的發病率是每年約1%到2%在穩定上升；但台灣卻是呈現「爆發式」的驚人增長。這跟我們快速西化的飲食習慣、高壓的工作環境，還有滿街都是的手搖飲文化有著絕對的關係。
+ 消失的「128天」：年輕竟成了最危險的陷阱在我的臨床經驗中，最令人心痛的是數據背後的真相。老年人從發現症狀到確診，平均大約是79天；但年輕人，竟然要拖到128天。為什麼會多拖這50天？因為我們都覺得自己還年輕，看到便便有血就以為是痔瘡，肚子痛就當作腸躁症醫。但年輕人的腫瘤通常分化較差、侵襲性更猛烈，這消失的128天，往往就是癌症從早期變晚期的關鍵。基因只是上膛，生活習慣才是引爆點我常跟病人說：「基因只是上膛，是我們的生活習慣扣動了板機。」手搖飲的甜蜜陷阱：我們最愛喝的手搖飲，裡面加的高果糖玉米糖漿（hfcs），就是癌細胞最好的肥料。空腹喝最傷：下午肚子餓直接吸一口含糖飲料，會讓腸道慢性發炎，改變腸道菌相。生物老化快轉：如果你偏胖、腰圍過粗，你的身體組織可能已經呈現「老年化」。生物年齡每快轉1歲，長出息肉的機會就增加16%。看過這麼多病例，我想給各位年輕朋友幾個最真心的建議：
+留意四大警訊：只要發現直腸出血、排便習慣改變、莫名貧血疲勞、或持續腹痛超過兩週，請立刻來找我檢查，不要因為年輕就大意。放下那杯手搖飲：尤其是不要空腹喝。篩檢門檻下修了：從2025年開始，政府已經將公費篩檢降到45歲；如果你家裡有人生過病，40歲就該來找我報到。「癌症時鐘正在快轉，我們的防護網必須紮得更深。」守護腸道不是為了別人，是為了讓你能走更遠的路。延伸閱讀她吃素20年也得了大腸癌！台灣腸癌發生率全球第一一年前照過大腸一切正常，為什麼會突然患上大腸癌？治療大腸癌最有效的方式是手術，第一期治癒機會近九成【加入關鍵評論網會員】每天精彩好文直送你的信箱，每週獨享編輯精選、時事精選、藝文週報等特製電子報。還可留言與作者、記者、編輯討論文章內容。立刻點擊免費加入會員！責任編輯：朱家儀核稿編輯：翁世航">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">台女「早發性大腸癌」發生率飆升185.44%，為何「年輕」竟成最危險陷阱？</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>關鍵評論網</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.thenewslens.com/article/264566" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="不讓ai詐騙與長輩圖塞爆手機，5步驟優化家中長輩的數位生活" data-content="中央通訊社
+                                        
+                                                                                中央通訊社是中華民國的國家通訊社，是台灣最具影響力的新聞媒體。秉持「正確、領先、客觀、詳實」的基本原則，中央社專業新聞團隊每天以中、英、日、西文即時對外發出上千則新聞、照片、圖表、影音與資訊，是台灣唯一多語文新聞媒體，服務對象從媒體客戶擴大為閱聽大眾；從台灣民眾延伸至全球華僑與讀者，充分扮演「華人之眼，世界之窗」。
+                                                                                
+                                    
+                                
+                  我們想讓你知道的是
+                  
+                    趁著連假幫長輩手機進行「數位大掃除」，不僅可以讓長輩用得更順手，還能預防人工智慧（ai）詐騙。今年春節可以跟著下列5個簡單步驟，幫長輩手機「除舊布新」。
+                  
+                
+                              
+              
+              
+              
+                  （中央社）農曆春節假期，返鄉除了吃年夜飯、發紅包，往往會發現長輩的手機又塞滿長輩圖，或是跳出各種莫名其妙的通知。不妨趁著連假幫長輩手機進行「數位大掃除」，不僅可以讓長輩用得更順手，還能預防人工智慧（ai）詐騙。長輩使用手機最常見的痛點不外乎速度變慢、空間不足。記者整理專家建議，今年春節可以跟著下列5個簡單步驟，幫長輩手機「除舊布新」，包括開啟資安防護、通訊軟體瘦身、優化螢幕顯示、檢查不必要的訂閱、設定緊急醫療卡。
+第一招：開啟資安與防詐設定隨著生成式ai技術普及，詐騙手法也日新月異。除了傳統簡訊詐騙，近年來透過ai模擬親友聲音或臉孔的「深偽」（deepfake）詐騙案例明顯增加。為了預防詐騙，可以幫長輩安裝來電辨識軟體whoscall並更新至最新資料庫，攔截可疑電話。同時也可以在長輩常用的line中加入「cofacts真的假的」或「mygopen」等查證帳號，第一時間查證可疑訊息。第二招：清空line快取，找回消失的空間
+長輩對line的依賴度極高，容易因為line堆滿快取資料導致手機卡頓；但許多長輩擔心隨便刪除資料會讓照片和對話消失而不敢亂動，導致手機空間被塞爆。根據line官方說明，只要進入line「設定」的「聊天」選項，點選「刪除資料」，並選擇「快取資料」，就可以刪除暫存檔，不會誤刪文字訊息、相片或影片。一鍵按下後，往往能瞬間釋出數gb的空間，讓老舊手機重拾流暢感。第三招：調整顯示方式，減輕眼睛負擔長輩對手機螢幕的細小文字與藍光容易感到吃力，趁著連假可以幫忙優化視覺顯示。
+在手機系統設定的「顯示與亮度」，可以把字體大小調至最大級距的倒數第二格，因為最大字體通常會導致排版跑掉，反而難讀。同時也可開啟「自動亮度調節」與「夜間護眼模式」，減少長輩在半夜看手機時受到的藍光影響。第四招：檢查app訂閱制，抓出隱形帳單不少長輩下載遊戲或工具app時，常誤點「免費試用」，等到試用期結束後，開始每月被自動扣款，平白花冤枉錢。建議在長輩手機上開啟蘋果app store或google play商店，進入「訂閱項目」，檢查是否有不明的扣款費用。第五招：設定緊急醫療卡在危急時刻，手機能成為救命工具。可以在手機鎖定畫面中設定「醫療卡」與「緊急聯絡人」，萬一長輩發生意外，可以在不解鎖手機的情況下，讓醫護人員第一時間得知長輩的血型和過敏史，並聯繫家人。新聞來源過年返鄉數位大掃除　5招幫長輩手機除舊布新兼防詐（中央社）延伸閱讀為什麼長輩只用line？從人類學的角度給個答案《玩心設計》：害怕用壞手機絕非長輩的問題，反而凸顯「回饋明確性」的重要中國「老年網癮」比例增：錢沒了身體垮了，子女返鄉勸父母戒手機成新年俗【加入關鍵評論網會員】每天精彩好文直送你的信箱，每週獨享編輯精選、時事精選、藝文週報等特製電子報。還可留言與作者、記者、編輯討論文章內容。立刻點擊免費加入會員！責任編輯：朱家儀核稿編輯：江逸之">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">下午12:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">不讓AI詐騙與長輩圖塞爆手機，5步驟優化家中長輩的數位生活</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>關鍵評論網</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.thenewslens.com/article/264834" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">4</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('0050')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>0050</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('核能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>核能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">6</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">5</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">4</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('樂透')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>樂透</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('核能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>核能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('生成式AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>生成式AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -467,13 +642,13 @@ sony集團預期，ai開發企業會將這項技術導入自家模型，內容�
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: { labels: ["02-15","02-16","02-17"], datasets: [{ label: '情緒指數', data: [0.48,0.88,0.88], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                data: { labels: ["02-15","02-16","02-17"], datasets: [{ label: '情緒指數', data: [0.48,0.88,0.85], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.75,0.92,0.85,0.8,0.65], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.3,0.9,0.4,0.2,0.1], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
