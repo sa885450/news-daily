@@ -33,6 +33,13 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v3.0.1 - 緊急修復與部署優化 (2026-02-17)
+- **🐛 修復圖表顯示問題 (Fix EJS Syntax)**：
+  - 修正 `views/index.ejs` 中的 EJS 語法錯誤 (`<% -` -> `<%-`)，解決前端 Charts.js 無法讀取數據導致圖表消失的問題。
+- **⚙️ 部署設定優化**：
+  - 更新 `package.json`，新增 `start` script (`node index.js`)，支援標準 `npm start` 指令啟動服務。
+  - 更新 `.gitignore`，從忽略清單中排除 `views/index.ejs` (若先前誤將其忽略)，確保樣板檔正確提交。
+
 ### v3.0.0 - 架構重構與效能優化 (2026-02-17)
 - **🏗️ 架構重構 (Architecture Refactor)**：
   - 引入 **EJS** 樣板引擎 (`views/`)，將 HTML 生成邏輯與 JS 分離，提升可維護性。
