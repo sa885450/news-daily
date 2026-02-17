@@ -9,3 +9,15 @@ node_modules/
 
 # 忽略 SQLite 的日誌暫存檔 (避免同步衝突)
 *.db-journal
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+.nyc_output
