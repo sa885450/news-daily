@@ -26,19 +26,21 @@
             <header class="text-center mb-10">
                 <div class="inline-block px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold rounded-full mb-4 tracking-widest uppercase shadow-lg shadow-indigo-200">AI Insight Report v2.8</div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
-                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 09:00</p>
+                <p class="text-slate-500 font-medium text-lg">2026年2月17日星期二 · 更新於 10:00</p>
                 <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                     <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
-                    <button onclick="searchKeyword('安世半導體')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #安世半導體<span class="text-xs ml-1 opacity-70">(600745.SS)</span>
-        </button> <button onclick="searchKeyword('三星電子')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #三星電子<span class="text-xs ml-1 opacity-70">(005930.KS)</span>
-        </button> <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                    <button onclick="searchKeyword('台積電')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #台積電<span class="text-xs ml-1 opacity-70">(2330.TW)</span>
-        </button> <button onclick="searchKeyword('Donald Trump')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Donald Trump
-        </button> <button onclick="searchKeyword('Invest International')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #Invest International
+        </button> <button onclick="searchKeyword('漢唐')" class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #漢唐<span class="text-xs ml-1 opacity-70">(2404.TW)</span>
+        </button> <button onclick="searchKeyword('美國銀行')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #美國銀行<span class="text-xs ml-1 opacity-70">(BAC)</span>
+        </button> <button onclick="searchKeyword('川普')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #川普
+        </button> <button onclick="searchKeyword('習近平')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #習近平
+        </button> <button onclick="searchKeyword('黃金')" class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+            #黃金<span class="text-xs ml-1 opacity-70">(GC=F)</span>
         </button>
                 </div>
             </header>
@@ -47,7 +49,7 @@
                 <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-lg font-bold text-slate-700 flex items-center"><span class="mr-2">📈</span> 市場情緒走勢</h3>
-                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.78</span></div>
+                        <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span class="text-red-500 text-base">0.85</span></div>
                     </div>
                     <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
                 </div>
@@ -66,115 +68,284 @@
 
             <section class="mb-12 animate-fade">
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度風險報告：供應鏈地緣政治化與 2 奈米技術稅的泡沫臨界點</h3><p><b>1. 增量分析與比較：今日核心動能從「AI 暴力武裝化」轉向「供應鏈主權爭奪」與「技術高牆成本化」。</b></p><p>相較於昨日聚焦於軍工紅利，今日市場顯現出更深層的結構性風險：<br>● <b>地緣政治奪取與供應斷鏈（ID:1）：</b>安世半導體（Nexperia）的經營權之爭標誌著國家力量直接介入半導體中游供應鏈。雖然獲得 6,000 萬美元貸款輸血，但中荷關係緊張與「接管」敘事將拉高全球半導體物流的『主權溢價』，這是一種隱形成本的激增。<br>● <b>2 奈米成本陷阱（ID:2）：</b>先進製程從「效能紅利」轉向「異質整合挑戰」，這意味著資本支出（CAPEX）的邊際收益正在遞減。市場過度期待 AI 帶來的產能轉換，卻忽視了良率與熱管理帶來的技術性泡沫風險。</p><p><b>2. 宏觀預警：極度貪婪後的政策回馬槍</b><br>● <b>台美貿易協定（ART）的川普陰影（ID:3）：</b>台美貿易協定面臨立法僵局，南韓的前車之鑑（關稅威脅）顯示地緣政治利多可能在瞬間轉為沉重稅賦成本。市場目前對「台美合作」過度樂觀，未計入川普回歸後的談判變數。<br>● <b>AI 幻覺與現實感知（ID:4）：</b>AI 對現實影像的重塑已引發倫理與認知風險。當技術從「輔助」轉向「扭曲」，一旦監管框架介入，現有 AI 消費終端的估值將面臨劇烈修正。</p><p><b>3. 專家操作建議：</b><br>目前市場處於「貪婪高峰」，技術指標（如 2nm 開發成本）已接近邊際失效。建議投資者：<br>1. <b>適度獲利了結：</b>減持對政策高度敏感的半導體中游標的。<br>2. <b>關注防禦性資產：</b>隨金價失守 5,000 美元（ID:0），實物資產與具備高現金流的非 AI 傳統硬體股將成為避風港。<br>3. <b>警惕地緣稅：</b>配置需考量生產基地分散化之企業，規避單一區域政策風險。</p></div>
+                    <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"><h3>深度風險報告：從『全球擴產潮』到『資本支出懸崖』的泡沫警訊</h3><p><b>1. 增量分析與比較：今日核心矛盾從「供應鏈主權」演變為「過度承諾的產能陷阱」。</b></p><p>相較於昨日聚焦於 2 奈米的成本技術稅，今日市場動能顯示出極度的情緒過熱：<br>● <b>訂單能見度的幻覺（ID:1）：</b>廠務工程業者如漢唐訂單看到 2028 年，這在循環性產業中是極其危險的訊號。當市場將「長週期建設」視為「永恆增長」時，往往無視了需求端的週期性崩塌風險。<br>● <b>地緣政治的變數籌碼化（ID:0, 4）：</b>川普與習近平就對台軍售的磋商，顯示台灣議題已成為大國交易的「籌碼」。這種不確定性對高度依賴地緣穩定的半導體估值構成潛在打壓。<br>● <b>美銀的輪動海嘯警告（ID:2）：</b>分析師哈特奈特明確指出 AI 資本支出擴散至傳統行業是泡沫末端特徵。一旦 Hyperscalers（如微軟、Google）因投報率不及預期而縮減開支，市場將面臨無差別的流動性回撤。</p><p><b>2. 風險控管建議：極度貪婪環境下的防禦策略。</b></p><p>● <b>獲利了結與減碼：</b>建議針對 AI 硬體、廠務工程等本益比已透支未來 3 年獲利的標的進行 20%-30% 的獲利了結。目前的「訂單能見度」極易受到科技巨頭資本支出調整（CapEx Cut）的衝擊。<br>● <b>資產配置轉向：</b>關注能源基礎設施（ID:3 核能復興），其具備剛性需求且相較於終端 AI 應用更具備防禦屬性。<br>● <b>總體風險：</b>中國「未富先老」與人口崩跌（ID:6）將削弱全球終端消費能力，這將從需求端反噬目前的半導體擴產浪潮。</p><p><b>3. 結論：</b>市場正處於『末日瘋狂』的邊緣，高能見度不代表高安全性。投資者應警惕「資本支出懸崖」，並在眾人狂歡時，開始佈局抗通膨與能源防禦資產。</p></div>
                 </div>
             </section>
             
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade" style="animation-delay: 0.1s;">
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="風險控管" data-title="道瓊期貨上漲約100點 黃金失守5000美元" data-content="&lt;p&gt;美股期貨週一 (16 日) 晚間小幅走高，投資人持續消化科技股拋售潮帶來的市場壓力。道瓊工業指數期貨上漲約 100 點，標普 500 指數期貨與那斯達克 100 指數期貨則大致持平，顯示市場在連續數週回檔後，情緒仍偏謹慎。&lt;/p&gt;
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="川普透露正與習近平磋商 對台軍售「很快有決定」" data-content="&lt;p&gt;&lt;br&gt;
+美國總統川普表示，他正與中國國家主席習近討論未來對台灣的武器銷售事宜，很快就會針對這項攸關台灣防禦支援的議題做出決策。&lt;/p&gt;
 
-&lt;p&gt;科技股上週再度成為賣壓重心，拖累三大指數週線全面收黑。道瓊上週下跌 1.2%，創下自去年 11 月以來最差單週表現，標普 500 下跌 1.4%；那斯達克指數重挫 2.1%，連續第 5 週收黑，為 2002 年以來最長的週線連跌紀錄。&lt;/p&gt;
+&lt;p&gt;川普於週一 (16 日) 晚間在空軍一號上向媒體露露：「我正在和他（習近平）討論這件事。我們進行了良好的對談，很快就會有明確的決定。」&lt;/p&gt;
 
-&lt;p&gt;由於總統日假期，美股週一休市。&lt;/p&gt;
+&lt;p&gt;在兩國領導人預計於 4 月在中國會面之前，美國對台軍事支持已成為華府與北京之間的關鍵爭議之一。&lt;/p&gt;
 
-&lt;p&gt;大宗商品方面，黃金與白銀期貨週一下跌。&lt;/p&gt;
+&lt;p&gt;兩位領導人本月稍早曾通話，川普形容那次通話「非常出色」。不過，中方對通話的說法則指出，美方必須「審慎處理對台軍售問題」。彭博指出，相較於習近平過往在台灣議題上多採籠統表述，此次直截了當的措辭，被視為極其罕見且具針對性。&lt;/p&gt;
 
-&lt;p&gt;由於美亞洲主要市場因假期休市，市場流動性低迷，金價下跌超過 1%，同時美元走強也給金價帶來壓力。現貨黃金下跌 1.3%，報每盎司 4,976.37 美元。 4 月交割的美國黃金期貨下跌 1%，至每盎司 4,996.60 美元。&lt;/p&gt;
+&lt;p&gt;《金融時報》本月稍早報導稱，美國正準備新一輪對台軍售，此舉已令中方官員感到不安。這筆軍購將是在去年 12 月宣布的 110 億美元軍售案之外的新增交易。&lt;/p&gt;
 
-&lt;p&gt;現貨白銀價格下跌 2% 至每盎司 75.83 美元，此前一度下跌 3%。現貨鉑金下跌 1.7% 至每盎司 2,027.39 美元，鈀金下跌 2% 至每盎司 1,719.44 美元。&lt;/p&gt;
+&lt;p&gt;在軍事合作討論升溫之際，美台經貿關係也迎來重大突破。雙方於上週正式敲定一項貿易協議，進一步緊密連結兩國經濟體。&lt;/p&gt;
 
-&lt;p&gt;比特幣仍在 7 萬美元下方盤整。&lt;/p&gt;
-
-&lt;p&gt;原油期貨則上漲逾 1%，市場持續關注美國是否可能對伊朗採取軍事行動，使地緣政治風險再度推升能源價格。&lt;/p&gt;
-
-&lt;p&gt;經濟數據方面，上週五公布的通膨報告相對溫和，顯示 1 月物價漲幅低於市場預期，讓投資人重新燃起對聯準會 (fed) 未來降息的期待，也提高美國經濟實現「軟著陸」的希望，即在不引發衰退的情況下，將通膨壓回聯準會 2% 的年度目標。&lt;/p&gt;
-
-&lt;p&gt;本週市場焦點將轉向週三公布的聯準會上次會議紀要，以及週五即將出爐的核心個人消費支出物價指數 (core pce)，該數據被視為 fed 最重視的通膨指標之一。&lt;/p&gt;
-
-&lt;p&gt;同時，第四季財報季接近尾聲。儘管越來越多企業交出優於預期的成績單，但市場反應仍偏保守，股市未能因此獲得明顯提振。市場人士指出，投資人近期的主要焦點已從財報表現，轉向 ai 相關的兩大疑慮：一是企業在 ai 上的資本支出可能壓縮獲利，二是 ai 可能對部分產業造成顛覆性衝擊，尤其是軟體產業。&lt;/p&gt;
-
-&lt;p&gt;spi asset management 管理合夥人 stephen innes 在最新報告中表示，目前市場正在上演「軟體在吞噬自己」的現象。他指出，標普 500 的軟體與服務板塊自去年 10 月下旬以來已下跌 27%，反映投資人開始重新評估軟體公司在高估值下的獲利可持續性。&lt;/p&gt;
-
-&lt;p&gt;innes 警告，若 ai 讓利潤率即使只是小幅下滑，也可能導致估值倍數快速下修，並在高起點估值下引發劇烈跌勢。&lt;/p&gt;
-
-&lt;p&gt;財報方面，本週相對平靜，仍有沃爾瑪 (wmt-us)、doordash (dash-us)、wayfair (w-us)、palo alto networks (panw-us)、live nation entertainment (lyv-us) 等公司將陸續發布最新財報，成為投資人觀察消費與企業支出趨勢的重要線索。&lt;/p&gt;
-
-&lt;p&gt;市場主要將等待下週 ai 指標股輝達 (nvda-us) 公布最新財報。&lt;/p&gt;
+&lt;p&gt;該協議不僅包含降低關稅與擴大美國產品進入亞洲市場的准入權，更將帶動數十億美元資金投入美國的能源與科技項目。此舉被視為美方在亞太地區布局的重要一環，亦為即將到來的「川習會」增添了更多複雜的談判籌碼。&lt;/p&gt;
 ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">風險控管</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">道瓊期貨上漲約100點 黃金失守5000美元</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">川普透露正與習近平磋商 對台軍售「很快有決定」</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345963" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="〈馬年景氣展望〉ai熱潮引爆全球半導體大擴產 廠務工程滿手訂單" data-content="&lt;p&gt;隨著台灣半導體產業版圖持續向海外擴張，以台積電 (2330-tw)(tsm-us) 為首從台灣起家、布局全球，且在美國製造再度偉大的政策下，也帶動封測與記憶體業者同步在美擴產，形成產業鏈外溢效應，也讓台灣廠務工程業者成為國際建廠的重要夥伴，訂單能見度一路看到 2027 年，甚至延伸至 2028 年。&lt;/p&gt;
+
+&lt;p&gt;業界看好，包括漢唐 (2404-tw)、亞翔 (6139-tw)、聖暉 (5536-tw)、洋基 (6691-tw)、帆宣 (6196-tw)、和淞 (6826-tw)、巨漢 (6903-tw) 等近年營運都將因此受惠。&lt;/p&gt;
+
+&lt;p&gt;業界指出，台積電近年持續加大在台投資力道，2 奈米製程與先進封裝產線基地陸續啟動，新廠一座接一座開出，鞏固台灣作為全球先進製程核心基地的地位。同時，台積電海外布局腳步也明顯加快，美國亞利桑那州廠區投資規模不斷擴大，先前大規模購地被視為再度新建廠房的訊號，近期更宣布日本產線將升級至 3 奈米製程，歐洲德國新廠亦穩健推進。&lt;/p&gt;
+
+&lt;p&gt;業界推估，在 ai、高效能運算與先進封裝需求帶動下，台積電未來三到四年的資本支出總額，可能累計上看 2,000 億美元，成為全球半導體罕見的大規模投資，也同步推升廠務工程、設備與相關系統需求。&lt;/p&gt;
+
+&lt;p&gt;除晶圓代工端外，先進封裝供不應求的情況，也使擴產效應向後段製程延伸。包括日月光投控 (3711-tw)(asx-us) 旗下矽品與京元電 (2449-tw) 等封測大廠，也雙雙傳出有意赴美投資，以貼近客戶供應鏈需求，進一步擴大台灣半導體的產能版圖。&lt;/p&gt;
+
+&lt;p&gt;記憶體領域方面，美光 (mu-us) 不僅持續深耕台灣，也同步加碼新加坡投資，強化高階記憶體布局，進一步推升區域建廠與廠務需求。&lt;/p&gt;
+
+&lt;p&gt;在晶圓代工、封測與記憶體業者全面擴產帶動下，台灣廠務工程業者早已滿手訂單，從無塵室、機電工程、管線配置到整廠整合服務，大啖擴產商機，業界更直言，相比於訂單，更擔憂人力缺乏，顯見訂單過於強勁以及現階段人力結構轉變後帶來的隱憂。&lt;/p&gt;
+
+&lt;p&gt;隨著 ai 浪潮持續推升高階晶片需求，全球半導體產業進入新一輪長線投資週期，台灣從製造、封測到廠務工程全面參與國際供應鏈重組，也間接成為全球半導體擴產的重要推手。&lt;/p&gt;
+">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">〈馬年景氣展望〉AI熱潮引爆全球半導體大擴產 廠務工程滿手訂單</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(tw_stock)</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6339028" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="ai顛覆交易擴散！美銀警告：一旦科技巨頭縮手 將引發美股輪動海嘯" data-content="&lt;p&gt;美銀明星分析師哈特奈特（michael hartnett）於 15 日對市場發出升級版警告。他指出，隨著人工智慧（ai）資本支出預期持續攀升，「ai 顛覆交易」正以驚人速度從科技產業擴散至傳統服務業；一旦科技巨頭縮減開支，美股恐將迎來一場劇烈的「輪動海嘯」。&lt;/p&gt;
+
+&lt;p&gt;哈特奈特觀察到，大型雲端服務商（hyperscalers）在 2026 年的資本支出預期已飆升至 7,400 億美元。這項天文數字不僅令人震驚，更潛藏危機，瘋狂的投資規模將導致極端財務後果，甚至可能使「科技七巨頭」（mag 7）的自由現金流歸零或轉負。&lt;/p&gt;
+
+&lt;p&gt;為支撐如此龐大的支出，科技巨頭恐被迫大規模舉債，這意味著過去擁有完美資產負債表的成長型科技股，正走向全面「信用化」。一旦有任何 ai 雲端服務商宣佈削減支出，市場將立即觸發從科技權值股轉向「實體經濟」（main street）資產的劇烈輪動。&lt;/p&gt;
+
+&lt;p&gt;此外，哈特奈特列舉了 ai 影響力如何隨時間擴散：從週一的保險經紀商股價崩跌，到週二的財富顧問、週三的房地產服務，乃至週四的物流業。&lt;/p&gt;
+
+&lt;p&gt;他同時強調政治因素正加劇此輪動趨勢，隨著 2 月 24 日國情咨文時間點臨近，若屆時未出現所謂的「川普紅利」（trump bump），預期政府為贏得期中選舉，將轉向推行更激進的「負擔能力」政策，進一步左右市場走勢。&lt;/p&gt;
+
+&lt;p&gt;這種政經環境的轉變，讓「做多主街、做空華爾街」成為當前最具吸引力的策略，預示著一場橫跨大盤與小盤股、科技與傳統產業的資金大海嘯即將來臨。&lt;br&gt;
+&nbsp;&lt;/p&gt;
+">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">AI顛覆交易擴散！美銀警告：一旦科技巨頭縮手 將引發美股輪動海嘯</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>鉅亨網(wd_stock)</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345939" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345933" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="半導體" data-title="為提高晶片產量，安世半導體從 invest international 獲 6,000 萬美元貸款" data-content="市場消息傳出，由於荷蘭政府在 2025 年 9 月接管中國聞泰科技的荷蘭子公司安世半導體（nexperia），擾亂了汽車產業基礎晶片的全球供應，荷媒表示這嚇退了部分投資人。
-另據路透社報導，安世半導體將獲得 invest international 提供的 6,000 萬美元貸款，以提升晶片產能。
-荷媒《fd》指出，荷蘭政府與中國聞泰科技陷入安世半導體的經營權之爭，雖然改由歐洲管理團隊接掌公司，使其捲入歐洲與中國之間的企業對峙。
-《fd》指出，安世半導體目前仍在進行其他融資談判。該公司發言人表示，「並非安世半導體陷入困境，但任何能夠動用的資金來源，只要能讓我們保留自有資金用於其他持續進行的業務活動，當然都非常受歡迎」。
-上週荷蘭法院下令調查 nexperia 是否存在管理不當情況，同時允許現有的歐洲管理團隊繼續留任。此外，法院維持去年 10 月暫停前執行長張學政職務的裁決，表示公司需要維持穩定。
-聞泰科技予以反駁，並表示失去控制權正在損害安世半導體。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="宏觀經濟" data-title="核能復興：能源的盡頭是核能，三分鐘看懂核分裂" data-content="新式核能一夕之間成為熱門話題，不過到底什麼是新什麼又是舊，你需要的就是這一篇核能發電科普文。
+愛因斯坦的質能互換公式e=mc2不僅揭示了宇宙運行的法則，更定義了現代能源的本質。從廣義來看，人類所使用的能源皆可視為核能的延伸：初級能源（primary energy）如核分裂、核融合及地熱（源自地核衰變）；衍生能源（derived energy）如太陽能、風力與水力，其源頭皆來自太陽內部的核融合反應。
+電力是目前社會最精煉的能源形式，但其轉換過程往往伴隨著環境成本。理論上，正反物質互毀（annihilation）能將質量 100% 轉化為能量，其效率是核分裂與核融合的千百倍以上 。然而，反物質在自然界中極其稀缺，目前僅能於高能物理實驗室中微量製造，距離商業應用仍屬科幻範疇。回到現實，自 18 世紀工業革命以來，從燃煤到現代核電，其發電核心邏輯始終未變：透過熱能產生蒸汽，推動渦輪機發電。
+核分裂技術原理：受控的連鎖反應
+核能發電的核心機制為「連鎖反應」（chain reaction）。這與燃燒的化學反應在本質上相似，但核分裂是透過中子撞擊原子核來釋放能量。每一次核分裂會釋放 2 至 3 個中子，這些中子再撞擊其他原子核，形成幾何級數的能量釋放。
+核反應速度極快，單次分裂僅需奈秒（10-9秒）等級。若不加以控制，瞬間的失控反應將導致爆炸（如核武）。因此，核電廠運作的關鍵在於精密控制中子的數量。反應爐必須將「有效中子數」嚴格控制在 1% 的增長率，以維持穩定的臨界狀態，確保發電持續且安全。
+鈾濃縮技術：從礦石到燃料
+核分裂需要特定的核種，其中鈾-235（u-235）是最主要的燃料。天然鈾礦中，可分裂的 u-235 豐度（abundance）僅佔 0.7%，其餘 99.3% 為無法直接分裂的鈾-238（u-238）。
+為了提升反應效率，必須透過鈾濃化（uranium enrichment）技術提高 u-235 的濃度。由於 u-235 與 u-238 為同位素，化學性質相同，必須仰賴物理離心法分離，這是一個高成本且耗時的過程。以20%為界，分為低濃縮鈾(low enrichment uranium, leu) 及高濃縮鈾 (high enrichment uranium, heu)。高濃鈾主要是軍事用途，向來都是嚴格列管的國安重點。低濃縮鈾為了防止核擴散，傳統核電廠燃料中的低濃縮鈾通常被限制在 5% 以下，但先進反應爐會使用濃度 5% 至 20% 的高質低濃縮鈾（haleu）。
+此外，核分裂產生的「快中子」速度過快，不易被 u-235 捕獲。反應爐需透過減速機制將其轉化為「熱中子」，反應機率可提升數百倍，從而維持穩定的連鎖反應。
+核反應爐運作機制
+目前全球商轉的主流核反應爐多屬第二代或第三代技術，主要分為壓水式（pwr）與沸水式（bwr）。兩者皆具備能在高溫高壓下防止輻射外洩的堅固結構，爐心主要組件包括：
+• 燃料棒（fuel rod）：封裝濃縮鈾燃料粒。
+• 減速劑（moderator）：如輕水（普通水）、重水或石墨，用於減速中子。
+• 控制棒（control rod）：通常由鎘或硼製成，能吸收中子。透過插入或抽出爐心，可快速調節反應速率或緊急停機。
+• 冷卻劑（coolant）：帶走核反應產生的熱能，通常與減速劑共用（如水）。
+壓水式反應爐（pwr）：冷卻水在高壓（約 150 大氣壓）下維持液態，吸收熱能後流經蒸汽產生器進行熱交換，產生的蒸汽再推動發電機。此設計佔全球核電廠約 70%。
+沸水式反應爐（bwr）：冷卻水直接在爐心內沸騰產生蒸汽推動發電機，省去了蒸汽產生器，但反應爐槽體積較大，約佔全球 15%。
+全球核能版圖：美中消長與技術分流
+美國曾是核能技術的霸主，但在過去三十年間，新機組建設近乎停滯。直到前幾年，vogtle 電廠的 3 號與 4 號機組（vogtle 3 & 4）才相繼投入商轉，才打破了長期的零新機組紀錄 。然而，美國目前的戰略重心已轉向既有電廠延役、小型模組化反應爐（smr）及核融合技術的研發，而非大規模興建傳統電廠。
+相較之下，中國大陸的核能發展呈現爆發式增長。在過去五年間，大陸新增了 11 座反應爐，且目前仍有約 25 座興建中。依照此趨勢，中國大陸有望在未來五年內挑戰美國在核能裝置容量上的領先地位。
+在理解了核分裂的基礎原理後，接下來我們將看到核能技術演化出各具特色的應用型態。從傳統的大型反應爐到新興的小型核能 smr，乃至於被視為終極目標的核融合，這些技術將共同形塑未來的能源圖譜。
+（註一）物理學家楊振寧與李政道提出的宇稱不守恆理論，解釋了宇宙誕生初期物質與反物質的不對稱性，使得現今宇宙以物質為主
+（註二）核種（nuclide）指具有特定質子數與中子數的原子核
+（註三）全球第一座核反應爐 chicago pile-1 於 1942 年由費米（enrico fermi）團隊建造，僅能點亮微弱燈泡，與現代 gw 級核電廠不可同日而語
+（本文由《核能復興二部曲：能源的盡頭是核能之龍生九子》經科技新報編輯重新編輯，原文作者：王曉中｜綠學院綠色帶路人）
+（首圖來源：flickr/free public domain illustrations by rawpixel cc by 2.0）
 
-nexperia to receive $60 million loan from invest international to boost chip output
+				
+				
+				
 
-（首圖來源：nexperia）
-延伸閱讀：
 
-字節跳動發表「豆包 2.0」！瞄準 gpt-5.2、gemini 3 pro 而來
-中國 3d 列印新突破，「僅 0.6 秒內」完成毫米級複雜物體">
+		
+            
+			                
+                
+                
+                
+        
+            
+                想請我們喝幾杯咖啡？
+            
+            
+                每杯咖啡 65 元
+            
+            
+                
+                    x
+                    1
+                ">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">半導體</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">為提高晶片產量，安世半導體從 Invest International 獲 6,000 萬美元貸款</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">宏觀經濟</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">核能復興：能源的盡頭是核能，三分鐘看懂核分裂</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/17/nexperia-60-million/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://technews.tw/2026/02/17/nuclear-energy-is-the-answer/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="地緣政治" data-title="半導體製造走向 2 奈米與更先進製程的效益與挑戰" data-content="根據外媒報導，隨著半導體製程技術持續向 2 奈米（2nm）及更先進節點推進，全球晶片產業正迎來一場結構性的典範轉移。過去單純依賴電晶體微縮（scaling）來提升效能的時代已經結束，取而代之的是透過「小晶片（chiplets）」技術進行異質整合、更精細的電源與熱管理策略，以及對良率與可靠性的全新定義。這場變革不僅重塑了晶片設計的規則，更深刻影響了從晶圓代工、封裝測試到終端系統整合的整個供應鏈。
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="能源" data-title="習近平施壓對台軍售 川普：很快會做出決定" data-content="限制級
+        
+            您即將進入之新聞內容 需滿18歲 方可瀏覽。
+        
+        
+        
+            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
+        
+    
 
-製程微縮新常態，不再是「一體適用」
-半導體產業長期奉行的 ppa（效能、功耗、面積）與成本（c）指標依然是核心，但在 2nm 世代，這些指標的權重與實踐方式出現了顯著分歧。過去，市場主要劃分為智慧型手機的極低功耗晶片，以及伺服器的高效能晶片。然而，隨著人工智慧（ai）滲透至各類電子產品，應用需求變得極度零碎化。
-
-
-
-lam research（科林研發）公司副總裁 david fried 指出，在 2nm 世代，複雜的整合系統中可能只有少部分元件真正需要採用最先進的製程節點。這是一種「最佳化」的過程-過去產業界致力於將所有功能整合在單一晶片（monolithic soc）上以優化 ppa/c；如今，先進封裝技術允許工程師針對個別子系統進行優化。
-這種轉變促成了「解構（disaggregation）」的趨勢。透過將不同的處理器與功能拆解為多個裸晶（die），設計者可以根據功能需求選擇最合適的製程節點，而不必強行將所有元件都擠在昂貴的最先進節點上。這不僅能簡化應對非關鍵元件短缺時的備案流程，更能將有限的先進製程產能保留給最關鍵的邏輯運算單元。
-去整合化與異質整合的崛起
-「今天，許多應用程式正透過『去整合化（de-integration）』來獲得優化，」david fried 解釋道。這代表著邏輯電路與記憶體分離、i/o 與邏輯分離，甚至記憶體控制器也與記憶體本身分離。這種朝向複雜先進封裝流程的移動，正是當前產業優化 ppa/c 的主流路徑。
-日本晶片製造商 rapidus 的封裝技術領域技術長 rozalia beica 表示，這對供應鏈帶來了廣泛的影響。rapidus 雖然獲得了 ibm 的 2nm 技術授權，但他們是專注於提供 2nm 小晶片，並計畫與其他晶圓代工廠或封裝測試廠（osat）合作，將其他非 2nm 的技術（如 4nm 或 7nm）整合到同一個封裝中，這種靈活性與客製化能力將是未來的關鍵。
-
-
-
-synopsys（新思科技）工程副總裁 abhijeet chakraborty 進一步指出，即便是單一晶片內部的標準單元設計也出現了「混合搭配」的概念。設計者可以混合使用高效能、低功耗或高密度的標準單元。如果為了追求極致效能而全部使用高效能單元，可能會在功耗或其他指標上付出代價，因此 eda 工具必須能夠明智地選擇組合以最大化效益。在多晶片模組中，甚至可以看到 28nm 晶片與 2nm 晶片混合使用的場景，這成為降低成本與良率門檻的有效手段。
-熱能與功率密度成為物理極限的挑戰
-然而，邁向 2nm 的道路並非坦途。隨著電晶體密度在 2nm 製程下進一步提升，功率密度（power density）隨之增加，這引發了嚴峻的熱管理問題。即便每一代新製程通常能在特定工作負載下節省功耗，但如果晶片的使用率（utilization）過高，產生的熱量將難以從晶片內部導出。這可能迫使系統必須採用更複雜的冷卻方案，或者透過「效能節流（throttling）」來降溫，但後者會抵消升級至 2nm 原本應帶來的效能優勢。
-
-從 20nm 節點開始，熱問題就日益棘手。finfet 技術雖然減少了閘極漏電，但更高的電晶體密度增加了熱密度。到了 2nm 採用的環繞式閘極（gaa）技術，雖然預期能再次改善閘極漏電，但在高邏輯使用率下的功率密度問題依然存在。這意味著，未來的高階晶片設計必須在多晶片組件中進行複雜的權衡，決定數據應該在系統的何處進行處理或預處理，以避免熱失控。
-晶片效能成長邊際效益遞減
-另一個殘酷的現實是，過去每個新節點帶來「效能提升 30%、功耗降低 30%」的時代已不復返。synopsys 的 chakraborty 預估，客戶從 3nm 轉向 2nm，預期平均能獲得 10% 至 15% 的效能提升，以及 20% 至 30% 的功耗降低，電晶體密度則提高約 15%。雖然低功耗對於追求「每瓦效能（performance per watt）」的應用極具吸引力，但要實際達成這些指標面臨著製造與良率的現實挑戰。
+    
 
 
 
-intel 邏輯技術開發副總裁 ben sell 也證實了這一趨勢。他指出，intel 在 2026 年 1 月推出的 panther lake 處理器採用了 18a 製程（相當於 1.8nm），其設計核心重點在於每瓦效能與面積微縮，而非單純的原始效能。panther lake 採用了運算小晶片（compute tile）搭配其他功能小晶片的設計，針對圖形處理或介面連結等不同需求，分別優化其功耗與效能的權衡。
-動態管理就夠良率與可靠性的新定義
-在 2nm 與 18a 時代，確保晶片正常運作的挑戰已超越了單純的電晶體微縮。proteantecs 技術長 evelyn landman 指出，現在的主要挑戰是「全生命週期的不確定性管理」。因為，隨著架構轉向奈米片（nanosheets）與新的供電方案，元件物理、製造、封裝及實際工作負載之間的容錯空間急劇縮小。
-局部電壓下降、熱梯度、老化及工作負載引發的應力等效應，不再是次要因素，而是被持續放大。landman 強調，靜態的假設與最壞情況的「安全餘裕（guard-bands）」已不再適用，因為最危險的情況往往是動態的、依賴於工作負載的。未來的贏家將是那些能夠在晶片生命週期中，動態且連續地監測並管理這些安全餘裕的廠商。
-經濟現實與市場驅動力
-開發 2nm 晶片的成本極其高昂，可能高達 1 億美元以上。然而，對於 ai 資料中心而言，能夠在單位功耗下處理更多數據是致勝關鍵。對於高階手">
+
+
+
+
+    習近平施壓對台軍售 川普：很快會做出決定
+	2026/02/17 09:46
+	即時新聞／綜合報導
+            
+                        
+            
+    
+        
+        美國總統川普（見圖）16日證實，他正和中國國家主席習近平談論未來對台灣軍售相關事宜。（路透）
+    
+
+美國總統川普（donald trump）16日證實，他正在與中國國家主席習近平談論未來對台灣軍售相關事宜，並稱將迅速決定是否持續提供台灣更多武器。根據《彭博》等外媒報導，習近平近日與川普通話時，提及美國對台灣軍售並向川普施壓。川普16日晚間在空軍一號上告訴記者，「我正在和他（習近平）談論這件事。我們談得很愉快，很快就會做出決定。」    
+    
+    
+    
+川普也強調，他和習近平關係很好，將在4月訪問中國。美國去年12月核准多項對台軍售案，總值高達110億美元，將近3500億台幣，創下華府歷來單次通知國會軍售的最高紀錄。
+
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+        
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+        國際今日熱門
+
+
+
+    
+
+
+
+        
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">地緣政治</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">半導體製造走向 2 奈米與更先進製程的效益與挑戰</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>TechNews</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">能源</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">習近平施壓對台軍售 川普：很快會做出決定</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://finance.technews.tw/2026/02/17/benefits-and-challenges-of-semiconductor-manufacturing-moving-towards-2nm-and-more-advanced-processes/" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/world/breakingnews/5344967" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="人工智慧" data-title="立院最快3/12排審台美貿易協定  藍白修正就要重談" data-content="台美雙方美東時間2月12日簽署台美對等貿易協定後合影。圖左起為美國商務部長盧特尼克、美國貿易代表葛里爾、美國在台協會執行理事藍鶯、駐美代表俞大㵢、行政院副院長鄭麗君、行政院政委楊珍妮。（行政院提供）
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="刑警張伊君勇敢跨界 轉任資策會ai總監" data-content="前警政署保三總隊刑事警察大隊隊長張伊君曾獲「單車美型女」冠軍，憑藉台大博士高學歷和科偵能力，跨界轉職資策會成為人工智能研究院總監兼智慧城市與安全中心主任。（張伊君提供）
     
 
-台美雙方已在13日正式簽署「台美對等貿易協定（art）」，協議文本將在新會期送立法院審議，由於美國總統川普因南韓國會未審議完成雙方的協議，逕自宣布調高對南韓關稅，而藍營立委也有地方選舉與業者壓力，據評估，立院委員會最快三月十二日排審，在野立委雖可能會「技術性干擾」，但最後恐不得不通過。立院藍白黨團稱，會儘速排案審查台美對等貿易協定（art），據推估，行政院春節後最快於2月26日開院會通過art，若當天下班前送至立院，立院最快可於3月6日院會一讀付委，並在3月11日立院召委選舉完隔天，3月12日由外交與財政、經濟聯席委員會排案審查。    
+前保三總隊刑事警察大隊長張伊君靠著台大博士學歷及科偵能力，今年跨界成為資策會人工智慧研究院總監；曾獲「單車美型女」冠軍的她一鳴驚人，首戰就拿下智慧交通標案大單。從警19年的張伊君長期從事刑事工作，熱愛運動的她曾代表所屬自行車隊參加雜誌社舉辦的「單車美型女」選拔活動，憑藉健康亮麗外型奪冠；好學的她不斷在職進修，順利取得台灣大學資管系博士學位。    
     
     
     
-不過，藍白黨團對於協定文本載明「國防支出至少占國內生產毛額（gdp）的3%」等提出質疑，被認為涉及我國的預算權。如果藍白要求修改協定，根據「條約締結法」規定，條約案經簽署後，若未通過國會審議或遭修正，應退回主辦機關與締約對方重新談判。據分析，art內容如被國會修正，就會面臨重新談判的問題，在南韓關稅從15%暴增至25%的前車之艦下，加上社會各界對這次談判結果，也已陸續表達肯定，包括手工具、工具機產業，以及工商協進會等多個工商團體，都公開表示支持，藍白最後應是不得不通過，但可能以附帶決議的方式來「技術性干擾」。至於國防特別條例草案，政院人士強調，軍購是美國政府非常重視的議題，美國國會議員已接連不斷地發出警告，12日更有37位跨黨派的參、眾議員致函立法院長韓國瑜等人，美方也已對項3軍售案下通牒，要求我方需於3月31日支付首期款。立法院民眾黨版草案已付委，編列預算上限為4000億元，國民黨版預料在農曆春節後提出，外傳規模將匡列8000億元，國民黨團總召傅崐萁揚言，最終三讀通過的「絕不會是行政院版本」。藍白各提軍購條例草案  政院盼立院通過政院版本如屆時軍購規模從1.25兆元縮減為8000億元，甚至4000億元，行政院是否接受? 行政院發言人李慧芝表示，軍事採購是政府對政府（g to g），政院版經縝密溝通評估，有整體戰略構想、完善建軍規劃、兼顧軍事採購實務，盼立法院能通過以院版為主的國防特別條例草案。
+張伊君擅長科技辦案，近年陸續偵破北投溫泉偷拍案和演唱會黃牛集團等案，去年中升任保安警察第三總隊刑事警察大隊大隊長，年底即申請提早退休，今年元月轉任資策會人工智慧（ai）研究院總監，引發各界關注。張伊君告訴中央社記者，這次跨界轉職契機，是透過友人引薦認識資策會人工智慧研究院長戴偉峻，在得知她學歷背景和職業後，認為有助單位在ai領域的拓展，雙方經會談3次後敲定合作。過去也曾面臨科技業和學界挖角，但張伊君表示，因熱愛警察工作而持續待在警界服務，進入保三後也已擬定工作計劃，希望提升隊上科偵能力，沒想到計劃趕不上變化，還沒看到執行成果就離開，「畢業」當天還不捨在隊上落淚。談到這次動念轉職原因，張伊君認為，警察工作不脫偵查案件和給予相關機關治安建議；但資策會向來為政府顧問角色，協助機關推動數位政策發展和產業轉型，加上適逢ai新浪潮，工作面向更高、更廣也更深，可以走在科技的前端，人生下半場希望可以做不一樣的事情。她提到，面對新職挑戰也有焦慮，因為是全新單位，工作內容和接觸面向都和以往不同，除要研究ai發展、協助單位導入使用，從無到有建置和應用，還要負責提案、投標評選，自然也有業績壓力，和警察偵查工作完全不一樣。張伊君笑說，到新單位第2週就率隊提案簡報，並一舉順利取得逾新台幣3000萬元的標案，主要內容是推動智慧城市的智慧交通，透過團隊先前努力耕耘，自己上任後也戮力完成，這個成果帶來滿滿成就感。她認為，警界工作訓練可建立強烈責任心和執行力，且不分日夜、使命必達，各種場面和危機應對處理都可游刃有餘；只要自己想清楚，機會來了就勇敢轉身，但也要有心理準備面對辛苦的挑戰，家人和另一半都支持她開拓不同視野。張伊君為台大資管系博士、中央警察大學交通管理所碩士、台北大學經濟系畢業；曾任國道公路警察局巡官，警政署刑事局資訊科偵查員、公關室股長、預防科股長、偵查第九大隊隊長、警政署保三總隊刑事警察大隊大隊長。張伊君另曾任海巡署特考班授課講師、移民署犯罪偵查授課講師、國家安全特考班授課講師，以及警政署警正班、警佐班、特考班講師，中央警察大學刑事警察系兼任助理教授。
 
                 
 
@@ -193,21 +364,359 @@ intel 邏輯技術開發副總裁 ben sell 也證實了這一趨勢。他指出�
     點我下載app　
     按我看活動辦法">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">人工智慧</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">立院最快3/12排審台美貿易協定  藍白修正就要重談</h3>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">刑警張伊君勇敢跨界 轉任資策會AI總監</h3>
                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5343628" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5344936" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div>
-        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="手機ai自動編輯你的照片，是否正在改變你看待現實的方式？" data-content="圖像來源，serenity strull/ bbcauthor, 湯瑪斯·傑曼（thomas germain）31 分鐘前從簡單的效果增強到幻覺般的人臉細節，現代手機決定了我們的回憶應該長什麼樣。你可能喜歡這些效果，但它們也可能改變我們看世界的方式。你用手機拍過月亮嗎？你大多會失望——除非你有一台三星galaxy。三星（samsung）的手機有一個「100倍空間變焦」功能，即使鏡頭只有指甲大小，也能以驚人的清晰度捕捉月亮。它比蘋果（apple）iphone拍出來的效果好得多，但有個問題：三星拍的月亮照片是假的。一位reddit用戶曾用三星手機對著電腦上故意模糊的月球像素化影像示範這項功能。手機不負眾望，拍出了一張清晰的照片，照片充滿了原圖中並不存在的隕石坑和陰影。三星稱之為「細節增強功能」。實際上，三星透過人工智能（ai）來識別月球，並在相機無法捕捉到細節時自動填充。你不會在所有手機的預設狀態下看到這麼誇張的功能。但無論你使用哪種手機，每次按下快門，背景裡都會啟動一系列演算法和ai處理工具。它們可能在照片存入相簿前，執行上萬億次的運算。整體而言，這些設計是為了讓照片美觀且（大多）忠於現實。但在極端情況下，一些手機包含的ai增強功能會偏離你肉眼所見。下次拍照時，不妨問自己：你的相機是在記錄現實，還是在與現實協商？「這叫做計算式攝影（computational photography）。」初創公司「玻璃成像」（glass imaging）的執行長、曾參與打造iphone人像模式的齊夫·阿塔爾（ziv attar）說，你的手機並不只是在收集感光元件上接收到的光，而是在猜測如果相機更好、畫面應該長什麼樣，然後替你組建。三星發言人表示：「ai功能旨在提升影像品質，同時保持真實性。使用者仍可完全掌控，依個人偏好關閉ai。」但即使你關掉那些引人注目的ai編輯功能，演算法仍會持續處理你拍的照片。你照片時會發生什麼？「當你按快門鍵時，你並不是只拍一張照片；在一般光線下，你大概拍了四到十張，」阿塔說。手機會將這些影像融合，以產生比單張更好的結果。有些是重複的，有些則優先處理畫面中的不同部分。這些基礎處理程序會修補大多數人不希望看到的問題。例如：降噪會平滑粗糙顆粒；色彩校正讓影像更接近肉眼所見；高動態範圍（hdr）會融合不同曝光的照片，使同一張照片中既保留暗部細節，也保留亮部層次。你的手機也極度厭惡模糊，因此會用多種技術盡量避免。以iphone為例，它使用一種名為「深度融合」（deep fusion）的功能。這是以數百萬張影像訓練的ai。除了處理上述技術，這些神經網路還會辨識畫面中的物體並分別處理，根據ai過去看過的影像來調整個別像素。「這是非常高階的影像分割，」阿塔爾說。最終結果是在良好條件下清晰銳利的照片。但一些評論者與敏銳的愛好者認為，現代手機做得太過頭，產生怪異的塑膠感，或平滑到像水彩畫般的質地。手機為了消除缺陷，甚至可能產生怪異的失真，放大後看起來像ai幻覺。有些人對這些過度修飾的照片不滿意，甚至換回舊手機，或額外帶著另一支手機專門拍照。圖像來源，serenity strull/ bbc圖像加註文字，手機製造商表示，他們的目標是讓你喜愛、且真實的照片，但他們同時也在替你的回憶做出美學上的選擇蘋果發言人表示：「蘋果始終致力於幫助用戶捕捉真實瞬間，讓他們能夠重溫當時的記憶。雖然我們認為人工智慧蘊藏著巨大的機遇，但我們也十分尊重攝影的傳統，並認為必須謹慎對待。我們將繼續專注於為用戶提供能夠拍攝出真實、逼真且效果驚豔的照片的設備，同時為他們提供個性化照片的工具。」紐約市立大學研究生中心的數位文化與媒體教授列夫·馬諾維奇（lev manovich）則表示，從正面看，「你本來也可以手動完成這些編輯，只是現在變成自動化……某些過去只有專業人士能做的事，現在一般人也能做到。」但同時，手機也常替你做出創意甚至藝術性的決策，而使用者可能完全不知道——而且有些手機的ai不只是微調，而是做更多。「我相信智能手機製造商確實想讓照片重現使用者所見，不是想製造假圖像。」英國劍橋大學影像與顯示教授拉法爾·曼蒂克（rafał mantiuk）說，「但每支手機都有自己的風格。pixel有pixel的風格，iphone有iphone的風格，幾乎像不同攝影師一樣。」「這是純粹的幻覺」當然，這些討論背後隱含一個標準：一張「真實」照片應該像底片時代拍出來的一樣。這樣的比較很可能並不公平。自攝影誕生以來，相機就一直包含某種程度的處理。聽到「ai」這個詞，人們很容易以為它意味著某些可怕的事物。但在許多情況下，這些演算法只是用來修正手機相機中微小鏡頭與感光元件所固有的缺陷。不過，有些功能把界線推得更遠。例如，面向亞洲市場的手機，特別是中國品牌，經常預設開啟ai美顏濾鏡，會自動平滑皮膚、改變膚色，甚至調整臉部特徵。「這是純粹的幻覺，」阿塔爾說，「這些手機會偵測眉毛，如果解析度不足，就直接畫眉毛；甚至會替背景遠處的人加上眼睛，隨機看向某個方向。」阿塔爾等人認為這和文化偏好有關。你在美國科技巨頭的手機上不會看到這些功能。iphone沒有預設美顏，谷歌（google）也在2020年開始將美顏預設關閉，理由是它可能造成心理健康問題。「美學上的修飾並不是新鮮事，」馬諾維奇說，「自1850年代以來，修飾照片一直是攝影的重要一環，而它某種程度上和人們今日所做的事情類似——基本上就是讓臉變得更漂亮，使皮膚更均勻。但像自動添加原本場景中不存在的新細節這種做法，我覺得就是一個根本性的改變……某方面來說，它仍然是攝影；但在另一個方面，它又變成了別的東西。」這不僅是個哲學議題。研究指出，ai編輯過的影像可能植入假記憶，或改變我們對自己身體的感受。即使是美國企業，也推出了高度ai化的功能，例如google pixel的「最佳拍攝」（best take）的功能。我們都拍過團體照，而總會有人閉上眼睛，或忘記微笑。（通常是我，我從來沒學會如何擺姿勢。）使用google的「最佳拍攝」功能時，你會拍下多張">
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="2利多催化 國際油價漲逾1％" data-content="中國未富先老2》 新生兒、勞參率雙塌 世界工廠崩潰中                        
+                    
+                                    
+                        
+                            中國未富先老1》人均gdp個位數減速 出生人口雙位數崩跌                        
+                    
+                            
+        
+
+        
+
+        
+        
+
+        
+        
+        
+        
+
+        
+                
+        
+        
+
+            
+
+            2026/02/17 09:16
+                
+
+
+                                    
+                                
+            
+
+            
+                2利多催化，國際油價上漲逾1%。（路透）
+〔財經頻道／綜合報導〕2利多催化，國際油價週一 （16 日） 走高，反彈逾１％，市場一方面緊盯美國與伊朗核談判進展，另一方面也開始消化opec+ 可能在未來數月增加供應的風險，使原油價格在地緣政治支撐與供需疑慮之間拉鋸。
+布蘭特原油期貨週一收盤上漲0.90美元，漲幅 1.33%，報每桶 68.65 美元，繼續脫離上週四刷新的2月3日以來低點，至於西德州中質原油 （wti）由於美國週一逢總統日假期，當日沒有結算價。    
+    
+    
+    
+
+綜合媒體報導，分析師指出，油價近期表現相對穩定，主要受到美伊緊張局勢支撐。pvm分析師 tamas varga 表示，市場對供應中斷的擔憂仍在，為油價提供風險溢價支撐。
+根據消息，美國與伊朗預計於週二在日內瓦展開第2輪會談，重點聚焦伊朗核計畫。會談前，伊朗外長已與聯合國核監督機構主管會面；另有伊朗外交官透露，雙方討論範圍也可能涵蓋能源與礦業投資，以及飛機採購等議題。
+seb分析師在報告中指出，布蘭特原油後續走勢高度取決於伊朗局勢。若緊張升溫，布蘭特可能上看每桶80美元；若局勢降溫，則可能回落至60美元。
+另一方面，交易員表示，opec+ 正傾向自 4 月起恢復增產，結束先前3個月的暫停增產安排，相關決策預計將在 3 月 1 日會議上拍板。市場人士認為，若增產成真，可能限制油價後續漲幅。
+接下來，市場焦點將依序落在週二的日內瓦會談、3 月 1 日的 opec+ 會議，以及 2 月 19 日美國能源資訊署 （eia） 即將公布的最新原油庫存週報。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
+            
+            
+
+
+        
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
             <div>
-                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午09:00</span></div>
-                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">手機AI自動編輯你的照片，是否正在改變你看待現實的方式？</h3>
-                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>BBC中文</div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">2利多催化 國際油價漲逾1％</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
             </div>
-            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://www.bbc.com/zhongwen/articles/cx2g2yp0m4wo/trad?at_medium=RSS&at_campaign=rss" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344969" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="「ai原住民」力挺高金素梅 伍麗華：中共網路戰常見手法" data-content="限制級
+        
+            您即將進入之新聞內容 需滿18歲 方可瀏覽。
+        
+        
+        
+            根據「電腦網路內容分級處理辦法」修正條文第六條第三款規定，已於網站首頁或各該限制級網頁，依台灣網站分級推廣基金會規定作標示。 台灣網站分級推廣基金會（ticrf）網站：http://www.ticrf.org.tw
+        
+    
+
+    
+
+
+
+
+
+
+
+    
+	2026/02/17 09:11
+	即時新聞／綜合報導
+            
+                        
+            
+    
+        
+        高金素梅涉嫌利用人頭詐領助理費遭偵辦．網路上旋即出現「ai原住民」發聲力挺高金。（圖擷自伍麗華臉書）
+    
+
+無黨籍立委高金素梅涉嫌利用人頭詐領助理費遭偵辦．網路上出現不少大量自稱為某某族的「ai原住民」發聲力挺高金並嗆聲「下架民進黨」。對此，民進黨山地原住民立委伍麗華直指這是「中共網路戰常見手法」。伍麗華今（17日）在臉書表示，ai就像是孩子，需要學習、不斷給它餵資料．如果大數據資料本身就充滿了過去歷史對原住民族的歧視，那麼ai生成的內容就會是「自動化的歧視」；如果資料是錯誤的，那麼ai就會複製錯誤的答案。    
+    
+    
+    
+伍麗華說，這次有大量網軍利用ai生成「我是xx族，我挺ooo」．但這些「ai原住民」穿著的根本不是各族傳統服飾，造成張冠李戴、扭曲文化的現象，更嚴重的是在大量網軍餵進去錯誤資訊後，會讓ai學習起來並繼續複製錯誤。伍麗華指出，這種利用網軍一次性大量生成「模板文章」，然後同時發布、製造輿論、帶風向誤導視聽，是近年來中共網路戰常見的手法，而這次針對台灣原住民的行動影響更是非同小可，因為世界上關於台灣原住民的網路資料本來就很少，如今更要面臨中共網軍所帶動的「虛假原住民言論」。伍麗華表示，為了應為這種危機，在去年底完成三讀的《人工智慧基本法》裡，她的版本特別要求「網路資料要能查核事實」、「ai生成的資料要標示出來」，並呼籲真正的原住民上去網路發聲，讓「真實」被看見。相關連結請見︰
+
+                
+
+
+
+            
+            
+
+            
+            
+            			
+
+			
+            
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+        
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+相關新聞
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+        
+        政治今日熱門
+
+
+
+    
+
+
+
+        
+		
+				
+			
+		
+		
+		
+
+    
+
+
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+        看更多！請加入自由時報粉絲團
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">「AI原住民」力挺高金素梅 伍麗華：中共網路戰常見手法</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.ltn.com.tw/news/politics/breakingnews/5344953" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
+        </div>
+        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between" data-category="其他" data-title="金價又翻車失守5000美元大關！最新「挑戰價」曝光" data-content="中國未富先老2》 新生兒、勞參率雙塌 世界工廠崩潰中                        
+                    
+                                    
+                        
+                            中國未富先老1》人均gdp個位數減速 出生人口雙位數崩跌                        
+                    
+                            
+        
+
+        
+
+        
+        
+
+        
+        
+        
+        
+
+        
+                
+        
+        
+
+            
+
+            2026/02/17 08:58
+                
+
+
+                                    
+                                
+            
+
+            
+                金價又翻車失守5000美元大關！最新「挑戰價」曝光。（路透）
+〔財經頻道／綜合報導〕由於美國和亞洲主要市場週一（16日）因假期休市，市場流動性低迷，加上美元走強，給金價帶來壓力，金價下跌超過1%，失守5000美元大關。
+截至格林威治標準時間16:19，現貨黃金下跌1.3%，至每盎司4976.37美元。4月交割的美國黃金期貨下跌1%，至每盎司4996.60美元。    
+    
+    
+    
+
+路透報導，瑞銀分析師喬瓦尼·斯陶諾沃表示，由於假期導致流動性下降，黃金價格本週在每盎司5000美元附近區間波動。
+美國近期公佈的經濟數據顯示，聯準會降息前景喜憂參半，因為1月美國消費者物價漲幅低於預期，而同月就業成長卻意外加速。
+芝加哥聯邦儲備銀行行長奧斯坦古爾斯比上週周五表示，利率可能會下降，但他同時指出，服務業通膨仍然很高。
+市場參與者預計，美國央行將在3月18日的下次會議上維持利率不變。
+不產生利息的貴金屬在低利率環境下往往表現良好。
+據1位伊朗外交官週日透露，在地緣政治方面，伊朗正在尋求與美國達成1項能為雙方帶來經濟利益的核協議。
+oanda旗下marketpulse的分析師zain vawda表示，目前我會將黃金的中期目標價從5500美元下調至5100美元至5200美元區間，但目前形勢瞬息萬變。
+其他貴金屬交易：
+現貨白銀價格下跌2%至每盎司75.83美元，此前一度下跌3%。上週五，白銀價格上漲3.4%。
+現貨鉑金下跌 1.7% 至每盎司2027.39 美元。
+鈀金下跌 2% 至每盎司 1719.44 美元。                
+    一手掌握經濟脈動
+    點我訂閱自由財經youtube頻道
+
+                
+    不用抽 不用搶 現在用app看新聞 保證天天中獎　
+    點我下載app　
+    按我看活動辦法
+
+                
+
+
+
+                                
+            
+            
+
+
+        
+
+        
+
+        
+
+
+
+
+
+        
+        今日熱門新聞
+
+
+
+        
+        
+
+        
+        
+            看更多！請加入自由財經粉絲團
+            
+        
+        
+                    
+            
+            
+            網友回應">
+            <div>
+                <div class="flex items-center justify-between mb-4"><span class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">其他</span><span class="text-slate-400 text-xs">上午10:00</span></div>
+                <h3 class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">金價又翻車失守5000美元大關！最新「挑戰價」曝光</h3>
+                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>自由時報</div>
+            </div>
+            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://ec.ltn.com.tw/article/breakingnews/5344961" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></a></div>
         </div></div>
-            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">2</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('股市')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>股市</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('輝達')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>輝達</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('白銀')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>白銀</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('比特幣')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>比特幣</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('降息')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>降息</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
+            <section class="mb-12 animate-fade" style="animation-delay: 0.2s;"><h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3><div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start"><button onclick="searchKeyword('AI')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>AI</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">6</span></button><button onclick="searchKeyword('美元')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>美元</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">6</span></button><button onclick="searchKeyword('川普')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>川普</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">3</span></button><button onclick="searchKeyword('台積電')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>台積電</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('關稅')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>關稅</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('黃金')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>黃金</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('白銀')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>白銀</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('油價')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>油價</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('太陽能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>太陽能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('核能')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>核能</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('半導體')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>半導體</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button><button onclick="searchKeyword('降息')" class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all"><span>降息</span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">1</span></button></div></section>
             
             <footer class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">自動化生成系統 · Powered by Gemini 2.5 & GitHub Actions</footer>
         </div>
@@ -216,13 +725,13 @@ intel 邏輯技術開發副總裁 ben sell 也證實了這一趨勢。他指出�
             const ctx = document.getElementById('sentimentChart').getContext('2d');
             new Chart(ctx, {
                 type: 'line',
-                data: { labels: ["02-15","02-16","02-17"], datasets: [{ label: '情緒指數', data: [0.48,0.88,0.78], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
+                data: { labels: ["02-15","02-16","02-17"], datasets: [{ label: '情緒指數', data: [0.48,0.88,0.85], borderColor: '#dc2626', backgroundColor: '#dc262620', borderWidth: 3, pointBackgroundColor: '#fff', pointBorderColor: '#dc2626', pointRadius: 5, fill: true, tension: 0.4 }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
             });
             const radarCtx = document.getElementById('radarChart').getContext('2d');
             new Chart(radarCtx, {
                 type: 'radar',
-                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.3,0.8,0.6,0.2,0.7], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
+                data: { labels: ['政策', '資金', '基本面', '國際', '技術'], datasets: [{ label: '今日強度', data: [0.7,0.9,0.85,0.75,0.6], fill: true, backgroundColor: 'rgba(79, 70, 229, 0.2)', borderColor: 'rgb(79, 70, 229)', pointBackgroundColor: 'rgb(79, 70, 229)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(79, 70, 229)' }] },
                 options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
             });
         </script>
