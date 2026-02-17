@@ -28,7 +28,7 @@ function calculateKeywordStats(newsData) {
 }
 
 async function runTask() {
-    log('🚀', `啟動排程任務 (v2.8.0)...`);
+    log('🚀', `啟動排程任務 (v3.0.0)...`);
 
     try {
         db.cleanupOldArticles();
@@ -168,5 +168,5 @@ ${cleanSummary}
     }
 }
 
-log('🕰️', "新聞機器人啟動 v2.8.0");
+log('🕰️', "新聞機器人啟動 v3.0.0");
 cron.schedule('0 * * * *', () => runTask());
