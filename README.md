@@ -33,6 +33,11 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v3.0.2 - 編碼異常修復與顯示修正 (2026-02-17)
+- **🔣 修復中文亂碼問題 (Fix Character Encoding)**：
+  - 修正 `views/index.ejs` 因檔案寫入過程導致的 UTF-8 編碼異常，還原所有中文標籤與說明文字。
+  - 確保所有 EJS 模板檔案強制使用 UTF-8 (No BOM) 格式，解決 Windows 環境下的顯示問題。
+
 ### v3.0.1 - 緊急修復與部署優化 (2026-02-17)
 - **🐛 修復圖表顯示問題 (Fix EJS Syntax)**：
   - 修正 `views/index.ejs` 中的 EJS 語法錯誤 (`<% -` -> `<%-`)，解決前端 Charts.js 無法讀取數據導致圖表消失的問題。
