@@ -29,13 +29,13 @@ function calculateKeywordStats(newsData) {
 
 async function runTask() {
     log('🚀', `啟動排程任務 (v2.8.0)...`);
-    
+
     try {
         db.cleanupOldArticles();
-    } catch (e) {}
+    } catch (e) { }
 
     let allMatchedNews = [];
-    let fetchedUrls = new Set(); 
+    let fetchedUrls = new Set();
 
     // 1. 抓取鉅亨網
     const cnyesNews = await fetchCnyesAPI(2);
@@ -43,7 +43,7 @@ async function runTask() {
         if (db.isAlreadyRead(item.link)) continue;
         const targetText = `${item.title} ${item.contentSnippet || ""}`;
         if (matchesAny(targetText, config.excludeRegex)) { db.saveArticle(item.title, item.link, item.source); continue; }
-        
+
         if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
             allMatchedNews.push({ source: item.source, title: item.title, content: item.content, url: item.link });
             fetchedUrls.add(item.link);
@@ -51,16 +51,31 @@ async function runTask() {
         db.saveArticle(item.title, item.link, item.source);
     }
 
-    // 2. 抓取 RSS
-    for (const source of config.sources) {
-        if (source.name === "鉅亨網") continue;
+    // 2. 抓取 RSS (並發執行)
+    const { default: pLimit } = await import('p-limit');
+    const limit = pLimit(5); // 限制同時 5 個請求
+
+    const rssSources = config.sources.filter(s => s.name !== "鉅亨網");
+    const fetchTasks = rssSources.map(source => limit(async () => {
         const feed = await fetchRSS(source.url);
+        return { sourceName: source.name, items: feed.items || [] };
+    }));
+
+    const feeds = await Promise.all(fetchTasks);
+
+    let rssCandidates = [];
+
+    // 2.1 過濾與預處理
+    for (const feed of feeds) {
         for (const item of feed.items) {
+            // 嘗試寫入資料庫記錄 (不論是否選用)
+            db.saveArticle(item.title, item.link, feed.sourceName);
+
             if (db.isAlreadyRead(item.link) || fetchedUrls.has(item.link)) continue;
-            
+
             const targetText = `${item.title} ${item.contentSnippet || ""}`;
-            if (matchesAny(targetText, config.excludeRegex)) { db.saveArticle(item.title, item.link, source.name); continue; }
-            
+            if (matchesAny(targetText, config.excludeRegex)) continue;
+
             if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
                 let isDuplicate = false;
                 for (let existing of allMatchedNews) {
@@ -69,16 +84,24 @@ async function runTask() {
                     }
                 }
                 if (!isDuplicate) {
-                    const text = await fetchContent(item.link);
-                    if (text) {
-                        allMatchedNews.push({ source: source.name, title: item.title, content: text, url: item.link });
-                        fetchedUrls.add(item.link);
-                    }
+                    rssCandidates.push({ source: feed.sourceName, title: item.title, url: item.link, item });
+                    fetchedUrls.add(item.link);
                 }
             }
-            db.saveArticle(item.title, item.link, source.name);
         }
     }
+
+    // 2.2 並發抓取內文
+    const contentTasks = rssCandidates.map(cand => limit(async () => {
+        const text = await fetchContent(cand.url);
+        if (text) {
+            return { source: cand.source, title: cand.title, content: text, url: cand.url };
+        }
+        return null;
+    }));
+
+    const results = await Promise.all(contentTasks);
+    results.filter(r => r !== null).forEach(r => allMatchedNews.push(r));
 
     log('📊', `新增符合關鍵字新聞: ${allMatchedNews.length} 則`);
 
@@ -112,7 +135,7 @@ async function runTask() {
                 const sentimentIcon = aiResult.sentiment_score > 0 ? '🔥' : '❄️';
                 const cleanSummary = (aiResult.summary || "無摘要").replace(/<[^>]*>/g, '').substring(0, 800) + '...';
                 const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/public/`;
-                
+
                 // 🟢 在 Discord 訊息加入關鍵實體代碼
                 const entityTags = (aiResult.entities || [])
                     .map(e => e.ticker ? `**${e.name}(${e.ticker})**` : e.name)
@@ -135,7 +158,7 @@ ${cleanSummary}
             } catch (discordErr) {
                 log('⚠️', `Discord 通知發送失敗: ${discordErr.message}`);
             }
-            
+
             pushToGitHub();
             log('✅', "任務圓滿完成！");
 
