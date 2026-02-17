@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+const fs = require('fs');
+const path = require('path');
+
+const content = `<!DOCTYPE html>
 <html lang="zh-TW">
 
 <head>
@@ -102,29 +105,82 @@
                             五力分析</h3>
                         <div class="flex-grow relative"><canvas id="radarChart"></canvas></div>
                     </div>
-                    <!-- 🟢 新增：板塊情緒分析 -->
-                    <div class="md:col-span-3 bg-white rounded-2xl p-6 shadow-md border border-slate-100">
-                        <h3 class="text-lg font-bold text-slate-700 mb-4 flex items-center"><span class="mr-2">📊</span>
-                            板塊情緒分布 (Sector Sentiment)</h3>
-                        <div class="h-48 w-full"><canvas id="sectorChart"></canvas></div>
+                </section>
+
+                <div class="sticky top-4 z-50 mb-10">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-center gap-4 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/50 w-fit mx-auto">
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <% categories.forEach(function(cat) { %>
+                                <button onclick="filterCategory('<%= cat %>')" data-filter="<%= cat %>"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm <%= cat === '全部' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-slate-600 border-slate-200' %>">
+                                    <%= cat %>
+                                </button>
+                                <% }); %>
+                        </div>
+                        <div class="relative w-full md:w-48 transition-all focus-within:w-64">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><svg
+                                    class="w-4 h-4 text-slate-400" aria-hidden="true" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg></div>
+                            <input type="text" id="search-input" oninput="searchNews(this.value)"
+                                class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner"
+                                placeholder="搜尋新聞...">
+                        </div>
+                    </div>
+                </div>
+
+                <section class="mb-12 animate-fade">
+                    <div
+                        class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
+                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
+                            <%- summary.replace(/\\n/g, '<br>' ) %></div>
                     </div>
                 </section>
 
-                <!-- ... (Search/Filter Section) ... -->
-
-                <!-- ... (Summary Section) ... -->
-
-                <!-- ... (News Grid) ... -->
+                <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade"
+                    style="animation-delay: 0.1s;">
+                    <% newsData.forEach(function(n) { %>
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="<%= n.category || '其他' %>" data-title="<%= n.title.toLowerCase() %>"
+                            data-content="<%= (n.content || '').toLowerCase() %>">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        <%= n.category || '其他' %>
+                                    </span><span class="text-slate-400 text-xs">
+                                        <%= n.timeStr %>
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    <%= n.title %>
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    <%= n.source %>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="<%= n.url %>"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        <% }); %>
+                </div>
 
                 <% if (sortedKeywords.length> 0) { %>
                     <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
                         <h3 class="text-xl font-black text-slate-800 mb-4 flex items-center"><span
-                                class="text-2xl mr-2">🔥</span> 市場關鍵字熱度 (點擊查看趨勢)</h3>
+                                class="text-2xl mr-2">🔥</span> 市場關鍵字熱度</h3>
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             <% sortedKeywords.forEach(function(k) { %>
-                                <button onclick="showKeywordTrend('<%= k.word %>')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                <button onclick="searchKeyword('<%= k.word %>')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         <%= k.word %>
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
@@ -136,41 +192,20 @@
                     </section>
                     <% } %>
 
-                        <!-- 🟢 新增：趨勢圖 Modal -->
-                        <div id="trendModal"
-                            class="fixed inset-0 bg-black/50 z-[100] hidden flex items-center justify-center backdrop-blur-sm opacity-0 transition-opacity duration-300">
-                            <div class="bg-white rounded-2xl p-6 w-full max-w-lg mx-4 shadow-2xl transform scale-95 transition-transform duration-300"
-                                id="trendModalContent">
-                                <div class="flex justify-between items-center mb-4">
-                                    <h3 class="text-xl font-bold text-slate-800" id="trendModalTitle">關鍵字趨勢</h3>
-                                    <button onclick="closeTrendModal()" class="text-slate-400 hover:text-slate-600">
-                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="h-64 w-full relative">
-                                    <canvas id="trendChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-
                         <footer
                             class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
-                            自動化生成系統 · Powered by Gemini 2.5 & EJS Engine (v4.0.0)</footer>
+                            自動化生成系統 · Powered by Gemini 2.5 & EJS Engine</footer>
     </div>
 
     <script>
-        // Existing Charts
         const ctx = document.getElementById('sentimentChart').getContext('2d');
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: <% - JSON.stringify(chartLabels) %>,
+                labels: <%- JSON.stringify(chartLabels) %>,
                 datasets: [{
                     label: '情緒指數',
-                    data: <% - JSON.stringify(chartScores) %>,
+                    data: <%- JSON.stringify(chartScores) %>,
                     borderColor: '<%= chartColor %>',
                     backgroundColor: '<%= chartColor %>20',
                     borderWidth: 3,
@@ -183,7 +218,6 @@
             },
             options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
         });
-
         const radarCtx = document.getElementById('radarChart').getContext('2d');
         new Chart(radarCtx, {
             type: 'radar',
@@ -191,7 +225,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: <% - JSON.stringify(radarData) %>,
+                    data: <%- JSON.stringify(radarData) %>,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -203,109 +237,15 @@
             },
             options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
         });
-
-        // 🟢 新增：板塊情緒圖
-        const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = <% - JSON.stringify(sectorStats) %>;
-        new Chart(sectorCtx, {
-            type: 'bar',
-            data: {
-                labels: ['科技/半導體', '金融', '傳產/製造', '服務/消費'],
-                datasets: [{
-                    label: '板塊情緒',
-                    data: [sectorData.tech, sectorData.finance, sectorData.manufacturing, sectorData.service],
-                    backgroundColor: [
-                        sectorData.tech > 0 ? '#ef4444' : '#22c55e',
-                        sectorData.finance > 0 ? '#ef4444' : '#22c55e',
-                        sectorData.manufacturing > 0 ? '#ef4444' : '#22c55e',
-                        sectorData.service > 0 ? '#ef4444' : '#22c55e'
-                    ],
-                    borderRadius: 6
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: { x: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, y: { grid: { display: false } } },
-                plugins: { legend: { display: false } }
-            }
-        });
-
-        // 🟢 新增：關鍵字趨勢 Modal 邏輯
-        let trendChart = null;
-        let trendsCache = null;
-
-        async function showKeywordTrend(keyword) {
-            const modal = document.getElementById('trendModal');
-            const content = document.getElementById('trendModalContent');
-            const title = document.getElementById('trendModalTitle');
-
-            modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                content.classList.remove('scale-95');
-            }, 10);
-
-            title.textContent = `🔥 ${keyword} - 7日熱度趨勢`;
-
-            // Fetch data if not cached
-            if (!trendsCache) {
-                try {
-                    const res = await fetch('data/trends.json');
-                    trendsCache = await res.json();
-                } catch (e) { console.error("Trends fetch failed", e); return; }
-            }
-
-            const history = trendsCache[keyword] || [];
-            const labels = history.map(h => h.date.slice(5));
-            const data = history.map(h => h.count);
-
-            const ctx = document.getElementById('trendChart').getContext('2d');
-
-            if (trendChart) trendChart.destroy();
-
-            trendChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: '出現次數',
-                        data: data,
-                        borderColor: '#6366f1',
-                        backgroundColor: 'rgba(99, 102, 241, 0.1)',
-                        fill: true,
-                        tension: 0.3,
-                        pointBackgroundColor: '#fff',
-                        pointBorderColor: '#6366f1',
-                        pointRadius: 6
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: { y: { beginAtZero: true, grid: { color: '#f8fafc' }, ticks: { stepSize: 1 } }, x: { grid: { display: false } } },
-                    plugins: { legend: { display: false } }
-                }
-            });
-        }
-
-        function closeTrendModal() {
-            const modal = document.getElementById('trendModal');
-            const content = document.getElementById('trendModalContent');
-
-            modal.classList.add('opacity-0');
-            content.classList.add('scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
-        }
-
-        // Close on click outside
-        document.getElementById('trendModal').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('trendModal')) closeTrendModal();
-        });
     </script>
 </body>
 
-</html>
+</html>`;
+
+try {
+    const targetPath = path.join(__dirname, 'views', 'index.ejs');
+    fs.writeFileSync(targetPath, content, { encoding: 'utf8' }); // Defaults to no BOM
+    console.log('Successfully rewrote views/index.ejs with clean UTF-8');
+} catch (e) {
+    console.error('Failed to write file:', e);
+}
