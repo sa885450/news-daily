@@ -1,4 +1,4 @@
-const { sleep, ensureDir } = require('../lib/utils');
+const { sleep, ensureDir } = require('../src/lib/utils');
 const fs = require('fs');
 const path = require('path');
 

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const ejs = require('ejs');
 
-const filePath = path.join(__dirname, 'views', 'index.ejs');
+const filePath = path.join(__dirname, '../src/views/index.ejs');
 const content = fs.readFileSync(filePath);
 
 // Check for BOM

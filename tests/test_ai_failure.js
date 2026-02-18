@@ -1,6 +1,6 @@
 require('dotenv').config({ path: '../.env' });
-const { getSummary } = require('../lib/ai');
-const { log } = require('../lib/utils');
+const { getSummary } = require('../src/lib/ai');
+const { log } = require('../src/lib/utils');
 
 // 覆寫 console.log 以便觀察 retry
 const originalLog = console.log;
@@ -34,10 +34,10 @@ async function testAIFailure() {
         process.env.GEMINI_API_KEY = "INVALID_KEY_FOR_TESTING";
 
         // 重新載入 config 以吃到新環境變數 (清除 cache)
-        delete require.cache[require.resolve('../lib/config')];
-        delete require.cache[require.resolve('../lib/ai')];
+        delete require.cache[require.resolve('../src/lib/config')];
+        delete require.cache[require.resolve('../src/lib/ai')];
 
-        const ai = require('../lib/ai');
+        const ai = require('../src/lib/ai');
 
         log('🔄', '呼叫 getSummary (預期會 Retry 3 次)...');
         await ai.getSummary(mockNews, null, 0); // 這裡應該會失敗

@@ -8,7 +8,7 @@ const db = require('./lib/db');
 const config = require('./lib/config');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron');
-const { version } = require('./package.json');
+const { version } = require('../package.json');
 
 function matchesAny(text, regexArray) { return regexArray.length === 0 ? false : regexArray.some(re => re.test(text)); }
 

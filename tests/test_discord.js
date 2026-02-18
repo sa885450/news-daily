@@ -1,5 +1,5 @@
 require('dotenv').config({ path: '../.env' });
-const { sendDiscordError, log } = require('../lib/utils');
+const { sendDiscordError, log } = require('../src/lib/utils');
 
 async function testDiscord() {
     log('🧪', '開始測試 Discord 告警功能...');

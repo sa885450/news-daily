@@ -243,7 +243,7 @@ const content = `<!DOCTYPE html>
 </html>`;
 
 try {
-    const targetPath = path.join(__dirname, 'views', 'index.ejs');
+    const targetPath = path.join(__dirname, '../src/views/index.ejs');
     fs.writeFileSync(targetPath, content, { encoding: 'utf8' }); // Defaults to no BOM
     console.log('Successfully rewrote views/index.ejs with clean UTF-8');
 } catch (e) {
