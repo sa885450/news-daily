@@ -33,6 +33,12 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v4.0.2 - 修復顯示異常 (2026-02-18)
+- **🐛 修復前端圖表與摘要消失問題 (Fix Missing UI)**：
+  - 還原 `views/index.ejs` 中意外遺失的搜尋區塊、摘要區塊與新聞列表。
+  - 修正 EJS 標籤錯誤 (`<% -` -> `<%-`)，確保 JSON 數據正確輸出至前端 Chart.js。
+  - 進行完整編碼驗證 (No BOM)，確保中文字元正常顯示。
+
 ### v4.0.1 - 程式碼優化 (2026-02-18)
 - **🔧 動態版本號 (Dynamic Versioning)**：
   - 修改 `index.js`，改為直接讀取 `package.json` 的 `version` 欄位，避免手動更新不一致的問題。
