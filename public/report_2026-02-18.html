@@ -84,24 +84,32 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月19日星期四 · 更新於 00:02
+                        2026年2月19日星期四 · 更新於 01:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('亞德諾')"
+                            <button onclick="searchKeyword('費城半導體指數')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #亞德諾
+                                #費城半導體指數
                                     
-                                        <span class="text-xs ml-1 opacity-70">(ADI-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(^SOX)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('泰瑞達')"
+                            <button onclick="searchKeyword('科斯塔集團')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #泰瑞達
+                                #科斯塔集團
                                     
-                                        <span class="text-xs ml-1 opacity-70">(TER-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(CSGP-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('亞德諾半導體')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #亞德諾半導體
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(ADI)</span>
                                         
                             </button>
                             
@@ -109,32 +117,30 @@
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #美光科技
                                     
-                                        <span class="text-xs ml-1 opacity-70">(MU-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(MU)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('費城半導體指數')"
+                            <button onclick="searchKeyword('AppLovin')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #費城半導體指數
+                                #AppLovin
                                     
-                                        <span class="text-xs ml-1 opacity-70">(SOX)</span>
+                                        <span class="text-xs ml-1 opacity-70">(APP)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Applovin Corp')"
+                            <button onclick="searchKeyword('台積電')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Applovin Corp
+                                #台積電
                                     
-                                        <span class="text-xs ml-1 opacity-70">(APP-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('DoorDash')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #DoorDash
+                            <button onclick="searchKeyword('聯準會')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #聯準會
                                     
-                                        <span class="text-xs ml-1 opacity-70">(DASH-US)</span>
-                                        
                             </button>
                             
                     </div>
@@ -147,7 +153,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.92
+                                    0.95
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -213,7 +219,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>【風控預警深度報告】末端噴發之痛：從 SaaS 裂解到半導體「泡沫化衝刺」</h3><p>今日市場情緒已由昨日的 0.88 攀升至 <b>0.92 (極度亢奮)</b>。與昨日報告中提到的 SaaS 軟體板塊結構性踩踏不同，今日市場呈現出極其危險的「全面噴發」特徵。特別是半導體硬體 (ADI、MU、TER) 與高倍數成長股 (APP、DASH) 同步出現 5% 以上的無差別跳空大漲，這通常是市場在耗盡最後一波多頭動能時的「末端趕頂」現象。</p><h4>1. 估值邏輯的徹底斷裂</h4><p>昨日資金還在尋求 EDA (SNPS) 等避險資產，今日卻轉向追逐高 Beta 的半導體設備與存儲器，顯示風險偏好已失控。美光 (MU) 與亞德諾 (ADI) 的漲幅與基本面改善速度已出現明顯脫節，這種「情緒驅動型」上漲大幅壓縮了未來的潛在收益空間，並顯著抬高了回撤風險。</p><h4>2. 結構性隱憂：從分化轉向全面泡沫</h4><p>當 DoorDash (DASH) 等非核心科技股也隨著半導體共振大漲時，顯示市場已進入「非理智繁榮」階段。這與昨日提到的「上游避險」邏輯背道而馳，暗示資金已放棄防禦，全面轉向博弈短線利潤。</p><h4>3. 專家建議：執行硬性獲利了結</h4><p>當前技術指標 (RSI, Bollinger Bands) 已全面過熱。<b>強烈建議：</b> 1. 針對漲幅超過 20% 的科技持股進行至少 30%-50% 的獲利了結。 2. 資金應開始轉向實物黃金、短期美債或公用事業板塊 (Utilities) 等防禦性資產。 3. 嚴禁在此時點追高高倍數成長股。</p>
+                            <h3>【風控深度報告】泡沫化的最後狂歡：0.95 極度貪婪訊號與結構性背離</h3><p>市場今日情緒已由昨日的 0.92 進一步攀升至 <b>0.95 (極度亢奮)</b>。與昨日 SaaS 板塊的結構性踩踏不同，今日市場展現出極具危險性的「全面噴發」特徵。費城半導體指數 (SOX) 大漲超過 2%，突破 8299 點，這已不再是單純的技術性反彈，而是資金在恐慌性追價 (FOMO) 驅動下的「泡沫化衝刺」。</p><h4>1. 估值邏輯的崩塌：從軟體轉向高 Beta 硬體</h4><p>昨日市場尚在進行 SaaS 與 EDA (SNPS) 的避險切換，今日則演變為對 ADI、MU 等半導體硬體以及 CSGP 等服務型成長股的無差別追逐。特別是 CoStar Group (CSGP) 跳空大漲 5%，顯示資金正湧向高 Beta 資產以榨取最後的超額收益，這通常是市場流動性耗盡前的典型徵兆。</p><h4>2. 風險控管建議：撤退與防禦</h4><p><b>本機構發出紅色預警：</b>目前的市場寬度已縮窄至極限。當高估值半導體與成長股同步出現 5% 以上的跳空漲幅時，回檔壓力將呈幾何倍數增長。建議投資者採取「適度獲利了結」策略，將現金部位提升至 30% 以上，並將剩餘資金轉向低相關性的<b>防禦性資產</b>（如電力公用事業、電信或黃金）。切勿在此刻追逐「末端趕頂」的漲幅，以防流動性反轉時引發的結構性踩踏。</p>
                         </div>
                     </div>
                 </section>
@@ -222,25 +228,25 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="半導體" data-title="盤中速報 - 亞德諾(adi-us)大漲5.06%，報354.59美元"
-                            data-content="&amp;lt;p&amp;gt;亞德諾(adi-us)截至台北時間18日23:28股價上漲17.08美元，報354.59美元，漲幅5.06%，成交量2,585,519（股），盤中最高價355.00美元、最低價341.15美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.57%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.75%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+1.22%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.99%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;亞德諾(adi-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+3.67%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+12.27%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+46.6%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+45.53%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+24.3%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            data-category="半導體" data-title="盤中速報 - 費城半導體大漲2.01%，報8299.24點"
+                            data-content="&amp;lt;p&amp;gt;截至台北時間19日12:31，費城半導體上漲163.19點（或2.01%），暫報8299.24點。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;近 1 週：+0.36%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 1 月：+2.63%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 3 月：+21.33%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 6 月：+41.43%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;今年以來：+14.87%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;焦點個股&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;費城半導體成分股以美光科技(mu-us)領漲。美光科技(mu-us)上漲6.43%；泰瑞達(ter-us)上漲4.98%；艾司摩爾(asml-us)上漲3.44%；應用材料(amat-us)上漲3.36%；亞德諾(adi-us)上漲3.35%。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;部分成分股表現相對疲軟，安森美半導體(on-us)下跌1.69%；恩智浦半導體(nxpi-us)下跌1.57%；德州儀器(txn-us)下跌1.06%；超微半導體(amd-us)下跌0.26%；格羅方德(gfs-us)下跌0.15%。&amp;lt;/p&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         半導體
                                     </span><span class="text-slate-400 text-xs">
-                                        上午12:02
+                                        上午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 亞德諾(ADI-US)大漲5.06%，報354.59美元
+                                    盤中速報 - 費城半導體大漲2.01%，報8299.24點
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346710"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346744"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -250,137 +256,25 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="風險控管" data-title="盤中速報 - 泰瑞達(ter-us)大漲5.02%，報320.87美元"
-                            data-content="&amp;lt;p&amp;gt;泰瑞達(ter-us)截至台北時間18日23:20股價上漲15.34美元，報320.87美元，漲幅5.02%，成交量589,033（股），盤中最高價320.99美元、最低價304.65美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.58%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.76%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+1.19%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.84%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;泰瑞達(ter-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+3.2%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+37.92%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+87.92%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+187.57%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+62.56%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            data-category="風險控管" data-title="盤中速報 - 科斯塔集團(csgp-us)大漲5.08%，報48.07美元"
+                            data-content="&amp;lt;p&amp;gt;科斯塔集團(csgp-us)截至台北時間19日00:10股價上漲2.33美元，報48.07美元，漲幅5.08%，成交量1,357,535（股），盤中最高價48.07美元、最低價46.37美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.61%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.87%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+1.3%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.81%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;科斯塔集團(csgp-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-11.52%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-31.14%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-32.85%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-49.82%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-33.09%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         風險控管
                                     </span><span class="text-slate-400 text-xs">
-                                        上午12:02
+                                        上午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 泰瑞達(TER-US)大漲5.02%，報320.87美元
+                                    盤中速報 - 科斯塔集團(CSGP-US)大漲5.08%，報48.07美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346709"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="美股" data-title="盤中速報 - 美光科技(mu-us)大漲5.02%，報419.84美元"
-                            data-content="&amp;lt;p&amp;gt;美光科技(mu-us)截至台北時間18日23:17股價上漲20.06美元，報419.84美元，漲幅5.02%，成交量8,226,413（股），盤中最高價419.89美元、最低價394.60美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.64%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.82%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+1.2%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.88%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美光科技(mu-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+10.29%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+13.48%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+70.14%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+240.58%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+44.23%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        美股
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午12:02
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346708"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="盤中速報 - 費城半導體大漲1.02%，報8218.97點"
-                            data-content="&amp;lt;p&amp;gt;截至台北時間18日10:58，費城半導體上漲82.92點（或1.02%），暫報8218.97點。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;近 1 週：+0.36%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 1 月：+2.63%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 3 月：+21.33%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 6 月：+41.43%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;今年以來：+14.87%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;焦點個股&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;費城半導體成分股以泰瑞達(ter-us)領漲。泰瑞達(ter-us)上漲3.08%；安可(amkr-us)上漲2.9%；應用材料(amat-us)上漲2.45%；亞德諾(adi-us)上漲2.33%；美光科技(mu-us)上漲2.12%。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;部分成分股表現相對疲軟，超微半導體(amd-us)下跌2.12%；格羅方德(gfs-us)下跌1.02%；德州儀器(txn-us)下跌0.87%；安森美半導體(on-us)下跌0.64%；科沃(qrvo-us)下跌0.28%。&amp;lt;/p&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        其他
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午12:02
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 費城半導體大漲1.02%，報8218.97點
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346702"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="盤中速報 - applovin corp - class a(app-us)大漲5.05%，報395.39美元"
-                            data-content="&amp;lt;p&amp;gt;applovin corp - class a(app-us)截至台北時間18日22:52股價上漲19.01美元，報395.39美元，漲幅5.05%，成交量714,283（股），盤中最高價395.70美元、最低價372.50美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.42%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.46%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.37%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.46%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;applovin corp - class a(app-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-17.42%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-31.33%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-27.58%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-10.97%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-42.04%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        其他
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午12:02
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - Applovin Corp - Class A(APP-US)大漲5.05%，報395.39美元
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346701"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="盤中速報 - doordash公司(dash-us)大漲5.11%，報170.64美元"
-                            data-content="&amp;lt;p&amp;gt;doordash公司(dash-us)截至台北時間18日22:49股價上漲8.3美元，報170.64美元，漲幅5.11%，成交量843,153（股），盤中最高價170.70美元、最低價162.19美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.43%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.42%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.26%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.39%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;doordash公司(dash-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-13.63%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-21.91%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-23.88%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-35.35%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-29.2%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        其他
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午12:02
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - DoorDash公司(DASH-US)大漲5.11%，報170.64美元
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346700"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346727"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -403,7 +297,7 @@
                                     <span>
                                         半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        6
+                                        2
                                     </span>
                                 </button>
                                 
@@ -412,7 +306,7 @@
                                     <span>
                                         美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        5
+                                        1
                                     </span>
                                 </button>
                                 
@@ -454,7 +348,7 @@
                 labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.92],
+                    data: [0.48,0.88,0.1,0.95],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -475,7 +369,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.55,0.95,0.9,0.6,0.92],
+                    data: [0.55,0.98,0.95,0.65,0.96],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -490,7 +384,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.98,"finance":0.55,"manufacturing":0.65,"service":0.82};
+        const sectorData = {"tech":0.95,"finance":0.55,"manufacturing":0.45,"service":0.78};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
