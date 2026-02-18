@@ -84,45 +84,65 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 21:01
+                        2026年2月18日星期三 · 更新於 23:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('新黃金公司')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #新黃金公司
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(NGD-US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('台積電')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台積電
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('FactSet')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #FactSet
-                                    
-                            </button>
-                            
-                            <button onclick="searchKeyword('黃金現貨')"
+                            <button onclick="searchKeyword('新思科技')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #黃金現貨
+                                #新思科技
                                     
-                                        <span class="text-xs ml-1 opacity-70">(GC=F)</span>
+                                        <span class="text-xs ml-1 opacity-70">(SNPS-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('聯準會')"
+                            <button onclick="searchKeyword('Palo Alto Networks')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #聯準會
+                                #Palo Alto Networks
                                     
+                                        <span class="text-xs ml-1 opacity-70">(PANW-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('數據狗')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #數據狗
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(DDOG-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Cadence設計系統')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Cadence設計系統
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(CDNS-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('莫德納')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #莫德納
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(MRNA-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Verisk Analytics')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Verisk Analytics
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(VRSK-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('HF Sinclair Corp.')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #HF Sinclair Corp.
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(DINO-US)</span>
+                                        
                             </button>
                             
                     </div>
@@ -135,7 +155,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.92
+                                    0.88
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -201,7 +221,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>【風控預警深度報告】盈餘下修初現：警惕「集體貪婪」下的防禦性位移</h3><p>今日市場情緒攀升至 <b>0.92 (極度貪婪)</b>。相較於昨日聚焦於台積電 (2330.TW) 營收創紀錄後的「利多出盡」風險，今日最新數據顯示出一個更為隱蔽的警訊：<b>獲利預估的實質下修</b>。</p><h4>1. 從「成長共識」到「預期調整」的轉折</h4><p>新黃金公司 (NGD-US) 的 EPS 預估遭 FactSet 調降，這標誌著即便在通膨預期抬頭、金價高檔的背景下，企業成本壓力與經營效率仍面臨考驗。當市場處於高位時，這類微幅的盈餘下修往往是機構投資者開始<b>獲利了結</b>的藉口。</p><h4>2. 泡沫特徵：技術性指標的超買極限</h4><p>當前技術指標顯示，科技板塊與大盤已進入嚴重超買區間。隨着台積電利多被完全消化，市場缺乏新的「噴發級」動能。此時任何個股預期的下修，都可能引發多頭連鎖反應式的槓桿去化。</p><h4>3. 決策建議：轉向防禦性資產</h4><p>風險控管專家建議：目前不應再盲目追高 AI 或高成長標的。應採取<b>適度減持 (Trim Positions)</b> 策略，鎖定利潤，並將資金配置向<b>防禦性資產 (如實體黃金或債券)</b> 移動，以因應隨時可能到來的劇烈回測。應對邏輯應從「追求 Beta 收益」轉向「本金防禦」。</p>
+                            <h3>【風控預警深度報告】高估值裂解：警惕 SaaS 崩跌引發的「結構性踩踏」</h3><p>今日市場情緒雖維持在 <b>0.88 (極度貪婪)</b>，但內部分化已呈現極端化。相較於昨日「盈餘下修」的隱蔽警訊，今日市場演變為<b>顯性估值修正</b>。特別是雲端安全 (PANW) 與數據監控 (DDOG) 的劇烈重挫，反映出高倍數成長股在極度貪婪背景下，對任何利空或估值溢價的容忍度已降至冰點。</p><h4>1. 科技板塊的「上游避險」現象</h4><p>今日亮點集中於上游 EDA 工具 (SNPS、CDNS)，顯示資金正從「終端應用」回撤至「研發基礎設施」。這種現象通常發生在牛市末端，投資者試圖躲避高波動的 SaaS 標的，轉向具有壟斷地位且現金流穩定的半導體上游。然而，PANW 單日接近 9% 的跌幅，是市場對前期過度擴張定價的暴力修正，建議投資者在此處應立即執行部分獲利了結。</p><h4>2. 防禦性轉移：數據與醫療的補漲</h4><p>數據分析巨頭 Verisk (VRSK) 與生技標的 Moderna (MRNA) 的異軍突起，符合本報告昨日預期的「防禦性位移」。當能源龍頭 (DINO) 獲得 EPS 上修，且資金湧入非科技領域時，這標誌著市場正試圖在高位尋找「價值安全墊」。</p><h4>3. 風控建議</h4><p>當前盤面雖有指數支撐，但個股回撤風險劇增。專家建議：<b>減少對 SaaS 及高本益比雲端股的曝險</b>，將部位向具備「低 beta、高定價權」的防禦性資產 (如數據服務、能源基礎) 傾斜。若 PANW 的跌勢擴大至其他網安板塊，恐引發技術性止損連鎖反應，應嚴格執行 10-15% 的個股停損基準。</p>
                         </div>
                     </div>
                 </section>
@@ -210,25 +230,193 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="礦業" data-title="鉅亨速報 - factset 最新調查：新黃金公司(ngd-us)eps預估下修至0.62元，預估目標價為13.10元"
-                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共6位分析師，對新黃金公司(ngd-us)做出2025年eps預估：中位數由0.63元下修至0.62元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.10元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;※本篇提及eps與營收的單位均為「美元」&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估eps&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;預估值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.68(0.68)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.67&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.25&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.45(0.45)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.92&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.16&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.6(0.6)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.18&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.62(0.63)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.4&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.27&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估營收&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;預估值&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.74億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.87億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.99億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.54億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.18億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.57億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.63億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.41億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.60億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.20億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史獲利表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;項目&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2021年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2022年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2023年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2024年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;eps&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.21&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.10&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.09&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.14&amp;lt;/td&amp;gt;&amp;lt;/">
+                            data-category="其他" data-title="盤中速報 - 新思科技(snps-us)大漲5.2%，報443.9美元"
+                            data-content="&amp;lt;p&amp;gt;新思科技(snps-us)截至台北時間18日22:31股價上漲21.95美元，報443.90美元，漲幅5.2%，成交量68,610（股），盤中最高價443.90美元、最低價435.70美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.19%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.16%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.25%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.48%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;新思科技(snps-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-0.08%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-15.34%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+12.01%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-29.26%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-6.95%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        礦業
+                                        其他
                                     </span><span class="text-slate-400 text-xs">
-                                        下午09:01
+                                        下午11:01
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.62元，預估目標價為13.10元
+                                    盤中速報 - 新思科技(SNPS-US)大漲5.2%，報443.9美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346623"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346693"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="科技半導體" data-title="盤中速報 - 數據狗(ddog-us)大跌5.08%，報116.34美元"
+                            data-content="&amp;lt;p&amp;gt;數據狗(ddog-us)截至台北時間18日22:30股價下跌6.23美元，報116.34美元，跌幅5.08%，成交量287,969（股），盤中最高價117.47美元、最低價116.00美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.16%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.25%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;數據狗(ddog-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：-3.45%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+5.19%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-30.54%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-1.61%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-7.93%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        科技半導體
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 數據狗(DDOG-US)大跌5.08%，報116.34美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346692"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="雲端服務" data-title="盤中速報 - 莫德納(mrna-us)大漲6.69%，報46.87美元"
+                            data-content="&amp;lt;p&amp;gt;莫德納(mrna-us)截至台北時間18日22:30股價上漲2.94美元，報46.87美元，漲幅6.69%，成交量764,937（股），盤中最高價46.90美元、最低價46.69美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.16%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.14%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.02%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;莫德納(mrna-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.56%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+0.96%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+70.56%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+50.71%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+43.2%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        雲端服務
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 莫德納(MRNA-US)大漲6.69%，報46.87美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346691"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="醫療生技" data-title="盤中速報 - palo alto networks inc(panw-us)大跌8.97%，報148.84美元"
+                            data-content="&amp;lt;p&amp;gt;palo alto networks inc(panw-us)截至台北時間18日22:30股價下跌14.67美元，報148.84美元，跌幅8.97%，成交量1,356,813（股），盤中最高價149.48美元、最低價148.84美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.15%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.16%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.14%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.02%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;palo alto networks inc(panw-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.87%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-11.04%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-17.72%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-5.73%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-9.36%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        醫療生技
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - Palo Alto Networks Inc(PANW-US)大跌8.97%，報148.84美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346690"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="能源化工" data-title="盤中速報 - cadence設計系統(cdns-us)大漲6.88%，報302.96美元"
+                            data-content="&amp;lt;p&amp;gt;cadence設計系統(cdns-us)截至台北時間18日22:30股價上漲19.5美元，報302.96美元，漲幅6.88%，成交量120,373（股），盤中最高價302.96美元、最低價301.50美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.13%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.14%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.14%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.02%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;cadence設計系統(cdns-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.15%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-5.67%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-3.8%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-14.41%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-4.2%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        能源化工
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - Cadence設計系統(CDNS-US)大漲6.88%，報302.96美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346689"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="風險控管" data-title="盤中速報 - verisk analytics inc(vrsk-us)大漲9.66%，報194.42美元"
+                            data-content="&amp;lt;p&amp;gt;verisk analytics inc(vrsk-us)截至台北時間18日22:30股價上漲17.12美元，報194.42美元，漲幅9.66%，成交量93,363（股），盤中最高價194.42美元、最低價194.42美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.11%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.13%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.14%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.02%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;verisk analytics inc(vrsk-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+6.93%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-17.79%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-17.29%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-32.35%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-18.99%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        風險控管
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - Verisk Analytics Inc(VRSK-US)大漲9.66%，報194.42美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346686"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="鉅亨速報 - factset 最新調查：hf sinclair corp.(dino-us)eps預估上修至4.62元，預估目標價為62.00元"
+                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共14位分析師，對hf sinclair corp.(dino-us)做出2026年eps預估：中位數由4.5元上修至4.62元，其中最高估值7.31元，最低估值2.82元，預估目標價為62.00元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;※本篇提及eps與營收的單位均為「美元」&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估eps&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;預估值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2029年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;7.31(7.31)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;8.61&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;8.25&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;10.1&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2.82(2.82)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2.94&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.08&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;10.1&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.56(4.55)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.91&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;10.1&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.62(4.5)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.83&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;5.67&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;10.1&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估營收&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;預估值&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;306.23億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;300.00億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;227.06億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;229.93億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;259.97億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;264.89億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;258.22億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;263.48億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史獲利表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;項目&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2021年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2022年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2023年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2024年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;eps&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;3.39&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;8.29&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.91&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;營業收入&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;184.08億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;382.10億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;319.68億&amp;lt;/td&amp;gt;&amp;l">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估上修至4.62元，預估目標價為62.00元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346676"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -246,19 +434,28 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('黃金')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        黃金
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
                                 <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         美元
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        7
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('半導體')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        半導體
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        6
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('AI')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -302,7 +499,7 @@
                 labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.92],
+                    data: [0.48,0.88,0.1,0.88],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -323,7 +520,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.65,0.95,0.7,0.75,0.98],
+                    data: [0.5,0.88,0.65,0.5,0.85],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -338,7 +535,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.9,"finance":0.6,"manufacturing":0.4,"service":0.5};
+        const sectorData = {"tech":0.35,"finance":0.5,"manufacturing":0.7,"service":0.8};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
