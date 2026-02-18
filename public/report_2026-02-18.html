@@ -84,11 +84,19 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 14:01
+                        2026年2月18日星期三 · 更新於 15:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('台積電')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #台積電
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('TOTO')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #TOTO
@@ -97,34 +105,34 @@
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Palliser Capital')"
+                            <button onclick="searchKeyword('CrowdStrike')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Palliser Capital
+                                #CrowdStrike
                                     
-                            </button>
-                            
-                            <button onclick="searchKeyword('台積電')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台積電
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(CRWD)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('東京威力科創')"
+                            <button onclick="searchKeyword('Palo Alto Networks')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #東京威力科創
+                                #Palo Alto Networks
                                     
-                                        <span class="text-xs ml-1 opacity-70">(8035.JP)</span>
+                                        <span class="text-xs ml-1 opacity-70">(PANW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('應用材料')"
+                            <button onclick="searchKeyword('Zscaler')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #應用材料
+                                #Zscaler
                                     
-                                        <span class="text-xs ml-1 opacity-70">(AMAT)</span>
+                                        <span class="text-xs ml-1 opacity-70">(ZS)</span>
                                         
+                            </button>
+                            
+                            <button onclick="searchKeyword('Wedbush')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Wedbush
+                                    
                             </button>
                             
                     </div>
@@ -137,7 +145,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.6
+                                    0.88
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -203,7 +211,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>決策報告：從「現金流防禦」進化至「跨界供應鏈」的隱形溢價挖掘</h3><p>相較於昨日聚焦於台積電（2330.TW）以<b>高額股息</b>建立的「現金流地板」，今日市場出現了更具攻擊性的結構性變化。投資邏輯正從核心半導體向外輻射至具備技術門檻的傳統製造業，形成<b>「AI 溢出效應（AI Spillover）」</b>。</p><h4>1. 供應鏈版圖的重新定義：傳統巨頭的「科技轉型」溢價</h4><p>今日觀察到日本衛浴龍頭 TOTO（5332.JP）被激進投資者重新定義為半導體供應鏈中的隱形贏家。其精密陶瓷技術（如靜電吸盤）是先進製程中不可或缺的耗材。這顯示 AI 敘事已不侷限於 GPU 或代工，而是滲透至基礎材料科學。這補足了昨日報告中「現金流韌性」的動能不足部分，提供了 55% 的潛在估值上修空間。</p><h4>2. 結構性機會：尋找「非典型」AI 受益者</h4><p>昨日市場關注的是 AI 支出是否帶來 ROI，今日則給出了另一種解答：尋找那些<b>「已被證實具備盈利能力且未被充分定價」</b>的傳統精密工業。TOTO 的案例證明，在資本支出（CapEx）焦慮下，具備跨界利基產品的公司能同時享有傳統產業的穩健現金流與科技產業的高成長預期。</p><h4>3. 宏觀觀點：結構性分化將持續</h4><p>綜合昨日與今日動態，我們正處於一個「品質至上」的階段。我們建議維持對台積電等核心資產的持有，並開始增持如 TOTO 這類在半導體供應鏈中具備高護城河、但目前估值仍處於傳統製造業水平的隱形龍頭。</p>
+                            <h3>【風控預警】泡沫邊緣：當「AI 溢出」轉向「投機擴散」的風險信號</h3><p>市場目前處於<b>極度貪婪區間 (Sentiment: 0.88)</b>，投資者需警惕過熱訊號。相較於昨日聚焦台積電 (2330.TW) 的「現金流地板」防禦策略，今日市場重心移轉至 <b>AI 溢出效應 (AI Spillover)</b>。TOTO (5332.JP) 等傳統精密製造被重新定義為半導體耗材，這顯示資金正從核心權值股向邊緣標的擴散，通常是泡沫中後期的特徵。</p><h4>1. 供給側溢價的雙面刃</h4><p>今日觀察到市場對「隱形贏家」的瘋狂追逐，如精密陶瓷技術的重新定價。雖然技術門檻提供了溢價空間，但在極度貪婪的環境下，這類「故事性敘事」容易導致估值脫離基本面。分析師 Dan Ives 對資安三雄 (CRWD, PANW, ZS) 的看好雖具邏輯，但不能忽略軟體股近期脆弱的價格支撐力。</p><h4>2. 決策建議：適度獲利了結，防禦性配置</h4><p>身為風險控管專家，建議投資者：<br/>- <b>獲利了結：</b> 針對已實現大幅漲幅的 AI 相關非核心標的進行部分減碼。<br/>- <b>資產防禦：</b> 重新關注具備強大資產負債表與穩定現金流的企業，而非僅靠「AI 順風」支撐的軟體股。<br/>- <b>關注技術面乖離：</b> 目前多數 AI 概念股已進入超買區，市場對利空消息的容忍度極低。</p><h4>3. 今日與昨日之變化比較</h4><p>昨日市場尚在尋求「確定性溢價」（台積電的高股息與核心領先地位），今日則轉向「可能性溢價」（傳統製造轉型 AI 耗材）。這種從<b>穩健現金流</b>轉向<b>跨界供應鏈想像</b>的過程，加劇了市場的投機屬性。在極度貪婪時保持冷靜，是當前獲取超額回報的關鍵。</p>
                         </div>
                     </div>
                 </section>
@@ -212,46 +220,46 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="科技/半導體" data-title="日本衛浴巨頭toto竟成為ai供應鏈「隱形贏家」"
-                            data-content="&amp;lt;p&amp;gt;英國激進投資者 palliser capital 近日押注日本衛浴巨頭 toto，認為這家以免治馬桶聞名的傳統製造商，正悄悄成為 ai 晶片供應鏈中的「隱形贏家」，股價仍有超過 55% 的上漲空間。&amp;lt;/p&amp;gt;
+                            data-category="其他" data-title="軟體股賣壓後受惠者？分析師點名3檔資安股迎「ai大順風」"
+                            data-content="&amp;lt;p&amp;gt;據《yahoo finance》報導，在 ai 驅動的軟體股拋售潮中，資安類股於 2026 年表現低迷。不過，wedbush 分析師 dan ives 認為，這反而可能創造買進機會。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;toto (5332-jp) 今年以來股價明顯走高，累計漲幅已超過 37%，其中 1 月 22 日單日更大漲 9.72%，表現遠優於日股大盤。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;ives 在周二 (17 日) 發布的研究報告中寫道，「隨著 ai 應用、資料與終端設備的保護需求顯著擴大，未來幾年 ai 將成為資安產業的一大順風。」&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;根據彭博報導，&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;palliser 上週致函 toto 董事會，敦促公司加大對「先進陶瓷」事業的投資力度。&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;該部門主要生產半導體製程核心設備之一「靜電卡盤 (electrostatic chucks) 」，可在晶片生產過程中牢固固定矽晶圓，尤其與 nand 記憶體低溫蝕刻等關鍵製程高度相關。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;儘管 ai 的普及引發企業軟體到房地產等多個產業商業模式的疑慮，ives 主張，ai 驅動的威脅崛起，使得資安支出成為企業不可削減的關鍵開支。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;palliser 指出，toto 的先進陶瓷事業目前貢獻公司約 40% 的營運利潤，已成為成長新引擎。隨著 ai 相關公司對記憶體晶片需求快速升溫，帶動 nand 升級與設備投資循環，該業務未來兩年營收成長可望達到 30% 或更高。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;這項看多論點基於一個嚴峻現實：駭客利用 ai 發動更快速且更精密的攻擊，迫使企業必須加大投入防禦。wedbush 數據顯示，供應商今年將銷售目標上調最高達 30%，以因應日益強勁的需求管道。這代表即便企業整體軟體預算受到檢視，資安仍是優先項目。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;palliser 認為，toto 在先進陶瓷領域擁有約五年的技術護城河，其他競爭者短期內難以追趕。但該基金同時批評，toto 未能向市場充分說明這項高獲利業務的重要性，且公司資本支出計畫投入到此板塊的比例偏低。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;儘管長期前景樂觀，投資人目前仍面臨一片慘綠。過去一個月主要產業 etf 表現疲弱，例如 first trust nasdaq cybersecurity etf(cibr) 下跌約 9%，wisdomtree cybersecurity fund(wcbr) 則下滑約 5%。今年以來則分別下跌約 3% 與 7%。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;在 palliser 持股消息曝光後，toto 股價週二盤中一度上漲超過 5%。過去一年來，toto 股價累計漲幅已超過 60%。palliser 仍認為，若公司能擴大先進陶瓷業務規模、改善資本配置並推動治理改革，股價仍有超過 55% 的上漲潛力。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;多頭認為，隨著 ai 透過 api 與工作負載擴大企業「攻擊面」，這是一個世代級機會。但部分懷疑論者擔心，營收成長放緩與高估值可能拖累部分公司表現。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;該基金也建議 toto 出售交叉持股，並更有效率運用其約 760 億日元 (約 4.96 億美元) 的現金，以提升資本效率。交叉持股長期被視為日本企業治理問題之一，近年在東京證券交易所推動公司治理改革背景下，已有越來越多企業開始縮減相關持股。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;空方主要憂慮在於，企業預算中的「ai 稅」可能擠壓其他 it 支出，使資安公司必須在有限資本中競爭。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;華爾街也正重新評估 toto 的半導體供應鏈價值。高盛上月將 toto 評等上調至「買入」，理由是看好全球 ai 資料中心投資擴張，將推動相關半導體設備與材料需求長期成長。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;科技多頭 ives 點名三家公司為最有機會成為此趨勢下「贏家」。首先是 crowdstrike(crwd-us)，他稱其為產業的「黃金標準」。該公司認為，隨著駭客威脅升高，crowdstrike 的 falcon 平台正變得越發有效。儘管今年以來該資安公司股價已下跌約 11%，wedbush 仍維持優於大盤評級，並給予 600 美元目標價。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;值得注意的是，toto 並非唯一因 ai 熱潮受益的日本傳統企業。味之素也因其材料技術衍生出的樹脂產品，用於晶片與主板間的絕緣材料，而被市場視為半導體擴張浪潮的受惠者之一。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;第二家是 palo alto networks(panw-us)，儘管今年以來下跌逾 11%，仍是 wedbush 在 2026 年的首選之一。ives 認為，該公司推動的「平台化」策略，加上收購 cyberark，將在保護 ai 資料管道方面帶來關鍵變革。此策略旨在透過整合工具組合，減少企業面對多家供應商的疲勞，分析師認為此舉有助於搶占更大企業市占。該機構給予 225 美元目標價。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;分析人士指出，這些案例顯示，日本製造業體系中仍存在大量「非典型半導體供應商」。許多傳統企業憑藉數十年累積的材料與製程技術，正以出乎市場意料的方式參與全球半導體供應鏈，成為 ai 基礎設施建設背後的重要支撐力量。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;最後，報告強調 zscaler(zs-us) 是值得持有的頂級標的，並給予 350 美元目標價。wedbush 指出，隨著企業 ai 流量大幅增加，該公司的「零信任 (zero trust)」策略正帶動穩健的訂閱成長。&amp;lt;/p&amp;gt;
 
-&amp;lt;p class=&amp;quot;warning&amp;quot;&amp;gt;(本文不開放合作夥伴轉載)&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;對投資人而言，ai 在此產業中不僅僅是流行語，而是一股強化高毛利、經常性收入模式的力量。ives 表示，隨著攻擊生命周期從「數周縮短至數小時」，市場對自動化、ai 驅動防禦的付費意願料將持續上升，「在這個 ai 驅動的 it 預算新世界中，強化資安支出的韌性」。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        科技/半導體
+                                        其他
                                     </span><span class="text-slate-400 text-xs">
-                                        下午02:01
+                                        下午03:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    日本衛浴巨頭TOTO竟成為AI供應鏈「隱形贏家」
+                                    軟體股賣壓後受惠者？分析師點名3檔資安股迎「AI大順風」
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346157"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346364"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -278,19 +286,19 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('美元')"
+                                <button onclick="showKeywordTrend('黃金')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        美元
+                                        黃金
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('半導體')"
+                                <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        半導體
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -334,7 +342,7 @@
                 labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.6],
+                    data: [0.48,0.88,0.1,0.88],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -355,7 +363,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.5,0.6,0.75,0.5,0.65],
+                    data: [0.45,0.92,0.85,0.6,0.88],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -370,7 +378,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.7,"finance":0.5,"manufacturing":0.65,"service":0.4};
+        const sectorData = {"tech":0.85,"finance":0.2,"manufacturing":0.55,"service":0.15};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
