@@ -84,54 +84,48 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 15:00
+                        2026年2月18日星期三 · 更新於 16:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('台積電')"
+                            <button onclick="searchKeyword('輝達')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台積電
+                                #輝達
                                     
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('TOTO')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #TOTO
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(5332.JP)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('CrowdStrike')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #CrowdStrike
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(CRWD)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Palo Alto Networks')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Palo Alto Networks
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(PANW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Zscaler')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Zscaler
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(ZS)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Wedbush')"
+                            <button onclick="searchKeyword('Arm')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Wedbush
+                                #Arm
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(ARM.US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Powerlaw')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Powerlaw
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('OpenAI')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #OpenAI
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('SpaceX')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #SpaceX
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('Anthropic')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Anthropic
                                     
                             </button>
                             
@@ -145,7 +139,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.88
+                                    0.92
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -211,7 +205,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>【風控預警】泡沫邊緣：當「AI 溢出」轉向「投機擴散」的風險信號</h3><p>市場目前處於<b>極度貪婪區間 (Sentiment: 0.88)</b>，投資者需警惕過熱訊號。相較於昨日聚焦台積電 (2330.TW) 的「現金流地板」防禦策略，今日市場重心移轉至 <b>AI 溢出效應 (AI Spillover)</b>。TOTO (5332.JP) 等傳統精密製造被重新定義為半導體耗材，這顯示資金正從核心權值股向邊緣標的擴散，通常是泡沫中後期的特徵。</p><h4>1. 供給側溢價的雙面刃</h4><p>今日觀察到市場對「隱形贏家」的瘋狂追逐，如精密陶瓷技術的重新定價。雖然技術門檻提供了溢價空間，但在極度貪婪的環境下，這類「故事性敘事」容易導致估值脫離基本面。分析師 Dan Ives 對資安三雄 (CRWD, PANW, ZS) 的看好雖具邏輯，但不能忽略軟體股近期脆弱的價格支撐力。</p><h4>2. 決策建議：適度獲利了結，防禦性配置</h4><p>身為風險控管專家，建議投資者：<br/>- <b>獲利了結：</b> 針對已實現大幅漲幅的 AI 相關非核心標的進行部分減碼。<br/>- <b>資產防禦：</b> 重新關注具備強大資產負債表與穩定現金流的企業，而非僅靠「AI 順風」支撐的軟體股。<br/>- <b>關注技術面乖離：</b> 目前多數 AI 概念股已進入超買區，市場對利空消息的容忍度極低。</p><h4>3. 今日與昨日之變化比較</h4><p>昨日市場尚在尋求「確定性溢價」（台積電的高股息與核心領先地位），今日則轉向「可能性溢價」（傳統製造轉型 AI 耗材）。這種從<b>穩健現金流</b>轉向<b>跨界供應鏈想像</b>的過程，加劇了市場的投機屬性。在極度貪婪時保持冷靜，是當前獲取超額回報的關鍵。</p>
+                            <h3>【風控警報】泡沫極化：從「技術擴散」轉向「流動性最後一哩路」</h3><p>市場今日進入<b>極度貪婪區間 (Sentiment: 0.92)</b>，風險權重顯著攀升。相較於昨日聚焦在傳產如 TOTO (5332.JP) 的「AI 溢出效應」，今日市場出現了更具泡沫特徵的信號：<b>私募股權的散戶化 (Retailization of Private Equity)</b>。</p><h4>1. 警惕「民主化」包裝下的高位接盤</h4><p>Powerlaw 計劃讓散戶透過新基金投資 SpaceX 與 OpenAI 等未上市獨角獸，這標誌著投機狂熱已從公開市場延伸至估值更不透明的私募市場。歷史經驗顯示，當金融創新致力於將高門檻、高風險資產轉嫁給散戶時，往往處於信貸循環的末端。這與昨日提到的「投機擴散」一脈相承，但風險層級從二級市場外溢至一級市場。</p><h4>2. 核心資產的戰略套現</h4><p>NVIDIA (NVDA.US) 出清 Arm (ARM.US) 持股，雖為收購案後的餘波處理，但在當前高估值環境下，大股東與核心企業的「減持/出清」應被視為獲利了結的示範動作。這與散戶瘋狂湧入私有 AI 標的形成強烈對比。</p><h4>3. 風控建議：防禦性轉向</h4><p>建議投資者開始執行<b>階梯式獲利了結</b>。目前市場情緒已忽視流動性風險與估值錯配。建議增加<b>防禦性資產 (Defensive Assets)</b> 配置，如公用事業或高現金流地板的標的，避免在「散戶化基金」引發的最後衝刺中過度曝險。</p>
                         </div>
                     </div>
                 </section>
@@ -220,46 +214,89 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="軟體股賣壓後受惠者？分析師點名3檔資安股迎「ai大順風」"
-                            data-content="&amp;lt;p&amp;gt;據《yahoo finance》報導，在 ai 驅動的軟體股拋售潮中，資安類股於 2026 年表現低迷。不過，wedbush 分析師 dan ives 認為，這反而可能創造買進機會。&amp;lt;/p&amp;gt;
+                            data-category="風險控管" data-title="輝達出清剩餘arm持股 為無緣收購畫下句點"
+                            data-content="&amp;lt;p&amp;gt;《彭博》報導指出，輝達已出售手中最後一批 arm 持股，正式退出這家晶片技術公司的股東行列。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;ives 在周二 (17 日) 發布的研究報告中寫道，「隨著 ai 應用、資料與終端設備的保護需求顯著擴大，未來幾年 ai 將成為資安產業的一大順風。」&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;根據最新監管文件，輝達在去年第四季出售 110 萬股 arm 股票，依 arm 週二收盤價估算，價值約 1.4 億美元，出售後輝達對 arm 的持股降至零。此舉被視為替輝達 (nvda-us) 與 arm (arm-us) 長達數年的收購爭議畫下句點。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;儘管 ai 的普及引發企業軟體到房地產等多個產業商業模式的疑慮，ives 主張，ai 驅動的威脅崛起，使得資安支出成為企業不可削減的關鍵開支。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;輝達對此拒絕置評，arm 也未立即回應外界詢問。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;這項看多論點基於一個嚴峻現實：駭客利用 ai 發動更快速且更精密的攻擊，迫使企業必須加大投入防禦。wedbush 數據顯示，供應商今年將銷售目標上調最高達 30%，以因應日益強勁的需求管道。這代表即便企業整體軟體預算受到檢視，資安仍是優先項目。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;輝達在 2020 年宣布計畫以 400 億美元收購 arm，當時被認為有望成為晶片產業史上最大併購案之一，不過交易很快遭遇各國監管機構與產業客戶反對，市場普遍擔憂 arm 一旦被輝達收購，將影響其技術授權的中立性，並衝擊全球半導體供應鏈。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;儘管長期前景樂觀，投資人目前仍面臨一片慘綠。過去一個月主要產業 etf 表現疲弱，例如 first trust nasdaq cybersecurity etf(cibr) 下跌約 9%，wisdomtree cybersecurity fund(wcbr) 則下滑約 5%。今年以來則分別下跌約 3% 與 7%。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;2022 年 2 月，雙方正式宣布終止收購協議。arm 隨後在大股東軟銀集團 (softbank) 主導下推動上市計畫，並對外公開發行股票。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;多頭認為，隨著 ai 透過 api 與工作負載擴大企業「攻擊面」，這是一個世代級機會。但部分懷疑論者擔心，營收成長放緩與高估值可能拖累部分公司表現。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;報導指出，隨著 ai 熱潮推升輝達市值攀升，公司近年也積極透過投資擴大在科技產業的布局，目前持有英特爾 (intc-us)、諾基亞 (nok-us)、coreweave 以及新思科技 (snps-us) 等公司的股份。輝達曾表示，將運用手中現金加速推動 ai 運算普及與產業導入。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;空方主要憂慮在於，企業預算中的「ai 稅」可能擠壓其他 it 支出，使資安公司必須在有限資本中競爭。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;科技多頭 ives 點名三家公司為最有機會成為此趨勢下「贏家」。首先是 crowdstrike(crwd-us)，他稱其為產業的「黃金標準」。該公司認為，隨著駭客威脅升高，crowdstrike 的 falcon 平台正變得越發有效。儘管今年以來該資安公司股價已下跌約 11%，wedbush 仍維持優於大盤評級，並給予 600 美元目標價。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;第二家是 palo alto networks(panw-us)，儘管今年以來下跌逾 11%，仍是 wedbush 在 2026 年的首選之一。ives 認為，該公司推動的「平台化」策略，加上收購 cyberark，將在保護 ai 資料管道方面帶來關鍵變革。此策略旨在透過整合工具組合，減少企業面對多家供應商的疲勞，分析師認為此舉有助於搶占更大企業市占。該機構給予 225 美元目標價。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;最後，報告強調 zscaler(zs-us) 是值得持有的頂級標的，並給予 350 美元目標價。wedbush 指出，隨著企業 ai 流量大幅增加，該公司的「零信任 (zero trust)」策略正帶動穩健的訂閱成長。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;對投資人而言，ai 在此產業中不僅僅是流行語，而是一股強化高毛利、經常性收入模式的力量。ives 表示，隨著攻擊生命周期從「數周縮短至數小時」，市場對自動化、ai 驅動防禦的付費意願料將持續上升，「在這個 ai 驅動的 it 預算新世界中，強化資安支出的韌性」。&amp;lt;/p&amp;gt;
+&amp;lt;p class=&amp;quot;warning&amp;quot;&amp;gt;(本文不開放合作夥伴轉載)&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        其他
+                                        風險控管
                                     </span><span class="text-slate-400 text-xs">
-                                        下午03:00
+                                        下午04:01
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    軟體股賣壓後受惠者？分析師點名3檔資安股迎「AI大順風」
+                                    輝達出清剩餘Arm持股 為無緣收購畫下句點
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346364"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346430"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="AI產業" data-title="散戶機會來了！可透過新基金投資spacex與anthropic"
+                            data-content="&amp;lt;p&amp;gt;《彭博》報導，powerlaw (powerlaw 公司) 計劃在紐約直接上市，讓散戶投資人也能透過公開市場參與 openai、spacex、anthropic 與 anduril 等知名未上市企業的成長機會。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據該公司週二 (17 日) 聲明與監管文件，powerlaw 已向美國證券交易委員會 (sec) 遞交申請，仍待核准後才能推動掛牌交易。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;powerlaw 隸屬於 powerlaw capital group，背後平台由舊金山 akkadian ventures 經營，主打透過次級市場向既有股東收購未上市公司股份。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;公司表示，目前資產管理規模已超過 12 億美元，並已投入 3.55 億美元，投資全球 18 家最具價值的未上市科技公司，投資方式包括直接收購股份、向員工買入持股，或透過特殊目的公司 (spv) 與其他投資人共同參與。&amp;lt;/p&amp;gt;
+
+&amp;lt;figure&amp;gt;&amp;lt;img alt=&amp;quot;(圖片：shutterstock)&amp;quot; data-height=&amp;quot;506&amp;quot; data-mime=&amp;quot;image/jpeg&amp;quot; data-ratio=&amp;quot;1.5019762845849802&amp;quot; data-src-m=&amp;quot;https://cimg.cnyes.cool/prod/news/6346351/m/927707b6e9333d5fd26959c444628572.jpg&amp;quot; data-width=&amp;quot;760&amp;quot; src=&amp;quot;https://cimg.cnyes.cool/prod/news/6346351/l/927707b6e9333d5fd26959c444628572.jpg&amp;quot; srcset=&amp;quot;https://cimg.cnyes.cool/prod/news/6346351/l/927707b6e9333d5fd26959c444628572.jpg 1x,https://cimg.cnyes.cool/prod/news/6346351/xl/927707b6e9333d5fd26959c444628572.jpg 2x,https://cimg.cnyes.cool/prod/news/6346351/xxl/927707b6e9333d5fd26959c444628572.jpg 3x&amp;quot;&amp;gt;
+&amp;lt;figcaption&amp;gt;散戶機會來了！新基金可投資 spacex 與 anthropic&amp;nbsp;(圖片：shutterstock)&amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
+
+&amp;lt;p&amp;gt;近年多數高成長企業選擇留在私募市場，使一般投資人難以分享早期估值快速上升的報酬。以 openai 為例，該公司近期正洽談新一輪募資，估值最高可達 8,300 億美元，遠高於幾年前不到 300 億美元的水準。創投公司 jazz venture partners 管理合夥人 john spinale 表示，隨著私募市場資金池擴大，最好的公司不再急於上市，導致大眾投資人失去接觸高成長企業的機會。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;powerlaw 此次採取直接上市模式，與傳統 ipo 不同，並不發行新股募資，而是由現有股東出售既有股份。若獲監管核准，投資人可透過一般券商帳戶在公開市場買賣該基金股票，方式與一般上市股票相同。公司也表示，上市後若市場表現良好，未來可望進一步募集新資金，擴大投資部署。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;不過，powerlaw 也在招股文件中提醒風險。公司指出，封閉式投資公司常見的問題是股價可能長期以低於資產淨值 (nav) 的折價交易，意味即使投資組合表現良好，股價仍可能落後。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;此外，未上市公司資訊披露有限，投資人可能無法取得完整財務報表或營運細節。根據 sec 文件，powerlaw 去年底的資產淨值約為 4.75 億美元，公司並計畫向股東收取 2.5% 的管理費。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;市場近年也出現多種讓散戶接觸私募市場的投資工具，但相關風險同樣受到關注。報導提到，投資平台 linqto 近期破產，凸顯透過 spv 讓散戶投資未上市公司可能帶來的流動性與估值不透明問題。彭博資訊分析師 james seyffart 指出，私募資產與公開市場正加速融合，投資人越來越希望透過公開市場工具取得未上市企業曝險，但不同工具各有優缺點，投資前仍須審慎評估。&amp;lt;/p&amp;gt;
+
+&amp;lt;p class=&amp;quot;warning&amp;quot;&amp;gt;(本文不開放合作夥伴轉載)&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        AI產業
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午04:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    散戶機會來了！可透過新基金投資SpaceX與Anthropic
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(tech)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346351"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -282,16 +319,7 @@
                                     <span>
                                         AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('黃金')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        黃金
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        2
                                     </span>
                                 </button>
                                 
@@ -299,6 +327,24 @@
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         美元
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        2
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('輝達')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        輝達
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('半導體')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -342,7 +388,7 @@
                 labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.88],
+                    data: [0.48,0.88,0.1,0.92],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -363,7 +409,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.45,0.92,0.85,0.6,0.88],
+                    data: [0.5,0.95,0.85,0.7,0.9],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -378,7 +424,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.85,"finance":0.2,"manufacturing":0.55,"service":0.15};
+        const sectorData = {"tech":0.95,"finance":0.8,"manufacturing":0.4,"service":0.5};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
