@@ -84,33 +84,31 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 10:00
+                        2026年2月18日星期三 · 更新於 11:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('S&amp;P 500')"
+                            <button onclick="searchKeyword('亞馬遜')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #S&amp;P 500
+                                #亞馬遜
                                     
-                                        <span class="text-xs ml-1 opacity-70">(SPX)</span>
+                                        <span class="text-xs ml-1 opacity-70">(AMZN-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Apple Inc.')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Apple Inc.
+                            <button onclick="searchKeyword('蘋果')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #蘋果
                                     
-                                        <span class="text-xs ml-1 opacity-70">(AAPL)</span>
+                                        <span class="text-xs ml-1 opacity-70">(AAPL-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('NVIDIA')"
+                            <button onclick="searchKeyword('美國聯準會')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #NVIDIA
+                                #美國聯準會
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA)</span>
-                                        
                             </button>
                             
                             <button onclick="searchKeyword('10年期美債')"
@@ -119,10 +117,12 @@
                                     
                             </button>
                             
-                            <button onclick="searchKeyword('川普政府')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #川普政府
+                            <button onclick="searchKeyword('輝達')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #輝達
                                     
+                                        <span class="text-xs ml-1 opacity-70">(NVDA-US)</span>
+                                        
                             </button>
                             
                     </div>
@@ -135,7 +135,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.82
+                                    0.2
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -153,11 +153,114 @@
                     </div>
                 </section>
 
-                <!-- ... (Search/Filter Section) ... -->
+                <div class="sticky top-4 z-50 mb-10">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-center gap-4 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/50 w-fit mx-auto">
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            
+                                <button onclick="filterCategory('全部')" data-filter="全部"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-indigo-600 text-white border-indigo-600">
+                                    全部
+                                </button>
+                                
+                                <button onclick="filterCategory('科技')" data-filter="科技"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">
+                                    科技
+                                </button>
+                                
+                                <button onclick="filterCategory('金融')" data-filter="金融"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">
+                                    金融
+                                </button>
+                                
+                                <button onclick="filterCategory('社會')" data-filter="社會"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">
+                                    社會
+                                </button>
+                                
+                                <button onclick="filterCategory('其他')" data-filter="其他"
+                                    class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200">
+                                    其他
+                                </button>
+                                
+                        </div>
+                        <div class="relative w-full md:w-48 transition-all focus-within:w-64">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><svg
+                                    class="w-4 h-4 text-slate-400" aria-hidden="true" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg></div>
+                            <input type="text" id="search-input" oninput="searchNews(this.value)"
+                                class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-200 rounded-full bg-slate-50 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white transition-all shadow-inner"
+                                placeholder="搜尋新聞...">
+                        </div>
+                    </div>
+                </div>
 
-                <!-- ... (Summary Section) ... -->
+                <section class="mb-12 animate-fade">
+                    <div
+                        class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
+                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
+                            <h3>風險控管報告：警惕「高昂代價的夢想」——AI 泡沫與 4% 債息的雙重擠壓</h3><p>今日市場情緒雖隨亞馬遜止跌回穩，但隱含的結構性風險已顯露無疑。身為風險控管專家，必須提醒投資者：當市場從對 AI 的「全能敘事」轉向對其「龐大資本支出」的務實檢討時，這正是泡沫邊緣的警訊。</p><h4>1. 從「盲目擴張」轉向「成本焦慮」：</h4><p>亞馬遜連九跌、市值蒸發 4,500 億美元的核心原因在於：AI 資本支出（CapEx）的高額投入與短期投資報酬率（ROI）的不確定性。昨日市場尚在歡慶 Edge AI 的應用，今日卻面臨現實的清算，這反映出資金對高估值科技股的容忍度已降至臨界點。</p><h4>2. 估值天花板：美債 4.0% 的重力：</h4><p>10年期美債殖利率逼近 4.0%，這不僅僅是一個數字，更是科技股估值的「引力牆」。在高利率環境下，成長股的現金流折現（DCF）價值將被大幅壓縮。亞馬遜的止跌雖緩解了短期恐慌，但並未消除宏觀環境對高倍數成長股的負面壓力。</p><h4>3. 決策建議：獲利了結，佈防防禦性資產：</h4><p>建議投資者目前的策略應從「追求 Beta」轉向「保全 Alpha」。對於已實現獲利的 AI 相關標的，建議進行<b>適度獲利了結（Take Profit）</b>。配置重心應向具有強勁現金流及低負債比的<b>防禦性資產（如公用事業或必需消費品）</b>轉移，以應對隨時可能到來的劇烈回檔。</p>
+                        </div>
+                    </div>
+                </section>
 
-                <!-- ... (News Grid) ... -->
+                <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade"
+                    style="animation-delay: 0.1s;">
+                    
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="風險控管" data-title="亞馬遜終止連九跌 此前市值蒸發超過4500億美元"
+                            data-content="&amp;lt;p&amp;gt;亞馬遜 (amzn-us) 週二股價收漲逾 1%，結束連續 9 個交易日下跌走勢，終止一波罕見的長期回檔。此前 9 天跌勢讓亞馬遜市值蒸發超過 4,500 億美元，投資人對公司大幅提高 ai 資本支出的計畫感到憂心，成為拋售主因。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據市場數據，亞馬遜股價在 2 月 2 日至上週五期間累計下跌約 18%，創下自 2006 年以來最長連跌紀錄。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;這波拋售與亞馬遜本月稍早公布的第四季財報密切相關，財報中最受關注的焦點之一是公司今年資本支出大幅上修。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;亞馬遜在財報中預估，2026 年資本支出將達 2,000 億美元，年增近 60%，且較華爾街預期高出超過 500 億美元。公司表示，這筆支出大多將投入 ai 相關計畫，包括資料中心、晶片與網路設備等基礎設施。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;在科技巨頭全面衝刺 ai 的背景下，投資人近期對龐大支出是否能帶來相應回報的疑慮升溫，擔心自由現金流可能遭到壓縮。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;市場估算，alphabet (googl-us)、微軟 (msft-us)、meta (meta-us) 與亞馬遜今年資本支出合計可能達 7,000 億美元，顯示 ai 基礎建設競賽已進入高投入階段。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;週二交易中，alphabet (goog-us) 與微軟 (msft-us) 股價均下跌逾 1%，meta (meta-us) 則小幅收黑。微軟與 alphabet 也連續第五個交易日走弱，反映市場對 ai 投資報酬的不安情緒仍未消退。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;面對市場質疑，亞馬遜執行長賈西 (andy jassy) 在財報電話會議中強調，公司對大規模投入 ai 仍具高度信心，並表示相關投資將「帶來強勁的投入資本報酬率」。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;亞馬遜雲端服務 (aws) 執行長 matt garman 也在近期受訪時指出，提高資本支出將有助於公司把握雲端領域的 ai 機會。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;華爾街分析師普遍認為，亞馬遜目前已進入「證明模式」。wedbush 在研究報告中指出，支出上升仍將成為股價短期壓力來源，投資人可能需要看到更具體的回報，才會重新恢復信心。該機構維持對亞馬遜的「優於大盤」評等。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;citizens 董事總經理兼研究分析師 andrew boone 則表示，儘管股價近期大幅修正，他仍看好 aws 後續成長。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;他指出，賈西提到亞馬遜預計在 2027 年前將資料中心產能擴大一倍，這項訊息被市場低估，未來隨著更多產能上線，aws 營收增速可望加快。&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        風險控管
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午11:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    亞馬遜終止連九跌 此前市值蒸發超過4500億美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346368"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                </div>
 
                 
                     <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
@@ -171,33 +274,6 @@
                                     <span>
                                         AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('川普')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        川普
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('股市')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        股市
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('關稅')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        關稅
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
                                 </button>
@@ -206,24 +282,6 @@
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         美元
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('半導體')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        半導體
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('降息')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        降息
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -264,15 +322,15 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ,
+                labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: ,
-                    borderColor: '#dc2626',
-                    backgroundColor: '#dc262620',
+                    data: [0.48,0.88,0.1,0.2],
+                    borderColor: '#64748b',
+                    backgroundColor: '#64748b20',
                     borderWidth: 3,
                     pointBackgroundColor: '#fff',
-                    pointBorderColor: '#dc2626',
+                    pointBorderColor: '#64748b',
                     pointRadius: 5,
                     fill: true,
                     tension: 0.4
@@ -288,7 +346,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: ,
+                    data: [0.3,0.2,0.4,0.5,0.3],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -303,7 +361,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = ;
+        const sectorData = {"tech":-0.15,"finance":0.1,"manufacturing":0,"service":-0.05};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
