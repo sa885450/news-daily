@@ -84,55 +84,45 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 18:00
+                        2026年2月18日星期三 · 更新於 21:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('新黃金公司')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #新黃金公司
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(NGD-US)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('台積電')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #台積電
                                     
                                         <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Amazon')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Amazon
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(AMZN)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Meta')"
+                            <button onclick="searchKeyword('FactSet')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Meta
+                                #FactSet
                                     
-                                        <span class="text-xs ml-1 opacity-70">(META)</span>
+                            </button>
+                            
+                            <button onclick="searchKeyword('黃金現貨')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #黃金現貨
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(GC=F)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Anthropic')"
+                            <button onclick="searchKeyword('聯準會')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Anthropic
+                                #聯準會
                                     
-                            </button>
-                            
-                            <button onclick="searchKeyword('富士通')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #富士通
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(6702.T)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('TOTO')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #TOTO
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(5332.JP)</span>
-                                        
                             </button>
                             
                     </div>
@@ -145,7 +135,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.88
+                                    0.92
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -211,7 +201,7 @@
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>【風控深度報告】輝煌巔峰下的冷思考：當「紀錄」成為常態，即是警鐘</h3><p>市場今日維持在<b>極度貪婪區間 (Sentiment: 0.88)</b>。相較於昨日聚焦私募股權散戶化的「流動性警訊」，今日則進入了「利多共識極大化」的技術性高位風險期。</p><h4>1. 警惕「利多出盡」：台積電紀錄的雙面性</h4><p>台積電 (2330.TW) 10 月營收創歷史新高，標誌著 AI 硬體需求達到巔峰。然而，從風控視角看，當市場對「破紀錄」已產生心理減敏，且估值已充分反應未來三季預期時，任何微小的成長放緩都可能觸發恐慌性回測。</p><h4>2. 資本開支的擴張邊界：從算力到人文</h4><p>Meta 與 Amazon 持續強化算力投入，但 Anthropic 總裁對「人文學科」的強調，反映出 AI 競爭已從純粹的硬體堆疊（Scale Law）轉向應用深度的「最後一哩路」。當矽谷巨頭開始討論軟性價值，往往暗示技術溢價的增長斜率即將放緩。</p><h4>3. 風控決策建議：防禦性避險與獲利了結</h4><p>目前市場處於「極度超買」且「情緒過熱」狀態。<b>建議策略：</b><br>① 對於 AI 權值股（如台積電、美股巨頭）進行 15-20% 的階梯式獲利了結。<br>② 資金轉向具備實質 AI 自動化轉型能力、且估值較低的「防禦性傳產」（如日本富士通、TOTO），這些實體具備更強的抗泡沫特性。</p>
+                            <h3>【風控預警深度報告】盈餘下修初現：警惕「集體貪婪」下的防禦性位移</h3><p>今日市場情緒攀升至 <b>0.92 (極度貪婪)</b>。相較於昨日聚焦於台積電 (2330.TW) 營收創紀錄後的「利多出盡」風險，今日最新數據顯示出一個更為隱蔽的警訊：<b>獲利預估的實質下修</b>。</p><h4>1. 從「成長共識」到「預期調整」的轉折</h4><p>新黃金公司 (NGD-US) 的 EPS 預估遭 FactSet 調降，這標誌著即便在通膨預期抬頭、金價高檔的背景下，企業成本壓力與經營效率仍面臨考驗。當市場處於高位時，這類微幅的盈餘下修往往是機構投資者開始<b>獲利了結</b>的藉口。</p><h4>2. 泡沫特徵：技術性指標的超買極限</h4><p>當前技術指標顯示，科技板塊與大盤已進入嚴重超買區間。隨着台積電利多被完全消化，市場缺乏新的「噴發級」動能。此時任何個股預期的下修，都可能引發多頭連鎖反應式的槓桿去化。</p><h4>3. 決策建議：轉向防禦性資產</h4><p>風險控管專家建議：目前不應再盲目追高 AI 或高成長標的。應採取<b>適度減持 (Trim Positions)</b> 策略，鎖定利潤，並將資金配置向<b>防禦性資產 (如實體黃金或債券)</b> 移動，以因應隨時可能到來的劇烈回測。應對邏輯應從「追求 Beta 收益」轉向「本金防禦」。</p>
                         </div>
                     </div>
                 </section>
@@ -220,42 +210,25 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="半導體" data-title="ai時代最不能忽視什麼？anthropic總裁：人文學科"
-                            data-content="&amp;lt;p&amp;gt;anthropic 總裁 daniela amodei 近日受訪表示，隨著人工智慧 (ai) 快速進化，人文學科的重要性正被重新凸顯，甚至「比以往任何時候都更重要」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;她在接受 abc news 訪問時指出，當 ai 在 stem (科學、技術、工程、數學) 領域展現強大能力之際，人類理解自我、歷史與社會的能力，反而成為未來最關鍵的價值。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;amodei 本身主修文學。她強調，在 ai 變得更聰明、更能完成大量任務的世界裡，「那些讓我們成為人類的特質」將更加不可取代，包括理解自身行為與情感的來源、洞察人類歷史與文化脈絡，以及建立價值判斷的能力。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;她指出，批判性思考將在未來職場變得更重要，而不是更不重要。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;她的觀點也反映出 ai 產業內部正在出現的新共識。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;google labs 旗下 notebooklm 編輯總監 steven johnson 近期也向《business insider》表示，大型語言模型的普及，正帶來一場「人文學科的復仇」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在 ai 帶動的職涯討論中，傳統建議「學寫程式」的聲量也逐漸出現轉變。報導指出，如今或許更貼近現實的建議將是「學會閱讀」，意指培養理解力、判斷力與溝通能力的重要性正在上升。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;amodei 也談到 anthropic 的用人策略。她表示，公司在招募時同樣重視員工的人際互動能力與溝通技巧，並認為「善良與同理心」以及願意「幫助他人」是理想特質。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;她強調，無論科技如何進步，人們依然偏好與人互動，而這也凸顯人類特質在 ai 時代的價值。&amp;lt;/p&amp;gt;
-">
+                            data-category="礦業" data-title="鉅亨速報 - factset 最新調查：新黃金公司(ngd-us)eps預估下修至0.62元，預估目標價為13.10元"
+                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共6位分析師，對新黃金公司(ngd-us)做出2025年eps預估：中位數由0.63元下修至0.62元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.10元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;※本篇提及eps與營收的單位均為「美元」&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估eps&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;預估值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.68(0.68)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.67&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.25&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.45(0.45)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.92&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.16&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.6(0.6)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.18&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.62(0.63)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.4&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.27&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估營收&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;預估值&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.74億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.87億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.99億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.54億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.18億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.57億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.63億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.41億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.60億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.20億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史獲利表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;項目&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2021年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2022年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2023年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2024年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;eps&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.21&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.10&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.09&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.14&amp;lt;/td&amp;gt;&amp;lt;/">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        半導體
+                                        礦業
                                     </span><span class="text-slate-400 text-xs">
-                                        下午06:00
+                                        下午09:01
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    AI時代最不能忽視什麼？Anthropic總裁：人文學科
+                                    鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.62元，預估目標價為13.10元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345746"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346623"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -273,10 +246,19 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('AI')"
+                                <button onclick="showKeywordTrend('黃金')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        AI
+                                        黃金
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('美元')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -320,7 +302,7 @@
                 labels: ["02-15","02-16","02-17","02-18"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.88],
+                    data: [0.48,0.88,0.1,0.92],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -341,7 +323,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.5,0.92,0.95,0.6,0.85],
+                    data: [0.65,0.95,0.7,0.75,0.98],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -356,7 +338,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.95,"finance":0.55,"manufacturing":0.45,"service":0.5};
+        const sectorData = {"tech":0.9,"finance":0.6,"manufacturing":0.4,"service":0.5};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
