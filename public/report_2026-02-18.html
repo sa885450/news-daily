@@ -84,16 +84,40 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月18日星期三 · 更新於 08:00
+                        2026年2月18日星期三 · 更新於 09:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('Apple')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Apple
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(AAPL.US)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('NVIDIA')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #NVIDIA
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('研華')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #研華
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(2395.TW)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('樺漢')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #樺漢
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(6414.TW)</span>
                                         
                             </button>
                             
@@ -101,31 +125,7 @@
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #Meta
                                     
-                                        <span class="text-xs ml-1 opacity-70">(META)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('Apple')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Apple
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(AAPL)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('美元指數')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #美元指數
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(DXY)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('可口可樂歐洲')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #可口可樂歐洲
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(CCEP)</span>
+                                        <span class="text-xs ml-1 opacity-70">(META.US)</span>
                                         
                             </button>
                             
@@ -145,7 +145,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.48
+                                    0.62
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -181,32 +181,14 @@
                                     <span>
                                         AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        3
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('美元')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        美元
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         2
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('川普')"
+                                <button onclick="showKeywordTrend('Nvidia')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        川普
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('股市')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        股市
+                                        Nvidia
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -221,46 +203,10 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('關稅')"
+                                <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        關稅
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('歐元')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        歐元
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('澳幣')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        澳幣
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('匯率')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        匯率
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('降息')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        降息
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
