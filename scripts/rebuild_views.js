@@ -391,7 +391,7 @@ const content = `<!DOCTYPE html>
                 btn.classList.remove('bg-red-50', 'text-red-600');
                 btn.classList.add('bg-indigo-50', 'text-indigo-600');
             } else {
-                const text = document.getElementById('summary-content').innerText; // 取得純文字
+                const text = document.getElementById('summary-content').textContent; // 取得純文字
                 const u = new SpeechSynthesisUtterance(text);
                 u.lang = 'zh-TW';
                 u.rate = 1.0;
