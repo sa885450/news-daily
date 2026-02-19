@@ -34,6 +34,12 @@ const STOP_WORDS = new Set([
  * @returns {Array<{word: string, count: number}>} Top N keywords
  */
 function analyze7DayKeywords(days = 7) {
+    // 🟢 新增：讀取環境變數中的黑名單
+    if (process.env.KEYWORD_BLACKLIST) {
+        const blacklist = process.env.KEYWORD_BLACKLIST.split(/[,\uFF0C]/).map(w => w.trim()).filter(w => w);
+        blacklist.forEach(w => STOP_WORDS.add(w));
+    }
+
     const timeLimit = new Date();
     timeLimit.setDate(timeLimit.getDate() - days);
 
