@@ -89,52 +89,44 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月19日星期四 · 更新於 12:00
+                        2026年2月19日星期四 · 更新於 13:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('輝達')"
+                            <button onclick="searchKeyword('台積電')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #輝達
+                                #台積電
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('奇鋐')"
+                            <button onclick="searchKeyword('蘋果')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #奇鋐
+                                #蘋果
                                     
-                                        <span class="text-xs ml-1 opacity-70">(3017.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(AAPL-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('雙鴻')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #雙鴻
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(3324.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('健策')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #健策
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(3653.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('巴菲特')"
+                            <button onclick="searchKeyword('川普')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #巴菲特
+                                #川普
                                     
                             </button>
                             
-                            <button onclick="searchKeyword('聯準會')"
+                            <button onclick="searchKeyword('三星')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #聯準會
+                                #三星
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(005930.KS)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('伊朗')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #伊朗
                                     
                             </button>
                             
@@ -148,7 +140,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.95
+                                    0.88
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -213,8 +205,17 @@
                 <section class="mb-12 animate-fade">
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
-                            <h3>【泡沫警報：液冷沸騰下的冷靜決策】</h3><p>今日市場情緒雖從昨日 0.99 的極致窒息感小幅修正，但仍維持在 <b>0.95 的高位貪婪區間</b>。新聞面聚焦於 NVIDIA 下一代 Vera Rubin 平台全面導入「全液冷」技術，這雖驗證了 AI 基礎建設的剛性需求，但在風險控管視角下，這類『技術必然性』的敘事往往是泡沫末端最昂貴的催化劑。</p><h4>1. 增量分析：從 AI 幻覺轉向硬體狂熱</h4><p>相較於昨日對 Google、Meta 等軟體龍頭的擔憂，今日資金進一步集中於散熱三雄（奇鋐、雙鴻、健策）。當市場將『全液冷』視為唯一救贖時，相關股價已提前透支 2025 年甚至 2026 年的獲利預期。這種<b>過度擁擠的交易</b>，與巴菲特轉向防禦性資產（如紐約時報）的警示形成鮮明對比。</p><h4>2. 風險建議：適度減倉，關注防禦</h4><p>目前市場處於『最後一公分』的誘多階段。建議投資人針對散熱及 AI 硬體板塊進行 <b>15-20% 的獲利了結</b>。防禦性資產的配置重要性已超越進攻，應特別關注現金流穩健、受貨幣政策干預較小的防禦性標的，避免在液冷技術『沸騰』時，資產淨值卻因系統性崩塌而蒸發。</p>
+                        <button onclick="toggleSpeech()" id="ttsBtn"
+                            class="absolute top-6 right-6 p-2 rounded-full bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors z-20"
+                            title="朗讀摘要">
+                            <svg id="ttsIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg" id="summary-content">
+                            <h3>【黑天鵝與防禦性轉向：規避過熱溢價】</h3><p>今日市場情緒雖仍維持在 <b>0.88 的高度貪婪區間</b>，但相較於昨日『液冷沸騰』的純粹狂熱，市場結構出現明顯的<b>防禦性轉向</b>。雖然成熟製程價格反彈顯示產業底蘊堅實，但地緣政治風險與 AI 資本支出質疑正成為修正的催化劑。</p><h4>1. 增量分析：從「技術狂信」轉向「地緣規避」</h4><p>昨日市場沈浸於 NVIDIA 液冷技術的剛性需求，今日資金流向出現顯著分歧。蘋果成為避險首選（Safe Haven），反映市場對高昂 AI CAPEX 獲利能力的懷疑。更嚴峻的是，中東地緣衝突風險（美國可能空襲伊朗）正處於一觸即發的狀態，這與昨日單純的技術面過熱不同，增加了巨型「黑天鵝」的可能性。</p><h4>2. 風控決策建議：適度減倉與防禦配置</h4><p>當市場在 0.9 以上高位盤整時，任何地緣利空都會被放大。<b>建議操作：</b>(1) 對於昨日提到的散熱三雄等高乖離率個股，應嚴格執行獲利了結，避免在泡沫頂端承擔不對稱風險。(2) 配置向具備現金流保護的 Apple 或具定價權的台積電傾斜。(3) 增持避險資產以應對本週末可能爆發的中東軍事衝突，切勿在極度貪婪時刻盲目追價。</p>
                         </div>
                     </div>
                 </section>
@@ -223,44 +224,151 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="科技" data-title="〈馬年景氣展望〉液冷散熱趨勢已定 奇鋐、雙鴻及健策大啖商機"
-                            data-content="&amp;lt;p&amp;gt;輝達 (nvda-us) 新一代平台 vera rubin 預計今年下半年推出，原先 gb300 採用液冷與氣冷散熱併行，而 vera rubin 將採全液冷散熱，液冷散熱儼然成為主流趨勢。散熱廠奇鋐 (3017-tw)、雙鴻 (3324-tw) 與健策 (3653-tw) 可望大啖液冷散熱商機。&amp;nbsp;&amp;lt;/p&amp;gt;
+                            data-category="其他" data-title="〈觀察〉三大關鍵因素助攻 成熟製程價格迎反彈"
+                            data-content="&amp;lt;p&amp;gt;成熟製程產業歷經逾 2 年修正後，市場近期明顯回溫，業界指出，本波成熟製程走出谷底，背後有三大關鍵因素推動，包括某種程度的產能排擠效應、終端需求回溫，以及 ai 帶動電源應用放量，在三大關鍵因素匯聚下，產業結構逐步好轉。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;輝達執行長黃仁勳先前指出，下一代全新 vera rubin 平台不再採用冷水機組 (chiller)，改全面採用液冷散熱架構。對此奇鋐表示，冷水機將使能耗提升，可能影響晶片耐受度與效能，因此新一代 vera rubin 平台本就沒有使用冷水機組的散熱解決方案，雙鴻也提到，根據黃仁勳說法，可以看出 ai 伺服器往液冷散熱方向發展的趨勢不變。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;成熟製程供給端近期出現縮減的聲音，領先的晶圓代工廠包括台積電 (2330-tw)(tsm-us) 與三星，近年將資源集中於高獲利的先進製程與先進封裝領域，並預計縮減成熟製程擴產規模。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;gpu 方面，隨著 gb300 在第一季放量，將帶動奇鋐水冷板及分岐管出貨升溫，不過第一季進到蘋果 (aapl-us)iphone 等消費產品淡季，法人預估奇鋐第一季營收僅將成長個位數百分比。至於下一代 vera rubin 平台，則預計最快在 6 月出貨，挹注下半年營運。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;研調機構 trendforce 預估，台積電預計於 2027 年前關閉部分 8 吋廠，三星也計劃今年下半年關閉位於南韓器興的 8 吋晶圓廠。由於這些大廠的退場規模遠超過中芯國際或世界先進的零星擴產，造成全球 8 吋總產能將在 2026 年減少 2.4%。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;奇鋐 asic 展望亦正向，法人指出，google(goog-us) 樂觀看待 tpu 出貨展望，今年預計年增超過 7 成，明年將倍增，奇鋐身為水冷板供應商之一，有望受惠 google tpu 強勁需求，相關貢獻將逐漸顯現。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;隨著大廠資本支出轉向，以及非紅供應鏈的成熟製程新增供給有限，形成某種程度上的「產能排擠效應」，也有助市場供需趨於平衡，為價格回升提供關鍵支撐。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;奇鋐持續擴充越南產能，總投資金額將上看 200 億元，三期已於去年第四季開工，預計今年完工。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;其次，需求端方面，終端市場歷經長達兩年的庫存調整後，各應用去化接近尾聲，儘管消費性電子仍未全面反彈，同時又受記憶體漲價影響，但仍有不少急單，加上車用、工控相關需求緩步回溫，成熟製程接單能見度也有所改善。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;雙鴻第一季也將受惠 gb300 出貨帶動，法人觀察，雙鴻身為美超微 (smci-us) 水冷產品供應商之一，而美超微今年 gb300 及 hgx 出貨動能強勁，出貨可望優於預期，將帶動水冷板及分岐管出貨，法人預估雙鴻第一季營收可望季增雙位數百分比。除 gpu，雙鴻在 asic 水冷板與水對水 cdu 也有所斬獲，相關效益將逐步發酵。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;此次成熟製程的漲價潮由中國晶圓廠率先在去年第四季發動，調漲幅度介於 5%-20%，成為產業觸底訊號，今年第一季起，台系晶圓代工廠亦陸續跟進，包括世界先進 (5347-tw)、力積電 (6770-tw) 都已釋出調漲訊號，也讓市場議價氛圍逐步轉強。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;董事長林育申指出，今年包含水冷板、分岐管以及 in-row cdu(列間冷卻分配單元)&amp;nbsp;出貨都將成長。其中，又以 in-row cdu 成長幅度最大，已斬獲 2000&amp;nbsp;台的相關訂單。法人也看好，在各液冷產品帶動下，今年營收有望成長 50%。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;第三個關鍵因素則是來自 ai 基礎建設擴張所帶動的電源管理需求。隨著 ai 伺服器功耗大幅提升，資料中心電源架構升級為 hvdc，對電源管理 ic、mosfet 與各類功率元件需求同步攀升，而相關產品多採用 8 吋或 12 吋成熟製程生產。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;另外，雙鴻泰國廠一期已在去年第四季開始投產，目前產能得以支應客戶需求，預計今年中二期將加入量產行列，主要因應下一代伺服器產品及 asic 需求。&amp;nbsp;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;健策主要動能則來自其技術門檻高的均熱片，且身為輝達 gpu 均熱片供應商，法人指出，原物料上揚將同步推升均熱片價格，且新一代 vera rubin 均熱片也因晶片尺寸放大、製程加倍，價格將較前代大幅成長。在相關需求暢旺帶動下，法人看好，健策今年營收有望年增雙位數。&amp;nbsp;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;奇鋐、雙鴻及健策 1 月營收表現相當亮眼，奇鋐 1 月營收 170.03 億元，月增 21.96%，年增 1.5 倍；雙鴻 1 月營收 30.42 億元，月增 7.81%，年增 1.22 倍；健策 1 月營收 18.73 億元，月增 0.16%，年增 29.43%。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;整體來看，隨著供給端的產能逐步收斂、需求端在庫存修正後回溫，再加上 ai 應用擴張推升電源相關需求，三大因素交織之下，成熟製程產業逐步擺脫過去兩年的低迷氛圍，價格也重新回到上升軌道。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        科技
+                                        其他
                                     </span><span class="text-slate-400 text-xs">
-                                        下午12:00
+                                        下午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    〈馬年景氣展望〉液冷散熱趨勢已定 奇鋐、雙鴻及健策大啖商機
+                                    〈觀察〉三大關鍵因素助攻 成熟製程價格迎反彈
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(tw_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345023"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6342369"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="科技" data-title="蘋果股票成資金「避風港」！ai資本開支飆升、美股七巨頭股價承壓"
+                            data-content="&amp;lt;p&amp;gt;在人工智慧（ai）受質疑、科技股動盪之際， iphone 製造商蘋果 (&amp;lt;a data-symbol-template=&amp;quot;uss:aapl:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;aapl-us&amp;lt;/a&amp;gt;) 似乎成為市場的「避險」選擇。在過去一年間，蘋果股價累計上揚約 7.9%，漲勢領先多家大型雲端運算業者，包括微軟 (&amp;lt;a data-symbol-template=&amp;quot;uss:msft:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;msft-us&amp;lt;/a&amp;gt;) 、亞馬遜 (&amp;lt;a data-symbol-template=&amp;quot;uss:amzn:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;amzn-us&amp;lt;/a&amp;gt;) 與 meta 平台 (&amp;lt;a data-symbol-template=&amp;quot;uss:meta:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;meta-us&amp;lt;/a&amp;gt;) 。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據《巴隆周刊》報導，週二（17 日），蘋果在「美股七巨頭」中表現最為亮眼，漲幅居首，凸顯投資人正將資金轉向蘋果，同時對大舉投入 ai 的科技巨頭保持觀望態度。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;過去一段時間，華爾街曾對大型科技公司大規模投入 ai 抱持高度期待，但隨著資本開支不斷攀升，市場對投資回報的擔憂也日益升溫。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;同時，隨著投資人開始思考，ai 是否可能取代目前由專業軟體完成的多項工作，軟體類股近期明顯承壓。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;盈透證券首席策略師 steve sosnick 指出，超大型科技公司向來被視為「現金流機器」，能以相對較低的固定成本創造龐大利潤。然而，ai 投資正在改變這一模式，大量資本支出正侵蝕自由現金流，並為企業資產負債表增添更多固定資產與固定成本。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據市場預估，微軟、alphabet、亞馬遜與 meta 今年合計資本支出將達約 6,500 億美元。隨著開支持續走高，投資人對其未來回報的疑慮加劇。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;數據顯示，美股七巨頭 etf(&amp;lt;a data-symbol-template=&amp;quot;uss:mags:stock:etf&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;mags-us&amp;lt;/a&amp;gt;) 自去年 10 月 29 日創下收盤歷史高點以來已下跌 11%。&amp;lt;/p&amp;gt;
+
+&amp;lt;h6&amp;gt;蘋果成為「避風港」&amp;lt;/h6&amp;gt;
+
+&amp;lt;p&amp;gt;相較之下，蘋果的表現顯得相對穩健。過去 12 個月，蘋果股價上漲 7.9%，跑贏多家超大規模雲端業者。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;週二當天，蘋果股價上漲 3.2%；微軟下跌 1.1%，alphabet 下跌 1.2%，特斯拉 (&amp;lt;a data-symbol-template=&amp;quot;uss:tsla:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;tsla-us&amp;lt;/a&amp;gt;) 下跌 1.6%，meta 小跌 0.1%；亞馬遜與輝達 (&amp;lt;a data-symbol-template=&amp;quot;uss:nvda:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;nvda-us&amp;lt;/a&amp;gt;) 則分別上漲 1.2%；週三（18 日），蘋果股價收盤也再上漲 0.18%。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;投資基金 gabelli funds 的研究分析師 ryuta makino 指出，市場確實將蘋果視為避開 ai 巨額投入與回報不確定性的「避風港」，因為與其他雲端業者相比，蘋果的資本開支相對溫和。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;數據顯示，蘋果 2025 年資本開支約為 127 億美元，華爾街預估 2026 年約為 129 億美元。相較之下，meta 預估全年資本開支將落在 1,150 億至 1,350 億美元之間，差距顯著。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;此前，蘋果在 ai 投入上相對保守，使其處於劣勢。華爾街曾期待蘋果推出具突破性的 ai 更新，以提振現有用戶並吸引新客群，但部分備受期待的 ai 功能延後推出，現有技術表現也未能完全滿足市場期待。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;不過，蘋果如今似乎正轉向與重金投入 ai 的企業合作。今年 1 月，蘋果宣布與 alphabet 達成 ai 合作協議，下一代蘋果基礎模型將基於 google 的 gemini 模型與雲端技術打造。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;sosnick 評論指出，蘋果仍然是獲利與現金流的巨頭，手握數千億美元現金，卻未將資金大舉投入 ai 建設，在當前市場環境下反而成為優勢。&amp;lt;/p&amp;gt;
+
+&amp;lt;h6&amp;gt;蘋果成本壓力與新品觀察&amp;lt;/h6&amp;gt;
+
+&amp;lt;p&amp;gt;然而，蘋果前景並非毫無風險。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;隨著 ai 相關記憶體需求激增、供給吃緊，用於蘋果產品的晶片成本正上升，對公司利潤率構成壓力。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;同時，蘋果執行長庫克（tim cook）也未排除調漲售價的可能。分析指出，在生活成本壓力仍高的環境下，漲價恐削弱消費需求。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;此外，在 ai 技術布局方面，蘋果仍被視為相對落後。市場與用戶都期待看到更具吸引力的創新。&amp;lt;/p&amp;gt;
+
+&amp;lt;p">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        科技
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午01:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    蘋果股票成資金「避風港」！AI資本開支飆升、美股七巨頭股價承壓
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346814"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="國際政經" data-title="美媒：美軍最快周末空襲伊朗 但川普尚未做最終決定"
+                            data-content="&amp;lt;p&amp;gt;根據《cnn》等美媒報導，美軍已做好最快於本周末對伊朗發動軍事打擊的準備。雖然美國總統川普尚未做出最終授權決定，但白宮已獲悉，隨著近日中東地區海空軍力的顯著集結，美軍隨時可以行動。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;目前，美軍在當地的兵力集結已達高峰。最先進的「福特號」航空母艦戰鬥群 (uss gerald ford) 預計最快於本周末抵達中東，而「林肯號」 (uss abraham lincoln) 及其戰艦編隊已在該區部署。此外，超過 50 架戰鬥機與數十架空中加油機正從英國基地移往中東更近的位置。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;五角大廈為了因應可能的報復行動，正同步撤離部分駐中東人員。與此同時，以色列國防官員透露，以軍也正準備與美國聯手發動攻擊，這場潛在的聯合攻勢可能持續數周。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;儘管軍事選項已箭在弦上，川普政府對外仍宣稱「外交」是其首選。周二，美、伊代表在日內瓦進行了三個半小時的間接談判，雖然伊朗宣稱雙方達成了一套「指導原則」，但美方官員對此持保留態度，認為仍有大量細節待議，甚至有內部人士形容該談判「毫無進展」。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;白宮發言人 karoline leavitt 周三表示，伊朗預計在未來兩周內提供更詳細的提案，但她拒絕透露川普是否會為了外交空間而推遲軍事行動。據悉，川普私下對是否動武仍有遲疑，正密集徵詢顧問與盟友的意見。他於周三聽取了特使威特科夫 (steve witkoff) 與女婿庫許納 (jared kushner) 關於外交進展的簡報。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;面對美軍壓力，伊朗正緊鑼密鼓地加固其核設施，利用混凝土與大量土石將關鍵地點掩埋。伊朗最高領袖哈米尼 (ayatollah ali khamenei) 更在社群媒體發布一張 ai 生成的「福特號沉沒」圖像，並警告伊朗擁有能將戰艦送入海底的武器。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;國際社會對此深感不安。俄羅斯外長拉夫羅夫 (sergey lavrov) 警告美國不要「玩火」，強調空襲將帶來嚴重的負面後果。中東盟友則擔憂區域局勢失控，特別是攻擊若發生在已開始的齋戒月期間，將被視為對穆斯林世界的極大不尊重。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;決定性的時機點 川普目前的考量因素眾多，除了正在進行的齋戒月，還包括即將於周日結束的冬季奧運會，以及他將在下周二發表的國情咨文演說。儘管川普曾暗示希望伊朗實現政權更迭，並堅決反對其取得核武，但他尚未明確界定一旦發動攻擊後的具體戰略目標。&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        國際政經
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午01:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    美媒：美軍最快周末空襲伊朗 但川普尚未做最終決定
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346922"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,6 +391,24 @@
                                     <span>
                                         AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        3
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('川普')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        川普
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('台積電')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        台積電
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
                                 </button>
@@ -291,6 +417,15 @@
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         輝達
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('美元')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -334,7 +469,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.95],
+                    data: [0.48,0.88,0.1,0.95,0.88],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -355,7 +490,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.4,0.95,0.85,0.5,0.98],
+                    data: [0.4,0.9,0.8,0.2,0.7],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -370,7 +505,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.9,"finance":0.1,"manufacturing":0.7,"service":0.2};
+        const sectorData = {"tech":0.6,"finance":0.3,"manufacturing":0.4,"service":0.2};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -469,6 +604,40 @@
         document.getElementById('trendModal').addEventListener('click', (e) => {
             if (e.target === document.getElementById('trendModal')) closeTrendModal();
         });
+
+        // 🟢 新增：TTS 語音朗讀邏輯
+        let speaking = false;
+        function toggleSpeech() {
+            const btn = document.getElementById('ttsBtn');
+            const icon = document.getElementById('ttsIcon');
+            
+            if (speaking) {
+                window.speechSynthesis.cancel();
+                speaking = false;
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>';
+                btn.classList.remove('bg-red-50', 'text-red-600');
+                btn.classList.add('bg-indigo-50', 'text-indigo-600');
+            } else {
+                const text = document.getElementById('summary-content').textContent; // 取得純文字
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'zh-TW';
+                u.rate = 1.0;
+                u.onend = () => { 
+                    speaking = false; 
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>';
+                    btn.classList.remove('bg-red-50', 'text-red-600');
+                    btn.classList.add('bg-indigo-50', 'text-indigo-600');
+                };
+                
+                window.speechSynthesis.speak(u);
+                speaking = true;
+                
+                // Change icon to Stop
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>';
+                btn.classList.remove('bg-indigo-50', 'text-indigo-600');
+                btn.classList.add('bg-red-50', 'text-red-600');
+            }
+        }
     </script>
 </body>
 
