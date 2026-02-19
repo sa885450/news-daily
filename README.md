@@ -32,6 +32,9 @@ news-daily/
   - 在日報摘要區塊新增朗讀按鈕。
   - 使用瀏覽器原生 `Web Speech API`，無需額外流量與費用。
   - 自動過濾 Markdown 標籤，提供純淨的朗讀體驗。
+- **🧪 單元測試與優化 (Tests & Optimization)**：
+  - 新增 `tests/client_tts.test.js`，使用 Jest + JSDOM 驗證前端 TTS 邏輯。
+  - 優化文字提取邏輯 (innerText -> textContent)，提升跨瀏覽器相容性與測試穩定度。
 
 ### v4.1.0 - 專案結構重構 (2026-02-18)
 - **🏗️ 目錄重構 (Project Restructuring)**：
