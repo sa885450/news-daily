@@ -89,45 +89,53 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月19日星期四 · 更新於 19:01
+                        2026年2月19日星期四 · 更新於 21:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('世界經濟論壇 (WEF)')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #世界經濟論壇 (WEF)
-                                    
-                            </button>
-                            
                             <button onclick="searchKeyword('OpenAI')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #OpenAI
                                     
                             </button>
                             
-                            <button onclick="searchKeyword('台積電')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台積電
+                            <button onclick="searchKeyword('蘋果')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #蘋果
                                     
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(AAPL-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('NVIDIA')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #NVIDIA
+                            <button onclick="searchKeyword('新黃金公司')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #新黃金公司
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NGD-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('黃金')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #黃金
+                            <button onclick="searchKeyword('HF Sinclair Corp.')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #HF Sinclair Corp.
                                     
-                                        <span class="text-xs ml-1 opacity-70">(GC=F)</span>
+                                        <span class="text-xs ml-1 opacity-70">(DINO-US)</span>
                                         
+                            </button>
+                            
+                            <button onclick="searchKeyword('那斯達克')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #那斯達克
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(^IXIC)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('WEF 世界經濟論壇')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #WEF 世界經濟論壇
+                                    
                             </button>
                             
                     </div>
@@ -140,7 +148,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.95
+                                    0.98
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -216,7 +224,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險控管深層報告：警惕「泡沫化臨界點」與系統性脫鉤】</h3><p>市場情緒已從昨日的 <b>0.90 飆升至 0.95</b>，極端貪婪已進入非理性噴發期。今日核心變量在於 WEF 2026 全球風險報告的發布，與 OpenAI 千億美元融資敘事形成鮮明對比：一邊是<b>資本市場的流動性狂歡</b>，另一邊則是<b>全球地緣政治與氣候隱憂的長期警示</b>。</p><h4>1. 增量風險分析：從局部熱點到全面泡沫</h4><p>昨日市場仍聚焦於 MLCC 漲價等實體需求，但今日 OpenAI 的融資傳聞將 AI 估值推向神壇，這屬於典型的「敘事溢價」。對比 WEF 報告中提到的『地緣經濟對抗』與『AI 誤用風險』，目前的股價漲幅完全無視長期結構性負債與通膨壓力。我們正處於一個<b>『短期估值極大化』與『長期風險不可測』</b>的危險交匯點。</p><h4>2. 風險控管建議：極致貪婪下的撤退路徑</h4><p>當市場將「長期風險」視為「短期無關」時，便是風險控管者必須行動的時刻。建議投資者：<br/><b>(1) 執行減倉策略：</b> 針對科技板塊（AI 伺服器、半導體）進行 15-20% 的獲利了結。<br/><b>(2) 防禦性轉向：</b> 資金應向具備抗通膨特性的「實體黃金」或「高息國債」靠攏。<br/><b>(3) 監控波動率：</b> 關注 VIX 指數異常壓低後的反彈，這通常是泡沫破裂的先行指標。</p>
+                            <h3>【風險控管極限預警：從「極度貪婪」邁向「非理性泡沫」】</h3><p>市場情緒已從昨日的 0.95 攀升至 <b>0.98 的臨界高點</b>。目前的市場動力已完全脫離基本面，進入純粹的「敘事驅動」階段。OpenAI 的千億美元融資傳聞與 WEF 的全球風險報告形成極端諷刺的對比：一邊是虛擬估值的瘋狂膨脹，另一邊是地緣政治與氣候崩塌的現實威脅。</p><h4>1. 增量風險：基本面裂縫與敘事脫鉤</h4><p>今日數據顯示，雖然 AI 敘事持續支撐高估值，但實體經濟板塊如<b>能源 (DINO-US) 與金屬礦業 (NGD-US)</b> 的 2025/2026 EPS 預估已連續下調，這反映了通膨壓力與終端需求疲軟。<b>蘋果 (AAPL)</b> 與那指相關性創 20 年新低，顯示資金開始在科技股內部進行避險性遷移，30 倍 P/E 的『避風港』本身已具備高度脆弱性。</p><h4>2. 決策建議：獲利了結，轉向防禦</h4><p>當前技術指標顯示極度超買，且市場對地緣風險完全免疫，這是典型的<b>「崩盤前兆」</b>。建議投資人：<ol><li><b>適度獲利了結</b>：將 AI 相關高溢價部位減持 20-30%。</li><li><b>資產重新平衡</b>：增加防禦性資產（如高品質債券或現金儲備）以應對可能的波動。</li><li><b>關注結構性偏離</b>：蘋果的脫鉤現象暗示市場結構正在重組，警惕集體踩踏風險。</li></ol></p>
                         </div>
                     </div>
                 </section>
@@ -225,83 +233,124 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="風險控管" data-title="wef 2026全球風險報告出爐！地緣經濟對抗登頂、ai與氣候危機成未來十年最大隱憂"
-                            data-content="&amp;lt;p&amp;gt;2026 年，世界經濟論壇（wef）於瑞士日內瓦發表第 21 版《2026 年全球風險報告》。這份年度重點報告匯集全球超過 1300 名來自學界、企業界、政府部門、國際組織與公民社會的領袖與專家意見，從當前情勢、未來兩年，以及未來十年三個層面，全面梳理全球風險的變化趨勢與結構分布。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;報告指出，當前世界正同時承受「短期震盪升溫與長期隱性危機累積」的雙重壓力，風險彼此交織、相互放大。&amp;lt;/p&amp;gt;
-
-&amp;lt;h6&amp;gt;當前核心風險：地緣經濟角力升溫，系統性壓力加劇&amp;lt;/h6&amp;gt;
-
-&amp;lt;p&amp;gt;綜觀 2026 年全球局勢，報告將「地緣經濟對抗」列為年度最重大風險，並在未來兩年的風險排名中大幅上升 8 個名次。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;調查顯示，有 18% 的受訪者認為，這項風險最可能在 2026 年引爆全球性危機，成為短期內觸發系統性動盪的關鍵變數，其影響已深入經濟、貿易與供應鏈等核心領域。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;報告指出，所謂地緣經濟對抗，是指主要國家愈來愈頻繁地動用經濟工具來擴張或防衛自身利益，包括經濟制裁、關稅壁壘、外資審查、技術出口限制以及將供應鏈政治化等措施，而這類策略正在重塑國際權力結構，也加速全球經濟走向分化與區塊化。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;例如，美國加強對 ai 晶片與量子科技的出口管制，中國強化對稀土等關鍵資源的掌控，歐洲則透過補貼政策扶植戰略性產業，這些舉措皆推升國際間的競逐態勢。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;其結果不僅對全球供應鏈安全與總體經濟穩定構成壓力，也削弱各國在面對經濟衝擊時協同應對的能力。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;更令人擔憂的是，多邊體系功能日益受限。世界貿易組織爭端解決機制的案件數量已降至 2019 年前的三分之一，g20 等重要平台亦難以形成廣泛共識。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在此背景下，部分國家轉向建立小規模、選擇性的合作架構，進一步削弱全球協作基礎。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;除地緣經濟對抗外，2026 年當前風險排名居前的還包括國家間武裝衝突、極端天氣、社會極化，以及錯誤與虛假資訊。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;其中，有 14% 的受訪者認為國家間武裝衝突最可能演變為全球性危機，反映地緣政治緊張局勢仍未緩解，甚至可能持續升高。&amp;lt;/p&amp;gt;
-
-&amp;lt;h6&amp;gt;短期展望（未來兩年）：地緣主軸未變，經濟與科技壓力升溫&amp;lt;/h6&amp;gt;
-
-&amp;lt;p&amp;gt;放眼未來兩年，報告指出全球風險結構將呈現出三大特徵：地緣政治仍主導整體走向、經濟壓力重新升高、科技風險逐漸浮上檯面。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;其中，地緣經濟對抗依舊高居嚴重性首位，短期內難以被其他風險取代，成為影響全球局勢的主旋律。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在短期風險排序中，僅次於地緣經濟對抗的是錯誤與虛假資訊，以及社會極化問題。這三項風險交織形成一個相互強化的「高風險三角」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;值得留意的是，經濟風險出現明顯反彈，成為短期內升幅最大的類別。經濟衰退與通膨風險名次雙雙上升 8 位，分別來到第 11 與第 21 位；資產泡沫破裂亦上升 7 位至第 18 位。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;報告指出，這與全球債務水位居高不下密切相關。2024 年全球債務總額已達 251 兆美元，占全球 gdp 的 235%。在高利率環境與地緣衝突交織之下，金融體系承壓風險隨之增加。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;短期風險版圖亦出現兩項顯著變化。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;首先，對人工智慧（ai）的疑慮快速升溫。ai 技術可能帶來的負面衝擊，在長期風險中躍升至第 5 位，顯示專家對技術失控、就業市場重組與社會安全隱患的擔憂加深。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;其次，環境相關風險在短期排名普遍下滑，例如極端天氣由去年的第 2 位降至第 4 位，污染風險由第 6 位降至第 9 位，地球系統重大變化與生物多樣性喪失的排名也有所下降。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;從全球前景預期來看，市場與專家情緒明顯轉趨悲觀。約半數受訪者預測未來兩年將出現劇烈動盪，比例較前一年增加 14 個百分點；另有 40% 認為局勢將持續動盪不安。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;僅 1% 的受訪者對短期前景持樂觀看法，凸顯全球對未來兩年的高度不確定與焦慮。&amp;lt;/p&amp;gt;
-
-&amp;lt;h6&amp;gt;長期展望（未來十年）：環境風險居首，科技與生態挑戰交織&amp;lt;/h6&amp;gt;
-
-&amp;lt;p&amp;gt;將時間軸拉長至未來十年，全球風險重心預計將由當前的地緣經濟與社會議題，逐步轉向環境領域。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;報告顯示，極端氣候事件、生物多樣性流失與生態系統崩解，以及地球系統重大變化，分列長期風險前三名，成為威脅人類永續發展的關鍵因素。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;報告指出，儘管部分環境議題在短期排名有所下滑，但其長期嚴重性並未減弱，反而可能呈現延遲爆發的態勢。近四分之三的受訪者預期，未來十年環境領域將面臨類似「風暴級」的重大危機，比例高於其他任何風險類別。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在氣候層面，隨著全球升溫趨勢難以逆轉，乾旱、洪澇與颱風等極端氣象災害預料將更頻繁且更劇烈，不僅衝擊農業產出與基礎建設安全，也可能引發糧食短缺與水資源緊張，進一步加劇跨國間的資源競逐與地緣摩擦。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;生物多樣性快速流失與生態系統崩解，則可能削弱地球自我調節能力，導致生態鏈失衡，對農業永續、公共衛生與經濟穩定造成深遠影響，其損失往往難以回復。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;同時">
+                            data-category="科技" data-title="鉅亨速報 - factset 最新調查：新黃金公司(ngd-us)eps預估下修至0.62元，預估目標價為13.10元"
+                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共6位分析師，對新黃金公司(ngd-us)做出2025年eps預估：中位數由0.63元下修至0.62元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.10元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;※本篇提及eps與營收的單位均為「美元」&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估eps&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;預估值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.68(0.68)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.67&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.25&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.45(0.45)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.92&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.16&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.6(0.6)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.18&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.62(0.63)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.4&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.27&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1.2&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估營收&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;預估值&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.74億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.87億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.99億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.54億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.18億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.57億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.63億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.41億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.60億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;25.20億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;24.78億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23.39億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史獲利表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;項目&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2021年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2022年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2023年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2024年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;eps&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.21&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.10&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;-0.09&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.14&amp;lt;/td&amp;gt;&amp;lt;/">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        風險控管
+                                        科技
                                     </span><span class="text-slate-400 text-xs">
-                                        下午07:01
+                                        下午09:01
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    WEF 2026全球風險報告出爐！地緣經濟對抗登頂、AI與氣候危機成未來十年最大隱憂
+                                    鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.62元，預估目標價為13.10元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346867"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347130"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="能源" data-title="鉅亨速報 - factset 最新調查：hf sinclair corp.(dino-us)eps預估下修至4.23元，預估目標價為60.00元"
+                            data-content="&amp;lt;p&amp;gt;根據factset最新調查，共14位分析師，對hf sinclair corp.(dino-us)做出2026年eps預估：中位數由4.54元下修至4.23元，其中最高估值6.4元，最低估值2.55元，預估目標價為60.00元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;※本篇提及eps與營收的單位均為「美元」&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估eps&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;預估值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2029年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.4(6.4)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.83&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;5.9&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.75&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2.55(2.55)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2.85&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.08&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.75&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.33(4.39)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.53&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;5.22&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.75&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.23(4.54)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4.36&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;5.67&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6.75&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;市場預估營收&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;預估值&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2026年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2027年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2028年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最高值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;306.23億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;300.00億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;最低值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;227.09億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;230.21億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;平均值&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;260.77億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;266.07億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;中位數&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;261.18億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;263.51億&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;278.46億&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史獲利表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;項目&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2021年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2022年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2023年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2024年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;em&amp;gt;2025年&amp;lt;/em&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;eps&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;3.39&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;14.28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;8.29&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0.91&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;3.08&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;營業收入&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;184">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        能源
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午09:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估下修至4.23元，預估目標價為60.00元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347124"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="總體經濟" data-title="蘋果與那指相關性創20年新低！ai熱潮下成「異類」？本益比30倍仍獲市場青睞"
+                            data-content="&amp;lt;p&amp;gt;在人工智慧（ai）熱潮席捲全球股市之際，蘋果 (&amp;lt;a data-symbol-template=&amp;quot;uss:aapl:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;aapl-us&amp;lt;/a&amp;gt;) 意外成為科技股中的「獨行俠」。隨著市場陷入 ai 題材引發的劇烈波動，蘋果與科技同業的走勢相關性大幅降低，反而為投資人提供了一個相對穩定的選擇。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據《彭博》彙編數據，蘋果與那斯達克 100 指數的 40 日相關係數上週降至 0.21，創下 2006 年以來新低。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;由於蘋果選擇大致不參與 ai 軍備競賽，使其相較於多數競爭對手成為市場中的「異類」，自去年 5 月相關係數一度高達 0.92 後便持續下滑。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;b. riley wealth 首席市場策略師 art hogan 指出，蘋果目前的低相關性「百分之百是好事」。他形容當前市場處於 ai「打地鼠式」環境，投資人對於下一個可能被顛覆的產業高度焦慮，往往先拋售再思考。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;過去一個多月，市場陷入 ai 帶動的「末日循環」：一方面擔心數千億美元 ai 資本支出無法帶來回報；另一方面又憂慮從軟體、財富管理到物流等產業將被 ai 淘汰。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;然而，蘋果並未積極投入龐大的 ai 軍備競賽，也沒有明顯業務線面臨來自 anthropic 旗下 claude 等生成式 ai 工具的直接威脅。儘管蘋果在 ai 整合方面一度遭遇挑戰，但據悉該公司正加速開發三款 ai 驅動的硬體裝置。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;與此同時，蘋果上月公布的財報亦為公司基本面增添信心。蘋果繳出單季營收創新高成績，其中 iphone 銷售表現強勁，並對本季給出優於預期的財測。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;此外，公司還預計在數週內舉行新品發表會。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;蘋果與科技股的脫鉤現象在近期盤勢中表露無遺。週二（17 日）蘋果股價上漲 3.2%，遠優於那斯達克 100 指數下跌 0.1% 的表現。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;值得注意的是，這是本月蘋果股價第三次單日跑贏那斯達克 100 指數 3 個百分點，其中包括 2 月 4 日的一次強勢上漲，創下一年多來最佳單日相對表現。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;截至目前，蘋果 2 月上漲約 1.7%，對比那斯達克 100 指數下跌 3.2%，而美股七巨頭指數更重挫 7.2%，或將寫下自 3 月以來最差單月表現。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;hogan 指出，儘管科技股若全面反彈，蘋果的上漲空間可能較有限，但市場不太可能大幅拋售蘋果，因其被視為較不受 ai 衝擊的公司之一。&amp;lt;/p&amp;gt;
+
+&amp;lt;h6&amp;gt;蘋果成長趨緩與估值壓力仍存&amp;lt;/h6&amp;gt;
+
+&amp;lt;p&amp;gt;儘管具備防禦特質，蘋果股價近期仍經歷波動，包括上週一度重挫 8%，為去年 4 月以來最大跌幅；其中，週四單日下跌 5%，創去年 4 月關稅引發拋售以來最大跌幅。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;下跌一天前，《彭博》報導指出，公司長期規劃的 siri 虛擬助理升級計畫可能延遲。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;此外，記憶體晶片價格飆升也逐漸成為一項不利因素，尤其是在蘋果成長速度落後於其他科技股之際。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;分析師預計，蘋果截至 9 月止的會計年度營收將成長 11%，但到 2027 會計年度增速將放緩至 6.7%。獲利成長也預料將於明年降溫。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;相對溫和的獲利成長前景，使得蘋果目前的交易價格約為未來一年預估盈餘的 30 倍，本益比高於除特斯拉 (&amp;lt;a data-symbol-template=&amp;quot;uss:tsla:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;tsla-us&amp;lt;/a&amp;gt;) 之外的所有「美股七巨頭」成員，也明顯高於那斯達克 100 指數約 24 倍的水準。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;phoenix financial services 首席市場分析師 wayne kaufman 表示：「蘋果並不便宜，而且已經有一段時間如此了。與其他科技公司相比，它並沒有真正顯著的成長動能。」&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;不過，他也認為，市場仍會持續給予蘋果一定程度的信任。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;kaufman 補充指出，相較於軟體產業，硬體業務面臨的風險要小得多，因為「無論如何，人們不可能利用 ai 自行編寫出一支新的 iphone。」&amp;lt;/p&amp;gt;
+
+&amp;lt;p class=&amp;quot;warning&amp;quot;&amp;gt;（本文不開放合作夥伴轉載）&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        總體經濟
+                                    </span><span class="text-slate-400 text-xs">
+                                        下午09:01
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    蘋果與那指相關性創20年新低！AI熱潮下成「異類」？本益比30倍仍獲市場青睞
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6346919"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -319,12 +368,12 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('颱風')"
+                                <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        颱風
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        3
                                     </span>
                                 </button>
                                 
@@ -333,14 +382,14 @@
                                     <span>
                                         AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        2
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('稀土')"
+                                <button onclick="showKeywordTrend('股市')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        稀土
+                                        股市
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -355,10 +404,10 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('美元')"
+                                <button onclick="showKeywordTrend('黃金')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        美元
+                                        黃金
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -375,19 +424,19 @@
                                 <div
                                     class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap gap-2 content-start">
                                     
-                                        <button onclick="searchKeyword('AI')"
-                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
-                                            AI
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    241
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('US')"
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             US
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    231
+                                                    269
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('AI')"
+                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
+                                            AI
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    242
                                                 </span>
                                         </button>
                                         
@@ -395,7 +444,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             EPS
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    130
+                                                    149
                                                 </span>
                                         </button>
                                         
@@ -403,7 +452,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             美元
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    113
+                                                    114
                                                 </span>
                                         </button>
                                         
@@ -411,7 +460,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             日本
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    96
+                                                    97
                                                 </span>
                                         </button>
                                         
@@ -419,7 +468,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             春節
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    96
+                                                    97
                                                 </span>
                                         </button>
                                         
@@ -427,7 +476,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             健康
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    86
+                                                    88
                                                 </span>
                                         </button>
                                         
@@ -435,7 +484,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             自由
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    85
+                                                    87
                                                 </span>
                                         </button>
                                         
@@ -467,7 +516,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             全球
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    57
+                                                    58
                                                 </span>
                                         </button>
                                         
@@ -483,12 +532,20 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             開講
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    54
+                                                    56
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('伊朗')"
+                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
+                                            伊朗
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    52
                                                 </span>
                                         </button>
                                         
                                         <button onclick="searchKeyword('初二')"
-                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             初二
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     52
@@ -503,14 +560,6 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('伊朗')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            伊朗
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    51
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('中速')"
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             中速
@@ -519,17 +568,17 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('情人')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            情人
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    42
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('初三')"
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             初三
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    43
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('情人')"
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
+                                            情人
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     42
                                                 </span>
@@ -555,7 +604,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             台南
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    40
+                                                    41
                                                 </span>
                                         </button>
                                         
@@ -575,6 +624,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('世界')"
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
+                                            世界
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    39
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('科技')"
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             科技
@@ -588,14 +645,6 @@
                                             高雄
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     38
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('世界')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            世界
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    37
                                                 </span>
                                         </button>
                                         
@@ -711,6 +760,22 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('斯坦')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            斯坦
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('能源')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            能源
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('Google')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             Google
@@ -727,9 +792,9 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('斯坦')"
+                                        <button onclick="searchKeyword('北京')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            斯坦
+                                            北京
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     24
                                                 </span>
@@ -738,14 +803,6 @@
                                         <button onclick="searchKeyword('關鍵')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             關鍵
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    24
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('能源')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            能源
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     24
                                                 </span>
@@ -764,14 +821,6 @@
                                             1月
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     24
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('專家')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            專家
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    23
                                                 </span>
                                         </button>
                                         
@@ -815,7 +864,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.95],
+                    data: [0.48,0.88,0.1,0.95,0.98],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -836,7 +885,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.35,0.98,0.88,0.25,0.95],
+                    data: [0.4,0.98,0.85,0.3,0.95],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -851,7 +900,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.98,"finance":0.35,"manufacturing":0.2,"service":0.1};
+        const sectorData = {"tech":0.95,"finance":0.4,"manufacturing":-0.1,"service":0.2};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
