@@ -137,7 +137,16 @@
                 <section class="mb-12 animate-fade">
                     <div
                         class="bg-white rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 relative overflow-hidden">
-                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg">
+                        <button onclick="toggleSpeech()" id="ttsBtn"
+                            class="absolute top-6 right-6 p-2 rounded-full bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors z-20"
+                            title="朗讀摘要">
+                            <svg id="ttsIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg" id="summary-content">
                             <%- summary.replace(/\n/g, '<br>' ) %>
                         </div>
                     </div>
@@ -365,6 +374,40 @@
         document.getElementById('trendModal').addEventListener('click', (e) => {
             if (e.target === document.getElementById('trendModal')) closeTrendModal();
         });
+
+        // 🟢 新增：TTS 語音朗讀邏輯
+        let speaking = false;
+        function toggleSpeech() {
+            const btn = document.getElementById('ttsBtn');
+            const icon = document.getElementById('ttsIcon');
+            
+            if (speaking) {
+                window.speechSynthesis.cancel();
+                speaking = false;
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>';
+                btn.classList.remove('bg-red-50', 'text-red-600');
+                btn.classList.add('bg-indigo-50', 'text-indigo-600');
+            } else {
+                const text = document.getElementById('summary-content').innerText; // 取得純文字
+                const u = new SpeechSynthesisUtterance(text);
+                u.lang = 'zh-TW';
+                u.rate = 1.0;
+                u.onend = () => { 
+                    speaking = false; 
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>';
+                    btn.classList.remove('bg-red-50', 'text-red-600');
+                    btn.classList.add('bg-indigo-50', 'text-indigo-600');
+                };
+                
+                window.speechSynthesis.speak(u);
+                speaking = true;
+                
+                // Change icon to Stop
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>';
+                btn.classList.remove('bg-indigo-50', 'text-indigo-600');
+                btn.classList.add('bg-red-50', 'text-red-600');
+            }
+        }
     </script>
 </body>
 

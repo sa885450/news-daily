@@ -27,6 +27,12 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v4.2.0 - 語音朗讀功能 (2026-02-19)
+- **🔊 摘要語音朗讀 (Text-to-Speech)**：
+  - 在日報摘要區塊新增朗讀按鈕。
+  - 使用瀏覽器原生 `Web Speech API`，無需額外流量與費用。
+  - 自動過濾 Markdown 標籤，提供純淨的朗讀體驗。
+
 ### v4.1.0 - 專案結構重構 (2026-02-18)
 - **🏗️ 目錄重構 (Project Restructuring)**：
   - 建立 `src/` 目錄，收納核心程式碼 (`index.js`, `weekly.js`, `lib/`, `views/`)。
