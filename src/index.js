@@ -6,6 +6,7 @@ const { log, sendDiscord } = require('./lib/utils');
 const { pushToGitHub } = require('./lib/git');
 const db = require('./lib/db');
 const config = require('./lib/config');
+const { analyze7DayKeywords } = require('./lib/keywords');
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron');
 const { version } = require('../package.json');
@@ -126,9 +127,10 @@ async function runTask() {
 
             db.saveDailyStats(aiResult.sentiment_score, aiResult.summary);
             const recentStats = db.getRecentStats(7);
+            const keywords7d = analyze7DayKeywords(7);
 
             const keywordStats = calculateKeywordStats(allMatchedNews);
-            generateHTMLReport(aiResult, allMatchedNews, keywordStats, recentStats);
+            generateHTMLReport(aiResult, allMatchedNews, keywordStats, recentStats, keywords7d);
 
             // 發送 Discord
             try {

@@ -7,7 +7,7 @@ const { ensureDir } = require('./utils');
 /**
  * 生成 HTML 報表
  */
-async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = []) {
+async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = []) {
     const dateObj = new Date();
     const dateStr = dateObj.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
     const timeStr = dateObj.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
@@ -105,7 +105,8 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
         historyFiles,
         sortedKeywords,
         newsData: formattedNews,
-        categories
+        categories,
+        keywords7d // 🟢 新增
     });
 
     ensureDir(publicDir);
