@@ -89,16 +89,16 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月20日星期五 · 更新於 03:00
+                        2026年2月20日星期五 · 更新於 04:01
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('安森美半導體')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #安森美半導體
+                            <button onclick="searchKeyword('莫德納')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #莫德納
                                     
-                                        <span class="text-xs ml-1 opacity-70">(ON-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(MRNA-US)</span>
                                         
                             </button>
                             
@@ -110,10 +110,12 @@
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Fed')"
+                            <button onclick="searchKeyword('安森美')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Fed
+                                #安森美
                                     
+                                        <span class="text-xs ml-1 opacity-70">(ON-US)</span>
+                                        
                             </button>
                             
                             <button onclick="searchKeyword('輝達')"
@@ -124,20 +126,16 @@
                                         
                             </button>
                             
+                            <button onclick="searchKeyword('Fed')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Fed
+                                    
+                            </button>
+                            
                             <button onclick="searchKeyword('道瓊工業指數')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #道瓊工業指數
                                     
-                                        <span class="text-xs ml-1 opacity-70">(^DJI)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('微軟')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #微軟
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(MSFT-US)</span>
-                                        
                             </button>
                             
                     </div>
@@ -150,7 +148,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.82
+                                    0.65
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -226,7 +224,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險控管深度報告：從「信仰泡沫」回歸「獲利硬實力」的警示】</h3><p>市場情緒目前雖處於 0.82 的高位，但相較於昨日對 AI 敘事的盲目樂觀，今日數據顯示出明顯的<b>估值修正壓力</b>。市場正經歷從「通膨降溫預期」轉向「經濟基本面疲軟」的恐慌過度期。</p><h4>1. 增量分析：基本面裂縫從零售與工業半導體擴散</h4><p>昨日市場焦點在於輝達引領的 AI 硬體長期需求，但今日<b>安森美 (ON-US)</b> 的大跌 5% 與 <b>Target (TGT-US)</b> 的財報失利，敲響了警鐘。這顯示消費性電子與一般工業應用的需求並未跟上 AI 的狂熱節奏。這是一種典型的「結構性背離」，當少數權值股支撐指數，而多數中小型股與消費股轉弱時，即是典型的泡沫末端徵兆。</p><h4>2. 貨幣政策：官員轉鷹，流動性溢價面臨縮水</h4><p>Fed 官員 Cook 與 Bowman 的謹慎言論，直接打擊了市場對於 12 月降息的樂觀心理。當無風險利率（國債收益率）居高不下時，高溢價的科技股將面臨估值重估。技術面上，標普 500 已出現頂部背離跡象。</p><h4>3. 風險控管策略建議</h4><p>身為風險專家，強烈建議：<br><b>(1) 獲利了結：</b> 針對今年漲幅超過 50% 的半導體標的，應減持 20-30% 倉位。<br><b>(2) 轉向防禦：</b> 關注黃金 (Gold) 與公用事業板塊，以對沖潛在的經濟衰退風險。<br><b>(3) 現金為王：</b> 提高現金比例至 15-20%，等待輝達財報後可能的波動性回調點。</p>
+                            <h3>【風險控管深度報告：避險情緒抬頭與防禦性資產的崛起】</h3><p>今日市場情緒由昨日的 0.82 修正至 0.65，反映出投資者正從單純的「AI 狂熱」轉向對經濟實體面的擔憂。儘管標普與那斯達克維持微幅上漲，但道瓊指數的下跌與特定零售龍頭的疲軟，顯示市場廣度正在惡化。</p><h4>1. 增量分析：從零售裂縫看防禦轉向</h4><p>相較於昨日報告指出的工業半導體（安森美）疲軟，今日 <b>Target (TGT-US)</b> 的財報失利進一步確認了消費端的購買力限制，這與 AI 硬體端的過度估值形成鮮明對比。值得注意的是，<b>莫德納 (MRNA-US)</b> 在避險資金湧入與生醫板塊輪動下大漲 5%，顯示資金正從高位科技股流向具備「防禦屬性」或「落後補漲」的非循環性資產。</p><h4>2. 風險警示：泡沫的結構性分化</h4><p>當前市場呈現極端不平衡：AI 信仰支撐著指數表面，但製造業與零售業的實體數據已顯疲態。若 Fed 利率維持高位更久，缺乏基本面支撐的中小型科技股將面臨估值重估。我們強烈建議投資者在此階段採取<b>獲利了結 (Take Profit)</b> 策略，減少槓桿比例，並將資金部分配置於生技醫藥或必需消費品等防禦性板塊。</p>
                         </div>
                     </div>
                 </section>
@@ -235,25 +233,25 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="盤中速報 - 安森美半導體(on-us)大跌5.02%，報67.11美元"
-                            data-content="&amp;lt;p&amp;gt;安森美半導體(on-us)截至台北時間20日02:20股價下跌3.55美元，報67.11美元，跌幅5.02%，成交量4,033,936（股），盤中最高價70.22美元、最低價67.11美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.82%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.59%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.66%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-1.35%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;安森美半導體(on-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+1.1%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+19.28%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+57.95%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+42.41%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+32.89%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            data-category="其他" data-title="盤中速報 - 莫德納(mrna-us)大漲5.04%，報48.95美元"
+                            data-content="&amp;lt;p&amp;gt;莫德納(mrna-us)截至台北時間20日02:56股價上漲2.35美元，報48.95美元，漲幅5.04%，成交量5,352,702（股），盤中最高價48.96美元、最低價45.80美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.63%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.39%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.48%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-1.17%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;莫德納(mrna-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+8.44%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+5.02%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+76.28%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+56.39%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+48.97%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         其他
                                     </span><span class="text-slate-400 text-xs">
-                                        上午03:00
+                                        上午04:01
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 安森美半導體(ON-US)大跌5.02%，報67.11美元
+                                    盤中速報 - 莫德納(MRNA-US)大漲5.04%，報48.95美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347280"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347285"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,7 +302,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             US
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    297
+                                                    299
                                                 </span>
                                         </button>
                                         
@@ -328,7 +326,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             美元
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    122
+                                                    123
                                                 </span>
                                         </button>
                                         
@@ -432,7 +430,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             中速
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    53
+                                                    54
                                                 </span>
                                         </button>
                                         
@@ -528,7 +526,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             TAIPEI
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    33
+                                                    38
                                                 </span>
                                         </button>
                                         
@@ -536,7 +534,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             TIMES
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    33
+                                                    38
                                                 </span>
                                         </button>
                                         
@@ -740,7 +738,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.82],
+                    data: [0.48,0.88,0.1,0.95,0.65],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -761,7 +759,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.35,0.75,0.45,0.5,0.8],
+                    data: [0.5,0.75,0.6,0.55,0.8],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -776,7 +774,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":-0.2,"finance":0.1,"manufacturing":-0.4,"service":-0.6};
+        const sectorData = {"tech":0.35,"finance":-0.1,"manufacturing":-0.45,"service":-0.6};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
