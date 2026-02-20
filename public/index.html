@@ -94,43 +94,61 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月21日星期六 · 更新於 04:00
+                        2026年2月21日星期六 · 更新於 05:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('Zscaler')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Zscaler
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(ZS-US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Fed')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Fed
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('道瓊工業平均指數')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #道瓊工業平均指數
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(DJI)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('川普')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #川普
                                     
                             </button>
                             
-                            <button onclick="searchKeyword('拼多多')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #拼多多
+                            <button onclick="searchKeyword('Palo Alto Networks')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Palo Alto Networks
                                     
-                                        <span class="text-xs ml-1 opacity-70">(PDD-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(PANW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('伊朗')"
+                            <button onclick="searchKeyword('原油期貨')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #伊朗
-                                    
-                            </button>
-                            
-                            <button onclick="searchKeyword('原油')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #原油
+                                #原油期貨
                                     
                                         <span class="text-xs ml-1 opacity-70">(CL=F)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('美國聯邦最高法院')"
+                            <button onclick="searchKeyword('CrowdStrike')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #美國聯邦最高法院
+                                #CrowdStrike
                                     
+                                        <span class="text-xs ml-1 opacity-70">(CRWD)</span>
+                                        
                             </button>
                             
                     </div>
@@ -143,7 +161,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.4
+                                    0.5
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -219,7 +237,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險決策報告：從『估值斷頭』演變為『宏觀黑天鵝』併發】</h3><p>市場情緒由昨日的 <b>0.65</b> 進一步下修至今日的 <b>0.40</b>。若昨日的特徵是軟體股的集體回檔，今日則正式進入<b>系統性風險引爆點</b>。兩大毀滅性變數同時出現：川普無視最高法院裁定強行加徵 10% 全球關稅，以及針對伊朗的軍事打擊威脅。</p><h4>1. 增量分析：防禦性資產與宏觀衝擊</h4><p>與昨日「制度動盪」相比，今日情勢已升級為<b>全球供應鏈與能源價格的雙重威脅</b>。10% 全球關稅將導致輸入型通膨，徹底破壞市場對降息的樂觀預期；同時，伊朗軍事威脅引發的油價飆升（荷莫茲海峽封鎖風險）將直接打擊製造業利潤。即便拼多多 (PDD-US) 等中概股出現防禦性反彈，亦難掩整體避險情緒升溫。</p><h4>2. 風險控管建議</h4><p>當前市場極度貪婪的情緒正遭遇地緣與貿易戰的「冰水洗面」。<b>建議立即採取以下行動：</b></p><ul><li><b>獲利了結：</b> 出清高槓桿與高度依賴全球供應鏈的科技與製造業倉位。</li><li><b>避險配置：</b> 增加黃金 (GLD)、原油相關標的與公用事業等防禦性資產。</li><li><b>防範通膨復燃：</b> 關稅壓力將使通膨預期反轉，需警惕長端美債殖利率反彈對估值的二次打擊。</li></ul>
+                            <h3>【宏觀決策報告：從系統性潰敗轉向『高倍數估值』的二度修正】</h3><p>市場情緒從昨日的 <b>0.40（恐慌）</b>回升至今日的 <b>0.50（中性）</b>。相較於昨日受關稅政策與地緣政治雙重打擊引發的全面性拋售，今日市場呈現明顯的<b>資產分化</b>特徵。道瓊指數逆勢走強（+0.4%），顯示部分資金開始回流具備現金流保護的傳產與價值股，而高成長但高估值的軟體板塊（以 Zscaler 為代表，大跌 5.02%）仍處於震盪尋底過程。</p><h4>1. 增量對比：由宏觀衝擊轉向個股去槓桿</h4><p>昨日的核心矛盾在於全球供應鏈與輸入型通膨預期，而今日焦點則轉向<b>特定行業的流動性擠壓</b>。Zscaler (ZS-US) 的大幅下跌反映出市場對網絡安全板塊的『容錯率』極低，即使宏觀指數企穩，資金仍優先撤離高市銷率（P/S）資產。這標誌著市場已從『無差別恐慌』演變為對成長股估值體系的重新定義。</p><h4>2. 結構性機會與風險預判</h4><p>儘管伊朗局勢與 10% 關稅的長線威脅並未消失，但市場在技術面上已出現超跌後的修復跡象。宏觀策略建議：<b>1. 迴避軟體業擠兌</b>，特別是尚未證明盈利能力的雲端標的；<b>2. 關注防禦性實業</b>，道瓊的強勁表現暗示市場正重新定價具備轉嫁通膨能力的權重股；<b>3. 監控能源價格</b>，若油價因地緣風險受阻於關鍵壓力位，將有利於通膨預期降溫並支撐後續反彈。</p>
                         </div>
                     </div>
                 </section>
@@ -228,115 +246,25 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="地緣政治" data-title="川普考慮對伊朗發動有限軍事打擊！10至15天內決定、油價飆升、荷莫茲海峽成最大風險"
-                            data-content="&amp;lt;p&amp;gt;美國總統川普週五（20 日）表示，正考慮對伊朗發動「有限度軍事打擊」，以對德黑蘭當局施壓，迫使其在核計畫上作出讓步。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;根據《cnbc》報導，川普在白宮與美國各州州長共進早餐時，回應記者提問時直言：「我想我可以說，我正在考慮這麼做。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;川普週四（19 日）表示，他將在未來 10 至 15 天內決定是否對伊朗發動攻擊。不過，他並未排除與德黑蘭就其核子計畫達成協議的可能性。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;川普先前曾指出，若對伊朗發動攻擊，其規模將「遠比」美國在今年 6 月針對伊朗核設施所發動的有限打擊更加嚴重。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;隨著交易員將美國可能即將採取軍事行動的風險納入考量，國際油價本週累計上漲逾 5%，週五則維持平穩。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;目前，美國正於中東地區展開大規模軍事集結。航空母艦「林肯號」已部署至該區域，第二艘航空母艦「福特號」也正在前往途中。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;石油市場最擔憂的是，美伊衝突可能導致經由荷莫茲海峽的石油運輸長期中斷。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;該海峽是全球石油貿易的重要咽喉要道。根據顧問公司 kpler 的數據，2025 年平均每日有超過 1,400 萬桶原油與凝析油通過這條狹窄水道，約占全球海運石油出口總量的三分之一。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;kpler 數據顯示，通過該海峽的石油約有四分之三運往中國、印度、日本與南韓。&amp;lt;/p&amp;gt;
-">
+                            data-category="宏觀策略" data-title="盤中速報 - zscaler公司(zs-us)大跌5.02%，報160.5美元"
+                            data-content="&amp;lt;p&amp;gt;zscaler公司(zs-us)截至台北時間21日04:29股價下跌8.49美元，報160.50美元，跌幅5.02%，成交量2,175,743（股），盤中最高價172.60美元、最低價160.49美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.4%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.58%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.67%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.77%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;zscaler公司(zs-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+0.72%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-19.56%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-41.01%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-37.39%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-23.47%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        地緣政治
+                                        宏觀策略
                                     </span><span class="text-slate-400 text-xs">
-                                        上午04:00
+                                        上午05:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    川普考慮對伊朗發動有限軍事打擊！10至15天內決定、油價飆升、荷莫茲海峽成最大風險
+                                    盤中速報 - Zscaler公司(ZS-US)大跌5.02%，報160.5美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347783"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="貿易政策" data-title="川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定"
-                            data-content="&amp;lt;p&amp;gt;在美國聯邦最高法院裁定其緊急關稅措施違法後，美國總統川普週五（20 日）在記者會上表示，他將簽署一項行政命令，對全球商品徵收 10% 的新關稅。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;根據《路透》報導，川普表示，該項命令將依據《1974 年貿易法》第 122 條發布，且新關稅措施將「在目前仍然有效的既有關稅之上」額外加徵。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;《1974 年貿易法》第 122 條允許美國總統在涉及「重大且嚴重」國際收支問題時，對任何國家課徵最高 15% 的關稅，期限最長 150 天。此措施無需進行正式調查，也不設其他程序限制。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;《cnbc》指出，若要延長 150 天的關稅期限則必須獲得國會批准。不過，當在記者會上被問及這一期限時，川普表示：「我們有權做幾乎任何我們想做的事。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;此前，美國最高法院裁定，川普依據《國際緊急經濟權力法》（ieepa）所實施的廣泛全球關稅違法，認定他已逾越該法所賦予的權限。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;川普在談到關稅替代性工具時表示：「我們有替代方案，而且是很棒的替代方案。可能會帶來更多收入。我們會獲得更多收入，並因此變得更強大。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;他也宣布，目前依據第 232 條與第 301 條法規所實施的所有關稅措施，將持續「完全有效並持續生效」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;川普表示，美國政府同時也正運用第 301 條啟動多項針對潛在不公平貿易行為的調查，未來可能因此再推出新的額外關稅措施，「以保護我們的國家免受其他國家與企業不公平貿易行為的侵害。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;外界早已預期，川普將改採其他法律依據，包括第 122 條、同時啟動新的第 301 條調查。不過，他週五宣布的 10% 關稅僅能維持 150 天，而第 301 條調查通常需耗時數月才能完成。&amp;lt;/p&amp;gt;
-">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        貿易政策
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午04:00
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347775"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="能源風險" data-title="盤中速報 - 拼多多控股(pdd-us)大漲5%，報107.05美元"
-                            data-content="&amp;lt;p&amp;gt;拼多多控股(pdd-us)截至台北時間21日02:48股價上漲5.1美元，報107.05美元，漲幅5%，成交量9,462,455（股），盤中最高價107.09美元、最低價100.93美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.4%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.7%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+1%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.04%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;拼多多控股(pdd-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+2.69%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-3.6%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-12.79%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-13.56%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-9.23%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        能源風險
-                                    </span><span class="text-slate-400 text-xs">
-                                        上午04:00
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 拼多多控股(PDD-US)大漲5%，報107.05美元
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347779"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347801"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -354,33 +282,6 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('川普')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        川普
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('關稅')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        關稅
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('油價')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        油價
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
                                 <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
@@ -414,7 +315,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             US
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    269
+                                                    272
                                                 </span>
                                         </button>
                                         
@@ -430,7 +331,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             EPS
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    140
+                                                    142
                                                 </span>
                                         </button>
                                         
@@ -438,7 +339,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             美元
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    108
+                                                    109
                                                 </span>
                                         </button>
                                         
@@ -482,19 +383,19 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('除夕')"
+                                        <button onclick="searchKeyword('川普')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
-                                            除夕
+                                            川普
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     72
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('川普')"
+                                        <button onclick="searchKeyword('除夕')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
-                                            川普
+                                            除夕
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    70
+                                                    72
                                                 </span>
                                         </button>
                                         
@@ -534,7 +435,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             全球
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    56
+                                                    57
                                                 </span>
                                         </button>
                                         
@@ -542,7 +443,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             中速
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    53
+                                                    54
                                                 </span>
                                         </button>
                                         
@@ -674,17 +575,17 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('人潮')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            人潮
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    28
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('大跌')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             大跌
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    29
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('人潮')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            人潮
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     28
                                                 </span>
@@ -778,6 +679,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('最高')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            最高
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('研究')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             研究
@@ -797,14 +706,6 @@
                                         <button onclick="searchKeyword('政策')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             政策
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    24
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('提醒')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            提醒
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     24
                                                 </span>
@@ -850,7 +751,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19","02-20"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.58,0.4],
+                    data: [0.48,0.88,0.1,0.95,0.58,0.5],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -871,7 +772,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.9,0.5,0.4,0.9,0.3],
+                    data: [0.35,0.55,0.45,0.3,0.6],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -886,7 +787,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":-0.5,"finance":-0.1,"manufacturing":-0.7,"service":-0.2};
+        const sectorData = {"tech":-0.3,"finance":0.4,"manufacturing":0.2,"service":0.3};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
