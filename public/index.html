@@ -94,46 +94,52 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月20日星期五 · 更新於 23:00
+                        2026年2月21日星期六 · 更新於 00:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('Onto Innovation Inc.')"
+                            <button onclick="searchKeyword('川普')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Onto Innovation Inc.
+                                #川普
                                     
-                                        <span class="text-xs ml-1 opacity-70">(ONTO-US)</span>
+                            </button>
+                            
+                            <button onclick="searchKeyword('露露檸檬')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #露露檸檬
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(LULU-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('科派特')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #科派特
+                            <button onclick="searchKeyword('費城半導體指數')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #費城半導體指數
                                     
-                                        <span class="text-xs ml-1 opacity-70">(CPRT-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(SOX)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('道瓊指數')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #道瓊指數
+                            <button onclick="searchKeyword('連貫')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #連貫
                                     
-                                        <span class="text-xs ml-1 opacity-70">(.DJI)</span>
+                                        <span class="text-xs ml-1 opacity-70">(COHR-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Akamai')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Akamai
+                            <button onclick="searchKeyword('科斯塔集團')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #科斯塔集團
                                     
-                                        <span class="text-xs ml-1 opacity-70">(AKAM-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(CSGP-US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Fed')"
+                            <button onclick="searchKeyword('美國聯邦最高法院')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Fed
+                                #美國聯邦最高法院
                                     
                             </button>
                             
@@ -147,7 +153,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.78
+                                    0.75
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -223,7 +229,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險決策報告：高位放量下殺，警惕估值泡沫與流動性反轉】</h3><p>市場情緒今日雖維持在 <b>0.78 (貪婪至極度貪婪區間)</b>，但較昨日的 0.82 已出現微幅鬆動。今日盤中數據顯示，前期強勢的半導體檢測設備龍頭 <b>Onto Innovation (ONTO-US)</b> 與服務業指標 <b>Copart (CPRT-US)</b> 分別出現 5% 及 8% 以上的跌幅，這印證了昨日報告中提到的『獲利下修、股價上調』的背離風險正轉化為實質拋壓。</p><h4>1. 深度增量風險：獲利支撐的虛無化</h4><p>昨日我們警示了 Akamai 等雲端基礎設施的 EPS 下修風險，今日市場則直接以『設備商下殺』與『服務業補跌』作為回應。這顯示資金已不再盲目追逐高目標價，而是開始對『無法兌現高增長』的個股進行劇烈去槓桿。當 Onto 這類半導體供應鏈關鍵環節出現非利空性質的急跌，往往代表法人機構正進行防禦性減碼。</p><h4>2. 操作建議：進入「防守模式」</h4><p>當前市場處於末跌段特有的『虛假繁榮』破裂期，建議投資者：<br/>● <b>適度獲利了結</b>：尤其針對過去三個月漲幅超過 30% 且估值遠超歷史均值的 AI 硬體股。<br/>● <b>防禦性資產轉移</b>：資金宜由成長股轉向高現金流、低 Beta 的防禦性資產，如電信、公用事業或黃金避險資產。<br/>● <b>警惕技術面回撤</b>：道瓊指數盤中疲軟，若跌破支撐位，將觸發更廣泛的程式化交易拋售。</p>
+                            <h3>【風險決策報告：政策底基鬆動與高估值的最後狂歡】</h3><p>今日市場情緒雖維持在 <b>0.75 (極度貪婪區間)</b>，且費半與部分零售股（LULU）出現強勁反彈，但風險控管角度下，警報並未解除。相較於昨日提到的 Onto Innovation (ONTO) 帶量下殺，今日的資金回流更像是『高位橫盤』的誘多行為。</p><h4>1. 政策尾部風險：關稅財政幻滅</h4><p>今日最重要的增量資訊為 [ID:0] 美國最高法院判定川普關稅政策違憲。這不僅擊碎了市場對『財政意外之財』的預期，更代表未來政策推動的法理阻力大增。當財政預算出現缺口，前期支撐科技股估值的補貼預期將面臨重估。</p><h4>2. 結構性背離：防禦與投機的交火</h4><p>雖然 LULU [ID:1] 與 COHR [ID:4] 盤中展現強大動能，但這種分散的獲利盤並未能扭轉整體市場的『估值泡沫』疑慮。費半指數雖上漲 1.2% [ID:3]，但若無法突破前期高點，則將形成雙頭頂部的危險訊號。</p><h4>3. 決策建議：執行『防禦性獲利了結』</h4><p>市場正在從『全面上漲』轉向『個股博弈』，這是牛市末期的典型特徵。建議投資人利用今日的盤中反彈，適度減碼高本益比的半導體標的，並轉向關注具有實質現金流支撐的防禦性資產。切忌在高位過度槓桿，警惕流動性隨時可能發生的反轉下殺。</p>
                         </div>
                     </div>
                 </section>
@@ -232,25 +238,46 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="風險控管" data-title="盤中速報 - onto innovation inc.(onto-us)大跌5.09%，報213.86美元"
-                            data-content="&amp;lt;p&amp;gt;onto innovation inc.(onto-us)截至台北時間20日22:41股價下跌11.47美元，報213.86美元，跌幅5.09%，成交量300,875（股），盤中最高價232.49美元、最低價213.80美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.36%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.05%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.07%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.4%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;onto innovation inc.(onto-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+2.46%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-0.12%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+68%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+104.56%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+39.36%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            data-category="法律與政策風險" data-title="違憲徵稅！最高法院ko川普全球關稅政策 美財政意外之財「泡湯」"
+                            data-content="&amp;lt;p&amp;gt;美國聯邦最高法院於當地時間 2 月 20 日裁定，總統川普援引《國際緊急經濟權力法》（ieepa）實施的全球關稅政策違憲，這項裁決不僅削弱川普政府的核心經濟政策工具，更對全球貿易格局產生深遠影響。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據最高法院 6 比 3 的表決結果，川普未經國會批准、單方面通過 ieepa 對進口商品加徵關稅的行為被認定為逾越總統權力範疇。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;美國最高法院在判決書中明確指出，ieepa 雖授權總統在國家緊急狀態下「監管」進出口貿易，但其立法本意從未涵蓋關稅徵收。這項裁決直接挑戰了川普「以關稅作為外交政策大棒」的核心策略，透過即時加徵關稅迫使貿易夥伴讓步。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;儘管白宮表示將啟動備用法律條款繼續推進關稅，但分析顯示，替代方案的效力將大打折扣，例如《1962 年貿易擴展法》第 232 條雖可基於國家安全對進口商品加稅，但其適用範圍和執行靈活性遠不及 ieepa。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;美國國會預算辦公室 (cbo) 估算，若現行所有關稅持續生效，未來十年每年將給美國帶來約 3000 億美元收入，但最高法院裁決已使這項預測面臨變數。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;國際社會對此裁決反應兩極。歐盟貿易專員馬克斯 &amp;middot; 費爾霍伊根稱之為「多邊貿易體制的勝利」，但發展中國家則擔憂美國可能轉向其他單邊措施。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;世界銀行報告指出，全球供應鏈因關稅戰已累計增加 12% 的運營成本，美國最高法院周五 (20 日) 的裁決恐將加速企業進一步調整全球佈局。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;對川普政府而言，裁決不僅是法律挫敗，更危及其經濟主張的合法性。此前白宮已承認正評估透過《國防生產法》等替代途徑維持部分關稅，但法律專家指出，這些措施恐面臨同樣的合憲性質疑。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;與此同時，美國企業界已展開游說，要求儘快明確關稅退還機制，避免因政策反覆導致供應鏈斷裂。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;美國最高法院這項最新裁決恐將成為 2026 年美國期中大選的關鍵議題。民主黨議員已提案要求國會收回 ieepa 的關稅授權，而共和黨內部對川普擴權行為的分歧逐漸浮現。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;分析人士認為，最高法院的介入恐重塑未來美國貿易政策的制定框架，迫使行政部門回歸傳統立法協商機制。&amp;lt;/p&amp;gt;
+">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        風險控管
+                                        法律與政策風險
                                     </span><span class="text-slate-400 text-xs">
-                                        下午11:00
+                                        上午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.09%，報213.86美元
+                                    違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347689"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347712"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -260,25 +287,109 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="美股分析" data-title="盤中速報 - 科派特(cprt-us)大跌8.9%，報34.3美元"
-                            data-content="&amp;lt;p&amp;gt;科派特(cprt-us)截至台北時間20日22:30股價下跌3.35美元，報34.30美元，跌幅8.9%，成交量325,200（股），盤中最高價34.30美元、最低價34.30美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.36%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.2%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：-0.31%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：-0.5%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;科派特(cprt-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+2.81%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-8.02%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-8.75%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-21.04%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-3.58%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            data-category="美股大盤" data-title="盤中速報 - 露露檸檬(lulu-us)大漲5.02%，報192.06美元"
+                            data-content="&amp;lt;p&amp;gt;露露檸檬(lulu-us)截至台北時間20日23:02股價上漲9.18美元，報192.06美元，漲幅5.02%，成交量359,979（股），盤中最高價192.06美元、最低價178.20美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.04%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.05%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.86%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.46%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;露露檸檬(lulu-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+7.43%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-9.78%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+9.68%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-7.86%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-12.36%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        美股分析
+                                        美股大盤
                                     </span><span class="text-slate-400 text-xs">
-                                        下午11:00
+                                        上午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    盤中速報 - 科派特(CPRT-US)大跌8.9%，報34.3美元
+                                    盤中速報 - 露露檸檬(LULU-US)大漲5.02%，報192.06美元
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347685"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347700"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="消費電子與半導體" data-title="盤中速報 - 科斯塔集團(csgp-us)大漲5.14%，報51.59美元"
+                            data-content="&amp;lt;p&amp;gt;科斯塔集團(csgp-us)截至台北時間20日23:01股價上漲2.52美元，報51.59美元，漲幅5.14%，成交量1,028,952（股），盤中最高價51.59美元、最低價49.43美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：+0.04%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：+0.05%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.84%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+1.48%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;科斯塔集團(csgp-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+8.68%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：-25.1%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：-25.87%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：-44.98%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：-27.22%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        消費電子與半導體
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 科斯塔集團(CSGP-US)大漲5.14%，報51.59美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347699"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 費城半導體大漲1.2%，報8271.21點"
+                            data-content="&amp;lt;p&amp;gt;截至台北時間20日11:01，費城半導體上漲97.91點（或1.2%），暫報8271.21點。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;近 1 週：+1.1%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 1 月：+3.1%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 3 月：+22.54%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;近 6 月：+44.11%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;今年以來：+15.39%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;焦點個股&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;費城半導體成分股以連貫(cohr-us)領漲。連貫(cohr-us)上漲5.6%；格羅方德(gfs-us)上漲2.84%；和康電訊(mtsi-us)上漲2.63%；科林研發(lrcx-us)上漲2.57%；亞德諾(adi-us)上漲1.86%。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;部分成分股表現相對疲軟，onto innovation inc.(onto-us)下跌2.79%；英特爾(intc-us)下跌2.58%；超微半導體(amd-us)下跌1.32%；安謀控股公司(arm-us)下跌0.5%；邁威爾科技(mrvl-us)下跌0.31%。&amp;lt;/p&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 費城半導體大漲1.2%，報8271.21點
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347698"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="盤中速報 - 連貫(cohr-us)大漲5.1%，報244.33美元"
+                            data-content="&amp;lt;p&amp;gt;連貫(cohr-us)截至台北時間20日22:47股價上漲11.85美元，報244.33美元，漲幅5.1%，成交量853,201（股），盤中最高價244.36美元、最低價229.51美元。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;美股指數盤中表現&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;道瓊指數：-0.32%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;s&amp;amp;amp;p 500指數：-0.1%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;nasdaq指數：+0.32%&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;費城半導體指數：+0.9%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;連貫(cohr-us)歷史漲跌幅&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;    &amp;lt;li&amp;gt;近 1 週：+3.6%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 1 月：+17.2%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 3 月：+56.63%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;近 6 月：+155.12%&amp;lt;/li&amp;gt;    &amp;lt;li&amp;gt;今年以來：+21.3%&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午12:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    盤中速報 - 連貫(COHR-US)大漲5.1%，報244.33美元
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347695"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -301,7 +412,7 @@
                                     <span>
                                         美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
+                                        4
                                     </span>
                                 </button>
                                 
@@ -310,7 +421,25 @@
                                     <span>
                                         半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
+                                        4
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('川普')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        川普
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('關稅')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        關稅
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
                                     </span>
                                 </button>
                                 
@@ -329,7 +458,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             US
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    251
+                                                    254
                                                 </span>
                                         </button>
                                         
@@ -353,23 +482,23 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             日本
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    102
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('美元')"
+                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
+                                            美元
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     101
                                                 </span>
                                         </button>
                                         
                                         <button onclick="searchKeyword('春節')"
-                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
+                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             春節
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    98
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('美元')"
-                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
-                                            美元
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    98
+                                                    99
                                                 </span>
                                         </button>
                                         
@@ -409,7 +538,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             川普
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    66
+                                                    67
                                                 </span>
                                         </button>
                                         
@@ -449,7 +578,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             全球
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    52
+                                                    53
                                                 </span>
                                         </button>
                                         
@@ -469,6 +598,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('中速')"
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
+                                            中速
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    47
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('台南')"
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             台南
@@ -482,14 +619,6 @@
                                             初三
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     44
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('中速')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            中速
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    43
                                                 </span>
                                         </button>
                                         
@@ -529,7 +658,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             初四
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    36
+                                                    37
                                                 </span>
                                         </button>
                                         
@@ -693,6 +822,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('斯坦')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            斯坦
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('提醒')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             提醒
@@ -712,14 +849,6 @@
                                         <button onclick="searchKeyword('警方')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             警方
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    24
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('警告')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            警告
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     24
                                                 </span>
@@ -765,7 +894,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19","02-20"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.58,0.78],
+                    data: [0.48,0.88,0.1,0.95,0.58,0.75],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -786,7 +915,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.5,0.85,0.75,0.6,0.8],
+                    data: [0.85,0.7,0.65,0.75,0.8],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -801,7 +930,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.25,"finance":0.4,"manufacturing":0.1,"service":-0.15};
+        const sectorData = {"tech":0.65,"finance":0.2,"manufacturing":-0.4,"service":0.5};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
