@@ -94,46 +94,50 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月20日星期五 · 更新於 12:01
+                        2026年2月20日星期五 · 更新於 13:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('輝達')"
+                            <button onclick="searchKeyword('聯發科')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #聯發科
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(2454.TW)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('瑞昱')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #瑞昱
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(2379.TW)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Google')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Google
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(GOOGL.US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('美國最高法院')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #輝達
+                                #美國最高法院
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA-US)</span>
-                                        
                             </button>
                             
-                            <button onclick="searchKeyword('台達電')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台達電
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('藥華藥')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #藥華藥
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(6446.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('保瑞')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #保瑞
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(6472.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('伊朗')"
+                            <button onclick="searchKeyword('Donald Trump')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #伊朗
+                                #Donald Trump
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('ASIC 市場')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #ASIC 市場
                                     
                             </button>
                             
@@ -147,7 +151,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.82
+                                    0.85
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -223,7 +227,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險預警：極度貪婪中的最後一根稻草——地緣衝突與估值上限】</h3><p>今日市場情緒進一步攀升至 <b>0.82 (極度貪婪)</b>。相較於昨日關注的「私募信用壓力與 PC 衰退」，今日市場正進入<b>「敘事極端化」與「地緣政治突發性衝擊」</b>的共振期。輝達 (NVDA) 執行長黃仁勳的工業革命論調將 AI 崇拜推向頂峰，但歷史規律顯示，當單一技術被賦予超越「蒸汽機」的救世主地位時，往往伴隨著估值泡沫的末端特徵。</p><h4>1. 增量風險：從「流動性乾涸」演變為「能源瓶頸與地緣震盪」</h4><p>今日數據顯示，AI 的擴張已從純軟體算力競賽轉向<b>物理基礎設施的硬邊界</b>。台達電 (2308-TW) 的布局揭示了電力短缺將成為 AI 的實質天花板；更具威脅的是，川普對伊朗的「有限打擊」計畫可能引發能源價格劇烈波動，打破目前「低通膨、高成長」的金髮女孩幻象。若地緣衝突升級，高估值的科技股將首先面臨避險資金抽離。</p><h4>2. 防禦性建議：棄泡沫、保基建、轉防禦</h4><p>在極度貪婪環境下，建議投資者：(1) <b>獲利了結</b>已過度反映 2026 年預期的科技龍頭；(2) <b>資產置換</b>至具備政策紅利且抗週期的防禦板塊，如受惠於台美貿易協定 (ART) 且關稅降至 15% 的生技製藥產業 (藥華藥、保瑞)；(3) <b>關注實物資產</b>，如能源電力基建，以應對 AI 長期結構性需求與地緣局勢引發的二次通膨風險。</p>
+                            <h3>【風險深度報告：資源過度擁擠與法律『黑天鵝』的雙重夾擊】</h3><p>今日市場情緒攀升至 <b>0.85 (極度貪婪)</b>，較昨日 0.82 進一步惡化。市場正處於「AI 敘事過度擴張」與「法律系統性風險」的交界處。</p><h4>1. 增量變化分析：從「算力崇拜」轉向「資源全量轉化」</h4><p>今日新聞顯示，連傳統消費型 IC 設計業者（如瑞昱、聯發科）也正全面將研發資源抽離傳統領域轉向 AI ASIC。這雖在短期內推升估值，但在風險控管視角下，這象徵著<b>『週期性替代風險』</b>：當所有業者均轉向同一利基市場時，邊際收益將迅速遞減，泡沫特徵明顯。</p><h4>2. 隱藏風險：IEEPA 裁決與貿易戰略的結構性斷裂</h4><p>相較於昨日關注的能源瓶頸，今日新增的美國最高法院對 IEEPA 的裁決案，是一柄懸在 1,300 億美元關稅上的達摩克利斯之劍。若總統權限被縮減或法律依據動搖，全球供應鏈將面臨不可預測的關稅重組，極度貪婪的市場對此法律風險完全缺乏對沖準備。</p><h4>3. 決策建議：適度減倉，轉向防禦</h4><p>鑑於估值已達上限且出現「萬物皆 AI」的末端特徵，建議投資者對 AI ASIC 供應鏈進行<b>獲利了結 (Profit-taking)</b>。增持與全球貿易波動關聯度較低的<b>防禦性資產</b>或<b>高現金流標的</b>，防範即將到來的貿易政策黑天鵝。</p>
                         </div>
                     </div>
                 </section>
@@ -232,38 +236,40 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="半導體" data-title="〈觀察〉ai 用電激增 電源廠「電源+能源基建」雙軌並進布局搶商機"
-                            data-content="&amp;lt;p&amp;gt;ai 蓬勃發展帶動電力需求飆升。除了 ai 伺服器電源架構面臨功耗升級，穩定的電力供應也被視為一大關鍵課題。因此，電源廠不僅針對伺服器內部應用持續精進產品技術，也積極拓展「能源基礎建設」，透過雙軌並進擴大布局。&amp;lt;/p&amp;gt;
+                            data-category="半導體/IC設計" data-title="〈觀察〉ic設計業者資源轉向 搶食雲端ai asic商機"
+                            data-content="&amp;lt;p&amp;gt;隨著 ai 雲端資料中心與相關 asic 需求快速攀升，帶動 asic 市場規模持續擴大，台灣 ic 設計業者過往普遍在消費型電子領域，過去數年也加速將資源轉向 ai 與雲端運算領域布局，當中以聯發科 (2454-tw) 進度最為領先，不僅已成功切入 google&amp;nbsp;tpu 供應鏈，也正與多家雲端服務供應商 (csp) 洽談，搶攻新一波 ai 商機，瑞昱 (2379-tw) 與聯詠 (3034-tw) 也同步加快布局腳步。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;台達電 (2308-tw) 認為，ai 引發的能源需求將帶來新的成長周期，公司將電源系統技術延伸至能源基礎建設，範疇涵蓋資料中心電力調度、微電網、儲能，乃至燃料電池的落地應用。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;在 ai 與雲端運算趨勢帶動下，聯發科近年明顯調整研發與資源配置，強化投入 asic 領域，憑藉在 224g serdes ip 技術拿下 csp 訂單，同時也積極開發 448g serdes 技術，並預計在未來進一步結合共封裝光學 (cpo) 技術，搶食 ai 雲端商機。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;在產品布局上，台達電表示，由於資料中心 800v 直流供電架構已趨成熟，已準備好在客戶導入時即刻配合，並同步推進垂直供電與 dc-dc 模組化策略，相較於傳統方案的高度複雜性，未來「模組化供電」將成為主流趨勢。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;尤其未來隨著 ai 資料中心算力大幅提升，傳統銅線傳輸面臨頻寬與能耗瓶頸，光通訊成為 ai 資料中心的重要解決方案，聯發科也開發自家 micro led 光通訊技術，並預計應用在主動式光纜 (aoc)，等同包攬晶片到周圍傳輸的整體解決方案。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;康舒 (6282-tw) 在 ai 電源布局主要聚焦於機架式電源與機櫃等整體方案；旗下子公司 omnion 則以板端 dc-dc 產品為主；且在 ai 驅動電力需求大增的背景下，康舒燃料電池客戶接單強勁，公司預期該領域未來幾年將有數倍成長。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;聯發科看好，未來三年 asic 業務將高速成長，成長幅度大於其他產品線，預計 asic 業務將成為第二大營收來源，僅次於手機晶片，且 2028 年目標市佔率至少達 10-15%，不排除會進一步增加。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;目前康舒機櫃級產品已導入 hvdc 架構，可支援兆瓦（mw）級資料中心需求。在機架級產品方面，33kw 電源已送樣至 ai 伺服器代工廠測試，並預計於今年推出更高功率的 72kw 等級產品。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;近年來，大型雲端業者積極發展自研晶片，用於 ai 訓練、推論與資料處理，也推升 asic 需求。相較通用型 gpu，asic 在某些特殊應用上可具備效能與能耗優勢，也符合各家 csp 的需求，成為 ic 設計業者競逐的新戰場。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;群電 (6412-tw) 目前正持續加大對 ai 高功率電源、伺服器及電信（telecom）電源的研發投入，相關新專案已逐步展開，預計自下半年起營收貢獻將明顯提升。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;除聯發科外，瑞昱 (2379-tw) 與聯詠 (3034-tw) 也同步強化 ai 與雲端相關產品布局。瑞昱積極深耕網通晶片領域，目前也積極開發 5 奈米與 4 奈米的 asic，鎖定邊緣伺服器市場，同時也將傳輸技術延伸至光通訊領域，尋求新的成長曲線。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;此外，群電也發揮深耕多年的智慧低碳業務優勢，切入 ai 資料中心基礎建設。透過與資策會等策略夥伴合作，共同開發模組化 ai 貨櫃型算力中心，涵蓋 20 呎及 40 呎貨櫃的智慧環控系統，相關專案同樣預計自今年起貢獻營收。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;聯詠也同樣瞄準雲端 asic 商機，4 奈米 hpc 晶片穩健推進中，同時也看好隨著實體 ai 逐步發酵，機器視覺相關晶片需求旺盛，未來隨著機器人產業持續發展，相關需求也可望成為中長期的營運動能。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;台灣 ic 設計業者過去高度仰賴消費性電子市場，營運易受景氣循環影響。隨著 ai 與雲端應用成為新主流，asic 與相關 ai 晶片可望帶動產業結構升級，有助提升產品附加價值與獲利穩定度，且隨著各自的客戶專案逐步開花結果，相關布局將成為未來數年的重要成長引擎。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        半導體
+                                        半導體/IC設計
                                     </span><span class="text-slate-400 text-xs">
-                                        下午12:01
+                                        下午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    〈觀察〉AI 用電激增 電源廠「電源+能源基建」雙軌並進布局搶商機
+                                    〈觀察〉IC設計業者資源轉向 搶食雲端AI ASIC商機
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(tw_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345732"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6342894"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -273,139 +279,48 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="地緣政治" data-title="〈馬年景氣展望〉關稅抵定 藥華藥、保瑞及美時營運看增"
-                            data-content="&amp;lt;p&amp;gt;行政院副院長鄭麗君於台灣時間 2 月 13 日指出，我國談判團隊已與美國完成「台美對等貿易協定 (art)」簽署，確立對等關稅調降至 15% 且不疊加。除學名藥零關稅，未來通過美國 fda 審查的新藥，可望不需要進行臨床試驗即可輸入台灣，加速審查流程。對於藥華藥 (6446-tw)、保瑞 (6472-tw) 及美時 (1795-tw) 等積極布局美國的藥廠，無疑是利多，今年營運看增。&amp;nbsp;&amp;lt;/p&amp;gt;
+                            data-category="國際貿易法律" data-title="美最高法院即將裁決ieepa權限 1300億美元與貿易權力懸而未決"
+                            data-content="&amp;lt;p&amp;gt;美國最高法院預計於美東時間周五 (20 日) 上午 10 時開庭，全球市場正高度屏息，關注一項可能對美國貿易政策產生震盪影響的裁決。此案名為「learning resources, inc. 訴川普案」(learning resources, inc. v. trump)，核心爭議在於川普總統是否過度擴張 1977 年《國際緊急經濟權力法》(ieepa) 的權限，以此作為徵收全球性關稅的法源依據。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;學名藥協會公共事務委員主委殷為瑩表示，包含癌症用藥、中樞神經用藥、抗生素等學名藥出口零關稅，有助台灣製藥產業進軍國際市場。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h6&amp;gt;法律爭議核心：總統權力與國會課稅權之爭&amp;nbsp;&amp;lt;/h6&amp;gt;
 
-&amp;lt;p&amp;gt;此外，根據此次簽訂的 art，我國承諾將加快審查流程，未來通過美國 fda 審查並取得上市許可的新藥，在符合相關條件下，有機會不必重新進行臨床試驗，並以美國藥證為基礎，作為申請台灣上市許可的證據。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;川普在過去 14 個月中，多次引用 ieepa 宣布經濟緊急狀態並加徵關稅。然而，最高法院大法官在先前的聽證會中對此展現出懷疑態度。首席大法官羅勃茲 (john roberts) 指出，無論總統的動機為何，課稅始終是國會的核心權力，他質疑總統的外交事務特權是否能「凌駕於國會的這項基本權力之上」。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;對此，殷為瑩也持正面看法，指出藥物提供者的使命，就是以最快速度提供患者適合的藥物，而美國 fda 已是各國參考援引的高標準審查體系之一，如果能適度結合在地專業審查，對縮短新藥上市時間及病人用藥可近性有實質幫助。且一旦加速審查機制導入台灣，也能作為國產新藥審查的參考依據。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;此案的最終結果將影響高達 1300 億美元的稅收。自 2025 年初以來，美國政府已徵收超過 2600 億美元的關稅，稅務基金會 (tax foundation) 估計其中約 55% 的收入與本案涉及的關稅有關。大法官巴雷特 (amy coney barrett) 曾憂心表示，若判定關稅非法並要求追溯退款，情況可能會變成一場「混亂」。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;台灣藥廠中，藥華藥、保瑞及美時也積極布局美國。藥華藥日前宣布，將投資 4600 萬美元 (約新台幣 14.5 億元)，在美國波多黎各設立子公司及製造廠，預計 2027 年取證及投產，強化美國供應鏈布局，建立台美雙生產基地的營運模式。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h6&amp;gt;市場預測：立即性的波動與「過度反應」&amp;nbsp;&amp;lt;/h6&amp;gt;
 
-&amp;lt;p&amp;gt;保瑞同樣持續擴大美國投資，董事會日前通過對美國明尼蘇達州 maple grove 廠區的增資與借貸案。此外，旗下泰福 - ky(6541-tw) 斥資 3000 萬美元 (約新台幣 9.42 億元) 進行美國聖地牙哥廠擴建工程，新增 2 座 2000 公升一次性生物反應器，整體產能將提升至 9000 公升，目前已正式啟用。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;摩根大通研究人員針對裁決結果提出了多種情境分析。若川普勝訴並維持關稅體系，或是關稅被判定違法但延至期中選舉後才廢除，標普 500 指數可能會出現從下跌 1% 到上漲 2% 不等的劇烈波動。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;美時則斥資 6.85 億美元 (約新台幣 199.33 億元)，收購 nagh 100% 股權，藉此取得 alvogen us 所有權。美時指出，alvogen us 在專科學名藥具研發優勢，除能藉此拓展產品線，並減少關稅衝擊，更有助美時後續取得有美國生產要求的採購合約。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;儘管市場預期會有強烈反應，但分析家提醒投資者保持冷靜。wolfe research 分析師 tobin marcus 預測，即使法院削弱白宮使用 ieepa 徵收關稅的權力，可能也不會強制要求退款，屆時股市 (特別是進口商) 可能短暫衝高，但這種走勢未必能持久。pangaea policy 分析師 terry haines 則警告，投資者應準備好面對市場因標題新聞產生的「過度反應」，隨後可能緊接著快速冷卻。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;至於營運面，藥華藥旗下自主開發新藥 ropeg 新增適應症原發性血小板過多症 (et) 進展順利，預期今年起可陸續取得美國及各國 et 藥證，有望成為藥華藥成長第二支柱。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h6&amp;gt;川普的回應與未來的政治變數&amp;lt;/h6&amp;gt;
 
-&amp;lt;p&amp;gt;保瑞美國馬里蘭州針劑廠自 1 月下旬開始，進行 3 至 4 周的年度檢修，加上全球銷售業務中，胃食道逆流學名藥 dls 因經銷商客戶持續觀察競爭對手價格走勢，影響短期出貨動能，拖累 1 月營收 11.4 億元，年月皆下滑逾 3 成。不過保瑞強調，衰退主因來自短期、非結構性因素，有望於第一季底迎來營運反轉。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;面對可能的敗訴，川普近期多次表示他會「想辦法解決」，儘管他坦言替代方案可能「不像現在這麼完美」。其團隊長期以來一直承諾，若現行關稅法源被推翻，將改用其他法律授權來替代。然而，隨著期中選舉臨近，且川普近期已有縮減關稅規模的趨勢，政治壓力可能使更換法源的過程變得更加複雜。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;保瑞盛保熙進一步指出，今年在本業國際訂單穩健，以及美國子公司 usl 轉型效益逐步顯現帶動下，同步啟動小分子及大分子雙引擎，看好今年年增雙位數。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;除了關稅案，最高法院目前還在處理另一件備受矚目的案件，即川普政府試圖解雇聯邦準備理事會理事庫克 (lisa cook) 的爭議，大法官對政府解雇央行官員的理據同樣持懷疑態度。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;美時受到去年同期營收比重較高的血癌藥 lenalidomide 在 1 月未有營收貢獻，加上因美國天候惡劣，短期影響多項主要產品出貨，拖累 alvogen us 表示，使得 1 月營收 20.52 億元，年月雙衰退。不過美時強調，隨著天候狀況回穩，預期 2 月出貨可恢復正常。&amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;h6&amp;gt;裁決時程仍具不確定性&amp;nbsp;&amp;lt;/h6&amp;gt;
+
+&amp;lt;p&amp;gt;雖然周五是關鍵節點，但觀察家指出最高法院也可能將裁決延後至下周二 (川普發表國情咨文當天) 或下周三 (2 月 25 日)。大法官傑克森 (ketanji brown jackson) 近期表示，撰寫法律意見書需要時間，公眾應理解法院必須經過嚴謹且清晰的審議過程。正如法律專家所言，法院始終按照自己的時間表行動，而非配合媒體或投資者的期望。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        地緣政治
+                                        國際貿易法律
                                     </span><span class="text-slate-400 text-xs">
-                                        下午12:01
+                                        下午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    〈馬年景氣展望〉關稅抵定 藥華藥、保瑞及美時營運看增
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(tw_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345098"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="生技醫療" data-title="知情人士：川普考慮對伊朗發動「有限規模」初步打擊"
-                            data-content="&amp;lt;p&amp;gt;美國方面消息稱，美國總統川普正權衡對伊朗發動一次「有限規模」的初步軍事打擊，以迫使伊朗接受美國提出的核協議要求。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;知情人士透露，若獲得授權，該行動可能在數日內展開，目標將鎖定少數軍事或政府設施，意在向德黑蘭施壓，而非立即發動全面戰爭。相關方案被視為分階段行動的第一步。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;若伊朗仍拒絕按美方要求停止鈾濃縮活動，美國可能進一步擴大行動範圍，對伊朗政權相關設施展開更廣泛打擊，甚至不排除以動搖德黑蘭政權為目標。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;川普周四（19 日）稍早前表示，伊朗有「10 至 15 天」的時間達成協議，否則將面臨「嚴重後果」。當前美伊圍繞核問題的緊張局勢持續升級，美國在中東的軍事部署明顯增強。&amp;lt;/p&amp;gt;
-">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        生技醫療
-                                    </span><span class="text-slate-400 text-xs">
-                                        下午12:01
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    知情人士：川普考慮對伊朗發動「有限規模」初步打擊
+                                    美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347427"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="能源基建" data-title="輝達的不敗神話或許終有盡頭？"
-                            data-content="&amp;lt;p&amp;gt;據《財富中文網》報導，2025 年 10 月底，輝達 (nvda-us) 的共同創辦人及執行長黃仁勳登上該公司年度 gpu 技術大會的舞台，發表了一番氣勢磅礴的宣言。黃仁勳稱，輝達正處於「人類歷史上最大規模工業革命的中心」，其意義超越蒸汽機與電力的出現。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;隨後，他拋出了一連串令人眼花繚亂的合作夥伴計劃：輝達將與 uber 共同打造 10 萬輛無人駕駛汽車，並與 palantir 合作提供軟體和晶片，以加速商品從倉庫流轉到終端用戶的家門口。此外，輝達也向「超大規模雲端服務商」展示如何建置「ai 工廠」，也就是只有在部署輝達的系統時才能夠發揮極致效能與效率的巨型資料中心。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這場演講讓輝達的粉絲熱血沸騰，該公司的市值在一天之內飆升 5%，單日暴增 2,500 億美元，比波音公司的總市值還高出 60%。由此，輝達成為全球首家市值觸及 5 兆美元的公司。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;marketbeat 數據顯示，在 47 位分析師中，有 46 位對輝達的股票給予「強力買進」或「買進」評級。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;然而，一小部分敏銳的觀察者卻看到了隱憂。他們認為，輝達為維持霸主地位所建構的複雜生態暗藏風險，即透過投資和融資安排「餵養」客戶，從而刺激並鎖定對其產品的需求。這項策略圍繞著 openai 和「新雲」企業 coreweave 展開，既是一場算力競賽，也是一場金融工程。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;證券公司 seaport global securities 的戈德堡是華爾街唯一給予輝達「賣出」評級的人，他直言：「輝達在人為製造需求。」摩根士丹利財富管理的投資長沙利特則指出，問題不在輝達的負債，而其客戶的高槓桿。「輝達不斷扶持客戶，只為維持自身增長。」沙利特說，「局面正在變得愈發複雜：被資助方的實力不夠，輝達卻在助推他們大舉借債。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;輝達對此不予置評。但要理解這家美國新經濟的標誌性公司的崛起之路，必須看清三大力量：一是亞馬遜、微軟、alphabet 和 meta 等巨頭競相建設人工智慧資料中心的權力遊戲；二是挑戰它們的「新雲」勢力的崛起；三是黃仁勳心底最深處的恐懼。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;輝達的 ai 稱霸之路&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在成立 32 年的大部分時間裡，輝達專注於為個人電腦遊戲市場製造 3d 圖形晶片。早期，這家公司甚至一度因資金枯竭而陷入困境。1999 年，輝達推出一款革命性 gpu，其影像生成速度遠超前代產品。2000 年代，科技界實現的一系列突破使得「深度學習」成為可能，技術開始勝任翻譯、影像辨識等任務。到 2012 年左右，輝達已經全力押注適用於人工智慧的 gpu 和其他硬體，並搭配自研 cuda 軟體，讓開發者可以為其革命性的晶片編寫應用程式。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;2022 年年底，chatgpt 的發布引爆人工智慧浪潮，輝達恰逢其時。其 gpu 不僅算力是業界最強的，更關鍵的是能源效率比最高。2023 財年，輝達的利潤僅 44 億美元；然而過去四個季度，輝達的利潤已經飆升至 866 億美元，成為僅次於 alphabet（1,243 億美元）、蘋果（1,120 億美元）、微軟（1,049 億美元）的全球第四大科技公司，超越了亞馬遜和 meta。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;與 90 年代末的電信泡沫不同，這次無人質疑輝達的獲利能力。但很明顯，這家晶片巨頭高度依賴少數超大客戶。2025 年第二季度，其 52% 的銷售額來自三家未具名的客戶，分析師認為是微軟、亞馬遜和 alphabet。meta 以及馬斯克（透過 xai 和特斯拉）也大量採購其系統。而輝達的國際化業務同樣面臨挑戰，受中美貿易戰影響，輝達最先進、最搶手的 gpu 進入中國市場遇阻。2024 年，中國市場曾透過百度、阿里巴巴等客戶貢獻了超過八分之一的銷售額，但這一比例持續萎縮，未來或進一步降低甚至歸零，這將加劇輝達對「超巨」客戶的依賴。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;黃仁勳深知，過度倚重少數超級買家風險巨大。根據一位一直積極參與 ai 基礎設施建設的知情人士透露，輝達的首要動機是避免重蹈硬體供應商被商品化的覆轍。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;「硬體生意利潤薄，輝達明白技術優勢難以持久。」消息人士表示，「他們害怕像 cpu 廠商那樣被商品化，害怕議價能力隨著時間的推移而下降，超高利潤率崩塌。」目前，輝達仍然是科技硬體界一個耀眼的例外：2025 財年，其毛利率接近 80%，遠超過 50%。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;迄今為止，輝達依然掌握著絕對話語權。「其 gpu 性能超群，近乎壟斷。」戈德堡指出，巨頭難以憑藉體量壓價。但如今，超大規模的雲端廠商正努力奪回主動權。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;巨頭們不甘心只做客戶，它們的長期目標是打造自研晶片，與輝達正面交鋒。微軟正在開發內部代號為 maia 的人工智慧加速器晶片；亞馬遜已經部署了兩代產品 trainium 和 inferentia；google 則已經基本轉向自研 tpu。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這股競爭潮勢必壓低價格。亞馬遜執行長賈西在 2024 年的年報裡寫道：「迄今為止，ai 過度依賴單一晶片廠商，價格昂貴。它不必像現在這麼貴，未來也不會這麼貴。」微軟高層也多次強調要用自研晶片驅動資料中心。da davidson 的技術研究主管吉爾 &amp;middot; 盧裡亞一語道破：「輝達想擺脫對『四大』（指微軟、亞馬遜、谷歌和 meta）的依賴，『四大』也想擺脫對輝達的依賴。」&amp;lt;">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        能源基建
-                                    </span><span class="text-slate-400 text-xs">
-                                        下午12:01
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    輝達的不敗神話或許終有盡頭？
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347355"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347350"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -432,15 +347,6 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('美元')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        美元
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
-                                    </span>
-                                </button>
-                                
                                 <button onclick="showKeywordTrend('川普')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
@@ -450,10 +356,10 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('輝達')"
+                                <button onclick="showKeywordTrend('股市')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        輝達
+                                        股市
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -463,6 +369,15 @@
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         關稅
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('美元')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -483,7 +398,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             AI
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    212
+                                                    214
                                                 </span>
                                         </button>
                                         
@@ -499,7 +414,15 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             EPS
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    111
+                                                    113
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('日本')"
+                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
+                                            日本
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    92
                                                 </span>
                                         </button>
                                         
@@ -511,19 +434,11 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('日本')"
-                                            class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
-                                            日本
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    91
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('美元')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             美元
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    87
+                                                    89
                                                 </span>
                                         </button>
                                         
@@ -531,7 +446,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             自由
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    82
+                                                    83
                                                 </span>
                                         </button>
                                         
@@ -543,6 +458,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('曝光')"
+                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
+                                            曝光
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    72
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('除夕')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             除夕
@@ -551,19 +474,11 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('曝光')"
-                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
-                                            曝光
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    70
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('川普')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             川普
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    59
+                                                    60
                                                 </span>
                                         </button>
                                         
@@ -571,7 +486,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             初一
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    58
+                                                    59
                                                 </span>
                                         </button>
                                         
@@ -587,7 +502,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             開講
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    55
+                                                    56
                                                 </span>
                                         </button>
                                         
@@ -595,7 +510,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             經典賽
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    54
+                                                    55
                                                 </span>
                                         </button>
                                         
@@ -627,7 +542,15 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             MLB
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    42
+                                                    43
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('台南')"
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
+                                            台南
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    41
                                                 </span>
                                         </button>
                                         
@@ -636,14 +559,6 @@
                                             中速
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     41
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('台南')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            台南
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    39
                                                 </span>
                                         </button>
                                         
@@ -667,7 +582,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             宣布
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    37
+                                                    38
                                                 </span>
                                         </button>
                                         
@@ -675,7 +590,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             情人
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    34
+                                                    35
                                                 </span>
                                         </button>
                                         
@@ -683,7 +598,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             高雄
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    34
+                                                    35
                                                 </span>
                                         </button>
                                         
@@ -715,6 +630,14 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             路段
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    28
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('新春')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            新春
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     27
                                                 </span>
                                         </button>
@@ -722,6 +645,14 @@
                                         <button onclick="searchKeyword('科技')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             科技
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    27
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('TW')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            TW
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     27
                                                 </span>
@@ -751,9 +682,17 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('新春')"
+                                        <button onclick="searchKeyword('初四')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            新春
+                                            初四
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    26
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('和平')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            和平
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     26
                                                 </span>
@@ -767,11 +706,19 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('和平')"
+                                        <button onclick="searchKeyword('人潮')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            和平
+                                            人潮
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    25
+                                                    24
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('研究')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            研究
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    24
                                                 </span>
                                         </button>
                                         
@@ -786,14 +733,6 @@
                                         <button onclick="searchKeyword('澎湖')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             澎湖
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    23
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('人潮')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            人潮
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     23
                                                 </span>
@@ -815,19 +754,27 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('研究')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            研究
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    23
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('高市早苗')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             高市早苗
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     23
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('文化')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            文化
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    22
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('國道')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            國道
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    22
                                                 </span>
                                         </button>
                                         
@@ -844,38 +791,6 @@
                                             晶片
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     22
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('國道')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            國道
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    21
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('Google')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            Google
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    21
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('警方')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            警方
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    21
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('初四')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            初四
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    21
                                                 </span>
                                         </button>
                                         
@@ -919,7 +834,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19","02-20"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.58,0.82],
+                    data: [0.48,0.88,0.1,0.95,0.58,0.85],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -940,7 +855,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.35,0.9,0.85,0.2,0.88],
+                    data: [0.35,0.92,0.88,0.25,0.85],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -955,7 +870,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.85,"finance":0.1,"manufacturing":0.4,"service":-0.2};
+        const sectorData = {"tech":0.95,"finance":0.45,"manufacturing":0.25,"service":0.35};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
