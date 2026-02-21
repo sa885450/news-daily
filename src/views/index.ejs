@@ -257,10 +257,10 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: <% - JSON.stringify(chartLabels) %>,
+                labels: <%- JSON.stringify(chartLabels) %>,
                 datasets: [{
                     label: '情緒指數',
-                    data: <% - JSON.stringify(chartScores) %>,
+                    data: <%- JSON.stringify(chartScores) %>,
                     borderColor: '<%= chartColor %>',
                     backgroundColor: '<%= chartColor %>20',
                     borderWidth: 3,
@@ -281,7 +281,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: <% - JSON.stringify(radarData) %>,
+                    data: <%- JSON.stringify(radarData) %>,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -296,7 +296,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = <% - JSON.stringify(sectorStats) %>;
+        const sectorData = <%- JSON.stringify(sectorStats) %>;
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -337,7 +337,7 @@
                 content.classList.remove('scale-95');
             }, 10);
 
-            title.textContent = `🔥 ${keyword} - 7日熱度趨勢`;
+            title.textContent = "🔥 " + keyword + " - 7日熱度趨勢";
 
             // Fetch data if not cached
             if (!trendsCache) {
@@ -432,7 +432,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         <% if (keywords7d && keywords7d.length > 0) { %>
-            const cloudData = <% - JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
+            const cloudData = <%- JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
