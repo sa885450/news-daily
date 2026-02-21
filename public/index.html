@@ -99,48 +99,32 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月21日星期六 · 更新於 11:00
+                        2026年2月21日星期六 · 更新於 12:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('台積電')"
+                            <button onclick="searchKeyword('華城')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #台積電
+                                #華城
                                     
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(1519.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('元大台灣50')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #元大台灣50
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(0050.TW)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('蘋果')"
+                            <button onclick="searchKeyword('晶技')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #蘋果
+                                #晶技
                                     
-                                        <span class="text-xs ml-1 opacity-70">(AAPL-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(3042.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('輝達')"
+                            <button onclick="searchKeyword('旺矽')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #輝達
+                                #旺矽
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA-US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('貝萊德')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #貝萊德
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(BLK-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(6223.TW)</span>
                                         
                             </button>
                             
@@ -148,6 +132,20 @@
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #川普
                                     
+                            </button>
+                            
+                            <button onclick="searchKeyword('美國最高法院')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #美國最高法院
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('穎崴')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #穎崴
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(6515.TW)</span>
+                                        
                             </button>
                             
                     </div>
@@ -160,7 +158,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.82
+                                    0.88
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -236,7 +234,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風險控管深度報告：亢奮情緒背後的結構性脆弱】</h3><p>市場情緒今日已攀升至 <b>0.82（極度貪婪）</b>，台股創下歷史性封關紀錄，散戶與機構法人均陷入集體非理性亢奮。然而，身為風險控管專家，我必須針對當前的「泡沫共振」提出嚴厲警告：</p><h4>1. 增量風險分析：關稅法律戰僅是延長賽而非終局</h4><p>相較於昨日 0.75 的情緒值，今日市場進一步無視了行政權力的反撲速度。雖然最高法院裁定 IEEPA 關稅違法讓蘋果等企業看似迎來退款利多，但這實際上加劇了行政機關的對抗情緒。川普政府預計於 <b>2 月 24 日</b>啟動的新手段將更具針對性且難以法律挑戰，目前的「退款風暴」反而可能演變成財政補貼與關稅補償的長期混亂。</p><h4>2. 獲利了結信號：警惕 AI 預期過度提前透支</h4><p>投信法人看好馬年獲利增長 3 成，此種一致性預期往往是市場過熱的頂部特徵。0050 存股熱潮達到 22 年頂點，顯示零售端最後一波資金已完全進場。貝萊德雖然加倉科技股，但同步布局新材料與化工等防禦/週期性產業，暗示大資金正在進行「隱形調倉」，並非全面看多電子龍頭。</p><h4>3. 專家操作建議：轉向防禦性資產</h4><p>建議投資者於金馬年開盤後，<b>適度獲利了結 20%-30% 的科技成長股</b>。目前的本益比已完全忽視第二季傳統淡季與政策性風險。資產配置應增加<b>基礎設施、高股息防禦性標的及現金流充裕之傳產股</b>，以對沖行政命令突發導致的市場回撤風險。</p>
+                            <h3>【風險控管深度報告：最後的一舞？警惕極度亢奮下的『估值懸崖』】</h3><p>市場情緒已從昨日的 0.82 進一步飆升至 <b>0.88（極度貪婪）</b>。今日市場對於最高法院推翻 IEEPA 關稅的解讀過於樂觀，將其視為「關稅解放日」，這種集體性的非理性繁榮忽略了行政權力反撲的結構性風險。</p><h4>1. 增量風險分析：法律利多恐成「流動性陷阱」</h4><p>相較於昨日，今日市場焦點從法律戰延伸至重電與 AI 測試介面的基本面。雖然華城 (1519-TW) 與測試四雄展現強勁展望，但頻率元件龍頭晶技 (3042-TW) 的相對弱勢，暗示了<b>資金正在向極少數的高價題材股過度集中</b>。這不是健康的全面牛市，而是典型的『末升段擠壓』。最高法院的裁定雖短期緩解關稅焦慮，但極可能促使川普政府在 <b>2 月 24 日</b>採取更具法理正當性的行政手段（如啟動 301 調查或針對性行政命令），目前的法律利多只是延後了風險爆發的時點，而非消除風險。</p><h4>2. 板塊脆弱性警告：AI 基礎建設的『超前反映』</h4><p>測試介面與重電設備雖然受惠於 CSP 資本支出，但目前股價已提前反映至 2026 年的獲利。在情緒值 0.88 的背景下，任何低於預期的財報數據或政策轉向，都將觸發連鎖性的獲利了結賣壓。</p><h4>3. 決策建議：執行『防禦性撤退』</h4><ul><li><b>分批獲利了結</b>：建議針對已漲幅超過 50% 的 AI 與重電族群，執行 25%-30% 的減碼。</li><li><b>資產配置調整</b>：將資金轉向低基期、具防禦性的公用事業或黃金避險資產，以對沖 2 月下旬可能的政策波動。</li><li><b>嚴設停損點</b>：目前市場已無容錯空間，必須將停損保護上移至近期跳空缺口處。</li></ul>
                         </div>
                     </div>
                 </section>
@@ -245,50 +243,36 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="科技" data-title="投信法人看旺開紅盤金馬報喜！ai供應鏈迎收割期 企業獲利看增逾3成"
-                            data-content="&amp;lt;p&amp;gt;台股金蛇年完美收官！在權值王台積電與 ai 供應鏈帶動下，以 33605.71 點創下史上最強封關紀錄，全年累計狂飆 10080 點。展望金馬年，安聯、新光、台新及玉山等投信業者一致認為，台股基本面已由「題材作夢」轉向「實質獲利」，且隨著全球科技巨頭資本支出超預期，ai 驅動的企業獲利正逐漸擴散至其他產業，法人看好馬年行情不僅勝率高，更有望開啟結構性的上升新循環，惟第二季是電子傳統淡季，若出現技術性拉回，可伺機布局長線趨勢成長股。&amp;lt;/p&amp;gt;
+                            data-category="半導體測試" data-title="〈馬年景氣展望〉台電強韌電網計畫、ai基建需求旺 重電四雄展望佳"
+                            data-content="&amp;lt;p&amp;gt;北美四大 csp 持續上調資本支出，且近一半用於建置資料中心，帶動美國資料中心電力需求，電網商機可期，加上台電強韌電網計畫持續挹注，台廠重電四雄華城 (1519-tw)、士電 (1503-tw)、亞力 (1514-tw) 及中興電 (1513-tw) 皆受惠，今年展望正向。&amp;nbsp;&amp;lt;/p&amp;gt;
 
-&amp;lt;h6&amp;gt;安聯投信：2026 企業獲利成長上調至 31% 看好景氣循環題材&amp;lt;/h6&amp;gt;
+&amp;lt;p&amp;gt;華城指出，2026 年主要成長動能來四大支柱，包含台電強韌電網計畫、各國電力公司電網強韌計劃、綠能，以及 aidc。其中，aidc 動能最為強勁，整體 aidc 電力變壓器貢獻已超過 120 億元，預期今年 aidc 營收占整體營收將超過 1 成。此外，華城取得星際之門一期電力變壓器訂單，去年已出貨 6.5 億元，今年將陸續出貨。&amp;nbsp;&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;針對台股展望，安聯投信台股團隊指出，市場已從去年底的資金行情，逐步銜接至今年初的實質獲利行情。根據最新估算，2026 年台股整體企業獲利預估成長率已從原先的 21.4% 大幅上修至 31.4%，且預期每一季的獲利成長皆能維持在 20% 以上，這為指數持續挑戰新高提供了堅實的底氣。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;士電表示，今年成長動能來自台電強韌電網計畫、ai 產業需求以及外銷北美 aidc 訂單，目前整體能見度看至 2029 到 2030 年，看好在需求強勁的帶動下，第一季營收與獲利創高。此外，近期銅價走揚，士電也開出變壓器漲價第一槍，預告 3 月起調漲新接單的變壓器價格，調漲 15 至 20%。&amp;nbsp;&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;選股重心方面，安聯建議以 ai 供應鏈為核心，並聚焦 2025 年第四季財報亮眼且 2026 展望上修的族群。尤其是景氣循環題材，隨著 ai 晶片需求排擠成熟產能，記憶體、玻纖布、銅箔、載板等產業將迎來補漲與復甦。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;亞力目前在手訂單約 110 億元，以產品營收比重來看，台電相關訂單占 40%，半導體相關訂單則占 25%。亞力提到，受惠晶圓代工大廠客戶積極於海外擴產，推升相關電力設備需求，為就近服務客戶，已規劃在美國成立子公司。&amp;nbsp;&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;安聯台灣主動式 etf (00993a-tw) 經理人施政廷強調，目前處於「寬鬆預期消失、產業成長持續」的特殊環境。他建議投資人應採取「重質不重量」的原則，透過主動選股汰弱留強，並利用主動式 etf 的靈活權重調整，在市場恐慌時捕捉被錯殺的優質資產。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;中興電在手訂單維持 400 億元高檔，成長動能來自台電強韌電網計畫、汰舊換新計劃、離岸風電三期計畫、半導體業國內外擴廠及國際大廠建置 ai 及 idc 機房等。&amp;nbsp;&amp;lt;/p&amp;gt;
 
-&amp;lt;h6&amp;gt;台新投信：半導體多峰並進 ai 資本支出突破 6000 億美元&amp;lt;/h6&amp;gt;
-
-&amp;lt;p&amp;gt;新光臺灣半導體 30 etf (00904-tw) 經理人詹佳峯分析，google、meta、amazon、微軟在內的四大美系科技巨頭，2026 年的 ai 相關資本支出預估將高達 6000 億至 6300 億美元，此規模甚至超越許多中大型國家的 gdp。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;詹佳峯指出，全球記憶體市場 (dram、nand、hbm) 將面臨 15 年來最嚴重的供應短缺，由於產能供給出現缺口，記憶體已從一般零件升級為「半導體戰略物資」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;台新投信 etf 投資團隊補充，半導體產業已從單一晶片成長轉向「多峰並進」，包括先進製程、高階封測及記憶體皆同步走強。實體 ai 與代理 ai 的普及，將帶動台灣半導體產業鏈進入獲利倍增的紅利期，建議投資人年後可分批布局科技型 etf。&amp;lt;/p&amp;gt;
-
-&amp;lt;h6&amp;gt;玉山投信：蛇年強弱分明 馬年企業獲利將更趨均衡&amp;lt;/h6&amp;gt;
-
-&amp;lt;p&amp;gt;回顧蛇年表現，玉山投信表示，根據統計，以 ai 為主的電子零組件與半導體類股漲幅分別達 110% 與 65%，遠超加權指數；反觀數位雲端與運動休閒等傳產族群則跌幅慘烈。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;保德信市值動能 50 etf (009803-tw) 經理人楊立楷認為，馬年台股的一大亮點在於「獲利擴散」。ai 帶來的生產力提升將不再侷限於科技業，非科技族群有望從谷底回升，整體股市結構將顯得更為健康、均衡。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;操作建議上，根據統計，台股春節後 10 日的上漲機率高達 9 成，楊立楷提醒，雖然開紅盤氣勢強，但第二季往往會面臨指數整理期。若馬年第二季出現技術性拉回，反而是長線投資者逢低介入優質成長股、捕捉中長期績效的最佳時機。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;至於台電強韌電網，法人指出，台電 2026 至 2028 年專案以燃氣機組為主，燃氣電廠設備包含變壓器、氣體絕緣開關設備 (gis) 及配電盤，預估未來重電商機上看 500 億元，看好重電四雄受惠。&amp;nbsp;&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        科技
+                                        半導體測試
                                     </span><span class="text-slate-400 text-xs">
-                                        上午11:00
+                                        下午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    投信法人看旺開紅盤金馬報喜！AI供應鏈迎收割期 企業獲利看增逾3成
+                                    〈馬年景氣展望〉台電強韌電網計畫、AI基建需求旺 重電四雄展望佳
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(tw_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345126"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345110"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,38 +282,40 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="金融" data-title="0050勇奪2025親子存股冠軍！壓歲錢22年翻15倍 滾出百萬留學基金"
-                            data-content="&amp;lt;p&amp;gt;元大台灣 50(0050-tw)2025 年風光無限，席捲定期定額、總投資人數冠軍，大型證券商公布的親子理財熱門標的，同樣由 0050 拔得頭籌，顯示新時代的爸媽相對更加重視理財成長性，不少人在孩子出生後馬上開立帳戶，並選擇 0050 當作核心存股標的，若是在 22 年前剛上市就用壓歲錢買進一張，如今資產翻了 15 倍達近百萬，可直接作為出國留學基金之用。&amp;lt;/p&amp;gt;
+                            data-category="重電能源" data-title="〈人物專訪〉擺脫紅海市場競爭 晶技林萬興：要在ai、網通應用發光"
+                            data-content="&amp;lt;p&amp;gt;台北股市加權股價指數在金蛇年封關以 33605.71 點作收，大漲&amp;nbsp;10080.3 點，累計漲幅達 42.85%，而電子類股指數在金蛇年以 2074.95 點作收，累計漲幅更高達 57.58%，在電子股族群在半導體、ai、低軌衛星等題材引導之下，各次族群也可觀漲幅，但頻率元件類股股價表現則呈現相對弱勢。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;據永豐金證券公布，永豐金證券平台最受歡迎親子存股標的，由 2025 年最熱門的 0050 奪下第一；元大證券也指出，台股定期定額的未成年扣款人數較 2024 年顯著增長，每月投資金額集中落在 5000 元至 1.5 萬元，投資標的同樣由 0050 居冠。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;甚至如頻率元件類股龍頭廠的晶技 (3042-tw) 股價金蛇年封關以 88.1 元，累計股價跌幅 1%，包括晶技執行長林萬興、希華 (2484-tw) 董事長曾穎堂，都將類股的弱勢表現原因指向來自中國大陸紅色供應鏈的削價競爭造成獲利能力的下滑。而 ai 帶動網通應用成長同時，台廠研發能力加強並走向小型化及高階元件市場開發，期待擺脫紅海市場的競爭走向成長。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;法人指出，過去爸媽習慣幫孩子開銀行帳戶、郵局帳戶存錢，但與其讓錢躺平，不如用錢賺錢，現在爸媽更流行幫孩子開證券帳戶存 0050，光是 2025 年的報酬率就高達 38%，還能夠順便讓孩子培養理財觀念，不輕易將零用錢、壓歲錢吃喝玩樂花掉，可說是有存 0050 就「贏在起跑點」。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;晶技在 2026 年元月營運受惠 ai 及光模塊應用需求的大幅增加，元月營收達 12.17 億元，越越法人預期，月增 18.18%，較上月 10.24 億元及 2025 年同月的 11.42 億元成長 6.57%，並改寫歷年同期新高，單月稅前賺 2.23 億元，每股稅前盈餘 0.66 元。而晶技 2025 年全年營收 133.49 億元，毛利率 33%，年減 2.41%，自結稅前盈餘 21.94 億元，以全年有效稅率 17.5% 估算，2025 年晶技全年稅後純益 18.1 億元，年減 15.3%，淨利超過半個股本，每股純益估約 5.3 元。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;從長期投資角度，如果是在 22 年前 0050 剛上市之際，父母就為小孩買進，用這段期間 0050 報酬率約 1500% 計算，當小孩大學畢業時，原來的 6 萬元就已經變成近 100 萬元，普通的壓歲錢變成孩子的第一桶金、創業基金，甚至是留學深造的夢想門票。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;頻率元件產業全球有 seiko epson、ndk、kcd、kds 等日系廠強力競爭，林萬興指出，晶技原就看好 2026 年由網通、ai 伺服器等基建帶動的高階頻率元件需求成長， 帶來新的市場機會，晶技 2026 年在營收有機會再小幅成長；同時，晶技在每年都投入占營收 7-8% 的研發費用，在競爭力也不容忽視。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;不少證券商呼應父母為小孩理財需求，陸續推出兒童存股方案，如擁有全台灣最多據點的元大證券，提供「未成年開戶懶人包」，大幅降低臨櫃開戶的障礙；凱基證券則推出「凱基高財生」計畫定期定額投資 100 元起、開戶享 0 元手續費優惠加 3000 抵用金。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;依晶技的財報揭露，晶技在 2022 年投入研發費用占營收比重爲 7.89%，2023 年更達 8.76%，2024 年也達 8.53%，2025 年 1-3 季占比 7.42%。林萬興指出，晶技與科技企業對新產品合作開發，並將晶技開發規格納入設計能力是不容被忽視的&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;理財專家指出，為孩子理財首重及早開始，剛出生就可以開證券帳戶，7 歲以下的小朋友不用到現場，由父母雙方代理臨櫃辦理；7 歲以上則要小孩、父母一起到現場。專家建議可以把握馬年新春，透過小孩子的第一個證券帳戶開始投資 0050。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;至於晶技小型化及邁向半導體製程方面，林萬興指出，以晶技的製程能力而言，規格已由 1008 開發到 0806，同時，晶圓製程也進行開展，目前也待進一步的市場需求起風。舉例而言，像台積電 (2330-tw) 開發共同封裝 (cowos) 也是歷經 10 年到目前才獲市場的高度重視。&amp;lt;/p&amp;gt;
 
-&amp;lt;p class=&amp;quot;warning&amp;quot;&amp;gt;※免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險，自負盈虧。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;同時，在出貨產品結構上，預估晶技在營收成長走勢之下，消費電子應用比重將趨降，而在主軸上營運上，ai 相關將占 11%、網通應用將占 7%，這兩類產品應用毛利率相對穩定；而在汽車電子有大量需求的頻率元件上 ，預估將占營收比重 26%。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;就晶技規劃的產品戰略結構上，在汽車電子構裝比重需求大幅提高之下，晶技預估在 3-5 年內提高到 30% 的營收比重。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        金融
+                                        重電能源
                                     </span><span class="text-slate-400 text-xs">
-                                        上午11:00
+                                        下午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    0050勇奪2025親子存股冠軍！壓歲錢22年翻15倍 滾出百萬留學基金
+                                    〈人物專訪〉擺脫紅海市場競爭 晶技林萬興：要在AI、網通應用發光
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(tw_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345461"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6344930"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,56 +325,42 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="政策" data-title="川普單邊課稅遭最高法院打臉 蘋果32億美元恐掀退款風暴"
-                            data-content="&amp;lt;p&amp;gt;在美國川普總統於 2025 年 4 月推動大規模「解放日」(liberation day)對等關稅 10 個月後，美國最高法院以 6 比 3 裁定該措施違法。此舉不僅重創美國企業與消費者，也讓蘋果 (aapl-us) 承擔約 32 億美元關稅成本，後續退款程序恐將陷入混亂。&amp;lt;/p&amp;gt;
+                            data-category="國際法規" data-title="ai測試難度大增 測試介面四雄今年營運續攀峰"
+                            data-content="&amp;lt;p&amp;gt;ai 基礎建設進入高速成長期，ai gpu、ai asic 需求同步暢旺，在晶片功耗大增、訊號傳輸提升以及小晶片架構趨勢延續下，測試介面持續迎來大升級，產業迎來量價齊揚，台廠包括旺矽 (6223-tw)、精測 (6510-tw)、穎崴 (6515-tw) 以及雍智科技 (6683-tw) 今年營運都可望再續創新高。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;川普原本即被預期將推動關稅政策，但 2025 年 4 月宣布的對等關稅規模遠超市場預期。當時官方提出的稅率計算方式遭到廣泛質疑，隨後川普更進一步調高稅率，聲稱要懲罰特定國家，甚至點名蘋果執行長 tim cook(tim cook)。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;業界指出，近年 ai gpu 與 ai asic 晶片因採用小晶片 (chiplet) 架構，普遍整合多顆運算晶粒 (compute die) 與高頻寬記憶體 (hbm)，晶片腳位數大幅增加，資料傳輸頻寬與訊號完整性要求大幅提升，使測試時間與難度顯著增加，且為確保晶片運作，測試時間只增不減。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;最高法院 6 比 3 否決單方面課稅權限&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;此外，由於現階段 ai 晶片需經歷多種測試，除了既有的晶圓測試 (cp)、最終測試 (ft) 外，更加入系統級測試 (slt)，透過多元的測試來確保高單價的 ai 晶片量產後的運作，也催生對測試介面的強勁需求。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;supreme court of the united states 裁定，川普在未經國會授權情況下援引《國際緊急經濟權力法》(ieepa) 實施關稅，屬於違法行為。首席大法官 john roberts(john roberts) 在判決書中指出「當國會授予課徵關稅的權力時，會以明確且審慎的限制為前提，而此案並非如此」。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;旺矽長期深耕探針卡領域，獲多家雲端服務業者 (csp)、美系網通客戶青睞，為因應龐大客戶訂單，近年積極擴產，今年也預計再度擴充垂直式探針卡 (vpc) 與 mems 探針卡產能。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;roberts 強調，法院並未自認具備經濟或外交事務的專業能力，而是依據憲法第三條所賦予的有限角色作出裁定，並明確表示 ieepa 並未授權總統單方面課徵關稅。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;其中，旺矽 vpc 月產能將從去年的 120 萬針提升至 180 萬針，mems 探針卡則自去年底月產能約 100 萬針，今年首季就會達 200 萬針，下半年更直逼 300 萬針，同時 pcb 產能也預計在今年底開出，屆時 pcb 自製率將提升至 50%。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;不過，大法官 clarence thomas、samuel alito 與 brett kavanaugh 持反對意見。kavanaugh 另行指出，多數意見並未說明政府是否、以及如何返還已向進口商徵收的數十億美元關稅。他形容退款程序「可能是一團亂」，且退款對象將是進口商，而非承擔漲價壓力的消費者。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;精測強項在於 pcb 領域，目前已拿下多家 ai 晶片的 pcb 大單，尤其隨著大電流、高針數趨勢越趨明顯，pcb 的技術越趨複雜化，精測部分訂單已經看至 2028 年，為因應客戶需求，也啟動擴產，預計新廠將在 2028 年下半年投產。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;退款與後續影響仍未明朗&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;穎崴目前已是全球邏輯測試座的龍頭，今年受惠台廠的先進封裝產能持續擴大，目前產能已供不應求，緊急在去年底承租仁武廠，去年底測試座的探針產能達 350 萬針，今年第二季將提升至 600 萬針，年底上看 800 萬針；加工件產能則預計於第二季底倍增。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;判決僅針對關稅合法性，未處理退款與補償機制。事實上，關稅款項一直由美國進口商支付，而非外國政府。除了向政府繳納關稅外，美國企業亦為應對政策變動投入大量成本。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;另外，為因應客戶長期需求，穎崴也自地自建仁武新廠，屆時產能將是現階段的 2 至 3 倍，顯現對未來前景的樂觀看法。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;部分企業增聘員工處理關稅計算與合規問題；蘋果則斥資數億美元重整製造與物流網絡，以降低衝擊。此外，部分中小企業因關稅負擔過重而倒閉，市場預料未來恐出現相關訴訟。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;外界普遍預期，川普可能改以其他法律途徑重新推動關稅措施，短期內政治攻防將持續升溫，未來數月或提出新方案。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;關稅衝擊與市場震盪&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;長期以來，美國進口關稅實際上由本國企業承擔，企業在貨品入境前即須繳納相關稅費，並通常轉嫁至消費者。2025 年 2 月，在對等關稅細節公布前，市場已預期蘋果將首當其衝。美銀曾估計，蘋果可能被迫將 iphone 價格上調 10%，但截至目前尚未實施。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;然而，多數 pc 製造商已調高產品價格，食品、電視與電腦零組件價格亦顯著上漲。電腦零組件更因資料中心與 ai 需求激增而承壓。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;對中國課徵的關稅一度高達 50%，雖其後有所波動，但遠高於過去歷屆政府依合法程序徵收的約 4% 水準。貿易戰升級後，中國與多國亦對美國商品加徵報復性關稅。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;在關稅最初宣布時，蘋果與多數美國企業股價大幅下挫。美中互徵關稅的來回交鋒，對大型科技公司與依賴進口的美國本土企業均造成衝擊。市場歷經長時間震盪，直到 2025 年大部分時間過去後，蘋果股價才逐步回穩。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;截至目前，蘋果已支付約 32 億美元關稅。該筆款項是否需要返還，仍有待後續法律與行政程序釐清。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;雍智科技也看好，在測試流程複雜化、規格升級等多樣測試需求同步推進下，今年三大產品線將同步成長，整體訂單能見度高，營運預計將再創新高。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        政策
+                                        國際法規
                                     </span><span class="text-slate-400 text-xs">
-                                        上午11:00
+                                        下午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    川普單邊課稅遭最高法院打臉 蘋果32億美元恐掀退款風暴
+                                    AI測試難度大增 測試介面四雄今年營運續攀峰
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
+                                    鉅亨網(tw_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347893"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6342305"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -398,42 +370,50 @@
                         </div>
                         
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="〈美股13f報告〉貝萊德調倉：加倉核心科技股輝達、蘋果 布局新材料、化工 持倉市值達5.92兆美元"
-                            data-content="&amp;lt;p&amp;gt;兆級外資巨頭又調倉了！根據美國證券交易委員會 (sec) 披露，資管巨頭貝萊德近日遞交了截至 2025 年 12 月 31 日的第四季度持倉報告(13f)。&amp;lt;/p&amp;gt;
+                            data-category="其他" data-title="《華爾街日報》社論：法院不是橡皮圖章！真正關稅解放日"
+                            data-content="&amp;lt;p&amp;gt;最高法院以 6 比 3 的多數意見，於週五在 learning resources 訴川普案中裁定，推翻總統唐納德 &amp;middot; 川普依據《國際緊急經濟權力法》(international emergency economic powers act, ieepa) 實施的大規模緊急關稅措施。此一裁決不僅攸關關稅政策本身，更是對憲法三權分立原則的重大確認，可謂真正的「關稅解放日」。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;報告顯示，貝萊德第四季度持倉總市值為 5.92 兆美元，較上季增長 3.67%。去年第四季度，貝萊德的投資組合中新增了 247 只個股，清倉 165 檔個股，其中前十大重倉股占總市值 30.41%。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;本案在法律與經濟層面的重要性難以高估。倘若川普勝訴，未來總統將可能透過宣布緊急狀態，繞過國會授權，幾乎不受約束地對進口商品徵收邊境稅，從而實質重塑聯邦稅制與對外貿易政策。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;具體來看，前五大買入標的為谷歌 - a、谷歌 - c、禮來、美光 (mu-us)、蘋果。前五大賣出標的則為標普 500etf-spdr call(spy-us.call)、servicenow (now-us)、strategy (mstr-us)、at&amp;amp;t (t-us)、kellanova(k-us，現已退市)。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;首席大法官 john roberts 在多數意見中指出：「鑑於徵稅權具有獨特的重要性，而製憲者剛剛經歷了一場在很大程度上由『未經代表同意而徵稅』所激發的革命，因此他們把『唯有國會得以接近人民的錢袋』這一權力交給了國會。」這段論述直指憲法結構核心，即財政權限屬於民意代表機構，而非行政首長。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;貝萊德持有的前十大重倉股科技含量較高，包括輝達 (nvda-us)、蘋果(aapl-us)、微軟(msft-us)、亞馬遜(amzn-us)、谷歌 - a(googl-us)、博通(avgo-us)、谷歌 - c(goog-us)、meta(meta-us)、特斯拉(tsla-us)、禮來(lly-us) 等。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;川普於去年 2 月宣布芬太尼販運構成國家緊急狀態，主張此舉賦予其依 ieepa 對加拿大、中國與墨西哥課徵關稅的廣泛權力。隨後，他更進一步宣稱美國貿易逆差本身構成緊急狀態，並以此為依據，對任何國家課徵稅率可由其自行裁量調整的關稅。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;去年第四季度，貝萊德對核心科技股進行不同程度增持，輝達的持倉數量較上一季度增加 0.75%，持有約 19.43 億股，持倉市值約 3625.21 億美元，投資占比達 6.13%，穩居第一大重倉股。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;ieepa 確實授權總統在面對外國威脅時採取緊急措施，包括「regulate(管制)&amp;hellip; 外國財產的進口或出口」。然而，該法條文並未提及關稅，且自立法以來近半世紀，歷任總統從未援引該法徵收任何關稅，更遑論如此大規模與廣泛適用的邊境稅。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;蘋果的持倉數量較上一季度增加 0.73%，持有約 11.55 億股，持倉市值約 3139.07 億美元，投資占比達 5.31%，為第二大重倉股。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;在由 neil gorsuch、amy coney barrett 及三位自由派大法官共同加入的意見書中，羅伯茨強調：「當國會委託其關稅權力時，均以明確條款為之，且附帶嚴格限制。」此一歷史與制度脈絡，成為法院適用「重大問題原則」(major questions doctrine) 的重要依據。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;此外，貝萊德對微軟的持倉提升 1.70%，持有約 6.02 億股，持倉市值約 2910.89 億美元，投資占比達 4.92%；對亞馬遜的持倉也提升 1.67%，持有約 7.34 億股，持倉市值約 1695.08 億美元，占投資組合比例為 2.87%。谷歌 - a 的持倉數量較上一季度增加 3.16%，持有約 4.42 億股，持倉市值約 1383.42 億美元，占投資組合比例為 2.34%。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;該原則要求，當總統或行政機關欲採取具有重大經濟與政治影響的行動時，必須取得國會明確授權。法院此前已依此原則，推翻學生貸款減免、驅逐禁令與疫苗強制令等行政措施。本案所涉範圍更為廣泛。羅伯茨援引川普政府自身說法指出：「政府表示，這些關稅預計將使國家赤字減少 4 兆美元，並依賴這些關稅達成的國際協議可能價值 15 兆美元。」如此規模，顯然屬於重大問題。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;除了加倉核心科技股，貝萊德還布局新材料、化工等領域。去年第四季度，「新晉」高性能特種材料供應商 solstice advanced materials(sols-us)持倉市值約 8.38 億美元；「新晉」化學品公司 qnity electronics(q-us)持倉市值約 13 億美元。根據 13f，貝萊德對新能源車操作出現分化，對蔚來 (nio-us) 和小鵬汽車 (xpev-us) 進行了大幅加倉，對理想汽車 (li-us) 則進行了小幅減持。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;川普方面主張，「regulate(管制)」一詞涵義足以涵蓋課徵關稅。三位提出異議的大法官&amp;mdash;&amp;mdash;brett kavanaugh、clarence thomas 與 samuel alito&amp;mdash;&amp;mdash;部分支持此見解。然而，多數意見指出，「regulate」在通常語義上係指「固定、確立或控制，透過規則、方法或既定模式進行調整」，並不等同於徵稅。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;去年第四季度，貝萊德增持蔚來美股 337.59 萬股至 558.27 萬股，環比增長 153%，持倉總市值環比增長 69.3% 至 2847.2 萬美元。貝萊德也增持小鵬汽車美股 77.98 萬股至 287.21 萬股，環比成長 37%，持倉市值達 5824.6 萬美元。此外，貝萊德減持理想汽車美股 6.14 萬股至 82.62 萬股，環比減少 7%，持倉市值達 1398.7 萬美元。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;羅伯茨進一步區分指出，雖然許多法條賦予行政部門「管制」權力，但政府無法指出任何法條將「管制」權力解釋為包含徵稅權力。問題的關鍵不在於「關稅是否曾作為商業管制手段」，而在於國會是否將「由總統單方面自行裁量徵收關稅」之權力授予行政部門。答案是否定的。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;政府最具說服力的主張在於外交事務應受司法尊重。異議意見亦持此立場。然而，戈薩奇在協同意見中指出，若僅因議題涉及國際層面便全面尊重行政權，則法院在 west virginia v. epa 一案中便應支持清潔電力計畫，因氣候變遷同樣屬國際問題。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;戈薩奇承認，在總統與國會權力重疊領域，重大問題原則的適用可能較弱。但憲法明確將徵稅權與對外貿易權賦予國會，而非總統。這一文本安排構成不可逾越的界線。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;川普於裁決公布當日嚴詞批評多數意見，但隨即援引另一項貿易法第 122 條，對所有進口商品徵收 10% 關稅。該法明確授權總統為處理國際收支逆差徵收最高 15% 邊境稅，期限為 150 天，其後須經國會批准。該 10% 關稅雖具爭議，但在法源上屬合法行使。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;本案同時回應了部分民主黨人對現任法院為川普「橡皮圖章」的指控。法院已展現其願意制衡兩黨總統濫用行政權力的立場。這正是憲法賦予大法官的制度責任。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         其他
                                     </span><span class="text-slate-400 text-xs">
-                                        上午11:00
+                                        下午12:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    〈美股13F報告〉貝萊德調倉：加倉核心科技股輝達、蘋果 布局新材料、化工 持倉市值達5.92兆美元
+                                    《華爾街日報》社論：法院不是橡皮圖章！真正關稅解放日
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347701"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6347912"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -451,19 +431,19 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('美元')"
+                                <button onclick="showKeywordTrend('AI')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        美元
+                                        AI
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         3
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('AI')"
+                                <button onclick="showKeywordTrend('半導體')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        AI
+                                        半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         2
                                     </span>
@@ -496,24 +476,6 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('0050')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        0050
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('輝達')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        輝達
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
                                 <button onclick="showKeywordTrend('關稅')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
@@ -523,19 +485,10 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('新能源')"
+                                <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        新能源
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('半導體')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        半導體
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -564,7 +517,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             AI
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    202
+                                                    205
                                                 </span>
                                         </button>
                                         
@@ -580,7 +533,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             美元
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    108
+                                                    109
                                                 </span>
                                         </button>
                                         
@@ -588,7 +541,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-100 text-indigo-800 border-indigo-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-xl font-black">
                                             日本
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    88
+                                                    89
                                                 </span>
                                         </button>
                                         
@@ -596,7 +549,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             自由
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    86
+                                                    88
                                                 </span>
                                         </button>
                                         
@@ -604,7 +557,7 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             健康
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    81
+                                                    82
                                                 </span>
                                         </button>
                                         
@@ -644,6 +597,14 @@
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             開講
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    59
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('全球')"
+                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
+                                            全球
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     58
                                                 </span>
                                         </button>
@@ -651,14 +612,6 @@
                                         <button onclick="searchKeyword('伊朗')"
                                             class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
                                             伊朗
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    55
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('全球')"
-                                            class="inline-flex items-center justify-center bg-indigo-50 text-indigo-600 border-indigo-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-lg font-bold">
-                                            全球
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     55
                                                 </span>
@@ -700,6 +653,14 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             台南
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    45
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('MLB')"
+                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
+                                            MLB
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     43
                                                 </span>
                                         </button>
@@ -709,14 +670,6 @@
                                             初三
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     42
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('MLB')"
-                                            class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
-                                            MLB
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    41
                                                 </span>
                                         </button>
                                         
@@ -732,7 +685,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             世界
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    37
+                                                    38
                                                 </span>
                                         </button>
                                         
@@ -764,7 +717,7 @@
                                             class="inline-flex items-center justify-center bg-slate-100 text-slate-700 border-slate-300 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-base font-medium">
                                             最高
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    30
+                                                    31
                                                 </span>
                                         </button>
                                         
@@ -792,6 +745,14 @@
                                                 </span>
                                         </button>
                                         
+                                        <button onclick="searchKeyword('合作')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            合作
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    28
+                                                </span>
+                                        </button>
+                                        
                                         <button onclick="searchKeyword('人潮')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             人潮
@@ -816,14 +777,6 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('合作')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            合作
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    27
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('路段')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             路段
@@ -845,6 +798,30 @@
                                             高市早苗
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     27
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('分析')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            分析
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    26
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('研究')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            研究
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('NBA')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            NBA
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    25
                                                 </span>
                                         </button>
                                         
@@ -880,22 +857,6 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('研究')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            研究
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    24
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('分析')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            分析
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    24
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('Google')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             Google
@@ -907,6 +868,14 @@
                                         <button onclick="searchKeyword('新春')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             新春
+                                                <span class="ml-1.5 text-[0.6em] opacity-60">
+                                                    23
+                                                </span>
+                                        </button>
+                                        
+                                        <button onclick="searchKeyword('政策')"
+                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
+                                            政策
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     23
                                                 </span>
@@ -928,27 +897,11 @@
                                                 </span>
                                         </button>
                                         
-                                        <button onclick="searchKeyword('NBA')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            NBA
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    23
-                                                </span>
-                                        </button>
-                                        
                                         <button onclick="searchKeyword('年菜')"
                                             class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
                                             年菜
                                                 <span class="ml-1.5 text-[0.6em] opacity-60">
                                                     22
-                                                </span>
-                                        </button>
-                                        
-                                        <button onclick="searchKeyword('政策')"
-                                            class="inline-flex items-center justify-center bg-slate-50 text-slate-600 border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 px-3 py-1.5 rounded-lg border transition-all duration-300 text-sm">
-                                            政策
-                                                <span class="ml-1.5 text-[0.6em] opacity-60">
-                                                    21
                                                 </span>
                                         </button>
                                         
@@ -992,7 +945,7 @@
                 labels: ["02-15","02-16","02-17","02-18","02-19","02-20","02-21"],
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.58,0.5,0.82],
+                    data: [0.48,0.88,0.1,0.95,0.58,0.5,0.88],
                     borderColor: '#dc2626',
                     backgroundColor: '#dc262620',
                     borderWidth: 3,
@@ -1013,7 +966,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.35,0.92,0.88,0.45,0.95],
+                    data: [0.75,0.95,0.88,0.65,0.92],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -1028,7 +981,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.88,"finance":0.65,"manufacturing":0.32,"service":0.45};
+        const sectorData = {"tech":0.92,"finance":0.65,"manufacturing":0.78,"service":0.55};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
