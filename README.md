@@ -27,6 +27,16 @@ news-daily/
 
 ## 📝 更新日誌 (Changelog)
 
+### v4.5.0 - 核心強化與視覺化升級 (2026-02-22)
+- **☁️ 互動式文字雲 (Word Cloud)**：
+  - 導入 `wordcloud2.js`，將熱詞列表升級為動態畫布文字雲。
+  - 支援點擊熱詞同步觸發「趨勢分析」與「新聞檢索」。
+- **🧠 AI 結構化輸出 (JSON Schema)**：
+  - 改用 Google Gemini 原生 `responseSchema` 模式。
+  - 從底層確保 API 回傳格式 100% 正確，大幅提升系統穩定度。
+- **💾 儲存機制擴充**：
+  - 資料庫 `articles` 表新增 `content` 欄位，完整保存新聞全文以供深度分析。
+
 ### v4.4.0 - 自定義關鍵字黑名單 (2026-02-19)
 - **🛡️ 彈性過濾機制 (Flexible Blacklist)**：
   - 支援透過 `.env` 設定 `KEYWORD_BLACKLIST`，自定義需過濾的關鍵字。

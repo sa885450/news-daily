@@ -50,7 +50,7 @@ async function runTask() {
             allMatchedNews.push({ source: item.source, title: item.title, content: item.content, url: item.link });
             fetchedUrls.add(item.link);
         }
-        db.saveArticle(item.title, item.link, item.source);
+        db.saveArticle(item.title, item.link, item.source, '其他', item.content || item.contentSnippet);
     }
 
     // 2. 抓取 RSS (並發執行)
@@ -71,7 +71,7 @@ async function runTask() {
     for (const feed of feeds) {
         for (const item of feed.items) {
             // 嘗試寫入資料庫記錄 (不論是否選用)
-            db.saveArticle(item.title, item.link, feed.sourceName);
+            db.saveArticle(item.title, item.link, feed.sourceName, '其他', item.content || item.contentSnippet);
 
             if (db.isAlreadyRead(item.link) || fetchedUrls.has(item.link)) continue;
 

@@ -10,6 +10,7 @@ db.exec(`
     title TEXT, 
     source TEXT, 
     category TEXT, 
+    content TEXT, -- 🟢 新增：儲存全文以利後續分析
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
   CREATE TABLE IF NOT EXISTS daily_stats (
@@ -28,8 +29,13 @@ try {
   // Column likely exists
 }
 
+// 🟢 Migration: Add content column to articles (for existing DB)
+try {
+  db.prepare('ALTER TABLE articles ADD COLUMN content TEXT').run();
+} catch (e) { }
+
 const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
-const insertArticleStmt = db.prepare('INSERT INTO articles (title, url, source, category) VALUES (?, ?, ?, ?)');
+const insertArticleStmt = db.prepare('INSERT INTO articles (title, url, source, category, content) VALUES (?, ?, ?, ?, ?)');
 const insertStatsStmt = db.prepare(`INSERT INTO daily_stats (date, sentiment_score, summary, sector_stats) VALUES (?, ?, ?, ?) ON CONFLICT(date) DO UPDATE SET sentiment_score = excluded.sentiment_score, summary = excluded.summary, sector_stats = excluded.sector_stats`);
 const getRecentStatsStmt = db.prepare('SELECT date, sentiment_score, sector_stats FROM daily_stats ORDER BY date ASC LIMIT ?');
 const getLastSummaryStmt = db.prepare('SELECT summary, sentiment_score FROM daily_stats ORDER BY date DESC LIMIT 1');
@@ -48,8 +54,8 @@ const getKeywordHistoryStmt = db.prepare(`
 
 module.exports = {
   isAlreadyRead: (url) => !!checkUrlStmt.get(url),
-  saveArticle: (title, url, source, category = '其他') => {
-    try { insertArticleStmt.run(title, url, source, category); } catch (e) { }
+  saveArticle: (title, url, source, category = '其他', content = null) => {
+    try { insertArticleStmt.run(title, url, source, category, content); } catch (e) { }
   },
   saveDailyStats: (score, summary, sectorStats = null) => {
     const today = new Date().toISOString().split('T')[0];
