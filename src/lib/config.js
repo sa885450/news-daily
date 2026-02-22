@@ -18,7 +18,7 @@ module.exports = {
 
     // AI 模型設定
     modelCandidates: ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-flash-latest"],
-    similarityThreshold: 0.6,
+    similarityThreshold: parseFloat(process.env.SIMILARITY_THRESHOLD) || 0.8,
 
     // 爬蟲偽裝 Headers
     headers: {
