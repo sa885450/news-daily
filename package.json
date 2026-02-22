@@ -1,11 +1,13 @@
 {
   "name": "news",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "test": "npx jest",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "rebuild": "node scripts/rebuild_views.js",
+    "fix-ejs": "node scripts/fix_ejs.js"
   },
   "keywords": [],
   "author": "",
