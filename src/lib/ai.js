@@ -129,7 +129,7 @@ function getPersona(lastScore) {
 async function getSummary(newsData, lastSummary = null, lastScore = 0) {
     const blob = newsData.map((n, i) => {
         const content = n.content || n.title || "無內文";
-        return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 400)}...`;
+        return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 1000)}...`;
     }).join('\n\n---\n\n');
 
     const persona = getPersona(lastScore);

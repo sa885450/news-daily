@@ -158,7 +158,9 @@
                     <% newsData.forEach(function(n) { %>
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
                             data-category="<%= n.category || '其他' %>" data-title="<%= n.title.toLowerCase() %>"
-                            data-content="<%= (n.content || '').toLowerCase() %>">
+                            data-content="<%= (n.content || '').toLowerCase() %>" data-raw-title="<%= n.title %>"
+                            data-raw-content="<%= n.content || '無內文資訊' %>" data-url="<%= n.url %>"
+                            data-source="<%= n.source %>">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
@@ -175,13 +177,23 @@
                                     <%= n.source %>
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="<%= n.url %>"
-                                    target="_blank"
+                            <div class="pt-4 border-t border-slate-50 flex justify-between items-center">
+                                <button onclick="handlePreview(this)"
+                                    class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>預覽內容
+                                </button>
+                                <a href="<%= n.url %>" target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
+                                    </svg></a>
+                            </div>
                         </div>
                         <% }); %>
                 </div>
@@ -246,12 +258,84 @@
                                     </div>
                                 </div>
 
+                                <!-- 🟢 新増：內覽 Modal -->
+                                <div id="contentModal"
+                                    class="fixed inset-0 bg-black/60 z-[110] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
+                                    <div
+                                        class="bg-white rounded-[2rem] shadow-2xl w-full max-w-2xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
+                                        <div class="p-8 pb-4 flex justify-between items-start">
+                                            <div>
+                                                <div id="modalSource"
+                                                    class="text-[10px] font-black text-indigo-500 uppercase tracking-widest mb-2">
+                                                    新聞來源</div>
+                                                <h3 class="text-2xl font-black text-slate-800 leading-tight"
+                                                    id="modalTitle">標題載入中...</h3>
+                                            </div>
+                                            <button onclick="closeContentModal()"
+                                                class="p-2 bg-slate-100 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="px-8 py-4 max-h-[60vh] overflow-y-auto text-slate-600 leading-relaxed text-lg"
+                                            id="modalText">
+                                            內容載入中...
+                                        </div>
+                                        <div class="p-8 pt-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+                                            <a id="modalFullLink" href="#" target="_blank"
+                                                class="px-6 py-2.5 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">閱讀全文</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <footer
                                     class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
                                     自動化生成系統 · Powered by Gemini 2.5 & EJS Engine (v4.0.0)</footer>
     </div>
 
     <script>
+        // 🟢 新增：從卡片獲取資料並開啟預覽
+        function handlePreview(btn) {
+            const card = btn.closest('.news-card');
+            if (card) {
+                const title = card.dataset.rawTitle;
+                const content = card.dataset.rawContent;
+                const url = card.dataset.url;
+                const source = card.dataset.source;
+                openContentModal(title, content, url, source);
+            }
+        }
+
+        // 🟢 新增：內文預覽 Modal 邏輯
+        function openContentModal(title, content, url, source) {
+            const modal = document.getElementById('contentModal');
+            const inner = modal.querySelector('div');
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalText').innerHTML = content.replace(/\n/g, '<br>');
+            document.getElementById('modalSource').textContent = source;
+            document.getElementById('modalFullLink').href = url;
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                inner.classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeContentModal() {
+            const modal = document.getElementById('contentModal');
+            const inner = modal.querySelector('div');
+            modal.classList.add('opacity-0');
+            inner.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        document.getElementById('contentModal').addEventListener('click', (e) => {
+            if (e.target.id === 'contentModal') closeContentModal();
+        });
         // Existing Charts
         const ctx = document.getElementById('sentimentChart').getContext('2d');
         new Chart(ctx, {
