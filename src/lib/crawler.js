@@ -3,12 +3,12 @@ const axios = require('axios');
 const { JSDOM, VirtualConsole } = require('jsdom');
 const { Readability } = require('@mozilla/readability');
 // 🟢 確保這裡引入的是剛剛修改過、包含增強 Headers 的 config
-const { headers } = require('./config'); 
+const { headers } = require('./config');
 const { log, sleep } = require('./utils');
 
 const parser = new Parser();
 const virtualConsole = new VirtualConsole();
-virtualConsole.on("error", () => {});
+virtualConsole.on("error", () => { });
 
 async function fetchRSS(url) {
     try {
@@ -34,9 +34,9 @@ async function fetchContent(url) {
 async function fetchCnyesAPI(pagesToFetch = 2) {
     const categories = ['tw_stock', 'wd_stock', 'tech'];
     const limit = 30;
-    
+
     let allNews = [];
-    let fetchedIds = new Set(); 
+    let fetchedIds = new Set();
 
     log('🔍', `準備抓取鉅亨網 API...`);
 
@@ -61,10 +61,10 @@ async function fetchCnyesAPI(pagesToFetch = 2) {
                             allNews.push({
                                 title: news.title,
                                 link: `https://news.cnyes.com/news/id/${news.newsId}`,
-                                contentSnippet: news.summary, 
-                                content: news.content ? news.content.replace(/<[^>]*>?/gm, '').substring(0, 2500) : '', 
+                                contentSnippet: news.summary,
+                                content: news.content ? news.content.substring(0, 2500) : '',
                                 pubDate: new Date(news.publishAt * 1000).toISOString(),
-                                source: `鉅亨網(${cat})` 
+                                source: `鉅亨網(${cat})`
                             });
                         }
                     }

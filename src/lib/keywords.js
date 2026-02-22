@@ -52,11 +52,12 @@ function analyze7DayKeywords(days = 7) {
     const sqlite = new Database(dbPath);
 
     const articles = sqlite.prepare(`
-        SELECT title FROM articles 
+        SELECT title, url, source, content FROM articles 
         WHERE created_at > ?
     `).all(timeLimit.toISOString());
 
     const wordCounts = {};
+    const wordArticles = {};
 
     articles.forEach(article => {
         const text = article.title;
@@ -69,6 +70,17 @@ function analyze7DayKeywords(days = 7) {
             const w = word.trim();
             if (w.length >= 2 && !STOP_WORDS.has(w) && !/^\d+$/.test(w)) {
                 wordCounts[w] = (wordCounts[w] || 0) + 1;
+
+                // 記錄相關新聞 (最多保留 10 則)
+                if (!wordArticles[w]) wordArticles[w] = [];
+                if (wordArticles[w].length < 10) {
+                    wordArticles[w].push({
+                        title: article.title,
+                        url: article.url,
+                        source: article.source,
+                        content: article.content
+                    });
+                }
             }
         });
     });
@@ -76,7 +88,11 @@ function analyze7DayKeywords(days = 7) {
     return Object.entries(wordCounts)
         .sort(([, a], [, b]) => b - a)
         .slice(0, 50)
-        .map(([word, count]) => ({ word, count }));
+        .map(([word, count]) => ({
+            word,
+            count,
+            articles: wordArticles[word] || []
+        }));
 }
 
 module.exports = { analyze7DayKeywords };

@@ -134,7 +134,35 @@ async function runTask() {
             const keywords7d = analyze7DayKeywords(7);
 
             const keywordStats = calculateKeywordStats(allMatchedNews);
-            generateHTMLReport(aiResult, allMatchedNews, keywordStats, recentStats, keywords7d);
+
+            // 🟢 v5.0.0: 新聞聚類與去重 (Clustering)
+            const clusteredNews = [];
+            const processedIndices = new Set();
+
+            for (let i = 0; i < allMatchedNews.length; i++) {
+                if (processedIndices.has(i)) continue;
+
+                const mainNews = { ...allMatchedNews[i], relatedArticles: [] };
+                processedIndices.add(i);
+
+                for (let j = i + 1; j < allMatchedNews.length; j++) {
+                    if (processedIndices.has(j)) continue;
+
+                    const similarity = stringSimilarity.compareTwoStrings(allMatchedNews[i].title, allMatchedNews[j].title);
+                    if (similarity > 0.7) {
+                        mainNews.relatedArticles.push({
+                            title: allMatchedNews[j].title,
+                            url: allMatchedNews[j].url,
+                            source: allMatchedNews[j].source,
+                            content: allMatchedNews[j].content
+                        });
+                        processedIndices.add(j);
+                    }
+                }
+                clusteredNews.push(mainNews);
+            }
+
+            generateHTMLReport(aiResult, clusteredNews, keywordStats, recentStats, keywords7d);
 
             // 發送 Discord
             try {
