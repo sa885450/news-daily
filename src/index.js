@@ -41,10 +41,17 @@ async function runTask() {
 
     // 1. 抓取鉅亨網
     const cnyesNews = await fetchCnyesAPI(2);
+    let skipCount = 0;
+    let excludeCount = 0;
+
     for (const item of cnyesNews) {
-        if (db.isAlreadyRead(item.link)) continue;
+        if (db.isAlreadyRead(item.link)) { skipCount++; continue; }
         const targetText = `${item.title} ${item.contentSnippet || ""}`;
-        if (matchesAny(targetText, config.excludeRegex)) { db.saveArticle(item.title, item.link, item.source); continue; }
+        if (matchesAny(targetText, config.excludeRegex)) {
+            excludeCount++;
+            db.saveArticle(item.title, item.link, item.source);
+            continue;
+        }
 
         if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
             allMatchedNews.push({ source: item.source, title: item.title, content: item.content, url: item.link });
@@ -52,6 +59,7 @@ async function runTask() {
         }
         db.saveArticle(item.title, item.link, item.source, '其他', item.content || item.contentSnippet);
     }
+    log('📊', `鉅亨網過濾完成: 新增 ${allMatchedNews.length} 則, 跳過已讀 ${skipCount} 則, 排除關鍵字 ${excludeCount} 則`);
 
     // 2. 抓取 RSS (並發執行)
     const { default: pLimit } = await import('p-limit');
@@ -68,15 +76,18 @@ async function runTask() {
     let rssCandidates = [];
 
     // 2.1 過濾與預處理
+    let rssSkipCount = 0;
+    let rssExcludeCount = 0;
+
     for (const feed of feeds) {
         for (const item of feed.items) {
             // 嘗試寫入資料庫記錄 (不論是否選用)
             db.saveArticle(item.title, item.link, feed.sourceName, '其他', item.content || item.contentSnippet);
 
-            if (db.isAlreadyRead(item.link) || fetchedUrls.has(item.link)) continue;
+            if (db.isAlreadyRead(item.link) || fetchedUrls.has(item.link)) { rssSkipCount++; continue; }
 
             const targetText = `${item.title} ${item.contentSnippet || ""}`;
-            if (matchesAny(targetText, config.excludeRegex)) continue;
+            if (matchesAny(targetText, config.excludeRegex)) { rssExcludeCount++; continue; }
 
             if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
                 let isDuplicate = false;
@@ -92,6 +103,7 @@ async function runTask() {
             }
         }
     }
+    log('📊', `RSS 過濾完成: 待抓取內文 ${rssCandidates.length} 則, 跳過已讀/重複 ${rssSkipCount} 則, 排除關鍵字 ${rssExcludeCount} 則`);
 
     // 2.2 並發抓取內文
     const contentTasks = rssCandidates.map(cand => limit(async () => {
