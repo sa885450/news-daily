@@ -103,7 +103,11 @@ async function runTask() {
     }));
 
     const results = await Promise.all(contentTasks);
-    results.filter(r => r !== null).forEach(r => allMatchedNews.push(r));
+    results.filter(r => r !== null).forEach(r => {
+        allMatchedNews.push(r);
+        // 🟢 確保抓取到的完整內文寫入資料庫 (UPSERT)
+        db.saveArticle(r.title, r.url, r.source, '其他', r.content);
+    });
 
     log('📊', `新增符合關鍵字新聞: ${allMatchedNews.length} 則`);
 

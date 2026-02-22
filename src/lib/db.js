@@ -35,7 +35,17 @@ try {
 } catch (e) { }
 
 const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
-const insertArticleStmt = db.prepare('INSERT INTO articles (title, url, source, category, content) VALUES (?, ?, ?, ?, ?)');
+const insertArticleStmt = db.prepare(`
+  INSERT INTO articles (title, url, source, category, content) 
+  VALUES (?, ?, ?, ?, ?)
+  ON CONFLICT(url) DO UPDATE SET
+    content = CASE 
+      WHEN length(excluded.content) > length(articles.content) OR articles.content IS NULL 
+      THEN excluded.content 
+      ELSE articles.content 
+    END,
+    category = CASE WHEN excluded.category != '其他' THEN excluded.category ELSE articles.category END
+`);
 const insertStatsStmt = db.prepare(`INSERT INTO daily_stats (date, sentiment_score, summary, sector_stats) VALUES (?, ?, ?, ?) ON CONFLICT(date) DO UPDATE SET sentiment_score = excluded.sentiment_score, summary = excluded.summary, sector_stats = excluded.sector_stats`);
 const getRecentStatsStmt = db.prepare('SELECT date, sentiment_score, sector_stats FROM daily_stats ORDER BY date ASC LIMIT ?');
 const getLastSummaryStmt = db.prepare('SELECT summary, sentiment_score FROM daily_stats ORDER BY date DESC LIMIT 1');
