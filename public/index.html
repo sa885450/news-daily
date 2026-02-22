@@ -104,11 +104,19 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月22日星期日 · 更新於 12:00
+                        2026年2月22日星期日 · 更新於 13:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
+                            <button onclick="searchKeyword('Costco')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Costco
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(COST)</span>
+                                        
+                            </button>
+                            
                             <button onclick="searchKeyword('台積電')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #台積電
@@ -121,33 +129,25 @@
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #美光
                                     
-                                        <span class="text-xs ml-1 opacity-70">(MU-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(MU)</span>
                                         
+                            </button>
+                            
+                            <button onclick="searchKeyword('美國最高法院')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #美國最高法院
+                                    
+                            </button>
+                            
+                            <button onclick="searchKeyword('美國海關與邊境保護局')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #美國海關與邊境保護局
+                                    
                             </button>
                             
                             <button onclick="searchKeyword('川普')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #川普
-                                    
-                            </button>
-                            
-                            <button onclick="searchKeyword('OpenAI')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #OpenAI
-                                    
-                            </button>
-                            
-                            <button onclick="searchKeyword('晟碟')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #晟碟
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(SNDK-US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('xAI')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #xAI
                                     
                             </button>
                             
@@ -161,7 +161,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.92
+                                    0.85
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -237,7 +237,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【泡沫巔峰警示：15%關稅衝擊與溢價幻象】</h3><p>今日市場情緒由昨日的 0.88 進一步攀升至 <b>0.92</b>，進入極度貪婪的過熱區間。台積電 ADR 雖出現 22% 的驚人溢價，但此種「非理性跳空」往往是短期市場過熱的最後瘋狂。儘管記憶體族群（MU, SNDK）受助攻飆漲，投資者不應忽視後續潛在的劇烈震盪。</p><h4>1. 政策黑天鵝：關稅戰全面升級</h4><p>川普繞過法院裁定，依據 122 條款祭出 <b>15% 全球性暫時關稅</b>，這將直接衝擊全球供應鏈。儘管台灣半導體目前享有豁免，但在保護主義抬頭下，貿易成本的隱形成本正持續侵蝕毛利。這與昨日提到的「AI 夢境脫節」不謀而合：當硬體成本因政策上升，獲利預期將被迫下修。</p><h4>2. AI 基礎設施的內部辯論</h4><p>OpenAI 奧特曼對太空資料中心的「荒謬論」揭示了 AI 算力軍備競賽已觸及物理與經濟極限的瓶頸。這呼應了昨日「ROI 檢視期」的觀點。馬斯克 xAI 的激進擴張雖然支撐了短線題材，但高昂的發射與維修成本（SpaceX 招聘頻率）可能演變為長期的資金黑洞。</p><h4>3. 避險與防禦建議</h4><p>在 ADR 溢價推動台股紅盤的背景下，建議投資者<b>適度獲利了結（Profit-taking）</b>，將資金轉向昨日建議的金融防禦板塊或高息資產。市場已充分反映利多，卻低估了 15% 關稅帶來的通膨再起風險。當前應保持 30-40% 的現金水位，嚴防高檔長黑的回撤風險。</p>
+                            <h3>【風險控管報告：法律逆風與泡沫巔峰之衝擊】</h3><p>今日市場情緒雖微幅回落至 <b>0.85</b>，但仍處於「極度貪婪」區間。針對昨日提到 0.92 的情緒高點，目前正面臨<b>法規與關稅政策的雙重擠壓</b>。Costco 等數百家企業因關稅違憲提起訴訟，涉及金額高達 1,750 億美元，這不僅是單一公司的財務訴訟，更預示著供應鏈成本轉嫁機制的崩潰。 </p><h4>1. 政策反動：1750億美元的財政黑洞</h4><p>最高法院判定川普政府關稅越權，這使得過去數年支撐貿易保護主義的基石產生動搖。企業要求退還巨額關稅，將導致政府政策反覆，並增加國際貿易的不確定性。這與昨日提到的「15%全球性暫時關稅」形成強烈對沖，市場極易因政策預期落空而產生跳水式回檔。</p><h4>2. 溢價警示與獲利了結建議</h4><p>目前台積電等科技實體溢價持續處於非理性高位，技術面呈現嚴重的超買背離。專家強烈建議投資者<b>適度獲利了結 20%-30% 的高成長科技股部位</b>，轉向具備現金流穩定性的防禦性資產或高利息債券工具。在「非理性跳空」消失前，嚴禁槓桿追價。</p>
                         </div>
                     </div>
                 </section>
@@ -246,81 +246,31 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="馬上紅！台積電adr封關期間漲2.38% 記憶體暴衝助攻台股馬年開紅盤"
-                            data-content="&amp;lt;p&amp;gt;台積電 (2330-tw)(tsm-us)adr 於馬年封關期間上漲 2.38%，較台北交易溢價將近 22%，與台股密切連動的美光 (mu-us)、晟碟 (sndk-us) 也在該期間飆漲 14.71%、20%，法人看好，在台積電與記憶體族群上漲下，將助攻台股明日開紅盤，同時也須注意川普將全球關稅調升至 15% 帶來的潛在效應。&amp;lt;/p&amp;gt;
+                            data-category="其他" data-title="costco等數百家公司提起訴訟 要求退還美國政府關稅支付款項"
+                            data-content="&amp;lt;p&amp;gt;在美國最高法院判定川普政府大規模關稅措施違法後，costco 等數百家公司提起訴訟，要求退還被最高法判定「越權」的美國政府關稅政策支付款項。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;美國最高法院於周五裁定總統川普的關稅政策無效，美股四大指數應聲上漲，川普立馬於自家社群展開反擊，不僅痛批法院判決荒謬，更宣布依據《1974 年貿易法》第 122 條款即刻向全球課徵 10% 暫時性關稅，隨後進一步提高至 15%。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;美國海關與邊境保護局去年 12 月的數據顯示，依據《國際緊急經濟權力法》實施的關稅累計徵收約 1,300 億美元。賓夕法尼亞大學的一項估算指出，目前總額可能已經超過 1,750 億美元。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;不過，台灣在過去十個月與美方談判有所斬獲，在各產品出口已取得多項優惠待遇，尤其在重點出口產品如半導體與相關電子產品已取得豁免，業界研判影響相關有限。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;台積電目前占台股權重已高達 44.23%，法人看好，隨著台積電台北股市價格與 adr 溢價幅度擴大，可望推升台積電明日開紅盤走勢，並提供台股上漲動能，助攻馬年開局。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;另外，美光與晟碟 (sndk-us) 為記憶體族群指標，受惠 ai 帶動記憶體用量大增、缺貨不見盡頭，股價於封關期間分別飆漲 14.71%、20%，漲幅驚人，象徵市場仍看好記憶體缺貨的延續性將推升相關業者獲利表現。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;經濟學家說，目前企業申請退還已繳關稅的流程尚不明確，但有資格獲得退款的美國企業並非唯一承擔關稅負擔的群體。&amp;lt;br&amp;gt;
+&amp;nbsp;&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         其他
                                     </span><span class="text-slate-400 text-xs">
-                                        下午12:00
+                                        下午01:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    馬上紅！台積電ADR封關期間漲2.38% 記憶體暴衝助攻台股馬年開紅盤
+                                    Costco等數百家公司提起訴訟 要求退還美國政府關稅支付款項
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(tw_stock)
+                                    鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348224"
-                                    target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a></div>
-                        </div>
-                        
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="政策風險" data-title="再槓馬斯克！openai奧特曼：把資料中心建在太空的想法十分荒謬"
-                            data-content="&amp;lt;p&amp;gt;openai 執行長奧特曼與馬斯克向來不對盤，兩人最新爭論焦點正從 ai 擴展至太空基礎設施。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;奧特曼在印度新德里的媒體直播中直言，以當前技術條件，太空資料中心的構想「十分荒謬」，他的發言引發現場觀眾笑聲。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;奧特曼指出，軌道資料中心面臨發射成本高昂、太空晶片維修難度大等核心障礙，並斷言「未來十年內難以規模化應用」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這番質疑被視為對馬斯克「百萬衛星計畫」的直接回應，馬斯克透過收購 xai 加速推進太空資料中心佈局，目標是發射由 100 萬顆衛星組成的星群，利用太陽能驅動，並通過雷射通信實現數據傳輸。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;目前，spacex 已啟動工程師招聘，並打算通過星艦火箭實現「每小時發射一艘」的頻率，將 ai 算力部署成本降低 100 倍。該公司強調，太空環境的絕對零度散熱條件和持續太陽能供應，可解決地球數據中心的水電資源消耗與污染問題。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;儘管奧特曼持懷疑態度，谷歌、微軟等科技巨頭仍加速佈局。谷歌去年 11 月公布的「捕日者項目」打算明年發射太陽能驅動的太空資料中心，而微軟則通過 azure 太空部門探索軌道算力服務。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;與此同時，地球資料中心的擴張則引發嚴峻環境爭議。根據美國《商業內幕 (bi)》報導，2024 年全美獲批資料中心數量達 1200 個，較 2010 年成長四倍，德州、奧克拉荷馬州等地的建設計畫頻遭社區抗議，主要矛盾集中在水電資源搶奪與碳排放問題。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;業界分析指出，太空資料中心雖具理論優勢，但必須克服衛星碰撞風險、軌道資源爭奪及量子通訊技術瓶頸。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;賓州大學教授電氣與系統工程教授 benjamin lee 警告，若未解決晶片輻射耐受性以及在軌維護難題，相關計畫可能淪為「科技泡沫」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;透過整合 xai 與 spacex 資源，馬斯克試圖以「星鏈 + ai」生態重構產業規則，這場天地之爭恐將定義未來十年的算力競爭格局。&amp;lt;/p&amp;gt;
-">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        政策風險
-                                    </span><span class="text-slate-400 text-xs">
-                                        下午12:00
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    再槓馬斯克！OpenAI奧特曼：把資料中心建在太空的想法十分荒謬
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(tech)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348183"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348158"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -338,37 +288,10 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('AI')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        AI
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        2
-                                    </span>
-                                </button>
-                                
                                 <button onclick="showKeywordTrend('川普')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         川普
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('股市')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        股市
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('台積電')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        台積電
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -383,19 +306,10 @@
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('太陽能')"
+                                <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        太陽能
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('半導體')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        半導體
+                                        美元
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -480,7 +394,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [-0.45,0.95,0.85,-0.3,0.92],
+                    data: [-0.7,0.9,0.6,-0.6,0.95],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -495,7 +409,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.88,"finance":0.45,"manufacturing":-0.15,"service":0.2};
+        const sectorData = {"tech":0.85,"finance":0.2,"manufacturing":-0.45,"service":0.15};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -631,7 +545,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         
-            const cloudData = [["US",273],["AI",196],["EPS",141],["美元",108],["日本",89],["川普",87],["自由",83],["曝光",81],["全球",77],["健康",76],["春節",69],["經典賽",55],["開講",54],["中速",54],["MLB",52],["伊朗",51],["初一",51],["除夕",49],["台南",46],["關稅",46],["初二",45],["宣布",41],["初三",41],["最高",39],["世界",37],["初四",35],["NBA",32],["高雄",32],["合作",30],["TAIPEI",30],["TIMES",30],["政府",29],["人潮",29],["路段",29],["印度",29],["TW",28],["分析",28],["法院",28],["大跌",28],["科技",27],["Google",27],["研究",27],["政策",26],["高市早苗",25],["打造",24],["最高法院",24],["今彩",23],["初五",23],["警方",22],["提醒",22]];
+            const cloudData = [["US",273],["AI",197],["EPS",141],["美元",108],["日本",90],["川普",87],["自由",83],["曝光",82],["全球",77],["健康",76],["春節",70],["經典賽",57],["開講",54],["中速",54],["MLB",52],["伊朗",51],["初一",51],["除夕",49],["關稅",48],["台南",46],["初二",45],["宣布",42],["初三",41],["最高",39],["世界",37],["NBA",35],["初四",35],["高雄",32],["政府",31],["合作",31],["人潮",30],["印度",30],["TAIPEI",30],["TIMES",30],["路段",29],["TW",28],["Google",28],["分析",28],["法院",28],["大跌",28],["科技",27],["研究",27],["政策",26],["高市早苗",25],["打造",24],["初五",24],["最高法院",24],["今彩",23],["警方",22],["提醒",22]];
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
