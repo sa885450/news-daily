@@ -13,6 +13,12 @@
     <style>
         body {
             font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark {
+            background-color: #0f172a;
+            color: #f8fafc;
         }
 
         .news-card.hidden {
@@ -35,17 +41,75 @@
             animation: fadeIn 0.4s ease forwards;
             opacity: 0;
         }
+
+        /* 🟢 v5.0.0: 暗色模式適配滾動條 */
+        .dark ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .dark ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
     </style>
     <script>
-        let currentCategory = '全部', currentSearch = '';
-        function applyFilters() { const lower = currentSearch.toLowerCase(); document.querySelectorAll('.news-card').forEach(c => { const matchCat = (currentCategory === '全部' || c.dataset.category === currentCategory); const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower); if (matchCat && matchSearch) { c.classList.remove('hidden'); setTimeout(() => c.classList.add('animate-fade'), 10); } else { c.classList.add('hidden'); c.classList.remove('animate-fade'); } }); }
-        function filterCategory(c) { currentCategory = c; document.querySelectorAll('.filter-btn').forEach(b => b.className = b.dataset.filter === c ? 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-md bg-indigo-600 text-white border-indigo-600 shadow-indigo-300' : 'filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm bg-white text-slate-600 border-slate-200 hover:border-indigo-400 hover:text-indigo-600'); applyFilters(); }
+        // 🟢 v5.0.0: 暗色模式邏輯
+        function toggleDarkMode() {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateCharts(); // 重新渲染圖表以適配顏色
+        }
+
+        // 初始化主題
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+
+        let currentCategory = '全部', currentSearch = '', currentSector = '全部', currentDate = '全部';
+
+        function applyFilters() {
+            const lower = currentSearch.toLowerCase();
+            document.querySelectorAll('.news-card').forEach(c => {
+                const matchCat = (currentCategory === '全部' || c.dataset.category === currentCategory);
+                const matchSearch = !currentSearch || c.dataset.title.includes(lower) || c.dataset.content.includes(lower);
+                const matchSector = (currentSector === '全部' || c.dataset.sector === currentSector);
+                const matchDate = (currentDate === '全部' || c.dataset.date === currentDate);
+
+                if (matchCat && matchSearch && matchSector && matchDate) {
+                    c.classList.remove('hidden');
+                    setTimeout(() => c.classList.add('animate-fade'), 10);
+                } else {
+                    c.classList.add('hidden');
+                    c.classList.remove('animate-fade');
+                }
+            });
+            // 每次過濾後重置分頁狀態 (簡化版處理)
+        }
+        function filterCategory(c) { currentCategory = c; applyFilters(); }
         function searchNews(v) { currentSearch = v.trim(); applyFilters(); }
         function searchKeyword(k) { document.getElementById('search-input').value = k; searchNews(k); filterCategory('全部'); document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' }); }
     </script>
 </head>
 
-<body class="bg-[#f8fafc] text-slate-900 min-h-screen pb-20">
+<body class="bg-[#f8fafc] dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen pb-20">
+    <!-- 🟢 v5.0.0: 功能切換列 -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3">
+        <button onclick="toggleDarkMode()"
+            class="p-4 bg-white dark:bg-slate-800 rounded-full shadow-2xl border border-slate-200 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 hover:scale-110 transition-transform">
+            <svg class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+        </button>
+    </div>
     <div class="max-w-6xl mx-auto px-4 pt-10 relative">
         <!-- History Select -->
         
@@ -104,55 +168,63 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月22日星期日 · 更新於 14:00
+                        2026年2月22日星期日 · 更新於 20:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('OpenAI')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #OpenAI
+                            <button onclick="searchKeyword('輝達')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #輝達
                                     
-                            </button>
-                            
-                            <button onclick="searchKeyword('Meta Platforms')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Meta Platforms
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(META-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Apple')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Apple
+                            <button onclick="searchKeyword('台積電')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #台積電
                                     
-                                        <span class="text-xs ml-1 opacity-70">(AAPL-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Costco')"
+                            <button onclick="searchKeyword('比特幣')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Costco
+                                #比特幣
                                     
-                                        <span class="text-xs ml-1 opacity-70">(COST-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(BTC)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Microsoft')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Microsoft
+                            <button onclick="searchKeyword('艾司摩爾')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #艾司摩爾
                                     
-                                        <span class="text-xs ml-1 opacity-70">(MSFT-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(ASML.US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Alphabet')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Alphabet
+                            <button onclick="searchKeyword('村田製作所')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #村田製作所
                                     
-                                        <span class="text-xs ml-1 opacity-70">(GOOGL-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(6981.JP)</span>
                                         
+                            </button>
+                            
+                            <button onclick="searchKeyword('三星電子')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #三星電子
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(005930.KS)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('巴逆逆')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #巴逆逆
+                                    
                             </button>
                             
                     </div>
@@ -165,7 +237,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.82
+                                    0.88
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -241,89 +313,98 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【深度風險控管報告：硬體資本陷阱與情緒過熱警示】</h3><p>今日市場情緒雖從昨日的 0.85 略微修正至 <b>0.82</b>，但仍處於「極度貪婪」區間。相較於昨日提到的 1,750 億美元關稅法規風險，今日市場焦點轉向 OpenAI 宏大的硬體擴張計畫，這在推升 AI 投資熱度的同時，也隱藏了嚴重的<b>資本錯配與開發週期風險</b>。</p><h4>1. 資本支出與研發週期之懸念</h4><p>OpenAI 斥資 65 億美元收購設計公司，並將研發週期拉長至 2027-2028 年。在宏觀環境面臨關稅訴訟與政策不確定的背景下，如此龐大的現金支出若無法在短期內轉化為營收，將成為科技板塊的沈重負擔。<b>科技板塊情緒高達 0.9</b>，顯示估值已大幅透支未來三年的增長預期。</p><h4>2. 跨領域競爭與防禦性建議</h4><p>面對 Meta (META-US) 與 Apple (AAPL-US) 在硬體市場的既有優勢，OpenAI 的硬體策略可能面臨高額成本與市佔率挑戰。考量到昨日提及的<b>供應鏈成本轉嫁機制崩潰</b>，建議投資人應適度<b>獲利了結過熱的科技資產</b>，並轉向關注防禦性資產（如公用事業或黃金）以規避潛在的泡沫破裂風險。</p>
+                            <h3>【深度風險控管報告：狂熱下的裂痕與敘事崩塌】</h3><p>今日市場情緒指數從昨日的 0.82 攀升至 <b>0.88</b>，進入極度危險的「過熱噴發期」。相較於昨日關注的 OpenAI 長期研發資本陷阱，今日市場出現了顯著的<b>敘事背離</b>現象：台股分析師盲目樂觀期待金馬年衝刺 3 萬 4 千點，卻對川普加徵 15% 關稅的實質衝擊選擇性忽視。</p><h4>1. 敘事瓦解與流動性警訊</h4><p>比特幣（BTC）從高點重挫 40%，象徵著「數位黃金」敘事的全面潰敗。當投機資產領先走跌且資金轉向實物黃金（吸金 160 億美元）時，這通常是<b>全球流動性緊縮</b>的前兆。市場目前僅靠輝達（NVDA）財報預期維持最後的繁榮幻象。</p><h4>2. 關稅重壓下的短視行為</h4><p>市場普遍認為關稅衝擊已「遞減」，但實質上 15% 的進口關稅將直接侵蝕製造業利潤率。目前的樂觀情緒建立在「歷史紅包行情機率」的統計依賴上，忽略了宏觀政經環境的結構性惡化。</p><h4>3. 反向指標特報：8zz/巴逆逆觀察</h4><p>值得高度警惕的是，社群領袖<b>「巴逆逆」</b>近期若對開紅盤表現出強烈看好情緒，結合目前極度貪婪的 0.88 分數，將構成經典的<b>「末跌段頂部信號」</b>。建議投資者切勿在明日開盤追高，應優先針對 CCL、CPO 等漲幅過大族群進行獲利了結，並將資金配置於防禦性資產或現金，以規避潛在的泡沫破裂風險。</p>
                         </div>
                     </div>
                 </section>
 
-                <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12 animate-fade"
+                <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6 animate-fade"
                     style="animation-delay: 0.1s;">
-                    
-                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="有鏡頭！openai被曝最快一年內推出ai音箱"
-                            data-content="&amp;lt;p&amp;gt;最新消息顯示，openai 計劃在 2027 年推出首款採用鏡頭的人工智慧（ai）音箱，同時布局智慧眼鏡、智慧台燈等硬體產品。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;據科技媒體《the information》報導，openai 正積極開發一系列 ai 驅動的硬體設備，包括智慧眼鏡、智慧台燈，以及預計最先上市的智慧音箱。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;目前 openai 內部已有超過 200 名員工全職投入硬體研發。儘管 chatgpt 已在軟體端取得一些成功，但 openai 打造自有實體硬體的企圖心早已不是祕密。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款智慧音箱預計售價在 200 至 300 美元之間，最快 2027 年初開始出貨。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款預計率先發布的 ai 音箱，在設計理念上與市面上的 homepod 或 nest audio 截然不同。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款音箱採用鏡頭，以更好地獲取和理解周圍環境。知情人士透露，這款裝置不僅可以持續監聽附近對話，還能識別桌面或視野範圍內的物體。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;此外，鏡頭還支援類似 faceid 的人臉識別功能，用戶可刷臉完成身份驗證，甚至購物支付等操作。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;至於智慧眼鏡，由於 meta(&amp;lt;a data-symbol-template=&amp;quot;uss:meta:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;meta-us&amp;lt;/a&amp;gt;) 目前在市場佔據主導地位，openai 預計要到 2028 年才會發布相關產品。智慧台燈雖已完成原型設計，但是否進入量產仍有不確定性。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;為確保硬體產品的設計品質與用戶體驗，openai 去年斥資 65 億美元，收購由蘋果前設計長 jony ive 共同創辦的設計公司 io，ive 將主導硬體設計方面的整體風格。&amp;lt;/p&amp;gt;
-" data-raw-title="有鏡頭！OpenAI被曝最快一年內推出AI音箱"
-                            data-raw-content="&amp;lt;p&amp;gt;最新消息顯示，OpenAI 計劃在 2027 年推出首款採用鏡頭的人工智慧（AI）音箱，同時布局智慧眼鏡、智慧台燈等硬體產品。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;據科技媒體《The Information》報導，OpenAI 正積極開發一系列 AI 驅動的硬體設備，包括智慧眼鏡、智慧台燈，以及預計最先上市的智慧音箱。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;目前 OpenAI 內部已有超過 200 名員工全職投入硬體研發。儘管 ChatGPT 已在軟體端取得一些成功，但 OpenAI 打造自有實體硬體的企圖心早已不是祕密。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款智慧音箱預計售價在 200 至 300 美元之間，最快 2027 年初開始出貨。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款預計率先發布的 AI 音箱，在設計理念上與市面上的 HomePod 或 Nest Audio 截然不同。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;這款音箱採用鏡頭，以更好地獲取和理解周圍環境。知情人士透露，這款裝置不僅可以持續監聽附近對話，還能識別桌面或視野範圍內的物體。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;此外，鏡頭還支援類似 FaceID 的人臉識別功能，用戶可刷臉完成身份驗證，甚至購物支付等操作。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;至於智慧眼鏡，由於 Meta(&amp;lt;a data-symbol-template=&amp;quot;USS:META:STOCK:COMMON&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;META-US&amp;lt;/a&amp;gt;) 目前在市場佔據主導地位，OpenAI 預計要到 2028 年才會發布相關產品。智慧台燈雖已完成原型設計，但是否進入量產仍有不確定性。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;為確保硬體產品的設計品質與用戶體驗，OpenAI 去年斥資 65 億美元，收購由蘋果前設計長 Jony Ive 共同創辦的設計公司 io，Ive 將主導硬體設計方面的整體風格。&amp;lt;/p&amp;gt;
-" data-url="https://news.cnyes.com/news/id/6348175"
-                            data-source="鉅亨網(wd_stock)">
-                            <div>
-                                <div class="flex items-center justify-between mb-4"><span
-                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
-                                        其他
-                                    </span><span class="text-slate-400 text-xs">
-                                        下午02:00
-                                    </span></div>
-                                <h3
-                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    有鏡頭！OpenAI被曝最快一年內推出AI音箱
-                                </h3>
-                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
-                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
-                                    鉅亨網(wd_stock)
-                                </div>
-                            </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-between items-center">
-                                <button onclick="handlePreview(this)"
-                                    class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
-                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>預覽內容
-                                </button>
-                                <a href="https://news.cnyes.com/news/id/6348175" target="_blank"
-                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                    </svg></a>
-                            </div>
-                        </div>
-                        
+                    <!-- 內容將由 JavaScript 根據分頁呈現 -->
                 </div>
+
+                <div id="load-more-container" class="flex justify-center pb-12 animate-fade hidden">
+                    <button onclick="loadMoreNews()"
+                        class="px-8 py-3 bg-white dark:bg-slate-800 border-2 border-indigo-100 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 font-black rounded-2xl hover:bg-indigo-50 dark:hover:bg-slate-700 transition-all shadow-lg active:scale-95">
+                        載入更多新聞 ...
+                    </button>
+                </div>
+
+                <!-- 🔵 v5.0.0: 聚類新聞提示 -->
+                <script>
+                    const RAW_NEWS_DATA = ;
+                    let displayedCount = 0;
+                    const PAGE_SIZE = 12;
+
+                    function renderNewsPage() {
+                        const grid = document.getElementById('news-grid');
+                        const container = document.getElementById('load-more-container');
+                        const nextBatch = RAW_NEWS_DATA.slice(displayedCount, displayedCount + PAGE_SIZE);
+
+                        nextBatch.forEach(n => {
+                            const card = document.createElement('div');
+                            card.className = "news-card group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 flex flex-col justify-between";
+                            card.dataset.category = n.category || '其他';
+                            card.dataset.title = (n.title || '').toLowerCase();
+                            card.dataset.content = (n.content || '').toLowerCase();
+                            card.dataset.rawTitle = n.title;
+                            card.dataset.rawContent = n.content || '無內文資訊';
+                            card.dataset.url = n.url;
+                            card.dataset.source = n.source;
+                            card.dataset.date = n.timeStr ? n.timeStr.split(' ')[0] : '全部';
+                            card.dataset.sector = n.sector || '其他';
+                            if (n.is_contrarian) card.dataset.contrarian = "true";
+
+                            const relatedHtml = n.relatedArticles && n.relatedArticles.length > 0
+                                ? `<div class="mt-2 flex flex-wrap gap-1">
+                                    <span class="text-[9px] font-bold text-slate-400">其他來源:</span>
+                                    ${n.relatedArticles.map(r => `<span class="px-1.5 py-0.5 bg-slate-50 dark:bg-slate-700 text-slate-500 dark:text-slate-400 text-[9px] rounded-md border border-slate-100 dark:border-slate-600 font-medium">${r.source}</span>`).join('')}
+                                   </div>`
+                                : '';
+
+                            card.innerHTML = `
+                                <div>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="flex gap-2">
+                                            <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">
+                                                ${n.category || '其他'}
+                                            </span>
+                                            ${n.is_contrarian ? `<span class="px-3 py-1 bg-amber-500 text-white text-[10px] font-bold rounded-full animate-pulse shadow-sm">⚠️ 反向指標警報</span>` : ''}
+                                        </div>
+                                        <span class="text-slate-400 text-xs">${n.timeStr || ''}</span>
+                                    </div>
+                                    <h3 class="text-slate-800 dark:text-slate-100 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                                        ${n.title}
+                                    </h3>
+                                    <div class="text-xs text-slate-400 font-medium mb-2 flex items-center">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                        ${n.source}
+                                    </div>
+                                    ${relatedHtml}
+                                </div>
+                                <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
+                                    <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
+                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
+                                    </button>
+                                    <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                                    </a>
+                                </div>
+                            `;
+                            grid.appendChild(card);
+                        });
+
+                        displayedCount += nextBatch.length;
+                        if (displayedCount < RAW_NEWS_DATA.length) {
+                            container.classList.remove('hidden');
+                        } else {
+                            container.classList.add('hidden');
+                        }
+                    }
+
+                    function loadMoreNews() { renderNewsPage(); }
+                    window.addEventListener('DOMContentLoaded', () => renderNewsPage());
+                </script>
 
                 
                     <section class="mb-12 animate-fade" style="animation-delay: 0.2s;">
@@ -332,6 +413,24 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
+                                <button onclick="showKeywordTrend('川普')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        川普
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('股市')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        股市
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
                                 <button onclick="showKeywordTrend('AI')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
@@ -341,10 +440,109 @@
                                     </span>
                                 </button>
                                 
+                                <button onclick="showKeywordTrend('台積電')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        台積電
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('輝達')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        輝達
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('關稅')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        關稅
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('黃金')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        黃金
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('白銀')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        白銀
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
                                 <button onclick="showKeywordTrend('美元')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         美元
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('加密貨幣')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        加密貨幣
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('比特幣')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        比特幣
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('半導體')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        半導體
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('ASML')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        ASML
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('矽光子')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        矽光子
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('通膨')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        通膨
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -394,21 +592,21 @@
                                     </div>
                                 </div>
 
-                                <!-- 🟢 新増：內覽 Modal -->
+                                <!-- 🟢 新増：內容預覽 Modal -->
                                 <div id="contentModal"
                                     class="fixed inset-0 bg-black/60 z-[110] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
                                     <div
-                                        class="bg-white rounded-[2rem] shadow-2xl w-full max-w-2xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
+                                        class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl w-full max-w-2xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
                                         <div class="p-8 pb-4 flex justify-between items-start">
                                             <div>
                                                 <div id="modalSource"
                                                     class="text-[10px] font-black text-indigo-500 uppercase tracking-widest mb-2">
                                                     新聞來源</div>
-                                                <h3 class="text-2xl font-black text-slate-800 leading-tight"
+                                                <h3 class="text-2xl font-black text-slate-800 dark:text-slate-100 leading-tight"
                                                     id="modalTitle">標題載入中...</h3>
                                             </div>
                                             <button onclick="closeContentModal()"
-                                                class="p-2 bg-slate-100 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
+                                                class="p-2 bg-slate-100 dark:bg-slate-700 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
                                                 <svg class="w-6 h-6" fill="none" stroke="currentColor"
                                                     viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -416,20 +614,49 @@
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="px-8 py-4 max-h-[60vh] overflow-y-auto text-slate-600 leading-relaxed text-lg"
+                                        <div class="px-8 py-4 max-h-[60vh] overflow-y-auto text-slate-600 dark:text-slate-300 leading-relaxed text-lg"
                                             id="modalText">
                                             內容載入中...
                                         </div>
-                                        <div class="p-8 pt-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+                                        <div
+                                            class="p-8 pt-4 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700 flex justify-end">
                                             <a id="modalFullLink" href="#" target="_blank"
                                                 class="px-6 py-2.5 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">閱讀全文</a>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- 🟢 新增：關鍵字相關新聞列表 Modal -->
+                                <div id="keywordArticlesModal"
+                                    class="fixed inset-0 bg-black/60 z-[105] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
+                                    <div
+                                        class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl w-full max-w-xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
+                                        <div
+                                            class="p-8 pb-4 flex justify-between items-center border-b border-slate-50 dark:border-slate-700">
+                                            <h3 class="text-xl font-black text-slate-800 dark:text-slate-100"
+                                                id="kwModalTitle">相關新聞列表</h3>
+                                            <button onclick="closeKeywordModal()"
+                                                class="p-2 bg-slate-100 dark:bg-slate-700 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="p-4 max-h-[50vh] overflow-y-auto" id="kwModalList">
+                                            <!-- 列表將動態生成 -->
+                                        </div>
+                                        <div
+                                            class="p-6 bg-slate-50 dark:bg-slate-900/50 text-center text-xs text-slate-400 font-bold">
+                                            💡 點擊標題即可顯示預覽內容
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <footer
-                                    class="mt-10 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm font-medium">
-                                    自動化生成系統 · Powered by Gemini 2.5 & EJS Engine (v4.0.0)</footer>
+                                    class="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-400 dark:text-slate-500 text-sm font-medium">
+                                    自動化生成系統 · Powered by Gemini 2.5 & EJS Engine (v5.0.0)</footer>
     </div>
 
     <script>
@@ -450,7 +677,7 @@
             const modal = document.getElementById('contentModal');
             const inner = modal.querySelector('div');
             document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalText').innerHTML = content.replace(/\n/g, '<br>');
+            document.getElementById('modalText').innerHTML = content;
             document.getElementById('modalSource').textContent = source;
             document.getElementById('modalFullLink').href = url;
 
@@ -472,52 +699,110 @@
         document.getElementById('contentModal').addEventListener('click', (e) => {
             if (e.target.id === 'contentModal') closeContentModal();
         });
-        // Existing Charts
+        // 🟢 v5.0.0: 圖表顏色自定義與暗色切換
+        function getThemeColors() {
+            const isDark = document.documentElement.classList.contains('dark');
+            return {
+                text: isDark ? '#94a3b8' : '#475569',
+                grid: isDark ? '#1e293b' : '#f1f5f9',
+                chart: isDark ? '#818cf8' : '#4f46e5'
+            };
+        }
+
+        function updateCharts() {
+            const colors = getThemeColors();
+            [sentimentChart, radarChart, sectorChart].forEach(chart => {
+                if (!chart) return;
+
+                // 更新格線與文字顏色
+                if (chart.options.scales) {
+                    if (chart.options.scales.x) {
+                        chart.options.scales.x.grid.color = colors.grid;
+                        chart.options.scales.x.ticks.color = colors.text;
+                    }
+                    if (chart.options.scales.y) {
+                        chart.options.scales.y.grid.color = colors.grid;
+                        chart.options.scales.y.ticks.color = colors.text;
+                    }
+                    if (chart.options.scales.r) {
+                        chart.options.scales.r.grid.color = colors.grid;
+                        chart.options.scales.r.angleLines.color = colors.grid;
+                        chart.options.scales.r.pointLabels.color = colors.text;
+                    }
+                }
+                chart.update();
+            });
+        }
+
+        // --- Existing Charts with Interaction ---
+        let sentimentChart, radarChart, sectorChart;
+
         const ctx = document.getElementById('sentimentChart').getContext('2d');
-        new Chart(ctx, {
+        sentimentChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["02-15","02-16","02-17","02-18","02-19","02-20","02-21"],
+                labels: ,
                 datasets: [{
                     label: '情緒指數',
-                    data: [0.48,0.88,0.1,0.95,0.58,0.5,0.78],
-                    borderColor: '#dc2626',
-                    backgroundColor: '#dc262620',
+                    data: ,
+                    borderColor: '#4f46e5',
+                    backgroundColor: 'rgba(79, 70, 229, 0.1)',
                     borderWidth: 3,
-                    pointBackgroundColor: '#fff',
-                    pointBorderColor: '#dc2626',
                     pointRadius: 5,
                     fill: true,
                     tension: 0.4
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, x: { grid: { display: false } } }, plugins: { legend: { display: false } } }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                onClick: (e, items) => {
+                    if (items.length > 0) {
+                        const idx = items[0].index;
+                        currentDate =  [idx];
+                        document.getElementById('kwModalTitle').innerText = `📅 ${currentDate} 新聞回顧`;
+                        applyFilters();
+                    }
+                },
+                scales: {
+                    y: { min: -1, max: 1, grid: { color: getThemeColors().grid }, ticks: { color: getThemeColors().text } },
+                    x: { grid: { display: false }, ticks: { color: getThemeColors().text } }
+                },
+                plugins: { legend: { display: false } }
+            }
         });
 
         const radarCtx = document.getElementById('radarChart').getContext('2d');
-        new Chart(radarCtx, {
+        radarChart = new Chart(radarCtx, {
             type: 'radar',
             data: {
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [-0.35,0.9,0.75,-0.4,0.55],
+                    data: ,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
-                    borderColor: 'rgb(79, 70, 229)',
-                    pointBackgroundColor: 'rgb(79, 70, 229)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(79, 70, 229)'
+                    borderColor: 'rgb(79, 70, 229)'
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false, scales: { r: { angleLines: { color: '#f1f5f9' }, grid: { color: '#f1f5f9' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#475569' }, suggestedMin: 0, suggestedMax: 1, ticks: { backdropColor: 'transparent', display: false } } }, plugins: { legend: { display: false } } }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: getThemeColors().grid },
+                        grid: { color: getThemeColors().grid },
+                        pointLabels: { font: { size: 12, weight: 'bold' }, color: getThemeColors().text },
+                        suggestedMin: 0, suggestedMax: 1, ticks: { display: false }
+                    }
+                },
+                plugins: { legend: { display: false } }
+            }
         });
 
-        // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":0.9,"finance":0.35,"manufacturing":-0.2,"service":0.15};
-        new Chart(sectorCtx, {
+        const sectorData = ;
+        sectorChart = new Chart(sectorCtx, {
             type: 'bar',
             data: {
                 labels: ['科技/半導體', '金融', '傳產/製造', '服務/消費'],
@@ -537,7 +822,18 @@
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
-                scales: { x: { min: -1, max: 1, grid: { color: '#f1f5f9' } }, y: { grid: { display: false } } },
+                onClick: (e, items) => {
+                    if (items.length > 0) {
+                        const label = sectorChart.data.labels[items[0].index];
+                        currentSector = label;
+                        applyFilters();
+                        document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' });
+                    }
+                },
+                scales: {
+                    x: { min: -1, max: 1, grid: { color: getThemeColors().grid }, ticks: { color: getThemeColors().text } },
+                    y: { grid: { display: false }, ticks: { color: getThemeColors().text } }
+                },
                 plugins: { legend: { display: false } }
             }
         });
@@ -650,9 +946,53 @@
             }
         }
 
+        // 🟢 v4.7.0: 關鍵字與文章地圖
+        const keywordMap = ;
+
+        // 🟢 v4.7.0: 顯示關鍵字相關新聞列表
+        function showKeywordArticles(word) {
+            const articles = keywordMap[word] || [];
+            const modal = document.getElementById('keywordArticlesModal');
+            const title = document.getElementById('kwModalTitle');
+            const list = document.getElementById('kwModalList');
+
+            title.innerHTML = `🔥 <span class="text-indigo-600">${word}</span> 相關新聞`;
+            list.innerHTML = articles.map(a => `
+                <div class="group p-4 mb-2 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-2xl cursor-pointer transition-all"
+                     onclick="openContentModal('${a.title.replace(/'/g, "\\'")}', '${(a.content || '無內文資訊').replace(/'/g, "\\'").replace(/\n/g, '<br>')}', '${a.url}', '${a.source}')">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">${a.source}</span>
+                        <svg class="w-4 h-4 text-slate-300 group-hover:text-indigo-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-slate-700 font-bold group-hover:text-indigo-600 transition-colors line-clamp-2">${a.title}</h4>
+                </div>
+            `).join('') || '<div class="p-8 text-center text-slate-400 font-medium">暫無相關新聞</div>';
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeKeywordModal() {
+            const modal = document.getElementById('keywordArticlesModal');
+            const inner = modal.querySelector('div');
+            modal.classList.add('opacity-0');
+            inner.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        // Close on click outside
+        document.getElementById('keywordArticlesModal').addEventListener('click', (e) => {
+            if (e.target.id === 'keywordArticlesModal') closeKeywordModal();
+        });
+
         // 🟢 v4.5.0: Word Cloud 初始化
         
-            const cloudData = [["US",273],["AI",199],["EPS",141],["美元",108],["日本",90],["川普",88],["曝光",83],["自由",83],["全球",80],["健康",76],["春節",71],["經典賽",58],["開講",54],["中速",54],["MLB",52],["伊朗",51],["初一",51],["除夕",49],["關稅",49],["台南",46],["初二",45],["宣布",43],["初三",41],["最高",39],["世界",37],["NBA",36],["初四",35],["高雄",33],["政府",31],["合作",31],["人潮",30],["路段",30],["印度",30],["TAIPEI",30],["TIMES",30],["TW",28],["Google",28],["分析",28],["法院",28],["大跌",28],["科技",27],["研究",27],["打造",26],["政策",26],["高市早苗",25],["初五",24],["最高法院",24],["今彩",23],["OpenAI",22],["警方",22]];
+            const cloudData = ;
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
@@ -675,9 +1015,8 @@
                     backgroundColor: '#ffffff',
                     click: function (item) {
                         const word = item[0];
-                        // 優先顯示趨勢圖，同時過濾新聞
-                        showKeywordTrend(word);
-                        searchKeyword(word);
+                        // 🟢 v4.7.0: 改為顯示新聞列表
+                        showKeywordArticles(word);
                     }
                 });
             }
