@@ -157,6 +157,12 @@ async function runTask() {
                 const mainNews = { ...allMatchedNews[i], relatedArticles: [] };
                 processedIndices.add(i);
 
+                // 🟢 v5.1.0: 反向指標標記 (8zz / 巴逆逆)
+                const contrarianRegex = /8zz|巴逆逆/i;
+                if (contrarianRegex.test(mainNews.title) || contrarianRegex.test(mainNews.content || "")) {
+                    mainNews.is_contrarian = true;
+                }
+
                 for (let j = i + 1; j < allMatchedNews.length; j++) {
                     if (processedIndices.has(j)) continue;
 

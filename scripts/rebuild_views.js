@@ -257,6 +257,7 @@ const indexTemplate = `<!DOCTYPE html>
                             card.dataset.source = n.source;
                             card.dataset.date = n.timeStr ? n.timeStr.split(' ')[0] : '全部';
                             card.dataset.sector = n.sector || '其他';
+                            if (n.is_contrarian) card.dataset.contrarian = "true";
 
                             const relatedHtml = n.relatedArticles && n.relatedArticles.length > 0
                                 ? `< div class="mt-2 flex flex-wrap gap-1" >
@@ -268,9 +269,12 @@ const indexTemplate = `<!DOCTYPE html>
                             card.innerHTML = `
     < div >
                                     <div class="flex items-center justify-between mb-4">
-                                        <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">
-                                            \${n.category || '其他'}
-                                        </span>
+                                        <div class="flex gap-2">
+                                            <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">
+                                                \${n.category || '其他'}
+                                            </span>
+                                            \${n.is_contrarian ? `<span class="px-3 py-1 bg-amber-500 text-white text-[10px] font-bold rounded-full animate-pulse shadow-sm">⚠️ 反向指標警報</span>` : ''}
+                                        </div>
                                         <span class="text-slate-400 text-xs">\${n.timeStr || ''}</span>
                                     </div>
                                     <h3 class="text-slate-800 dark:text-slate-100 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
