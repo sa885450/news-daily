@@ -104,48 +104,60 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月22日星期日 · 更新於 08:00
+                        2026年2月22日星期日 · 更新於 09:00
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('Friedrich Merz')"
+                            <button onclick="searchKeyword('OpenAI')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Friedrich Merz
+                                #OpenAI
                                     
                             </button>
                             
-                            <button onclick="searchKeyword('Donald Trump')"
+                            <button onclick="searchKeyword('輝達')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Donald Trump
+                                #輝達
                                     
-                            </button>
-                            
-                            <button onclick="searchKeyword('CoreWeave')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #CoreWeave
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(CRWV-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('Nvidia')"
+                            <button onclick="searchKeyword('諾基亞')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #Nvidia
+                                #諾基亞
                                     
-                                        <span class="text-xs ml-1 opacity-70">(NVDA-US)</span>
+                                        <span class="text-xs ml-1 opacity-70">(NOK.US)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('European Union')"
+                            <button onclick="searchKeyword('明泰')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #European Union
+                                #明泰
                                     
+                                        <span class="text-xs ml-1 opacity-70">(3380.TW)</span>
+                                        
                             </button>
                             
-                            <button onclick="searchKeyword('US Supreme Court')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #US Supreme Court
+                            <button onclick="searchKeyword('榮剛')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #榮剛
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(5009.TW)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('Google')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #Google
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(GOOGL.US)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('川普')"
+                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #川普
                                     
                             </button>
                             
@@ -159,7 +171,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.75
+                                    0.82
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -235,7 +247,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【風控預警：信貸裂縫與貿易角力的雙重擠壓】</h3><p>當前市場情緒雖處於 <b>0.75</b> 的高位，但已顯露出明顯的「高位震盪」特徵。相較於昨日 0.78 的樂觀，今日 CoreWeave (CRWV-US) 的重挫持續發酵，揭示了 <b>AI 基建的信用風險</b>，這可能導致市場資金從高估值的成長股撤離。儘管昨日關稅政策出現法律轉機，但今日市場重心已轉向對實體債務的擔憂。</p><h4>1. 宏觀風險：關稅談判與法律攻防</h4><p>德國總理梅爾茨即將赴美，雖然美國最高法院對 IEEPA 的判定暫緩了全面關稅壓力，但梅爾茨強調的「行業性關稅」仍是未爆彈，特別是對歐洲汽車與精密製造業。投資人應警惕外交博弈導致的二度市場波動。</p><h4>2. 風控專家建議：防禦性配置</h4><p>在高貪婪環境下，建議投資人執行 <b>適度獲利了結 (Profit-Taking)</b>。AI 產業的本益比修正已隨信貸疑慮浮現，市場正處於從「本夢比」向「現實檢驗」過渡的泡沫邊緣。建議將資金轉向 <b>黃金、公用事業或高股息防禦性標的</b>，以因應潛在的信貸連鎖反應。</p>
+                            <h3>【風控預警：估值撕裂與全球關稅二次衝擊】</h3><p>今日市場情緒攀升至 <b>0.82</b>，正式進入「極度貪婪」區間。相較於昨日關注 AI 信用風險，今日焦點轉向 <b>OpenAI 驚人的 8300 億美元估值</b>與二級市場巨頭（如 Google）間的極端定價落差，這種「撕裂式定價」是典型的市場過熱徵兆。此外，關稅風險已從法律攻防轉向實質課徵，川普繞過最高法院限制，透過《貿易法》第 122 條啟動 10% 全球關稅，將引發供應鏈劇烈震盪。</p><h4>1. 策略重心：防禦性增長與物理 AI</h4><p>在極度貪婪環境下，輝達 (NVDA.US) 清倉 Arm 並轉向諾基亞 (NOK.US) 的操作，顯示資金正從單純的晶片算力轉向<b>通訊基建與邊緣運算</b>。建議投資人應適度對高估值軟體股獲利了結，並將目光移向具備實體基礎設施能力的「物理 AI」標的，如 5G 網通交換器（明泰 3380.TW）與核能電力供應鏈（榮剛 5009.TW）。</p><h4>2. 核心風險點：1750 億美元的退稅亂局</h4><p>雖然 IEEPA 被裁定無權課稅，但高達 1750 億美元的潜在退稅面臨行政混亂與漫長訴訟，且新一波 10% 關稅將於周二生效，這將對<b>製造業成本結構</b>產生即時壓力。市場目前刻意忽視此成本轉嫁風險，投資者應嚴防隨之而來的獲利回吐潮。</p>
                         </div>
                     </div>
                 </section>
@@ -244,40 +256,205 @@
                     style="animation-delay: 0.1s;">
                     
                         <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
-                            data-category="其他" data-title="德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策"
-                            data-content="&amp;lt;p&amp;gt;德國總理梅爾茨周六（21 日）表示，他將在一周多後前往華盛頓，同美國總統川普討論美國關稅政策，將以協調一致的歐盟立場與其展開對話。&amp;lt;/p&amp;gt;
+                            data-category="其他" data-title="〈潛力股〉明泰1.6t交換器q1送樣拚雙位數成長 印度市場成營運衝刺主力"
+                            data-content="&amp;lt;p&amp;gt;網通廠明泰 (3380-tw) 將於 2 月 26 日舉行法人說明會，市場聚焦今年成長動能與新產品進度。受惠於 ai 資料中心需求強勁，明泰在高速交換器技術取得突破，預計 1.6t 水冷式交換器將於今年第一季正式送樣，最快下半年貢獻營收。此外，印度市場的 5g 與 fwa 設備出貨持續增溫，法人看好在雙引擎帶動下，明泰 2026 年營收有望挑戰雙位數成長，力拚走出去年營運低谷。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;梅爾茨當天在斯圖加特出席基民盟黨代會後接受媒體採訪時作出上述表態。此前美國聯邦最高法院判定川普政府依據《國際緊急經濟權力法》實施的關稅措施違法。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;根據最新公布的營收數據，明泰 1 月合併營收為 15.28 億元，月減 48.7%，但較去年同期小幅成長 5.6%。雖然首月受到傳統淡季影響，營收較上月旺季滑落，但年增表現顯示營運已逐步回穩。子公司仲琦 (2419-tw) 與互動 (6486-tw) 1 月營收亦同步修正，其中互動月減幅度達 82.5%，主因去年第四季專案集中入帳基期較高所致。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;梅爾茨稱，這一判定「引人關注，也在許多人意料之中」，顯示美國的權力分立機制仍在發揮作用。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;在技術佈局方面，明泰搭上 ai 高速傳輸列車，搭載博通晶片的 1.6t 水冷式交換器設計成熟度超前，預計本季送樣並爭取量產機會。美系大廠 celestica 近期釋出對 1.6t 交換器量產加速的樂觀展望，法人認為這股趨勢將有利於已提前佈局的台系網通廠。明泰預期今年交換器業務將由 1.6t 產品率先點火，800g 需求則可望在第一季後回升，隨著客戶標案進度於上半年開始貢獻。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;不過，他指出，這項判定不涉及針對特定行業徵收的「行業性關稅」。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;除了鎖定資料中心的高階交換器商機，印度市場將是明泰 2026 年最明確的成長動能。公司旗下無線寬頻產品線已成功切入印度電信基礎建設供應鏈，提供 5g 中繼接取設備與固定無線接取（fwa）產品，隨著當地網路覆蓋率提升，出貨動能持續增溫。法人分析，印度基建需求具備中期成長性，將成為支撐明泰今年營收的重要支柱。&amp;lt;/p&amp;gt;
 
-&amp;lt;p&amp;gt;梅爾茨表示，赴美前德國將同歐盟夥伴進行協調。「關稅政策屬於歐盟職權，不是單個成員國的事務。我將以協調一致的歐洲立場前往華盛頓。」&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;他強調，將向美方明確表達關稅「對各方都有損害」，尤其會對徵稅國家造成影響，「德國承受的是出口減少的壓力，但最終買單的是美國消費者」。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;梅爾茨表示，美國法院的判定有助於減輕德國經濟的關稅負擔，但仍需關注「行業性關稅」的影響。&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;梅爾茨說，此次訪美行程已籌劃多時，預定 3 月初成行。這將是他自 2025 年 6 月在白宮會見川普以來再次訪美。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;回顧去年表現，受網通產業庫存調整影響，明泰 2025 年前三季累計呈現虧損，每股虧損 0.37 元，但全年營收仍力守正成長。展望 2026 年，公司將持續嚴格控管費用，力求營業費用持平或下降以改善獲利結構。面對近期記憶體價格上漲壓力，明泰表示成本大致可轉嫁客戶，且已與供應商洽談新年度合約，風險相對可控，全年營運目標力拚轉虧為盈並重回成長軌道。&amp;lt;/p&amp;gt;
 ">
                             <div>
                                 <div class="flex items-center justify-between mb-4"><span
                                         class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
                                         其他
                                     </span><span class="text-slate-400 text-xs">
-                                        上午08:00
+                                        上午09:00
                                     </span></div>
                                 <h3
                                     class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
-                                    德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策
+                                    〈潛力股〉明泰1.6T交換器Q1送樣拚雙位數成長 印度市場成營運衝刺主力
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(tw_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6343928"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="市場風險預警" data-title="ai 能源需求引爆smr浪潮 榮剛擁利基"
+                            data-content="&amp;lt;p&amp;gt;ai 浪潮帶動電力需求呈爆炸式增長，小型模組化反應爐 (small modular reactor, smr) 被視為新一代能源解方，台鋼集團旗下特殊鋼廠榮剛 (5009-tw) 在能源領域鋼材布局已久，可望同步受惠。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;ai 浪潮帶動電力需求呈爆炸式增長，核能因可全天候穩定供電具備低碳，也被視為「ai 能源危機」的解決方案，其中，smr 目前被市場普遍認為最接近商業化、適合為數據中心提供穩定電力的新核能技術。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;目前像是谷歌 (google) 就與 kairos power 簽訂首份小型模組化反應爐 (smr) 採購協議，目標在 2030 年後部署高達 500mw 的清潔電力；其他科技巨頭如微軟 (microsoft)、亞馬遜 (amazon) 等也紛紛布局核能電力。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;不僅科技大廠，各國政府也相繼投入新型核能，行政院長卓榮泰近日也強調「電力即國力」，表態政府將在核安有保障、核廢有解方及社會高度共識下，全面接受新式核能技術。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;核能發電環境因高輻射、高壓、腐蝕性，其設備如反應爐內構件、壓力容器及渦輪葉片需要極高純淨度的超合金與不鏽鋼，而據了解，榮剛在能源用鋼領域深耕已久，過去就曾供應核能發電爐材料，接下來也可望受惠 smr 趨勢。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;榮剛看好，除了能源與油氣產業需求則維持穩健外，航太產業需求熱度不減，兩大系統商積壓訂單仍處高檔，市場動能延續可期；軍工方面，在地緣政治推動下，全球軍備投入持續上升，帶動相關鋼材需求。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;榮剛受惠訂單維持滿載，工廠產能利用率持續處於高檔，在穩健接單與產能高效運作的支撐下，公司對後續市場維持審慎樂觀態度。榮剛 1 月營收 10.44 億元，創 30 個月新高、創歷年同期次高，月增 9.6%、年增 8.87%。&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        市場風險預警
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午09:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    AI 能源需求引爆SMR浪潮 榮剛擁利基
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(tw_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6345593"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="AI基礎設施" data-title="關稅修訂憂慮+退稅懸而未決！歐美汽車業既樂觀與憂慮並存"
+                            data-content="&amp;lt;p&amp;gt;美國最高法院上周五 (20 日) 以 6 比 3 的投票結果裁定總統川普無權依據 1977 年《國際緊急經濟權力法》（ieepa）實施大範圍關稅，這項判決意味著數千家曾繳納相關關稅的企業可能獲得退稅，涉及金額恐超過 1750 億美元，但裁決未明確退款路徑，企業面臨複雜的法律程序與行政負擔。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;《德國之聲》報導，由於最高法院未規定川普政府如何退還已收關稅，後續流程「很可能混亂不堪」，《路透社》更進一步指出，企業需逐筆追溯進口紀錄申請退稅，訴訟週期可能長達數年。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;在最高法院裁決公佈數小時後，川普宣布將依據 1974 年《貿易法》第 122 條，自周二 (24 日) 起對全球商品加徵 10% 關稅，為期 150 天。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;《彭博資訊》與《歐洲汽車新聞》報導指出，乘用車、部分卡車及汽車零件獲暫時豁免，此前依據 232 條款徵收的汽車、鋼鐵、鋁銅關稅仍有效。這項「選擇性豁免」被外媒視為汽車產業的階段性勝利。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;美國汽車政策委員會曾聯合通用、福特等美國車廠致函白宮，要求避免多重關稅疊加，供應商組織 mema 亦強調北美供應鏈穩定性至關重要。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;歐洲方面則反應複雜。歐盟呼籲維持低關稅框架。數據顯示，2024 年美國商品貿易逆差成長 2.1% 至 1.23 兆美元，超 90% 關稅成本實際由美國企業與消費者承擔。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;汽車業風險尤為突出。惠譽警告，若美國在《美墨加協定》審查中強化立場，在墨西哥設廠的歐洲車廠將面臨成本重估，歐洲整車及零組件出口亦可能因美國市場需求萎縮而受衝擊。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;《歐洲汽車新聞》指出，若以為美國最高法院裁決終結了關稅問題，未免過於天真。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;儘管裁決為企業打開退款大門，畢馬威 (kpmg) 美國汽車業務負責人強調「不可放鬆警惕」。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;根據普華永道統計，汽車業已為爭議關稅支付 86 億美元，如今卻陷入法律真空。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;隨著川普新關稅措施出台，企業既要應對新關稅成本，又需耗費數年追索舊稅，雙重不確定性恐將持續發酵。這場圍繞貿易權力的司法博弈，正將全球產業鏈推向更深層的動盪漩渦&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        AI基礎設施
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午09:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    關稅修訂憂慮+退稅懸而未決！歐美汽車業既樂觀與憂慮並存
                                 </h3>
                                 <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
                                         class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
                                     鉅亨網(wd_stock)
                                 </div>
                             </div>
-                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348120"
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348159"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="地緣政治與貿易政策" data-title="若openai估值8300億美元 google等科技巨頭又該值多少？"
+                            data-content="&amp;lt;p&amp;gt;資本市場正上演一場撕裂式定價，當 openai 以 8300 億美元估值刷新 ai 獨角獸紀錄時，同處 ai 賽道的谷歌，二級市場交易價格僅 2027 年預期營收的 6.7 倍，不足前者的一半，這一反差暴露出投資者對 ai 顛覆格局的深層焦慮。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;標普全球數據顯示，openai 估值相當於其 2027 年預期營收的 14 倍，谷歌僅獲 6.7 倍定價。若以同一倍數標準測算，谷歌理論估值需膨脹至目前的 2.1 倍才能符合 openai 的估值邏輯。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;市場給予 openai 超高溢價的核心在於「成長賭注」，其收入爆發潛力吸引資本追逐，卻刻意忽視 openai 持續巨額虧損且盈利無期的兩大現實，而谷歌坐擁成熟現金牛業務與同等技術實力，護城河更為穩固。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;科技分析師 martin peers 指出，市場過度聚焦 openai 代表的「高成長敘事」，卻遺忘其他巨頭在 ai 轉型中的紅利，而谷歌、持 openai 股份 27% 的微軟、亞馬遜等三大玩家，憑藉雲端業務與生態協同，極可能成為 ai 浪潮的最終贏家。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;目前估價差恰是獨立研判的窗口，一邊是 openai 引領的「成長溢價」主線，另一邊是谷歌背書的「現金流確定性折價」邏輯，兩條定價路線的再平衡，將取決於市場對 ai 商業化路徑的共識重構。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;值得玩味的是，谷歌今年迄今股價逆勢跑贏多數科技巨頭，卻仍難逃整體拋售潮。當投資人在恐慌中逃離科技股，那些手握印鈔機業務的轉型巨頭，或許正悄悄積蓄價值回歸的能量。&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        地緣政治與貿易政策
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午09:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    若OpenAI估值8300億美元 Google等科技巨頭又該值多少？
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348161"
+                                    target="_blank"
+                                    class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg></a></div>
+                        </div>
+                        
+                        <div class="news-card group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between"
+                            data-category="其他" data-title="重金押注諾基亞！美媒：黃仁勳「物理ai」戰力新三角浮出水面"
+                            data-content="&amp;lt;p&amp;gt;輝達 (&amp;lt;a data-symbol-template=&amp;quot;uss:nvda:stock:common&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;nvda-us&amp;lt;/a&amp;gt;) 最新提交的 13f 監管文件引發市場震動。除清倉安謀、退出多家 ai 生態公司外，輝達大舉增持諾基亞股票並持有 2.9% 股份的操作，成為科技界關注焦點。此舉被解讀為黃仁勳建構「物理 ai」生態的關鍵一步，劍指下一代工業革命的底層基礎設施。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;曾以手機聞名的諾基亞早已完成策略轉型，如今身為全球主要電信設備商，其業務正處上升通道，近三個月股價累計上漲 27.59%，總市值達 446 億美元，尤其在 5g 基地台、光通訊及邊緣運算領域，諾基亞透過收購光傳輸企業 infinera 強化了技術護城河，成為全球少數能提供全端通訊基建方案的供應商。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;黃仁勳的佈局直指「物理 ai」戰略核心。今年初在 ces 大展上，他提出「物理 ai」將驅動新工業革命，而算力與網路的深度融合是前提。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;輝達雖掌控 gpu 算力霸權，卻在網路基建有明顯弱點，增持諾基亞意味其正以資本紐帶補足這一缺口，透過「算力 + 網路」雙輪驅動，將 ai 運算能力注入通訊網絡，同時藉力諾基亞的全球通路拓展電信市場。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;這項操作實為輝達投資邏輯的重大轉向。過去透過廣撒網投資 applied digital、文遠知行等企業探索 ai 應用，如今則全面收縮戰線，聚焦基礎建設核心環節。除諾基亞外，輝達同步增持英特爾則旨在解決晶片製造瓶頸，建立新部位的晶片設計龍頭新思科技則強化硬體研發效率，三者形成「晶片設計 - 製造 - 網絡」的循環生態，直指 ai 產業命脈。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;清倉安謀控股、退出非核心資產等動作進一步印證戰略收縮意圖。安謀業務與新思科技存在重疊，且受反壟斷限制難以整合，而退出部分 ai 應用公司，則是為集中資源攻堅底層技術。&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;分析指出，黃仁勳正以資本為武器，編織一張覆蓋算力、網路、晶片設計的巨網。透過綁定諾基亞的通訊基建能力，輝達不僅為「物理 ai」鋪路，更試圖主導下一代工業智慧化浪潮。當科技巨頭們競逐大模型時，黃仁勳的棋局已深入產業更底層的土壤。&amp;lt;br&amp;gt;
+&amp;nbsp;&amp;lt;/p&amp;gt;
+">
+                            <div>
+                                <div class="flex items-center justify-between mb-4"><span
+                                        class="px-3 py-1 bg-indigo-50 text-indigo-600 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100">
+                                        其他
+                                    </span><span class="text-slate-400 text-xs">
+                                        上午09:00
+                                    </span></div>
+                                <h3
+                                    class="text-slate-800 font-bold leading-snug text-lg mb-3 group-hover:text-indigo-600 transition-colors">
+                                    重金押注諾基亞！美媒：黃仁勳「物理AI」戰力新三角浮出水面
+                                </h3>
+                                <div class="text-xs text-slate-400 font-medium mb-4 flex items-center"><span
+                                        class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>
+                                    鉅亨網(wd_stock)
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-slate-50 flex justify-end"><a href="https://news.cnyes.com/news/id/6348024"
                                     target="_blank"
                                     class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -295,6 +472,24 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
+                                <button onclick="showKeywordTrend('AI')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        AI
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        4
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('美元')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        美元
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        3
+                                    </span>
+                                </button>
+                                
                                 <button onclick="showKeywordTrend('川普')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
@@ -304,10 +499,37 @@
                                     </span>
                                 </button>
                                 
+                                <button onclick="showKeywordTrend('輝達')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        輝達
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
                                 <button onclick="showKeywordTrend('關稅')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
                                         關稅
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('核能')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        核能
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        1
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('軍工')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        軍工
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
                                         1
                                     </span>
@@ -392,7 +614,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: [0.2,0.8,-0.3,0.1,0.6],
+                    data: [-0.6,0.85,0.75,-0.5,0.65],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)',
@@ -407,7 +629,7 @@
 
         // 🟢 新增：板塊情緒圖
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = {"tech":-0.5,"finance":0.2,"manufacturing":-0.2,"service":0.1};
+        const sectorData = {"tech":0.85,"finance":0.1,"manufacturing":-0.3,"service":0.4};
         new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -543,7 +765,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         
-            const cloudData = [["US",273],["AI",187],["EPS",141],["美元",106],["日本",85],["川普",83],["曝光",78],["自由",78],["健康",74],["全球",70],["春節",68],["中速",54],["初一",51],["開講",50],["經典賽",50],["伊朗",49],["除夕",49],["台南",46],["初二",45],["MLB",45],["初三",41],["宣布",38],["關稅",37],["世界",36],["最高",35],["初四",35],["高雄",31],["TAIPEI",30],["TIMES",30],["人潮",28],["TW",28],["NBA",28],["印度",28],["合作",28],["大跌",28],["研究",27],["政府",26],["路段",26],["Google",26],["分析",26],["政策",26],["高市早苗",25],["法院",25],["科技",24],["最高法院",24],["今彩",23],["初五",23],["打造",22],["能源",21],["警方",20]];
+            const cloudData = [["US",273],["AI",189],["EPS",141],["美元",107],["日本",86],["川普",84],["自由",79],["曝光",78],["健康",74],["全球",71],["春節",68],["中速",54],["初一",51],["開講",51],["經典賽",50],["伊朗",49],["除夕",49],["MLB",48],["台南",46],["初二",45],["初三",41],["宣布",39],["關稅",38],["世界",36],["最高",35],["初四",35],["高雄",31],["TAIPEI",30],["TIMES",30],["印度",29],["合作",29],["人潮",28],["TW",28],["NBA",28],["大跌",28],["路段",27],["Google",27],["研究",27],["政府",26],["分析",26],["政策",26],["科技",25],["高市早苗",25],["法院",25],["最高法院",24],["今彩",23],["初五",23],["打造",22],["能源",21],["提醒",21]];
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
