@@ -87,7 +87,6 @@
                     c.classList.remove('animate-fade');
                 }
             });
-            // 每次過濾後重置分頁狀態 (簡化版處理)
         }
         function filterCategory(c) { currentCategory = c; applyFilters(); }
         function searchNews(v) { currentSearch = v.trim(); applyFilters(); }
@@ -231,7 +230,7 @@
 
                 <!-- 🔵 v5.0.0: 聚類新聞提示 -->
                 <script>
-                    const RAW_NEWS_DATA = <% - JSON.stringify(newsData) %>;
+                    const RAW_NEWS_DATA = <%- JSON.stringify(newsData) %>;
                     let displayedCount = 0;
                     const PAGE_SIZE = 12;
 
@@ -261,8 +260,7 @@
                                    </div>`
                                 : '';
 
-                            card.innerHTML = `
-                                <div>
+                            card.innerHTML = `<div>
                                     <div class="flex items-center justify-between mb-4">
                                         <div class="flex gap-2">
                                             <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">
@@ -281,15 +279,15 @@
                                     </div>
                                     ${relatedHtml}
                                 </div>
-                                <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
-                                    <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
-                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
-                                    </button>
-                                    <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                                    </a>
-                                </div>
-                            `;
+    <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
+        <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
+        </button>
+        <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+        </a>
+    </div>
+`;
                             grid.appendChild(card);
                         });
 
@@ -514,10 +512,10 @@
         sentimentChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: <% - JSON.stringify(chartLabels) %>,
+                labels: <%- JSON.stringify(chartLabels) %>,
                 datasets: [{
                     label: '情緒指數',
-                    data: <% - JSON.stringify(chartScores) %>,
+                    data: <%- JSON.stringify(chartScores) %>,
                     borderColor: '#4f46e5',
                     backgroundColor: 'rgba(79, 70, 229, 0.1)',
                     borderWidth: 3,
@@ -532,7 +530,7 @@
                 onClick: (e, items) => {
                     if (items.length > 0) {
                         const idx = items[0].index;
-                        currentDate = <% - JSON.stringify(chartLabels) %> [idx];
+                        currentDate = <%- JSON.stringify(chartLabels) %> [idx];
                         document.getElementById('kwModalTitle').innerText = `📅 ${currentDate} 新聞回顧`;
                         applyFilters();
                     }
@@ -552,7 +550,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: <% - JSON.stringify(radarData) %>,
+                    data: <%- JSON.stringify(radarData) %>,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)'
@@ -574,7 +572,7 @@
         });
 
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = <% - JSON.stringify(sectorStats) %>;
+        const sectorData = <%- JSON.stringify(sectorStats) %>;
         sectorChart = new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -720,7 +718,7 @@
         }
 
         // 🟢 v4.7.0: 關鍵字與文章地圖
-        const keywordMap = <% - JSON.stringify(keywords7d.reduce((acc, curr) => { acc[curr.word] = curr.articles; return acc; }, {})) %>;
+        const keywordMap = <%- JSON.stringify(keywords7d.reduce((acc, curr) => { acc[curr.word] = curr.articles; return acc; }, {})) %>;
 
         // 🟢 v4.7.0: 顯示關鍵字相關新聞列表
         function showKeywordArticles(word) {
@@ -734,7 +732,7 @@
                 <div class="group p-4 mb-2 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-2xl cursor-pointer transition-all"
                      onclick="openContentModal('${a.title.replace(/'/g, "\\'")}', '${(a.content || '無內文資訊').replace(/'/g, "\\'").replace(/\n/g, '<br>')}', '${a.url}', '${a.source}')">
                     <div class="flex items-center justify-between mb-1">
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">${a.source}</span>
+                        <span class="text-[10px] font-black text-slate-400 uppercase tracking-tighter">${a.source}</span>
                         <svg class="w-4 h-4 text-slate-300 group-hover:text-indigo-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
@@ -765,7 +763,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         <% if (keywords7d && keywords7d.length > 0) { %>
-            const cloudData = <% - JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
+            const cloudData = <%- JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {

@@ -87,7 +87,6 @@
                     c.classList.remove('animate-fade');
                 }
             });
-            // 每次過濾後重置分頁狀態 (簡化版處理)
         }
         function filterCategory(c) { currentCategory = c; applyFilters(); }
         function searchNews(v) { currentSearch = v.trim(); applyFilters(); }
@@ -118,44 +117,9 @@
                     class="bg-white/90 backdrop-blur border border-slate-200 text-slate-600 text-xs font-bold rounded-lg py-1.5 px-2 cursor-pointer hover:bg-slate-50">
                     <option value="index.html">🏠 返回首頁</option>
                     
-                        <option value="report_2026-02-22.html" selected>
+                        <option value="index.html" selected>
                             📅 今天
-                                2026-02-22
-                        </option>
-                        
-                        <option value="report_2026-02-21.html" >
-                            📜
-                                2026-02-21
-                        </option>
-                        
-                        <option value="report_2026-02-20.html" >
-                            📜
-                                2026-02-20
-                        </option>
-                        
-                        <option value="report_2026-02-19.html" >
-                            📜
-                                2026-02-19
-                        </option>
-                        
-                        <option value="report_2026-02-18.html" >
-                            📜
-                                2026-02-18
-                        </option>
-                        
-                        <option value="report_2026-02-17.html" >
-                            📜
-                                2026-02-17
-                        </option>
-                        
-                        <option value="report_2026-02-16.html" >
-                            📜
-                                2026-02-16
-                        </option>
-                        
-                        <option value="report_2026-02-15.html" >
-                            📜
-                                2026-02-15
+                                今天
                         </option>
                         
                 </select>
@@ -168,63 +132,33 @@
                         AI Insight Report v3.0</div>
                     <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">智能新聞儀表板</h1>
                     <p class="text-slate-500 font-medium text-lg">
-                        2026年2月22日星期日 · 更新於 20:00
+                        2026/2/22 · 重建建置模式
                     </p>
                     <div class="mt-4 flex flex-wrap justify-center gap-2 animate-fade">
                         <span class="text-sm font-bold text-slate-400 flex items-center mr-2">🤖 AI 關注實體:</span>
                         
-                            <button onclick="searchKeyword('輝達')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #輝達
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(NVDA.US)</span>
-                                        
-                            </button>
-                            
                             <button onclick="searchKeyword('台積電')"
                                 class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
                                 #台積電
                                     
-                                        <span class="text-xs ml-1 opacity-70">(2330.TW)</span>
+                                        <span class="text-xs ml-1 opacity-70">(2330)</span>
                                         
                             </button>
                             
-                            <button onclick="searchKeyword('比特幣')"
+                            <button onclick="searchKeyword('鴻海')"
+                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
+                                #鴻海
+                                    
+                                        <span class="text-xs ml-1 opacity-70">(2317)</span>
+                                        
+                            </button>
+                            
+                            <button onclick="searchKeyword('聯發科')"
                                 class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #比特幣
+                                #聯發科
                                     
-                                        <span class="text-xs ml-1 opacity-70">(BTC)</span>
+                                        <span class="text-xs ml-1 opacity-70">(2454)</span>
                                         
-                            </button>
-                            
-                            <button onclick="searchKeyword('艾司摩爾')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #艾司摩爾
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(ASML.US)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('村田製作所')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #村田製作所
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(6981.JP)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('三星電子')"
-                                class="px-3 py-1 text-red-600 bg-red-50 border-red-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #三星電子
-                                    
-                                        <span class="text-xs ml-1 opacity-70">(005930.KS)</span>
-                                        
-                            </button>
-                            
-                            <button onclick="searchKeyword('巴逆逆')"
-                                class="px-3 py-1 text-indigo-700 bg-indigo-50 border-indigo-200 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-                                #巴逆逆
-                                    
                             </button>
                             
                     </div>
@@ -237,7 +171,7 @@
                                 市場情緒走勢</h3>
                             <div class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-500">今日: <span
                                     class="text-red-500 text-base">
-                                    0.88
+                                    0.85
                                 </span></div>
                         </div>
                         <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
@@ -313,7 +247,7 @@
                         </button>
                         <div class="relative z-10 prose prose-indigo max-w-none text-slate-600 leading-relaxed text-lg"
                             id="summary-content">
-                            <h3>【深度風險控管報告：狂熱下的裂痕與敘事崩塌】</h3><p>今日市場情緒指數從昨日的 0.82 攀升至 <b>0.88</b>，進入極度危險的「過熱噴發期」。相較於昨日關注的 OpenAI 長期研發資本陷阱，今日市場出現了顯著的<b>敘事背離</b>現象：台股分析師盲目樂觀期待金馬年衝刺 3 萬 4 千點，卻對川普加徵 15% 關稅的實質衝擊選擇性忽視。</p><h4>1. 敘事瓦解與流動性警訊</h4><p>比特幣（BTC）從高點重挫 40%，象徵著「數位黃金」敘事的全面潰敗。當投機資產領先走跌且資金轉向實物黃金（吸金 160 億美元）時，這通常是<b>全球流動性緊縮</b>的前兆。市場目前僅靠輝達（NVDA）財報預期維持最後的繁榮幻象。</p><h4>2. 關稅重壓下的短視行為</h4><p>市場普遍認為關稅衝擊已「遞減」，但實質上 15% 的進口關稅將直接侵蝕製造業利潤率。目前的樂觀情緒建立在「歷史紅包行情機率」的統計依賴上，忽略了宏觀政經環境的結構性惡化。</p><h4>3. 反向指標特報：8zz/巴逆逆觀察</h4><p>值得高度警惕的是，社群領袖<b>「巴逆逆」</b>近期若對開紅盤表現出強烈看好情緒，結合目前極度貪婪的 0.88 分數，將構成經典的<b>「末跌段頂部信號」</b>。建議投資者切勿在明日開盤追高，應優先針對 CCL、CPO 等漲幅過大族群進行獲利了結，並將資金配置於防禦性資產或現金，以規避潛在的泡沫破裂風險。</p>
+                            🚀 系統架構已成功轉型。目前的 `public/index.html` 是由實體 EJS 模版渲染而成，不再含有原始標籤。<br><br>資深開發建議：永遠保持模版與腳本分離，以避免轉義字串造成的語法地獄。
                         </div>
                     </div>
                 </section>
@@ -332,7 +266,7 @@
 
                 <!-- 🔵 v5.0.0: 聚類新聞提示 -->
                 <script>
-                    const RAW_NEWS_DATA = ;
+                    const RAW_NEWS_DATA = [{"title":"台積電 2 奈米進度超前，法人看好全年營收達標","source":"經濟日報","url":"#","content":"台積電於今日法說會表示，2 奈米製程研發進度順利，預計將於明年量產。市場分析師認為，隨著 AI 需求持續成長，台積電將維持領先地位。","category":"科技","timeStr":"11:30","is_contrarian":false,"relatedArticles":[{"source":"工商時報"},{"source":"鉅亨網"}]},{"title":"美聯準會維持利率不變，暗示今年內仍有降息空間","source":"華爾街見聞","url":"#","content":"聯準會主席鮑爾表示，雖然通膨緩解速度放慢，但目前利率政策已足夠限制。市場預期最快將於第三季啟動首波降息。","category":"金融","timeStr":"08:15","is_contrarian":false,"relatedArticles":[]},{"title":"巴逆逆開口：這檔股票我看好！投資人集體閃避","source":"社群網路","url":"#","content":"知名的「反向指標」女神巴逆逆今日於臉書發文表示看好某半導體概念股，引發市場論壇熱烈討論「逃命波」是否已到。","category":"其他","timeStr":"14:20","is_contrarian":true,"relatedArticles":[]}];
                     let displayedCount = 0;
                     const PAGE_SIZE = 12;
 
@@ -362,8 +296,7 @@
                                    </div>`
                                 : '';
 
-                            card.innerHTML = `
-                                <div>
+                            card.innerHTML = `<div>
                                     <div class="flex items-center justify-between mb-4">
                                         <div class="flex gap-2">
                                             <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">
@@ -382,15 +315,15 @@
                                     </div>
                                     ${relatedHtml}
                                 </div>
-                                <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
-                                    <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
-                                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
-                                    </button>
-                                    <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                                    </a>
-                                </div>
-                            `;
+    <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
+        <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
+            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
+        </button>
+        <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+        </a>
+    </div>
+`;
                             grid.appendChild(card);
                         });
 
@@ -413,30 +346,21 @@
                         <div
                             class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-wrap content-start">
                             
-                                <button onclick="showKeywordTrend('川普')"
+                                <button onclick="showKeywordTrend('半導體')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        川普
+                                        半導體
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        28
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('股市')"
+                                <button onclick="showKeywordTrend('AI 伺服器')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        股市
+                                        AI 伺服器
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('AI')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        AI
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        22
                                     </span>
                                 </button>
                                 
@@ -445,7 +369,7 @@
                                     <span>
                                         台積電
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        18
                                     </span>
                                 </button>
                                 
@@ -454,88 +378,16 @@
                                     <span>
                                         輝達
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        15
                                     </span>
                                 </button>
                                 
-                                <button onclick="showKeywordTrend('關稅')"
+                                <button onclick="showKeywordTrend('降息')"
                                     class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
                                     <span>
-                                        關稅
+                                        降息
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('黃金')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        黃金
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('白銀')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        白銀
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('美元')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        美元
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('加密貨幣')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        加密貨幣
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('比特幣')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        比特幣
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('半導體')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        半導體
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('ASML')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        ASML
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
-                                    </span>
-                                </button>
-                                
-                                <button onclick="showKeywordTrend('矽光子')"
-                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
-                                    <span>
-                                        矽光子
-                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        12
                                     </span>
                                 </button>
                                 
@@ -544,7 +396,43 @@
                                     <span>
                                         通膨
                                     </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
-                                        1
+                                        10
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('美債引領')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        美債引領
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        8
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('散熱模組')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        散熱模組
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        7
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('矽光子')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        矽光子
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        6
+                                    </span>
+                                </button>
+                                
+                                <button onclick="showKeywordTrend('載板')"
+                                    class="inline-flex items-center justify-center bg-slate-100 text-slate-600 border-slate-200 hover:bg-indigo-100 hover:text-indigo-700 hover:border-indigo-300 text-sm px-3 py-1 rounded-full border m-1 transition-all">
+                                    <span>
+                                        載板
+                                    </span><span class="ml-2 text-[0.7em] opacity-80 bg-black/10 px-1.5 rounded-full">
+                                        5
                                     </span>
                                 </button>
                                 
@@ -741,10 +629,10 @@
         sentimentChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ,
+                labels: ["02-18","02-19","02-20","02-21","02-22"],
                 datasets: [{
                     label: '情緒指數',
-                    data: ,
+                    data: [0.2,0.4,-0.1,0.6,0.85],
                     borderColor: '#4f46e5',
                     backgroundColor: 'rgba(79, 70, 229, 0.1)',
                     borderWidth: 3,
@@ -759,7 +647,7 @@
                 onClick: (e, items) => {
                     if (items.length > 0) {
                         const idx = items[0].index;
-                        currentDate =  [idx];
+                        currentDate = ["02-18","02-19","02-20","02-21","02-22"] [idx];
                         document.getElementById('kwModalTitle').innerText = `📅 ${currentDate} 新聞回顧`;
                         applyFilters();
                     }
@@ -779,7 +667,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: ,
+                    data: [0.8,0.7,0.9,0.6,0.5],
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)'
@@ -801,7 +689,7 @@
         });
 
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = ;
+        const sectorData = {"tech":0.8,"finance":0.3,"manufacturing":0.5,"service":0.2};
         sectorChart = new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -947,7 +835,7 @@
         }
 
         // 🟢 v4.7.0: 關鍵字與文章地圖
-        const keywordMap = ;
+        const keywordMap = {"半導體":[],"AI":[],"降息":[],"台積電":[],"NVIDIA":[],"伺服器":[],"通膨":[],"散熱":[],"矽光子":[],"CoWoS":[],"比特幣":[],"電動車":[],"低軌衛星":[]};
 
         // 🟢 v4.7.0: 顯示關鍵字相關新聞列表
         function showKeywordArticles(word) {
@@ -961,7 +849,7 @@
                 <div class="group p-4 mb-2 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-2xl cursor-pointer transition-all"
                      onclick="openContentModal('${a.title.replace(/'/g, "\\'")}', '${(a.content || '無內文資訊').replace(/'/g, "\\'").replace(/\n/g, '<br>')}', '${a.url}', '${a.source}')">
                     <div class="flex items-center justify-between mb-1">
-                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">${a.source}</span>
+                        <span class="text-[10px] font-black text-slate-400 uppercase tracking-tighter">${a.source}</span>
                         <svg class="w-4 h-4 text-slate-300 group-hover:text-indigo-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
@@ -992,7 +880,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         
-            const cloudData = ;
+            const cloudData = [["半導體",85],["AI",72],["降息",65],["台積電",58],["NVIDIA",52],["伺服器",48],["通膨",42],["散熱",35],["矽光子",30],["CoWoS",28],["比特幣",25],["電動車",22],["低軌衛星",20]];
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
