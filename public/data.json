@@ -1,198 +1,163 @@
 {
-  "updateTime": "2026-02-23T15:03:11.212Z",
-  "fullDateStr": "2026/2/23 · 更新於 23:03:11",
+  "updateTime": "2026-02-23T16:03:23.642Z",
+  "fullDateStr": "2026/2/24 · 更新於 00:03:23",
   "aiResult": {
-    "sentiment_score": -0.45,
+    "sentiment_score": -0.15,
     "dimensions": {
-      "policy": -0.7,
-      "market": -0.6,
-      "industry": -0.8,
-      "international": -0.6,
-      "technical": -0.5
+      "policy": -0.85,
+      "market": -0.5,
+      "industry": -0.3,
+      "international": -0.75,
+      "technical": -0.4
     },
     "entities": [
       {
-        "name": "Intuit",
-        "sentiment": "Negative",
-        "ticker": "INTU.US"
-      },
-      {
-        "name": "CrowdStrike",
-        "sentiment": "Negative",
-        "ticker": "CRWD.US"
-      },
-      {
-        "name": "Moderna",
+        "name": "穩懋",
         "sentiment": "Positive",
-        "ticker": "MRNA.US"
+        "ticker": "3105.TW"
       },
       {
-        "name": "Workday",
+        "name": "賽富時",
         "sentiment": "Negative",
-        "ticker": "WDAY.US"
+        "ticker": "CRM-US"
       },
       {
-        "name": "NVIDIA",
-        "sentiment": "Neutral",
-        "ticker": "NVDA.US"
-      },
-      {
-        "name": "Trump",
+        "name": "耐吉",
         "sentiment": "Negative",
-        "ticker": null
+        "ticker": "NKE-US"
+      },
+      {
+        "name": "美國運通",
+        "sentiment": "Negative",
+        "ticker": "AXP-US"
+      },
+      {
+        "name": "高知特科技",
+        "sentiment": "Negative",
+        "ticker": "CTSH-US"
+      },
+      {
+        "name": "第一資本金融",
+        "sentiment": "Negative",
+        "ticker": "COF-US"
+      },
+      {
+        "name": "愛彼迎",
+        "sentiment": "Negative",
+        "ticker": "ABNB-US"
       }
     ],
-    "summary": "<h3>【風險控管報告：貪婪消退，結構性泡沫開始擠壓】</h3><p>今日市場情緒急轉直下，由昨日的 <b>0.88 極度貪婪</b> 迅速滑落。市場正驗證昨日警告的「補漲式狂歡」末端特徵，隨著<b>川普 15% 全球關稅</b>的不確定性升溫，資金開始出現恐慌性撤離。</p><h4>1. 軟體產業血洗：AI 交易的「估值幻滅」</h4><p>今日美股盤中出現集體性重挫，特別是軟體服務（SaaS）板塊，包括 <b>INTU、WDAY、CRWD、ZS</b> 等指標股跌幅均超過 5%。這印證了瑞銀（UBS）與大摩的警訊：AI 對傳統軟體模式的破壞性及高額債務違約風險（槓桿貸款中 50% 評級為 B- 或以下），正導致資金從擁擠的科技交易中撤離。</p><h4>2. 避險資產抬頭：防禦性佈局刻不容緩</h4><p>相對於科技股的崩跌，<b>莫德納 (MRNA)</b> 逆勢大漲 5.3%，黃金與公債價格走強。這顯示聰明錢已轉向防禦性資產。投資人應注意，若「反向指標」如 <b>8zz（巴逆逆）</b> 此時若持續看多科技成長股，則短線修正機率將進一步上升。</p><h4>3. 決策建議：適度獲利了結，提高現金比重</h4><p>市場已進入「利多不漲、利空放大」的敏感期。在輝達 (NVDA) 財報與國情咨文發布前，建議投資人<b>降低科技股曝險</b>，並關注具備避險屬性的生技或貴金屬，嚴防 AI 泡沫破裂帶來的連鎖反應。</p>",
+    "summary": "<h3>【宏觀策略分析：關稅法律戰引發的估值重構】</h3><p>今日市場情緒從昨日的極度貪婪轉向<b>中性偏謹慎</b>。核心壓力源於<b>川普政府與最高法院的關稅法律戰</b>。川普誓言動用 15% 關稅上限及新增「許可費」制度，引發歐盟、中國與印度的連鎖反制預期，市場對全球經濟成長動能產生疑慮。</p><h4>1. 板塊血洗：消費與軟體服務（SaaS）集體失血</h4><p>今日美股盤中出現結構性拋售，<b>CRM、AXP、NKE、LULU、ABNB</b> 等各產業領頭羊同步出現 5% 以上的跌幅。這顯示市場已不限於軟體業的估值修正，而是擴散至<b>消費金融與零售板塊</b>，反映出投資人對高估值標的的容忍度極低。</p><h4>2. 結構性機會：化合物半導體轉型</h4><p>與美股頹勢相反，<b>穩懋 (3105.TW)</b> 透過轉型光通訊、航太及低軌衛星，成功脫離傳統智慧型手機 PA 的景氣循環，獲得外資大舉回補並攻上漲停，顯示資金正在尋找具備<b>剛性技術壁壘</b>的防守性成長標的。</p><h4>3. 風險控管與反向指標</h4><p>目前尚未觀察到 <b>8zz 或巴逆逆</b> 等知名反向指標有極端喊話，顯示市場尚未觸底。在關稅政策未明朗前，建議維持中性部位。若未來社群出現極度看空（如巴逆逆轉向悲觀），方為空單平倉與結構性建倉之良機。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "市場風險預警"
+        "category": "宏觀經濟"
       },
       {
         "id": 2,
-        "category": "軟體板塊重挫"
+        "category": "科技半導體"
       },
       {
         "id": 3,
-        "category": "關稅政策衝擊"
+        "category": "地緣政治"
       }
     ],
     "sector_stats": {
-      "tech": -0.85,
-      "finance": -0.3,
-      "manufacturing": -0.5,
-      "service": -0.4
+      "tech": -0.4,
+      "finance": -0.65,
+      "manufacturing": -0.2,
+      "service": -0.8
     }
   },
   "newsData": [
     {
-      "title": "盤中速報 - 直覺(INTU-US)大跌5.01%，報361.5美元",
-      "url": "https://news.cnyes.com/news/id/6349794",
+      "title": "穩懋轉型光通訊、航太發展 外資看好回補5500張助攻漲停",
+      "url": "https://news.cnyes.com/news/id/6349739",
+      "source": "鉅亨網(tw_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;PA 放大器、砷化鎵廠穩懋 (3105-TW) 於今 (2026) 年農曆年前舉行法說，公司原預期望今年首季，在淡季效應及農曆年工作日數減少影響下，營收預估下滑 7-9％，毛利率也將較前季下滑，僅 Cellular PA 業務會成長。但看好光通訊、低軌衛星雙成長引擎持續發酵，外資今 (23) 日由賣轉買 5,528 張，激勵穩懋開高走高、跳空漲停，股價也攻上 270.5 元創波段新高。&lt;/p&gt;\n\n&lt;p&gt;穩懋指出，去 (2025) 年營收略低於前一年，但公司產品組合已經有明顯的變化，逐漸脫離過去以智慧手機為營業重心的情況，積極轉向投入航太、基礎設施及 AI 資料中心等含金量相對高的產品領域。&lt;/p&gt;\n\n&lt;p&gt;穩懋強調，未來也將加速布局 AI 光通訊及低軌衛星商機，公司預估 2026 年機台折舊費用將較去年再下滑 1-2 成，資本支出則將落在 20 億元左右。&lt;/p&gt;\n\n&lt;p&gt;展望未來，穩懋表示，在無所不在的 AI 大數據結合無遠弗屆的太空軌道經濟，無論是 AI 光通訊超高頻寬及低延遲或低軌衛星高覆蓋",
+      "timeStr": "上午12:03",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 高知特科技(CTSH-US)大跌5.04%，報61.75美元",
+      "url": "https://news.cnyes.com/news/id/6349817",
+      "source": "鉅亨網(wd_stock)",
+      "category": "宏觀經濟",
+      "thumbnail": null,
+      "content": "&lt;p&gt;高知特科技(CTSH-US)截至台北時間23日23:27股價下跌3.28美元，報61.75美元，跌幅5.04%，成交量1,172,925（股），盤中最高價64.54美元、最低價61.75美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.33%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.63%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高知特科技(CTSH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.28%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.14%&lt;/li&gt;    &lt;li&gt;近 3 月：-14.",
+      "timeStr": "上午12:03",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 耐吉(NKE-US)大跌5.03%，報62.11美元",
+      "url": "https://news.cnyes.com/news/id/6349816",
+      "source": "鉅亨網(wd_stock)",
+      "category": "科技半導體",
+      "thumbnail": null,
+      "content": "&lt;p&gt;耐吉(NKE-US)截至台北時間23日23:26股價下跌3.29美元，報62.11美元，跌幅5.03%，成交量5,291,961（股），盤中最高價64.97美元、最低價62.11美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.31%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.72%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.57%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.03%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;耐吉(NKE-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.6%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+5.39%&lt;/li&",
+      "timeStr": "上午12:03",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 賽富時(CRM-US)大跌5%，報175.9美元",
+      "url": "https://news.cnyes.com/news/id/6349811",
+      "source": "鉅亨網(wd_stock)",
+      "category": "地緣政治",
+      "thumbnail": null,
+      "content": "&lt;p&gt;賽富時(CRM-US)截至台北時間23日23:10股價下跌9.27美元，報175.90美元，跌幅5%，成交量3,334,582（股），盤中最高價182.47美元、最低價175.86美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.25%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.66%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.65%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;賽富時(CRM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.4%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.82%&lt;/li&gt;    &lt;li&gt;近 3 月：-16.84%&lt;",
+      "timeStr": "上午12:03",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 第一資本金融(COF-US)大跌5.13%，報197.73美元",
+      "url": "https://news.cnyes.com/news/id/6349810",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;直覺(INTU-US)截至台北時間23日22:43股價下跌19.06美元，報361.50美元，跌幅5.01%，成交量353,980（股），盤中最高價374.95美元、最低價361.45美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.43%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.25%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.51%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;直覺(INTU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-4.72%&lt;/li&gt;    &lt;li&gt;近 1 月：-30.52%&lt;/li&gt;    &lt;li&gt;近 3 月：-42.61%&",
-      "timeStr": "下午11:03",
+      "content": "&lt;p&gt;第一資本金融(COF-US)截至台北時間23日23:07股價下跌10.69美元，報197.73美元，跌幅5.13%，成交量806,659（股），盤中最高價207.75美元、最低價197.70美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.12%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.63%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.62%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.11%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;第一資本金融(COF-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.51%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.34%&lt;/li&gt;    &lt;li&gt;近 3 月：+2",
+      "timeStr": "上午12:03",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 繽客控股(BKNG-US)大跌5.01%，報3872.6美元",
-      "url": "https://news.cnyes.com/news/id/6349793",
-      "source": "鉅亨網(wd_stock)",
-      "category": "市場風險預警",
-      "thumbnail": null,
-      "content": "&lt;p&gt;繽客控股(BKNG-US)截至台北時間23日22:42股價下跌204.19美元，報3872.60美元，跌幅5.01%，成交量39,499（股），盤中最高價4060.00美元、最低價3872.60美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.36%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.27%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.51%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.18%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;繽客控股(BKNG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.54%&lt;/li&gt;    &lt;li&gt;近 1 月：-20.85%&lt;/li&gt;    &lt;li&gt;近 3 月：-",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Workday公司(WDAY-US)大跌5.04%，報130.86美元",
-      "url": "https://news.cnyes.com/news/id/6349792",
-      "source": "鉅亨網(wd_stock)",
-      "category": "軟體板塊重挫",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Workday公司(WDAY-US)截至台北時間23日22:40股價下跌6.95美元，報130.86美元，跌幅5.04%，成交量417,516（股），盤中最高價134.50美元、最低價130.86美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.26%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.26%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.34%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.01%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Workday公司(WDAY-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-4.58%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.77%&lt;/li&gt;    &lt;li&gt;近",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Zscaler公司(ZS-US)大跌5.03%，報151.71美元",
-      "url": "https://news.cnyes.com/news/id/6349791",
-      "source": "鉅亨網(wd_stock)",
-      "category": "關稅政策衝擊",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Zscaler公司(ZS-US)截至台北時間23日22:40股價下跌8.04美元，報151.71美元，跌幅5.03%，成交量319,524（股），盤中最高價157.61美元、最低價151.65美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.27%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.27%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.24%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.17%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Zscaler公司(ZS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-10.11%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.31%&lt;/li&gt;    &lt;li&gt;近 3 ",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 莫德納(MRNA-US)大漲5.31%，報52.52美元",
-      "url": "https://news.cnyes.com/news/id/6349790",
+      "title": "盤中速報 - 美國運通(AXP-US)大跌5.05%，報328.7美元",
+      "url": "https://news.cnyes.com/news/id/6349809",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;莫德納(MRNA-US)截至台北時間23日22:39股價上漲2.65美元，報52.52美元，漲幅5.31%，成交量1,012,517（股），盤中最高價52.60美元、最低價48.68美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.23%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.23%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.32%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;莫德納(MRNA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+18.09%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.86%&lt;/li&gt;    &lt;li&gt;近 3 月：+110.24%&",
-      "timeStr": "下午11:03",
+      "content": "&lt;p&gt;美國運通(AXP-US)截至台北時間23日23:00股價下跌17.49美元，報328.70美元，跌幅5.05%，成交量578,999（股），盤中最高價345.83美元、最低價328.55美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.5%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美國運通(AXP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.57%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.93%&lt;/li&gt;    &lt;li&gt;近 3 月：-0.75%&lt;/",
+      "timeStr": "上午12:03",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.02%，報369.11美元",
-      "url": "https://news.cnyes.com/news/id/6349789",
+      "title": "盤中速報 - 愛彼迎(ABNB-US)大跌5.17%，報121.28美元",
+      "url": "https://news.cnyes.com/news/id/6349806",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Crowdstrike控股(CRWD-US)截至台北時間23日22:39股價下跌19.49美元，報369.11美元，跌幅5.02%，成交量1,422,399（股），盤中最高價385.11美元、最低價368.80美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.25%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.21%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.19%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Crowdstrike控股(CRWD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-9.55%&lt;/li&gt;    &lt;li&gt;近 1 月：-14.36%&lt;/li&gt;    ",
-      "timeStr": "下午11:03",
+      "content": "&lt;p&gt;愛彼迎(ABNB-US)截至台北時間23日23:00股價下跌6.61美元，報121.28美元，跌幅5.17%，成交量727,848（股），盤中最高價128.15美元、最低價121.28美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.02%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.59%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.48%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;愛彼迎(ABNB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.39%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.93%&",
+      "timeStr": "上午12:03",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大跌5.13%，報72.08美元",
-      "url": "https://news.cnyes.com/news/id/6349788",
+      "title": "盤中速報 - 露露檸檬(LULU-US)大跌5.02%，報177.91美元",
+      "url": "https://news.cnyes.com/news/id/6349802",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間23日22:37股價下跌3.9美元，報72.08美元，跌幅5.13%，成交量728,485（股），盤中最高價73.75美元、最低價71.95美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.2%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.17%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.01%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-9.95%&lt;/li&gt;    &lt;li&gt;",
-      "timeStr": "下午11:03",
+      "content": "&lt;p&gt;露露檸檬(LULU-US)截至台北時間23日22:48股價下跌9.4美元，報177.91美元，跌幅5.02%，成交量355,528（股），盤中最高價185.01美元、最低價177.91美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.63%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.29%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.49%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.03%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;露露檸檬(LULU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.17%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.78%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.37%",
+      "timeStr": "上午12:03",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 數據狗(DDOG-US)大跌5.01%，報109.87美元",
-      "url": "https://news.cnyes.com/news/id/6349787",
+      "title": "不服裁決！川普再嗆最高法院 誓言動用其他關稅權力",
+      "url": "https://news.cnyes.com/news/id/6349758",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間23日22:34股價下跌5.79美元，報109.87美元，跌幅5.01%，成交量319,842（股），盤中最高價113.87美元、最低價109.57美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.01%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.05%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.06%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.62%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.88%&lt;/li&gt;    &lt;li&gt;近 3 月：-26.59%",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報327.17美元",
-      "url": "https://news.cnyes.com/news/id/6349786",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間23日22:31股價下跌17.39美元，報327.17美元，跌幅5.05%，成交量37,540（股），盤中最高價337.69美元、最低價327.17美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.01%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：0%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.15%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.28%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-6.47%&lt;/li&gt;    &lt;li&gt;近 1 月：-14.85%&lt;/li&gt;    &lt;li&gt;近 3 月：+",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大跌5.42%，報396美元",
-      "url": "https://news.cnyes.com/news/id/6349785",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間23日22:31股價下跌22.68美元，報396.00美元，跌幅5.42%，成交量297,948（股），盤中最高價404.00美元、最低價394.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.04%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.02%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.21%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.37%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+7.2%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.78%",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - DoorDash公司(DASH-US)大跌5.12%，報167.27美元",
-      "url": "https://news.cnyes.com/news/id/6349782",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;DoorDash公司(DASH-US)截至台北時間23日22:30股價下跌9.03美元，報167.27美元，跌幅5.12%，成交量369,459（股），盤中最高價168.57美元、最低價166.22美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.01%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.02%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.13%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;DoorDash公司(DASH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+9.95%&lt;/li&gt;    &lt;li&gt;近 1 月：-15.1%&lt;/li&gt;    &lt;li&gt;",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "〈美股早盤〉關稅不確定性升溫 主要指數開盤走低",
-      "url": "https://news.cnyes.com/news/id/6349599",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美股主要指數周一 (23 日) 開盤走低，延續近期震盪走勢。川普在最高法院裁定其部分關稅措施違法後，宣布對所有國家進口商品課徵 15% 新關稅，市場對貿易政策走向再度產生疑慮，壓抑風險偏好。投資人轉趨審慎，資金流向公債與黃金等避險資產，股市表現震盪，顯示關稅不確定性對市場情緒的影響仍在發酵。&lt;/p&gt;\n\n&lt;p&gt;截稿前，&lt;a href=&quot;https://invest.cnyes.com/index/GI/DJI&quot;&gt;道瓊工業指數&lt;/a&gt;跌逾 90 點或近 0.2%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/IXIC&quot;&gt;那斯達克綜合指數&lt;/a&gt;跌近 100 點或近 0.4%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/INX&quot;&gt;標普 500 指數&lt;/a&gt;跌近 0.2%，&lt;a href=&quot;https://invest.cny",
-      "timeStr": "下午11:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "AI衝擊軟體業 融資轉趨保守違約風險升溫",
-      "url": "https://news.cnyes.com/news/id/6349602",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《路透》周一 (23 日) 報導，人工智慧 (AI) 快速發展正對軟體產業商業模式帶來衝擊，連帶使融資環境轉趨保守。市場人士指出，在借貸成本攀升與放款機構審查趨嚴的雙重壓力下，美國與其他地區多家軟體公司已暫緩或延後發債與貸款安排，資本市場對該產業的態度明顯轉冷。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 信貸策略主管 Matthew Mish 表示，AI 造成的產業干擾風險，預計將在 2026 年至 2027 年初逐步反映在市場定價上，尤其是再融資需求高、信用體質較弱的企業，美國所受影響可能比歐洲更明顯。瑞銀預估，在市場干擾加劇情境下，槓桿貸款違約率可能上升 3% 至 5%，高於市場目前預期的 1% 至 2%。&lt;/p&gt;\n\n&lt;h6&gt;槓桿貸款承壓 違約風險升溫&lt;/h6&gt;\n\n&lt;p&gt;AI 疑慮已開始影響槓桿貸款市場定價。惠譽 (Fitch) 數據顯示，科技產業借款人占槓桿貸款市場最大比重，其中約六成為軟體企業，相關貸款規模約 2,600 億美元，占整體市場 17%。相較之下，科技公司在高收益債市場占比僅 6%，規",
-      "timeStr": "下午11:03",
+      "content": "&lt;p&gt;《路透》報導，美國總統川普周一 (23 日) 再度抨擊美國最高法院，針對上周裁定其大規模關稅措施違法的判決表達不滿，並誓言將動用其他關稅權力與許可制度施壓，但未說明具體細節。&lt;/p&gt;\n\n&lt;p&gt;川普在社群媒體發文指出，法院已批准其他多項關稅措施，未來可在「更具法律確定性」的基礎上以更強勢方式運用。他上周六宣布，將把對所有國家進口商品的臨時關稅由 10% 提高至 15%，這也是法律允許的上限。此前，美國最高法院裁定，川普依據經濟緊急權力法實施的部分關稅超越總統權限。&lt;/p&gt;\n\n&lt;p&gt;川普在最新貼文中亦提及「許可費」(License fee) 作為施壓工具，質疑法院判決為何不允許對相關許可收費，並暗示政府仍有其他手段可用。他強調，其他國家在許可制度中皆會收取費用，美國理應如此。&lt;/p&gt;\n\n&lt;p&gt;市場對貿易政策走向感到困惑，美股期貨與美元周一早盤走低。油價亦一度下滑，反映市場擔憂關稅升級可能衝擊全球成長與能源需求，但隨後因美國與伊朗擬舉行會談的消息而回穩。&lt;/p&gt;\n\n&lt;p&gt;川普與法",
+      "timeStr": "上午12:03",
       "relatedArticles": []
     }
   ],
@@ -236,7 +201,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 288,
+      "count": 295,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -367,6 +332,72 @@
       ]
     },
     {
+      "word": "美元",
+      "count": 140,
+      "articles": [
+        {
+          "title": "道瓊期貨上漲約100點 黃金失守5000美元",
+          "url": "https://news.cnyes.com/news/id/6345939",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "為提高晶片產量，安世半導體從 Invest International 獲 6,000 萬美元貸款",
+          "url": "https://technews.tw/2026/02/17/nexperia-60-million/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "金價又翻車失守5000美元大關！最新「挑戰價」曝光",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5344961",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全球談 AI 未來，印度卻先為它付出 560 億美元代價",
+          "url": "https://finance.technews.tw/2026/02/17/indias-ai-cost/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "台美貿易協定「重點在台積電」！外媒：台積電恐需追加投資 1,000 億美元",
+          "url": "https://technews.tw/2026/02/17/tsmc-us-investment/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "比特幣連4個月下跌，面臨43.4億美元空頭風險，恐創6年來最長月連跌紀錄",
+          "url": "https://www.thenewslens.com/article/264843",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "《好LOGO的品牌設計實戰課》：別為改而改！純品康納換包裝慘賠三千萬美元的教訓",
+          "url": "https://www.thenewslens.com/article/264731",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
+          "url": "https://news.cnyes.com/news/id/6346237",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "EPS",
       "count": 138,
       "articles": [
@@ -427,72 +458,6 @@
         {
           "title": "鉅亨速報 - Factset 最新調查：Builders Firstsource Inc(BLDR-US)EPS預估下修至6.15元，預估目標價為135.00元",
           "url": "https://news.cnyes.com/news/id/6346224",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "美元",
-      "count": 133,
-      "articles": [
-        {
-          "title": "道瓊期貨上漲約100點 黃金失守5000美元",
-          "url": "https://news.cnyes.com/news/id/6345939",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "為提高晶片產量，安世半導體從 Invest International 獲 6,000 萬美元貸款",
-          "url": "https://technews.tw/2026/02/17/nexperia-60-million/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "金價又翻車失守5000美元大關！最新「挑戰價」曝光",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5344961",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "全球談 AI 未來，印度卻先為它付出 560 億美元代價",
-          "url": "https://finance.technews.tw/2026/02/17/indias-ai-cost/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "台美貿易協定「重點在台積電」！外媒：台積電恐需追加投資 1,000 億美元",
-          "url": "https://technews.tw/2026/02/17/tsmc-us-investment/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "比特幣連4個月下跌，面臨43.4億美元空頭風險，恐創6年來最長月連跌紀錄",
-          "url": "https://www.thenewslens.com/article/264843",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "《好LOGO的品牌設計實戰課》：別為改而改！純品康納換包裝慘賠三千萬美元的教訓",
-          "url": "https://www.thenewslens.com/article/264731",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
-          "url": "https://news.cnyes.com/news/id/6346237",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
           "source": "鉅亨網(wd_stock)",
           "content": null
         }
@@ -632,7 +597,7 @@
     },
     {
       "word": "日本",
-      "count": 103,
+      "count": 104,
       "articles": [
         {
           "title": "日本第四季 GDP 擴張 0.1%，不如預期",
@@ -961,6 +926,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 74,
+      "articles": [
+        {
+          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
+          "url": "https://news.cnyes.com/news/id/6346237",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "春節",
       "count": 72,
       "articles": [
@@ -1027,74 +1058,8 @@
       ]
     },
     {
-      "word": "中速",
-      "count": 66,
-      "articles": [
-        {
-          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
-          "url": "https://news.cnyes.com/news/id/6346237",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "伊朗",
-      "count": 65,
+      "count": 66,
       "articles": [
         {
           "title": "川普將間接參與核談判 呼籲伊朗理性一點",
@@ -1423,6 +1388,72 @@
       ]
     },
     {
+      "word": "最高",
+      "count": 48,
+      "articles": [
+        {
+          "title": "伊朗封鎖海峽軍演 最高領袖嗆：美軍將被打到爬不起身",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345321",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「2026年新竹市獎助影視製作拍攝計畫」開跑   最高補助200萬",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345577",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "南崁溪上游漂「雪花」抓到了！桃市環局溯源查獲加油站洗車場最高罰300萬",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345865",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "史上最高票連任 高市施政3主軸並進",
+          "url": "https://news.ltn.com.tw/news/world/paper/1744075",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "南二都「這裡」發財機率最高！每1833人就有一間彩券行、2字頭房價超宜居",
+          "url": "https://estate.ltn.com.tw/article/26936",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "北市119報案量年破34萬件 消防局：惡意謊報最高罰5萬",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346354",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
+          "url": "https://news.cnyes.com/news/id/6347350",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "艾普斯坦遺產和解協議曝光！最高11億賠償金待聯邦法官批准",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346746",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
+          "url": "https://news.cnyes.com/news/id/6347702",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "宣布",
       "count": 47,
       "articles": [
@@ -1489,66 +1520,66 @@
       ]
     },
     {
-      "word": "最高",
-      "count": 47,
+      "word": "大跌",
+      "count": 46,
       "articles": [
         {
-          "title": "伊朗封鎖海峽軍演 最高領袖嗆：美軍將被打到爬不起身",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345321",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「2026年新竹市獎助影視製作拍攝計畫」開跑   最高補助200萬",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345577",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "南崁溪上游漂「雪花」抓到了！桃市環局溯源查獲加油站洗車場最高罰300萬",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345865",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "史上最高票連任 高市施政3主軸並進",
-          "url": "https://news.ltn.com.tw/news/world/paper/1744075",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "南二都「這裡」發財機率最高！每1833人就有一間彩券行、2字頭房價超宜居",
-          "url": "https://estate.ltn.com.tw/article/26936",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "北市119報案量年破34萬件 消防局：惡意謊報最高罰5萬",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346354",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
-          "url": "https://news.cnyes.com/news/id/6347350",
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
           "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "艾普斯坦遺產和解協議曝光！最高11億賠償金待聯邦法官批准",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346746",
-          "source": "自由時報",
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
-          "url": "https://news.cnyes.com/news/id/6347702",
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
+          "url": "https://news.cnyes.com/news/id/6346290",
           "source": "鉅亨網(wd_stock)",
           "content": null
         }
@@ -1621,6 +1652,138 @@
       ]
     },
     {
+      "word": "科技",
+      "count": 43,
+      "articles": [
+        {
+          "title": "AI顛覆交易擴散！美銀警告：一旦科技巨頭縮手 將引發美股輪動海嘯",
+          "url": "https://news.cnyes.com/news/id/6345933",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "聽女友的話！北漂科技男刮出100萬年終",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5344983",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "機器人春晚引爆熱議！AI濃度比論文還高 拆解背後中台科技角力",
+          "url": "https://news.cnyes.com/news/id/6345964",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "分析師：AI 領域北京加速追趕，將形成中國科技圈",
+          "url": "https://technews.tw/2026/02/17/beijing-is-accelerating-its-efforts-to-catch-up-in-the-field-of-ai/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：美光科技MU-US的目標價調升至417.5元，幅度約3.09%",
+          "url": "https://news.cnyes.com/news/id/6346220",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "AI辦錯案，責任誰來扛：從車牌辨識到帳戶凍結，演算法主導的科技執法可行嗎？",
+          "url": "https://www.thenewslens.com/article/264659",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：索菲科技SOFI-US的目標價調降至27元，幅度約3.57%",
+          "url": "https://news.cnyes.com/news/id/6346613",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
+          "url": "https://news.cnyes.com/news/id/6346708",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：萬機科技(MKSI-US)EPS預估上修至9.68元，預估目標價為282.50元",
+          "url": "https://news.cnyes.com/news/id/6346820",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：萬機科技MKSI-US的目標價調升至282.5元，幅度約10.14%",
+          "url": "https://news.cnyes.com/news/id/6346817",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "法院",
+      "count": 43,
+      "articles": [
+        {
+          "title": "恐怖前男友持刀械登女友家門殺傷2人 法院裁定羈押",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5344960",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "南韓法院今宣判尹錫悅「內亂罪」 若判死刑將成光州事件後首例",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345972",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "尹錫悅一審判無期徒刑　法院：派軍隊意圖癱瘓國會",
+          "url": "https://www.cna.com.tw/news/aopl/202602190130.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
+          "url": "https://news.cnyes.com/news/id/6347350",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
+          "url": "https://news.cnyes.com/news/id/6347702",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
+          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346940",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院判決關稅違法  川普：恥辱",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346936",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
+          "url": "https://www.cna.com.tw/news/afe/202602210003.aspx",
+          "source": "中央社產經",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "高雄",
       "count": 42,
       "articles": [
@@ -1682,72 +1845,6 @@
           "title": "「高雄是世界的高雄」  賴清德：疼惜陳其邁、栽培賴瑞隆",
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345595",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "法院",
-      "count": 42,
-      "articles": [
-        {
-          "title": "恐怖前男友持刀械登女友家門殺傷2人 法院裁定羈押",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5344960",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "南韓法院今宣判尹錫悅「內亂罪」 若判死刑將成光州事件後首例",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345972",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "尹錫悅一審判無期徒刑　法院：派軍隊意圖癱瘓國會",
-          "url": "https://www.cna.com.tw/news/aopl/202602190130.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
-          "url": "https://news.cnyes.com/news/id/6347350",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
-          "url": "https://news.cnyes.com/news/id/6347702",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
-          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346940",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院判決關稅違法  川普：恥辱",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346936",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
-          "url": "https://www.cna.com.tw/news/afe/202602210003.aspx",
-          "source": "中央社產經",
           "content": null
         }
       ]
@@ -1819,67 +1916,67 @@
       ]
     },
     {
-      "word": "科技",
+      "word": "印度",
       "count": 41,
       "articles": [
         {
-          "title": "AI顛覆交易擴散！美銀警告：一旦科技巨頭縮手 將引發美股輪動海嘯",
-          "url": "https://news.cnyes.com/news/id/6345933",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "聽女友的話！北漂科技男刮出100萬年終",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5344983",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "機器人春晚引爆熱議！AI濃度比論文還高 拆解背後中台科技角力",
-          "url": "https://news.cnyes.com/news/id/6345964",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "分析師：AI 領域北京加速追趕，將形成中國科技圈",
-          "url": "https://technews.tw/2026/02/17/beijing-is-accelerating-its-efforts-to-catch-up-in-the-field-of-ai/",
+          "title": "全球談 AI 未來，印度卻先為它付出 560 億美元代價",
+          "url": "https://finance.technews.tw/2026/02/17/indias-ai-cost/",
           "source": "TechNews",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：美光科技MU-US的目標價調升至417.5元，幅度約3.09%",
-          "url": "https://news.cnyes.com/news/id/6346220",
+          "title": "印度砸6.3兆豪賭轉型 AI 強權  矽谷三巨頭搶先押寶",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345216",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "法總統馬克宏訪問印度　可望簽下114架飆風戰機訂單",
+          "url": "https://www.cna.com.tw/news/aopl/202602170136.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "印度製藥巨頭Dr. Reddy’s Laboratories擬推平價版 Wegovy，定價預計調降 60%",
+          "url": "https://news.cnyes.com/news/id/6346203",
           "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "AI辦錯案，責任誰來扛：從車牌辨識到帳戶凍結，演算法主導的科技執法可行嗎？",
-          "url": "https://www.thenewslens.com/article/264659",
-          "source": "關鍵評論網",
+          "title": "法總統馬克宏訪問印度 可望簽下114架飆風戰機訂單",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345316",
+          "source": "自由時報",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：索菲科技SOFI-US的目標價調降至27元，幅度約3.57%",
-          "url": "https://news.cnyes.com/news/id/6346613",
-          "source": "鉅亨網(wd_stock)",
+          "title": "Nvidia 攜手印度製造商，打造未來 AI 基礎設施",
+          "url": "https://technews.tw/2026/02/18/nvidia-india/",
+          "source": "TechNews",
           "content": null
         },
         {
-          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
-          "url": "https://news.cnyes.com/news/id/6346708",
-          "source": "鉅亨網(wd_stock)",
+          "title": "印度AI峰會　輝達與L&T、Yotta等印商宣布合作計畫",
+          "url": "https://www.cna.com.tw/news/aopl/202602180137.aspx",
+          "source": "中央社",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：萬機科技(MKSI-US)EPS預估上修至9.68元，預估目標價為282.50元",
-          "url": "https://news.cnyes.com/news/id/6346820",
-          "source": "鉅亨網(wd_stock)",
+          "title": "印度華人喜迎新年熱鬧滾滾　舞獅採青屢掀高潮",
+          "url": "https://www.cna.com.tw/news/aopl/202602180153.aspx",
+          "source": "中央社",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：萬機科技MKSI-US的目標價調升至282.5元，幅度約10.14%",
-          "url": "https://news.cnyes.com/news/id/6346817",
-          "source": "鉅亨網(wd_stock)",
+          "title": "印度華人喜迎新年熱鬧滾滾 舞獅採青屢掀高潮",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345859",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google新印度AI中心鋪設海纜 連結新加坡、南非、澳洲",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345866",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -2215,72 +2312,6 @@
       ]
     },
     {
-      "word": "印度",
-      "count": 40,
-      "articles": [
-        {
-          "title": "全球談 AI 未來，印度卻先為它付出 560 億美元代價",
-          "url": "https://finance.technews.tw/2026/02/17/indias-ai-cost/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "印度砸6.3兆豪賭轉型 AI 強權  矽谷三巨頭搶先押寶",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345216",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "法總統馬克宏訪問印度　可望簽下114架飆風戰機訂單",
-          "url": "https://www.cna.com.tw/news/aopl/202602170136.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "印度製藥巨頭Dr. Reddy’s Laboratories擬推平價版 Wegovy，定價預計調降 60%",
-          "url": "https://news.cnyes.com/news/id/6346203",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "法總統馬克宏訪問印度 可望簽下114架飆風戰機訂單",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345316",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Nvidia 攜手印度製造商，打造未來 AI 基礎設施",
-          "url": "https://technews.tw/2026/02/18/nvidia-india/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "印度AI峰會　輝達與L&T、Yotta等印商宣布合作計畫",
-          "url": "https://www.cna.com.tw/news/aopl/202602180137.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "印度華人喜迎新年熱鬧滾滾　舞獅採青屢掀高潮",
-          "url": "https://www.cna.com.tw/news/aopl/202602180153.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "印度華人喜迎新年熱鬧滾滾 舞獅採青屢掀高潮",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345859",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google新印度AI中心鋪設海纜 連結新加坡、南非、澳洲",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345866",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "推翻",
       "count": 38,
       "articles": [
@@ -2343,72 +2374,6 @@
           "url": "https://finance.technews.tw/2026/02/21/trump-temporary-import-surcharge/",
           "source": "TechNews",
           "content": "白宮官網稍早公布川普政府最新公告，宣告將依《1974 年貿易法》第 122 條（section 122）啟動臨 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "大跌",
-      "count": 38,
-      "articles": [
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
-          "url": "https://news.cnyes.com/news/id/6346290",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
         }
       ]
     },
@@ -3205,6 +3170,72 @@
       ]
     },
     {
+      "word": "今彩",
+      "count": 30,
+      "articles": [
+        {
+          "title": "初一來對獎！2/17大樂透、大小紅包、今彩539等各獎號出爐",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345333",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初一今彩539頭獎2注各得千萬  獎落這2個縣市",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345366",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "財神發錢啦！2/17大樂透1億頭獎1注獎落高雄 今彩539頭獎開2注",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345355",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大過年來對獎！2/18大樂透、大小紅包、今彩539獎號出爐",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345829",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大樂透春節大紅包開出36組 今彩539千萬大獎送3注",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345870",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "2/18今彩539頭獎開3注！1000萬獎落新北、南投、宜蘭  大紅包開36組",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345860",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "今彩539第115043期　頭獎3注中獎",
+          "url": "https://www.cna.com.tw/news/ahel/202602180156.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "今彩539第115043期開獎",
+          "url": "https://www.cna.com.tw/news/ahel/202602180148.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "「致富密碼」來了！2/19 威力彩、大樂透、今彩539等獎號出爐",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346355",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "今彩539第115044期　頭獎1注中獎",
+          "url": "https://www.cna.com.tw/news/ahel/202602190188.aspx",
+          "source": "中央社產經",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "最高法院",
       "count": 30,
       "articles": [
@@ -3337,67 +3368,67 @@
       ]
     },
     {
-      "word": "今彩",
-      "count": 29,
+      "word": "第一",
+      "count": 28,
       "articles": [
         {
-          "title": "初一來對獎！2/17大樂透、大小紅包、今彩539等各獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345333",
+          "title": "初一迎季風！氣象專家曝多地降「馬年第一場雨」",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344916",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "初一今彩539頭獎2注各得千萬  獎落這2個縣市",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345366",
+          "title": "美菲聲明重申台海和平重要性 阻第一島鏈遭侵略",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5344956",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "財神發錢啦！2/17大樂透1億頭獎1注獎落高雄 今彩539頭獎開2注",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345355",
+          "title": "第一個沒有媽媽的過年 小嫻包大紅包給爸爸惹鼻酸",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5344883",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "大過年來對獎！2/18大樂透、大小紅包、今彩539獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345829",
+          "title": "第一個沒有爸爸的除夕夜 老蕭下廚寵妻…Summer甜喊：我嫁的真好",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345005",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "大樂透春節大紅包開出36組 今彩539千萬大獎送3注",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345870",
+          "title": "「香菜控」蕭美琴馬年第一驚喜 獲香菜全餐+香菜乖乖！",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345136",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "2/18今彩539頭獎開3注！1000萬獎落新北、南投、宜蘭  大紅包開36組",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345860",
+          "title": "網球》瑞士天王費德爾後第一人！瓦林卡最後一季回春重返百大寫紀錄",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345210",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "今彩539第115043期　頭獎3注中獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602180156.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "今彩539第115043期開獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602180148.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "「致富密碼」來了！2/19 威力彩、大樂透、今彩539等獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346355",
+          "title": "雙火馬年「第一個紅包」這麼用！啟動12生肖「自富」金鑰",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345369",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "今彩539第115044期　頭獎1注中獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602190188.aspx",
-          "source": "中央社產經",
+          "title": "祀典武廟主委疑染諾羅病毒嘔濺總統  林聖哲：第一時間已換衣及消毒",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345603",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "目睹武廟主委嘔吐、老婦熱暈 賴總統發聲：健康第一",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345650",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "祀典武廟主委疑染諾羅嘔吐噴濺到總統  黃偉哲：第一時間即表達關心",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345729",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -3464,72 +3495,6 @@
           "title": "大年初三出遊車潮湧現，國、省道易塞路段、建議出發時段一覽",
           "url": "https://www.thenewslens.com/article/264870",
           "source": "關鍵評論網",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "彰化",
-      "count": 28,
-      "articles": [
-        {
-          "title": "彰化南瑤宮發福袋 蕭美琴祈願台灣團結、繼續一馬當先",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345196",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "巴西動感嘉年華搬到「花在彰化」 民眾：森巴女郎像森巴媽媽",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345227",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "彰化南瑤宮抽出「小凶」人民籤 蕭美琴樂觀回應",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345211",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初二返鄉加出遊雙車潮 國1彰化南下時速剩20公里",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345539",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好兆頭！彰化慈鳳宮現「黏筊」奇景 筊杯貼龍口4天不落",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345628",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "除夕祭祖圍千元鈔  彰化「古早味過年法」曝光",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345676",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "走春人氣王再破紀錄！「花在彰化」首日湧12.5萬人次",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345874",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
-          "source": "自由時報",
           "content": null
         }
       ]
