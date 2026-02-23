@@ -54,10 +54,16 @@ async function runTask() {
         }
 
         if ((!process.env.KEYWORDS) || matchesAny(targetText, config.includeRegex)) {
-            allMatchedNews.push({ source: item.source, title: item.title, content: item.content, url: item.link });
+            allMatchedNews.push({
+                source: item.source,
+                title: item.title,
+                content: item.content,
+                url: item.link,
+                thumbnail: item.thumbnail // 🟢 v7.0.1
+            });
             fetchedUrls.add(item.link);
         }
-        db.saveArticle(item.title, item.link, item.source, '其他', item.content || item.contentSnippet);
+        db.saveArticle(item.title, item.link, item.source, '其他', item.content || item.contentSnippet, item.thumbnail);
     }
     log('📊', `鉅亨網過濾完成: 新增 ${allMatchedNews.length} 則, 跳過已讀 ${skipCount} 則, 排除關鍵字 ${excludeCount} 則`);
 
@@ -107,9 +113,15 @@ async function runTask() {
 
     // 2.2 並發抓取內文
     const contentTasks = rssCandidates.map(cand => limit(async () => {
-        const text = await fetchContent(cand.url);
-        if (text) {
-            return { source: cand.source, title: cand.title, content: text, url: cand.url };
+        const result = await fetchContent(cand.url);
+        if (result && result.textContent) {
+            return {
+                source: cand.source,
+                title: cand.title,
+                content: result.textContent,
+                url: cand.url,
+                thumbnail: result.thumbnail // 🟢 v7.0.1
+            };
         }
         return null;
     }));
@@ -117,8 +129,8 @@ async function runTask() {
     const results = await Promise.all(contentTasks);
     results.filter(r => r !== null).forEach(r => {
         allMatchedNews.push(r);
-        // 🟢 確保抓取到的完整內文寫入資料庫 (UPSERT)
-        db.saveArticle(r.title, r.url, r.source, '其他', r.content);
+        // 🟢 確保抓取到的完整內文與縮圖寫入資料庫 (UPSERT)
+        db.saveArticle(r.title, r.url, r.source, '其他', r.content, r.thumbnail);
     });
 
     log('📊', `新增符合關鍵字新聞: ${allMatchedNews.length} 則`);
@@ -172,7 +184,8 @@ async function runTask() {
                             title: allMatchedNews[j].title,
                             url: allMatchedNews[j].url,
                             source: allMatchedNews[j].source,
-                            content: allMatchedNews[j].content
+                            content: allMatchedNews[j].content,
+                            thumbnail: allMatchedNews[j].thumbnail // 🟢 v7.0.1
                         });
                         processedIndices.add(j);
                     }

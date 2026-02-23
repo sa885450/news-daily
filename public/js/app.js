@@ -93,7 +93,18 @@ function renderNewsPage() {
 
     nextBatch.forEach(n => {
         const card = document.createElement('div');
-        card.className = "news-card animate-fade bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 flex flex-col justify-between";
+        card.className = "news-card animate-fade bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 flex flex-col overflow-hidden";
+
+        const hasImg = !!n.thumbnail;
+        const imgHtml = hasImg ? `
+            <div class="relative h-40 w-full overflow-hidden group">
+                <img src="${n.thumbnail}" alt="news" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.parentElement.style.display='none'">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                <div class="absolute bottom-3 left-4">
+                    <span class="px-2 py-0.5 bg-indigo-600 text-white text-[10px] font-bold rounded uppercase tracking-widest">${n.category || '其他'}</span>
+                </div>
+            </div>
+        ` : '';
 
         const relatedHtml = n.relatedArticles && n.relatedArticles.length > 0
             ? `<div class="mt-2 flex flex-wrap gap-1">
@@ -103,24 +114,30 @@ function renderNewsPage() {
             : '';
 
         card.innerHTML = `
-            <div>
-                <div class="flex items-center justify-between mb-4">
-                    <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">${n.category || '其他'}</span>
-                    <span class="text-slate-400 text-xs">${n.timeStr || ''}</span>
+            ${imgHtml}
+            <div class="p-6 flex-grow flex flex-col justify-between">
+                <div>
+                    ${!hasImg ? `
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">${n.category || '其他'}</span>
+                        <span class="text-slate-400 text-xs">${n.timeStr || ''}</span>
+                    </div>` : `
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-slate-400 text-[10px] font-bold uppercase tracking-tight">${n.source}</span>
+                        <span class="text-slate-400 text-[10px]">${n.timeStr || ''}</span>
+                    </div>`}
+                    <h3 class="text-slate-800 dark:text-slate-100 font-bold leading-snug text-lg mb-3 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer line-clamp-2" onclick="handlePreview(this)">${n.title}</h3>
+                    ${!hasImg ? `<div class="text-xs text-slate-400 font-medium mb-2 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>${n.source}</div>` : ''}
+                    ${relatedHtml}
                 </div>
-                <h3 class="text-slate-800 dark:text-slate-100 font-bold leading-snug text-lg mb-3 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer" onclick="handlePreview(this)">${n.title}</h3>
-                <div class="text-xs text-slate-400 font-medium mb-2 flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>${n.source}
+                <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
+                    <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
+                    </button>
+                    <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    </a>
                 </div>
-                ${relatedHtml}
-            </div>
-            <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
-                <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
-                </button>
-                <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                </a>
             </div>
         `;
         // 儲存原始資料供 Modal 使用

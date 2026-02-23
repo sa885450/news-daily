@@ -26,9 +26,20 @@ async function fetchContent(url) {
         await sleep(800);
         const { data } = await axios.get(url, { timeout: 15000, headers });
         const dom = new JSDOM(data, { url, virtualConsole });
+
+        // 🟢 v7.0.1 新增：抓取縮圖
+        let thumbnail = null;
+        try {
+            thumbnail = dom.window.document.querySelector('meta[property="og:image"]')?.content ||
+                dom.window.document.querySelector('meta[name="twitter:image"]')?.content;
+        } catch (e) { }
+
         const article = new Readability(dom.window.document).parse();
-        return (article && article.textContent) ? article.textContent.trim().substring(0, 2500) : null;
-    } catch (e) { return null; }
+        return {
+            textContent: (article && article.textContent) ? article.textContent.trim().substring(0, 2500) : null,
+            thumbnail
+        };
+    } catch (e) { return { textContent: null, thumbnail: null }; }
 }
 
 async function fetchCnyesAPI(pagesToFetch = 2) {
@@ -64,7 +75,8 @@ async function fetchCnyesAPI(pagesToFetch = 2) {
                                 contentSnippet: news.summary,
                                 content: news.content ? news.content.substring(0, 2500) : '',
                                 pubDate: new Date(news.publishAt * 1000).toISOString(),
-                                source: `鉅亨網(${cat})`
+                                source: `鉅亨網(${cat})`,
+                                thumbnail: news.coverId ? `https://fbe-media.cnyes.com/news/id/${news.coverId}/s` : null
                             });
                         }
                     }

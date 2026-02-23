@@ -28,8 +28,21 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
             summary: aiResult.summary || "無摘要資料"
         },
         newsData: newsData.map(n => ({
-            ...n,
-            timeStr: n.timeStr || new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' })
+            title: n.title,
+            url: n.url,
+            source: n.source,
+            category: n.category,
+            thumbnail: n.thumbnail, // 🟢 v7.0.1
+            is_contrarian: n.is_contrarian,
+            // 🟢 v7.0.2: 數據脫水 - 列表僅保留摘要，減少傳輸量
+            content: (n.content || "").substring(0, 500),
+            timeStr: n.timeStr || new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' }),
+            relatedArticles: (n.relatedArticles || []).map(r => ({
+                title: r.title,
+                url: r.url,
+                source: r.source,
+                thumbnail: r.thumbnail // 🟢 v7.0.1
+            }))
         })),
         recentStats: chartData,
         keywords7d: keywords7d || []
