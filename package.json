@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx jest",
     "start": "node src/index.js",
-    "ui": "npx serve public -l 3002",
+    "ui": "npx serve public -l 3003",
     "rebuild": "node scripts/rebuild_views.js",
     "fix-ejs": "node scripts/fix_ejs.js"
   },
