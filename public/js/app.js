@@ -61,7 +61,7 @@ function renderHeader() {
     const container = document.getElementById('ai-entities');
     const entities = appData.aiResult.entities || [];
     container.innerHTML = entities.map(e => `
-        <button onclick="searchKeyword('${e.name}')"
+        <button onclick="${e.ticker ? `openChartModal('${e.ticker}', '${e.name}')` : `searchKeyword('${e.name}')`}"
             class="px-3 py-1 bg-white dark:bg-slate-800 border-indigo-100 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
             #${e.name}${e.ticker ? `<span class="text-xs ml-1 opacity-70">(${e.ticker})</span>` : ''}
         </button>
