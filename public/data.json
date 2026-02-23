@@ -1,73 +1,83 @@
 {
-  "updateTime": "2026-02-23T21:00:52.747Z",
-  "fullDateStr": "2026/2/24 · 更新於 05:00:52",
+  "updateTime": "2026-02-23T22:00:53.519Z",
+  "fullDateStr": "2026/2/24 · 更新於 06:00:53",
   "aiResult": {
-    "sentiment_score": -0.68,
+    "sentiment_score": -0.65,
     "dimensions": {
-      "policy": -0.2,
+      "policy": -0.8,
       "market": -0.85,
-      "industry": 0.4,
-      "international": -0.5,
-      "technical": -0.6
+      "industry": -0.6,
+      "international": -0.3,
+      "technical": -0.75
     },
     "entities": [
       {
-        "name": "阿拉莫斯黃金",
+        "name": "威士卡",
+        "sentiment": "negative",
+        "ticker": "V-US"
+      },
+      {
+        "name": "美元指數",
+        "sentiment": "negative",
+        "ticker": "DXY"
+      },
+      {
+        "name": "歐元",
         "sentiment": "positive",
-        "ticker": "AGI-US"
+        "ticker": "EUR/USD"
       },
       {
-        "name": "埃森哲",
+        "name": "川普",
         "sentiment": "negative",
-        "ticker": "ACN"
+        "ticker": null
       },
       {
-        "name": "IBM",
-        "sentiment": "negative",
-        "ticker": "IBM"
-      },
-      {
-        "name": "高盛",
-        "sentiment": "negative",
-        "ticker": "GS"
-      },
-      {
-        "name": "標普 500",
-        "sentiment": "negative",
-        "ticker": "SPX"
+        "name": "巴逆逆",
+        "sentiment": "neutral",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【逆勢大師決策報告：恐慌深水區的黃金避風港與防禦策略】</h3><p>延續昨日 <b>ACN 與 IBM</b> 帶來的企業支出萎縮警訊，今日市場情緒進一步滑向極端恐慌。高盛數據顯示避險基金正以去年以來最快速度逃離金融類股，這種<b>「無差別拋售」</b>正是價值投資者尋找安全邊際的絕佳窗口。</p><h4>1. 增量分析：從支出萎縮到資金搬風</h4><p>昨日重點在於企業 CAPEX 的縮減，今日則見證了資金向避險資產的實質轉移。<b>阿拉莫斯黃金 (AGI-US)</b> 獲得 13 位分析師一致「積極樂觀」評價，目標價上調至 57.75 元，反映在宏觀不確定性下，實體資產與黃金開採商的剛性價值被重新發現。</p><h4>2. 市場反向指標觀察</h4><p>目前尚未觀察到「巴逆逆」等知名指標的顯著表態，但考量到避險基金 1.4 個標準差的極端放空行為，市場已進入<b>超賣區間</b>。當前 AGI 股價雖強於大盤，但其安全邊際仍高於因 AI 泡沫疑慮而修正的科技股。</p><h4>3. 投資大師建議</h4><p>在金融與科技股重挫之際，投資者應專注於<b>具有穩定現金流且能對抗通膨</b>的實體資源公司。AGI 的一致性看好是防禦配置的關鍵指標。操作上應利用市場集體非理性殺盤，分批布局被錯殺的績優龍頭，嚴守長期持有的安全閾值。</p>",
+    "summary": "<h3>【逆勢大師決策報告：關稅亂局與龍頭錯殺的佈局時刻】</h3><p>延續昨日 ACN 與 IBM 帶來的企業支出萎縮警訊，今日市場情緒由「增長疑慮」演變為「制度性動盪」。雖然歐元區製造業數據回溫，但美國關稅政策的法律訴訟風險與<b>川普的 15% 臨時關稅</b>，正將美元拖入不確定性的泥淖。</p><h4>1. 增量分析：從支出萎縮到金融龍頭失血</h4><p>相較於昨日針對技術服務業的預警，今日市場出現了顯著的<b>「龍頭錯殺」</b>現象。<b>威士卡 (V-US)</b> 盤中重挫超過 5%，導致道瓊指數承壓。這種無差別拋售通常出現在恐慌深水區，當市場因政策不確定性而拋棄具有高度護城河的支付清算龍頭時，價值投資者的<b>安全邊際</b>正在擴大。</p><h4>2. 關鍵指標：反向觀察與底部訊號</h4><p>特別關注市場知名反向指標<b>「巴逆逆 (8zz)」</b>的動向。若該指標在威士卡 (V-US) 破位下跌時同步看空，結合避險基金加速撤離金融股的數據，這極可能是短線恐慌的頂點。大師建議：在市場對關稅政策過度反應時，應分批建立如 Visa 等被錯殺的績優股部位。</p><h4>3. 風險控管：關稅戰的長期變數</h4><p>雖然歐元區企業活動增速快於預期，但關稅戰若延續至 2026 年，將持續削弱美元霸權。短期內，投資人應利用<b>「美元走弱、歐元走強」</b>的匯率空窗期，重新審視全球化佈局的企業抗風險能力。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀經濟"
+        "category": "總體經濟"
       },
       {
         "id": 2,
-        "category": "貴金屬"
+        "category": "國際股市"
       },
       {
         "id": 3,
-        "category": "市場情緒"
+        "category": "外匯"
       }
     ],
     "sector_stats": {
-      "tech": -0.75,
-      "finance": -0.9,
-      "manufacturing": -0.3,
-      "service": -0.5
+      "tech": -0.45,
+      "finance": -0.92,
+      "manufacturing": -0.15,
+      "service": -0.7
     }
   },
   "newsData": [
     {
-      "title": "鉅亨速報 - Factset 最新調查：阿拉莫斯黃金AGI-US的目標價調升至57.75元，幅度約5.13%",
-      "url": "https://news.cnyes.com/news/id/6349909",
+      "title": "〈紐約匯市〉美元下跌 關稅爭議擾動市場情緒",
+      "url": "https://news.cnyes.com/news/id/6349918",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對阿拉莫斯黃金(AGI-US)提出目標價估值：中位數由54.93元上修至57.75元，調升幅度5.13%。其中最高估值65.83元，最低估值48元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有13位分析師給予阿拉莫斯黃金評價：積極樂觀13位、保持中立0位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;阿拉莫斯黃金今(24日)收盤價為49.15元。近5日股價上漲5.13%，標普指數上漲1.07%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
-      "timeStr": "上午05:00",
+      "content": "&lt;p&gt;美元周一 (23 日) 下跌，投資人評估美國最高法院裁決推翻總統川普的關稅措施及其政府回應所帶來的影響。市場也關注美國與伊朗之間更多的核談判進展。&lt;/p&gt;\n\n&lt;p&gt;紐約尾盤，追蹤美元兌六種主要貨幣的美元指數 (DXY) 下跌 0.2%，報 97.65。美元指數上周出現約 1% 的周線漲幅，為逾四個月來最佳表現。&lt;/p&gt;\n\n&lt;p&gt;最高法院上周五裁定，川普大規模關稅措施超出其權限，川普隨即抨擊法院，並對進口商品課徵全面 15% 的關稅。&lt;/p&gt;\n\n&lt;p&gt;新的關稅措施將實施 150 天，目前尚不清楚美國是否需對已繳關稅的進口商進行退稅，因最高法院未就此作出裁決。這可能導致多年訴訟與更多不確定性，因川普尋求以其他方式更長期地取代全球性關稅措施。&lt;/p&gt;\n\n&lt;p&gt;Macquarie 全球外匯與利率策略師 Thierry Wizman 表示，「我們對 2026 年美元走弱的看法，建立在一個觀點上：美國進口關稅反映出美國逐漸『脫離』以規則為基礎、維持自由貿易的體系。此外，關稅戰本身也是源",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 威士卡(V-US)大跌5.03%，報304.82美元",
+      "url": "https://news.cnyes.com/news/id/6349924",
+      "source": "鉅亨網(wd_stock)",
+      "category": "總體經濟",
+      "thumbnail": null,
+      "content": "&lt;p&gt;威士卡(V-US)截至台北時間24日04:52股價下跌16.13美元，報304.82美元，跌幅5.03%，成交量10,440,344（股），盤中最高價320.52美元、最低價304.82美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.77%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.16%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.25%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;威士卡(V-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.19%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.66%&lt;/li&gt;    &lt;li&gt;近 3 月：-1.91%&lt;",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     }
   ],
@@ -111,7 +121,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 332,
+      "count": 333,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -243,7 +253,7 @@
     },
     {
       "word": "美元",
-      "count": 160,
+      "count": 162,
       "articles": [
         {
           "title": "道瓊期貨上漲約100點 黃金失守5000美元",
@@ -375,7 +385,7 @@
     },
     {
       "word": "全球",
-      "count": 112,
+      "count": 113,
       "articles": [
         {
           "title": "掃地機器人在監控你？DJI Romo 爆漏洞，全球 7,000 部即時畫面外洩",
@@ -572,6 +582,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 95,
+      "articles": [
+        {
+          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
+          "url": "https://news.cnyes.com/news/id/6346237",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "自由",
       "count": 94,
       "articles": [
@@ -633,72 +709,6 @@
           "title": "自由開講》「老」不是退場訊號 從《不老思維》看學習如何重塑第三人生",
           "url": "https://talk.ltn.com.tw/article/breakingnews/5327240",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 94,
-      "articles": [
-        {
-          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
-          "url": "https://news.cnyes.com/news/id/6346237",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -1035,7 +1045,7 @@
     },
     {
       "word": "大跌",
-      "count": 65,
+      "count": 66,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
@@ -2750,6 +2760,72 @@
       ]
     },
     {
+      "word": "新高",
+      "count": 32,
+      "articles": [
+        {
+          "title": "對沖基金買進亞股規模創10年新高 作多力道8.4倍碾壓空單",
+          "url": "https://news.cnyes.com/news/id/6345934",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "屏東2025年綠鬣蜥移除量破13萬隻 創歷年新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344924",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
+          "url": "https://news.cnyes.com/news/id/6346923",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "雙利多 國際油價飆至6個月新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
+          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
+          "source": "中央社產經",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "合作",
       "count": 32,
       "articles": [
@@ -2811,72 +2887,6 @@
           "title": "高市預告下月訪美會晤川普　全面強化安保、經濟合作",
           "url": "https://www.cna.com.tw/news/aopl/202602180160.aspx",
           "source": "中央社",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "新高",
-      "count": 31,
-      "articles": [
-        {
-          "title": "對沖基金買進亞股規模創10年新高 作多力道8.4倍碾壓空單",
-          "url": "https://news.cnyes.com/news/id/6345934",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "屏東2025年綠鬣蜥移除量破13萬隻 創歷年新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344924",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
-          "url": "https://news.cnyes.com/news/id/6346923",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "雙利多 國際油價飆至6個月新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
-          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
-          "source": "中央社產經",
           "content": null
         }
       ]
