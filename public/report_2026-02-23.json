@@ -1,163 +1,149 @@
 {
-  "updateTime": "2026-02-23T16:03:23.642Z",
-  "fullDateStr": "2026/2/24 · 更新於 00:03:23",
+  "updateTime": "2026-02-23T17:01:03.419Z",
+  "fullDateStr": "2026/2/24 · 更新於 01:01:03",
   "aiResult": {
-    "sentiment_score": -0.15,
+    "sentiment_score": -0.2,
     "dimensions": {
-      "policy": -0.85,
-      "market": -0.5,
+      "policy": -0.1,
+      "market": -0.4,
       "industry": -0.3,
-      "international": -0.75,
-      "technical": -0.4
+      "international": -0.2,
+      "technical": -0.2
     },
     "entities": [
       {
-        "name": "穩懋",
-        "sentiment": "Positive",
-        "ticker": "3105.TW"
+        "name": "PayPal",
+        "sentiment": "Bullish",
+        "ticker": "PYPL-US"
       },
       {
-        "name": "賽富時",
-        "sentiment": "Negative",
-        "ticker": "CRM-US"
+        "name": "Cadence",
+        "sentiment": "Bearish",
+        "ticker": "CDNS-US"
       },
       {
-        "name": "耐吉",
-        "sentiment": "Negative",
-        "ticker": "NKE-US"
+        "name": "Synopsys",
+        "sentiment": "Bearish",
+        "ticker": "SNPS-US"
       },
       {
-        "name": "美國運通",
-        "sentiment": "Negative",
-        "ticker": "AXP-US"
+        "name": "Fortinet",
+        "sentiment": "Bearish",
+        "ticker": "FTNT-US"
       },
       {
-        "name": "高知特科技",
-        "sentiment": "Negative",
-        "ticker": "CTSH-US"
+        "name": "Citigroup",
+        "sentiment": "Bearish",
+        "ticker": "C-US"
       },
       {
-        "name": "第一資本金融",
-        "sentiment": "Negative",
-        "ticker": "COF-US"
+        "name": "Oracle",
+        "sentiment": "Bearish",
+        "ticker": "ORCL-US"
       },
       {
-        "name": "愛彼迎",
-        "sentiment": "Negative",
-        "ticker": "ABNB-US"
+        "name": "NVIDIA",
+        "sentiment": "Neutral",
+        "ticker": "NVDA-US"
       }
     ],
-    "summary": "<h3>【宏觀策略分析：關稅法律戰引發的估值重構】</h3><p>今日市場情緒從昨日的極度貪婪轉向<b>中性偏謹慎</b>。核心壓力源於<b>川普政府與最高法院的關稅法律戰</b>。川普誓言動用 15% 關稅上限及新增「許可費」制度，引發歐盟、中國與印度的連鎖反制預期，市場對全球經濟成長動能產生疑慮。</p><h4>1. 板塊血洗：消費與軟體服務（SaaS）集體失血</h4><p>今日美股盤中出現結構性拋售，<b>CRM、AXP、NKE、LULU、ABNB</b> 等各產業領頭羊同步出現 5% 以上的跌幅。這顯示市場已不限於軟體業的估值修正，而是擴散至<b>消費金融與零售板塊</b>，反映出投資人對高估值標的的容忍度極低。</p><h4>2. 結構性機會：化合物半導體轉型</h4><p>與美股頹勢相反，<b>穩懋 (3105.TW)</b> 透過轉型光通訊、航太及低軌衛星，成功脫離傳統智慧型手機 PA 的景氣循環，獲得外資大舉回補並攻上漲停，顯示資金正在尋找具備<b>剛性技術壁壘</b>的防守性成長標的。</p><h4>3. 風險控管與反向指標</h4><p>目前尚未觀察到 <b>8zz 或巴逆逆</b> 等知名反向指標有極端喊話，顯示市場尚未觸底。在關稅政策未明朗前，建議維持中性部位。若未來社群出現極度看空（如巴逆逆轉向悲觀），方為空單平倉與結構性建倉之良機。</p>",
+    "summary": "<h3>【宏觀決策報告：存量博弈下的估值錨點修復】</h3><p>今日市場延續昨日對關稅法律戰的憂慮，情緒維持在<b>中性偏謹慎</b>。與昨日全面血洗不同，今日出現了顯著的<b>板塊內部分化</b>。</p><h4>1. 軟體與金融：結構性估值殺戮</h4><p>昨日 CRM 與 AXP 的跌勢擴散至 <b>CDNS、SNPS、ORCL</b> 及 <b>FTNT</b>。這類高倍數 SaaS 與 EDA 工具股集體下跌 5%，顯示市場正在重新定價資本支出預期。金融股 <b>Citigroup (C)</b> 同樣下挫，反映市場對後續經濟成長動能的疑慮。然而，<b>PayPal (PYPL)</b> 在超跌後出現 8% 的報復性反彈，顯示在極度恐慌後，部分基本面尚存的個股已觸發價值投資者的買盤。</p><h4>2. 聯準會變數：華勒的「擲硬幣」賽局</h4><p>Fed 理事華勒（Waller）將 3 月降息定調為「擲硬幣」，直接取決於 3 月 6 日的就業數據。這使市場失去短期貨幣政策的保護傘。值得關注的是，華勒提到<b>剔除關稅後的基礎通膨</b>已近目標，這暗示 Fed 試圖中和政治干擾，但對市場而言，不確定性依然是最大的敵人。</p><h4>3. 風險指標觀察：反向信號尚未觸發</h4><p>目前市場雖在修正，但尚未見到「<b>8zz (巴逆逆)</b>」等反向指標的極端喊話。若後續市場進一步下探，且該類指標開始全面看空，將是本基金考慮結構性抄底成長股（如 NVDA, ASML）的關鍵時機。當前策略：維持中性水位，聚焦<b>金融科技反彈</b>與<b>半導體上游修復</b>。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀經濟"
+        "category": "美股盤中速報"
       },
       {
         "id": 2,
-        "category": "科技半導體"
-      },
-      {
-        "id": 3,
-        "category": "地緣政治"
+        "category": "貨幣政策評論"
       }
     ],
     "sector_stats": {
-      "tech": -0.4,
-      "finance": -0.65,
+      "tech": -0.35,
+      "finance": -0.15,
       "manufacturing": -0.2,
-      "service": -0.8
+      "service": -0.4
     }
   },
   "newsData": [
     {
-      "title": "穩懋轉型光通訊、航太發展 外資看好回補5500張助攻漲停",
-      "url": "https://news.cnyes.com/news/id/6349739",
-      "source": "鉅亨網(tw_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;PA 放大器、砷化鎵廠穩懋 (3105-TW) 於今 (2026) 年農曆年前舉行法說，公司原預期望今年首季，在淡季效應及農曆年工作日數減少影響下，營收預估下滑 7-9％，毛利率也將較前季下滑，僅 Cellular PA 業務會成長。但看好光通訊、低軌衛星雙成長引擎持續發酵，外資今 (23) 日由賣轉買 5,528 張，激勵穩懋開高走高、跳空漲停，股價也攻上 270.5 元創波段新高。&lt;/p&gt;\n\n&lt;p&gt;穩懋指出，去 (2025) 年營收略低於前一年，但公司產品組合已經有明顯的變化，逐漸脫離過去以智慧手機為營業重心的情況，積極轉向投入航太、基礎設施及 AI 資料中心等含金量相對高的產品領域。&lt;/p&gt;\n\n&lt;p&gt;穩懋強調，未來也將加速布局 AI 光通訊及低軌衛星商機，公司預估 2026 年機台折舊費用將較去年再下滑 1-2 成，資本支出則將落在 20 億元左右。&lt;/p&gt;\n\n&lt;p&gt;展望未來，穩懋表示，在無所不在的 AI 大數據結合無遠弗屆的太空軌道經濟，無論是 AI 光通訊超高頻寬及低延遲或低軌衛星高覆蓋",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 高知特科技(CTSH-US)大跌5.04%，報61.75美元",
-      "url": "https://news.cnyes.com/news/id/6349817",
-      "source": "鉅亨網(wd_stock)",
-      "category": "宏觀經濟",
-      "thumbnail": null,
-      "content": "&lt;p&gt;高知特科技(CTSH-US)截至台北時間23日23:27股價下跌3.28美元，報61.75美元，跌幅5.04%，成交量1,172,925（股），盤中最高價64.54美元、最低價61.75美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.33%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.63%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高知特科技(CTSH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.28%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.14%&lt;/li&gt;    &lt;li&gt;近 3 月：-14.",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 耐吉(NKE-US)大跌5.03%，報62.11美元",
-      "url": "https://news.cnyes.com/news/id/6349816",
-      "source": "鉅亨網(wd_stock)",
-      "category": "科技半導體",
-      "thumbnail": null,
-      "content": "&lt;p&gt;耐吉(NKE-US)截至台北時間23日23:26股價下跌3.29美元，報62.11美元，跌幅5.03%，成交量5,291,961（股），盤中最高價64.97美元、最低價62.11美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.31%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.72%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.57%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.03%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;耐吉(NKE-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.6%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+5.39%&lt;/li&",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 賽富時(CRM-US)大跌5%，報175.9美元",
-      "url": "https://news.cnyes.com/news/id/6349811",
-      "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
-      "thumbnail": null,
-      "content": "&lt;p&gt;賽富時(CRM-US)截至台北時間23日23:10股價下跌9.27美元，報175.90美元，跌幅5%，成交量3,334,582（股），盤中最高價182.47美元、最低價175.86美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.25%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.66%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.65%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;賽富時(CRM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.4%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.82%&lt;/li&gt;    &lt;li&gt;近 3 月：-16.84%&lt;",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 第一資本金融(COF-US)大跌5.13%，報197.73美元",
-      "url": "https://news.cnyes.com/news/id/6349810",
+      "title": "盤中速報 - Paypal控股(PYPL-US)大漲8.18%，報45.06美元",
+      "url": "https://news.cnyes.com/news/id/6349848",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;第一資本金融(COF-US)截至台北時間23日23:07股價下跌10.69美元，報197.73美元，跌幅5.13%，成交量806,659（股），盤中最高價207.75美元、最低價197.70美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.12%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.63%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.62%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.11%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;第一資本金融(COF-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.51%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.34%&lt;/li&gt;    &lt;li&gt;近 3 月：+2",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;Paypal控股(PYPL-US)截至台北時間24日00:32股價上漲3.41美元，報45.06美元，漲幅8.18%，成交量11,532,388（股），盤中最高價45.29美元、最低價40.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.38%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.09%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Paypal控股(PYPL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.38%&lt;/li&gt;    &lt;li&gt;近 1 月：-27.12%&lt;/li&gt;    &lt;li&gt;近 3",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 美國運通(AXP-US)大跌5.05%，報328.7美元",
-      "url": "https://news.cnyes.com/news/id/6349809",
+      "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.03%，報281.39美元",
+      "url": "https://news.cnyes.com/news/id/6349845",
       "source": "鉅亨網(wd_stock)",
-      "category": "其他",
+      "category": "美股盤中速報",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國運通(AXP-US)截至台北時間23日23:00股價下跌17.49美元，報328.70美元，跌幅5.05%，成交量578,999（股），盤中最高價345.83美元、最低價328.55美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.5%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美國運通(AXP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.57%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.93%&lt;/li&gt;    &lt;li&gt;近 3 月：-0.75%&lt;/",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;Cadence設計系統(CDNS-US)截至台北時間24日00:23股價下跌14.89美元，報281.39美元，跌幅5.03%，成交量887,333（股），盤中最高價293.59美元、最低價281.39美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.5%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.01%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.28%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.31%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Cadence設計系統(CDNS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.06%&lt;/li&gt;    &lt;li&gt;近 1 月：-6.56%&lt;/li&gt;    &lt;li&g",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 愛彼迎(ABNB-US)大跌5.17%，報121.28美元",
-      "url": "https://news.cnyes.com/news/id/6349806",
+      "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報417.8美元",
+      "url": "https://news.cnyes.com/news/id/6349840",
       "source": "鉅亨網(wd_stock)",
-      "category": "其他",
+      "category": "貨幣政策評論",
       "thumbnail": null,
-      "content": "&lt;p&gt;愛彼迎(ABNB-US)截至台北時間23日23:00股價下跌6.61美元，報121.28美元，跌幅5.17%，成交量727,848（股），盤中最高價128.15美元、最低價121.28美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.02%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.59%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.48%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;愛彼迎(ABNB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.39%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.93%&",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;新思科技(SNPS-US)截至台北時間24日00:09股價下跌22.14美元，報417.80美元，跌幅5.03%，成交量524,449（股），盤中最高價433.41美元、最低價417.80美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.69%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.26%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.43%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.53%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;新思科技(SNPS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.65%&lt;/li&gt;    &lt;li&gt;近 1 月：-13.65%&lt;/li&gt;    &lt;li&gt;近 3 月：+13.",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 露露檸檬(LULU-US)大跌5.02%，報177.91美元",
-      "url": "https://news.cnyes.com/news/id/6349802",
+      "title": "盤中速報 - 防特網(FTNT-US)大跌5.01%，報75.99美元",
+      "url": "https://news.cnyes.com/news/id/6349838",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;露露檸檬(LULU-US)截至台北時間23日22:48股價下跌9.4美元，報177.91美元，跌幅5.02%，成交量355,528（股），盤中最高價185.01美元、最低價177.91美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.63%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.29%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.49%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.03%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;露露檸檬(LULU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.17%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.78%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.37%",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;防特網(FTNT-US)截至台北時間24日00:02股價下跌4.01美元，報75.99美元，跌幅5.01%，成交量1,681,968（股），盤中最高價79.48美元、最低價75.98美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.58%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.19%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.21%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.22%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;防特網(FTNT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-6.5%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.07%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.45%&lt;",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     },
     {
-      "title": "不服裁決！川普再嗆最高法院 誓言動用其他關稅權力",
-      "url": "https://news.cnyes.com/news/id/6349758",
+      "title": "盤中速報 - 費城半導體大跌1%，報8178.04點",
+      "url": "https://news.cnyes.com/news/id/6349829",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;《路透》報導，美國總統川普周一 (23 日) 再度抨擊美國最高法院，針對上周裁定其大規模關稅措施違法的判決表達不滿，並誓言將動用其他關稅權力與許可制度施壓，但未說明具體細節。&lt;/p&gt;\n\n&lt;p&gt;川普在社群媒體發文指出，法院已批准其他多項關稅措施，未來可在「更具法律確定性」的基礎上以更強勢方式運用。他上周六宣布，將把對所有國家進口商品的臨時關稅由 10% 提高至 15%，這也是法律允許的上限。此前，美國最高法院裁定，川普依據經濟緊急權力法實施的部分關稅超越總統權限。&lt;/p&gt;\n\n&lt;p&gt;川普在最新貼文中亦提及「許可費」(License fee) 作為施壓工具，質疑法院判決為何不允許對相關許可收費，並暗示政府仍有其他手段可用。他強調，其他國家在許可制度中皆會收取費用，美國理應如此。&lt;/p&gt;\n\n&lt;p&gt;市場對貿易政策走向感到困惑，美股期貨與美元周一早盤走低。油價亦一度下滑，反映市場擔憂關稅升級可能衝擊全球成長與能源需求，但隨後因美國與伊朗擬舉行會談的消息而回穩。&lt;/p&gt;\n\n&lt;p&gt;川普與法",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;截至台北時間23日11:55，費城半導體下跌82.38點（或1%），暫報8178.04點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+1.51%&lt;/li&gt;&lt;li&gt;近 1 月：+2.55%&lt;/li&gt;&lt;li&gt;近 3 月：+28.94%&lt;/li&gt;&lt;li&gt;近 6 月：+43.55%&lt;/li&gt;&lt;li&gt;今年以來：+16.62%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以泰瑞達(TER-US)領跌。泰瑞達(TER-US)下跌3.95%；Onto Innovation Inc.(ONTO-US)下跌3.92%；安可(AMKR-US)下跌3.73%；邁威爾科技(MRVL-US)下跌2.98%；恩智浦半導體(NXPI-US)下跌2.45%。&lt;/p&",
+      "timeStr": "上午01:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.19美元",
+      "url": "https://news.cnyes.com/news/id/6349828",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;花旗集團(C-US)截至台北時間23日23:51股價下跌5.81美元，報110.19美元，跌幅5.01%，成交量3,293,534（股），盤中最高價116.91美元、最低價110.19美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.39%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.99%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.88%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.63%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.64%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.29%&lt;/li&gt;    &lt;li&gt;近 3 月：+19.42%&lt",
+      "timeStr": "上午01:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 甲骨文(ORCL-US)大跌5.01%，報140.66美元",
+      "url": "https://news.cnyes.com/news/id/6349826",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;甲骨文(ORCL-US)截至台北時間23日23:46股價下跌7.42美元，報140.66美元，跌幅5.01%，成交量10,443,664（股），盤中最高價145.80美元、最低價140.65美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.84%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.87%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;甲骨文(ORCL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.53%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.89%&lt;/li&gt;    &lt;li&gt;近 3 月：-24.",
+      "timeStr": "上午01:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "3月會降息嗎？Fed理事華勒：像擲硬幣",
+      "url": "https://news.cnyes.com/news/id/6349748",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;綜合外媒報導，聯準會（Fed）理事華勒（Christopher Waller）周一 (23 日) 表示，他是否支持在 3 月政策會議上降息，將取決於即將公布的 2 月就業市場數據。他指出，目前對維持利率不變或降息 1 碼（25 個基點）的可能性評估「接近擲硬幣」，關鍵在於勞動市場是否真正轉強。&lt;/p&gt;\n\n&lt;p&gt;聯邦公開市場委員會（FOMC）將於 3 月 17 日至 18 日召開會議。華勒在華府出席全國商業經濟協會（NABE）活動時表示，若 2 月就業數據顯示勞動市場如 1 月般改善，下行風險減弱，維持利率不變可能是適當選擇；但若 1 月強勁數據遭下修，或 2 月表現轉弱，則支持 3 月降息 1 碼。&lt;/p&gt;\n\n&lt;h6&gt;1 月就業意外強勁 降息與否陷拉鋸&lt;/h6&gt;\n\n&lt;p&gt;華勒在 1 月會議中投下反對票，主張基準利率應再降 1 碼，理由是就業市場在 2025 年呈現疲弱與脆弱跡象。然而隨後公布的 1 月非農就業報告顯示新增 13 萬人，失業率下降，表現優於預期。他形容該數據為「意外的上行驚喜」，但也",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     }
   ],
@@ -201,7 +187,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 295,
+      "count": 307,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -333,7 +319,7 @@
     },
     {
       "word": "美元",
-      "count": 140,
+      "count": 146,
       "articles": [
         {
           "title": "道瓊期貨上漲約100點 黃金失守5000美元",
@@ -399,7 +385,7 @@
     },
     {
       "word": "EPS",
-      "count": 138,
+      "count": 143,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -531,7 +517,7 @@
     },
     {
       "word": "川普",
-      "count": 105,
+      "count": 106,
       "articles": [
         {
           "title": "川普透露正與習近平磋商 對台軍售「很快有決定」",
@@ -860,6 +846,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 81,
+      "articles": [
+        {
+          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
+          "url": "https://news.cnyes.com/news/id/6346237",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "關稅",
       "count": 78,
       "articles": [
@@ -921,72 +973,6 @@
           "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
           "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 74,
-      "articles": [
-        {
-          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
-          "url": "https://news.cnyes.com/news/id/6346237",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -1322,6 +1308,72 @@
       ]
     },
     {
+      "word": "大跌",
+      "count": 52,
+      "articles": [
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
+          "url": "https://news.cnyes.com/news/id/6346290",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "MLB",
       "count": 50,
       "articles": [
@@ -1515,72 +1567,6 @@
           "title": "菲律賓副總統杜特蒂宣布參選　政壇角力恐升溫",
           "url": "https://www.cna.com.tw/news/aopl/202602180091.aspx",
           "source": "中央社",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "大跌",
-      "count": 46,
-      "articles": [
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
-          "url": "https://news.cnyes.com/news/id/6346290",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
