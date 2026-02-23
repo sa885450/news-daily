@@ -11,6 +11,22 @@ let speaking = false;
 
 // 🟢 初始化入口
 async function init() {
+    // 🟢 v7.0.0: 增加本地協定檢查 (解決使用者直接點擊 index.html 的困擾)
+    if (window.location.protocol === 'file:') {
+        const errorMsg = `
+            <div class="bg-amber-50 border-l-4 border-amber-400 p-4 mb-6">
+                <div class="flex">
+                    <div class="flex-shrink-0"><span class="text-amber-400">⚠️</span></div>
+                    <div class="ml-3">
+                        <p class="text-sm text-amber-700 font-bold">本地存取限制</p>
+                        <p class="text-xs text-amber-600">由於瀏覽器安全限制 (CORS)，請在終端機執行 <b>npm run ui</b> 啟動服務後，再瀏覽 <b>http://localhost:3000</b>。</p>
+                    </div>
+                </div>
+            </div>`;
+        document.getElementById('summary-content').innerHTML = errorMsg;
+        document.getElementById('report-date').textContent = "本地協定受限";
+    }
+
     try {
         const response = await fetch('data.json');
         appData = await response.json();
