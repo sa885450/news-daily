@@ -19,7 +19,7 @@ async function init() {
                     <div class="flex-shrink-0"><span class="text-amber-400">⚠️</span></div>
                     <div class="ml-3">
                         <p class="text-sm text-amber-700 font-bold">本地存取限制</p>
-                        <p class="text-xs text-amber-600">由於瀏覽器安全限制 (CORS)，請在終端機執行 <b>npm run ui</b> 啟動服務後，再瀏覽 <b>http://localhost:3000</b>。</p>
+                        <p class="text-xs text-amber-600">由於瀏覽器安全限制 (CORS)，請在終端機執行 <b>npm run ui</b> 啟動服務後，再瀏覽 <b>http://localhost:3002</b>。</p>
                     </div>
                 </div>
             </div>`;
