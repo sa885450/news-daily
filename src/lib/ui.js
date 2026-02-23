@@ -4,117 +4,53 @@ const ejs = require('ejs');
 const { publicDir } = require('./config');
 const { ensureDir } = require('./utils');
 
+const { log } = require('./utils');
+
 /**
- * 生成 HTML 報表
+ * v6.0.0 CSR 重構：產出數據 JSON 代替 HTML
  */
 async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = []) {
-    const dateObj = new Date();
-    const dateStr = dateObj.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
-    const timeStr = dateObj.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
-    const fullDateStr = `${dateStr} · 更新於 ${timeStr}`;
-
-    const summary = aiResult.summary || "無摘要資料";
-    const todayScore = aiResult.sentiment_score || 0;
-
-    // 準備 Chart.js 數據
-    const chartLabels = chartData.map(d => d.date.slice(5));
-    const chartScores = chartData.map(d => d.sentiment_score);
-    const chartColor = todayScore >= 0.3 ? '#dc2626' : (todayScore <= -0.3 ? '#16a34a' : '#64748b');
-
-    // 準備雷達圖數據
-    const dim = aiResult.dimensions || { policy: 0.5, market: 0.5, industry: 0.5, "international": 0.5, technical: 0.5 };
-    const radarData = [dim.policy, dim.market, dim.industry, dim.international, dim.technical];
-
-    // 🟢 新增：準備板塊情緒數據
-    const sectorStats = aiResult.sector_stats || { tech: 0, finance: 0, manufacturing: 0, service: 0 };
-
-    // 準備實體 (Entities)
-    const entities = (aiResult.entities || []).map(e => {
-        if (typeof e === 'string') return { name: e, ticker: null, colorClass: 'text-indigo-700 bg-indigo-50 border-indigo-200' };
-        return {
-            name: e.name,
-            ticker: e.ticker,
-            colorClass: e.sentiment === 'Positive' ? 'text-red-600 bg-red-50 border-red-200' : 'text-indigo-700 bg-indigo-50 border-indigo-200'
-        };
-    });
-
-    // 準備歷史報表列表
-    let historyFiles = [];
-    const todayFileName = `report_${dateObj.toISOString().split('T')[0]}.html`;
-    try {
-        if (fs.existsSync(publicDir)) {
-            historyFiles = fs.readdirSync(publicDir)
-                .filter(f => f.startsWith('report_') && f.endsWith('.html'))
-                .sort().reverse()
-                .map(f => ({
-                    filename: f,
-                    label: f.replace('report_', '').replace('.html', ''),
-                    isToday: (f === todayFileName)
-                }));
-
-            // 確保今天的文件也在列表中
-            if (!historyFiles.some(f => f.filename === todayFileName)) {
-                historyFiles.unshift({
-                    filename: todayFileName,
-                    label: dateObj.toISOString().split('T')[0],
-                    isToday: true
-                });
-            }
-        }
-    } catch (e) { }
-
-    // 準備關鍵字
-    const sortedKeywords = Object.entries(keywordStats)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 20) // Top 20
-        .map(([word, count]) => ({ word, count }));
-
-    // 🟢 新增：生成關鍵字趨勢數據 (trends.json)
-    const { getKeywordHistory } = require('./db');
-    const trendsData = {};
-    for (const k of sortedKeywords) {
-        // 抓取過去 14 天
-        const history = getKeywordHistory(k.word).slice(-14);
-        trendsData[k.word] = history.map(h => ({ date: h.date, count: h.count }));
-    }
-    const trendsJsonPath = path.join(publicDir, 'data', 'trends.json');
-    ensureDir(path.join(publicDir, 'data'));
-    fs.writeFileSync(trendsJsonPath, JSON.stringify(trendsData));
-
-
-    // 準備新聞數據
-    const formattedNews = newsData.map(n => ({
-        ...n,
-        timeStr: new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' })
-    }));
-
-    const categories = ["全部", "科技", "金融", "社會", "其他"];
-
-    // 渲染 EJS
-    const templatePath = path.join(__dirname, '../views/index.ejs');
-    const html = await ejs.renderFile(templatePath, {
-        fullDateStr,
-        summary,
-        todayScore,
-        chartLabels,
-        chartScores,
-        chartColor,
-        radarData,
-        sectorStats, // 🟢 新增
-        entities,
-        historyFiles,
-        sortedKeywords,
-        newsData: formattedNews,
-        categories,
-        keywords7d // 🟢 新增
-    });
-
     ensureDir(publicDir);
-    const fileName = 'index.html';
-    fs.writeFileSync(path.join(publicDir, fileName), html);
-    fs.writeFileSync(path.join(publicDir, todayFileName), html);
+    ensureDir(path.join(publicDir, 'data'));
 
-    return { filePath: path.join(publicDir, fileName), fileName };
+    const dateObj = new Date();
+    const dateStr = dateObj.toISOString().split('T')[0];
+    const dataPath = path.join(publicDir, 'data.json');
+    const historyPath = path.join(publicDir, `report_${dateStr}.json`);
+
+    // 🔍 整合 CSR 數據包
+    const dataPackage = {
+        updateTime: dateObj.toISOString(),
+        fullDateStr: `${dateObj.toLocaleDateString('zh-TW')} · 更新於 ${dateObj.toLocaleTimeString('zh-TW', { hour12: false })}`,
+        aiResult: {
+            ...aiResult,
+            sentiment_score: aiResult.sentiment_score || 0,
+            summary: aiResult.summary || "無摘要資料"
+        },
+        newsData: newsData.map(n => ({
+            ...n,
+            timeStr: n.timeStr || new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' })
+        })),
+        recentStats: chartData,
+        keywords7d: keywords7d || []
+    };
+
+    try {
+        const jsonStr = JSON.stringify(dataPackage, null, 2);
+
+        // 1. 更新主數據檔案 (data.json)
+        fs.writeFileSync(dataPath, jsonStr, 'utf8');
+
+        // 2. 更新歷史數據檔案 (用於未來回溯)
+        fs.writeFileSync(historyPath, jsonStr, 'utf8');
+
+        log('📦', `CSR 資料包(v6.0.0) 已產出: public/data.json (Size: ${(jsonStr.length / 1024).toFixed(2)} KB)`);
+
+        return { filePath: dataPath, fileName: 'data.json' };
+    } catch (err) {
+        log('❌', `資料包寫入失敗: ${err.message}`);
+        throw err;
+    }
 }
 
 module.exports = { generateHTMLReport };

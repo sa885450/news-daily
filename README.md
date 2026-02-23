@@ -6,26 +6,30 @@
 
 ```text
 news-daily/
-├── src/               # 📦 核心原始碼
-│   ├── index.js       #    🚀 主程式入口
-│   ├── weekly.js      #    📅 週報機器人
-│   ├── lib/           #    🧠 核心邏輯庫 (config, ai, db, crawler...)
-│   └── views/         #    🎨 EJS 樣板 (index.ejs)
-├── scripts/           # 🛠️ 維護與測試腳本
-│   ├── rebuild_views.js
-│   ├── verify_fix.js
-│   └── ...
-├── data/              # 🗄️ 資料儲存
-│   └── news_bot.db    #    SQLite 資料庫
-├── public/            # 🌐 靜態資源目錄 (報表輸出)
-├── tests/             # 🧪 測試程式碼
-├── .env               # 🔑 設定檔
-├── ecosystem.config.js # 🚀 PM2 啟動設定
-├── package.json       # 📦 套件設定
-└── README.md          # 📄 專案說明
+├── src/               # ⚙️ 後端核心 (AI & Crawler)
+│   ├── index.js       #    🚀 系統啟動入口
+│   ├── weekly.js      #    📅 週報處理邏輯
+│   ├── lib/           #    🧠 核心功能模組 (ai, db, crawler, ui...)
+│   └── views/         #    🧪 (Legacy) 舊版 EJS 模版目錄
+├── public/            # 🌐 前端 CSR 戰情室 (Client-Side Rendering)
+│   ├── index.html     #    🏠 前端主外殼 (不含任何 EJS)
+│   ├── data.json      #    📦 動態新聞數據包 (單一資料源)
+│   └── js/
+│       └── app.js     #    🎨 前端渲染引擎 (Logic & Charts)
+├── data/              # 🗄️ 持久化資料儲存 (SQLite)
+├── scripts/           # 🛠️ 修復與維修工具
+├── .env               # 🔑 環境變數設定
+└── README.md          # 📄 專案說明書
 ```
 
 ## 📝 更新日誌 (Changelog)
+
+### v6.0.0 - 「降維打擊」架構大遷移 (2026-02-23)
+- **🚀 全面轉向 CSR (Client-Side Rendering)**: 徹底棄用 EJS 伺服器端渲染，改為「靜態 HTML 外殼 + 動態 JSON 資料」現代架構。
+- **🛡️ 零語法報錯保障**: 移除脆弱的 EJS 標籤，改用 `data.json` 作為單一資料源，徹底根除 `<% -` 與 `<%-` 產生的編譯錯誤。
+- **📦 單一數據中心**: `src/lib/ui.js` 重構為數據產出器，每小時自動更新 `public/data.json` 下載量更輕量、渲染更穩定。
+- **🎨 前端渲染引擎**: 新增 `public/js/app.js` 負責整個 UI 的生命週期，支援實時過濾、主題切換與圖表渲染。
+- **🧹 結構化清整**: 重新梳理專案目錄，明確劃分「後端處理」與「前端顯示」職責。
 
 ### v5.4.1 - 圖表功能恢復與標籤校正版 (2026-02-23)
 - **📈 圖表功能修復**: 修正 `index.ejs` 中被誤寫為 `<% -` 的無效標籤，恢復為正確的 `<%-`。徹底解決圖表接收不到資料而顯示空白的問題。
