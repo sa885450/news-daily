@@ -1,123 +1,114 @@
 {
-  "updateTime": "2026-02-23T12:00:56.731Z",
-  "fullDateStr": "2026/2/23 · 更新於 20:00:56",
+  "updateTime": "2026-02-23T13:01:20.183Z",
+  "fullDateStr": "2026/2/23 · 更新於 21:01:20",
   "aiResult": {
-    "sentiment_score": 0.82,
+    "sentiment_score": 0.88,
     "dimensions": {
-      "policy": 0.25,
-      "market": 0.85,
-      "industry": 0.65,
-      "international": 0.2,
-      "technical": 0.75
+      "policy": 0.3,
+      "market": 0.95,
+      "industry": 0.5,
+      "international": 0.4,
+      "technical": 0.2
     },
     "entities": [
       {
-        "name": "第一金",
-        "sentiment": "positive",
-        "ticker": "2892.TW"
+        "name": "iShares Latin America 40 ETF",
+        "sentiment": "Bullish",
+        "ticker": "ILF.US"
       },
       {
-        "name": "群創",
-        "sentiment": "positive",
-        "ticker": "3481.TW"
+        "name": "iShares MSCI Brazil ETF",
+        "sentiment": "Bullish",
+        "ticker": "EWZ.US"
       },
       {
-        "name": "力積電",
-        "sentiment": "positive",
-        "ticker": "6770.TW"
+        "name": "摩根士丹利投資管理",
+        "sentiment": "Bearish",
+        "ticker": "MS.US"
       },
       {
-        "name": "元大美債20年",
-        "sentiment": "positive",
-        "ticker": "00679B.TW"
+        "name": "新黃金公司",
+        "sentiment": "Bearish",
+        "ticker": "NGD.US"
       },
       {
-        "name": "三星電子",
-        "sentiment": "positive",
-        "ticker": "005930.KS"
+        "name": "HF Sinclair Corp.",
+        "sentiment": "Bearish",
+        "ticker": "DINO.US"
       },
       {
-        "name": "國泰20年美債",
-        "sentiment": "positive",
-        "ticker": "00687B.TW"
+        "name": "台積電",
+        "sentiment": "Neutral",
+        "ticker": "2330.TW"
       }
     ],
-    "summary": "<h3>【風險控管警告：三萬四關前止步，假性繁榮後的防禦撤退】</h3><p>今日台股於開紅盤日挑戰 <b>34,000 點大關失利</b>，終場雖維持上漲，但呈現顯著的『帶量留長上影線』。與昨日 0.85 的情緒相比，今日 <b>0.82</b> 的分數反映出市場在極度貪婪中開始夾雜不安。關鍵在於<b>外資動向的質變</b>：雖買超台股 83 億元，但卻同步『狂掃 61 萬張債券 ETF』，且台指期空單增加至 3 萬口以上，顯示機構法人已啟動對沖策略，預防潛在的泡沫破裂。</p><h4>1. 政策亂局與國際連鎖反應</h4><p>美國最高法院推翻 IEEPA 關稅法律依據後，川普轉向《貿易法》122 條，引發歐盟暫停貿易協議、英國淪為最大輸家的疑慮。這種<b>政策不確定性 (Policy Uncertainty)</b> 正侵蝕全球貿易基礎，亞太市場雖由半導體領漲，但歐洲股市的走低已釋放預警訊號。</p><h4>2. 散戶指標與反向風險警告</h4><p>特別注意，目前市場熱度仍高，若知名的市場反向指標 <b>『巴逆逆 (8zz)』</b> 此時釋出看好後市或加碼言論，根據歷史規律，這將是<b>短線見頂的最後逃命波訊號</b>。目前外資避險資金湧入如 00679B、00687B 等債券資產，暗示『賣出風險、買入防禦』的轉折點已現。</p><h4>3. 決策建議：獲利了結，提高防禦</h4><p>建議投資者對於已獲利之科技成長股進行<b>適度獲利了結</b>。資產配置應轉向如 <b>第一金 (2892.TW)</b> 等具備 ESG 韌性之金融股，或配置長天期美債 ETF 以對抗即將到來的政策波動風險。切勿在三萬四關卡附近盲目追高。</p>",
+    "summary": "<h3>【風險控管警訊：極度貪婪下的泡沫邊緣】</h3><p>今日市場情緒由昨日的 0.82 進一步噴發至 <b>0.88</b>，進入「極度貪婪」警戒區。儘管台股昨日在三萬四關前止步，但全球資金卻呈現瘋狂外溢，特別是拉丁美洲股市（MSCI 拉美指數）創下 11 年新高，這種<b>「補漲式狂歡」</b>通常是多頭行情末端的特徵。</p><h4>1. 核心風險：AI 交易的「結構性斷裂」</h4><p>大摩（Morgan Stanley）已發出嚴正警告，AI 交易過度擁擠且獲利動能落後於技術採用，估值過高風險劇增。對比昨日外資在台股「買股避險」的矛盾行為，今日新黃金（NGD）與 HF Sinclair（DINO）的 <b>EPS 預估下修</b>，顯示實體經濟基本面已開始鬆動。</p><h4>2. 貿易壁壘與假性復甦</h4><p>美國貿易逆差創 1.24 兆美元新高，各國（台、日、德）透過政府補貼維持出口競爭力，這是一種「飲鴆止渴」的競爭，將導致長期毛利受損。若此時<b>「巴逆逆」或「8zz」等反向指標</b>開始轉向看多，市場極可能出現斷崖式修正。</p><h4>3. 決策建議：防禦性撤退</h4><p>當前市場呈現「物理 AI」概念，資金正從科技軟體轉向<b>銅、稀土等大宗商品</b>。建議投資者：<ul><li><b>適度獲利了結：</b> 減碼漲幅過大的 AI 核心持股。</li><li><b>轉向防禦資產：</b> 關注具備資產負債表修復能力的新興市場傳統產業（如印尼、印度）。</li><li><b>提高現金比重：</b> 預防美元流動性轉折帶來的拋售潮。</li></ul></p>",
     "categories": [
       {
         "id": 1,
-        "category": "市場風險預警"
+        "category": "全球總經"
       },
       {
         "id": 2,
-        "category": "地緣政治貿易"
+        "category": "風險控管"
       },
       {
         "id": 3,
-        "category": "資產配置建議"
+        "category": "新興市場"
       }
     ],
     "sector_stats": {
-      "tech": 0.85,
+      "tech": -0.4,
       "finance": 0.6,
-      "manufacturing": 0.35,
-      "service": 0.45
+      "manufacturing": 0.2,
+      "service": 0.1
     }
   },
   "newsData": [
     {
-      "source": "鉅亨網(tw_stock)",
-      "title": "金融業ESG新標竿！第一金9度入選S&P Global永續年鑑成員 集滿國際3大永續指數肯定",
-      "content": "&lt;p&gt;國際永續評比機構 S&amp;P Global 以 2025 年 CSA 分數（即 DJBIC 指數）為認定標準，公布 2026 年永續年鑑（The Sustainability Yearbook）成員，第一金控獲選排名全球銀行業前 5％，已是第九度入選為永續年鑑成員，ESG（環境、社會、公司治理）執行成果亮眼，卓越表現再獲國際肯定，迄今獲 DJBIC、MSCI 及 FTSE 等三大國際永續指數成分股肯定，也是唯一六度榮獲「國家企業環保獎」最高榮譽「巨擘獎」之金融業。&lt;/p&gt;\n\n&lt;p&gt;朝向 2050 年淨零排放目標邁進的第一金控，依 SBTi 方法訂定近程減碳目標，於 2024 年 6 月獲審查通過，訂定自身營運範疇一、二減碳路徑符合全球升溫不超過 1.5℃之目標，至 2035 年預計較基準年 2022 年減少 63％碳排量，且持續透過自有營運據點取得綠建築標章、設置太陽能分行、擴大綠電採購比重及導入內部碳定價等四大減碳行動，精進氣候治理，截至 2025 年底已累計 41 處據點取得綠建築標章，且已建置 27 間太陽能分行。&lt;/p&gt;\n\n&lt;p&gt;第一金控以科學化資訊管理環境風險，並將政府機關及企業等外部環境資訊納入內部投融資決策，子公司第一銀行於適用赤道原則之貸放及投資案件中，在評估階段導入「ESG 永續應用地圖查詢平台」等環境資訊工具，檢視案件是否與環境敏感區重疊，或可能對自然環境造成衝擊；針對如鋼鐵、半導體、面板等高耗水產業之授信案件，評估其節水措施及水資源管理計畫；另外，鑒於近年國內綠電交易與再生能源布建快速發展，第一金控擴大再生能源永續貸款業務範圍，以實際行動支持民間共同投入。&lt;/p&gt;\n\n&lt;p&gt;在職場福祉方面，第一金控 2018 年底即導入「ISO 45001 職業安全衛生管理系統」，並通過 BSI 英國標準協會驗證，為首家取得 ISO 45001 驗證之公股金融機構；且全面開辦員工持股信託及提供優於法令的結婚、生育津貼及人工好孕假等孕育假別，更領先業界提高生育補助，第三胎起每胎 25 萬元，也連續三年榮獲勞動部職業安全署「健康勞動力永續領航企業」肯定，同時提倡生態保育意識，舉辦環境保護或推展環境教育等活動，以促進生物多樣性及物種復育。&lt;/p&gt;\n\n&lt;p&gt;第一金控不僅獲納入 DJBIC、MSCI 及 FTSE 等三大國際永續指數成分股肯定，也是唯一六度榮獲「國家企業環保獎」最高榮譽「巨擘獎」之金融業，CDP 評比更於氣候、水、森林等三大面向榮獲「3A」，躋身全球 23 強。此外，第一金控統籌成立公股金融事業 ESG 倡議平台，同時也是金管會永續金融先行者聯盟成員，並擔任第 4 屆輪值主席，持續發揮推動永續發展之影響力。&lt;/p&gt;\n\n&lt;p&gt;展望未來，第一金控將持續強化永續治理架構，積極接軌國際規範，提供多元永續金融解決方案，引領產業共同邁向 2050 淨零排放目標，攜手實踐永續發展願景。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349598",
+      "source": "鉅亨網(wd_stock)",
+      "title": "全球資金湧入拉丁美洲 股市迎來歷史性飆升",
+      "content": "&lt;p&gt;拉丁美洲股市正迎來十年來最強勁的增長勢頭。數據顯示，全球投資者正以十年來最快的速度湧入該地區，將巴西、哥倫比亞和墨西哥等國家的股市推向多年高點。&lt;/p&gt;\n\n&lt;p&gt;MSCI 新興市場拉丁美洲指數在 2026 年年初已飆升超過 20%，創下 11 年來的新高，這也是自 1991 年以來最強勁的開局紀錄。截至上周五，這一指數已連續九周上漲，創下 2017 年以來最長的連漲紀錄。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 全球財富管理新興市場美洲區首席投資官 Alejo Czerwonko 指出，拉丁美洲重新回到了投資版圖，其受關注程度是過去 10 到 15 年來未見的。他強調，在新興市場長期被低配的背景下，拉丁美洲的情況尤為顯著。&lt;/p&gt;\n\n&lt;p&gt;外部因素方面，美國最高法院推翻了川普總統的大規模全球關稅政策，這被視為該地區股市復甦的又一重大利多。Global X Management 的高級投資組合經理 Malcolm Dorson 認為，關稅政策的廢除增加了美國的赤字風險與政治不確定性，進一步壓低美元，進而推動拉丁美洲資產走強。&lt;/p&gt;\n\n&lt;p&gt;投資者正密切關注巴西和哥倫比亞即將舉行的總統大選。在巴西，市場普遍預期 10 月的選舉可能導致政策轉向，部分投資者看好反對派勝選帶來的利潤空間。&lt;/p&gt;\n\n&lt;p&gt;然而，政局仍具備不確定性，例如前總統波索納洛之子參選的消息曾一度引發市場拋售。在哥倫比亞，5 月大選前左翼候選人領先，引發了市場對資產價格可能惡化的擔憂。&lt;/p&gt;\n\n&lt;p&gt;除了政治因素，各國央行的降息預期也支撐了股市。交易員預計巴西央行將從 3 月起將目前高達 15% 的基準利率下調。而在墨西哥，央行目前將利率維持在 7%，暫停了已持續近兩年的寬鬆周期。&lt;/p&gt;\n\n&lt;p&gt;這波投資熱潮在美國上市的 ETF 中尤為明顯。BlackRock 的 iShares 拉丁美洲 40 ETF (ILF-US) 僅在 1 月份就吸引了超過 10 億美元的資金，總資產規模達到約 43 億美元。此外，億萬富翁 Stanley Druckenmiller 的家族辦公室也加入了買入巴西 ETF (EWZ-US) 的行列。&lt;/p&gt;\n\n&lt;p&gt;然而，外資的狂熱與本土投資者的謹慎形成鮮明對比。BlackRock 拉丁美洲策略主管 Benjamin Souza 指出，本土投資者通常比外資更擔心政治不確定性。儘管存在地緣政治風險，但包含 VanEck 在內的投資機構仍對拉美持積極態度，認為利率下調、政治轉型或大宗商品利多將持續支撐市場表現。&lt;/p&gt;\n",
+      "url": "https://news.cnyes.com/news/id/6349657",
       "category": "其他",
       "relatedArticles": [],
-      "timeStr": "下午08:00"
-    },
-    {
-      "source": "鉅亨網(tw_stock)",
-      "title": "闖關3萬4失利 外資買超83億元 避險敲進5檔債券ETF  狂掃群創12萬張",
-      "content": "&lt;p&gt;台股今 (23) 日開高走低，3 萬 4 千點大關得而復失，終場爆量上漲 167 點、收在 33773 點，外資大舉敲進債券，光買超前 10 名就有 5 檔為債券 ETF，合計張數超過 61 萬張，同時青睞群創與力積電，兩檔合計張數達 18 萬張。&lt;/p&gt;\n\n&lt;p&gt;三大法人合計賣超 51.42 億元，外資買超 83.52 億元，呈現連 4 買，投信賣超 20.23 億元，終結連 8 買，自營商賣超 114.72 億元，中止連 3 買；台指期方面，今日適逢台指期結算，外資加碼空單 3187 口，未平倉空單口數增加至 30852 口。&lt;/p&gt;\n\n&lt;p&gt;觀察外資買超，隨著美國關稅政策出現變數，外資資金轉向避險，買超前 10 名就有 5 檔為債券 ETF，包括國泰 10Y + 金融債 (00933B-TW)、凱基 A 級公司債 (00950B-TW)、中信美國公債 20 年 (00795B-TW)、元大美債 20 年 (00679B-TW)、國泰 20 年美債 (00687B-TW)，5 檔個股張數高達 61.72 萬張。&lt;/p&gt;\n\n&lt;p&gt;不過，外資在面板與記憶體族群操作不同調，面板方面，外資青睞群創 (3481-TW)、狂掃 12 萬張，卻減碼友達 (2409-TW) 逾 5 萬張，記憶體方面，力積電 (6770-TW) 獲加碼超過 6 萬張，但旺宏 (2337-TW) 則遭賣 3.3 萬張。&lt;/p&gt;\n\n&lt;p&gt;自營商也同樣看好群創，敲進 5 千張，但友達則與外資對作，逆勢加碼 1.1 萬張；投信則重金砸向 PCB 族群，包括富喬 (1815-TW)、台玻 (1802-TW)、南亞 (1303-TW)、欣興 (3037-TW)，各自有 2700 張以上。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349588",
-      "category": "市場風險預警",
-      "relatedArticles": [],
-      "timeStr": "下午08:00"
-    },
-    {
-      "source": "鉅亨網(tw_stock)",
-      "title": "〈台幣〉外資節後歸隊 股匯開紅盤齊揚收31.462元",
-      "content": "&lt;p&gt;台北股匯無懼年假期間川普關稅變數，金馬年開紅盤上演雙漲走勢，大盤一度站上 3 萬 4，新台幣兌美元同步展開補漲，衝破 31.5 元關卡，升值 5.6 分，收在 31.462 元，並中止連二年開紅盤收黑，台北與元太外匯市場總成交值放大至 22.19 億美元。&lt;/p&gt;\n\n&lt;p&gt;歷經農曆春節 9 天連假，台北匯市今天開紅盤，外資節後歸隊，新台幣兌美元以&nbsp;31.5 元開盤後，一度升值 1.01 角、最高來到 31.417 元，逼近 31.3 字頭，不過，央行適時進場調節，帶動升幅略收斂，收在&nbsp;31.462 元。&lt;/p&gt;\n\n&lt;p&gt;觀察主要貨幣今天表現，亞幣呈現升貶互見，日元重挫 0.71%，星幣小貶 0.04%，而韓元升值 0.34%，新台幣升 0.18%，人民幣持續休市。&lt;/p&gt;\n\n&lt;p&gt;台股今天開盤氣勢如虹，一度大漲逾 600 點，站上 3 萬 4 大關，不過，適逢台指期結算日，午盤後賣壓湧現漲勢收斂，加權指數終場收在 33773.26 點，上漲 167.55 點，仍改寫歷史新高紀錄。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院裁定總統川普無權依《國際緊急經濟權力法》(IEEPA) 實施大規模對等關稅後，美元上周五 (20 日) 應聲走軟。不過，在美國經濟數據強韌、聯準會政策態度偏鷹，以及中東潛在軍事衝突憂慮升溫，都是支撐美元的動能。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349585",
-      "category": "地緣政治貿易",
-      "relatedArticles": [],
-      "timeStr": "下午08:00"
+      "timeStr": "下午09:01"
     },
     {
       "source": "鉅亨網(wd_stock)",
-      "title": "不懼川普關稅混亂 南韓Kospi指數持續衝高 再創歷史新高",
-      "content": "&lt;p&gt;儘管美國總統川普提出的貿易關稅政策持續帶來不確定性，南韓綜合股價指數 (KOSPI) 周一 (23 日) 仍表現強勁，盤中首度突破 5900 點，向 6000 點大關邁進。截至收盤，KOSPI 上漲 37.56 點，漲幅 0.65%，以 5846.09 點創下歷史新高。&lt;/p&gt;\n\n&lt;p&gt;這波漲勢的核心動能來自於半導體獲利激增。市場龍頭三星電子周一上漲 1.53%，收 193000 韓元，主因是市場看好其與輝達 (NVDA-US) 在 AI 記憶體晶片供應上的合作，SK 海力士也上漲 0.21%。&lt;/p&gt;\n\n&lt;p&gt;此外，汽車業表現不俗，現代汽車與起亞汽車分別上漲 2.75% 與 0.52%。航空板塊表現尤為亮眼，大韓航空飆升 5.17%，廉航濟州航空更大幅上漲 7.87%。&lt;/p&gt;\n\n&lt;p&gt;除了企業獲利，南韓政府推動的「公司價值提升」改革措施同樣提供了支撐。南韓國會預計於周二通過《商法》第三次修正案，強制要求公司將買回的庫藏股予以註銷。若企業欲出售或使用這些股份，必須向股東大會提交計畫並取得核准。分析師指出，此類增強股東回報的預期顯著提升了市場估值。&lt;/p&gt;\n\n&lt;p&gt;韓股續漲之際，美國最高法院上周五裁定川普依據《國際緊急經濟權力法》(IEEPA) 徵收的關稅不合法，川普隨即宣布改採《貿易法》第 122 條，實施 15% 的全球關稅。&lt;/p&gt;\n\n&lt;p&gt;其他亞太市場周一走勢分歧。香港恒生指數在科技與汽車股帶動下，大漲超過 2.5%，表現最為突出，印度股市上漲約 0.5%。然而，澳洲股市下跌 0.61%，而中國與日本市場則因假期休市。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349584",
-      "category": "資產配置建議",
+      "title": "川普關稅連番出手 美國貿易逆差為何仍創新高？",
+      "content": "&lt;p&gt;為何關稅未能縮小美國貿易逆差？《華爾街日報》(WSJ)周一 (23 日) 報導指出，美國總統川普正加碼推動關稅措施，儘管這些政策迄今未達成其宣稱的重要目標之一：扭轉長期失衡的全球貿易結構。最新數據顯示，即使美國最高法院日前裁定川普依據緊急權力法實施的「對等關稅」缺乏法律依據，相關措施仍可能透過其他法源重新上路，但其效果並未改善美國對外逆差，反而在某種程度上鞏固既有不平衡。&lt;/p&gt;\n\n&lt;p&gt;根據美國人口普查局公布的資料，2025 年美國商品貿易逆差擴大至 1.24 兆美元，創下歷史新高，主因商品進口年增 4.3%。在此同時，美國經常帳赤字在最近 12 個月約占國內生產毛額 (GDP)4%，約為 2019 年的兩倍。&lt;/p&gt;\n\n&lt;h6&gt;出口國加碼補貼 抵銷關稅衝擊&lt;/h6&gt;\n\n&lt;p&gt;從柏林到東京，主要出口導向經濟體對美國關稅的回應，並非轉向內需，而是進一步強化支持出口的政策。德國、日本、南韓與台灣等國陸續推出龐大財政計畫，透過壓低能源、運輸與資本成本，協助製造業維持競爭力，部分抵銷關稅帶來的衝擊。&lt;/p&gt;\n\n&lt;p&gt;日本首相高市早苗提出規模 21.3 兆日元的支出方案，其中雖包含調降消費稅構想，但多數資金仍用於產業補貼。南韓提供約 25 兆韓元流動性支援出口商，台灣則推出出口信用保證與融資協助，協助企業因應關稅與貿易動盪。德國更祭出約 1 兆歐元支出計畫，同時補貼企業電費，以強化製造業在海外市場的競爭力。&lt;/p&gt;\n\n&lt;p&gt;德國經濟研究所（DIW Berlin）主席弗拉茲歇（Marcel Fratzscher）指出，德國仍堅持出口導向模式，尤其希望保護高耗能產業。儘管德國對美出口去年下滑 9.4%，美國仍為其最大出口市場，雙邊貿易順差仍達 519 億歐元。德國總理梅爾茨（Friedrich Merz）表示，希望最高法院裁決能促使美方降低對歐盟 15% 的關稅。&lt;/p&gt;\n\n&lt;h6&gt;結構性失衡難靠關稅扭轉&lt;/h6&gt;\n\n&lt;p&gt;多數出口國長期將貿易順差視為國力象徵。卡內基國際和平基金會資深研究員佩提斯（Michael Pettis）指出，當對美出口成本上升，各國只能在國內壓低成本，透過補貼或壓低薪資來維持順差，但這往往削弱內需，最終拖累全球成長。&lt;/p&gt;\n\n&lt;p&gt;中國今年經常帳順差預估達 GDP 的 4.3%，反映出口強勁與內需疲弱。國際貨幣基金（IMF）近日也罕見點名中國，呼籲轉向消費導向成長，並縮減「不必要的產業政策」，以減輕對外溢效果。&lt;/p&gt;\n\n&lt;p&gt;另一方面，美國龐大的經常帳赤字意味仰賴外資融通國內成長。布魯金斯學會資深研究員邁爾西－費雷提（Gian Maria Milesi-Ferretti）指出，美國疫情後復甦較快，帶動投資與消費高於收入，短期內推升逆差，但部分投資如資料中心建設，未來可能提升生產力。&lt;/p&gt;\n\n&lt;p&gt;他認為，若美國真想縮減逆差，控制財政赤字恐比迫使他國增加進口更有效，但目前並無相關跡象。德國案例亦顯示，重塑深植數十年的出口模式極為困難。即使大規模支出原被寄望刺激進口，德國政界仍將其視為強化出口機器的手段。&lt;/p&gt;\n",
+      "url": "https://news.cnyes.com/news/id/6349605",
+      "category": "全球總經",
       "relatedArticles": [],
-      "timeStr": "下午08:00"
+      "timeStr": "下午09:01"
     },
     {
       "source": "鉅亨網(wd_stock)",
-      "title": "又生變？美歐貿易協議臨門一腳 卻遭川普新關稅干擾",
-      "content": "&lt;p&gt;《彭博》報導，歐盟擬暫停批准美歐貿易協議程序，要求川普政府就新一輪關稅計畫提出更明確說明。歐洲議會主要政治黨團表示，將於周一 (23 日) 暫停相關立法作業，此舉發生在美國最高法院裁定，川普動用緊急權力法推動所謂「對等關稅」缺乏法律依據之後。&lt;/p&gt;\n\n&lt;p&gt;消息傳出後，歐洲股市盤中走低，泛歐 STOXX 600 指數一度下跌 0.4%。歐洲議會最大黨團、屬於中間偏右的歐洲人民黨 (EPP) 表示，將聯合社會民主黨團與自由派 Renew 黨團，共同支持凍結批准程序。EPP 負責美歐貿易協議的首席談判代表佐夫科 (Zeljana Zovko) 接受《彭博》採訪時指出，「我們別無選擇」，必須延後審議，以釐清當前情勢。&lt;/p&gt;\n\n&lt;p&gt;歐洲議會國際貿易委員會主席朗吉 (Bernd Lange) 已召開緊急會議，重新評估美歐貿易協議。他周末表示，在歐盟獲得關於新關稅措施更清楚的說明之前，議會應暫緩相關作業。歐盟各國大使亦將於周一下午會商美歐貿易關係。&lt;/p&gt;\n\n&lt;p&gt;川普在法院裁決後宣布，將對全球商品課徵 10% 關稅，隨後又提高至 15%，使貿易夥伴對美國政策走向更加不安。相關措施仍存在諸多疑問，加劇市場對政策不確定性的憂慮。&lt;/p&gt;\n\n&lt;p&gt;事實上，歐洲議會先前已曾凍結一次該協議批准程序，當時川普揚言併吞格陵蘭，引發歐洲強烈反彈。去年夏天，川普與歐盟執委會主席范德賴恩 (Ursula von der Leyen) 達成協議，內容包括對多數歐盟出口至美國商品課徵 15% 關稅，同時取消美國工業產品輸歐關稅；不過，美方仍將對歐洲鋼鋁產品維持 50% 關稅。&lt;/p&gt;\n\n&lt;p&gt;歐盟當時接受條件不對等的協議，主要考量在於避免與華府爆發全面貿易戰，並維持美國在安全與烏克蘭議題上的支持。歐洲議會原本預計於 3 月完成批准。&lt;/p&gt;\n\n&lt;p&gt;然而，協議推進過程始終波折不斷。美方隨後將 50% 金屬關稅擴大適用至數百項產品，引發歐洲政界不滿，加上格陵蘭爭議升溫，一度出現要求取消協議的聲音。雖然川普其後淡化併吞格陵蘭的立場，歐洲議會短暫重啟審議，但也加入「日落條款」等修正內容，意味即便議會最終通過，仍須回到其他歐盟機構進一步協商，增加不確定性。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349600",
-      "category": "其他",
+      "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
+      "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n",
+      "url": "https://news.cnyes.com/news/id/6349590",
+      "category": "風險控管",
       "relatedArticles": [],
-      "timeStr": "下午08:00"
+      "timeStr": "下午09:01"
     },
     {
       "source": "鉅亨網(wd_stock)",
-      "title": "關稅朝令夕改後 英國恐淪為川普新政策下「最大輸家」",
-      "content": "&lt;p&gt;在經歷數個月對英美優惠貿易協議的宣傳後，英國目前正面臨嚴峻的經濟考驗。隨著美國最高法院推翻先前的全球關稅裁定，英國可能成為這場關稅大戰中最大輸家。&lt;/p&gt;\n\n&lt;p&gt;原本英國與美國達成協議，享有相對較低的 10% 對等關稅稅率，這曾使英國在競爭中占據優勢。然而，美國總統川普承諾將對所有國家重新徵收 15% 的徵費，這意味著英國企業將面臨更高的關稅負擔。&lt;/p&gt;\n\n&lt;p&gt;根據 Global Trade Alert 的分析，英國受到的衝擊將是全球最大的，其次是義大利和新加坡。相較之下，巴西、中國和印度反而可能從中受益。&lt;/p&gt;\n\n&lt;p&gt;貿易顧問公司 Flint Global 專家 Sam Lowe 指出，目前尚不清楚原定的 10% 稅率是否會被遵守，在美方給出明確指示前，企業只能暫時以 15% 為基準進行評估。英國商會 (British Chambers of Commerce) 估計，這項政策變動將使英國對美出口成本增加高達 30 億英鎊 (約 40 億美元)，波及約 4 萬家英國公司。&lt;/p&gt;\n\n&lt;p&gt;儘管情勢嚴峻，英國政府仍試圖尋求豁免。目前預計鋼鐵、製藥和汽車產業的關稅豁免將繼續維持，這讓英國在這些關鍵領域保有些許優惠地位。內閣大臣 Bridget Phillipson 強調，政府正在最高層級進行對話，以確保英方的國家利益能被美方清楚聽見。&lt;/p&gt;\n\n&lt;p&gt;然而，其他產品如蘇格蘭威士忌和玩具的出口商則沒那麼幸運。前首席貿易談判代表 Crawford Falconer 指出，這些產業將面臨與先前歐盟同等的高額關稅。他認為澳洲與英國在這波變動中受創最深，急需獲得清晰的政策指導並爭取調降稅率。&lt;/p&gt;\n\n&lt;p&gt;英國政府雖已投入大量外交資本以換取美方的優惠待遇，包括首相施凱爾 (Keir Starmer) 曾遊說川普撤回對歐洲的報復性關稅威脅，但目前的局勢依然動盪。英美之間的「特殊關係」近期因查戈斯群島 (Chagos Islands) 主權移交問題而趨於緊張。川普對此協議表達強烈不滿，部分原因在於英方尚未批准美軍使用迪亞哥加西亞 (Diego Garcia) 基地對伊朗採取行動，這被視為美方的一種報復手段。&lt;/p&gt;\n\n&lt;p&gt;對於企業主而言，這種不確定性是最大的打擊。MorphCostumes 共同創辦人 Fraser Smeaton 表示，過去 1 年如同「雲霄飛車」，企業迫切需要成本的可預測性來維持經營，但現實卻充滿變數。&lt;/p&gt;\n\n&lt;p&gt;英國要解決關稅問題可能面臨重重阻礙，但由於美國在印度和印尼等國的關稅收入減少，川普團隊正忙於尋找其他途徑來填補收入缺口。&lt;/p&gt;\n\n&lt;p&gt;Falconer 警告，在這種情況下，英國要爭取到美方的時間與注意力來處理特定貿易問題，將會變得極其困難。根據 1974 年《貿易法》第 122 條，新的關稅制度最長可實施 150 天，除非國會決定延長，這為英國政府留下了極其短暫且艱難的談判窗口。&lt;/p&gt;\n",
-      "url": "https://news.cnyes.com/news/id/6349572",
+      "title": "鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.62元，預估目標價為13.10元",
+      "content": "&lt;p&gt;根據FactSet最新調查，共6位分析師，對新黃金公司(NGD-US)做出2025年EPS預估：中位數由0.63元下修至0.62元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.10元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;0.68(0.68)&lt;/td&gt;&lt;td&gt;1.67&lt;/td&gt;&lt;td&gt;1.35&lt;/td&gt;&lt;td&gt;1.25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;0.45(0.45)&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0.92&lt;/td&gt;&lt;td&gt;1.16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;0.6(0.6)&lt;/td&gt;&lt;td&gt;1.35&lt;/td&gt;&lt;td&gt;1.18&lt;/td&gt;&lt;td&gt;1.2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;0.62(0.63)&lt;/td&gt;&lt;td&gt;1.4&lt;/td&gt;&lt;td&gt;1.27&lt;/td&gt;&lt;td&gt;1.2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;14.74億&lt;/td&gt;&lt;td&gt;25.87億&lt;/td&gt;&lt;td&gt;24.99億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;14.54億&lt;/td&gt;&lt;td&gt;25.18億&lt;/td&gt;&lt;td&gt;24.57億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;14.63億&lt;/td&gt;&lt;td&gt;25.41億&lt;/td&gt;&lt;td&gt;24.78億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;14.60億&lt;/td&gt;&lt;td&gt;25.20億&lt;/td&gt;&lt;td&gt;24.78億&lt;/td&gt;&lt;td&gt;23.39億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;0.21&lt;/td&gt;&lt;td&gt;-0.10&lt;/td&gt;&lt;td&gt;-0.09&lt;/td&gt;&lt;td&gt;0.14&lt;/td&gt;&lt;/",
+      "url": "https://news.cnyes.com/news/id/6349711",
+      "category": "新興市場",
+      "relatedArticles": [],
+      "timeStr": "下午09:01"
+    },
+    {
+      "source": "鉅亨網(wd_stock)",
+      "title": "鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估下修至4.04元，預估目標價為59.00元",
+      "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對HF Sinclair Corp.(DINO-US)做出2026年EPS預估：中位數由4.24元下修至4.04元，其中最高估值6.4元，最低估值2.27元，預估目標價為59.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;6.4(6.4)&lt;/td&gt;&lt;td&gt;6.83&lt;/td&gt;&lt;td&gt;5.9&lt;/td&gt;&lt;td&gt;6.75&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2.27(2.55)&lt;/td&gt;&lt;td&gt;2.72&lt;/td&gt;&lt;td&gt;2.89&lt;/td&gt;&lt;td&gt;6.75&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;4.03(4.22)&lt;/td&gt;&lt;td&gt;4.46&lt;/td&gt;&lt;td&gt;4.25&lt;/td&gt;&lt;td&gt;6.75&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;4.04(4.24)&lt;/td&gt;&lt;td&gt;4.07&lt;/td&gt;&lt;td&gt;3.97&lt;/td&gt;&lt;td&gt;6.75&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;306.23億&lt;/td&gt;&lt;td&gt;300.00億&lt;/td&gt;&lt;td&gt;269.63億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;227.09億&lt;/td&gt;&lt;td&gt;230.21億&lt;/td&gt;&lt;td&gt;269.63億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;260.94億&lt;/td&gt;&lt;td&gt;266.61億&lt;/td&gt;&lt;td&gt;269.63億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;261.84億&lt;/td&gt;&lt;td&gt;264.18億&lt;/td&gt;&lt;td&gt;269.63億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;3.39&lt;/td&gt;&lt;td&gt;14.28&lt;/td&gt;&lt;td&gt;8.29&lt;/td&gt;&lt;td&gt;0.91&lt;/td&gt;&lt;td&gt;3.08&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;184",
+      "url": "https://news.cnyes.com/news/id/6349707",
       "category": "其他",
       "relatedArticles": [],
-      "timeStr": "下午08:00"
+      "timeStr": "下午09:01"
     }
   ],
   "recentStats": [
@@ -160,7 +151,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 249,
+      "count": 276,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -226,7 +217,7 @@
     },
     {
       "word": "AI",
-      "count": 234,
+      "count": 237,
       "articles": [
         {
           "title": "SpaceX傳聯手xAI密研AI殺傷性武器 劍指川普政府「無人機複製者」計畫",
@@ -292,7 +283,7 @@
     },
     {
       "word": "EPS",
-      "count": 127,
+      "count": 137,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -424,7 +415,7 @@
     },
     {
       "word": "全球",
-      "count": 110,
+      "count": 111,
       "articles": [
         {
           "title": "掃地機器人在監控你？DJI Romo 爆漏洞，全球 7,000 部即時畫面外洩",
@@ -556,7 +547,7 @@
     },
     {
       "word": "日本",
-      "count": 101,
+      "count": 102,
       "articles": [
         {
           "title": "日本第四季 GDP 擴張 0.1%，不如預期",
@@ -616,6 +607,72 @@
           "title": "日本特別國會18日召開  高市早苗將連任首相",
           "url": "https://www.cna.com.tw/news/aopl/202602170108.aspx",
           "source": "中央社",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "自由",
+      "count": 94,
+      "articles": [
+        {
+          "title": "自由開講》別讓皮草拖垮台灣的時尚良心",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5331248",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》馬年的聯想",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5343481",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》春晚又意淫台灣！台藝人排隊唱統戰組曲 這尷尬橋段中網罵翻",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345059",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》習近平春節團拜二次提及台灣 政治訊號耐人尋味",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5344207",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》藍白擋軍購業力引爆！「人神共憤」國眾兩黨慘了",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345250",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》北宜高鐵：不是快慢之爭 是信任之爭",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5329339",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》把公理當政見 黃國昌包裝自己「看起來很懂」",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5339413",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》生存門檻的背後：ART如何篩選出台灣的「誠信供應鏈」",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5343566",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由觀點》月增百萬散戶 台股擦鞋童出籠？",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5342867",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》「老」不是退場訊號 從《不老思維》看學習如何重塑第三人生",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5327240",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -687,74 +744,8 @@
       ]
     },
     {
-      "word": "自由",
-      "count": 92,
-      "articles": [
-        {
-          "title": "自由開講》別讓皮草拖垮台灣的時尚良心",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5331248",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》馬年的聯想",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5343481",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》春晚又意淫台灣！台藝人排隊唱統戰組曲 這尷尬橋段中網罵翻",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345059",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》習近平春節團拜二次提及台灣 政治訊號耐人尋味",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5344207",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》藍白擋軍購業力引爆！「人神共憤」國眾兩黨慘了",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345250",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》北宜高鐵：不是快慢之爭 是信任之爭",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5329339",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》把公理當政見 黃國昌包裝自己「看起來很懂」",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5339413",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》生存門檻的背後：ART如何篩選出台灣的「誠信供應鏈」",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5343566",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由觀點》月增百萬散戶 台股擦鞋童出籠？",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5342867",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》「老」不是退場訊號 從《不老思維》看學習如何重塑第三人生",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5327240",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "健康",
-      "count": 80,
+      "count": 81,
       "articles": [
         {
           "title": "健康網》過年最怕這一幕 慎防孩童腸病毒上身",
@@ -820,7 +811,7 @@
     },
     {
       "word": "關稅",
-      "count": 74,
+      "count": 75,
       "articles": [
         {
           "title": "從61%拒買到過半不排斥！關稅大砍後 加拿大人買中國電動車意願翻轉",
@@ -951,74 +942,8 @@
       ]
     },
     {
-      "word": "經典賽",
-      "count": 63,
-      "articles": [
-        {
-          "title": "經典賽》入選史上最強美國夢幻隊 紅襪21歲超新星：太不可思議了！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5344972",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》與大谷的夢幻對決成絕響！楚奧特談落選坦言失望：想再和兄弟並肩作戰",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345007",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》日本隊若要聚餐誰出錢？ 鈴木誠也：當然是大谷翔平！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345048",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》盛讚史上最強台灣隊！ 韓媒分析戰力「並非黑馬而是世界冠軍」",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345149",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》委內瑞拉戰力受挫！雙城明星右投羅培茲驚傳要動TJ手術",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345512",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》南韓隊又有傷兵？ 表定終結者的紅雀火球男驚傳傷情",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345589",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》「不要去想只剩15秒...」伊藤大海用另類思考應對投球時鐘",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345701",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》看好台灣成大黑馬！ 官網記者點名徐若熙是關鍵人物、球威全隊最強",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345956",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》台灣利多！南韓隊投手戰力拉警報 表定終結者的紅雀火球男因傷退賽",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346046",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》「神之左腕」助台灣隊一臂之力！曾總跟會長都感謝郭泓志",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346062",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "伊朗",
-      "count": 63,
+      "count": 65,
       "articles": [
         {
           "title": "川普將間接參與核談判 呼籲伊朗理性一點",
@@ -1083,8 +1008,74 @@
       ]
     },
     {
+      "word": "經典賽",
+      "count": 64,
+      "articles": [
+        {
+          "title": "經典賽》入選史上最強美國夢幻隊 紅襪21歲超新星：太不可思議了！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5344972",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》與大谷的夢幻對決成絕響！楚奧特談落選坦言失望：想再和兄弟並肩作戰",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345007",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》日本隊若要聚餐誰出錢？ 鈴木誠也：當然是大谷翔平！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345048",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》盛讚史上最強台灣隊！ 韓媒分析戰力「並非黑馬而是世界冠軍」",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345149",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》委內瑞拉戰力受挫！雙城明星右投羅培茲驚傳要動TJ手術",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345512",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》南韓隊又有傷兵？ 表定終結者的紅雀火球男驚傳傷情",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345589",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》「不要去想只剩15秒...」伊藤大海用另類思考應對投球時鐘",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345701",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》看好台灣成大黑馬！ 官網記者點名徐若熙是關鍵人物、球威全隊最強",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345956",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》台灣利多！南韓隊投手戰力拉警報 表定終結者的紅雀火球男因傷退賽",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346046",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》「神之左腕」助台灣隊一臂之力！曾總跟會長都感謝郭泓志",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346062",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "開講",
-      "count": 60,
+      "count": 61,
       "articles": [
         {
           "title": "自由開講》別讓皮草拖垮台灣的時尚良心",
@@ -1215,6 +1206,72 @@
       ]
     },
     {
+      "word": "台南",
+      "count": 51,
+      "articles": [
+        {
+          "title": "抓寶也要中大獎！台南消費發票存雲端加碼抽千元禮物卡",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345055",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南走春熱門打卡景點 成龍洗刷爛片王新作也登全美戲院手繪看板",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345060",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南走春祈福夯  鹿耳門聖母廟湧入80萬人次擠爆",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345225",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南後壁蛋雞場爆禽流感  緊急撲殺336隻蛋雞、銷毀雞蛋",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345287",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "回防台南拉抬2026選情 賴清德：盼中央地方合作再升級",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345284",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "親子冒險體驗全面升級 台南樹谷園區新春不打烊",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345234",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "韓國瑜台南發春聯：過年不要講太多政治",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "MLB",
       "count": 50,
       "articles": [
@@ -1275,72 +1332,6 @@
         {
           "title": "MLB》「身為洋基一員就是成為冠軍」 史坦頓盼條紋軍生涯不留憾",
           "url": "https://sports.ltn.com.tw/news/breakingnews/5345638",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "台南",
-      "count": 50,
-      "articles": [
-        {
-          "title": "抓寶也要中大獎！台南消費發票存雲端加碼抽千元禮物卡",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345055",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南走春熱門打卡景點 成龍洗刷爛片王新作也登全美戲院手繪看板",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345060",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南走春祈福夯  鹿耳門聖母廟湧入80萬人次擠爆",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345225",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南後壁蛋雞場爆禽流感  緊急撲殺336隻蛋雞、銷毀雞蛋",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345287",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "回防台南拉抬2026選情 賴清德：盼中央地方合作再升級",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345284",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "親子冒險體驗全面升級 台南樹谷園區新春不打烊",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345234",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "韓國瑜台南發春聯：過年不要講太多政治",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
           "source": "自由時報",
           "content": null
         }
@@ -1414,7 +1405,7 @@
     },
     {
       "word": "宣布",
-      "count": 45,
+      "count": 46,
       "articles": [
         {
           "title": "走春送大紅包！卓揆宣布：政院同意宜蘭鐵路高架案",
@@ -1539,6 +1530,72 @@
         {
           "title": "「高雄是世界的高雄」  賴清德：疼惜陳其邁、栽培賴瑞隆",
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345595",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "世界",
+      "count": 41,
+      "articles": [
+        {
+          "title": "火星曾是溫暖濕潤世界？新研究顛覆普遍印象",
+          "url": "https://technews.tw/2026/02/17/ancient-mars-was-warm-and-wet-not-cold-and-icy/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "中國未富先老2》 新生兒、勞參率雙塌 世界工廠崩潰中",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5344321",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "聖杯級皮卡丘卡片拍出5.2億元　刷新世界紀錄",
+          "url": "https://www.cna.com.tw/news/aopl/202602170066.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "達里歐：戰後世界秩序已瓦解 投資人應「賣債券 買黃金」",
+          "url": "https://news.cnyes.com/news/id/6345797",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "經典賽》盛讚史上最強台灣隊！ 韓媒分析戰力「並非黑馬而是世界冠軍」",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345149",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "世界局勢緊張　瑞典重啟60年來首次大型平民撤離演習",
+          "url": "https://www.cna.com.tw/news/aopl/202602170087.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "寶可夢卡片拍出 5.2 億元，「插畫家皮卡丘」刷新卡牌交易世界紀錄",
+          "url": "https://technews.tw/2026/02/17/pokemon-cards/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "NBA》「美國vs世界」賽制大成功！本屆明星賽收視率暴增87％",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345215",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "寶可夢卡片拍出天價5.2億元！「插畫家皮卡丘」刷新卡牌交易世界紀錄",
+          "url": "https://www.thenewslens.com/article/264842",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "周董不把全世界當外人！老大親自提醒才拜年？ 阿Ken首當其衝",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345535",
           "source": "自由時報",
           "content": null
         }
@@ -1941,6 +1998,72 @@
       ]
     },
     {
+      "word": "新春",
+      "count": 40,
+      "articles": [
+        {
+          "title": "台中后里崴立公園櫻花盛開  成新春賞花秘境",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344909",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "新春走春趣！ 平溪山城天燈節祈福放天燈、AR互動拍照抽好禮",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345141",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "馬年新春傳捷報 吉貝漁民大豐收 「白金」、「白鑽」相繼入袋",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345201",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "親子冒險體驗全面升級 台南樹谷園區新春不打烊",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345234",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "金馬新春閱讀趣》吃藥恐變成「馬路三寶」 藥師揭6大危險藥物",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5345200",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "人氣超旺！雲林這3間廟新春2天湧入百萬人",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345575",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "人氣爆棚！蕭美琴平鎮褒忠祠發新春福袋 上千民眾排隊領取",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345682",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "桌球》新春賀歲照藏巧思 林昀儒親自揭曉謎底",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345792",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "金馬新春閱讀趣》忘記吃藥怎麼補？ 藥師教戰「週期切半」原則",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5345693",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "新春好預「罩」！內衣闆娘挺遊學太子爺 贈大紅「內在美」抽獎",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346002",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "科技",
       "count": 40,
       "articles": [
@@ -2007,140 +2130,8 @@
       ]
     },
     {
-      "word": "世界",
-      "count": 39,
-      "articles": [
-        {
-          "title": "火星曾是溫暖濕潤世界？新研究顛覆普遍印象",
-          "url": "https://technews.tw/2026/02/17/ancient-mars-was-warm-and-wet-not-cold-and-icy/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "中國未富先老2》 新生兒、勞參率雙塌 世界工廠崩潰中",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5344321",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "聖杯級皮卡丘卡片拍出5.2億元　刷新世界紀錄",
-          "url": "https://www.cna.com.tw/news/aopl/202602170066.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "達里歐：戰後世界秩序已瓦解 投資人應「賣債券 買黃金」",
-          "url": "https://news.cnyes.com/news/id/6345797",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "經典賽》盛讚史上最強台灣隊！ 韓媒分析戰力「並非黑馬而是世界冠軍」",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345149",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "世界局勢緊張　瑞典重啟60年來首次大型平民撤離演習",
-          "url": "https://www.cna.com.tw/news/aopl/202602170087.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "寶可夢卡片拍出 5.2 億元，「插畫家皮卡丘」刷新卡牌交易世界紀錄",
-          "url": "https://technews.tw/2026/02/17/pokemon-cards/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "NBA》「美國vs世界」賽制大成功！本屆明星賽收視率暴增87％",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345215",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "寶可夢卡片拍出天價5.2億元！「插畫家皮卡丘」刷新卡牌交易世界紀錄",
-          "url": "https://www.thenewslens.com/article/264842",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "周董不把全世界當外人！老大親自提醒才拜年？ 阿Ken首當其衝",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345535",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "新春",
-      "count": 39,
-      "articles": [
-        {
-          "title": "台中后里崴立公園櫻花盛開  成新春賞花秘境",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344909",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "新春走春趣！ 平溪山城天燈節祈福放天燈、AR互動拍照抽好禮",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345141",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "馬年新春傳捷報 吉貝漁民大豐收 「白金」、「白鑽」相繼入袋",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345201",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "親子冒險體驗全面升級 台南樹谷園區新春不打烊",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345234",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "金馬新春閱讀趣》吃藥恐變成「馬路三寶」 藥師揭6大危險藥物",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5345200",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "人氣超旺！雲林這3間廟新春2天湧入百萬人",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345575",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "人氣爆棚！蕭美琴平鎮褒忠祠發新春福袋 上千民眾排隊領取",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345682",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "桌球》新春賀歲照藏巧思 林昀儒親自揭曉謎底",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345792",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "金馬新春閱讀趣》忘記吃藥怎麼補？ 藥師教戰「週期切半」原則",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5345693",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "新春好預「罩」！內衣闆娘挺遊學太子爺 贈大紅「內在美」抽獎",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346002",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "印度",
-      "count": 39,
+      "count": 40,
       "articles": [
         {
           "title": "全球談 AI 未來，印度卻先為它付出 560 億美元代價",
@@ -2206,7 +2197,7 @@
     },
     {
       "word": "推翻",
-      "count": 35,
+      "count": 36,
       "articles": [
         {
           "title": "川普與習討論對台軍售 揭仲憂:等於推翻六項保證",
@@ -2865,6 +2856,72 @@
       ]
     },
     {
+      "word": "新高",
+      "count": 30,
+      "articles": [
+        {
+          "title": "對沖基金買進亞股規模創10年新高 作多力道8.4倍碾壓空單",
+          "url": "https://news.cnyes.com/news/id/6345934",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "屏東2025年綠鬣蜥移除量破13萬隻 創歷年新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344924",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
+          "url": "https://news.cnyes.com/news/id/6346923",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "雙利多 國際油價飆至6個月新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
+          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
+          "source": "中央社產經",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "研究",
       "count": 30,
       "articles": [
@@ -2926,6 +2983,72 @@
           "title": "哈塞特怒轟聯準會報告「最糟研究」、要求懲處作者！川普關稅成本90%由美國人埋單？",
           "url": "https://news.cnyes.com/news/id/6346843",
           "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "TW",
+      "count": 30,
+      "articles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6345982",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
+          "url": "https://news.cnyes.com/news/id/6345981",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：信邦(3023-TW)目標價調升至260元，幅度約4%",
+          "url": "https://news.cnyes.com/news/id/6345980",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6346465",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
+          "url": "https://news.cnyes.com/news/id/6346464",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
+          "url": "https://news.cnyes.com/news/id/6346904",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6346903",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：旺矽(6223-TW)EPS預估上修至34.07元，預估目標價為3115元",
+          "url": "https://news.cnyes.com/news/id/6346902",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
+          "url": "https://news.cnyes.com/news/id/6346901",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：旺宏(2337-TW)目標價調升至96.5元，幅度約3.76%",
+          "url": "https://news.cnyes.com/news/id/6346900",
+          "source": "鉅亨網(tw_stock)",
           "content": null
         }
       ]
@@ -2997,72 +3120,6 @@
       ]
     },
     {
-      "word": "新高",
-      "count": 29,
-      "articles": [
-        {
-          "title": "對沖基金買進亞股規模創10年新高 作多力道8.4倍碾壓空單",
-          "url": "https://news.cnyes.com/news/id/6345934",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "屏東2025年綠鬣蜥移除量破13萬隻 創歷年新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344924",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
-          "url": "https://news.cnyes.com/news/id/6346923",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "雙利多 國際油價飆至6個月新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
-          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
-          "source": "中央社產經",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "路段",
       "count": 28,
       "articles": [
@@ -3124,72 +3181,6 @@
           "title": "大年初三出遊車潮湧現，國、省道易塞路段、建議出發時段一覽",
           "url": "https://www.thenewslens.com/article/264870",
           "source": "關鍵評論網",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "TW",
-      "count": 28,
-      "articles": [
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6345982",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
-          "url": "https://news.cnyes.com/news/id/6345981",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：信邦(3023-TW)目標價調升至260元，幅度約4%",
-          "url": "https://news.cnyes.com/news/id/6345980",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6346465",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
-          "url": "https://news.cnyes.com/news/id/6346464",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
-          "url": "https://news.cnyes.com/news/id/6346904",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6346903",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：旺矽(6223-TW)EPS預估上修至34.07元，預估目標價為3115元",
-          "url": "https://news.cnyes.com/news/id/6346902",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
-          "url": "https://news.cnyes.com/news/id/6346901",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：旺宏(2337-TW)目標價調升至96.5元，幅度約3.76%",
-          "url": "https://news.cnyes.com/news/id/6346900",
-          "source": "鉅亨網(tw_stock)",
           "content": null
         }
       ]
@@ -3261,6 +3252,72 @@
       ]
     },
     {
+      "word": "彰化",
+      "count": 28,
+      "articles": [
+        {
+          "title": "彰化南瑤宮發福袋 蕭美琴祈願台灣團結、繼續一馬當先",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345196",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "巴西動感嘉年華搬到「花在彰化」 民眾：森巴女郎像森巴媽媽",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345227",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "彰化南瑤宮抽出「小凶」人民籤 蕭美琴樂觀回應",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345211",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初二返鄉加出遊雙車潮 國1彰化南下時速剩20公里",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345539",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "好兆頭！彰化慈鳳宮現「黏筊」奇景 筊杯貼龍口4天不落",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345628",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "除夕祭祖圍千元鈔  彰化「古早味過年法」曝光",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345676",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "走春人氣王再破紀錄！「花在彰化」首日湧12.5萬人次",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345874",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "大跌",
       "count": 28,
       "articles": [
@@ -3322,72 +3379,6 @@
           "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
           "url": "https://news.cnyes.com/news/id/6346290",
           "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "彰化",
-      "count": 27,
-      "articles": [
-        {
-          "title": "彰化南瑤宮發福袋 蕭美琴祈願台灣團結、繼續一馬當先",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345196",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "巴西動感嘉年華搬到「花在彰化」 民眾：森巴女郎像森巴媽媽",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345227",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "彰化南瑤宮抽出「小凶」人民籤 蕭美琴樂觀回應",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345211",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初二返鄉加出遊雙車潮 國1彰化南下時速剩20公里",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345539",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好兆頭！彰化慈鳳宮現「黏筊」奇景 筊杯貼龍口4天不落",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345628",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "除夕祭祖圍千元鈔  彰化「古早味過年法」曝光",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345676",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "走春人氣王再破紀錄！「花在彰化」首日湧12.5萬人次",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345874",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
-          "source": "自由時報",
           "content": null
         }
       ]
