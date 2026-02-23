@@ -1,98 +1,73 @@
 {
-  "updateTime": "2026-02-23T20:00:46.899Z",
-  "fullDateStr": "2026/2/24 · 更新於 04:00:46",
+  "updateTime": "2026-02-23T21:00:52.747Z",
+  "fullDateStr": "2026/2/24 · 更新於 05:00:52",
   "aiResult": {
-    "sentiment_score": -0.55,
+    "sentiment_score": -0.68,
     "dimensions": {
-      "policy": -0.6,
-      "market": -0.8,
-      "industry": -0.7,
-      "international": -0.7,
+      "policy": -0.2,
+      "market": -0.85,
+      "industry": 0.4,
+      "international": -0.5,
       "technical": -0.6
     },
     "entities": [
       {
-        "name": "埃森哲",
-        "sentiment": "bearish",
-        "ticker": "ACN-US"
+        "name": "阿拉莫斯黃金",
+        "sentiment": "positive",
+        "ticker": "AGI-US"
       },
       {
-        "name": "國際商業機器",
-        "sentiment": "bearish",
-        "ticker": "IBM-US"
+        "name": "埃森哲",
+        "sentiment": "negative",
+        "ticker": "ACN"
+      },
+      {
+        "name": "IBM",
+        "sentiment": "negative",
+        "ticker": "IBM"
       },
       {
         "name": "高盛",
-        "sentiment": "neutral",
-        "ticker": "GS-US"
+        "sentiment": "negative",
+        "ticker": "GS"
       },
       {
-        "name": "Visa",
-        "sentiment": "bearish",
-        "ticker": "V-US"
-      },
-      {
-        "name": "Mastercard",
-        "sentiment": "bearish",
-        "ticker": "MA-US"
-      },
-      {
-        "name": "標普 500 指數",
-        "sentiment": "bearish",
-        "ticker": "SPY"
+        "name": "標普 500",
+        "sentiment": "negative",
+        "ticker": "SPX"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：從消費降級到企業支出萎縮的連鎖反應】</h3><p>今日市場情緒進一步惡化，延續了昨日支付巨頭重挫的負面趨勢。關鍵訊號在於<b>埃森哲 (ACN) 與 IBM 雙雙大跌超過 5%</b>，這象徵壓力已從「終端消費」蔓延至「企業諮詢與技術支出 (CAPEX)」。</p><h4>1. 避險基金極端放空：金融股成重災區</h4><p>根據高盛數據，避險基金正以 1.4 個標準差的極速拋售全球股票，特別是<b>金融類股</b>遭到去年 4 月以來最大規模放空。這反映出在關稅風暴與 AI 衝擊疑慮下，聰明錢正積極降低曝險。標普 500 可能面臨單月最差表現。</p><h4>2. 結構性防禦轉向：能源與醫療展現韌性</h4><p>儘管整體市場低迷，資金流向顯示出明顯的避險轉移，<b>能源、醫療保健及民生消費</b>成為淨買超對象。這符合宏觀避險基金在景氣末端、信貸收縮期的典型策略——「棄成長、守價值」。</p><h4>3. 反向指標警訊與策略建議</h4><p>目前市場處於高波動放空潮中，<b>尚未觀察到「8zz」或「巴逆逆」等知名反向指標的極端喊話</b>。若後續出現該類指標大舉看空，則結合目前避險基金的高空單比例，可能形成技術性的空頭擠壓（Short Squeeze）底部。短線策略建議：<b>對科技服務與金融板塊維持減碼，並將核心持倉轉向具抗週期特性的能源與防禦性產業。</b></p>",
+    "summary": "<h3>【逆勢大師決策報告：恐慌深水區的黃金避風港與防禦策略】</h3><p>延續昨日 <b>ACN 與 IBM</b> 帶來的企業支出萎縮警訊，今日市場情緒進一步滑向極端恐慌。高盛數據顯示避險基金正以去年以來最快速度逃離金融類股，這種<b>「無差別拋售」</b>正是價值投資者尋找安全邊際的絕佳窗口。</p><h4>1. 增量分析：從支出萎縮到資金搬風</h4><p>昨日重點在於企業 CAPEX 的縮減，今日則見證了資金向避險資產的實質轉移。<b>阿拉莫斯黃金 (AGI-US)</b> 獲得 13 位分析師一致「積極樂觀」評價，目標價上調至 57.75 元，反映在宏觀不確定性下，實體資產與黃金開採商的剛性價值被重新發現。</p><h4>2. 市場反向指標觀察</h4><p>目前尚未觀察到「巴逆逆」等知名指標的顯著表態，但考量到避險基金 1.4 個標準差的極端放空行為，市場已進入<b>超賣區間</b>。當前 AGI 股價雖強於大盤，但其安全邊際仍高於因 AI 泡沫疑慮而修正的科技股。</p><h4>3. 投資大師建議</h4><p>在金融與科技股重挫之際，投資者應專注於<b>具有穩定現金流且能對抗通膨</b>的實體資源公司。AGI 的一致性看好是防禦配置的關鍵指標。操作上應利用市場集體非理性殺盤，分批布局被錯殺的績優龍頭，嚴守長期持有的安全閾值。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "總體經濟"
+        "category": "宏觀經濟"
       },
       {
         "id": 2,
-        "category": "機構動向"
+        "category": "貴金屬"
       },
       {
         "id": 3,
-        "category": "美股盤後"
+        "category": "市場情緒"
       }
     ],
     "sector_stats": {
-      "tech": -0.65,
-      "finance": -0.85,
-      "manufacturing": -0.4,
-      "service": -0.6
+      "tech": -0.75,
+      "finance": -0.9,
+      "manufacturing": -0.3,
+      "service": -0.5
     }
   },
   "newsData": [
     {
-      "title": "盤中速報 - 埃森哲(ACN-US)大跌5.02%，報204.54美元",
-      "url": "https://news.cnyes.com/news/id/6349897",
+      "title": "鉅亨速報 - Factset 最新調查：阿拉莫斯黃金AGI-US的目標價調升至57.75元，幅度約5.13%",
+      "url": "https://news.cnyes.com/news/id/6349909",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;埃森哲(ACN-US)截至台北時間24日02:59股價下跌10.81美元，報204.54美元，跌幅5.02%，成交量3,854,378（股），盤中最高價214.02美元、最低價204.51美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.06%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.21%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.37%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;埃森哲(ACN-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.96%&lt;/li&gt;    &lt;li&gt;近 1 月：-24.46%&lt;/li&gt;    &lt;li&gt;近 3 月：-13.04",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 國際商業機器(IBM-US)大跌5.07%，報244.11美元",
-      "url": "https://news.cnyes.com/news/id/6349896",
-      "source": "鉅亨網(wd_stock)",
-      "category": "總體經濟",
-      "thumbnail": null,
-      "content": "&lt;p&gt;國際商業機器(IBM-US)截至台北時間24日02:54股價下跌13.05美元，報244.11美元，跌幅5.07%，成交量3,386,482（股），盤中最高價255.19美元、最低價243.94美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.07%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.06%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.11%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;國際商業機器(IBM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.73%&lt;/li&gt;    &lt;li&gt;近 3 月：",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "放空潮來襲！避險基金大舉拋售全球股票 金融股成重災區",
-      "url": "https://news.cnyes.com/news/id/6349753",
-      "source": "鉅亨網(wd_stock)",
-      "category": "機構動向",
-      "thumbnail": null,
-      "content": "&lt;p&gt;高盛 (GS-US) 指出，避險基金近期拋售全球股票的速度，已創下自 2025 年 4 月關稅風暴以來最快紀錄。根據其 Prime Services 部門交易員資料，截至 2 月 19 日當周，避險基金淨賣出規模達到較常態水準低 1.4 個標準差，顯示賣壓明顯升溫。&lt;/p&gt;\n\n&lt;p&gt;高盛在致客戶報告中表示，整體交易活動延續近期增溫趨勢，其中以放空操作為主。儘管相關數據尚未涵蓋最新一輪關稅動盪，但此波拋售反映部分投資人對經濟成長題材股票漲勢能否持續產生疑慮。近期經濟數據好壞參半，加上人工智慧（AI）新應用可能帶來產業衝擊的擔憂，使市場多頭情緒降溫。標普 500 指數亦可能創下去年 4 月以來最差單月表現。&lt;/p&gt;\n\n&lt;p&gt;區域方面，所有主要市場均呈現淨賣出，其中以北美與歐洲為主。依商品類型來看，單一股票與總體產品均遭拋售，分別占整體名目淨賣出的 58% 與 42%，且均由放空部位主導。&lt;/p&gt;\n\n&lt;p&gt;歐洲股市出現近五個月來最快賣壓，主要因多頭部位減碼所致。產業層面，全球 11 大類股中有 7 個呈",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對阿拉莫斯黃金(AGI-US)提出目標價估值：中位數由54.93元上修至57.75元，調升幅度5.13%。其中最高估值65.83元，最低估值48元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有13位分析師給予阿拉莫斯黃金評價：積極樂觀13位、保持中立0位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;阿拉莫斯黃金今(24日)收盤價為49.15元。近5日股價上漲5.13%，標普指數上漲1.07%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
+      "timeStr": "上午05:00",
       "relatedArticles": []
     }
   ],
@@ -136,7 +111,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 330,
+      "count": 332,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -796,7 +771,7 @@
     },
     {
       "word": "關稅",
-      "count": 82,
+      "count": 83,
       "articles": [
         {
           "title": "從61%拒買到過半不排斥！關稅大砍後 加拿大人買中國電動車意願翻轉",
