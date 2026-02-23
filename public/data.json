@@ -1,88 +1,98 @@
 {
-  "updateTime": "2026-02-23T19:01:00.866Z",
-  "fullDateStr": "2026/2/24 · 更新於 03:01:00",
+  "updateTime": "2026-02-23T20:00:46.899Z",
+  "fullDateStr": "2026/2/24 · 更新於 04:00:46",
   "aiResult": {
-    "sentiment_score": -0.35,
+    "sentiment_score": -0.55,
     "dimensions": {
-      "policy": -0.5,
-      "market": -0.6,
-      "industry": 0.2,
-      "international": -0.4,
-      "technical": -0.7
+      "policy": -0.6,
+      "market": -0.8,
+      "industry": -0.7,
+      "international": -0.7,
+      "technical": -0.6
     },
     "entities": [
       {
-        "name": "萬事達卡",
-        "sentiment": "negative",
-        "ticker": "MA-US"
+        "name": "埃森哲",
+        "sentiment": "bearish",
+        "ticker": "ACN-US"
+      },
+      {
+        "name": "國際商業機器",
+        "sentiment": "bearish",
+        "ticker": "IBM-US"
+      },
+      {
+        "name": "高盛",
+        "sentiment": "neutral",
+        "ticker": "GS-US"
       },
       {
         "name": "Visa",
-        "sentiment": "negative",
+        "sentiment": "bearish",
         "ticker": "V-US"
       },
       {
-        "name": "聯電",
-        "sentiment": "positive",
-        "ticker": "2303.TW"
+        "name": "Mastercard",
+        "sentiment": "bearish",
+        "ticker": "MA-US"
       },
       {
-        "name": "富邦媒",
-        "sentiment": "positive",
-        "ticker": "8454.TW"
-      },
-      {
-        "name": "Hudbay Minerals",
-        "sentiment": "positive",
-        "ticker": "HBM-US"
-      },
-      {
-        "name": "巴逆逆",
-        "sentiment": "negative",
-        "ticker": "8zz"
+        "name": "標普 500 指數",
+        "sentiment": "bearish",
+        "ticker": "SPY"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：金融支付流動性壓力與反向指標警訊】</h3><p>今日市場延續昨日的動盪情緒，儘管關稅衝擊初步消化，但<b>金融支付雙巨頭（Visa、Mastercard）盤中重挫超過 5%</b>，顯示消費終端需求與信貸成本壓力正侵蝕核心金融板塊。相較於美股的低迷，台灣半導體與內需展現韌性。</p><h4>1. 支付板塊警訊：消費降級與信貸收縮</h4><p>Visa (V) 與 Mastercard (MA) 的大幅下跌是今日最顯著的宏觀訊號。作為經濟循環的先導指標，支付龍頭失血反映了全球貿易摩擦預期下，資金對<b>非必需消費支出</b>的撤離。這與昨日提到的「政策不可預測性」相呼應，市場正在重估金融服務業的估值倍數。</p><h4>2. 結構性亮點：成熟製程與特選內需</h4><p>聯電 (2303.TW) 1月營收創歷史次高，顯示<b>半導體成熟製程</b>在去庫存後仍具剛性需求；富邦媒 (8454.TW) 同期新高則反映台灣內需消費受通膨干擾相對輕微。Hudbay Minerals (HBM) 的獲利預估上修，則提供了資源類股作為避險配置的可能性。</p><h4>3. 特殊風險提示：反向指標「巴逆逆」訊號</h4><p><b>極度重要：</b>知名反向指標「巴逆逆」(8zz) 公開看好台股大反彈。根據歷史回測，該指標的「看多」往往伴隨隨後的短期修正或反彈失敗。結合目前美股三大指數皆墨的情況，本基金建議<b>維持防禦性水位，嚴防台股隨美股補跌的技術性風險</b>，切勿在巴逆逆高喊反彈時過度追高。</p>",
+    "summary": "<h3>【宏觀決策報告：從消費降級到企業支出萎縮的連鎖反應】</h3><p>今日市場情緒進一步惡化，延續了昨日支付巨頭重挫的負面趨勢。關鍵訊號在於<b>埃森哲 (ACN) 與 IBM 雙雙大跌超過 5%</b>，這象徵壓力已從「終端消費」蔓延至「企業諮詢與技術支出 (CAPEX)」。</p><h4>1. 避險基金極端放空：金融股成重災區</h4><p>根據高盛數據，避險基金正以 1.4 個標準差的極速拋售全球股票，特別是<b>金融類股</b>遭到去年 4 月以來最大規模放空。這反映出在關稅風暴與 AI 衝擊疑慮下，聰明錢正積極降低曝險。標普 500 可能面臨單月最差表現。</p><h4>2. 結構性防禦轉向：能源與醫療展現韌性</h4><p>儘管整體市場低迷，資金流向顯示出明顯的避險轉移，<b>能源、醫療保健及民生消費</b>成為淨買超對象。這符合宏觀避險基金在景氣末端、信貸收縮期的典型策略——「棄成長、守價值」。</p><h4>3. 反向指標警訊與策略建議</h4><p>目前市場處於高波動放空潮中，<b>尚未觀察到「8zz」或「巴逆逆」等知名反向指標的極端喊話</b>。若後續出現該類指標大舉看空，則結合目前避險基金的高空單比例，可能形成技術性的空頭擠壓（Short Squeeze）底部。短線策略建議：<b>對科技服務與金融板塊維持減碼，並將核心持倉轉向具抗週期特性的能源與防禦性產業。</b></p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀策略"
+        "category": "總體經濟"
       },
       {
         "id": 2,
-        "category": "金融科技"
+        "category": "機構動向"
       },
       {
         "id": 3,
-        "category": "半導體"
+        "category": "美股盤後"
       }
     ],
     "sector_stats": {
-      "tech": 0.1,
-      "finance": -0.8,
-      "manufacturing": 0.2,
-      "service": -0.3
+      "tech": -0.65,
+      "finance": -0.85,
+      "manufacturing": -0.4,
+      "service": -0.6
     }
   },
   "newsData": [
     {
-      "title": "盤中速報 - 萬事達卡(MA-US)大跌5.03%，報499.91美元",
-      "url": "https://news.cnyes.com/news/id/6349893",
+      "title": "盤中速報 - 埃森哲(ACN-US)大跌5.02%，報204.54美元",
+      "url": "https://news.cnyes.com/news/id/6349897",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;萬事達卡(MA-US)截至台北時間24日02:34股價下跌26.5美元，報499.91美元，跌幅5.03%，成交量2,278,936（股），盤中最高價522.72美元、最低價499.90美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.31%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.85%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.9%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;萬事達卡(MA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.55%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.21%&lt;/li&gt;    &lt;li&gt;近 3 月：-2.18%&lt",
-      "timeStr": "上午03:01",
+      "content": "&lt;p&gt;埃森哲(ACN-US)截至台北時間24日02:59股價下跌10.81美元，報204.54美元，跌幅5.02%，成交量3,854,378（股），盤中最高價214.02美元、最低價204.51美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.06%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.21%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.37%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;埃森哲(ACN-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.96%&lt;/li&gt;    &lt;li&gt;近 1 月：-24.46%&lt;/li&gt;    &lt;li&gt;近 3 月：-13.04",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "鉅亨速報 - Factset 最新調查：Hudbay Minerals Inc.(HBM-US)EPS預估上修至1.61元，預估目標價為29.24元",
-      "url": "https://news.cnyes.com/news/id/6349886",
+      "title": "盤中速報 - 國際商業機器(IBM-US)大跌5.07%，報244.11美元",
+      "url": "https://news.cnyes.com/news/id/6349896",
       "source": "鉅亨網(wd_stock)",
-      "category": "宏觀策略",
+      "category": "總體經濟",
       "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共18位分析師，對Hudbay Minerals Inc.(HBM-US)做出2026年EPS預估：中位數由1.57元上修至1.61元，其中最高估值2.03元，最低估值0.93元，預估目標價為29.24元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt",
-      "timeStr": "上午03:01",
+      "content": "&lt;p&gt;國際商業機器(IBM-US)截至台北時間24日02:54股價下跌13.05美元，報244.11美元，跌幅5.07%，成交量3,386,482（股），盤中最高價255.19美元、最低價243.94美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.07%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.06%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.11%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;國際商業機器(IBM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.73%&lt;/li&gt;    &lt;li&gt;近 3 月：",
+      "timeStr": "上午04:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "放空潮來襲！避險基金大舉拋售全球股票 金融股成重災區",
+      "url": "https://news.cnyes.com/news/id/6349753",
+      "source": "鉅亨網(wd_stock)",
+      "category": "機構動向",
+      "thumbnail": null,
+      "content": "&lt;p&gt;高盛 (GS-US) 指出，避險基金近期拋售全球股票的速度，已創下自 2025 年 4 月關稅風暴以來最快紀錄。根據其 Prime Services 部門交易員資料，截至 2 月 19 日當周，避險基金淨賣出規模達到較常態水準低 1.4 個標準差，顯示賣壓明顯升溫。&lt;/p&gt;\n\n&lt;p&gt;高盛在致客戶報告中表示，整體交易活動延續近期增溫趨勢，其中以放空操作為主。儘管相關數據尚未涵蓋最新一輪關稅動盪，但此波拋售反映部分投資人對經濟成長題材股票漲勢能否持續產生疑慮。近期經濟數據好壞參半，加上人工智慧（AI）新應用可能帶來產業衝擊的擔憂，使市場多頭情緒降溫。標普 500 指數亦可能創下去年 4 月以來最差單月表現。&lt;/p&gt;\n\n&lt;p&gt;區域方面，所有主要市場均呈現淨賣出，其中以北美與歐洲為主。依商品類型來看，單一股票與總體產品均遭拋售，分別占整體名目淨賣出的 58% 與 42%，且均由放空部位主導。&lt;/p&gt;\n\n&lt;p&gt;歐洲股市出現近五個月來最快賣壓，主要因多頭部位減碼所致。產業層面，全球 11 大類股中有 7 個呈",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     }
   ],
@@ -126,7 +136,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 327,
+      "count": 330,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -258,7 +268,7 @@
     },
     {
       "word": "美元",
-      "count": 158,
+      "count": 160,
       "articles": [
         {
           "title": "道瓊期貨上漲約100點 黃金失守5000美元",
@@ -390,7 +400,7 @@
     },
     {
       "word": "全球",
-      "count": 111,
+      "count": 112,
       "articles": [
         {
           "title": "掃地機器人在監控你？DJI Romo 爆漏洞，全球 7,000 部即時畫面外洩",
@@ -653,6 +663,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 94,
+      "articles": [
+        {
+          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
+          "url": "https://news.cnyes.com/news/id/6346237",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "曝光",
       "count": 92,
       "articles": [
@@ -714,72 +790,6 @@
           "title": "丟臉！日本多益作弊案又有中國人被捕 姓名長相全曝光",
           "url": "https://news.ltn.com.tw/news/world/breakingnews/5345444",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 92,
-      "articles": [
-        {
-          "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
-          "url": "https://news.cnyes.com/news/id/6346237",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -1049,6 +1059,72 @@
       ]
     },
     {
+      "word": "大跌",
+      "count": 65,
+      "articles": [
+        {
+          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
+          "url": "https://news.cnyes.com/news/id/6346235",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
+          "url": "https://news.cnyes.com/news/id/6346253",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
+          "url": "https://news.cnyes.com/news/id/6346252",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
+          "url": "https://news.cnyes.com/news/id/6346249",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
+          "url": "https://news.cnyes.com/news/id/6346248",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
+          "url": "https://news.cnyes.com/news/id/6346247",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
+          "url": "https://news.cnyes.com/news/id/6346246",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
+          "url": "https://news.cnyes.com/news/id/6346245",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
+          "url": "https://news.cnyes.com/news/id/6346244",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
+          "url": "https://news.cnyes.com/news/id/6346290",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "經典賽",
       "count": 64,
       "articles": [
@@ -1110,72 +1186,6 @@
           "title": "經典賽》「神之左腕」助台灣隊一臂之力！曾總跟會長都感謝郭泓志",
           "url": "https://sports.ltn.com.tw/news/breakingnews/5346062",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "大跌",
-      "count": 63,
-      "articles": [
-        {
-          "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
-          "url": "https://news.cnyes.com/news/id/6346235",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 直覺(INTU-US)大跌5.04%，報379.26美元",
-          "url": "https://news.cnyes.com/news/id/6346253",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大跌5.03%，報415.1美元",
-          "url": "https://news.cnyes.com/news/id/6346252",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大跌5.02%，報196.91美元",
-          "url": "https://news.cnyes.com/news/id/6346249",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.03%，報408.01美元",
-          "url": "https://news.cnyes.com/news/id/6346248",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.07%，報45.08美元",
-          "url": "https://news.cnyes.com/news/id/6346247",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.05%，報349.81美元",
-          "url": "https://news.cnyes.com/news/id/6346246",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大跌2.03%，報7972.56點",
-          "url": "https://news.cnyes.com/news/id/6346245",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
-          "url": "https://news.cnyes.com/news/id/6346244",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Cadence設計系統(CDNS-US)大跌5.05%，報284.34美元",
-          "url": "https://news.cnyes.com/news/id/6346290",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -2303,6 +2313,138 @@
       ]
     },
     {
+      "word": "TAIPEI",
+      "count": 37,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Penghu County head hospitalized after fall",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345353",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai calls on legislature to pass defense budgets",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345350",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 US, Manila tout importance of security in Strait",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345349",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》  Yilan rail project to proceed, Cho says",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345346",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Trump to decide ‘soon’ on arms sales",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345351",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Prepare for peak holiday traffic: agencies",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345854",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Trump-Xi weapons talk raises concern",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345849",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Military to hold drills at Taitung river next month",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345852",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Taiwan congratulates Takaichi on re-election",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345851",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Beware scratch-off ticket addiction, a doctor warns",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345855",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "TIMES",
+      "count": 37,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Penghu County head hospitalized after fall",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345353",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai calls on legislature to pass defense budgets",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345350",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 US, Manila tout importance of security in Strait",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345349",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》  Yilan rail project to proceed, Cho says",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345346",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Trump to decide ‘soon’ on arms sales",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345351",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Prepare for peak holiday traffic: agencies",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345854",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Trump-Xi weapons talk raises concern",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345849",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Military to hold drills at Taitung river next month",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345852",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Taiwan congratulates Takaichi on re-election",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345851",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "《TAIPEI TIMES》 Beware scratch-off ticket addiction, a doctor warns",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345855",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "政府",
       "count": 35,
       "articles": [
@@ -2892,138 +3034,6 @@
           "title": "鉅亨速報 - Factset 最新調查：旺宏(2337-TW)目標價調升至96.5元，幅度約3.76%",
           "url": "https://news.cnyes.com/news/id/6346900",
           "source": "鉅亨網(tw_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "TAIPEI",
-      "count": 31,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》 Penghu County head hospitalized after fall",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345353",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai calls on legislature to pass defense budgets",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345350",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 US, Manila tout importance of security in Strait",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345349",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》  Yilan rail project to proceed, Cho says",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345346",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Trump to decide ‘soon’ on arms sales",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345351",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Prepare for peak holiday traffic: agencies",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345854",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Trump-Xi weapons talk raises concern",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345849",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Military to hold drills at Taitung river next month",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345852",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Taiwan congratulates Takaichi on re-election",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345851",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Beware scratch-off ticket addiction, a doctor warns",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345855",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "TIMES",
-      "count": 31,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》 Penghu County head hospitalized after fall",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345353",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai calls on legislature to pass defense budgets",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345350",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 US, Manila tout importance of security in Strait",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345349",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》  Yilan rail project to proceed, Cho says",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345346",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Trump to decide ‘soon’ on arms sales",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345351",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Prepare for peak holiday traffic: agencies",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345854",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Trump-Xi weapons talk raises concern",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345849",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Military to hold drills at Taitung river next month",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345852",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Taiwan congratulates Takaichi on re-election",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345851",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "《TAIPEI TIMES》 Beware scratch-off ticket addiction, a doctor warns",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5345855",
-          "source": "自由時報",
           "content": null
         }
       ]
