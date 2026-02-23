@@ -37,7 +37,9 @@ async function init() {
 
 function renderHeader() {
     const d = new Date(appData.updateTime);
-    document.getElementById('report-date').textContent = d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
+    const datePart = d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
+    const timePart = d.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
+    document.getElementById('report-date').textContent = `${datePart} ${timePart}`;
 
     // AI 實體
     const container = document.getElementById('ai-entities');
