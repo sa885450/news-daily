@@ -15,16 +15,28 @@ db.exec(`
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
   CREATE TABLE IF NOT EXISTS daily_stats (
-    ...
+    date TEXT PRIMARY KEY, 
+    sentiment_score REAL,
+    summary TEXT,
+    sector_stats TEXT, -- JSON format: { "tech": 0.5, "finance": 0.2 ... }
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
 `);
 
-// 🟢 Migration: Add thumbnail column to articles (for existing DB)
+// 🟢 Migration: Add sector_stats column (v5.x legacy)
+try {
+  db.prepare('ALTER TABLE daily_stats ADD COLUMN sector_stats TEXT').run();
+} catch (e) { }
+
+// 🟢 Migration: Add content column (v5.x legacy)
+try {
+  db.prepare('ALTER TABLE articles ADD COLUMN content TEXT').run();
+} catch (e) { }
+
+// 🟢 Migration: Add thumbnail column to articles (v7.0.1)
 try {
   db.prepare('ALTER TABLE articles ADD COLUMN thumbnail TEXT').run();
 } catch (e) { }
-
-// ... (省略中間遷移代碼)
 
 const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
 const insertArticleStmt = db.prepare(`
