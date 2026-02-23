@@ -230,7 +230,7 @@
 
                 <!-- 🔵 v5.0.0: 聚類新聞提示 -->
                 <script>
-                    const RAW_NEWS_DATA = <%- JSON.stringify(newsData) %>;
+                    const RAW_NEWS_DATA = <% - JSON.stringify(newsData) %>;
                     let displayedCount = 0;
                     const PAGE_SIZE = 12;
 
@@ -444,11 +444,24 @@
         }
 
         // 🟢 新增：內文預覽 Modal 邏輯
+        function decodeHtml(html) {
+            const txt = document.createElement("textarea");
+            txt.innerHTML = html;
+            return txt.value;
+        }
+
         function openContentModal(title, content, url, source) {
             const modal = document.getElementById('contentModal');
             const inner = modal.querySelector('div');
+
+            // 處理內容：反轉義 HTML 標籤 + 處理換行
+            // 1. 先還原 HTML 實體 (如 &lt; 轉為 <)
+            let processedContent = decodeHtml(content);
+            // 2. 將 \n 轉換為 <br>
+            processedContent = processedContent.replace(/\n/g, '<br>');
+
             document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalText').innerHTML = content;
+            document.getElementById('modalText').innerHTML = processedContent;
             document.getElementById('modalSource').textContent = source;
             document.getElementById('modalFullLink').href = url;
 
@@ -512,10 +525,10 @@
         sentimentChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: <%- JSON.stringify(chartLabels) %>,
+                labels: <% - JSON.stringify(chartLabels) %>,
                 datasets: [{
                     label: '情緒指數',
-                    data: <%- JSON.stringify(chartScores) %>,
+                    data: <% - JSON.stringify(chartScores) %>,
                     borderColor: '#4f46e5',
                     backgroundColor: 'rgba(79, 70, 229, 0.1)',
                     borderWidth: 3,
@@ -530,7 +543,7 @@
                 onClick: (e, items) => {
                     if (items.length > 0) {
                         const idx = items[0].index;
-                        currentDate = <%- JSON.stringify(chartLabels) %> [idx];
+                        currentDate = <% - JSON.stringify(chartLabels) %> [idx];
                         document.getElementById('kwModalTitle').innerText = `📅 ${currentDate} 新聞回顧`;
                         applyFilters();
                     }
@@ -550,7 +563,7 @@
                 labels: ['政策', '資金', '基本面', '國際', '技術'],
                 datasets: [{
                     label: '今日強度',
-                    data: <%- JSON.stringify(radarData) %>,
+                    data: <% - JSON.stringify(radarData) %>,
                     fill: true,
                     backgroundColor: 'rgba(79, 70, 229, 0.2)',
                     borderColor: 'rgb(79, 70, 229)'
@@ -572,7 +585,7 @@
         });
 
         const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-        const sectorData = <%- JSON.stringify(sectorStats) %>;
+        const sectorData = <% - JSON.stringify(sectorStats) %>;
         sectorChart = new Chart(sectorCtx, {
             type: 'bar',
             data: {
@@ -718,7 +731,7 @@
         }
 
         // 🟢 v4.7.0: 關鍵字與文章地圖
-        const keywordMap = <%- JSON.stringify(keywords7d.reduce((acc, curr) => { acc[curr.word] = curr.articles; return acc; }, {})) %>;
+        const keywordMap = <% - JSON.stringify(keywords7d.reduce((acc, curr) => { acc[curr.word] = curr.articles; return acc; }, {})) %>;
 
         // 🟢 v4.7.0: 顯示關鍵字相關新聞列表
         function showKeywordArticles(word) {
@@ -763,7 +776,7 @@
 
         // 🟢 v4.5.0: Word Cloud 初始化
         <% if (keywords7d && keywords7d.length > 0) { %>
-            const cloudData = <%- JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
+            const cloudData = <% - JSON.stringify(keywords7d.map(k => [k.word, k.count])) %>;
             const canvas = document.getElementById('wordCloudCanvas');
 
             function renderCloud() {
