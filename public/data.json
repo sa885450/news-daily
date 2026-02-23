@@ -1,209 +1,88 @@
 {
-  "updateTime": "2026-02-23T18:00:57.000Z",
-  "fullDateStr": "2026/2/24 · 更新於 02:00:57",
+  "updateTime": "2026-02-23T19:01:00.866Z",
+  "fullDateStr": "2026/2/24 · 更新於 03:01:00",
   "aiResult": {
-    "sentiment_score": -0.45,
+    "sentiment_score": -0.35,
     "dimensions": {
-      "policy": -0.8,
-      "market": -0.5,
-      "industry": -0.4,
-      "international": -0.7,
-      "technical": -0.4
+      "policy": -0.5,
+      "market": -0.6,
+      "industry": 0.2,
+      "international": -0.4,
+      "technical": -0.7
     },
     "entities": [
       {
-        "name": "摩根大通",
-        "sentiment": "Bearish",
-        "ticker": "JPM-US"
+        "name": "萬事達卡",
+        "sentiment": "negative",
+        "ticker": "MA-US"
       },
       {
-        "name": "禮來",
-        "sentiment": "Bullish",
-        "ticker": "LLY-US"
+        "name": "Visa",
+        "sentiment": "negative",
+        "ticker": "V-US"
       },
       {
-        "name": "CrowdStrike",
-        "sentiment": "Bearish",
-        "ticker": "CRWD-US"
+        "name": "聯電",
+        "sentiment": "positive",
+        "ticker": "2303.TW"
       },
       {
-        "name": "達美樂",
-        "sentiment": "Bullish",
-        "ticker": "DPZ-US"
+        "name": "富邦媒",
+        "sentiment": "positive",
+        "ticker": "8454.TW"
       },
       {
-        "name": "輝達",
-        "sentiment": "Neutral",
-        "ticker": "NVDA-US"
+        "name": "Hudbay Minerals",
+        "sentiment": "positive",
+        "ticker": "HBM-US"
       },
       {
-        "name": "奧多比",
-        "sentiment": "Bearish",
-        "ticker": "ADBE-US"
-      },
-      {
-        "name": "摩根士丹利",
-        "sentiment": "Bearish",
-        "ticker": "MS-US"
+        "name": "巴逆逆",
+        "sentiment": "negative",
+        "ticker": "8zz"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：關稅反覆與技術範式變遷下的避險潮】</h3><p>今日市場情緒由昨日的中性偏謹、顯著惡化至<b>恐慌邊緣</b>。市場的核心矛盾已從單純的關稅稅率高低，轉向對<b>政策可預測性</b>的徹底喪失。</p><h4>1. 政策不確定性：從10%到15%的心理崩潰</h4><p>川普政府在24小時內將關稅由10%調升至15%，雖然計算顯示整體有效稅率低於裁決前，但<b>政策反覆</b>誘發了避險情緒，美債殖利率回落至4.04%，資金湧向黃金與日圓。這顯示市場已不再相信所謂的「定價」，轉向追求絕對防禦。</p><h4>2. 板塊深度分化：金融慘遭拋售，資安估值崩解</h4><p>與昨日相比，賣壓出現了顯著的板塊擴散：<br/>● <b>金融業：</b> <b>JPM、MS、WFC</b> 等大行罕見集體重挫5%，顯示市場對經濟成長放緩與利差收窄的強烈擔憂。<br/>● <b>資安技術：</b> Anthropic 推出 AI 安全工具引發產業鏈恐慌，<b>CRWD、ZS</b> 大跌 9%，傳統資安訂閱模式正受 AI 掃描工具的結構性威脅，延續了昨日 SaaS 的殺估值邏輯。</p><h4>3. 結構性機會與風險指標</h4><p>在普跌中，<b>LLY (禮來)</b> 受惠於強勁基本面逆勢大漲5%，<b>DPZ (達美樂)</b> 則靠著高性價比策略成為抗通膨標的。目前資料中尚未見到「巴逆逆」或「8zz」等關鍵指標出現極端情緒轉折，顯示市場尚未觸底，本週 <b>NVDA</b> 財報將是最後的估值錨點。<b>建議部位：</b> 增加防禦性醫藥與民生消費，減持政策敏感型金融與高倍數資安股。</p>",
+    "summary": "<h3>【宏觀決策報告：金融支付流動性壓力與反向指標警訊】</h3><p>今日市場延續昨日的動盪情緒，儘管關稅衝擊初步消化，但<b>金融支付雙巨頭（Visa、Mastercard）盤中重挫超過 5%</b>，顯示消費終端需求與信貸成本壓力正侵蝕核心金融板塊。相較於美股的低迷，台灣半導體與內需展現韌性。</p><h4>1. 支付板塊警訊：消費降級與信貸收縮</h4><p>Visa (V) 與 Mastercard (MA) 的大幅下跌是今日最顯著的宏觀訊號。作為經濟循環的先導指標，支付龍頭失血反映了全球貿易摩擦預期下，資金對<b>非必需消費支出</b>的撤離。這與昨日提到的「政策不可預測性」相呼應，市場正在重估金融服務業的估值倍數。</p><h4>2. 結構性亮點：成熟製程與特選內需</h4><p>聯電 (2303.TW) 1月營收創歷史次高，顯示<b>半導體成熟製程</b>在去庫存後仍具剛性需求；富邦媒 (8454.TW) 同期新高則反映台灣內需消費受通膨干擾相對輕微。Hudbay Minerals (HBM) 的獲利預估上修，則提供了資源類股作為避險配置的可能性。</p><h4>3. 特殊風險提示：反向指標「巴逆逆」訊號</h4><p><b>極度重要：</b>知名反向指標「巴逆逆」(8zz) 公開看好台股大反彈。根據歷史回測，該指標的「看多」往往伴隨隨後的短期修正或反彈失敗。結合目前美股三大指數皆墨的情況，本基金建議<b>維持防禦性水位，嚴防台股隨美股補跌的技術性風險</b>，切勿在巴逆逆高喊反彈時過度追高。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀經濟"
+        "category": "宏觀策略"
       },
       {
         "id": 2,
-        "category": "美股評論"
+        "category": "金融科技"
+      },
+      {
+        "id": 3,
+        "category": "半導體"
       }
     ],
     "sector_stats": {
-      "tech": -0.7,
-      "finance": -0.85,
-      "manufacturing": -0.4,
-      "service": 0.2
+      "tech": 0.1,
+      "finance": -0.8,
+      "manufacturing": 0.2,
+      "service": -0.3
     }
   },
   "newsData": [
     {
-      "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.01%，報166.63美元",
-      "url": "https://news.cnyes.com/news/id/6349875",
+      "title": "盤中速報 - 萬事達卡(MA-US)大跌5.03%，報499.91美元",
+      "url": "https://news.cnyes.com/news/id/6349893",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間24日01:38股價下跌8.78美元，報166.63美元，跌幅5.01%，成交量2,625,014（股），盤中最高價175.62美元、最低價166.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.62%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.16%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.41%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.56%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.17%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.41",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;萬事達卡(MA-US)截至台北時間24日02:34股價下跌26.5美元，報499.91美元，跌幅5.03%，成交量2,278,936（股），盤中最高價522.72美元、最低價499.90美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.31%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.85%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.9%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;萬事達卡(MA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.55%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.21%&lt;/li&gt;    &lt;li&gt;近 3 月：-2.18%&lt",
+      "timeStr": "上午03:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 摩根大通銀行(JPM-US)大跌5.01%，報295.21美元",
-      "url": "https://news.cnyes.com/news/id/6349874",
+      "title": "鉅亨速報 - Factset 最新調查：Hudbay Minerals Inc.(HBM-US)EPS預估上修至1.61元，預估目標價為29.24元",
+      "url": "https://news.cnyes.com/news/id/6349886",
       "source": "鉅亨網(wd_stock)",
-      "category": "宏觀經濟",
+      "category": "宏觀策略",
       "thumbnail": null,
-      "content": "&lt;p&gt;摩根大通銀行(JPM-US)截至台北時間24日01:38股價下跌15.58美元，報295.21美元，跌幅5.01%，成交量5,507,485（股），盤中最高價311.00美元、最低價295.21美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.62%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.15%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.4%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.53%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根大通銀行(JPM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.72%&lt;/li&gt;    &lt;li&gt;近 1 月：+2.36%&lt;/li&gt;    &lt;li&gt;近 3 月：+4",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 美卡多(MELI-US)大跌5.06%，報1895.79美元",
-      "url": "https://news.cnyes.com/news/id/6349873",
-      "source": "鉅亨網(wd_stock)",
-      "category": "美股評論",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美卡多(MELI-US)截至台北時間24日01:37股價下跌101.08美元，報1895.79美元，跌幅5.06%，成交量285,412（股），盤中最高價2006.51美元、最低價1895.79美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.64%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.18%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.35%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.45%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美卡多(MELI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.43%&lt;/li&gt;    &lt;li&gt;近 1 月：-7.28%&lt;/li&gt;    &lt;li&gt;近 3 月：+2.",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 超微電腦(SMCI-US)大跌5.04%，報30.79美元",
-      "url": "https://news.cnyes.com/news/id/6349870",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;超微電腦(SMCI-US)截至台北時間24日01:28股價下跌1.64美元，報30.79美元，跌幅5.04%，成交量9,036,230（股），盤中最高價32.09美元、最低價30.78美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.12%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.1%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微電腦(SMCI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.16%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+0.71%&l",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 美國合眾銀行(USB-US)大跌5.04%，報55.7美元",
-      "url": "https://news.cnyes.com/news/id/6349868",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美國合眾銀行(USB-US)截至台北時間24日01:22股價下跌2.96美元，報55.70美元，跌幅5.04%，成交量3,310,544（股），盤中最高價58.87美元、最低價55.70美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.06%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.2%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美國合眾銀行(USB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.68%&lt;/li&gt;    &lt;li&gt;近 1 月：+4.41%&lt;/li&gt;    &lt;li&gt;近 3 月：+25.36",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 富國銀行(WFC-US)大跌5%，報84.26美元",
-      "url": "https://news.cnyes.com/news/id/6349867",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間24日01:18股價下跌4.44美元，報84.26美元，跌幅5%，成交量7,966,330（股），盤中最高價88.60美元、最低價84.26美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.03%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.15%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.19%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.98%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.75%&lt;/li&gt;    &lt;li&gt;近 3 月：+7.54%&lt;/l",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 禮來(LLY-US)大漲5.15%，報1061.49美元",
-      "url": "https://news.cnyes.com/news/id/6349863",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;禮來(LLY-US)截至台北時間24日01:00股價上漲51.97美元，報1061.49美元，漲幅5.15%，成交量1,849,747（股），盤中最高價1061.49美元、最低價1034.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.05%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.22%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.28%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;禮來(LLY-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.93%&lt;/li&gt;    &lt;li&gt;近 1 月：-7.16%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.75%",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 大都會人壽(MET-US)大跌5.01%，報75.14美元",
-      "url": "https://news.cnyes.com/news/id/6349860",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;大都會人壽(MET-US)截至台北時間24日00:56股價下跌3.96美元，報75.14美元，跌幅5.01%，成交量1,261,383（股），盤中最高價79.30美元、最低價75.14美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.01%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.23%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;大都會人壽(MET-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.32%&lt;/li&gt;    &lt;li&gt;近 1 月：+2.83%&lt;/li&gt;    &lt;li&gt;近 3 月：+6.31%&",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 奧多比系統(ADBE-US)大跌5.02%，報245.63美元",
-      "url": "https://news.cnyes.com/news/id/6349859",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;奧多比系統(ADBE-US)截至台北時間24日00:55股價下跌12.98美元，報245.63美元，跌幅5.02%，成交量3,427,372（股），盤中最高價254.50美元、最低價245.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.48%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.05%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.23%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;奧多比系統(ADBE-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.03%&lt;/li&gt;    &lt;li&gt;近 1 月：-13.72%&lt;/li&gt;    &lt;li&gt;近 3 月：",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.04%，報205.51美元",
-      "url": "https://news.cnyes.com/news/id/6349857",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Onto Innovation Inc.(ONTO-US)截至台北時間24日00:50股價下跌10.91美元，報205.51美元，跌幅5.04%，成交量303,184（股），盤中最高價213.97美元、最低價205.49美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.49%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.04%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.12%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.22%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Onto Innovation Inc.(ONTO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+2.18%&lt;",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "關稅反覆引爆不安 美股回吐漲幅 黃金與美債成避風港",
-      "url": "https://news.cnyes.com/news/id/6349855",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6349855/o/c901437e1b604ccd2f88b1a7d414baf8.jpg&quot; alt=&quot;Getty Images&quot; /&gt;&lt;p&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 根據最新的15%關稅，美國整體平均有效關稅水準實際上較先前下降，但市場仍以股市下跌回應，顯示投資人真正擔憂的並非稅率高低，而是政策反覆與制度不穩定所帶來的不確定性。&lt;/p&gt;\n&lt;p&gt;美國最高法院上週五推翻現任總統川普依緊急權力推動的關稅措施後，川普隨即宣布對所有進口商品課徵10%關稅，隔日再上調至15%，並依據1974年《貿易法》第122條實施。政策在短時間內急轉彎，令市場措手不及。&lt;/p&gt;\n&lt;p&gt;市場原本已消化10%方案，如今改為15%，等同提高企業未來進口成本與供應鏈壓力。Nationwide首席市場策略分析師Mark Hackett指出，股市回吐上週五約一半漲幅，主因正是稅率由10%提高至1",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "達美樂靠9.99美元優惠搶市 美國同店銷售優於預期 股價開盤上漲",
-      "url": "https://news.cnyes.com/news/id/6349854",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6349854/o/6d81505b5a471c06284d261254a7170e.jpg&quot; alt=&quot;Getty Images&quot; /&gt;&lt;p data-start=&quot;36&quot; data-end=&quot;170&quot;&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 在消費者對價格更為敏感之際，達美樂以優惠方案與新品策略成功帶動銷售成長。Domino&amp;#039;s Pizza(DPZ-US)公布第四季財報顯示，美國同店銷售表現優於市場預期，激勵股價早盤上漲約5%，至截稿前維持2%以上漲幅。&lt;/p&gt;\n&lt;p data-start=&quot;172&quot; data-end=&quot;284&quot;&gt;根據分析師的彙整數據，達美樂第四季美國同店銷售年增率為3.7%，高於分析師預估的3.47%。公司表示，預期2026財年（Fiscal Year 2026）美國同店銷售年增",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "川普新關稅掀不確定性 美債殖利率走低",
-      "url": "https://news.cnyes.com/news/id/6349839",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美國公債周一 (23 日) 走強，在川普揚言持續推動貿易戰、並宣布對所有國家商品課徵 15% 新關稅之際，市場不確定性升溫，資金轉向避險資產。隨著股市走低，投資人湧入政府公債，帶動各年期殖利率全面下滑。紐約早盤交投清淡，10 年期公債殖利率下跌 4 個基點至 4.04%。&lt;/p&gt;\n\n&lt;p&gt;此前，美國最高法院裁定川普依緊急權力法實施的部分關稅措施違法，但川普隨即宣布新一輪全面性關稅。市場一方面評估新關稅對全球貿易與經濟成長的影響，另一方面也關注關稅收入減少是否意味美國政府需增加發債規模，以彌補財政缺口。&lt;/p&gt;\n\n&lt;p&gt;TD 證券美國利率策略主管 Gennadiy Goldberg 指出，市場先前擔憂關稅收入流失與退稅壓力，但退稅程序可能需時，且新關稅仍將帶來部分收入，短期內緩和部分利率上行壓力。不過，政策走向仍存在高度不確定性，對消費與成長前景構成變數。&lt;/p&gt;\n\n&lt;p&gt;聯準會 (Fed) 理事華勒 (Christopher Waller) 同日表示，最高法院裁決對其貨幣政策判斷影響有限。他指出，",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "AI來搶飯碗？資安股連兩天大跌",
-      "url": "https://news.cnyes.com/news/id/6349866",
-      "source": "鉅亨網(tech)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;網路安全類股周一 (23 日) 連續第二天下跌，在人工智慧（AI）安全工具問世後，投資人擔憂產業既有商業模式恐遭顛覆。AI 新創公司 Anthropic 上周五為旗下 Claude 模型推出安全工具，宣稱可掃描軟體程式碼漏洞並提出修補建議，引發市場對傳統資安業務可能被取代的疑慮。&lt;/p&gt;\n\n&lt;p&gt;賣壓延續至周一，CrowdStrike(CRWD-US) 與 Zscaler(ZS-US) 盤中雙雙重挫約 9%，Netskope(NTSK-US) 跌近 10%，SailPoint(SAIL-US) 下滑 6%，Okta(OKTA-US)、SentinelOne(S-US) 與 Fortinet(FTNT-US) 均下跌逾 4%。Palo Alto Networks(PANW-US) 跌約 2%，Cloudflare(NET-US) 下跌 7%。追蹤相關產業的 iShares Cybersecurity &amp; Tech ETF(IHAK-US) 下挫近 4%。&lt;/p&gt;\n\n&lt;p&gt;部分市場人士擔心，AI 工具若能快速偵測漏洞",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;根據FactSet最新調查，共18位分析師，對Hudbay Minerals Inc.(HBM-US)做出2026年EPS預估：中位數由1.57元上修至1.61元，其中最高估值2.03元，最低估值0.93元，預估目標價為29.24元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt",
+      "timeStr": "上午03:01",
       "relatedArticles": []
     }
   ],
@@ -247,7 +126,7 @@
   "keywords7d": [
     {
       "word": "US",
-      "count": 317,
+      "count": 327,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：TotalEnergies SE - ADR(TTE-US)EPS預估下修至6.61元，預估目標價為79.00元",
@@ -379,7 +258,7 @@
     },
     {
       "word": "美元",
-      "count": 157,
+      "count": 158,
       "articles": [
         {
           "title": "道瓊期貨上漲約100點 黃金失守5000美元",
@@ -445,7 +324,7 @@
     },
     {
       "word": "EPS",
-      "count": 143,
+      "count": 151,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -577,7 +456,7 @@
     },
     {
       "word": "川普",
-      "count": 108,
+      "count": 109,
       "articles": [
         {
           "title": "川普透露正與習近平磋商 對台軍售「很快有決定」",
@@ -841,7 +720,7 @@
     },
     {
       "word": "中速",
-      "count": 91,
+      "count": 92,
       "articles": [
         {
           "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.06%，報127.49美元",
@@ -901,6 +780,72 @@
           "title": "盤中速報 - 連貫(COHR-US)大跌5.24%，報205.85美元",
           "url": "https://news.cnyes.com/news/id/6346244",
           "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "關稅",
+      "count": 82,
+      "articles": [
+        {
+          "title": "從61%拒買到過半不排斥！關稅大砍後 加拿大人買中國電動車意願翻轉",
+          "url": "https://news.cnyes.com/news/id/6345928",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "萬丹農民送紅豆餅讚「守住關稅」 賴清德車內開箱：我喜歡吃！",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345579",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
+          "url": "https://news.cnyes.com/news/id/6347712",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
+          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "川普動用IEEPA升高關稅 美最高法院判決違法",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346935",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
+          "url": "https://news.cnyes.com/news/id/6347775",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346949",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
+          "url": "https://www.cna.com.tw/news/aopl/202602210007.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "市場衡量美最高院關稅裁定影響　美股收紅",
+          "url": "https://www.cna.com.tw/news/afe/202602210011.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -966,72 +911,6 @@
         {
           "title": "銀髮族年菜「軟食力」攻略 營養師分享5大健康飲食原則",
           "url": "https://health.ltn.com.tw/article/breakingnews/5345428",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "關稅",
-      "count": 80,
-      "articles": [
-        {
-          "title": "從61%拒買到過半不排斥！關稅大砍後 加拿大人買中國電動車意願翻轉",
-          "url": "https://news.cnyes.com/news/id/6345928",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "萬丹農民送紅豆餅讚「守住關稅」 賴清德車內開箱：我喜歡吃！",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345579",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
-          "url": "https://news.cnyes.com/news/id/6347712",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
-          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "川普動用IEEPA升高關稅 美最高法院判決違法",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346935",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
-          "url": "https://news.cnyes.com/news/id/6347775",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346949",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://www.cna.com.tw/news/aopl/202602210007.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "市場衡量美最高院關稅裁定影響　美股收紅",
-          "url": "https://www.cna.com.tw/news/afe/202602210011.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
           "source": "自由時報",
           "content": null
         }
@@ -1237,7 +1116,7 @@
     },
     {
       "word": "大跌",
-      "count": 62,
+      "count": 63,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1.44%，報8020.31點",
@@ -3348,6 +3227,72 @@
       ]
     },
     {
+      "word": "第一",
+      "count": 29,
+      "articles": [
+        {
+          "title": "初一迎季風！氣象專家曝多地降「馬年第一場雨」",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344916",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美菲聲明重申台海和平重要性 阻第一島鏈遭侵略",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5344956",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "第一個沒有媽媽的過年 小嫻包大紅包給爸爸惹鼻酸",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5344883",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "第一個沒有爸爸的除夕夜 老蕭下廚寵妻…Summer甜喊：我嫁的真好",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345005",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「香菜控」蕭美琴馬年第一驚喜 獲香菜全餐+香菜乖乖！",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345136",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "網球》瑞士天王費德爾後第一人！瓦林卡最後一季回春重返百大寫紀錄",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345210",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "雙火馬年「第一個紅包」這麼用！啟動12生肖「自富」金鑰",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345369",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "祀典武廟主委疑染諾羅病毒嘔濺總統  林聖哲：第一時間已換衣及消毒",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345603",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "目睹武廟主委嘔吐、老婦熱暈 賴總統發聲：健康第一",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345650",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "祀典武廟主委疑染諾羅嘔吐噴濺到總統  黃偉哲：第一時間即表達關心",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345729",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "智慧",
       "count": 29,
       "articles": [
@@ -3409,72 +3354,6 @@
           "title": "Meta首款AI智慧手錶要來了！「Malibu 2」主打健康追蹤＋AI助理",
           "url": "https://news.cnyes.com/news/id/6346840",
           "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "第一",
-      "count": 28,
-      "articles": [
-        {
-          "title": "初一迎季風！氣象專家曝多地降「馬年第一場雨」",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5344916",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美菲聲明重申台海和平重要性 阻第一島鏈遭侵略",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5344956",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "第一個沒有媽媽的過年 小嫻包大紅包給爸爸惹鼻酸",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5344883",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "第一個沒有爸爸的除夕夜 老蕭下廚寵妻…Summer甜喊：我嫁的真好",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345005",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「香菜控」蕭美琴馬年第一驚喜 獲香菜全餐+香菜乖乖！",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345136",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "網球》瑞士天王費德爾後第一人！瓦林卡最後一季回春重返百大寫紀錄",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345210",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "雙火馬年「第一個紅包」這麼用！啟動12生肖「自富」金鑰",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345369",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "祀典武廟主委疑染諾羅病毒嘔濺總統  林聖哲：第一時間已換衣及消毒",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345603",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "目睹武廟主委嘔吐、老婦熱暈 賴總統發聲：健康第一",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345650",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "祀典武廟主委疑染諾羅嘔吐噴濺到總統  黃偉哲：第一時間即表達關心",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345729",
-          "source": "自由時報",
           "content": null
         }
       ]
