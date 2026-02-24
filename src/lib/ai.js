@@ -78,9 +78,22 @@ const reportSchema = {
                 },
                 required: ["title", "summary", "impact", "related_news_ids"]
             }
+        },
+        relations: {
+            type: SchemaType.ARRAY,
+            description: "實體之間的關聯對 (用於知識圖譜)",
+            items: {
+                type: SchemaType.OBJECT,
+                properties: {
+                    from: { type: SchemaType.STRING, description: "來源實體 (如: NVIDIA)" },
+                    to: { type: SchemaType.STRING, description: "目標實體 (如: TSMC)" },
+                    type: { type: SchemaType.STRING, description: "關聯類型 (如: 供應鏈, 競爭, 政策影響)" }
+                },
+                required: ["from", "to", "type"]
+            }
         }
     },
-    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events"]
+    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events", "relations"]
 };
 
 async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
@@ -164,7 +177,8 @@ ${contextPrompt}
 - sector_stats: 評估四大板塊情緒 (-1.0 ~ 1.0)。
 - entities: 提取 5-8 個關鍵實體，並嘗試附上 ticker (如 2330.TW)。
 - summary: 請使用 HTML 格式，包含重點標註。
-- **events (核心任務)**: 請從所有新聞中歸納出 3-5 個「重大市場趨勢事件」。每個事件需包含一個有力標題、一段核心解析、對市場的影響評估，以及對應的新聞 ID 列表。即使新聞很多，也請精確合併。
+- **events**: 請從所有新聞中歸納出 3-5 個「重大市場趨勢事件」。每個事件需包含一個有力標題、一段核心解析、對市場的影響評估，以及對應的新聞 ID 列表。即使新聞很多，也請精確合併。
+- **relations (核心任務)**: 請從大盤趨勢與新聞脈絡中，識別出實體間的「動態關聯」。例如：A公司下單給B公司(供應鏈)、C公司與D公司爭奪訂單(競爭)、政策影響某產業等。格式為 {from, to, type}。
 - **特殊重要指標**: 若資料中出現「8zz」或「巴逆逆」，此為知名的「市場反向指標」。若其看好，應顯著提醒短線風險；若其看空，則可能為潛在底部。請將此項觀察融入 summary 分析中。
 
 新聞資料：

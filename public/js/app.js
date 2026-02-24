@@ -37,6 +37,7 @@ async function init() {
         renderKeywordsCloud();
         renderCategories();
         renderTimeline(); // 🟢 v7.2.0
+        renderGraph();    // 🟢 v8.0.0
         renderNewsPage();
 
         // 初始主題
@@ -111,6 +112,58 @@ function renderTimeline() {
             </div>
         `;
     }).join('');
+}
+
+function renderGraph() {
+    const container = document.getElementById('ai-graph-container');
+    const graphDiv = document.getElementById('ai-graph');
+    const relations = appData.relations || [];
+
+    if (relations.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+
+    // 1. 準備節點與連線
+    const nodesMap = new Map();
+    const edges = [];
+
+    relations.forEach(r => {
+        if (!nodesMap.has(r.from)) nodesMap.set(r.from, { id: r.from, label: r.from, color: '#ef4444' });
+        if (!nodesMap.has(r.to)) nodesMap.set(r.to, { id: r.to, label: r.to, color: '#3b82f6' });
+        edges.push({ from: r.from, to: r.to, label: r.type, font: { size: 10, align: 'top' }, arrows: 'to' });
+    });
+
+    const data = {
+        nodes: Array.from(nodesMap.values()),
+        edges: edges
+    };
+
+    const options = {
+        layout: { hierarchical: false },
+        physics: {
+            enabled: true,
+            barnesHut: { gravitationalConstant: -2000, centralGravity: 0.3, springLength: 95 }
+        },
+        nodes: {
+            shape: 'dot',
+            size: 16,
+            font: { color: document.documentElement.classList.contains('dark') ? '#f1f5f9' : '#1e293b', size: 12, face: 'Inter' },
+            borderWidth: 2,
+            shadow: true
+        },
+        edges: {
+            color: { color: '#94a3b8', highlight: '#ef4444' },
+            width: 1,
+            shadow: true,
+            smooth: { type: 'continuous' }
+        }
+    };
+
+    // 2. 渲染 (Vis.js Network)
+    new vis.Network(graphDiv, data, options);
 }
 
 function renderCategories() {

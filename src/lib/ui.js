@@ -9,7 +9,7 @@ const { log } = require('./utils');
 /**
  * v6.0.0 CSR 重構：產出數據 JSON 代替 HTML
  */
-async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = [], events = []) {
+async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = [], events = [], relations = []) {
     ensureDir(publicDir);
     ensureDir(path.join(publicDir, 'data'));
 
@@ -46,6 +46,7 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
         })),
         recentStats: chartData,
         events: events || [],
+        relations: relations || [],
         keywords7d: keywords7d || []
     };
 

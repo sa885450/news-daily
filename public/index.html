@@ -7,6 +7,7 @@
     <title>AI 智能儀表板 - v7.0.0 (智捷戰情室)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap"
@@ -100,6 +101,25 @@
             </div>
             <div id="ai-timeline" class="space-y-4">
                 <!-- Events will be injected here -->
+            </div>
+        </div>
+
+        <!-- 🟢 v8.0.0: 勢力地圖 (知識圖譜) -->
+        <div id="ai-graph-container" class="mt-8 hidden">
+            <div class="flex items-center gap-2 mb-4">
+                <div class="p-1.5 bg-rose-500 rounded text-white mt-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-widest">市場勢力地圖
+                    (Knowledge Graph)</h3>
+            </div>
+            <div id="ai-graph"
+                class="h-[500px] w-full bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-inner overflow-hidden">
+                <!-- Graph will be rendered here -->
             </div>
         </div>
 
