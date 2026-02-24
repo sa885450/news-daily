@@ -1,118 +1,178 @@
 {
-  "updateTime": "2026-02-24T00:01:10.176Z",
-  "fullDateStr": "2026/2/24 · 更新於 08:01:10",
+  "updateTime": "2026-02-24T03:01:02.323Z",
+  "fullDateStr": "2026/2/24 · 更新於 11:01:02",
   "aiResult": {
-    "sentiment_score": -0.85,
+    "sentiment_score": -0.68,
     "dimensions": {
-      "policy": -0.9,
-      "market": -0.8,
-      "industry": -0.75,
-      "international": -0.88,
+      "policy": -0.85,
+      "market": -0.7,
+      "industry": -0.45,
+      "international": -0.8,
       "technical": -0.6
     },
     "entities": [
       {
-        "name": "亞馬遜",
-        "sentiment": "neutral",
-        "ticker": "AMZN.US"
-      },
-      {
-        "name": "CrowdStrike",
+        "name": "IBM",
         "sentiment": "negative",
-        "ticker": "CRWD.US"
-      },
-      {
-        "name": "輝達",
-        "sentiment": "neutral",
-        "ticker": "NVDA.US"
-      },
-      {
-        "name": "Uber",
-        "sentiment": "negative",
-        "ticker": "UBER.US"
+        "ticker": "IBM.US"
       },
       {
         "name": "Anthropic",
-        "sentiment": "negative",
+        "sentiment": "positive",
         "ticker": null
       },
       {
-        "name": "ServiceNow",
+        "name": "群益台ESG低碳50",
+        "sentiment": "positive",
+        "ticker": "00923.TW"
+      },
+      {
+        "name": "台積電",
+        "sentiment": "neutral",
+        "ticker": "2330.TW"
+      },
+      {
+        "name": "聯邦快遞",
+        "sentiment": "neutral",
+        "ticker": "FDX.US"
+      },
+      {
+        "name": "DoorDash",
         "sentiment": "negative",
-        "ticker": "NOW.US"
+        "ticker": "DASH.US"
       }
     ],
-    "summary": "<h3>【逆勢大師深度報告：恐慌情緒的高牆，正是價值回歸的護城河】</h3><p>今日市場延續昨日的系統性拋售，恐慌指標已進入極度貪婪的對立面。從增量分析看，昨日是<b>「技術債」</b>的修正，今日則演變為針對<b>「資本支出獲利能力」</b>與<b>「AI 顛覆性恐懼」</b>的無差別殺盤。</p><h4>1. 深度分析：亞馬遜與資本支出的「錯視」</h4><p>市場因 <b>Amazon (AMZN.US)</b> 的 120 億美元資料中心投資而恐慌，導致月跌幅擴大至 14%。然而，身為價值投資者，我們應視此為<b>長期競爭壁壘</b>的加固，而非單純的開支。市場在恐慌時往往忽視了 AWS 的結構性領先。<h4>2. 產業震盪：反烏托邦敘事下的資安股超跌</h4><p>Citrini Research 的反烏托邦報告與 Anthropic 的新工具引發資安與軟體股（如 <b>CRWD.US</b>、<b>DDOG.US</b>）重挫 10%。分析師已指出 Claude Code Security 並非即時防護系統，這屬於典型的<b>「敘事殺」</b>。當市場對未來極度悲觀、甚至出現類似「反向指標」般的集體性放空時（如輝達空單達 500 億），往往離潛在的結構性底部不遠。</p><h4>3. 政策風險：232 條款的國安稅收化</h4><p>川普擬動用 232 條款繞過最高法院，這將對電池、電信等六大產業造成成本衝擊。這是目前真正的<b>宏觀硬傷</b>，需避開受關稅直接衝擊的製造業，轉向具備雲端議價能力的軟體龍頭。</p><h4>結論：</h4><p>當前市場情緒雖未見「巴逆逆」式的指標性轉折信號，但資安與雲端龍頭的超跌已提供顯著的<b>安全邊際</b>。建議在輝達財報前分批佈局被誤殺的雲端基礎建設股。</p>",
+    "summary": "<h3>【逆勢大師深度報告：從「支出恐懼」到「生存焦慮」，價值在廢墟中閃耀】</h3><p>今日市場情緒從昨日對亞馬遜資本支出的「增長疑慮」，劇烈演變為對傳統科技巨頭生存基礎的<b>「顛覆恐慌」</b>。IBM (IBM.US) 創下 25 年來最大單日跌幅，主因於 Anthropic 推出能改寫老舊代碼的 AI 工具，市場正無差別地拋售任何具備「被取代風險」的資產。</p><h4>1. 深度分析：AI 顛覆論的過度反應</h4><p>市場目前陷入極端悲觀，將 AI 視為<b>「舊世界的終結者」</b>而非工具。然而，身為價值投資者，我們應注意到 IBM 雖受創，但其政經客戶關係與系統整合能力並非單純代碼轉換可取代。當前 13% 的跌幅已初步震出恐慌籌碼，提供了<b>安全邊際</b>的觀察窗口。</p><h4>2. 政策博弈：關稅 2.0 的法律空窗期</h4><p>川普政府改採 122 條款課徵 15% 關稅，與最高法院的裁決形成對峙。這導致 <b>FedEx (FDX.US)</b> 等企業啟動退稅訴訟，市場因法律不確定性而動盪。但對於台灣半導體產業而言，龔明鑫部長強調的 <b>232 條款優惠</b> 仍是護城河，台積電 (2330.TW) 的地位依然穩固，00923.TW 的高息率反而成為震盪中的現金流防線。</p><h4>3. 逆勢大師觀察：反向指標的暗示</h4><p>雖然新聞中未見「8zz」或「巴逆逆」的直接評論，但當前市場「AI 即破產」的極端集體共識，已符合<b>「散戶情緒頂峰」的反面</b>。塔勒布的破產警告雖具警示價值，但也往往標誌著恐懼情緒的最高點。<b>策略建議：</b> 鎖定具備強大現金流、且在 AI 浪潮中被誤認為「過時」但實際擁有專利壁壘的傳統巨頭，分批佈局。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "美股動態"
+        "category": "半導體"
       },
       {
         "id": 2,
-        "category": "AI產業"
+        "category": "人工智慧"
       },
       {
         "id": 3,
-        "category": "地緣政治"
+        "category": "國際貿易"
       }
     ],
     "sector_stats": {
-      "tech": -0.92,
-      "finance": -0.4,
+      "tech": -0.65,
+      "finance": -0.3,
       "manufacturing": -0.75,
-      "service": -0.65
+      "service": -0.5
     }
   },
   "newsData": [
     {
-      "title": "AI支出令市場心慌 亞馬遜擬花120億美元建資料中心 股價應聲挫逾2% 月跌逾14%",
-      "url": "https://news.cnyes.com/news/id/6349964",
+      "title": "00923配息1.71元2/25最後買進日 法人看旺AI科技領軍台股行情",
+      "url": "https://news.cnyes.com/news/id/6350382",
+      "source": "鉅亨網(tw_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;金馬年到來，在 AI 科技股領軍下，台股氣勢如虹，再寫新高。財富管理專家表示，台灣景氣穩健向好，加上全球 AI 浪潮持續推進，應用加速落地，台股相關供應鏈可望持續受惠，金馬年表現可期，台股市值型 ETF 更是投資人可多加運用掌握台股行情的工具。&lt;/p&gt;\n\n&lt;p&gt;財富管理專家進一步指出，群益台 ESG 低碳 50(00923-TW) 本周也將迎來除息，此次每股配發 1.71 元，以期前公告日收盤價來推算，年化配息率上看 12%，不僅刷新自身配息紀錄，最近一次配息表現也是所有台股市值型 ETF 中的配息王。&lt;/p&gt;\n\n&lt;p&gt;觀察 00923 過去配息也都順利完成填息任務，受益人息利雙收，想參與 00923 本次領息的投資人，2 月 25 日為最後買進日，不僅能在年後先領息，還能順勢把握台股成長行情，將年終獎金再放大。&lt;/p&gt;\n\n&lt;p&gt;市場法人分析，從基本面來看，市場預估台股企業於 2026 年可望繳出雙位數增長，且有機會持續上修，整體經濟動能處於強勁擴張期，特別在 AI 應用需求驅動下，資本設備與產能",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "15%全球關稅衝擊部分傳產 龔明鑫：將爭取ART與232優惠續行 對產業韌性有信心",
+      "url": "https://news.cnyes.com/news/id/6350326",
+      "source": "鉅亨網(tw_stock)",
+      "category": "半導體",
+      "thumbnail": null,
+      "content": "&lt;p&gt;針對美國依據 122 條款對全球徵收 15% 關稅並疊加最惠國待遇（MFN）稅率之最新情勢，經濟部長龔明鑫於今（24）日「關稅最新情勢說明記者會中」提出總體經濟與個別產業的衝擊評估報告。他強調相較於去年暫時性關稅高達 20% 疊加 MFN 時，今年整體貿易環境已有所改善，政府目前正透過「台美對等貿易協定」（ART）談判成果與既有 232 條款優惠爭取最有利條件，只要能爭取公平的競爭環境，台灣產業有信心能應對此次國際經貿變局。&lt;/p&gt;\n\n&lt;p&gt;龔明鑫指出，雖然 15% 疊加稅率對我國出口造成挑戰，但相較於去年暫時性關稅高達 20% 疊加 MFN 的情況，今年整體貿易環境已有所改善。政府目前正透過「台美對等貿易協定」（ART）談判成果與既有 232 條款優惠，力保台灣半導體及資通訊產業的競爭優勢，並將針對受創較重的傳統產業提供重點支持。&lt;/p&gt;\n\n&lt;p&gt;龔明鑫表示，若以 2024 年完全無對等關稅的時期為基準，目前的 15% 關稅確實帶來負面影響；然而，與去年的 20% 高稅率相比，今年的實質負擔已下降，且台灣與競爭對手國，",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "美徵收15%全球關稅疊加MFN 鄭麗君：向美方爭取已簽署ART及投資MOU效力",
+      "url": "https://news.cnyes.com/news/id/6350290",
+      "source": "鉅亨網(tw_stock)",
+      "category": "人工智慧",
+      "thumbnail": null,
+      "content": "&lt;p&gt;針對美國近期依據 122 條款啟動 15% 全球關稅計畫，行政院副院長鄭麗君於今（24）日上午九時率領相關部會召開記者會，深入剖析此項貿易變革對台灣產業的衝擊並說明因應作為。她指出，此次 15% 關稅將與既有的最惠國待遇（MFN）稅率疊加，對全球貿易體系造成深遠影響。政府已啟動緊急應變機制，除透過外交管道向美方爭取豁免，更由經濟部與財政部協同各產業公會，強化供應鏈韌性並推動轉型，以降低出口成本壓力，力保台灣出口競爭力。&lt;/p&gt;\n\n&lt;p&gt;因應美國最高法院於 20 日裁定總統川普引用「國際緊急經濟權力法」（IEEPA）加徵關稅屬違法，美方隨即改依 1974 年貿易法「122 條款」對全球徵收 10% 關稅，隨後更進一步宣布調高至 15%。&lt;/p&gt;\n\n&lt;p&gt;鄭麗君在記者會中說明，這項新稅率是疊加在原有的 MFN 稅率之上，這與先前台美談判達成的 15%「不疊加」協議情勢有所不同。行政院長卓榮泰（Cho Jung-tai）已於 21 日召開長達 7 小時的跨部會會議，全面盤點資通訊、半導體及傳統產業的受影響程度。&lt;/p&g",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "FedEx忍到裁決後開第一槍 告政府討回川普關稅",
+      "url": "https://news.cnyes.com/news/id/6349976",
+      "source": "鉅亨網(wd_stock)",
+      "category": "國際貿易",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美國物流巨頭聯邦快遞 (FedEx) (FDX-US) 周一 (23 日) 正式向美國政府提告，要求「全額退還」其因總統川普去年單方面加徵關稅所支付的款項。此前，美國最高法院上周裁定，川普依據「國際緊急經濟權力法」(IEEPA)實施的相關關稅屬於違法。&lt;/p&gt;\n\n&lt;p&gt;FedEx 此舉被視為最高法院裁決後，首家主要美國企業正式提起退款訴訟。早在裁決出爐前，已有其他企業向法院提出訴訟，主張其退稅權利，其中包括零售倉儲巨頭好市多 (Costco) (COST-US)。這些案件目前仍在紐約的美國國際貿易法院 (CIT) 審理中，FedEx 本次訴訟亦提交至同一法院。&lt;/p&gt;\n\n&lt;p&gt;最高法院在上周五的判決中明確指出，國際貿易法院對 IEEPA 關稅擁有「專屬管轄權」。FedEx 及其關聯公司 FedEx Logistics 在 11 頁的訴狀中表示，「原告要求被告全額退還其依 IEEPA 向美國政府支付的所有關稅。」被告包括負責徵收關稅的美國海關及邊境保衛局 (CBP)、其局長 Rodney Scott，以及美國政府。&lt;",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "Anthropic估值飆3500億美元 啟動60億美元員工賣股計畫",
+      "url": "https://news.cnyes.com/news/id/6350039",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國電商與雲端巨頭 Amazon.com(亞馬遜)(AMZN-US) 周一 (23 日) 股價收跌 2.3%，此前公司宣布將在美國南部推動大規模基礎建設計畫，擬投資 120 億美元在路易斯安那州西北部建立首批資料中心園區，以強化其雲端運算與人工智慧布局。&lt;/p&gt;\n\n&lt;p&gt;該計畫將落腳於卡多郡與博西爾郡，預計創造 540 個全職直接就業機會，並帶動超過 1,700 個相關職位。儘管投資規模龐大、對地方經濟帶來顯著效益，但市場對於資本支出快速攀升仍存疑慮。過去一個月，亞馬遜股價已累計下跌 14.3%，反映投資人對 AI 相關資本開支過於積極的擔憂。&lt;/p&gt;\n\n&lt;p&gt;亞馬遜全球事務與法務長 David Zapolsky 表示，「亞馬遜對路易斯安那州西北部的 120 億美元投資，將建設支援 AI 與雲端運算的下一代資料中心園區，為當地社區帶來機會。」公司同時承諾，將出資 4 億美元改善公共供水基礎設施，並自行負擔 100% 的公用事業升級成本，以減輕對地方資源的壓力。&lt;/p&gt;\n\n&lt;p&gt;為深化與社區關係，這",
-      "timeStr": "上午08:01",
+      "content": "&lt;p&gt;彭博引述消息人士透露， Anthropic 正以約 3,500 億美元的估值，向部分現任與前任員工提供出售持股的機會，讓他們得以按近期 300 億美元募資所對應的估值水準變現。&lt;/p&gt;\n\n&lt;p&gt;據悉，該公司已為此次股份轉讓案籌措約 50 億至 60 億美元的資金，最終的交易總額將取決於符合資格的員工參與程度，相關細節尚未定案，未來仍有變動的可能。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 本月稍早完成最新一輪募資，募資後估值（post-money）達 3,800 億美元，已包含投資人投入的資金。對於此次新一輪股份出售，公司拒絕置評。&lt;/p&gt;\n\n&lt;p&gt;消息人士透露，此次交易的股份將由外部投資人承接，而非由 Anthropic 本身回購，凡在公司任職滿 12 個月的現任及前任員工，皆可參與本次交易。&lt;/p&gt;\n\n&lt;p&gt;在未進行併購或首次公開發行（IPO）的情況下，二級市場股份出售已成為新創公司讓員工分享公司估值成長成果的常見方式。隨著愈來愈多大型 AI 新創選擇延後上市，此類安排在競爭",
+      "timeStr": "上午11:01",
       "relatedArticles": []
     },
     {
-      "title": "反烏托邦AI報告震撼華爾街 支付與軟體股全面承壓",
-      "url": "https://news.cnyes.com/news/id/6349932",
-      "source": "鉅亨網(wd_stock)",
-      "category": "美股動態",
-      "thumbnail": null,
-      "content": "&lt;p&gt;獨立研究機構 Citrini Research 日前發布情境推演，假設 AI 在 2028 年引發大規模白領裁員、資產管理產業被顛覆並侵蝕稅基，引發市場高度關注，這一篇描繪人工智慧 (AI) 可能重塑經濟版圖的網路文章，意外在市場投下震撼彈，拖累支付與軟體族群週一 (23 日) 全面走弱。&lt;/p&gt;\n\n&lt;p&gt;Citrini Research 發布一份探討 AI 快速發展潛在風險的反烏托邦情境分析，報告設定的情境並非 AI 發展失敗，反而是假設技術進展超出預期，而標普 500 指數 (SPX) 仍可能重挫 38%。&lt;/p&gt;\n\n&lt;p&gt;該報告以 2028 年 6 月為假想時間點，描述 AI 能力快速躍進後，可能引發大規模白領工作流失，並稱之為「全球智慧危機」，並用以檢視 AI 若持續高速擴散，經濟可能面臨的結構性壓力。&lt;/p&gt;\n\n&lt;p&gt;報告推演，自 2025 年底起，代理式程式開發工具將使開發者能在數週內複製中型軟體即服務&nbsp;(SaaS) 產品，進一步壓縮企業軟體定價與續約動能。情境中並假設，Se",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "反擊最高法院裁決！川普擬動用232條款 對電池、電信等六大產業課徵國安關稅",
-      "url": "https://news.cnyes.com/news/id/6349967",
-      "source": "鉅亨網(wd_stock)",
-      "category": "AI產業",
-      "thumbnail": null,
-      "content": "&lt;p&gt;在美國最高法院上周裁定美國總統川普第二任期內多項關稅處分無效後，川普政府正考慮對大約六個產業祭出新的國家安全關稅。&lt;/p&gt;\n\n&lt;p&gt;華爾街日報 (WSJ) 引述知情人士說法報導，新關稅計畫涵蓋的產業包括大型電池、鑄鐵與鐵製配件、塑膠管材、工業化學用品，以及電網與電信設備。這些關稅的依據是「1962 年貿易擴張法」(Trade Expansion Act of 1962)第 232 條款，該條款賦予總統基於國家安全風險徵收廣泛關稅的權力。&lt;/p&gt;\n\n&lt;h6&gt;另闢蹊徑課 徵 232 條款關稅&lt;/h6&gt;\n\n&lt;p&gt;這批擬議中的第 232 條關稅，將與上周五最高法院推翻多項關稅以來所宣布的其他稅項分開執行。&lt;/p&gt;\n\n&lt;p&gt;川普上周五宣布的措施包括：一項為期 150 天的 15% 全球性新關稅，以及計劃在該期限過後根據「貿易法」第 301 條發布的多種關稅。&lt;/p&gt;\n\n&lt;p&gt;目前受 232 條款關稅影響的產品，先前都豁免於川普第二任期的其他關稅。川普在第二任期",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "財報倒數！輝達空單規模居冠 逼近500億美元",
-      "url": "https://news.cnyes.com/news/id/6349931",
-      "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
-      "thumbnail": null,
-      "content": "&lt;p&gt;輝達財報公布在即，市場空頭部位動向引發關注。研究機構 S3 Partners 最新報告指出，輝達目前為標普 500 指數中名目空頭曝險最大的個股，規模約達 500 億美元。&lt;/p&gt;\n\n&lt;p&gt;S3 Partners 表示，輝達股價近幾個月維持區間整理，但空頭部位持續累積，是華爾街放空部位最大的一檔股票。&lt;/p&gt;\n\n&lt;p&gt;截至目前，空頭合計持有約 2.65 億股的名目空頭部位。依 FactSet 數據計算，輝達流通在外股數約 245 億股，公司市值超過 4.6 兆美元，為美國市值最高企業。&lt;/p&gt;\n\n&lt;p&gt;報告指出，若以美元風險衡量，輝達的空頭曝險居標普 500 之冠。整體來看，標普 500 前十大空頭部位合計約 2400 億美元，占整體指數約 1.1 兆美元空頭規模的近四分之一。&lt;/p&gt;\n\n&lt;p&gt;不過，S3 分析認為，輝達目前並不具備典型軋空行情的條件。雖然空頭部位在股數與流通占比上同步上升，但股價並未出現明顯壓力性下跌，反而維持盤整，顯示市場情緒偏向審慎觀望，而非恐慌性看空",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "CrowdStrike重挫近10%資安股嚇跌 Anthropic推AI安全工具引疑慮",
-      "url": "https://news.cnyes.com/news/id/6349920",
+      "title": "弱勢美元下的多空對決：歐元、日圓的資產保衛戰",
+      "url": "https://news.cnyes.com/news/id/6350319",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;據《路透》報導，CrowdStrike(CRWD-US) 與 Datadog(DDOG-US) 等多家資安公司股價周一 (23 日) 重挫，投資人持續評估 AI 新創 Anthropic 推出新安全工具對產業的潛在影響。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 推出的新功能 Claude Code Security，旨在偵測開源軟體程式庫中的高嚴重性漏洞，並提供修補程式以修復錯誤。&lt;/p&gt;\n\n&lt;p&gt;CrowdStrike 股價重挫 9.8%、Datadog 大跌逾 11%，Zscaler(ZS-US) 跌逾 10%，Fortinet(FTNT-US) 跌幅 5.5%，Okta(OKTA-US) 跌約 6%，Palo Alto Networks(PANW-US) 下跌 3%，SentinelOne(S-US) 則下跌 4.6%。&lt;/p&gt;\n\n&lt;p&gt;近幾個月來，隨著市場憂心 AI 工具能力日益提升，軟體股普遍承壓，尤其是在 Anthropic 為其大型語言模型 Claude 推出外掛功能後，市場視此為該新創",
-      "timeStr": "上午08:01",
+      "content": "&lt;h6&gt;&lt;strong&gt;前言：美元霸權的鬆動與資金的焦慮&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;進入 2026 年，市場的風向已經變了。&lt;/p&gt;\n\n&lt;p&gt;回顧今年 1 月份，全球市場出現了一波暴力的拉升行情，背後一個更為核心的宏觀敘事正在確立&mdash;&mdash;全球市場對於「弱勢美元」的預期，以及美元購買力下降的事實，已成為持續存在的共識。&lt;/p&gt;\n\n&lt;p&gt;回顧過去幾年，美元基本上就是市場的「長勝軍」。在那個高利率的時代，多數的央行、投資銀行，在美元強勢的過程中，都會毫不猶豫地把資產配置在美元上。邏輯很簡單，一個國家貨幣強利率高，投入能享受到「匯率上漲」與「利率加成」的雙重優勢。這就是所謂的「貨幣平價理論」。&lt;/p&gt;\n\n&lt;p&gt;但從 2023 到 2025 年，當市場開始預期聯準會（Fed）進入降息循環，甚至正式啟動降息時，資金開始從美元流出&lt;/p&gt;\n\n&lt;p&gt;進入 2026 年後，這個態勢更加明顯。我們看到美元指數好一陣子都站不",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "1750億美元關稅大餅誰能分？逾千企業申請退稅 美財政部傾向還稅於民",
+      "url": "https://news.cnyes.com/news/id/6349968",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美國最高法院日前裁定，推翻總統川普依據緊急權力所課徵的關稅措施，使已徵收的關稅合法性遭否決，市場焦點隨即轉向是否以及何時啟動退稅程序。據估計，涉及金額高達 1,750 億美元，目前已有超過 1,000 家企業在裁決出爐前申請退還關稅，預料人數還將持續增加。&lt;/p&gt;\n\n&lt;p&gt;多數企業預計將循司法途徑爭取退款，但具體時程仍不明朗。六名大法官的多數意見並未說明退款方式與時間表。持不同意見的大法官 Brett Kavanaugh 直言，相關程序「可能會是一團亂」，川普亦表示「我們接下來五年都可能在法院打官司」。負責處理相關程序的美國國際貿易法院 (CIT) 目前尚未對裁決後續發表意見。&lt;/p&gt;\n\n&lt;p&gt;民主黨籍官員已率先要求退還消費者所支付的關稅。伊利諾州州長 J.B. Pritzker 向川普寄出一張「逾期帳單」，金額達 86 億美元，約合每戶家庭 1,700 美元。加州州長 Gavin Newsom 則表示，加州家庭平均應退還約 1,751 美元。&lt;/p&gt;\n\n&lt;p&gt;民主黨籍聯邦參議員 Ron Wyde",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "AI重塑產業 黑天鵝作者示警：軟體業恐現破產潮、股市波動加劇",
+      "url": "https://news.cnyes.com/news/id/6349921",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;據《彭博》報導，《黑天鵝效應》作者塔勒布 (Nassim Taleb) 向投資人示警，隨著 AI 驅動的股市漲勢進入更脆弱階段，市場波動將進一步升高，軟體產業部分公司甚至可能出現破產。&lt;/p&gt;\n\n&lt;p&gt;這位市場風險理論作家表示，市場低估了結構性風險，同時高估了當前 AI 領導者的持久競爭力。儘管 AI 將創造龐大利潤，他提醒，歷史顯示早期先驅往往會被後來者取代。&lt;/p&gt;\n\n&lt;p&gt;塔勒布在邁阿密由 Universa Investments 舉辦的活動期間受訪表示，「AI 一定會讓某些人賺大錢，但未必是現在市場熱捧的那些 AI 概念公司。」他指出，隨著技術不穩定、競爭加劇與地緣政治變化重塑產業格局，軟體領域部分公司可能面臨破產。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數周一下跌約 1%，為近期一連串拋售中的最新一波，投資人同時消化關稅不確定性與兩種相互競爭的 AI 敘事所帶來的焦慮。投資人一方面擔心，快速發展的 AI 工具將顛覆以訂閱制服務為主的軟體公司，因程式開發變得更容易，另一方面，競逐 AI 基礎設施",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "川普警告各國別趁機「耍花招」 否則將面臨更高關稅",
+      "url": "https://news.cnyes.com/news/id/6349953",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;在美國最高法院上周五裁定撤銷「對等關稅」後，美國總統川普周一 (23 日) 向各個貿易夥伴發出嚴厲警告：若有任何國家企圖背棄近期與美國達成的貿易協議，都將面臨依其他法源祭出、稅率更高的關稅制裁。&lt;/p&gt;\n\n&lt;h6&gt;川普警告「後果自負」&nbsp;&lt;/h6&gt;\n\n&lt;p&gt;川普周一在社群平台 Truth Social 發布多篇貼文，把矛頭指向那些可能因最高法院裁決而蠢蠢欲動的國家。&lt;/p&gt;\n\n&lt;p&gt;他說：「任何想要利用那個荒謬的最高法院裁決來『耍花招』的國家，特別是那些多年來、甚至幾十年來都在『敲詐』美國的國家，將會面臨比近期協議更高、更嚴酷的關稅。後果自負 (BUYER BEWARE!!!)」&lt;/p&gt;\n\n&lt;p&gt;雖然最高法院判定川普援引《國際緊急經濟權力法》(IEEPA) 課徵關稅屬違憲越權，但川普主張，此判決反而確認他能透過「更強大、更令人生厭且具法律確定性」的方式，來動用其他法律授權並課徵關稅。&lt;/p&gt;\n\n&lt;p&gt;此外，他還暗示可能對貿易夥伴加收「許可費」",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "一篇報告嚇崩華爾街！AI顛覆論引爆血洗 IBM慘跌25年最重、兩大產業最危險",
+      "url": "https://news.cnyes.com/news/id/6350037",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;人工智慧（AI）引發的「恐慌性拋售」周一 (23 日) 再度爆發。隨著市場對 AI 顛覆性力量的擔憂日益加劇，外送、支付及軟體開發商股價紛紛走避，科技巨擘 IBM 更慘遭拖累，股價創下 25 年來最慘烈的單日跌幅。&lt;/p&gt;\n\n&lt;p&gt;這波跌勢起因於研究機構 Citrini Research 在週末發表的一份看空報告。該報告於周日在社群媒體上公開，透過虛構的未來場景，詳述了 AI 對全球經濟各領域的潛在風險，並點名美食外送平台與信用卡公司將面臨嚴峻挑戰。&lt;/p&gt;\n\n&lt;p&gt;隨後，AI 新創龍頭 Anthropic 在官方部落格透露，其新工具「Claude Code」能協助現代化更新 COBOL 程式語言，這是一種目前仍廣泛運行於 IBM 大型主機上的陳舊語言。&lt;/p&gt;\n\n&lt;p&gt;緊接而來的是《黑天鵝》作者塔雷伯（Nassim Taleb）的警告，他指出投資人應針對軟體產業即將面臨的劇烈波動、甚至是破產潮做好準備，並稱 AI 的多頭行情正進入脆弱階段。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&",
+      "timeStr": "上午11:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "川普國情咨文登場前 市場緊盯川普抗通膨表現",
+      "url": "https://news.cnyes.com/news/id/6349942",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;《Marketwatch》報導，美國總統川普即將於週二 (24 日) 晚間發表國情咨文，外界關注他在壓低生活成本所做的承諾與實際成效。高物價曾是推動川普重返白宮的重要因素，但在第二任期已逾一年之際，川普政府正面臨作為不足的批評聲浪。&lt;/p&gt;\n\n&lt;p&gt;分析指出，川普可望在演說中大力宣傳經濟政績並釋出新的降價構想。不過，就在國情咨文前夕，美國最高法院對其關稅政策投下變數。川普長期將關稅視為提振經濟與保護產業的工具，但批評人士認為，此舉反而推升美國企業與消費者成本。&lt;/p&gt;\n\n&lt;p&gt;整體而言，共和黨政府在減稅與避免加稅方面已有具體成果，主要來自去年 7 月通過的大型稅收與支出法案《大而美的法案》(One Big Beautiful Bill Act)。然而，川普本月稍早已表態，短期內不會再推動第二項大型法案，意味著包括他提出的 2,000 美元「關稅紅利」支票等構想，可能暫無立法推進空間。&lt;/p&gt;\n\n&lt;p&gt;Wolfe Research 政策與政治主管 Tobin Marcus 在報告中指出，他仍預期今年",
+      "timeStr": "上午11:01",
       "relatedArticles": []
     }
   ],
@@ -222,7 +282,7 @@
     },
     {
       "word": "AI",
-      "count": 220,
+      "count": 237,
       "articles": [
         {
           "title": "美股正上演「AI驚嚇交易」白領工作末日論升溫",
@@ -288,7 +348,7 @@
     },
     {
       "word": "美元",
-      "count": 143,
+      "count": 151,
       "articles": [
         {
           "title": "〈紐約匯市〉關鍵數據公布前 美元小漲",
@@ -354,7 +414,7 @@
     },
     {
       "word": "EPS",
-      "count": 133,
+      "count": 138,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -419,74 +479,8 @@
       ]
     },
     {
-      "word": "全球",
-      "count": 106,
-      "articles": [
-        {
-          "title": "下一個暴漲 AI 族群？全球最大 MLCC 供應商村田製作所考慮漲價",
-          "url": "https://finance.technews.tw/2026/02/18/murata-explores/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "YouTube初二遭遇全球大規模當機災情",
-          "url": "https://news.cnyes.com/news/id/6346411",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "Toyota RAV4 六代 2.0 汽油版現身！91 萬元起全球一市場買得到",
-          "url": "https://auto.ltn.com.tw/news/30964",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "廣場精選》蔡英文「想想論壇」首推年度中國報告／中國衝擊2.0 全球警覺",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5340537",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐洲啟動主權 AI 模型挑戰，力爭全球競爭優勢",
-          "url": "https://technews.tw/2026/02/18/europe-launches-sovereign-ai-model-challenge/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "全球1/3人腦中有寄生蟲？ 研究揭人體免疫「自毀開關」",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5345583",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "申惠善「假名媛狂潮」來了！《莎拉的真偽人生》3天衝Netflix全球TOP 3",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345663",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Claude Opus 4.6逼近ASL-4安全門檻！Anthropic示警：AI自我逃逸恐引發全球失控危機",
-          "url": "https://news.cnyes.com/news/id/6346860",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "YouTube全球大當機　官方稱首頁恢復運作",
-          "url": "https://www.cna.com.tw/news/ait/202602180056.aspx",
-          "source": "中央社科技",
-          "content": "（中央社華盛頓17日綜合外電報導）熱門影音分享平台YouTube今天深夜發生大規模當機，全球數以十萬計用戶通報出現問題，首頁目前恢復運作。"
-        },
-        {
-          "title": "Fruit Attraction 2026：塑造蔬果業未來的全球盛會",
-          "url": "https://technews.tw/2026/02/19/fruit-attraction-2026/",
-          "source": "TechNews",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "川普",
-      "count": 104,
+      "count": 112,
       "articles": [
         {
           "title": "川普：美日貿易協議啟動　日首批對美投資含3大項目",
@@ -551,8 +545,140 @@
       ]
     },
     {
+      "word": "全球",
+      "count": 112,
+      "articles": [
+        {
+          "title": "下一個暴漲 AI 族群？全球最大 MLCC 供應商村田製作所考慮漲價",
+          "url": "https://finance.technews.tw/2026/02/18/murata-explores/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "YouTube初二遭遇全球大規模當機災情",
+          "url": "https://news.cnyes.com/news/id/6346411",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "Toyota RAV4 六代 2.0 汽油版現身！91 萬元起全球一市場買得到",
+          "url": "https://auto.ltn.com.tw/news/30964",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "廣場精選》蔡英文「想想論壇」首推年度中國報告／中國衝擊2.0 全球警覺",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5340537",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐洲啟動主權 AI 模型挑戰，力爭全球競爭優勢",
+          "url": "https://technews.tw/2026/02/18/europe-launches-sovereign-ai-model-challenge/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "全球1/3人腦中有寄生蟲？ 研究揭人體免疫「自毀開關」",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5345583",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "申惠善「假名媛狂潮」來了！《莎拉的真偽人生》3天衝Netflix全球TOP 3",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345663",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Claude Opus 4.6逼近ASL-4安全門檻！Anthropic示警：AI自我逃逸恐引發全球失控危機",
+          "url": "https://news.cnyes.com/news/id/6346860",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "YouTube全球大當機　官方稱首頁恢復運作",
+          "url": "https://www.cna.com.tw/news/ait/202602180056.aspx",
+          "source": "中央社科技",
+          "content": "（中央社華盛頓17日綜合外電報導）熱門影音分享平台YouTube今天深夜發生大規模當機，全球數以十萬計用戶通報出現問題，首頁目前恢復運作。"
+        },
+        {
+          "title": "Fruit Attraction 2026：塑造蔬果業未來的全球盛會",
+          "url": "https://technews.tw/2026/02/19/fruit-attraction-2026/",
+          "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "關稅",
+      "count": 97,
+      "articles": [
+        {
+          "title": "萬丹農民送紅豆餅讚「守住關稅」 賴清德車內開箱：我喜歡吃！",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345579",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
+          "url": "https://news.cnyes.com/news/id/6347712",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
+          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "川普動用IEEPA升高關稅 美最高法院判決違法",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346935",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
+          "url": "https://news.cnyes.com/news/id/6347775",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346949",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
+          "url": "https://www.cna.com.tw/news/aopl/202602210007.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "市場衡量美最高院關稅裁定影響　美股收紅",
+          "url": "https://www.cna.com.tw/news/afe/202602210011.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻關稅政策 川普手上還有4大法寶",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346944",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "日本",
-      "count": 93,
+      "count": 96,
       "articles": [
         {
           "title": "AI工程師殺入國會！日本新政黨「未來團隊」拒絕減稅，為何能席捲東京票倉？",
@@ -618,7 +744,7 @@
     },
     {
       "word": "自由",
-      "count": 86,
+      "count": 91,
       "articles": [
         {
           "title": "自由開講》「老」不是退場訊號 從《不老思維》看學習如何重塑第三人生",
@@ -683,74 +809,8 @@
       ]
     },
     {
-      "word": "關稅",
-      "count": 85,
-      "articles": [
-        {
-          "title": "萬丹農民送紅豆餅讚「守住關稅」 賴清德車內開箱：我喜歡吃！",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345579",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
-          "url": "https://news.cnyes.com/news/id/6347712",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
-          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "川普動用IEEPA升高關稅 美最高法院判決違法",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346935",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
-          "url": "https://news.cnyes.com/news/id/6347775",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346949",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://www.cna.com.tw/news/aopl/202602210007.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "市場衡量美最高院關稅裁定影響　美股收紅",
-          "url": "https://www.cna.com.tw/news/afe/202602210011.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻關稅政策 川普手上還有4大法寶",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346944",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "曝光",
-      "count": 84,
+      "count": 86,
       "articles": [
         {
           "title": "（專訪）豬哥亮生前最愛！楊銘威家傳「神級美味」曝光 老爸不留情拆台",
@@ -816,7 +876,7 @@
     },
     {
       "word": "健康",
-      "count": 77,
+      "count": 80,
       "articles": [
         {
           "title": "照護線上》這類黃斑部病變亞洲人風險較高！眼科醫師治療解析，守護視力健康關鍵５大問題（圖文懶人包）",
@@ -882,7 +942,7 @@
     },
     {
       "word": "中速",
-      "count": 77,
+      "count": 78,
       "articles": [
         {
           "title": "盤中速報 - 新思科技(SNPS-US)大漲5.2%，報443.9美元",
@@ -948,7 +1008,7 @@
     },
     {
       "word": "春節",
-      "count": 64,
+      "count": 67,
       "articles": [
         {
           "title": "春節求財錢母「百百款」！ 廖大乙點名這款「金有效」",
@@ -1014,7 +1074,7 @@
     },
     {
       "word": "經典賽",
-      "count": 60,
+      "count": 62,
       "articles": [
         {
           "title": "經典賽》委內瑞拉戰力受挫！雙城明星右投羅培茲驚傳要動TJ手術",
@@ -1080,7 +1140,7 @@
     },
     {
       "word": "伊朗",
-      "count": 59,
+      "count": 61,
       "articles": [
         {
           "title": "連續16年！北韓被列入洗錢高風險國家 與伊朗、緬甸並列",
@@ -1146,7 +1206,7 @@
     },
     {
       "word": "開講",
-      "count": 56,
+      "count": 59,
       "articles": [
         {
           "title": "自由開講》「老」不是退場訊號 從《不老思維》看學習如何重塑第三人生",
@@ -1278,7 +1338,7 @@
     },
     {
       "word": "最高",
-      "count": 49,
+      "count": 51,
       "articles": [
         {
           "title": "「2026年新竹市獎助影視製作拍攝計畫」開跑   最高補助200萬",
@@ -1343,74 +1403,8 @@
       ]
     },
     {
-      "word": "台南",
-      "count": 47,
-      "articles": [
-        {
-          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "韓國瑜台南發春聯：過年不要講太多政治",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》走春翻車畫面連環爆！民眾黨林子宇昔嗆「震懾台南」舊片失控！",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345707",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "兼具教育互動功能 台南學甲動物保護園區3月完工",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345799",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「掃帚庄」保存古早農村文化 台南新營姑爺社區教綁貴黍帚",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345795",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南流當車放置場火警  360輛汽機車受波及",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345839",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "全國UCC典範台南永川醫院春節照常服務 就診量全國居冠",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5346272",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "MLB",
-      "count": 47,
+      "count": 50,
       "articles": [
         {
           "title": "MLB》山本由伸春訓第2次Live BP遭金慧成開轟 外媒點出他的調整",
@@ -1475,66 +1469,66 @@
       ]
     },
     {
-      "word": "法院",
-      "count": 44,
+      "word": "台南",
+      "count": 49,
       "articles": [
         {
-          "title": "南韓法院今宣判尹錫悅「內亂罪」 若判死刑將成光州事件後首例",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345972",
+          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "尹錫悅一審判無期徒刑　法院：派軍隊意圖癱瘓國會",
-          "url": "https://www.cna.com.tw/news/aopl/202602190130.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
+          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
-          "url": "https://news.cnyes.com/news/id/6347350",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
-          "url": "https://news.cnyes.com/news/id/6347702",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
-          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346940",
+          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "最高法院判決關稅違法  川普：恥辱",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346936",
+          "title": "韓國瑜台南發春聯：過年不要講太多政治",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
-          "url": "https://www.cna.com.tw/news/afe/202602210003.aspx",
-          "source": "中央社產經",
+          "title": "自由說新聞》走春翻車畫面連環爆！民眾黨林子宇昔嗆「震懾台南」舊片失控！",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345707",
+          "source": "自由時報",
           "content": null
         },
         {
-          "title": "川普加碼回應最高法院關稅裁決　國際經貿局勢難料",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346950",
+          "title": "兼具教育互動功能 台南學甲動物保護園區3月完工",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345799",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「掃帚庄」保存古早農村文化 台南新營姑爺社區教綁貴黍帚",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345795",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南流當車放置場火警  360輛汽機車受波及",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345839",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全國UCC典範台南永川醫院春節照常服務 就診量全國居冠",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5346272",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
           "source": "自由時報",
           "content": null
         }
@@ -1542,7 +1536,7 @@
     },
     {
       "word": "宣布",
-      "count": 43,
+      "count": 48,
       "articles": [
         {
           "title": "川普政府宣布日本首波360億美元投資美國計畫",
@@ -1607,8 +1601,140 @@
       ]
     },
     {
+      "word": "法院",
+      "count": 45,
+      "articles": [
+        {
+          "title": "南韓法院今宣判尹錫悅「內亂罪」 若判死刑將成光州事件後首例",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345972",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "尹錫悅一審判無期徒刑　法院：派軍隊意圖癱瘓國會",
+          "url": "https://www.cna.com.tw/news/aopl/202602190130.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "換臉A片賺千萬判6年4月 小玉抗告被最高法院駁回",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346416",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美最高法院即將裁決IEEPA權限 1300億美元與貿易權力懸而未決",
+          "url": "https://news.cnyes.com/news/id/6347350",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美最高法院駁回川普關稅政策！歐盟尋求美國澄清後續措施",
+          "url": "https://news.cnyes.com/news/id/6347702",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決川普全球關稅政策違法，白宮 B 計畫要保住各國繳納稅金",
+          "url": "https://finance.technews.tw/2026/02/21/the-u-s-supreme-court-ruled-that-trumps-global-tariff-policy-was-illegal/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346940",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院判決關稅違法  川普：恥辱",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346936",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院裁決川普無權課關稅　美金融市場波動不大",
+          "url": "https://www.cna.com.tw/news/afe/202602210003.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "川普加碼回應最高法院關稅裁決　國際經貿局勢難料",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346950",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "科技",
+      "count": 44,
+      "articles": [
+        {
+          "title": "AI辦錯案，責任誰來扛：從車牌辨識到帳戶凍結，演算法主導的科技執法可行嗎？",
+          "url": "https://www.thenewslens.com/article/264659",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：索菲科技SOFI-US的目標價調降至27元，幅度約3.57%",
+          "url": "https://news.cnyes.com/news/id/6346613",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
+          "url": "https://news.cnyes.com/news/id/6346708",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：萬機科技(MKSI-US)EPS預估上修至9.68元，預估目標價為282.50元",
+          "url": "https://news.cnyes.com/news/id/6346820",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：萬機科技MKSI-US的目標價調升至282.5元，幅度約10.14%",
+          "url": "https://news.cnyes.com/news/id/6346817",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
+          "url": "https://news.cnyes.com/news/id/6346810",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
+          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
+          "source": "中央社科技",
+          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
+        },
+        {
+          "title": "向大自然取經   台菲研究仿生科技處理污水兼發電",
+          "url": "https://www.cna.com.tw/news/ahel/202602150064.aspx",
+          "source": "中央社科技",
+          "content": null
+        },
+        {
+          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
+          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：戴爾科技DELL-US的目標價調降至160元，幅度約3.32%",
+          "url": "https://news.cnyes.com/news/id/6347276",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "政策",
-      "count": 40,
+      "count": 41,
       "articles": [
         {
           "title": "川習「討論」對台軍售  美參議員：背棄政策引憂",
@@ -1739,74 +1865,8 @@
       ]
     },
     {
-      "word": "科技",
-      "count": 39,
-      "articles": [
-        {
-          "title": "AI辦錯案，責任誰來扛：從車牌辨識到帳戶凍結，演算法主導的科技執法可行嗎？",
-          "url": "https://www.thenewslens.com/article/264659",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：索菲科技SOFI-US的目標價調降至27元，幅度約3.57%",
-          "url": "https://news.cnyes.com/news/id/6346613",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
-          "url": "https://news.cnyes.com/news/id/6346708",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：萬機科技(MKSI-US)EPS預估上修至9.68元，預估目標價為282.50元",
-          "url": "https://news.cnyes.com/news/id/6346820",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：萬機科技MKSI-US的目標價調升至282.5元，幅度約10.14%",
-          "url": "https://news.cnyes.com/news/id/6346817",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
-          "url": "https://news.cnyes.com/news/id/6346810",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
-          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
-          "source": "中央社科技",
-          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
-        },
-        {
-          "title": "向大自然取經   台菲研究仿生科技處理污水兼發電",
-          "url": "https://www.cna.com.tw/news/ahel/202602150064.aspx",
-          "source": "中央社科技",
-          "content": null
-        },
-        {
-          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
-          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：戴爾科技DELL-US的目標價調降至160元，幅度約3.32%",
-          "url": "https://news.cnyes.com/news/id/6347276",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "高雄",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "目睹財神爺「集體降落」 高雄男刮中1200萬元頭獎",
@@ -1872,7 +1932,7 @@
     },
     {
       "word": "印度",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "Nvidia 攜手印度製造商，打造未來 AI 基礎設施",
@@ -1938,7 +1998,7 @@
     },
     {
       "word": "新春",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "人氣超旺！雲林這3間廟新春2天湧入百萬人",
@@ -2004,7 +2064,7 @@
     },
     {
       "word": "推翻",
-      "count": 37,
+      "count": 38,
       "articles": [
         {
           "title": "歐洲首架航班飛抵委內瑞拉　自馬杜洛遭推翻以來首見",
@@ -2064,6 +2124,72 @@
           "title": "川普關稅遭推翻，美全國零售聯盟：為業者帶來確定性",
           "url": "https://finance.technews.tw/2026/02/21/us-national-retail-federation-is-happy/",
           "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "世界",
+      "count": 37,
+      "articles": [
+        {
+          "title": "周董不把全世界當外人！老大親自提醒才拜年？ 阿Ken首當其衝",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345535",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「高雄是世界的高雄」  賴清德：疼惜陳其邁、栽培賴瑞隆",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345595",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "研之有物》臺灣地熱在哪裡？看科學家如何建模地下世界，探勘最深層的能源寶藏（下）",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5323495",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
+          "url": "https://www.thenewslens.com/article/264531",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "不是費玉清！大咖歌王世界置產身家曝光 根本隱藏版「地產王」",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345890",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "逾7公尺！印尼「神獸級」巨蟒 創「最長野生蛇」金氏世界紀錄",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346047",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "柏林世界論壇　裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://www.cna.com.tw/news/aopl/202602190168.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "柏林世界論壇 裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346348",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "德國啤酒市場持續萎縮　世界最古老修道院釀酒廠易主",
+          "url": "https://www.cna.com.tw/news/aopl/202602190189.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "在柏林世界論壇發聲 裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1744093",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -2201,206 +2327,8 @@
       ]
     },
     {
-      "word": "世界",
-      "count": 36,
-      "articles": [
-        {
-          "title": "周董不把全世界當外人！老大親自提醒才拜年？ 阿Ken首當其衝",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345535",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「高雄是世界的高雄」  賴清德：疼惜陳其邁、栽培賴瑞隆",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345595",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "研之有物》臺灣地熱在哪裡？看科學家如何建模地下世界，探勘最深層的能源寶藏（下）",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5323495",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
-          "url": "https://www.thenewslens.com/article/264531",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "不是費玉清！大咖歌王世界置產身家曝光 根本隱藏版「地產王」",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345890",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "逾7公尺！印尼「神獸級」巨蟒 創「最長野生蛇」金氏世界紀錄",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346047",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "柏林世界論壇　裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://www.cna.com.tw/news/aopl/202602190168.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "柏林世界論壇 裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346348",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "德國啤酒市場持續萎縮　世界最古老修道院釀酒廠易主",
-          "url": "https://www.cna.com.tw/news/aopl/202602190189.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "在柏林世界論壇發聲 裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://news.ltn.com.tw/news/politics/paper/1744093",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "初四",
-      "count": 34,
-      "articles": [
-        {
-          "title": "手刀要快！「奈良美智 ╳ 乖乖」大年初四起一連3天嘉義新港限量販售",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345627",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初四恢復垃圾收運  南市環保局提醒廚餘處理3原則",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346190",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "新北初四恢復垃圾收運 清運量估較平常增1倍",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346207",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節假期第6天蘇花改北返車流提前！明初四估1.9萬輛",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346259",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南初四路邊停車恢復收費 春節遊台南找車位有撇步",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346374",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大樂透連槓！初四頭獎飆2億 春節大、小紅包還有732組等你抱回家",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346401",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大樂透頭獎　初四上看2億元",
-          "url": "https://www.cna.com.tw/news/ahel/202602190191.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "初四接神迎好運！12生肖「財運、事業雙收」火馬年贏在起跑點",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346414",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "中南部日夜溫差破10度！ 初四白天回暖",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346463",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "高公局估初四交通量比昨日更多！ 上午4路段壅塞",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346460",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "Google",
-      "count": 33,
-      "articles": [
-        {
-          "title": "Google I/O 2026 日程揭曉，Gemini 全面進化、Android 新版將亮相",
-          "url": "https://technews.tw/2026/02/18/google-io-2026/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "Google新印度AI中心鋪設海纜 連結新加坡、南非、澳洲",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345866",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google 過年開賣全新 Pixel 10a 中階手機！加入旗艦獨有 AI 功能",
-          "url": "https://3c.ltn.com.tw/news/65010",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google再掀AI戰火：Gemini音樂模型上線 一句話生成歌曲",
-          "url": "https://news.cnyes.com/news/id/6346850",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "過完年就能買新手機！蘋果、三星、Google 正面交鋒",
-          "url": "https://3c.ltn.com.tw/news/64885",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》健康是生活感！ 從Google熱搜看台灣高齡缺口",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5320977",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google Pixel 10a 新發表，僅搭 Tensor G4 晶片、無 PixelSnap 磁吸",
-          "url": "https://ccc.technews.tw/2026/02/19/google-unveils-pixel-10a/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
-          "url": "https://www.bbc.com/zhongwen/articles/c2k8vnpyk15o/trad?at_medium=RSS&at_campaign=rss",
-          "source": "BBC中文",
-          "content": "或許你聽過AI聊天機器人偶爾會編造內容，這固然是個問題。但更少人知曉的新隱憂是，可能嚴重影響你獲取準確資訊的能力，甚至危及人身安全。越來越多人發現了讓AI工具說出幾乎任何內容的伎倆，其簡易程度連孩童都能操作。"
-        },
-        {
-          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
-          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
-          "source": "中央社科技",
-          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
-        },
-        {
-          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
-          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
-          "source": "TechNews",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "政府",
-      "count": 32,
+      "count": 36,
       "articles": [
         {
           "title": "川普政府宣布日本首波360億美元投資美國計畫",
@@ -2466,7 +2394,7 @@
     },
     {
       "word": "打造",
-      "count": 32,
+      "count": 36,
       "articles": [
         {
           "title": "降低對美國依賴　加拿大砸重金打造本土國防體系",
@@ -2526,6 +2454,336 @@
           "title": "澎湖打造「類死海」冬季溫泉　台水海淡廠鹵水扮要角",
           "url": "https://www.cna.com.tw/news/ahel/202602200120.aspx",
           "source": "中央社產經",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "TW",
+      "count": 36,
+      "articles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6346465",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
+          "url": "https://news.cnyes.com/news/id/6346464",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
+          "url": "https://news.cnyes.com/news/id/6346904",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6346903",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：旺矽(6223-TW)EPS預估上修至34.07元，預估目標價為3115元",
+          "url": "https://news.cnyes.com/news/id/6346902",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
+          "url": "https://news.cnyes.com/news/id/6346901",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：旺宏(2337-TW)目標價調升至96.5元，幅度約3.76%",
+          "url": "https://news.cnyes.com/news/id/6346900",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：文曄(3036-TW)目標價調升至186元，幅度約3.05%",
+          "url": "https://news.cnyes.com/news/id/6346899",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
+          "url": "https://news.cnyes.com/news/id/6347450",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：中租-KY(5871-TW)EPS預估下修至11.39元，預估目標價為118元",
+          "url": "https://news.cnyes.com/news/id/6347449",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "初四",
+      "count": 35,
+      "articles": [
+        {
+          "title": "手刀要快！「奈良美智 ╳ 乖乖」大年初四起一連3天嘉義新港限量販售",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345627",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初四恢復垃圾收運  南市環保局提醒廚餘處理3原則",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346190",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "新北初四恢復垃圾收運 清運量估較平常增1倍",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346207",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "春節假期第6天蘇花改北返車流提前！明初四估1.9萬輛",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346259",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南初四路邊停車恢復收費 春節遊台南找車位有撇步",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346374",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大樂透連槓！初四頭獎飆2億 春節大、小紅包還有732組等你抱回家",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346401",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大樂透頭獎　初四上看2億元",
+          "url": "https://www.cna.com.tw/news/ahel/202602190191.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "初四接神迎好運！12生肖「財運、事業雙收」火馬年贏在起跑點",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346414",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "中南部日夜溫差破10度！ 初四白天回暖",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346463",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高公局估初四交通量比昨日更多！ 上午4路段壅塞",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346460",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "Google",
+      "count": 34,
+      "articles": [
+        {
+          "title": "Google I/O 2026 日程揭曉，Gemini 全面進化、Android 新版將亮相",
+          "url": "https://technews.tw/2026/02/18/google-io-2026/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "Google新印度AI中心鋪設海纜 連結新加坡、南非、澳洲",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345866",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google 過年開賣全新 Pixel 10a 中階手機！加入旗艦獨有 AI 功能",
+          "url": "https://3c.ltn.com.tw/news/65010",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google再掀AI戰火：Gemini音樂模型上線 一句話生成歌曲",
+          "url": "https://news.cnyes.com/news/id/6346850",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "過完年就能買新手機！蘋果、三星、Google 正面交鋒",
+          "url": "https://3c.ltn.com.tw/news/64885",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》健康是生活感！ 從Google熱搜看台灣高齡缺口",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5320977",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google Pixel 10a 新發表，僅搭 Tensor G4 晶片、無 PixelSnap 磁吸",
+          "url": "https://ccc.technews.tw/2026/02/19/google-unveils-pixel-10a/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
+          "url": "https://www.bbc.com/zhongwen/articles/c2k8vnpyk15o/trad?at_medium=RSS&at_campaign=rss",
+          "source": "BBC中文",
+          "content": "或許你聽過AI聊天機器人偶爾會編造內容，這固然是個問題。但更少人知曉的新隱憂是，可能嚴重影響你獲取準確資訊的能力，甚至危及人身安全。越來越多人發現了讓AI工具說出幾乎任何內容的伎倆，其簡易程度連孩童都能操作。"
+        },
+        {
+          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
+          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
+        },
+        {
+          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
+          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
+          "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "新高",
+      "count": 34,
+      "articles": [
+        {
+          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
+          "url": "https://news.cnyes.com/news/id/6346923",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "雙利多 國際油價飆至6個月新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
+          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "AI驅動半導體再創新高　台積電晶圓代工獨霸地位穩",
+          "url": "https://www.cna.com.tw/news/afe/202602220037.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹22日電）人工智慧（AI）需求強勁，可望推升全球半導體2026年營收再創歷史新高，將達到約1兆美元。台積電是AI大趨勢下主要受惠者，2026年美元營收將成長接近30%，增幅再度超越業界平均水準，穩居晶圓代工霸主地位。"
+        },
+        {
+          "title": "AI 驅動半導體再創新高，台積電晶圓代工獨霸地位穩",
+          "url": "https://technews.tw/2026/02/22/ai-tsmc-no1/",
+          "source": "TechNews",
+          "content": "人工智慧（AI）需求強勁，可望推升全球半導體 2026 年營收再創歷史新高，將達到約 1 兆美元。台積電是 A [&#8230;]"
+        }
+      ]
+    },
+    {
+      "word": "合作",
+      "count": 33,
+      "articles": [
+        {
+          "title": "輝達Meta擴大GPU合作 將追加數百萬顆AI晶片",
+          "url": "https://news.cnyes.com/news/id/6346345",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "輝達與 Meta 簽訂多年合作協議！追加數百萬顆 AI 晶片部署基建",
+          "url": "https://finance.technews.tw/2026/02/18/meta-will-buy-millions-of-nvidia-chips/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "鄭伊健主演台劇「合作林心如」！48小時衝上Netflix台灣榜收視冠軍",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345588",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高市早苗連任首相 林佳龍：盼與日本合作實現自由開放印太",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345686",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "偕蘇巧慧三重發福袋 卓榮泰：盼行政立法2院合作好好審預算、法案",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345731",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "印度AI峰會　輝達與L&T、Yotta等印商宣布合作計畫",
+          "url": "https://www.cna.com.tw/news/aopl/202602180137.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "高市預告下月訪美會晤川普　全面強化安保、經濟合作",
+          "url": "https://www.cna.com.tw/news/aopl/202602180160.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "巴西總統訪印推動雙邊合作　第一夫人另赴南韓交流",
+          "url": "https://www.cna.com.tw/news/aopl/202602190036.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "美軍南方司令部司令訪委內瑞拉　商討安全合作",
+          "url": "https://www.cna.com.tw/news/aopl/202602190065.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "談定逾70億美元採購合作　美印尼總統將簽貿易協議",
+          "url": "https://www.cna.com.tw/news/aopl/202602190115.aspx",
+          "source": "中央社國際",
           "content": null
         }
       ]
@@ -2663,74 +2921,8 @@
       ]
     },
     {
-      "word": "新高",
-      "count": 31,
-      "articles": [
-        {
-          "title": "好「蝦」！這國蝦類出口飆新高  台灣展現「鈔能力」狂掃16.7億",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345743",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
-          "url": "https://news.cnyes.com/news/id/6346923",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "雙利多 國際油價飆至6個月新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346502",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
-          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高雄「雙綠肺」春節吸客22萬人 果嶺自然公園單日逾3萬人創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346870",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "AI驅動半導體再創新高　台積電晶圓代工獨霸地位穩",
-          "url": "https://www.cna.com.tw/news/afe/202602220037.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹22日電）人工智慧（AI）需求強勁，可望推升全球半導體2026年營收再創歷史新高，將達到約1兆美元。台積電是AI大趨勢下主要受惠者，2026年美元營收將成長接近30%，增幅再度超越業界平均水準，穩居晶圓代工霸主地位。"
-        },
-        {
-          "title": "AI 驅動半導體再創新高，台積電晶圓代工獨霸地位穩",
-          "url": "https://technews.tw/2026/02/22/ai-tsmc-no1/",
-          "source": "TechNews",
-          "content": "人工智慧（AI）需求強勁，可望推升全球半導體 2026 年營收再創歷史新高，將達到約 1 兆美元。台積電是 A [&#8230;]"
-        }
-      ]
-    },
-    {
       "word": "最高法院",
-      "count": 30,
+      "count": 31,
       "articles": [
         {
           "title": "網紅小玉「深偽換臉A片」案判6年4月定讞，最高法院：法益侵害難以輕縱",
@@ -2795,74 +2987,8 @@
       ]
     },
     {
-      "word": "合作",
-      "count": 29,
-      "articles": [
-        {
-          "title": "輝達Meta擴大GPU合作 將追加數百萬顆AI晶片",
-          "url": "https://news.cnyes.com/news/id/6346345",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "輝達與 Meta 簽訂多年合作協議！追加數百萬顆 AI 晶片部署基建",
-          "url": "https://finance.technews.tw/2026/02/18/meta-will-buy-millions-of-nvidia-chips/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "鄭伊健主演台劇「合作林心如」！48小時衝上Netflix台灣榜收視冠軍",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345588",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "高市早苗連任首相 林佳龍：盼與日本合作實現自由開放印太",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345686",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "偕蘇巧慧三重發福袋 卓榮泰：盼行政立法2院合作好好審預算、法案",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345731",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "印度AI峰會　輝達與L&T、Yotta等印商宣布合作計畫",
-          "url": "https://www.cna.com.tw/news/aopl/202602180137.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "高市預告下月訪美會晤川普　全面強化安保、經濟合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602180160.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "巴西總統訪印推動雙邊合作　第一夫人另赴南韓交流",
-          "url": "https://www.cna.com.tw/news/aopl/202602190036.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "美軍南方司令部司令訪委內瑞拉　商討安全合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602190065.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "談定逾70億美元採購合作　美印尼總統將簽貿易協議",
-          "url": "https://www.cna.com.tw/news/aopl/202602190115.aspx",
-          "source": "中央社國際",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "智慧",
-      "count": 28,
+      "count": 29,
       "articles": [
         {
           "title": "蘋果加速布局AI穿戴：智慧眼鏡、吊墜裝置、AirPods同步推進",
@@ -2927,67 +3053,397 @@
       ]
     },
     {
-      "word": "TW",
+      "word": "全面",
+      "count": 29,
+      "articles": [
+        {
+          "title": "Google I/O 2026 日程揭曉，Gemini 全面進化、Android 新版將亮相",
+          "url": "https://technews.tw/2026/02/18/google-io-2026/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "高市預告下月訪美會晤川普　全面強化安保、經濟合作",
+          "url": "https://www.cna.com.tw/news/aopl/202602180160.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "俄選手獲准持國旗參賽 烏克蘭官員全面抵制冬季帕運",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345887",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全球最大航艦 美軍福特號週末抵達中東 全面攻伊 川普幕僚：90％機率",
+          "url": "https://news.ltn.com.tw/news/world/paper/1744094",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google正式發表Gemini 3.1 Pro 全面強化複雜任務處理能力",
+          "url": "https://news.cnyes.com/news/id/6347511",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
+          "url": "https://news.cnyes.com/news/id/6347688",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
+          "url": "https://www.thenewslens.com/article/264890",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
+          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
+          "source": "TechNews",
+          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
+        }
+      ]
+    },
+    {
+      "word": "人潮",
+      "count": 29,
+      "articles": [
+        {
+          "title": "櫻花盛開迎人潮 新北警動用無人機與智慧管控維護交通",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345580",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初二國道湧車潮 清水服務區人潮爆棚",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345632",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "哈韓族快看！一中商圈過年人潮塞爆 韓版服飾店百元商品促銷",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345789",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「香港年宵在高雄」首日爆人潮  高市府：全台唯一港味年節市集",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345810",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "苗栗通霄拱天宮大年初一起參拜人潮爆量  每天初估10萬人次",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346003",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大年初三南台灣好天氣、出遊人潮大增 屏鵝公路燈號長綠紓解車潮",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346070",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "九份現觀光人潮 警方加強巡守防竊",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346120",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大年初三好天氣 麗寶樂園湧人潮",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346184",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "馬術特技夯翻天！清境人潮「滿坑滿谷」 入園湧近8000人",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346274",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "中心",
       "count": 28,
       "articles": [
         {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6346465",
+          "title": "AI 時代互連技術戰爭，Slingshot 與 InfiniBand 在超大資料中心的比較",
+          "url": "https://finance.technews.tw/2026/02/18/ai-era-interconnection-technology-war/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "財劃法修法迫地方自籌款飆升 台東池上鄉設托嬰中心險夭折",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345455",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google新印度AI中心鋪設海纜 連結新加坡、南非、澳洲",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345866",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
+          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
+        },
+        {
+          "title": "AI資料中心需求爆發！村田製作所擬調漲高階MLCC：需求是產能兩倍",
+          "url": "https://news.cnyes.com/news/id/6346936",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
+          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "OpenAI 將攜手印度塔塔集團，建設全球最大 AI 資料中心",
+          "url": "https://finance.technews.tw/2026/02/19/tata-group-and-openai-forge-foundational-partnership-to-advance-ai-transformation-in-india-and-globally/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "網傳：轉彎打方向燈至少要閃 5 下？查核中心調查結果揭曉",
+          "url": "https://auto.ltn.com.tw/news/30913",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "從王室寵兒到風暴中心 安德魯神情狼狽引爆熱議",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346684",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "【AI 時代的國家主權】美中控制全球 90% 數據中心，各國如何透過「談判式依賴」取得戰略籌碼？",
+          "url": "https://techorange.com/2026/02/21/sovereignty-in-the-age-of-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>美中兩強掌控全球超過 90% AI 數據中心算力的當下，其他國家還有機會擁有 AI 主權嗎？ 由英國前首相 Tony Blair 創立的 Tony Blair Institute for Global Change，在最新報告《Sovereignty in the Age of AI（人工智慧時代的國家主權）》中提出挑戰直覺的觀點：試圖「完全自給自足」是危險的迷思，真正的主權不再關於獨立，而是關於保有「代理權」與戰略選擇。 報告不僅提出創新的「CSD 戰略框架（控制、引導、依賴）」，更深入剖析日本、肯亞、巴西等六國，如何利用地熱能源、市場規模或監管法規作為談判籌碼，在巨頭壟斷中成功突圍。文末也歸納政府可立即執行的「七大政策槓桿」，從簽署主權接入協議到微調開放權重模型，提供具體的實戰指南，帶領政策制定者或關注國家競爭力的讀者，看懂如何將被動的技術依賴，轉化為具備韌性的戰略優勢。 📎&nbsp;這份報告適合誰閱讀？ 報告內容具戰略高度，超越單純的技術討論，進入了國家競爭力、地緣政治與基礎設施建設的層次，適合以下工作者閱讀： 🔴 報告洞見 💡&nbsp;AI 時代主權重新定義：完全自給自足是昂貴迷思 在人工智慧已成為國家基礎治理設施的今天，我們必須重新審視「主權」的定義。報告開頭直言，領導者無法選擇退出這場技術革命，落後者將失去在國內外的影響力；然而，面對這場競賽，許多國家本能地認為必須「完全自給自足」，試圖在國內打造從晶片到模型的所有技術，報告也指出這是一個昂貴且危險的迷思。 事實是，全球 AI 基礎設施已呈現高度集中的態勢，美國與中國合計控制了全球超過 90% 的 AI 數據中心容量，美國單獨佔據全球約 75% 的 AI 算力，而世界其他所有國家加起來僅分食剩下的 10%。在這種強者恆強的局勢下，追求完全獨立不僅不切實際，更可能導致國家因技術落後而更加脆弱。 因此報告提出了一個核心觀點：AI 時代的主權不再是關於「獨立」，而是關於「代理權（Agency）」。真正的強國不是關起門來自己造輪子，而是在不得不依賴全球供應鏈的情況下，依然保有做出戰略選擇的能力與談判籌碼。 既然完全獨立不可行，報告進一步提出具體的策略框架，說明國家如何在依賴與控制之間取得主動。 💡&nbsp;CSD 框架：控制、引導與依賴的戰略博弈 既然無法統治所有戰場，國家該如何制定策略？報告提出了一個「CSD 戰略框架」，建議政府針對 AI 技術堆疊的不同層級，靈活採取「控制（Control）」、「引導（Steer）」與「依賴（Depend）」三種姿態。 對於攸關國家安全的核心系統，政府必須掌握直接的指揮權或所有權，這即是「控制」；而對於無法擁有的領域，則可透過法規、採購或標準制定來「引導」市場方向，例如歐盟雖無科技巨頭，卻能透過 GDPR 影響全球標準。 最關鍵的轉變在於如何看待「依賴」。報告強調，依賴並不羞恥，重點在於國家是處於「主動談判」還是「被動接受」的位置。透過談判將依賴轉化為互惠關係，才是現代國家的生存之道。 [&hellip;]</p>\n"
+        }
+      ]
+    },
+    {
+      "word": "分析",
+      "count": 28,
+      "articles": [
+        {
+          "title": "「這個動作是真正的變盤訊號！」美銀王牌分析師最新示警",
+          "url": "https://news.cnyes.com/news/id/6346378",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "應援手燈如何點亮追星心理？學者分析萬人「光之海」的背後",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345476",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "軟體股賣壓後受惠者？分析師點名3檔資安股迎「AI大順風」",
+          "url": "https://news.cnyes.com/news/id/6346364",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "金馬年淘金尋找下一個熱門族群 分析師：創新板小而美具潛力",
+          "url": "https://news.cnyes.com/news/id/6345615",
           "source": "鉅亨網(tw_stock)",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
-          "url": "https://news.cnyes.com/news/id/6346464",
+          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
+          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
+          "source": "中央社科技",
+          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
+        },
+        {
+          "title": "Sony新技術可分析AI生成歌曲　辨識原創音樂與占比",
+          "url": "https://www.cna.com.tw/news/ait/202602160102.aspx",
+          "source": "中央社科技",
+          "content": "（中央社帕羅奧圖16日綜合外電報導）索尼集團公司開發出一項新技術，可辨識人工智慧（AI）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向AI開發商求償。"
+        },
+        {
+          "title": "美國AI「壟斷神話」破功？分析師警告：中國「技術衝擊」才剛開始",
+          "url": "https://news.cnyes.com/news/id/6346932",
+          "source": "鉅亨網(tech)",
+          "content": null
+        },
+        {
+          "title": "對中猶豫未決　分析師示警歐洲恐付更高代價",
+          "url": "https://www.cna.com.tw/news/aopl/202602190182.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高市擬在川習會前訪美　分析：美中關係牽動日中局勢",
+          "url": "https://www.cna.com.tw/news/aopl/202602200027.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "經典賽》大谷、山本身邊最強後盾！ 道奇翻譯加入日本隊擔任分析師",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346662",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "川普關稅",
+      "count": 28,
+      "articles": [
+        {
+          "title": "台灣超車！川普關稅重擊 南韓商品在美國市場競爭力下滑",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345546",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "哈塞特怒轟聯準會報告「最糟研究」、要求懲處作者！川普關稅成本90%由美國人埋單？",
+          "url": "https://news.cnyes.com/news/id/6346843",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
+          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅加 AI 熱潮，美國自台灣進口額數十年來首超中國",
+          "url": "https://technews.tw/2026/02/20/us-imports-more-from-taiwan-than-china-for-first-time-in-decades/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "繼紐約聯準會報告打臉後 川普關稅又遭美最高法院否決依據 民調也不利",
+          "url": "https://news.cnyes.com/news/id/6347715",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻川普關稅  分析：蘋果公司衝擊可望減緩",
+          "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅被擋！黃國昌大讚美國司法 周軒舉「憲法法庭」秒打臉",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347037",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "李鎮宇：川普關稅不會退場  制度性武器戰即將進場",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5340924",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻川普關稅，分析：蘋果公司衝擊可望減緩",
+          "url": "https://finance.technews.tw/2026/02/21/apple-shock-may-slow-down/",
+          "source": "TechNews",
+          "content": "川普全球關稅遭美國最高法院推翻。財經媒體分析指出，就科技產品而言，川普政府原先已將多項產品列入豁免，許多企業也 [&#8230;]"
+        },
+        {
+          "title": "川普關稅裁定違憲 企業如何獲得退款一次看",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347123",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "能源",
+      "count": 28,
+      "articles": [
+        {
+          "title": "研之有物》臺灣地熱在哪裡？看科學家如何建模地下世界，探勘最深層的能源寶藏（下）",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5323495",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：DTE能源DTE-US的目標價調升至151.5元，幅度約3.06%",
+          "url": "https://news.cnyes.com/news/id/6346680",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：戴文能源(DVN-US)EPS預估上修至3.39元，預估目標價為46.50元",
+          "url": "https://news.cnyes.com/news/id/6346818",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "低碳發電10年增20%　法國新版能源規劃出爐",
+          "url": "https://www.cna.com.tw/news/ait/202602160061.aspx",
+          "source": "中央社科技",
+          "content": "（中央社巴黎15日綜合外電報導）法國財長勒斯鳩（Roland Lescure）表示，法國將在10年內將核能與再生能源發電量提高20%，並會盡速發布一項電氣化方針，以推動擺脫化石燃料。"
+        },
+        {
+          "title": "大阪大學推出陀螺波能轉換器，改革海洋波浪能源捕獲技術",
+          "url": "https://technews.tw/2026/02/19/a-spinning-gyroscope-could-finally-unlock-ocean-wave-energy/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：戴文能源DVN-US的目標價調升至48元，幅度約4.35%",
+          "url": "https://news.cnyes.com/news/id/6347112",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "〈觀察〉AI 用電激增 電源廠「電源+能源基建」雙軌並進布局搶商機",
+          "url": "https://news.cnyes.com/news/id/6345732",
           "source": "鉅亨網(tw_stock)",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
-          "url": "https://news.cnyes.com/news/id/6346904",
-          "source": "鉅亨網(tw_stock)",
+          "title": "微小氣泡當幫手，EPFL 用脂質奈米孔讓藍色能源發電功率提升 3 倍",
+          "url": "https://technews.tw/2026/02/20/tiny-bubbles-unlock-a-powerful-new-source-of-blue-energy/",
+          "source": "TechNews",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6346903",
-          "source": "鉅亨網(tw_stock)",
+          "title": "鉅亨速報 - Factset 最新調查：第一能源FE-US的目標價調升至53元，幅度約3.92%",
+          "url": "https://news.cnyes.com/news/id/6347605",
+          "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "鉅亨速報 - Factset 最新調查：旺矽(6223-TW)EPS預估上修至34.07元，預估目標價為3115元",
-          "url": "https://news.cnyes.com/news/id/6346902",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)目標價調升至196元，幅度約3.98%",
-          "url": "https://news.cnyes.com/news/id/6346901",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：旺宏(2337-TW)目標價調升至96.5元，幅度約3.76%",
-          "url": "https://news.cnyes.com/news/id/6346900",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：文曄(3036-TW)目標價調升至186元，幅度約3.05%",
-          "url": "https://news.cnyes.com/news/id/6346899",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
-          "url": "https://news.cnyes.com/news/id/6347450",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：中租-KY(5871-TW)EPS預估下修至11.39元，預估目標價為118元",
-          "url": "https://news.cnyes.com/news/id/6347449",
-          "source": "鉅亨網(tw_stock)",
+          "title": "鉅亨速報 - Factset 最新調查：Cenovus能源CVE-US的目標價調升至23.39元，幅度約6.73%",
+          "url": "https://news.cnyes.com/news/id/6347674",
+          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -3054,402 +3510,6 @@
           "title": "向大自然取經   台菲研究仿生科技處理污水兼發電",
           "url": "https://www.cna.com.tw/news/ahel/202602150064.aspx",
           "source": "中央社科技",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "分析",
-      "count": 27,
-      "articles": [
-        {
-          "title": "「這個動作是真正的變盤訊號！」美銀王牌分析師最新示警",
-          "url": "https://news.cnyes.com/news/id/6346378",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "應援手燈如何點亮追星心理？學者分析萬人「光之海」的背後",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345476",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "軟體股賣壓後受惠者？分析師點名3檔資安股迎「AI大順風」",
-          "url": "https://news.cnyes.com/news/id/6346364",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "金馬年淘金尋找下一個熱門族群 分析師：創新板小而美具潛力",
-          "url": "https://news.cnyes.com/news/id/6345615",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
-          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
-          "source": "中央社科技",
-          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
-        },
-        {
-          "title": "Sony新技術可分析AI生成歌曲　辨識原創音樂與占比",
-          "url": "https://www.cna.com.tw/news/ait/202602160102.aspx",
-          "source": "中央社科技",
-          "content": "（中央社帕羅奧圖16日綜合外電報導）索尼集團公司開發出一項新技術，可辨識人工智慧（AI）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向AI開發商求償。"
-        },
-        {
-          "title": "美國AI「壟斷神話」破功？分析師警告：中國「技術衝擊」才剛開始",
-          "url": "https://news.cnyes.com/news/id/6346932",
-          "source": "鉅亨網(tech)",
-          "content": null
-        },
-        {
-          "title": "對中猶豫未決　分析師示警歐洲恐付更高代價",
-          "url": "https://www.cna.com.tw/news/aopl/202602190182.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高市擬在川習會前訪美　分析：美中關係牽動日中局勢",
-          "url": "https://www.cna.com.tw/news/aopl/202602200027.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "經典賽》大谷、山本身邊最強後盾！ 道奇翻譯加入日本隊擔任分析師",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346662",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "全面",
-      "count": 27,
-      "articles": [
-        {
-          "title": "Google I/O 2026 日程揭曉，Gemini 全面進化、Android 新版將亮相",
-          "url": "https://technews.tw/2026/02/18/google-io-2026/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "高市預告下月訪美會晤川普　全面強化安保、經濟合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602180160.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "俄選手獲准持國旗參賽 烏克蘭官員全面抵制冬季帕運",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345887",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "全球最大航艦 美軍福特號週末抵達中東 全面攻伊 川普幕僚：90％機率",
-          "url": "https://news.ltn.com.tw/news/world/paper/1744094",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google正式發表Gemini 3.1 Pro 全面強化複雜任務處理能力",
-          "url": "https://news.cnyes.com/news/id/6347511",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
-          "url": "https://news.cnyes.com/news/id/6347688",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
-          "url": "https://www.thenewslens.com/article/264890",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
-          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
-          "source": "TechNews",
-          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "人潮",
-      "count": 27,
-      "articles": [
-        {
-          "title": "櫻花盛開迎人潮 新北警動用無人機與智慧管控維護交通",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345580",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初二國道湧車潮 清水服務區人潮爆棚",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345632",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "哈韓族快看！一中商圈過年人潮塞爆 韓版服飾店百元商品促銷",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345789",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「香港年宵在高雄」首日爆人潮  高市府：全台唯一港味年節市集",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345810",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "苗栗通霄拱天宮大年初一起參拜人潮爆量  每天初估10萬人次",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346003",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大年初三南台灣好天氣、出遊人潮大增 屏鵝公路燈號長綠紓解車潮",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346070",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "九份現觀光人潮 警方加強巡守防竊",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346120",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大年初三好天氣 麗寶樂園湧人潮",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346184",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "馬術特技夯翻天！清境人潮「滿坑滿谷」 入園湧近8000人",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346274",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "今彩",
-      "count": 27,
-      "articles": [
-        {
-          "title": "大過年來對獎！2/18大樂透、大小紅包、今彩539獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345829",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大樂透春節大紅包開出36組 今彩539千萬大獎送3注",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345870",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "2/18今彩539頭獎開3注！1000萬獎落新北、南投、宜蘭  大紅包開36組",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345860",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "今彩539第115043期　頭獎3注中獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602180156.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "今彩539第115043期開獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602180148.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "「致富密碼」來了！2/19 威力彩、大樂透、今彩539等獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346355",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "今彩539第115044期　頭獎1注中獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602190188.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "今彩539第115044期開獎",
-          "url": "https://www.cna.com.tw/news/ahel/202602190176.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "2/19 威力彩、大樂透雙摃龜！今彩539千萬頭獎落台南",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346403",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好運來！2/20 大樂透、今彩539等獎號出爐",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346874",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "川普關稅",
-      "count": 26,
-      "articles": [
-        {
-          "title": "台灣超車！川普關稅重擊 南韓商品在美國市場競爭力下滑",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345546",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "哈塞特怒轟聯準會報告「最糟研究」、要求懲處作者！川普關稅成本90%由美國人埋單？",
-          "url": "https://news.cnyes.com/news/id/6346843",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普關稅未見成效　美國2025年商品貿易逆差仍創新高",
-          "url": "https://www.cna.com.tw/news/aopl/202602200089.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅加 AI 熱潮，美國自台灣進口額數十年來首超中國",
-          "url": "https://technews.tw/2026/02/20/us-imports-more-from-taiwan-than-china-for-first-time-in-decades/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "繼紐約聯準會報告打臉後 川普關稅又遭美最高法院否決依據 民調也不利",
-          "url": "https://news.cnyes.com/news/id/6347715",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻川普關稅  分析：蘋果公司衝擊可望減緩",
-          "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅被擋！黃國昌大讚美國司法 周軒舉「憲法法庭」秒打臉",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347037",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "李鎮宇：川普關稅不會退場  制度性武器戰即將進場",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5340924",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻川普關稅，分析：蘋果公司衝擊可望減緩",
-          "url": "https://finance.technews.tw/2026/02/21/apple-shock-may-slow-down/",
-          "source": "TechNews",
-          "content": "川普全球關稅遭美國最高法院推翻。財經媒體分析指出，就科技產品而言，川普政府原先已將多項產品列入豁免，許多企業也 [&#8230;]"
-        },
-        {
-          "title": "川普關稅裁定違憲 企業如何獲得退款一次看",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347123",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "彰化",
-      "count": 25,
-      "articles": [
-        {
-          "title": "初二返鄉加出遊雙車潮 國1彰化南下時速剩20公里",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345539",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "好兆頭！彰化慈鳳宮現「黏筊」奇景 筊杯貼龍口4天不落",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345628",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "除夕祭祖圍千元鈔  彰化「古早味過年法」曝光",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345676",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "走春人氣王再破紀錄！「花在彰化」首日湧12.5萬人次",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345874",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "獨家》彰化火車站「福馬臨」春聯諧音「福馬林」 台鐵公司回應了",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346691",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "倒數最後2天！彰化最強走春 「命理一條街」成為「春節市集」最新亮點",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346928",
-          "source": "自由時報",
           "content": null
         }
       ]
