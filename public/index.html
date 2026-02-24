@@ -86,6 +86,23 @@
             </div>
         </header>
 
+        <!-- 🟢 v7.2.0: AI 趨勢追蹤 (事件聚類) -->
+        <div id="ai-timeline-container" class="mt-8 hidden">
+            <div class="flex items-center gap-2 mb-4">
+                <div class="p-1.5 bg-indigo-500 rounded text-white mt-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-widest">今日 AI 趨勢追蹤
+                </h3>
+            </div>
+            <div id="ai-timeline" class="space-y-4">
+                <!-- Events will be injected here -->
+            </div>
+        </div>
+
         <section class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade">
             <div
                 class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">

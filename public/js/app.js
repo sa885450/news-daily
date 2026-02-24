@@ -35,7 +35,8 @@ async function init() {
         renderSummary();
         renderCharts();
         renderKeywordsCloud();
-        renderFilters();
+        renderCategories();
+        renderTimeline(); // 🟢 v7.2.0
         renderNewsPage();
 
         // 初始主題
@@ -79,7 +80,38 @@ function renderSummary() {
     scoreVal.className = score > 0 ? 'text-red-500' : 'text-green-500';
 }
 
-function renderFilters() {
+function renderTimeline() {
+    const container = document.getElementById('ai-timeline-container');
+    const timeline = document.getElementById('ai-timeline');
+    const events = appData.events || [];
+
+    if (events.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    timeline.innerHTML = events.map(e => {
+        const impactColor = e.impact === '正面' ? 'text-emerald-500' : (e.impact === '負面' ? 'text-rose-500' : 'text-slate-400');
+        const borderColor = e.impact === '正面' ? 'border-emerald-100 dark:border-emerald-900/30' : (e.impact === '負面' ? 'border-rose-100 dark:border-rose-900/30' : 'border-slate-100 dark:border-slate-800');
+
+        return `
+            <div class="p-4 bg-slate-50/50 dark:bg-slate-800/30 rounded-xl border ${borderColor} transition-all hover:bg-white dark:hover:bg-slate-800 group">
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex-grow">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-xs font-black ${impactColor} tracking-widest uppercase">[${e.impact || '中性'}]</span>
+                            <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 transition-colors">${e.title}</h4>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">${e.summary}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function renderCategories() {
     const container = document.getElementById('category-filters');
     const news = appData.newsData || [];
     const cats = ['全部', ...new Set(news.map(n => n.category || '其他'))];

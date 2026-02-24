@@ -60,9 +60,27 @@ const reportSchema = {
                 service: { type: SchemaType.NUMBER }
             },
             required: ["tech", "finance", "manufacturing", "service"]
+        },
+        events: {
+            type: SchemaType.ARRAY,
+            description: "今日重大延伸事件聚類",
+            items: {
+                type: SchemaType.OBJECT,
+                properties: {
+                    title: { type: SchemaType.STRING, description: "事件標題 (如: 川普關稅風暴)" },
+                    summary: { type: SchemaType.STRING, description: "一句話核心解析" },
+                    impact: { type: SchemaType.STRING, description: "市場影響 (正面/負面/中性)" },
+                    related_news_ids: {
+                        type: SchemaType.ARRAY,
+                        items: { type: SchemaType.NUMBER },
+                        description: "關聯新聞的 ID 列表"
+                    }
+                },
+                required: ["title", "summary", "impact", "related_news_ids"]
+            }
         }
     },
-    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats"]
+    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events"]
 };
 
 async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
@@ -146,10 +164,12 @@ ${contextPrompt}
 - sector_stats: 評估四大板塊情緒 (-1.0 ~ 1.0)。
 - entities: 提取 5-8 個關鍵實體，並嘗試附上 ticker (如 2330.TW)。
 - summary: 請使用 HTML 格式，包含重點標註。
+- **events (核心任務)**: 請從所有新聞中歸納出 3-5 個「重大市場趨勢事件」。每個事件需包含一個有力標題、一段核心解析、對市場的影響評估，以及對應的新聞 ID 列表。即使新聞很多，也請精確合併。
 - **特殊重要指標**: 若資料中出現「8zz」或「巴逆逆」，此為知名的「市場反向指標」。若其看好，應顯著提醒短線風險；若其看空，則可能為潛在底部。請將此項觀察融入 summary 分析中。
 
 新聞資料：
-${blob}`;
+${blob}
+`;
 
     return await callGemini(prompt, true);
 }

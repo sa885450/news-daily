@@ -27,11 +27,15 @@ async function fetchContent(url) {
         const { data } = await axios.get(url, { timeout: 15000, headers });
         const dom = new JSDOM(data, { url, virtualConsole });
 
-        // 🟢 v7.0.1 新增：抓取縮圖
+        // 🟢 v7.0.1 新增：抓取縮圖 (強化版)
         let thumbnail = null;
         try {
-            thumbnail = dom.window.document.querySelector('meta[property="og:image"]')?.content ||
-                dom.window.document.querySelector('meta[name="twitter:image"]')?.content;
+            const doc = dom.window.document;
+            thumbnail = doc.querySelector('meta[property="og:image"]')?.content ||
+                doc.querySelector('meta[property="og:image:secure_url"]')?.content ||
+                doc.querySelector('meta[name="twitter:image:src"]')?.content ||
+                doc.querySelector('meta[name="twitter:image"]')?.content ||
+                doc.querySelector('link[rel="image_src"]')?.href;
         } catch (e) { }
 
         const article = new Readability(dom.window.document).parse();
