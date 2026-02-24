@@ -1,127 +1,222 @@
 {
-  "updateTime": "2026-02-24T17:00:53.938Z",
-  "fullDateStr": "2026/2/25 · 更新於 01:00:53",
+  "updateTime": "2026-02-24T19:00:53.832Z",
+  "fullDateStr": "2026/2/25 · 更新於 03:00:53",
   "aiResult": {
-    "sentiment_score": 0.15,
+    "sentiment_score": 0.45,
     "dimensions": {
-      "policy": -0.6,
-      "market": 0.5,
-      "industry": 0.6,
-      "international": -0.4,
-      "technical": 0.4
+      "policy": -0.25,
+      "market": 0.7,
+      "industry": 0.8,
+      "international": -0.1,
+      "technical": 0.6
     },
     "entities": [
       {
-        "name": "英特爾",
-        "sentiment": "bullish",
-        "ticker": "INTC.US"
-      },
-      {
-        "name": "川普",
-        "sentiment": "bearish",
-        "ticker": null
-      },
-      {
-        "name": "美國最高法院",
+        "name": "輝達",
         "sentiment": "neutral",
+        "ticker": "NVDA-US"
+      },
+      {
+        "name": "台積電",
+        "sentiment": "positive",
+        "ticker": "TSM-US"
+      },
+      {
+        "name": "超微半導體",
+        "sentiment": "positive",
+        "ticker": "AMD-US"
+      },
+      {
+        "name": "新思科技",
+        "sentiment": "positive",
+        "ticker": "SNPS-US"
+      },
+      {
+        "name": "星座能源",
+        "sentiment": "positive",
+        "ticker": "CEG-US"
+      },
+      {
+        "name": "大疆創新",
+        "sentiment": "negative",
         "ticker": null
-      },
-      {
-        "name": "費城半導體指數",
-        "sentiment": "bullish",
-        "ticker": "SOX"
-      },
-      {
-        "name": "Meta",
-        "sentiment": "neutral",
-        "ticker": "META.US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：從「算力軍備」到「關稅法源」的政治拉鋸】</h3><p>今日市場展現了極強的<b>韌性與結構性分化</b>。相較於昨日聚焦於 Meta 與 AMD 的「算力主權」協作，今日市場核心矛盾轉向<b>川普政府關稅政策的合法性挑戰</b>。儘管美國最高法院判定 IEEPA 關稅逾權，引發小企業現金流危機與「退稅內戰」，但美股半導體板塊（以 Intel 為首）仍強勢反彈，顯示<b>市場暫時將政策噪音與產業基本面脫鉤</b>。</p><p><b>關鍵對比分析：</b><br>1. <b>政策不確定性升級</b>：川普迅速轉向《1974 年貿易法》第 122 條，將全球關稅提升至 15%，這與昨日的技術合作利好形成鮮明對比，增加了進口成本壓力。<br>2. <b>Intel 的底部分散效應</b>：Intel 單日大漲 5%，帶動費半走揚，反映出資金在 AI 內捲之外，開始尋找具備低估值與政策補貼潛力的傳統巨頭。<br>3. <b>反向指標觀察</b>：今日盤勢中尚未見到「8zz」或「巴逆逆」等反向指標的極端言論，顯示當前情緒尚未過熱，技術面修復具備一定的持續性，但須嚴防關稅退稅爭議演變為系統性流動性風險。</p>",
+    "summary": "<h3>【宏觀決策報告：從政策噪音轉向「算力基本面」的估值修復】</h3><p>今日市場情緒較昨日顯著轉向<b>積極</b>，美股四大指數同步收紅，費城半導體指數大漲 2% 領跑，顯示市場正從昨日的關稅法源焦慮中解脫，重新聚焦 <b>AI 供應鏈的基本面韌性</b>。</p><p><b>關鍵對比分析：</b><br>1. <b>產業鏈全面噴發</b>：相較昨日僅 Intel 孤掌難鳴，今日從上游 EDA（SNPS）、晶圓代工（TSM）到終端電力基礎設施（CEG）均展現 5% 以上的強勁漲幅。這驗證了我們昨日「政策與基本面脫鉤」的預判，資金正回流具備<b>結構性成長</b>的算力板塊。<br>2. <b>政策摩擦的局部緩解</b>：美歐鋼鋁關稅鬆動跡象緩解了昨日全球貿易戰全面升級的恐慌，顯示川普政府在談判中仍保有靈活性。<br>3. <b>Fed 利率路徑新變數</b>：值得警惕的是理事 Cook 提出的「AI 結構性失業」與「中性利率上升」觀點，這暗示 AI 帶來的生產力革命可能伴隨<b>更長時間的高利率環境</b>，而非市場期待的快速降息。</p><p><b>風險提醒</b>：目前市場正處於 NVIDIA 財報前的「極度樂觀」期。若觀察到反向指標（如 8zz 或巴逆逆）開始轉向看好 AI 底部，短線應防範財報利多出盡的劇烈震盪。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體產業"
+        "category": "半導體與 AI 供應鏈"
       },
       {
         "id": 2,
-        "category": "地緣政治政策"
+        "category": "宏觀貨幣政策"
+      },
+      {
+        "id": 3,
+        "category": "地緣政治與貿易限制"
       }
     ],
     "sector_stats": {
-      "tech": 0.6,
+      "tech": 0.85,
       "finance": 0.2,
-      "manufacturing": -0.4,
-      "service": 0.1
+      "manufacturing": 0.1,
+      "service": 0.4
     },
     "events": [
       {
-        "title": "川普關稅法源閃電切換",
-        "summary": "最高法院阻擊 IEEPA 後，川普改用《1974 貿易法》維持 15% 關稅預期，政策波動加劇。",
-        "impact": "負面",
-        "related_news_ids": [
-          1
-        ]
-      },
-      {
-        "title": "Intel 領銜半導體估值修復",
-        "summary": "Intel 盤中漲逾 5% 帶動費半反彈，市場對 AI 基礎設施外的硬體價值進行重估。",
+        "title": "輝達財報前的「信仰測試」",
+        "summary": "市場在輝達財報公布前展現高度預期，AMD 與 TSM 的漲勢反映出市場對算力需求未減速的信心。",
         "impact": "正面",
         "related_news_ids": [
-          0
+          3,
+          5,
+          8
         ]
       },
       {
-        "title": "全美退稅內戰爆發",
-        "summary": "民主黨州長要求直接向家庭退款，共和黨參議員抵制，形成長期法律與現金流博弈。",
-        "impact": "中性",
+        "title": "AI 電力與工具鏈需求擴散",
+        "summary": "SNPS 與 CEG 的大漲顯示資金流向從單純晶片擴散至設計工具與電力基礎設施。",
+        "impact": "正面",
         "related_news_ids": [
-          1
+          1,
+          6
+        ]
+      },
+      {
+        "title": "中美無人機法律戰升級",
+        "summary": "大疆提告挑戰 FCC 禁令，反映科技冷戰下的供應鏈脫鉤壓力與法律風險。",
+        "impact": "負面",
+        "related_news_ids": [
+          4
+        ]
+      },
+      {
+        "title": "美歐貿易摩擦微幅降溫",
+        "summary": "美方考慮縮減 50% 鋼鋁衍生品關稅範圍，有助於修補跨大西洋經貿關係。",
+        "impact": "中性偏正",
+        "related_news_ids": [
+          7
         ]
       }
     ],
     "relations": [
       {
-        "from": "川普",
-        "to": "美國小企業",
-        "type": "關稅壓力與資金抽乾"
+        "from": "NVIDIA",
+        "to": "TSMC",
+        "type": "供應鏈委託代工"
       },
       {
-        "from": "美國最高法院",
-        "to": "川普",
-        "type": "司法制衡與權限限縮"
+        "from": "AMD",
+        "to": "NVIDIA",
+        "type": "AI 晶片競爭"
       },
       {
-        "from": "英特爾",
-        "to": "費城半導體指數",
-        "type": "成分股拉抬"
+        "from": "Constellation Energy",
+        "to": "AI 數據中心",
+        "type": "電力供應支撐"
       },
       {
-        "from": "加州州長 Gavin Newsom",
-        "to": "川普",
-        "type": "政治對抗與退稅訴求"
+        "from": "Synopsys",
+        "to": "半導體設計",
+        "type": "EDA 工具鏈支撐"
+      },
+      {
+        "from": "FCC",
+        "to": "DJI",
+        "type": "政策禁令與法律訴訟"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 英特爾(INTC-US)大漲5.04%，報45.83美元",
-      "url": "https://news.cnyes.com/news/id/6351608",
+      "title": "盤中速報 - 繽客控股(BKNG-US)大漲5.07%，報4066.99美元",
+      "url": "https://news.cnyes.com/news/id/6351653",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;英特爾(INTC-US)截至台北時間24日23:57股價上漲2.2美元，報45.83美元，漲幅5.04%，成交量35,567,957（股），盤中最高價45.83美元、最低價43.54美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.74%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.55%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.82%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.7%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特爾(INTC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.73%&lt;/li&gt;    &lt;li&gt;近 1 月：-2.13%&lt;/li&gt;    &lt;li&gt;近 3 月：+27.86%&lt",
-      "timeStr": "上午01:00",
+      "content": "&lt;p&gt;繽客控股(BKNG-US)截至台北時間25日02:37股價上漲196.16美元，報4066.99美元，漲幅5.07%，成交量451,786（股），盤中最高價4066.99美元、最低價3880.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.93%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.81%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.05%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.75%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;繽客控股(BKNG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.54%&lt;/li&gt;    &lt;li&gt;近 1 月：-20.04%&lt;/li&gt;    &lt;li&gt;近 3 月：",
+      "timeStr": "上午03:00",
       "relatedArticles": []
     },
     {
-      "title": "川普關稅不確定性大增 小企業陷「預付稅」與「退款難」雙重夾擊",
-      "url": "https://news.cnyes.com/news/id/6349954",
+      "title": "盤中速報 - 新思科技(SNPS-US)大漲5.01%，報441.9美元",
+      "url": "https://news.cnyes.com/news/id/6351652",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體產業",
+      "category": "半導體與 AI 供應鏈",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國最高法院上周裁定，美國總統川普動用《國際緊急經濟權力法》(IEEPA) 加徵的大部分關稅已逾越權限，象徵一場曠日廢時的退稅戰正式開打，在這個過程中，麻省理工學院 (MIT) 史隆管理學院資深講師、前富達投資總裁 Robert Pozen 指出，小企業正面臨「預付稅」與「退款難」的困境，一般家庭也淪為犧牲品。&lt;/p&gt;\n\n&lt;p&gt;裁定無效後，川普在短短一天內兩度變更政策，他先宣布將根據《1974 年貿易法》第 122 條，徵收 10% 的臨時全球關稅&mdash;&mdash;該條款允許為了解決國際收支平衡問題，徵收最高 15%、為期 150 天的短期進口附加費）。隨後，川普又將這項全球關稅調高至 15%。&lt;/p&gt;\n\n&lt;h6&gt;退稅引爆政治內戰 黨派意見分歧&lt;/h6&gt;\n\n&lt;p&gt;Pozen 在 MarketWatch 專欄中撰文指出，目前立即性的政治鬥爭已轉移到「退稅」議題。共和黨參議員 Lindsey Graham 支持川普抵制退稅的立場，認為「既無必要也不恰當」，並預測將引發大規模訴訟。Graham",
-      "timeStr": "上午01:00",
+      "content": "&lt;p&gt;新思科技(SNPS-US)截至台北時間25日02:34股價上漲21.08美元，報441.90美元，漲幅5.01%，成交量1,235,615（股），盤中最高價441.90美元、最低價415.02美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.91%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.98%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;新思科技(SNPS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.65%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.26%&lt;/li&gt;    &lt;li&gt;近 3 月：+13",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "AI恐推升結構性失業 Fed利率決策添變數",
+      "url": "https://news.cnyes.com/news/id/6351543",
+      "source": "鉅亨網(wd_stock)",
+      "category": "宏觀貨幣政策",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美國聯準會 (Fed) 多位官員周二 (24 日) 密集談及人工智慧 (AI) 對就業市場與貨幣政策的衝擊，釋出既審慎又分歧的訊號。一方面，有官員認為 AI 不至於顛覆整體勞動市場；另一方面，也有人警告，AI 可能推升結構性失業，使聯準會在通膨與就業之間面臨更艱難的抉擇。&lt;/p&gt;\n\n&lt;h6&gt;華勒：AI 是工具 不會全面取代人類&lt;/h6&gt;\n\n&lt;p&gt;聯準會理事華勒 (Christopher Waller) 在波士頓聯準銀行一場會議上表示，他並非對 AI 抱持「末日論」看法，不認為 AI 會徹底顛覆美國就業市場。「我不認為人類會被完全排除在外，AI 不會什麼都做，而我們最後只剩在速食店櫃檯工作。」他強調，AI 終究只是工具，人類可以加以運用、管理並控制風險。&lt;/p&gt;\n\n&lt;p&gt;華勒坦言，AI 對部分勞工而言可能帶來不安，但長遠來看，人們將學會駕馭這項技術，使生活更有效率、更具生產力，並騰出更多時間投入其他活動。他也指出，聯準會本身正以全系統方式審慎導入 AI 技術，設下明確使用邊界、強化資訊安全控管、嚴格",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 台積電ADR(TSM-US)大漲5.12%，報388.97美元",
+      "url": "https://news.cnyes.com/news/id/6351639",
+      "source": "鉅亨網(wd_stock)",
+      "category": "地緣政治與貿易限制",
+      "thumbnail": null,
+      "content": "&lt;p&gt;台積電ADR(TSM-US)截至台北時間25日01:33股價上漲18.93美元，報388.97美元，漲幅5.12%，成交量7,633,757（股），盤中最高價388.99美元、最低價376.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.8%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.77%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.13%&lt;/li&gt;&lt;li&gt;費城半導體指數：+2.09%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;台積電ADR(TSM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.14%&lt;/li&gt;    &lt;li&gt;近 1 月：+10.65%&lt;/li&gt;    &lt;li&gt;近 3 月：+",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "大疆提告挑戰FCC禁令 美禁中國無人機新機進口",
+      "url": "https://news.cnyes.com/news/id/6351583",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;中國無人機大廠大疆創新 (DJI) 周二 (24 日) 表示，已向美國法院提告，挑戰美國聯邦通訊委員會 (FCC) 禁止其所有新機型與關鍵零組件進口的決定。這項禁令同時涵蓋另一家中國無人機製造商 Autel。&lt;/p&gt;\n\n&lt;p&gt;DJI 在聲明中指出，已向美國第九巡迴上訴法院提出訴訟，質疑 FCC 相關決定。公司批評該禁令「草率限制 DJI 在美國的業務，並剝奪美國客戶取得最新技術的機會」。&lt;/p&gt;\n\n&lt;p&gt;FCC 於去年 12 月發布命令，禁止包括 DJI 與 Autel 在內的外國無人機製造商取得銷售新機型與關鍵零組件所需的認證，因此無法在美國推出新品，但現有機型仍可繼續銷售。截稿前，FCC 未立即回應媒體置評請求。&lt;/p&gt;\n\n&lt;p&gt;美國國會於 2024 年 12 月要求，除非經過國安審查認定可繼續銷售，否則須在一年內將 DJI 與 Autel 納入禁售清單。這項行動被視為華府近年加強打擊中國製無人機措施的重大升級。FCC 命令亦明確禁止所有外國製新款無人機及其關鍵零組件進口。&lt;/p&gt;",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 費城半導體大漲2%，報8377.86點",
+      "url": "https://news.cnyes.com/news/id/6351634",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;截至台北時間25日01:09，費城半導體上漲164.4點（或2%），暫報8377.86點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.93%&lt;/li&gt;&lt;li&gt;近 1 月：+3.21%&lt;/li&gt;&lt;li&gt;近 3 月：+28.21%&lt;/li&gt;&lt;li&gt;近 6 月：+42.73%&lt;/li&gt;&lt;li&gt;今年以來：+15.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以超微半導體(AMD-US)領漲。超微半導體(AMD-US)上漲8.69%；英特爾(INTC-US)上漲4.94%；台積電ADR(TSM-US)上漲4.64%；Onto Innovation Inc.(ONTO-US)上漲4.57%；安謀控股公司(ARM-US)上漲4.06%。&lt",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 星座能源(CEG-US)大漲5.02%，報308.55美元",
+      "url": "https://news.cnyes.com/news/id/6351631",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;星座能源(CEG-US)截至台北時間25日00:53股價上漲14.75美元，報308.55美元，漲幅5.02%，成交量1,519,543（股），盤中最高價308.55美元、最低價290.81美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.73%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.65%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.81%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;星座能源(CEG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.22%&lt;/li&gt;    &lt;li&gt;近 1 月：+2%&lt;/li&gt;    &lt;li&gt;近 3 月：-12.8%&l",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "美歐鋼鋁衍生品關稅鬆動？50%高稅率有望縮減",
+      "url": "https://news.cnyes.com/news/id/6351497",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據《彭博》周二 (24 日) 報導，歐盟官員預期，美國政府未來數周內可能調整對含鋼鋁產品徵收的高額關稅範圍，簡化目前適用 50% 稅率的「衍生產品」清單。此議題長期成為跨大西洋關係中的摩擦點，也是美歐貿易談判的關鍵癥結。&lt;/p&gt;\n\n&lt;p&gt;知情人士指出，川普政府正考慮縮減適用 50% 關稅的衍生產品項目數量。美方近年來持續擴大該清單，目前已超過 400 項產品。歐盟方面則長期要求放寬相關措施，認為此舉違反去年雙方達成的貿易協議，該協議將多數歐洲產品的關稅上限定為 15%。&lt;/p&gt;\n\n&lt;p&gt;根據了解，擬議中的調整不會影響大宗原材料等基礎級鋼鋁產品的關稅。歐盟官員指出，不斷擴大的衍生產品清單，使企業在出口時須逐一計算產品中鋼鋁含量比例，增加行政負擔，也削弱去年的貿易協議效益。&lt;/p&gt;\n\n&lt;p&gt;美國貿易代表辦公室尚未回應置評請求，歐洲執委會發言人亦拒絕評論。&lt;/p&gt;\n\n&lt;p&gt;此一潛在進展正值美歐關係敏感時刻。美國最高法院日前裁定，川普政府依緊急權力法實施「對等關稅」缺乏法律依據，",
+      "timeStr": "上午03:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "〈財報前瞻〉AI還能狂飆？輝達迎來最大壓力測試",
+      "url": "https://news.cnyes.com/news/id/6351365",
+      "source": "鉅亨網(tech)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;輝達 (NVDA-US) 將於周三 (25 日) 美股盤後公布最新一季財報，在人工智慧 (AI) 投資熱潮出現雜音之際，這份成績單被視為檢驗 AI 需求是否仍具動能的關鍵指標。儘管華爾街普遍預期營收與獲利將維持強勁成長，但市場更關注的是，在超大規模雲端業者加速自研晶片、地緣政治風險升溫與資本支出規模備受質疑之下，輝達是否仍能穩坐 AI 晶片霸主地位。&lt;/p&gt;\n\n&lt;h6&gt;財報成 AI 信心試金石 成長動能略現放緩&lt;/h6&gt;\n\n&lt;p&gt;根據市場預估，輝達截至 1 月底止的一季獲利將年增逾 62%，雖仍屬高成長，但較前一季 65.3% 的增幅略為放緩；營收預料年增約 68% 至 661.6 億美元，並可能預測本季營收再增長逾 64%。分析師指出，輝達已連續 13 季銷售優於市場預期，但超越幅度逐步縮小，顯示基期墊高後，市場對「爆表」數據的期待愈發嚴苛。&lt;/p&gt;\n\n&lt;p&gt;Spear Invest 投資長 Ivana Delevska 表示，這次財報之所以重要，是因為市場對 AI 資本支出是否形成泡沫的疑慮升",
+      "timeStr": "上午03:00",
       "relatedArticles": []
     }
   ],
@@ -164,56 +259,72 @@
   ],
   "events": [
     {
-      "title": "川普關稅法源閃電切換",
-      "summary": "最高法院阻擊 IEEPA 後，川普改用《1974 貿易法》維持 15% 關稅預期，政策波動加劇。",
-      "impact": "負面",
-      "related_news_ids": [
-        1
-      ]
-    },
-    {
-      "title": "Intel 領銜半導體估值修復",
-      "summary": "Intel 盤中漲逾 5% 帶動費半反彈，市場對 AI 基礎設施外的硬體價值進行重估。",
+      "title": "輝達財報前的「信仰測試」",
+      "summary": "市場在輝達財報公布前展現高度預期，AMD 與 TSM 的漲勢反映出市場對算力需求未減速的信心。",
       "impact": "正面",
       "related_news_ids": [
-        0
+        3,
+        5,
+        8
       ]
     },
     {
-      "title": "全美退稅內戰爆發",
-      "summary": "民主黨州長要求直接向家庭退款，共和黨參議員抵制，形成長期法律與現金流博弈。",
-      "impact": "中性",
+      "title": "AI 電力與工具鏈需求擴散",
+      "summary": "SNPS 與 CEG 的大漲顯示資金流向從單純晶片擴散至設計工具與電力基礎設施。",
+      "impact": "正面",
       "related_news_ids": [
-        1
+        1,
+        6
+      ]
+    },
+    {
+      "title": "中美無人機法律戰升級",
+      "summary": "大疆提告挑戰 FCC 禁令，反映科技冷戰下的供應鏈脫鉤壓力與法律風險。",
+      "impact": "負面",
+      "related_news_ids": [
+        4
+      ]
+    },
+    {
+      "title": "美歐貿易摩擦微幅降溫",
+      "summary": "美方考慮縮減 50% 鋼鋁衍生品關稅範圍，有助於修補跨大西洋經貿關係。",
+      "impact": "中性偏正",
+      "related_news_ids": [
+        7
       ]
     }
   ],
   "relations": [
     {
-      "from": "川普",
-      "to": "美國小企業",
-      "type": "關稅壓力與資金抽乾"
+      "from": "NVIDIA",
+      "to": "TSMC",
+      "type": "供應鏈委託代工"
     },
     {
-      "from": "美國最高法院",
-      "to": "川普",
-      "type": "司法制衡與權限限縮"
+      "from": "AMD",
+      "to": "NVIDIA",
+      "type": "AI 晶片競爭"
     },
     {
-      "from": "英特爾",
-      "to": "費城半導體指數",
-      "type": "成分股拉抬"
+      "from": "Constellation Energy",
+      "to": "AI 數據中心",
+      "type": "電力供應支撐"
     },
     {
-      "from": "加州州長 Gavin Newsom",
-      "to": "川普",
-      "type": "政治對抗與退稅訴求"
+      "from": "Synopsys",
+      "to": "半導體設計",
+      "type": "EDA 工具鏈支撐"
+    },
+    {
+      "from": "FCC",
+      "to": "DJI",
+      "type": "政策禁令與法律訴訟"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 344,
+      "count": 352,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Liberty Media Corp. (New Liberty Formula One) Series C(FWONK-US)EPS預估下修至2.19元，預估目標價為115.00元",
@@ -279,7 +390,7 @@
     },
     {
       "word": "AI",
-      "count": 287,
+      "count": 291,
       "articles": [
         {
           "title": "美股正上演「AI驚嚇交易」白領工作末日論升溫",
@@ -345,7 +456,7 @@
     },
     {
       "word": "美元",
-      "count": 179,
+      "count": 183,
       "articles": [
         {
           "title": "〈紐約匯市〉關鍵數據公布前 美元小漲",
@@ -411,7 +522,7 @@
     },
     {
       "word": "EPS",
-      "count": 170,
+      "count": 172,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -872,6 +983,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 96,
+      "articles": [
+        {
+          "title": "盤中速報 - 新思科技(SNPS-US)大漲5.2%，報443.9美元",
+          "url": "https://news.cnyes.com/news/id/6346693",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.08%，報116.34美元",
+          "url": "https://news.cnyes.com/news/id/6346692",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 莫德納(MRNA-US)大漲6.69%，報46.87美元",
+          "url": "https://news.cnyes.com/news/id/6346691",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Palo Alto Networks Inc(PANW-US)大跌8.97%，報148.84美元",
+          "url": "https://news.cnyes.com/news/id/6346690",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Cadence設計系統(CDNS-US)大漲6.88%，報302.96美元",
+          "url": "https://news.cnyes.com/news/id/6346689",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - Verisk Analytics Inc(VRSK-US)大漲9.66%，報194.42美元",
+          "url": "https://news.cnyes.com/news/id/6346686",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 亞德諾(ADI-US)大漲5.06%，報354.59美元",
+          "url": "https://news.cnyes.com/news/id/6346710",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 泰瑞達(TER-US)大漲5.02%，報320.87美元",
+          "url": "https://news.cnyes.com/news/id/6346709",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
+          "url": "https://news.cnyes.com/news/id/6346708",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "盤中速報 - 費城半導體大漲1.02%，報8218.97點",
+          "url": "https://news.cnyes.com/news/id/6346702",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "健康",
       "count": 93,
       "articles": [
@@ -933,72 +1110,6 @@
           "title": "健康網》5色蔬果「防護密碼」植化素護健康",
           "url": "https://health.ltn.com.tw/article/breakingnews/5340462",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 91,
-      "articles": [
-        {
-          "title": "盤中速報 - 新思科技(SNPS-US)大漲5.2%，報443.9美元",
-          "url": "https://news.cnyes.com/news/id/6346693",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.08%，報116.34美元",
-          "url": "https://news.cnyes.com/news/id/6346692",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 莫德納(MRNA-US)大漲6.69%，報46.87美元",
-          "url": "https://news.cnyes.com/news/id/6346691",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Palo Alto Networks Inc(PANW-US)大跌8.97%，報148.84美元",
-          "url": "https://news.cnyes.com/news/id/6346690",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Cadence設計系統(CDNS-US)大漲6.88%，報302.96美元",
-          "url": "https://news.cnyes.com/news/id/6346689",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - Verisk Analytics Inc(VRSK-US)大漲9.66%，報194.42美元",
-          "url": "https://news.cnyes.com/news/id/6346686",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 亞德諾(ADI-US)大漲5.06%，報354.59美元",
-          "url": "https://news.cnyes.com/news/id/6346710",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 泰瑞達(TER-US)大漲5.02%，報320.87美元",
-          "url": "https://news.cnyes.com/news/id/6346709",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 美光科技(MU-US)大漲5.02%，報419.84美元",
-          "url": "https://news.cnyes.com/news/id/6346708",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "盤中速報 - 費城半導體大漲1.02%，報8218.97點",
-          "url": "https://news.cnyes.com/news/id/6346702",
-          "source": "鉅亨網(wd_stock)",
           "content": null
         }
       ]
@@ -1466,6 +1577,72 @@
       ]
     },
     {
+      "word": "台南",
+      "count": 55,
+      "articles": [
+        {
+          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "韓國瑜台南發春聯：過年不要講太多政治",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》走春翻車畫面連環爆！民眾黨林子宇昔嗆「震懾台南」舊片失控！",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345707",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "兼具教育互動功能 台南學甲動物保護園區3月完工",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345799",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「掃帚庄」保存古早農村文化 台南新營姑爺社區教綁貴黍帚",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345795",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南流當車放置場火警  360輛汽機車受波及",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345839",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全國UCC典範台南永川醫院春節照常服務 就診量全國居冠",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5346272",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "大跌",
       "count": 55,
       "articles": [
@@ -1527,72 +1704,6 @@
           "title": "盤中速報 - 陶氏(DOW-US)大跌5.03%，報29.81美元",
           "url": "https://news.cnyes.com/news/id/6347741",
           "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "台南",
-      "count": 52,
-      "articles": [
-        {
-          "title": "賴清德台南武廟發紅包  民眾大排長龍、頭香昨晚就來排隊",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345424",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南南區小年夜汽車過彎失控逆向衝撞機車3人傷  親友上網徵求行車紀錄影片",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345542",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南永康春節加強取締酒駕  仁德交流道北向匝道初三起3天部分時段封閉",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345520",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "韓國瑜台南發春聯：過年不要講太多政治",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345665",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》走春翻車畫面連環爆！民眾黨林子宇昔嗆「震懾台南」舊片失控！",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345707",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "兼具教育互動功能 台南學甲動物保護園區3月完工",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345799",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「掃帚庄」保存古早農村文化 台南新營姑爺社區教綁貴黍帚",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345795",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南流當車放置場火警  360輛汽機車受波及",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5345839",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "全國UCC典範台南永川醫院春節照常服務 就診量全國居冠",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5346272",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南國華街商圈初三人潮擠爆  黃偉哲、陳亭妃西市場發紅包送祝福",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346318",
-          "source": "自由時報",
           "content": null
         }
       ]
@@ -1797,7 +1908,7 @@
     },
     {
       "word": "高雄",
-      "count": 45,
+      "count": 46,
       "articles": [
         {
           "title": "目睹財神爺「集體降落」 高雄男刮中1200萬元頭獎",
@@ -1863,7 +1974,7 @@
     },
     {
       "word": "世界",
-      "count": 44,
+      "count": 45,
       "articles": [
         {
           "title": "周董不把全世界當外人！老大親自提醒才拜年？ 阿Ken首當其衝",
@@ -2259,7 +2370,7 @@
     },
     {
       "word": "新春",
-      "count": 40,
+      "count": 41,
       "articles": [
         {
           "title": "人氣超旺！雲林這3間廟新春2天湧入百萬人",
@@ -2852,6 +2963,72 @@
       ]
     },
     {
+      "word": "第一",
+      "count": 35,
+      "articles": [
+        {
+          "title": "祀典武廟主委疑染諾羅病毒嘔濺總統  林聖哲：第一時間已換衣及消毒",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345603",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "目睹武廟主委嘔吐、老婦熱暈 賴總統發聲：健康第一",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345650",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "祀典武廟主委疑染諾羅嘔吐噴濺到總統  黃偉哲：第一時間即表達關心",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345729",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》首戰對台灣先發！山本由伸扛春訓開幕戰先發、大谷翔平打第一棒",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346493",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "連續3年排隊領紅包排第一 侯粉一馬當先搶頭香",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346554",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：第一能源FE-US的目標價調升至53元，幅度約3.92%",
+          "url": "https://news.cnyes.com/news/id/6347605",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "開春第一撞！ 彰市彰南路「最衰庇護島」14度遭撞",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347218",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "B-52轟炸機現蹤東海！美日出動「空中重砲」 揭第一島鏈空域聯演細節",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347617",
+          "source": "自由時報",
+          "content": "美國與日本近日出動多架戰機與戰略轟炸機，於第一島鏈周邊空域舉行聯合演訓，透過實兵飛行磨練聯盟重型空中火力的協同應處能力。這次演習聚焦於區域空域的戰術演練，展現美日同盟在關鍵空域...…"
+        },
+        {
+          "title": "冬奧》史上第一人！U型技巧賽衛冕金牌 谷愛凌締空前偉業",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348064",
+          "source": "自由時報",
+          "content": "\n\n\n22歲中美混血滑雪好手谷愛凌（Eileen Gu）今在自由式滑雪女子U型場地技巧項目決賽，奪下本屆冬奧首金，生涯共累積6面奧運獎牌，成為奧運史上獎牌數最多的自由式滑雪選手。...…"
+        },
+        {
+          "title": "故宮馬畫曝收假第一要務  網讚：非常重要的提醒",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348112",
+          "source": "自由時報",
+          "content": "\n\n\n長達9天的春節假期今（22）日結束，各行各業明天起就要正常上班，春節前才以賀年影片《天馬行大運》爆紅的國立故宮博物院，臉書小編於晚間悄悄貼出一張院藏〈清 冷枚畫馬〉，再度...…"
+        }
+      ]
+    },
+    {
       "word": "初四",
       "count": 35,
       "articles": [
@@ -2984,37 +3161,55 @@
       ]
     },
     {
-      "word": "第一",
+      "word": "能源",
       "count": 34,
       "articles": [
         {
-          "title": "祀典武廟主委疑染諾羅病毒嘔濺總統  林聖哲：第一時間已換衣及消毒",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5345603",
+          "title": "研之有物》臺灣地熱在哪裡？看科學家如何建模地下世界，探勘最深層的能源寶藏（下）",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5323495",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "目睹武廟主委嘔吐、老婦熱暈 賴總統發聲：健康第一",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345650",
-          "source": "自由時報",
+          "title": "鉅亨速報 - Factset 最新調查：DTE能源DTE-US的目標價調升至151.5元，幅度約3.06%",
+          "url": "https://news.cnyes.com/news/id/6346680",
+          "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "祀典武廟主委疑染諾羅嘔吐噴濺到總統  黃偉哲：第一時間即表達關心",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5345729",
-          "source": "自由時報",
+          "title": "鉅亨速報 - Factset 最新調查：戴文能源(DVN-US)EPS預估上修至3.39元，預估目標價為46.50元",
+          "url": "https://news.cnyes.com/news/id/6346818",
+          "source": "鉅亨網(wd_stock)",
           "content": null
         },
         {
-          "title": "MLB》首戰對台灣先發！山本由伸扛春訓開幕戰先發、大谷翔平打第一棒",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346493",
-          "source": "自由時報",
+          "title": "低碳發電10年增20%　法國新版能源規劃出爐",
+          "url": "https://www.cna.com.tw/news/ait/202602160061.aspx",
+          "source": "中央社科技",
+          "content": "（中央社巴黎15日綜合外電報導）法國財長勒斯鳩（Roland Lescure）表示，法國將在10年內將核能與再生能源發電量提高20%，並會盡速發布一項電氣化方針，以推動擺脫化石燃料。"
+        },
+        {
+          "title": "大阪大學推出陀螺波能轉換器，改革海洋波浪能源捕獲技術",
+          "url": "https://technews.tw/2026/02/19/a-spinning-gyroscope-could-finally-unlock-ocean-wave-energy/",
+          "source": "TechNews",
           "content": null
         },
         {
-          "title": "連續3年排隊領紅包排第一 侯粉一馬當先搶頭香",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346554",
-          "source": "自由時報",
+          "title": "鉅亨速報 - Factset 最新調查：戴文能源DVN-US的目標價調升至48元，幅度約4.35%",
+          "url": "https://news.cnyes.com/news/id/6347112",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "〈觀察〉AI 用電激增 電源廠「電源+能源基建」雙軌並進布局搶商機",
+          "url": "https://news.cnyes.com/news/id/6345732",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "微小氣泡當幫手，EPFL 用脂質奈米孔讓藍色能源發電功率提升 3 倍",
+          "url": "https://technews.tw/2026/02/20/tiny-bubbles-unlock-a-powerful-new-source-of-blue-energy/",
+          "source": "TechNews",
           "content": null
         },
         {
@@ -3024,28 +3219,10 @@
           "content": null
         },
         {
-          "title": "開春第一撞！ 彰市彰南路「最衰庇護島」14度遭撞",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347218",
-          "source": "自由時報",
+          "title": "鉅亨速報 - Factset 最新調查：Cenovus能源CVE-US的目標價調升至23.39元，幅度約6.73%",
+          "url": "https://news.cnyes.com/news/id/6347674",
+          "source": "鉅亨網(wd_stock)",
           "content": null
-        },
-        {
-          "title": "B-52轟炸機現蹤東海！美日出動「空中重砲」 揭第一島鏈空域聯演細節",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347617",
-          "source": "自由時報",
-          "content": "美國與日本近日出動多架戰機與戰略轟炸機，於第一島鏈周邊空域舉行聯合演訓，透過實兵飛行磨練聯盟重型空中火力的協同應處能力。這次演習聚焦於區域空域的戰術演練，展現美日同盟在關鍵空域...…"
-        },
-        {
-          "title": "冬奧》史上第一人！U型技巧賽衛冕金牌 谷愛凌締空前偉業",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5348064",
-          "source": "自由時報",
-          "content": "\n\n\n22歲中美混血滑雪好手谷愛凌（Eileen Gu）今在自由式滑雪女子U型場地技巧項目決賽，奪下本屆冬奧首金，生涯共累積6面奧運獎牌，成為奧運史上獎牌數最多的自由式滑雪選手。...…"
-        },
-        {
-          "title": "故宮馬畫曝收假第一要務  網讚：非常重要的提醒",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348112",
-          "source": "自由時報",
-          "content": "\n\n\n長達9天的春節假期今（22）日結束，各行各業明天起就要正常上班，春節前才以賀年影片《天馬行大運》爆紅的國立故宮博物院，臉書小編於晚間悄悄貼出一張院藏〈清 冷枚畫馬〉，再度...…"
         }
       ]
     },
@@ -3244,72 +3421,6 @@
           "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
           "source": "TechNews",
           "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "能源",
-      "count": 33,
-      "articles": [
-        {
-          "title": "研之有物》臺灣地熱在哪裡？看科學家如何建模地下世界，探勘最深層的能源寶藏（下）",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5323495",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：DTE能源DTE-US的目標價調升至151.5元，幅度約3.06%",
-          "url": "https://news.cnyes.com/news/id/6346680",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：戴文能源(DVN-US)EPS預估上修至3.39元，預估目標價為46.50元",
-          "url": "https://news.cnyes.com/news/id/6346818",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "低碳發電10年增20%　法國新版能源規劃出爐",
-          "url": "https://www.cna.com.tw/news/ait/202602160061.aspx",
-          "source": "中央社科技",
-          "content": "（中央社巴黎15日綜合外電報導）法國財長勒斯鳩（Roland Lescure）表示，法國將在10年內將核能與再生能源發電量提高20%，並會盡速發布一項電氣化方針，以推動擺脫化石燃料。"
-        },
-        {
-          "title": "大阪大學推出陀螺波能轉換器，改革海洋波浪能源捕獲技術",
-          "url": "https://technews.tw/2026/02/19/a-spinning-gyroscope-could-finally-unlock-ocean-wave-energy/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：戴文能源DVN-US的目標價調升至48元，幅度約4.35%",
-          "url": "https://news.cnyes.com/news/id/6347112",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "〈觀察〉AI 用電激增 電源廠「電源+能源基建」雙軌並進布局搶商機",
-          "url": "https://news.cnyes.com/news/id/6345732",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "微小氣泡當幫手，EPFL 用脂質奈米孔讓藍色能源發電功率提升 3 倍",
-          "url": "https://technews.tw/2026/02/20/tiny-bubbles-unlock-a-powerful-new-source-of-blue-energy/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：第一能源FE-US的目標價調升至53元，幅度約3.92%",
-          "url": "https://news.cnyes.com/news/id/6347605",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：Cenovus能源CVE-US的目標價調升至23.39元，幅度約6.73%",
-          "url": "https://news.cnyes.com/news/id/6347674",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
         }
       ]
     },
