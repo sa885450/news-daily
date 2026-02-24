@@ -1,217 +1,127 @@
 {
-  "updateTime": "2026-02-24T16:02:12.662Z",
-  "fullDateStr": "2026/2/25 · 更新於 00:02:12",
+  "updateTime": "2026-02-24T17:00:53.938Z",
+  "fullDateStr": "2026/2/25 · 更新於 01:00:53",
   "aiResult": {
-    "sentiment_score": 0.35,
+    "sentiment_score": 0.15,
     "dimensions": {
-      "policy": 0.2,
+      "policy": -0.6,
       "market": 0.5,
-      "industry": 0.7,
-      "international": 0.4,
-      "technical": -0.3
+      "industry": 0.6,
+      "international": -0.4,
+      "technical": 0.4
     },
     "entities": [
       {
-        "name": "台積電",
-        "sentiment": "neutral",
-        "ticker": "2330.TW"
+        "name": "英特爾",
+        "sentiment": "bullish",
+        "ticker": "INTC.US"
       },
       {
-        "name": "超微",
-        "sentiment": "positive",
-        "ticker": "AMD"
+        "name": "川普",
+        "sentiment": "bearish",
+        "ticker": null
+      },
+      {
+        "name": "美國最高法院",
+        "sentiment": "neutral",
+        "ticker": null
+      },
+      {
+        "name": "費城半導體指數",
+        "sentiment": "bullish",
+        "ticker": "SOX"
       },
       {
         "name": "Meta",
-        "sentiment": "positive",
-        "ticker": "META"
-      },
-      {
-        "name": "營邦",
-        "sentiment": "positive",
-        "ticker": "3693.TW"
-      },
-      {
-        "name": "美敦力",
-        "sentiment": "positive",
-        "ticker": "MDT"
-      },
-      {
-        "name": "安謀",
-        "sentiment": "positive",
-        "ticker": "ARM"
-      },
-      {
-        "name": "CVS保健",
-        "sentiment": "negative",
-        "ticker": "CVS"
+        "sentiment": "neutral",
+        "ticker": "META.US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：從 AI 內捲轉向「算力主權」與「資本紀律」】</h3><p>今日市場情緒與昨日相比發生顯著結構性變化。昨日市場聚焦於 <b>AI 對傳統軟體 (SaaS) 的侵蝕</b>，引發估值崩潰（AI Scare Trade）；今日則轉向 <b>AI 基礎設施的長期戰略協作</b>，核心焦點在於 Meta 與 AMD 簽署的 600 億美元「長約加股權」協議，顯示大型科技巨頭正試圖透過<b>垂直整合與分散風險</b>，打破 NVIDIA 的獨家壟斷（Compute Sovereignty）。</p><p><b>關鍵趨勢觀察：</b><br>1. <b>台股熱度過載</b>：台積電 (2330.TW) 被列入「注意股」，暗示短線資金極度集中，雖基本面無虞，但技術面已出現<b>過熱警訊</b>。若參考「8zz/巴逆逆」等反向心理指標，當前大眾熱議「護國神山」的氛圍可能預示短線震盪將至。<br>2. <b>AI 供應鏈版圖重構</b>：營邦 (3693.TW) 成功切入 AMD MI450 供應鏈，顯示伺服器準系統 (L10) 供應商正隨 AI 晶片多元化而受惠。<br>3. <b>醫療產業資本優化</b>：美敦力 (MDT) 分拆 MiniMed，反映出在高利率環境下，大型企業傾向透過<b>剝離非核心業務</b>來優化資本回報，這與科技股的盲目擴張形成對比。</p><p><b>策略建議：</b> 雖然科技股由 AMD 帶動強勢反彈，但台積電的監管示警不容忽視。建議從「純 AI 硬體」轉向「結構性分拆獲利」與「AI 推論端」的補漲機會。</p>",
+    "summary": "<h3>【宏觀決策報告：從「算力軍備」到「關稅法源」的政治拉鋸】</h3><p>今日市場展現了極強的<b>韌性與結構性分化</b>。相較於昨日聚焦於 Meta 與 AMD 的「算力主權」協作，今日市場核心矛盾轉向<b>川普政府關稅政策的合法性挑戰</b>。儘管美國最高法院判定 IEEPA 關稅逾權，引發小企業現金流危機與「退稅內戰」，但美股半導體板塊（以 Intel 為首）仍強勢反彈，顯示<b>市場暫時將政策噪音與產業基本面脫鉤</b>。</p><p><b>關鍵對比分析：</b><br>1. <b>政策不確定性升級</b>：川普迅速轉向《1974 年貿易法》第 122 條，將全球關稅提升至 15%，這與昨日的技術合作利好形成鮮明對比，增加了進口成本壓力。<br>2. <b>Intel 的底部分散效應</b>：Intel 單日大漲 5%，帶動費半走揚，反映出資金在 AI 內捲之外，開始尋找具備低估值與政策補貼潛力的傳統巨頭。<br>3. <b>反向指標觀察</b>：今日盤勢中尚未見到「8zz」或「巴逆逆」等反向指標的極端言論，顯示當前情緒尚未過熱，技術面修復具備一定的持續性，但須嚴防關稅退稅爭議演變為系統性流動性風險。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與AI基礎設施"
+        "category": "半導體產業"
       },
       {
         "id": 2,
-        "category": "醫療資本重組"
-      },
-      {
-        "id": 3,
-        "category": "台股過熱警訊"
+        "category": "地緣政治政策"
       }
     ],
     "sector_stats": {
-      "tech": 0.85,
-      "finance": 0.1,
-      "manufacturing": 0.45,
-      "service": -0.3
+      "tech": 0.6,
+      "finance": 0.2,
+      "manufacturing": -0.4,
+      "service": 0.1
     },
     "events": [
       {
-        "title": "AMD-Meta 600億美元「算力同盟」",
-        "summary": "Meta 透過五年長約與 10% 持股選擇權鎖定 AMD MI450 晶片，展現分散供應商依賴及佈局推論市場的決心。",
-        "impact": "正面",
+        "title": "川普關稅法源閃電切換",
+        "summary": "最高法院阻擊 IEEPA 後，川普改用《1974 貿易法》維持 15% 關稅預期，政策波動加劇。",
+        "impact": "負面",
         "related_news_ids": [
-          4,
-          7
+          1
         ]
       },
       {
-        "title": "台股神山過熱警報",
-        "summary": "台積電因短線漲幅過大罕見被證交所列入「注意股」，反映市場情緒進入短線亢奮區。",
-        "impact": "中性偏負面",
+        "title": "Intel 領銜半導體估值修復",
+        "summary": "Intel 盤中漲逾 5% 帶動費半反彈，市場對 AI 基礎設施外的硬體價值進行重估。",
+        "impact": "正面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "醫療巨頭轉型與分拆潮",
-        "summary": "美敦力分拆糖尿病事業 IPO，藉此精簡投資組合並聚焦高毛利市場，顯示老牌大廠回歸專業化經營。",
-        "impact": "正面",
+        "title": "全美退稅內戰爆發",
+        "summary": "民主黨州長要求直接向家庭退款，共和黨參議員抵制，形成長期法律與現金流博弈。",
+        "impact": "中性",
         "related_news_ids": [
-          8
+          1
         ]
       }
     ],
     "relations": [
       {
-        "from": "AMD",
-        "to": "Meta",
-        "type": "供應鏈/戰略合作"
+        "from": "川普",
+        "to": "美國小企業",
+        "type": "關稅壓力與資金抽乾"
       },
       {
-        "from": "Meta",
-        "to": "AMD",
-        "type": "潛在股東/持股選擇權"
+        "from": "美國最高法院",
+        "to": "川普",
+        "type": "司法制衡與權限限縮"
       },
       {
-        "from": "營邦 (3693.TW)",
-        "to": "AMD",
-        "type": "伺服器準系統供應商"
+        "from": "英特爾",
+        "to": "費城半導體指數",
+        "type": "成分股拉抬"
       },
       {
-        "from": "Meta",
-        "to": "NVIDIA",
-        "type": "減少依賴/競爭"
-      },
-      {
-        "from": "美敦力 (MDT)",
-        "to": "MiniMed",
-        "type": "資產分拆"
+        "from": "加州州長 Gavin Newsom",
+        "to": "川普",
+        "type": "政治對抗與退稅訴求"
       }
     ]
   },
   "newsData": [
     {
-      "title": "神山漲到被盯上！台積電罕見入列注意股 今年來已噴漲近27%",
-      "url": "https://news.cnyes.com/news/id/6351586",
-      "source": "鉅亨網(tw_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;台股馬年開市氣勢如虹，今 (24) 日連續第四個交易日改寫歷史新高，終場漲近千點，收在 34700 點。護國神山台積電 (2330-TW) 無疑是推升指數的最大功臣，然而，因短線漲幅過大，今天罕見遭到證交所列入「注意股」，共計 26 檔上市個股被示警。&lt;/p&gt;\n\n&lt;p&gt;依證交所公告，台積電被列注意股主因「6 個營業日起迄 2 個營業日收盤價價差達 185 元，且當日收盤價為最近 6 個營業日收盤價最高者」，達到注意股的警戒標準。&lt;/p&gt;\n\n&lt;p&gt;台積電今天盤中一度觸及 1975 元，最終大漲 65 元收在 1965 元，本益比升至 32.11 倍。統計今年以來，台積電累計上漲 415 元，漲幅高達 26.77%，市值來到&nbsp;50.96 兆元。&lt;/p&gt;\n\n&lt;p&gt;今日共計有 26 檔上市個股被列入注意名單，除了台積電外，還有中砂、台橡、華通、旺宏、燿華、兆赫、瑞軒、中工、欣興、耀登、大量、景碩、聯鈞、世芯 - KY、日月光投控、雙鍵、盛群、統新、元晶、睿生光電、聯友金屬 - 創、雷虎、南電、高",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Verisk Analytics Inc(VRSK-US)大漲5.06%，報190.78美元",
-      "url": "https://news.cnyes.com/news/id/6351598",
-      "source": "鉅亨網(wd_stock)",
-      "category": "半導體與AI基礎設施",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Verisk Analytics Inc(VRSK-US)截至台北時間24日23:41股價上漲9.18美元，報190.78美元，漲幅5.06%，成交量542,624（股），盤中最高價190.78美元、最低價181.60美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.8%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.85%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.82%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Verisk Analytics Inc(VRSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.71%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.3%&lt;/l",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - CVS保健(CVS-US)大跌5.14%，報73.04美元",
-      "url": "https://news.cnyes.com/news/id/6351597",
-      "source": "鉅亨網(wd_stock)",
-      "category": "醫療資本重組",
-      "thumbnail": null,
-      "content": "&lt;p&gt;CVS保健(CVS-US)截至台北時間24日23:37股價下跌3.96美元，報73.04美元，跌幅5.14%，成交量3,131,714（股），盤中最高價76.96美元、最低價73.04美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.79%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.84%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;CVS保健(CVS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.28%&lt;/li&gt;    &lt;li&gt;近 1 月：-7.61%&lt;/li&gt;    &lt;li&gt;近 3 月：-0.56%&",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - CDW Corp(CDW-US)大漲5.03%，報129.32美元",
-      "url": "https://news.cnyes.com/news/id/6351594",
-      "source": "鉅亨網(wd_stock)",
-      "category": "台股過熱警訊",
-      "thumbnail": null,
-      "content": "&lt;p&gt;CDW Corp(CDW-US)截至台北時間24日23:28股價上漲6.19美元，報129.32美元，漲幅5.03%，成交量384,301（股），盤中最高價129.32美元、最低價123.28美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.84%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.61%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.88%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.77%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;CDW Corp(CDW-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.75%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.08%&lt;/li&gt;    &lt;li&gt;近 3 月：",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "供應鏈版圖生變？分析師：Meta大單替超微AI布局重大背書",
-      "url": "https://news.cnyes.com/news/id/6351542",
+      "title": "盤中速報 - 英特爾(INTC-US)大漲5.04%，報45.83美元",
+      "url": "https://news.cnyes.com/news/id/6351608",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;超微 (AMD-US) 與 Meta Platforms(META-US) 簽署為期五年、規模上看 600 億美元的人工智慧 (AI) 晶片供應協議後，華爾街分析師普遍認為，此舉不僅鞏固超微在 AI 硬體市場的地位，也顯示大型科技公司正加速分散對單一供應商的依賴。不過，也有觀點指出，協議附帶的持股選項結構，透露出產業競爭仍高度激烈。&lt;/p&gt;\n\n&lt;p&gt;根據協議內容，Meta 將大規模採購超微 AI 晶片，並可選擇取得最高約 10% 持股。超微股價消息公布後勁揚，而 Meta 盤前走勢則相對謹慎。外界普遍將此交易視為超微繼 OpenAI 之後，取得第二家重量級 AI 客戶。&lt;/p&gt;\n\n&lt;h6&gt;分析師：AI 硬體市場走向多元化&lt;/h6&gt;\n\n&lt;p&gt;eMarketer 分析師 Gadjo Sevilla 指出，Meta 與超微的合作符合新興的「封閉式超大規模雲端商」模式，也就是大型 AI 客戶透過長期合約與股權安排，鎖定關鍵硬體供應來源。他認為，這顯示 AI 硬體市場正逐步多元化，長期領先的輝達不再是唯一選",
-      "timeStr": "上午12:02",
+      "content": "&lt;p&gt;英特爾(INTC-US)截至台北時間24日23:57股價上漲2.2美元，報45.83美元，漲幅5.04%，成交量35,567,957（股），盤中最高價45.83美元、最低價43.54美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.74%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.55%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.82%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.7%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特爾(INTC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.73%&lt;/li&gt;    &lt;li&gt;近 1 月：-2.13%&lt;/li&gt;    &lt;li&gt;近 3 月：+27.86%&lt",
+      "timeStr": "上午01:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 安謀控股公司(ARM-US)大漲5.02%，報129.99美元",
-      "url": "https://news.cnyes.com/news/id/6351582",
+      "title": "川普關稅不確定性大增 小企業陷「預付稅」與「退款難」雙重夾擊",
+      "url": "https://news.cnyes.com/news/id/6349954",
       "source": "鉅亨網(wd_stock)",
-      "category": "其他",
+      "category": "半導體產業",
       "thumbnail": null,
-      "content": "&lt;p&gt;安謀控股公司(ARM-US)截至台北時間24日22:53股價上漲6.21美元，報129.99美元，漲幅5.02%，成交量811,959（股），盤中最高價130.10美元、最低價124.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.47%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.13%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.57%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.46%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安謀控股公司(ARM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.24%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.19%&lt;/li&gt;    &lt;li&gt;近 3 月：-4.5",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大漲5.05%，報224美元",
-      "url": "https://news.cnyes.com/news/id/6351581",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Onto Innovation Inc.(ONTO-US)截至台北時間24日22:50股價上漲10.76美元，報224.00美元，漲幅5.05%，成交量123,702（股），盤中最高價224.00美元、最低價213.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.66%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.28%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.62%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Onto Innovation Inc.(ONTO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+2.14%&lt;/",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "AMD奪Meta 600億美元AI晶片大單 五年供貨並附10%持股選擇權",
-      "url": "https://news.cnyes.com/news/id/6351580",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6351580/o/ff472392b7657930406a4b439f0053aa.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;&lt;p data-start=&quot;44&quot; data-end=&quot;228&quot;&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 超微Advanced Micro Devices(AMD-US)宣布，與Meta Platforms(META-US)簽署為期五年的人工智慧晶片供應協議，總金額上看600億美元，Meta並取得最高10%持股選擇權。此案為AI產業近年規模最大的長期採購合約之一，顯示雲端與社群平台巨頭對高效能運算需求持續升溫。&lt;/p&gt;\n&lt;p data-start=&quot;230&quot; data-end=&quot;321&quot;&gt;受利多激勵，AMD前一交易日收在196.60美元後，盤前股價勁揚逾11%，資金迅速回流AI晶片族群",
-      "timeStr": "上午12:02",
-      "relatedArticles": []
-    },
-    {
-      "title": "美敦力旗下糖尿病事業 MiniMed 啟動美國 IPO，估值最高達 78.6 億美元",
-      "url": "https://news.cnyes.com/news/id/6351579",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6351579/o/605458e8d21400f13f1f97b8f2608977.jpg&quot; alt=&quot;Getty Images&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p data-start=&quot;42&quot; data-end=&quot;227&quot;&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 醫療器材&amp;器械大廠美敦力Medtronic(MDT-US)宣布，旗下位於加州北嶺的糖尿病事業單位MiniMed Group(MMED-US)，於美國首次公開發行（IPO）估值目標最高達78.6億美元，顯示公司加速推動業務重整與資本市場布局。&lt;/p&gt;\n&lt;p data-start=&quot;229&quot; data-end=&quot;339&quot;&gt;根據規劃，美敦力將發行2,800萬股普通股，每股定價區間介於25美元至28美元，預計最高募資金額達784 million美元。公司表示，此次",
-      "timeStr": "上午12:02",
+      "content": "&lt;p&gt;美國最高法院上周裁定，美國總統川普動用《國際緊急經濟權力法》(IEEPA) 加徵的大部分關稅已逾越權限，象徵一場曠日廢時的退稅戰正式開打，在這個過程中，麻省理工學院 (MIT) 史隆管理學院資深講師、前富達投資總裁 Robert Pozen 指出，小企業正面臨「預付稅」與「退款難」的困境，一般家庭也淪為犧牲品。&lt;/p&gt;\n\n&lt;p&gt;裁定無效後，川普在短短一天內兩度變更政策，他先宣布將根據《1974 年貿易法》第 122 條，徵收 10% 的臨時全球關稅&mdash;&mdash;該條款允許為了解決國際收支平衡問題，徵收最高 15%、為期 150 天的短期進口附加費）。隨後，川普又將這項全球關稅調高至 15%。&lt;/p&gt;\n\n&lt;h6&gt;退稅引爆政治內戰 黨派意見分歧&lt;/h6&gt;\n\n&lt;p&gt;Pozen 在 MarketWatch 專欄中撰文指出，目前立即性的政治鬥爭已轉移到「退稅」議題。共和黨參議員 Lindsey Graham 支持川普抵制退稅的立場，認為「既無必要也不恰當」，並預測將引發大規模訴訟。Graham",
+      "timeStr": "上午01:00",
       "relatedArticles": []
     }
   ],
@@ -254,62 +164,56 @@
   ],
   "events": [
     {
-      "title": "AMD-Meta 600億美元「算力同盟」",
-      "summary": "Meta 透過五年長約與 10% 持股選擇權鎖定 AMD MI450 晶片，展現分散供應商依賴及佈局推論市場的決心。",
-      "impact": "正面",
+      "title": "川普關稅法源閃電切換",
+      "summary": "最高法院阻擊 IEEPA 後，川普改用《1974 貿易法》維持 15% 關稅預期，政策波動加劇。",
+      "impact": "負面",
       "related_news_ids": [
-        4,
-        7
+        1
       ]
     },
     {
-      "title": "台股神山過熱警報",
-      "summary": "台積電因短線漲幅過大罕見被證交所列入「注意股」，反映市場情緒進入短線亢奮區。",
-      "impact": "中性偏負面",
+      "title": "Intel 領銜半導體估值修復",
+      "summary": "Intel 盤中漲逾 5% 帶動費半反彈，市場對 AI 基礎設施外的硬體價值進行重估。",
+      "impact": "正面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "醫療巨頭轉型與分拆潮",
-      "summary": "美敦力分拆糖尿病事業 IPO，藉此精簡投資組合並聚焦高毛利市場，顯示老牌大廠回歸專業化經營。",
-      "impact": "正面",
+      "title": "全美退稅內戰爆發",
+      "summary": "民主黨州長要求直接向家庭退款，共和黨參議員抵制，形成長期法律與現金流博弈。",
+      "impact": "中性",
       "related_news_ids": [
-        8
+        1
       ]
     }
   ],
   "relations": [
     {
-      "from": "AMD",
-      "to": "Meta",
-      "type": "供應鏈/戰略合作"
+      "from": "川普",
+      "to": "美國小企業",
+      "type": "關稅壓力與資金抽乾"
     },
     {
-      "from": "Meta",
-      "to": "AMD",
-      "type": "潛在股東/持股選擇權"
+      "from": "美國最高法院",
+      "to": "川普",
+      "type": "司法制衡與權限限縮"
     },
     {
-      "from": "營邦 (3693.TW)",
-      "to": "AMD",
-      "type": "伺服器準系統供應商"
+      "from": "英特爾",
+      "to": "費城半導體指數",
+      "type": "成分股拉抬"
     },
     {
-      "from": "Meta",
-      "to": "NVIDIA",
-      "type": "減少依賴/競爭"
-    },
-    {
-      "from": "美敦力 (MDT)",
-      "to": "MiniMed",
-      "type": "資產分拆"
+      "from": "加州州長 Gavin Newsom",
+      "to": "川普",
+      "type": "政治對抗與退稅訴求"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 340,
+      "count": 344,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Liberty Media Corp. (New Liberty Formula One) Series C(FWONK-US)EPS預估下修至2.19元，預估目標價為115.00元",
@@ -441,7 +345,7 @@
     },
     {
       "word": "美元",
-      "count": 178,
+      "count": 179,
       "articles": [
         {
           "title": "〈紐約匯市〉關鍵數據公布前 美元小漲",
@@ -507,7 +411,7 @@
     },
     {
       "word": "EPS",
-      "count": 168,
+      "count": 170,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -969,7 +873,7 @@
     },
     {
       "word": "健康",
-      "count": 92,
+      "count": 93,
       "articles": [
         {
           "title": "照護線上》這類黃斑部病變亞洲人風險較高！眼科醫師治療解析，守護視力健康關鍵５大問題（圖文懶人包）",
@@ -1035,7 +939,7 @@
     },
     {
       "word": "中速",
-      "count": 90,
+      "count": 91,
       "articles": [
         {
           "title": "盤中速報 - 新思科技(SNPS-US)大漲5.2%，報443.9美元",
@@ -1893,7 +1797,7 @@
     },
     {
       "word": "高雄",
-      "count": 44,
+      "count": 45,
       "articles": [
         {
           "title": "目睹財神爺「集體降落」 高雄男刮中1200萬元頭獎",
@@ -2618,6 +2522,72 @@
       ]
     },
     {
+      "word": "晶片",
+      "count": 36,
+      "articles": [
+        {
+          "title": "輝達Meta擴大GPU合作 將追加數百萬顆AI晶片",
+          "url": "https://news.cnyes.com/news/id/6346345",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "輝達穩住Meta簽大單　多年合約售數百萬顆AI晶片",
+          "url": "https://www.cna.com.tw/news/aopl/202602180010.aspx",
+          "source": "中央社",
+          "content": null
+        },
+        {
+          "title": "輝達與 Meta 簽訂多年合作協議！追加數百萬顆 AI 晶片部署基建",
+          "url": "https://finance.technews.tw/2026/02/18/meta-will-buy-millions-of-nvidia-chips/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "大單來了！輝達宣佈向Meta出售數百萬顆晶片",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5345393",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google Pixel 10a 新發表，僅搭 Tensor G4 晶片、無 PixelSnap 磁吸",
+          "url": "https://ccc.technews.tw/2026/02/19/google-unveils-pixel-10a/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "黃仁勳預告3月發布「前所未有」的晶片 強調AI泡沫不存在",
+          "url": "https://news.cnyes.com/news/id/6347192",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
+          "url": "https://news.cnyes.com/news/id/6347310",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "新創 Veritas 推防篡改晶片，手機一碰精品就能驗明正身",
+          "url": "https://technews.tw/2026/02/20/ex-tesla-pm-launches-chip-to-kill-30b-counterfeit-trade/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "「活血管晶片」可彎曲分支，精準模擬人體血管疾病",
+          "url": "https://technews.tw/2026/02/20/scientists-just-made-living-blood-vessels-on-a-chip-that-act-like-real-ones/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
+          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
+          "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "初二",
       "count": 36,
       "articles": [
@@ -2811,72 +2781,6 @@
           "title": "倒數最後2天！彰化最強走春 「命理一條街」成為「春節市集」最新亮點",
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5346928",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "晶片",
-      "count": 35,
-      "articles": [
-        {
-          "title": "輝達Meta擴大GPU合作 將追加數百萬顆AI晶片",
-          "url": "https://news.cnyes.com/news/id/6346345",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "輝達穩住Meta簽大單　多年合約售數百萬顆AI晶片",
-          "url": "https://www.cna.com.tw/news/aopl/202602180010.aspx",
-          "source": "中央社",
-          "content": null
-        },
-        {
-          "title": "輝達與 Meta 簽訂多年合作協議！追加數百萬顆 AI 晶片部署基建",
-          "url": "https://finance.technews.tw/2026/02/18/meta-will-buy-millions-of-nvidia-chips/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "大單來了！輝達宣佈向Meta出售數百萬顆晶片",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5345393",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google Pixel 10a 新發表，僅搭 Tensor G4 晶片、無 PixelSnap 磁吸",
-          "url": "https://ccc.technews.tw/2026/02/19/google-unveils-pixel-10a/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "黃仁勳預告3月發布「前所未有」的晶片 強調AI泡沫不存在",
-          "url": "https://news.cnyes.com/news/id/6347192",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
-          "url": "https://news.cnyes.com/news/id/6347310",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "新創 Veritas 推防篡改晶片，手機一碰精品就能驗明正身",
-          "url": "https://technews.tw/2026/02/20/ex-tesla-pm-launches-chip-to-kill-30b-counterfeit-trade/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "「活血管晶片」可彎曲分支，精準模擬人體血管疾病",
-          "url": "https://technews.tw/2026/02/20/scientists-just-made-living-blood-vessels-on-a-chip-that-act-like-real-ones/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
-          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
-          "source": "TechNews",
           "content": null
         }
       ]
