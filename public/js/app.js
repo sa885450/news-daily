@@ -77,7 +77,8 @@ function renderSummary() {
     const scoreVal = document.getElementById('today-sentiment-value');
     const score = appData.aiResult.sentiment_score;
     scoreVal.textContent = score;
-    scoreVal.className = score > 0 ? 'text-red-500' : 'text-green-500';
+    // 🟢 v7.3.0: 紅漲綠跌校正
+    scoreVal.className = score > 0 ? 'text-red-500' : (score < 0 ? 'text-green-500' : 'text-slate-400');
 }
 
 function renderTimeline() {
@@ -92,8 +93,9 @@ function renderTimeline() {
 
     container.classList.remove('hidden');
     timeline.innerHTML = events.map(e => {
-        const impactColor = e.impact === '正面' ? 'text-emerald-500' : (e.impact === '負面' ? 'text-rose-500' : 'text-slate-400');
-        const borderColor = e.impact === '正面' ? 'border-emerald-100 dark:border-emerald-900/30' : (e.impact === '負面' ? 'border-rose-100 dark:border-rose-900/30' : 'border-slate-100 dark:border-slate-800');
+        // 🟢 v7.3.0: 紅漲綠跌校正
+        const impactColor = e.impact === '正面' ? 'text-red-500' : (e.impact === '負面' ? 'text-green-500' : 'text-slate-400');
+        const borderColor = e.impact === '正面' ? 'border-red-100 dark:border-red-900/30' : (e.impact === '負面' ? 'border-green-100 dark:border-green-900/30' : 'border-slate-100 dark:border-slate-800');
 
         return `
             <div class="p-4 bg-slate-50/50 dark:bg-slate-800/30 rounded-xl border ${borderColor} transition-all hover:bg-white dark:hover:bg-slate-800 group">
@@ -213,8 +215,8 @@ function renderCharts() {
             datasets: [{
                 label: '情緒指數',
                 data: scores,
-                borderColor: '#4f46e5',
-                backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                borderColor: '#ef4444', // 🟢 v7.3.0: 紅色
+                backgroundColor: 'rgba(239, 68, 68, 0.1)', // 🟢 v7.3.0: 紅色
                 borderWidth: 3,
                 pointRadius: 5,
                 fill: true,
