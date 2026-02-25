@@ -1,72 +1,89 @@
 {
-  "updateTime": "2026-02-25T19:01:17.750Z",
-  "fullDateStr": "2026/2/26 · 更新於 03:01:17",
+  "updateTime": "2026-02-25T20:00:55.113Z",
+  "fullDateStr": "2026/2/26 · 更新於 04:00:55",
   "aiResult": {
-    "sentiment_score": 0.35,
+    "sentiment_score": 0.4,
     "dimensions": {
-      "policy": 0.2,
-      "market": 0.5,
-      "industry": 0.7,
-      "international": 0.3,
-      "technical": 0.4
+      "policy": -0.2,
+      "market": 0.6,
+      "industry": 0.5,
+      "international": 0.4,
+      "technical": 0.7
     },
     "entities": [
       {
-        "name": "超微電腦",
+        "name": "JPM-US",
         "sentiment": "positive",
-        "ticker": "SMCI-US"
+        "ticker": "JPM-US"
       },
       {
-        "name": "道瓊指數",
+        "name": "ABNB-US",
         "sentiment": "positive",
-        "ticker": ".DJI"
+        "ticker": "ABNB-US"
       },
       {
-        "name": "S&P 500指數",
-        "sentiment": "positive",
-        "ticker": ".SPX"
+        "name": "MSFT-US",
+        "sentiment": "neutral",
+        "ticker": "MSFT-US"
       },
       {
-        "name": "NASDAQ指數",
-        "sentiment": "positive",
-        "ticker": ".IXIC"
+        "name": "IBM-US",
+        "sentiment": "negative",
+        "ticker": "IBM-US"
       },
       {
-        "name": "費城半導體指數",
+        "name": "META-US",
+        "sentiment": "neutral",
+        "ticker": "META-US"
+      },
+      {
+        "name": "NVDA-US",
         "sentiment": "positive",
-        "ticker": ".SOX"
+        "ticker": "NVDA-US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：伺服器信心修復與風險偏好擴張】</h3><p>今日市場情緒由昨日的 0.22 回升至 <b>0.35</b>。昨日報告提到的『利多鈍化』在半導體板塊出現結構性反彈，特別是費城半導體指數（SOX）漲幅達 1.75%，領跑三大權值指數，顯示資金對高成長科技股的風險偏好再度轉強。</p><p><b>關鍵觀察：</b><br>1. <b>SMCI 的情緒領先指標</b>：超微電腦 (SMCI-US) 盤中大漲 5.01%，雖然其長期受審計問題困擾，但短線強彈顯示 AI 基礎設施供應鏈的『估值修正』已吸引抄底資金進場。<br>2. <b>指數共振向上</b>：那斯達克與費半的連動漲勢，消化了昨日對 NVIDIA 財報的預期壓力。目前市場正從單一龍頭的預期轉向整體產業鏈的價值挖掘。<br>3. <b>指標警示</b>：本次數據中未見「巴逆逆」等反向指標顯著操作，暫無短線見頂之隱憂，建議維持逢低分批佈局策略。</p>",
+    "summary": "<h3>【宏觀決策報告：雙軌復甦下的成長擴張與能源約束】</h3><p>今日市場情緒由昨日的 0.35 進一步攀升至 <b>0.40</b>。延續昨日 SOX 領漲的勢頭，今日費半指數漲幅擴大至 <b>1.84%</b>，顯示半導體板塊的修復行情正轉化為結構性多頭。與昨日不同的是，資金開始出現<b>『多點開花』</b>跡象，非科技類的傳統工業與消費平台如 Airbnb (ABNB) 亦展現強勁動能。</p><p><b>關鍵觀察與增量分析：</b><br>1. <b>傳統工業回溫</b>：小摩報告指出 2025 年全球工業產出成長將達 2.4%，結束兩年萎縮，這意味著市場成長引擎已不再僅限於 AI，而是步入『雙軌復甦』階段。<br>2. <b>AI 成本側壓力</b>：白宮針對資料中心電力成本的談判，標誌著科技巨頭將承擔更多基礎建設責任，這將壓抑長期毛利率，需警惕 CAPEX 的邊際效益遞減。<br>3. <b>結構性替代風險</b>：IBM 因 Anthropic 競爭導致的單日 13% 跌幅是重要警訊，顯示 AI 工具正從『賦能』轉向『取代』，對傳統軟體服務商構成估值威脅。<br>4. <b>反向指標觀察</b>：目前市場尚未見到『巴逆逆』等極端指標發聲，暗示當前漲勢仍具備宏觀基本面支撐，尚未進入過熱區間。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "美股大盤"
+        "category": "宏觀經濟"
       },
       {
         "id": 2,
-        "category": "半導體產業"
+        "category": "半導體"
+      },
+      {
+        "id": 3,
+        "category": "能源政策"
       }
     ],
     "sector_stats": {
-      "tech": 0.65,
-      "finance": 0.2,
-      "manufacturing": 0.1,
-      "service": 0.15
+      "tech": 0.6,
+      "finance": 0.4,
+      "manufacturing": 0.5,
+      "service": 0.3
     },
     "events": [
       {
-        "title": "AI 伺服器龍頭超跌反彈",
-        "summary": "超微電腦 (SMCI) 因跌深後出現技術性買盤大漲 5%，帶動 AI 硬體板塊集體回溫。",
+        "title": "全球製造業雙軌復甦趨勢",
+        "summary": "傳統工業部門產出成長轉正，結合 AI 投資熱潮，驅動全球經濟動能多元化。",
         "impact": "正面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "半導體族群領漲美股",
-        "summary": "費城半導體指數漲幅達 1.75%，顯示市場對科技權值股的成長性重拾信心。",
-        "impact": "正面",
+        "title": "白宮 AI 電力成本約束談判",
+        "summary": "政府要求科技巨頭自建電力設施，防止 AI 擴張推升民生電價，增加企業長期運營成本。",
+        "impact": "負面",
+        "related_news_ids": [
+          2
+        ]
+      },
+      {
+        "title": "供應鏈關稅防禦性遷徙",
+        "summary": "美國貿易政策驅使產能轉移至東南亞與墨西哥，帶動區域 PMI 擴張並引發短期搶單潮。",
+        "impact": "中性",
         "related_news_ids": [
           0
         ]
@@ -74,26 +91,56 @@
     ],
     "relations": [
       {
-        "from": "SMCI-US",
-        "to": "NVIDIA",
-        "type": "供應鏈需求同步"
+        "from": "Anthropic",
+        "to": "IBM-US",
+        "type": "競爭取代"
       },
       {
-        "from": "費城半導體指數",
-        "to": "NASDAQ指數",
-        "type": "成長股情緒聯動"
+        "from": "白宮",
+        "to": "MSFT-US",
+        "type": "政策監管"
+      },
+      {
+        "from": "關稅政策",
+        "to": "越南製造業",
+        "type": "產能移轉"
+      },
+      {
+        "from": "JPM-US",
+        "to": "傳統工業",
+        "type": "看好復甦"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 超微電腦(SMCI-US)大漲5.01%，報32.69美元",
-      "url": "https://news.cnyes.com/news/id/6353600",
+      "title": "AI不是唯一成長引擎！小摩：傳統工業將復甦 宏觀經濟將走向多點開花",
+      "url": "https://news.cnyes.com/news/id/6352527",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;超微電腦(SMCI-US)截至台北時間26日02:24股價上漲1.56美元，報32.69美元，漲幅5.01%，成交量12,899,690（股），盤中最高價32.69美元、最低價31.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.72%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.15%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.75%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微電腦(SMCI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.12%&lt;/li&gt;    &lt;li&gt;近 3 月：-7.83%",
-      "timeStr": "上午03:01",
+      "content": "&lt;p&gt;AI 與傳統產業的韌性正在上演微妙角力，儘管 AI 技術革命持續主導市場情緒，但最新數據顯示，全球經濟的成長引擎未完全押注於這場技術變革，傳統工業部門的復甦勢頭正悄悄改寫市場預期。&lt;/p&gt;\n\n&lt;p&gt;2025 年全球工業產出年成長率達 2.4%，較過去三年平均值高出一倍，更顯示出超越科技熱潮的內生動能。&lt;/p&gt;\n\n&lt;p&gt;摩根大通 (下稱小摩)(&lt;a data-symbol-template=&quot;USS:JPM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;JPM-US&lt;/a&gt;) 研究團隊深入分析後發現，驅動這波復甦的核心力量來自非科技領域的復甦。除中國外全球非科技類工業產出年增率 1.2%，結束連兩年萎縮頹勢。這種轉折在美國關稅政策帶來的「搶單潮」中尤為明顯，企業為規避潛在關稅風險提前備貨，推動 2-3 月全球工業增速達到年化 9.4% 的短期高峰。&lt;/p&gt;\n\n&lt;p&gt;科技巨頭的資本支出狂潮仍是市場焦點，市場預估今年全球 AI 相關投資規模",
+      "timeStr": "上午04:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.01%，報131.96美元",
+      "url": "https://news.cnyes.com/news/id/6353607",
+      "source": "鉅亨網(wd_stock)",
+      "category": "宏觀經濟",
+      "thumbnail": null,
+      "content": "&lt;p&gt;愛彼迎(ABNB-US)截至台北時間26日03:02股價上漲6.3美元，報131.96美元，漲幅5.01%，成交量3,552,534（股），盤中最高價131.96美元、最低價125.82美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.81%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.24%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.84%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;愛彼迎(ABNB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.02%&lt;/li&gt;    &lt;li&gt;近 1 月：-6.95%&lt;/li&gt;    &lt;li&gt;近 3 月：+7.47%&",
+      "timeStr": "上午04:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "AI燒電誰買單？白宮找科技巨頭談判",
+      "url": "https://news.cnyes.com/news/id/6353586",
+      "source": "鉅亨網(wd_stock)",
+      "category": "半導體",
+      "thumbnail": null,
+      "content": "&lt;p&gt;《路透》周三 (25 日) 報導，白宮計畫於 3 月初邀集多家大型資料中心與人工智慧 (AI) 企業，包括微軟(MSFT-US)、Anthropic 與 Meta(META-US)，討論並正式敲定一項承諾機制，以避免資料中心快速擴張推升民生電價。&lt;/p&gt;\n\n&lt;p&gt;根據知情人士透露，此次會議旨在推動總統川普日前於國情咨文中提出的倡議。川普表示，他已要求大型科技企業自行興建發電設施，以支應日益擴張的資料中心與 AI 基礎設施所需電力，確保不將成本轉嫁至一般用戶。&lt;/p&gt;\n\n&lt;p&gt;討論中的承諾內容，預料將類似微軟今年稍早提出的方案，包括投資新的發電容量與提升能源效率。微軟副董事長兼總裁史密斯 (Brad Smith) 表示，公司支持政府確保資料中心不會推升消費者電費，但未說明是否出席會議或簽署新的承諾。Meta 發言人拒絕評論，Anthropic 則未立即回應。&lt;/p&gt;\n\n&lt;p&gt;川普將全球 AI 競賽與能源供應保障列為第二任期的核心政策之一。然而，隨著資料中心用電需求急速增加，多地電費上漲，引發地方與州",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     }
   ],
@@ -136,17 +183,25 @@
   ],
   "events": [
     {
-      "title": "AI 伺服器龍頭超跌反彈",
-      "summary": "超微電腦 (SMCI) 因跌深後出現技術性買盤大漲 5%，帶動 AI 硬體板塊集體回溫。",
+      "title": "全球製造業雙軌復甦趨勢",
+      "summary": "傳統工業部門產出成長轉正，結合 AI 投資熱潮，驅動全球經濟動能多元化。",
       "impact": "正面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "半導體族群領漲美股",
-      "summary": "費城半導體指數漲幅達 1.75%，顯示市場對科技權值股的成長性重拾信心。",
-      "impact": "正面",
+      "title": "白宮 AI 電力成本約束談判",
+      "summary": "政府要求科技巨頭自建電力設施，防止 AI 擴張推升民生電價，增加企業長期運營成本。",
+      "impact": "負面",
+      "related_news_ids": [
+        2
+      ]
+    },
+    {
+      "title": "供應鏈關稅防禦性遷徙",
+      "summary": "美國貿易政策驅使產能轉移至東南亞與墨西哥，帶動區域 PMI 擴張並引發短期搶單潮。",
+      "impact": "中性",
       "related_news_ids": [
         0
       ]
@@ -154,20 +209,30 @@
   ],
   "relations": [
     {
-      "from": "SMCI-US",
-      "to": "NVIDIA",
-      "type": "供應鏈需求同步"
+      "from": "Anthropic",
+      "to": "IBM-US",
+      "type": "競爭取代"
     },
     {
-      "from": "費城半導體指數",
-      "to": "NASDAQ指數",
-      "type": "成長股情緒聯動"
+      "from": "白宮",
+      "to": "MSFT-US",
+      "type": "政策監管"
+    },
+    {
+      "from": "關稅政策",
+      "to": "越南製造業",
+      "type": "產能移轉"
+    },
+    {
+      "from": "JPM-US",
+      "to": "傳統工業",
+      "type": "看好復甦"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 382,
+      "count": 384,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -233,7 +298,7 @@
     },
     {
       "word": "AI",
-      "count": 364,
+      "count": 366,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -299,7 +364,7 @@
     },
     {
       "word": "美元",
-      "count": 207,
+      "count": 208,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -827,7 +892,7 @@
     },
     {
       "word": "中速",
-      "count": 99,
+      "count": 100,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1%，報8131.81點",
@@ -1289,7 +1354,7 @@
     },
     {
       "word": "科技",
-      "count": 63,
+      "count": 65,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -1684,6 +1749,72 @@
       ]
     },
     {
+      "word": "世界",
+      "count": 52,
+      "articles": [
+        {
+          "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
+          "url": "https://www.thenewslens.com/article/264531",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "不是費玉清！大咖歌王世界置產身家曝光 根本隱藏版「地產王」",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5345890",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "逾7公尺！印尼「神獸級」巨蟒 創「最長野生蛇」金氏世界紀錄",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346047",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "柏林世界論壇　裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://www.cna.com.tw/news/aopl/202602190168.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "柏林世界論壇 裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346348",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "德國啤酒市場持續萎縮　世界最古老修道院釀酒廠易主",
+          "url": "https://www.cna.com.tw/news/aopl/202602190189.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "在柏林世界論壇發聲 裴洛西：孤立台灣將引發全球性災難",
+          "url": "https://news.ltn.com.tw/news/politics/paper/1744093",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
+          "url": "https://news.cnyes.com/news/id/6347310",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "突破6G關鍵瓶頸 中國科學家首創「一體化融合通信」系統刷新三項世界紀錄",
+          "url": "https://news.cnyes.com/news/id/6347314",
+          "source": "鉅亨網(tech)",
+          "content": null
+        },
+        {
+          "title": "德國啤酒市場持續萎縮，世界最古老修道院釀酒廠易主",
+          "url": "https://technews.tw/2026/02/20/kloster-weltenburg-beer/",
+          "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "法院",
       "count": 52,
       "articles": [
@@ -1745,72 +1876,6 @@
           "title": "川普加碼回應最高法院關稅裁決　國際經貿局勢難料",
           "url": "https://news.ltn.com.tw/news/world/breakingnews/5346950",
           "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "世界",
-      "count": 51,
-      "articles": [
-        {
-          "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
-          "url": "https://www.thenewslens.com/article/264531",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "不是費玉清！大咖歌王世界置產身家曝光 根本隱藏版「地產王」",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5345890",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "逾7公尺！印尼「神獸級」巨蟒 創「最長野生蛇」金氏世界紀錄",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346047",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "柏林世界論壇　裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://www.cna.com.tw/news/aopl/202602190168.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "柏林世界論壇 裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346348",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "德國啤酒市場持續萎縮　世界最古老修道院釀酒廠易主",
-          "url": "https://www.cna.com.tw/news/aopl/202602190189.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "在柏林世界論壇發聲 裴洛西：孤立台灣將引發全球性災難",
-          "url": "https://news.ltn.com.tw/news/politics/paper/1744093",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
-          "url": "https://news.cnyes.com/news/id/6347310",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "突破6G關鍵瓶頸 中國科學家首創「一體化融合通信」系統刷新三項世界紀錄",
-          "url": "https://news.cnyes.com/news/id/6347314",
-          "source": "鉅亨網(tech)",
-          "content": null
-        },
-        {
-          "title": "德國啤酒市場持續萎縮，世界最古老修道院釀酒廠易主",
-          "url": "https://technews.tw/2026/02/20/kloster-weltenburg-beer/",
-          "source": "TechNews",
           "content": null
         }
       ]
@@ -3202,6 +3267,72 @@
       ]
     },
     {
+      "word": "股市",
+      "count": 36,
+      "articles": [
+        {
+          "title": "亞洲股市普遍上揚　美伊核談判國際油市觀望",
+          "url": "https://www.cna.com.tw/news/afe/202602180130.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "美國與伊朗關係緊張　華爾街股市早盤走低",
+          "url": "https://www.cna.com.tw/news/afe/202602190193.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "美國最高法院駁回川普關稅政策 刺激股市上漲",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346938",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台股封關期間主要股市表現與重點新聞",
+          "url": "https://news.cnyes.com/news/id/6347880",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
+          "url": "https://www.thenewslens.com/article/264788",
+          "source": "關鍵評論網",
+          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
+        },
+        {
+          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
+          "url": "https://news.cnyes.com/news/id/6343130",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
+        },
+        {
+          "title": "創紀錄！全球資金流向南韓、日本股市",
+          "url": "https://news.cnyes.com/news/id/6348650",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
+        },
+        {
+          "title": "南韓股市指數突破5900點 再創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
+        }
+      ]
+    },
+    {
       "word": "分析",
       "count": 35,
       "articles": [
@@ -3264,72 +3395,6 @@
           "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
           "source": "中央社國際",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "股市",
-      "count": 35,
-      "articles": [
-        {
-          "title": "亞洲股市普遍上揚　美伊核談判國際油市觀望",
-          "url": "https://www.cna.com.tw/news/afe/202602180130.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "美國與伊朗關係緊張　華爾街股市早盤走低",
-          "url": "https://www.cna.com.tw/news/afe/202602190193.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "美國最高法院駁回川普關稅政策 刺激股市上漲",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346938",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台股封關期間主要股市表現與重點新聞",
-          "url": "https://news.cnyes.com/news/id/6347880",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
-          "url": "https://www.thenewslens.com/article/264788",
-          "source": "關鍵評論網",
-          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
-        },
-        {
-          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
-          "url": "https://news.cnyes.com/news/id/6343130",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
-        },
-        {
-          "title": "創紀錄！全球資金流向南韓、日本股市",
-          "url": "https://news.cnyes.com/news/id/6348650",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
-        },
-        {
-          "title": "南韓股市指數突破5900點 再創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
         }
       ]
     },
