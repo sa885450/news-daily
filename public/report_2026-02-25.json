@@ -1,153 +1,189 @@
 {
-  "updateTime": "2026-02-25T22:00:52.195Z",
-  "fullDateStr": "2026/2/26 · 更新於 06:00:52",
+  "updateTime": "2026-02-25T23:01:12.694Z",
+  "fullDateStr": "2026/2/26 · 更新於 07:01:12",
   "aiResult": {
-    "sentiment_score": 0.58,
+    "sentiment_score": 0.72,
     "dimensions": {
-      "policy": 0.3,
+      "policy": -0.45,
       "market": 0.85,
-      "industry": 0.7,
-      "international": 0.4,
-      "technical": 0.9
+      "industry": 0.6,
+      "international": -0.5,
+      "technical": 0.55
     },
     "entities": [
       {
-        "name": "台積電",
-        "sentiment": "positive",
-        "ticker": "2330.TW"
-      },
-      {
         "name": "輝達",
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "ticker": "NVDA"
       },
       {
-        "name": "貿聯-KY",
-        "sentiment": "positive",
-        "ticker": "3665.TW"
-      },
-      {
-        "name": "鴻海",
-        "sentiment": "positive",
-        "ticker": "2317.TW"
-      },
-      {
-        "name": "愛彼迎",
-        "sentiment": "positive",
-        "ticker": "ABNB"
-      },
-      {
-        "name": "美元指數",
+        "name": "Salesforce",
         "sentiment": "negative",
-        "ticker": "DXY"
+        "ticker": "CRM"
+      },
+      {
+        "name": "微軟",
+        "sentiment": "neutral",
+        "ticker": "MSFT"
+      },
+      {
+        "name": "蘋果",
+        "sentiment": "neutral",
+        "ticker": "AAPL"
+      },
+      {
+        "name": "中芯國際",
+        "sentiment": "negative",
+        "ticker": "0981.HK"
+      },
+      {
+        "name": "長鑫存儲",
+        "sentiment": "negative",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【宏觀決策報告：台積電市值破極限，AI 估值進入深水區檢驗】</h3><p>今日市場情緒較昨日 0.45 進一步攀升至 <b>0.58</b>。相較於昨日聚焦於 SaaS 與 Fintech 的修復，今日市場重心回歸「硬體王者」<b>台積電 (2330.TW)</b>，其市值衝破 2 兆美元大關，帶領台股寫下歷史天量。雖然台股呈現極度貪婪，但美股端因 <b>Nvidia (NVDA)</b> 財報在即，市場呈現恐慌性觀望，美元走弱反映了地緣政治關稅與避險情緒的交織。</p><p><b>增量分析與風險提示：</b><br>1. <b>結構性變化</b>：昨日是超跌軟體的反彈，今日則是權值股的瘋狂，台積電今年漲幅已達 30.6%，技術指標雖強但也暗示乖離過大。<br>2. <b>反向指標觀察</b>：目前網路上「巴逆逆」等反向指標尚未對此次台股天量發出強烈看空訊號，顯示散戶情緒尚未完全過熱，目前仍由法人機構盤勢主導。<br>3. <b>避險建議</b>：隨著川普關稅風暴（10%-15%）持續發酵，美元作為儲備貨幣的地位受質疑，建議配置具備「AI 護城河」之網路平台股如 <b>ABNB</b>，以應對 AI 估值重估風險。</p>",
+    "summary": "<h3>【風險控管警告：AI 繁榮背後的結構性斷裂與估值泡沫】</h3><p>今日市場情緒攀升至 <b>0.72</b>，相較於昨日的 0.58 呈現<b>極度貪婪</b>。儘管 <b>Nvidia (NVDA)</b> 以卓越財報穩住 AI 硬體基本盤，但軟體端 <b>Salesforce (CRM)</b> 的財測疲軟，揭示了生成式 AI 對傳統 SaaS 商業模式的破壞性衝擊，這是一個嚴峻的警訊。</p><p><b>增量分析與關鍵風險：</b><br>1. <b>硬軟體估值脫節</b>：Nvidia 的資料中心營收激增，反映基建需求尚在頂峰，但微軟已逼近 10 年技術死線（200 週均線），Salesforce 的重挫暗示企業正縮減傳統軟體支出以補貼 AI 硬體投入。這種「擠壓效應」若持續，將導致除 AI 核心外的大範圍衰退。<br>2. <b>成本通膨危機</b>：記憶體與電池成本暴漲（DDR5 半年漲 583%），正侵蝕蘋果等消費電子終端毛利，平價化策略受阻。<br>3. <b>地緣政治黑天鵝</b>：美方對中芯、長鑫、長江存儲的全面圍堵，雖短期利好非中系供應鏈，但長期將導致全球半導體供應鏈碎片化，推升長期通膨壓力。</p><p>🚨 <b>特殊指標警告</b>：若市場指標「<b>巴逆逆 (8zz)</b>」此時展現強烈看好情緒，結合目前大盤與 200 週均線的乖離率，極大機率預示短線頂部已現。<b>建議投資者適度獲利了結 Nvidia 等高乖離資產，並將資金轉向具有強大資產負債表的防禦性標的，或拉高現金比例。</b></p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與設備"
+        "category": "半導體與 AI"
       },
       {
         "id": 2,
-        "category": "宏觀匯率政策"
+        "category": "地緣政治政策"
+      },
+      {
+        "id": 3,
+        "category": "軟體服務(SaaS)"
       }
     ],
     "sector_stats": {
-      "tech": 0.85,
-      "finance": 0.45,
-      "manufacturing": 0.7,
-      "service": 0.35
+      "tech": 0.8,
+      "finance": 0.3,
+      "manufacturing": 0.1,
+      "service": -0.2
     },
     "events": [
       {
-        "title": "台積電兩兆美元里程碑與台股天量",
-        "summary": "台積電衝上 2025 元引發股匯雙漲，台股成交量近兆元創歷史新高，確立 AI 權值股的絕對領先地位。",
-        "impact": "正面",
+        "title": "輝達 AI 霸權延續與軟體替代威脅",
+        "summary": "Nvidia 財報大勝預期，但 Salesforce 的疲軟財測引發市場對 AI 侵蝕傳統軟體市場份額的擔憂。",
+        "impact": "正面(硬體)/負面(SaaS)",
         "related_news_ids": [
-          0
+          1,
+          4,
+          5
         ]
       },
       {
-        "title": "輝達財報前夕的 AI 估值焦慮",
-        "summary": "市場對 NVDA 財報預期極高，導致科技股在財報公布前出現「下行衝擊風險大於上行」的防禦性交易。",
-        "impact": "中性",
+        "title": "美國「三位一體」封鎖中系晶片",
+        "summary": "美政府將出口管制、投資審查與政府採購限制全面整合，鎖定中芯國際、長鑫與長江存儲。",
+        "impact": "負面",
         "related_news_ids": [
-          1,
           2
         ]
       },
       {
-        "title": "川普關稅戰與美元儲備地位疑慮",
-        "summary": "川普推進更複雜的關稅制度，引發市場對美元長期去全球化負面影響的擔憂，美元指數走弱。",
-        "impact": "負面",
+        "title": "記憶體超級週期推升硬體通膨",
+        "summary": "DRAM 與 NAND 價格大幅調漲，導致蘋果平價 MacBook 計畫受阻，顯示終端成本壓力劇增。",
+        "impact": "中性偏負面",
         "related_news_ids": [
-          1
+          0,
+          6
         ]
       }
     ],
     "relations": [
       {
-        "from": "台積電",
-        "to": "鴻海",
-        "type": "供應鏈協同"
+        "from": "Nvidia",
+        "to": "Salesforce",
+        "type": "預算排擠與競爭"
       },
       {
-        "from": "輝達",
-        "to": "台積電",
-        "type": "晶圓代工合作"
+        "from": "美國政府",
+        "to": "中芯國際",
+        "type": "採購與出口限制"
       },
       {
-        "from": "川普關稅政策",
-        "to": "美元指數",
-        "type": "負面影響"
+        "from": "三星",
+        "to": "蘋果",
+        "type": "供應鏈議價壓力"
       },
       {
-        "from": "AI 伺服器需求",
-        "to": "貿聯-KY",
-        "type": "關鍵零組件採購"
+        "from": "長鑫存儲",
+        "to": "蘋果",
+        "type": "潛在替代供應鏈"
       }
     ]
   },
   "newsData": [
     {
-      "title": "〈台股盤前要聞〉開春3天噴漲近2000點爆天量、台積電市值2兆美元、台幣升值1.21角",
-      "url": "https://news.cnyes.com/news/id/6353521",
-      "source": "鉅亨網(tw_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;h6&gt;2/26 台股盤前要聞&lt;/h6&gt;\n\n&lt;p&gt;1. 台積電 25 日衝上 2025 元，大盤一度漲逾 800 點，最高漲至 35521.54 點，終場漲 712.25 點或 2.05%，以 35413.07 點作收，再度創歷史收盤新高，成交量 9819.67 億元，同步寫歷史最大量。外資持續加碼，今天再買超 413.02 億元，並大舉敲進群創超過 7 萬張、鴻海 6.8 萬張，但調節天價台積電 4193 張。&lt;/p&gt;\n\n&lt;p&gt;2. 台股驚天連五漲，外資大舉匯入買股，呈現股匯雙漲走勢，&lt;a href=&quot;https://invest.cnyes.com/forex/detail/usdtwd&quot;&gt;新台幣&lt;/a&gt;兌美元一度逼近 31.3 元關卡，在央行介入調節下，終場收在 31.34 元，升值 1.21 角，創近 1 個月收盤新高，台北與元太外匯市場總成交量仍維持高檔水準，達&nbsp;20.225 億美元。&lt;/p&gt;\n\n&lt;p&gt;3. 台積電去年底收盤價為 1550 ",
-      "timeStr": "上午06:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "〈紐約匯市〉美元走弱 延續本周震盪走勢",
-      "url": "https://news.cnyes.com/news/id/6353628",
-      "source": "鉅亨網(wd_stock)",
-      "category": "半導體與設備",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美元周三 (25 日) 走弱，延續本周來回震盪的交易。市場焦點轉向 AI 晶片巨擘輝達 (Nvidia)(NVDA-US) 盤後將公布的財報，該事件過去經常引發市場大幅波動。&lt;/p&gt;\n\n&lt;p&gt;紐約尾盤，追蹤美元兌六種主要貨幣的美元指數 (DXY) 下跌 0.2%，報 97.69，過去一個月仍上漲近 1%。&lt;/p&gt;\n\n&lt;p&gt;美元這周維持相對狹幅區間波動，因美國總統川普的新一輪 10% 全球關稅於周二生效，市場並為可能上調至 15% 做準備。&lt;/p&gt;\n\n&lt;p&gt;川普在國情咨文中表示，儘管最高法院近期裁決限制其權限，他仍將推進關稅議程。不過，由於新增關稅需尋求國會批准，其施加新關稅的空間預料將受到嚴格限制。&lt;/p&gt;\n\n&lt;p&gt;麥格理全球外匯與利率策略師 Thierry Wizman 表示，「川普未釋出任何放緩關稅議程的訊號。相反地，他表示將透過其他授權恢復廣泛的美國進口關稅，並指出新制度將更為『複雜』但也更具持久性，且不一定需要國會行動。」&lt;/p&gt;\n\n&lt;p&gt;他",
-      "timeStr": "上午06:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "AI恐慌殺過頭？Jefferies點名6檔護城河股：等情緒退燒就翻身",
-      "url": "https://news.cnyes.com/news/id/6352073",
-      "source": "鉅亨網(wd_stock)",
-      "category": "宏觀匯率政策",
-      "thumbnail": null,
-      "content": "&lt;p&gt;投行傑富瑞（Jefferies）認為當前的 AI 恐慌拋售潮缺乏正當性，並點名 6 檔個股，預期當華爾街不再因 AI 一點新動態就「先賣再說」，這些公司將率先突圍。&lt;/p&gt;\n\n&lt;p&gt;人工智慧（AI）在短時間內從華爾街最受青睞的交易標的，轉身變成了大盤跌勢的催化劑，然而，並非所有市場人士都認為這種恐慌情緒是有理可原的。&lt;/p&gt;\n\n&lt;p&gt;繼 Citrini Research 一份描繪 AI 未來慘淡前景的報告引發市場關注，並導致週一美股重挫後，傑富瑞（Jefferies）分析師隨即在週二發布報告指出，他們認為當前的拋售潮缺乏正當性。&lt;/p&gt;\n\n&lt;p&gt;在這一波跌勢中，網路股受創最深，S&amp;P 網路精選行業指數自 2026 年初以來已下跌逾 15%。儘管市場氛圍悲觀，傑富瑞仍看好科技次產業具備抵禦恐慌的韌性，並特別點名六檔個股，預期一旦華爾街不再因 AI 的每一項新動態而草木皆兵，這些公司將率先突圍。&lt;/p&gt;\n\n&lt;p&gt;傑富瑞認為，要讓 AI 取代現有的網路中介服務存在兩大障礙",
-      "timeStr": "上午06:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "比爾蓋茲向員工道歉 認了婚外情！",
-      "url": "https://news.cnyes.com/news/id/6352847",
+      "title": "記憶體與電池成本上升 蘋果平價MacBook計畫添變數",
+      "url": "https://news.cnyes.com/news/id/6353638",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;科技巨頭微軟 (&lt;a data-symbol-template=&quot;USS:MSFT:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MSFT-US&lt;/a&gt;) 創始人比爾 &middot; 蓋茲周二（24 日）就其與美國已故性犯罪者愛潑斯坦的關係向蓋茲基金會員工道歉，承認自己的錯誤給這個慈善組織蒙上陰影，但堅稱自己未參與愛潑斯坦的犯罪行為。&lt;/p&gt;\n\n&lt;p&gt;據《華爾街日報》查閱的一段錄音顯示，蓋茲在周二舉行的一場會議上承認，他曾與兩名俄羅斯女性有過婚外關係，但這些關係並未涉及愛潑斯坦的受害者。&lt;/p&gt;\n\n&lt;p&gt;蓋茲承認有過婚外情，一位是在橋牌比賽中結識的俄羅斯選手，另一位是在商業活動中認識的俄羅斯核物理學家。&lt;/p&gt;\n\n&lt;p&gt;蓋茲稱，近期公開的愛潑斯坦檔案中，有一些他與面部被遮擋女性合影的照片，那是愛潑斯坦在會面後要求他與其助理一起拍攝。&lt;/p&gt;\n\n&lt;p&gt;「我要明確一點，我從未與受害者，也就是他身邊的那些女性有過任",
-      "timeStr": "上午06:00",
+      "content": "&lt;p&gt;記憶體與電池成本上升 蘋果平價 MacBook 計畫添變數&lt;/p&gt;\n\n&lt;p&gt;《Appleinsider》報導，隨著記憶體與電池成本持續攀升，正為蘋果 (AAPL-US) 推動平價 MacBook 計畫增添變數。&lt;/p&gt;\n\n&lt;p&gt;市場原先在 2023 年預估該機型定價可落在約 500 美元，但關鍵零組件價格自此明顯走高，使 2026 年的產品與定價策略面臨更大壓力。&lt;/p&gt;\n\n&lt;p&gt;產業預測顯示，2026 年初 MacBook 出貨量將季增 1.4%、年增 3.7%，全年出貨有望達 2,100 萬台，高於 2025 年的 2,055 萬台。在整體 PC 市場需求轉弱之際，蘋果仍能維持溫和成長，表現相對突出。&lt;/p&gt;\n\n&lt;p&gt;相較之下，全球筆電出貨預計在 2026 年初下滑，主因企業 IT 支出轉趨保守，加上消費者換機週期放緩。分析人士指出，產業下行時，成長通常集中於產品整合度高、策略清晰的領先廠商，蘋果過去在 PC 市場低潮期擴大市占的經驗，正再度上演。&lt;/p&gt;\n",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "〈財報〉Salesforce Q4業績亮眼 但財測遜色 AI威脅產業 盤後挫逾5%",
+      "url": "https://news.cnyes.com/news/id/6353643",
+      "source": "鉅亨網(wd_stock)",
+      "category": "半導體與 AI",
+      "thumbnail": null,
+      "content": "&lt;p&gt;企業軟體巨頭 Salesforce (CRM-US)公布最新財報後，股價在周三 (25 日) 盤後交易重挫 5%。儘管公司上季財報表現優於市場預期，但對 2027 財年的營收指引略低於華爾街預測，加上生成式人工智慧對軟體產業成長前景的疑慮升溫，拖累股價走勢。&lt;/p&gt;\n\n&lt;p&gt;截稿前，Salesforce 周三交易時間收高 3.41%，但盤後重挫 5.48%，報每股 181.17 美元。&lt;/p&gt;\n\n&lt;h6&gt;F2026 Q4&nbsp;(1/31 止) 財報關鍵數據 vs. 分析師預期 (LSEG 調查的共識預期)&lt;/h6&gt;\n\n&lt;ul&gt;\n&lt;li&gt;調整後每股盈餘 (EPS)：3.81 美元 vs. 3.04 美元&lt;/li&gt;\n&lt;li&gt;營收：年增 12% 至 112 億美元 vs. 111.8 億美元。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;Salesforce 表示，截至 1 月 31 日止的 2026 財年第四季營收年增 12%，為兩年來最",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "美國全面圍堵中國晶片產業 封殺中芯國際、長鑫存儲、長江存儲",
+      "url": "https://news.cnyes.com/news/id/6353647",
+      "source": "鉅亨網(wd_stock)",
+      "category": "地緣政治政策",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美國政府進一步收緊對中國半導體產業的限制措施。2 月 17 日，《聯邦公報》發布一項擬議規則，編號為 FAR Case 2023-008，核心內容為禁止美國聯邦行政機構採購含有受限半導體的產品與服務。中芯國際、長鑫儲存、長江存儲三家中國企業被明確列入受限名單，顯示美方對中國半導體的限制，已從出口管制與投資審查延伸至政府採購層面。&lt;/p&gt;\n\n&lt;p&gt;該規則的法律依據為 2023 財年《詹姆斯 &middot;M&middot; 英霍夫國防授權法》（NDAA FY2023）第 5949 條。條文未設模糊空間，也未提供例外情況，直接點名三家企業並納入全面禁止範圍。此舉被視為出口管制、投資審查與政府採購限制形成「三位一體」管制架構，影響範圍遠超企業本身。&lt;/p&gt;\n\n&lt;p&gt;根據擬議規則，中芯國際 (SMIC) 及其任何子公司、關聯公司或繼承實體所設計、生產或提供的半導體產品與服務，均被納入禁止採購之列。作為中國規模最大、技術最先進的晶圓代工企業之一，該禁令意味著未來美國聯邦政府及相關機構不得採購任何含有中芯晶片的設備與服務。&lt;",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "做空微軟向來是輸家！股價暴跌逼近10年死線 這次會否不同",
+      "url": "https://news.cnyes.com/news/id/6352350",
+      "source": "鉅亨網(wd_stock)",
+      "category": "軟體服務(SaaS)",
+      "thumbnail": null,
+      "content": "&lt;p&gt;歷史經驗告訴投資人，長期做空微軟 (&lt;a data-symbol-template=&quot;USS:MSFT:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MSFT-US&lt;/a&gt;) 往往並非明智之舉。然而，隨著 2026 年以來股價明顯走弱，市場開始質疑：這一次是否有所不同？&lt;/p&gt;\n\n&lt;p&gt;截至目前為止，微軟已成為美股「七巨頭」中今年表現最弱勢的個股。自 2025 年 10 月 28 日創下每股 539.82 美元歷史收盤高點以來，股價累計下跌約 28%，其中 2026 年以來跌幅達 19.4%。&lt;/p&gt;\n\n&lt;p&gt;這波修正幅度之大，使其股價逼近一項關鍵長期技術指標：200 週移動平均線。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;技術面臨關鍵考驗&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;目前微軟股價僅比 200 週均線 375.80 美元高出約 3.5%。值得注意的是，微軟上一次收盤跌破 200 週均線，已是 2013 年",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "〈財報〉輝達Q4優預期 AI熱推動資料中心營收大增75% 盤後續揚",
+      "url": "https://news.cnyes.com/news/id/6353630",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;人工智慧 (AI) 晶片龍頭輝 (Nvidia)(&lt;a href=&quot;https://invest.cnyes.com/usstock/detail/NVDA&quot;&gt;NVDA-US&lt;/a&gt;) 周三 (25 日) 盤後公布 2026 會計年度第四季財報，在核心資料中心業務營收成長 75% 帶動下，表現優於市場預期，同時釋出高於預估的財測，激勵盤後股價續漲。截至發稿，漲超&nbsp;1%。&lt;/p&gt;\n\n&lt;p&gt;輝達第四季總營收較去年同期的 393 億美元大增 73%。目前公司逾 91% 的銷售來自資料中心部門，該部門涵蓋其市場領先的 AI 晶片。&lt;/p&gt;\n\n&lt;p&gt;資料中心部門第四季營收達 623 億美元，高於 StreetAccount 預期的 606.9 億美元。&lt;/p&gt;\n\n&lt;p&gt;公司新聞稿指出，淨利幾乎倍增至 430 億美元，或每股 1.76 美元，高於去年同期的 221 億美元，或每股 0.89 美元。&lt;/p&gt;\n\n&lt;p&gt;輝達表示，2027",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "〈美股盤後〉輝達財報超預期 道瓊漲超300點 那指標普連二紅",
+      "url": "https://news.cnyes.com/news/id/6353102",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美股週三 (25 日) 收高，投資人一邊消化美國總統川普最新國情咨文，一邊靜待輝達財報出爐，市場情緒在人工智慧 (AI) 疑慮降溫後明顯回穩。&lt;/p&gt;\n\n&lt;p&gt;道瓊收漲超 300 點，那指升幅超 1%，標普漲超 0.8%，三大指數均連續第二個交易日收紅。在亮眼財報帶動下，輝達盤後股價跳漲。&lt;/p&gt;\n\n&lt;p&gt;AI 題材仍是盤面焦點，隨著 AI 新創 Anthropic 為 Claude 平台推出新的企業整合功能，允許連接 Google (GOOG-US) Drive、DocuSign (DOCU-US) 與 LegalZoom (LZ-US) 等應用，軟體類股週三持續回彈。&lt;/p&gt;\n\n&lt;p&gt;波士頓聯準銀行總裁柯林斯 (Susan Collins) 週二表示，她對人工智慧發展抱持審慎樂觀看法，並指出目前觀察到的是 AI 正在提升勞工能力，而非取代人力；里奇蒙聯準銀行總裁巴爾金在同場座談中亦表達類似觀點。&lt;/p&gt;\n\n&lt;p&gt;本週市場基調亦受到川普週二晚間發表 2026 年國情咨文影",
+      "timeStr": "上午07:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "記憶體漲價潮愈演愈烈！陸國產雙雄長鑫、長江存儲傳打入蘋果供應鏈 能否藉機破局？",
+      "url": "https://news.cnyes.com/news/id/6352370",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;自去年下半年以來，全球記憶體晶片市場迎來新一輪漲價潮，手機製造商面臨成本飆升壓力，市場傳出蘋果正評估將中國長鑫存儲與長江存儲納入供應鏈，此舉不僅凸顯產業鏈格局變化，更引發市場對中國國產晶片能否借勢崛起的關注。&lt;/p&gt;\n\n&lt;p&gt;根據「CFM 閃存市場」數據，DDR5 16Gb eTT 記憶體晶片價格從去年 8 月每顆 4.1 美元暴漲至本月的 24 美元，半年飆漲 583%。&lt;/p&gt;\n\n&lt;p&gt;智慧手機主要採用的 LPDDR5X 記憶體價格更在今年首季季增 88%-93%，PC 端 DDR4/DDR5 記憶體漲幅更達 105%-110%。&lt;/p&gt;\n\n&lt;p&gt;南韓記憶體晶片龍頭三星與 SK 海力士均已通知蘋果，今年首季 LPDDR 晶片報價將分別調漲 80% 與近 100%，顯示供應鏈緊張程度。&lt;/p&gt;\n\n&lt;p&gt;面對國際巨頭漲價壓力，蘋果傳出正與長鑫、長江存儲接洽。長鑫存儲招股書顯示，其 LPDDR5X 產品速率達 10667Mbps，功耗較前代降低 30%，已進入小米、OPPO、",
+      "timeStr": "上午07:01",
       "relatedArticles": []
     }
   ],
@@ -190,57 +226,59 @@
   ],
   "events": [
     {
-      "title": "台積電兩兆美元里程碑與台股天量",
-      "summary": "台積電衝上 2025 元引發股匯雙漲，台股成交量近兆元創歷史新高，確立 AI 權值股的絕對領先地位。",
-      "impact": "正面",
+      "title": "輝達 AI 霸權延續與軟體替代威脅",
+      "summary": "Nvidia 財報大勝預期，但 Salesforce 的疲軟財測引發市場對 AI 侵蝕傳統軟體市場份額的擔憂。",
+      "impact": "正面(硬體)/負面(SaaS)",
       "related_news_ids": [
-        0
+        1,
+        4,
+        5
       ]
     },
     {
-      "title": "輝達財報前夕的 AI 估值焦慮",
-      "summary": "市場對 NVDA 財報預期極高，導致科技股在財報公布前出現「下行衝擊風險大於上行」的防禦性交易。",
-      "impact": "中性",
+      "title": "美國「三位一體」封鎖中系晶片",
+      "summary": "美政府將出口管制、投資審查與政府採購限制全面整合，鎖定中芯國際、長鑫與長江存儲。",
+      "impact": "負面",
       "related_news_ids": [
-        1,
         2
       ]
     },
     {
-      "title": "川普關稅戰與美元儲備地位疑慮",
-      "summary": "川普推進更複雜的關稅制度，引發市場對美元長期去全球化負面影響的擔憂，美元指數走弱。",
-      "impact": "負面",
+      "title": "記憶體超級週期推升硬體通膨",
+      "summary": "DRAM 與 NAND 價格大幅調漲，導致蘋果平價 MacBook 計畫受阻，顯示終端成本壓力劇增。",
+      "impact": "中性偏負面",
       "related_news_ids": [
-        1
+        0,
+        6
       ]
     }
   ],
   "relations": [
     {
-      "from": "台積電",
-      "to": "鴻海",
-      "type": "供應鏈協同"
+      "from": "Nvidia",
+      "to": "Salesforce",
+      "type": "預算排擠與競爭"
     },
     {
-      "from": "輝達",
-      "to": "台積電",
-      "type": "晶圓代工合作"
+      "from": "美國政府",
+      "to": "中芯國際",
+      "type": "採購與出口限制"
     },
     {
-      "from": "川普關稅政策",
-      "to": "美元指數",
-      "type": "負面影響"
+      "from": "三星",
+      "to": "蘋果",
+      "type": "供應鏈議價壓力"
     },
     {
-      "from": "AI 伺服器需求",
-      "to": "貿聯-KY",
-      "type": "關鍵零組件採購"
+      "from": "長鑫存儲",
+      "to": "蘋果",
+      "type": "潛在替代供應鏈"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 386,
+      "count": 391,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -306,7 +344,7 @@
     },
     {
       "word": "AI",
-      "count": 369,
+      "count": 371,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -372,7 +410,7 @@
     },
     {
       "word": "美元",
-      "count": 211,
+      "count": 213,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -438,7 +476,7 @@
     },
     {
       "word": "EPS",
-      "count": 202,
+      "count": 203,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
@@ -966,7 +1004,7 @@
     },
     {
       "word": "經典賽",
-      "count": 93,
+      "count": 95,
       "articles": [
         {
           "title": "經典賽》看好台灣成大黑馬！ 官網記者點名徐若熙是關鍵人物、球威全隊最強",
@@ -1032,7 +1070,7 @@
     },
     {
       "word": "健康",
-      "count": 88,
+      "count": 89,
       "articles": [
         {
           "title": "健康網》水嫩肌膚不只靠喝水 營養師提醒4要吃",
@@ -1164,7 +1202,7 @@
     },
     {
       "word": "新高",
-      "count": 74,
+      "count": 75,
       "articles": [
         {
           "title": "科技股領銜衝鋒！南韓KOSPI指數首度破5600點 創歷史新高",
@@ -1890,7 +1928,7 @@
     },
     {
       "word": "晶片",
-      "count": 50,
+      "count": 51,
       "articles": [
         {
           "title": "Google Pixel 10a 新發表，僅搭 Tensor G4 晶片、無 PixelSnap 磁吸",
@@ -1956,7 +1994,7 @@
     },
     {
       "word": "積電",
-      "count": 49,
+      "count": 50,
       "articles": [
         {
           "title": "AI救贖與記憶體泥淖：為何三星與SK海力士難以複製台積電赴美模式？",
@@ -2879,6 +2917,72 @@
       ]
     },
     {
+      "word": "中心",
+      "count": 39,
+      "articles": [
+        {
+          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
+          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
+        },
+        {
+          "title": "AI資料中心需求爆發！村田製作所擬調漲高階MLCC：需求是產能兩倍",
+          "url": "https://news.cnyes.com/news/id/6346936",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
+          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "OpenAI 將攜手印度塔塔集團，建設全球最大 AI 資料中心",
+          "url": "https://finance.technews.tw/2026/02/19/tata-group-and-openai-forge-foundational-partnership-to-advance-ai-transformation-in-india-and-globally/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "網傳：轉彎打方向燈至少要閃 5 下？查核中心調查結果揭曉",
+          "url": "https://auto.ltn.com.tw/news/30913",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "從王室寵兒到風暴中心 安德魯神情狼狽引爆熱議",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346684",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "【AI 時代的國家主權】美中控制全球 90% 數據中心，各國如何透過「談判式依賴」取得戰略籌碼？",
+          "url": "https://techorange.com/2026/02/21/sovereignty-in-the-age-of-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>美中兩強掌控全球超過 90% AI 數據中心算力的當下，其他國家還有機會擁有 AI 主權嗎？ 由英國前首相 Tony Blair 創立的 Tony Blair Institute for Global Change，在最新報告《Sovereignty in the Age of AI（人工智慧時代的國家主權）》中提出挑戰直覺的觀點：試圖「完全自給自足」是危險的迷思，真正的主權不再關於獨立，而是關於保有「代理權」與戰略選擇。 報告不僅提出創新的「CSD 戰略框架（控制、引導、依賴）」，更深入剖析日本、肯亞、巴西等六國，如何利用地熱能源、市場規模或監管法規作為談判籌碼，在巨頭壟斷中成功突圍。文末也歸納政府可立即執行的「七大政策槓桿」，從簽署主權接入協議到微調開放權重模型，提供具體的實戰指南，帶領政策制定者或關注國家競爭力的讀者，看懂如何將被動的技術依賴，轉化為具備韌性的戰略優勢。 📎&nbsp;這份報告適合誰閱讀？ 報告內容具戰略高度，超越單純的技術討論，進入了國家競爭力、地緣政治與基礎設施建設的層次，適合以下工作者閱讀： 🔴 報告洞見 💡&nbsp;AI 時代主權重新定義：完全自給自足是昂貴迷思 在人工智慧已成為國家基礎治理設施的今天，我們必須重新審視「主權」的定義。報告開頭直言，領導者無法選擇退出這場技術革命，落後者將失去在國內外的影響力；然而，面對這場競賽，許多國家本能地認為必須「完全自給自足」，試圖在國內打造從晶片到模型的所有技術，報告也指出這是一個昂貴且危險的迷思。 事實是，全球 AI 基礎設施已呈現高度集中的態勢，美國與中國合計控制了全球超過 90% 的 AI 數據中心容量，美國單獨佔據全球約 75% 的 AI 算力，而世界其他所有國家加起來僅分食剩下的 10%。在這種強者恆強的局勢下，追求完全獨立不僅不切實際，更可能導致國家因技術落後而更加脆弱。 因此報告提出了一個核心觀點：AI 時代的主權不再是關於「獨立」，而是關於「代理權（Agency）」。真正的強國不是關起門來自己造輪子，而是在不得不依賴全球供應鏈的情況下，依然保有做出戰略選擇的能力與談判籌碼。 既然完全獨立不可行，報告進一步提出具體的策略框架，說明國家如何在依賴與控制之間取得主動。 💡&nbsp;CSD 框架：控制、引導與依賴的戰略博弈 既然無法統治所有戰場，國家該如何制定策略？報告提出了一個「CSD 戰略框架」，建議政府針對 AI 技術堆疊的不同層級，靈活採取「控制（Control）」、「引導（Steer）」與「依賴（Depend）」三種姿態。 對於攸關國家安全的核心系統，政府必須掌握直接的指揮權或所有權，這即是「控制」；而對於無法擁有的領域，則可透過法規、採購或標準制定來「引導」市場方向，例如歐盟雖無科技巨頭，卻能透過 GDPR 影響全球標準。 最關鍵的轉變在於如何看待「依賴」。報告強調，依賴並不羞恥，重點在於國家是處於「主動談判」還是「被動接受」的位置。透過談判將依賴轉化為互惠關係，才是現代國家的生存之道。 [&hellip;]</p>\n"
+        },
+        {
+          "title": "太空中心火箭研發基地落腳台南沙崙　拚2030年啟用",
+          "url": "https://www.cna.com.tw/news/afe/202602210062.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "把握連假最後機會！ 雲林水牛安養中心提免費牧草 可體驗「摸春牛」",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347209",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "定點臨托+1！ 北市婦女培力中心設點 年中推新版預約系統",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347261",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "彰化",
       "count": 38,
       "articles": [
@@ -2941,72 +3045,6 @@
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5348041",
           "source": "自由時報",
           "content": "農曆春節尾聲的大年初六，邁入第4年的彰化縣竹塘鄉慈航宮「丙午年祈安禮斗法會總斗首擲筊選出儀式」，在觀世音菩薩見證下，來自桃園市中壢區的梁姓男子與彰化縣永靖鄉的傅姓男子競逐總斗首...…"
-        }
-      ]
-    },
-    {
-      "word": "中心",
-      "count": 38,
-      "articles": [
-        {
-          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
-          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
-          "source": "中央社科技",
-          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
-        },
-        {
-          "title": "AI資料中心需求爆發！村田製作所擬調漲高階MLCC：需求是產能兩倍",
-          "url": "https://news.cnyes.com/news/id/6346936",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
-          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "OpenAI 將攜手印度塔塔集團，建設全球最大 AI 資料中心",
-          "url": "https://finance.technews.tw/2026/02/19/tata-group-and-openai-forge-foundational-partnership-to-advance-ai-transformation-in-india-and-globally/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "網傳：轉彎打方向燈至少要閃 5 下？查核中心調查結果揭曉",
-          "url": "https://auto.ltn.com.tw/news/30913",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "從王室寵兒到風暴中心 安德魯神情狼狽引爆熱議",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346684",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "【AI 時代的國家主權】美中控制全球 90% 數據中心，各國如何透過「談判式依賴」取得戰略籌碼？",
-          "url": "https://techorange.com/2026/02/21/sovereignty-in-the-age-of-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>美中兩強掌控全球超過 90% AI 數據中心算力的當下，其他國家還有機會擁有 AI 主權嗎？ 由英國前首相 Tony Blair 創立的 Tony Blair Institute for Global Change，在最新報告《Sovereignty in the Age of AI（人工智慧時代的國家主權）》中提出挑戰直覺的觀點：試圖「完全自給自足」是危險的迷思，真正的主權不再關於獨立，而是關於保有「代理權」與戰略選擇。 報告不僅提出創新的「CSD 戰略框架（控制、引導、依賴）」，更深入剖析日本、肯亞、巴西等六國，如何利用地熱能源、市場規模或監管法規作為談判籌碼，在巨頭壟斷中成功突圍。文末也歸納政府可立即執行的「七大政策槓桿」，從簽署主權接入協議到微調開放權重模型，提供具體的實戰指南，帶領政策制定者或關注國家競爭力的讀者，看懂如何將被動的技術依賴，轉化為具備韌性的戰略優勢。 📎&nbsp;這份報告適合誰閱讀？ 報告內容具戰略高度，超越單純的技術討論，進入了國家競爭力、地緣政治與基礎設施建設的層次，適合以下工作者閱讀： 🔴 報告洞見 💡&nbsp;AI 時代主權重新定義：完全自給自足是昂貴迷思 在人工智慧已成為國家基礎治理設施的今天，我們必須重新審視「主權」的定義。報告開頭直言，領導者無法選擇退出這場技術革命，落後者將失去在國內外的影響力；然而，面對這場競賽，許多國家本能地認為必須「完全自給自足」，試圖在國內打造從晶片到模型的所有技術，報告也指出這是一個昂貴且危險的迷思。 事實是，全球 AI 基礎設施已呈現高度集中的態勢，美國與中國合計控制了全球超過 90% 的 AI 數據中心容量，美國單獨佔據全球約 75% 的 AI 算力，而世界其他所有國家加起來僅分食剩下的 10%。在這種強者恆強的局勢下，追求完全獨立不僅不切實際，更可能導致國家因技術落後而更加脆弱。 因此報告提出了一個核心觀點：AI 時代的主權不再是關於「獨立」，而是關於「代理權（Agency）」。真正的強國不是關起門來自己造輪子，而是在不得不依賴全球供應鏈的情況下，依然保有做出戰略選擇的能力與談判籌碼。 既然完全獨立不可行，報告進一步提出具體的策略框架，說明國家如何在依賴與控制之間取得主動。 💡&nbsp;CSD 框架：控制、引導與依賴的戰略博弈 既然無法統治所有戰場，國家該如何制定策略？報告提出了一個「CSD 戰略框架」，建議政府針對 AI 技術堆疊的不同層級，靈活採取「控制（Control）」、「引導（Steer）」與「依賴（Depend）」三種姿態。 對於攸關國家安全的核心系統，政府必須掌握直接的指揮權或所有權，這即是「控制」；而對於無法擁有的領域，則可透過法規、採購或標準制定來「引導」市場方向，例如歐盟雖無科技巨頭，卻能透過 GDPR 影響全球標準。 最關鍵的轉變在於如何看待「依賴」。報告強調，依賴並不羞恥，重點在於國家是處於「主動談判」還是「被動接受」的位置。透過談判將依賴轉化為互惠關係，才是現代國家的生存之道。 [&hellip;]</p>\n"
-        },
-        {
-          "title": "太空中心火箭研發基地落腳台南沙崙　拚2030年啟用",
-          "url": "https://www.cna.com.tw/news/afe/202602210062.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "把握連假最後機會！ 雲林水牛安養中心提免費牧草 可體驗「摸春牛」",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347209",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "定點臨托+1！ 北市婦女培力中心設點 年中推新版預約系統",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347261",
-          "source": "自由時報",
-          "content": null
         }
       ]
     },
@@ -3341,74 +3379,8 @@
       ]
     },
     {
-      "word": "分析",
-      "count": 35,
-      "articles": [
-        {
-          "title": "金馬年淘金尋找下一個熱門族群 分析師：創新板小而美具潛力",
-          "url": "https://news.cnyes.com/news/id/6345615",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
-          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
-          "source": "中央社科技",
-          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
-        },
-        {
-          "title": "Sony新技術可分析AI生成歌曲　辨識原創音樂與占比",
-          "url": "https://www.cna.com.tw/news/ait/202602160102.aspx",
-          "source": "中央社科技",
-          "content": "（中央社帕羅奧圖16日綜合外電報導）索尼集團公司開發出一項新技術，可辨識人工智慧（AI）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向AI開發商求償。"
-        },
-        {
-          "title": "美國AI「壟斷神話」破功？分析師警告：中國「技術衝擊」才剛開始",
-          "url": "https://news.cnyes.com/news/id/6346932",
-          "source": "鉅亨網(tech)",
-          "content": null
-        },
-        {
-          "title": "對中猶豫未決　分析師示警歐洲恐付更高代價",
-          "url": "https://www.cna.com.tw/news/aopl/202602190182.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高市擬在川習會前訪美　分析：美中關係牽動日中局勢",
-          "url": "https://www.cna.com.tw/news/aopl/202602200027.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "經典賽》大谷、山本身邊最強後盾！ 道奇翻譯加入日本隊擔任分析師",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346662",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "分析：川普90%將對伊朗動武　攻勢非一日遊",
-          "url": "https://www.cna.com.tw/news/aopl/202602200123.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高市擬在川習會前訪美 分析：美中關係牽動日中局勢",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346840",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻川普關稅  分析：蘋果公司衝擊可望減緩",
-          "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
-          "source": "中央社國際",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "最大",
-      "count": 35,
+      "count": 36,
       "articles": [
         {
           "title": "齋戒月前澳洲最大清真寺再收恐嚇信　警方展開調查",
@@ -3474,7 +3446,7 @@
     },
     {
       "word": "兄弟",
-      "count": 35,
+      "count": 36,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：托爾兄弟公司TOL-US的目標價調升至166元，幅度約5.06%",
@@ -3535,6 +3507,72 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5348076",
           "source": "自由時報",
           "content": "\n\n\n南韓傳奇打者李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果。其中，他指導曾頌恩練打時可將目標放在「反方向全壘打」，先透過想法上的改造，希望幫他找...…"
+        }
+      ]
+    },
+    {
+      "word": "全面",
+      "count": 35,
+      "articles": [
+        {
+          "title": "俄選手獲准持國旗參賽 烏克蘭官員全面抵制冬季帕運",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345887",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全球最大航艦 美軍福特號週末抵達中東 全面攻伊 川普幕僚：90％機率",
+          "url": "https://news.ltn.com.tw/news/world/paper/1744094",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Google正式發表Gemini 3.1 Pro 全面強化複雜任務處理能力",
+          "url": "https://news.cnyes.com/news/id/6347511",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
+          "url": "https://news.cnyes.com/news/id/6347688",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
+          "url": "https://www.thenewslens.com/article/264890",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
+          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
+          "source": "TechNews",
+          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
+        },
+        {
+          "title": "旅客注意！南韓11間航空全面禁止機上使用行動電源",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347210",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Gemini 3.1 Pro 全面開放，推理效能較上代翻倍",
+          "url": "https://technews.tw/2026/02/21/gemini-3-1-pro-announcing-our-latest-gemini-ai-model/",
+          "source": "TechNews",
+          "content": "Google 19 日推出 Gemini 3.1 Pro 模型，在上週 Gemini 3 Deep Think [&#8230;]"
         }
       ]
     }
