@@ -1,250 +1,199 @@
 {
-  "updateTime": "2026-02-25T15:01:03.184Z",
-  "fullDateStr": "2026/2/25 · 更新於 23:01:03",
+  "updateTime": "2026-02-25T16:00:59.637Z",
+  "fullDateStr": "2026/2/26 · 更新於 00:00:59",
   "aiResult": {
-    "sentiment_score": 0.32,
+    "sentiment_score": 0.35,
     "dimensions": {
-      "policy": 0.2,
-      "market": 0.4,
-      "industry": 0.5,
-      "international": 0.1,
-      "technical": 0.4
+      "policy": -0.5,
+      "market": 0.6,
+      "industry": 0.7,
+      "international": -0.4,
+      "technical": 0.5
     },
     "entities": [
       {
-        "name": "NVIDIA",
+        "name": "Amkor",
         "sentiment": "positive",
-        "ticker": "NVDA.US"
+        "ticker": "AMKR.US"
       },
       {
-        "name": "TSMC",
-        "sentiment": "positive",
-        "ticker": "TSM.US"
-      },
-      {
-        "name": "Lam Research",
-        "sentiment": "positive",
-        "ticker": "LRCX.US"
-      },
-      {
-        "name": "Workday",
+        "name": "Lowe's",
         "sentiment": "negative",
-        "ticker": "WDAY.US"
+        "ticker": "LOW.US"
       },
       {
-        "name": "Moderna",
+        "name": "Datadog",
         "sentiment": "positive",
-        "ticker": "MRNA.US"
+        "ticker": "DDOG.US"
       },
       {
-        "name": "MercadoLibre",
-        "sentiment": "negative",
-        "ticker": "MELI.US"
+        "name": "Netflix",
+        "sentiment": "positive",
+        "ticker": "NFLX.US"
       },
       {
-        "name": "Intel",
+        "name": "Amazon",
         "sentiment": "neutral",
-        "ticker": "INTC.US"
+        "ticker": "AMZN.US"
+      },
+      {
+        "name": "Indonesia",
+        "sentiment": "negative",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【宏觀決策報告：硬體通膨與軟體通縮的分歧週】</h3><p>今日市場情緒由 0.25 微幅回升至 <b>0.32</b>。延續昨日「AI 敘事轉向」的觀察，市場資金呈現極端的<b>「棄軟投硬」</b>結構。費半指數在設備股 <b>Lam Research (LRCX)</b> 與輝達新晶片 Feynman (1.6nm) 消息帶動下強彈，但軟體服務商 <b>Workday (WDAY)</b> 及電商巨頭 <b>MELI</b> 卻遭遇重挫，顯示市場正對高估值的 SaaS 產業進行結構性去槓桿。</p><p><b>關鍵深度解析：</b><br>1. <b>硬體制霸與製程突破</b>：輝達 Feynman 晶片搭載台積電 A16 製程，這不僅是技術展示，更是對 2028-2030 年算力霸權的提前佈局。設備股領漲反應了 AI 資本支出（CAPEX）並未縮減，而是更集中於底層硬體。<br>2. <b>利率長端的防禦性佈局</b>：SOFR 利差倒掛與交易員對 2027 年利率降至 2% 的押注，暗示市場在狂歡之餘，已在對沖長線經濟放緩的風險。<br>3. <b>反向指標觀察</b>：目前主流社群反向指標（如 8zz/巴逆逆）尚未出現極端看多言論，顯示市場尚未進入情緒過熱的頂部區間，短線反彈仍具韌性。</p>",
+    "summary": "<h3>【宏觀決策報告：債券市場的 AI 警鐘與關稅 2.0 擴張】</h3><p>今日市場情緒由 0.32 微幅升至 <b>0.35</b>。延續昨日「硬體強於軟體」的結構，市場雖在技術面上呈現反彈，但<b>債券市場</b>正釋放出危險信號。美銀調查顯示，AI 泡沫已成為信用投資者的首要擔憂，這與昨日觀察到的 SaaS 去槓桿現象呼應。</p><p><b>關鍵解析：</b><br>1. <b>融資壓力浮現</b>：大型雲端服務商 (Hyperscalers) 為了支撐 AI CAPEX，預計發債規模將飆升至 2850 億美元。這標誌著 AI 競爭已從技術競速進入了「資產負債表消耗戰」。<br>2. <b>關稅戰線全球化</b>：美國貿易代表 Greer 指出 10% 關稅僅是起點，部分國家可能面臨 15% 以上稅率，這對剛從中國轉向東南亞（如印尼、越南）的供應鏈構成二度打擊。<br>3. <b>反向指標觀察</b>：目前新聞資料中未見「8zz」或「巴逆逆」之顯著觀點。缺乏反向指標的極端訊號下，今日 DDOG 與 APP 的反彈應視為<b>超跌後空單回補</b>，而非結構性反轉。</p><p><b>決策建議：</b> 密切關注信貸利差，對高負債的零售股（如 Lowe's）保持警覺，並將硬體配置重心移向具有定價權的封測與設備環節。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體設備"
+        "category": "半導體硬體"
       },
       {
         "id": 2,
-        "category": "宏觀利率政策"
+        "category": "債券市場風險"
       },
       {
         "id": 3,
-        "category": "雲端軟體服務"
+        "category": "貿易政策"
       }
     ],
     "sector_stats": {
-      "tech": 0.55,
-      "finance": 0.2,
-      "manufacturing": 0.45,
-      "service": -0.4
+      "tech": 0.65,
+      "finance": -0.15,
+      "manufacturing": 0.3,
+      "service": -0.2
     },
     "events": [
       {
-        "title": "輝達 1.6 奈米 Feynman 晶片震撼市場",
-        "summary": "輝達預計於 GTC 大會發布首款 A16 製程晶片，透過背面供電技術突破物理極限。",
-        "impact": "正面",
-        "related_news_ids": [
-          7,
-          11
-        ]
-      },
-      {
-        "title": "軟體股與成長股的血色洗盤",
-        "summary": "Workday 與 MercadoLibre 等高成長股盤中暴跌超過 8%，反應 AI 時代下軟體變現能力的疑慮。",
+        "title": "債券市場的 AI 債務焦慮",
+        "summary": "信用投資者預期超大規模雲端商今年發債將達 2850 億美元，AI 泡沫擔憂超越地緣政治。",
         "impact": "負面",
         "related_news_ids": [
-          4,
-          5,
-          6,
-          9
+          1
         ]
       },
       {
-        "title": "利率定價極端鴿派轉向",
-        "summary": "SOFR 選擇權市場出現大量 2% 利率押注，市場預期降息循環將延長至 2027 年。",
-        "impact": "中性",
+        "title": "美國關稅 2.0 擴張計劃",
+        "summary": "USTR 暗示將針對特定國家上調稅率至 15% 以上，並利用 301 調查應對全球產能過剩。",
+        "impact": "負面",
         "related_news_ids": [
-          10
+          7
+        ]
+      },
+      {
+        "title": "科技硬體與軟體超跌反彈",
+        "summary": "費半指數受 Amkor (AMKR) 等設備封測股帶動強彈，軟體股如 DDOG 也在重挫後回穩。",
+        "impact": "正面",
+        "related_news_ids": [
+          0,
+          3,
+          4,
+          5
         ]
       }
     ],
     "relations": [
       {
-        "from": "NVIDIA",
-        "to": "TSMC",
-        "type": "核心代工夥伴(A16製程)"
+        "from": "Hyperscalers",
+        "to": "Bond Market",
+        "type": "融資壓力"
       },
       {
-        "from": "NVIDIA",
-        "to": "Lam Research",
+        "from": "US Government",
+        "to": "Indonesia",
+        "type": "關稅調查與競爭"
+      },
+      {
+        "from": "AI Infrastructure",
+        "to": "Amkor",
         "type": "供應鏈需求帶動"
       },
       {
-        "from": "Federal Reserve",
-        "to": "SOFR",
-        "type": "政策利率定價基準"
-      },
-      {
-        "from": "Workday",
-        "to": "SaaS Industry",
-        "type": "結構性衰退警示"
-      },
-      {
-        "from": "TSMC",
-        "to": "Intel",
-        "type": "製程領先競爭"
+        "from": "Anthropic AI Tools",
+        "to": "Software ETF",
+        "type": "替代性競爭壓力"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 科林研發(LRCX-US)大漲5.04%，報256.55美元",
-      "url": "https://news.cnyes.com/news/id/6353505",
+      "title": "盤中速報 - 羅威(LOW-US)大跌5.01%，報264.63美元",
+      "url": "https://news.cnyes.com/news/id/6353535",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;科林研發(LRCX-US)截至台北時間25日22:41股價上漲12.3美元，報256.55美元，漲幅5.04%，成交量649,782（股），盤中最高價256.55美元、最低價249.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.35%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.58%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.79%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科林研發(LRCX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.84%&lt;/li&gt;    &lt;li&gt;近 1 月：+11.16%&lt;/li&gt;    &lt;li&gt;近 3 月：+61.1",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;羅威(LOW-US)截至台北時間25日23:39股價下跌13.96美元，報264.63美元，跌幅5.01%，成交量1,566,013（股），盤中最高價274.19美元、最低價264.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.25%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.46%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;羅威(LOW-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.42%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.86%&lt;/li&gt;    &lt;li&gt;近 3 月：+19.56%&lt",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 莫德納(MRNA-US)大漲5.25%，報53.17美元",
-      "url": "https://news.cnyes.com/news/id/6353504",
+      "title": "擠下地緣政治！美銀調查：一向穩健的債券投資人現在最擔心AI泡沫",
+      "url": "https://news.cnyes.com/news/id/6353522",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體設備",
+      "category": "半導體硬體",
       "thumbnail": null,
-      "content": "&lt;p&gt;莫德納(MRNA-US)截至台北時間25日22:38股價上漲2.65美元，報53.17美元，漲幅5.25%，成交量706,508（股），盤中最高價53.18美元、最低價50.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.34%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.55%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.66%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.44%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;莫德納(MRNA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+14.48%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.24%&lt;/li&gt;    &lt;li&gt;近 3 月：+108.24%&l",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;根據美國銀行全球研究部一項最新調查顯示，AI 泡沫首次超越地緣政治與央行政策失誤，成為信用投資者最擔憂的隱患，且這一擔憂正衝擊債券投資者，高評級信用債投資者目前預計超大規模雲端服務商今年債券發行規模將大幅飆升，達到 2850 億美元。&lt;/p&gt;\n\n&lt;p&gt;調查顯示，約 23% 受訪者稱 AI 泡沫是他們最大的擔憂，而該行去年 12 月的調查中，這一比例僅 9%。包括亞馬遜、Google 母公司 Alphabet、Meta 在內的企業，都已宣布大規模支出計畫以擴大 AI 能力。&lt;/p&gt;\n\n&lt;p&gt;美國銀行信用策略師 Barnaby Martin 周二 (24 日) 在研究報告中表示，高評級信用債投資者目前預計，超大規模雲端服務商今年的發債規模將達 2,850 億美元，高於去年 12 月調查中預期的 2,100 億美元。&lt;/p&gt;\n\n&lt;p&gt;但 Martin 指出，投資人對未來科技顛覆衝擊的態度較為樂觀，僅 10% 稱最擔心 AI 導致企業被淘汰。&lt;/p&gt;\n\n&lt;p&gt;最近幾周，隨著對 AI",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 連貫(COHR-US)大漲5.09%，報267.84美元",
-      "url": "https://news.cnyes.com/news/id/6353503",
+      "title": "盤中速報 - DoorDash公司(DASH-US)大漲5%，報172.6美元",
+      "url": "https://news.cnyes.com/news/id/6353532",
       "source": "鉅亨網(wd_stock)",
-      "category": "宏觀利率政策",
+      "category": "債券市場風險",
       "thumbnail": null,
-      "content": "&lt;p&gt;連貫(COHR-US)截至台北時間25日22:33股價上漲12.98美元，報267.84美元，漲幅5.09%，成交量484,217（股），盤中最高價268.20美元、最低價259.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.53%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.69%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.21%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;連貫(COHR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+13.15%&lt;/li&gt;    &lt;li&gt;近 1 月：+26.38%&lt;/li&gt;    &lt;li&gt;近 3 月：+64.12%",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;DoorDash公司(DASH-US)截至台北時間25日23:30股價上漲8.22美元，報172.60美元，漲幅5%，成交量1,210,981（股），盤中最高價172.64美元、最低價165.19美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.11%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.45%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.66%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;DoorDash公司(DASH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.43%&lt;/li&gt;    &lt;li&gt;近 1 月：-20.54%&lt;/li&gt;    &lt;li&gt;",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 費城半導體大漲1.34%，報8443.73點",
-      "url": "https://news.cnyes.com/news/id/6353502",
+      "title": "盤中速報 - 安可(AMKR-US)大漲5.01%，報50.96美元",
+      "url": "https://news.cnyes.com/news/id/6353529",
       "source": "鉅亨網(wd_stock)",
-      "category": "雲端軟體服務",
+      "category": "貿易政策",
       "thumbnail": null,
-      "content": "&lt;p&gt;截至台北時間25日10:30，費城半導體上漲111.39點（或1.34%），暫報8443.73點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+2.41%&lt;/li&gt;&lt;li&gt;近 1 月：+4.7%&lt;/li&gt;&lt;li&gt;近 3 月：+24.3%&lt;/li&gt;&lt;li&gt;近 6 月：+44.8%&lt;/li&gt;&lt;li&gt;今年以來：+17.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以科林研發(LRCX-US)領漲。科林研發(LRCX-US)上漲2.29%；安可(AMKR-US)上漲2.15%；應用材料(AMAT-US)上漲2.04%；Onto Innovation Inc.(ONTO-US)上漲2%；連貫(COHR-US)上漲1.89%。&lt;/p&gt;",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;安可(AMKR-US)截至台北時間25日23:26股價上漲2.43美元，報50.96美元，漲幅5.01%，成交量1,397,283（股），盤中最高價50.99美元、最低價49.25美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.21%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.99%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.31%&lt;/li&gt;    &lt;li&gt;近 3 月：+42.06%&lt;",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Workday公司(WDAY-US)大跌8.5%，報119.16美元",
-      "url": "https://news.cnyes.com/news/id/6353501",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Workday公司(WDAY-US)截至台北時間25日22:30股價下跌11.07美元，報119.16美元，跌幅8.5%，成交量720,642（股），盤中最高價119.16美元、最低價119.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.32%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.52%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.45%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Workday公司(WDAY-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-9.72%&lt;/li&gt;    &lt;li&gt;近 1 月：-31.73%&lt;/li&gt;    &lt;li&gt;近",
-      "timeStr": "下午11:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 美卡多(MELI-US)大跌8.82%，報1752.9美元",
-      "url": "https://news.cnyes.com/news/id/6353500",
+      "title": "盤中速報 - 數據狗(DDOG-US)大漲5.09%，報109.75美元",
+      "url": "https://news.cnyes.com/news/id/6353519",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美卡多(MELI-US)截至台北時間25日22:30股價下跌169.66美元，報1752.90美元，跌幅8.82%，成交量65,011（股），盤中最高價1756.17美元、最低價1752.90美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.33%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.51%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.45%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美卡多(MELI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.62%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.77%&lt;/li&gt;    &lt;li&gt;近 3 月：-7.",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間25日23:01股價上漲5.32美元，報109.75美元，漲幅5.09%，成交量815,332（股），盤中最高價109.87美元、最低價104.43美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.16%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.52%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.82%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-16.27%&lt;/li&gt;    &lt;li&gt;近 1 月：-21.14%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.23",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 科斯塔集團(CSGP-US)大跌5.21%，報46.59美元",
-      "url": "https://news.cnyes.com/news/id/6353499",
+      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大漲5.03%，報413美元",
+      "url": "https://news.cnyes.com/news/id/6353516",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;科斯塔集團(CSGP-US)截至台北時間25日22:30股價下跌2.56美元，報46.59美元，跌幅5.21%，成交量17,300（股），盤中最高價46.59美元、最低價46.59美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.35%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.51%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.45%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科斯塔集團(CSGP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.66%&lt;/li&gt;    &lt;li&gt;近 1 月：-27.03%&lt;/li&gt;    &lt;li&gt;近 3 月：-29.13%",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間25日22:52股價上漲19.78美元，報413.00美元，漲幅5.03%，成交量602,197（股），盤中最高價413.00美元、最低價391.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.27%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.53%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.09%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.77%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.13%&lt;/li&gt;    &lt;li&gt;近 1 月：-27.42",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "〈美股早盤〉主要指數開盤走高 市場聚焦輝達財報",
-      "url": "https://news.cnyes.com/news/id/6353113",
+      "title": "盤中速報 - 網飛(NFLX-US)大漲5.04%，報81.97美元",
+      "url": "https://news.cnyes.com/news/id/6353514",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美股主要指數周三 (25 日) 開盤走高，延續前一交易日反彈走勢，市場聚焦輝達即將公布的財報，觀察人工智慧 (AI) 投資前景是否仍具支撐力。標普 500 指數連續第二日上漲，那斯達克與道瓊工業指數同步走揚，輝達與甲骨文 (ORCL-US) 股價走強提振市場信心。投資人評估 AI 交易風險與關稅不確定性，同時留意輝達財測是否足以回應市場對獲利率可持續性的疑慮。&lt;/p&gt;\n\n&lt;p&gt;截稿前，&lt;a href=&quot;https://invest.cnyes.com/index/GI/DJI&quot;&gt;道瓊工業指數&lt;/a&gt;漲逾 200 點或近 0.4%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/IXIC&quot;&gt;那斯達克綜合指數&lt;/a&gt;漲近 170 點或近 0.7%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/INX&quot;&gt;標普 500 指數&lt;/a&gt;漲近 0.6%",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;網飛(NFLX-US)截至台北時間25日22:49股價上漲3.93美元，報81.97美元，漲幅5.04%，成交量10,558,006（股），盤中最高價81.97美元、最低價79.36美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.38%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.6%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.72%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;網飛(NFLX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.27%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.73%&lt;/li&gt;    &lt;li&gt;近 3 月：-28.93%&lt",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     },
     {
-      "title": "鉅亨速報 - Factset 最新調查：Tempus AI, Inc. Class ATEM-US的目標價調降至80元，幅度約5.88%",
-      "url": "https://news.cnyes.com/news/id/6353471",
+      "title": "美國關稅再升級？部分國家稅率恐衝15%以上",
+      "url": "https://news.cnyes.com/news/id/6353427",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對Tempus AI, Inc. Class A(TEM-US)提出目標價估值：中位數由85元下修至80元，調降幅度5.88%。其中最高估值100元，最低估值60元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有18位分析師給予Tempus AI, Inc. Class A評價：積極樂觀11位、保持中立7位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Tempus AI, Inc. Class A今(25日)收盤價為57.95元。近5日股價上漲5.88%，標普指數上漲0.68%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
-      "timeStr": "下午11:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "鉅亨速報 - Factset 最新調查：Samsara Inc - Class AIOT-US的目標價調降至45元，幅度約6.25%",
-      "url": "https://news.cnyes.com/news/id/6353469",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共21位分析師，對Samsara Inc - Class A(IOT-US)提出目標價估值：中位數由48元下修至45元，調降幅度6.25%。其中最高估值60元，最低估值30元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有25位分析師給予Samsara Inc - Class A評價：積極樂觀20位、保持中立5位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Samsara Inc - Class A今(25日)收盤價為26.07元。近5日股價下跌6.25%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
-      "timeStr": "下午11:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "市場押注聯準會2027年續降息 利率恐降至2%",
-      "url": "https://news.cnyes.com/news/id/6353429",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;市場對聯準會 (Fed) 貨幣政策路徑的預期出現顯著轉向。原本市場共識認為降息循環將在 2026 年結束，甚至 2027 年可能重新升息，但近期美國期貨與選擇權市場押注顯示，交易員開始大舉布局聯準會將把利率一路下調至 2027 年，甚至利率水準可能降至 2%。&lt;/p&gt;\n\n&lt;p&gt;根據外媒報導，與聯準會政策預期密切相關的擔保隔夜融資利率 (SOFR) 利差在過去一周出現明顯倒掛。12 個月期 2026 年 12 月至 2027 年 SOFR 利差上周五轉為負值，本周二擴大至負 8 個基點，顯示市場已從原先預期 2027 年升息，轉為定價持續降息。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：ZeroHedge)&quot; data-height=&quot;506&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.5019762845849802&quot; data-src-m=&quot;https://cimg.cnyes.co",
-      "timeStr": "下午11:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "輝達GTC大會3月15日登場！韓媒爆料：全球首款1.6奈米晶片Feynman將亮相",
-      "url": "https://news.cnyes.com/news/id/6353112",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;輝達 GTC 2026 大會將於 3 月 15 日在加州聖荷西登場，外媒最新報導指出，這家 AI 晶片巨擘將發布首款使用 1.6 奈米製程的晶片。&lt;/p&gt;\n\n&lt;p&gt;南韓媒體《朝鮮商業》報導，輝達將於大會上發布革命性 AI 晶片 Feynman，這款搭載全球首款 1.6 奈米製程的產品將成為半導體行業的里程碑。&lt;/p&gt;\n\n&lt;p&gt;輝達執行長黃仁勳日前接受韓媒採訪時強調，該技術突破源於團隊突破物理極限的創新，並暗示將在 GTC 大會展示「從未見過」的技術進步。&lt;/p&gt;\n\n&lt;p&gt;Feynman 晶片將搭載台積電 A16(1.6nm) 製程，通過 Super Power Rail(SPR) 技術將供電線路移至晶圓背面，使邏輯密度提升 10%、功耗降低 15%，同時解決先進制程的 SRAM 擴縮瓶頸。&lt;/p&gt;\n\n&lt;p&gt;Feynman 晶片還將整合 Groq 的 LPU(語言處理單元)，通過混合鍵合技術實現低延遲堆疊設計，類似超微的 X3D 處理器的 3D V-Cache 方案，但集成度",
-      "timeStr": "下午11:01",
+      "content": "&lt;p&gt;《路透》報導，美國貿易代表葛里爾 (Jamieson Greer) 周三 (25 日) 表示，美國對部分國家的關稅稅率將由目前新實施的 10% 上調至 15% 或更高，但未點名具體對象，也未透露進一步細節。&lt;/p&gt;\n\n&lt;p&gt;葛里爾在接受福斯財經頻道《Mornings with Maria》節目訪問時指出，現行 10% 的關稅只是起點，未來部分國家將面臨 15% 的稅率，另一些國家甚至可能更高，整體水準將與近期所見關稅幅度相符。不過，他強調，川普政府無意將對中國商品的關稅提高至目前水準之上，並表示總統川普預計在未來幾週訪問中國。&lt;/p&gt;\n\n&lt;p&gt;葛里爾指出，政府計畫以新的關稅措施取代日前遭最高法院否決的緊急關稅，包括依據《1974 年貿易法》第 122 條實施的臨時關稅，該措施已於周二生效，稅率為 10%。他表示，新關稅安排與現有貿易協議並不衝突。&lt;/p&gt;\n\n&lt;p&gt;此外，葛里爾強調，《1974 年貿易法》第 301 條下的不公平貿易調查，將成為替代方案的核心工具，針對存在產能過剩、供應鏈強迫勞動、歧",
+      "timeStr": "上午12:00",
       "relatedArticles": []
     }
   ],
@@ -287,65 +236,59 @@
   ],
   "events": [
     {
-      "title": "輝達 1.6 奈米 Feynman 晶片震撼市場",
-      "summary": "輝達預計於 GTC 大會發布首款 A16 製程晶片，透過背面供電技術突破物理極限。",
-      "impact": "正面",
-      "related_news_ids": [
-        7,
-        11
-      ]
-    },
-    {
-      "title": "軟體股與成長股的血色洗盤",
-      "summary": "Workday 與 MercadoLibre 等高成長股盤中暴跌超過 8%，反應 AI 時代下軟體變現能力的疑慮。",
+      "title": "債券市場的 AI 債務焦慮",
+      "summary": "信用投資者預期超大規模雲端商今年發債將達 2850 億美元，AI 泡沫擔憂超越地緣政治。",
       "impact": "負面",
       "related_news_ids": [
-        4,
-        5,
-        6,
-        9
+        1
       ]
     },
     {
-      "title": "利率定價極端鴿派轉向",
-      "summary": "SOFR 選擇權市場出現大量 2% 利率押注，市場預期降息循環將延長至 2027 年。",
-      "impact": "中性",
+      "title": "美國關稅 2.0 擴張計劃",
+      "summary": "USTR 暗示將針對特定國家上調稅率至 15% 以上，並利用 301 調查應對全球產能過剩。",
+      "impact": "負面",
       "related_news_ids": [
-        10
+        7
+      ]
+    },
+    {
+      "title": "科技硬體與軟體超跌反彈",
+      "summary": "費半指數受 Amkor (AMKR) 等設備封測股帶動強彈，軟體股如 DDOG 也在重挫後回穩。",
+      "impact": "正面",
+      "related_news_ids": [
+        0,
+        3,
+        4,
+        5
       ]
     }
   ],
   "relations": [
     {
-      "from": "NVIDIA",
-      "to": "TSMC",
-      "type": "核心代工夥伴(A16製程)"
+      "from": "Hyperscalers",
+      "to": "Bond Market",
+      "type": "融資壓力"
     },
     {
-      "from": "NVIDIA",
-      "to": "Lam Research",
+      "from": "US Government",
+      "to": "Indonesia",
+      "type": "關稅調查與競爭"
+    },
+    {
+      "from": "AI Infrastructure",
+      "to": "Amkor",
       "type": "供應鏈需求帶動"
     },
     {
-      "from": "Federal Reserve",
-      "to": "SOFR",
-      "type": "政策利率定價基準"
-    },
-    {
-      "from": "Workday",
-      "to": "SaaS Industry",
-      "type": "結構性衰退警示"
-    },
-    {
-      "from": "TSMC",
-      "to": "Intel",
-      "type": "製程領先競爭"
+      "from": "Anthropic AI Tools",
+      "to": "Software ETF",
+      "type": "替代性競爭壓力"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 370,
+      "count": 376,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -411,7 +354,7 @@
     },
     {
       "word": "AI",
-      "count": 356,
+      "count": 359,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -477,7 +420,7 @@
     },
     {
       "word": "美元",
-      "count": 200,
+      "count": 206,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -609,7 +552,7 @@
     },
     {
       "word": "全球",
-      "count": 141,
+      "count": 143,
       "articles": [
         {
           "title": "Claude Opus 4.6逼近ASL-4安全門檻！Anthropic示警：AI自我逃逸恐引發全球失控危機",
@@ -807,7 +750,7 @@
     },
     {
       "word": "日本",
-      "count": 109,
+      "count": 110,
       "articles": [
         {
           "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
@@ -873,7 +816,7 @@
     },
     {
       "word": "曝光",
-      "count": 103,
+      "count": 104,
       "articles": [
         {
           "title": "《大生意人》噴8億還原晚清市容！陳曉逆風對抗資本主義 私下樣貌曝光",
@@ -1004,74 +947,8 @@
       ]
     },
     {
-      "word": "經典賽",
-      "count": 92,
-      "articles": [
-        {
-          "title": "經典賽》看好台灣成大黑馬！ 官網記者點名徐若熙是關鍵人物、球威全隊最強",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5345956",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》台灣利多！南韓隊投手戰力拉警報 表定終結者的紅雀火球男因傷退賽",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346046",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》「神之左腕」助台灣隊一臂之力！曾總跟會長都感謝郭泓志",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346062",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》最年輕張峻瑋今報到 曾總看到一特質",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346054",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》美籍雙強打提前來台會合？聯盟初步偏樂觀",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346044",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》有望對決山本由伸 曾總強調：回到自身",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346085",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》備戰倒數！台灣王牌徐若熙月底軟銀身分出戰隊友",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346071",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》古林驚嘆「壯得像馬」 孫易磊透露增肌訓練過程",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346161",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》母隊實戰自評「沒效率」 古林睿煬歸隊找餅總深聊",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346156",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》新兵報到！最年輕張峻瑋先找最資深學長聊",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5346127",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "中速",
-      "count": 92,
+      "count": 98,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1%，報8131.81點",
@@ -1131,6 +1008,72 @@
           "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.09%，報213.86美元",
           "url": "https://news.cnyes.com/news/id/6347689",
           "source": "鉅亨網(wd_stock)",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "經典賽",
+      "count": 93,
+      "articles": [
+        {
+          "title": "經典賽》看好台灣成大黑馬！ 官網記者點名徐若熙是關鍵人物、球威全隊最強",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5345956",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》台灣利多！南韓隊投手戰力拉警報 表定終結者的紅雀火球男因傷退賽",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346046",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》「神之左腕」助台灣隊一臂之力！曾總跟會長都感謝郭泓志",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346062",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》最年輕張峻瑋今報到 曾總看到一特質",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346054",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》美籍雙強打提前來台會合？聯盟初步偏樂觀",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346044",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》有望對決山本由伸 曾總強調：回到自身",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346085",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》備戰倒數！台灣王牌徐若熙月底軟銀身分出戰隊友",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346071",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》古林驚嘆「壯得像馬」 孫易磊透露增肌訓練過程",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346161",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》母隊實戰自評「沒效率」 古林睿煬歸隊找餅總深聊",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346156",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》新兵報到！最年輕張峻瑋先找最資深學長聊",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346127",
+          "source": "自由時報",
           "content": null
         }
       ]
@@ -1731,7 +1674,7 @@
     },
     {
       "word": "大跌",
-      "count": 56,
+      "count": 57,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1%，報8131.81點",
@@ -2259,7 +2202,7 @@
     },
     {
       "word": "高雄",
-      "count": 45,
+      "count": 46,
       "articles": [
         {
           "title": "卓榮泰視察高雄UCC 春節醫院急診降載見效",
@@ -2456,6 +2399,72 @@
       ]
     },
     {
+      "word": "政府",
+      "count": 44,
+      "articles": [
+        {
+          "title": "不領情？李在明政府盼恢復互信 金與正嗆「北韓部隊加強警戒」",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345948",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "英王查爾斯三世胞弟安德魯被捕　疑將政府文件轉傳艾普斯坦",
+          "url": "https://www.cna.com.tw/news/aopl/202602190173.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "外洩文件披露 川普政府擬在加薩建大型軍事基地 駐紮5000人",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346432",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美中AI版圖搶占先機 川普政府外交出招啟動「科技工作團」",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346891",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美第四季經濟成長趨緩　政府關門與消費降溫拖累表現",
+          "url": "https://www.cna.com.tw/news/aopl/202602210009.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅遭裁定違法 楊瓊瓔：政府承諾的鉅額投資仍須兌現",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346970",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "英國政府考慮將英王胞弟安德魯踢出王位繼承順序",
+          "url": "https://news.cnyes.com/news/id/6347876",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
+          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅失效 國民黨提4呼籲：政府應速確認台美貿易協議是否有效",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347204",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普關稅被擋 傅崐萁：政府須說明848億美元天價採購換來什麼",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347317",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "印度",
       "count": 43,
       "articles": [
@@ -2518,72 +2527,6 @@
           "url": "https://finance.technews.tw/2026/02/21/india-hcl-foxconn/",
           "source": "TechNews",
           "content": "印度政府新聞資訊局（PIB）稍早釋出新聞稿指出，印度總理莫迪於 21 日透過視訊方式，參與 HCL 與鴻海合資 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "政府",
-      "count": 43,
-      "articles": [
-        {
-          "title": "不領情？李在明政府盼恢復互信 金與正嗆「北韓部隊加強警戒」",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345948",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "英王查爾斯三世胞弟安德魯被捕　疑將政府文件轉傳艾普斯坦",
-          "url": "https://www.cna.com.tw/news/aopl/202602190173.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "外洩文件披露 川普政府擬在加薩建大型軍事基地 駐紮5000人",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346432",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美中AI版圖搶占先機 川普政府外交出招啟動「科技工作團」",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346891",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美第四季經濟成長趨緩　政府關門與消費降溫拖累表現",
-          "url": "https://www.cna.com.tw/news/aopl/202602210009.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅遭裁定違法 楊瓊瓔：政府承諾的鉅額投資仍須兌現",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346970",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "英國政府考慮將英王胞弟安德魯踢出王位繼承順序",
-          "url": "https://news.cnyes.com/news/id/6347876",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
-          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅失效 國民黨提4呼籲：政府應速確認台美貿易協議是否有效",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347204",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普關稅被擋 傅崐萁：政府須說明848億美元天價採購換來什麼",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347317",
-          "source": "自由時報",
-          "content": null
         }
       ]
     },
@@ -2984,6 +2927,72 @@
       ]
     },
     {
+      "word": "彰化",
+      "count": 38,
+      "articles": [
+        {
+          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "獨家》彰化火車站「福馬臨」春聯諧音「福馬林」 台鐵公司回應了",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346691",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "倒數最後2天！彰化最強走春 「命理一條街」成為「春節市集」最新亮點",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346928",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "彰化花壇250人博杯大戰！ 模具男連擲5聖杯奪冠機車騎回家",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347348",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "國1彰化入夜湧北返車潮 北斗至彰化系統壅塞",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347404",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "國1彰化入夜湧北返車潮 北斗至彰化系統壅塞",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347404",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "激烈4輪PK決勝 彰化慈航宮年度總斗首出爐",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348041",
+          "source": "自由時報",
+          "content": "農曆春節尾聲的大年初六，邁入第4年的彰化縣竹塘鄉慈航宮「丙午年祈安禮斗法會總斗首擲筊選出儀式」，在觀世音菩薩見證下，來自桃園市中壢區的梁姓男子與彰化縣永靖鄉的傅姓男子競逐總斗首...…"
+        }
+      ]
+    },
+    {
       "word": "Google",
       "count": 37,
       "articles": [
@@ -3046,72 +3055,6 @@
           "url": "https://news.cnyes.com/news/id/6347511",
           "source": "鉅亨網(wd_stock)",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "彰化",
-      "count": 37,
-      "articles": [
-        {
-          "title": "百萬名車彰化毒駕？接連肇逃引擎蓋都掀開 撞上派出所階梯起火",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5346079",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節垃圾放家裡？彰化市民好幸福 「2方法」輕鬆丟垃圾",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346189",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "黃國昌彰化掃街 有贊聲也有嗆「滾蛋、臭俗辣」",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346663",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "獨家》彰化火車站「福馬臨」春聯諧音「福馬林」 台鐵公司回應了",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346691",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "不必敲碗！招牌走春的「彰化四城門小旅行」創新高",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346923",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "倒數最後2天！彰化最強走春 「命理一條街」成為「春節市集」最新亮點",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346928",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "彰化花壇250人博杯大戰！ 模具男連擲5聖杯奪冠機車騎回家",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347348",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "國1彰化入夜湧北返車潮 北斗至彰化系統壅塞",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347404",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "國1彰化入夜湧北返車潮 北斗至彰化系統壅塞",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347404",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "激烈4輪PK決勝 彰化慈航宮年度總斗首出爐",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348041",
-          "source": "自由時報",
-          "content": "農曆春節尾聲的大年初六，邁入第4年的彰化縣竹塘鄉慈航宮「丙午年祈安禮斗法會總斗首擲筊選出儀式」，在觀世音菩薩見證下，來自桃園市中壢區的梁姓男子與彰化縣永靖鄉的傅姓男子競逐總斗首...…"
         }
       ]
     },
@@ -3512,6 +3455,72 @@
       ]
     },
     {
+      "word": "兄弟",
+      "count": 35,
+      "articles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：托爾兄弟公司TOL-US的目標價調升至166元，幅度約5.06%",
+          "url": "https://news.cnyes.com/news/id/6347123",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "余祥銓揪鹿希派合組「蛋蛋三兄弟」他被拱脫掉上衣",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346875",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高人氣雪鐵龍小車 Ami 雙生兄弟改款現身！追加專屬新色打造搶眼造型",
+          "url": "https://auto.ltn.com.tw/news/30972",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "中職》聯盟解禁1規範 兄弟首場隊內賽首見特殊現象",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347796",
+          "source": "自由時報",
+          "content": "\n\n\n中信兄弟今天舉辦隊內紅白戰，腳上釘鞋的顏色成為全場焦點，由於今年規章中的釘鞋顏色改成不再規範，只要不反光即可，只見曾頌恩穿上藍色、楊祥禾則是粉色系，投手呂彥青更是穿上全白...…"
+        },
+        {
+          "title": "中職》12萬人追蹤的前道奇捕手教練報到 兄弟新希望可望再進化",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347782",
+          "source": "自由時報",
+          "content": "\n\n\n中信兄弟邀請委內瑞拉籍教練賀克托 （Hector Alvarez）擔任春訓客座捕手教練，今天正式報到，準備為捕手群的接捕動作傳授經驗，而曾在道奇、大都會小聯盟執教的他，將...…"
+        },
+        {
+          "title": "中職》李大浩特調1天就有成果 兄弟三壘新希望不一樣了",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347943",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果，他直言，只有黃韋盛感覺有把昨天的東西放到今日的實戰，其他2名打者還看不太出來。\n\n\n去年...…"
+        },
+        {
+          "title": "中職》李大浩連前輩都敢講真話 平野惠一邀來兄弟的原因",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347971",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇李大浩接受平野惠一邀約，客座中信兄弟春訓一週指導打擊，平野惠一透露，李大浩的棒球腦超好，能針對各種狀況去打擊，甚至不吝於向前輩提出建言，「這就是我邀請他的原因。」...…"
+        },
+        {
+          "title": "中職》兄弟補強牛棚 簽下最速153公里火球男！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347964",
+          "source": "自由時報",
+          "content": "\n\n\n生涯最速153公里的26歲火球男曾品洋，跟中信兄弟簽下自主培訓合約，目前已跟著中信春訓中，希望能再重返中職的一軍舞台。\n\n\n曾品洋是前中信兄弟曾家鋐的胞兄，2022年選秀...…"
+        },
+        {
+          "title": "中職》兄弟第1指名首秀好投！ 可望對決日本怪力男",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348026",
+          "source": "自由時報",
+          "content": "\n\n\n中信兄弟第1指名投手林暉盛今在隊內紅白戰先發，繳出1.1局無安打，有個好的開始，備戰25日對上軟銀的比賽，他直呼很期待能對上軟銀，以及跟「日本怪力男」柳田悠岐交手。\n\n\n...…"
+        },
+        {
+          "title": "中職》兄弟重砲曾頌恩拉打過多 南韓傳奇老實說",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348076",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇打者李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果。其中，他指導曾頌恩練打時可將目標放在「反方向全壘打」，先透過想法上的改造，希望幫他找...…"
+        }
+      ]
+    },
+    {
       "word": "最高法院",
       "count": 35,
       "articles": [
@@ -3574,72 +3583,6 @@
           "url": "https://ec.ltn.com.tw/article/breakingnews/5346944",
           "source": "自由時報",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "全面",
-      "count": 34,
-      "articles": [
-        {
-          "title": "俄選手獲准持國旗參賽 烏克蘭官員全面抵制冬季帕運",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5345887",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "全球最大航艦 美軍福特號週末抵達中東 全面攻伊 川普幕僚：90％機率",
-          "url": "https://news.ltn.com.tw/news/world/paper/1744094",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Google正式發表Gemini 3.1 Pro 全面強化複雜任務處理能力",
-          "url": "https://news.cnyes.com/news/id/6347511",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
-          "url": "https://news.cnyes.com/news/id/6347688",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
-          "url": "https://www.thenewslens.com/article/264890",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
-          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
-          "source": "TechNews",
-          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
-        },
-        {
-          "title": "旅客注意！南韓11間航空全面禁止機上使用行動電源",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347210",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Gemini 3.1 Pro 全面開放，推理效能較上代翻倍",
-          "url": "https://technews.tw/2026/02/21/gemini-3-1-pro-announcing-our-latest-gemini-ai-model/",
-          "source": "TechNews",
-          "content": "Google 19 日推出 Gemini 3.1 Pro 模型，在上週 Gemini 3 Deep Think [&#8230;]"
         }
       ]
     }
