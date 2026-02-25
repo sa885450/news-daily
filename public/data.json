@@ -1,89 +1,76 @@
 {
-  "updateTime": "2026-02-25T20:00:55.113Z",
-  "fullDateStr": "2026/2/26 · 更新於 04:00:55",
+  "updateTime": "2026-02-25T21:01:23.071Z",
+  "fullDateStr": "2026/2/26 · 更新於 05:01:23",
   "aiResult": {
-    "sentiment_score": 0.4,
+    "sentiment_score": 0.45,
     "dimensions": {
-      "policy": -0.2,
-      "market": 0.6,
-      "industry": 0.5,
-      "international": 0.4,
-      "technical": 0.7
+      "policy": 0.2,
+      "market": 0.7,
+      "industry": 0.6,
+      "international": 0.3,
+      "technical": 0.5
     },
     "entities": [
       {
-        "name": "JPM-US",
-        "sentiment": "positive",
-        "ticker": "JPM-US"
+        "name": "Intuit",
+        "sentiment": "Positive",
+        "ticker": "INTU-US"
       },
       {
-        "name": "ABNB-US",
-        "sentiment": "positive",
-        "ticker": "ABNB-US"
+        "name": "費城半導體指數",
+        "sentiment": "Positive",
+        "ticker": ".SOX"
       },
       {
-        "name": "MSFT-US",
-        "sentiment": "neutral",
-        "ticker": "MSFT-US"
+        "name": "那斯達克指數",
+        "sentiment": "Positive",
+        "ticker": ".IXIC"
       },
       {
-        "name": "IBM-US",
-        "sentiment": "negative",
-        "ticker": "IBM-US"
+        "name": "標普500指數",
+        "sentiment": "Positive",
+        "ticker": ".SPX"
       },
       {
-        "name": "META-US",
-        "sentiment": "neutral",
-        "ticker": "META-US"
-      },
-      {
-        "name": "NVDA-US",
-        "sentiment": "positive",
-        "ticker": "NVDA-US"
+        "name": "道瓊工業指數",
+        "sentiment": "Positive",
+        "ticker": ".DJI"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：雙軌復甦下的成長擴張與能源約束】</h3><p>今日市場情緒由昨日的 0.35 進一步攀升至 <b>0.40</b>。延續昨日 SOX 領漲的勢頭，今日費半指數漲幅擴大至 <b>1.84%</b>，顯示半導體板塊的修復行情正轉化為結構性多頭。與昨日不同的是，資金開始出現<b>『多點開花』</b>跡象，非科技類的傳統工業與消費平台如 Airbnb (ABNB) 亦展現強勁動能。</p><p><b>關鍵觀察與增量分析：</b><br>1. <b>傳統工業回溫</b>：小摩報告指出 2025 年全球工業產出成長將達 2.4%，結束兩年萎縮，這意味著市場成長引擎已不再僅限於 AI，而是步入『雙軌復甦』階段。<br>2. <b>AI 成本側壓力</b>：白宮針對資料中心電力成本的談判，標誌著科技巨頭將承擔更多基礎建設責任，這將壓抑長期毛利率，需警惕 CAPEX 的邊際效益遞減。<br>3. <b>結構性替代風險</b>：IBM 因 Anthropic 競爭導致的單日 13% 跌幅是重要警訊，顯示 AI 工具正從『賦能』轉向『取代』，對傳統軟體服務商構成估值威脅。<br>4. <b>反向指標觀察</b>：目前市場尚未見到『巴逆逆』等極端指標發聲，暗示當前漲勢仍具備宏觀基本面支撐，尚未進入過熱區間。</p>",
+    "summary": "<h3>【宏觀決策報告：從硬體轉向軟體，市場修復廣度擴大】</h3><p>今日市場情緒由昨日的 0.40 進一步微升至 <b>0.45</b>。雖然費半指數 (SOX) 漲幅維持在 1.8% 左右，延續昨日的強勢，但今日顯著的增量變化在於<b>深度超跌的 SaaS 與 Fintech 板塊</b>開始出現報復性反彈。</p><p><b>增量分析與對比：</b><br>1. <b>板塊輪動擴散</b>：昨日資金聚焦於半導體與工業復甦，今日則見到財務軟體巨頭 <b>Intuit (INTU)</b> 盤中強彈 5.02%。考量到該股今年以來跌幅高達 45.72%，今日的反彈被視為機構投資者在結構性修正後的空頭平倉與逢低布局。<br>2. <b>技術面修復</b>：美股四大指數同步收紅，且 Nasdaq (+1.29%) 表現優於大盤，顯示風險偏好正由防禦型標的轉向成長型標的。<br>3. <b>反向指標觀察</b>：目前新聞資訊流中未見「8zz」或「巴逆逆」等極端看多/看空訊號，市場情緒仍處於理性修復區間，未見散戶過熱跡象，這對多頭延續屬健康發展。</p><p><b>操作建議</b>：延續昨日對 SOX 的看好，目前應增加對軟體板塊的關注，尋找如 INTU 這類基本面穩健但估值已極度修正的龍頭股進行波段配置。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀經濟"
+        "category": "美股大盤"
       },
       {
         "id": 2,
-        "category": "半導體"
+        "category": "SaaS軟體"
       },
       {
         "id": 3,
-        "category": "能源政策"
+        "category": "半導體"
       }
     ],
     "sector_stats": {
-      "tech": 0.6,
+      "tech": 0.8,
       "finance": 0.4,
-      "manufacturing": 0.5,
-      "service": 0.3
+      "manufacturing": 0.3,
+      "service": 0.6
     },
     "events": [
       {
-        "title": "全球製造業雙軌復甦趨勢",
-        "summary": "傳統工業部門產出成長轉正，結合 AI 投資熱潮，驅動全球經濟動能多元化。",
+        "title": "SaaS板塊超跌反彈",
+        "summary": "Intuit 在今年跌幅近 46% 後，今日單日反彈逾 5%，帶動軟體與 Fintech 板塊投資信心。",
         "impact": "正面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "白宮 AI 電力成本約束談判",
-        "summary": "政府要求科技巨頭自建電力設施，防止 AI 擴張推升民生電價，增加企業長期運營成本。",
-        "impact": "負面",
-        "related_news_ids": [
-          2
-        ]
-      },
-      {
-        "title": "供應鏈關稅防禦性遷徙",
-        "summary": "美國貿易政策驅使產能轉移至東南亞與墨西哥，帶動區域 PMI 擴張並引發短期搶單潮。",
-        "impact": "中性",
+        "title": "費半指數多頭格局確立",
+        "summary": "SOX 維持 1.8% 漲幅，延續昨日領漲勢頭，半導體仍是市場成長的核心引擎。",
+        "impact": "正面",
         "related_news_ids": [
           0
         ]
@@ -91,56 +78,31 @@
     ],
     "relations": [
       {
-        "from": "Anthropic",
-        "to": "IBM-US",
-        "type": "競爭取代"
+        "from": "Intuit",
+        "to": "Nasdaq Composite",
+        "type": "成分股帶動"
       },
       {
-        "from": "白宮",
-        "to": "MSFT-US",
-        "type": "政策監管"
+        "from": "費城半導體指數",
+        "to": "科技成長股",
+        "type": "情緒指標引領"
       },
       {
-        "from": "關稅政策",
-        "to": "越南製造業",
-        "type": "產能移轉"
-      },
-      {
-        "from": "JPM-US",
-        "to": "傳統工業",
-        "type": "看好復甦"
+        "from": "Intuit",
+        "to": "Fintech 產業",
+        "type": "產業領導地位"
       }
     ]
   },
   "newsData": [
     {
-      "title": "AI不是唯一成長引擎！小摩：傳統工業將復甦 宏觀經濟將走向多點開花",
-      "url": "https://news.cnyes.com/news/id/6352527",
+      "title": "盤中速報 - 直覺(INTU-US)大漲5.02%，報376.73美元",
+      "url": "https://news.cnyes.com/news/id/6353615",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;AI 與傳統產業的韌性正在上演微妙角力，儘管 AI 技術革命持續主導市場情緒，但最新數據顯示，全球經濟的成長引擎未完全押注於這場技術變革，傳統工業部門的復甦勢頭正悄悄改寫市場預期。&lt;/p&gt;\n\n&lt;p&gt;2025 年全球工業產出年成長率達 2.4%，較過去三年平均值高出一倍，更顯示出超越科技熱潮的內生動能。&lt;/p&gt;\n\n&lt;p&gt;摩根大通 (下稱小摩)(&lt;a data-symbol-template=&quot;USS:JPM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;JPM-US&lt;/a&gt;) 研究團隊深入分析後發現，驅動這波復甦的核心力量來自非科技領域的復甦。除中國外全球非科技類工業產出年增率 1.2%，結束連兩年萎縮頹勢。這種轉折在美國關稅政策帶來的「搶單潮」中尤為明顯，企業為規避潛在關稅風險提前備貨，推動 2-3 月全球工業增速達到年化 9.4% 的短期高峰。&lt;/p&gt;\n\n&lt;p&gt;科技巨頭的資本支出狂潮仍是市場焦點，市場預估今年全球 AI 相關投資規模",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 愛彼迎(ABNB-US)大漲5.01%，報131.96美元",
-      "url": "https://news.cnyes.com/news/id/6353607",
-      "source": "鉅亨網(wd_stock)",
-      "category": "宏觀經濟",
-      "thumbnail": null,
-      "content": "&lt;p&gt;愛彼迎(ABNB-US)截至台北時間26日03:02股價上漲6.3美元，報131.96美元，漲幅5.01%，成交量3,552,534（股），盤中最高價131.96美元、最低價125.82美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.81%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.24%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.84%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;愛彼迎(ABNB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.02%&lt;/li&gt;    &lt;li&gt;近 1 月：-6.95%&lt;/li&gt;    &lt;li&gt;近 3 月：+7.47%&",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "AI燒電誰買單？白宮找科技巨頭談判",
-      "url": "https://news.cnyes.com/news/id/6353586",
-      "source": "鉅亨網(wd_stock)",
-      "category": "半導體",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《路透》周三 (25 日) 報導，白宮計畫於 3 月初邀集多家大型資料中心與人工智慧 (AI) 企業，包括微軟(MSFT-US)、Anthropic 與 Meta(META-US)，討論並正式敲定一項承諾機制，以避免資料中心快速擴張推升民生電價。&lt;/p&gt;\n\n&lt;p&gt;根據知情人士透露，此次會議旨在推動總統川普日前於國情咨文中提出的倡議。川普表示，他已要求大型科技企業自行興建發電設施，以支應日益擴張的資料中心與 AI 基礎設施所需電力，確保不將成本轉嫁至一般用戶。&lt;/p&gt;\n\n&lt;p&gt;討論中的承諾內容，預料將類似微軟今年稍早提出的方案，包括投資新的發電容量與提升能源效率。微軟副董事長兼總裁史密斯 (Brad Smith) 表示，公司支持政府確保資料中心不會推升消費者電費，但未說明是否出席會議或簽署新的承諾。Meta 發言人拒絕評論，Anthropic 則未立即回應。&lt;/p&gt;\n\n&lt;p&gt;川普將全球 AI 競賽與能源供應保障列為第二任期的核心政策之一。然而，隨著資料中心用電需求急速增加，多地電費上漲，引發地方與州",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;直覺(INTU-US)截至台北時間26日03:54股價上漲18.02美元，報376.73美元，漲幅5.02%，成交量3,101,973（股），盤中最高價376.73美元、最低價353.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.84%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.8%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;直覺(INTU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.17%&lt;/li&gt;    &lt;li&gt;近 1 月：-36.25%&lt;/li&gt;    &lt;li&gt;近 3 月：-44.96%",
+      "timeStr": "上午05:01",
       "relatedArticles": []
     }
   ],
@@ -183,25 +145,17 @@
   ],
   "events": [
     {
-      "title": "全球製造業雙軌復甦趨勢",
-      "summary": "傳統工業部門產出成長轉正，結合 AI 投資熱潮，驅動全球經濟動能多元化。",
+      "title": "SaaS板塊超跌反彈",
+      "summary": "Intuit 在今年跌幅近 46% 後，今日單日反彈逾 5%，帶動軟體與 Fintech 板塊投資信心。",
       "impact": "正面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "白宮 AI 電力成本約束談判",
-      "summary": "政府要求科技巨頭自建電力設施，防止 AI 擴張推升民生電價，增加企業長期運營成本。",
-      "impact": "負面",
-      "related_news_ids": [
-        2
-      ]
-    },
-    {
-      "title": "供應鏈關稅防禦性遷徙",
-      "summary": "美國貿易政策驅使產能轉移至東南亞與墨西哥，帶動區域 PMI 擴張並引發短期搶單潮。",
-      "impact": "中性",
+      "title": "費半指數多頭格局確立",
+      "summary": "SOX 維持 1.8% 漲幅，延續昨日領漲勢頭，半導體仍是市場成長的核心引擎。",
+      "impact": "正面",
       "related_news_ids": [
         0
       ]
@@ -209,30 +163,25 @@
   ],
   "relations": [
     {
-      "from": "Anthropic",
-      "to": "IBM-US",
-      "type": "競爭取代"
+      "from": "Intuit",
+      "to": "Nasdaq Composite",
+      "type": "成分股帶動"
     },
     {
-      "from": "白宮",
-      "to": "MSFT-US",
-      "type": "政策監管"
+      "from": "費城半導體指數",
+      "to": "科技成長股",
+      "type": "情緒指標引領"
     },
     {
-      "from": "關稅政策",
-      "to": "越南製造業",
-      "type": "產能移轉"
-    },
-    {
-      "from": "JPM-US",
-      "to": "傳統工業",
-      "type": "看好復甦"
+      "from": "Intuit",
+      "to": "Fintech 產業",
+      "type": "產業領導地位"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 384,
+      "count": 386,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -364,7 +313,7 @@
     },
     {
       "word": "美元",
-      "count": 208,
+      "count": 209,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -430,7 +379,7 @@
     },
     {
       "word": "EPS",
-      "count": 201,
+      "count": 202,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
@@ -892,7 +841,7 @@
     },
     {
       "word": "中速",
-      "count": 100,
+      "count": 101,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1%，報8131.81點",
