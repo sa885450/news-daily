@@ -1,108 +1,153 @@
 {
-  "updateTime": "2026-02-25T21:01:23.071Z",
-  "fullDateStr": "2026/2/26 · 更新於 05:01:23",
+  "updateTime": "2026-02-25T22:00:52.195Z",
+  "fullDateStr": "2026/2/26 · 更新於 06:00:52",
   "aiResult": {
-    "sentiment_score": 0.45,
+    "sentiment_score": 0.58,
     "dimensions": {
-      "policy": 0.2,
-      "market": 0.7,
-      "industry": 0.6,
-      "international": 0.3,
-      "technical": 0.5
+      "policy": 0.3,
+      "market": 0.85,
+      "industry": 0.7,
+      "international": 0.4,
+      "technical": 0.9
     },
     "entities": [
       {
-        "name": "Intuit",
-        "sentiment": "Positive",
-        "ticker": "INTU-US"
+        "name": "台積電",
+        "sentiment": "positive",
+        "ticker": "2330.TW"
       },
       {
-        "name": "費城半導體指數",
-        "sentiment": "Positive",
-        "ticker": ".SOX"
+        "name": "輝達",
+        "sentiment": "neutral",
+        "ticker": "NVDA"
       },
       {
-        "name": "那斯達克指數",
-        "sentiment": "Positive",
-        "ticker": ".IXIC"
+        "name": "貿聯-KY",
+        "sentiment": "positive",
+        "ticker": "3665.TW"
       },
       {
-        "name": "標普500指數",
-        "sentiment": "Positive",
-        "ticker": ".SPX"
+        "name": "鴻海",
+        "sentiment": "positive",
+        "ticker": "2317.TW"
       },
       {
-        "name": "道瓊工業指數",
-        "sentiment": "Positive",
-        "ticker": ".DJI"
+        "name": "愛彼迎",
+        "sentiment": "positive",
+        "ticker": "ABNB"
+      },
+      {
+        "name": "美元指數",
+        "sentiment": "negative",
+        "ticker": "DXY"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：從硬體轉向軟體，市場修復廣度擴大】</h3><p>今日市場情緒由昨日的 0.40 進一步微升至 <b>0.45</b>。雖然費半指數 (SOX) 漲幅維持在 1.8% 左右，延續昨日的強勢，但今日顯著的增量變化在於<b>深度超跌的 SaaS 與 Fintech 板塊</b>開始出現報復性反彈。</p><p><b>增量分析與對比：</b><br>1. <b>板塊輪動擴散</b>：昨日資金聚焦於半導體與工業復甦，今日則見到財務軟體巨頭 <b>Intuit (INTU)</b> 盤中強彈 5.02%。考量到該股今年以來跌幅高達 45.72%，今日的反彈被視為機構投資者在結構性修正後的空頭平倉與逢低布局。<br>2. <b>技術面修復</b>：美股四大指數同步收紅，且 Nasdaq (+1.29%) 表現優於大盤，顯示風險偏好正由防禦型標的轉向成長型標的。<br>3. <b>反向指標觀察</b>：目前新聞資訊流中未見「8zz」或「巴逆逆」等極端看多/看空訊號，市場情緒仍處於理性修復區間，未見散戶過熱跡象，這對多頭延續屬健康發展。</p><p><b>操作建議</b>：延續昨日對 SOX 的看好，目前應增加對軟體板塊的關注，尋找如 INTU 這類基本面穩健但估值已極度修正的龍頭股進行波段配置。</p>",
+    "summary": "<h3>【宏觀決策報告：台積電市值破極限，AI 估值進入深水區檢驗】</h3><p>今日市場情緒較昨日 0.45 進一步攀升至 <b>0.58</b>。相較於昨日聚焦於 SaaS 與 Fintech 的修復，今日市場重心回歸「硬體王者」<b>台積電 (2330.TW)</b>，其市值衝破 2 兆美元大關，帶領台股寫下歷史天量。雖然台股呈現極度貪婪，但美股端因 <b>Nvidia (NVDA)</b> 財報在即，市場呈現恐慌性觀望，美元走弱反映了地緣政治關稅與避險情緒的交織。</p><p><b>增量分析與風險提示：</b><br>1. <b>結構性變化</b>：昨日是超跌軟體的反彈，今日則是權值股的瘋狂，台積電今年漲幅已達 30.6%，技術指標雖強但也暗示乖離過大。<br>2. <b>反向指標觀察</b>：目前網路上「巴逆逆」等反向指標尚未對此次台股天量發出強烈看空訊號，顯示散戶情緒尚未完全過熱，目前仍由法人機構盤勢主導。<br>3. <b>避險建議</b>：隨著川普關稅風暴（10%-15%）持續發酵，美元作為儲備貨幣的地位受質疑，建議配置具備「AI 護城河」之網路平台股如 <b>ABNB</b>，以應對 AI 估值重估風險。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "美股大盤"
+        "category": "半導體與設備"
       },
       {
         "id": 2,
-        "category": "SaaS軟體"
-      },
-      {
-        "id": 3,
-        "category": "半導體"
+        "category": "宏觀匯率政策"
       }
     ],
     "sector_stats": {
-      "tech": 0.8,
-      "finance": 0.4,
-      "manufacturing": 0.3,
-      "service": 0.6
+      "tech": 0.85,
+      "finance": 0.45,
+      "manufacturing": 0.7,
+      "service": 0.35
     },
     "events": [
       {
-        "title": "SaaS板塊超跌反彈",
-        "summary": "Intuit 在今年跌幅近 46% 後，今日單日反彈逾 5%，帶動軟體與 Fintech 板塊投資信心。",
+        "title": "台積電兩兆美元里程碑與台股天量",
+        "summary": "台積電衝上 2025 元引發股匯雙漲，台股成交量近兆元創歷史新高，確立 AI 權值股的絕對領先地位。",
         "impact": "正面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "費半指數多頭格局確立",
-        "summary": "SOX 維持 1.8% 漲幅，延續昨日領漲勢頭，半導體仍是市場成長的核心引擎。",
-        "impact": "正面",
+        "title": "輝達財報前夕的 AI 估值焦慮",
+        "summary": "市場對 NVDA 財報預期極高，導致科技股在財報公布前出現「下行衝擊風險大於上行」的防禦性交易。",
+        "impact": "中性",
         "related_news_ids": [
-          0
+          1,
+          2
+        ]
+      },
+      {
+        "title": "川普關稅戰與美元儲備地位疑慮",
+        "summary": "川普推進更複雜的關稅制度，引發市場對美元長期去全球化負面影響的擔憂，美元指數走弱。",
+        "impact": "負面",
+        "related_news_ids": [
+          1
         ]
       }
     ],
     "relations": [
       {
-        "from": "Intuit",
-        "to": "Nasdaq Composite",
-        "type": "成分股帶動"
+        "from": "台積電",
+        "to": "鴻海",
+        "type": "供應鏈協同"
       },
       {
-        "from": "費城半導體指數",
-        "to": "科技成長股",
-        "type": "情緒指標引領"
+        "from": "輝達",
+        "to": "台積電",
+        "type": "晶圓代工合作"
       },
       {
-        "from": "Intuit",
-        "to": "Fintech 產業",
-        "type": "產業領導地位"
+        "from": "川普關稅政策",
+        "to": "美元指數",
+        "type": "負面影響"
+      },
+      {
+        "from": "AI 伺服器需求",
+        "to": "貿聯-KY",
+        "type": "關鍵零組件採購"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 直覺(INTU-US)大漲5.02%，報376.73美元",
-      "url": "https://news.cnyes.com/news/id/6353615",
+      "title": "〈台股盤前要聞〉開春3天噴漲近2000點爆天量、台積電市值2兆美元、台幣升值1.21角",
+      "url": "https://news.cnyes.com/news/id/6353521",
+      "source": "鉅亨網(tw_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;h6&gt;2/26 台股盤前要聞&lt;/h6&gt;\n\n&lt;p&gt;1. 台積電 25 日衝上 2025 元，大盤一度漲逾 800 點，最高漲至 35521.54 點，終場漲 712.25 點或 2.05%，以 35413.07 點作收，再度創歷史收盤新高，成交量 9819.67 億元，同步寫歷史最大量。外資持續加碼，今天再買超 413.02 億元，並大舉敲進群創超過 7 萬張、鴻海 6.8 萬張，但調節天價台積電 4193 張。&lt;/p&gt;\n\n&lt;p&gt;2. 台股驚天連五漲，外資大舉匯入買股，呈現股匯雙漲走勢，&lt;a href=&quot;https://invest.cnyes.com/forex/detail/usdtwd&quot;&gt;新台幣&lt;/a&gt;兌美元一度逼近 31.3 元關卡，在央行介入調節下，終場收在 31.34 元，升值 1.21 角，創近 1 個月收盤新高，台北與元太外匯市場總成交量仍維持高檔水準，達&nbsp;20.225 億美元。&lt;/p&gt;\n\n&lt;p&gt;3. 台積電去年底收盤價為 1550 ",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "〈紐約匯市〉美元走弱 延續本周震盪走勢",
+      "url": "https://news.cnyes.com/news/id/6353628",
+      "source": "鉅亨網(wd_stock)",
+      "category": "半導體與設備",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美元周三 (25 日) 走弱，延續本周來回震盪的交易。市場焦點轉向 AI 晶片巨擘輝達 (Nvidia)(NVDA-US) 盤後將公布的財報，該事件過去經常引發市場大幅波動。&lt;/p&gt;\n\n&lt;p&gt;紐約尾盤，追蹤美元兌六種主要貨幣的美元指數 (DXY) 下跌 0.2%，報 97.69，過去一個月仍上漲近 1%。&lt;/p&gt;\n\n&lt;p&gt;美元這周維持相對狹幅區間波動，因美國總統川普的新一輪 10% 全球關稅於周二生效，市場並為可能上調至 15% 做準備。&lt;/p&gt;\n\n&lt;p&gt;川普在國情咨文中表示，儘管最高法院近期裁決限制其權限，他仍將推進關稅議程。不過，由於新增關稅需尋求國會批准，其施加新關稅的空間預料將受到嚴格限制。&lt;/p&gt;\n\n&lt;p&gt;麥格理全球外匯與利率策略師 Thierry Wizman 表示，「川普未釋出任何放緩關稅議程的訊號。相反地，他表示將透過其他授權恢復廣泛的美國進口關稅，並指出新制度將更為『複雜』但也更具持久性，且不一定需要國會行動。」&lt;/p&gt;\n\n&lt;p&gt;他",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "AI恐慌殺過頭？Jefferies點名6檔護城河股：等情緒退燒就翻身",
+      "url": "https://news.cnyes.com/news/id/6352073",
+      "source": "鉅亨網(wd_stock)",
+      "category": "宏觀匯率政策",
+      "thumbnail": null,
+      "content": "&lt;p&gt;投行傑富瑞（Jefferies）認為當前的 AI 恐慌拋售潮缺乏正當性，並點名 6 檔個股，預期當華爾街不再因 AI 一點新動態就「先賣再說」，這些公司將率先突圍。&lt;/p&gt;\n\n&lt;p&gt;人工智慧（AI）在短時間內從華爾街最受青睞的交易標的，轉身變成了大盤跌勢的催化劑，然而，並非所有市場人士都認為這種恐慌情緒是有理可原的。&lt;/p&gt;\n\n&lt;p&gt;繼 Citrini Research 一份描繪 AI 未來慘淡前景的報告引發市場關注，並導致週一美股重挫後，傑富瑞（Jefferies）分析師隨即在週二發布報告指出，他們認為當前的拋售潮缺乏正當性。&lt;/p&gt;\n\n&lt;p&gt;在這一波跌勢中，網路股受創最深，S&amp;P 網路精選行業指數自 2026 年初以來已下跌逾 15%。儘管市場氛圍悲觀，傑富瑞仍看好科技次產業具備抵禦恐慌的韌性，並特別點名六檔個股，預期一旦華爾街不再因 AI 的每一項新動態而草木皆兵，這些公司將率先突圍。&lt;/p&gt;\n\n&lt;p&gt;傑富瑞認為，要讓 AI 取代現有的網路中介服務存在兩大障礙",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "比爾蓋茲向員工道歉 認了婚外情！",
+      "url": "https://news.cnyes.com/news/id/6352847",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;直覺(INTU-US)截至台北時間26日03:54股價上漲18.02美元，報376.73美元，漲幅5.02%，成交量3,101,973（股），盤中最高價376.73美元、最低價353.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.84%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.8%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;直覺(INTU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.17%&lt;/li&gt;    &lt;li&gt;近 1 月：-36.25%&lt;/li&gt;    &lt;li&gt;近 3 月：-44.96%",
-      "timeStr": "上午05:01",
+      "content": "&lt;p&gt;科技巨頭微軟 (&lt;a data-symbol-template=&quot;USS:MSFT:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MSFT-US&lt;/a&gt;) 創始人比爾 &middot; 蓋茲周二（24 日）就其與美國已故性犯罪者愛潑斯坦的關係向蓋茲基金會員工道歉，承認自己的錯誤給這個慈善組織蒙上陰影，但堅稱自己未參與愛潑斯坦的犯罪行為。&lt;/p&gt;\n\n&lt;p&gt;據《華爾街日報》查閱的一段錄音顯示，蓋茲在周二舉行的一場會議上承認，他曾與兩名俄羅斯女性有過婚外關係，但這些關係並未涉及愛潑斯坦的受害者。&lt;/p&gt;\n\n&lt;p&gt;蓋茲承認有過婚外情，一位是在橋牌比賽中結識的俄羅斯選手，另一位是在商業活動中認識的俄羅斯核物理學家。&lt;/p&gt;\n\n&lt;p&gt;蓋茲稱，近期公開的愛潑斯坦檔案中，有一些他與面部被遮擋女性合影的照片，那是愛潑斯坦在會面後要求他與其助理一起拍攝。&lt;/p&gt;\n\n&lt;p&gt;「我要明確一點，我從未與受害者，也就是他身邊的那些女性有過任",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     }
   ],
@@ -145,37 +190,51 @@
   ],
   "events": [
     {
-      "title": "SaaS板塊超跌反彈",
-      "summary": "Intuit 在今年跌幅近 46% 後，今日單日反彈逾 5%，帶動軟體與 Fintech 板塊投資信心。",
+      "title": "台積電兩兆美元里程碑與台股天量",
+      "summary": "台積電衝上 2025 元引發股匯雙漲，台股成交量近兆元創歷史新高，確立 AI 權值股的絕對領先地位。",
       "impact": "正面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "費半指數多頭格局確立",
-      "summary": "SOX 維持 1.8% 漲幅，延續昨日領漲勢頭，半導體仍是市場成長的核心引擎。",
-      "impact": "正面",
+      "title": "輝達財報前夕的 AI 估值焦慮",
+      "summary": "市場對 NVDA 財報預期極高，導致科技股在財報公布前出現「下行衝擊風險大於上行」的防禦性交易。",
+      "impact": "中性",
       "related_news_ids": [
-        0
+        1,
+        2
+      ]
+    },
+    {
+      "title": "川普關稅戰與美元儲備地位疑慮",
+      "summary": "川普推進更複雜的關稅制度，引發市場對美元長期去全球化負面影響的擔憂，美元指數走弱。",
+      "impact": "負面",
+      "related_news_ids": [
+        1
       ]
     }
   ],
   "relations": [
     {
-      "from": "Intuit",
-      "to": "Nasdaq Composite",
-      "type": "成分股帶動"
+      "from": "台積電",
+      "to": "鴻海",
+      "type": "供應鏈協同"
     },
     {
-      "from": "費城半導體指數",
-      "to": "科技成長股",
-      "type": "情緒指標引領"
+      "from": "輝達",
+      "to": "台積電",
+      "type": "晶圓代工合作"
     },
     {
-      "from": "Intuit",
-      "to": "Fintech 產業",
-      "type": "產業領導地位"
+      "from": "川普關稅政策",
+      "to": "美元指數",
+      "type": "負面影響"
+    },
+    {
+      "from": "AI 伺服器需求",
+      "to": "貿聯-KY",
+      "type": "關鍵零組件採購"
     }
   ],
   "keywords7d": [
@@ -247,7 +306,7 @@
     },
     {
       "word": "AI",
-      "count": 366,
+      "count": 369,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -313,7 +372,7 @@
     },
     {
       "word": "美元",
-      "count": 209,
+      "count": 211,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -708,6 +767,72 @@
       ]
     },
     {
+      "word": "自由",
+      "count": 104,
+      "articles": [
+        {
+          "title": "自由開講》當「速度」成為奢求：從米蘭冬奧反思台灣醫療行政的僵化",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5344273",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》健康是生活感！ 從Google熱搜看台灣高齡缺口",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5320977",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》別讓馬年的祝福，成為他們的悲歌",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5333748",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》俄羅斯如「外星城市」刷卡全滅、山寨麥當勞！中國人嘆：戰後也難翻身！",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346030",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》北京對台工作會議 正式將地方選舉納入統戰戰場",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5343450",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "專訪韓國作家青藝：自由與控制，是我想透過《甜橙與麵包刀》傳達的意念",
+          "url": "https://www.thenewslens.com/article/264588",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "自由開講》本土派台灣國民黨應揭竿而起",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5342483",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》霍諾德赤手空拳攀登台北101 1等1勇者",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5331224",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》柯文哲失言連環炸！喊「參選人水準高」網翻舊片酸爆：上樑不正下樑歪",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346268",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由觀點》非洲豬瘟彈劾官員 破口就在中市府",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5342870",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "曝光",
       "count": 104,
       "articles": [
@@ -768,72 +893,6 @@
         {
           "title": "店家多送滷蛋他淚崩 鍾明軒新疆發言曝光 網友酸：又來了？",
           "url": "https://ent.ltn.com.tw/news/breakingnews/5346116",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "自由",
-      "count": 101,
-      "articles": [
-        {
-          "title": "自由開講》當「速度」成為奢求：從米蘭冬奧反思台灣醫療行政的僵化",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5344273",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》健康是生活感！ 從Google熱搜看台灣高齡缺口",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5320977",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》別讓馬年的祝福，成為他們的悲歌",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5333748",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》俄羅斯如「外星城市」刷卡全滅、山寨麥當勞！中國人嘆：戰後也難翻身！",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346030",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》北京對台工作會議 正式將地方選舉納入統戰戰場",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5343450",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "專訪韓國作家青藝：自由與控制，是我想透過《甜橙與麵包刀》傳達的意念",
-          "url": "https://www.thenewslens.com/article/264588",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "自由開講》本土派台灣國民黨應揭竿而起",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5342483",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》霍諾德赤手空拳攀登台北101 1等1勇者",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5331224",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》柯文哲失言連環炸！喊「參選人水準高」網翻舊片酸爆：上樑不正下樑歪",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5346268",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由觀點》非洲豬瘟彈劾官員 破口就在中市府",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5342870",
           "source": "自由時報",
           "content": null
         }
@@ -1039,7 +1098,7 @@
     },
     {
       "word": "伊朗",
-      "count": 84,
+      "count": 87,
       "articles": [
         {
           "title": "美伊日內瓦談判甫結束 伊朗俄羅斯宣布阿曼灣聯合軍演",
@@ -1699,7 +1758,7 @@
     },
     {
       "word": "世界",
-      "count": 52,
+      "count": 53,
       "articles": [
         {
           "title": "揭開日本小酒館的神秘世界：是知己也是顧問，充滿魅力的「媽媽桑」",
@@ -1896,6 +1955,72 @@
       ]
     },
     {
+      "word": "積電",
+      "count": 49,
+      "articles": [
+        {
+          "title": "AI救贖與記憶體泥淖：為何三星與SK海力士難以複製台積電赴美模式？",
+          "url": "https://www.thenewslens.com/article/264500",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "台積電以外的新命脈？高市攜手川普 砸5500億美元布局稀土供應鏈",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346192",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台積電有勁敵？傳日本Rapidus已向客戶提供2奈米PDK",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346221",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美股收盤》川普關稅確定違憲美股勁揚 台積電ADR大漲2.82％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346977",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "馬上紅！台積電ADR封關期間漲2.38% 記憶體暴衝助攻台股馬年開紅盤",
+          "url": "https://news.cnyes.com/news/id/6348224",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;台積電 (2330-TW)(TSM-US)ADR 於馬年封關期間上漲 2.38%，較台北交易溢價將近 22%，與台股密切連動的美光 (MU-US)、晟碟 (SNDK-US) 也在該期間飆漲 14.71%、20%，法人看好，在台積電與記憶體族群上漲下，將助攻台股明日開紅盤，同時也須注意川普將全球關稅調升至 15% 帶來的潛在效應。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院於周五裁定總統川普的關稅政策無效，美股四大指數應聲上漲，川普立馬於自家社群展開反擊，不僅痛批法院判決荒謬，更宣布依據《1974 年貿易法》第 122 條款即刻向全球課徵 10% 暫時性關稅，隨後進一步提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;不過，台灣在過去十個月與美方談判有所斬獲，在各產品出口已取得多項優惠待遇，尤其在重點出口產品如半導體與相關電子產品已取得豁免，業界研判影響相關有限。&lt;/p&gt;\n\n&lt;p&gt;台積電目前占台股權重已高達 44.23%，法人看好，隨著台積電台北股市價格與 ADR 溢價幅度擴大，可望推升台積電明日開紅盤走勢，並提供台股上漲動能，助攻馬年開局。&lt;/p&gt;\n\n&lt;p&gt;另外，美光與晟碟 (SNDK-US) 為記憶體族群指標，受惠 AI 帶動記憶體用量大增、缺貨不見盡頭，股價於封關期間分別飆漲 14.71%、20%，漲幅驚人，象徵市場仍看好記憶體缺貨的延續性將推升相關業者獲利表現。&lt;/p&gt;\n"
+        },
+        {
+          "title": "台積電ADR漲2.38%　分析師估美新關稅對台股影響有限",
+          "url": "https://www.cna.com.tw/news/afe/202602220050.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者何秀玲台北22日電）在2月11日至20日的春節假期休市期間，美股呈現區間震盪整理，道瓊、標普與那斯達克指數小幅回檔，費城半導體指數上漲1.89%；由於台股明天農曆馬年開紅盤，針對美國總統川普新關稅政策變數，分析師評估，若從稅率來看，對台灣影響不是很大，預期對台股影響相較中性。"
+        },
+        {
+          "title": "台積電 ADR 漲 2.38%，分析師估美新關稅對台股影響有限",
+          "url": "https://finance.technews.tw/2026/02/22/tsmc-adr-up/",
+          "source": "TechNews",
+          "content": "11~20 日春節假期休市期間，美股呈現區間震盪整理，道瓊、標普與那斯達克指數小幅回檔，費城半導體指數上漲 1 [&#8230;]"
+        },
+        {
+          "title": "封關期間台積電ADR上漲2.38％   明日開紅盤有望衝3萬4000點大關",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347657",
+          "source": "自由時報",
+          "content": "\n\n\n台股封關期間台積電ADR上漲2.38%，富時台灣指數上漲2.64%，明日台股馬年開紅盤有望補漲，不過，在台股明日開紅盤前夕，川普對等關稅遭美國最高法院判決違憲，川普大怒反...…"
+        },
+        {
+          "title": "年後新春開紅盤 記憶體將強勢補漲 台積電、鴻海、緯創呢?",
+          "url": "https://news.cnyes.com/news/id/6348495",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;農曆期間發生的幾件大事我認為都是歹戲拖棚並不是什麼新鮮事，不管是美伊關係緊張以及美國最高法院宣判美國總統的對等關稅違法都是如此，這部分老朋友就知道去年四月開始因為對等關稅造成全球的股災當時是依據國際緊急經濟權力法（IEEPA）來加徵關稅，節目和大家分析過這是不完善的現在美國最高法院也認定違法，但很快地判決出爐後美國總統依據 1974 年貿易法第 122 條增加 15% 關稅，但不會疊加在 301 條款與 232 條款所增收的進口關稅上，說真的反制動作沒有想像中的激進所以昨晚美股四大指數的走勢雖然震盪、洗盤大但收盤時四大指數通通是上漲的&lt;/p&gt;\n\n&lt;p&gt;以這段時間國際股市表現以及富台指的漲幅，今天 2/23 台股開紅是沒有問題的預估會大漲 500 點以上，看看韓國股市放假回來連續兩天都創歷史高也可看出一些端倪，個股部分特別留意記憶體族群農曆年間美股表現最整齊的就是記憶體相關股票，美光漲 14.7%、威騰漲 8.7%、SanDisk 漲 20%，我建議手上持股水位偏低的朋友要趕快買回來要不然就只能看人家一直賺錢，當然也要有相關數據佐證這部分我節目都有和大家分享，每年農曆年後不管是後 5 日、後 10 日、後 20 日、後 60 日上漲的機率都超過 75% 更重要的是上漲幅度越漲越多，加上今年持續有 AI 的加持輝達執行長黃仁勳都說了這是一代人一生一次的機會，上一次這種機會是個人電腦發明的時代距離現在已經是 30、40 年前細節部分不多說了，2/11 封關那一天的 YouTube 節目都有完整的說明&lt;/p&gt;\n\n&lt;p&gt;最後還是不能忘記買、賣節奏的重要，不管是權值 AI 或是中小型 AI 記憶體、PCB、CPO、被動元件等族群都是一樣的，另外台積電、聯發科、台達電、鴻海、廣達、緯創、緯穎 2/23~2/26 的買、賣點分享正式開放索取，點選以下連結加入免費 LINE@粉絲團，輸入【221】資料自動送到你的手上&lt;/p&gt;\n\n&lt;p&gt;接下來每日最新飆股資訊請參考每天免費 Line 解盤文章!!&lt;/p&gt;\n\n&lt;p&gt;【楊育華分析師 LINE@粉絲團，享有即時精選個股分享】&lt;/p&gt;\n\n&lt;p&gt;點選以下連結即可加入:&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=&quot;https://lin.ee/fmIIRhL&quot;&gt;https://lin.ee/fmIIRhL&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;【訂閱楊育華分析師 YouTube 頻道，有每天詳細的解盤影片】&lt;/p&gt;\n\n&lt;p&gt;點選以下連結即可加入:&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCK1TfbeSlR0jc733Ep83Xfg&quot;&gt;https://www.youtube.com/channel/UCK1TfbeSlR0jc733Ep83Xfg&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;文章來源: 摩爾證券投顧 --- 楊育華分析師&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;本公司所推薦分析之個別有價證券無不當之財務利益關係以往之績效不保證未來獲利投資人應獨立判斷審慎評估並自負投資風險&lt;/p&gt;\n"
+        },
+        {
+          "title": "川普稅只是「打火機」？ 除了台積電，金馬年最強「三劍客」是它！",
+          "url": "https://news.cnyes.com/news/id/6348491",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;今天是金馬年開紅盤第一天，如果你還在糾結「台股 3 萬點太高」、「川普 15% 關稅會導致大跌」，那我必須直白地說：限制你財富的，從來不是大盤的點數，而是你對未來的想像力！ 在金馬年，我們要問的不是「會不會崩盤」，而是當台股衝向 4 萬點的大時代，你是在車上領賞，還是在路邊鼓掌？&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;一、 別被「川普稅」嚇破膽！那是談判的「打火機」而非「森林大火」&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;目前市場最大的雜音，莫過於川普的關稅大刀。川普最初在 20 日判決後宣稱的是 10%，但在 21 日深夜透過社群媒體加碼表示要拉高到法律上限的 15%。說什麼 15% 全球關稅會毀掉台灣出口。但我告訴你，這叫「利空出盡」！&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&lt;/p&gt;\n\n&lt;p&gt;最新消息顯示，美國最高法院已經判決之前的極端關稅違法，川普雖然祭出 B 計畫（1974 年貿易法第 122 條），想搞一個 150 天的臨時性 15% 關稅作為談判籌碼。這就像什麼？以前是 50% 的熊熊烈火，現在換成一個「小打火機」在火熱的經濟前面晃。 雖然有點煙，但根本燒不到核心！&lt;/p&gt;\n\n&lt;p&gt;更重要的是，高效能運算（HPC）晶片、AI 伺服器等高端產業都在「豁免清單」的射程範圍內。美股大廠如 輝達 (NVDA-US)、蘋果 (AAPL-US) 可能因為退稅大紅包而現鈔滿滿，回過頭來只會對台灣供應鏈下更多單。所以，與其擔心關稅，不如擔心你手上的持股有沒有「AI 含量」！&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;二、 台積電 2000 元：這不是數字，是「AI 信仰」的總部&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;台股若要挑戰 4 萬點，領頭羊是誰？不用想，只有 台積電 (2330-TW)。很多散戶有「恐高症」，看著台積電破千就手抖。但我告訴你，台積電 1500 元只是「地板價」，未來的轉折值預估最高上看 2390 元！ 為什麼？因為它是全球 AI 的心臟。根據最新產業研究，隨著 Blackwell 晶片量產與 HBM 整合，台積電的毛利率只要站穩 71%，獲利回饋將是驚人的。&lt;/p&gt;\n\n&lt;p&gt;記住一件事：台北股市從來沒有因為台積電一個人的「垃積盤」而反轉，通常是台積電拉高後，中小型標股接棒噴發。 如果你不敢抱台積電，那你就失去了參與這場 4 萬點盛宴的門票。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;三、 金馬年三劍客：是你的財富加速器？&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;若台股真的能上 4 萬點，選股就要選最強的「第一梯隊」。這就是我常講的「AI 黃金三角」：記憶體、CPO、機器人。&lt;/p&gt;\n\n&lt;p&gt;1. 記憶體：報價止跌回升，HBM 是大招&lt;/p&gt;\n\n&lt;p&gt;大家看過美股的美光 (MU-US) 台股休市期間漲了多少了吧！三星和海力士也都在瘋漲。這背後的邏輯很簡單：AI 需要巨大的記憶空間，HBM（高頻寬記憶體）供不應求。 在台股中，我們要鎖定的是具有韌性的華邦電 (2344-TW)、南亞科 (2408-TW) 或是正在醞釀買點的群聯 (8299-TW)。這波記憶體行情是「認錯回補」的開始，錯過這次低檔佈局，下次可能就要追在高點了。&lt;/p&gt;\n\n&lt;p&gt;2. CPO（矽光子）：2026 年的「剛需」原年&lt;/p&gt;\n\n&lt;p&gt;如果你問我今年什麼產業最有「爆發感」，我會說 CPO。為什麼？因為傳統的銅線傳輸已經快到極限了，AI 運算這麼快，傳輸跟不上就叫「塞車」。矽光子就是把電訊號變光訊號，解決塞車問題。 美股的 Lumentum(LITE-US) 已經表態，而台股的「光通訊家族」更是強到不行。像是波若威 (3163-TW)、IET-KY(4971-TW)、聯亞 (3081-TW)、光聖 (6442-TW)、上詮 (3363-TW)、華星光 (4979-TW) 都值得留意。&lt;/p&gt;\n\n&lt;p&gt;3. 機器人：從「春晚」看見的未來商機。輝達 GTC 催化，台股「重量級軍團」出列&lt;/p&gt;\n\n&lt;p&gt;今年過年，中國春晚展示了機器人的飛速進步，這不是科幻片，是商用化的起點。隨著 輝達 (NVDA-US) 的 GTC 大會即將登場，AI 結合機器人的應用將成為重頭戲。&lt;/p&gt;\n\n&lt;p&gt;系統整合巨頭： 鴻海 (2317-TW)（與輝達深度合作開發機器人平台）、台達電 (2308-TW)（全球電源與工業自動化領導者）。&lt;/p&gt;\n\n&lt;p&gt;關鍵組件與傳輸： 上銀 (2049-TW)（機器人肌肉傳動元件龍頭）、亞德客 - KY(1590-TW)（氣動元件）。&lt;/p&gt;\n\n&lt;p&gt;大腦與運算：研華 (2395-TW)（工業電腦龍頭）、樺漢 (6414-TW)。&lt;/p&gt;\n\n&lt;p&gt;視覺與感測： 所羅門 (2359-TW)（AI 視覺指標）、廣明 (6188-TW)（達明機器人母公司）。&lt;/p&gt;\n\n&lt;p&gt;宇隆 (2233-TW)：首度公開已進入人形機器人的齒輪與減速機供應鏈，預計 2026 年放量。&lt;/p&gt;\n\n&lt;p&gt;信邦 (3023-TW)：與宇隆合作提供關節驅動模組與電子線束。&lt;/p&gt;\n\n&lt;p&gt;新代 (7750-TW)：提供機器人控制器與「小腦」開發平台。&lt;/p&gt;\n\n&lt;p&gt;以上都是這波機器人大軍的受益者。這是一個「從無到有」的大市場，爆發力驚人。&lt;/p&gt;\n\n&lt;p&"
+        }
+      ]
+    },
+    {
       "word": "宣布",
       "count": 49,
       "articles": [
@@ -1958,72 +2083,6 @@
           "url": "https://ent.ltn.com.tw/news/breakingnews/5346633",
           "source": "自由時報",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "積電",
-      "count": 47,
-      "articles": [
-        {
-          "title": "AI救贖與記憶體泥淖：為何三星與SK海力士難以複製台積電赴美模式？",
-          "url": "https://www.thenewslens.com/article/264500",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "台積電以外的新命脈？高市攜手川普 砸5500億美元布局稀土供應鏈",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346192",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台積電有勁敵？傳日本Rapidus已向客戶提供2奈米PDK",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346221",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美股收盤》川普關稅確定違憲美股勁揚 台積電ADR大漲2.82％",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346977",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "馬上紅！台積電ADR封關期間漲2.38% 記憶體暴衝助攻台股馬年開紅盤",
-          "url": "https://news.cnyes.com/news/id/6348224",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;台積電 (2330-TW)(TSM-US)ADR 於馬年封關期間上漲 2.38%，較台北交易溢價將近 22%，與台股密切連動的美光 (MU-US)、晟碟 (SNDK-US) 也在該期間飆漲 14.71%、20%，法人看好，在台積電與記憶體族群上漲下，將助攻台股明日開紅盤，同時也須注意川普將全球關稅調升至 15% 帶來的潛在效應。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院於周五裁定總統川普的關稅政策無效，美股四大指數應聲上漲，川普立馬於自家社群展開反擊，不僅痛批法院判決荒謬，更宣布依據《1974 年貿易法》第 122 條款即刻向全球課徵 10% 暫時性關稅，隨後進一步提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;不過，台灣在過去十個月與美方談判有所斬獲，在各產品出口已取得多項優惠待遇，尤其在重點出口產品如半導體與相關電子產品已取得豁免，業界研判影響相關有限。&lt;/p&gt;\n\n&lt;p&gt;台積電目前占台股權重已高達 44.23%，法人看好，隨著台積電台北股市價格與 ADR 溢價幅度擴大，可望推升台積電明日開紅盤走勢，並提供台股上漲動能，助攻馬年開局。&lt;/p&gt;\n\n&lt;p&gt;另外，美光與晟碟 (SNDK-US) 為記憶體族群指標，受惠 AI 帶動記憶體用量大增、缺貨不見盡頭，股價於封關期間分別飆漲 14.71%、20%，漲幅驚人，象徵市場仍看好記憶體缺貨的延續性將推升相關業者獲利表現。&lt;/p&gt;\n"
-        },
-        {
-          "title": "台積電ADR漲2.38%　分析師估美新關稅對台股影響有限",
-          "url": "https://www.cna.com.tw/news/afe/202602220050.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者何秀玲台北22日電）在2月11日至20日的春節假期休市期間，美股呈現區間震盪整理，道瓊、標普與那斯達克指數小幅回檔，費城半導體指數上漲1.89%；由於台股明天農曆馬年開紅盤，針對美國總統川普新關稅政策變數，分析師評估，若從稅率來看，對台灣影響不是很大，預期對台股影響相較中性。"
-        },
-        {
-          "title": "台積電 ADR 漲 2.38%，分析師估美新關稅對台股影響有限",
-          "url": "https://finance.technews.tw/2026/02/22/tsmc-adr-up/",
-          "source": "TechNews",
-          "content": "11~20 日春節假期休市期間，美股呈現區間震盪整理，道瓊、標普與那斯達克指數小幅回檔，費城半導體指數上漲 1 [&#8230;]"
-        },
-        {
-          "title": "封關期間台積電ADR上漲2.38％   明日開紅盤有望衝3萬4000點大關",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347657",
-          "source": "自由時報",
-          "content": "\n\n\n台股封關期間台積電ADR上漲2.38%，富時台灣指數上漲2.64%，明日台股馬年開紅盤有望補漲，不過，在台股明日開紅盤前夕，川普對等關稅遭美國最高法院判決違憲，川普大怒反...…"
-        },
-        {
-          "title": "年後新春開紅盤 記憶體將強勢補漲 台積電、鴻海、緯創呢?",
-          "url": "https://news.cnyes.com/news/id/6348495",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;農曆期間發生的幾件大事我認為都是歹戲拖棚並不是什麼新鮮事，不管是美伊關係緊張以及美國最高法院宣判美國總統的對等關稅違法都是如此，這部分老朋友就知道去年四月開始因為對等關稅造成全球的股災當時是依據國際緊急經濟權力法（IEEPA）來加徵關稅，節目和大家分析過這是不完善的現在美國最高法院也認定違法，但很快地判決出爐後美國總統依據 1974 年貿易法第 122 條增加 15% 關稅，但不會疊加在 301 條款與 232 條款所增收的進口關稅上，說真的反制動作沒有想像中的激進所以昨晚美股四大指數的走勢雖然震盪、洗盤大但收盤時四大指數通通是上漲的&lt;/p&gt;\n\n&lt;p&gt;以這段時間國際股市表現以及富台指的漲幅，今天 2/23 台股開紅是沒有問題的預估會大漲 500 點以上，看看韓國股市放假回來連續兩天都創歷史高也可看出一些端倪，個股部分特別留意記憶體族群農曆年間美股表現最整齊的就是記憶體相關股票，美光漲 14.7%、威騰漲 8.7%、SanDisk 漲 20%，我建議手上持股水位偏低的朋友要趕快買回來要不然就只能看人家一直賺錢，當然也要有相關數據佐證這部分我節目都有和大家分享，每年農曆年後不管是後 5 日、後 10 日、後 20 日、後 60 日上漲的機率都超過 75% 更重要的是上漲幅度越漲越多，加上今年持續有 AI 的加持輝達執行長黃仁勳都說了這是一代人一生一次的機會，上一次這種機會是個人電腦發明的時代距離現在已經是 30、40 年前細節部分不多說了，2/11 封關那一天的 YouTube 節目都有完整的說明&lt;/p&gt;\n\n&lt;p&gt;最後還是不能忘記買、賣節奏的重要，不管是權值 AI 或是中小型 AI 記憶體、PCB、CPO、被動元件等族群都是一樣的，另外台積電、聯發科、台達電、鴻海、廣達、緯創、緯穎 2/23~2/26 的買、賣點分享正式開放索取，點選以下連結加入免費 LINE@粉絲團，輸入【221】資料自動送到你的手上&lt;/p&gt;\n\n&lt;p&gt;接下來每日最新飆股資訊請參考每天免費 Line 解盤文章!!&lt;/p&gt;\n\n&lt;p&gt;【楊育華分析師 LINE@粉絲團，享有即時精選個股分享】&lt;/p&gt;\n\n&lt;p&gt;點選以下連結即可加入:&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=&quot;https://lin.ee/fmIIRhL&quot;&gt;https://lin.ee/fmIIRhL&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;【訂閱楊育華分析師 YouTube 頻道，有每天詳細的解盤影片】&lt;/p&gt;\n\n&lt;p&gt;點選以下連結即可加入:&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCK1TfbeSlR0jc733Ep83Xfg&quot;&gt;https://www.youtube.com/channel/UCK1TfbeSlR0jc733Ep83Xfg&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;文章來源: 摩爾證券投顧 --- 楊育華分析師&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;本公司所推薦分析之個別有價證券無不當之財務利益關係以往之績效不保證未來獲利投資人應獨立判斷審慎評估並自負投資風險&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普稅只是「打火機」？ 除了台積電，金馬年最強「三劍客」是它！",
-          "url": "https://news.cnyes.com/news/id/6348491",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;今天是金馬年開紅盤第一天，如果你還在糾結「台股 3 萬點太高」、「川普 15% 關稅會導致大跌」，那我必須直白地說：限制你財富的，從來不是大盤的點數，而是你對未來的想像力！ 在金馬年，我們要問的不是「會不會崩盤」，而是當台股衝向 4 萬點的大時代，你是在車上領賞，還是在路邊鼓掌？&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;一、 別被「川普稅」嚇破膽！那是談判的「打火機」而非「森林大火」&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;目前市場最大的雜音，莫過於川普的關稅大刀。川普最初在 20 日判決後宣稱的是 10%，但在 21 日深夜透過社群媒體加碼表示要拉高到法律上限的 15%。說什麼 15% 全球關稅會毀掉台灣出口。但我告訴你，這叫「利空出盡」！&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&lt;/p&gt;\n\n&lt;p&gt;最新消息顯示，美國最高法院已經判決之前的極端關稅違法，川普雖然祭出 B 計畫（1974 年貿易法第 122 條），想搞一個 150 天的臨時性 15% 關稅作為談判籌碼。這就像什麼？以前是 50% 的熊熊烈火，現在換成一個「小打火機」在火熱的經濟前面晃。 雖然有點煙，但根本燒不到核心！&lt;/p&gt;\n\n&lt;p&gt;更重要的是，高效能運算（HPC）晶片、AI 伺服器等高端產業都在「豁免清單」的射程範圍內。美股大廠如 輝達 (NVDA-US)、蘋果 (AAPL-US) 可能因為退稅大紅包而現鈔滿滿，回過頭來只會對台灣供應鏈下更多單。所以，與其擔心關稅，不如擔心你手上的持股有沒有「AI 含量」！&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;二、 台積電 2000 元：這不是數字，是「AI 信仰」的總部&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;台股若要挑戰 4 萬點，領頭羊是誰？不用想，只有 台積電 (2330-TW)。很多散戶有「恐高症」，看著台積電破千就手抖。但我告訴你，台積電 1500 元只是「地板價」，未來的轉折值預估最高上看 2390 元！ 為什麼？因為它是全球 AI 的心臟。根據最新產業研究，隨著 Blackwell 晶片量產與 HBM 整合，台積電的毛利率只要站穩 71%，獲利回饋將是驚人的。&lt;/p&gt;\n\n&lt;p&gt;記住一件事：台北股市從來沒有因為台積電一個人的「垃積盤」而反轉，通常是台積電拉高後，中小型標股接棒噴發。 如果你不敢抱台積電，那你就失去了參與這場 4 萬點盛宴的門票。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;三、 金馬年三劍客：是你的財富加速器？&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;若台股真的能上 4 萬點，選股就要選最強的「第一梯隊」。這就是我常講的「AI 黃金三角」：記憶體、CPO、機器人。&lt;/p&gt;\n\n&lt;p&gt;1. 記憶體：報價止跌回升，HBM 是大招&lt;/p&gt;\n\n&lt;p&gt;大家看過美股的美光 (MU-US) 台股休市期間漲了多少了吧！三星和海力士也都在瘋漲。這背後的邏輯很簡單：AI 需要巨大的記憶空間，HBM（高頻寬記憶體）供不應求。 在台股中，我們要鎖定的是具有韌性的華邦電 (2344-TW)、南亞科 (2408-TW) 或是正在醞釀買點的群聯 (8299-TW)。這波記憶體行情是「認錯回補」的開始，錯過這次低檔佈局，下次可能就要追在高點了。&lt;/p&gt;\n\n&lt;p&gt;2. CPO（矽光子）：2026 年的「剛需」原年&lt;/p&gt;\n\n&lt;p&gt;如果你問我今年什麼產業最有「爆發感」，我會說 CPO。為什麼？因為傳統的銅線傳輸已經快到極限了，AI 運算這麼快，傳輸跟不上就叫「塞車」。矽光子就是把電訊號變光訊號，解決塞車問題。 美股的 Lumentum(LITE-US) 已經表態，而台股的「光通訊家族」更是強到不行。像是波若威 (3163-TW)、IET-KY(4971-TW)、聯亞 (3081-TW)、光聖 (6442-TW)、上詮 (3363-TW)、華星光 (4979-TW) 都值得留意。&lt;/p&gt;\n\n&lt;p&gt;3. 機器人：從「春晚」看見的未來商機。輝達 GTC 催化，台股「重量級軍團」出列&lt;/p&gt;\n\n&lt;p&gt;今年過年，中國春晚展示了機器人的飛速進步，這不是科幻片，是商用化的起點。隨著 輝達 (NVDA-US) 的 GTC 大會即將登場，AI 結合機器人的應用將成為重頭戲。&lt;/p&gt;\n\n&lt;p&gt;系統整合巨頭： 鴻海 (2317-TW)（與輝達深度合作開發機器人平台）、台達電 (2308-TW)（全球電源與工業自動化領導者）。&lt;/p&gt;\n\n&lt;p&gt;關鍵組件與傳輸： 上銀 (2049-TW)（機器人肌肉傳動元件龍頭）、亞德客 - KY(1590-TW)（氣動元件）。&lt;/p&gt;\n\n&lt;p&gt;大腦與運算：研華 (2395-TW)（工業電腦龍頭）、樺漢 (6414-TW)。&lt;/p&gt;\n\n&lt;p&gt;視覺與感測： 所羅門 (2359-TW)（AI 視覺指標）、廣明 (6188-TW)（達明機器人母公司）。&lt;/p&gt;\n\n&lt;p&gt;宇隆 (2233-TW)：首度公開已進入人形機器人的齒輪與減速機供應鏈，預計 2026 年放量。&lt;/p&gt;\n\n&lt;p&gt;信邦 (3023-TW)：與宇隆合作提供關節驅動模組與電子線束。&lt;/p&gt;\n\n&lt;p&gt;新代 (7750-TW)：提供機器人控制器與「小腦」開發平台。&lt;/p&gt;\n\n&lt;p&gt;以上都是這波機器人大軍的受益者。這是一個「從無到有」的大市場，爆發力驚人。&lt;/p&gt;\n\n&lt;p&"
         }
       ]
     },
@@ -2556,6 +2615,72 @@
       ]
     },
     {
+      "word": "台北",
+      "count": 41,
+      "articles": [
+        {
+          "title": "民主與民粹差在哪？台北大學劉嘉薇：我們離獨裁可能只有一步之遙",
+          "url": "https://www.thenewslens.com/article/263745",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "從家鄉走入台北101　地方創生團隊進軍通路迎震撼教育",
+          "url": "https://www.cna.com.tw/news/afe/202602190039.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "自由開講》霍諾德赤手空拳攀登台北101 1等1勇者",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5331224",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初四天氣變化：西半部天氣穩定，東部、大台北零星雨、中南部日夜溫差大",
+          "url": "https://www.thenewslens.com/article/264877",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "台北101專櫃又惹議！男攜伴被櫃員酸「女伴換人」......",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346764",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台北101再爆爭議！女客怒控專櫃人員「以貌取人」 賈永婕親上火線回應了",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346795",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "金門返台旅客多 台北-金門加開2架次班機",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
+          "source": "自由時報",
+          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
+        },
+        {
+          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
+          "source": "自由時報",
+          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
+        },
+        {
+          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
+          "source": "自由時報",
+          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
+        }
+      ]
+    },
+    {
       "word": "布局",
       "count": 41,
       "articles": [
@@ -2684,72 +2809,6 @@
           "url": "https://news.cnyes.com/news/id/6348666",
           "source": "鉅亨網(tw_stock)",
           "content": "&lt;p&gt;台股今 (23) 日開紅盤，一舉站上 3 萬 4 再締新猷，證交所盤前舉行「中華民國證券暨期貨業丙午年新春團拜」，董事長林修銘指出，台灣資本市場在過去一年展現出令人驚嘆的成長動能，加權指數不僅在封關日衝上&nbsp;33605.71&nbsp;點歷史高位，整體市值更突破 117 兆元，躍升全球第七大市場。他特別強調，台灣產業具備韌性，過去幾年在「風雨中茁壯」，即便面對國際關稅與政經局勢的不確定性，仍能憑藉深厚的實力在未來的「挑戰中發威」。&lt;/p&gt;\n\n&lt;p&gt;林修銘受訪時表示，過去幾年全球經濟經歷無數動盪，但台灣產業的韌性正是透過這些挑戰歷練而成。「台灣產業的韌性，是在過去幾年的風雨中茁壯，並在未來的挑戰中持續發威。」這份韌性也讓我國在台美關稅談判中見到成效，特別是在 232 條款中爭取到最惠國待遇，這對台灣 ICT 與半導體供應鏈而言，無疑是國際地位的肯定。&lt;/p&gt;\n\n&lt;p&gt;談及川普關稅再生波瀾，林修銘分析，目前台灣約有 75% 的公司已獲得優於主要競爭對手的最惠國條件，雖然 122 貿易法等關稅政策帶來部分不確定性，但台灣 ICT 產業去年營收成長 15%，且對今年預測普遍樂觀。他認為，這份韌性是支撐台股站穩 3 萬點大關、單日成交值屢破兆元大關的核心動能。&lt;/p&gt;\n\n&lt;p&gt;為了在堅實的基礎上再創高峰，證交所今年將全力配合政策，推動台灣成為亞洲資產管理中心，並聚焦於四大面向。&lt;/p&gt;\n\n&lt;h6&gt;1. 提升企業價值：推動 Power Up 2.0&lt;/h6&gt;\n\n&lt;p&gt;證交所將引導上市公司從「投資人視角」出發，鼓勵企業主動說明中長期營運策略與資本配置。林修銘表示，將針對基本面優良但流動性不足的「隱形冠軍」，透過造市制度與 IR 議合服務平台，協助企業由「被看見」邁向「被投資」。&lt;/p&gt;\n\n&lt;h6&gt;2. 升級創新板制度：孵育亞洲獨角獸&lt;/h6&gt;\n\n&lt;p&gt;「創新板 3.0」改革已全面上路，證交所今年目標爭取 15 至 20 家企業申請掛牌，重點將放在具備「台灣元素」的海外優質企業，串聯美西矽谷、日本及東南亞資源，將台灣打造為亞太創新企業上市的首選平台。&lt;/p&gt;\n\n&lt;h6&gt;3. 深化商品創新：穩固 ETF 亞太領先地位&lt;/h6&gt;\n\n&lt;p&gt;隨著台灣 ETF 規模穩居亞太前列，證交所將持續推出主動式與多資產 ETF，並研議開放雙幣 ETF 在初級市場的幣別交換可行性，透過法規鬆綁與自動化平台優化，滿足投資人多元配置需求。&lt;/p&gt;\n\n&lt;h6&gt;4. 鏈結國際發展：擴大「台灣週」引資效能&lt;/h6&gt;\n\n&lt;p&gt;憑藉台日商品雙向掛牌的成功，證交所將進一步深化與韓、星等主要交易所的交流，今年將結合 COMPUTEX 等科技盛會擴大引資規模，並研議交易制度接軌國際，提升台灣資本市場的全球能見度。&lt;/p&gt;\n\n&lt;p&gt;展望新的一年，林修銘表示，證交所將響應金管會「金融大回饋」政策，運用科技提升服務監理效能，並強化市場資安防護與 ESG 永續機制。他期許台灣資本市場不僅僅是數據上的輝煌，更要憑藉「在風雨中茁壯」的韌性實力，帶領台灣成為領航亞洲的資產管理重鎮，與全體市場參與者攜手共創下一個里程碑。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(鉅亨網記者陳于晴攝)&quot; data-height=&quot;428&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7757009345794392&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6348666/m/71cf2acbc88d436ba11fb7add2a609c0.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6348666/l/71cf2acbc88d436ba11fb7add2a609c0.jpg&quot;&gt;\n&lt;figcaption&gt;證交所舉行「中華民國證券暨期貨業丙午年新春團拜」。(鉅亨網記者陳于晴 攝)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
-      "word": "台北",
-      "count": 40,
-      "articles": [
-        {
-          "title": "民主與民粹差在哪？台北大學劉嘉薇：我們離獨裁可能只有一步之遙",
-          "url": "https://www.thenewslens.com/article/263745",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "從家鄉走入台北101　地方創生團隊進軍通路迎震撼教育",
-          "url": "https://www.cna.com.tw/news/afe/202602190039.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "自由開講》霍諾德赤手空拳攀登台北101 1等1勇者",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5331224",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初四天氣變化：西半部天氣穩定，東部、大台北零星雨、中南部日夜溫差大",
-          "url": "https://www.thenewslens.com/article/264877",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "台北101專櫃又惹議！男攜伴被櫃員酸「女伴換人」......",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346764",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台北101再爆爭議！女客怒控專櫃人員「以貌取人」 賈永婕親上火線回應了",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346795",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "金門返台旅客多 台北-金門加開2架次班機",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
-          "source": "自由時報",
-          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
-        },
-        {
-          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
-          "source": "自由時報",
-          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
-        },
-        {
-          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
-          "source": "自由時報",
-          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
         }
       ]
     },
@@ -2886,6 +2945,138 @@
       ]
     },
     {
+      "word": "中心",
+      "count": 38,
+      "articles": [
+        {
+          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
+          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
+        },
+        {
+          "title": "AI資料中心需求爆發！村田製作所擬調漲高階MLCC：需求是產能兩倍",
+          "url": "https://news.cnyes.com/news/id/6346936",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
+          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "OpenAI 將攜手印度塔塔集團，建設全球最大 AI 資料中心",
+          "url": "https://finance.technews.tw/2026/02/19/tata-group-and-openai-forge-foundational-partnership-to-advance-ai-transformation-in-india-and-globally/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "網傳：轉彎打方向燈至少要閃 5 下？查核中心調查結果揭曉",
+          "url": "https://auto.ltn.com.tw/news/30913",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "從王室寵兒到風暴中心 安德魯神情狼狽引爆熱議",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346684",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "【AI 時代的國家主權】美中控制全球 90% 數據中心，各國如何透過「談判式依賴」取得戰略籌碼？",
+          "url": "https://techorange.com/2026/02/21/sovereignty-in-the-age-of-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>美中兩強掌控全球超過 90% AI 數據中心算力的當下，其他國家還有機會擁有 AI 主權嗎？ 由英國前首相 Tony Blair 創立的 Tony Blair Institute for Global Change，在最新報告《Sovereignty in the Age of AI（人工智慧時代的國家主權）》中提出挑戰直覺的觀點：試圖「完全自給自足」是危險的迷思，真正的主權不再關於獨立，而是關於保有「代理權」與戰略選擇。 報告不僅提出創新的「CSD 戰略框架（控制、引導、依賴）」，更深入剖析日本、肯亞、巴西等六國，如何利用地熱能源、市場規模或監管法規作為談判籌碼，在巨頭壟斷中成功突圍。文末也歸納政府可立即執行的「七大政策槓桿」，從簽署主權接入協議到微調開放權重模型，提供具體的實戰指南，帶領政策制定者或關注國家競爭力的讀者，看懂如何將被動的技術依賴，轉化為具備韌性的戰略優勢。 📎&nbsp;這份報告適合誰閱讀？ 報告內容具戰略高度，超越單純的技術討論，進入了國家競爭力、地緣政治與基礎設施建設的層次，適合以下工作者閱讀： 🔴 報告洞見 💡&nbsp;AI 時代主權重新定義：完全自給自足是昂貴迷思 在人工智慧已成為國家基礎治理設施的今天，我們必須重新審視「主權」的定義。報告開頭直言，領導者無法選擇退出這場技術革命，落後者將失去在國內外的影響力；然而，面對這場競賽，許多國家本能地認為必須「完全自給自足」，試圖在國內打造從晶片到模型的所有技術，報告也指出這是一個昂貴且危險的迷思。 事實是，全球 AI 基礎設施已呈現高度集中的態勢，美國與中國合計控制了全球超過 90% 的 AI 數據中心容量，美國單獨佔據全球約 75% 的 AI 算力，而世界其他所有國家加起來僅分食剩下的 10%。在這種強者恆強的局勢下，追求完全獨立不僅不切實際，更可能導致國家因技術落後而更加脆弱。 因此報告提出了一個核心觀點：AI 時代的主權不再是關於「獨立」，而是關於「代理權（Agency）」。真正的強國不是關起門來自己造輪子，而是在不得不依賴全球供應鏈的情況下，依然保有做出戰略選擇的能力與談判籌碼。 既然完全獨立不可行，報告進一步提出具體的策略框架，說明國家如何在依賴與控制之間取得主動。 💡&nbsp;CSD 框架：控制、引導與依賴的戰略博弈 既然無法統治所有戰場，國家該如何制定策略？報告提出了一個「CSD 戰略框架」，建議政府針對 AI 技術堆疊的不同層級，靈活採取「控制（Control）」、「引導（Steer）」與「依賴（Depend）」三種姿態。 對於攸關國家安全的核心系統，政府必須掌握直接的指揮權或所有權，這即是「控制」；而對於無法擁有的領域，則可透過法規、採購或標準制定來「引導」市場方向，例如歐盟雖無科技巨頭，卻能透過 GDPR 影響全球標準。 最關鍵的轉變在於如何看待「依賴」。報告強調，依賴並不羞恥，重點在於國家是處於「主動談判」還是「被動接受」的位置。透過談判將依賴轉化為互惠關係，才是現代國家的生存之道。 [&hellip;]</p>\n"
+        },
+        {
+          "title": "太空中心火箭研發基地落腳台南沙崙　拚2030年啟用",
+          "url": "https://www.cna.com.tw/news/afe/202602210062.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "把握連假最後機會！ 雲林水牛安養中心提免費牧草 可體驗「摸春牛」",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347209",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "定點臨托+1！ 北市婦女培力中心設點 年中推新版預約系統",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347261",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "咨文",
+      "count": 38,
+      "articles": [
+        {
+          "title": "川普施政遭遇多重挑戰 國情咨文前壓力升高",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347327",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普施政遭遇多重挑戰　國情咨文前壓力升高",
+          "url": "https://www.cna.com.tw/news/aopl/202602210117.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普國情咨文前支持度不振　共和黨期中選舉挑戰加劇",
+          "url": "https://www.cna.com.tw/news/aopl/202602230159.aspx",
+          "source": "中央社國際",
+          "content": "（中央社華盛頓22日綜合外電報導）美國總統川普將於2月24日發表國情咨文演說，這場演說被視為共和黨在11月期中選舉爭奪國會控制權前的重要風向球。民調顯示，川普與共和黨如今正面臨艱難的政治處境。"
+        },
+        {
+          "title": "川普國情咨文登場前 市場緊盯川普抗通膨表現",
+          "url": "https://news.cnyes.com/news/id/6349942",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《Marketwatch》報導，美國總統川普即將於週二 (24 日) 晚間發表國情咨文，外界關注他在壓低生活成本所做的承諾與實際成效。高物價曾是推動川普重返白宮的重要因素，但在第二任期已逾一年之際，川普政府正面臨作為不足的批評聲浪。&lt;/p&gt;\n\n&lt;p&gt;分析指出，川普可望在演說中大力宣傳經濟政績並釋出新的降價構想。不過，就在國情咨文前夕，美國最高法院對其關稅政策投下變數。川普長期將關稅視為提振經濟與保護產業的工具，但批評人士認為，此舉反而推升美國企業與消費者成本。&lt;/p&gt;\n\n&lt;p&gt;整體而言，共和黨政府在減稅與避免加稅方面已有具體成果，主要來自去年 7 月通過的大型稅收與支出法案《大而美的法案》(One Big Beautiful Bill Act)。然而，川普本月稍早已表態，短期內不會再推動第二項大型法案，意味著包括他提出的 2,000 美元「關稅紅利」支票等構想，可能暫無立法推進空間。&lt;/p&gt;\n\n&lt;p&gt;Wolfe Research 政策與政治主管 Tobin Marcus 在報告中指出，他仍預期今年不會出現新的重大預算法案，這「基本排除了額外刺激措施、醫療改革、住房財政支持與增量國防支出」。他並預測，川普在多項以可負擔性為導向的監管行動上，尤其是消費信貸領域，恐難全面落實。&lt;/p&gt;\n\n&lt;p&gt;另一方面，民主黨持續把高生活成本問題歸咎於川普政府，特別是在其推出一系列關稅措施之後。肯塔基州民主黨籍州長 Andy Beshear 上週表示，全國應撤回相關關稅，並稱約 90% 成本最終由美國民眾與企業承擔，直言相關政策正推高物價。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院日前裁定，川普援引《國際緊急經濟權力法》(IEEPA) 作為多數關稅依據屬越權。不過川普隨即表示，將改依其他法律對全球商品課徵 10% 關稅，之後進一步上調至 15%，財政部長貝森特也透露，政府正準備動用替代法律權限，以維持關稅政策框架。&lt;/p&gt;\n\n&lt;p&gt;此外，共和黨亦因《平價醫療法》(ACA) 疫情期間補貼到期而遭批評。前喬治亞州共和黨眾議員格林 (Marjorie Taylor Greene) 日前表示，由於 ACA 稅額抵免終止，她前選區約 7.5 萬戶家庭今年初保費大幅上升，並批評共和黨未能修復健保體系問題。&lt;/p&gt;\n\n&lt;p&gt;面對外界質疑，川普並未承認政策失靈。他近日在公開場合表示，自己已「贏得可負擔性之戰」，並強調美國在其政府接手後物價已明顯回落。白宮則未回應相關媒體詢問。&lt;/p&gt;\n\n&lt;p&gt;川普國情咨文預計於美東時間週二晚間約 9 時 (台灣時間週三上午 10 時) 發表，市場與政壇正密切關注其後續經濟與民生成本政策走向。&lt;/p&gt;\n"
+        },
+        {
+          "title": "川普施政遭遇多重挑戰，國情咨文前支持度不振，共和黨期中選舉挑戰加劇",
+          "url": "https://www.thenewslens.com/article/264966",
+          "source": "關鍵評論網",
+          "content": "美國總統川普於國情咨文發表前，面臨關稅權遭法院限縮、經濟憂慮加劇等挑戰，使其與共和黨在期中選舉前承受壓力。"
+        },
+        {
+          "title": "美眾議院議長強生  邀黎智英女兒出席國情咨文演說",
+          "url": "https://www.cna.com.tw/news/aopl/202602240196.aspx",
+          "source": "中央社國際",
+          "content": "（中央社台北24日電）美國總統川普將於當地時間24日發表第2個任期的首次國情咨文演說。紐約時報報導，美國聯邦眾議院議長強生表示，將邀請香港壹傳媒創辦人黎智英的女兒黎采出席國情咨文演說。"
+        },
+        {
+          "title": "川普笑稱不邀會被彈劾　女子冰球隊婉拒出席國情咨文",
+          "url": "https://www.cna.com.tw/news/aopl/202602240231.aspx",
+          "source": "中央社國際",
+          "content": "（中央社華盛頓24日綜合外電報導）美國總統川普開玩笑稱，若不邀請美國女子冰球隊出席國情咨文演說，他可能會「被彈劾」後，美國媒體報導，女子冰球隊已經婉拒川普的邀請。"
+        },
+        {
+          "title": "川習會前夕》黎智英案登美最高政治舞台！女兒獲邀出席川普國情咨文演說",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350095",
+          "source": "自由時報",
+          "content": "\r\n\r\n美國聯邦眾議院議長強生（Mike Johnson）23日宣布，將邀請遭重判入獄的香港壹傳媒創辦人黎智英之女黎采（Claire Lai），出席美國總統川普的國情咨文演說。...…"
+        },
+        {
+          "title": "著重宣揚美國經濟實力  川普國情咨文內容曝光",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350323",
+          "source": "自由時報",
+          "content": "美國總統川普將在台灣時間25日上午10點發表年度國情咨文。據「華爾街日報」率先揭露，川普將以美國獨立250週年為主題，著重宣揚經濟力量並公布降低物價的民生新措施。\r\n\r\n據白宮...…"
+        },
+        {
+          "title": "〈美股盤後〉川普國情咨文前 AMD飆漲超8% 那指費半回彈超1%",
+          "url": "https://news.cnyes.com/news/id/6351606",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美股週二 (24 日) 全面收高，道瓊工業指數勁揚逾 350 點，市場對人工智慧(AI) 衝擊企業軟體產業的疑慮暫時降溫，帶動科技與軟體類股出現跌深反彈。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數收漲 0.77%，那斯達克綜合指數回升 1.04%，費城半導體指數升幅達 1.45%，道瓊指數收紅 370.44 點。&lt;/p&gt;\n\n&lt;p&gt;因宣布與 Meta 擴大合作，AMD 飆升超 8%，家得寶財報 (HD-US) 優於預期、股價勁揚超 2% 至每股 384.48 美元，成為支撐道瓊的重要動能；前一交易日因 AI 疑慮重挫的 IBM (IBM-US) 也回穩走高。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普週二稍晚將發表第二任期首場國情咨文，他已預告內容將以「史上最強經濟」為主軸，市場則聚焦其政策訊號。&lt;/p&gt;\n\n&lt;p&gt;川普於 21 日援引《貿易法》第 122 條，宣布對所有進入美國的商品加徵 15% 關稅，為期 150 天，相關措施已於週二正式生效。&lt;/p&gt;\n\n&lt;p&gt;伊朗與美國預計週四在日內瓦舉行第三輪核談判。隨著華府尋求終結伊朗核計畫，市場對軍事衝突風險的關注升溫。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週二 (24 日) 主要指數表現：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;道瓊工業指數上漲 370.44 點，或 0.76%，收 49,174.50 點。&lt;/li&gt;\n&lt;li&gt;那斯達克指數上漲 236.41 點，或 1.05%，收 22,863.68 點。&lt;/li&gt;\n&lt;li&gt;S&amp;P 500 指數上漲 52.32 點，或 0.77%，收 6,890.07 點。&lt;/li&gt;\n&lt;li&gt;費城半導體指數上漲 118.887 &nbsp;點，或 1.45%，收 8,332.343 點。&lt;/li&gt;\n&lt;li&gt;NYSE FANG+ 指數上漲 79.14 點，或 0.56%，收 14,183.26 點。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;Q&quot; data-height=&quot;444&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7117117117117118&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6351606/m/a42586e831a6d09a3c28909757e21047.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg&quot; srcset=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg 1x,https://cimg.cnyes.cool/prod/news/6351606/xl/a42586e831a6d09a3c28909757e21047.jpg 2x,https://cimg.cnyes.cool/prod/news/6351606/xxl/a42586e831a6d09a3c28909757e21047.jpg 3x&quot;&gt;\n&lt;figcaption&gt;標普 11 大板塊多數收紅，由非必需消費、工業與資訊科技領漲，能源與醫療保健逆勢收黑。(圖：finviz)&nbsp;&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;焦點個股&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;NYSE FANG+ 指數中的科技五大巨頭漲多跌少。Meta (META-US) 漲 0.32%；蘋果 (AAPL-US) 上漲 2.24%；Alphabet (GOOGL-US) 跌 0.19%；微軟 (MSFT-US) 上漲 1.18%；亞馬遜 (AMZN-US) 上漲 1.60%。&lt;/p&gt;\n\n&lt;p&gt;費城半導體族群表現強勢。AMD (AMD-US) 飆升 8.77%；博通 (AVGO-US) 下跌 1.47%；輝達 (NVDA-US) 漲 0.68%；應用材料 (AMAT-US) 上漲 1.17%；高通 (QCOM-US) 上漲 3.11%；美光 (MU-US) 跌 0.70%。&lt;/p&gt;\n\n&lt;p&gt;台股 ADR 全面收高。台積電 ADR (TSM-US) 大漲 4.25%；日月光 ADR (ASX-US) 大漲 5.71%；聯電 ADR (UMC-US) 強漲 4.80%；中華電信 ADR (CHT-US) 上漲 1.61%。&lt;/p&gt;\n\n&lt;h6&gt;企業新聞&lt;/h6&gt;\n\n&lt;p&gt;AMD (AMD-US) 飆升超 8% 引領晶片股亮眼表現。Meta (META-US) 與 AMD 簽署多年合作協議，Meta 計畫在未來 5 年內向超微採購 AI 晶片，總價值上看 600 億美元；作為合作條件之一，Meta 同時取得認股權證，未來可購買 AMD 最多約 10% 的股權。&lt;/p&gt;\n\n"
+        }
+      ]
+    },
+    {
       "word": "Google",
       "count": 37,
       "articles": [
@@ -2947,72 +3138,6 @@
           "title": "Google正式發表Gemini 3.1 Pro 全面強化複雜任務處理能力",
           "url": "https://news.cnyes.com/news/id/6347511",
           "source": "鉅亨網(wd_stock)",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "中心",
-      "count": 37,
-      "articles": [
-        {
-          "title": "Google將為其印度新AI中心鋪海纜　連新加坡南非澳洲",
-          "url": "https://www.cna.com.tw/news/ait/202602180155.aspx",
-          "source": "中央社科技",
-          "content": "（中央社新德里18日綜合外電報導）Google今天在印度新德里舉行的年度「人工智慧影響力峰會」（AI Impact Summit）期間宣布，將鋪設新海纜連接其計劃在印度南部港市維查格打造的AI中心與世界其他地點。"
-        },
-        {
-          "title": "AI資料中心需求爆發！村田製作所擬調漲高階MLCC：需求是產能兩倍",
-          "url": "https://news.cnyes.com/news/id/6346936",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "Google 宣布 150 億美元 AI 資料中心計畫，強化印度科技生態系",
-          "url": "https://technews.tw/2026/02/19/watch-google-executives-hail-indias-ai-potential/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "OpenAI 將攜手印度塔塔集團，建設全球最大 AI 資料中心",
-          "url": "https://finance.technews.tw/2026/02/19/tata-group-and-openai-forge-foundational-partnership-to-advance-ai-transformation-in-india-and-globally/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "網傳：轉彎打方向燈至少要閃 5 下？查核中心調查結果揭曉",
-          "url": "https://auto.ltn.com.tw/news/30913",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "從王室寵兒到風暴中心 安德魯神情狼狽引爆熱議",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346684",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "【AI 時代的國家主權】美中控制全球 90% 數據中心，各國如何透過「談判式依賴」取得戰略籌碼？",
-          "url": "https://techorange.com/2026/02/21/sovereignty-in-the-age-of-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>美中兩強掌控全球超過 90% AI 數據中心算力的當下，其他國家還有機會擁有 AI 主權嗎？ 由英國前首相 Tony Blair 創立的 Tony Blair Institute for Global Change，在最新報告《Sovereignty in the Age of AI（人工智慧時代的國家主權）》中提出挑戰直覺的觀點：試圖「完全自給自足」是危險的迷思，真正的主權不再關於獨立，而是關於保有「代理權」與戰略選擇。 報告不僅提出創新的「CSD 戰略框架（控制、引導、依賴）」，更深入剖析日本、肯亞、巴西等六國，如何利用地熱能源、市場規模或監管法規作為談判籌碼，在巨頭壟斷中成功突圍。文末也歸納政府可立即執行的「七大政策槓桿」，從簽署主權接入協議到微調開放權重模型，提供具體的實戰指南，帶領政策制定者或關注國家競爭力的讀者，看懂如何將被動的技術依賴，轉化為具備韌性的戰略優勢。 📎&nbsp;這份報告適合誰閱讀？ 報告內容具戰略高度，超越單純的技術討論，進入了國家競爭力、地緣政治與基礎設施建設的層次，適合以下工作者閱讀： 🔴 報告洞見 💡&nbsp;AI 時代主權重新定義：完全自給自足是昂貴迷思 在人工智慧已成為國家基礎治理設施的今天，我們必須重新審視「主權」的定義。報告開頭直言，領導者無法選擇退出這場技術革命，落後者將失去在國內外的影響力；然而，面對這場競賽，許多國家本能地認為必須「完全自給自足」，試圖在國內打造從晶片到模型的所有技術，報告也指出這是一個昂貴且危險的迷思。 事實是，全球 AI 基礎設施已呈現高度集中的態勢，美國與中國合計控制了全球超過 90% 的 AI 數據中心容量，美國單獨佔據全球約 75% 的 AI 算力，而世界其他所有國家加起來僅分食剩下的 10%。在這種強者恆強的局勢下，追求完全獨立不僅不切實際，更可能導致國家因技術落後而更加脆弱。 因此報告提出了一個核心觀點：AI 時代的主權不再是關於「獨立」，而是關於「代理權（Agency）」。真正的強國不是關起門來自己造輪子，而是在不得不依賴全球供應鏈的情況下，依然保有做出戰略選擇的能力與談判籌碼。 既然完全獨立不可行，報告進一步提出具體的策略框架，說明國家如何在依賴與控制之間取得主動。 💡&nbsp;CSD 框架：控制、引導與依賴的戰略博弈 既然無法統治所有戰場，國家該如何制定策略？報告提出了一個「CSD 戰略框架」，建議政府針對 AI 技術堆疊的不同層級，靈活採取「控制（Control）」、「引導（Steer）」與「依賴（Depend）」三種姿態。 對於攸關國家安全的核心系統，政府必須掌握直接的指揮權或所有權，這即是「控制」；而對於無法擁有的領域，則可透過法規、採購或標準制定來「引導」市場方向，例如歐盟雖無科技巨頭，卻能透過 GDPR 影響全球標準。 最關鍵的轉變在於如何看待「依賴」。報告強調，依賴並不羞恥，重點在於國家是處於「主動談判」還是「被動接受」的位置。透過談判將依賴轉化為互惠關係，才是現代國家的生存之道。 [&hellip;]</p>\n"
-        },
-        {
-          "title": "太空中心火箭研發基地落腳台南沙崙　拚2030年啟用",
-          "url": "https://www.cna.com.tw/news/afe/202602210062.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "把握連假最後機會！ 雲林水牛安養中心提免費牧草 可體驗「摸春牛」",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347209",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "定點臨托+1！ 北市婦女培力中心設點 年中推新版預約系統",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347261",
-          "source": "自由時報",
           "content": null
         }
       ]
@@ -3080,72 +3205,6 @@
           "url": "https://technews.tw/2026/02/21/nuclear-and-ai/",
           "source": "TechNews",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "咨文",
-      "count": 37,
-      "articles": [
-        {
-          "title": "川普施政遭遇多重挑戰 國情咨文前壓力升高",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347327",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普施政遭遇多重挑戰　國情咨文前壓力升高",
-          "url": "https://www.cna.com.tw/news/aopl/202602210117.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普國情咨文前支持度不振　共和黨期中選舉挑戰加劇",
-          "url": "https://www.cna.com.tw/news/aopl/202602230159.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓22日綜合外電報導）美國總統川普將於2月24日發表國情咨文演說，這場演說被視為共和黨在11月期中選舉爭奪國會控制權前的重要風向球。民調顯示，川普與共和黨如今正面臨艱難的政治處境。"
-        },
-        {
-          "title": "川普國情咨文登場前 市場緊盯川普抗通膨表現",
-          "url": "https://news.cnyes.com/news/id/6349942",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《Marketwatch》報導，美國總統川普即將於週二 (24 日) 晚間發表國情咨文，外界關注他在壓低生活成本所做的承諾與實際成效。高物價曾是推動川普重返白宮的重要因素，但在第二任期已逾一年之際，川普政府正面臨作為不足的批評聲浪。&lt;/p&gt;\n\n&lt;p&gt;分析指出，川普可望在演說中大力宣傳經濟政績並釋出新的降價構想。不過，就在國情咨文前夕，美國最高法院對其關稅政策投下變數。川普長期將關稅視為提振經濟與保護產業的工具，但批評人士認為，此舉反而推升美國企業與消費者成本。&lt;/p&gt;\n\n&lt;p&gt;整體而言，共和黨政府在減稅與避免加稅方面已有具體成果，主要來自去年 7 月通過的大型稅收與支出法案《大而美的法案》(One Big Beautiful Bill Act)。然而，川普本月稍早已表態，短期內不會再推動第二項大型法案，意味著包括他提出的 2,000 美元「關稅紅利」支票等構想，可能暫無立法推進空間。&lt;/p&gt;\n\n&lt;p&gt;Wolfe Research 政策與政治主管 Tobin Marcus 在報告中指出，他仍預期今年不會出現新的重大預算法案，這「基本排除了額外刺激措施、醫療改革、住房財政支持與增量國防支出」。他並預測，川普在多項以可負擔性為導向的監管行動上，尤其是消費信貸領域，恐難全面落實。&lt;/p&gt;\n\n&lt;p&gt;另一方面，民主黨持續把高生活成本問題歸咎於川普政府，特別是在其推出一系列關稅措施之後。肯塔基州民主黨籍州長 Andy Beshear 上週表示，全國應撤回相關關稅，並稱約 90% 成本最終由美國民眾與企業承擔，直言相關政策正推高物價。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院日前裁定，川普援引《國際緊急經濟權力法》(IEEPA) 作為多數關稅依據屬越權。不過川普隨即表示，將改依其他法律對全球商品課徵 10% 關稅，之後進一步上調至 15%，財政部長貝森特也透露，政府正準備動用替代法律權限，以維持關稅政策框架。&lt;/p&gt;\n\n&lt;p&gt;此外，共和黨亦因《平價醫療法》(ACA) 疫情期間補貼到期而遭批評。前喬治亞州共和黨眾議員格林 (Marjorie Taylor Greene) 日前表示，由於 ACA 稅額抵免終止，她前選區約 7.5 萬戶家庭今年初保費大幅上升，並批評共和黨未能修復健保體系問題。&lt;/p&gt;\n\n&lt;p&gt;面對外界質疑，川普並未承認政策失靈。他近日在公開場合表示，自己已「贏得可負擔性之戰」，並強調美國在其政府接手後物價已明顯回落。白宮則未回應相關媒體詢問。&lt;/p&gt;\n\n&lt;p&gt;川普國情咨文預計於美東時間週二晚間約 9 時 (台灣時間週三上午 10 時) 發表，市場與政壇正密切關注其後續經濟與民生成本政策走向。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普施政遭遇多重挑戰，國情咨文前支持度不振，共和黨期中選舉挑戰加劇",
-          "url": "https://www.thenewslens.com/article/264966",
-          "source": "關鍵評論網",
-          "content": "美國總統川普於國情咨文發表前，面臨關稅權遭法院限縮、經濟憂慮加劇等挑戰，使其與共和黨在期中選舉前承受壓力。"
-        },
-        {
-          "title": "美眾議院議長強生  邀黎智英女兒出席國情咨文演說",
-          "url": "https://www.cna.com.tw/news/aopl/202602240196.aspx",
-          "source": "中央社國際",
-          "content": "（中央社台北24日電）美國總統川普將於當地時間24日發表第2個任期的首次國情咨文演說。紐約時報報導，美國聯邦眾議院議長強生表示，將邀請香港壹傳媒創辦人黎智英的女兒黎采出席國情咨文演說。"
-        },
-        {
-          "title": "川普笑稱不邀會被彈劾　女子冰球隊婉拒出席國情咨文",
-          "url": "https://www.cna.com.tw/news/aopl/202602240231.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓24日綜合外電報導）美國總統川普開玩笑稱，若不邀請美國女子冰球隊出席國情咨文演說，他可能會「被彈劾」後，美國媒體報導，女子冰球隊已經婉拒川普的邀請。"
-        },
-        {
-          "title": "川習會前夕》黎智英案登美最高政治舞台！女兒獲邀出席川普國情咨文演說",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350095",
-          "source": "自由時報",
-          "content": "\r\n\r\n美國聯邦眾議院議長強生（Mike Johnson）23日宣布，將邀請遭重判入獄的香港壹傳媒創辦人黎智英之女黎采（Claire Lai），出席美國總統川普的國情咨文演說。...…"
-        },
-        {
-          "title": "著重宣揚美國經濟實力  川普國情咨文內容曝光",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350323",
-          "source": "自由時報",
-          "content": "美國總統川普將在台灣時間25日上午10點發表年度國情咨文。據「華爾街日報」率先揭露，川普將以美國獨立250週年為主題，著重宣揚經濟力量並公布降低物價的民生新措施。\r\n\r\n據白宮...…"
-        },
-        {
-          "title": "〈美股盤後〉川普國情咨文前 AMD飆漲超8% 那指費半回彈超1%",
-          "url": "https://news.cnyes.com/news/id/6351606",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美股週二 (24 日) 全面收高，道瓊工業指數勁揚逾 350 點，市場對人工智慧(AI) 衝擊企業軟體產業的疑慮暫時降溫，帶動科技與軟體類股出現跌深反彈。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數收漲 0.77%，那斯達克綜合指數回升 1.04%，費城半導體指數升幅達 1.45%，道瓊指數收紅 370.44 點。&lt;/p&gt;\n\n&lt;p&gt;因宣布與 Meta 擴大合作，AMD 飆升超 8%，家得寶財報 (HD-US) 優於預期、股價勁揚超 2% 至每股 384.48 美元，成為支撐道瓊的重要動能；前一交易日因 AI 疑慮重挫的 IBM (IBM-US) 也回穩走高。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普週二稍晚將發表第二任期首場國情咨文，他已預告內容將以「史上最強經濟」為主軸，市場則聚焦其政策訊號。&lt;/p&gt;\n\n&lt;p&gt;川普於 21 日援引《貿易法》第 122 條，宣布對所有進入美國的商品加徵 15% 關稅，為期 150 天，相關措施已於週二正式生效。&lt;/p&gt;\n\n&lt;p&gt;伊朗與美國預計週四在日內瓦舉行第三輪核談判。隨著華府尋求終結伊朗核計畫，市場對軍事衝突風險的關注升溫。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週二 (24 日) 主要指數表現：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;道瓊工業指數上漲 370.44 點，或 0.76%，收 49,174.50 點。&lt;/li&gt;\n&lt;li&gt;那斯達克指數上漲 236.41 點，或 1.05%，收 22,863.68 點。&lt;/li&gt;\n&lt;li&gt;S&amp;P 500 指數上漲 52.32 點，或 0.77%，收 6,890.07 點。&lt;/li&gt;\n&lt;li&gt;費城半導體指數上漲 118.887 &nbsp;點，或 1.45%，收 8,332.343 點。&lt;/li&gt;\n&lt;li&gt;NYSE FANG+ 指數上漲 79.14 點，或 0.56%，收 14,183.26 點。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;Q&quot; data-height=&quot;444&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7117117117117118&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6351606/m/a42586e831a6d09a3c28909757e21047.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg&quot; srcset=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg 1x,https://cimg.cnyes.cool/prod/news/6351606/xl/a42586e831a6d09a3c28909757e21047.jpg 2x,https://cimg.cnyes.cool/prod/news/6351606/xxl/a42586e831a6d09a3c28909757e21047.jpg 3x&quot;&gt;\n&lt;figcaption&gt;標普 11 大板塊多數收紅，由非必需消費、工業與資訊科技領漲，能源與醫療保健逆勢收黑。(圖：finviz)&nbsp;&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;焦點個股&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;NYSE FANG+ 指數中的科技五大巨頭漲多跌少。Meta (META-US) 漲 0.32%；蘋果 (AAPL-US) 上漲 2.24%；Alphabet (GOOGL-US) 跌 0.19%；微軟 (MSFT-US) 上漲 1.18%；亞馬遜 (AMZN-US) 上漲 1.60%。&lt;/p&gt;\n\n&lt;p&gt;費城半導體族群表現強勢。AMD (AMD-US) 飆升 8.77%；博通 (AVGO-US) 下跌 1.47%；輝達 (NVDA-US) 漲 0.68%；應用材料 (AMAT-US) 上漲 1.17%；高通 (QCOM-US) 上漲 3.11%；美光 (MU-US) 跌 0.70%。&lt;/p&gt;\n\n&lt;p&gt;台股 ADR 全面收高。台積電 ADR (TSM-US) 大漲 4.25%；日月光 ADR (ASX-US) 大漲 5.71%；聯電 ADR (UMC-US) 強漲 4.80%；中華電信 ADR (CHT-US) 上漲 1.61%。&lt;/p&gt;\n\n&lt;h6&gt;企業新聞&lt;/h6&gt;\n\n&lt;p&gt;AMD (AMD-US) 飆升超 8% 引領晶片股亮眼表現。Meta (META-US) 與 AMD 簽署多年合作協議，Meta 計畫在未來 5 年內向超微採購 AI 晶片，總價值上看 600 億美元；作為合作條件之一，Meta 同時取得認股權證，未來可購買 AMD 最多約 10% 的股權。&lt;/p&gt;\n\n"
         }
       ]
     },
