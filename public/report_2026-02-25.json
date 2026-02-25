@@ -1,89 +1,85 @@
 {
-  "updateTime": "2026-02-25T17:01:05.120Z",
-  "fullDateStr": "2026/2/26 · 更新於 01:01:05",
+  "updateTime": "2026-02-25T18:02:01.116Z",
+  "fullDateStr": "2026/2/26 · 更新於 02:02:01",
   "aiResult": {
-    "sentiment_score": 0.25,
+    "sentiment_score": 0.22,
     "dimensions": {
-      "policy": -0.4,
+      "policy": 0,
       "market": -0.2,
-      "industry": 0.5,
-      "international": -0.5,
-      "technical": 0.1
+      "industry": 0.4,
+      "international": 0.1,
+      "technical": -0.3
     },
     "entities": [
       {
-        "name": "HF Sinclair Corp.",
-        "sentiment": "positive",
-        "ticker": "DINO-US"
-      },
-      {
-        "name": "拼多多",
-        "sentiment": "negative",
-        "ticker": "PDD-US"
-      },
-      {
-        "name": "輝達",
-        "sentiment": "positive",
+        "name": "NVIDIA",
+        "sentiment": "neutral",
         "ticker": "NVDA-US"
       },
       {
-        "name": "台積電",
-        "sentiment": "neutral",
-        "ticker": "2330.TW"
+        "name": "Broadcom",
+        "sentiment": "positive",
+        "ticker": "AVGO-US"
       },
       {
-        "name": "聯準會",
-        "sentiment": "negative",
-        "ticker": null
+        "name": "Google",
+        "sentiment": "positive",
+        "ticker": "GOOGL-US"
       },
       {
-        "name": "巴逆逆",
-        "sentiment": "negative",
-        "ticker": "8zz"
+        "name": "Microsoft",
+        "sentiment": "positive",
+        "ticker": "MSFT-US"
+      },
+      {
+        "name": "Meta",
+        "sentiment": "positive",
+        "ticker": "META-US"
+      },
+      {
+        "name": "Amazon",
+        "sentiment": "positive",
+        "ticker": "AMZN-US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：盈餘修正與反向指標的共振警示】</h3><p>今日市場情緒由昨日的 0.35 降至 <b>0.25</b>。雖然能源板塊如 HF Sinclair (DINO-US) 出現 EPS 上修的個報利多，但整體市場面臨多重結構性逆風。</p><p><b>關鍵解析：</b><br>1. <b>反向指標警訊</b>：今日市場出現關鍵變數，知名反向指標「<b>巴逆逆 (8zz)</b>」公開看好半導體與權值股。根據歷史經驗與基金經理人邏輯，此類極端樂觀情緒往往對應短線高點，需高度警惕技術面回檔風險。<br>2. <b>獲利結構分化</b>：拼多多 (PDD) 的財報揭示了地緣政治與關稅壓力已實質侵蝕跨境電商利潤，這與昨日提到的「關稅 2.0」風險高度契合。AI 供應鏈雖然 Blackwell 出貨穩定，但市場對其容錯率極低。<br>3. <b>貨幣政策定調</b>：聯準會最新紀錄顯示官員對通膨黏性的擔憂超出預期，降息路徑的不確定性正在重新定價債券市場。</p><p><b>投資建議</b>：短線建議避開高權值半導體標的，應對「反向指標」帶來的籌碼擾動；中線關注能源與具備定價能力的工業股。</p>",
+    "summary": "<h3>【宏觀決策報告：AI 資本支出的估值定價與反向指標壓制】</h3><p>今日市場情緒由昨日的 0.25 微幅修正至 <b>0.22</b>。儘管超大型雲端業者（Hyperscalers）高達 6500 億美元的 AI 資本支出為產業提供堅實底座，但市場進入「利多鈍化」與「預期管理」階段。</p><p><b>核心分析：</b><br>1. <b>NVIDIA 財報預期降溫</b>：即便預期第四季財報正面，但市場將其視為『已知利多』，且 5000 億美元能見度已反應。分析師預測真正的股價驅動力可能延後至 3 月 GTC 大會，短線面臨賣壓回檔風險。<br>2. <b>競爭格局與成本壓力</b>：Broadcom 與 Google 合作的 TPU 崛起，挑戰 GPU 霸權；同時記憶體成本上升正擠壓供應鏈利潤，需關注毛利表現。<br>3. <b>反向指標持續示警</b>：承接昨日分析，<b>巴逆逆 (8zz)</b> 的看好情緒與 NVIDIA 股價近期落後費半（僅漲 2% vs 16%）的背離現象高度吻合，驗證了短線技術面過熱後的修正必要性。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "總體經濟"
+        "category": "半導體與AI設備"
       },
       {
         "id": 2,
-        "category": "半導體"
-      },
-      {
-        "id": 3,
-        "category": "能源化工"
+        "category": "科技資本支出"
       }
     ],
     "sector_stats": {
-      "tech": 0.2,
-      "finance": -0.1,
-      "manufacturing": 0.3,
-      "service": -0.4
+      "tech": 0.25,
+      "finance": 0,
+      "manufacturing": 0.15,
+      "service": 0.05
     },
     "events": [
       {
-        "title": "聯準會立場轉向保守",
-        "summary": "官員對通膨降速表達疑慮，市場降息預期被迫延後。",
-        "impact": "負面",
+        "title": "輝達財報定價權轉移",
+        "summary": "分析師預測 2/25 財報恐難激勵股價，市場焦點已提前轉移至 3 月 GTC 大會之技術革新。",
+        "impact": "中性偏負面",
         "related_news_ids": [
-          3
+          0
         ]
       },
       {
-        "title": "跨境電商利潤觸礁",
-        "summary": "拼多多財報低於預期，顯示關稅與海外競爭大幅削減營收含金量。",
-        "impact": "負面",
-        "related_news_ids": [
-          1
-        ]
-      },
-      {
-        "title": "能源個股獲利動能上調",
-        "summary": "分析師上調 DINO 盈餘預期，顯示傳統能源下游獲利仍具韌性。",
+        "title": "六千億美元 AI 資本壁壘",
+        "summary": "Alphabet、Amazon、Meta 與 Microsoft 合計 6500 億美元的投資，確認了 AI 基礎設施的長期增長剛性。",
         "impact": "正面",
+        "related_news_ids": [
+          0
+        ]
+      },
+      {
+        "title": "特製化晶片 (ASIC) 威脅論",
+        "summary": "Google 與 Broadcom 研發之 TPU 受市場高度關注，可能稀釋 NVIDIA 在 AI 晶片的主導權。",
+        "impact": "負面",
         "related_news_ids": [
           0
         ]
@@ -91,36 +87,36 @@
     ],
     "relations": [
       {
-        "from": "聯準會",
-        "to": "美元指數",
-        "type": "正相關影響"
+        "from": "Broadcom",
+        "to": "Google",
+        "type": "共同開發 (TPU)"
       },
       {
-        "from": "輝達",
-        "to": "台積電",
-        "type": "供應鏈委託"
+        "from": "Microsoft",
+        "to": "NVIDIA",
+        "type": "資本支出注入 (客戶)"
       },
       {
-        "from": "巴逆逆",
-        "to": "半導體板塊",
-        "type": "反向情緒指標"
+        "from": "NVIDIA",
+        "to": "Broadcom",
+        "type": "技術競爭"
       },
       {
-        "from": "美國政府關稅政策",
-        "to": "拼多多",
-        "type": "營收成本壓力"
+        "from": "Meta",
+        "to": "NVIDIA",
+        "type": "資本支出注入 (客戶)"
       }
     ]
   },
   "newsData": [
     {
-      "title": "鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估上修至4.13元，預估目標價為59.00元",
-      "url": "https://news.cnyes.com/news/id/6353560",
+      "title": "輝達財報開獎在即 分析師：重頭戲要等3月GTC大會登場",
+      "url": "https://news.cnyes.com/news/id/6351716",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對HF Sinclair Corp.(DINO-US)做出2026年EPS預估：中位數由4.04元上修至4.13元，其中最高估值6.4元，最低估值2.27元，預估目標價為59.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高",
-      "timeStr": "上午01:01",
+      "content": "&lt;p&gt;輝達 (NVDA-US) 將於美股周三 (25 日) 盤後公布會計年度第 4 季財報。法國巴黎銀行 (BNP Paribas) 分析師表示，財報應該會「相當正面」，但未必能激勵股價。&lt;/p&gt;\n\n&lt;p&gt;近幾季以來，即便輝達繳出亮眼成績，市場反應卻多半平淡，甚至出現回檔。&lt;/p&gt;\n\n&lt;p&gt;分析師認為，這次財報恐怕也難以成為股價催化劑，原因之一在於，輝達近期已釋出具吸引力的財務前景&mdash;&mdash;輝達去年底表示，今年已掌握 5000 億美元營收能見度。&lt;/p&gt;\n\n&lt;p&gt;法巴分析師 David O&quot;Connor&larr;吳金預測，真正可能牽動市場的重要更新，將保留至 3 月舉行的年度 GTC 大會公布。&lt;/p&gt;\n\n&lt;p&gt;輝達股價今年來漲幅相對有限，僅上揚 2%，落後費城半導體指數同期 16% 的漲幅。&lt;/p&gt;\n\n&lt;p&gt;此外，輝達也處於近期人工智慧 (AI) 概念股賣壓的核心。投資人開始質疑，輝達能否長期維持在 AI 晶片市場的主導地位",
+      "timeStr": "上午02:02",
       "relatedArticles": []
     }
   ],
@@ -163,25 +159,25 @@
   ],
   "events": [
     {
-      "title": "聯準會立場轉向保守",
-      "summary": "官員對通膨降速表達疑慮，市場降息預期被迫延後。",
-      "impact": "負面",
+      "title": "輝達財報定價權轉移",
+      "summary": "分析師預測 2/25 財報恐難激勵股價，市場焦點已提前轉移至 3 月 GTC 大會之技術革新。",
+      "impact": "中性偏負面",
       "related_news_ids": [
-        3
+        0
       ]
     },
     {
-      "title": "跨境電商利潤觸礁",
-      "summary": "拼多多財報低於預期，顯示關稅與海外競爭大幅削減營收含金量。",
-      "impact": "負面",
-      "related_news_ids": [
-        1
-      ]
-    },
-    {
-      "title": "能源個股獲利動能上調",
-      "summary": "分析師上調 DINO 盈餘預期，顯示傳統能源下游獲利仍具韌性。",
+      "title": "六千億美元 AI 資本壁壘",
+      "summary": "Alphabet、Amazon、Meta 與 Microsoft 合計 6500 億美元的投資，確認了 AI 基礎設施的長期增長剛性。",
       "impact": "正面",
+      "related_news_ids": [
+        0
+      ]
+    },
+    {
+      "title": "特製化晶片 (ASIC) 威脅論",
+      "summary": "Google 與 Broadcom 研發之 TPU 受市場高度關注，可能稀釋 NVIDIA 在 AI 晶片的主導權。",
+      "impact": "負面",
       "related_news_ids": [
         0
       ]
@@ -189,24 +185,24 @@
   ],
   "relations": [
     {
-      "from": "聯準會",
-      "to": "美元指數",
-      "type": "正相關影響"
+      "from": "Broadcom",
+      "to": "Google",
+      "type": "共同開發 (TPU)"
     },
     {
-      "from": "輝達",
-      "to": "台積電",
-      "type": "供應鏈委託"
+      "from": "Microsoft",
+      "to": "NVIDIA",
+      "type": "資本支出注入 (客戶)"
     },
     {
-      "from": "巴逆逆",
-      "to": "半導體板塊",
-      "type": "反向情緒指標"
+      "from": "NVIDIA",
+      "to": "Broadcom",
+      "type": "技術競爭"
     },
     {
-      "from": "美國政府關稅政策",
-      "to": "拼多多",
-      "type": "營收成本壓力"
+      "from": "Meta",
+      "to": "NVIDIA",
+      "type": "資本支出注入 (客戶)"
     }
   ],
   "keywords7d": [
@@ -278,7 +274,7 @@
     },
     {
       "word": "AI",
-      "count": 360,
+      "count": 362,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -3181,6 +3177,72 @@
       ]
     },
     {
+      "word": "分析",
+      "count": 35,
+      "articles": [
+        {
+          "title": "金馬年淘金尋找下一個熱門族群 分析師：創新板小而美具潛力",
+          "url": "https://news.cnyes.com/news/id/6345615",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "分析師：AI領域北京加速追趕　將形成中國科技圈",
+          "url": "https://www.cna.com.tw/news/ait/202602170046.aspx",
+          "source": "中央社科技",
+          "content": "（中央社華盛頓16日綜合外電報導）中國在人工智慧（AI）領域迅速進展，讓目前居市場主導地位的美國備感威脅。分析師示警，中國將科技實力結合成本與供應鏈優勢，很可能5到10年會看到「中國科技圈」浮現。"
+        },
+        {
+          "title": "Sony新技術可分析AI生成歌曲　辨識原創音樂與占比",
+          "url": "https://www.cna.com.tw/news/ait/202602160102.aspx",
+          "source": "中央社科技",
+          "content": "（中央社帕羅奧圖16日綜合外電報導）索尼集團公司開發出一項新技術，可辨識人工智慧（AI）在生成歌曲時所引據的原創音樂及其占比，讓詞曲創作者能在自身作品受到使用的情況下，向AI開發商求償。"
+        },
+        {
+          "title": "美國AI「壟斷神話」破功？分析師警告：中國「技術衝擊」才剛開始",
+          "url": "https://news.cnyes.com/news/id/6346932",
+          "source": "鉅亨網(tech)",
+          "content": null
+        },
+        {
+          "title": "對中猶豫未決　分析師示警歐洲恐付更高代價",
+          "url": "https://www.cna.com.tw/news/aopl/202602190182.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高市擬在川習會前訪美　分析：美中關係牽動日中局勢",
+          "url": "https://www.cna.com.tw/news/aopl/202602200027.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "經典賽》大谷、山本身邊最強後盾！ 道奇翻譯加入日本隊擔任分析師",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5346662",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "分析：川普90%將對伊朗動武　攻勢非一日遊",
+          "url": "https://www.cna.com.tw/news/aopl/202602200123.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高市擬在川習會前訪美 分析：美中關係牽動日中局勢",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346840",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "最高法院推翻川普關稅  分析：蘋果公司衝擊可望減緩",
+          "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
+          "source": "中央社國際",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "智慧",
       "count": 35,
       "articles": [
@@ -3441,72 +3503,6 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5348076",
           "source": "自由時報",
           "content": "\n\n\n南韓傳奇打者李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果。其中，他指導曾頌恩練打時可將目標放在「反方向全壘打」，先透過想法上的改造，希望幫他找...…"
-        }
-      ]
-    },
-    {
-      "word": "最高法院",
-      "count": 35,
-      "articles": [
-        {
-          "title": "網紅小玉「深偽換臉A片」案判6年4月定讞，最高法院：法益侵害難以輕縱",
-          "url": "https://www.thenewslens.com/article/264884",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
-          "url": "https://news.cnyes.com/news/id/6347712",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普關稅案　美國最高法院裁定違法",
-          "url": "https://www.cna.com.tw/news/aopl/202602200184.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普動用IEEPA升高關稅 美最高法院判決違法",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346935",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普訪中會習近平日期出爐！最高法院撤銷關稅打亂談判 貿易休兵現變數？",
-          "url": "https://news.cnyes.com/news/id/6347758",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
-          "url": "https://news.cnyes.com/news/id/6347775",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346949",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普：最高法院關稅裁決令人失望　將徵10%全球關稅",
-          "url": "https://www.cna.com.tw/news/aopl/202602210007.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻緊急命令 川普祭122條款改課10％全球關稅150天",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346946",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "最高法院推翻關稅政策 川普手上還有4大法寶",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346944",
-          "source": "自由時報",
-          "content": null
         }
       ]
     }
