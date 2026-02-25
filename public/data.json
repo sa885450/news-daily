@@ -1,199 +1,126 @@
 {
-  "updateTime": "2026-02-25T16:00:59.637Z",
-  "fullDateStr": "2026/2/26 · 更新於 00:00:59",
+  "updateTime": "2026-02-25T17:01:05.120Z",
+  "fullDateStr": "2026/2/26 · 更新於 01:01:05",
   "aiResult": {
-    "sentiment_score": 0.35,
+    "sentiment_score": 0.25,
     "dimensions": {
-      "policy": -0.5,
-      "market": 0.6,
-      "industry": 0.7,
-      "international": -0.4,
-      "technical": 0.5
+      "policy": -0.4,
+      "market": -0.2,
+      "industry": 0.5,
+      "international": -0.5,
+      "technical": 0.1
     },
     "entities": [
       {
-        "name": "Amkor",
+        "name": "HF Sinclair Corp.",
         "sentiment": "positive",
-        "ticker": "AMKR.US"
+        "ticker": "DINO-US"
       },
       {
-        "name": "Lowe's",
+        "name": "拼多多",
         "sentiment": "negative",
-        "ticker": "LOW.US"
+        "ticker": "PDD-US"
       },
       {
-        "name": "Datadog",
+        "name": "輝達",
         "sentiment": "positive",
-        "ticker": "DDOG.US"
+        "ticker": "NVDA-US"
       },
       {
-        "name": "Netflix",
-        "sentiment": "positive",
-        "ticker": "NFLX.US"
-      },
-      {
-        "name": "Amazon",
+        "name": "台積電",
         "sentiment": "neutral",
-        "ticker": "AMZN.US"
+        "ticker": "2330.TW"
       },
       {
-        "name": "Indonesia",
+        "name": "聯準會",
         "sentiment": "negative",
         "ticker": null
+      },
+      {
+        "name": "巴逆逆",
+        "sentiment": "negative",
+        "ticker": "8zz"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：債券市場的 AI 警鐘與關稅 2.0 擴張】</h3><p>今日市場情緒由 0.32 微幅升至 <b>0.35</b>。延續昨日「硬體強於軟體」的結構，市場雖在技術面上呈現反彈，但<b>債券市場</b>正釋放出危險信號。美銀調查顯示，AI 泡沫已成為信用投資者的首要擔憂，這與昨日觀察到的 SaaS 去槓桿現象呼應。</p><p><b>關鍵解析：</b><br>1. <b>融資壓力浮現</b>：大型雲端服務商 (Hyperscalers) 為了支撐 AI CAPEX，預計發債規模將飆升至 2850 億美元。這標誌著 AI 競爭已從技術競速進入了「資產負債表消耗戰」。<br>2. <b>關稅戰線全球化</b>：美國貿易代表 Greer 指出 10% 關稅僅是起點，部分國家可能面臨 15% 以上稅率，這對剛從中國轉向東南亞（如印尼、越南）的供應鏈構成二度打擊。<br>3. <b>反向指標觀察</b>：目前新聞資料中未見「8zz」或「巴逆逆」之顯著觀點。缺乏反向指標的極端訊號下，今日 DDOG 與 APP 的反彈應視為<b>超跌後空單回補</b>，而非結構性反轉。</p><p><b>決策建議：</b> 密切關注信貸利差，對高負債的零售股（如 Lowe's）保持警覺，並將硬體配置重心移向具有定價權的封測與設備環節。</p>",
+    "summary": "<h3>【宏觀決策報告：盈餘修正與反向指標的共振警示】</h3><p>今日市場情緒由昨日的 0.35 降至 <b>0.25</b>。雖然能源板塊如 HF Sinclair (DINO-US) 出現 EPS 上修的個報利多，但整體市場面臨多重結構性逆風。</p><p><b>關鍵解析：</b><br>1. <b>反向指標警訊</b>：今日市場出現關鍵變數，知名反向指標「<b>巴逆逆 (8zz)</b>」公開看好半導體與權值股。根據歷史經驗與基金經理人邏輯，此類極端樂觀情緒往往對應短線高點，需高度警惕技術面回檔風險。<br>2. <b>獲利結構分化</b>：拼多多 (PDD) 的財報揭示了地緣政治與關稅壓力已實質侵蝕跨境電商利潤，這與昨日提到的「關稅 2.0」風險高度契合。AI 供應鏈雖然 Blackwell 出貨穩定，但市場對其容錯率極低。<br>3. <b>貨幣政策定調</b>：聯準會最新紀錄顯示官員對通膨黏性的擔憂超出預期，降息路徑的不確定性正在重新定價債券市場。</p><p><b>投資建議</b>：短線建議避開高權值半導體標的，應對「反向指標」帶來的籌碼擾動；中線關注能源與具備定價能力的工業股。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體硬體"
+        "category": "總體經濟"
       },
       {
         "id": 2,
-        "category": "債券市場風險"
+        "category": "半導體"
       },
       {
         "id": 3,
-        "category": "貿易政策"
+        "category": "能源化工"
       }
     ],
     "sector_stats": {
-      "tech": 0.65,
-      "finance": -0.15,
+      "tech": 0.2,
+      "finance": -0.1,
       "manufacturing": 0.3,
-      "service": -0.2
+      "service": -0.4
     },
     "events": [
       {
-        "title": "債券市場的 AI 債務焦慮",
-        "summary": "信用投資者預期超大規模雲端商今年發債將達 2850 億美元，AI 泡沫擔憂超越地緣政治。",
+        "title": "聯準會立場轉向保守",
+        "summary": "官員對通膨降速表達疑慮，市場降息預期被迫延後。",
+        "impact": "負面",
+        "related_news_ids": [
+          3
+        ]
+      },
+      {
+        "title": "跨境電商利潤觸礁",
+        "summary": "拼多多財報低於預期，顯示關稅與海外競爭大幅削減營收含金量。",
         "impact": "負面",
         "related_news_ids": [
           1
         ]
       },
       {
-        "title": "美國關稅 2.0 擴張計劃",
-        "summary": "USTR 暗示將針對特定國家上調稅率至 15% 以上，並利用 301 調查應對全球產能過剩。",
-        "impact": "負面",
-        "related_news_ids": [
-          7
-        ]
-      },
-      {
-        "title": "科技硬體與軟體超跌反彈",
-        "summary": "費半指數受 Amkor (AMKR) 等設備封測股帶動強彈，軟體股如 DDOG 也在重挫後回穩。",
+        "title": "能源個股獲利動能上調",
+        "summary": "分析師上調 DINO 盈餘預期，顯示傳統能源下游獲利仍具韌性。",
         "impact": "正面",
         "related_news_ids": [
-          0,
-          3,
-          4,
-          5
+          0
         ]
       }
     ],
     "relations": [
       {
-        "from": "Hyperscalers",
-        "to": "Bond Market",
-        "type": "融資壓力"
+        "from": "聯準會",
+        "to": "美元指數",
+        "type": "正相關影響"
       },
       {
-        "from": "US Government",
-        "to": "Indonesia",
-        "type": "關稅調查與競爭"
+        "from": "輝達",
+        "to": "台積電",
+        "type": "供應鏈委託"
       },
       {
-        "from": "AI Infrastructure",
-        "to": "Amkor",
-        "type": "供應鏈需求帶動"
+        "from": "巴逆逆",
+        "to": "半導體板塊",
+        "type": "反向情緒指標"
       },
       {
-        "from": "Anthropic AI Tools",
-        "to": "Software ETF",
-        "type": "替代性競爭壓力"
+        "from": "美國政府關稅政策",
+        "to": "拼多多",
+        "type": "營收成本壓力"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 羅威(LOW-US)大跌5.01%，報264.63美元",
-      "url": "https://news.cnyes.com/news/id/6353535",
+      "title": "鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估上修至4.13元，預估目標價為59.00元",
+      "url": "https://news.cnyes.com/news/id/6353560",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;羅威(LOW-US)截至台北時間25日23:39股價下跌13.96美元，報264.63美元，跌幅5.01%，成交量1,566,013（股），盤中最高價274.19美元、最低價264.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.25%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.46%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;羅威(LOW-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.42%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.86%&lt;/li&gt;    &lt;li&gt;近 3 月：+19.56%&lt",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "擠下地緣政治！美銀調查：一向穩健的債券投資人現在最擔心AI泡沫",
-      "url": "https://news.cnyes.com/news/id/6353522",
-      "source": "鉅亨網(wd_stock)",
-      "category": "半導體硬體",
-      "thumbnail": null,
-      "content": "&lt;p&gt;根據美國銀行全球研究部一項最新調查顯示，AI 泡沫首次超越地緣政治與央行政策失誤，成為信用投資者最擔憂的隱患，且這一擔憂正衝擊債券投資者，高評級信用債投資者目前預計超大規模雲端服務商今年債券發行規模將大幅飆升，達到 2850 億美元。&lt;/p&gt;\n\n&lt;p&gt;調查顯示，約 23% 受訪者稱 AI 泡沫是他們最大的擔憂，而該行去年 12 月的調查中，這一比例僅 9%。包括亞馬遜、Google 母公司 Alphabet、Meta 在內的企業，都已宣布大規模支出計畫以擴大 AI 能力。&lt;/p&gt;\n\n&lt;p&gt;美國銀行信用策略師 Barnaby Martin 周二 (24 日) 在研究報告中表示，高評級信用債投資者目前預計，超大規模雲端服務商今年的發債規模將達 2,850 億美元，高於去年 12 月調查中預期的 2,100 億美元。&lt;/p&gt;\n\n&lt;p&gt;但 Martin 指出，投資人對未來科技顛覆衝擊的態度較為樂觀，僅 10% 稱最擔心 AI 導致企業被淘汰。&lt;/p&gt;\n\n&lt;p&gt;最近幾周，隨著對 AI",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - DoorDash公司(DASH-US)大漲5%，報172.6美元",
-      "url": "https://news.cnyes.com/news/id/6353532",
-      "source": "鉅亨網(wd_stock)",
-      "category": "債券市場風險",
-      "thumbnail": null,
-      "content": "&lt;p&gt;DoorDash公司(DASH-US)截至台北時間25日23:30股價上漲8.22美元，報172.60美元，漲幅5%，成交量1,210,981（股），盤中最高價172.64美元、最低價165.19美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.11%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.45%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.66%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;DoorDash公司(DASH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.43%&lt;/li&gt;    &lt;li&gt;近 1 月：-20.54%&lt;/li&gt;    &lt;li&gt;",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 安可(AMKR-US)大漲5.01%，報50.96美元",
-      "url": "https://news.cnyes.com/news/id/6353529",
-      "source": "鉅亨網(wd_stock)",
-      "category": "貿易政策",
-      "thumbnail": null,
-      "content": "&lt;p&gt;安可(AMKR-US)截至台北時間25日23:26股價上漲2.43美元，報50.96美元，漲幅5.01%，成交量1,397,283（股），盤中最高價50.99美元、最低價49.25美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.21%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.99%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.31%&lt;/li&gt;    &lt;li&gt;近 3 月：+42.06%&lt;",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 數據狗(DDOG-US)大漲5.09%，報109.75美元",
-      "url": "https://news.cnyes.com/news/id/6353519",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間25日23:01股價上漲5.32美元，報109.75美元，漲幅5.09%，成交量815,332（股），盤中最高價109.87美元、最低價104.43美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.16%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.52%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.82%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-16.27%&lt;/li&gt;    &lt;li&gt;近 1 月：-21.14%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.23",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大漲5.03%，報413美元",
-      "url": "https://news.cnyes.com/news/id/6353516",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間25日22:52股價上漲19.78美元，報413.00美元，漲幅5.03%，成交量602,197（股），盤中最高價413.00美元、最低價391.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.27%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.53%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.09%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.77%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.13%&lt;/li&gt;    &lt;li&gt;近 1 月：-27.42",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 網飛(NFLX-US)大漲5.04%，報81.97美元",
-      "url": "https://news.cnyes.com/news/id/6353514",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;網飛(NFLX-US)截至台北時間25日22:49股價上漲3.93美元，報81.97美元，漲幅5.04%，成交量10,558,006（股），盤中最高價81.97美元、最低價79.36美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.38%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.6%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.72%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;網飛(NFLX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.27%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.73%&lt;/li&gt;    &lt;li&gt;近 3 月：-28.93%&lt",
-      "timeStr": "上午12:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "美國關稅再升級？部分國家稅率恐衝15%以上",
-      "url": "https://news.cnyes.com/news/id/6353427",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《路透》報導，美國貿易代表葛里爾 (Jamieson Greer) 周三 (25 日) 表示，美國對部分國家的關稅稅率將由目前新實施的 10% 上調至 15% 或更高，但未點名具體對象，也未透露進一步細節。&lt;/p&gt;\n\n&lt;p&gt;葛里爾在接受福斯財經頻道《Mornings with Maria》節目訪問時指出，現行 10% 的關稅只是起點，未來部分國家將面臨 15% 的稅率，另一些國家甚至可能更高，整體水準將與近期所見關稅幅度相符。不過，他強調，川普政府無意將對中國商品的關稅提高至目前水準之上，並表示總統川普預計在未來幾週訪問中國。&lt;/p&gt;\n\n&lt;p&gt;葛里爾指出，政府計畫以新的關稅措施取代日前遭最高法院否決的緊急關稅，包括依據《1974 年貿易法》第 122 條實施的臨時關稅，該措施已於周二生效，稅率為 10%。他表示，新關稅安排與現有貿易協議並不衝突。&lt;/p&gt;\n\n&lt;p&gt;此外，葛里爾強調，《1974 年貿易法》第 301 條下的不公平貿易調查，將成為替代方案的核心工具，針對存在產能過剩、供應鏈強迫勞動、歧",
-      "timeStr": "上午12:00",
+      "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對HF Sinclair Corp.(DINO-US)做出2026年EPS預估：中位數由4.04元上修至4.13元，其中最高估值6.4元，最低估值2.27元，預估目標價為59.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高",
+      "timeStr": "上午01:01",
       "relatedArticles": []
     }
   ],
@@ -236,59 +163,56 @@
   ],
   "events": [
     {
-      "title": "債券市場的 AI 債務焦慮",
-      "summary": "信用投資者預期超大規模雲端商今年發債將達 2850 億美元，AI 泡沫擔憂超越地緣政治。",
+      "title": "聯準會立場轉向保守",
+      "summary": "官員對通膨降速表達疑慮，市場降息預期被迫延後。",
+      "impact": "負面",
+      "related_news_ids": [
+        3
+      ]
+    },
+    {
+      "title": "跨境電商利潤觸礁",
+      "summary": "拼多多財報低於預期，顯示關稅與海外競爭大幅削減營收含金量。",
       "impact": "負面",
       "related_news_ids": [
         1
       ]
     },
     {
-      "title": "美國關稅 2.0 擴張計劃",
-      "summary": "USTR 暗示將針對特定國家上調稅率至 15% 以上，並利用 301 調查應對全球產能過剩。",
-      "impact": "負面",
-      "related_news_ids": [
-        7
-      ]
-    },
-    {
-      "title": "科技硬體與軟體超跌反彈",
-      "summary": "費半指數受 Amkor (AMKR) 等設備封測股帶動強彈，軟體股如 DDOG 也在重挫後回穩。",
+      "title": "能源個股獲利動能上調",
+      "summary": "分析師上調 DINO 盈餘預期，顯示傳統能源下游獲利仍具韌性。",
       "impact": "正面",
       "related_news_ids": [
-        0,
-        3,
-        4,
-        5
+        0
       ]
     }
   ],
   "relations": [
     {
-      "from": "Hyperscalers",
-      "to": "Bond Market",
-      "type": "融資壓力"
+      "from": "聯準會",
+      "to": "美元指數",
+      "type": "正相關影響"
     },
     {
-      "from": "US Government",
-      "to": "Indonesia",
-      "type": "關稅調查與競爭"
+      "from": "輝達",
+      "to": "台積電",
+      "type": "供應鏈委託"
     },
     {
-      "from": "AI Infrastructure",
-      "to": "Amkor",
-      "type": "供應鏈需求帶動"
+      "from": "巴逆逆",
+      "to": "半導體板塊",
+      "type": "反向情緒指標"
     },
     {
-      "from": "Anthropic AI Tools",
-      "to": "Software ETF",
-      "type": "替代性競爭壓力"
+      "from": "美國政府關稅政策",
+      "to": "拼多多",
+      "type": "營收成本壓力"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 376,
+      "count": 380,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -354,7 +278,7 @@
     },
     {
       "word": "AI",
-      "count": 359,
+      "count": 360,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -486,7 +410,7 @@
     },
     {
       "word": "EPS",
-      "count": 196,
+      "count": 200,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
@@ -684,7 +608,7 @@
     },
     {
       "word": "關稅",
-      "count": 125,
+      "count": 127,
       "articles": [
         {
           "title": "違憲徵稅！最高法院KO川普全球關稅政策 美財政意外之財「泡湯」",
@@ -2267,6 +2191,72 @@
       ]
     },
     {
+      "word": "每股",
+      "count": 46,
+      "articles": [
+        {
+          "title": "東陽1月稅前每股賺0.95元 創10個月來單月新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348432",
+          "source": "自由時報",
+          "content": "\n\n\n汽車零組件大廠東陽（1319） 1月自結合併稅前淨利5.59億元，稅前每股盈餘0.95元，較去年同期成長21%，更創10個月來單月獲利新高紀錄，旺季需求維持熱絡。\n\n\n東...…"
+        },
+        {
+          "title": "中鴻去年Q4虧損收斂5成 2025全年每股虧1.29元",
+          "url": "https://news.cnyes.com/news/id/6349674",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;中鴻 (2014-TW) 今 (23) 日公告 2025 年財報，稅後淨損 18.47 億元、每股虧損 1.29 元，較前年擴大 1 倍；不過，去年第四季稅後淨損 2.63 億元，每股虧損 0.19 元，較前季收斂約 5 成。&lt;/p&gt;\n\n&lt;p&gt;中鴻去年第四季營收 37.84 億元，季減 8.07%、年減 41.31%、營業淨損 2.33 億元，較前季大幅收斂；2025 全年營收 190.21 億元，年減 37.56%、營業淨損 20.07 億元。&lt;/p&gt;\n\n&lt;p&gt;觀察近期鋼鐵市況，中鴻認為，下游製造業需求逐步回穩，加上中國大陸房地產政策逐漸鬆綁，全球經濟穩健成長態勢不變，加上當前煉鋼原料成本支撐強勁，且指標鋼廠 3 月全面提漲，帶動下游陸續啟動補庫，鋼市復甦動能持續增溫。&lt;/p&gt;\n\n&lt;p&gt;中鴻最新開出的盤價來看，3 月內銷熱軋、冷軋、鍍鋅每公噸 500 元；外銷依產品及地區別調整，實際報價視當地市場行情而定。&lt;/p&gt;\n"
+        },
+        {
+          "title": "矽統2025年獲利創20年高　每股配息0.6元",
+          "url": "https://www.cna.com.tw/news/afe/202602230273.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹23日電）特殊應用晶片（ASIC）廠矽統2025年歸屬母公司淨利新台幣7.88億元，創下20年來新高，每股純益1.53元，董事會決議每股配發0.6元現金股利。"
+        },
+        {
+          "title": "欣興旗下軟板廠同泰電子去年每股虧損3.36元不配股利",
+          "url": "https://news.cnyes.com/news/id/6349996",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;欣興 (3037-TW) 旗下軟板廠同泰電子 (3321-TW) 公布最新財報，2025 年全年稅後虧損 1.8 億元，較 2024 年的虧損收歛，每股虧損 3.36 元，連續 10 年呈現年度虧損。&lt;/p&gt;\n\n&lt;p&gt;同泰電子董事會並決議不配發去年股利，股東會訂 6 月 25 日召開。&lt;/p&gt;\n\n&lt;p&gt;同泰電子 2025 年營收 21.45 億元，毛利率 6.1%，年增 3.82 個百分點，2025 年稅後虧損 1.8 億元，較 2024 年的虧損 2.08 億元收歛，每股虧損 3.36 元。&lt;/p&gt;\n\n&lt;p&gt;今天華科事業群旗下的嘉聯益 (6153-TW) 也將公布 2025 年全年財報。&lt;/p&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "南茂去年第4季每股獲利0.72元  帶動全年轉虧為盈",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349758",
+          "source": "自由時報",
+          "content": "\n\n\n封測廠南茂（8150）受惠記憶體缺貨漲價，董事會通過去年財報，去年全年營收239.32億元，營業毛利25.92億元，營業利益11.42億元，稅後淨利4.95億元，稅後每股...…"
+        },
+        {
+          "title": "聯發擬辦理現金減資25%　每股退還股東現金2.5元",
+          "url": "https://www.cna.com.tw/news/afe/202602240238.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者曾仁凱台北24日電）老牌紡織廠聯發今天下午召開重大訊息記者會，宣布辦理現金減資，金額約新台幣8.97億元，減資比例25%。聯發集團總經理王豐岳表示，希望藉此調整資本結構，提升股東權益報酬率。"
+        },
+        {
+          "title": "川湖去年大賺10個股本　每股擬配息51元",
+          "url": "https://www.cna.com.tw/news/afe/202602240220.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者曾仁凱台北24日電）AI帶動雲端需求大爆發，伺服器滑軌大廠川湖今天公布2025年財報，全年大賺10個股本，每股稅後純益高達新台幣103.23元，超越去年的64.59元，續創歷史新高。"
+        },
+        {
+          "title": "玉山金 2025 年每股大賺 2.12 元！董座黃男州喊「現金股利再提高」",
+          "url": "https://finance.technews.tw/2026/02/24/cash-dividends-increased-again/",
+          "source": "TechNews",
+          "content": "玉山金今日召開法說會，並公布 2025 年自結淨收益 917.7 億元，稅後淨利成長 31.2% 達 342. [&#8230;]"
+        },
+        {
+          "title": "瑞鼎2025年獲利創5年新低　每股擬配息14.6元",
+          "url": "https://www.cna.com.tw/news/afe/202602240252.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹24日電）顯示驅動IC廠瑞鼎2025年稅後淨利新台幣13.8億元，創下5年來新低，每股純益18.24元，董事會決議每股配發現金股利14.6元。"
+        },
+        {
+          "title": "世界健身-KY去年每股賺3.75元 超額配息5.95元",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5350165",
+          "source": "自由時報",
+          "content": "\n\n\n以經營World Gym健身房聞名的世界健身-KY（2762）今天公告去年第4季合併營收28.78億元、年增13.26％，連7季改寫新高；稅後淨利1.66億元、年增近1....…"
+        }
+      ]
+    },
+    {
       "word": "打造",
       "count": 45,
       "articles": [
@@ -2329,72 +2319,6 @@
           "url": "https://ec.ltn.com.tw/article/breakingnews/5347359",
           "source": "自由時報",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "每股",
-      "count": 45,
-      "articles": [
-        {
-          "title": "東陽1月稅前每股賺0.95元 創10個月來單月新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348432",
-          "source": "自由時報",
-          "content": "\n\n\n汽車零組件大廠東陽（1319） 1月自結合併稅前淨利5.59億元，稅前每股盈餘0.95元，較去年同期成長21%，更創10個月來單月獲利新高紀錄，旺季需求維持熱絡。\n\n\n東...…"
-        },
-        {
-          "title": "中鴻去年Q4虧損收斂5成 2025全年每股虧1.29元",
-          "url": "https://news.cnyes.com/news/id/6349674",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;中鴻 (2014-TW) 今 (23) 日公告 2025 年財報，稅後淨損 18.47 億元、每股虧損 1.29 元，較前年擴大 1 倍；不過，去年第四季稅後淨損 2.63 億元，每股虧損 0.19 元，較前季收斂約 5 成。&lt;/p&gt;\n\n&lt;p&gt;中鴻去年第四季營收 37.84 億元，季減 8.07%、年減 41.31%、營業淨損 2.33 億元，較前季大幅收斂；2025 全年營收 190.21 億元，年減 37.56%、營業淨損 20.07 億元。&lt;/p&gt;\n\n&lt;p&gt;觀察近期鋼鐵市況，中鴻認為，下游製造業需求逐步回穩，加上中國大陸房地產政策逐漸鬆綁，全球經濟穩健成長態勢不變，加上當前煉鋼原料成本支撐強勁，且指標鋼廠 3 月全面提漲，帶動下游陸續啟動補庫，鋼市復甦動能持續增溫。&lt;/p&gt;\n\n&lt;p&gt;中鴻最新開出的盤價來看，3 月內銷熱軋、冷軋、鍍鋅每公噸 500 元；外銷依產品及地區別調整，實際報價視當地市場行情而定。&lt;/p&gt;\n"
-        },
-        {
-          "title": "矽統2025年獲利創20年高　每股配息0.6元",
-          "url": "https://www.cna.com.tw/news/afe/202602230273.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹23日電）特殊應用晶片（ASIC）廠矽統2025年歸屬母公司淨利新台幣7.88億元，創下20年來新高，每股純益1.53元，董事會決議每股配發0.6元現金股利。"
-        },
-        {
-          "title": "欣興旗下軟板廠同泰電子去年每股虧損3.36元不配股利",
-          "url": "https://news.cnyes.com/news/id/6349996",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;欣興 (3037-TW) 旗下軟板廠同泰電子 (3321-TW) 公布最新財報，2025 年全年稅後虧損 1.8 億元，較 2024 年的虧損收歛，每股虧損 3.36 元，連續 10 年呈現年度虧損。&lt;/p&gt;\n\n&lt;p&gt;同泰電子董事會並決議不配發去年股利，股東會訂 6 月 25 日召開。&lt;/p&gt;\n\n&lt;p&gt;同泰電子 2025 年營收 21.45 億元，毛利率 6.1%，年增 3.82 個百分點，2025 年稅後虧損 1.8 億元，較 2024 年的虧損 2.08 億元收歛，每股虧損 3.36 元。&lt;/p&gt;\n\n&lt;p&gt;今天華科事業群旗下的嘉聯益 (6153-TW) 也將公布 2025 年全年財報。&lt;/p&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "南茂去年第4季每股獲利0.72元  帶動全年轉虧為盈",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349758",
-          "source": "自由時報",
-          "content": "\n\n\n封測廠南茂（8150）受惠記憶體缺貨漲價，董事會通過去年財報，去年全年營收239.32億元，營業毛利25.92億元，營業利益11.42億元，稅後淨利4.95億元，稅後每股...…"
-        },
-        {
-          "title": "聯發擬辦理現金減資25%　每股退還股東現金2.5元",
-          "url": "https://www.cna.com.tw/news/afe/202602240238.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者曾仁凱台北24日電）老牌紡織廠聯發今天下午召開重大訊息記者會，宣布辦理現金減資，金額約新台幣8.97億元，減資比例25%。聯發集團總經理王豐岳表示，希望藉此調整資本結構，提升股東權益報酬率。"
-        },
-        {
-          "title": "川湖去年大賺10個股本　每股擬配息51元",
-          "url": "https://www.cna.com.tw/news/afe/202602240220.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者曾仁凱台北24日電）AI帶動雲端需求大爆發，伺服器滑軌大廠川湖今天公布2025年財報，全年大賺10個股本，每股稅後純益高達新台幣103.23元，超越去年的64.59元，續創歷史新高。"
-        },
-        {
-          "title": "玉山金 2025 年每股大賺 2.12 元！董座黃男州喊「現金股利再提高」",
-          "url": "https://finance.technews.tw/2026/02/24/cash-dividends-increased-again/",
-          "source": "TechNews",
-          "content": "玉山金今日召開法說會，並公布 2025 年自結淨收益 917.7 億元，稅後淨利成長 31.2% 達 342. [&#8230;]"
-        },
-        {
-          "title": "瑞鼎2025年獲利創5年新低　每股擬配息14.6元",
-          "url": "https://www.cna.com.tw/news/afe/202602240252.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹24日電）顯示驅動IC廠瑞鼎2025年稅後淨利新台幣13.8億元，創下5年來新低，每股純益18.24元，董事會決議每股配發現金股利14.6元。"
-        },
-        {
-          "title": "世界健身-KY去年每股賺3.75元 超額配息5.95元",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5350165",
-          "source": "自由時報",
-          "content": "\n\n\n以經營World Gym健身房聞名的世界健身-KY（2762）今天公告去年第4季合併營收28.78億元、年增13.26％，連7季改寫新高；稅後淨利1.66億元、年增近1....…"
         }
       ]
     },
