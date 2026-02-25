@@ -1,85 +1,72 @@
 {
-  "updateTime": "2026-02-25T18:02:01.116Z",
-  "fullDateStr": "2026/2/26 · 更新於 02:02:01",
+  "updateTime": "2026-02-25T19:01:17.750Z",
+  "fullDateStr": "2026/2/26 · 更新於 03:01:17",
   "aiResult": {
-    "sentiment_score": 0.22,
+    "sentiment_score": 0.35,
     "dimensions": {
-      "policy": 0,
-      "market": -0.2,
-      "industry": 0.4,
-      "international": 0.1,
-      "technical": -0.3
+      "policy": 0.2,
+      "market": 0.5,
+      "industry": 0.7,
+      "international": 0.3,
+      "technical": 0.4
     },
     "entities": [
       {
-        "name": "NVIDIA",
-        "sentiment": "neutral",
-        "ticker": "NVDA-US"
+        "name": "超微電腦",
+        "sentiment": "positive",
+        "ticker": "SMCI-US"
       },
       {
-        "name": "Broadcom",
+        "name": "道瓊指數",
         "sentiment": "positive",
-        "ticker": "AVGO-US"
+        "ticker": ".DJI"
       },
       {
-        "name": "Google",
+        "name": "S&P 500指數",
         "sentiment": "positive",
-        "ticker": "GOOGL-US"
+        "ticker": ".SPX"
       },
       {
-        "name": "Microsoft",
+        "name": "NASDAQ指數",
         "sentiment": "positive",
-        "ticker": "MSFT-US"
+        "ticker": ".IXIC"
       },
       {
-        "name": "Meta",
+        "name": "費城半導體指數",
         "sentiment": "positive",
-        "ticker": "META-US"
-      },
-      {
-        "name": "Amazon",
-        "sentiment": "positive",
-        "ticker": "AMZN-US"
+        "ticker": ".SOX"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：AI 資本支出的估值定價與反向指標壓制】</h3><p>今日市場情緒由昨日的 0.25 微幅修正至 <b>0.22</b>。儘管超大型雲端業者（Hyperscalers）高達 6500 億美元的 AI 資本支出為產業提供堅實底座，但市場進入「利多鈍化」與「預期管理」階段。</p><p><b>核心分析：</b><br>1. <b>NVIDIA 財報預期降溫</b>：即便預期第四季財報正面，但市場將其視為『已知利多』，且 5000 億美元能見度已反應。分析師預測真正的股價驅動力可能延後至 3 月 GTC 大會，短線面臨賣壓回檔風險。<br>2. <b>競爭格局與成本壓力</b>：Broadcom 與 Google 合作的 TPU 崛起，挑戰 GPU 霸權；同時記憶體成本上升正擠壓供應鏈利潤，需關注毛利表現。<br>3. <b>反向指標持續示警</b>：承接昨日分析，<b>巴逆逆 (8zz)</b> 的看好情緒與 NVIDIA 股價近期落後費半（僅漲 2% vs 16%）的背離現象高度吻合，驗證了短線技術面過熱後的修正必要性。</p>",
+    "summary": "<h3>【宏觀決策報告：伺服器信心修復與風險偏好擴張】</h3><p>今日市場情緒由昨日的 0.22 回升至 <b>0.35</b>。昨日報告提到的『利多鈍化』在半導體板塊出現結構性反彈，特別是費城半導體指數（SOX）漲幅達 1.75%，領跑三大權值指數，顯示資金對高成長科技股的風險偏好再度轉強。</p><p><b>關鍵觀察：</b><br>1. <b>SMCI 的情緒領先指標</b>：超微電腦 (SMCI-US) 盤中大漲 5.01%，雖然其長期受審計問題困擾，但短線強彈顯示 AI 基礎設施供應鏈的『估值修正』已吸引抄底資金進場。<br>2. <b>指數共振向上</b>：那斯達克與費半的連動漲勢，消化了昨日對 NVIDIA 財報的預期壓力。目前市場正從單一龍頭的預期轉向整體產業鏈的價值挖掘。<br>3. <b>指標警示</b>：本次數據中未見「巴逆逆」等反向指標顯著操作，暫無短線見頂之隱憂，建議維持逢低分批佈局策略。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與AI設備"
+        "category": "美股大盤"
       },
       {
         "id": 2,
-        "category": "科技資本支出"
+        "category": "半導體產業"
       }
     ],
     "sector_stats": {
-      "tech": 0.25,
-      "finance": 0,
-      "manufacturing": 0.15,
-      "service": 0.05
+      "tech": 0.65,
+      "finance": 0.2,
+      "manufacturing": 0.1,
+      "service": 0.15
     },
     "events": [
       {
-        "title": "輝達財報定價權轉移",
-        "summary": "分析師預測 2/25 財報恐難激勵股價，市場焦點已提前轉移至 3 月 GTC 大會之技術革新。",
-        "impact": "中性偏負面",
-        "related_news_ids": [
-          0
-        ]
-      },
-      {
-        "title": "六千億美元 AI 資本壁壘",
-        "summary": "Alphabet、Amazon、Meta 與 Microsoft 合計 6500 億美元的投資，確認了 AI 基礎設施的長期增長剛性。",
+        "title": "AI 伺服器龍頭超跌反彈",
+        "summary": "超微電腦 (SMCI) 因跌深後出現技術性買盤大漲 5%，帶動 AI 硬體板塊集體回溫。",
         "impact": "正面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "特製化晶片 (ASIC) 威脅論",
-        "summary": "Google 與 Broadcom 研發之 TPU 受市場高度關注，可能稀釋 NVIDIA 在 AI 晶片的主導權。",
-        "impact": "負面",
+        "title": "半導體族群領漲美股",
+        "summary": "費城半導體指數漲幅達 1.75%，顯示市場對科技權值股的成長性重拾信心。",
+        "impact": "正面",
         "related_news_ids": [
           0
         ]
@@ -87,36 +74,26 @@
     ],
     "relations": [
       {
-        "from": "Broadcom",
-        "to": "Google",
-        "type": "共同開發 (TPU)"
-      },
-      {
-        "from": "Microsoft",
+        "from": "SMCI-US",
         "to": "NVIDIA",
-        "type": "資本支出注入 (客戶)"
+        "type": "供應鏈需求同步"
       },
       {
-        "from": "NVIDIA",
-        "to": "Broadcom",
-        "type": "技術競爭"
-      },
-      {
-        "from": "Meta",
-        "to": "NVIDIA",
-        "type": "資本支出注入 (客戶)"
+        "from": "費城半導體指數",
+        "to": "NASDAQ指數",
+        "type": "成長股情緒聯動"
       }
     ]
   },
   "newsData": [
     {
-      "title": "輝達財報開獎在即 分析師：重頭戲要等3月GTC大會登場",
-      "url": "https://news.cnyes.com/news/id/6351716",
+      "title": "盤中速報 - 超微電腦(SMCI-US)大漲5.01%，報32.69美元",
+      "url": "https://news.cnyes.com/news/id/6353600",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;輝達 (NVDA-US) 將於美股周三 (25 日) 盤後公布會計年度第 4 季財報。法國巴黎銀行 (BNP Paribas) 分析師表示，財報應該會「相當正面」，但未必能激勵股價。&lt;/p&gt;\n\n&lt;p&gt;近幾季以來，即便輝達繳出亮眼成績，市場反應卻多半平淡，甚至出現回檔。&lt;/p&gt;\n\n&lt;p&gt;分析師認為，這次財報恐怕也難以成為股價催化劑，原因之一在於，輝達近期已釋出具吸引力的財務前景&mdash;&mdash;輝達去年底表示，今年已掌握 5000 億美元營收能見度。&lt;/p&gt;\n\n&lt;p&gt;法巴分析師 David O&quot;Connor&larr;吳金預測，真正可能牽動市場的重要更新，將保留至 3 月舉行的年度 GTC 大會公布。&lt;/p&gt;\n\n&lt;p&gt;輝達股價今年來漲幅相對有限，僅上揚 2%，落後費城半導體指數同期 16% 的漲幅。&lt;/p&gt;\n\n&lt;p&gt;此外，輝達也處於近期人工智慧 (AI) 概念股賣壓的核心。投資人開始質疑，輝達能否長期維持在 AI 晶片市場的主導地位",
-      "timeStr": "上午02:02",
+      "content": "&lt;p&gt;超微電腦(SMCI-US)截至台北時間26日02:24股價上漲1.56美元，報32.69美元，漲幅5.01%，成交量12,899,690（股），盤中最高價32.69美元、最低價31.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.72%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.15%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.75%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微電腦(SMCI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.12%&lt;/li&gt;    &lt;li&gt;近 3 月：-7.83%",
+      "timeStr": "上午03:01",
       "relatedArticles": []
     }
   ],
@@ -159,25 +136,17 @@
   ],
   "events": [
     {
-      "title": "輝達財報定價權轉移",
-      "summary": "分析師預測 2/25 財報恐難激勵股價，市場焦點已提前轉移至 3 月 GTC 大會之技術革新。",
-      "impact": "中性偏負面",
-      "related_news_ids": [
-        0
-      ]
-    },
-    {
-      "title": "六千億美元 AI 資本壁壘",
-      "summary": "Alphabet、Amazon、Meta 與 Microsoft 合計 6500 億美元的投資，確認了 AI 基礎設施的長期增長剛性。",
+      "title": "AI 伺服器龍頭超跌反彈",
+      "summary": "超微電腦 (SMCI) 因跌深後出現技術性買盤大漲 5%，帶動 AI 硬體板塊集體回溫。",
       "impact": "正面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "特製化晶片 (ASIC) 威脅論",
-      "summary": "Google 與 Broadcom 研發之 TPU 受市場高度關注，可能稀釋 NVIDIA 在 AI 晶片的主導權。",
-      "impact": "負面",
+      "title": "半導體族群領漲美股",
+      "summary": "費城半導體指數漲幅達 1.75%，顯示市場對科技權值股的成長性重拾信心。",
+      "impact": "正面",
       "related_news_ids": [
         0
       ]
@@ -185,30 +154,20 @@
   ],
   "relations": [
     {
-      "from": "Broadcom",
-      "to": "Google",
-      "type": "共同開發 (TPU)"
-    },
-    {
-      "from": "Microsoft",
+      "from": "SMCI-US",
       "to": "NVIDIA",
-      "type": "資本支出注入 (客戶)"
+      "type": "供應鏈需求同步"
     },
     {
-      "from": "NVIDIA",
-      "to": "Broadcom",
-      "type": "技術競爭"
-    },
-    {
-      "from": "Meta",
-      "to": "NVIDIA",
-      "type": "資本支出注入 (客戶)"
+      "from": "費城半導體指數",
+      "to": "NASDAQ指數",
+      "type": "成長股情緒聯動"
     }
   ],
   "keywords7d": [
     {
       "word": "US",
-      "count": 380,
+      "count": 382,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Snap公司(SNAP-US)EPS預估上修至-0.16元，預估目標價為8.00元",
@@ -274,7 +233,7 @@
     },
     {
       "word": "AI",
-      "count": 362,
+      "count": 364,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -340,7 +299,7 @@
     },
     {
       "word": "美元",
-      "count": 206,
+      "count": 207,
       "articles": [
         {
           "title": "黃金強彈逾2％ 重返5000美元大關門口",
@@ -406,7 +365,7 @@
     },
     {
       "word": "EPS",
-      "count": 200,
+      "count": 201,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華碩(2357-TW)EPS預估下修至53.85元，預估目標價為735元",
@@ -868,7 +827,7 @@
     },
     {
       "word": "中速",
-      "count": 98,
+      "count": 99,
       "articles": [
         {
           "title": "盤中速報 - 費城半導體大跌1%，報8131.81點",
@@ -1330,7 +1289,7 @@
     },
     {
       "word": "科技",
-      "count": 61,
+      "count": 63,
       "articles": [
         {
           "title": "〈美股盤後〉AI疑慮降溫美股反彈 那指漲近1%  費半走強、科技七巨頭回神",
@@ -3177,6 +3136,72 @@
       ]
     },
     {
+      "word": "智慧",
+      "count": 36,
+      "articles": [
+        {
+          "title": "〈名人書單〉新漢林茂昌二刷《資治通鑑》歷史智慧可避開致命錯誤",
+          "url": "https://news.cnyes.com/news/id/6345437",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "中國人形機器人震撼春晚！英媒齊驚呼「智慧革命來了」",
+          "url": "https://news.cnyes.com/news/id/6346812",
+          "source": "鉅亨網(tech)",
+          "content": null
+        },
+        {
+          "title": "OpenAI 與 Paradigm 聯手推 EVMBench，改善檢測修補以太坊智慧合約漏洞",
+          "url": "https://technews.tw/2026/02/19/openai-and-paradigm-created-a-testing-ground/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "Meta首款AI智慧手錶要來了！「Malibu 2」主打健康追蹤＋AI助理",
+          "url": "https://news.cnyes.com/news/id/6346840",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "阿特曼出席人工智慧峰會　強調全球亟需AI監管",
+          "url": "https://www.cna.com.tw/news/ait/202602190155.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里19日綜合外電報導）人工智慧（AI）聊天機器人ChatGPT開發商OpenAI執行長阿特曼（Sam Altman）今天出席一場AI全球峰會，他在會議上表示，全世界亟需監管這項快速發展的技術。"
+        },
+        {
+          "title": "智慧電表省電學3》節能家電汰換4年砸237億！補助將收官、民眾快申請",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5343638",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "智慧電表省電學2》「含金量」高！台電已掌握全台8成用電輪廓",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5343641",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "智慧電表省電學1》台電住商節電5月上路  民眾自願參加",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5343630",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "〈名人書單〉聲寶總裁陳盛沺暢談經營哲學 借鏡孫子兵法與蒙格智慧看透局勢",
+          "url": "https://news.cnyes.com/news/id/6337793",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "阿特曼出席人工智慧峰會，強調全球亟需 AI 監管",
+          "url": "https://technews.tw/2026/02/20/openais-altman-says-world-urgently-needs-ai-regulation/",
+          "source": "TechNews",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "分析",
       "count": 35,
       "articles": [
@@ -3238,72 +3263,6 @@
           "title": "最高法院推翻川普關稅  分析：蘋果公司衝擊可望減緩",
           "url": "https://www.cna.com.tw/news/aopl/202602210020.aspx",
           "source": "中央社國際",
-          "content": null
-        }
-      ]
-    },
-    {
-      "word": "智慧",
-      "count": 35,
-      "articles": [
-        {
-          "title": "〈名人書單〉新漢林茂昌二刷《資治通鑑》歷史智慧可避開致命錯誤",
-          "url": "https://news.cnyes.com/news/id/6345437",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "中國人形機器人震撼春晚！英媒齊驚呼「智慧革命來了」",
-          "url": "https://news.cnyes.com/news/id/6346812",
-          "source": "鉅亨網(tech)",
-          "content": null
-        },
-        {
-          "title": "OpenAI 與 Paradigm 聯手推 EVMBench，改善檢測修補以太坊智慧合約漏洞",
-          "url": "https://technews.tw/2026/02/19/openai-and-paradigm-created-a-testing-ground/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "Meta首款AI智慧手錶要來了！「Malibu 2」主打健康追蹤＋AI助理",
-          "url": "https://news.cnyes.com/news/id/6346840",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "阿特曼出席人工智慧峰會　強調全球亟需AI監管",
-          "url": "https://www.cna.com.tw/news/ait/202602190155.aspx",
-          "source": "中央社科技",
-          "content": "（中央社新德里19日綜合外電報導）人工智慧（AI）聊天機器人ChatGPT開發商OpenAI執行長阿特曼（Sam Altman）今天出席一場AI全球峰會，他在會議上表示，全世界亟需監管這項快速發展的技術。"
-        },
-        {
-          "title": "智慧電表省電學3》節能家電汰換4年砸237億！補助將收官、民眾快申請",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5343638",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "智慧電表省電學2》「含金量」高！台電已掌握全台8成用電輪廓",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5343641",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "智慧電表省電學1》台電住商節電5月上路  民眾自願參加",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5343630",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "〈名人書單〉聲寶總裁陳盛沺暢談經營哲學 借鏡孫子兵法與蒙格智慧看透局勢",
-          "url": "https://news.cnyes.com/news/id/6337793",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "阿特曼出席人工智慧峰會，強調全球亟需 AI 監管",
-          "url": "https://technews.tw/2026/02/20/openais-altman-says-world-urgently-needs-ai-regulation/",
-          "source": "TechNews",
           "content": null
         }
       ]
