@@ -1,157 +1,147 @@
 {
-  "updateTime": "2026-02-26T20:01:01.922Z",
-  "fullDateStr": "2026/2/27 · 更新於 04:01:01",
+  "updateTime": "2026-02-26T22:00:52.910Z",
+  "fullDateStr": "2026/2/27 · 更新於 06:00:52",
   "aiResult": {
-    "sentiment_score": -0.68,
+    "sentiment_score": -0.45,
     "dimensions": {
-      "policy": 0.6,
-      "market": -0.85,
-      "industry": -0.4,
-      "international": -0.3,
-      "technical": -0.75
+      "policy": -0.6,
+      "market": -0.5,
+      "industry": -0.3,
+      "international": -0.4,
+      "technical": -0.5
     },
     "entities": [
       {
-        "name": "Applovin Corp",
-        "sentiment": "positive",
-        "ticker": "APP-US"
+        "name": "Nvidia",
+        "sentiment": "Neutral",
+        "ticker": "NVDA.US"
       },
       {
-        "name": "Alphabet (Google)",
-        "sentiment": "positive",
-        "ticker": "GOOGL-US"
+        "name": "Tesla",
+        "sentiment": "Negative",
+        "ticker": "TSLA.US"
       },
       {
-        "name": "Paypal控股",
-        "sentiment": "negative",
-        "ticker": "PYPL-US"
+        "name": "AMD",
+        "sentiment": "Negative",
+        "ticker": "AMD.US"
       },
       {
-        "name": "Adobe",
-        "sentiment": "neutral",
-        "ticker": "ADBE-US"
+        "name": "Microsoft",
+        "sentiment": "Neutral",
+        "ticker": "MSFT.US"
       },
       {
-        "name": "Disney",
-        "sentiment": "neutral",
-        "ticker": "DIS-US"
+        "name": "BYD",
+        "sentiment": "Positive",
+        "ticker": "002594.SZ"
       },
       {
-        "name": "聯準會 (Fed)",
-        "sentiment": "positive",
-        "ticker": null
+        "name": "Sony",
+        "sentiment": "Negative",
+        "ticker": "SONY.US"
       }
     ],
-    "summary": "<h3>【逆勢獵盤：系統性出清後的價值重估】</h3><p>今日市場情緒在費城半導體指數重挫逾 4% 的恐慌中，展現出明顯的<b>估值分化</b>。儘管指數受流動性拋售影響而低迷，但 <b>Applovin (APP)</b> 的逆勢大漲與 <b>Fed 理事米蘭</b> 的激進降息言論（主張降息 4 次），為市場築起了關鍵的安全邊際。這反映出資金正從過熱的半導體硬體，轉向具備現金流韌性的平台類股。</p><p><b>核心決策解析：</b><br>1. <b>政策轉向預期</b>：Fed 理事米蘭的鴿派發言顯示政策重心已由通膨轉向就業，這對超跌的成長股是極大的利多背書。<br>2. <b>AI 戰場延伸</b>：Google 推出 Nano Banana 2 強化 AI 影像能力，顯示 AI 競爭已進入應用層與智財權爭奪戰，建議關注 AI 軟體商的防禦價值。<br>3. <b>底部信號初現</b>：雖然今日未見「巴逆逆」等反向指標活躍，但費半的「通殺式」下跌已接近心理支撐位，Applovin 的反彈或是績優股脫鉤大盤的前兆。</p>",
+    "summary": "<h3>【大師獵盤：利多鈍化後的真金試煉】</h3><p>今日市場情緒與昨日相比出現顯著轉折。昨日尚有 <b>Applovin</b> 帶動平台股韌性，但今日 <b>Nvidia (NVDA)</b> 財報雖然亮眼卻出現「利多不漲」，顯示市場已進入<b>高預期鈍化期</b>。資金從風險資產流向美債與美元，反映短期防禦情緒升溫。</p><p><b>核心決策解析：</b><br>1. <b>估值陷阱與安全邊際</b>：當績優股如 Nvidia 財報超預期仍遭拋售，暗示技術面過熱，價值大師此時不應追高，應靜待非理性殺盤創造出的「打折價」。<br>2. <b>消費電子的寒冬轉機</b>：遊戲晶片短缺將持續至年底，反映 AI 產能排擠效應，這對 <b>AMD</b> 與 <b>Sony</b> 等終端廠商構成短期壓抑，但也為長期佈局消費復甦題材提供低點。<br>3. <b>指標警示</b>：目前市場尚未見到「巴逆逆」或「8zz」等反向指標的極端看多言論，若此類指標開始轉向極度看空，則是大師大舉進場的時刻。目前關稅威脅（10% 升至 15%）是主要不確定性，應避開高關稅敏感股。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "美股大盤"
+        "category": "半導體財報"
       },
       {
         "id": 2,
-        "category": "貨幣政策"
+        "category": "國際貿易政策"
       },
       {
         "id": 3,
-        "category": "AI 應用"
+        "category": "電動車競爭"
       }
     ],
     "sector_stats": {
-      "tech": -0.75,
-      "finance": -0.3,
-      "manufacturing": -0.5,
+      "tech": -0.5,
+      "finance": 0.2,
+      "manufacturing": -0.4,
       "service": -0.1
     },
     "events": [
       {
-        "title": "Fed 鴿派救援：米蘭主張年內降息 4 次",
-        "summary": "聯準會理事米蘭認為通膨已非威脅，應積極降息 1% 以支撐就業市場，為市場提供流動性預期。",
-        "impact": "正面",
+        "title": "輝達利多鈍化與避險情緒升溫",
+        "summary": "輝達財報雖優於預期，但股價不漲反跌，引發市場資金轉向債券與美元避險。",
+        "impact": "負面",
         "related_news_ids": [
+          0,
           1
         ]
       },
       {
-        "title": "費半系統性重挫 4%：半導體流動性危機",
-        "summary": "費城半導體指數連兩日暴跌，拋售潮蔓延至 PayPal 等權值股，反映市場極度避險。",
+        "title": "川普關稅風暴再升級",
+        "summary": "美國貿易代表暗示關稅稅率可能由 10% 提高至 15% 以上，加劇貿易爭議憂慮。",
         "impact": "負面",
         "related_news_ids": [
-          0,
-          2
+          0
         ]
       },
       {
-        "title": "Google AI 影像工具 Nano Banana 2 升級",
-        "summary": "Alphabet 強化 AI 影像生成速度與解析度，並與 Gemini 整合，加劇與 OpenAI 的競爭。",
-        "impact": "正面",
+        "title": "特斯拉零息降價戰",
+        "summary": "特斯拉在中國推 5 年零息方案應對銷量衰退與比亞迪競爭，毛利恐進一步受壓。",
+        "impact": "負面",
         "related_news_ids": [
-          3
+          2
         ]
       }
     ],
     "relations": [
       {
-        "from": "Fed",
-        "to": "美股市場",
-        "type": "流動性支撐"
+        "from": "Nvidia",
+        "to": "AMD",
+        "type": "產能排擠競爭"
       },
       {
-        "from": "Google",
-        "to": "OpenAI",
-        "type": "生成式 AI 競爭"
+        "from": "Tesla",
+        "to": "BYD",
+        "type": "市佔率爭奪"
       },
       {
-        "from": "Google",
-        "to": "Disney",
-        "type": "版權爭議風險"
+        "from": "US Government",
+        "to": "Global Markets",
+        "type": "政策關稅壓力"
       },
       {
-        "from": "OpenAI",
-        "to": "AI 晶片廠商",
-        "type": "算力需求拉動"
+        "from": "Nvidia",
+        "to": "Sony",
+        "type": "供應鏈短缺影響"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大漲5.07%，報443美元",
-      "url": "https://news.cnyes.com/news/id/6355774",
+      "title": "〈紐約匯市〉美元小漲 華爾街下挫帶動買盤",
+      "url": "https://news.cnyes.com/news/id/6355805",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間27日03:20股價上漲21.37美元，報443.00美元，漲幅5.07%，成交量4,091,237（股），盤中最高價443.00美元、最低價417.56美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.06%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.56%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.76%&lt;/li&gt;    &lt;li&gt;近 1 月：-25.",
-      "timeStr": "上午04:01",
+      "content": "&lt;p&gt;美元周四 (26 日) 小幅上揚，因 AI 龍頭輝達 (Nvidia)(NVDA-US) 強勁財報未能提振股市，投資人避開股票，轉而布局其他資產。&lt;/p&gt;\n\n&lt;p&gt;紐約尾盤，追蹤美元兌六種主要貨幣的美元指數 (DXY) 上漲 0.1%，報 97.79。&lt;/p&gt;\n\n&lt;p&gt;華爾街周四走低，儘管輝達公布強勁季業績，仍未能帶動其股價與整體科技股上漲。&lt;/p&gt;\n\n&lt;p&gt;這家全球市值最高的公司表示，其截至 1 月一季銷售優於分析師預期，並預測本季營收將高於市場估值。&lt;/p&gt;\n\n&lt;p&gt;然而，部分投資人質疑公司在回饋股東現金方面是否做得足夠。此外，市場已習慣其亮眼成績，預期水準也極高。&nbsp;&lt;/p&gt;\n\n&lt;p&gt;隨著股市走弱，交易員轉而買進債券等其他資產，推動美國公債殖利率下滑，美元同步走升。&lt;/p&gt;\n\n&lt;p&gt;Interactive Brokers 資深經濟學家 Jos&eacute; Torres 表示，「殖利率以多頭趨平方式大幅下滑，主",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "Fed理事米蘭：通膨非問題、就業仍需支撐 今年應降息4次",
-      "url": "https://news.cnyes.com/news/id/6355680",
+      "title": "輝達高層：遊戲晶片短缺恐持續到今年年底",
+      "url": "https://news.cnyes.com/news/id/6355775",
       "source": "鉅亨網(wd_stock)",
-      "category": "美股大盤",
+      "category": "半導體財報",
       "thumbnail": null,
-      "content": "&lt;p&gt;綜合外媒周四 (26 日) 報導，聯準會 (Fed) 理事米蘭 (Stephen Miran) 表示，儘管 1 月就業成長強勁是一項「非常好的消息」，但現在宣告就業市場已完全無虞仍為時過早。他認為，今年仍有必要合計降息 1 個百分點，也就是進行 4 次每次 1 碼 (25 個基點) 的降息，以進一步支撐就業市場。&lt;/p&gt;\n\n&lt;p&gt;米蘭在接受《福斯商業頻道》專訪時指出，就業市場仍存在潛在風險，聯準會應持續提供支持。他強調，「我真的不認為我們現在面臨通膨問題」，近期通膨數據雖高於聯準會 2% 目標約 1 個百分點，但預期將放緩。&lt;/p&gt;\n\n&lt;p&gt;他表示，「我認為 4 次降息是合適的，而且我寧願早一點行動，而不是拖到之後。」這番談話顯示他對今年政策轉向的立場偏向積極。&lt;/p&gt;\n\n&lt;p&gt;針對民間信貸快速成長是否構成風險，米蘭則表示，目前尚未看到足以引發總體經濟憂慮的跡象。他認為，部分民間信貸擴張與銀行監管過於嚴格有關。&lt;/p&gt;\n\n&lt;p&gt;談及人工智慧 (AI) 對就業的影響，米蘭指出",
-      "timeStr": "上午04:01",
+      "content": "&lt;p&gt;輝達 (NVDA-US) 高層表示，全球遊戲晶片短缺的情況，可能會持續到今年年底，暗示正受制於消費者需求減緩和銷售下滑的電子遊戲產業，將面臨更多痛苦。&lt;/p&gt;\n\n&lt;p&gt;輝達財務長 Colette Kress 周三 (25 日) 在財報電話會議中表示，儘管輝達看到強勁的需求，但預料供給瓶頸將衝擊本季和之後的遊戲業務。&lt;/p&gt;\n\n&lt;p&gt;Kress 說：「儘管我們希望能有更多的供應，但我們確實認為，在未來幾季期間，供應會非常吃緊。如果今年年底情況有所改善，我們就有機會考慮年比成長的問題。但目前我們還無法確定。」&lt;/p&gt;\n\n&lt;p&gt;隨著科技業競相投入人工智慧 (AI) 軍備競賽，記憶體晶片供不應求、價格飆升，製造商選擇優先生產利率較高的資料中心晶片零組件，進而限縮對智慧手機和個人電腦 (PC) 等消費性電子產品與遊戲主機的供應。&lt;/p&gt;\n\n&lt;p&gt;輝達的晶片廣泛用於 PC 遊戲和任天堂 Switch 遊戲主機上，Sony 的 PlayStation 和微軟 (MSFT-US) 則使用超",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Paypal控股(PYPL-US)大跌5.14%，報44.89美元",
-      "url": "https://news.cnyes.com/news/id/6355755",
+      "title": "又一輪變相降價！特斯拉中國再推5年零息促銷方案",
+      "url": "https://news.cnyes.com/news/id/6355430",
       "source": "鉅亨網(wd_stock)",
-      "category": "貨幣政策",
+      "category": "國際貿易政策",
       "thumbnail": null,
-      "content": "&lt;p&gt;Paypal控股(PYPL-US)截至台北時間27日01:55股價下跌2.43美元，報44.89美元，跌幅5.14%，成交量29,085,499（股），盤中最高價47.73美元、最低價44.88美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.09%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Paypal控股(PYPL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+13.44%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.96%&lt;/li&gt;    &lt;li&gt;近 ",
-      "timeStr": "上午04:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "Google推出Nano Banana 2 強化AI影像生成能力",
-      "url": "https://news.cnyes.com/news/id/6355732",
-      "source": "鉅亨網(wd_stock)",
-      "category": "AI 應用",
-      "thumbnail": null,
-      "content": "&lt;p&gt;綜合外媒周四 (26 日) 報導，Google 母公司 Alphabet(GOOGL-US)宣布推出 Nano Banana 2，升級旗下爆紅的人工智慧 (AI) 影像生成工具，強調在速度、解析度與指令理解能力上全面提升，進一步強化其在生成式 AI 市場與 OpenAI 的競逐。&lt;/p&gt;\n\n&lt;p&gt;Google 表示，新版本將原本僅限 Pro 版用戶使用的部分功能開放給一般用戶，包括生成更高解析度影像、製作更精細的資訊圖表與數據視覺化內容，並能在圖像中嵌入更準確的文字，用於行銷示意圖或賀卡設計。該公司指出，Nano Banana 2 在理解複雜指令方面也有明顯改善，生成效率同步提升。&lt;/p&gt;\n\n&lt;p&gt;新版模型整合 Gemini 的即時知識能力，可調用最新資訊以提高圖像呈現準確度。Google 強調，Nano Banana 2 主打快速生成、精準遵循指令與整合影像搜尋能力；而 Nano Banana Pro 仍將保留，專門處理對事實準確度要求更高的高保真任務。&lt;/p&gt;\n\n&lt;p&gt;Nano Banana ",
-      "timeStr": "上午04:01",
+      "content": "&lt;p&gt;特斯拉 (&lt;a data-symbol-template=&quot;USS:TSLA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;TSLA-US&lt;/a&gt;) 中國周四（26 日）宣布新一輪購車金融優惠政策，消費者在 3 月 31 日前下單，全系車型均可享受 7 年超低息貸款。Model 3、Model Y 及 Model Y L 三款主力車型，可額外選擇 5 年零息方案，貸款購車無需支付利息。此舉被業界普遍解讀為又一輪變相降價，旨在進一步提振終端銷量。&lt;/p&gt;\n\n&lt;p&gt;據《界面新聞》報導，Model 3 首付人民幣（下同）7.99 萬元起，首月月供可低至 1,759 元，在指定日前下單，完成交付，可享 8,000 元限時保險補貼；Model Y 首付 7.99 萬元起，首月月供可低至 2,188 元；Model Y L 首付 9.99 萬元起，首月月供可低至 2,849 元。&lt;/p&gt;\n\n&lt;p&gt;值得注意的是，特斯拉中國今年 1 月已經推出類似方案，當時活動期限至 1 ",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     }
   ],
@@ -194,51 +184,51 @@
   ],
   "events": [
     {
-      "title": "Fed 鴿派救援：米蘭主張年內降息 4 次",
-      "summary": "聯準會理事米蘭認為通膨已非威脅，應積極降息 1% 以支撐就業市場，為市場提供流動性預期。",
-      "impact": "正面",
+      "title": "輝達利多鈍化與避險情緒升溫",
+      "summary": "輝達財報雖優於預期，但股價不漲反跌，引發市場資金轉向債券與美元避險。",
+      "impact": "負面",
       "related_news_ids": [
+        0,
         1
       ]
     },
     {
-      "title": "費半系統性重挫 4%：半導體流動性危機",
-      "summary": "費城半導體指數連兩日暴跌，拋售潮蔓延至 PayPal 等權值股，反映市場極度避險。",
+      "title": "川普關稅風暴再升級",
+      "summary": "美國貿易代表暗示關稅稅率可能由 10% 提高至 15% 以上，加劇貿易爭議憂慮。",
       "impact": "負面",
       "related_news_ids": [
-        0,
-        2
+        0
       ]
     },
     {
-      "title": "Google AI 影像工具 Nano Banana 2 升級",
-      "summary": "Alphabet 強化 AI 影像生成速度與解析度，並與 Gemini 整合，加劇與 OpenAI 的競爭。",
-      "impact": "正面",
+      "title": "特斯拉零息降價戰",
+      "summary": "特斯拉在中國推 5 年零息方案應對銷量衰退與比亞迪競爭，毛利恐進一步受壓。",
+      "impact": "負面",
       "related_news_ids": [
-        3
+        2
       ]
     }
   ],
   "relations": [
     {
-      "from": "Fed",
-      "to": "美股市場",
-      "type": "流動性支撐"
+      "from": "Nvidia",
+      "to": "AMD",
+      "type": "產能排擠競爭"
     },
     {
-      "from": "Google",
-      "to": "OpenAI",
-      "type": "生成式 AI 競爭"
+      "from": "Tesla",
+      "to": "BYD",
+      "type": "市佔率爭奪"
     },
     {
-      "from": "Google",
-      "to": "Disney",
-      "type": "版權爭議風險"
+      "from": "US Government",
+      "to": "Global Markets",
+      "type": "政策關稅壓力"
     },
     {
-      "from": "OpenAI",
-      "to": "AI 晶片廠商",
-      "type": "算力需求拉動"
+      "from": "Nvidia",
+      "to": "Sony",
+      "type": "供應鏈短缺影響"
     }
   ],
   "keywords7d": [
@@ -310,7 +300,7 @@
     },
     {
       "word": "US",
-      "count": 414,
+      "count": 417,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Stellantis N.V(STLA-US)EPS預估上修至-0.53元，預估目標價為9.61元",
@@ -376,7 +366,7 @@
     },
     {
       "word": "美元",
-      "count": 247,
+      "count": 248,
       "articles": [
         {
           "title": "川普成立和平理事會砸百億美元重建加薩　西方反應冷淡",
@@ -442,7 +432,7 @@
     },
     {
       "word": "EPS",
-      "count": 231,
+      "count": 233,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：穩懋(3105-TW)EPS預估上修至2.69元，預估目標價為196元",
@@ -772,7 +762,7 @@
     },
     {
       "word": "日本",
-      "count": 118,
+      "count": 120,
       "articles": [
         {
           "title": "日本通膨跌破日銀2%目標 2022年3月以來首見 ",
@@ -970,7 +960,7 @@
     },
     {
       "word": "自由",
-      "count": 102,
+      "count": 103,
       "articles": [
         {
           "title": "自由開講》總統的心意是 好老師好書對學習都很重要",
@@ -1168,7 +1158,7 @@
     },
     {
       "word": "伊朗",
-      "count": 80,
+      "count": 82,
       "articles": [
         {
           "title": "美伊情勢緊張　川普給伊朗15天期限達成協議",
@@ -1563,6 +1553,72 @@
       ]
     },
     {
+      "word": "晶片",
+      "count": 65,
+      "articles": [
+        {
+          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
+          "url": "https://news.cnyes.com/news/id/6347310",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "新創 Veritas 推防篡改晶片，手機一碰精品就能驗明正身",
+          "url": "https://technews.tw/2026/02/20/ex-tesla-pm-launches-chip-to-kill-30b-counterfeit-trade/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "「活血管晶片」可彎曲分支，精準模擬人體血管疾病",
+          "url": "https://technews.tw/2026/02/20/scientists-just-made-living-blood-vessels-on-a-chip-that-act-like-real-ones/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
+          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
+          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
+          "source": "TechNews",
+          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
+        },
+        {
+          "title": "紐時：台晶片與電子元件獲豁免 影響有限",
+          "url": "https://ec.ltn.com.tw/article/paper/1744186",
+          "source": "自由時報",
+          "content": "〔編譯魏國金／綜合報導〕美國最高法院推翻川普依「國際緊急經濟權力法（IEEPA）」實施的關稅措施，引發主要貿易夥伴關注。《紐約時報》報導，二〇二四年美國取代中國成為台灣最大出口市場，台灣只有少部份產品，包括紡織、塑膠與農產品受此判決影響，台灣主要的晶片與電子元件出口已取得豁免，因此影響不大。\r\n\r\n…"
+        },
+        {
+          "title": "富士康HCL合資封測廠動土　莫迪：國產晶片至關重要",
+          "url": "https://www.cna.com.tw/news/afe/202602220039.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者李晉緯大諾伊達21日專電）富士康與印度HCL集團在大諾伊達（Greater Noida）合資興建的封測廠今天動土，印度總理莫迪透過視訊致詞表示，印度要成為已開發國家，需建立在自立更生的基礎上，而有印度製造的國產晶片，對實現這項目標至關重要。"
+        },
+        {
+          "title": "突破物理極限的新救星？小晶片架構如何用十分之一能耗撐起 HPC 與 AI 算力",
+          "url": "https://technews.tw/2026/02/23/will-chiplets-provide-the-answer-for-post-exascale-hpc-scaling/",
+          "source": "TechNews",
+          "content": "隨著傳統晶片架構逐漸接近功率、熱量和空間的物理極限，一種新的架構正在出現，為高效能運算（HPC）提供潛在的前進 [&#8230;]"
+        },
+        {
+          "title": "輝達重返消費 PC 市場，自家 Arm 晶片筆電年底問世正面對決 Intel、AMD",
+          "url": "https://technews.tw/2026/02/23/nvidia-could-launch-its-first-laptops-with-its-own-processors-later-this-year/",
+          "source": "TechNews",
+          "content": "輝達（Nvidia）正在準備重返消費者 PC 市場，計劃推出搭載自家處理器的筆記型電腦，預計在今年底之前上市。 [&#8230;]"
+        },
+        {
+          "title": "凌通人機介面晶片拚出貨韓家電廠　今年成長動能",
+          "url": "https://www.cna.com.tw/news/afe/202602230076.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹23日電）微控制器（MCU）廠凌通積極拓展人機介面（HMI）系統單晶片（SoC）應用市場，目前已量產出貨中國家電品牌廠，今年可望出貨韓國家電品牌廠，將是驅動今年營運成長主要動力。"
+        }
+      ]
+    },
+    {
       "word": "MLB",
       "count": 65,
       "articles": [
@@ -1691,72 +1747,6 @@
           "url": "https://www.cna.com.tw/news/aopl/202602210105.aspx",
           "source": "中央社國際",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "晶片",
-      "count": 63,
-      "articles": [
-        {
-          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
-          "url": "https://news.cnyes.com/news/id/6347310",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "新創 Veritas 推防篡改晶片，手機一碰精品就能驗明正身",
-          "url": "https://technews.tw/2026/02/20/ex-tesla-pm-launches-chip-to-kill-30b-counterfeit-trade/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "「活血管晶片」可彎曲分支，精準模擬人體血管疾病",
-          "url": "https://technews.tw/2026/02/20/scientists-just-made-living-blood-vessels-on-a-chip-that-act-like-real-ones/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
-          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
-          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
-          "source": "TechNews",
-          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
-        },
-        {
-          "title": "紐時：台晶片與電子元件獲豁免 影響有限",
-          "url": "https://ec.ltn.com.tw/article/paper/1744186",
-          "source": "自由時報",
-          "content": "〔編譯魏國金／綜合報導〕美國最高法院推翻川普依「國際緊急經濟權力法（IEEPA）」實施的關稅措施，引發主要貿易夥伴關注。《紐約時報》報導，二〇二四年美國取代中國成為台灣最大出口市場，台灣只有少部份產品，包括紡織、塑膠與農產品受此判決影響，台灣主要的晶片與電子元件出口已取得豁免，因此影響不大。\r\n\r\n…"
-        },
-        {
-          "title": "富士康HCL合資封測廠動土　莫迪：國產晶片至關重要",
-          "url": "https://www.cna.com.tw/news/afe/202602220039.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者李晉緯大諾伊達21日專電）富士康與印度HCL集團在大諾伊達（Greater Noida）合資興建的封測廠今天動土，印度總理莫迪透過視訊致詞表示，印度要成為已開發國家，需建立在自立更生的基礎上，而有印度製造的國產晶片，對實現這項目標至關重要。"
-        },
-        {
-          "title": "突破物理極限的新救星？小晶片架構如何用十分之一能耗撐起 HPC 與 AI 算力",
-          "url": "https://technews.tw/2026/02/23/will-chiplets-provide-the-answer-for-post-exascale-hpc-scaling/",
-          "source": "TechNews",
-          "content": "隨著傳統晶片架構逐漸接近功率、熱量和空間的物理極限，一種新的架構正在出現，為高效能運算（HPC）提供潛在的前進 [&#8230;]"
-        },
-        {
-          "title": "輝達重返消費 PC 市場，自家 Arm 晶片筆電年底問世正面對決 Intel、AMD",
-          "url": "https://technews.tw/2026/02/23/nvidia-could-launch-its-first-laptops-with-its-own-processors-later-this-year/",
-          "source": "TechNews",
-          "content": "輝達（Nvidia）正在準備重返消費者 PC 市場，計劃推出搭載自家處理器的筆記型電腦，預計在今年底之前上市。 [&#8230;]"
-        },
-        {
-          "title": "凌通人機介面晶片拚出貨韓家電廠　今年成長動能",
-          "url": "https://www.cna.com.tw/news/afe/202602230076.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹23日電）微控制器（MCU）廠凌通積極拓展人機介面（HMI）系統單晶片（SoC）應用市場，目前已量產出貨中國家電品牌廠，今年可望出貨韓國家電品牌廠，將是驅動今年營運成長主要動力。"
         }
       ]
     },
@@ -2355,6 +2345,72 @@
       ]
     },
     {
+      "word": "宣布",
+      "count": 48,
+      "articles": [
+        {
+          "title": "賈永婕宣布好消息 大年初四「謝票」行蹤曝光",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346633",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高市早苗宣布：終結緊縮政策  成長開關拚命「按下去」",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346873",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
+          "url": "https://news.cnyes.com/news/id/6347775",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "散戶睡醒就變天? 對等關稅遭封殺、川普宣布全球加徵10％關稅 ",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347097",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "微軟遊戲部門人事變動：Phil Spencer 宣布退休，Asha Sharma 接執行長",
+          "url": "https://ccc.technews.tw/2026/02/21/phil-spencer-asha-sharma/",
+          "source": "TechNews",
+          "content": "微軟遊戲部門發生重大變革之際，Phil Spencer 宣布退休，結束微軟長達 38 年職涯。Spencer  [&#8230;]"
+        },
+        {
+          "title": "鹿野聖安宮擲筊挑戰百萬無人成功 廟方宣布明年加碼至200萬",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347420",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347495",
+          "source": "自由時報",
+          "content": "美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有的「對等關稅」機制違法後數小時，川普隨即展開強力反擊，於週六在自家社群平台「真實社...…"
+        },
+        {
+          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347495",
+          "source": "自由時報",
+          "content": "\n\n\n首次上稿 01:57更新時間 05:13\n\n\n美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有對各國徵收「對等關稅」違憲後，...…"
+        },
+        {
+          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
+          "url": "https://news.cnyes.com/news/id/6348121",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "台灣最有實力的女團要合體了？林采欣宣布喜訊這樣說",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347494",
+          "source": "自由時報",
+          "content": "\n\n\n林采欣與新東家合作，農曆新年假期也不得閒，她受訪表示：「忙著新創作，寫企劃，還有持續拍短影音帶給粉絲好聽的歌。」喊話希望今年能有新的突破，「對我來說最重要的就是新氣象，新...…"
+        }
+      ]
+    },
+    {
       "word": "中心",
       "count": 48,
       "articles": [
@@ -2417,72 +2473,6 @@
           "url": "https://news.ltn.com.tw/news/world/breakingnews/5347990",
           "source": "自由時報",
           "content": "英國王室前成員、前約克公爵夫人佛格森（Sarah Ferguson）與前夫安德魯雙雙捲入艾普斯坦性醜聞風暴，深陷輿論泥淖，為了躲避排山倒海的壓力，據傳她已秘密前往蘇黎世，入住全球...…"
-        }
-      ]
-    },
-    {
-      "word": "宣布",
-      "count": 47,
-      "articles": [
-        {
-          "title": "賈永婕宣布好消息 大年初四「謝票」行蹤曝光",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346633",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "高市早苗宣布：終結緊縮政策  成長開關拚命「按下去」",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346873",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普宣布對全球商品徵收10%新關稅！反擊最高法院裁定",
-          "url": "https://news.cnyes.com/news/id/6347775",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "散戶睡醒就變天? 對等關稅遭封殺、川普宣布全球加徵10％關稅 ",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347097",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "微軟遊戲部門人事變動：Phil Spencer 宣布退休，Asha Sharma 接執行長",
-          "url": "https://ccc.technews.tw/2026/02/21/phil-spencer-asha-sharma/",
-          "source": "TechNews",
-          "content": "微軟遊戲部門發生重大變革之際，Phil Spencer 宣布退休，結束微軟長達 38 年職涯。Spencer  [&#8230;]"
-        },
-        {
-          "title": "鹿野聖安宮擲筊挑戰百萬無人成功 廟方宣布明年加碼至200萬",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347420",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347495",
-          "source": "自由時報",
-          "content": "美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有的「對等關稅」機制違法後數小時，川普隨即展開強力反擊，於週六在自家社群平台「真實社...…"
-        },
-        {
-          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347495",
-          "source": "自由時報",
-          "content": "\n\n\n首次上稿 01:57更新時間 05:13\n\n\n美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有對各國徵收「對等關稅」違憲後，...…"
-        },
-        {
-          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
-          "url": "https://news.cnyes.com/news/id/6348121",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "台灣最有實力的女團要合體了？林采欣宣布喜訊這樣說",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347494",
-          "source": "自由時報",
-          "content": "\n\n\n林采欣與新東家合作，農曆新年假期也不得閒，她受訪表示：「忙著新創作，寫企劃，還有持續拍短影音帶給粉絲好聽的歌。」喊話希望今年能有新的突破，「對我來說最重要的就是新氣象，新...…"
         }
       ]
     },
@@ -3015,6 +3005,72 @@
       ]
     },
     {
+      "word": "合作",
+      "count": 41,
+      "articles": [
+        {
+          "title": "輝達擬砸 300 億美元投資 OpenAI，取代千億美元長期合作",
+          "url": "https://technews.tw/2026/02/20/nvidia-and-openai-abandon-unfinished-100bn-deal-in-favour-of-30bn-investment/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "輝達擬砸300億美元投資OpenAI　取代千億美元長期合作",
+          "url": "https://www.cna.com.tw/news/aopl/202602200061.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "康埈榮東亞論衡》崩潰的「自由主義的國際主義」秩序 韓台合作應成爲契機",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5342955",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歡迎日本放寬武器出口 澤倫斯基盼儘快與高市早苗談防衛合作",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346755",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "立陶宛外長：不全盤接受中方要求  續推進對台合作",
+          "url": "https://www.cna.com.tw/news/aipl/202602200163.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "自由開講》高市大勝的戰略意涵：中國施壓失效，美日挺台合作更明確",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5342841",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
+          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
+          "source": "TechNews",
+          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
+        },
+        {
+          "title": "菲參議員訪南海中業島　籲志同道合國家深化合作反制中國",
+          "url": "https://www.cna.com.tw/news/aopl/202602210154.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "印度減少依賴中國　攜手巴西加強關鍵礦產稀土合作",
+          "url": "https://www.cna.com.tw/news/aopl/202602210151.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "專訪「台灣女婿」山口晉：將深化台日關係與區域安全合作",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347504",
+          "source": "自由時報",
+          "content": "自民黨眾議員山口晉在此次日本眾院大選中重返國會，因為具有「台灣女婿」的身分，選戰期間受到台灣高度關注。山口在接受本報專訪時表示，台灣社會的支持「令人感到光榮且成為巨...…"
+        }
+      ]
+    },
+    {
       "word": "3月",
       "count": 40,
       "articles": [
@@ -3077,72 +3133,6 @@
           "url": "https://ent.ltn.com.tw/news/breakingnews/5348521",
           "source": "自由時報",
           "content": "誕生逾70年的「怪獸之王」哥吉拉，今年3月牠真的要登台了。\n\n\n這回不只是重返大銀幕，而是直接在台北、台中、高雄三城開戰，秀泰影城今（23）宣布與美麗華影城聯手宣布，3月2日至...…"
-        }
-      ]
-    },
-    {
-      "word": "合作",
-      "count": 40,
-      "articles": [
-        {
-          "title": "輝達擬砸 300 億美元投資 OpenAI，取代千億美元長期合作",
-          "url": "https://technews.tw/2026/02/20/nvidia-and-openai-abandon-unfinished-100bn-deal-in-favour-of-30bn-investment/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "輝達擬砸300億美元投資OpenAI　取代千億美元長期合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602200061.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "康埈榮東亞論衡》崩潰的「自由主義的國際主義」秩序 韓台合作應成爲契機",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5342955",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歡迎日本放寬武器出口 澤倫斯基盼儘快與高市早苗談防衛合作",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5346755",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "立陶宛外長：不全盤接受中方要求  續推進對台合作",
-          "url": "https://www.cna.com.tw/news/aipl/202602200163.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "自由開講》高市大勝的戰略意涵：中國施壓失效，美日挺台合作更明確",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5342841",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
-          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
-          "source": "TechNews",
-          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
-        },
-        {
-          "title": "菲參議員訪南海中業島　籲志同道合國家深化合作反制中國",
-          "url": "https://www.cna.com.tw/news/aopl/202602210154.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "印度減少依賴中國　攜手巴西加強關鍵礦產稀土合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602210151.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "專訪「台灣女婿」山口晉：將深化台日關係與區域安全合作",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347504",
-          "source": "自由時報",
-          "content": "自民黨眾議員山口晉在此次日本眾院大選中重返國會，因為具有「台灣女婿」的身分，選戰期間受到台灣高度關注。山口在接受本報專訪時表示，台灣社會的支持「令人感到光榮且成為巨...…"
         }
       ]
     },
