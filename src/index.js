@@ -234,5 +234,6 @@ ${cleanSummary}
     }
 }
 
-log('🕰️', `新聞機器人啟動 v${version}`);
-cron.schedule('0 * * * *', () => runTask());
+const cronSchedule = process.env.CRON_SCHEDULE || '0 * * * *';
+log('🕰️', `新聞機器人啟動 v${version} (排程: ${cronSchedule})`);
+cron.schedule(cronSchedule, () => runTask());
