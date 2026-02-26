@@ -1,153 +1,157 @@
 {
-  "updateTime": "2026-02-26T18:00:54.829Z",
-  "fullDateStr": "2026/2/27 · 更新於 02:00:54",
+  "updateTime": "2026-02-26T20:01:01.922Z",
+  "fullDateStr": "2026/2/27 · 更新於 04:01:01",
   "aiResult": {
-    "sentiment_score": -0.85,
+    "sentiment_score": -0.68,
     "dimensions": {
-      "policy": -0.65,
-      "market": -0.92,
-      "industry": -0.88,
-      "international": -0.75,
-      "technical": -0.95
+      "policy": 0.6,
+      "market": -0.85,
+      "industry": -0.4,
+      "international": -0.3,
+      "technical": -0.75
     },
     "entities": [
       {
-        "name": "英特格",
-        "sentiment": "negative",
-        "ticker": "ENTG-US"
+        "name": "Applovin Corp",
+        "sentiment": "positive",
+        "ticker": "APP-US"
       },
       {
-        "name": "新思科技",
-        "sentiment": "negative",
-        "ticker": "SNPS-US"
+        "name": "Alphabet (Google)",
+        "sentiment": "positive",
+        "ticker": "GOOGL-US"
       },
       {
-        "name": "川普",
+        "name": "Paypal控股",
+        "sentiment": "negative",
+        "ticker": "PYPL-US"
+      },
+      {
+        "name": "Adobe",
         "sentiment": "neutral",
-        "ticker": null
+        "ticker": "ADBE-US"
       },
       {
-        "name": "費城半導體指數",
-        "sentiment": "negative",
-        "ticker": "SOX"
+        "name": "Disney",
+        "sentiment": "neutral",
+        "ticker": "DIS-US"
       },
       {
-        "name": "伊朗",
-        "sentiment": "negative",
+        "name": "聯準會 (Fed)",
+        "sentiment": "positive",
         "ticker": null
       }
     ],
-    "summary": "<h3>【逆勢導航：恐慌蔓延至半導體骨幹，安全邊際正在浮現】</h3><p>今日市場情緒從昨日常態性的 AI 泡沫裂解，進一步惡化為<b>系統性流動性拋售</b>。費城半導體指數繼昨日重挫後，今日再度暴跌近 4%，核心主因已非僅限於輝達，而是延燒至上游材料供應商<b>英特格 (ENTG)</b> 與 EDA 設計工具龍頭<b>新思科技 (SNPS)</b>。這種不分青紅皂白的「通殺」現象，正是逆勢投資者尋找錯殺績優股的最佳窗口。</p><p><b>關鍵觀察與決策解析：</b><br>1. <b>結構性骨幹遭誤殺</b>：SNPS 與 ENTG 是半導體產業的基礎設施。SNPS 作為 EDA 龍頭，具有極高的轉換成本與護城河，今日 5% 的跌幅更像是避險基金的槓桿清算，而非基本面轉向。<br>2. <b>地緣政治溢價</b>：川普對伊朗的強硬態度與核談判僵局，誘發了能源市場的避險情緒（油價反彈）。這為大盤增添了宏觀不確定性，進一步壓抑估值。<br>3. <b>反向指標觀察</b>：目前市場已進入「極度恐慌」區間，雖資料未見「8zz」明確表態，但當前全線崩潰的氛圍已符合其反向獲利的「絕望底」徵兆。建議在大眾恐懼時，分批佈局具備長期剛需的半導體上游標的。</p>",
+    "summary": "<h3>【逆勢獵盤：系統性出清後的價值重估】</h3><p>今日市場情緒在費城半導體指數重挫逾 4% 的恐慌中，展現出明顯的<b>估值分化</b>。儘管指數受流動性拋售影響而低迷，但 <b>Applovin (APP)</b> 的逆勢大漲與 <b>Fed 理事米蘭</b> 的激進降息言論（主張降息 4 次），為市場築起了關鍵的安全邊際。這反映出資金正從過熱的半導體硬體，轉向具備現金流韌性的平台類股。</p><p><b>核心決策解析：</b><br>1. <b>政策轉向預期</b>：Fed 理事米蘭的鴿派發言顯示政策重心已由通膨轉向就業，這對超跌的成長股是極大的利多背書。<br>2. <b>AI 戰場延伸</b>：Google 推出 Nano Banana 2 強化 AI 影像能力，顯示 AI 競爭已進入應用層與智財權爭奪戰，建議關注 AI 軟體商的防禦價值。<br>3. <b>底部信號初現</b>：雖然今日未見「巴逆逆」等反向指標活躍，但費半的「通殺式」下跌已接近心理支撐位，Applovin 的反彈或是績優股脫鉤大盤的前兆。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體設備"
+        "category": "美股大盤"
       },
       {
         "id": 2,
-        "category": "地緣政治"
+        "category": "貨幣政策"
       },
       {
         "id": 3,
-        "category": "能源市場"
+        "category": "AI 應用"
       }
     ],
     "sector_stats": {
-      "tech": -0.95,
-      "finance": -0.45,
-      "manufacturing": -0.6,
-      "service": -0.3
+      "tech": -0.75,
+      "finance": -0.3,
+      "manufacturing": -0.5,
+      "service": -0.1
     },
     "events": [
       {
-        "title": "半導體上游供應鏈全面失守",
-        "summary": "英特格與新思科技同步大跌逾 5%，顯示市場恐慌已從下游應用轉移至產業最核心的材料與軟體層。",
+        "title": "Fed 鴿派救援：米蘭主張年內降息 4 次",
+        "summary": "聯準會理事米蘭認為通膨已非威脅，應積極降息 1% 以支撐就業市場，為市場提供流動性預期。",
+        "impact": "正面",
+        "related_news_ids": [
+          1
+        ]
+      },
+      {
+        "title": "費半系統性重挫 4%：半導體流動性危機",
+        "summary": "費城半導體指數連兩日暴跌，拋售潮蔓延至 PayPal 等權值股，反映市場極度避險。",
         "impact": "負面",
         "related_news_ids": [
           0,
+          2
+        ]
+      },
+      {
+        "title": "Google AI 影像工具 Nano Banana 2 升級",
+        "summary": "Alphabet 強化 AI 影像生成速度與解析度，並與 Gemini 整合，加劇與 OpenAI 的競爭。",
+        "impact": "正面",
+        "related_news_ids": [
           3
-        ]
-      },
-      {
-        "title": "美伊關係臨臨界點，中東戰雲密布",
-        "summary": "川普面臨外交與軍事抉擇，伊朗威脅封鎖荷莫茲海峽，地緣風險急遽升溫。",
-        "impact": "中性偏負面",
-        "related_news_ids": [
-          1,
-          2
-        ]
-      },
-      {
-        "title": "油市震盪與 OPEC+ 產能變數",
-        "summary": "核談判僵局支撐油價，但市場預期今年供應過剩，地緣與供需力量正劇烈拉鋸。",
-        "impact": "中性",
-        "related_news_ids": [
-          2
         ]
       }
     ],
     "relations": [
       {
-        "from": "新思科技",
-        "to": "費城半導體指數",
-        "type": "成分股拖累"
+        "from": "Fed",
+        "to": "美股市場",
+        "type": "流動性支撐"
       },
       {
-        "from": "川普",
-        "to": "伊朗",
-        "type": "政策施壓與軍事威脅"
+        "from": "Google",
+        "to": "OpenAI",
+        "type": "生成式 AI 競爭"
       },
       {
-        "from": "伊朗",
-        "to": "國際油價",
-        "type": "供應鏈威脅影響價格"
+        "from": "Google",
+        "to": "Disney",
+        "type": "版權爭議風險"
       },
       {
-        "from": "英特格",
-        "to": "半導體製造商",
-        "type": "關鍵材料供應"
+        "from": "OpenAI",
+        "to": "AI 晶片廠商",
+        "type": "算力需求拉動"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 英特格(ENTG-US)大跌5.05%，報130.41美元",
-      "url": "https://news.cnyes.com/news/id/6355750",
+      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大漲5.07%，報443美元",
+      "url": "https://news.cnyes.com/news/id/6355774",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;英特格(ENTG-US)截至台北時間27日01:40股價下跌6.93美元，報130.41美元，跌幅5.05%，成交量842,807（股），盤中最高價139.85美元、最低價130.41美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.06%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.7%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特格(ENTG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.32%&lt;/li&gt;    &lt;li&gt;近 1 月：+18.8%&lt;/li&gt;    &lt;li&gt;近 3 月：+84.85%&l",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間27日03:20股價上漲21.37美元，報443.00美元，漲幅5.07%，成交量4,091,237（股），盤中最高價443.00美元、最低價417.56美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.06%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.56%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.76%&lt;/li&gt;    &lt;li&gt;近 1 月：-25.",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "一紙協議還是一場戰爭？川普面臨伊朗抉擇",
-      "url": "https://news.cnyes.com/news/id/6355733",
+      "title": "Fed理事米蘭：通膨非問題、就業仍需支撐 今年應降息4次",
+      "url": "https://news.cnyes.com/news/id/6355680",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體設備",
+      "category": "美股大盤",
       "thumbnail": null,
-      "content": "&lt;p&gt;《華爾街日報》(WSJ)周四 (26 日) 報導，美國總統川普正站在人生與政治生涯可能最具指標性的十字路口：是與伊朗達成限制其核計畫的協議，還是走向一場後果難以預測的軍事衝突。外交談判能否成功，將成為左右其歷史定位的關鍵。&lt;/p&gt;\n\n&lt;p&gt;川普多次表示，希望達成一項嚴格協議，確保德黑蘭永遠無法發展核武，這可能成為一項具歷史意義的突破。但若選擇動武，無論是為了迫使伊朗讓步，或意圖動搖其政權，都可能引發延續整個總統任期的重大衝突。&lt;/p&gt;\n\n&lt;h6&gt;川普開出強硬條件 軍事選項浮現&lt;/h6&gt;\n\n&lt;p&gt;分析人士指出，這場對峙在某種程度上是川普親自塑造的局面。今年 1 月，他曾承諾支持伊朗街頭示威者，譴責德黑蘭鎮壓行動，但最終並未採取直接干預。&lt;/p&gt;\n\n&lt;p&gt;隨後川普對伊朗提出一系列要求，包括停止鈾濃縮、對彈道飛彈設下嚴格限制，以及終止對哈瑪斯與真主黨等區域代理武裝組織的支持。同時，美方也在伊朗周邊部署大量軍力，形成自 2003 年伊拉克戰爭以來中東最大規模的空中兵力集結。&lt;",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;綜合外媒周四 (26 日) 報導，聯準會 (Fed) 理事米蘭 (Stephen Miran) 表示，儘管 1 月就業成長強勁是一項「非常好的消息」，但現在宣告就業市場已完全無虞仍為時過早。他認為，今年仍有必要合計降息 1 個百分點，也就是進行 4 次每次 1 碼 (25 個基點) 的降息，以進一步支撐就業市場。&lt;/p&gt;\n\n&lt;p&gt;米蘭在接受《福斯商業頻道》專訪時指出，就業市場仍存在潛在風險，聯準會應持續提供支持。他強調，「我真的不認為我們現在面臨通膨問題」，近期通膨數據雖高於聯準會 2% 目標約 1 個百分點，但預期將放緩。&lt;/p&gt;\n\n&lt;p&gt;他表示，「我認為 4 次降息是合適的，而且我寧願早一點行動，而不是拖到之後。」這番談話顯示他對今年政策轉向的立場偏向積極。&lt;/p&gt;\n\n&lt;p&gt;針對民間信貸快速成長是否構成風險，米蘭則表示，目前尚未看到足以引發總體經濟憂慮的跡象。他認為，部分民間信貸擴張與銀行監管過於嚴格有關。&lt;/p&gt;\n\n&lt;p&gt;談及人工智慧 (AI) 對就業的影響，米蘭指出",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "美伊核談判緊張升溫 國際油價反彈",
-      "url": "https://news.cnyes.com/news/id/6355731",
+      "title": "盤中速報 - Paypal控股(PYPL-US)大跌5.14%，報44.89美元",
+      "url": "https://news.cnyes.com/news/id/6355755",
       "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
+      "category": "貨幣政策",
       "thumbnail": null,
-      "content": "&lt;p&gt;國際油價周四 (26 日) 走高，美國與伊朗在日內瓦舉行第三輪核談判之際，市場對談判前景轉趨謹慎，軍事衝突風險再度成為焦點。紐約西德州中級原油 (WTI) 一度回升至每桶 66 美元上方，抹去盤中最大 2.8% 的跌幅。此前伊朗國營媒體報導，德黑蘭不會允許濃縮鈾離境，令談判氣氛再添變數。&lt;/p&gt;\n\n&lt;p&gt;截稿前，4 月交割的布蘭特原油期貨上漲 1.38%，至每桶 71.83 美元；4 月交割的西德州原油期貨上漲 1.10%，至每桶 66.14 美元。&lt;/p&gt;\n\n&lt;p&gt;濃縮鈾問題仍是雙方主要僵局。美方先前表態，伊朗需將相關庫存運往第三國或進行稀釋處理。若無法就此達成協議，市場憂心美國可能在中東採取軍事行動，而該地區約占全球原油供應三分之一。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普已為談判設定最後期限，並警告若未能達成協議將面臨後果。同時，美方近期對逾 30 個涉及伊朗石油與武器銷售的實體祭出新一輪制裁，加大對德黑蘭的壓力。&lt;/p&gt;\n\n&lt;p&gt;盤中早些時候，油價曾因阿曼官員透露談判出現「具",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;Paypal控股(PYPL-US)截至台北時間27日01:55股價下跌2.43美元，報44.89美元，跌幅5.14%，成交量29,085,499（股），盤中最高價47.73美元、最低價44.88美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.09%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Paypal控股(PYPL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+13.44%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.96%&lt;/li&gt;    &lt;li&gt;近 ",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 新思科技(SNPS-US)大跌5.02%，報426.61美元",
-      "url": "https://news.cnyes.com/news/id/6355735",
+      "title": "Google推出Nano Banana 2 強化AI影像生成能力",
+      "url": "https://news.cnyes.com/news/id/6355732",
       "source": "鉅亨網(wd_stock)",
-      "category": "能源市場",
+      "category": "AI 應用",
       "thumbnail": null,
-      "content": "&lt;p&gt;新思科技(SNPS-US)截至台北時間27日00:38股價下跌22.56美元，報426.61美元，跌幅5.02%，成交量1,319,225（股），盤中最高價443.60美元、最低價426.01美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.17%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.83%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.44%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.53%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;新思科技(SNPS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.36%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.1%&lt;/li&gt;    &lt;li&gt;近 3 月：+9.",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;綜合外媒周四 (26 日) 報導，Google 母公司 Alphabet(GOOGL-US)宣布推出 Nano Banana 2，升級旗下爆紅的人工智慧 (AI) 影像生成工具，強調在速度、解析度與指令理解能力上全面提升，進一步強化其在生成式 AI 市場與 OpenAI 的競逐。&lt;/p&gt;\n\n&lt;p&gt;Google 表示，新版本將原本僅限 Pro 版用戶使用的部分功能開放給一般用戶，包括生成更高解析度影像、製作更精細的資訊圖表與數據視覺化內容，並能在圖像中嵌入更準確的文字，用於行銷示意圖或賀卡設計。該公司指出，Nano Banana 2 在理解複雜指令方面也有明顯改善，生成效率同步提升。&lt;/p&gt;\n\n&lt;p&gt;新版模型整合 Gemini 的即時知識能力，可調用最新資訊以提高圖像呈現準確度。Google 強調，Nano Banana 2 主打快速生成、精準遵循指令與整合影像搜尋能力；而 Nano Banana Pro 仍將保留，專門處理對事實準確度要求更高的高保真任務。&lt;/p&gt;\n\n&lt;p&gt;Nano Banana ",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     }
   ],
@@ -190,58 +194,57 @@
   ],
   "events": [
     {
-      "title": "半導體上游供應鏈全面失守",
-      "summary": "英特格與新思科技同步大跌逾 5%，顯示市場恐慌已從下游應用轉移至產業最核心的材料與軟體層。",
+      "title": "Fed 鴿派救援：米蘭主張年內降息 4 次",
+      "summary": "聯準會理事米蘭認為通膨已非威脅，應積極降息 1% 以支撐就業市場，為市場提供流動性預期。",
+      "impact": "正面",
+      "related_news_ids": [
+        1
+      ]
+    },
+    {
+      "title": "費半系統性重挫 4%：半導體流動性危機",
+      "summary": "費城半導體指數連兩日暴跌，拋售潮蔓延至 PayPal 等權值股，反映市場極度避險。",
       "impact": "負面",
       "related_news_ids": [
         0,
+        2
+      ]
+    },
+    {
+      "title": "Google AI 影像工具 Nano Banana 2 升級",
+      "summary": "Alphabet 強化 AI 影像生成速度與解析度，並與 Gemini 整合，加劇與 OpenAI 的競爭。",
+      "impact": "正面",
+      "related_news_ids": [
         3
-      ]
-    },
-    {
-      "title": "美伊關係臨臨界點，中東戰雲密布",
-      "summary": "川普面臨外交與軍事抉擇，伊朗威脅封鎖荷莫茲海峽，地緣風險急遽升溫。",
-      "impact": "中性偏負面",
-      "related_news_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "title": "油市震盪與 OPEC+ 產能變數",
-      "summary": "核談判僵局支撐油價，但市場預期今年供應過剩，地緣與供需力量正劇烈拉鋸。",
-      "impact": "中性",
-      "related_news_ids": [
-        2
       ]
     }
   ],
   "relations": [
     {
-      "from": "新思科技",
-      "to": "費城半導體指數",
-      "type": "成分股拖累"
+      "from": "Fed",
+      "to": "美股市場",
+      "type": "流動性支撐"
     },
     {
-      "from": "川普",
-      "to": "伊朗",
-      "type": "政策施壓與軍事威脅"
+      "from": "Google",
+      "to": "OpenAI",
+      "type": "生成式 AI 競爭"
     },
     {
-      "from": "伊朗",
-      "to": "國際油價",
-      "type": "供應鏈威脅影響價格"
+      "from": "Google",
+      "to": "Disney",
+      "type": "版權爭議風險"
     },
     {
-      "from": "英特格",
-      "to": "半導體製造商",
-      "type": "關鍵材料供應"
+      "from": "OpenAI",
+      "to": "AI 晶片廠商",
+      "type": "算力需求拉動"
     }
   ],
   "keywords7d": [
     {
       "word": "AI",
-      "count": 420,
+      "count": 423,
       "articles": [
         {
           "title": "Netflix 強推 AI 訓練條款，德國 600 名配音員集體拒簽",
@@ -307,7 +310,7 @@
     },
     {
       "word": "US",
-      "count": 412,
+      "count": 414,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Stellantis N.V(STLA-US)EPS預估上修至-0.53元，預估目標價為9.61元",
@@ -373,7 +376,7 @@
     },
     {
       "word": "美元",
-      "count": 245,
+      "count": 247,
       "articles": [
         {
           "title": "川普成立和平理事會砸百億美元重建加薩　西方反應冷淡",
@@ -703,7 +706,7 @@
     },
     {
       "word": "中速",
-      "count": 125,
+      "count": 127,
       "articles": [
         {
           "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.09%，報213.86美元",
@@ -901,7 +904,7 @@
     },
     {
       "word": "新高",
-      "count": 103,
+      "count": 104,
       "articles": [
         {
           "title": "雙利多 國際油價飆至6個月新高",
@@ -1165,7 +1168,7 @@
     },
     {
       "word": "伊朗",
-      "count": 79,
+      "count": 80,
       "articles": [
         {
           "title": "美伊情勢緊張　川普給伊朗15天期限達成協議",
@@ -1297,7 +1300,7 @@
     },
     {
       "word": "大跌",
-      "count": 75,
+      "count": 76,
       "articles": [
         {
           "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.09%，報213.86美元",
@@ -1561,7 +1564,7 @@
     },
     {
       "word": "MLB",
-      "count": 64,
+      "count": 65,
       "articles": [
         {
           "title": "MLB》首戰對台灣先發！山本由伸扛春訓開幕戰先發、大谷翔平打第一棒",
@@ -1621,6 +1624,72 @@
           "title": "MLB》想挑戰大谷「50-50」的洋基球星敲安！49億阿隆索夯轉隊首轟",
           "url": "https://sports.ltn.com.tw/news/breakingnews/5347019",
           "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "世界",
+      "count": 63,
+      "articles": [
+        {
+          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
+          "url": "https://news.cnyes.com/news/id/6347310",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "突破6G關鍵瓶頸 中國科學家首創「一體化融合通信」系統刷新三項世界紀錄",
+          "url": "https://news.cnyes.com/news/id/6347314",
+          "source": "鉅亨網(tech)",
+          "content": null
+        },
+        {
+          "title": "德國啤酒市場持續萎縮，世界最古老修道院釀酒廠易主",
+          "url": "https://technews.tw/2026/02/20/kloster-weltenburg-beer/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "1顆蛋藏著整個世界！北市萬華親子探索展 3/8前免費入場參觀",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346521",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "（獨家專訪3-2）從受創到掌控世界 雅各艾洛迪《“咆哮山莊”》重生危險與悲劇",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346703",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "廢死聯盟遭灌爆改限追蹤留言 許常德怒轟：全世界最廢",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5346738",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "足球迷看過來  跟著2026世界盃足球賽暢遊全美11座主辦城市",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5346825",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "只算工廠不算運輸的荒謬劇：成大林珮珺談被世界遺忘的海上碳排",
+          "url": "https://www.thenewslens.com/article/263064",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "同為美國成長世界級運動員　劉美賢谷愛凌評價兩極",
+          "url": "https://www.cna.com.tw/news/aopl/202602210076.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
+          "url": "https://www.cna.com.tw/news/aopl/202602210105.aspx",
+          "source": "中央社國際",
           "content": null
         }
       ]
@@ -1692,72 +1761,6 @@
       ]
     },
     {
-      "word": "世界",
-      "count": 62,
-      "articles": [
-        {
-          "title": "黃仁勳罕見逐桌敬酒 預告GTC 2026將推出「震驚世界」的新晶片",
-          "url": "https://news.cnyes.com/news/id/6347310",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "突破6G關鍵瓶頸 中國科學家首創「一體化融合通信」系統刷新三項世界紀錄",
-          "url": "https://news.cnyes.com/news/id/6347314",
-          "source": "鉅亨網(tech)",
-          "content": null
-        },
-        {
-          "title": "德國啤酒市場持續萎縮，世界最古老修道院釀酒廠易主",
-          "url": "https://technews.tw/2026/02/20/kloster-weltenburg-beer/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "1顆蛋藏著整個世界！北市萬華親子探索展 3/8前免費入場參觀",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346521",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "（獨家專訪3-2）從受創到掌控世界 雅各艾洛迪《“咆哮山莊”》重生危險與悲劇",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346703",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "廢死聯盟遭灌爆改限追蹤留言 許常德怒轟：全世界最廢",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5346738",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "足球迷看過來  跟著2026世界盃足球賽暢遊全美11座主辦城市",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5346825",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "只算工廠不算運輸的荒謬劇：成大林珮珺談被世界遺忘的海上碳排",
-          "url": "https://www.thenewslens.com/article/263064",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "同為美國成長世界級運動員　劉美賢谷愛凌評價兩極",
-          "url": "https://www.cna.com.tw/news/aopl/202602210076.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
-          "url": "https://www.cna.com.tw/news/aopl/202602210105.aspx",
-          "source": "中央社國際",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "開講",
       "count": 59,
       "articles": [
@@ -1825,7 +1828,7 @@
     },
     {
       "word": "積電",
-      "count": 58,
+      "count": 59,
       "articles": [
         {
           "title": "美股收盤》川普關稅確定違憲美股勁揚 台積電ADR大漲2.82％",
@@ -2419,7 +2422,7 @@
     },
     {
       "word": "宣布",
-      "count": 46,
+      "count": 47,
       "articles": [
         {
           "title": "賈永婕宣布好消息 大年初四「謝票」行蹤曝光",
@@ -2947,7 +2950,7 @@
     },
     {
       "word": "Google",
-      "count": 40,
+      "count": 41,
       "articles": [
         {
           "title": "Google揭秘AI時代人才價值　解讀問題能力最關鍵",
@@ -3008,6 +3011,72 @@
           "url": "https://infosecu.technews.tw/2026/02/21/unsecured-ai-apps-are-leaking-personal-data-of-android-users/",
           "source": "TechNews",
           "content": "數位隱私日益受關注，Google Play 某些人工智慧應用程式卻因安全漏洞引發嚴重數據洩露事件。Cybern [&#8230;]"
+        }
+      ]
+    },
+    {
+      "word": "3月",
+      "count": 40,
+      "articles": [
+        {
+          "title": "美歐關係緊張之際　范德賴恩3月將訪格陵蘭",
+          "url": "https://www.cna.com.tw/news/aopl/202602200044.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "日本政府提122兆日圓史上最大規模預算案  高市早苗拚3月底過關",
+          "url": "https://www.cna.com.tw/news/aopl/202602200101.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "高市因應過完年轉職潮 3月開辦大型徵才釋出千個職缺迎接轉職潮",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347071",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "3月肖媽祖！ 台中媽祖文化節起跑  聲五洲掌中劇團先登台",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347239",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "藝術歸鄉再啟篇章  竹縣「蔡蔭棠──藝術漫遊者」主題特展3月登場",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5347578",
+          "source": "自由時報",
+          "content": "去年「歸鄉─蔡蔭棠作品返鄉紀錄特展」得到熱烈迴響，「蔡蔭棠──藝術漫遊者」主題特展將於3月4日起，在新竹縣政府文化局美術館登場，縣長楊文科表示，這次特展除了致敬藝術前輩，更是新...…"
+        },
+        {
+          "title": "韓國授權音樂劇《有真與有真》 台韓雙版本卡司3月回歸",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348095",
+          "source": "自由時報",
+          "content": "\n\n\nC MUSICAL 自韓國引進的音樂劇《有真與有真》，改編自韓國知名作家李琴䬁熱銷30萬本的同名青少年文學著作，2025年以中文版正式演出大獲好評，今年將重返舞台，自3月...…"
+        },
+        {
+          "title": "曝國民黨3月第2週徵召李四川 黃國昌：願組成最強團隊",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348258",
+          "source": "自由時報",
+          "content": "民眾黨主席、新北市長參選人黃國昌今天上《誰來早餐》節目專訪，對於2026新北市長藍白合議題，黃國昌表示，國民黨3月第2週會徵召李四川，成為正式候選人，假設藍白合由李四川出線，是...…"
+        },
+        {
+          "title": "中科院長李世強中將3月屆齡退伍  軍政人士：軍職退伍可特聘續任",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5348418",
+          "source": "自由時報",
+          "content": "\n\n\n中科院去年至今已與多家知名國際軍工大廠簽署合作備忘錄，MIT軍事裝備除了可在地量產之外，進軍國際也是指日可待，不過，這些事情的推手丶中科院院長李世強中將即將在3月屆齡退伍...…"
+        },
+        {
+          "title": "不只助陣台灣燈會 橘色惡魔3月訪台行程全公開",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348557",
+          "source": "自由時報",
+          "content": "\n\n\n日本京都橘高校吹奏樂部26名121期校友樂團，將於3月訪台交流，行程重點今（23）日公布，包括嘉義的2026台灣燈會、台北圓山飯店及台北表演藝術中心大劇院。\n\n\n橘色惡魔...…"
+        },
+        {
+          "title": "10部哥吉拉代表作3月登台！北中南影迷連刷怪獸宇宙",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5348521",
+          "source": "自由時報",
+          "content": "誕生逾70年的「怪獸之王」哥吉拉，今年3月牠真的要登台了。\n\n\n這回不只是重返大銀幕，而是直接在台北、台中、高雄三城開戰，秀泰影城今（23）宣布與美麗華影城聯手宣布，3月2日至...…"
         }
       ]
     },
@@ -3276,6 +3345,72 @@
       ]
     },
     {
+      "word": "股市",
+      "count": 40,
+      "articles": [
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "歐股收紅　英、法股市指數創歷史新高",
+          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "美國最高法院駁回川普關稅政策 刺激股市上漲",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5346938",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台股封關期間主要股市表現與重點新聞",
+          "url": "https://news.cnyes.com/news/id/6347880",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
+          "url": "https://www.thenewslens.com/article/264788",
+          "source": "關鍵評論網",
+          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
+        },
+        {
+          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
+          "url": "https://news.cnyes.com/news/id/6343130",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
+        },
+        {
+          "title": "創紀錄！全球資金流向南韓、日本股市",
+          "url": "https://news.cnyes.com/news/id/6348650",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
+        },
+        {
+          "title": "南韓股市指數突破5900點 再創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
+        },
+        {
+          "title": "全球資金湧入拉丁美洲 股市迎來歷史性飆升",
+          "url": "https://news.cnyes.com/news/id/6349657",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;拉丁美洲股市正迎來十年來最強勁的增長勢頭。數據顯示，全球投資者正以十年來最快的速度湧入該地區，將巴西、哥倫比亞和墨西哥等國家的股市推向多年高點。&lt;/p&gt;\n\n&lt;p&gt;MSCI 新興市場拉丁美洲指數在 2026 年年初已飆升超過 20%，創下 11 年來的新高，這也是自 1991 年以來最強勁的開局紀錄。截至上周五，這一指數已連續九周上漲，創下 2017 年以來最長的連漲紀錄。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 全球財富管理新興市場美洲區首席投資官 Alejo Czerwonko 指出，拉丁美洲重新回到了投資版圖，其受關注程度是過去 10 到 15 年來未見的。他強調，在新興市場長期被低配的背景下，拉丁美洲的情況尤為顯著。&lt;/p&gt;\n\n&lt;p&gt;外部因素方面，美國最高法院推翻了川普總統的大規模全球關稅政策，這被視為該地區股市復甦的又一重大利多。Global X Management 的高級投資組合經理 Malcolm Dorson 認為，關稅政策的廢除增加了美國的赤字風險與政治不確定性，進一步壓低美元，進而推動拉丁美洲資產走強。&lt;/p&gt;\n\n&lt;p&gt;投資者正密切關注巴西和哥倫比亞即將舉行的總統大選。在巴西，市場普遍預期 10 月的選舉可能導致政策轉向，部分投資者看好反對派勝選帶來的利潤空間。&lt;/p&gt;\n\n&lt;p&gt;然而，政局仍具備不確定性，例如前總統波索納洛之子參選的消息曾一度引發市場拋售。在哥倫比亞，5 月大選前左翼候選人領先，引發了市場對資產價格可能惡化的擔憂。&lt;/p&gt;\n\n&lt;p&gt;除了政治因素，各國央行的降息預期也支撐了股市。交易員預計巴西央行將從 3 月起將目前高達 15% 的基準利率下調。而在墨西哥，央行目前將利率維持在 7%，暫停了已持續近兩年的寬鬆周期。&lt;/p&gt;\n\n&lt;p&gt;這波投資熱潮在美國上市的 ETF 中尤為明顯。BlackRock 的 iShares 拉丁美洲 40 ETF (ILF-US) 僅在 1 月份就吸引了超過 10 億美元的資金，總資產規模達到約 43 億美元。此外，億萬富翁 Stanley Druckenmiller 的家族辦公室也加入了買入巴西 ETF (EWZ-US) 的行列。&lt;/p&gt;\n\n&lt;p&gt;然而，外資的狂熱與本土投資者的謹慎形成鮮明對比。BlackRock 拉丁美洲策略主管 Benjamin Souza 指出，本土投資者通常比外資更擔心政治不確定性。儘管存在地緣政治風險，但包含 VanEck 在內的投資機構仍對拉美持積極態度，認為利率下調、政治轉型或大宗商品利多將持續支撐市場表現。&lt;/p&gt;\n"
+        },
+        {
+          "title": "關稅不確定性再現　歐洲股市收低",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349148",
+          "source": "自由時報",
+          "content": "美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。\n\n倫敦FTSE 100指數微跌2.15點或0.02%，收10684.7...…"
+        }
+      ]
+    },
+    {
       "word": "智慧",
       "count": 39,
       "articles": [
@@ -3338,138 +3473,6 @@
           "url": "https://3c.ltn.com.tw/news/64985",
           "source": "自由時報",
           "content": "放完農曆春節連假，不只家長準備回到工作崗位，孩子也即將開學。台灣大哥大推出 myFirst Fone S3 SE 4G 兒童智慧手錶，主打 9 大功能，搭配指定 4G 月租方案，最低專案價 0 元就能入手，鎖定開學季親子族群需求\n…"
-        }
-      ]
-    },
-    {
-      "word": "3月",
-      "count": 39,
-      "articles": [
-        {
-          "title": "美歐關係緊張之際　范德賴恩3月將訪格陵蘭",
-          "url": "https://www.cna.com.tw/news/aopl/202602200044.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "日本政府提122兆日圓史上最大規模預算案  高市早苗拚3月底過關",
-          "url": "https://www.cna.com.tw/news/aopl/202602200101.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "高市因應過完年轉職潮 3月開辦大型徵才釋出千個職缺迎接轉職潮",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347071",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "3月肖媽祖！ 台中媽祖文化節起跑  聲五洲掌中劇團先登台",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347239",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "藝術歸鄉再啟篇章  竹縣「蔡蔭棠──藝術漫遊者」主題特展3月登場",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5347578",
-          "source": "自由時報",
-          "content": "去年「歸鄉─蔡蔭棠作品返鄉紀錄特展」得到熱烈迴響，「蔡蔭棠──藝術漫遊者」主題特展將於3月4日起，在新竹縣政府文化局美術館登場，縣長楊文科表示，這次特展除了致敬藝術前輩，更是新...…"
-        },
-        {
-          "title": "韓國授權音樂劇《有真與有真》 台韓雙版本卡司3月回歸",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348095",
-          "source": "自由時報",
-          "content": "\n\n\nC MUSICAL 自韓國引進的音樂劇《有真與有真》，改編自韓國知名作家李琴䬁熱銷30萬本的同名青少年文學著作，2025年以中文版正式演出大獲好評，今年將重返舞台，自3月...…"
-        },
-        {
-          "title": "曝國民黨3月第2週徵召李四川 黃國昌：願組成最強團隊",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348258",
-          "source": "自由時報",
-          "content": "民眾黨主席、新北市長參選人黃國昌今天上《誰來早餐》節目專訪，對於2026新北市長藍白合議題，黃國昌表示，國民黨3月第2週會徵召李四川，成為正式候選人，假設藍白合由李四川出線，是...…"
-        },
-        {
-          "title": "中科院長李世強中將3月屆齡退伍  軍政人士：軍職退伍可特聘續任",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5348418",
-          "source": "自由時報",
-          "content": "\n\n\n中科院去年至今已與多家知名國際軍工大廠簽署合作備忘錄，MIT軍事裝備除了可在地量產之外，進軍國際也是指日可待，不過，這些事情的推手丶中科院院長李世強中將即將在3月屆齡退伍...…"
-        },
-        {
-          "title": "不只助陣台灣燈會 橘色惡魔3月訪台行程全公開",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348557",
-          "source": "自由時報",
-          "content": "\n\n\n日本京都橘高校吹奏樂部26名121期校友樂團，將於3月訪台交流，行程重點今（23）日公布，包括嘉義的2026台灣燈會、台北圓山飯店及台北表演藝術中心大劇院。\n\n\n橘色惡魔...…"
-        },
-        {
-          "title": "10部哥吉拉代表作3月登台！北中南影迷連刷怪獸宇宙",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5348521",
-          "source": "自由時報",
-          "content": "誕生逾70年的「怪獸之王」哥吉拉，今年3月牠真的要登台了。\n\n\n這回不只是重返大銀幕，而是直接在台北、台中、高雄三城開戰，秀泰影城今（23）宣布與美麗華影城聯手宣布，3月2日至...…"
-        }
-      ]
-    },
-    {
-      "word": "股市",
-      "count": 39,
-      "articles": [
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346943",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "歐股收紅　英、法股市指數創歷史新高",
-          "url": "https://www.cna.com.tw/news/afe/202602210005.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "美國最高法院駁回川普關稅政策 刺激股市上漲",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5346938",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台股封關期間主要股市表現與重點新聞",
-          "url": "https://news.cnyes.com/news/id/6347880",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
-          "url": "https://www.thenewslens.com/article/264788",
-          "source": "關鍵評論網",
-          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
-        },
-        {
-          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
-          "url": "https://news.cnyes.com/news/id/6343130",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
-        },
-        {
-          "title": "創紀錄！全球資金流向南韓、日本股市",
-          "url": "https://news.cnyes.com/news/id/6348650",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
-        },
-        {
-          "title": "南韓股市指數突破5900點 再創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
-        },
-        {
-          "title": "全球資金湧入拉丁美洲 股市迎來歷史性飆升",
-          "url": "https://news.cnyes.com/news/id/6349657",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;拉丁美洲股市正迎來十年來最強勁的增長勢頭。數據顯示，全球投資者正以十年來最快的速度湧入該地區，將巴西、哥倫比亞和墨西哥等國家的股市推向多年高點。&lt;/p&gt;\n\n&lt;p&gt;MSCI 新興市場拉丁美洲指數在 2026 年年初已飆升超過 20%，創下 11 年來的新高，這也是自 1991 年以來最強勁的開局紀錄。截至上周五，這一指數已連續九周上漲，創下 2017 年以來最長的連漲紀錄。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 全球財富管理新興市場美洲區首席投資官 Alejo Czerwonko 指出，拉丁美洲重新回到了投資版圖，其受關注程度是過去 10 到 15 年來未見的。他強調，在新興市場長期被低配的背景下，拉丁美洲的情況尤為顯著。&lt;/p&gt;\n\n&lt;p&gt;外部因素方面，美國最高法院推翻了川普總統的大規模全球關稅政策，這被視為該地區股市復甦的又一重大利多。Global X Management 的高級投資組合經理 Malcolm Dorson 認為，關稅政策的廢除增加了美國的赤字風險與政治不確定性，進一步壓低美元，進而推動拉丁美洲資產走強。&lt;/p&gt;\n\n&lt;p&gt;投資者正密切關注巴西和哥倫比亞即將舉行的總統大選。在巴西，市場普遍預期 10 月的選舉可能導致政策轉向，部分投資者看好反對派勝選帶來的利潤空間。&lt;/p&gt;\n\n&lt;p&gt;然而，政局仍具備不確定性，例如前總統波索納洛之子參選的消息曾一度引發市場拋售。在哥倫比亞，5 月大選前左翼候選人領先，引發了市場對資產價格可能惡化的擔憂。&lt;/p&gt;\n\n&lt;p&gt;除了政治因素，各國央行的降息預期也支撐了股市。交易員預計巴西央行將從 3 月起將目前高達 15% 的基準利率下調。而在墨西哥，央行目前將利率維持在 7%，暫停了已持續近兩年的寬鬆周期。&lt;/p&gt;\n\n&lt;p&gt;這波投資熱潮在美國上市的 ETF 中尤為明顯。BlackRock 的 iShares 拉丁美洲 40 ETF (ILF-US) 僅在 1 月份就吸引了超過 10 億美元的資金，總資產規模達到約 43 億美元。此外，億萬富翁 Stanley Druckenmiller 的家族辦公室也加入了買入巴西 ETF (EWZ-US) 的行列。&lt;/p&gt;\n\n&lt;p&gt;然而，外資的狂熱與本土投資者的謹慎形成鮮明對比。BlackRock 拉丁美洲策略主管 Benjamin Souza 指出，本土投資者通常比外資更擔心政治不確定性。儘管存在地緣政治風險，但包含 VanEck 在內的投資機構仍對拉美持積極態度，認為利率下調、政治轉型或大宗商品利多將持續支撐市場表現。&lt;/p&gt;\n"
-        },
-        {
-          "title": "關稅不確定性再現　歐洲股市收低",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349148",
-          "source": "自由時報",
-          "content": "美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。\n\n倫敦FTSE 100指數微跌2.15點或0.02%，收10684.7...…"
         }
       ]
     },
