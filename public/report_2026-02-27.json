@@ -1,198 +1,158 @@
 {
-  "updateTime": "2026-02-27T18:01:08.318Z",
-  "fullDateStr": "2026/2/28 · 更新於 02:01:08",
+  "updateTime": "2026-02-27T20:00:50.916Z",
+  "fullDateStr": "2026/2/28 · 更新於 04:00:50",
   "aiResult": {
-    "sentiment_score": -0.45,
+    "sentiment_score": -0.35,
     "dimensions": {
-      "policy": -0.6,
-      "market": -0.7,
-      "industry": -0.2,
-      "international": -0.3,
+      "policy": 0.2,
+      "market": -0.6,
+      "industry": -0.4,
+      "international": -0.2,
       "technical": -0.5
     },
     "entities": [
       {
-        "name": "美國銀行",
+        "name": "NVIDIA",
         "sentiment": "negative",
-        "ticker": "BAC-US"
+        "ticker": "NVDA.US"
       },
       {
-        "name": "美國合眾銀行",
+        "name": "Oracle",
         "sentiment": "negative",
-        "ticker": "USB-US"
+        "ticker": "ORCL.US"
       },
       {
-        "name": "Crowdstrike",
+        "name": "CoreWeave",
         "sentiment": "negative",
-        "ticker": "CRWD-US"
-      },
-      {
-        "name": "OpenAI",
-        "sentiment": "neutral",
         "ticker": null
       },
       {
-        "name": "Anthropic",
-        "sentiment": "neutral",
-        "ticker": null
+        "name": "FedEx",
+        "sentiment": "positive",
+        "ticker": "FDX.US"
       },
       {
-        "name": "大都會人壽",
-        "sentiment": "negative",
-        "ticker": "MET-US"
+        "name": "On Holding",
+        "sentiment": "positive",
+        "ticker": "ONON.US"
       },
       {
-        "name": "微軟",
+        "name": "Meta",
         "sentiment": "neutral",
-        "ticker": "MSFT-US"
+        "ticker": "META.US"
       }
     ],
-    "summary": "<h3>【宏觀報告：AI 資源排擠效應顯現，金融與傳統電子雙重受壓】</h3><p>今日市場情緒較昨日進一步惡化，整體呈現<b>顯著避險</b>特徵。延續昨日 PPI 超預期引發的通膨復燃擔憂，美股四大指數集體下挫，其中金融板塊成為重災區 <b>[ID:0, 2, 3]</b>，BAC 與 USB 等指標性銀行跌幅均達 5%，反映市場對長期高利率帶來的信貸成本上升及估值修正感到不安。</p><p><b>關鍵結構性轉變：</b> 根據 IDC 與 Counterpoint 的最新數據 <b>[ID:6]</b>，AI 資料中心對記憶體晶片的掠奪已產生<b>供應鏈內捲</b>，將顯著排擠 2026 年手機與 PC 的出貨量。這意味著 AI 成長不再是單純的加法，而是對傳統硬體產業的「結構性減法」。此外，OpenAI 與國防部的接觸 <b>[ID:1]</b> 顯示 AI 已進入主權安全領域，權力邊界爭奪將增加科技巨頭的政治風險。</p><p><b>風險提醒：</b> 需嚴密監控市場反向指標 <b>「巴逆逆/8zz」</b>。若其在此通膨焦慮點位強烈看空，配合金融股短線超跌，可能出現結構性反彈機會；反之，若其隨大盤轉向看多，則需警惕避險情緒二次探底。</p>",
+    "summary": "<h3>【宏觀報告：AI 敘事從「擴張夢」轉向「獲利檢驗」，關稅紅利現一線生機】</h3><p>今日市場情緒由昨日的<b>避險</b>轉向<b>深度價值修正</b>。比較昨日 IDC 提到的供應鏈內捲，今日市場核心矛盾已上移至<b>「AI 支出頂峰疑慮」[ID:3]</b>。即使 NVIDIA 財報超標，但估值倍數回落至 22 倍本益比，反映市場對 Hyper-scalers (Meta, MSFT) 未來資本支出能否轉化為獲利的極度不信任。</p><p><b>關鍵轉折點：</b>CoreWeave 雖大幅增加資本支出，但 Q1 展望低迷 <b>[ID:2]</b>，證實了 AI 基礎設施投入與營收實現之間存在顯著的<b>時間斷層</b>。此外，甲骨文 (ORCL) 的暴跌 <b>[ID:0]</b> 顯示拋售潮已擴散至傳統軟體巨頭。</p><p><b>避險指標觀察：</b>市場傳聞「巴逆逆」等反向指標開始對 AI 族群悲觀，從基金經理人角度看，這反而預示<b>短線殺估值已接近尾聲</b>。結構性機會出現在關稅訴訟 <b>[ID:1]</b>，若 1,700 億美元關稅成功退還，FedEx、Skechers 等高進口依賴企業將迎來巨大的<b>一次性現金流挹注</b>。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "宏觀經濟"
+        "category": "半導體與AI"
       },
       {
         "id": 2,
-        "category": "人工智慧"
+        "category": "全球貿易政策"
       },
       {
         "id": 3,
-        "category": "金融產業"
+        "category": "雲端運算"
       }
     ],
     "sector_stats": {
-      "tech": -0.3,
-      "finance": -0.9,
-      "manufacturing": -0.5,
-      "service": -0.2
+      "tech": -0.7,
+      "finance": -0.2,
+      "manufacturing": 0.3,
+      "service": 0.1
     },
     "events": [
       {
-        "title": "AI 供應鏈「霸凌」傳統電子",
-        "summary": "記憶體晶片因 AI 資料中心需求過於強勁，導致手機與 PC 零件遭斷供，預測 2026 年出貨量將創史上最大跌幅。",
+        "title": "AI 資本支出頂峰恐慌 (AI Capex Peak)",
+        "summary": "NVIDIA 財報利多出盡，市場憂心科技巨頭縮減 AI 投資，導致供應鏈集體殺估值。",
         "impact": "負面",
         "related_news_ids": [
-          6
-        ]
-      },
-      {
-        "title": "金融板塊系統性殺估值",
-        "summary": "受通膨復燃與降息預期破滅影響，傳統銀行與保險業股價集體崩跌，USB、BAC 與 MET 同步重挫 5%。",
-        "impact": "負面",
-        "related_news_ids": [
-          0,
           2,
           3
         ]
       },
       {
-        "title": "矽谷與五角大廈的 AI 權力博弈",
-        "summary": "OpenAI 試圖填補 Anthropic 的安全紅線僵局與國防部洽談，AI 發展正式進入國家安全體制化的新階段。",
-        "impact": "中性",
+        "title": "關稅撤銷訴訟風暴",
+        "summary": "逾兩千家企業集體提告追討 1,700 億美元關稅，可能為跨國企業帶來龐大退稅補貼。",
+        "impact": "正面",
         "related_news_ids": [
           1
+        ]
+      },
+      {
+        "title": "雲端基礎設施獲利斷層",
+        "summary": "CoreWeave 與 Oracle 表現不佳，顯示高額支出正吞噬短期利潤率。",
+        "impact": "負面",
+        "related_news_ids": [
+          0,
+          2
         ]
       }
     ],
     "relations": [
       {
-        "from": "AI 資料中心",
-        "to": "智慧型手機產業",
-        "type": "資源搶奪與排擠"
+        "from": "CoreWeave",
+        "to": "NVIDIA",
+        "type": "供應鏈下單"
       },
       {
-        "from": "OpenAI",
-        "to": "美國國防部",
-        "type": "政策性合作洽談"
+        "from": "Meta",
+        "to": "NVIDIA",
+        "type": "資本支出關聯"
       },
       {
-        "from": "Anthropic",
-        "to": "美國國防部",
-        "type": "理念與監管對峙"
+        "from": "川普政策",
+        "to": "FedEx",
+        "type": "法律訴訟爭議"
       },
       {
-        "from": "AI 技術",
-        "to": "主動型投資經理人",
-        "type": "效率提升與末位淘汰"
-      },
-      {
-        "from": "記憶體供應商",
-        "to": "超大規模資料中心 (Hyperscalers)",
-        "type": "優先供貨關係"
+        "from": "NVIDIA",
+        "to": "Oracle",
+        "type": "板塊情緒聯動"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 美國合眾銀行(USB-US)大跌5%，報54.4美元",
-      "url": "https://news.cnyes.com/news/id/6356349",
+      "title": "盤中速報 - 甲骨文(ORCL-US)大跌5%，報142.79美元",
+      "url": "https://news.cnyes.com/news/id/6356370",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國合眾銀行(USB-US)截至台北時間28日01:17股價下跌2.87美元，報54.40美元，跌幅5%，成交量4,707,758（股），盤中最高價56.50美元、最低價54.40美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.03%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.52%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美國合眾銀行(USB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.18%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.39%&lt;/li&gt;    &lt;li&gt;近 3 月：+14.5%&l",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;甲骨文(ORCL-US)截至台北時間28日02:50股價下跌7.52美元，報142.79美元，跌幅5%，成交量17,789,861（股），盤中最高價146.08美元、最低價142.78美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.23%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.28%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.98%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;甲骨文(ORCL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.53%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.94%&lt;/li&gt;    &lt;li&gt;近 3 月：-27.84%&",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "阿特曼：OpenAI洽談國防部合作 盼化解Anthropic僵局",
-      "url": "https://news.cnyes.com/news/id/6356322",
+      "title": "關稅違法後遺症來了！逾兩千件訴訟壓境 川普政策風暴未完",
+      "url": "https://news.cnyes.com/news/id/6356340",
       "source": "鉅亨網(wd_stock)",
-      "category": "宏觀經濟",
+      "category": "半導體與AI",
       "thumbnail": null,
-      "content": "&lt;p&gt;《華爾街日報》(WSJ)周五 (27 日) 報導，OpenAI 執行長阿特曼 (Sam Altman) 表示，公司正與美國國防部洽談合作事宜，盼在符合自身安全原則的前提下，讓旗下 AI 模型能部署於機密環境，並嘗試化解競爭對手 Anthropic 與五角大廈之間的僵局。&lt;/p&gt;\n\n&lt;p&gt;據了解，Anthropic 近幾周與國防部就 Claude 模型用途範圍陷入對峙。Anthropic 執行長阿莫戴 (Dario Amodei) 稍早宣布，公司拒絕國防部要求將技術開放於「所有合法用途」，並堅持保留禁止用於大規模國內監控與自主攻擊性武器的權利。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在致員工備忘錄中指出，OpenAI 正評估是否能在維持既有安全護欄的情況下，讓模型應用於機密場域，並希望找到一套可供整個產業參考的解決方案。他強調，目前尚未簽署任何合約，談判也可能破局。&lt;/p&gt;\n\n&lt;p&gt;根據備忘錄內容，OpenAI 若與國防部達成協議，將要求合約排除非法用途或不適合雲端部署的應用，例如國內監控與自主攻擊性武器。奧特曼表",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;美國最高法院日前裁定總統川普多數全球性關稅措施違法後，企業提告潮迅速升溫。根據《彭博》統計，相關關稅訴訟數量已突破 2,000 件，僅在裁決後數日內，就有逾百家公司新提訴訟，凸顯企業對於政府是否願意退還已徵收巨額關稅的疑慮。&lt;/p&gt;\n\n&lt;p&gt;包括聯邦快遞 (FDX-US)、Dyson、Dollar General(DG-US)、博士倫(Bausch + Lomb)、Brooks Brothers 與 Sol de Janeiro USA 等知名企業近期陸續提告；萊雅(L&rsquo;Oreal) 旗下子公司，以及 On Holding(ONON-US)與 Skechers 等鞋業公司，也加入訴訟行列，要求退還進口商品所繳納的關稅。企業盼在法院釐清退款機制前，保住自身權益。&lt;/p&gt;\n\n&lt;h6&gt;退款機制未明 企業搶先卡位&lt;/h6&gt;\n\n&lt;p&gt;最高法院並未就退款問題作出說明，相關賠償爭議將由位於紐約的美國國際貿易法院處理。司法部預計本週對後續法律程序提出意見，屆時將顯示政府對於加速或延緩處理退款訴求的態度",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 大都會人壽(MET-US)大跌5.02%，報72.13美元",
-      "url": "https://news.cnyes.com/news/id/6356343",
+      "title": "CoreWeave股價重挫2026年資本支出上看350億美元高於預期首季營收展望低於市場預期",
+      "url": "https://news.cnyes.com/news/id/6356362",
       "source": "鉅亨網(wd_stock)",
-      "category": "人工智慧",
+      "category": "全球貿易政策",
       "thumbnail": null,
-      "content": "&lt;p&gt;大都會人壽(MET-US)截至台北時間28日00:59股價下跌3.81美元，報72.13美元，跌幅5.02%，成交量2,437,440（股），盤中最高價75.21美元、最低價72.11美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.17%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.54%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.93%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.44%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;大都會人壽(MET-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.57%&lt;/li&gt;    &lt;li&gt;近 1 月：-2.41%&lt;/li&gt;    &lt;li&gt;近 3 月：-1.34%&",
-      "timeStr": "上午02:01",
+      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6356362/o/6e7f10b2e2cd9d074c4ef802dffe35ac.jpg&quot; alt=&quot;Getty Images&quot; /&gt;&lt;p&gt;2026年02月28日（優分析／產業數據中心報導）⸺ AI雲端運算業者CoreWeave公布財報後，股價重挫18%。市場反應主要來自公司大幅提高2026年資本支出規模，並釋出低於市場預期的首季營收展望。&lt;/p&gt;\n&lt;p&gt;CoreWeave表示，2026年資本支出預估將介於300至350億美元之間，明顯高於2025年的148.9億美元，增幅超過一倍。公司指出，支出大幅增加主要來自輝達Nvidia(NVDA-US)晶片採購，以及資料中心基礎設施擴建。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6356362/o/d98c283dc258b763b09e30082eccd481.j",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 美國銀行(BAC-US)大跌5.04%，報49.66美元",
-      "url": "https://news.cnyes.com/news/id/6356342",
+      "title": "財報超神股價卻大跌 輝達怎麼了？",
+      "url": "https://news.cnyes.com/news/id/6356166",
       "source": "鉅亨網(wd_stock)",
-      "category": "金融產業",
+      "category": "雲端運算",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國銀行(BAC-US)截至台北時間28日00:57股價下跌2.64美元，報49.66美元，跌幅5.04%，成交量21,615,486（股），盤中最高價51.41美元、最低價49.66美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.18%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.58%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.31%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美國銀行(BAC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.63%&lt;/li&gt;    &lt;li&gt;近 3 月：-2.45%&l",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "AI成投資神器？霍華馬克斯揭示人類不被取代的優勢",
-      "url": "https://news.cnyes.com/news/id/6355784",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;有關人工智慧 (AI) 威脅白領工作的擔憂是近期熱議話題，財富管理業也是受害者之一，對此投資大師、資產管理公司橡樹資本 (Oaktree Capital) 聯合董事長霍華 &middot; 馬克斯 (Howard Marks) 認為，AI 擅於吸收數據並找出模式，因此可能會像指數基金一樣，把許多投資人排擠出財管業以外。&lt;/p&gt;\n\n&lt;p&gt;霍華 &middot; 馬克斯在一封藉由 Anthropic Claude 模型協助撰寫的備忘錄中指出，最終能留下來的基金經理人，將是能在 AI 弱項之處表現卓越的專家，像是擁有評估企業管理層、新產品重要性等因素的能力。&lt;/p&gt;\n\n&lt;p&gt;不僅如此，當遇到無法與既有模式比對的情況，這些人也比 AI 更擅長應對。&lt;/p&gt;\n\n&lt;p&gt;霍華 &middot; 馬克斯說：「偉大的投資人絕不只是高速運轉、摒棄個人情感的數據處理器。他們必須在 Claude 承認 AI 可能最薄弱的領域具備優勢：因應新出現的情勢變化。這類變化因為缺乏充分的歷史經驗，難以歸納出可靠模式（因此也無法讓 ",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Crowdstrike控股(CRWD-US)大跌5.05%，報361.87美元",
-      "url": "https://news.cnyes.com/news/id/6356336",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Crowdstrike控股(CRWD-US)截至台北時間28日00:40股價下跌19.23美元，報361.87美元，跌幅5.05%，成交量1,672,939（股），盤中最高價373.50美元、最低價361.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.19%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.68%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.91%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.3%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Crowdstrike控股(CRWD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-13.94%&lt;/li&gt;    &lt;li&gt;近 1 月：-22.42%&lt;/li&gt;    ",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "晶片被AI搶光！今年智慧型手機出貨恐創史上最大跌幅",
-      "url": "https://news.cnyes.com/news/id/6356182",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《CNBC》周五 (27 日) 報導，隨著記憶體供應持續吃緊、價格攀升，分析機構預測 2026 年全球智慧手機市場恐出現歷來最大跌幅。國際數據資訊公司 (IDC) 指出，在記憶體危機惡化下，2026 年全球個人電腦 (PC) 與智慧手機市場恐分別萎縮 11% 與 13%。市調機構 Counterpoint Research 則預估，2026 年全球智慧手機出貨量將年減 12%，創下「有紀錄以來最大跌幅」，全年出貨規模恐降至 2013 年以來最低水準。&lt;/p&gt;\n\n&lt;p&gt;這波下修預測，主因在於科技業者為搶攻人工智慧 (AI) 商機，大舉投入資料中心與 AI 基礎建設，導致記憶體晶片庫存緊縮。智慧手機與 PC 等高度仰賴記憶體的產品線，正面臨晶片分配被邊緣化的壓力。&lt;/p&gt;\n\n&lt;h6&gt;AI 排擠效應加劇 記憶體價格飆升&lt;/h6&gt;\n\n&lt;p&gt;Counterpoint 裝置與生態系研究總監 Tarun Pathak 表示，記憶體廠商要求智慧手機業者排在超大規模資料中心業者 (Hyperscalers) 之後，",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;輝達 (NVDA-US) 在最新財報中繳出亮眼成績單，營收與財測雙雙優於市場預期，展現強勁成長動能。然而，股價卻在財報後重挫，估值水準甚至看似接近「價值股」，形成基本面與股價表現之間的明顯落差。&lt;/p&gt;\n\n&lt;h6&gt;財報亮眼卻股價重挫 市值兩日蒸發約 3,600 億美元&lt;/h6&gt;\n\n&lt;p&gt;輝達股價在財報公布後的周四下跌 5.5%，創 4 月中旬以來最大單日跌幅，並拖累標普 500 指數走低，週五再跌約 2%。短短兩日，市值蒸發約 3,600 億美元。&lt;/p&gt;\n\n&lt;p&gt;儘管股價回落，該公司基本面仍強勁。輝達預估第一季營收約 780 億美元，大幅高於市場原先預期的約 730 億美元，帶動分析師上修獲利預測。不過，以預估本益比計算，輝達目前僅約 22 倍，遠低於過去五年平均的 37 倍，也幾乎與標普 500 整體水準相當。隨著獲利預期持續上調，其估值倍數還可能進一步下滑。&lt;/p&gt;\n\n&lt;p&gt;數據顯示，輝達過去 12 個月營收成長率達 65%，在標普 500 成分股中排名第三快，但估值",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     }
   ],
@@ -235,57 +195,52 @@
   ],
   "events": [
     {
-      "title": "AI 供應鏈「霸凌」傳統電子",
-      "summary": "記憶體晶片因 AI 資料中心需求過於強勁，導致手機與 PC 零件遭斷供，預測 2026 年出貨量將創史上最大跌幅。",
+      "title": "AI 資本支出頂峰恐慌 (AI Capex Peak)",
+      "summary": "NVIDIA 財報利多出盡，市場憂心科技巨頭縮減 AI 投資，導致供應鏈集體殺估值。",
       "impact": "負面",
       "related_news_ids": [
-        6
-      ]
-    },
-    {
-      "title": "金融板塊系統性殺估值",
-      "summary": "受通膨復燃與降息預期破滅影響，傳統銀行與保險業股價集體崩跌，USB、BAC 與 MET 同步重挫 5%。",
-      "impact": "負面",
-      "related_news_ids": [
-        0,
         2,
         3
       ]
     },
     {
-      "title": "矽谷與五角大廈的 AI 權力博弈",
-      "summary": "OpenAI 試圖填補 Anthropic 的安全紅線僵局與國防部洽談，AI 發展正式進入國家安全體制化的新階段。",
-      "impact": "中性",
+      "title": "關稅撤銷訴訟風暴",
+      "summary": "逾兩千家企業集體提告追討 1,700 億美元關稅，可能為跨國企業帶來龐大退稅補貼。",
+      "impact": "正面",
       "related_news_ids": [
         1
+      ]
+    },
+    {
+      "title": "雲端基礎設施獲利斷層",
+      "summary": "CoreWeave 與 Oracle 表現不佳，顯示高額支出正吞噬短期利潤率。",
+      "impact": "負面",
+      "related_news_ids": [
+        0,
+        2
       ]
     }
   ],
   "relations": [
     {
-      "from": "AI 資料中心",
-      "to": "智慧型手機產業",
-      "type": "資源搶奪與排擠"
+      "from": "CoreWeave",
+      "to": "NVIDIA",
+      "type": "供應鏈下單"
     },
     {
-      "from": "OpenAI",
-      "to": "美國國防部",
-      "type": "政策性合作洽談"
+      "from": "Meta",
+      "to": "NVIDIA",
+      "type": "資本支出關聯"
     },
     {
-      "from": "Anthropic",
-      "to": "美國國防部",
-      "type": "理念與監管對峙"
+      "from": "川普政策",
+      "to": "FedEx",
+      "type": "法律訴訟爭議"
     },
     {
-      "from": "AI 技術",
-      "to": "主動型投資經理人",
-      "type": "效率提升與末位淘汰"
-    },
-    {
-      "from": "記憶體供應商",
-      "to": "超大規模資料中心 (Hyperscalers)",
-      "type": "優先供貨關係"
+      "from": "NVIDIA",
+      "to": "Oracle",
+      "type": "板塊情緒聯動"
     }
   ],
   "keywords7d": [
@@ -357,7 +312,7 @@
     },
     {
       "word": "US",
-      "count": 436,
+      "count": 437,
       "articles": [
         {
           "title": "《TAIPEI TIMES》 US tariff ruling unlikely to severely affect Taiwan",
@@ -423,7 +378,7 @@
     },
     {
       "word": "美元",
-      "count": 256,
+      "count": 258,
       "articles": [
         {
           "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
@@ -621,7 +576,7 @@
     },
     {
       "word": "中速",
-      "count": 137,
+      "count": 138,
       "articles": [
         {
           "title": "盤中速報 - 櫃買市場加權指數上漲5.94點至303.65點，漲幅2%",
@@ -885,7 +840,7 @@
     },
     {
       "word": "川普",
-      "count": 107,
+      "count": 109,
       "articles": [
         {
           "title": "〈美股盤後〉川普全球關稅被推翻 美股歡漲 三大指數周線攀高",
@@ -1215,7 +1170,7 @@
     },
     {
       "word": "大跌",
-      "count": 91,
+      "count": 93,
       "articles": [
         {
           "title": "盤中速報 - 直覺(INTU-US)大跌5.01%，報361.5美元",
@@ -1347,7 +1302,7 @@
     },
     {
       "word": "伊朗",
-      "count": 82,
+      "count": 83,
       "articles": [
         {
           "title": "多國敦促在伊朗公民儘快撤離",
@@ -2468,6 +2423,72 @@
       ]
     },
     {
+      "word": "政策",
+      "count": 46,
+      "articles": [
+        {
+          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美關稅政策再起風波　魯拉：巴西不接受外來壓力",
+          "url": "https://www.cna.com.tw/news/aopl/202602210056.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅陰影 清水岩寺工商籤示警：美政策多變台灣須步步為營",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347127",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普將訪中遇關稅裁定添變數　美貿易政策成焦點",
+          "url": "https://www.cna.com.tw/news/aopl/202602210078.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
+          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "川普關稅被判違法 許毓仁提3重點：美最在意維持承諾可信、政策連貫",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347314",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普稱將提升全球關稅到15%！誓言延續「讓美國再次偉大」政策",
+          "url": "https://news.cnyes.com/news/id/6348111",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國總統川普表示，在經過對美國最高法院週五（20 日）就關稅問題所作出之裁決進行全面、詳盡且完整的審視後，他決定將把一天前宣布的全球 10% 關稅提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，川普週六（21 日）在 Truth Social 發文指出，身為美國總統，他將自即日起，把對各國課徵的全球 10% 關稅，提高至完全被允許、且經法律檢驗的 15% 水準。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：川普Truth Social)&quot; data-height=&quot;498&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.1686746987951808&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6348111/m/e1f9972f56844f4805284ab11f68f93b.jpg&quot; data-width=&quot;582&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6348111/l/e1f9972f56844f4805284ab11f68f93b.jpg&quot;&gt;\n&lt;figcaption&gt;(圖：&lt;a href=&quot;https://truthsocial.com/@realDonaldTrump/posts/116109447886304328&quot;&gt;川普 Truth Social&lt;/a&gt;)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;他並強調，直到他上任，過去數十年來，其中許多國家一直在「敲詐」美國而未受懲罰。&lt;/p&gt;\n\n&lt;p&gt;川普還表示，在接下來的數個月內，川普政府將確定並公布新的、符合法律規範的關稅措施，持續推動其極為成功的「讓美國再次偉大」進程，且將讓美國比以往更加偉大。&lt;/p&gt;\n\n&lt;p&gt;此前，就在最高法院於週五作出裁決數小時後，川普隨即對外國商品課徵 10% 的全球性關稅，以維持其貿易政策議程。&lt;/p&gt;\n"
+        },
+        {
+          "title": "德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策",
+          "url": "https://news.cnyes.com/news/id/6348120",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;德國總理梅爾茨周六（21 日）表示，他將在一周多後前往華盛頓，同美國總統川普討論美國關稅政策，將以協調一致的歐盟立場與其展開對話。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨當天在斯圖加特出席基民盟黨代會後接受媒體採訪時作出上述表態。此前美國聯邦最高法院判定川普政府依據《國際緊急經濟權力法》實施的關稅措施違法。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨稱，這一判定「引人關注，也在許多人意料之中」，顯示美國的權力分立機制仍在發揮作用。&lt;/p&gt;\n\n&lt;p&gt;不過，他指出，這項判定不涉及針對特定行業徵收的「行業性關稅」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，赴美前德國將同歐盟夥伴進行協調。「關稅政策屬於歐盟職權，不是單個成員國的事務。我將以協調一致的歐洲立場前往華盛頓。」&lt;/p&gt;\n\n&lt;p&gt;他強調，將向美方明確表達關稅「對各方都有損害」，尤其會對徵稅國家造成影響，「德國承受的是出口減少的壓力，但最終買單的是美國消費者」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，美國法院的判定有助於減輕德國經濟的關稅負擔，但仍需關注「行業性關稅」的影響。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨說，此次訪美行程已籌劃多時，預定 3 月初成行。這將是他自 2025 年 6 月在白宮會見川普以來再次訪美。&lt;/p&gt;\n"
+        },
+        {
+          "title": "川普仍有其他法源維持關稅政策 林俊憲：藍白刻意渲染恐慌",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347896",
+          "source": "自由時報",
+          "content": "美國聯邦最高法院20日針對美國總統川普援引「國際緊急經濟權力法」（IEEPA）課徵關稅發布判決，裁定這項關稅違法，不得再以該法作為關稅法源。對此，在野藍白兩黨21日均要求政府迅速...…"
+        },
+        {
+          "title": "川普關稅政策受挫 印度喊停美印貿易談判",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348009",
+          "source": "自由時報",
+          "content": "\n\n\n印度貿易部門消息人士今（22）日透露，在美國最高法院裁定美國總統川普實施的對等關稅無效之後，印度政府認為關稅前途未卜，因此取消了週日派貿易代表出訪華府的計畫。\n\n\n《路透》...…"
+        }
+      ]
+    },
+    {
       "word": "兄弟",
       "count": 46,
       "articles": [
@@ -2728,72 +2749,6 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5350134",
           "source": "自由時報",
           "content": "\n\n\n日職軟銀鷹今稍早來台，備戰明天對戰中信兄弟、後天交手台灣隊的交流賽。軟銀25歲右投松本晴預計明天將會在對決兄弟的比賽中登板，今天他在台北大巨蛋接受日媒訪問，坦言很享受在異鄉...…"
-        }
-      ]
-    },
-    {
-      "word": "政策",
-      "count": 45,
-      "articles": [
-        {
-          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美關稅政策再起風波　魯拉：巴西不接受外來壓力",
-          "url": "https://www.cna.com.tw/news/aopl/202602210056.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅陰影 清水岩寺工商籤示警：美政策多變台灣須步步為營",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347127",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普將訪中遇關稅裁定添變數　美貿易政策成焦點",
-          "url": "https://www.cna.com.tw/news/aopl/202602210078.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
-          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅被判違法 許毓仁提3重點：美最在意維持承諾可信、政策連貫",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347314",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普稱將提升全球關稅到15%！誓言延續「讓美國再次偉大」政策",
-          "url": "https://news.cnyes.com/news/id/6348111",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普表示，在經過對美國最高法院週五（20 日）就關稅問題所作出之裁決進行全面、詳盡且完整的審視後，他決定將把一天前宣布的全球 10% 關稅提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，川普週六（21 日）在 Truth Social 發文指出，身為美國總統，他將自即日起，把對各國課徵的全球 10% 關稅，提高至完全被允許、且經法律檢驗的 15% 水準。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：川普Truth Social)&quot; data-height=&quot;498&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.1686746987951808&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6348111/m/e1f9972f56844f4805284ab11f68f93b.jpg&quot; data-width=&quot;582&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6348111/l/e1f9972f56844f4805284ab11f68f93b.jpg&quot;&gt;\n&lt;figcaption&gt;(圖：&lt;a href=&quot;https://truthsocial.com/@realDonaldTrump/posts/116109447886304328&quot;&gt;川普 Truth Social&lt;/a&gt;)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;他並強調，直到他上任，過去數十年來，其中許多國家一直在「敲詐」美國而未受懲罰。&lt;/p&gt;\n\n&lt;p&gt;川普還表示，在接下來的數個月內，川普政府將確定並公布新的、符合法律規範的關稅措施，持續推動其極為成功的「讓美國再次偉大」進程，且將讓美國比以往更加偉大。&lt;/p&gt;\n\n&lt;p&gt;此前，就在最高法院於週五作出裁決數小時後，川普隨即對外國商品課徵 10% 的全球性關稅，以維持其貿易政策議程。&lt;/p&gt;\n"
-        },
-        {
-          "title": "德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策",
-          "url": "https://news.cnyes.com/news/id/6348120",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;德國總理梅爾茨周六（21 日）表示，他將在一周多後前往華盛頓，同美國總統川普討論美國關稅政策，將以協調一致的歐盟立場與其展開對話。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨當天在斯圖加特出席基民盟黨代會後接受媒體採訪時作出上述表態。此前美國聯邦最高法院判定川普政府依據《國際緊急經濟權力法》實施的關稅措施違法。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨稱，這一判定「引人關注，也在許多人意料之中」，顯示美國的權力分立機制仍在發揮作用。&lt;/p&gt;\n\n&lt;p&gt;不過，他指出，這項判定不涉及針對特定行業徵收的「行業性關稅」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，赴美前德國將同歐盟夥伴進行協調。「關稅政策屬於歐盟職權，不是單個成員國的事務。我將以協調一致的歐洲立場前往華盛頓。」&lt;/p&gt;\n\n&lt;p&gt;他強調，將向美方明確表達關稅「對各方都有損害」，尤其會對徵稅國家造成影響，「德國承受的是出口減少的壓力，但最終買單的是美國消費者」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，美國法院的判定有助於減輕德國經濟的關稅負擔，但仍需關注「行業性關稅」的影響。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨說，此次訪美行程已籌劃多時，預定 3 月初成行。這將是他自 2025 年 6 月在白宮會見川普以來再次訪美。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普仍有其他法源維持關稅政策 林俊憲：藍白刻意渲染恐慌",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347896",
-          "source": "自由時報",
-          "content": "美國聯邦最高法院20日針對美國總統川普援引「國際緊急經濟權力法」（IEEPA）課徵關稅發布判決，裁定這項關稅違法，不得再以該法作為關稅法源。對此，在野藍白兩黨21日均要求政府迅速...…"
-        },
-        {
-          "title": "川普關稅政策受挫 印度喊停美印貿易談判",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348009",
-          "source": "自由時報",
-          "content": "\n\n\n印度貿易部門消息人士今（22）日透露，在美國最高法院裁定美國總統川普實施的對等關稅無效之後，印度政府認為關稅前途未卜，因此取消了週日派貿易代表出訪華府的計畫。\n\n\n《路透》...…"
         }
       ]
     },
