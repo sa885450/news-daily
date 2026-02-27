@@ -1,151 +1,146 @@
 {
-  "updateTime": "2026-02-27T10:01:12.033Z",
-  "fullDateStr": "2026/2/27 · 更新於 18:01:12",
+  "updateTime": "2026-02-27T12:00:51.359Z",
+  "fullDateStr": "2026/2/27 · 更新於 20:00:51",
   "aiResult": {
-    "sentiment_score": 0.45,
+    "sentiment_score": -0.15,
     "dimensions": {
-      "policy": -0.3,
-      "market": 0.7,
-      "industry": 0.8,
-      "international": 0.4,
-      "technical": 0.6
+      "policy": 0.1,
+      "market": -0.4,
+      "industry": -0.2,
+      "international": -0.1,
+      "technical": -0.5
     },
     "entities": [
       {
-        "name": "Samsung Electronics",
-        "sentiment": "positive",
-        "ticker": "005930.KS"
+        "name": "NVIDIA",
+        "sentiment": "negative",
+        "ticker": "NVDA.US"
       },
       {
-        "name": "SK Hynix",
-        "sentiment": "positive",
-        "ticker": "000660.KS"
-      },
-      {
-        "name": "Salesforce",
-        "sentiment": "positive",
-        "ticker": "CRM-US"
-      },
-      {
-        "name": "Warner Bros Discovery",
+        "name": "TSMC",
         "sentiment": "neutral",
-        "ticker": "WBD-US"
+        "ticker": "2330.TW"
       },
       {
-        "name": "Netflix",
-        "sentiment": "neutral",
-        "ticker": "NFLX-US"
-      },
-      {
-        "name": "Anthropic",
+        "name": "Apple",
         "sentiment": "positive",
+        "ticker": "AAPL.US"
+      },
+      {
+        "name": "Barclays",
+        "sentiment": "negative",
+        "ticker": "BARC.L"
+      },
+      {
+        "name": "Market Financial Solutions",
+        "sentiment": "negative",
         "ticker": null
+      },
+      {
+        "name": "Amazon",
+        "sentiment": "negative",
+        "ticker": "AMZN.US"
       }
     ],
-    "summary": "<h3>【宏觀報告：AI 投資從「基礎設施單一化」走向「全球化與應用化」】</h3><p>今日市場展現了強勁的<b>板塊輪動與資金擴散</b>。相較於昨日戴爾財報帶來的基建驗證，今日焦點轉移至南韓記憶體雙雄 [ID:0] 及軟體應用端的估值修復 [ID:2]。全球資金正透過 ETF 大舉湧入三星與 SK 海力士，顯示 AI 算力需求已轉化為記憶體硬指標，甚至引發中國 QDII 基金的非理性溢價。</p><p>軟體端方面，<b>Anthropic</b> 推出的 Claude Cowork 成功扭轉了「軟體公司將被 AI 取代」的恐慌，重新定位 <b>Salesforce</b> 等公司為 AI 整合平台的受益者。此變化顯示市場對 AI 的敘事已從硬體軍備競賽轉向軟體價值發現。此外，媒體產業的 <b>WBD 併購案</b> 因加州監管機構介入而受阻 [ID:1]，提醒投資人併購溢價中隱含的政策風險。</p><p><b>特殊指標觀察</b>：今日資料中未見「8zz」或「巴逆逆」等反向指標訊號，顯示目前趨勢多由機構資金與產業實質利多驅動，短線尚無群眾情緒過熱的崩盤預兆，操作上應保持<b>順勢策略</b>。</p>",
+    "summary": "<h3>【宏觀報告：AI 估值重塑與信貸風險的雙重考驗】</h3><p>今日市場情緒與昨日的擴散性成長不同，呈現明顯的<b>估值修正與避險轉向</b>。雖然昨日 AI 投資正走向應用化，但今日 <b>NVIDIA [ID:1]</b> 財報後的重挫顯示市場對 AI 基礎設施的「獲利邊際遞減」產生恐懼，特別是當大型客戶如 Amazon 與 Meta 的自由現金流受壓時，龐大的採購義務將成為資產負債表的潛在炸彈。技術面上，NVDA 失守月線，標誌著短線多頭結構破壞。</p><p>金融端方面，倫敦 <b>MFS 信貸事件 [ID:0]</b> 揭露了影子銀行體系中「雙重質押」的誠信風險，巴克萊與 Jefferies 等機構的曝險雖然在可控範圍，但加劇了市場對信貸緊縮的擔憂。地緣政治方面，川普對伊言論與情報界的分歧 [ID:2] 雖然增加了噪音，但也暗示了政策不確定性溢價。</p><p><b>經理人備註</b>：目前市場正處於「AI 信仰過熱後的冷靜期」。雖然目前未見「巴逆逆」等極端反向指標發送買進訊號，但資金已明顯流向 <b>Apple [AAPL]</b> 等低 AI 曝險避險港，操作上建議降低槓桿，靜待信貸風險與 AI 評價面回穩。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與記憶體"
+        "category": "科技硬體"
       },
       {
         "id": 2,
-        "category": "AI 軟體應用"
+        "category": "金融信貸"
       },
       {
         "id": 3,
-        "category": "媒體整併與監管"
+        "category": "地緣政治"
       }
     ],
     "sector_stats": {
-      "tech": 0.85,
-      "finance": 0.3,
-      "manufacturing": 0.7,
-      "service": -0.1
+      "tech": -0.5,
+      "finance": -0.3,
+      "manufacturing": 0,
+      "service": 0.3
     },
     "events": [
       {
-        "title": "AI 記憶體全球吸金潮",
-        "summary": "全球資金透過韓股 ETF 瘋搶三星與海力士，反映 AI 硬體需求由邏輯晶片擴散至存儲端。",
-        "impact": "正面",
+        "title": "AI 巨頭資本支出與現金流的悖論",
+        "summary": "NVIDIA 強勁財報無法抵銷市場對大型科技公司自由現金流萎縮與巨額採購承諾的憂慮。",
+        "impact": "負面",
+        "related_news_ids": [
+          1
+        ]
+      },
+      {
+        "title": "影子銀行信貸違約風險浮現",
+        "summary": "英國 MFS 爆雷事件揭示非銀行融資體系的透明度與資產擔保缺口問題，衝擊華爾街銀行。",
+        "impact": "負面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "軟體股「救世主」降臨",
-        "summary": "Anthropic 展示協作工具帶動 Salesforce 等軟體股回暖，市場開始重新評價軟體公司的 AI 變現潛力。",
-        "impact": "正面",
+        "title": "中東局勢政治修辭與情報落差",
+        "summary": "川普誇大伊朗飛彈威脅與情報評估不符，增加地緣政治判斷的複雜性與市場噪音。",
+        "impact": "中性",
         "related_news_ids": [
           2
-        ]
-      },
-      {
-        "title": "反壟斷法阻礙媒體大整併",
-        "summary": "加州檢察長對派拉蒙收購 WBD 案發起調查，併購市場不確定性增加。",
-        "impact": "負面",
-        "related_news_ids": [
-          1
         ]
       }
     ],
     "relations": [
       {
-        "from": "Anthropic",
-        "to": "Salesforce",
-        "type": "技術賦能/生態整合"
+        "from": "NVIDIA",
+        "to": "TSMC",
+        "type": "供應鏈預付資金壓力"
       },
       {
-        "from": "Samsung Electronics",
-        "to": "SK Hynix",
-        "type": "產業同儕/資金吸納競爭"
+        "from": "Amazon",
+        "to": "NVIDIA",
+        "type": "採購需求與現金流矛盾"
       },
       {
-        "from": "Netflix",
-        "to": "Warner Bros Discovery",
-        "type": "競爭對手/放棄收購"
+        "from": "MFS",
+        "to": "Barclays",
+        "type": "債務曝險與信貸違約"
       },
       {
-        "from": "Paramount",
-        "to": "Warner Bros Discovery",
-        "type": "併購要約與資本博弈"
-      },
-      {
-        "from": "AI 基建需求",
-        "to": "EWY-US",
-        "type": "資金流入驅動"
+        "from": "Trump",
+        "to": "Iran",
+        "type": "地緣政治軍事威脅"
       }
     ]
   },
   "newsData": [
     {
-      "title": "AI吸金效應！全球資金瘋買三星、海力士股票 跨海引發ETF異常波動",
-      "url": "https://news.cnyes.com/news/id/6353668",
+      "title": "倫敦新一波信貸風暴來襲！華爾街銀行急追數十億美元曝險",
+      "url": "https://news.cnyes.com/news/id/6356171",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;在人工智慧 (AI) 基建熱潮與記憶體供給短缺的推波助瀾下，南韓晶片製造商三星電子和 SK 海力士股價高飛，不只吸引全球資金爭相買進，甚至引發 ETF 的罕見波動和成交量。&lt;/p&gt;\n\n&lt;p&gt;美國掛牌的 iShares MSCI 南韓 ETF(EWY-US)在周四 (26 日) 單日成交輛飆升至 64 億美元，創歷史新高。南韓晶片 ETF 在香港的成交量也攀升，此外，一檔在上海掛牌的半導體基金則因溢價快速擴大，於周五被迫暫停交易。&lt;/p&gt;\n\n&lt;p&gt;這種特異現象正是全球瘋狂追逐熱門標的的結果。南韓 Kospi 指數今年來大漲 50%，反映投資人積極搶進三星電子和 SK 海力士這兩檔 AI 受益股。&lt;/p&gt;\n\n&lt;p&gt;這兩家公司如今占 iShares 南韓 MSCI ETF 權重將近一半。該指數今年來大漲 55%，相較之下，標普 500 指數同期上漲不到 1%，費城半導體則是上漲 16%。&lt;/p&gt;\n\n&lt;p&gt;然而，這檔韓國基金的需求未必完全反映美國市場的投資胃納。新韓證券 (Shin",
-      "timeStr": "下午06:01",
+      "content": "&lt;p&gt;根據《彭博》周五 (27 日) 報導，英國非銀行金融機構 Market Financial Solutions Ltd.(MFS)近日瀕臨崩潰，再度引爆信貸市場對詐欺與資產擔保風險的憂慮。事件雖發生在倫敦，但情節與近年美國多起信貸爆雷案如出一轍：非銀行業者填補傳統銀行不願承作的融資缺口，同時向華爾街大型機構借款擴張，最終卻因資產疑慮與資金流向問題陷入困境。&lt;/p&gt;\n\n&lt;p&gt;包括桑坦德銀行 (Banco Santander)(SAN-US)、Jefferies(JEF-US)，以及阿波羅全球管理(Apollo Global Management)(APO-US) 旗下 Atlas SP Partners、巴克萊 (BCS-US)、富國銀行(WFC-US) 與 Castlelake 等機構，皆對 MFS 有曝險部位。法院文件顯示，部分子公司聲稱發現「重大不規則情形」與「顯著擔保品缺口」，並指控公司可能涉及「雙重質押」資產。官方目前尚未對任何人提出不法指控。&lt;/p&gt;\n\n&lt;h6&gt;資產疑雲與雙重質押疑慮浮現&lt;/h6&gt;\n",
+      "timeStr": "下午08:00",
       "relatedArticles": []
     },
     {
-      "title": "派拉蒙剛奪標華納兄弟探索就遇阻！加州檢察長警告：交易尚未通過監管審查",
-      "url": "https://news.cnyes.com/news/id/6356104",
+      "title": "天堂裡的麻煩！輝達淨利逾1200億美元卻慘跌失守月線 投資人預警AI泡沫風險",
+      "url": "https://news.cnyes.com/news/id/6356008",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體與記憶體",
+      "category": "科技硬體",
       "thumbnail": null,
-      "content": "&lt;p&gt;在串流與影視產業掀起新一波整併風暴之際，Netflix(&lt;a data-symbol-template=&quot;USS:NFLX:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NFLX-US&lt;/a&gt;) 放棄對華納兄弟探索 (&lt;a data-symbol-template=&quot;USS:WBD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;WBD-US&lt;/a&gt;) 的收購競標，為派拉蒙天舞 (&lt;a data-symbol-template=&quot;USS:PSKY:STOCK:COMMON&quot; href=&quot;#&quot;&gt;PSKY-US&lt;/a&gt;) 鋪平道路。不過，加州政府隨即踩下煞車，強調此案尚未過關。&lt;/p&gt;\n\n&lt;p&gt;根據《Business Insider》報導，加州檢察長 Rob Bonta 週四（26 日）表示，加州司法部已針對這起併購案展開調查，並指出該交易「尚未通過監管審查」。",
-      "timeStr": "下午06:01",
+      "content": "&lt;p&gt;AI 晶片巨擘輝達周三 (25 日) 發佈第四財季業績成績單，利潤近乎翻倍，銷售額創下歷史新高，數據堪稱亮眼，但這份「成功」財報卻引發市場失望情緒，周三盤後股價由漲轉跌，周四 (26 日) 收跌 5.5% 至每股 184.89 美元，跌破月線並失守 190 美元大關。&lt;/p&gt;\n\n&lt;p&gt;《CNN》報導指出，這種反差一方面源於「輝達魔咒」，過去三年持續超預期獲利，讓投資人形成「爆款預期」，「表現良好」已無法滿足市場期待，更重要的是華爾街對 AI 行業及輝達態度出現實質性轉變，有分析師直言「投資者已察覺天堂裡的麻煩」。&lt;/p&gt;\n\n&lt;p&gt;投資者的擔憂集中在兩點：一是客戶現金流承壓，黃仁勳稱對客戶現金流增長有信心，但亞馬遜、Meta 等科技巨頭上月財報顯示，自由現金流不是暴跌就是停滯；二是採購義務激增，採購義務從去年 160 億美元飆升至 950 億美元，因台積電要求預付資金，若 AI 熱度消退，這一數字恐成「災難」。&lt;/p&gt;\n\n&lt;p&gt;當前市場分歧加劇，部分避險基金開始做空輝達、甲骨文等 AI 相關企業，投",
+      "timeStr": "下午08:00",
       "relatedArticles": []
     },
     {
-      "title": "AI成軟體股血洗「救世主」！Anthropic扭轉市場恐慌、華爾街重新評價",
-      "url": "https://news.cnyes.com/news/id/6355980",
+      "title": "川普遭美情報界打臉：伊朗飛彈威脅美國還有8年",
+      "url": "https://news.cnyes.com/news/id/6356027",
       "source": "鉅亨網(wd_stock)",
-      "category": "AI 軟體應用",
+      "category": "金融信貸",
       "thumbnail": null,
-      "content": "&lt;p&gt;在連續數週的拋售潮下，華爾街對軟體股的「血洗」一度看似無人能擋。直到頂尖人工智慧（AI）新創公司 Anthropic 出手，市場恐慌情緒才終於出現轉折。&lt;/p&gt;\n\n&lt;p&gt;根據《華爾街日報》報導，Anthropic 週二（24 日）展示了 Claude Cowork 的最新更新。其為一款先進的 AI 工具，讓員工能夠將 AI 機器人應用於各種工作任務。&lt;/p&gt;\n\n&lt;p&gt;該公司在發表會中重點介紹了軟體巨頭 Salesforce(&lt;a data-symbol-template=&quot;USS:CRM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;CRM-US&lt;/a&gt;) ，並新增與 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 應用程式、DocuSign(&lt;a data-symbol-temp",
-      "timeStr": "下午06:01",
+      "content": "&lt;p&gt;三名熟悉美國情報評估的消息人士指出，美國總統川普近日聲稱，伊朗即將擁有可打擊美國本土的飛彈能力一說並未獲得現有情報報告支持，甚至可能有所誇大，使他為可能對伊朗發動攻擊所提出的部分理由受到質疑。&lt;/p&gt;\n\n&lt;p&gt;根據《路透》報導，川普週二（24 日）在對國會發表的國情咨文演說中，向美國民眾說明為何美國可能對伊朗發動打擊，並表示該國正「研發很快就能打到」美國的飛彈。&lt;/p&gt;\n\n&lt;p&gt;不過，兩名消息人士表示，美國國防情報局在 2025 年發布的一份評估報告至今並無任何變動。該評估指出，伊朗可能要到 2035 年，才有能力從現有可將衛星送入軌道的太空發射載具，發展出「具軍事可行性的洲際彈道飛彈」。&lt;/p&gt;\n\n&lt;p&gt;另有一名消息人士指出，即便與伊朗關係密切的中國或北韓提供技術協助，伊朗最快也可能仍需長達八年時間，才能研發出「真正達到洲際彈道飛彈等級、且具備實際作戰能力」的武器系統。&lt;/p&gt;\n\n&lt;p&gt;他們表示，並未聽聞任何美國情報評估指出伊朗正研發可在短期內打擊美國本土的飛彈，但也不排",
+      "timeStr": "下午08:00",
       "relatedArticles": []
     }
   ],
@@ -188,61 +183,56 @@
   ],
   "events": [
     {
-      "title": "AI 記憶體全球吸金潮",
-      "summary": "全球資金透過韓股 ETF 瘋搶三星與海力士，反映 AI 硬體需求由邏輯晶片擴散至存儲端。",
-      "impact": "正面",
+      "title": "AI 巨頭資本支出與現金流的悖論",
+      "summary": "NVIDIA 強勁財報無法抵銷市場對大型科技公司自由現金流萎縮與巨額採購承諾的憂慮。",
+      "impact": "負面",
+      "related_news_ids": [
+        1
+      ]
+    },
+    {
+      "title": "影子銀行信貸違約風險浮現",
+      "summary": "英國 MFS 爆雷事件揭示非銀行融資體系的透明度與資產擔保缺口問題，衝擊華爾街銀行。",
+      "impact": "負面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "軟體股「救世主」降臨",
-      "summary": "Anthropic 展示協作工具帶動 Salesforce 等軟體股回暖，市場開始重新評價軟體公司的 AI 變現潛力。",
-      "impact": "正面",
+      "title": "中東局勢政治修辭與情報落差",
+      "summary": "川普誇大伊朗飛彈威脅與情報評估不符，增加地緣政治判斷的複雜性與市場噪音。",
+      "impact": "中性",
       "related_news_ids": [
         2
-      ]
-    },
-    {
-      "title": "反壟斷法阻礙媒體大整併",
-      "summary": "加州檢察長對派拉蒙收購 WBD 案發起調查，併購市場不確定性增加。",
-      "impact": "負面",
-      "related_news_ids": [
-        1
       ]
     }
   ],
   "relations": [
     {
-      "from": "Anthropic",
-      "to": "Salesforce",
-      "type": "技術賦能/生態整合"
+      "from": "NVIDIA",
+      "to": "TSMC",
+      "type": "供應鏈預付資金壓力"
     },
     {
-      "from": "Samsung Electronics",
-      "to": "SK Hynix",
-      "type": "產業同儕/資金吸納競爭"
+      "from": "Amazon",
+      "to": "NVIDIA",
+      "type": "採購需求與現金流矛盾"
     },
     {
-      "from": "Netflix",
-      "to": "Warner Bros Discovery",
-      "type": "競爭對手/放棄收購"
+      "from": "MFS",
+      "to": "Barclays",
+      "type": "債務曝險與信貸違約"
     },
     {
-      "from": "Paramount",
-      "to": "Warner Bros Discovery",
-      "type": "併購要約與資本博弈"
-    },
-    {
-      "from": "AI 基建需求",
-      "to": "EWY-US",
-      "type": "資金流入驅動"
+      "from": "Trump",
+      "to": "Iran",
+      "type": "地緣政治軍事威脅"
     }
   ],
   "keywords7d": [
     {
       "word": "AI",
-      "count": 426,
+      "count": 428,
       "articles": [
         {
           "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
@@ -374,7 +364,7 @@
     },
     {
       "word": "美元",
-      "count": 229,
+      "count": 231,
       "articles": [
         {
           "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
@@ -440,7 +430,7 @@
     },
     {
       "word": "EPS",
-      "count": 209,
+      "count": 210,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華邦電(2344-TW)EPS預估下修至15.26元，預估目標價為145元",
@@ -637,8 +627,74 @@
       ]
     },
     {
+      "word": "經典賽",
+      "count": 117,
+      "articles": [
+        {
+          "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347044",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》受傷的紅雀火球男有機會回南韓隊？ 外媒點出時間點",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347059",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》無緣台灣隊的王彥程對南韓隊好投！ 交出2局1K無失分",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347192",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》重傷退出日本隊的阪神虎王牌中繼 估花半年復健、賽季恐報銷",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347174",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》官網專家點名值得關注新星！台灣「不在那份名單」強投上榜",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347125",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》日媒爆料徐若熙不對日本隊登板 原因曝光！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347168",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》統一獅隊長4連霸 陳傑憲有話要說",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347101",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "中職》布雷克突然出征經典賽 獅領隊解釋原因",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347102",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》南韓主帥很感謝韓華鷹派台灣左投對決！王彥程賽後有感而發",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347280",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》受宋晟睿等人刺激 陳傑憲身體素質進化「前所未見」",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347301",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "日本",
-      "count": 115,
+      "count": 117,
       "articles": [
         {
           "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
@@ -769,72 +825,6 @@
       ]
     },
     {
-      "word": "經典賽",
-      "count": 112,
-      "articles": [
-        {
-          "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347044",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》受傷的紅雀火球男有機會回南韓隊？ 外媒點出時間點",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347059",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》無緣台灣隊的王彥程對南韓隊好投！ 交出2局1K無失分",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347192",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》重傷退出日本隊的阪神虎王牌中繼 估花半年復健、賽季恐報銷",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347174",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》官網專家點名值得關注新星！台灣「不在那份名單」強投上榜",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347125",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》日媒爆料徐若熙不對日本隊登板 原因曝光！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347168",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》統一獅隊長4連霸 陳傑憲有話要說",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347101",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "中職》布雷克突然出征經典賽 獅領隊解釋原因",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347102",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》南韓主帥很感謝韓華鷹派台灣左投對決！王彥程賽後有感而發",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347280",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》受宋晟睿等人刺激 陳傑憲身體素質進化「前所未見」",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347301",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "川普",
       "count": 107,
       "articles": [
@@ -902,7 +892,7 @@
     },
     {
       "word": "新高",
-      "count": 104,
+      "count": 105,
       "articles": [
         {
           "title": "AI驅動半導體再創新高　台積電晶圓代工獨霸地位穩",
@@ -1034,7 +1024,7 @@
     },
     {
       "word": "自由",
-      "count": 97,
+      "count": 98,
       "articles": [
         {
           "title": "高鐵插隊撞人搶自由座遭炎上！ 牙醫親上火線回應：沒撞人",
@@ -1100,7 +1090,7 @@
     },
     {
       "word": "健康",
-      "count": 89,
+      "count": 91,
       "articles": [
         {
           "title": "健康網》不同年齡怎麼保養？ 醫解析肌膚修護關鍵",
@@ -1166,7 +1156,7 @@
     },
     {
       "word": "TW",
-      "count": 82,
+      "count": 84,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：信邦(3023-TW)目標價調升至270元，幅度約3.85%",
@@ -1298,7 +1288,7 @@
     },
     {
       "word": "伊朗",
-      "count": 75,
+      "count": 77,
       "articles": [
         {
           "title": "多國敦促在伊朗公民儘快撤離",
@@ -1562,7 +1552,7 @@
     },
     {
       "word": "積電",
-      "count": 68,
+      "count": 69,
       "articles": [
         {
           "title": "美股收盤》川普關稅確定違憲美股勁揚 台積電ADR大漲2.82％",
@@ -1694,7 +1684,7 @@
     },
     {
       "word": "世界",
-      "count": 59,
+      "count": 61,
       "articles": [
         {
           "title": "只算工廠不算運輸的荒謬劇：成大林珮珺談被世界遺忘的海上碳排",
@@ -1826,7 +1816,7 @@
     },
     {
       "word": "開講",
-      "count": 54,
+      "count": 55,
       "articles": [
         {
           "title": "自由開講》交流變成政治輸送，國共論壇背後的國安陷阱",
@@ -1892,7 +1882,7 @@
     },
     {
       "word": "高雄",
-      "count": 53,
+      "count": 55,
       "articles": [
         {
           "title": "高雄香港年宵圓滿落幕吸引5萬人潮 港味滿滿成春節代表活動",
@@ -1958,7 +1948,7 @@
     },
     {
       "word": "台南",
-      "count": 53,
+      "count": 54,
       "articles": [
         {
           "title": "好旺！台南這家彩券行初二連開大獎  夫妻參拜後刮中2000萬",
@@ -2287,6 +2277,72 @@
       ]
     },
     {
+      "word": "台北",
+      "count": 47,
+      "articles": [
+        {
+          "title": "金門返台旅客多 台北-金門加開2架次班機",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
+          "source": "自由時報",
+          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
+        },
+        {
+          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
+          "source": "自由時報",
+          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
+        },
+        {
+          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
+          "source": "自由時報",
+          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
+        },
+        {
+          "title": "星宇航空6月首航釜山！ 台北台中直飛2/25開賣",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348320",
+          "source": "自由時報",
+          "content": "新春開工之際，星宇航空今宣布拓展韓國航網版圖，自6月起開闢全新「台北／台中－釜山」航線，為星宇航空首條韓國航線，同時也是全台唯一台中直飛釜山，將於2月25日全面開賣。\r\n\r\n星...…"
+        },
+        {
+          "title": "台北年貨大街擴大禁菸範圍 取締件數略減、勸導人數仍逾800",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348416",
+          "source": "自由時報",
+          "content": "台北年貨大街今年擴大辦理禁菸範圍，相較去年取締件數14件、開罰2萬8千元，今年減少為13件，勸導人數仍達862人。台北市衛生局健康管理科科長林雪蘭表示，開罰金額需待民眾陳述意見...…"
+        },
+        {
+          "title": "星宇航空首度插旗韓國航網！台北天天飛釜山、台中獨家直航",
+          "url": "https://finance.technews.tw/2026/02/23/exclusive-direct-flights/",
+          "source": "TechNews",
+          "content": "新春開工之際，星宇航空今日宣布拓展韓國航網版圖，自 2026 年 6 月 1 日起開闢全新「台北／台中－釜山」 [&#8230;]"
+        },
+        {
+          "title": "AIT首度參與台北燈節 谷立言：同慶美國250歲",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348828",
+          "source": "自由時報",
+          "content": "美國在台協會（AIT）處長谷立言今天接受媒體專訪表示，AIT今年將以美國意象主題花燈，首度參與台北燈節，同時慶祝美國建國250年。被問及最愛說的中文詞句，他說，「紙上談兵，因為大家似乎都對台...…"
+        },
+        {
+          "title": "數位「時尚入口」開張！台北時裝週官網改版 「縫一條線」測色體驗超療癒",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5349662",
+          "source": "自由時報",
+          "content": "\n\n\n隨著「台北時裝週 AW26」邁入轉型元年，官方網站的數位體驗也再次升級。全新改版上線的官方網站（https://tpefw.com/zh-TW），不僅為品牌識別2.0的延...…"
+        },
+        {
+          "title": "巡演首站給台北！溫流4月開唱  把真心搬上舞台",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5350217",
+          "source": "自由時報",
+          "content": "\n\n\n韓國實力派歌手溫流今（24）宣布將於4月3日在台大體育館1樓舉辦《2026 ONEW FANMEETING [TOUGH LOVE] in TAIPEI》，台北就是整個巡...…"
+        }
+      ]
+    },
+    {
       "word": "法院",
       "count": 46,
       "articles": [
@@ -2415,72 +2471,6 @@
           "url": "https://news.cnyes.com/news/id/6351606",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;美股週二 (24 日) 全面收高，道瓊工業指數勁揚逾 350 點，市場對人工智慧(AI) 衝擊企業軟體產業的疑慮暫時降溫，帶動科技與軟體類股出現跌深反彈。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數收漲 0.77%，那斯達克綜合指數回升 1.04%，費城半導體指數升幅達 1.45%，道瓊指數收紅 370.44 點。&lt;/p&gt;\n\n&lt;p&gt;因宣布與 Meta 擴大合作，AMD 飆升超 8%，家得寶財報 (HD-US) 優於預期、股價勁揚超 2% 至每股 384.48 美元，成為支撐道瓊的重要動能；前一交易日因 AI 疑慮重挫的 IBM (IBM-US) 也回穩走高。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普週二稍晚將發表第二任期首場國情咨文，他已預告內容將以「史上最強經濟」為主軸，市場則聚焦其政策訊號。&lt;/p&gt;\n\n&lt;p&gt;川普於 21 日援引《貿易法》第 122 條，宣布對所有進入美國的商品加徵 15% 關稅，為期 150 天，相關措施已於週二正式生效。&lt;/p&gt;\n\n&lt;p&gt;伊朗與美國預計週四在日內瓦舉行第三輪核談判。隨著華府尋求終結伊朗核計畫，市場對軍事衝突風險的關注升溫。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週二 (24 日) 主要指數表現：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;道瓊工業指數上漲 370.44 點，或 0.76%，收 49,174.50 點。&lt;/li&gt;\n&lt;li&gt;那斯達克指數上漲 236.41 點，或 1.05%，收 22,863.68 點。&lt;/li&gt;\n&lt;li&gt;S&amp;P 500 指數上漲 52.32 點，或 0.77%，收 6,890.07 點。&lt;/li&gt;\n&lt;li&gt;費城半導體指數上漲 118.887 &nbsp;點，或 1.45%，收 8,332.343 點。&lt;/li&gt;\n&lt;li&gt;NYSE FANG+ 指數上漲 79.14 點，或 0.56%，收 14,183.26 點。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;Q&quot; data-height=&quot;444&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7117117117117118&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6351606/m/a42586e831a6d09a3c28909757e21047.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg&quot; srcset=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg 1x,https://cimg.cnyes.cool/prod/news/6351606/xl/a42586e831a6d09a3c28909757e21047.jpg 2x,https://cimg.cnyes.cool/prod/news/6351606/xxl/a42586e831a6d09a3c28909757e21047.jpg 3x&quot;&gt;\n&lt;figcaption&gt;標普 11 大板塊多數收紅，由非必需消費、工業與資訊科技領漲，能源與醫療保健逆勢收黑。(圖：finviz)&nbsp;&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;焦點個股&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;NYSE FANG+ 指數中的科技五大巨頭漲多跌少。Meta (META-US) 漲 0.32%；蘋果 (AAPL-US) 上漲 2.24%；Alphabet (GOOGL-US) 跌 0.19%；微軟 (MSFT-US) 上漲 1.18%；亞馬遜 (AMZN-US) 上漲 1.60%。&lt;/p&gt;\n\n&lt;p&gt;費城半導體族群表現強勢。AMD (AMD-US) 飆升 8.77%；博通 (AVGO-US) 下跌 1.47%；輝達 (NVDA-US) 漲 0.68%；應用材料 (AMAT-US) 上漲 1.17%；高通 (QCOM-US) 上漲 3.11%；美光 (MU-US) 跌 0.70%。&lt;/p&gt;\n\n&lt;p&gt;台股 ADR 全面收高。台積電 ADR (TSM-US) 大漲 4.25%；日月光 ADR (ASX-US) 大漲 5.71%；聯電 ADR (UMC-US) 強漲 4.80%；中華電信 ADR (CHT-US) 上漲 1.61%。&lt;/p&gt;\n\n&lt;h6&gt;企業新聞&lt;/h6&gt;\n\n&lt;p&gt;AMD (AMD-US) 飆升超 8% 引領晶片股亮眼表現。Meta (META-US) 與 AMD 簽署多年合作協議，Meta 計畫在未來 5 年內向超微採購 AI 晶片，總價值上看 600 億美元；作為合作條件之一，Meta 同時取得認股權證，未來可購買 AMD 最多約 10% 的股權。&lt;/p&gt;\n\n"
-        }
-      ]
-    },
-    {
-      "word": "台北",
-      "count": 46,
-      "articles": [
-        {
-          "title": "金門返台旅客多 台北-金門加開2架次班機",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
-          "source": "自由時報",
-          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
-        },
-        {
-          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
-          "source": "自由時報",
-          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
-        },
-        {
-          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
-          "source": "自由時報",
-          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
-        },
-        {
-          "title": "星宇航空6月首航釜山！ 台北台中直飛2/25開賣",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348320",
-          "source": "自由時報",
-          "content": "新春開工之際，星宇航空今宣布拓展韓國航網版圖，自6月起開闢全新「台北／台中－釜山」航線，為星宇航空首條韓國航線，同時也是全台唯一台中直飛釜山，將於2月25日全面開賣。\r\n\r\n星...…"
-        },
-        {
-          "title": "台北年貨大街擴大禁菸範圍 取締件數略減、勸導人數仍逾800",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348416",
-          "source": "自由時報",
-          "content": "台北年貨大街今年擴大辦理禁菸範圍，相較去年取締件數14件、開罰2萬8千元，今年減少為13件，勸導人數仍達862人。台北市衛生局健康管理科科長林雪蘭表示，開罰金額需待民眾陳述意見...…"
-        },
-        {
-          "title": "星宇航空首度插旗韓國航網！台北天天飛釜山、台中獨家直航",
-          "url": "https://finance.technews.tw/2026/02/23/exclusive-direct-flights/",
-          "source": "TechNews",
-          "content": "新春開工之際，星宇航空今日宣布拓展韓國航網版圖，自 2026 年 6 月 1 日起開闢全新「台北／台中－釜山」 [&#8230;]"
-        },
-        {
-          "title": "AIT首度參與台北燈節 谷立言：同慶美國250歲",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348828",
-          "source": "自由時報",
-          "content": "美國在台協會（AIT）處長谷立言今天接受媒體專訪表示，AIT今年將以美國意象主題花燈，首度參與台北燈節，同時慶祝美國建國250年。被問及最愛說的中文詞句，他說，「紙上談兵，因為大家似乎都對台...…"
-        },
-        {
-          "title": "數位「時尚入口」開張！台北時裝週官網改版 「縫一條線」測色體驗超療癒",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5349662",
-          "source": "自由時報",
-          "content": "\n\n\n隨著「台北時裝週 AW26」邁入轉型元年，官方網站的數位體驗也再次升級。全新改版上線的官方網站（https://tpefw.com/zh-TW），不僅為品牌識別2.0的延...…"
-        },
-        {
-          "title": "巡演首站給台北！溫流4月開唱  把真心搬上舞台",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5350217",
-          "source": "自由時報",
-          "content": "\n\n\n韓國實力派歌手溫流今（24）宣布將於4月3日在台大體育館1樓舉辦《2026 ONEW FANMEETING [TOUGH LOVE] in TAIPEI》，台北就是整個巡...…"
         }
       ]
     },
@@ -2947,6 +2937,72 @@
       ]
     },
     {
+      "word": "股市",
+      "count": 42,
+      "articles": [
+        {
+          "title": "台股封關期間主要股市表現與重點新聞",
+          "url": "https://news.cnyes.com/news/id/6347880",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
+          "url": "https://www.thenewslens.com/article/264788",
+          "source": "關鍵評論網",
+          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
+        },
+        {
+          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
+          "url": "https://news.cnyes.com/news/id/6343130",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
+        },
+        {
+          "title": "創紀錄！全球資金流向南韓、日本股市",
+          "url": "https://news.cnyes.com/news/id/6348650",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
+        },
+        {
+          "title": "南韓股市指數突破5900點 再創歷史新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
+        },
+        {
+          "title": "全球資金湧入拉丁美洲 股市迎來歷史性飆升",
+          "url": "https://news.cnyes.com/news/id/6349657",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;拉丁美洲股市正迎來十年來最強勁的增長勢頭。數據顯示，全球投資者正以十年來最快的速度湧入該地區，將巴西、哥倫比亞和墨西哥等國家的股市推向多年高點。&lt;/p&gt;\n\n&lt;p&gt;MSCI 新興市場拉丁美洲指數在 2026 年年初已飆升超過 20%，創下 11 年來的新高，這也是自 1991 年以來最強勁的開局紀錄。截至上周五，這一指數已連續九周上漲，創下 2017 年以來最長的連漲紀錄。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 全球財富管理新興市場美洲區首席投資官 Alejo Czerwonko 指出，拉丁美洲重新回到了投資版圖，其受關注程度是過去 10 到 15 年來未見的。他強調，在新興市場長期被低配的背景下，拉丁美洲的情況尤為顯著。&lt;/p&gt;\n\n&lt;p&gt;外部因素方面，美國最高法院推翻了川普總統的大規模全球關稅政策，這被視為該地區股市復甦的又一重大利多。Global X Management 的高級投資組合經理 Malcolm Dorson 認為，關稅政策的廢除增加了美國的赤字風險與政治不確定性，進一步壓低美元，進而推動拉丁美洲資產走強。&lt;/p&gt;\n\n&lt;p&gt;投資者正密切關注巴西和哥倫比亞即將舉行的總統大選。在巴西，市場普遍預期 10 月的選舉可能導致政策轉向，部分投資者看好反對派勝選帶來的利潤空間。&lt;/p&gt;\n\n&lt;p&gt;然而，政局仍具備不確定性，例如前總統波索納洛之子參選的消息曾一度引發市場拋售。在哥倫比亞，5 月大選前左翼候選人領先，引發了市場對資產價格可能惡化的擔憂。&lt;/p&gt;\n\n&lt;p&gt;除了政治因素，各國央行的降息預期也支撐了股市。交易員預計巴西央行將從 3 月起將目前高達 15% 的基準利率下調。而在墨西哥，央行目前將利率維持在 7%，暫停了已持續近兩年的寬鬆周期。&lt;/p&gt;\n\n&lt;p&gt;這波投資熱潮在美國上市的 ETF 中尤為明顯。BlackRock 的 iShares 拉丁美洲 40 ETF (ILF-US) 僅在 1 月份就吸引了超過 10 億美元的資金，總資產規模達到約 43 億美元。此外，億萬富翁 Stanley Druckenmiller 的家族辦公室也加入了買入巴西 ETF (EWZ-US) 的行列。&lt;/p&gt;\n\n&lt;p&gt;然而，外資的狂熱與本土投資者的謹慎形成鮮明對比。BlackRock 拉丁美洲策略主管 Benjamin Souza 指出，本土投資者通常比外資更擔心政治不確定性。儘管存在地緣政治風險，但包含 VanEck 在內的投資機構仍對拉美持積極態度，認為利率下調、政治轉型或大宗商品利多將持續支撐市場表現。&lt;/p&gt;\n"
+        },
+        {
+          "title": "關稅不確定性再現　歐洲股市收低",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349148",
+          "source": "自由時報",
+          "content": "美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。\n\n倫敦FTSE 100指數微跌2.15點或0.02%，收10684.7...…"
+        },
+        {
+          "title": "關稅不確定性再現　歐洲股市收低",
+          "url": "https://www.cna.com.tw/news/afe/202602240004.aspx",
+          "source": "中央社產經",
+          "content": "（中央社倫敦23日綜合外電報導）美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。"
+        },
+        {
+          "title": "〈國泰金經濟調查〉景氣展望與消費意願雙回升 股市創高後民眾轉趨謹慎",
+          "url": "https://news.cnyes.com/news/id/6350026",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;國泰金控 (2882-TW) 今 (24) 日公布 2026 年 2 月國民經濟信心調查結果，隨著景氣對策信號轉呈紅燈，實體經濟表現穩健，帶動民眾景氣展望樂觀指數與大額消費意願同步回升。儘管市場對 AI 前景與台美關稅調降抱持正面期待，但在股市大幅走揚後，民眾的股市樂觀情緒已出現高檔修正、轉趨審慎。&lt;/p&gt;\n\n&lt;p&gt;國發會最新公布的 12 月景氣對策信號轉呈紅燈，領先及同時指標持續上升，反映景氣仍呈穩健成長。國泰金本月調查顯示，景氣現況樂觀指數上升至 12.3，展望樂觀指數回升至 4.4。大額消費意願指數上升至 14.2，耐久財消費意願指數回升至 - 7.6。&lt;/p&gt;\n\n&lt;p&gt;主計總處於 2025 年 11 月 28 日預估台灣 2026 年經濟成長率 3.54%，通貨膨脹率 1.61%。國泰金本月調查結果顯示，民眾對於 2026 年經濟成長率的平均預期值為 3.16%，有 61% 的民眾認為 2026 年經濟成長率會高於 3%；而民眾對於 2026 年平均通膨預期值為 2.19%，有 54% 的民眾認為 2026 年通貨膨脹率會高於 2%。相較於主計總處，民眾對於 2026 年的經濟成長預估略偏保守，對於通膨預期則依舊較高。&lt;/p&gt;\n\n&lt;p&gt;市場對於 AI 前景樂觀看待，且台積電財報及展望大幅優於預期，加上台灣對等關稅下降至 15%，台灣股市 1 月明顯走揚，但波動加大。國泰金本月調查結果顯示，民眾對於台股的樂觀指數下降至 31.5，風險偏好指數上升至 25.4，顯示股市大漲後，民眾看法轉趨謹慎。&lt;/p&gt;\n\n&lt;p&gt;針對 2026 台美關稅協議對台灣 GDP 與股市影響調查，調查結果顯示，48% 民眾認為關稅協議對 GDP 與股市皆有正面影響；其次有 13% 民眾預期對 GDP 有負面影響，但對股市有正面影響；另有 13% 民眾覺得對 GDP 與股市皆有負面影響。&lt;/p&gt;\n\n&lt;p&gt;其中針對台股指數影響的大小，調查結果顯示，30% 的民眾認為有部分推升效果，介於 500-1000 (不含) 點，其次有 27% 民眾認為有小幅推升效果，介於 0-500 (不含) 點。&nbsp;&lt;/p&gt;\n\n&lt;p&gt;針對目前協議對台灣最有可能產生的影響，調查結果顯示，41% 的民眾認為有助提升半導體產業國際競爭力，另有 16% 民眾認為有助提升傳統產業國際競爭力，但有 19% 民眾擔憂造成部分產業外移及就業機會變少。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;國泰金控提供&quot; data-height=&quot;374&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.585561497326203&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350026/m/aaee04ac4b8c2784bbcc02ea64884c90.jpg&quot; data-width=&quot;593&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350026/l/aaee04ac4b8c2784bbcc02ea64884c90.jpg&quot;&gt;\n&lt;figcaption&gt;國泰金控提供&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "台美關稅協議　調查：48%民眾認對GDP與股市影響正面",
+          "url": "https://www.cna.com.tw/news/afe/202602240032.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者蘇思云台北24日電）國泰金發布2月國民經濟信心調查結果，針對2026台美關稅協議對台灣國內生產毛額（GDP）與股市影響，調查顯示，48%民眾認為關稅協議對GDP與股市皆有正面影響；其次13%預期對GDP有負面影響，但對股市正面；另13%認為對GDP與股市皆有負面影響。"
+        }
+      ]
+    },
+    {
       "word": "焦點股",
       "count": 42,
       "articles": [
@@ -3145,68 +3201,134 @@
       ]
     },
     {
-      "word": "股市",
+      "word": "交易",
       "count": 40,
       "articles": [
         {
-          "title": "台股封關期間主要股市表現與重點新聞",
-          "url": "https://news.cnyes.com/news/id/6347880",
-          "source": "鉅亨網(wd_stock)",
+          "title": "NBA》勇士老闆談交易庫明加 強調：這個決定並不難！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347078",
+          "source": "自由時報",
           "content": null
         },
         {
-          "title": "《全力以富，買進千倍股！》：股市漲跌有「季節性因素」，為何1月和4月最易大漲？",
-          "url": "https://www.thenewslens.com/article/264788",
-          "source": "關鍵評論網",
-          "content": "本書作者成功預測蘋果、輝達、亞馬遜驚人漲幅，為投資者帶來5,387.9％報酬率。《紐約時報》：「他是成長型投資人的偶像！」"
-        },
-        {
-          "title": "依台股市場最新趨勢與產業脈動篩選出8檔具明顯長線成長潛力股",
-          "url": "https://news.cnyes.com/news/id/6343130",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;以下為依&lt;strong&gt;台股市場最新趨勢與產業脈動&lt;/strong&gt; (含 AI 伺服器、ASIC 設計、PCB/CCL/ABF 載板、光通訊矽光子、半導體封測與 IC 測試設備、機器人自動化、電子材料及太空 / 低軌衛星等) 篩選出&lt;strong&gt; 8&lt;/strong&gt;&lt;strong&gt; 檔具明顯長線成長潛力&lt;/strong&gt;之上市櫃公司標的 (同屬性不重複)，並就其&lt;strong&gt;競爭優勢、成長動能與風險&lt;/strong&gt;做重點精簡分析：&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;說明原則：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;以 Factset / 外資預估為「基準情境核心」&lt;/li&gt;\n&lt;li&gt;樂觀情境＝AI 滲透率提升＋毛利率改善＋專案提前放量&lt;/li&gt;\n&lt;li&gt;保守情境＝需求遞延＋毛利不如預期＋資本支出放緩&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;單位皆為&lt;strong&gt;元&lt;/strong&gt;&lt;strong&gt; / 股（EPS）&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2026&ndash;2028 EPS 三情境推估總表&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;446&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.6143497757847534&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6343130/m/0228ac7f36cf1acaaf43411758bd5145.jpg&quot; data-width=&quot;720&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6343130/l/0228ac7f36cf1acaaf43411758bd5145.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;個股邏輯拆解&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. 2383&lt;/strong&gt;&lt;strong&gt; 台光電（&lt;/strong&gt;&lt;strong&gt;AI CCL &lt;/strong&gt;&lt;strong&gt;核心受惠者）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;外資預估基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：74.6 元&lt;/li&gt;\n&lt;li&gt; 2027：152.6 元&lt;/li&gt;\n&lt;li&gt; 2028：220.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長來源：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;AWS T3 放量&lt;/li&gt;\n&lt;li&gt;中低階漲價 10&ndash;15%&lt;/li&gt;\n&lt;li&gt; 高階 AI CCL ASP 提升&lt;/li&gt;\n&lt;li&gt; LEO 衛星滲透率提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;EPS CAGR（2026&rarr;2028 基準）&asymp; 70%+&lt;/p&gt;\n\n&lt;p&gt;屬於「高速成長型龍頭」，但估值敏感度高&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. 2368&lt;/strong&gt;&lt;strong&gt; 金像電（&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 伺服器板王）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;Factset 基準：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2026：31.4 元&lt;/li&gt;\n&lt;li&gt; 2027：42.4 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;成長驅動：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;800G/1.6T 交換器&lt;/li&gt;\n&lt;li&gt;高階多層板良率優勢&lt;/li&gt;\n&lt;li&gt; AI 伺服器層數提升&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;屬於「穩健成長型 PCB 王者」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.3661&lt;/strong&gt;&lt;strong&gt; 世芯&lt;/strong&gt;&lt;strong&gt; -KY&lt;/strong&gt;&lt;strong&gt;（&lt;/strong&gt;&lt;strong&gt;AI ASIC&lt;/strong&gt;&lt;str"
-        },
-        {
-          "title": "創紀錄！全球資金流向南韓、日本股市",
-          "url": "https://news.cnyes.com/news/id/6348650",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據美銀統計，過去 4 周創紀錄的資金流入（646 億美元）全球股市基金，主要流入南韓和日本股市，其中南韓股市基金寫下史上最大 6 周資金流入（177 億美元）。&lt;/p&gt;\n\n&lt;p&gt;南韓綜合股價指數（KOSPI）今日（23 日）開盤大漲 1.73%，盤中漲幅擴大至 2%，報 5,925.73 點，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;自上周四首次站上 5,600 點後，KOSPI 接連突破 5,700 點和 5,800 點整數關口。&lt;/p&gt;\n\n&lt;p&gt;韓國投資證券公司將今年 KOSPI 目標點位上調至 7,250 點，韓亞證券公司也將未來一年預測水位提高至 7,900 點。值得注意的是，韓亞今年初預測僅 5,600 點，短短一個月大幅上調 KOSPI 目標點數。&lt;/p&gt;\n\n&lt;p&gt;日本東京證券交易所因天皇誕辰假期休市一日。日經 225 上一交易日收跌 1.12%，報 5,6825.7 點。&lt;/p&gt;\n"
-        },
-        {
-          "title": "南韓股市指數突破5900點 再創歷史新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348453",
+          "title": "人口紅利加持 台南永康、安南與高雄鳳山、三民交易熱區  今年首購市場回穩",
+          "url": "https://estate.ltn.com.tw/article/26939",
           "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。\n\n\n韓媒《서울경제》報導，KOSPI指數今開盤上漲94.58點（1.63%），以5903.11...…"
+          "content": null
         },
         {
-          "title": "全球資金湧入拉丁美洲 股市迎來歷史性飆升",
-          "url": "https://news.cnyes.com/news/id/6349657",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;拉丁美洲股市正迎來十年來最強勁的增長勢頭。數據顯示，全球投資者正以十年來最快的速度湧入該地區，將巴西、哥倫比亞和墨西哥等國家的股市推向多年高點。&lt;/p&gt;\n\n&lt;p&gt;MSCI 新興市場拉丁美洲指數在 2026 年年初已飆升超過 20%，創下 11 年來的新高，這也是自 1991 年以來最強勁的開局紀錄。截至上周五，這一指數已連續九周上漲，創下 2017 年以來最長的連漲紀錄。&lt;/p&gt;\n\n&lt;p&gt;瑞銀 (UBS) 全球財富管理新興市場美洲區首席投資官 Alejo Czerwonko 指出，拉丁美洲重新回到了投資版圖，其受關注程度是過去 10 到 15 年來未見的。他強調，在新興市場長期被低配的背景下，拉丁美洲的情況尤為顯著。&lt;/p&gt;\n\n&lt;p&gt;外部因素方面，美國最高法院推翻了川普總統的大規模全球關稅政策，這被視為該地區股市復甦的又一重大利多。Global X Management 的高級投資組合經理 Malcolm Dorson 認為，關稅政策的廢除增加了美國的赤字風險與政治不確定性，進一步壓低美元，進而推動拉丁美洲資產走強。&lt;/p&gt;\n\n&lt;p&gt;投資者正密切關注巴西和哥倫比亞即將舉行的總統大選。在巴西，市場普遍預期 10 月的選舉可能導致政策轉向，部分投資者看好反對派勝選帶來的利潤空間。&lt;/p&gt;\n\n&lt;p&gt;然而，政局仍具備不確定性，例如前總統波索納洛之子參選的消息曾一度引發市場拋售。在哥倫比亞，5 月大選前左翼候選人領先，引發了市場對資產價格可能惡化的擔憂。&lt;/p&gt;\n\n&lt;p&gt;除了政治因素，各國央行的降息預期也支撐了股市。交易員預計巴西央行將從 3 月起將目前高達 15% 的基準利率下調。而在墨西哥，央行目前將利率維持在 7%，暫停了已持續近兩年的寬鬆周期。&lt;/p&gt;\n\n&lt;p&gt;這波投資熱潮在美國上市的 ETF 中尤為明顯。BlackRock 的 iShares 拉丁美洲 40 ETF (ILF-US) 僅在 1 月份就吸引了超過 10 億美元的資金，總資產規模達到約 43 億美元。此外，億萬富翁 Stanley Druckenmiller 的家族辦公室也加入了買入巴西 ETF (EWZ-US) 的行列。&lt;/p&gt;\n\n&lt;p&gt;然而，外資的狂熱與本土投資者的謹慎形成鮮明對比。BlackRock 拉丁美洲策略主管 Benjamin Souza 指出，本土投資者通常比外資更擔心政治不確定性。儘管存在地緣政治風險，但包含 VanEck 在內的投資機構仍對拉美持積極態度，認為利率下調、政治轉型或大宗商品利多將持續支撐市場表現。&lt;/p&gt;\n"
-        },
-        {
-          "title": "關稅不確定性再現　歐洲股市收低",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349148",
+          "title": "土方亂象一》雙北土方處理費暴漲3倍 建商籲公平交易委員會應徹查",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348178",
           "source": "自由時報",
-          "content": "美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。\n\n倫敦FTSE 100指數微跌2.15點或0.02%，收10684.7...…"
+          "content": "\n\n\n〔調查新聞中心／台北報導〕為解決廢土亂倒問題，今年元旦上路「營建剩餘土石方全流向管理」新制，卻因配套不足，導致全台陷入「土方之亂」，多名建商控訴雙北民營土資場的土方收取處理費用從原先的每立方公尺...…"
         },
         {
-          "title": "關稅不確定性再現　歐洲股市收低",
-          "url": "https://www.cna.com.tw/news/afe/202602240004.aspx",
+          "title": "期交所新春團拜　盼今年交易量衝破4億口",
+          "url": "https://www.cna.com.tw/news/afe/202602230073.aspx",
           "source": "中央社產經",
-          "content": "（中央社倫敦23日綜合外電報導）美國總統川普（Donald Trump）最新的關稅舉措，為全球貿易前景再度帶來不確定性，歐洲股市主要指數今天收盤挫跌。"
+          "content": "（中央社記者鍾榮峰台北23日電）台灣期貨交易所今天上午舉行新春團拜，董事長吳自心表示，期盼今年期貨市場達到交易量4億口目標，期貨公會理事長詹正恩說，突破4億口應該沒問題，在各方努力下，「不僅4億口，還要上看5億口」，帶動現場出席貴賓一陣掌聲。"
         },
         {
-          "title": "〈國泰金經濟調查〉景氣展望與消費意願雙回升 股市創高後民眾轉趨謹慎",
-          "url": "https://news.cnyes.com/news/id/6350026",
+          "title": "晶睿3/27正式下市、3/18最後交易日 將成台達電100%子公司",
+          "url": "https://news.cnyes.com/news/id/6349607",
           "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;國泰金控 (2882-TW) 今 (24) 日公布 2026 年 2 月國民經濟信心調查結果，隨著景氣對策信號轉呈紅燈，實體經濟表現穩健，帶動民眾景氣展望樂觀指數與大額消費意願同步回升。儘管市場對 AI 前景與台美關稅調降抱持正面期待，但在股市大幅走揚後，民眾的股市樂觀情緒已出現高檔修正、轉趨審慎。&lt;/p&gt;\n\n&lt;p&gt;國發會最新公布的 12 月景氣對策信號轉呈紅燈，領先及同時指標持續上升，反映景氣仍呈穩健成長。國泰金本月調查顯示，景氣現況樂觀指數上升至 12.3，展望樂觀指數回升至 4.4。大額消費意願指數上升至 14.2，耐久財消費意願指數回升至 - 7.6。&lt;/p&gt;\n\n&lt;p&gt;主計總處於 2025 年 11 月 28 日預估台灣 2026 年經濟成長率 3.54%，通貨膨脹率 1.61%。國泰金本月調查結果顯示，民眾對於 2026 年經濟成長率的平均預期值為 3.16%，有 61% 的民眾認為 2026 年經濟成長率會高於 3%；而民眾對於 2026 年平均通膨預期值為 2.19%，有 54% 的民眾認為 2026 年通貨膨脹率會高於 2%。相較於主計總處，民眾對於 2026 年的經濟成長預估略偏保守，對於通膨預期則依舊較高。&lt;/p&gt;\n\n&lt;p&gt;市場對於 AI 前景樂觀看待，且台積電財報及展望大幅優於預期，加上台灣對等關稅下降至 15%，台灣股市 1 月明顯走揚，但波動加大。國泰金本月調查結果顯示，民眾對於台股的樂觀指數下降至 31.5，風險偏好指數上升至 25.4，顯示股市大漲後，民眾看法轉趨謹慎。&lt;/p&gt;\n\n&lt;p&gt;針對 2026 台美關稅協議對台灣 GDP 與股市影響調查，調查結果顯示，48% 民眾認為關稅協議對 GDP 與股市皆有正面影響；其次有 13% 民眾預期對 GDP 有負面影響，但對股市有正面影響；另有 13% 民眾覺得對 GDP 與股市皆有負面影響。&lt;/p&gt;\n\n&lt;p&gt;其中針對台股指數影響的大小，調查結果顯示，30% 的民眾認為有部分推升效果，介於 500-1000 (不含) 點，其次有 27% 民眾認為有小幅推升效果，介於 0-500 (不含) 點。&nbsp;&lt;/p&gt;\n\n&lt;p&gt;針對目前協議對台灣最有可能產生的影響，調查結果顯示，41% 的民眾認為有助提升半導體產業國際競爭力，另有 16% 民眾認為有助提升傳統產業國際競爭力，但有 19% 民眾擔憂造成部分產業外移及就業機會變少。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;國泰金控提供&quot; data-height=&quot;374&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.585561497326203&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350026/m/aaee04ac4b8c2784bbcc02ea64884c90.jpg&quot; data-width=&quot;593&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350026/l/aaee04ac4b8c2784bbcc02ea64884c90.jpg&quot;&gt;\n&lt;figcaption&gt;國泰金控提供&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+          "content": "&lt;p&gt;證交所今 (23) 日公告，安控廠晶睿 (3454-TW) 因與台達電 (2308-TW) 進行股份轉換，將成為台達電 100% 持股之子公司。依照證交所營業細則規定，晶睿將於 2026 年 3 月 27 日正式下市，結束其在資本市場掛牌 15 年的歷史。&lt;/p&gt;\n\n&lt;p&gt;根據證交所公告，晶睿上市股票最後交易日為 3 月 18 日，將自 3 月 19 日起停止買賣，停止股東名簿記載變更起迄日期為 3 月 23 日至 3 月 27 日，並於 3 月 27 日終止上市。&lt;/p&gt;\n\n&lt;p&gt;台達電去年 12 月宣布以每股 100 元、總金額約 37.33 億元，取得子公司晶睿 43.12% 股權。台達董事長暨執行長鄭平表示，智慧樓宇是長期看好的趨勢，晶睿加入集團以來，成為在樓宇自動化的關鍵支柱，面對全球市場快速變遷的挑戰與機會，透過更緊密的整合，將能加快決策並進一步提升資源綜效。&lt;/p&gt;\n\n&lt;p&gt;證交所表示，此案符合營業細則第 53 條之 11 規定，經核准後予以公告。對於晶睿的股東而言，股份轉換後的權利義務將依據雙方簽署之股份轉換契約辦理。&lt;/p&gt;\n"
         },
         {
-          "title": "台美關稅協議　調查：48%民眾認對GDP與股市影響正面",
-          "url": "https://www.cna.com.tw/news/afe/202602240032.aspx",
+          "title": "公司債未如期償付！永冠-KY明起併案列全額交割、分盤交易",
+          "url": "https://news.cnyes.com/news/id/6349597",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;證交所於今 (23) 日公告，永冠 - KY(1589-TW) 因無法如期償還債權人要求贖回之可轉換公司債，觸及證交所營業細則相關條款，自 2026 年 2 月 24 日起，其上市有價證券將改列為變更交易方法，並採行分盤集合競價，俗稱全額交割併分盤交易。&lt;/p&gt;\n\n&lt;p&gt;證交所指出，永冠能源科技集團有限公司此次因未能如期償付可轉債贖回款項，核有證交所營業細則第 49 條之 1 第 1 項第 7 款及第 49 條之 3 第 1 項第 2 款規定之情事。為了維護市場交易秩序並提醒投資人風險，證交所決定對其採取更嚴格的交易管控。&lt;/p&gt;\n\n&lt;p&gt;永冠自明 (24) 日起打入全額交割股，也就是說，投資人買賣該股票需預收足額款券，同時採取分盤集合競價，透過交易撮合時間拉長，進一步管控流動性風險。&lt;/p&gt;\n\n&lt;p&gt;面對財務壓力，永冠 - KY 先前表示已擬定三大因應措施，希望能確保投資人權益並穩定公司營運，包括優化財務結構、尋求策略性投資人以及加強資金調度。然而，隨著證交所正式祭出處置措施，市場對其後續債務清償進度與營運動能將持續保持高度關注。&lt;/p&gt;\n\n&lt;p&gt;市場法人提醒，KY 公司若出現資金調度缺口導致債券違約，通常會引發市場對其現金流的疑慮。投資人在參與變更交易方法後的股票買賣時，應審慎評估其後續財務報告與債務協商進度。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
+          "url": "https://news.cnyes.com/news/id/6349590",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大量科技今起遭處置交易至3/10每5分鐘撮合一次",
+          "url": "https://news.cnyes.com/news/id/6349986",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;AOI 及 PCB 鑽孔、成型設備廠大量科技 (3167-TW) 遭處置交易，交易所公布，大量科技自今 (24) 日起 10 個交易日至 3 月 10 日，採取分盤交易，每 5 分鐘人工撮合一次。&lt;/p&gt;\n\n&lt;p&gt;設備大量科技 2025 年營收 50.78 億元，年增 95.35%，法人估計 2026 年營收將向上挑戰 75 億元，年增 47.7%，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;同時，大量科技董事會也通過對南京大量數控科技有限公司海外上市案，預計在香港聯交所主板上市，大量科技指出，南京大量數控科技所發行上市&nbsp; &nbsp;募集資金淨額，主要將用於補充營運資金；待募集資金到位後，可用於提升產能及業務競爭力，有利於增加集團獲利及股東權益。&lt;/p&gt;\n\n&lt;p&gt;在上市 PCB 廠中，欣興 (3037-TW) 也擬對蘇州 IC 載板廠赴香港掛牌。&lt;/p&gt;\n"
+        },
+        {
+          "title": "永冠公司債償還未如期遭變更交易　股價跳空鎖跌停",
+          "url": "https://www.cna.com.tw/news/afe/202602240038.aspx",
           "source": "中央社產經",
-          "content": "（中央社記者蘇思云台北24日電）國泰金發布2月國民經濟信心調查結果，針對2026台美關稅協議對台灣國內生產毛額（GDP）與股市影響，調查顯示，48%民眾認為關稅協議對GDP與股市皆有正面影響；其次13%預期對GDP有負面影響，但對股市正面；另13%認為對GDP與股市皆有負面影響。"
+          "content": "（中央社記者鍾榮峰台北24日電）鑄件大廠永冠-KY因短期營運資金緊縮，無法如期償還債權人要求贖回第4次無擔保轉換公司債，證交所宣布今天起永冠-KY上市股票列為變更交易方法，並採行分盤集合競價交易方式。永冠-KY今天開盤跳空鎖住跌停15.25元，委賣量超過8000張。"
+        },
+        {
+          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
+          "url": "https://news.cnyes.com/news/id/6350506",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
+      "word": "2025年",
+      "count": 40,
+      "articles": [
+        {
+          "title": "獨身擴散！2025年Q3全國1人1宅近260萬宅 創統計新高",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348389",
+          "source": "自由時報",
+          "content": "\n\n\n獨身現象擴散，每3.04宅就有1宅是獨身宅。全國設有戶籍住宅平均人口數已連3季不到3人，2025年第3季更僅有2.9人，創統計以來新低，進一步觀察全國設有戶籍宅內人口數分...…"
+        },
+        {
+          "title": "〈房產〉2025年開工宅數創6年新低  房仲：馬年由都更、小宅支撐房市動能",
+          "url": "https://news.cnyes.com/news/id/6349008",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;馬年開工日，不動產業的開工狀況恐將面臨調節。內政部最新資料顯示，2025 年全年住宅開工宅數 12.7 萬宅，較前一年減少約 2%，為近 6 年新低，意味著不動產開發市場因應政策與景氣變化，已從源頭的開工量進行調整，2026 年的市場供給量也趨向保守，不過房市利空出盡，近年遞延的需求買氣可望在今年逐漸回歸。&lt;/p&gt;\n\n&lt;p&gt;台灣房屋集團副總裁周鶴鳴今 (23) 日指出，去年房市受政策抑制，2025 年全台買賣移轉棟數約為 26.1 萬棟，創下近 9 年新低。不過從經濟結構來看，整體經濟呈現「K 型復甦」，高資產族群資金充沛，置產動能相對穩定，青年族群則受到新青安政策時效影響，預期 2026 年 7 月政策到期前，新青安優惠效應，將使首購形成短期支撐。打炒房政策的利空已逐步被市場消化，過去因政策與利率環境而延後進場的買氣，正逐漸累積成潛在需求。在通貨膨脹貨幣貶值的預期下，實體資產的保值需求將重新抬頭，不動產仍具長線吸引力。&lt;/p&gt;\n\n&lt;p&gt;在產業面上，周鶴鳴指出，全球供應鏈重組持續進行，台灣製造業升級與產業鏈調整，帶動工業地產與廠辦市場出現換手潮，部分企業透過處分資產活化資金，也讓工業不動產成為下一波結構性焦點。同時，產業過度集中於科技股，使金融市場風險提高，部分股市資金開始轉向實體資產配置，房市再次成為資金避風港選項之一。&lt;/p&gt;\n\n&lt;p&gt;就政策面而言，周鶴鳴認為，央行利率政策短期內不易鬆動，房市走勢並非由單一利率決定，而是取決於整體家庭資產結構與財富累積速度。值得關注的是，危老重建條例修改立法後，不但解決老舊建物安全問題，政府政策積極推動下，也能帶動內需經濟成長，其中危老整合、建築經理、全案管理等，為不動產創造結構性成長動能。&lt;/p&gt;\n\n&lt;p&gt;從社會層面的角度來看，單身人口與小家庭比例持續上升，居住需求正快速轉向「機能型、安全型、小宅化」，捷運宅、都會小坪數、管理完善的新型社區，將是未來主流產品，也將重塑建商產品規劃與市場供給方向。&lt;/p&gt;\n\n&lt;p&gt;周鶴鳴總結，2026 年房市整體仍處於「調整、整理、等待」階段，但最壞情況已過，市場將從「價撐量縮」逐步轉向「價修量回」，對買方而言是近年少見的議價機會點；對賣方而言，則必須回歸理性定價與產品競爭力，才能在築底盤中順利成交。從總體環境來看，房市結構已逐步形成「短空長多」的趨勢，2026 年將是價格築底、動能重新累積的重要一年。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;369&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.6720867208672088&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6349008/m/abad7a2a96bc8367b6479a320d09c69a.jpg&quot; data-width=&quot;617&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6349008/l/abad7a2a96bc8367b6479a320d09c69a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "東科2025年獲利創次高 擬配7.2元",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348709",
+          "source": "自由時報",
+          "content": "\n\n\n影音揚聲器系統ODM製造商東科-KY（5225）今2025年財報。其中全年營收為110.39億元，毛利率16.4%，稅後淨利7.998億元、年減16%，每股稅後盈餘（EP...…"
+        },
+        {
+          "title": "東科-KY 2025年EPS 10.26元歷史次高 配發現金股利7.2元 3/27除息",
+          "url": "https://news.cnyes.com/news/id/6349244",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;聲學 ODM 廠東科 - KY(5225-TW) 今 (23) 日董事會後決議通過 2025 年財報，全年賺 8 億元，每股純益 10.26 元創歷史次高，並通過發放現金股利 7.2 元，配發率 70.2%，維持以往高配息率，並預計 3/27 為除息日。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 114 年全年累計營收 110.4 億元，年減 11%；毛利率 16.4%，年減 0.8 個百分點；營業利益 7.4 億元，年減 16%；營益率 6.7%，年減 0.4 個百分點；稅後純益 8 億元，年減 16%，每股純益 10.26 元。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 表示，2025 年毛利率、營業利益率與稅後淨利率因強化韌性增加費用而略減，但佈局更加完整、營運體質更加健康。深耕韓日電視品牌客戶及拓展歐洲精品音響客戶產品皆有達標。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 提到，由於對等關稅政策攪局，各季產銷節奏與往年略有消長，大陸廠與丹麥廠在年底前淡季陸續遷移，以因應未來更好的生產環境、更低的營運成本而努力。不確定的外在因素陸續消除，不變的是精益求精，強化應變能力與準備。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 指出，公司經營穩健，制度有序，歷年來皆謹守所有權與經營權分治，不論大股東所有權是否異動，不影響經營成果與現有專業經理人接班規劃，對於任何能增進公司經營效率、擴大營業視野與合作，皆樂觀其成。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 預告，公司訂於 4-23 發放股利，5-29 為股東會召開日，來年營運持續正向穩健。&lt;/p&gt;\n"
+        },
+        {
+          "title": "互動2025年EPS 5.78元 配發現金股利6元",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348964",
+          "source": "自由時報",
+          "content": "\n\n\n互動（6486）2025年合併營收為26.86億元，年增6.1%，稅後純益2.96億元，年增3.6%，每股盈餘（EPS）5.78元，創歷史新高。今日董事會同時通過2025...…"
+        },
+        {
+          "title": "矽統2025年獲利創20年高　每股配息0.6元",
+          "url": "https://www.cna.com.tw/news/afe/202602230273.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹23日電）特殊應用晶片（ASIC）廠矽統2025年歸屬母公司淨利新台幣7.88億元，創下20年來新高，每股純益1.53元，董事會決議每股配發0.6元現金股利。"
+        },
+        {
+          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
+          "url": "https://news.cnyes.com/news/id/6350506",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "史上第二高！華為2025年銷售收入超過8,800億",
+          "url": "https://news.cnyes.com/news/id/6350565",
+          "source": "鉅亨網(tech)",
+          "content": "&lt;p&gt;華為最新年度收入出爐，華為董事長梁華周二（24 日）在 2026 廣東省高質量發展大會上表示，2025 年華為銷售收入超過 8,800 億元人民幣。&lt;/p&gt;\n\n&lt;p&gt;據《科創板日報》報導，此前已有消息稱 2025 年華為銷售收入的具體數字為 8,809 億元人民幣，增長 2.2%。&lt;/p&gt;\n\n&lt;p&gt;華為過去 6 年營收情況分別為：2019 年 8,588 億元；2020 年 8,914 億元；2021 年 6,368 億元；2022 年 6,423 億元；2023 年 7,042 億元；2024 年 8,621 億元。&lt;/p&gt;\n\n&lt;p&gt;數據對比可見，歷史峰值出現在 2020 年，達到 8,914 億元。此後，由於 2020 年 5 月美國對華為的制裁進一步升級，手機業務遭受重創，被迫出售榮耀，導致隨後幾年營收大幅下滑。&lt;/p&gt;\n\n&lt;p&gt;華為最新公布的 2025 年超過 8,800 億元，成為華為史上銷售收入第二高的年份。&lt;/p&gt;\n\n&lt;p&gt;隨著手機業務回歸正常產品發布的節奏，華為營收逐步回到歷史高點，但也意味著後續面臨較大成長壓力。&lt;/p&gt;\n\n&lt;p&gt;相較 2024 年 22.4% 的增速，2025 年僅微增約 2.2%。未來華為能否突破營收 9,000 億元大關，實現對歷史高峰的超越，仍有待人工智慧（AI）算力、智慧車等新業務成長為關鍵增長極。&lt;/p&gt;\n\n&lt;p&gt;梁華稱，將持續加大研發投入， 以一體機、集群、超節點等系列化產品和解決方案滿足快速增長的算力需求，建立以昇騰為核心的 AI 開放生態；加強鴻蒙生態建設，突破一定規模，實現良好用戶體驗。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "寶雅2025年賺近3個股本　早盤股價漲逾8%",
+          "url": "https://www.cna.com.tw/news/afe/202602240103.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者江明晏台北24日電）寶雅去年度財報出爐，每股盈餘（EPS）達29.54元，2025年大賺近3個股本，今天早盤股價大漲逾8%，最高達498元，逼近500元大關；此外，寶雅股票將進行一拆十的規劃，由原每股面額10元變更為每股面額1元。"
+        },
+        {
+          "title": "新案買氣入冬 2025年全台預售屋揭露總數 年減67％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349775",
+          "source": "自由時報",
+          "content": "\n\n\n去年是全台預售屋買氣的寒冷冬天，全年實價揭露總件數近4.24萬件，對比買氣有如炎熱夏天的2024年預售屋揭露總件數、高達13.06萬件，直接少掉約8.82萬件、年減幅逾6...…"
         }
       ]
     },
@@ -3343,72 +3465,6 @@
       ]
     },
     {
-      "word": "交易",
-      "count": 39,
-      "articles": [
-        {
-          "title": "NBA》勇士老闆談交易庫明加 強調：這個決定並不難！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347078",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "人口紅利加持 台南永康、安南與高雄鳳山、三民交易熱區  今年首購市場回穩",
-          "url": "https://estate.ltn.com.tw/article/26939",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "土方亂象一》雙北土方處理費暴漲3倍 建商籲公平交易委員會應徹查",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348178",
-          "source": "自由時報",
-          "content": "\n\n\n〔調查新聞中心／台北報導〕為解決廢土亂倒問題，今年元旦上路「營建剩餘土石方全流向管理」新制，卻因配套不足，導致全台陷入「土方之亂」，多名建商控訴雙北民營土資場的土方收取處理費用從原先的每立方公尺...…"
-        },
-        {
-          "title": "期交所新春團拜　盼今年交易量衝破4億口",
-          "url": "https://www.cna.com.tw/news/afe/202602230073.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者鍾榮峰台北23日電）台灣期貨交易所今天上午舉行新春團拜，董事長吳自心表示，期盼今年期貨市場達到交易量4億口目標，期貨公會理事長詹正恩說，突破4億口應該沒問題，在各方努力下，「不僅4億口，還要上看5億口」，帶動現場出席貴賓一陣掌聲。"
-        },
-        {
-          "title": "晶睿3/27正式下市、3/18最後交易日 將成台達電100%子公司",
-          "url": "https://news.cnyes.com/news/id/6349607",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;證交所今 (23) 日公告，安控廠晶睿 (3454-TW) 因與台達電 (2308-TW) 進行股份轉換，將成為台達電 100% 持股之子公司。依照證交所營業細則規定，晶睿將於 2026 年 3 月 27 日正式下市，結束其在資本市場掛牌 15 年的歷史。&lt;/p&gt;\n\n&lt;p&gt;根據證交所公告，晶睿上市股票最後交易日為 3 月 18 日，將自 3 月 19 日起停止買賣，停止股東名簿記載變更起迄日期為 3 月 23 日至 3 月 27 日，並於 3 月 27 日終止上市。&lt;/p&gt;\n\n&lt;p&gt;台達電去年 12 月宣布以每股 100 元、總金額約 37.33 億元，取得子公司晶睿 43.12% 股權。台達董事長暨執行長鄭平表示，智慧樓宇是長期看好的趨勢，晶睿加入集團以來，成為在樓宇自動化的關鍵支柱，面對全球市場快速變遷的挑戰與機會，透過更緊密的整合，將能加快決策並進一步提升資源綜效。&lt;/p&gt;\n\n&lt;p&gt;證交所表示，此案符合營業細則第 53 條之 11 規定，經核准後予以公告。對於晶睿的股東而言，股份轉換後的權利義務將依據雙方簽署之股份轉換契約辦理。&lt;/p&gt;\n"
-        },
-        {
-          "title": "公司債未如期償付！永冠-KY明起併案列全額交割、分盤交易",
-          "url": "https://news.cnyes.com/news/id/6349597",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;證交所於今 (23) 日公告，永冠 - KY(1589-TW) 因無法如期償還債權人要求贖回之可轉換公司債，觸及證交所營業細則相關條款，自 2026 年 2 月 24 日起，其上市有價證券將改列為變更交易方法，並採行分盤集合競價，俗稱全額交割併分盤交易。&lt;/p&gt;\n\n&lt;p&gt;證交所指出，永冠能源科技集團有限公司此次因未能如期償付可轉債贖回款項，核有證交所營業細則第 49 條之 1 第 1 項第 7 款及第 49 條之 3 第 1 項第 2 款規定之情事。為了維護市場交易秩序並提醒投資人風險，證交所決定對其採取更嚴格的交易管控。&lt;/p&gt;\n\n&lt;p&gt;永冠自明 (24) 日起打入全額交割股，也就是說，投資人買賣該股票需預收足額款券，同時採取分盤集合競價，透過交易撮合時間拉長，進一步管控流動性風險。&lt;/p&gt;\n\n&lt;p&gt;面對財務壓力，永冠 - KY 先前表示已擬定三大因應措施，希望能確保投資人權益並穩定公司營運，包括優化財務結構、尋求策略性投資人以及加強資金調度。然而，隨著證交所正式祭出處置措施，市場對其後續債務清償進度與營運動能將持續保持高度關注。&lt;/p&gt;\n\n&lt;p&gt;市場法人提醒，KY 公司若出現資金調度缺口導致債券違約，通常會引發市場對其現金流的疑慮。投資人在參與變更交易方法後的股票買賣時，應審慎評估其後續財務報告與債務協商進度。&lt;/p&gt;\n"
-        },
-        {
-          "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
-          "url": "https://news.cnyes.com/news/id/6349590",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n"
-        },
-        {
-          "title": "大量科技今起遭處置交易至3/10每5分鐘撮合一次",
-          "url": "https://news.cnyes.com/news/id/6349986",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;AOI 及 PCB 鑽孔、成型設備廠大量科技 (3167-TW) 遭處置交易，交易所公布，大量科技自今 (24) 日起 10 個交易日至 3 月 10 日，採取分盤交易，每 5 分鐘人工撮合一次。&lt;/p&gt;\n\n&lt;p&gt;設備大量科技 2025 年營收 50.78 億元，年增 95.35%，法人估計 2026 年營收將向上挑戰 75 億元，年增 47.7%，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;同時，大量科技董事會也通過對南京大量數控科技有限公司海外上市案，預計在香港聯交所主板上市，大量科技指出，南京大量數控科技所發行上市&nbsp; &nbsp;募集資金淨額，主要將用於補充營運資金；待募集資金到位後，可用於提升產能及業務競爭力，有利於增加集團獲利及股東權益。&lt;/p&gt;\n\n&lt;p&gt;在上市 PCB 廠中，欣興 (3037-TW) 也擬對蘇州 IC 載板廠赴香港掛牌。&lt;/p&gt;\n"
-        },
-        {
-          "title": "永冠公司債償還未如期遭變更交易　股價跳空鎖跌停",
-          "url": "https://www.cna.com.tw/news/afe/202602240038.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者鍾榮峰台北24日電）鑄件大廠永冠-KY因短期營運資金緊縮，無法如期償還債權人要求贖回第4次無擔保轉換公司債，證交所宣布今天起永冠-KY上市股票列為變更交易方法，並採行分盤集合競價交易方式。永冠-KY今天開盤跳空鎖住跌停15.25元，委賣量超過8000張。"
-        },
-        {
-          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
-          "url": "https://news.cnyes.com/news/id/6350506",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
       "word": "新春",
       "count": 39,
       "articles": [
@@ -3471,72 +3527,6 @@
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348415",
           "source": "自由時報",
           "content": "台中市長盧秀燕今年首次缺席新春團拜，也是她卸任前的最後一次團拜，民進黨中市議會黨團總召周永鴻表示，盧市長最後一年團拜可以缺席，但給議會、給人民應該履行的義務不能缺席，他也請市長...…"
-        }
-      ]
-    },
-    {
-      "word": "2025年",
-      "count": 39,
-      "articles": [
-        {
-          "title": "獨身擴散！2025年Q3全國1人1宅近260萬宅 創統計新高",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348389",
-          "source": "自由時報",
-          "content": "\n\n\n獨身現象擴散，每3.04宅就有1宅是獨身宅。全國設有戶籍住宅平均人口數已連3季不到3人，2025年第3季更僅有2.9人，創統計以來新低，進一步觀察全國設有戶籍宅內人口數分...…"
-        },
-        {
-          "title": "〈房產〉2025年開工宅數創6年新低  房仲：馬年由都更、小宅支撐房市動能",
-          "url": "https://news.cnyes.com/news/id/6349008",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;馬年開工日，不動產業的開工狀況恐將面臨調節。內政部最新資料顯示，2025 年全年住宅開工宅數 12.7 萬宅，較前一年減少約 2%，為近 6 年新低，意味著不動產開發市場因應政策與景氣變化，已從源頭的開工量進行調整，2026 年的市場供給量也趨向保守，不過房市利空出盡，近年遞延的需求買氣可望在今年逐漸回歸。&lt;/p&gt;\n\n&lt;p&gt;台灣房屋集團副總裁周鶴鳴今 (23) 日指出，去年房市受政策抑制，2025 年全台買賣移轉棟數約為 26.1 萬棟，創下近 9 年新低。不過從經濟結構來看，整體經濟呈現「K 型復甦」，高資產族群資金充沛，置產動能相對穩定，青年族群則受到新青安政策時效影響，預期 2026 年 7 月政策到期前，新青安優惠效應，將使首購形成短期支撐。打炒房政策的利空已逐步被市場消化，過去因政策與利率環境而延後進場的買氣，正逐漸累積成潛在需求。在通貨膨脹貨幣貶值的預期下，實體資產的保值需求將重新抬頭，不動產仍具長線吸引力。&lt;/p&gt;\n\n&lt;p&gt;在產業面上，周鶴鳴指出，全球供應鏈重組持續進行，台灣製造業升級與產業鏈調整，帶動工業地產與廠辦市場出現換手潮，部分企業透過處分資產活化資金，也讓工業不動產成為下一波結構性焦點。同時，產業過度集中於科技股，使金融市場風險提高，部分股市資金開始轉向實體資產配置，房市再次成為資金避風港選項之一。&lt;/p&gt;\n\n&lt;p&gt;就政策面而言，周鶴鳴認為，央行利率政策短期內不易鬆動，房市走勢並非由單一利率決定，而是取決於整體家庭資產結構與財富累積速度。值得關注的是，危老重建條例修改立法後，不但解決老舊建物安全問題，政府政策積極推動下，也能帶動內需經濟成長，其中危老整合、建築經理、全案管理等，為不動產創造結構性成長動能。&lt;/p&gt;\n\n&lt;p&gt;從社會層面的角度來看，單身人口與小家庭比例持續上升，居住需求正快速轉向「機能型、安全型、小宅化」，捷運宅、都會小坪數、管理完善的新型社區，將是未來主流產品，也將重塑建商產品規劃與市場供給方向。&lt;/p&gt;\n\n&lt;p&gt;周鶴鳴總結，2026 年房市整體仍處於「調整、整理、等待」階段，但最壞情況已過，市場將從「價撐量縮」逐步轉向「價修量回」，對買方而言是近年少見的議價機會點；對賣方而言，則必須回歸理性定價與產品競爭力，才能在築底盤中順利成交。從總體環境來看，房市結構已逐步形成「短空長多」的趨勢，2026 年將是價格築底、動能重新累積的重要一年。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;369&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.6720867208672088&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6349008/m/abad7a2a96bc8367b6479a320d09c69a.jpg&quot; data-width=&quot;617&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6349008/l/abad7a2a96bc8367b6479a320d09c69a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "東科2025年獲利創次高 擬配7.2元",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348709",
-          "source": "自由時報",
-          "content": "\n\n\n影音揚聲器系統ODM製造商東科-KY（5225）今2025年財報。其中全年營收為110.39億元，毛利率16.4%，稅後淨利7.998億元、年減16%，每股稅後盈餘（EP...…"
-        },
-        {
-          "title": "東科-KY 2025年EPS 10.26元歷史次高 配發現金股利7.2元 3/27除息",
-          "url": "https://news.cnyes.com/news/id/6349244",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;聲學 ODM 廠東科 - KY(5225-TW) 今 (23) 日董事會後決議通過 2025 年財報，全年賺 8 億元，每股純益 10.26 元創歷史次高，並通過發放現金股利 7.2 元，配發率 70.2%，維持以往高配息率，並預計 3/27 為除息日。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 114 年全年累計營收 110.4 億元，年減 11%；毛利率 16.4%，年減 0.8 個百分點；營業利益 7.4 億元，年減 16%；營益率 6.7%，年減 0.4 個百分點；稅後純益 8 億元，年減 16%，每股純益 10.26 元。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 表示，2025 年毛利率、營業利益率與稅後淨利率因強化韌性增加費用而略減，但佈局更加完整、營運體質更加健康。深耕韓日電視品牌客戶及拓展歐洲精品音響客戶產品皆有達標。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 提到，由於對等關稅政策攪局，各季產銷節奏與往年略有消長，大陸廠與丹麥廠在年底前淡季陸續遷移，以因應未來更好的生產環境、更低的營運成本而努力。不確定的外在因素陸續消除，不變的是精益求精，強化應變能力與準備。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 指出，公司經營穩健，制度有序，歷年來皆謹守所有權與經營權分治，不論大股東所有權是否異動，不影響經營成果與現有專業經理人接班規劃，對於任何能增進公司經營效率、擴大營業視野與合作，皆樂觀其成。&lt;/p&gt;\n\n&lt;p&gt;東科 - KY 預告，公司訂於 4-23 發放股利，5-29 為股東會召開日，來年營運持續正向穩健。&lt;/p&gt;\n"
-        },
-        {
-          "title": "互動2025年EPS 5.78元 配發現金股利6元",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348964",
-          "source": "自由時報",
-          "content": "\n\n\n互動（6486）2025年合併營收為26.86億元，年增6.1%，稅後純益2.96億元，年增3.6%，每股盈餘（EPS）5.78元，創歷史新高。今日董事會同時通過2025...…"
-        },
-        {
-          "title": "矽統2025年獲利創20年高　每股配息0.6元",
-          "url": "https://www.cna.com.tw/news/afe/202602230273.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹23日電）特殊應用晶片（ASIC）廠矽統2025年歸屬母公司淨利新台幣7.88億元，創下20年來新高，每股純益1.53元，董事會決議每股配發0.6元現金股利。"
-        },
-        {
-          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
-          "url": "https://news.cnyes.com/news/id/6350506",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "史上第二高！華為2025年銷售收入超過8,800億",
-          "url": "https://news.cnyes.com/news/id/6350565",
-          "source": "鉅亨網(tech)",
-          "content": "&lt;p&gt;華為最新年度收入出爐，華為董事長梁華周二（24 日）在 2026 廣東省高質量發展大會上表示，2025 年華為銷售收入超過 8,800 億元人民幣。&lt;/p&gt;\n\n&lt;p&gt;據《科創板日報》報導，此前已有消息稱 2025 年華為銷售收入的具體數字為 8,809 億元人民幣，增長 2.2%。&lt;/p&gt;\n\n&lt;p&gt;華為過去 6 年營收情況分別為：2019 年 8,588 億元；2020 年 8,914 億元；2021 年 6,368 億元；2022 年 6,423 億元；2023 年 7,042 億元；2024 年 8,621 億元。&lt;/p&gt;\n\n&lt;p&gt;數據對比可見，歷史峰值出現在 2020 年，達到 8,914 億元。此後，由於 2020 年 5 月美國對華為的制裁進一步升級，手機業務遭受重創，被迫出售榮耀，導致隨後幾年營收大幅下滑。&lt;/p&gt;\n\n&lt;p&gt;華為最新公布的 2025 年超過 8,800 億元，成為華為史上銷售收入第二高的年份。&lt;/p&gt;\n\n&lt;p&gt;隨著手機業務回歸正常產品發布的節奏，華為營收逐步回到歷史高點，但也意味著後續面臨較大成長壓力。&lt;/p&gt;\n\n&lt;p&gt;相較 2024 年 22.4% 的增速，2025 年僅微增約 2.2%。未來華為能否突破營收 9,000 億元大關，實現對歷史高峰的超越，仍有待人工智慧（AI）算力、智慧車等新業務成長為關鍵增長極。&lt;/p&gt;\n\n&lt;p&gt;梁華稱，將持續加大研發投入， 以一體機、集群、超節點等系列化產品和解決方案滿足快速增長的算力需求，建立以昇騰為核心的 AI 開放生態；加強鴻蒙生態建設，突破一定規模，實現良好用戶體驗。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "寶雅2025年賺近3個股本　早盤股價漲逾8%",
-          "url": "https://www.cna.com.tw/news/afe/202602240103.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者江明晏台北24日電）寶雅去年度財報出爐，每股盈餘（EPS）達29.54元，2025年大賺近3個股本，今天早盤股價大漲逾8%，最高達498元，逼近500元大關；此外，寶雅股票將進行一拆十的規劃，由原每股面額10元變更為每股面額1元。"
-        },
-        {
-          "title": "新案買氣入冬 2025年全台預售屋揭露總數 年減67％",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349775",
-          "source": "自由時報",
-          "content": "\n\n\n去年是全台預售屋買氣的寒冷冬天，全年實價揭露總件數近4.24萬件，對比買氣有如炎熱夏天的2024年預售屋揭露總件數、高達13.06萬件，直接少掉約8.82萬件、年減幅逾6...…"
         }
       ]
     }
