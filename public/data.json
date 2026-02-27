@@ -1,158 +1,141 @@
 {
-  "updateTime": "2026-02-27T20:00:50.916Z",
-  "fullDateStr": "2026/2/28 · 更新於 04:00:50",
+  "updateTime": "2026-02-27T22:00:51.595Z",
+  "fullDateStr": "2026/2/28 · 更新於 06:00:51",
   "aiResult": {
-    "sentiment_score": -0.35,
+    "sentiment_score": -0.15,
     "dimensions": {
-      "policy": 0.2,
-      "market": -0.6,
-      "industry": -0.4,
-      "international": -0.2,
-      "technical": -0.5
+      "policy": -0.7,
+      "market": -0.4,
+      "industry": -0.2,
+      "international": 0,
+      "technical": -0.3
     },
     "entities": [
       {
-        "name": "NVIDIA",
-        "sentiment": "negative",
-        "ticker": "NVDA.US"
-      },
-      {
-        "name": "Oracle",
-        "sentiment": "negative",
-        "ticker": "ORCL.US"
-      },
-      {
-        "name": "CoreWeave",
-        "sentiment": "negative",
+        "name": "Anthropic",
+        "sentiment": "Negative",
         "ticker": null
       },
       {
-        "name": "FedEx",
-        "sentiment": "positive",
-        "ticker": "FDX.US"
+        "name": "Alphabet",
+        "sentiment": "Positive",
+        "ticker": "GOOGL"
       },
       {
-        "name": "On Holding",
-        "sentiment": "positive",
-        "ticker": "ONON.US"
+        "name": "xAI",
+        "sentiment": "Positive",
+        "ticker": null
       },
       {
-        "name": "Meta",
-        "sentiment": "neutral",
-        "ticker": "META.US"
+        "name": "OpenAI",
+        "sentiment": "Positive",
+        "ticker": null
+      },
+      {
+        "name": "Illumina",
+        "sentiment": "Positive",
+        "ticker": "ILMN"
+      },
+      {
+        "name": "美國國防部",
+        "sentiment": "Neutral",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【宏觀報告：AI 敘事從「擴張夢」轉向「獲利檢驗」，關稅紅利現一線生機】</h3><p>今日市場情緒由昨日的<b>避險</b>轉向<b>深度價值修正</b>。比較昨日 IDC 提到的供應鏈內捲，今日市場核心矛盾已上移至<b>「AI 支出頂峰疑慮」[ID:3]</b>。即使 NVIDIA 財報超標，但估值倍數回落至 22 倍本益比，反映市場對 Hyper-scalers (Meta, MSFT) 未來資本支出能否轉化為獲利的極度不信任。</p><p><b>關鍵轉折點：</b>CoreWeave 雖大幅增加資本支出，但 Q1 展望低迷 <b>[ID:2]</b>，證實了 AI 基礎設施投入與營收實現之間存在顯著的<b>時間斷層</b>。此外，甲骨文 (ORCL) 的暴跌 <b>[ID:0]</b> 顯示拋售潮已擴散至傳統軟體巨頭。</p><p><b>避險指標觀察：</b>市場傳聞「巴逆逆」等反向指標開始對 AI 族群悲觀，從基金經理人角度看，這反而預示<b>短線殺估值已接近尾聲</b>。結構性機會出現在關稅訴訟 <b>[ID:1]</b>，若 1,700 億美元關稅成功退還，FedEx、Skechers 等高進口依賴企業將迎來巨大的<b>一次性現金流挹注</b>。</p>",
+    "summary": "<h3>【宏觀報告：從「獲利檢驗」到「政治效忠」——AI 產業的國安紅線】</h3><p>今日市場情緒從昨日的估值修正過渡至<b>政治風險定價</b>。相較於昨日聚焦 CoreWeave 的資本支出轉化率，今日核心矛盾在於 <b>[ID:0] 川普對 Anthropic 的強制封殺令</b>。這標誌著 AI 供應鏈的篩選標準已從技術領先性，轉向能否配合軍事用途的「政治合規」。</p><p><b>關鍵觀察點：</b>1. <b>轉單效應預期</b>：Anthropic 的 6 個月退出期為 <b>Alphabet (GOOGL)</b>、<b>xAI</b> 及 <b>OpenAI</b> 創造了瓜分 2 億美元國防部合約的機會，xAI 因馬斯克背景在後續競標中具備高度政治溢價。2. <b>防禦性板塊崛起</b>：在大盤指數量縮下跌之際，<b>Illumina (ILMN) [ID:1]</b> 逆勢上漲 5%，顯示資金在 AI 震盪期尋求生技基因組學等具備深溝壑的結構性防禦標的。</p><p><b>風險提醒：</b>目前未見「巴逆逆」等反向指標顯著對做，市場整體情緒趨於冷靜觀望。AI 基礎設施投資雖未停擺，但<b>「軍事禁令」</b>可能引發矽谷與華府的全面治理衝突，短線需防範 AI 龍頭股的政策性波動。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與AI"
+        "category": "政策風險"
       },
       {
         "id": 2,
-        "category": "全球貿易政策"
+        "category": "人工智慧"
       },
       {
         "id": 3,
-        "category": "雲端運算"
+        "category": "美股大盤"
       }
     ],
     "sector_stats": {
-      "tech": -0.7,
-      "finance": -0.2,
-      "manufacturing": 0.3,
-      "service": 0.1
+      "tech": -0.45,
+      "finance": -0.1,
+      "manufacturing": -0.2,
+      "service": 0.05
     },
     "events": [
       {
-        "title": "AI 資本支出頂峰恐慌 (AI Capex Peak)",
-        "summary": "NVIDIA 財報利多出盡，市場憂心科技巨頭縮減 AI 投資，導致供應鏈集體殺估值。",
+        "title": "川普閃擊 Anthropic：AI 國安清洗風暴",
+        "summary": "川普下令聯邦機構停用 Anthropic，主因服務條款拒絕不受限的軍事用途，引發供應鏈政治風險升溫。",
         "impact": "負面",
         "related_news_ids": [
-          2,
-          3
+          0
         ]
       },
       {
-        "title": "關稅撤銷訴訟風暴",
-        "summary": "逾兩千家企業集體提告追討 1,700 億美元關稅，可能為跨國企業帶來龐大退稅補貼。",
+        "title": "國防 AI 合約大洗牌",
+        "summary": "五角大廈將於 6 個月內撤換 Anthropic 技術，Alphabet、xAI 與 OpenAI 成為潛在轉單受益者。",
+        "impact": "正面",
+        "related_news_ids": [
+          0
+        ]
+      },
+      {
+        "title": "基因測序巨頭逆勢突圍",
+        "summary": "伊魯米納 (ILMN) 在美股主要指數全面下跌背景下逆勢大漲 5%，顯示資金轉向生技避險。",
         "impact": "正面",
         "related_news_ids": [
           1
-        ]
-      },
-      {
-        "title": "雲端基礎設施獲利斷層",
-        "summary": "CoreWeave 與 Oracle 表現不佳，顯示高額支出正吞噬短期利潤率。",
-        "impact": "負面",
-        "related_news_ids": [
-          0,
-          2
         ]
       }
     ],
     "relations": [
       {
-        "from": "CoreWeave",
-        "to": "NVIDIA",
-        "type": "供應鏈下單"
+        "from": "川普",
+        "to": "Anthropic",
+        "type": "政策制裁"
       },
       {
-        "from": "Meta",
-        "to": "NVIDIA",
-        "type": "資本支出關聯"
+        "from": "Anthropic",
+        "to": "美國國防部",
+        "type": "供應鏈合約終止"
       },
       {
-        "from": "川普政策",
-        "to": "FedEx",
-        "type": "法律訴訟爭議"
+        "from": "xAI",
+        "to": "美國國防部",
+        "type": "競爭性替代供應"
       },
       {
-        "from": "NVIDIA",
-        "to": "Oracle",
-        "type": "板塊情緒聯動"
+        "from": "Alphabet",
+        "to": "美國國防部",
+        "type": "競爭性替代供應"
+      },
+      {
+        "from": "OpenAI",
+        "to": "美國國防部",
+        "type": "競爭性替代供應"
       }
     ]
   },
   "newsData": [
     {
-      "title": "盤中速報 - 甲骨文(ORCL-US)大跌5%，報142.79美元",
-      "url": "https://news.cnyes.com/news/id/6356370",
+      "title": "AI政策轉彎 川普下令聯邦機構全面停用Anthropic",
+      "url": "https://news.cnyes.com/news/id/6356395",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;甲骨文(ORCL-US)截至台北時間28日02:50股價下跌7.52美元，報142.79美元，跌幅5%，成交量17,789,861（股），盤中最高價146.08美元、最低價142.78美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.23%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.28%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.98%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;甲骨文(ORCL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.53%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.94%&lt;/li&gt;    &lt;li&gt;近 3 月：-27.84%&",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;美國總統川普週五 (27 日) 宣布，他已指示所有聯邦機構立即停止使用人工智慧 (AI) 新創公司&nbsp;Anthropic 的技術，為美國政府與 AI 業者之間的緊張關係再添變數。&lt;/p&gt;\n\n&lt;p&gt;川普在 Truth Social 發文強烈批評 Anthropic，指該公司試圖以服務條款「強迫」國防部就範，而非遵循美國憲法，並稱此舉已對國家安全構成威脅。他宣布，已指示美國政府所有聯邦機構立即停用 Anthropic 技術，並直言「我們不需要它，也不會再與他們做生意」。&lt;/p&gt;\n\n&lt;p&gt;不過，川普也表示，對於目前仍在不同程度使用 Anthropic 產品的單位 (如國防部) ，政府將提供為期六個月的逐步淘汰期限。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Anthropic 發言人尚未對此置評。&lt;/p&gt;\n\n&lt;p&gt;這項突如其來的命令發布之際，Anthropic 正面臨國防部施壓，要求其同意讓五角大廈在不受該公司限制的情況下使用其技術。&lt;/p&gt;\n\n&lt;p&gt;Anthro",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "關稅違法後遺症來了！逾兩千件訴訟壓境 川普政策風暴未完",
-      "url": "https://news.cnyes.com/news/id/6356340",
+      "title": "盤中速報 - 伊魯米納(ILMN-US)大漲5.03%，報133.81美元",
+      "url": "https://news.cnyes.com/news/id/6356382",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體與AI",
+      "category": "政策風險",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國最高法院日前裁定總統川普多數全球性關稅措施違法後，企業提告潮迅速升溫。根據《彭博》統計，相關關稅訴訟數量已突破 2,000 件，僅在裁決後數日內，就有逾百家公司新提訴訟，凸顯企業對於政府是否願意退還已徵收巨額關稅的疑慮。&lt;/p&gt;\n\n&lt;p&gt;包括聯邦快遞 (FDX-US)、Dyson、Dollar General(DG-US)、博士倫(Bausch + Lomb)、Brooks Brothers 與 Sol de Janeiro USA 等知名企業近期陸續提告；萊雅(L&rsquo;Oreal) 旗下子公司，以及 On Holding(ONON-US)與 Skechers 等鞋業公司，也加入訴訟行列，要求退還進口商品所繳納的關稅。企業盼在法院釐清退款機制前，保住自身權益。&lt;/p&gt;\n\n&lt;h6&gt;退款機制未明 企業搶先卡位&lt;/h6&gt;\n\n&lt;p&gt;最高法院並未就退款問題作出說明，相關賠償爭議將由位於紐約的美國國際貿易法院處理。司法部預計本週對後續法律程序提出意見，屆時將顯示政府對於加速或延緩處理退款訴求的態度",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "CoreWeave股價重挫2026年資本支出上看350億美元高於預期首季營收展望低於市場預期",
-      "url": "https://news.cnyes.com/news/id/6356362",
-      "source": "鉅亨網(wd_stock)",
-      "category": "全球貿易政策",
-      "thumbnail": null,
-      "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6356362/o/6e7f10b2e2cd9d074c4ef802dffe35ac.jpg&quot; alt=&quot;Getty Images&quot; /&gt;&lt;p&gt;2026年02月28日（優分析／產業數據中心報導）⸺ AI雲端運算業者CoreWeave公布財報後，股價重挫18%。市場反應主要來自公司大幅提高2026年資本支出規模，並釋出低於市場預期的首季營收展望。&lt;/p&gt;\n&lt;p&gt;CoreWeave表示，2026年資本支出預估將介於300至350億美元之間，明顯高於2025年的148.9億美元，增幅超過一倍。公司指出，支出大幅增加主要來自輝達Nvidia(NVDA-US)晶片採購，以及資料中心基礎設施擴建。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6356362/o/d98c283dc258b763b09e30082eccd481.j",
-      "timeStr": "上午04:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "財報超神股價卻大跌 輝達怎麼了？",
-      "url": "https://news.cnyes.com/news/id/6356166",
-      "source": "鉅亨網(wd_stock)",
-      "category": "雲端運算",
-      "thumbnail": null,
-      "content": "&lt;p&gt;輝達 (NVDA-US) 在最新財報中繳出亮眼成績單，營收與財測雙雙優於市場預期，展現強勁成長動能。然而，股價卻在財報後重挫，估值水準甚至看似接近「價值股」，形成基本面與股價表現之間的明顯落差。&lt;/p&gt;\n\n&lt;h6&gt;財報亮眼卻股價重挫 市值兩日蒸發約 3,600 億美元&lt;/h6&gt;\n\n&lt;p&gt;輝達股價在財報公布後的周四下跌 5.5%，創 4 月中旬以來最大單日跌幅，並拖累標普 500 指數走低，週五再跌約 2%。短短兩日，市值蒸發約 3,600 億美元。&lt;/p&gt;\n\n&lt;p&gt;儘管股價回落，該公司基本面仍強勁。輝達預估第一季營收約 780 億美元，大幅高於市場原先預期的約 730 億美元，帶動分析師上修獲利預測。不過，以預估本益比計算，輝達目前僅約 22 倍，遠低於過去五年平均的 37 倍，也幾乎與標普 500 整體水準相當。隨著獲利預期持續上調，其估值倍數還可能進一步下滑。&lt;/p&gt;\n\n&lt;p&gt;數據顯示，輝達過去 12 個月營收成長率達 65%，在標普 500 成分股中排名第三快，但估值",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;伊魯米納(ILMN-US)截至台北時間28日03:57股價上漲6.41美元，報133.81美元，漲幅5.03%，成交量1,949,677（股），盤中最高價133.81美元、最低價127.01美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.42%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.79%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.28%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.71%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;伊魯米納(ILMN-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.56%&lt;/li&gt;    &lt;li&gt;近 1 月：-20.35%&lt;/li&gt;    &lt;li&gt;近 3 月：-6.",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     }
   ],
@@ -195,58 +178,61 @@
   ],
   "events": [
     {
-      "title": "AI 資本支出頂峰恐慌 (AI Capex Peak)",
-      "summary": "NVIDIA 財報利多出盡，市場憂心科技巨頭縮減 AI 投資，導致供應鏈集體殺估值。",
+      "title": "川普閃擊 Anthropic：AI 國安清洗風暴",
+      "summary": "川普下令聯邦機構停用 Anthropic，主因服務條款拒絕不受限的軍事用途，引發供應鏈政治風險升溫。",
       "impact": "負面",
       "related_news_ids": [
-        2,
-        3
+        0
       ]
     },
     {
-      "title": "關稅撤銷訴訟風暴",
-      "summary": "逾兩千家企業集體提告追討 1,700 億美元關稅，可能為跨國企業帶來龐大退稅補貼。",
+      "title": "國防 AI 合約大洗牌",
+      "summary": "五角大廈將於 6 個月內撤換 Anthropic 技術，Alphabet、xAI 與 OpenAI 成為潛在轉單受益者。",
+      "impact": "正面",
+      "related_news_ids": [
+        0
+      ]
+    },
+    {
+      "title": "基因測序巨頭逆勢突圍",
+      "summary": "伊魯米納 (ILMN) 在美股主要指數全面下跌背景下逆勢大漲 5%，顯示資金轉向生技避險。",
       "impact": "正面",
       "related_news_ids": [
         1
-      ]
-    },
-    {
-      "title": "雲端基礎設施獲利斷層",
-      "summary": "CoreWeave 與 Oracle 表現不佳，顯示高額支出正吞噬短期利潤率。",
-      "impact": "負面",
-      "related_news_ids": [
-        0,
-        2
       ]
     }
   ],
   "relations": [
     {
-      "from": "CoreWeave",
-      "to": "NVIDIA",
-      "type": "供應鏈下單"
+      "from": "川普",
+      "to": "Anthropic",
+      "type": "政策制裁"
     },
     {
-      "from": "Meta",
-      "to": "NVIDIA",
-      "type": "資本支出關聯"
+      "from": "Anthropic",
+      "to": "美國國防部",
+      "type": "供應鏈合約終止"
     },
     {
-      "from": "川普政策",
-      "to": "FedEx",
-      "type": "法律訴訟爭議"
+      "from": "xAI",
+      "to": "美國國防部",
+      "type": "競爭性替代供應"
     },
     {
-      "from": "NVIDIA",
-      "to": "Oracle",
-      "type": "板塊情緒聯動"
+      "from": "Alphabet",
+      "to": "美國國防部",
+      "type": "競爭性替代供應"
+    },
+    {
+      "from": "OpenAI",
+      "to": "美國國防部",
+      "type": "競爭性替代供應"
     }
   ],
   "keywords7d": [
     {
       "word": "AI",
-      "count": 438,
+      "count": 439,
       "articles": [
         {
           "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
@@ -312,7 +298,7 @@
     },
     {
       "word": "US",
-      "count": 437,
+      "count": 439,
       "articles": [
         {
           "title": "《TAIPEI TIMES》 US tariff ruling unlikely to severely affect Taiwan",
@@ -378,7 +364,7 @@
     },
     {
       "word": "美元",
-      "count": 258,
+      "count": 259,
       "articles": [
         {
           "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
@@ -576,7 +562,7 @@
     },
     {
       "word": "中速",
-      "count": 138,
+      "count": 139,
       "articles": [
         {
           "title": "盤中速報 - 櫃買市場加權指數上漲5.94點至303.65點，漲幅2%",
@@ -840,7 +826,7 @@
     },
     {
       "word": "川普",
-      "count": 109,
+      "count": 111,
       "articles": [
         {
           "title": "〈美股盤後〉川普全球關稅被推翻 美股歡漲 三大指數周線攀高",
@@ -1235,6 +1221,72 @@
       ]
     },
     {
+      "word": "伊朗",
+      "count": 86,
+      "articles": [
+        {
+          "title": "多國敦促在伊朗公民儘快撤離",
+          "url": "https://news.cnyes.com/news/id/6347875",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "「以軍養商、以商強軍」 伊朗革命衛隊不僅能打 更會賺錢！",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347098",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "準備攻伊朗？衛星影像揭至少60架美軍戰機停放約旦基地",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347303",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美軍攻伊朗行動進入後期階段 鎖定哈米尼及其子",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347407",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
+          "url": "https://news.cnyes.com/news/id/6348121",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "美軍雙航艦「南北夾擊」伊朗  逾270架精銳戰機待命遠距打擊",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347642",
+          "source": "自由時報",
+          "content": "\n\n\n針對伊朗核計畫與區域挑釁行為，美國國防部已完成自2003年伊拉克戰爭以來，規模最龐大的中東軍事部署。根據最新情資與衛星監測，美軍目前正透過兩艘航空母艦打擊群形成「南北夾擊...…"
+        },
+        {
+          "title": "自由說新聞》伊朗爆學運街頭畫面曝光！群眾狂喊「獨裁去死」美軍攤牌開戰？",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347653",
+          "source": "自由時報",
+          "content": "\r\n\r\n【更多內容  請見影片】\r\n訂閱【自由追新聞】\r\n全新的視界！新聞話題不漏接，快訂閱YouTube 【自由追新聞】，記得開啟小鈴鐺哦！…"
+        },
+        {
+          "title": "美軍中東集結！伊朗仍未屈服 「川普很納悶」",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347892",
+          "source": "自由時報",
+          "content": "美國總統川普的中東特使魏科夫21日受訪中直言，川普對於美軍已在中東大舉集結，但伊朗尚未「屈服」感到納悶。\r\n\r\n《法新社》報導，魏科夫接受《福斯新聞》訪問時表示，川普總統在警告...…"
+        },
+        {
+          "title": "有轉機？傳伊朗願降濃縮鈾純度 美可能放棄「零鈾濃縮」立場",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347885",
+          "source": "自由時報",
+          "content": "美國已在中東地區進行大規模軍事部署，意圖促使伊朗達成核協議。《衛報》21日引述伊朗消息人士披露，伊朗拒絕將300公斤高濃縮鈾庫存運出國，但願意降低純度。《彭博》同日引述伊朗媒體...…"
+        },
+        {
+          "title": "伊朗反政府示威再起：美軍福特號急赴地中海，川普下核武最後通牒",
+          "url": "https://www.thenewslens.com/article/264904",
+          "source": "關鍵評論網",
+          "content": "伊朗昨（21）日再次爆發學生運動，多名大學生因新學期開始，重新齊聚反政府示威。示威活動旨在悼念上月因參與示威犧牲的人民，超過千名民眾在運動中死亡。"
+        }
+      ]
+    },
+    {
       "word": "TW",
       "count": 86,
       "articles": [
@@ -1297,72 +1349,6 @@
           "url": "https://news.cnyes.com/news/id/6349325",
           "source": "鉅亨網(tw_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對新日興(3376-TW)做出2025年EPS預估：中位數由1.64元下修至1.58元，其中最高估值2.99元，最低估值1.48元，預估目標價為297.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;2.99(2.99)&lt;/td&gt;&lt;td&gt;14.07&lt;/td&gt;&lt;td&gt;17.49&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;1.48(1.52)&lt;/td&gt;&lt;td&gt;6.64&lt;/td&gt;&lt;td&gt;11.93&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.76(1.79)&lt;/td&gt;&lt;td&gt;9.81&lt;/td&gt;&lt;td&gt;15.58&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;1.58(1.64)&lt;/td&gt;&lt;td&gt;9.57&lt;/td&gt;&lt;td&gt;16.16&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;11,753,470&lt;/td&gt;&lt;td&gt;26,545,000&lt;/td&gt;&lt;td&gt;32,427,980&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;10,626,000&lt;/td&gt;&lt;td&gt;16,535,000&lt;/td&gt;&lt;td&gt;21,049,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;10,946,430&lt;/td&gt;&lt;td&gt;21,054,220&lt;/td&gt;&lt;td&gt;28,519,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;10,873,500&lt;/td&gt;&lt;td&gt;20,569,000&lt;/td&gt;&lt;td&gt;29,377,500&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,359,332&lt;/td&gt;&lt;td&gt;807,404&lt;/td&gt;&lt;td&gt;1,659,184&lt;/td&gt;&lt;td&gt;1,169,603&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;13,327,345&lt;/td&gt;&lt;td&gt;10,067,747&lt;/td&gt;&lt;td&gt;11,824,698&lt;"
-        }
-      ]
-    },
-    {
-      "word": "伊朗",
-      "count": 83,
-      "articles": [
-        {
-          "title": "多國敦促在伊朗公民儘快撤離",
-          "url": "https://news.cnyes.com/news/id/6347875",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "「以軍養商、以商強軍」 伊朗革命衛隊不僅能打 更會賺錢！",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347098",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "準備攻伊朗？衛星影像揭至少60架美軍戰機停放約旦基地",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347303",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美軍攻伊朗行動進入後期階段 鎖定哈米尼及其子",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347407",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
-          "url": "https://news.cnyes.com/news/id/6348121",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "美軍雙航艦「南北夾擊」伊朗  逾270架精銳戰機待命遠距打擊",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347642",
-          "source": "自由時報",
-          "content": "\n\n\n針對伊朗核計畫與區域挑釁行為，美國國防部已完成自2003年伊拉克戰爭以來，規模最龐大的中東軍事部署。根據最新情資與衛星監測，美軍目前正透過兩艘航空母艦打擊群形成「南北夾擊...…"
-        },
-        {
-          "title": "自由說新聞》伊朗爆學運街頭畫面曝光！群眾狂喊「獨裁去死」美軍攤牌開戰？",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347653",
-          "source": "自由時報",
-          "content": "\r\n\r\n【更多內容  請見影片】\r\n訂閱【自由追新聞】\r\n全新的視界！新聞話題不漏接，快訂閱YouTube 【自由追新聞】，記得開啟小鈴鐺哦！…"
-        },
-        {
-          "title": "美軍中東集結！伊朗仍未屈服 「川普很納悶」",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347892",
-          "source": "自由時報",
-          "content": "美國總統川普的中東特使魏科夫21日受訪中直言，川普對於美軍已在中東大舉集結，但伊朗尚未「屈服」感到納悶。\r\n\r\n《法新社》報導，魏科夫接受《福斯新聞》訪問時表示，川普總統在警告...…"
-        },
-        {
-          "title": "有轉機？傳伊朗願降濃縮鈾純度 美可能放棄「零鈾濃縮」立場",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347885",
-          "source": "自由時報",
-          "content": "美國已在中東地區進行大規模軍事部署，意圖促使伊朗達成核協議。《衛報》21日引述伊朗消息人士披露，伊朗拒絕將300公斤高濃縮鈾庫存運出國，但願意降低純度。《彭博》同日引述伊朗媒體...…"
-        },
-        {
-          "title": "伊朗反政府示威再起：美軍福特號急赴地中海，川普下核武最後通牒",
-          "url": "https://www.thenewslens.com/article/264904",
-          "source": "關鍵評論網",
-          "content": "伊朗昨（21）日再次爆發學生運動，多名大學生因新學期開始，重新齊聚反政府示威。示威活動旨在悼念上月因參與示威犧牲的人民，超過千名民眾在運動中死亡。"
         }
       ]
     },
@@ -2424,7 +2410,7 @@
     },
     {
       "word": "政策",
-      "count": 46,
+      "count": 47,
       "articles": [
         {
           "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
@@ -2885,6 +2871,72 @@
       ]
     },
     {
+      "word": "3月",
+      "count": 43,
+      "articles": [
+        {
+          "title": "高市因應過完年轉職潮 3月開辦大型徵才釋出千個職缺迎接轉職潮",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347071",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "3月肖媽祖！ 台中媽祖文化節起跑  聲五洲掌中劇團先登台",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347239",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "藝術歸鄉再啟篇章  竹縣「蔡蔭棠──藝術漫遊者」主題特展3月登場",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5347578",
+          "source": "自由時報",
+          "content": "去年「歸鄉─蔡蔭棠作品返鄉紀錄特展」得到熱烈迴響，「蔡蔭棠──藝術漫遊者」主題特展將於3月4日起，在新竹縣政府文化局美術館登場，縣長楊文科表示，這次特展除了致敬藝術前輩，更是新...…"
+        },
+        {
+          "title": "韓國授權音樂劇《有真與有真》 台韓雙版本卡司3月回歸",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348095",
+          "source": "自由時報",
+          "content": "\n\n\nC MUSICAL 自韓國引進的音樂劇《有真與有真》，改編自韓國知名作家李琴䬁熱銷30萬本的同名青少年文學著作，2025年以中文版正式演出大獲好評，今年將重返舞台，自3月...…"
+        },
+        {
+          "title": "曝國民黨3月第2週徵召李四川 黃國昌：願組成最強團隊",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348258",
+          "source": "自由時報",
+          "content": "民眾黨主席、新北市長參選人黃國昌今天上《誰來早餐》節目專訪，對於2026新北市長藍白合議題，黃國昌表示，國民黨3月第2週會徵召李四川，成為正式候選人，假設藍白合由李四川出線，是...…"
+        },
+        {
+          "title": "中科院長李世強中將3月屆齡退伍  軍政人士：軍職退伍可特聘續任",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5348418",
+          "source": "自由時報",
+          "content": "\n\n\n中科院去年至今已與多家知名國際軍工大廠簽署合作備忘錄，MIT軍事裝備除了可在地量產之外，進軍國際也是指日可待，不過，這些事情的推手丶中科院院長李世強中將即將在3月屆齡退伍...…"
+        },
+        {
+          "title": "不只助陣台灣燈會 橘色惡魔3月訪台行程全公開",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348557",
+          "source": "自由時報",
+          "content": "\n\n\n日本京都橘高校吹奏樂部26名121期校友樂團，將於3月訪台交流，行程重點今（23）日公布，包括嘉義的2026台灣燈會、台北圓山飯店及台北表演藝術中心大劇院。\n\n\n橘色惡魔...…"
+        },
+        {
+          "title": "10部哥吉拉代表作3月登台！北中南影迷連刷怪獸宇宙",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5348521",
+          "source": "自由時報",
+          "content": "誕生逾70年的「怪獸之王」哥吉拉，今年3月牠真的要登台了。\n\n\n這回不只是重返大銀幕，而是直接在台北、台中、高雄三城開戰，秀泰影城今（23）宣布與美麗華影城聯手宣布，3月2日至...…"
+        },
+        {
+          "title": "3月會降息嗎？Fed理事華勒：像擲硬幣",
+          "url": "https://news.cnyes.com/news/id/6349748",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;綜合外媒報導，聯準會（Fed）理事華勒（Christopher Waller）周一 (23 日) 表示，他是否支持在 3 月政策會議上降息，將取決於即將公布的 2 月就業市場數據。他指出，目前對維持利率不變或降息 1 碼（25 個基點）的可能性評估「接近擲硬幣」，關鍵在於勞動市場是否真正轉強。&lt;/p&gt;\n\n&lt;p&gt;聯邦公開市場委員會（FOMC）將於 3 月 17 日至 18 日召開會議。華勒在華府出席全國商業經濟協會（NABE）活動時表示，若 2 月就業數據顯示勞動市場如 1 月般改善，下行風險減弱，維持利率不變可能是適當選擇；但若 1 月強勁數據遭下修，或 2 月表現轉弱，則支持 3 月降息 1 碼。&lt;/p&gt;\n\n&lt;h6&gt;1 月就業意外強勁 降息與否陷拉鋸&lt;/h6&gt;\n\n&lt;p&gt;華勒在 1 月會議中投下反對票，主張基準利率應再降 1 碼，理由是就業市場在 2025 年呈現疲弱與脆弱跡象。然而隨後公布的 1 月非農就業報告顯示新增 13 萬人，失業率下降，表現優於預期。他形容該數據為「意外的上行驚喜」，但也提醒其中可能存在雜訊，特別是先前數據修正顯示 2025 年全年新增職位接近零。&lt;/p&gt;\n\n&lt;p&gt;他表示，若通膨在剔除關稅影響後持續接近 2% 目標，政策走向將取決於他對勞動市場的判斷。「關鍵在於勞動市場是否真的轉了一個彎。」2 月就業報告將於 3 月 6 日公布，成為決策前重要依據。&lt;/p&gt;\n\n&lt;h6&gt;關稅與資產負債表議題受關注&lt;/h6&gt;\n\n&lt;p&gt;對於通膨前景，華勒指出，他在評估時會剔除川普政府關稅政策的影響，認為「基礎通膨」已接近聯準會 2% 目標。他認為，最高法院日前裁定川普部分關稅措施違法，對貨幣政策路徑影響有限。&lt;/p&gt;\n\n&lt;p&gt;在問答環節中，華勒亦談及聯準會規模達 6.6 兆美元的資產負債表。他表示，資產規模擴大源於危機期間的資產購買計畫，以及採行「充裕準備金」制度。他反對回到準備金稀缺的體制，直言若銀行每天為資金周轉奔波，將是「低效率且愚蠢」的做法。&lt;/p&gt;\n\n&lt;p&gt;華勒的談話正值川普已提名華許（Kevin Warsh）接替現任主席鮑爾（Jerome Powell）任期之際。市場普遍認為，未來數據走向將決定 3 月是否延續暫停或重啟降息循環。&lt;/p&gt;\n"
+        },
+        {
+          "title": "3檔主動式ETF近3月反彈完勝大盤 統一00988A狂飆34%封王",
+          "url": "https://news.cnyes.com/news/id/6350396",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;金馬報喜，台股連兩天攻到 34000 點，從去 (2025) 年 11 月 AI 泡沫疑慮的修正低點算起，大盤這波已反彈近 28%，代表美股大盤的 S&amp;P 500 同期也回升 3.56%。這波反彈行情，有三檔主動式 ETF 完勝台美大盤，其中，主動統一全球創新 ETF(00988A-TW) 唯一狂飆逾三成封王。&lt;/p&gt;\n\n&lt;p&gt;00988A 這波直接飆漲 33.94%，不只完勝台美大盤，更在全體主動式 ETF 中拿下績效王寶座。金馬開春後更是氣勢如虹，昨 (23) 日大漲近 5%、今天早盤續揚 2.78%，連續兩天漲幅居冠，股價最高衝上 12.9 元，直接創掛牌以來新高。&lt;/p&gt;\n\n&lt;p&gt;自去 (2025) 年 11 月 21 日 AI 泡沫疑慮時的修正低點反彈以來，共有六檔主動式 ETF 累積漲幅突破兩成，其中只有三檔跑贏大盤，統一投信一舉強占兩席，除了 00988A 以唯一的漲幅三成奪冠，去年最強的主動統一台股增長 (00981A-TW) 也累積大漲逾 28%，另一席則由野村投信攻下。&lt;/p&gt;\n\n&lt;p&gt;主動統一全球創新 ETF 基金經理人陳意婷表示，美國經濟成長穩健，加上今年為美國選舉年，可能推出的政策利多，配合聯準會降息循環延續，股市仍是多頭格局。目前已公布的公司財報顯示，企業 AI 投資熱絡。全球五大雲端服務商的預估資本支出今年年增率有望達到 64%，較前一季預估上修 23%。&lt;/p&gt;\n\n&lt;p&gt;整體來說，2026 年投資關鍵字「缺料、規格升級及擴大應用」，看好記憶體、光通訊，此外，近年地緣政治風險不減反增，也使國防類股具備投資潛力。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;※免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險，自負盈虧。&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
       "word": "春節",
       "count": 42,
       "articles": [
@@ -2947,72 +2999,6 @@
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5347333",
           "source": "自由時報",
           "content": null
-        }
-      ]
-    },
-    {
-      "word": "3月",
-      "count": 42,
-      "articles": [
-        {
-          "title": "高市因應過完年轉職潮 3月開辦大型徵才釋出千個職缺迎接轉職潮",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347071",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "3月肖媽祖！ 台中媽祖文化節起跑  聲五洲掌中劇團先登台",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347239",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "藝術歸鄉再啟篇章  竹縣「蔡蔭棠──藝術漫遊者」主題特展3月登場",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5347578",
-          "source": "自由時報",
-          "content": "去年「歸鄉─蔡蔭棠作品返鄉紀錄特展」得到熱烈迴響，「蔡蔭棠──藝術漫遊者」主題特展將於3月4日起，在新竹縣政府文化局美術館登場，縣長楊文科表示，這次特展除了致敬藝術前輩，更是新...…"
-        },
-        {
-          "title": "韓國授權音樂劇《有真與有真》 台韓雙版本卡司3月回歸",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348095",
-          "source": "自由時報",
-          "content": "\n\n\nC MUSICAL 自韓國引進的音樂劇《有真與有真》，改編自韓國知名作家李琴䬁熱銷30萬本的同名青少年文學著作，2025年以中文版正式演出大獲好評，今年將重返舞台，自3月...…"
-        },
-        {
-          "title": "曝國民黨3月第2週徵召李四川 黃國昌：願組成最強團隊",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348258",
-          "source": "自由時報",
-          "content": "民眾黨主席、新北市長參選人黃國昌今天上《誰來早餐》節目專訪，對於2026新北市長藍白合議題，黃國昌表示，國民黨3月第2週會徵召李四川，成為正式候選人，假設藍白合由李四川出線，是...…"
-        },
-        {
-          "title": "中科院長李世強中將3月屆齡退伍  軍政人士：軍職退伍可特聘續任",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5348418",
-          "source": "自由時報",
-          "content": "\n\n\n中科院去年至今已與多家知名國際軍工大廠簽署合作備忘錄，MIT軍事裝備除了可在地量產之外，進軍國際也是指日可待，不過，這些事情的推手丶中科院院長李世強中將即將在3月屆齡退伍...…"
-        },
-        {
-          "title": "不只助陣台灣燈會 橘色惡魔3月訪台行程全公開",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5348557",
-          "source": "自由時報",
-          "content": "\n\n\n日本京都橘高校吹奏樂部26名121期校友樂團，將於3月訪台交流，行程重點今（23）日公布，包括嘉義的2026台灣燈會、台北圓山飯店及台北表演藝術中心大劇院。\n\n\n橘色惡魔...…"
-        },
-        {
-          "title": "10部哥吉拉代表作3月登台！北中南影迷連刷怪獸宇宙",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5348521",
-          "source": "自由時報",
-          "content": "誕生逾70年的「怪獸之王」哥吉拉，今年3月牠真的要登台了。\n\n\n這回不只是重返大銀幕，而是直接在台北、台中、高雄三城開戰，秀泰影城今（23）宣布與美麗華影城聯手宣布，3月2日至...…"
-        },
-        {
-          "title": "3月會降息嗎？Fed理事華勒：像擲硬幣",
-          "url": "https://news.cnyes.com/news/id/6349748",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;綜合外媒報導，聯準會（Fed）理事華勒（Christopher Waller）周一 (23 日) 表示，他是否支持在 3 月政策會議上降息，將取決於即將公布的 2 月就業市場數據。他指出，目前對維持利率不變或降息 1 碼（25 個基點）的可能性評估「接近擲硬幣」，關鍵在於勞動市場是否真正轉強。&lt;/p&gt;\n\n&lt;p&gt;聯邦公開市場委員會（FOMC）將於 3 月 17 日至 18 日召開會議。華勒在華府出席全國商業經濟協會（NABE）活動時表示，若 2 月就業數據顯示勞動市場如 1 月般改善，下行風險減弱，維持利率不變可能是適當選擇；但若 1 月強勁數據遭下修，或 2 月表現轉弱，則支持 3 月降息 1 碼。&lt;/p&gt;\n\n&lt;h6&gt;1 月就業意外強勁 降息與否陷拉鋸&lt;/h6&gt;\n\n&lt;p&gt;華勒在 1 月會議中投下反對票，主張基準利率應再降 1 碼，理由是就業市場在 2025 年呈現疲弱與脆弱跡象。然而隨後公布的 1 月非農就業報告顯示新增 13 萬人，失業率下降，表現優於預期。他形容該數據為「意外的上行驚喜」，但也提醒其中可能存在雜訊，特別是先前數據修正顯示 2025 年全年新增職位接近零。&lt;/p&gt;\n\n&lt;p&gt;他表示，若通膨在剔除關稅影響後持續接近 2% 目標，政策走向將取決於他對勞動市場的判斷。「關鍵在於勞動市場是否真的轉了一個彎。」2 月就業報告將於 3 月 6 日公布，成為決策前重要依據。&lt;/p&gt;\n\n&lt;h6&gt;關稅與資產負債表議題受關注&lt;/h6&gt;\n\n&lt;p&gt;對於通膨前景，華勒指出，他在評估時會剔除川普政府關稅政策的影響，認為「基礎通膨」已接近聯準會 2% 目標。他認為，最高法院日前裁定川普部分關稅措施違法，對貨幣政策路徑影響有限。&lt;/p&gt;\n\n&lt;p&gt;在問答環節中，華勒亦談及聯準會規模達 6.6 兆美元的資產負債表。他表示，資產規模擴大源於危機期間的資產購買計畫，以及採行「充裕準備金」制度。他反對回到準備金稀缺的體制，直言若銀行每天為資金周轉奔波，將是「低效率且愚蠢」的做法。&lt;/p&gt;\n\n&lt;p&gt;華勒的談話正值川普已提名華許（Kevin Warsh）接替現任主席鮑爾（Jerome Powell）任期之際。市場普遍認為，未來數據走向將決定 3 月是否延續暫停或重啟降息循環。&lt;/p&gt;\n"
-        },
-        {
-          "title": "3檔主動式ETF近3月反彈完勝大盤 統一00988A狂飆34%封王",
-          "url": "https://news.cnyes.com/news/id/6350396",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;金馬報喜，台股連兩天攻到 34000 點，從去 (2025) 年 11 月 AI 泡沫疑慮的修正低點算起，大盤這波已反彈近 28%，代表美股大盤的 S&amp;P 500 同期也回升 3.56%。這波反彈行情，有三檔主動式 ETF 完勝台美大盤，其中，主動統一全球創新 ETF(00988A-TW) 唯一狂飆逾三成封王。&lt;/p&gt;\n\n&lt;p&gt;00988A 這波直接飆漲 33.94%，不只完勝台美大盤，更在全體主動式 ETF 中拿下績效王寶座。金馬開春後更是氣勢如虹，昨 (23) 日大漲近 5%、今天早盤續揚 2.78%，連續兩天漲幅居冠，股價最高衝上 12.9 元，直接創掛牌以來新高。&lt;/p&gt;\n\n&lt;p&gt;自去 (2025) 年 11 月 21 日 AI 泡沫疑慮時的修正低點反彈以來，共有六檔主動式 ETF 累積漲幅突破兩成，其中只有三檔跑贏大盤，統一投信一舉強占兩席，除了 00988A 以唯一的漲幅三成奪冠，去年最強的主動統一台股增長 (00981A-TW) 也累積大漲逾 28%，另一席則由野村投信攻下。&lt;/p&gt;\n\n&lt;p&gt;主動統一全球創新 ETF 基金經理人陳意婷表示，美國經濟成長穩健，加上今年為美國選舉年，可能推出的政策利多，配合聯準會降息循環延續，股市仍是多頭格局。目前已公布的公司財報顯示，企業 AI 投資熱絡。全球五大雲端服務商的預估資本支出今年年增率有望達到 64%，較前一季預估上修 23%。&lt;/p&gt;\n\n&lt;p&gt;整體來說，2026 年投資關鍵字「缺料、規格升級及擴大應用」，看好記憶體、光通訊，此外，近年地緣政治風險不減反增，也使國防類股具備投資潛力。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;※免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險，自負盈虧。&lt;/p&gt;\n"
         }
       ]
     },
@@ -3281,6 +3267,72 @@
       ]
     },
     {
+      "word": "全面",
+      "count": 40,
+      "articles": [
+        {
+          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
+          "url": "https://news.cnyes.com/news/id/6347688",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
+          "url": "https://www.thenewslens.com/article/264890",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
+          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
+          "source": "TechNews",
+          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
+        },
+        {
+          "title": "旅客注意！南韓11間航空全面禁止機上使用行動電源",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347210",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "Gemini 3.1 Pro 全面開放，推理效能較上代翻倍",
+          "url": "https://technews.tw/2026/02/21/gemini-3-1-pro-announcing-our-latest-gemini-ai-model/",
+          "source": "TechNews",
+          "content": "Google 19 日推出 Gemini 3.1 Pro 模型，在上週 Gemini 3 Deep Think [&#8230;]"
+        },
+        {
+          "title": "HYBE又出事？ 旗下國際女團成員傳全面停工",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347436",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "「記憶體市場全面進入賣方時代」SK海力士預警：今年所有客戶的需求無法完全滿足",
+          "url": "https://news.cnyes.com/news/id/6348076",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;南韓記憶體巨擘 SK 海力士上周五 (20 日) 在面向高盛的虛擬投資者會議上釋放明確訊號說：「全球記憶體產業已徹底轉向賣方市場，2026 年價格漲勢將貫穿全年。」&lt;/p&gt;\n\n&lt;p&gt;SK 海力士這項判斷是基於 AI 需求爆發與供應端剛性約束的雙重擠壓。&lt;/p&gt;\n\n&lt;p&gt;根據 SK 海力士揭露，目前 DRAM 及 NAND 快閃記憶體庫存僅餘約 4 周，且所有客戶需求都無法滿足。&lt;/p&gt;\n\n&lt;p&gt;更嚴峻的是，2026 年高頻寬記憶體 (HBM) 產能已提前售罄，標準型 DRAM 的極度短缺正大幅提升供應商議價權，產業鏈已啟動長期合約談判以鎖定未來供應。&lt;/p&gt;\n\n&lt;p&gt;SK 海力士將核心原因歸結為兩點：一是 AI 大模型、高效能運算對記憶體的真實需求持續井噴，遠超產業預期；二是記憶體晶片製造依賴的無塵室空間擴張緩慢，產能爬坡受限，形成「需求 - 供給」差距。&lt;/p&gt;\n\n&lt;p&gt;該公司明確表示，今年所有客戶的需求無法完全滿足，價格「持續上漲已成定局」。&lt;/p&gt;\n\n&lt;p&gt;分析指出，SK 海力士的判斷具有風向球意義。在 AI 驅動的新一輪技術週期中，記憶體從「配角」躍升為算力基礎設施的核心瓶頸，賣方市場特徵恐長期延續，產業鏈上下游的價格博弈與產能爭奪將進一步白熱化。&lt;/p&gt;\n"
+        },
+        {
+          "title": "從Valentino舞台造型到Jacob &amp; Co.雛菊珠寶！GD專屬時尚宇宙全面啟動",
+          "url": "https://istyle.ltn.com.tw/article/39131",
+          "source": "自由時報",
+          "content": "權志龍（G-DRAGON，簡稱：GD）近年以驚人速度擴張個人時尚版圖，從舞台造型、高級珠寶腕錶到日常生活配件，幾乎無所不在。這位向來被視為潮流風向球的巨星，早已跳脫歌手框架，將個人美學轉化為一種可被穿戴、收藏與使用的生活風格，成就一整套「GD式審美」。…"
+        }
+      ]
+    },
+    {
       "word": "2025年",
       "count": 40,
       "articles": [
@@ -3475,72 +3527,6 @@
           "url": "https://finance.technews.tw/2026/02/23/information-core-platform/",
           "source": "TechNews",
           "content": "鼎新數智今日宣布攜手王品集團合作，正式啟動新一代資訊核心平台建置計畫，雙方將透過資訊核心系統的全面升級，為王品 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "全面",
-      "count": 39,
-      "articles": [
-        {
-          "title": "堪稱「AlphaFold 4」！谷歌旗下AI製藥公司推新引擎IsoDDE 性能翻倍卻全面閉源",
-          "url": "https://news.cnyes.com/news/id/6347688",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美國最高法院裁決全球關稅無效，川普：令人失望，3天後將全面加徵10%",
-          "url": "https://www.thenewslens.com/article/264890",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "川普改全面加徵 10% 關稅，政院：「對等貿易協定」是否送立院將審慎評估",
-          "url": "https://finance.technews.tw/2026/02/21/trump-tariff-legislative-yuan/",
-          "source": "TechNews",
-          "content": "美國聯邦最高法院於 20 日裁定總統川普援引《國際緊急經濟權力法》（IEEPA）課徵的「對等關稅」及「芬太尼關 [&#8230;]"
-        },
-        {
-          "title": "旅客注意！南韓11間航空全面禁止機上使用行動電源",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347210",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "Gemini 3.1 Pro 全面開放，推理效能較上代翻倍",
-          "url": "https://technews.tw/2026/02/21/gemini-3-1-pro-announcing-our-latest-gemini-ai-model/",
-          "source": "TechNews",
-          "content": "Google 19 日推出 Gemini 3.1 Pro 模型，在上週 Gemini 3 Deep Think [&#8230;]"
-        },
-        {
-          "title": "HYBE又出事？ 旗下國際女團成員傳全面停工",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347436",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "「記憶體市場全面進入賣方時代」SK海力士預警：今年所有客戶的需求無法完全滿足",
-          "url": "https://news.cnyes.com/news/id/6348076",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;南韓記憶體巨擘 SK 海力士上周五 (20 日) 在面向高盛的虛擬投資者會議上釋放明確訊號說：「全球記憶體產業已徹底轉向賣方市場，2026 年價格漲勢將貫穿全年。」&lt;/p&gt;\n\n&lt;p&gt;SK 海力士這項判斷是基於 AI 需求爆發與供應端剛性約束的雙重擠壓。&lt;/p&gt;\n\n&lt;p&gt;根據 SK 海力士揭露，目前 DRAM 及 NAND 快閃記憶體庫存僅餘約 4 周，且所有客戶需求都無法滿足。&lt;/p&gt;\n\n&lt;p&gt;更嚴峻的是，2026 年高頻寬記憶體 (HBM) 產能已提前售罄，標準型 DRAM 的極度短缺正大幅提升供應商議價權，產業鏈已啟動長期合約談判以鎖定未來供應。&lt;/p&gt;\n\n&lt;p&gt;SK 海力士將核心原因歸結為兩點：一是 AI 大模型、高效能運算對記憶體的真實需求持續井噴，遠超產業預期；二是記憶體晶片製造依賴的無塵室空間擴張緩慢，產能爬坡受限，形成「需求 - 供給」差距。&lt;/p&gt;\n\n&lt;p&gt;該公司明確表示，今年所有客戶的需求無法完全滿足，價格「持續上漲已成定局」。&lt;/p&gt;\n\n&lt;p&gt;分析指出，SK 海力士的判斷具有風向球意義。在 AI 驅動的新一輪技術週期中，記憶體從「配角」躍升為算力基礎設施的核心瓶頸，賣方市場特徵恐長期延續，產業鏈上下游的價格博弈與產能爭奪將進一步白熱化。&lt;/p&gt;\n"
-        },
-        {
-          "title": "從Valentino舞台造型到Jacob &amp; Co.雛菊珠寶！GD專屬時尚宇宙全面啟動",
-          "url": "https://istyle.ltn.com.tw/article/39131",
-          "source": "自由時報",
-          "content": "權志龍（G-DRAGON，簡稱：GD）近年以驚人速度擴張個人時尚版圖，從舞台造型、高級珠寶腕錶到日常生活配件，幾乎無所不在。這位向來被視為潮流風向球的巨星，早已跳脫歌手框架，將個人美學轉化為一種可被穿戴、收藏與使用的生活風格，成就一整套「GD式審美」。…"
         }
       ]
     }
