@@ -1,189 +1,178 @@
 {
-  "updateTime": "2026-02-27T00:01:07.428Z",
-  "fullDateStr": "2026/2/27 · 更新於 08:01:07",
+  "updateTime": "2026-02-27T02:01:07.325Z",
+  "fullDateStr": "2026/2/27 · 更新於 10:01:07",
   "aiResult": {
-    "sentiment_score": -0.25,
+    "sentiment_score": 0.15,
     "dimensions": {
-      "policy": 0.1,
-      "market": -0.5,
-      "industry": -0.3,
-      "international": 0.2,
-      "technical": -0.6
+      "policy": -0.65,
+      "market": 0.25,
+      "industry": 0.5,
+      "international": -0.4,
+      "technical": 0.3
     },
     "entities": [
       {
-        "name": "Nvidia",
-        "sentiment": "negative",
+        "name": "NVIDIA",
+        "sentiment": "Neutral",
         "ticker": "NVDA.US"
       },
       {
-        "name": "ASML",
-        "sentiment": "positive",
-        "ticker": "ASML.US"
-      },
-      {
         "name": "台積電",
-        "sentiment": "neutral",
+        "sentiment": "Positive",
         "ticker": "2330.TW"
       },
       {
-        "name": "Apple",
-        "sentiment": "neutral",
-        "ticker": "AAPL.US"
+        "name": "Meta",
+        "sentiment": "Neutral",
+        "ticker": "META.US"
       },
       {
-        "name": "Salesforce",
-        "sentiment": "positive",
-        "ticker": "CRM.US"
+        "name": "Google",
+        "sentiment": "Positive",
+        "ticker": "GOOGL.US"
       },
       {
-        "name": "Samsung",
-        "sentiment": "neutral",
-        "ticker": "005930.KS"
+        "name": "廣達",
+        "sentiment": "Positive",
+        "ticker": "2332.TW"
+      },
+      {
+        "name": "美元指數",
+        "sentiment": "Negative",
+        "ticker": "DXY"
       }
     ],
-    "summary": "<h3>【宏觀報告：從預期博弈轉向資源分配硬約束】</h3><p>今日市場走勢驗證了昨日「利多鈍化」的預判。<b>Nvidia (NVDA)</b> 財報雖優於預期，但股價單日重挫 5.5%，市值蒸發逾 2,500 億美元，標誌著 AI 題材進入「<b>估值重修期</b>」。財務長對庫存增加與供應能見度延伸至 2027 年的描述，被市場解讀為議價權(Pricing Power)即將見頂的信號。</p><p><b>關鍵結構性變化：</b><br>1. <b>記憶體海嘯引發產業洗牌</b>：IDC 預警 RAM 短缺將導致 2026 年手機市場萎縮 12.9%，這並非需求消失，而是 AI 伺服器對產能的「擠兌」。此環境下，擁有強大供應鏈議價能力的 <b>Apple</b> 與 <b>Samsung</b> 將在低階品牌倒閉潮中獲取份額。<br>2. <b>技術斷代式更新</b>：<b>ASML</b> 宣佈 High-NA EUV 具備量產成熟度，這是長線結構性利多，將鞏固 <b>TSMC</b> 在 2nm 以下製程的壟斷地位，抵銷短期消費電子不振的利空。<br>3. <b>避險指標觀察</b>：今日 VIX 攀升至 20 警戒線。儘管市場情緒低迷，但 8zz（巴逆逆）若在此時顯露極度悲觀情緒，經理人應關注半導體板塊是否出現「恐慌性趕底」後的逆勢布局機會。</p>",
+    "summary": "<h3>【宏觀報告：算力霸權的「租賃轉向」與貨幣體系的「去中心化」】</h3><p>今日市場情緒較昨日「利多鈍化」略有回暖，但結構性分歧加劇。<b>台積電 (2330.TW)</b> 憑藉 Q4 強勁財報（毛利率 62.3%）確立了其在 AI 價值鏈中的「稅收官」地位，抵銷了部分 <b>Nvidia (NVDA)</b> 估值修正的衝擊。與昨日「資源分配硬約束」不同，今日核心亮點在於 <b>Meta (META)</b> 租用 <b>Google (GOOGL)</b> TPU，這標誌著 AI 算力市場從「Nvidia 單一壟斷」轉向「多元算力路徑」，對台系 ASIC 設計（如世芯、聯發科）構成實質利多。</p><p><b>關鍵宏觀變化：</b><br>1. <b>AI 變現的耐力賽</b>：交易員對 Nvidia 的「完美財報」不買單，反映市場進入要求「AI 落地獲利」的第二階段，而非僅看資本支出。<br>2. <b>美元避險屬性弱化</b>：川普強硬的 10-15% 關稅政策正產生副作用，市場預期去全球化將削弱美元儲備地位，資金轉向黃金與白銀（年增 20%）。</p><p><b>💡 市場反向指標觀察</b>：目前主流社群尚未出現「巴逆逆」或「8zz」等極端看好訊號，顯示市場仍處於理性博弈期，並未觸及短線過熱的「反向風險點」，建議在台積電回測支撐時分批布局結構性成長股。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體與設備"
+        "category": "半導體與AI供應鏈"
       },
       {
         "id": 2,
-        "category": "消費電子趨勢"
-      },
-      {
-        "id": 3,
-        "category": "宏觀策略"
+        "category": "宏觀經濟政策"
       }
     ],
     "sector_stats": {
-      "tech": -0.6,
-      "finance": 0.1,
-      "manufacturing": -0.2,
-      "service": 0.3
+      "tech": 0.4,
+      "finance": -0.1,
+      "manufacturing": 0.2,
+      "service": 0
     },
     "events": [
       {
-        "title": "AI 定價權見頂疑慮",
-        "summary": "Nvidia 庫存水位上升與毛利率指引平庸，引發市場對其壟斷性溢價可持續性的擔憂。",
-        "impact": "負面",
+        "title": "算力多元化革命：Meta 轉向租賃 Google TPU",
+        "summary": "Meta 自研晶片瓶頸迫使轉向租用 Google TPU 協議，金額達數十億美元，打破 Nvidia 單一供給鏈霸權。",
+        "impact": "正面 (利好 Google 雲端業務與台系 ASIC 供應鏈)",
         "related_news_ids": [
-          0,
-          1,
-          3
-        ]
-      },
-      {
-        "title": "記憶體短缺引發手機產能海嘯",
-        "summary": "AI 伺服器排擠 RAM 產能，預計 2026 年智慧型手機出貨量將創史上最大跌幅，加速低端品牌淘汰。",
-        "impact": "負面",
-        "related_news_ids": [
-          4,
+          3,
           5
         ]
       },
       {
-        "title": "次世代 High-NA EUV 量產化",
-        "summary": "ASML 設備成熟度達標，為 2027 年後的 AI 晶片效能躍升提供硬體基礎。",
-        "impact": "正面",
+        "title": "護國神山基本面防禦：台積電 Q4 財報卓越",
+        "summary": "台積電先進製程議價權極高，全年 EPS 超預期，成為市場波動中的核心穩定資產。",
+        "impact": "正面 (強化半導體板塊底部支撐)",
         "related_news_ids": [
-          2
+          0
+        ]
+      },
+      {
+        "title": "川普關稅風暴 2.0 與美元地位受威脅",
+        "summary": "10-15% 全球性關稅引發去全球化擔憂，美元跌向四年低點，黃金與白銀成為避險首選。",
+        "impact": "負面 (不利於美元資產，利多避險金屬)",
+        "related_news_ids": [
+          4
         ]
       }
     ],
     "relations": [
       {
-        "from": "Nvidia",
+        "from": "Meta",
+        "to": "Google",
+        "type": "算力租賃與技術合作"
+      },
+      {
+        "from": "Meta",
+        "to": "NVIDIA",
+        "type": "降低供應依賴與競爭"
+      },
+      {
+        "from": "Google",
         "to": "台積電",
-        "type": "核心代工夥伴"
+        "type": "TPU 代工生產"
       },
       {
-        "from": "ASML",
-        "to": "台積電",
-        "type": "關鍵設備供應"
+        "from": "川普",
+        "to": "美元指數",
+        "type": "政策性壓制"
       },
       {
-        "from": "AI 伺服器需求",
-        "to": "記憶體市場",
-        "type": "產能擠兌"
-      },
-      {
-        "from": "RAM 短缺",
-        "to": "低階手機品牌",
-        "type": "生存淘汰"
+        "from": "台積電",
+        "to": "廣達",
+        "type": "上游供應鏈拉動"
       }
     ]
   },
   "newsData": [
     {
-      "title": "輝達財報超優也救不了股價 晶片定價權巔峰恐將成過去式？",
-      "url": "https://news.cnyes.com/news/id/6355781",
+      "title": "護國神山台積電「產業風向球」重點整理，快速掌握成長動能、資本支出、AI趨勢與風險(一)",
+      "url": "https://news.cnyes.com/news/id/6355133",
+      "source": "鉅亨網(tw_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;綜合近三個月市場動態、法人研究觀點與產業趨勢邏輯，針對護國神山&lt;strong&gt;「台積電&lt;/strong&gt;&lt;strong&gt; (2330-TW)&lt;/strong&gt;&lt;strong&gt;」對台股指數的影響推演、受惠最大供應鏈族群排序、外資目標價區間合理性分析&lt;/strong&gt;等重點整理，快速掌握成長動能、資本支出、AI 趨勢與風險。&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;一、&lt;/strong&gt;&lt;strong&gt;Q4&lt;/strong&gt;&lt;strong&gt; 財報創高：雙率登頂、&lt;/strong&gt;&lt;strong&gt;EPS&lt;/strong&gt;&lt;strong&gt; 再締新猷&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li",
+      "timeStr": "上午10:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至21.95元，預估目標價為362.5元",
+      "url": "https://news.cnyes.com/news/id/6355872",
+      "source": "鉅亨網(tw_stock)",
+      "category": "半導體與AI供應鏈",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據FactSet最新調查，共22位分析師，對廣達(2382-TW)做出2026年EPS預估：中位數由21.71元上修至21.95元，其中最高估值24.48元，最低估值19.28元，預估目標價為362.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24.48(24.48)&lt;/td&gt;&lt;td&gt;28.54&lt;/td&gt;&lt;td&gt;25.39&lt;/t",
+      "timeStr": "上午10:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "華爾街分析師仍看多輝達 交易員卻不買單？",
+      "url": "https://news.cnyes.com/news/id/6355810",
+      "source": "鉅亨網(wd_stock)",
+      "category": "宏觀經濟政策",
+      "thumbnail": null,
+      "content": "&lt;p&gt;據《Quartz》報導，理解輝達 (Nvidia)(NVDA-US) 最新一季財報，或許可以想像成兩個房間。第一個房間裡，分析師們一如往常地更新模型、上調目標價，將輝達的財報視為 AI 熱潮依舊強勁、需求仍龐大的再次證明。&lt;/p&gt;\n\n&lt;p&gt;第二個房間裡，交易員看著同樣的財報，卻提出不同問題。他們問的不是「輝達有沒有優於預期？」&mdash;&mdash;這幾乎已成例行公事&mdash;&mdash;而是整個 AI 經濟體：大型雲端業者的支出狂潮、創投資金支持的模型工廠，以及「之後再變現」的產品路線圖，是否開始看起來不再只是成長故事，而更像是一場資產負債表的豪賭。&lt;/p&gt;\n\n&lt;p&gt;結果是，輝達股價下跌。周四收盤跌 5%，讓這份再創紀錄的財報幾乎不是重點。公司完成了它該做的事，但股價似乎需要另一件事：一個能讓市場相信，AI 建設下一階段能在華爾街可接受時間內轉化為現金的理由。&lt;/p&gt;\n\n&lt;p&gt;因此，儘管輝達財報依舊亮眼，市場反應仍顯得懷疑。公司的獲利再次超越過往紀錄，拉大與其他半導體公司的差距，但股價",
+      "timeStr": "上午10:01",
+      "relatedArticles": []
+    },
+    {
+      "title": "美科技新聞網站：Meta內部晶片設計遭遇瓶頸",
+      "url": "https://news.cnyes.com/news/id/6355818",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;輝達 (NVDA-US) 第 4 季財報優於華爾街預期，周四 (26 日) 盤後交易卻開高走低，終場重挫 5.5%，分析師認為，回檔的主因可能是財務長 Colette Kress 針對庫存水位的評論，引發投資人疑慮。&lt;/p&gt;\n\n&lt;p&gt;過去幾年，輝達最先進的人工智慧 (AI) 晶片一直處於供不應求的狀態，輝達雖然全力擴產，仍難以滿足微軟 (MSFT-US)、亞馬遜 (AMZN-US)、Meta(META-US) 與 Alphabet(GOOGL-US) 等超大規模客戶的需求。這種供需失衡賦予輝達強大的議價能力，不僅能調漲價格，更成功推升毛利率。&lt;/p&gt;\n\n&lt;p&gt;然而，Kress 在財報會議中透露，庫存季增 8%，且輝達目前已備妥「庫存與供應承諾，以因應未來需求，出貨時程已排定至 2027 年」。&lt;/p&gt;\n\n&lt;p&gt;雖然提高業務能見度通常被視為正面訊號，但投資人擔心，隨著供需環境轉趨平衡，輝達恐怕難以維持過往的高毛利水準。&lt;/p&gt;\n\n&lt;p&gt;輝達第 4 季非 GAAP 毛利率為 7",
-      "timeStr": "上午08:01",
+      "content": "&lt;p&gt;美國科技新聞網站《The Information》週四 (26 日) 報導，Meta 在內部晶片設計工作上遇到瓶頸。&lt;/p&gt;\n\n&lt;p&gt;Meta 上週已取消其正在開發、用於訓練 AI 模型的最先進晶片，原因是該晶片設計過程中遭遇困難。公司報廢了最先進的 AI 訓練晶片，轉而專注於較不複雜的晶片版本。&lt;/p&gt;\n\n&lt;p&gt;Meta 近年積極推動自製晶片計畫，希望降低對輝達等外部供應商依賴，公司也持續透過外部合作與採購強化 AI 算力，例如與 AMD、Google 等建立大型晶片合作或租用關係。&lt;/p&gt;\n\n&lt;p&gt;《The Information》週四稍早報導，Meta 將透過這項合作租用 Google 自研的 TPU (Tensor Processing Unit) 晶片，用於訓練與部署新一代 AI 模型。&lt;/p&gt;\n\n&lt;p&gt;知情人士表示，Meta 近年持續加大 AI 基礎設施投資，同時也在分散晶片供應來源，以降低對單一 GPU 供應商的依賴。此次導入 Google TPU，被視為其多",
+      "timeStr": "上午10:01",
       "relatedArticles": []
     },
     {
-      "title": "為何輝達回檔引爆連鎖效應 標普500幾乎注定走低？",
-      "url": "https://news.cnyes.com/news/id/6355851",
-      "source": "鉅亨網(wd_stock)",
-      "category": "半導體與設備",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《Marketwatch》報導，輝達 (NVDA-US) 財報雖再度優於預期，但股價重挫引發連鎖效應，拖累美股主要指數走低。市場人士指出，在大型科技股權重過高與 AI 投資疑慮升溫下，標普 500 幾乎難以「置身事外」。&lt;/p&gt;\n\n&lt;p&gt;輝達週四股價暴跌 5.5%，單日市值蒸發 2,590 億美元，創數月來最大跌幅，作為標普 500 權重約 8% 的重量級成分股，其走勢直接壓抑大盤表現。&lt;/p&gt;\n\n&lt;p&gt;同日，標普資訊科技板塊下跌 1.8%，標普 500 指數 (SPX-US) 回落 0.5%，那斯達克綜合指數 (COMP-US) 則下跌 1.2%。&lt;/p&gt;\n\n&lt;p&gt;Fairlead Strategies 創辦人 Katie Stockton 指出，輝達龐大的市值與指數權重，使其股價波動足以牽動整體市場情緒。財報公布前市場預期明顯偏高，也為股價拋售埋下伏筆。&lt;/p&gt;\n\n&lt;p&gt;Charles Schwab 宏觀研究與策略主管 Kevin Gordon 表示，投資人目前關注的核",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "ASML稱次世代EUV設備已可用於量產 AI晶片生產迎關鍵轉折",
-      "url": "https://news.cnyes.com/news/id/6355837",
-      "source": "鉅亨網(wd_stock)",
-      "category": "消費電子趨勢",
-      "thumbnail": null,
-      "content": "&lt;p&gt;據《路透》報導，艾司摩爾 (ASML Holding)(ASML-US) 一名高層表示，該公司次世代晶片製造設備已準備好供製造商開始啟動量產，對晶片產業而言是一大重要里程碑。&lt;/p&gt;\n\n&lt;p&gt;這家荷蘭公司生產全球唯一商用的極紫外光微影 (EUV) 設備，為晶片製造商的關鍵核心設備。ASML 數據顯示，這款新設備將協助台積電 (2330-TW)(TSM-US) 與英特爾 (Intel)(INTC-US) 等晶片廠，透過簡化多個昂貴且複雜的製程步驟，生產更強大且更高效的晶片。&lt;/p&gt;\n\n&lt;p&gt;ASML 技術長 Marco Pieters 周三向路透表示，公司計劃在周四於聖荷西 (San Jose) 舉行的技術會議上公布這些數據，象徵一項關鍵里程碑。&lt;/p&gt;\n\n&lt;p&gt;開發這套昂貴的次世代設備歷時多年，期間晶片製造商一直在評估何時開始導入量產在經濟上才具合理性。&lt;/p&gt;\n\n&lt;p&gt;但隨著現有世代 EUV 設備在製造複雜 AI 晶片方面逐漸逼近技術極限，次世代機台&mdash;&mda",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "輝達暴跌近5.5% 市值一夕蒸發2590億美元",
-      "url": "https://news.cnyes.com/news/id/6355804",
-      "source": "鉅亨網(wd_stock)",
-      "category": "宏觀策略",
-      "thumbnail": null,
-      "content": "&lt;p&gt;雖公布第四季營收與獲利雙雙優於市場預期，AI 巨頭輝達 (NVDA-US) (26 日) 重挫 5.49% 至每股 184.89 美元，市值一夕蒸發 2,590 億美元，創下自 2025 年 3 月以來最大跌幅。&lt;/p&gt;\n\n&lt;p&gt;輝達 (NVDA-US) 最新公布會計年度第四季財報，營收與獲利雙雙優於華爾街預期，但市場反應轉趨保守，該股週四暴跌超 5%，市值蒸發 2,590 億美元，名列美國企業史上第七大單日市值流失紀錄，前六名中有四次來自輝達本身，另外兩次則分別來自微軟與蘋果。&lt;/p&gt;\n\n&lt;p&gt;儘管公司基本面依舊強勁，市場情緒仍偏謹慎。分析師指出，此次賣壓更多反映整體市場情緒，而非輝達營運轉弱。&lt;/p&gt;\n\n&lt;p&gt;2026 年以來，投資人持續關注人工智慧對軟體產業的潛在衝擊，以及大型科技公司大舉擴張資本支出所帶來的風險。市場仍選擇獲利了結，當日標普 500 指數 (SPX-US) 下跌 0.5%，那斯達克綜合指數跌幅約&nbsp;1.2%。&lt;/p&gt;\n\n&lt;p&gt;投資人亦擔憂，輝",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "記憶體漲價風暴來襲！IDC估2026年智慧手機萎縮近13% 創史上最大跌幅",
-      "url": "https://news.cnyes.com/news/id/6355776",
+      "title": "川普關稅立場強硬 策略師揭美元關鍵風險",
+      "url": "https://news.cnyes.com/news/id/6355807",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;市調機構 IDC 預測，由於前所未見的記憶體晶片短缺，2026 年全球智慧手機市場將萎縮 12.9%，創史上最大跌幅。&lt;/p&gt;\n\n&lt;p&gt;IDC 預測，2026 年手機出貨量約 11 億支，低於前一年的 12.6 億支，也抹去連續幾年的漸進成長。&lt;/p&gt;\n\n&lt;p&gt;這份最新報告與先前的預測相比可謂大幅下修，也凸顯記憶體晶片持續短缺帶來的衝擊。人工智慧 (AI) 驅動著對記憶體的龐大需求，已讓全球到明年都將供不應求，並且開始影響到許多智慧手機製造商所仰賴的商業模式。&lt;/p&gt;\n\n&lt;p&gt;目前各家智慧手機大廠都正在設法因應零組件成本高漲的現實，因此紛紛調整硬體規格、砍掉不賺錢的入門款手機，並設法吸引消費者買進高階手機。&lt;/p&gt;\n\n&lt;p&gt;IDC 資深研究主任 Nabila Popal 說：「關稅和疫情危機，與現況相比像個笑話。這場危機過後，智慧手機市場將發生翻天覆地的變化&mdash;&mdash;規模、平均售價和競爭格局，都將有巨大的改變。我們認為這種情況至少要到 2027 年年中才會",
-      "timeStr": "上午08:01",
+      "content": "&lt;p&gt;據《MarketWatch》報導，市場策略師在周二 (24 日) 晚間聆聽美國總統川普的國情咨文演說後，認為其中對美元有幾項重要啟示。&lt;/p&gt;\n\n&lt;p&gt;簡言之，川普沒有顯示出在目前的關稅政策上放寬的跡象。總統宣布新的暫時性全球關稅為 10%，此舉是回應最高法院上周五裁定撤銷他先前關稅措施的決定。新關稅已於周二稍早生效，在國情咨文發表之前。川普並威脅可能將關稅提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;對於總部位於紐約的策略師 Thierry Wizman，以及其在新加坡的同事、金融服務集團 Macquarie 的 Gareth Berry 而言，川普與其他國家的貿易衝突在去年削弱了美元吸引力，且 2026 年很可能持續如此。根據 FactSet 數據，美元指數 (DXY) 在過去一年下跌 8.2%。周三該指數約在 97.7 附近，接近 2026 年以來低點之一。&lt;/p&gt;\n\n&lt;p&gt;兩位策略師在周三的報告中寫道，「關稅戰在 2025 年對美元不利，我們認為 2026 年也不會有利，因為這將持續讓美國看起來像是去",
+      "timeStr": "上午10:01",
       "relatedArticles": []
     },
     {
-      "title": "RAM荒來襲 智慧手機出貨量恐寫十年最慘跌幅 低階品牌面臨淘汰",
-      "url": "https://news.cnyes.com/news/id/6355814",
+      "title": "傳Meta租用Google TPU 簽數十億美元AI晶片協議",
+      "url": "https://news.cnyes.com/news/id/6355862",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;據《TechCruch》報導，隨著 AI 帶動電腦與資料中心需求攀升，隨機存取記憶體 (RAM) 出現嚴重短缺，推升記憶體價格大幅上漲。如今，研究機構 IDC 預測，這將導致今年智慧型手機出貨量暴跌 12.9%，創逾十年來最大年度降幅。&lt;/p&gt;\n\n&lt;p&gt;IDC 今年稍早表示，2025 年全球智慧型手機出貨量為 12.6 億支。該機構預估今年將降至僅 11.2 億支。&lt;/p&gt;\n\n&lt;p&gt;IDC 全球手機季度追蹤報告 (Worldwide Quarterly Mobile Phone Tracker) 資深研究總監 Nabila Popal 在聲明中表示，「這場記憶體危機不只造成短期下滑，而是整體市場的結構性重置，將從根本上重塑長期整體潛在市場(TAM)、廠商競爭格局與產品組合。」&lt;/p&gt;\n\n&lt;p&gt;Popal 指出，由於記憶體短缺，智慧型手機平均零售價格預計將上漲 14%。&lt;/p&gt;\n\n&lt;p&gt;她補充稱，「我們預期市場將出現整併，小型廠商退出，低階品牌在供應受限及高價位需求減弱下，出",
-      "timeStr": "上午08:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "〈美股盤後〉輝達市值蒸發超2590億美元 費半重挫超3% 台積電ADR跌逾2.8%",
-      "url": "https://news.cnyes.com/news/id/6355801",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;科技巨頭輝達與軟體大廠 Salesforce 最新財報未能提振大盤，市場瀰漫著謹慎的氣氛，華爾街「恐慌指數」VIX 一度站上 20，美股週四 (26 日) 多收墨。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數下跌 0.54%，那斯達克指數下跌 1.18%，道瓊指數近乎持平，費半指數重挫超 3%。&lt;/p&gt;\n\n&lt;p&gt;儘管輝達公布第四季營收與獲利雙雙優於預期，但股價仍急墜超 5%。其他晶片股同步走弱，博通、科林研發、威騰電子與應用材料跌幅均超過 2%。台積電 ADR 下跌 2.82%。&lt;/p&gt;\n\n&lt;p&gt;美國與伊朗核談判週四在日內瓦告一段落。阿曼外交部長布賽義迪 (Badr al-Busaidi) 於 X 平台表示，雙方協商已「取得重大進展」，但仍將各自返回首都，持續進行後續磋商。同時，他透露，技術層級會談預計下週在維也納登場。消息傳出後，西德州原油價格在每桶 65 美元附近小幅波動，整體市場氣氛仍偏向觀望。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週四 (26",
-      "timeStr": "上午08:01",
+      "content": "&lt;p&gt;《The Information》週四 (26 日) 引述知情人士報導，Alphabet 旗下 Google 已與 Meta Platforms (META-US) 簽署一項為期多年的人工智慧 (AI) 晶片合作協議，金額達數十億美元，顯示大型科技公司對 AI 算力需求持續升溫。&lt;/p&gt;\n\n&lt;p&gt;報導指出，Meta 將透過這項合作租用 Google 自研的 TPU (Tensor Processing Unit) 晶片，用於訓練與部署新一代 AI 模型。&lt;/p&gt;\n\n&lt;p&gt;這也意味著 Google 正積極將自家 AI 硬體能力對外商業化，試圖在由輝達 (NVDA-US) 主導的 AI 加速器市場中擴大影響力。&lt;/p&gt;\n\n&lt;p&gt;知情人士表示，Meta 近年持續加大 AI 基礎設施投資，同時也在分散晶片供應來源，以降低對單一 GPU 供應商的依賴。此次導入 Google TPU，被視為其多元算力策略的重要一步。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Google 與 Meta 均未對相關報導",
+      "timeStr": "上午10:01",
       "relatedArticles": []
     }
   ],
@@ -226,59 +215,62 @@
   ],
   "events": [
     {
-      "title": "AI 定價權見頂疑慮",
-      "summary": "Nvidia 庫存水位上升與毛利率指引平庸，引發市場對其壟斷性溢價可持續性的擔憂。",
-      "impact": "負面",
+      "title": "算力多元化革命：Meta 轉向租賃 Google TPU",
+      "summary": "Meta 自研晶片瓶頸迫使轉向租用 Google TPU 協議，金額達數十億美元，打破 Nvidia 單一供給鏈霸權。",
+      "impact": "正面 (利好 Google 雲端業務與台系 ASIC 供應鏈)",
       "related_news_ids": [
-        0,
-        1,
-        3
-      ]
-    },
-    {
-      "title": "記憶體短缺引發手機產能海嘯",
-      "summary": "AI 伺服器排擠 RAM 產能，預計 2026 年智慧型手機出貨量將創史上最大跌幅，加速低端品牌淘汰。",
-      "impact": "負面",
-      "related_news_ids": [
-        4,
+        3,
         5
       ]
     },
     {
-      "title": "次世代 High-NA EUV 量產化",
-      "summary": "ASML 設備成熟度達標，為 2027 年後的 AI 晶片效能躍升提供硬體基礎。",
-      "impact": "正面",
+      "title": "護國神山基本面防禦：台積電 Q4 財報卓越",
+      "summary": "台積電先進製程議價權極高，全年 EPS 超預期，成為市場波動中的核心穩定資產。",
+      "impact": "正面 (強化半導體板塊底部支撐)",
       "related_news_ids": [
-        2
+        0
+      ]
+    },
+    {
+      "title": "川普關稅風暴 2.0 與美元地位受威脅",
+      "summary": "10-15% 全球性關稅引發去全球化擔憂，美元跌向四年低點，黃金與白銀成為避險首選。",
+      "impact": "負面 (不利於美元資產，利多避險金屬)",
+      "related_news_ids": [
+        4
       ]
     }
   ],
   "relations": [
     {
-      "from": "Nvidia",
+      "from": "Meta",
+      "to": "Google",
+      "type": "算力租賃與技術合作"
+    },
+    {
+      "from": "Meta",
+      "to": "NVIDIA",
+      "type": "降低供應依賴與競爭"
+    },
+    {
+      "from": "Google",
       "to": "台積電",
-      "type": "核心代工夥伴"
+      "type": "TPU 代工生產"
     },
     {
-      "from": "ASML",
-      "to": "台積電",
-      "type": "關鍵設備供應"
+      "from": "川普",
+      "to": "美元指數",
+      "type": "政策性壓制"
     },
     {
-      "from": "AI 伺服器需求",
-      "to": "記憶體市場",
-      "type": "產能擠兌"
-    },
-    {
-      "from": "RAM 短缺",
-      "to": "低階手機品牌",
-      "type": "生存淘汰"
+      "from": "台積電",
+      "to": "廣達",
+      "type": "上游供應鏈拉動"
     }
   ],
   "keywords7d": [
     {
       "word": "AI",
-      "count": 397,
+      "count": 400,
       "articles": [
         {
           "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
@@ -410,7 +402,7 @@
     },
     {
       "word": "美元",
-      "count": 222,
+      "count": 225,
       "articles": [
         {
           "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
@@ -476,7 +468,7 @@
     },
     {
       "word": "EPS",
-      "count": 202,
+      "count": 204,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華邦電(2344-TW)EPS預估下修至15.26元，預估目標價為145元",
@@ -806,7 +798,7 @@
     },
     {
       "word": "日本",
-      "count": 105,
+      "count": 106,
       "articles": [
         {
           "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
@@ -865,6 +857,72 @@
         {
           "title": "自由開講》日本修憲鞏固防衛 台灣藍白仍阻擋軍購",
           "url": "https://talk.ltn.com.tw/article/breakingnews/5343438",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
+      "word": "經典賽",
+      "count": 100,
+      "articles": [
+        {
+          "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347044",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》受傷的紅雀火球男有機會回南韓隊？ 外媒點出時間點",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347059",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》無緣台灣隊的王彥程對南韓隊好投！ 交出2局1K無失分",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347192",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》重傷退出日本隊的阪神虎王牌中繼 估花半年復健、賽季恐報銷",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347174",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》官網專家點名值得關注新星！台灣「不在那份名單」強投上榜",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347125",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》日媒爆料徐若熙不對日本隊登板 原因曝光！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347168",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》統一獅隊長4連霸 陳傑憲有話要說",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347101",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "中職》布雷克突然出征經典賽 獅領隊解釋原因",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347102",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》南韓主帥很感謝韓華鷹派台灣左投對決！王彥程賽後有感而發",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347280",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "經典賽》受宋晟睿等人刺激 陳傑憲身體素質進化「前所未見」",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347301",
           "source": "自由時報",
           "content": null
         }
@@ -937,72 +995,6 @@
       ]
     },
     {
-      "word": "經典賽",
-      "count": 98,
-      "articles": [
-        {
-          "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347044",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》受傷的紅雀火球男有機會回南韓隊？ 外媒點出時間點",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347059",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》無緣台灣隊的王彥程對南韓隊好投！ 交出2局1K無失分",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347192",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》重傷退出日本隊的阪神虎王牌中繼 估花半年復健、賽季恐報銷",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347174",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》官網專家點名值得關注新星！台灣「不在那份名單」強投上榜",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347125",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》日媒爆料徐若熙不對日本隊登板 原因曝光！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347168",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》統一獅隊長4連霸 陳傑憲有話要說",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347101",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "中職》布雷克突然出征經典賽 獅領隊解釋原因",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347102",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》南韓主帥很感謝韓華鷹派台灣左投對決！王彥程賽後有感而發",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347280",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "經典賽》受宋晟睿等人刺激 陳傑憲身體素質進化「前所未見」",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347301",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "曝光",
       "count": 93,
       "articles": [
@@ -1070,7 +1062,7 @@
     },
     {
       "word": "自由",
-      "count": 88,
+      "count": 89,
       "articles": [
         {
           "title": "高鐵插隊撞人搶自由座遭炎上！ 牙醫親上火線回應：沒撞人",
@@ -1136,7 +1128,7 @@
     },
     {
       "word": "健康",
-      "count": 80,
+      "count": 82,
       "articles": [
         {
           "title": "健康網》不同年齡怎麼保養？ 醫解析肌膚修護關鍵",
@@ -1268,7 +1260,7 @@
     },
     {
       "word": "TW",
-      "count": 70,
+      "count": 73,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：信邦(3023-TW)目標價調升至270元，幅度約3.85%",
@@ -1333,8 +1325,74 @@
       ]
     },
     {
+      "word": "晶片",
+      "count": 70,
+      "articles": [
+        {
+          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
+          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
+          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
+          "source": "TechNews",
+          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
+        },
+        {
+          "title": "紐時：台晶片與電子元件獲豁免 影響有限",
+          "url": "https://ec.ltn.com.tw/article/paper/1744186",
+          "source": "自由時報",
+          "content": "〔編譯魏國金／綜合報導〕美國最高法院推翻川普依「國際緊急經濟權力法（IEEPA）」實施的關稅措施，引發主要貿易夥伴關注。《紐約時報》報導，二〇二四年美國取代中國成為台灣最大出口市場，台灣只有少部份產品，包括紡織、塑膠與農產品受此判決影響，台灣主要的晶片與電子元件出口已取得豁免，因此影響不大。\r\n\r\n…"
+        },
+        {
+          "title": "富士康HCL合資封測廠動土　莫迪：國產晶片至關重要",
+          "url": "https://www.cna.com.tw/news/afe/202602220039.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者李晉緯大諾伊達21日專電）富士康與印度HCL集團在大諾伊達（Greater Noida）合資興建的封測廠今天動土，印度總理莫迪透過視訊致詞表示，印度要成為已開發國家，需建立在自立更生的基礎上，而有印度製造的國產晶片，對實現這項目標至關重要。"
+        },
+        {
+          "title": "突破物理極限的新救星？小晶片架構如何用十分之一能耗撐起 HPC 與 AI 算力",
+          "url": "https://technews.tw/2026/02/23/will-chiplets-provide-the-answer-for-post-exascale-hpc-scaling/",
+          "source": "TechNews",
+          "content": "隨著傳統晶片架構逐漸接近功率、熱量和空間的物理極限，一種新的架構正在出現，為高效能運算（HPC）提供潛在的前進 [&#8230;]"
+        },
+        {
+          "title": "輝達重返消費 PC 市場，自家 Arm 晶片筆電年底問世正面對決 Intel、AMD",
+          "url": "https://technews.tw/2026/02/23/nvidia-could-launch-its-first-laptops-with-its-own-processors-later-this-year/",
+          "source": "TechNews",
+          "content": "輝達（Nvidia）正在準備重返消費者 PC 市場，計劃推出搭載自家處理器的筆記型電腦，預計在今年底之前上市。 [&#8230;]"
+        },
+        {
+          "title": "凌通人機介面晶片拚出貨韓家電廠　今年成長動能",
+          "url": "https://www.cna.com.tw/news/afe/202602230076.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹23日電）微控制器（MCU）廠凌通積極拓展人機介面（HMI）系統單晶片（SoC）應用市場，目前已量產出貨中國家電品牌廠，今年可望出貨韓國家電品牌廠，將是驅動今年營運成長主要動力。"
+        },
+        {
+          "title": "全球AI資料中心建設引爆記憶體飢渴！SK海力士承諾擴產：HBM是怪獸晶片",
+          "url": "https://news.cnyes.com/news/id/6349136",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;SK 海力士母公司 SK 集團會長崔泰源上周五 (20 日) 在華府表示，將擴大高頻寬記憶體 (HBM) 產能，以因應全球 AI 資料中心建設熱潮。&lt;/p&gt;\n\n&lt;p&gt;被稱為「怪獸晶片」的 HBM 正推動 SK 海力士股價較去年同期飆升超三倍，去年漲幅更達 280%，市值突破 159 兆韓元。&lt;/p&gt;\n\n&lt;p&gt;儘管未揭露具體擴產規模，SK 海力士上月宣布將 2026 年資本支出大幅調高，重點投向清州 M15X 晶圓廠和龍仁半導體集群建設。該集群總投資額預計達 600 兆韓元 (約 4300 億美元)，計畫 2027 年前建成四座晶圓廠，形成涵蓋 HBM4 等尖端產品的完整產業鏈。&lt;/p&gt;\n\n&lt;p&gt;今年 SK 海力士產能已全數售罄，HBM 佔 DRAM 銷售額比例突破 40%，企業級 SSD 需求同步成長。&lt;/p&gt;\n\n&lt;p&gt;微軟與 Meta 今年合計 6500 億美元的 AI 基建投資引發全球記憶體晶片短缺，SK 海力士、三星電子及美光主導的市場呈現賣方格局。&lt;/p&gt;\n\n&lt;p&gt;最新產業數據顯示，今年首季 DRAM 合約價料將季增 90%-95%，NAND 快閃記憶體漲幅達 55%-60%。&lt;/p&gt;\n\n&lt;p&gt;對此崔泰源表示，技術變革恐引發競爭格局劇變，當前營業利潤估值雖從 500 億美元上調至 1000 億美元，但「也可能瞬間轉為同等規模虧損」。&lt;/p&gt;\n\n&lt;p&gt;為因應能源瓶頸，SK 集團正考慮在 AI 資料中心週邊建造配套發電廠。&lt;/p&gt;\n"
+        },
+        {
+          "title": "「造山者」作者赴新加坡談創作  駐星代表：晶片外交",
+          "url": "https://www.cna.com.tw/news/aopl/202602230177.aspx",
+          "source": "中央社國際",
+          "content": "（中央社23日台北電）台灣半導體發展史紀錄片「造山者」製片人蔣顯斌造訪新加坡，出席台大校友會成立大會。駐新加坡代表童振源表示，他所撰寫的新書「Taiwan at the Core」與「造山者」為「晶片外交」注入雙重動能；在全球科技與地緣政治交會下，維持台海和平穩定、強化供應鏈韌性、讓創新持續發生，是台灣對國際社會的承諾。"
+        },
+        {
+          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
+          "url": "https://news.cnyes.com/news/id/6349922",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
       "word": "每股",
-      "count": 69,
+      "count": 70,
       "articles": [
         {
           "title": "東陽1月稅前每股賺0.95元 創10個月來單月新高",
@@ -1395,6 +1453,72 @@
           "url": "https://ec.ltn.com.tw/article/breakingnews/5350165",
           "source": "自由時報",
           "content": "\n\n\n以經營World Gym健身房聞名的世界健身-KY（2762）今天公告去年第4季合併營收28.78億元、年增13.26％，連7季改寫新高；稅後淨利1.66億元、年增近1....…"
+        }
+      ]
+    },
+    {
+      "word": "科技",
+      "count": 69,
+      "articles": [
+        {
+          "title": "虛擬資產市場需求增溫　業者：貿易商科技業詢問度提升",
+          "url": "https://www.cna.com.tw/news/afe/202602210025.aspx",
+          "source": "中央社產經",
+          "content": null
+        },
+        {
+          "title": "Toyota 跨界小鴨 Yaris Cross 新年式登場！特仕升級大螢幕強化科技感",
+          "url": "https://auto.ltn.com.tw/news/30969",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "光電板大廠志超科技董事長暨執行長徐正民辭世",
+          "url": "https://news.cnyes.com/news/id/6348023",
+          "source": "鉅亨網(tw_stock)",
+          "content": null
+        },
+        {
+          "title": "若OpenAI估值8300億美元 Google等科技巨頭又該值多少？",
+          "url": "https://news.cnyes.com/news/id/6348161",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;資本市場正上演一場撕裂式定價，當 OpenAI 以 8300 億美元估值刷新 AI 獨角獸紀錄時，同處 AI 賽道的谷歌，二級市場交易價格僅 2027 年預期營收的 6.7 倍，不足前者的一半，這一反差暴露出投資者對 AI 顛覆格局的深層焦慮。&lt;/p&gt;\n\n&lt;p&gt;標普全球數據顯示，OpenAI 估值相當於其 2027 年預期營收的 14 倍，谷歌僅獲 6.7 倍定價。若以同一倍數標準測算，谷歌理論估值需膨脹至目前的 2.1 倍才能符合 OpenAI 的估值邏輯。&lt;/p&gt;\n\n&lt;p&gt;市場給予 OpenAI 超高溢價的核心在於「成長賭注」，其收入爆發潛力吸引資本追逐，卻刻意忽視 OpenAI 持續巨額虧損且盈利無期的兩大現實，而谷歌坐擁成熟現金牛業務與同等技術實力，護城河更為穩固。&lt;/p&gt;\n\n&lt;p&gt;科技分析師 Martin Peers 指出，市場過度聚焦 OpenAI 代表的「高成長敘事」，卻遺忘其他巨頭在 AI 轉型中的紅利，而谷歌、持 OpenAI 股份 27% 的微軟、亞馬遜等三大玩家，憑藉雲端業務與生態協同，極可能成為 AI 浪潮的最終贏家。&lt;/p&gt;\n\n&lt;p&gt;目前估價差恰是獨立研判的窗口，一邊是 OpenAI 引領的「成長溢價」主線，另一邊是谷歌背書的「現金流確定性折價」邏輯，兩條定價路線的再平衡，將取決於市場對 AI 商業化路徑的共識重構。&lt;/p&gt;\n\n&lt;p&gt;值得玩味的是，谷歌今年迄今股價逆勢跑贏多數科技巨頭，卻仍難逃整體拋售潮。當投資人在恐慌中逃離科技股，那些手握印鈔機業務的轉型巨頭，或許正悄悄積蓄價值回歸的能量。&lt;/p&gt;\n"
+        },
+        {
+          "title": "連假走春新選擇　沙崙綠能科技示範場域寓教於樂",
+          "url": "https://www.cna.com.tw/news/afe/202602220053.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者曾筠庭台北22日電）春節連假期間民眾闔家出遊需求大增，經濟部今天表示，位於高鐵台南站旁的沙崙綠能科技示範場域，結合再生能源與智慧科技展示，適合民眾年節走春踏青，在休憩之餘認識綠能與永續理念。"
+        },
+        {
+          "title": "各地方政府廣設「科技執法」 5個月取締62.7萬件",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347669",
+          "source": "自由時報",
+          "content": "立法院新會期將於2月24日開議，根據行政院送交國會的施政報告，在精進交通執法方面，內政部協助各地方政府設置重點路口「科技執法」設備，以路口不停讓行人及闖紅燈為取締重點，2025...…"
+        },
+        {
+          "title": "Honda 新一代 HR-V 問世時間曝光！改搭全新外型與科技座艙",
+          "url": "https://auto.ltn.com.tw/news/30978",
+          "source": "自由時報",
+          "content": "現行 Honda HR-V 自 2021 年問世，日前已有日媒拍攝到新一代 HR-V 的測試車，新車預計在 2027 年 4 月問世，換上全新外型以及 1.5 升 e:HEV 油電系統，內裝預計導入 10.25 吋數位儀表與 12.3 吋觸控螢幕，搭配 Honda Connect 車載系統且內建 Google。…"
+        },
+        {
+          "title": "【科技早餐】印度豪擲 2,000 億美元押注 AI：算力主權成國家戰略",
+          "url": "https://techorange.com/2026/02/23/india-eyes-200-billion-in-ai-investment/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊印度 2,000 億美元押注 AI：從外包中心走向「算力國家」 印度電子與資訊技術部長維什諾（Ashwini Vaishnaw）接受《美聯社》專訪表示，政府計畫在未來幾年吸引高達 2,000 億美元投入資料中心與算力建設，目標將印度升級為全球 AI 基礎設施樞紐。Google 將於 5 年內投資 150 億美元建立 AI 中心，Microsoft 宣布 175 億美元的亞洲大型投資案，Amazon 也承諾 2030 年前加碼 350 億美元。 除引進外資，印度已啟用國家級共享運算設施，部署超過 3.8 萬顆 GPU，並提供長期「租稅假期」（Tax Holiday）吸引資料中心資本落地，同時擴大大學與職訓體系培育 AI 人才。在外資與本土模型雙軌並行下，印度正將「算力主權」納入國家發展戰略。 ＊數百萬顆 AI 晶片入列：Meta 擴張算力版圖，NVIDIA 仍居核心位置 NVIDIA 與 Meta 簽訂多年合作協議，Meta 將採購數百萬顆 AI 晶片，涵蓋 Blackwell 與即將上市的 Rubin。NVIDIA 執行長黃仁勳表示，雙方將整合前沿研究與工業規模基礎設施，透過 CPU、GPU、網路與軟體的深度共創設計，支撐全球數十億用戶的 AI 與個人化服務。 Meta [&hellip;]</p>\n"
+        },
+        {
+          "title": "義大利首富換人當  金融科技創業家打敗巧克力之王",
+          "url": "https://www.cna.com.tw/news/aopl/202602230020.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者黃雅詩羅馬22日專電）義大利首富寶座換人。據富比世最新調查，作風低調神祕的軟體金融公司ION Group創辦人皮格納塔洛（Andrea Pignataro）成為最新首富，打敗巧克力之王費列羅集團（Ferrero）總裁喬凡尼費列羅（Giovanni Ferrero）。"
+        },
+        {
+          "title": "科技巨頭加碼 AI 音樂功能，Spotify被迫跟進？",
+          "url": "https://technews.tw/2026/02/23/apple-google-gemini-add-music-focused-generative-ai-features/",
+          "source": "TechNews",
+          "content": "在音樂生成技術的最新進展中，Google 和蘋果公司正在其核心消費者應用中加入音樂專注的生成式人工智慧功能。G [&#8230;]"
         }
       ]
     },
@@ -1465,140 +1589,8 @@
       ]
     },
     {
-      "word": "科技",
-      "count": 68,
-      "articles": [
-        {
-          "title": "虛擬資產市場需求增溫　業者：貿易商科技業詢問度提升",
-          "url": "https://www.cna.com.tw/news/afe/202602210025.aspx",
-          "source": "中央社產經",
-          "content": null
-        },
-        {
-          "title": "Toyota 跨界小鴨 Yaris Cross 新年式登場！特仕升級大螢幕強化科技感",
-          "url": "https://auto.ltn.com.tw/news/30969",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "光電板大廠志超科技董事長暨執行長徐正民辭世",
-          "url": "https://news.cnyes.com/news/id/6348023",
-          "source": "鉅亨網(tw_stock)",
-          "content": null
-        },
-        {
-          "title": "若OpenAI估值8300億美元 Google等科技巨頭又該值多少？",
-          "url": "https://news.cnyes.com/news/id/6348161",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;資本市場正上演一場撕裂式定價，當 OpenAI 以 8300 億美元估值刷新 AI 獨角獸紀錄時，同處 AI 賽道的谷歌，二級市場交易價格僅 2027 年預期營收的 6.7 倍，不足前者的一半，這一反差暴露出投資者對 AI 顛覆格局的深層焦慮。&lt;/p&gt;\n\n&lt;p&gt;標普全球數據顯示，OpenAI 估值相當於其 2027 年預期營收的 14 倍，谷歌僅獲 6.7 倍定價。若以同一倍數標準測算，谷歌理論估值需膨脹至目前的 2.1 倍才能符合 OpenAI 的估值邏輯。&lt;/p&gt;\n\n&lt;p&gt;市場給予 OpenAI 超高溢價的核心在於「成長賭注」，其收入爆發潛力吸引資本追逐，卻刻意忽視 OpenAI 持續巨額虧損且盈利無期的兩大現實，而谷歌坐擁成熟現金牛業務與同等技術實力，護城河更為穩固。&lt;/p&gt;\n\n&lt;p&gt;科技分析師 Martin Peers 指出，市場過度聚焦 OpenAI 代表的「高成長敘事」，卻遺忘其他巨頭在 AI 轉型中的紅利，而谷歌、持 OpenAI 股份 27% 的微軟、亞馬遜等三大玩家，憑藉雲端業務與生態協同，極可能成為 AI 浪潮的最終贏家。&lt;/p&gt;\n\n&lt;p&gt;目前估價差恰是獨立研判的窗口，一邊是 OpenAI 引領的「成長溢價」主線，另一邊是谷歌背書的「現金流確定性折價」邏輯，兩條定價路線的再平衡，將取決於市場對 AI 商業化路徑的共識重構。&lt;/p&gt;\n\n&lt;p&gt;值得玩味的是，谷歌今年迄今股價逆勢跑贏多數科技巨頭，卻仍難逃整體拋售潮。當投資人在恐慌中逃離科技股，那些手握印鈔機業務的轉型巨頭，或許正悄悄積蓄價值回歸的能量。&lt;/p&gt;\n"
-        },
-        {
-          "title": "連假走春新選擇　沙崙綠能科技示範場域寓教於樂",
-          "url": "https://www.cna.com.tw/news/afe/202602220053.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者曾筠庭台北22日電）春節連假期間民眾闔家出遊需求大增，經濟部今天表示，位於高鐵台南站旁的沙崙綠能科技示範場域，結合再生能源與智慧科技展示，適合民眾年節走春踏青，在休憩之餘認識綠能與永續理念。"
-        },
-        {
-          "title": "各地方政府廣設「科技執法」 5個月取締62.7萬件",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347669",
-          "source": "自由時報",
-          "content": "立法院新會期將於2月24日開議，根據行政院送交國會的施政報告，在精進交通執法方面，內政部協助各地方政府設置重點路口「科技執法」設備，以路口不停讓行人及闖紅燈為取締重點，2025...…"
-        },
-        {
-          "title": "Honda 新一代 HR-V 問世時間曝光！改搭全新外型與科技座艙",
-          "url": "https://auto.ltn.com.tw/news/30978",
-          "source": "自由時報",
-          "content": "現行 Honda HR-V 自 2021 年問世，日前已有日媒拍攝到新一代 HR-V 的測試車，新車預計在 2027 年 4 月問世，換上全新外型以及 1.5 升 e:HEV 油電系統，內裝預計導入 10.25 吋數位儀表與 12.3 吋觸控螢幕，搭配 Honda Connect 車載系統且內建 Google。…"
-        },
-        {
-          "title": "【科技早餐】印度豪擲 2,000 億美元押注 AI：算力主權成國家戰略",
-          "url": "https://techorange.com/2026/02/23/india-eyes-200-billion-in-ai-investment/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>【科技早餐】今天精選 8 則國內外重要科技新聞。 ＊印度 2,000 億美元押注 AI：從外包中心走向「算力國家」 印度電子與資訊技術部長維什諾（Ashwini Vaishnaw）接受《美聯社》專訪表示，政府計畫在未來幾年吸引高達 2,000 億美元投入資料中心與算力建設，目標將印度升級為全球 AI 基礎設施樞紐。Google 將於 5 年內投資 150 億美元建立 AI 中心，Microsoft 宣布 175 億美元的亞洲大型投資案，Amazon 也承諾 2030 年前加碼 350 億美元。 除引進外資，印度已啟用國家級共享運算設施，部署超過 3.8 萬顆 GPU，並提供長期「租稅假期」（Tax Holiday）吸引資料中心資本落地，同時擴大大學與職訓體系培育 AI 人才。在外資與本土模型雙軌並行下，印度正將「算力主權」納入國家發展戰略。 ＊數百萬顆 AI 晶片入列：Meta 擴張算力版圖，NVIDIA 仍居核心位置 NVIDIA 與 Meta 簽訂多年合作協議，Meta 將採購數百萬顆 AI 晶片，涵蓋 Blackwell 與即將上市的 Rubin。NVIDIA 執行長黃仁勳表示，雙方將整合前沿研究與工業規模基礎設施，透過 CPU、GPU、網路與軟體的深度共創設計，支撐全球數十億用戶的 AI 與個人化服務。 Meta [&hellip;]</p>\n"
-        },
-        {
-          "title": "義大利首富換人當  金融科技創業家打敗巧克力之王",
-          "url": "https://www.cna.com.tw/news/aopl/202602230020.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者黃雅詩羅馬22日專電）義大利首富寶座換人。據富比世最新調查，作風低調神祕的軟體金融公司ION Group創辦人皮格納塔洛（Andrea Pignataro）成為最新首富，打敗巧克力之王費列羅集團（Ferrero）總裁喬凡尼費列羅（Giovanni Ferrero）。"
-        },
-        {
-          "title": "科技巨頭加碼 AI 音樂功能，Spotify被迫跟進？",
-          "url": "https://technews.tw/2026/02/23/apple-google-gemini-add-music-focused-generative-ai-features/",
-          "source": "TechNews",
-          "content": "在音樂生成技術的最新進展中，Google 和蘋果公司正在其核心消費者應用中加入音樂專注的生成式人工智慧功能。G [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "晶片",
-      "count": 65,
-      "articles": [
-        {
-          "title": "拉台灣出來墊背？川普再提「偷走晶片」，全球關稅遭最高法院推翻後仍喊有備案",
-          "url": "https://finance.technews.tw/2026/02/21/trump-taiwan-chip/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
-          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
-          "source": "TechNews",
-          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
-        },
-        {
-          "title": "紐時：台晶片與電子元件獲豁免 影響有限",
-          "url": "https://ec.ltn.com.tw/article/paper/1744186",
-          "source": "自由時報",
-          "content": "〔編譯魏國金／綜合報導〕美國最高法院推翻川普依「國際緊急經濟權力法（IEEPA）」實施的關稅措施，引發主要貿易夥伴關注。《紐約時報》報導，二〇二四年美國取代中國成為台灣最大出口市場，台灣只有少部份產品，包括紡織、塑膠與農產品受此判決影響，台灣主要的晶片與電子元件出口已取得豁免，因此影響不大。\r\n\r\n…"
-        },
-        {
-          "title": "富士康HCL合資封測廠動土　莫迪：國產晶片至關重要",
-          "url": "https://www.cna.com.tw/news/afe/202602220039.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者李晉緯大諾伊達21日專電）富士康與印度HCL集團在大諾伊達（Greater Noida）合資興建的封測廠今天動土，印度總理莫迪透過視訊致詞表示，印度要成為已開發國家，需建立在自立更生的基礎上，而有印度製造的國產晶片，對實現這項目標至關重要。"
-        },
-        {
-          "title": "突破物理極限的新救星？小晶片架構如何用十分之一能耗撐起 HPC 與 AI 算力",
-          "url": "https://technews.tw/2026/02/23/will-chiplets-provide-the-answer-for-post-exascale-hpc-scaling/",
-          "source": "TechNews",
-          "content": "隨著傳統晶片架構逐漸接近功率、熱量和空間的物理極限，一種新的架構正在出現，為高效能運算（HPC）提供潛在的前進 [&#8230;]"
-        },
-        {
-          "title": "輝達重返消費 PC 市場，自家 Arm 晶片筆電年底問世正面對決 Intel、AMD",
-          "url": "https://technews.tw/2026/02/23/nvidia-could-launch-its-first-laptops-with-its-own-processors-later-this-year/",
-          "source": "TechNews",
-          "content": "輝達（Nvidia）正在準備重返消費者 PC 市場，計劃推出搭載自家處理器的筆記型電腦，預計在今年底之前上市。 [&#8230;]"
-        },
-        {
-          "title": "凌通人機介面晶片拚出貨韓家電廠　今年成長動能",
-          "url": "https://www.cna.com.tw/news/afe/202602230076.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹23日電）微控制器（MCU）廠凌通積極拓展人機介面（HMI）系統單晶片（SoC）應用市場，目前已量產出貨中國家電品牌廠，今年可望出貨韓國家電品牌廠，將是驅動今年營運成長主要動力。"
-        },
-        {
-          "title": "全球AI資料中心建設引爆記憶體飢渴！SK海力士承諾擴產：HBM是怪獸晶片",
-          "url": "https://news.cnyes.com/news/id/6349136",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;SK 海力士母公司 SK 集團會長崔泰源上周五 (20 日) 在華府表示，將擴大高頻寬記憶體 (HBM) 產能，以因應全球 AI 資料中心建設熱潮。&lt;/p&gt;\n\n&lt;p&gt;被稱為「怪獸晶片」的 HBM 正推動 SK 海力士股價較去年同期飆升超三倍，去年漲幅更達 280%，市值突破 159 兆韓元。&lt;/p&gt;\n\n&lt;p&gt;儘管未揭露具體擴產規模，SK 海力士上月宣布將 2026 年資本支出大幅調高，重點投向清州 M15X 晶圓廠和龍仁半導體集群建設。該集群總投資額預計達 600 兆韓元 (約 4300 億美元)，計畫 2027 年前建成四座晶圓廠，形成涵蓋 HBM4 等尖端產品的完整產業鏈。&lt;/p&gt;\n\n&lt;p&gt;今年 SK 海力士產能已全數售罄，HBM 佔 DRAM 銷售額比例突破 40%，企業級 SSD 需求同步成長。&lt;/p&gt;\n\n&lt;p&gt;微軟與 Meta 今年合計 6500 億美元的 AI 基建投資引發全球記憶體晶片短缺，SK 海力士、三星電子及美光主導的市場呈現賣方格局。&lt;/p&gt;\n\n&lt;p&gt;最新產業數據顯示，今年首季 DRAM 合約價料將季增 90%-95%，NAND 快閃記憶體漲幅達 55%-60%。&lt;/p&gt;\n\n&lt;p&gt;對此崔泰源表示，技術變革恐引發競爭格局劇變，當前營業利潤估值雖從 500 億美元上調至 1000 億美元，但「也可能瞬間轉為同等規模虧損」。&lt;/p&gt;\n\n&lt;p&gt;為因應能源瓶頸，SK 集團正考慮在 AI 資料中心週邊建造配套發電廠。&lt;/p&gt;\n"
-        },
-        {
-          "title": "「造山者」作者赴新加坡談創作  駐星代表：晶片外交",
-          "url": "https://www.cna.com.tw/news/aopl/202602230177.aspx",
-          "source": "中央社國際",
-          "content": "（中央社23日台北電）台灣半導體發展史紀錄片「造山者」製片人蔣顯斌造訪新加坡，出席台大校友會成立大會。駐新加坡代表童振源表示，他所撰寫的新書「Taiwan at the Core」與「造山者」為「晶片外交」注入雙重動能；在全球科技與地緣政治交會下，維持台海和平穩定、強化供應鏈韌性、讓創新持續發生，是台灣對國際社會的承諾。"
-        },
-        {
-          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
-          "url": "https://news.cnyes.com/news/id/6349922",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
       "word": "積電",
-      "count": 61,
+      "count": 62,
       "articles": [
         {
           "title": "美股收盤》川普關稅確定違憲美股勁揚 台積電ADR大漲2.82％",
@@ -1659,6 +1651,72 @@
           "url": "https://www.cna.com.tw/news/afe/202602230019.aspx",
           "source": "中央社產經",
           "content": "（中央社記者鍾榮峰台北23日電）台股農曆春節封關11天，期間美股費城半導體指數漲1.89%，台積電ADR勁揚2.38%。美國最高法院20日推翻總統川普關稅，川普最新發文宣布將把全球關稅提高至15%。台股今天農曆馬年開市，法人評估有機會補漲挑戰34000點新高，以及歷年春節後開紅盤最大漲點。"
+        }
+      ]
+    },
+    {
+      "word": "MLB",
+      "count": 59,
+      "articles": [
+        {
+          "title": "MLB》台日大戰先上演！混血「龍仔」敲安、10億村上宗隆雙安2打點",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347021",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》想挑戰大谷「50-50」的洋基球星敲安！49億阿隆索夯轉隊首轟",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347019",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》今井達也首次Live BP 武器球震驚太空人隊友：這一生沒看過...",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347065",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》村上宗隆克服意外插曲 敲長打讓鈴木誠也笑說：我討厭他",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347077",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》台灣隊經典賽警戒對手！水手韓裔強投春訓初登板1.2局無失分",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347122",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》朝鬼神二刀流邁進！大谷翔平練投後Live BP 對決道奇明星強投",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347197",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》洋基塞揚王牌回來了！柯爾Live BP飆速156KM 對決賈吉被敲安",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347235",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》台灣隊國手林維恩、莊陳仲敖 有望在運動家春訓首戰登板",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347225",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "MLB》台混血戰將出擊！費爾柴德敲強勁擊球 龍連2戰敲安卻意外傷退",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347508",
+          "source": "自由時報",
+          "content": "\n\n\n大聯盟春訓熱身賽火熱進行中，台灣經典賽混血戰將費爾柴德（Stuart Fairchild）與強納森‧龍（Jonathon Long）今天雙雙出擊，費爾柴德替補上場2打數0安...…"
         }
       ]
     },
@@ -1729,72 +1787,6 @@
       ]
     },
     {
-      "word": "MLB",
-      "count": 58,
-      "articles": [
-        {
-          "title": "MLB》台日大戰先上演！混血「龍仔」敲安、10億村上宗隆雙安2打點",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347021",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》想挑戰大谷「50-50」的洋基球星敲安！49億阿隆索夯轉隊首轟",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347019",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》今井達也首次Live BP 武器球震驚太空人隊友：這一生沒看過...",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347065",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》村上宗隆克服意外插曲 敲長打讓鈴木誠也笑說：我討厭他",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347077",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》新賽季全面迎接電子好球帶 春訓首日挑戰成功率高達56％",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347170",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》台灣隊經典賽警戒對手！水手韓裔強投春訓初登板1.2局無失分",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347122",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》朝鬼神二刀流邁進！大谷翔平練投後Live BP 對決道奇明星強投",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347197",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》洋基塞揚王牌回來了！柯爾Live BP飆速156KM 對決賈吉被敲安",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347235",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》台灣隊國手林維恩、莊陳仲敖 有望在運動家春訓首戰登板",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347225",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "MLB》台混血戰將出擊！費爾柴德敲強勁擊球 龍連2戰敲安卻意外傷退",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347508",
-          "source": "自由時報",
-          "content": "\n\n\n大聯盟春訓熱身賽火熱進行中，台灣經典賽混血戰將費爾柴德（Stuart Fairchild）與強納森‧龍（Jonathon Long）今天雙雙出擊，費爾柴德替補上場2打數0安...…"
-        }
-      ]
-    },
-    {
       "word": "世界",
       "count": 56,
       "articles": [
@@ -1857,6 +1849,72 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5348544",
           "source": "自由時報",
           "content": "\n\n\n2027世界盃亞洲區資格賽首輪第二階段賽事本週登場，台灣隊將於26日在主場迎戰南韓，3月1日在菲律賓對決中國。國際籃總（FIBA）世界盃資格賽官網也整理出這階段有機會左右...…"
+        }
+      ]
+    },
+    {
+      "word": "台南",
+      "count": 52,
+      "articles": [
+        {
+          "title": "好旺！台南這家彩券行初二連開大獎  夫妻參拜後刮中2000萬",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347014",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "（獨家）音樂人男友猝逝！卜星慧搬回台南老家 痛別噩耗吐心聲",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347090",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "收假倒數！台南湧北返車潮 避塞交通攻略一次看",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347075",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "出門走春免煩惱！  台南復康巴士暖心服務到初六",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5347114",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "抓住連假尾聲！ 台南走春最後一站 蒐集17款特色孔蓋",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347093",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "聽太太一句話 台南夫妻刮出2000萬頭獎",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347234",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "台南柳營音樂、美術紀念場域齊展演 以文化迎春",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5346901",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "大台南公車違規逆向超車險釀禍 市府將調查裁罰",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347248",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "初四出事！台南女疑闖紅燈撞飛騎士 轎車失控衝毀路邊攤",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347355",
+          "source": "自由時報",
+          "content": null
         }
       ]
     },
@@ -1927,74 +1985,8 @@
       ]
     },
     {
-      "word": "台南",
-      "count": 50,
-      "articles": [
-        {
-          "title": "好旺！台南這家彩券行初二連開大獎  夫妻參拜後刮中2000萬",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347014",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "（獨家）音樂人男友猝逝！卜星慧搬回台南老家 痛別噩耗吐心聲",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347090",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "收假倒數！台南湧北返車潮 避塞交通攻略一次看",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347075",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "春節防範禽流感 台南動保處全面強化禽場防疫",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347061",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "出門走春免煩惱！  台南復康巴士暖心服務到初六",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5347114",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "抓住連假尾聲！ 台南走春最後一站 蒐集17款特色孔蓋",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347093",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "聽太太一句話 台南夫妻刮出2000萬頭獎",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347234",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "台南柳營音樂、美術紀念場域齊展演 以文化迎春",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5346901",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "大台南公車違規逆向超車險釀禍 市府將調查裁罰",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347248",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "初四出事！台南女疑闖紅燈撞飛騎士 轎車失控衝毀路邊攤",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347355",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "開講",
-      "count": 49,
+      "count": 50,
       "articles": [
         {
           "title": "自由開講》交流變成政治輸送，國共論壇背後的國安陷阱",
@@ -2055,6 +2047,72 @@
           "url": "https://talk.ltn.com.tw/article/breakingnews/5337080",
           "source": "自由時報",
           "content": "\n\n\n國民黨新一屆中常委名單出爐，表面看似黨內權力結構的正常更迭，實則暴露出一項無法迴避的憲政與民主警訊。多名長期在中國經營事業、公開表態支持「祖國統一」、甚至肯定中國官方「惠台政策」之中常...…"
+        }
+      ]
+    },
+    {
+      "word": "打造",
+      "count": 48,
+      "articles": [
+        {
+          "title": "高雄3高齡社區增設減速平台 打造行人優先示範區",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347049",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高人氣雪鐵龍小車 Ami 雙生兄弟改款現身！追加專屬新色打造搶眼造型",
+          "url": "https://auto.ltn.com.tw/news/30972",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "高雄蓮池潭升級亮相 打造春節必拍新景點",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347333",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "南僑董事長陳飛龍辭世享壽90歲：打造水晶肥皂，還曾跨足演藝界和當立委",
+          "url": "https://www.thenewslens.com/article/264900",
+          "source": "關鍵評論網",
+          "content": "除了本業經營，陳飛龍也曾積極布局多元投資。早年創辦廣告公司，並投資張小燕主持的《綜藝一百》，他於2001年獲親民黨提名為全國不分區立法委員候選人，但未能進入當選名單。2004年，時任立委劉松藩辭職後，他遞補半年任期，短暫參與立法院事務。"
+        },
+        {
+          "title": "打造南僑王國 陳飛龍走人煙稀少的路 ",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347359",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "日本頂尖睡魔大師破天荒聯手！ 打造巨型媽祖燈組",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347440",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "全球AI峰會聯合宣言　籲打造安全可信強健人工智慧",
+          "url": "https://www.cna.com.tw/news/ait/202602210172.aspx",
+          "source": "中央社科技",
+          "content": "（中央社新德里21日綜合外電報導）在印度首都新德里舉行的年度全球人工智慧（AI）峰會今天正式閉幕，美國、中國等86個國家和2個國際組織發布聯合宣言，呼籲發展「安全、可信且強健」的AI。"
+        },
+        {
+          "title": "統一打造台菲超商雙龍頭　菲7-11加碼32億挑戰5000店",
+          "url": "https://www.cna.com.tw/news/afe/202602220032.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者何秀玲台北22日電）統一企業董事長羅智先建構「亞洲流通生活大平台」為大戰略，海外布局進入擴張階段，轉投資菲律賓7-11市占率突破85%，居菲國超商龍頭地位，2026年將投入最高60億披索（約新台幣32.5億元），挑戰年底達成5000店，形成台、菲超商雙龍頭格局。"
+        },
+        {
+          "title": "成龍、椬梧濕地再進一步！ 雲縣府將向內政部申請標章認證 打造農漁業新價值",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347593",
+          "source": "自由時報",
+          "content": "內政部2019年正式公告核定雲林口湖鄉成龍及宜梧濕地，近年縣府也輔導業者投入生態保育工作。縣府表示，今年度將向內政部提出濕地標章認證申請，目前第一階段審查約有8位養殖業者參加，...…"
+        },
+        {
+          "title": "打造無人反艦飛彈車！美陸戰隊採購ROGUE-Fires 支援島嶼分散部署",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347794",
+          "source": "自由時報",
+          "content": "美國陸戰隊（USMC）近日與奧什科什防務公司（Oshkosh Defense）簽署合約修改案，將持續採購「遠征火力遙控地面載具」（ROGUE-Fires）無人飛彈車。這項軍購案...…"
         }
       ]
     },
@@ -2191,68 +2249,68 @@
       ]
     },
     {
-      "word": "打造",
-      "count": 47,
+      "word": "宣布",
+      "count": 46,
       "articles": [
         {
-          "title": "高雄3高齡社區增設減速平台 打造行人優先示範區",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347049",
+          "title": "散戶睡醒就變天? 對等關稅遭封殺、川普宣布全球加徵10％關稅 ",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347097",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "高人氣雪鐵龍小車 Ami 雙生兄弟改款現身！追加專屬新色打造搶眼造型",
-          "url": "https://auto.ltn.com.tw/news/30972",
+          "title": "微軟遊戲部門人事變動：Phil Spencer 宣布退休，Asha Sharma 接執行長",
+          "url": "https://ccc.technews.tw/2026/02/21/phil-spencer-asha-sharma/",
+          "source": "TechNews",
+          "content": "微軟遊戲部門發生重大變革之際，Phil Spencer 宣布退休，結束微軟長達 38 年職涯。Spencer  [&#8230;]"
+        },
+        {
+          "title": "鹿野聖安宮擲筊挑戰百萬無人成功 廟方宣布明年加碼至200萬",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347420",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "高雄蓮池潭升級亮相 打造春節必拍新景點",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347333",
+          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347495",
           "source": "自由時報",
-          "content": null
+          "content": "美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有的「對等關稅」機制違法後數小時，川普隨即展開強力反擊，於週六在自家社群平台「真實社...…"
         },
         {
-          "title": "南僑董事長陳飛龍辭世享壽90歲：打造水晶肥皂，還曾跨足演藝界和當立委",
-          "url": "https://www.thenewslens.com/article/264900",
-          "source": "關鍵評論網",
-          "content": "除了本業經營，陳飛龍也曾積極布局多元投資。早年創辦廣告公司，並投資張小燕主持的《綜藝一百》，他於2001年獲親民黨提名為全國不分區立法委員候選人，但未能進入當選名單。2004年，時任立委劉松藩辭職後，他遞補半年任期，短暫參與立法院事務。"
-        },
-        {
-          "title": "打造南僑王國 陳飛龍走人煙稀少的路 ",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347359",
+          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347495",
           "source": "自由時報",
-          "content": null
+          "content": "\n\n\n首次上稿 01:57更新時間 05:13\n\n\n美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有對各國徵收「對等關稅」違憲後，...…"
         },
         {
-          "title": "日本頂尖睡魔大師破天荒聯手！ 打造巨型媽祖燈組",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347440",
+          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
+          "url": "https://news.cnyes.com/news/id/6348121",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "台灣最有實力的女團要合體了？林采欣宣布喜訊這樣說",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347494",
           "source": "自由時報",
-          "content": null
+          "content": "\n\n\n林采欣與新東家合作，農曆新年假期也不得閒，她受訪表示：「忙著新創作，寫企劃，還有持續拍短影音帶給粉絲好聽的歌。」喊話希望今年能有新的突破，「對我來說最重要的就是新氣象，新...…"
         },
         {
-          "title": "全球AI峰會聯合宣言　籲打造安全可信強健人工智慧",
-          "url": "https://www.cna.com.tw/news/ait/202602210172.aspx",
-          "source": "中央社科技",
-          "content": "（中央社新德里21日綜合外電報導）在印度首都新德里舉行的年度全球人工智慧（AI）峰會今天正式閉幕，美國、中國等86個國家和2個國際組織發布聯合宣言，呼籲發展「安全、可信且強健」的AI。"
-        },
-        {
-          "title": "統一打造台菲超商雙龍頭　菲7-11加碼32億挑戰5000店",
-          "url": "https://www.cna.com.tw/news/afe/202602220032.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者何秀玲台北22日電）統一企業董事長羅智先建構「亞洲流通生活大平台」為大戰略，海外布局進入擴張階段，轉投資菲律賓7-11市占率突破85%，居菲國超商龍頭地位，2026年將投入最高60億披索（約新台幣32.5億元），挑戰年底達成5000店，形成台、菲超商雙龍頭格局。"
-        },
-        {
-          "title": "成龍、椬梧濕地再進一步！ 雲縣府將向內政部申請標章認證 打造農漁業新價值",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347593",
+          "title": "川普宣布全球關稅加碼至15％ 比特幣聞訊下挫",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347532",
           "source": "自由時報",
-          "content": "內政部2019年正式公告核定雲林口湖鄉成龍及宜梧濕地，近年縣府也輔導業者投入生態保育工作。縣府表示，今年度將向內政部提出濕地標章認證申請，目前第一階段審查約有8位養殖業者參加，...…"
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%，消息一出，全球市值最大的加密貨幣比特幣（Bitcoin）應聲走跌。\n\n\n綜合媒體報導...…"
         },
         {
-          "title": "打造無人反艦飛彈車！美陸戰隊採購ROGUE-Fires 支援島嶼分散部署",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347794",
+          "title": "川普宣布全球關稅加碼至15％ 張育萌酸藍白：有誰堅持「重啟談判」？",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347523",
           "source": "自由時報",
-          "content": "美國陸戰隊（USMC）近日與奧什科什防務公司（Oshkosh Defense）簽署合約修改案，將持續採購「遠征火力遙控地面載具」（ROGUE-Fires）無人飛彈車。這項軍購案...…"
+          "content": "針對美國總統川普對等關稅被判違法，張育萌今晨接連在臉書發出兩篇文分析，美國最高法院裁定的是「川普引用的《國際緊急經濟權力法》並沒有授權總統徵收關稅」，而不是說「川普徵收的關稅都無...…"
+        },
+        {
+          "title": "川普宣布全球關稅加碼至15％ 網笑：台股禮拜一開盤大禮包",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347624",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%。消息曝光後，引發PTT網友熱烈討論，許多網友高喊「TACO（意指川普總是臨陣退縮（T...…"
         }
       ]
     },
@@ -2319,72 +2377,6 @@
           "url": "https://news.cnyes.com/news/id/6351606",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;美股週二 (24 日) 全面收高，道瓊工業指數勁揚逾 350 點，市場對人工智慧(AI) 衝擊企業軟體產業的疑慮暫時降溫，帶動科技與軟體類股出現跌深反彈。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數收漲 0.77%，那斯達克綜合指數回升 1.04%，費城半導體指數升幅達 1.45%，道瓊指數收紅 370.44 點。&lt;/p&gt;\n\n&lt;p&gt;因宣布與 Meta 擴大合作，AMD 飆升超 8%，家得寶財報 (HD-US) 優於預期、股價勁揚超 2% 至每股 384.48 美元，成為支撐道瓊的重要動能；前一交易日因 AI 疑慮重挫的 IBM (IBM-US) 也回穩走高。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普週二稍晚將發表第二任期首場國情咨文，他已預告內容將以「史上最強經濟」為主軸，市場則聚焦其政策訊號。&lt;/p&gt;\n\n&lt;p&gt;川普於 21 日援引《貿易法》第 122 條，宣布對所有進入美國的商品加徵 15% 關稅，為期 150 天，相關措施已於週二正式生效。&lt;/p&gt;\n\n&lt;p&gt;伊朗與美國預計週四在日內瓦舉行第三輪核談判。隨著華府尋求終結伊朗核計畫，市場對軍事衝突風險的關注升溫。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週二 (24 日) 主要指數表現：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;道瓊工業指數上漲 370.44 點，或 0.76%，收 49,174.50 點。&lt;/li&gt;\n&lt;li&gt;那斯達克指數上漲 236.41 點，或 1.05%，收 22,863.68 點。&lt;/li&gt;\n&lt;li&gt;S&amp;P 500 指數上漲 52.32 點，或 0.77%，收 6,890.07 點。&lt;/li&gt;\n&lt;li&gt;費城半導體指數上漲 118.887 &nbsp;點，或 1.45%，收 8,332.343 點。&lt;/li&gt;\n&lt;li&gt;NYSE FANG+ 指數上漲 79.14 點，或 0.56%，收 14,183.26 點。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;Q&quot; data-height=&quot;444&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7117117117117118&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6351606/m/a42586e831a6d09a3c28909757e21047.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg&quot; srcset=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg 1x,https://cimg.cnyes.cool/prod/news/6351606/xl/a42586e831a6d09a3c28909757e21047.jpg 2x,https://cimg.cnyes.cool/prod/news/6351606/xxl/a42586e831a6d09a3c28909757e21047.jpg 3x&quot;&gt;\n&lt;figcaption&gt;標普 11 大板塊多數收紅，由非必需消費、工業與資訊科技領漲，能源與醫療保健逆勢收黑。(圖：finviz)&nbsp;&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;焦點個股&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;NYSE FANG+ 指數中的科技五大巨頭漲多跌少。Meta (META-US) 漲 0.32%；蘋果 (AAPL-US) 上漲 2.24%；Alphabet (GOOGL-US) 跌 0.19%；微軟 (MSFT-US) 上漲 1.18%；亞馬遜 (AMZN-US) 上漲 1.60%。&lt;/p&gt;\n\n&lt;p&gt;費城半導體族群表現強勢。AMD (AMD-US) 飆升 8.77%；博通 (AVGO-US) 下跌 1.47%；輝達 (NVDA-US) 漲 0.68%；應用材料 (AMAT-US) 上漲 1.17%；高通 (QCOM-US) 上漲 3.11%；美光 (MU-US) 跌 0.70%。&lt;/p&gt;\n\n&lt;p&gt;台股 ADR 全面收高。台積電 ADR (TSM-US) 大漲 4.25%；日月光 ADR (ASX-US) 大漲 5.71%；聯電 ADR (UMC-US) 強漲 4.80%；中華電信 ADR (CHT-US) 上漲 1.61%。&lt;/p&gt;\n\n&lt;h6&gt;企業新聞&lt;/h6&gt;\n\n&lt;p&gt;AMD (AMD-US) 飆升超 8% 引領晶片股亮眼表現。Meta (META-US) 與 AMD 簽署多年合作協議，Meta 計畫在未來 5 年內向超微採購 AI 晶片，總價值上看 600 億美元；作為合作條件之一，Meta 同時取得認股權證，未來可購買 AMD 最多約 10% 的股權。&lt;/p&gt;\n\n"
-        }
-      ]
-    },
-    {
-      "word": "宣布",
-      "count": 45,
-      "articles": [
-        {
-          "title": "散戶睡醒就變天? 對等關稅遭封殺、川普宣布全球加徵10％關稅 ",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347097",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "微軟遊戲部門人事變動：Phil Spencer 宣布退休，Asha Sharma 接執行長",
-          "url": "https://ccc.technews.tw/2026/02/21/phil-spencer-asha-sharma/",
-          "source": "TechNews",
-          "content": "微軟遊戲部門發生重大變革之際，Phil Spencer 宣布退休，結束微軟長達 38 年職涯。Spencer  [&#8230;]"
-        },
-        {
-          "title": "鹿野聖安宮擲筊挑戰百萬無人成功 廟方宣布明年加碼至200萬",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347420",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347495",
-          "source": "自由時報",
-          "content": "美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有的「對等關稅」機制違法後數小時，川普隨即展開強力反擊，於週六在自家社群平台「真實社...…"
-        },
-        {
-          "title": "反擊最高法院裁決 川普宣布全球關稅加碼至15％",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347495",
-          "source": "自由時報",
-          "content": "\n\n\n首次上稿 01:57更新時間 05:13\n\n\n美國總統川普（Donald Trump）再次對全球貿易政策祭出重磅打擊。在美國最高法院裁定其原有對各國徵收「對等關稅」違憲後，...…"
-        },
-        {
-          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
-          "url": "https://news.cnyes.com/news/id/6348121",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "台灣最有實力的女團要合體了？林采欣宣布喜訊這樣說",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347494",
-          "source": "自由時報",
-          "content": "\n\n\n林采欣與新東家合作，農曆新年假期也不得閒，她受訪表示：「忙著新創作，寫企劃，還有持續拍短影音帶給粉絲好聽的歌。」喊話希望今年能有新的突破，「對我來說最重要的就是新氣象，新...…"
-        },
-        {
-          "title": "川普宣布全球關稅加碼至15％ 比特幣聞訊下挫",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347532",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%，消息一出，全球市值最大的加密貨幣比特幣（Bitcoin）應聲走跌。\n\n\n綜合媒體報導...…"
-        },
-        {
-          "title": "川普宣布全球關稅加碼至15％ 張育萌酸藍白：有誰堅持「重啟談判」？",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347523",
-          "source": "自由時報",
-          "content": "針對美國總統川普對等關稅被判違法，張育萌今晨接連在臉書發出兩篇文分析，美國最高法院裁定的是「川普引用的《國際緊急經濟權力法》並沒有授權總統徵收關稅」，而不是說「川普徵收的關稅都無...…"
-        },
-        {
-          "title": "川普宣布全球關稅加碼至15％ 網笑：台股禮拜一開盤大禮包",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347624",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%。消息曝光後，引發PTT網友熱烈討論，許多網友高喊「TACO（意指川普總是臨陣退縮（T...…"
         }
       ]
     },
@@ -2587,6 +2579,72 @@
       ]
     },
     {
+      "word": "台北",
+      "count": 43,
+      "articles": [
+        {
+          "title": "金門返台旅客多 台北-金門加開2架次班機",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
+          "source": "自由時報",
+          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
+        },
+        {
+          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
+          "source": "自由時報",
+          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
+        },
+        {
+          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
+          "source": "自由時報",
+          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
+        },
+        {
+          "title": "星宇航空6月首航釜山！ 台北台中直飛2/25開賣",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348320",
+          "source": "自由時報",
+          "content": "新春開工之際，星宇航空今宣布拓展韓國航網版圖，自6月起開闢全新「台北／台中－釜山」航線，為星宇航空首條韓國航線，同時也是全台唯一台中直飛釜山，將於2月25日全面開賣。\r\n\r\n星...…"
+        },
+        {
+          "title": "台北年貨大街擴大禁菸範圍 取締件數略減、勸導人數仍逾800",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348416",
+          "source": "自由時報",
+          "content": "台北年貨大街今年擴大辦理禁菸範圍，相較去年取締件數14件、開罰2萬8千元，今年減少為13件，勸導人數仍達862人。台北市衛生局健康管理科科長林雪蘭表示，開罰金額需待民眾陳述意見...…"
+        },
+        {
+          "title": "星宇航空首度插旗韓國航網！台北天天飛釜山、台中獨家直航",
+          "url": "https://finance.technews.tw/2026/02/23/exclusive-direct-flights/",
+          "source": "TechNews",
+          "content": "新春開工之際，星宇航空今日宣布拓展韓國航網版圖，自 2026 年 6 月 1 日起開闢全新「台北／台中－釜山」 [&#8230;]"
+        },
+        {
+          "title": "AIT首度參與台北燈節 谷立言：同慶美國250歲",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348828",
+          "source": "自由時報",
+          "content": "美國在台協會（AIT）處長谷立言今天接受媒體專訪表示，AIT今年將以美國意象主題花燈，首度參與台北燈節，同時慶祝美國建國250年。被問及最愛說的中文詞句，他說，「紙上談兵，因為大家似乎都對台...…"
+        },
+        {
+          "title": "數位「時尚入口」開張！台北時裝週官網改版 「縫一條線」測色體驗超療癒",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5349662",
+          "source": "自由時報",
+          "content": "\n\n\n隨著「台北時裝週 AW26」邁入轉型元年，官方網站的數位體驗也再次升級。全新改版上線的官方網站（https://tpefw.com/zh-TW），不僅為品牌識別2.0的延...…"
+        },
+        {
+          "title": "巡演首站給台北！溫流4月開唱  把真心搬上舞台",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5350217",
+          "source": "自由時報",
+          "content": "\n\n\n韓國實力派歌手溫流今（24）宣布將於4月3日在台大體育館1樓舉辦《2026 ONEW FANMEETING [TOUGH LOVE] in TAIPEI》，台北就是整個巡...…"
+        }
+      ]
+    },
+    {
       "word": "布局",
       "count": 42,
       "articles": [
@@ -2653,68 +2711,68 @@
       ]
     },
     {
-      "word": "台北",
+      "word": "政策",
       "count": 42,
       "articles": [
         {
-          "title": "金門返台旅客多 台北-金門加開2架次班機",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347376",
+          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "地點曝！小黃遇惡煞 搶匪基隆上車台北奪車搶錢棄置新北  ",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347670",
-          "source": "自由時報",
-          "content": "基隆游姓計程車司機今（22）日凌晨5時許空車行經基隆廟口時，碰見兩名男子招手要搭車到台北，原以為接到大單，沒想到行駛至台北市長安西路附近時，貴客變惡煞，其中一人持刀行搶...…"
+          "title": "美關稅政策再起風波　魯拉：巴西不接受外來壓力",
+          "url": "https://www.cna.com.tw/news/aopl/202602210056.aspx",
+          "source": "中央社國際",
+          "content": null
         },
         {
-          "title": "補財運？民眾瘋撈台北101池水 賈永婕急喊：千萬別喝！",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347771",
+          "title": "川普關稅陰影 清水岩寺工商籤示警：美政策多變台灣須步步為營",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347127",
           "source": "自由時報",
-          "content": "\n\n\n台北101驚現「撈水大隊」！有網友直擊不少民眾聚集在台北101大樓戶外水池邊，當場裝走大量池水，離譜行徑引發社群熱議。對此，101董事長賈永婕現身留言區示警，強調該處為添加...…"
+          "content": null
         },
         {
-          "title": "台北迪化運動公園環境改造  「花卉馬拉松」起跑",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347848",
-          "source": "自由時報",
-          "content": "台北市政府工務局衛生下水道工程處提升迪化污水廠公園整體休憩品質，啟動環境升級改造工程，增設自行車牽引道，建構連結淡水河堤外與迪化公園綠色休閒的空中走廊；園區內新植的富士櫻陸續開...…"
+          "title": "川普將訪中遇關稅裁定添變數　美貿易政策成焦點",
+          "url": "https://www.cna.com.tw/news/aopl/202602210078.aspx",
+          "source": "中央社國際",
+          "content": null
         },
         {
-          "title": "星宇航空6月首航釜山！ 台北台中直飛2/25開賣",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348320",
-          "source": "自由時報",
-          "content": "新春開工之際，星宇航空今宣布拓展韓國航網版圖，自6月起開闢全新「台北／台中－釜山」航線，為星宇航空首條韓國航線，同時也是全台唯一台中直飛釜山，將於2月25日全面開賣。\r\n\r\n星...…"
+          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
+          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
+          "source": "中央社國際",
+          "content": null
         },
         {
-          "title": "台北年貨大街擴大禁菸範圍 取締件數略減、勸導人數仍逾800",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348416",
+          "title": "川普關稅被判違法 許毓仁提3重點：美最在意維持承諾可信、政策連貫",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347314",
           "source": "自由時報",
-          "content": "台北年貨大街今年擴大辦理禁菸範圍，相較去年取締件數14件、開罰2萬8千元，今年減少為13件，勸導人數仍達862人。台北市衛生局健康管理科科長林雪蘭表示，開罰金額需待民眾陳述意見...…"
+          "content": null
         },
         {
-          "title": "星宇航空首度插旗韓國航網！台北天天飛釜山、台中獨家直航",
-          "url": "https://finance.technews.tw/2026/02/23/exclusive-direct-flights/",
-          "source": "TechNews",
-          "content": "新春開工之際，星宇航空今日宣布拓展韓國航網版圖，自 2026 年 6 月 1 日起開闢全新「台北／台中－釜山」 [&#8230;]"
+          "title": "川普稱將提升全球關稅到15%！誓言延續「讓美國再次偉大」政策",
+          "url": "https://news.cnyes.com/news/id/6348111",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國總統川普表示，在經過對美國最高法院週五（20 日）就關稅問題所作出之裁決進行全面、詳盡且完整的審視後，他決定將把一天前宣布的全球 10% 關稅提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，川普週六（21 日）在 Truth Social 發文指出，身為美國總統，他將自即日起，把對各國課徵的全球 10% 關稅，提高至完全被允許、且經法律檢驗的 15% 水準。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：川普Truth Social)&quot; data-height=&quot;498&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.1686746987951808&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6348111/m/e1f9972f56844f4805284ab11f68f93b.jpg&quot; data-width=&quot;582&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6348111/l/e1f9972f56844f4805284ab11f68f93b.jpg&quot;&gt;\n&lt;figcaption&gt;(圖：&lt;a href=&quot;https://truthsocial.com/@realDonaldTrump/posts/116109447886304328&quot;&gt;川普 Truth Social&lt;/a&gt;)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;他並強調，直到他上任，過去數十年來，其中許多國家一直在「敲詐」美國而未受懲罰。&lt;/p&gt;\n\n&lt;p&gt;川普還表示，在接下來的數個月內，川普政府將確定並公布新的、符合法律規範的關稅措施，持續推動其極為成功的「讓美國再次偉大」進程，且將讓美國比以往更加偉大。&lt;/p&gt;\n\n&lt;p&gt;此前，就在最高法院於週五作出裁決數小時後，川普隨即對外國商品課徵 10% 的全球性關稅，以維持其貿易政策議程。&lt;/p&gt;\n"
         },
         {
-          "title": "AIT首度參與台北燈節 谷立言：同慶美國250歲",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348828",
-          "source": "自由時報",
-          "content": "美國在台協會（AIT）處長谷立言今天接受媒體專訪表示，AIT今年將以美國意象主題花燈，首度參與台北燈節，同時慶祝美國建國250年。被問及最愛說的中文詞句，他說，「紙上談兵，因為大家似乎都對台...…"
+          "title": "德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策",
+          "url": "https://news.cnyes.com/news/id/6348120",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;德國總理梅爾茨周六（21 日）表示，他將在一周多後前往華盛頓，同美國總統川普討論美國關稅政策，將以協調一致的歐盟立場與其展開對話。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨當天在斯圖加特出席基民盟黨代會後接受媒體採訪時作出上述表態。此前美國聯邦最高法院判定川普政府依據《國際緊急經濟權力法》實施的關稅措施違法。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨稱，這一判定「引人關注，也在許多人意料之中」，顯示美國的權力分立機制仍在發揮作用。&lt;/p&gt;\n\n&lt;p&gt;不過，他指出，這項判定不涉及針對特定行業徵收的「行業性關稅」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，赴美前德國將同歐盟夥伴進行協調。「關稅政策屬於歐盟職權，不是單個成員國的事務。我將以協調一致的歐洲立場前往華盛頓。」&lt;/p&gt;\n\n&lt;p&gt;他強調，將向美方明確表達關稅「對各方都有損害」，尤其會對徵稅國家造成影響，「德國承受的是出口減少的壓力，但最終買單的是美國消費者」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，美國法院的判定有助於減輕德國經濟的關稅負擔，但仍需關注「行業性關稅」的影響。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨說，此次訪美行程已籌劃多時，預定 3 月初成行。這將是他自 2025 年 6 月在白宮會見川普以來再次訪美。&lt;/p&gt;\n"
         },
         {
-          "title": "數位「時尚入口」開張！台北時裝週官網改版 「縫一條線」測色體驗超療癒",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5349662",
+          "title": "川普仍有其他法源維持關稅政策 林俊憲：藍白刻意渲染恐慌",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347896",
           "source": "自由時報",
-          "content": "\n\n\n隨著「台北時裝週 AW26」邁入轉型元年，官方網站的數位體驗也再次升級。全新改版上線的官方網站（https://tpefw.com/zh-TW），不僅為品牌識別2.0的延...…"
+          "content": "美國聯邦最高法院20日針對美國總統川普援引「國際緊急經濟權力法」（IEEPA）課徵關稅發布判決，裁定這項關稅違法，不得再以該法作為關稅法源。對此，在野藍白兩黨21日均要求政府迅速...…"
         },
         {
-          "title": "巡演首站給台北！溫流4月開唱  把真心搬上舞台",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5350217",
+          "title": "川普關稅政策受挫 印度喊停美印貿易談判",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348009",
           "source": "自由時報",
-          "content": "\n\n\n韓國實力派歌手溫流今（24）宣布將於4月3日在台大體育館1樓舉辦《2026 ONEW FANMEETING [TOUGH LOVE] in TAIPEI》，台北就是整個巡...…"
+          "content": "\n\n\n印度貿易部門消息人士今（22）日透露，在美國最高法院裁定美國總統川普實施的對等關稅無效之後，印度政府認為關稅前途未卜，因此取消了週日派貿易代表出訪華府的計畫。\n\n\n《路透》...…"
         }
       ]
     },
@@ -2851,68 +2909,134 @@
       ]
     },
     {
-      "word": "政策",
+      "word": "兄弟",
       "count": 41,
       "articles": [
         {
-          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
+          "title": "高人氣雪鐵龍小車 Ami 雙生兄弟改款現身！追加專屬新色打造搶眼造型",
+          "url": "https://auto.ltn.com.tw/news/30972",
           "source": "自由時報",
           "content": null
         },
         {
-          "title": "美關稅政策再起風波　魯拉：巴西不接受外來壓力",
-          "url": "https://www.cna.com.tw/news/aopl/202602210056.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅陰影 清水岩寺工商籤示警：美政策多變台灣須步步為營",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5347127",
+          "title": "中職》聯盟解禁1規範 兄弟首場隊內賽首見特殊現象",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347796",
           "source": "自由時報",
-          "content": null
+          "content": "\n\n\n中信兄弟今天舉辦隊內紅白戰，腳上釘鞋的顏色成為全場焦點，由於今年規章中的釘鞋顏色改成不再規範，只要不反光即可，只見曾頌恩穿上藍色、楊祥禾則是粉色系，投手呂彥青更是穿上全白...…"
         },
         {
-          "title": "川普將訪中遇關稅裁定添變數　美貿易政策成焦點",
-          "url": "https://www.cna.com.tw/news/aopl/202602210078.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "環保政策大轉彎　川普政府鬆綁燃煤電廠排放",
-          "url": "https://www.cna.com.tw/news/aopl/202602210087.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "川普關稅被判違法 許毓仁提3重點：美最在意維持承諾可信、政策連貫",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347314",
+          "title": "中職》12萬人追蹤的前道奇捕手教練報到 兄弟新希望可望再進化",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347782",
           "source": "自由時報",
-          "content": null
+          "content": "\n\n\n中信兄弟邀請委內瑞拉籍教練賀克托 （Hector Alvarez）擔任春訓客座捕手教練，今天正式報到，準備為捕手群的接捕動作傳授經驗，而曾在道奇、大都會小聯盟執教的他，將...…"
         },
         {
-          "title": "川普稱將提升全球關稅到15%！誓言延續「讓美國再次偉大」政策",
-          "url": "https://news.cnyes.com/news/id/6348111",
+          "title": "中職》李大浩特調1天就有成果 兄弟三壘新希望不一樣了",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347943",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果，他直言，只有黃韋盛感覺有把昨天的東西放到今日的實戰，其他2名打者還看不太出來。\n\n\n去年...…"
+        },
+        {
+          "title": "中職》李大浩連前輩都敢講真話 平野惠一邀來兄弟的原因",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347971",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇李大浩接受平野惠一邀約，客座中信兄弟春訓一週指導打擊，平野惠一透露，李大浩的棒球腦超好，能針對各種狀況去打擊，甚至不吝於向前輩提出建言，「這就是我邀請他的原因。」...…"
+        },
+        {
+          "title": "中職》兄弟補強牛棚 簽下最速153公里火球男！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347964",
+          "source": "自由時報",
+          "content": "\n\n\n生涯最速153公里的26歲火球男曾品洋，跟中信兄弟簽下自主培訓合約，目前已跟著中信春訓中，希望能再重返中職的一軍舞台。\n\n\n曾品洋是前中信兄弟曾家鋐的胞兄，2022年選秀...…"
+        },
+        {
+          "title": "中職》兄弟第1指名首秀好投！ 可望對決日本怪力男",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348026",
+          "source": "自由時報",
+          "content": "\n\n\n中信兄弟第1指名投手林暉盛今在隊內紅白戰先發，繳出1.1局無安打，有個好的開始，備戰25日對上軟銀的比賽，他直呼很期待能對上軟銀，以及跟「日本怪力男」柳田悠岐交手。\n\n\n...…"
+        },
+        {
+          "title": "中職》兄弟重砲曾頌恩拉打過多 南韓傳奇老實說",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348076",
+          "source": "自由時報",
+          "content": "\n\n\n南韓傳奇打者李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果。其中，他指導曾頌恩練打時可將目標放在「反方向全壘打」，先透過想法上的改造，希望幫他找...…"
+        },
+        {
+          "title": "台日交流賽》徐若熙軟銀首秀出戰台灣隊！軟銀再派強投對中信兄弟",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348902",
+          "source": "自由時報",
+          "content": "\n\n\n「2026台日棒球國際交流賽」將在2月25日起開打，日職軟銀、日本火腿，將先後來台出戰中信兄弟、台灣隊和味全龍隊。\n\n\n軟銀隊今天公告2場比賽先發投手，25日出戰中信兄弟...…"
+        },
+        {
+          "title": "派拉蒙抬價搶親華納兄弟 Netflix若落敗僅4天可回應",
+          "url": "https://news.cnyes.com/news/id/6350040",
           "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普表示，在經過對美國最高法院週五（20 日）就關稅問題所作出之裁決進行全面、詳盡且完整的審視後，他決定將把一天前宣布的全球 10% 關稅提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，川普週六（21 日）在 Truth Social 發文指出，身為美國總統，他將自即日起，把對各國課徵的全球 10% 關稅，提高至完全被允許、且經法律檢驗的 15% 水準。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：川普Truth Social)&quot; data-height=&quot;498&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;1.1686746987951808&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6348111/m/e1f9972f56844f4805284ab11f68f93b.jpg&quot; data-width=&quot;582&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6348111/l/e1f9972f56844f4805284ab11f68f93b.jpg&quot;&gt;\n&lt;figcaption&gt;(圖：&lt;a href=&quot;https://truthsocial.com/@realDonaldTrump/posts/116109447886304328&quot;&gt;川普 Truth Social&lt;/a&gt;)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;他並強調，直到他上任，過去數十年來，其中許多國家一直在「敲詐」美國而未受懲罰。&lt;/p&gt;\n\n&lt;p&gt;川普還表示，在接下來的數個月內，川普政府將確定並公布新的、符合法律規範的關稅措施，持續推動其極為成功的「讓美國再次偉大」進程，且將讓美國比以往更加偉大。&lt;/p&gt;\n\n&lt;p&gt;此前，就在最高法院於週五作出裁決數小時後，川普隨即對外國商品課徵 10% 的全球性關稅，以維持其貿易政策議程。&lt;/p&gt;\n"
+          "content": "&lt;p&gt;彭博引述消息人士報導，派拉蒙 (&lt;a data-symbol-template=&quot;USS:PARA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;PARA-US&lt;/a&gt;) 已提高對華納兄弟探索 (&lt;a data-symbol-template=&quot;USS:WBD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;WBD-US&lt;/a&gt;) 的收購報價，使這場針對好萊塢代表性影業巨頭的爭奪戰再度升溫。&lt;/p&gt;\n\n&lt;p&gt;知情人士指出，新的報價金額尚未披露，但優於派拉蒙於 12 月 8 日直接向華納兄弟股東提出的每股 30 美元全現金收購方案，並回應了華納兄弟先前對派拉蒙提案的部分疑慮，包括對派拉蒙融資確定性的更高要求。&lt;/p&gt;\n\n&lt;p&gt;華納兄弟在去年 12 月同意以每股 27.75 美元的價格，將旗下影視製片廠及 HBO 業務出售給影音串流龍頭 Netflix(&lt;a data-symbol-template=&quot;USS:NFLX:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NFLX-US&lt;/a&gt;) 。該交易所涉及的協議還包括將 CNN 與 TNT 等有線電視頻道進行分拆。&lt;/p&gt;\n\n&lt;p&gt;這家媒體巨頭已重新與派拉蒙展開為期七天的談判，期限至週一 (23 日) 止。若華納兄弟董事會認定派拉蒙的新報價優於現行協議，Netflix 將有 4 天時間作出回應。&lt;/p&gt;\n\n&lt;p&gt;派拉蒙先前表示，甲骨文創辦人、億萬富豪艾里森（Larry Ellison）將為其家族及其他投資人投入交易的逾 400 億美元股權資金提供擔保。此外，派拉蒙亦同意其他要求，例如在交易完成前，允許華納兄弟自行決定其業務運作方式。&lt;/p&gt;\n\n&lt;p&gt;受此消息影響，華納兄弟股價在盤後交易一度短暫衝高，隨後持平於 28.98 美元；派拉蒙股價上漲 1.3%，Netflix 則小幅微升。&lt;/p&gt;\n\n&lt;p&gt;這場針對華納兄弟的收購戰，是近年來媒體業最受矚目的交易案之一。這家擁有百年歷史的片廠曾製作出《北非諜影》、《蝙蝠俠》等影史經典，以及《六人行》等熱門影集，無論最終花落誰家，都將對全球娛樂產業的未來走向產生深遠影響。&lt;/p&gt;\n\n&lt;p&gt;這筆潛在交易也在好萊塢至華盛頓之間引發爭議。部分國會議員、電影製作人及業界人士擔憂媒體產業集中度進一步提高，以及併購對就業帶來的影響。&lt;/p&gt;\n\n&lt;p&gt;&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
+      "word": "Google",
+      "count": 39,
+      "articles": [
+        {
+          "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
+          "url": "https://www.thenewslens.com/article/264876",
+          "source": "關鍵評論網",
+          "content": null
         },
         {
-          "title": "德國總理：協調歐盟立場後赴美見川普 討論美國關稅政策",
-          "url": "https://news.cnyes.com/news/id/6348120",
+          "title": "搶下 Google TPU 大單，聯發科 2027 挑戰 15% 市占",
+          "url": "https://technews.tw/2026/02/21/google-tpu-mediatek/",
+          "source": "TechNews",
+          "content": null
+        },
+        {
+          "title": "Google爆內鬼！前工程師涉竊Pixel Tensor機密、最慘下場曝光",
+          "url": "https://3c.ltn.com.tw/news/65000",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
+          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
+          "source": "TechNews",
+          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
+        },
+        {
+          "title": "Google再推Gemini 3.1 Pro：推理力翻倍、會做動畫和網站，AI競賽進入「深度思考」時代",
+          "url": "https://www.thenewslens.com/article/264897",
+          "source": "關鍵評論網",
+          "content": "Google 發布 Gemini 3.1 Pro，核心升級為多步驟推理能力，旨在處理複雜任務與工作流程自動化。現已透過 API 與 Vertex AI 等平台開放預覽，目標是將深度思考能力導入企業應用。"
+        },
+        {
+          "title": "Google Play 商店 AI 應用程式安全漏洞曝光，超過 12TB 用戶資料洩露",
+          "url": "https://infosecu.technews.tw/2026/02/21/unsecured-ai-apps-are-leaking-personal-data-of-android-users/",
+          "source": "TechNews",
+          "content": "數位隱私日益受關注，Google Play 某些人工智慧應用程式卻因安全漏洞引發嚴重數據洩露事件。Cybern [&#8230;]"
+        },
+        {
+          "title": "SerpApi 批「Google 才是世界最大爬蟲公司」，反擊其是雙標公司",
+          "url": "https://infosecu.technews.tw/2026/02/21/serpapi-asks-court-to-dismiss-google-web-scraping-lawsuit/",
+          "source": "TechNews",
+          "content": "德州網路爬蟲公司 SerpApi 近日反擊 Google，指控爬蟲存在雙重標準。SerpApi 要求加州法院駁 [&#8230;]"
+        },
+        {
+          "title": "Google Pixel 11 拼「最安全」手機！睽違 5 年關鍵升級曝光",
+          "url": "https://3c.ltn.com.tw/news/64876",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "若OpenAI估值8300億美元 Google等科技巨頭又該值多少？",
+          "url": "https://news.cnyes.com/news/id/6348161",
           "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;德國總理梅爾茨周六（21 日）表示，他將在一周多後前往華盛頓，同美國總統川普討論美國關稅政策，將以協調一致的歐盟立場與其展開對話。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨當天在斯圖加特出席基民盟黨代會後接受媒體採訪時作出上述表態。此前美國聯邦最高法院判定川普政府依據《國際緊急經濟權力法》實施的關稅措施違法。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨稱，這一判定「引人關注，也在許多人意料之中」，顯示美國的權力分立機制仍在發揮作用。&lt;/p&gt;\n\n&lt;p&gt;不過，他指出，這項判定不涉及針對特定行業徵收的「行業性關稅」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，赴美前德國將同歐盟夥伴進行協調。「關稅政策屬於歐盟職權，不是單個成員國的事務。我將以協調一致的歐洲立場前往華盛頓。」&lt;/p&gt;\n\n&lt;p&gt;他強調，將向美方明確表達關稅「對各方都有損害」，尤其會對徵稅國家造成影響，「德國承受的是出口減少的壓力，但最終買單的是美國消費者」。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨表示，美國法院的判定有助於減輕德國經濟的關稅負擔，但仍需關注「行業性關稅」的影響。&lt;/p&gt;\n\n&lt;p&gt;梅爾茨說，此次訪美行程已籌劃多時，預定 3 月初成行。這將是他自 2025 年 6 月在白宮會見川普以來再次訪美。&lt;/p&gt;\n"
+          "content": "&lt;p&gt;資本市場正上演一場撕裂式定價，當 OpenAI 以 8300 億美元估值刷新 AI 獨角獸紀錄時，同處 AI 賽道的谷歌，二級市場交易價格僅 2027 年預期營收的 6.7 倍，不足前者的一半，這一反差暴露出投資者對 AI 顛覆格局的深層焦慮。&lt;/p&gt;\n\n&lt;p&gt;標普全球數據顯示，OpenAI 估值相當於其 2027 年預期營收的 14 倍，谷歌僅獲 6.7 倍定價。若以同一倍數標準測算，谷歌理論估值需膨脹至目前的 2.1 倍才能符合 OpenAI 的估值邏輯。&lt;/p&gt;\n\n&lt;p&gt;市場給予 OpenAI 超高溢價的核心在於「成長賭注」，其收入爆發潛力吸引資本追逐，卻刻意忽視 OpenAI 持續巨額虧損且盈利無期的兩大現實，而谷歌坐擁成熟現金牛業務與同等技術實力，護城河更為穩固。&lt;/p&gt;\n\n&lt;p&gt;科技分析師 Martin Peers 指出，市場過度聚焦 OpenAI 代表的「高成長敘事」，卻遺忘其他巨頭在 AI 轉型中的紅利，而谷歌、持 OpenAI 股份 27% 的微軟、亞馬遜等三大玩家，憑藉雲端業務與生態協同，極可能成為 AI 浪潮的最終贏家。&lt;/p&gt;\n\n&lt;p&gt;目前估價差恰是獨立研判的窗口，一邊是 OpenAI 引領的「成長溢價」主線，另一邊是谷歌背書的「現金流確定性折價」邏輯，兩條定價路線的再平衡，將取決於市場對 AI 商業化路徑的共識重構。&lt;/p&gt;\n\n&lt;p&gt;值得玩味的是，谷歌今年迄今股價逆勢跑贏多數科技巨頭，卻仍難逃整體拋售潮。當投資人在恐慌中逃離科技股，那些手握印鈔機業務的轉型巨頭，或許正悄悄積蓄價值回歸的能量。&lt;/p&gt;\n"
         },
         {
-          "title": "川普仍有其他法源維持關稅政策 林俊憲：藍白刻意渲染恐慌",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347896",
+          "title": "開箱就中！Android平板被爆出廠即藏惡意軟體、Google回應了",
+          "url": "https://3c.ltn.com.tw/news/64874",
           "source": "自由時報",
-          "content": "美國聯邦最高法院20日針對美國總統川普援引「國際緊急經濟權力法」（IEEPA）課徵關稅發布判決，裁定這項關稅違法，不得再以該法作為關稅法源。對此，在野藍白兩黨21日均要求政府迅速...…"
-        },
-        {
-          "title": "川普關稅政策受挫 印度喊停美印貿易談判",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348009",
-          "source": "自由時報",
-          "content": "\n\n\n印度貿易部門消息人士今（22）日透露，在美國最高法院裁定美國總統川普實施的對等關稅無效之後，印度政府認為關稅前途未卜，因此取消了週日派貿易代表出訪華府的計畫。\n\n\n《路透》...…"
+          "content": "別以為只要不下載可疑 App，就能確保手上的行動裝置萬無一失。安全研究人員近日揭露一項令人不安的威脅，部分Android 平板在出廠前，其韌體中就已被植入惡意程式…"
         }
       ]
     },
@@ -2983,74 +3107,8 @@
       ]
     },
     {
-      "word": "Google",
-      "count": 38,
-      "articles": [
-        {
-          "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
-          "url": "https://www.thenewslens.com/article/264876",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "搶下 Google TPU 大單，聯發科 2027 挑戰 15% 市占",
-          "url": "https://technews.tw/2026/02/21/google-tpu-mediatek/",
-          "source": "TechNews",
-          "content": null
-        },
-        {
-          "title": "Google爆內鬼！前工程師涉竊Pixel Tensor機密、最慘下場曝光",
-          "url": "https://3c.ltn.com.tw/news/65000",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
-          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
-          "source": "TechNews",
-          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
-        },
-        {
-          "title": "Google再推Gemini 3.1 Pro：推理力翻倍、會做動畫和網站，AI競賽進入「深度思考」時代",
-          "url": "https://www.thenewslens.com/article/264897",
-          "source": "關鍵評論網",
-          "content": "Google 發布 Gemini 3.1 Pro，核心升級為多步驟推理能力，旨在處理複雜任務與工作流程自動化。現已透過 API 與 Vertex AI 等平台開放預覽，目標是將深度思考能力導入企業應用。"
-        },
-        {
-          "title": "Google Play 商店 AI 應用程式安全漏洞曝光，超過 12TB 用戶資料洩露",
-          "url": "https://infosecu.technews.tw/2026/02/21/unsecured-ai-apps-are-leaking-personal-data-of-android-users/",
-          "source": "TechNews",
-          "content": "數位隱私日益受關注，Google Play 某些人工智慧應用程式卻因安全漏洞引發嚴重數據洩露事件。Cybern [&#8230;]"
-        },
-        {
-          "title": "SerpApi 批「Google 才是世界最大爬蟲公司」，反擊其是雙標公司",
-          "url": "https://infosecu.technews.tw/2026/02/21/serpapi-asks-court-to-dismiss-google-web-scraping-lawsuit/",
-          "source": "TechNews",
-          "content": "德州網路爬蟲公司 SerpApi 近日反擊 Google，指控爬蟲存在雙重標準。SerpApi 要求加州法院駁 [&#8230;]"
-        },
-        {
-          "title": "Google Pixel 11 拼「最安全」手機！睽違 5 年關鍵升級曝光",
-          "url": "https://3c.ltn.com.tw/news/64876",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "若OpenAI估值8300億美元 Google等科技巨頭又該值多少？",
-          "url": "https://news.cnyes.com/news/id/6348161",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;資本市場正上演一場撕裂式定價，當 OpenAI 以 8300 億美元估值刷新 AI 獨角獸紀錄時，同處 AI 賽道的谷歌，二級市場交易價格僅 2027 年預期營收的 6.7 倍，不足前者的一半，這一反差暴露出投資者對 AI 顛覆格局的深層焦慮。&lt;/p&gt;\n\n&lt;p&gt;標普全球數據顯示，OpenAI 估值相當於其 2027 年預期營收的 14 倍，谷歌僅獲 6.7 倍定價。若以同一倍數標準測算，谷歌理論估值需膨脹至目前的 2.1 倍才能符合 OpenAI 的估值邏輯。&lt;/p&gt;\n\n&lt;p&gt;市場給予 OpenAI 超高溢價的核心在於「成長賭注」，其收入爆發潛力吸引資本追逐，卻刻意忽視 OpenAI 持續巨額虧損且盈利無期的兩大現實，而谷歌坐擁成熟現金牛業務與同等技術實力，護城河更為穩固。&lt;/p&gt;\n\n&lt;p&gt;科技分析師 Martin Peers 指出，市場過度聚焦 OpenAI 代表的「高成長敘事」，卻遺忘其他巨頭在 AI 轉型中的紅利，而谷歌、持 OpenAI 股份 27% 的微軟、亞馬遜等三大玩家，憑藉雲端業務與生態協同，極可能成為 AI 浪潮的最終贏家。&lt;/p&gt;\n\n&lt;p&gt;目前估價差恰是獨立研判的窗口，一邊是 OpenAI 引領的「成長溢價」主線，另一邊是谷歌背書的「現金流確定性折價」邏輯，兩條定價路線的再平衡，將取決於市場對 AI 商業化路徑的共識重構。&lt;/p&gt;\n\n&lt;p&gt;值得玩味的是，谷歌今年迄今股價逆勢跑贏多數科技巨頭，卻仍難逃整體拋售潮。當投資人在恐慌中逃離科技股，那些手握印鈔機業務的轉型巨頭，或許正悄悄積蓄價值回歸的能量。&lt;/p&gt;\n"
-        },
-        {
-          "title": "開箱就中！Android平板被爆出廠即藏惡意軟體、Google回應了",
-          "url": "https://3c.ltn.com.tw/news/64874",
-          "source": "自由時報",
-          "content": "別以為只要不下載可疑 App，就能確保手上的行動裝置萬無一失。安全研究人員近日揭露一項令人不安的威脅，部分Android 平板在出廠前，其韌體中就已被植入惡意程式…"
-        }
-      ]
-    },
-    {
       "word": "3月",
-      "count": 38,
+      "count": 39,
       "articles": [
         {
           "title": "高市因應過完年轉職潮 3月開辦大型徵才釋出千個職缺迎接轉職潮",
@@ -3243,6 +3301,72 @@
           "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348415",
           "source": "自由時報",
           "content": "台中市長盧秀燕今年首次缺席新春團拜，也是她卸任前的最後一次團拜，民進黨中市議會黨團總召周永鴻表示，盧市長最後一年團拜可以缺席，但給議會、給人民應該履行的義務不能缺席，他也請市長...…"
+        }
+      ]
+    },
+    {
+      "word": "交易",
+      "count": 37,
+      "articles": [
+        {
+          "title": "NBA》勇士老闆談交易庫明加 強調：這個決定並不難！",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347078",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "人口紅利加持 台南永康、安南與高雄鳳山、三民交易熱區  今年首購市場回穩",
+          "url": "https://estate.ltn.com.tw/article/26939",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "土方亂象一》雙北土方處理費暴漲3倍 建商籲公平交易委員會應徹查",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348178",
+          "source": "自由時報",
+          "content": "\n\n\n〔調查新聞中心／台北報導〕為解決廢土亂倒問題，今年元旦上路「營建剩餘土石方全流向管理」新制，卻因配套不足，導致全台陷入「土方之亂」，多名建商控訴雙北民營土資場的土方收取處理費用從原先的每立方公尺...…"
+        },
+        {
+          "title": "期交所新春團拜　盼今年交易量衝破4億口",
+          "url": "https://www.cna.com.tw/news/afe/202602230073.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者鍾榮峰台北23日電）台灣期貨交易所今天上午舉行新春團拜，董事長吳自心表示，期盼今年期貨市場達到交易量4億口目標，期貨公會理事長詹正恩說，突破4億口應該沒問題，在各方努力下，「不僅4億口，還要上看5億口」，帶動現場出席貴賓一陣掌聲。"
+        },
+        {
+          "title": "晶睿3/27正式下市、3/18最後交易日 將成台達電100%子公司",
+          "url": "https://news.cnyes.com/news/id/6349607",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;證交所今 (23) 日公告，安控廠晶睿 (3454-TW) 因與台達電 (2308-TW) 進行股份轉換，將成為台達電 100% 持股之子公司。依照證交所營業細則規定，晶睿將於 2026 年 3 月 27 日正式下市，結束其在資本市場掛牌 15 年的歷史。&lt;/p&gt;\n\n&lt;p&gt;根據證交所公告，晶睿上市股票最後交易日為 3 月 18 日，將自 3 月 19 日起停止買賣，停止股東名簿記載變更起迄日期為 3 月 23 日至 3 月 27 日，並於 3 月 27 日終止上市。&lt;/p&gt;\n\n&lt;p&gt;台達電去年 12 月宣布以每股 100 元、總金額約 37.33 億元，取得子公司晶睿 43.12% 股權。台達董事長暨執行長鄭平表示，智慧樓宇是長期看好的趨勢，晶睿加入集團以來，成為在樓宇自動化的關鍵支柱，面對全球市場快速變遷的挑戰與機會，透過更緊密的整合，將能加快決策並進一步提升資源綜效。&lt;/p&gt;\n\n&lt;p&gt;證交所表示，此案符合營業細則第 53 條之 11 規定，經核准後予以公告。對於晶睿的股東而言，股份轉換後的權利義務將依據雙方簽署之股份轉換契約辦理。&lt;/p&gt;\n"
+        },
+        {
+          "title": "公司債未如期償付！永冠-KY明起併案列全額交割、分盤交易",
+          "url": "https://news.cnyes.com/news/id/6349597",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;證交所於今 (23) 日公告，永冠 - KY(1589-TW) 因無法如期償還債權人要求贖回之可轉換公司債，觸及證交所營業細則相關條款，自 2026 年 2 月 24 日起，其上市有價證券將改列為變更交易方法，並採行分盤集合競價，俗稱全額交割併分盤交易。&lt;/p&gt;\n\n&lt;p&gt;證交所指出，永冠能源科技集團有限公司此次因未能如期償付可轉債贖回款項，核有證交所營業細則第 49 條之 1 第 1 項第 7 款及第 49 條之 3 第 1 項第 2 款規定之情事。為了維護市場交易秩序並提醒投資人風險，證交所決定對其採取更嚴格的交易管控。&lt;/p&gt;\n\n&lt;p&gt;永冠自明 (24) 日起打入全額交割股，也就是說，投資人買賣該股票需預收足額款券，同時採取分盤集合競價，透過交易撮合時間拉長，進一步管控流動性風險。&lt;/p&gt;\n\n&lt;p&gt;面對財務壓力，永冠 - KY 先前表示已擬定三大因應措施，希望能確保投資人權益並穩定公司營運，包括優化財務結構、尋求策略性投資人以及加強資金調度。然而，隨著證交所正式祭出處置措施，市場對其後續債務清償進度與營運動能將持續保持高度關注。&lt;/p&gt;\n\n&lt;p&gt;市場法人提醒，KY 公司若出現資金調度缺口導致債券違約，通常會引發市場對其現金流的疑慮。投資人在參與變更交易方法後的股票買賣時，應審慎評估其後續財務報告與債務協商進度。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
+          "url": "https://news.cnyes.com/news/id/6349590",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大量科技今起遭處置交易至3/10每5分鐘撮合一次",
+          "url": "https://news.cnyes.com/news/id/6349986",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;AOI 及 PCB 鑽孔、成型設備廠大量科技 (3167-TW) 遭處置交易，交易所公布，大量科技自今 (24) 日起 10 個交易日至 3 月 10 日，採取分盤交易，每 5 分鐘人工撮合一次。&lt;/p&gt;\n\n&lt;p&gt;設備大量科技 2025 年營收 50.78 億元，年增 95.35%，法人估計 2026 年營收將向上挑戰 75 億元，年增 47.7%，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;同時，大量科技董事會也通過對南京大量數控科技有限公司海外上市案，預計在香港聯交所主板上市，大量科技指出，南京大量數控科技所發行上市&nbsp; &nbsp;募集資金淨額，主要將用於補充營運資金；待募集資金到位後，可用於提升產能及業務競爭力，有利於增加集團獲利及股東權益。&lt;/p&gt;\n\n&lt;p&gt;在上市 PCB 廠中，欣興 (3037-TW) 也擬對蘇州 IC 載板廠赴香港掛牌。&lt;/p&gt;\n"
+        },
+        {
+          "title": "永冠公司債償還未如期遭變更交易　股價跳空鎖跌停",
+          "url": "https://www.cna.com.tw/news/afe/202602240038.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者鍾榮峰台北24日電）鑄件大廠永冠-KY因短期營運資金緊縮，無法如期償還債權人要求贖回第4次無擔保轉換公司債，證交所宣布今天起永冠-KY上市股票列為變更交易方法，並採行分盤集合競價交易方式。永冠-KY今天開盤跳空鎖住跌停15.25元，委賣量超過8000張。"
+        },
+        {
+          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
+          "url": "https://news.cnyes.com/news/id/6350506",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
         }
       ]
     },
@@ -3441,138 +3565,6 @@
           "url": "https://news.cnyes.com/news/id/6350030",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;美股正經歷一場史無前例的壓力測試，年初至今那斯達克與標普均吐光今年漲幅，曾經風光無限的美股「科技 7 巨頭」深陷泥潭，微軟跌逾 17%，亞馬遜跌逾 10%，Meta 更成為第三家跌入技術性熊市的巨頭。&lt;br&gt;\n&lt;br&gt;\n美股大盤格局正發生劇烈重構，能源、消費、工業族群今年迄今均漲超 12%，而科技股權重高的 IT 類股下跌 4.5%。這種極端分化在標普 500 等指數上尤其明顯。&lt;/p&gt;\n\n&lt;p&gt;歷史經驗顯示，如此劇烈的風格切換往往伴隨著市場領漲族群的洗牌，最近三次分別發生在 2000 年網路泡沫、2008 年金融危機以及 2022 年新冠疫情熊市期間。&lt;/p&gt;\n\n&lt;p&gt;Plaza Advisory Group 指出，這已不僅是估值修正，而是基本面邏輯的重構。市場焦點正從 AI 技術開發者轉向技術對全行業的顛覆效應。企業開始計算 AI 帶來的效率提升與成本節約，非科技類股的獲利改善已反映在股價上。&lt;br&gt;\n&lt;br&gt;\n市場真正的焦慮源自於雲端服務商激增的資本開支。BCA 研究警告，若想維持資本狂潮前的淨資產收益率，雲端服務商營收必須成長 250 個基點，或利潤率提升 100 個基點。&lt;/p&gt;\n\n&lt;p&gt;《彭博資訊》預測，若 AI 類股調整蔓延至信貸市場、推高信用利差，美國經濟成成長率將減少 1.3 至 1.4 個百分點。&lt;/p&gt;\n\n&lt;p&gt;美銀對全球基金經理人的最新調查也顯示，AI 雲端服務供應商的資本開支已被視為系統性信貸風險的第二大來源。&lt;/p&gt;\n\n&lt;p&gt;富達國際策略師 Jurrien Timmer 指出，美股「科技 7 巨頭」在指數中權重極大，大盤股走弱時，基準指數往往同步疲軟，但近期標普正經歷一場結構轉變。當投資人拋棄大盤科技股，標普完全可能進入橫盤整理階段，不過關鍵前提為，在這種溫和的龍頭切換期內，不能出現經濟衰退。&lt;/p&gt;\n\n&lt;p&gt;Timmer 認為，目前市場處於微妙平衡期，創新成長股的走勢顯示所有衰退都會引發熊市，但並非每一次熊市都預示衰退，若中東戰事持續，恐致油價飆升，進而推升衰退風險。&lt;/p&gt;\n\n&lt;p&gt;輝達周三 (25 日) 第四財季業績將成市場情緒的風向球。儘管分析師預估營收將達 659 億美元，但下一會計年度 EPS 估值區間存在巨大分歧，最高上看 9.68 美元，最低僅 6.28 美元。&lt;/p&gt;\n\n&lt;p&gt;在超算巨頭們因投資回報疑慮導致股價承壓之際，更重要的是輝達執行長黃仁勳的最新表態，市場正關注這位「AI 啦啦隊長」能否重振產業信心。&lt;/p&gt;\n\n&lt;p&gt;當創新成長股與宏觀經濟脫鉤，科技巨頭的失速究竟是一場健康輪動，還是暴風雨前奏，是當前所有投資人都想的問題。&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
-      "word": "合作",
-      "count": 36,
-      "articles": [
-        {
-          "title": "自由開講》高市大勝的戰略意涵：中國施壓失效，美日挺台合作更明確",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5342841",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "為與輝達競爭 AI 晶片市場，Google 祭出「鈔能力」投資更多合作夥伴",
-          "url": "https://finance.technews.tw/2026/02/21/google-using-financial-might-to-take-on-nvidias-ai-chip-dominance/",
-          "source": "TechNews",
-          "content": "Google（母公司 Alphabet）積極探索利用財務實力擴大人工智慧（AI）晶片市場，特別是挑戰市場領導者 [&#8230;]"
-        },
-        {
-          "title": "菲參議員訪南海中業島　籲志同道合國家深化合作反制中國",
-          "url": "https://www.cna.com.tw/news/aopl/202602210154.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "印度減少依賴中國　攜手巴西加強關鍵礦產稀土合作",
-          "url": "https://www.cna.com.tw/news/aopl/202602210151.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "專訪「台灣女婿」山口晉：將深化台日關係與區域安全合作",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347504",
-          "source": "自由時報",
-          "content": "自民黨眾議員山口晉在此次日本眾院大選中重返國會，因為具有「台灣女婿」的身分，選戰期間受到台灣高度關注。山口在接受本報專訪時表示，台灣社會的支持「令人感到光榮且成為巨...…"
-        },
-        {
-          "title": "許光漢新片驚傳停拍 台日合作破局內幕曝光",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5347599",
-          "source": "自由時報",
-          "content": "\n\n\n許光漢去年傳出將主演台日合作電影《Clinch》（暫譯《纏鬥》），昨日（21）日媒爆出電影在開拍前中斷，原因謠傳是與「日中關係惡化」有關，對此台灣製作公司否認並做出回應。...…"
-        },
-        {
-          "title": "印度減少依賴中國，攜手巴西加強關鍵礦產稀土合作",
-          "url": "https://technews.tw/2026/02/22/india-wz-brasil-rare-earth/",
-          "source": "TechNews",
-          "content": "印度總理莫迪 21 日在新德里與巴西總統魯拉會談後表示，印度與巴西已同意加強關鍵礦產及稀土領域的合作。 法新社 [&#8230;]"
-        },
-        {
-          "title": "賴總統開工首日邀五院院長茶敘 盼捐棄成見、加強憲政合作",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347806",
-          "source": "自由時報",
-          "content": "明天是年假後開工首日，賴清德總統邀約五院院長進行新春茶敘，為新年度揭開序幕，展開憲政機關間的尊重與合作精神；據悉，早在年前立法院長韓國瑜主動透露接獲邀約時，府方即已展開各項規劃、...…"
-        },
-        {
-          "title": "展現憲政合作精神 賴今邀五院院長新春茶敘",
-          "url": "https://news.ltn.com.tw/news/politics/paper/1744270",
-          "source": "自由時報",
-          "content": "期待大家捐棄成見 團結齊心共同推動國家發展\r\n〔記者陳昀／台北報導〕總統賴清德今天上午將邀行政院長卓榮泰、立法院長韓國瑜等五院院長新春茶敘，展現憲政機關間的尊重與合作精神；包括副總統蕭美琴、府秘書長潘孟安都將與會，全程閉門進行。\r\n賴總統春節期間曾公開表示，此次茶敘未設定特定議題及預設目標，總統及五…"
-        },
-        {
-          "title": "林依晨言承旭首合作   《同棲散策》殺青2年無法曝光",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5348167",
-          "source": "自由時報",
-          "content": "\n\n\n〔娛樂頻道／綜合報導〕首度合演影集《同棲散策》的林依晨與言承旭，原本該影集要在去年播出，至今遲遲未能問世，主因在今（23）日曝光。\n\n\n《鏡週刊》報導，《同棲散策》未能播映主因在於題材與尺度過大...…"
-        }
-      ]
-    },
-    {
-      "word": "兄弟",
-      "count": 36,
-      "articles": [
-        {
-          "title": "高人氣雪鐵龍小車 Ami 雙生兄弟改款現身！追加專屬新色打造搶眼造型",
-          "url": "https://auto.ltn.com.tw/news/30972",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "中職》聯盟解禁1規範 兄弟首場隊內賽首見特殊現象",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347796",
-          "source": "自由時報",
-          "content": "\n\n\n中信兄弟今天舉辦隊內紅白戰，腳上釘鞋的顏色成為全場焦點，由於今年規章中的釘鞋顏色改成不再規範，只要不反光即可，只見曾頌恩穿上藍色、楊祥禾則是粉色系，投手呂彥青更是穿上全白...…"
-        },
-        {
-          "title": "中職》12萬人追蹤的前道奇捕手教練報到 兄弟新希望可望再進化",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347782",
-          "source": "自由時報",
-          "content": "\n\n\n中信兄弟邀請委內瑞拉籍教練賀克托 （Hector Alvarez）擔任春訓客座捕手教練，今天正式報到，準備為捕手群的接捕動作傳授經驗，而曾在道奇、大都會小聯盟執教的他，將...…"
-        },
-        {
-          "title": "中職》李大浩特調1天就有成果 兄弟三壘新希望不一樣了",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347943",
-          "source": "自由時報",
-          "content": "\n\n\n南韓傳奇李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果，他直言，只有黃韋盛感覺有把昨天的東西放到今日的實戰，其他2名打者還看不太出來。\n\n\n去年...…"
-        },
-        {
-          "title": "中職》李大浩連前輩都敢講真話 平野惠一邀來兄弟的原因",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347971",
-          "source": "自由時報",
-          "content": "\n\n\n南韓傳奇李大浩接受平野惠一邀約，客座中信兄弟春訓一週指導打擊，平野惠一透露，李大浩的棒球腦超好，能針對各種狀況去打擊，甚至不吝於向前輩提出建言，「這就是我邀請他的原因。」...…"
-        },
-        {
-          "title": "中職》兄弟補強牛棚 簽下最速153公里火球男！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347964",
-          "source": "自由時報",
-          "content": "\n\n\n生涯最速153公里的26歲火球男曾品洋，跟中信兄弟簽下自主培訓合約，目前已跟著中信春訓中，希望能再重返中職的一軍舞台。\n\n\n曾品洋是前中信兄弟曾家鋐的胞兄，2022年選秀...…"
-        },
-        {
-          "title": "中職》兄弟第1指名首秀好投！ 可望對決日本怪力男",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5348026",
-          "source": "自由時報",
-          "content": "\n\n\n中信兄弟第1指名投手林暉盛今在隊內紅白戰先發，繳出1.1局無安打，有個好的開始，備戰25日對上軟銀的比賽，他直呼很期待能對上軟銀，以及跟「日本怪力男」柳田悠岐交手。\n\n\n...…"
-        },
-        {
-          "title": "中職》兄弟重砲曾頌恩拉打過多 南韓傳奇老實說",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5348076",
-          "source": "自由時報",
-          "content": "\n\n\n南韓傳奇打者李大浩昨在中信兄弟春訓特別指導岳政華、黃韋盛和曾頌恩，今在隊內賽觀察成果。其中，他指導曾頌恩練打時可將目標放在「反方向全壘打」，先透過想法上的改造，希望幫他找...…"
-        },
-        {
-          "title": "台日交流賽》徐若熙軟銀首秀出戰台灣隊！軟銀再派強投對中信兄弟",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5348902",
-          "source": "自由時報",
-          "content": "\n\n\n「2026台日棒球國際交流賽」將在2月25日起開打，日職軟銀、日本火腿，將先後來台出戰中信兄弟、台灣隊和味全龍隊。\n\n\n軟銀隊今天公告2場比賽先發投手，25日出戰中信兄弟...…"
-        },
-        {
-          "title": "派拉蒙抬價搶親華納兄弟 Netflix若落敗僅4天可回應",
-          "url": "https://news.cnyes.com/news/id/6350040",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;彭博引述消息人士報導，派拉蒙 (&lt;a data-symbol-template=&quot;USS:PARA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;PARA-US&lt;/a&gt;) 已提高對華納兄弟探索 (&lt;a data-symbol-template=&quot;USS:WBD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;WBD-US&lt;/a&gt;) 的收購報價，使這場針對好萊塢代表性影業巨頭的爭奪戰再度升溫。&lt;/p&gt;\n\n&lt;p&gt;知情人士指出，新的報價金額尚未披露，但優於派拉蒙於 12 月 8 日直接向華納兄弟股東提出的每股 30 美元全現金收購方案，並回應了華納兄弟先前對派拉蒙提案的部分疑慮，包括對派拉蒙融資確定性的更高要求。&lt;/p&gt;\n\n&lt;p&gt;華納兄弟在去年 12 月同意以每股 27.75 美元的價格，將旗下影視製片廠及 HBO 業務出售給影音串流龍頭 Netflix(&lt;a data-symbol-template=&quot;USS:NFLX:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NFLX-US&lt;/a&gt;) 。該交易所涉及的協議還包括將 CNN 與 TNT 等有線電視頻道進行分拆。&lt;/p&gt;\n\n&lt;p&gt;這家媒體巨頭已重新與派拉蒙展開為期七天的談判，期限至週一 (23 日) 止。若華納兄弟董事會認定派拉蒙的新報價優於現行協議，Netflix 將有 4 天時間作出回應。&lt;/p&gt;\n\n&lt;p&gt;派拉蒙先前表示，甲骨文創辦人、億萬富豪艾里森（Larry Ellison）將為其家族及其他投資人投入交易的逾 400 億美元股權資金提供擔保。此外，派拉蒙亦同意其他要求，例如在交易完成前，允許華納兄弟自行決定其業務運作方式。&lt;/p&gt;\n\n&lt;p&gt;受此消息影響，華納兄弟股價在盤後交易一度短暫衝高，隨後持平於 28.98 美元；派拉蒙股價上漲 1.3%，Netflix 則小幅微升。&lt;/p&gt;\n\n&lt;p&gt;這場針對華納兄弟的收購戰，是近年來媒體業最受矚目的交易案之一。這家擁有百年歷史的片廠曾製作出《北非諜影》、《蝙蝠俠》等影史經典，以及《六人行》等熱門影集，無論最終花落誰家，都將對全球娛樂產業的未來走向產生深遠影響。&lt;/p&gt;\n\n&lt;p&gt;這筆潛在交易也在好萊塢至華盛頓之間引發爭議。部分國會議員、電影製作人及業界人士擔憂媒體產業集中度進一步提高，以及併購對就業帶來的影響。&lt;/p&gt;\n\n&lt;p&gt;&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
         }
       ]
     }
