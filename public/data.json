@@ -1,146 +1,236 @@
 {
-  "updateTime": "2026-02-27T12:00:51.359Z",
-  "fullDateStr": "2026/2/27 · 更新於 20:00:51",
+  "updateTime": "2026-02-27T14:02:32.973Z",
+  "fullDateStr": "2026/2/27 · 更新於 22:02:32",
   "aiResult": {
-    "sentiment_score": -0.15,
+    "sentiment_score": 0.1,
     "dimensions": {
-      "policy": 0.1,
-      "market": -0.4,
-      "industry": -0.2,
-      "international": -0.1,
-      "technical": -0.5
+      "policy": -0.4,
+      "market": 0.2,
+      "industry": 0.7,
+      "international": -0.3,
+      "technical": 0.2
     },
     "entities": [
       {
-        "name": "NVIDIA",
-        "sentiment": "negative",
-        "ticker": "NVDA.US"
-      },
-      {
-        "name": "TSMC",
-        "sentiment": "neutral",
-        "ticker": "2330.TW"
-      },
-      {
-        "name": "Apple",
+        "name": "OpenAI",
         "sentiment": "positive",
-        "ticker": "AAPL.US"
-      },
-      {
-        "name": "Barclays",
-        "sentiment": "negative",
-        "ticker": "BARC.L"
-      },
-      {
-        "name": "Market Financial Solutions",
-        "sentiment": "negative",
         "ticker": null
       },
       {
+        "name": "NVIDIA",
+        "sentiment": "neutral",
+        "ticker": "NVDA.US"
+      },
+      {
         "name": "Amazon",
-        "sentiment": "negative",
+        "sentiment": "positive",
         "ticker": "AMZN.US"
+      },
+      {
+        "name": "SoftBank",
+        "sentiment": "positive",
+        "ticker": "9984.JP"
+      },
+      {
+        "name": "FTAI Aviation",
+        "sentiment": "positive",
+        "ticker": "FTAI.US"
+      },
+      {
+        "name": "Samsara Inc",
+        "sentiment": "neutral",
+        "ticker": "IOT.US"
+      },
+      {
+        "name": "Anthropic",
+        "sentiment": "positive",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【宏觀報告：AI 估值重塑與信貸風險的雙重考驗】</h3><p>今日市場情緒與昨日的擴散性成長不同，呈現明顯的<b>估值修正與避險轉向</b>。雖然昨日 AI 投資正走向應用化，但今日 <b>NVIDIA [ID:1]</b> 財報後的重挫顯示市場對 AI 基礎設施的「獲利邊際遞減」產生恐懼，特別是當大型客戶如 Amazon 與 Meta 的自由現金流受壓時，龐大的採購義務將成為資產負債表的潛在炸彈。技術面上，NVDA 失守月線，標誌著短線多頭結構破壞。</p><p>金融端方面，倫敦 <b>MFS 信貸事件 [ID:0]</b> 揭露了影子銀行體系中「雙重質押」的誠信風險，巴克萊與 Jefferies 等機構的曝險雖然在可控範圍，但加劇了市場對信貸緊縮的擔憂。地緣政治方面，川普對伊言論與情報界的分歧 [ID:2] 雖然增加了噪音，但也暗示了政策不確定性溢價。</p><p><b>經理人備註</b>：目前市場正處於「AI 信仰過熱後的冷靜期」。雖然目前未見「巴逆逆」等極端反向指標發送買進訊號，但資金已明顯流向 <b>Apple [AAPL]</b> 等低 AI 曝險避險港，操作上建議降低槓桿，靜待信貸風險與 AI 評價面回穩。</p>",
+    "summary": "<h3>【宏觀報告：AI 資本擴張與通膨黏性的拉鋸戰】</h3><p>今日市場情緒較昨日的「估值恐慌」有所緩解，主要動能來自 <b>OpenAI [ID:0]</b> 完成史上最大規模私募融資，估值推升至 7,300 億美元。這與昨日 NVIDIA 財報後的修正形成對比：儘管二級市場出現「贏家詛咒」與現金流焦慮 <b>[ID:2]</b>，但一級市場與科技巨頭（AMZN、NVDA、SoftBank）仍以數百億美元規模進行結構性下注，顯示 AI 基礎建設的資本競賽尚未觸頂。</p><p>然而，宏觀面出現逆風，1 月 <b>PPI 核心數據 [ID:1]</b> 顯著高於預期，美元指數應聲走強，暗示通膨壓力具備黏性，可能延後聯準會降息時程。此壓力促使資金湧入 <b>美債避險 [ID:3]</b>，10 年期殖利率跌破 4%，反映市場在「AI 成長」與「宏觀緊縮」間尋求平衡。值得注意的是，川普政府對 FBI 的人事清洗 <b>[ID:4]</b> 增添了行政體系的不確定性，應留意政策風險對市場波動的放大效應。目前市場並未出現「巴逆逆」等極端反向指標訊號，操作上應保持中性偏多，聚焦具備 EPS 上修動能的個股如 FTAI <b>[ID:6]</b>。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "科技硬體"
+        "category": "AI 產業動態"
       },
       {
         "id": 2,
-        "category": "金融信貸"
+        "category": "宏觀經濟數據"
       },
       {
         "id": 3,
-        "category": "地緣政治"
+        "category": "債券與外匯"
+      },
+      {
+        "id": 4,
+        "category": "政治風險"
       }
     ],
     "sector_stats": {
-      "tech": -0.5,
-      "finance": -0.3,
-      "manufacturing": 0,
-      "service": 0.3
+      "tech": 0.5,
+      "finance": -0.2,
+      "manufacturing": 0.1,
+      "service": 0
     },
     "events": [
       {
-        "title": "AI 巨頭資本支出與現金流的悖論",
-        "summary": "NVIDIA 強勁財報無法抵銷市場對大型科技公司自由現金流萎縮與巨額採購承諾的憂慮。",
+        "title": "AI 私募市場的超級融資潮",
+        "summary": "OpenAI 與 Anthropic 接連完成數百億美元融資，科技巨頭透過資本綁定確保未來算力與應用主權。",
+        "impact": "正面",
+        "related_news_ids": [
+          0,
+          2
+        ]
+      },
+      {
+        "title": "通膨數據回歸與降息預期受阻",
+        "summary": "美國 1 月 PPI 超預期年升 2.9%，核心 PPI 亦強勁，美元反彈削弱風險資產吸引力。",
         "impact": "負面",
         "related_news_ids": [
           1
         ]
       },
       {
-        "title": "影子銀行信貸違約風險浮現",
-        "summary": "英國 MFS 爆雷事件揭示非銀行融資體系的透明度與資產擔保缺口問題，衝擊華爾街銀行。",
-        "impact": "負面",
+        "title": "避險買盤推升美債表現",
+        "summary": "在 AI 通縮壓力與地緣風險交織下，美債創一年最佳單月表現，資金向安全資產靠攏。",
+        "impact": "中性",
         "related_news_ids": [
-          0
+          3
         ]
       },
       {
-        "title": "中東局勢政治修辭與情報落差",
-        "summary": "川普誇大伊朗飛彈威脅與情報評估不符，增加地緣政治判斷的複雜性與市場噪音。",
-        "impact": "中性",
+        "title": "美國行政體系人事劇震",
+        "summary": "川普政府解雇參與機密文件案的 FBI 調查員，反映政策透明度風險與行政干預升級。",
+        "impact": "負面",
         "related_news_ids": [
-          2
+          4
         ]
       }
     ],
     "relations": [
       {
-        "from": "NVIDIA",
-        "to": "TSMC",
-        "type": "供應鏈預付資金壓力"
-      },
-      {
         "from": "Amazon",
-        "to": "NVIDIA",
-        "type": "採購需求與現金流矛盾"
+        "to": "OpenAI",
+        "type": "戰略投資與供應鏈"
       },
       {
-        "from": "MFS",
-        "to": "Barclays",
-        "type": "債務曝險與信貸違約"
+        "from": "NVIDIA",
+        "to": "OpenAI",
+        "type": "算力供應與股權投資"
       },
       {
-        "from": "Trump",
-        "to": "Iran",
-        "type": "地緣政治軍事威脅"
+        "from": "PPI 數據",
+        "to": "美元指數",
+        "type": "正向推動"
+      },
+      {
+        "from": "AI 基礎設施支出",
+        "to": "科技巨頭現金流",
+        "type": "負面壓制"
+      },
+      {
+        "from": "SoftBank",
+        "to": "OpenAI",
+        "type": "資本注入"
       }
     ]
   },
   "newsData": [
     {
-      "title": "倫敦新一波信貸風暴來襲！華爾街銀行急追數十億美元曝險",
-      "url": "https://news.cnyes.com/news/id/6356171",
+      "title": "亞馬遜豪砸500億美元！OpenAI完成1100億美元融資",
+      "url": "https://news.cnyes.com/news/id/6356260",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;根據《彭博》周五 (27 日) 報導，英國非銀行金融機構 Market Financial Solutions Ltd.(MFS)近日瀕臨崩潰，再度引爆信貸市場對詐欺與資產擔保風險的憂慮。事件雖發生在倫敦，但情節與近年美國多起信貸爆雷案如出一轍：非銀行業者填補傳統銀行不願承作的融資缺口，同時向華爾街大型機構借款擴張，最終卻因資產疑慮與資金流向問題陷入困境。&lt;/p&gt;\n\n&lt;p&gt;包括桑坦德銀行 (Banco Santander)(SAN-US)、Jefferies(JEF-US)，以及阿波羅全球管理(Apollo Global Management)(APO-US) 旗下 Atlas SP Partners、巴克萊 (BCS-US)、富國銀行(WFC-US) 與 Castlelake 等機構，皆對 MFS 有曝險部位。法院文件顯示，部分子公司聲稱發現「重大不規則情形」與「顯著擔保品缺口」，並指控公司可能涉及「雙重質押」資產。官方目前尚未對任何人提出不法指控。&lt;/p&gt;\n\n&lt;h6&gt;資產疑雲與雙重質押疑慮浮現&lt;/h6&gt;\n",
-      "timeStr": "下午08:00",
+      "content": "&lt;p&gt;綜合外媒周五 (27 日) 報導，OpenAI 宣布完成規模達 1,100 億美元的融資，估值達 7,300 億美元 (未含本次募資金額)，成為史上最大規模的私募融資之一。此輪募資由亞馬遜(AMZN-US) 領投 500 億美元，其中 150 億美元將率先投入，其餘 350 億美元預計於未來數月到位。&lt;/p&gt;\n\n&lt;p&gt;軟銀與輝達 (NVDA-US) 亦各出資 300 億美元。OpenAI 表示，資金將用於擴充運算能力、採購晶片與強化資料中心建設，支援 ChatGPT 及相關人工智慧 (AI) 產品發展。&lt;/p&gt;\n\n&lt;p&gt;在 AI 基礎建設成本持續攀升背景下，OpenAI 與競爭對手 Anthropic 今年皆加快募資步伐。Anthropic 本月稍早完成 300 億美元融資，估值達 3,800 億美元 (含募資金額)，投資方同樣包括輝達與微軟 (MSFT-US)。隨著科技巨頭與創投基金持續重金押注，AI 資本競賽正進一步升溫。&lt;/p&gt;\n\n&lt;p&gt;持續更新...&lt;/p&gt;\n",
+      "timeStr": "下午10:02",
       "relatedArticles": []
     },
     {
-      "title": "天堂裡的麻煩！輝達淨利逾1200億美元卻慘跌失守月線 投資人預警AI泡沫風險",
-      "url": "https://news.cnyes.com/news/id/6356008",
+      "title": "美1月PPI超預期年升2.9% 美元指數短線拉升",
+      "url": "https://news.cnyes.com/news/id/6356165",
       "source": "鉅亨網(wd_stock)",
-      "category": "科技硬體",
+      "category": "AI 產業動態",
       "thumbnail": null,
-      "content": "&lt;p&gt;AI 晶片巨擘輝達周三 (25 日) 發佈第四財季業績成績單，利潤近乎翻倍，銷售額創下歷史新高，數據堪稱亮眼，但這份「成功」財報卻引發市場失望情緒，周三盤後股價由漲轉跌，周四 (26 日) 收跌 5.5% 至每股 184.89 美元，跌破月線並失守 190 美元大關。&lt;/p&gt;\n\n&lt;p&gt;《CNN》報導指出，這種反差一方面源於「輝達魔咒」，過去三年持續超預期獲利，讓投資人形成「爆款預期」，「表現良好」已無法滿足市場期待，更重要的是華爾街對 AI 行業及輝達態度出現實質性轉變，有分析師直言「投資者已察覺天堂裡的麻煩」。&lt;/p&gt;\n\n&lt;p&gt;投資者的擔憂集中在兩點：一是客戶現金流承壓，黃仁勳稱對客戶現金流增長有信心，但亞馬遜、Meta 等科技巨頭上月財報顯示，自由現金流不是暴跌就是停滯；二是採購義務激增，採購義務從去年 160 億美元飆升至 950 億美元，因台積電要求預付資金，若 AI 熱度消退，這一數字恐成「災難」。&lt;/p&gt;\n\n&lt;p&gt;當前市場分歧加劇，部分避險基金開始做空輝達、甲骨文等 AI 相關企業，投",
-      "timeStr": "下午08:00",
+      "content": "&lt;p&gt;美國勞工統計局 (BLS) 周五 (27 日) 公布，1 月生產者物價指數 (PPI) 年升 2.9%，高於市場預期的 2.6%，不過低於前月的 3.0% 升幅。數據公布後，美元指數短線拉升，現貨黃金短線走低。&lt;/p&gt;\n\n&lt;p&gt;剔除食品與能源等波動較大因素後的核心 PPI 在 1 月成長 0..8%，高於市場預期的 0.3%，修正後前值為 0.6%；按年來看成長 3.6%，高於市場預期 3.0%，也高於前值 3.3%。&lt;/p&gt;\n\n&lt;p&gt;截稿前，美元指數短線拉升約 10 點，現報 97.80。美國 10 年期公債殖利率短線波動不大，現報 3.982%。現貨黃金短線走低，現報 5,220.68 美元 / 盎司。&lt;/p&gt;\n\n&lt;p&gt;持續更新...&lt;/p&gt;\n",
+      "timeStr": "下午10:02",
       "relatedArticles": []
     },
     {
-      "title": "川普遭美情報界打臉：伊朗飛彈威脅美國還有8年",
-      "url": "https://news.cnyes.com/news/id/6356027",
+      "title": "輝達財報驚豔卻陷「贏家詛咒」？WSJ：AI暴利正削弱科技巨頭現金流",
+      "url": "https://news.cnyes.com/news/id/6355921",
       "source": "鉅亨網(wd_stock)",
-      "category": "金融信貸",
+      "category": "宏觀經濟數據",
       "thumbnail": null,
-      "content": "&lt;p&gt;三名熟悉美國情報評估的消息人士指出，美國總統川普近日聲稱，伊朗即將擁有可打擊美國本土的飛彈能力一說並未獲得現有情報報告支持，甚至可能有所誇大，使他為可能對伊朗發動攻擊所提出的部分理由受到質疑。&lt;/p&gt;\n\n&lt;p&gt;根據《路透》報導，川普週二（24 日）在對國會發表的國情咨文演說中，向美國民眾說明為何美國可能對伊朗發動打擊，並表示該國正「研發很快就能打到」美國的飛彈。&lt;/p&gt;\n\n&lt;p&gt;不過，兩名消息人士表示，美國國防情報局在 2025 年發布的一份評估報告至今並無任何變動。該評估指出，伊朗可能要到 2035 年，才有能力從現有可將衛星送入軌道的太空發射載具，發展出「具軍事可行性的洲際彈道飛彈」。&lt;/p&gt;\n\n&lt;p&gt;另有一名消息人士指出，即便與伊朗關係密切的中國或北韓提供技術協助，伊朗最快也可能仍需長達八年時間，才能研發出「真正達到洲際彈道飛彈等級、且具備實際作戰能力」的武器系統。&lt;/p&gt;\n\n&lt;p&gt;他們表示，並未聽聞任何美國情報評估指出伊朗正研發可在短期內打擊美國本土的飛彈，但也不排",
-      "timeStr": "下午08:00",
+      "content": "&lt;p&gt;在全球人工智慧（AI）投資熱潮與市場動盪交織之際，晶片巨頭輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NVDA-US&lt;/a&gt;) 再度交出驚人財報成績單。儘管單季營收已超越多數晶片公司一整年的規模，然而，在一個充斥新一波 AI 焦慮、動盪不安的市場環境中，這樣的成績似乎已不再足夠。&lt;/p&gt;\n\n&lt;p&gt;根據《華爾街日報》（WSJ）報導，輝達週三（25 日）公布第四季財報，顯示該公司依然是 AI 運算領域無可爭議的領導者。其營收達 681 億美元，較去年同期成長 73%，創下近四個季度以來最佳增速。&lt;/p&gt;\n\n&lt;p&gt;同時，輝達也預估本季成長率將進一步提升，而根據 FactSet 數據，該財測超越華爾街共識預期的幅度，創下兩年來最大差距。&lt;/p&gt;\n\n&lt;p&gt;然而，輝達股價週四（26 日）卻仍下跌逾 5%。&lt;/p&gt;\n\n&lt;p&gt;事實上，該股近期表現本就",
+      "timeStr": "下午10:02",
+      "relatedArticles": []
+    },
+    {
+      "title": "美債迎來一年最佳單月表現 10年期殖利率跌破4%",
+      "url": "https://news.cnyes.com/news/id/6356252",
+      "source": "鉅亨網(wd_stock)",
+      "category": "債券與外匯",
+      "thumbnail": null,
+      "content": "&lt;p&gt;在全球風險升溫背景下，美國公債迎來近一年來最佳單月表現，顯示投資人仍將美債視為動盪時期的首選避風港。2 月期間，美國 10 年期公債殖利率下滑 25 個基點，為一年來最大單月跌幅，並自去年 11 月以來首度跌破 4%。彭博美債指數 2 月上漲 1.5%，長天期公債漲幅更達 4%。&lt;/p&gt;\n\n&lt;p&gt;本月市場警訊頻傳，從人工智慧 (AI) 快速發展可能帶來的通縮壓力，到中東地緣政治緊張升高，以及私募信貸潛在風險浮現，均促使資金流向美國公債。儘管部分投資人質疑川普第二任期政策不確定性可能削弱美債防禦屬性，但規模高達約 30 兆美元的美國公債市場，仍展現其流動性與主導地位優勢。&lt;/p&gt;\n\n&lt;p&gt;Marlborough Investment Management 投資組合經理 James Athey 表示，美債市場規模龐大、流動性充沛，不易被市場拋棄為避險標的。AmeriVet Securities 利率交易主管 Gregory Faranello 則指出，美債確實具備避險成分，但目前並無明確基本面理由支持殖利率大幅再下探。&lt",
+      "timeStr": "下午10:02",
+      "relatedArticles": []
+    },
+    {
+      "title": "惹到川普遭清洗？美國FBI解雇10名「機密文件案」調查員",
+      "url": "https://news.cnyes.com/news/id/6356120",
+      "source": "鉅亨網(wd_stock)",
+      "category": "政治風險",
+      "thumbnail": null,
+      "content": "&lt;p&gt;美國聯邦調查局（FBI）近日再度掀起人事風波。《CBS》證實，FBI 已於週三（25 日）解雇約 10 名、曾參與調查美國總統川普在第一任期結束後處理機密文件方式的人員。&lt;/p&gt;\n\n&lt;p&gt;根據《BBC》報導，就在不久前，美國聯邦調查局（FBI）局長帕特爾（Kash Patel）才向《路透》透露，在他仍是普通公民身分期間，聯邦探員曾因文件調查案傳喚並調閱其通話紀錄。&lt;/p&gt;\n\n&lt;p&gt;現任白宮幕僚長威爾斯（Susie Wiles）在當時仍為普通公民時，也曾在該項調查中被調取手機通聯紀錄。&lt;/p&gt;\n\n&lt;p&gt;不過，帕特爾並未提出任何證據，證明遭解雇的 FBI 員工存在不當行為。&lt;/p&gt;\n\n&lt;p&gt;在川普於 2021 年離開白宮後，前特別檢察官史密斯（Jack Smith）主導了兩項針對川普的聯邦調查。其中一案聚焦於川普是否曾試圖推翻 2020 年總統大選結果。&lt;/p&gt;\n\n&lt;p&gt;另一項案件則涉及川普將機密文件帶回佛羅里達州的海湖莊園住所，以及他被指控曾試圖阻撓美",
+      "timeStr": "下午10:02",
+      "relatedArticles": []
+    },
+    {
+      "title": "鉅亨速報 - Factset 最新調查：新黃金公司(NGD-US)EPS預估下修至0.61元，預估目標價為13.00元",
+      "url": "https://news.cnyes.com/news/id/6356238",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對新黃金公司(NGD-US)做出2025年EPS預估：中位數由0.62元下修至0.61元，其中最高估值0.68元，最低估值0.45元，預估目標價為13.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&",
+      "timeStr": "下午10:02",
+      "relatedArticles": []
+    },
+    {
+      "title": "鉅亨速報 - Factset 最新調查：FTAI Aviation Ltd - Class A(FTAI-US)EPS預估上修至7.56元，預估目標價為334.00元",
+      "url": "https://news.cnyes.com/news/id/6356235",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對FTAI Aviation Ltd - Class A(FTAI-US)做出2026年EPS預估：中位數由7.04元上修至7.56元，其中最高估值8.88元，最低估值5.25元，預估目標價為334.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&",
+      "timeStr": "下午10:02",
+      "relatedArticles": []
+    },
+    {
+      "title": "鉅亨速報 - Factset 最新調查：Flutter Entertainment Plc(FLUT-US)EPS預估下修至8.95元，預估目標價為254.01元",
+      "url": "https://news.cnyes.com/news/id/6356204",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據FactSet最新調查，共24位分析師，對Flutter Entertainment Plc(FLUT-US)做出2026年EPS預估：中位數由9.1元下修至8.95元，其中最高估值10.9元，最低估值6.05元，預估目標價為254.01元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt",
+      "timeStr": "下午10:02",
+      "relatedArticles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Flutter Entertainment PlcFLUT-US的目標價調降至254.01元，幅度約5.92%",
+          "url": "https://news.cnyes.com/news/id/6356196",
+          "source": "鉅亨網(wd_stock)",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "title": "鉅亨速報 - Factset 最新調查：Samsara Inc - Class AIOT-US的目標價調降至43元，幅度約4.44%",
+      "url": "https://news.cnyes.com/news/id/6356203",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;根據FactSet最新調查，共21位分析師，對Samsara Inc - Class A(IOT-US)提出目標價估值：中位數由45元下修至43元，調降幅度4.44%。其中最高估值60元，最低估值30元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有25位分析師給予Samsara Inc - Class A評價：積極樂觀20位、保持中立5位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Samsara Inc - Class A今(27日)收盤價為28.96元。近5日股價上漲4.44%，標普指數上漲0.68%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
+      "timeStr": "下午10:02",
       "relatedArticles": []
     }
   ],
@@ -183,56 +273,70 @@
   ],
   "events": [
     {
-      "title": "AI 巨頭資本支出與現金流的悖論",
-      "summary": "NVIDIA 強勁財報無法抵銷市場對大型科技公司自由現金流萎縮與巨額採購承諾的憂慮。",
+      "title": "AI 私募市場的超級融資潮",
+      "summary": "OpenAI 與 Anthropic 接連完成數百億美元融資，科技巨頭透過資本綁定確保未來算力與應用主權。",
+      "impact": "正面",
+      "related_news_ids": [
+        0,
+        2
+      ]
+    },
+    {
+      "title": "通膨數據回歸與降息預期受阻",
+      "summary": "美國 1 月 PPI 超預期年升 2.9%，核心 PPI 亦強勁，美元反彈削弱風險資產吸引力。",
       "impact": "負面",
       "related_news_ids": [
         1
       ]
     },
     {
-      "title": "影子銀行信貸違約風險浮現",
-      "summary": "英國 MFS 爆雷事件揭示非銀行融資體系的透明度與資產擔保缺口問題，衝擊華爾街銀行。",
-      "impact": "負面",
+      "title": "避險買盤推升美債表現",
+      "summary": "在 AI 通縮壓力與地緣風險交織下，美債創一年最佳單月表現，資金向安全資產靠攏。",
+      "impact": "中性",
       "related_news_ids": [
-        0
+        3
       ]
     },
     {
-      "title": "中東局勢政治修辭與情報落差",
-      "summary": "川普誇大伊朗飛彈威脅與情報評估不符，增加地緣政治判斷的複雜性與市場噪音。",
-      "impact": "中性",
+      "title": "美國行政體系人事劇震",
+      "summary": "川普政府解雇參與機密文件案的 FBI 調查員，反映政策透明度風險與行政干預升級。",
+      "impact": "負面",
       "related_news_ids": [
-        2
+        4
       ]
     }
   ],
   "relations": [
     {
-      "from": "NVIDIA",
-      "to": "TSMC",
-      "type": "供應鏈預付資金壓力"
-    },
-    {
       "from": "Amazon",
-      "to": "NVIDIA",
-      "type": "採購需求與現金流矛盾"
+      "to": "OpenAI",
+      "type": "戰略投資與供應鏈"
     },
     {
-      "from": "MFS",
-      "to": "Barclays",
-      "type": "債務曝險與信貸違約"
+      "from": "NVIDIA",
+      "to": "OpenAI",
+      "type": "算力供應與股權投資"
     },
     {
-      "from": "Trump",
-      "to": "Iran",
-      "type": "地緣政治軍事威脅"
+      "from": "PPI 數據",
+      "to": "美元指數",
+      "type": "正向推動"
+    },
+    {
+      "from": "AI 基礎設施支出",
+      "to": "科技巨頭現金流",
+      "type": "負面壓制"
+    },
+    {
+      "from": "SoftBank",
+      "to": "OpenAI",
+      "type": "資本注入"
     }
   ],
   "keywords7d": [
     {
       "word": "AI",
-      "count": 428,
+      "count": 431,
       "articles": [
         {
           "title": "僅耗時20分鐘，我駭入了ChatGPT和Google的AI系統",
@@ -298,7 +402,7 @@
     },
     {
       "word": "US",
-      "count": 355,
+      "count": 406,
       "articles": [
         {
           "title": "《TAIPEI TIMES》 US tariff ruling unlikely to severely affect Taiwan",
@@ -363,74 +467,8 @@
       ]
     },
     {
-      "word": "美元",
-      "count": 231,
-      "articles": [
-        {
-          "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347008",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "〈紐約匯市〉最高法院推翻關稅案 美元先跌後穩 周線強彈1% 仍創三個月最強周漲幅",
-          "url": "https://news.cnyes.com/news/id/6347687",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "川普單邊課稅遭最高法院打臉 蘋果32億美元恐掀退款風暴",
-          "url": "https://news.cnyes.com/news/id/6347893",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "〈美股13F報告〉貝萊德調倉：加倉核心科技股輝達、蘋果 布局新材料、化工 持倉市值達5.92兆美元",
-          "url": "https://news.cnyes.com/news/id/6347701",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "美最高院拍板川普關稅違法 美媒：恐引發1750億美元退稅之爭",
-          "url": "https://www.cna.com.tw/news/aopl/202602210041.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "美最高院拍板川普關稅違法，美媒：恐引發 1,750 億美元退稅之爭",
-          "url": "https://finance.technews.tw/2026/02/21/tariff-refund-process-will-be-very-confusing/",
-          "source": "TechNews",
-          "content": "美國最高法院 20 日拍板，川普在未經國會批准下，無權單方面實施全球性關稅。美國媒體 CNBC 估計，判決可能 [&#8230;]"
-        },
-        {
-          "title": "美最高院拍板川普關稅違法，美媒：恐引發1750億美元退稅之爭",
-          "url": "https://www.thenewslens.com/article/264892",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "川普關稅案敗訴 1750億美元企業退稅戰開打！貝森特：今年關稅收入幾乎不變",
-          "url": "https://news.cnyes.com/news/id/6347849",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "當AI開始掃漏洞....資安產業未來？Claude令市場陷入恐慌 全球百億美元市值一夕蒸發",
-          "url": "https://news.cnyes.com/news/id/6347925",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "Nvidia 下週公布最新財報，分析師估本季營收高達 657 億美元",
-          "url": "https://finance.technews.tw/2026/02/21/what-to-expect-from-nvidia-earnings/",
-          "source": "TechNews",
-          "content": "Nvidia 將於 25 日公布最新財報，市場對 2025 財年第四季成績預期持續升高。分析師預測，Nvidi [&#8230;]"
-        }
-      ]
-    },
-    {
       "word": "EPS",
-      "count": 210,
+      "count": 244,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：華邦電(2344-TW)EPS預估下修至15.26元，預估目標價為145元",
@@ -491,6 +529,72 @@
           "url": "https://news.cnyes.com/news/id/6349715",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對Comfort Systems USA, Inc.(FIX-US)做出2026年EPS預估：中位數由30.85元上修至35.63元，其中最高估值38.13元，最低估值29.47元，預估目標價為1,650.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;38.13(32.92)&lt;/td&gt;&lt;td&gt;46.98&lt;/td&gt;&lt;td&gt;46.81&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.47(29.47)&lt;/td&gt;&lt;td&gt;29.89&lt;/td&gt;&lt;td&gt;46.81&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;34.48(30.95)&lt;/td&gt;&lt;td&gt;42.06&lt;/td&gt;&lt;td&gt;46.81&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;35.63(30.85)&lt;/td&gt;&lt;td&gt;43.05&lt;/td&gt;&lt;td&gt;46.81&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;110.88億&lt;/td&gt;&lt;td&gt;127.80億&lt;/td&gt;&lt;td&gt;132.66億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;98.51億&lt;/td&gt;&lt;td&gt;102.45億&lt;/td&gt;&lt;td&gt;132.66億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;106.81億&lt;/td&gt;&lt;td&gt;120.80億&lt;/td&gt;&lt;td&gt;132.66億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;109.30億&lt;/td&gt;&lt;td&gt;125.50億&lt;/td&gt;&lt;td&gt;132.66億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;3.93&lt;/td&gt;&lt;td&gt;6.82&lt;/td&gt;&lt;td&gt;9.01&lt;/td&gt;&lt;td&gt;14.60&lt;/td&gt;&lt;td&gt;28.88&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;30.74億&lt;/td&gt;&lt;td&gt;41.40億&lt;/td&gt;&lt;td&gt;52.07億&lt;/td&gt;&lt;td&gt;70.27億&lt;/td&gt;&lt;td&gt;91.02億&lt"
+        }
+      ]
+    },
+    {
+      "word": "美元",
+      "count": 234,
+      "articles": [
+        {
+          "title": "川普「關稅大刀」違憲 美面臨1750億美元退稅",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347008",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "〈紐約匯市〉最高法院推翻關稅案 美元先跌後穩 周線強彈1% 仍創三個月最強周漲幅",
+          "url": "https://news.cnyes.com/news/id/6347687",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "川普單邊課稅遭最高法院打臉 蘋果32億美元恐掀退款風暴",
+          "url": "https://news.cnyes.com/news/id/6347893",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "〈美股13F報告〉貝萊德調倉：加倉核心科技股輝達、蘋果 布局新材料、化工 持倉市值達5.92兆美元",
+          "url": "https://news.cnyes.com/news/id/6347701",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "美最高院拍板川普關稅違法 美媒：恐引發1750億美元退稅之爭",
+          "url": "https://www.cna.com.tw/news/aopl/202602210041.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "美最高院拍板川普關稅違法，美媒：恐引發 1,750 億美元退稅之爭",
+          "url": "https://finance.technews.tw/2026/02/21/tariff-refund-process-will-be-very-confusing/",
+          "source": "TechNews",
+          "content": "美國最高法院 20 日拍板，川普在未經國會批准下，無權單方面實施全球性關稅。美國媒體 CNBC 估計，判決可能 [&#8230;]"
+        },
+        {
+          "title": "美最高院拍板川普關稅違法，美媒：恐引發1750億美元退稅之爭",
+          "url": "https://www.thenewslens.com/article/264892",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "川普關稅案敗訴 1750億美元企業退稅戰開打！貝森特：今年關稅收入幾乎不變",
+          "url": "https://news.cnyes.com/news/id/6347849",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "當AI開始掃漏洞....資安產業未來？Claude令市場陷入恐慌 全球百億美元市值一夕蒸發",
+          "url": "https://news.cnyes.com/news/id/6347925",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "Nvidia 下週公布最新財報，分析師估本季營收高達 657 億美元",
+          "url": "https://finance.technews.tw/2026/02/21/what-to-expect-from-nvidia-earnings/",
+          "source": "TechNews",
+          "content": "Nvidia 將於 25 日公布最新財報，市場對 2025 財年第四季成績預期持續升高。分析師預測，Nvidi [&#8230;]"
         }
       ]
     },
@@ -628,7 +732,7 @@
     },
     {
       "word": "經典賽",
-      "count": 117,
+      "count": 120,
       "articles": [
         {
           "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
@@ -694,7 +798,7 @@
     },
     {
       "word": "日本",
-      "count": 117,
+      "count": 120,
       "articles": [
         {
           "title": "經典賽》日本武士傳警訊！大聯盟牛棚戰力傳傷情 教頭嘆難出戰WBC",
@@ -957,6 +1061,72 @@
       ]
     },
     {
+      "word": "自由",
+      "count": 99,
+      "articles": [
+        {
+          "title": "高鐵插隊撞人搶自由座遭炎上！ 牙醫親上火線回應：沒撞人",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346976",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》交流變成政治輸送，國共論壇背後的國安陷阱",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5336113",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》樂見國民黨繼續野蠻：一場「因果」與「免疫」的民主試煉",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5339209",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》高市大勝的戰略意涵：中國施壓失效，美日挺台合作更明確",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5342841",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》黃國昌難甩「臭俗仔」標籤春節掃街遭嗆爆！王瑞德酸戰略錯誤：已沒有利用價值！",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347136",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由觀點》川普122條款只過渡  後續301更嚴重",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347289",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由說新聞》烏克蘭FP-5紅鶴飛彈炸毀俄國兵工廠！台籍志願兵籲政府借鏡烏俄戰爭「這件事」很重要！",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347383",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》唾棄電影《世紀血案》的終極意義",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5340037",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "自由開講》日本修憲鞏固防衛 台灣藍白仍阻擋軍購",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5343438",
+          "source": "自由時報",
+          "content": null
+        }
+      ]
+    },
+    {
       "word": "曝光",
       "count": 98,
       "articles": [
@@ -1023,74 +1193,8 @@
       ]
     },
     {
-      "word": "自由",
-      "count": 98,
-      "articles": [
-        {
-          "title": "高鐵插隊撞人搶自由座遭炎上！ 牙醫親上火線回應：沒撞人",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5346976",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》交流變成政治輸送，國共論壇背後的國安陷阱",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5336113",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》「社宅」政策能否落實 關鍵在土地",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5335888",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》樂見國民黨繼續野蠻：一場「因果」與「免疫」的民主試煉",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5339209",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》高市大勝的戰略意涵：中國施壓失效，美日挺台合作更明確",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5342841",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》黃國昌難甩「臭俗仔」標籤春節掃街遭嗆爆！王瑞德酸戰略錯誤：已沒有利用價值！",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347136",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由觀點》川普122條款只過渡  後續301更嚴重",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347289",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由說新聞》烏克蘭FP-5紅鶴飛彈炸毀俄國兵工廠！台籍志願兵籲政府借鏡烏俄戰爭「這件事」很重要！",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347383",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》唾棄電影《世紀血案》的終極意義",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5340037",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "自由開講》日本修憲鞏固防衛 台灣藍白仍阻擋軍購",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5343438",
-          "source": "自由時報",
-          "content": null
-        }
-      ]
-    },
-    {
       "word": "健康",
-      "count": 91,
+      "count": 93,
       "articles": [
         {
           "title": "健康網》不同年齡怎麼保養？ 醫解析肌膚修護關鍵",
@@ -1156,7 +1260,7 @@
     },
     {
       "word": "TW",
-      "count": 84,
+      "count": 86,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：信邦(3023-TW)目標價調升至270元，幅度約3.85%",
@@ -1217,6 +1321,72 @@
           "url": "https://news.cnyes.com/news/id/6349325",
           "source": "鉅亨網(tw_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對新日興(3376-TW)做出2025年EPS預估：中位數由1.64元下修至1.58元，其中最高估值2.99元，最低估值1.48元，預估目標價為297.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;2.99(2.99)&lt;/td&gt;&lt;td&gt;14.07&lt;/td&gt;&lt;td&gt;17.49&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;1.48(1.52)&lt;/td&gt;&lt;td&gt;6.64&lt;/td&gt;&lt;td&gt;11.93&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.76(1.79)&lt;/td&gt;&lt;td&gt;9.81&lt;/td&gt;&lt;td&gt;15.58&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;1.58(1.64)&lt;/td&gt;&lt;td&gt;9.57&lt;/td&gt;&lt;td&gt;16.16&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;11,753,470&lt;/td&gt;&lt;td&gt;26,545,000&lt;/td&gt;&lt;td&gt;32,427,980&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;10,626,000&lt;/td&gt;&lt;td&gt;16,535,000&lt;/td&gt;&lt;td&gt;21,049,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;10,946,430&lt;/td&gt;&lt;td&gt;21,054,220&lt;/td&gt;&lt;td&gt;28,519,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;10,873,500&lt;/td&gt;&lt;td&gt;20,569,000&lt;/td&gt;&lt;td&gt;29,377,500&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,359,332&lt;/td&gt;&lt;td&gt;807,404&lt;/td&gt;&lt;td&gt;1,659,184&lt;/td&gt;&lt;td&gt;1,169,603&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;13,327,345&lt;/td&gt;&lt;td&gt;10,067,747&lt;/td&gt;&lt;td&gt;11,824,698&lt;"
+        }
+      ]
+    },
+    {
+      "word": "伊朗",
+      "count": 80,
+      "articles": [
+        {
+          "title": "多國敦促在伊朗公民儘快撤離",
+          "url": "https://news.cnyes.com/news/id/6347875",
+          "source": "鉅亨網(wd_stock)",
+          "content": null
+        },
+        {
+          "title": "「以軍養商、以商強軍」 伊朗革命衛隊不僅能打 更會賺錢！",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347098",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "準備攻伊朗？衛星影像揭至少60架美軍戰機停放約旦基地",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347303",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "美軍攻伊朗行動進入後期階段 鎖定哈米尼及其子",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347407",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
+          "url": "https://news.cnyes.com/news/id/6348121",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "美軍雙航艦「南北夾擊」伊朗  逾270架精銳戰機待命遠距打擊",
+          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347642",
+          "source": "自由時報",
+          "content": "\n\n\n針對伊朗核計畫與區域挑釁行為，美國國防部已完成自2003年伊拉克戰爭以來，規模最龐大的中東軍事部署。根據最新情資與衛星監測，美軍目前正透過兩艘航空母艦打擊群形成「南北夾擊...…"
+        },
+        {
+          "title": "自由說新聞》伊朗爆學運街頭畫面曝光！群眾狂喊「獨裁去死」美軍攤牌開戰？",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347653",
+          "source": "自由時報",
+          "content": "\r\n\r\n【更多內容  請見影片】\r\n訂閱【自由追新聞】\r\n全新的視界！新聞話題不漏接，快訂閱YouTube 【自由追新聞】，記得開啟小鈴鐺哦！…"
+        },
+        {
+          "title": "美軍中東集結！伊朗仍未屈服 「川普很納悶」",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347892",
+          "source": "自由時報",
+          "content": "美國總統川普的中東特使魏科夫21日受訪中直言，川普對於美軍已在中東大舉集結，但伊朗尚未「屈服」感到納悶。\r\n\r\n《法新社》報導，魏科夫接受《福斯新聞》訪問時表示，川普總統在警告...…"
+        },
+        {
+          "title": "有轉機？傳伊朗願降濃縮鈾純度 美可能放棄「零鈾濃縮」立場",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347885",
+          "source": "自由時報",
+          "content": "美國已在中東地區進行大規模軍事部署，意圖促使伊朗達成核協議。《衛報》21日引述伊朗消息人士披露，伊朗拒絕將300公斤高濃縮鈾庫存運出國，但願意降低純度。《彭博》同日引述伊朗媒體...…"
+        },
+        {
+          "title": "伊朗反政府示威再起：美軍福特號急赴地中海，川普下核武最後通牒",
+          "url": "https://www.thenewslens.com/article/264904",
+          "source": "關鍵評論網",
+          "content": "伊朗昨（21）日再次爆發學生運動，多名大學生因新學期開始，重新齊聚反政府示威。示威活動旨在悼念上月因參與示威犧牲的人民，超過千名民眾在運動中死亡。"
         }
       ]
     },
@@ -1287,74 +1457,8 @@
       ]
     },
     {
-      "word": "伊朗",
-      "count": 77,
-      "articles": [
-        {
-          "title": "多國敦促在伊朗公民儘快撤離",
-          "url": "https://news.cnyes.com/news/id/6347875",
-          "source": "鉅亨網(wd_stock)",
-          "content": null
-        },
-        {
-          "title": "「以軍養商、以商強軍」 伊朗革命衛隊不僅能打 更會賺錢！",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347098",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "準備攻伊朗？衛星影像揭至少60架美軍戰機停放約旦基地",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347303",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "美軍攻伊朗行動進入後期階段 鎖定哈米尼及其子",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347407",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
-          "url": "https://news.cnyes.com/news/id/6348121",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗外交部周六（21 日）發表聲明，將所有歐盟國家的海軍和空軍列為「恐怖組織」，作為歐盟將伊朗伊斯蘭革命衛隊列入「恐怖組織」的對等行動。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部表示，此舉是伊朗伊斯蘭共和國根據相關法律法規旨在回應歐洲各國政府公然違反國際法原則的行動。&lt;/p&gt;\n\n&lt;p&gt;當地時間 19 日，歐盟理事會發表聲明，正式決定將伊朗伊斯蘭革命衛隊列入「恐怖組織」名單。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "美軍雙航艦「南北夾擊」伊朗  逾270架精銳戰機待命遠距打擊",
-          "url": "https://news.ltn.com.tw/news/def/breakingnews/5347642",
-          "source": "自由時報",
-          "content": "\n\n\n針對伊朗核計畫與區域挑釁行為，美國國防部已完成自2003年伊拉克戰爭以來，規模最龐大的中東軍事部署。根據最新情資與衛星監測，美軍目前正透過兩艘航空母艦打擊群形成「南北夾擊...…"
-        },
-        {
-          "title": "自由說新聞》伊朗爆學運街頭畫面曝光！群眾狂喊「獨裁去死」美軍攤牌開戰？",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347653",
-          "source": "自由時報",
-          "content": "\r\n\r\n【更多內容  請見影片】\r\n訂閱【自由追新聞】\r\n全新的視界！新聞話題不漏接，快訂閱YouTube 【自由追新聞】，記得開啟小鈴鐺哦！…"
-        },
-        {
-          "title": "美軍中東集結！伊朗仍未屈服 「川普很納悶」",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347892",
-          "source": "自由時報",
-          "content": "美國總統川普的中東特使魏科夫21日受訪中直言，川普對於美軍已在中東大舉集結，但伊朗尚未「屈服」感到納悶。\r\n\r\n《法新社》報導，魏科夫接受《福斯新聞》訪問時表示，川普總統在警告...…"
-        },
-        {
-          "title": "有轉機？傳伊朗願降濃縮鈾純度 美可能放棄「零鈾濃縮」立場",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347885",
-          "source": "自由時報",
-          "content": "美國已在中東地區進行大規模軍事部署，意圖促使伊朗達成核協議。《衛報》21日引述伊朗消息人士披露，伊朗拒絕將300公斤高濃縮鈾庫存運出國，但願意降低純度。《彭博》同日引述伊朗媒體...…"
-        },
-        {
-          "title": "伊朗反政府示威再起：美軍福特號急赴地中海，川普下核武最後通牒",
-          "url": "https://www.thenewslens.com/article/264904",
-          "source": "關鍵評論網",
-          "content": "伊朗昨（21）日再次爆發學生運動，多名大學生因新學期開始，重新齊聚反政府示威。示威活動旨在悼念上月因參與示威犧牲的人民，超過千名民眾在運動中死亡。"
-        }
-      ]
-    },
-    {
       "word": "科技",
-      "count": 72,
+      "count": 77,
       "articles": [
         {
           "title": "虛擬資產市場需求增溫　業者：貿易商科技業詢問度提升",
@@ -1617,6 +1721,72 @@
       ]
     },
     {
+      "word": "世界",
+      "count": 62,
+      "articles": [
+        {
+          "title": "只算工廠不算運輸的荒謬劇：成大林珮珺談被世界遺忘的海上碳排",
+          "url": "https://www.thenewslens.com/article/263064",
+          "source": "關鍵評論網",
+          "content": null
+        },
+        {
+          "title": "同為美國成長世界級運動員　劉美賢谷愛凌評價兩極",
+          "url": "https://www.cna.com.tw/news/aopl/202602210076.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
+          "url": "https://www.cna.com.tw/news/aopl/202602210105.aspx",
+          "source": "中央社國際",
+          "content": null
+        },
+        {
+          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347286",
+          "source": "自由時報",
+          "content": null
+        },
+        {
+          "title": "SerpApi 批「Google 才是世界最大爬蟲公司」，反擊其是雙標公司",
+          "url": "https://infosecu.technews.tw/2026/02/21/serpapi-asks-court-to-dismiss-google-web-scraping-lawsuit/",
+          "source": "TechNews",
+          "content": "德州網路爬蟲公司 SerpApi 近日反擊 Google，指控爬蟲存在雙重標準。SerpApi 要求加州法院駁 [&#8230;]"
+        },
+        {
+          "title": "經典賽》再先發1場後決戰台灣！道奇世界大賽MVP山本由伸有話要說",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347548",
+          "source": "自由時報",
+          "content": "\n\n\n道奇世界大賽MVP山本由伸今天在春訓開幕戰先發1.2局飆3K，僅失1分自責分，狀況調整順利。預計山本由伸將於春訓再投一場先發，接著就會加入日本隊經典賽集訓，等待3月6日首戰...…"
+        },
+        {
+          "title": "世界盃資格賽》FIBA公布最新戰力排名 台灣隊獲第12名分組墊底",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5347858",
+          "source": "自由時報",
+          "content": "\n\n\n2027世界盃籃球亞洲區資格賽即將點燃戰火，FIBA官網近日公布戰力排名，台灣隊與上階段一樣被列在第12名，在分組敬陪末座。\n\n\n台灣隊在世界盃資格賽首輪和日本、南韓及中...…"
+        },
+        {
+          "title": "河流變身鑽石項鍊、義大利城市幻化頸項精采！跟珠寶設計靈感環遊世界",
+          "url": "https://istyle.ltn.com.tw/article/39128",
+          "source": "自由時報",
+          "content": "過年期間若暫時無法啟程遠行，也能透過珠寶展開一場奢華的想像之旅。近年高級珠寶不再只是華麗堆疊，而是將全球自然地貌與品牌根源轉化為可佩戴的風景。De Beers從鑽石誕生的河流與礦區汲取靈感，DAMIANI則回望義大利的海岸、城市與文化記憶，讓佩戴者能隨珠寶踏…"
+        },
+        {
+          "title": "澤倫斯基：普丁發動世界大戰　烏克蘭不為停火犧牲領土",
+          "url": "https://www.cna.com.tw/news/aopl/202602230042.aspx",
+          "source": "中央社國際",
+          "content": "（中央社基輔22日綜合外電報導）烏克蘭總統澤倫斯基最近受訪釋出堅定訊息，他表示俄羅斯總統普丁已啟動第三次世界大戰，烏克蘭不會為停火犧牲領土，唯有以強大的軍事與經濟力量回應才是阻止普丁之道。"
+        },
+        {
+          "title": "世界盃資格賽》官網點名必看12人盧峻翔上榜 這階段對手中、韓3人入列",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5348544",
+          "source": "自由時報",
+          "content": "\n\n\n2027世界盃亞洲區資格賽首輪第二階段賽事本週登場，台灣隊將於26日在主場迎戰南韓，3月1日在菲律賓對決中國。國際籃總（FIBA）世界盃資格賽官網也整理出這階段有機會左右...…"
+        }
+      ]
+    },
+    {
       "word": "最高",
       "count": 62,
       "articles": [
@@ -1679,72 +1849,6 @@
           "url": "https://ec.ltn.com.tw/article/paper/1744201",
           "source": "自由時報",
           "content": "〔編譯魏國金／綜合報導〕美國最高法院二十日推翻總統川普的全球關稅，判決他引用「國際緊急經濟權力法（IEEPA）」對全球課徵關稅逾越權限。判決出爐數小時後，川普簽署行政命令，對所有國家在常規關稅上加徵十％關稅，為期一五〇天，自二十四日生效。\r\n美國最高法院大法官以六票對三票，維持下級法院對川普引用IE…"
-        }
-      ]
-    },
-    {
-      "word": "世界",
-      "count": 61,
-      "articles": [
-        {
-          "title": "只算工廠不算運輸的荒謬劇：成大林珮珺談被世界遺忘的海上碳排",
-          "url": "https://www.thenewslens.com/article/263064",
-          "source": "關鍵評論網",
-          "content": null
-        },
-        {
-          "title": "同為美國成長世界級運動員　劉美賢谷愛凌評價兩極",
-          "url": "https://www.cna.com.tw/news/aopl/202602210076.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
-          "url": "https://www.cna.com.tw/news/aopl/202602210105.aspx",
-          "source": "中央社國際",
-          "content": null
-        },
-        {
-          "title": "辛巴威獅子DNA資料庫  世界首例協助定罪盜獵者",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347286",
-          "source": "自由時報",
-          "content": null
-        },
-        {
-          "title": "SerpApi 批「Google 才是世界最大爬蟲公司」，反擊其是雙標公司",
-          "url": "https://infosecu.technews.tw/2026/02/21/serpapi-asks-court-to-dismiss-google-web-scraping-lawsuit/",
-          "source": "TechNews",
-          "content": "德州網路爬蟲公司 SerpApi 近日反擊 Google，指控爬蟲存在雙重標準。SerpApi 要求加州法院駁 [&#8230;]"
-        },
-        {
-          "title": "經典賽》再先發1場後決戰台灣！道奇世界大賽MVP山本由伸有話要說",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347548",
-          "source": "自由時報",
-          "content": "\n\n\n道奇世界大賽MVP山本由伸今天在春訓開幕戰先發1.2局飆3K，僅失1分自責分，狀況調整順利。預計山本由伸將於春訓再投一場先發，接著就會加入日本隊經典賽集訓，等待3月6日首戰...…"
-        },
-        {
-          "title": "世界盃資格賽》FIBA公布最新戰力排名 台灣隊獲第12名分組墊底",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347858",
-          "source": "自由時報",
-          "content": "\n\n\n2027世界盃籃球亞洲區資格賽即將點燃戰火，FIBA官網近日公布戰力排名，台灣隊與上階段一樣被列在第12名，在分組敬陪末座。\n\n\n台灣隊在世界盃資格賽首輪和日本、南韓及中...…"
-        },
-        {
-          "title": "河流變身鑽石項鍊、義大利城市幻化頸項精采！跟珠寶設計靈感環遊世界",
-          "url": "https://istyle.ltn.com.tw/article/39128",
-          "source": "自由時報",
-          "content": "過年期間若暫時無法啟程遠行，也能透過珠寶展開一場奢華的想像之旅。近年高級珠寶不再只是華麗堆疊，而是將全球自然地貌與品牌根源轉化為可佩戴的風景。De Beers從鑽石誕生的河流與礦區汲取靈感，DAMIANI則回望義大利的海岸、城市與文化記憶，讓佩戴者能隨珠寶踏…"
-        },
-        {
-          "title": "澤倫斯基：普丁發動世界大戰　烏克蘭不為停火犧牲領土",
-          "url": "https://www.cna.com.tw/news/aopl/202602230042.aspx",
-          "source": "中央社國際",
-          "content": "（中央社基輔22日綜合外電報導）烏克蘭總統澤倫斯基最近受訪釋出堅定訊息，他表示俄羅斯總統普丁已啟動第三次世界大戰，烏克蘭不會為停火犧牲領土，唯有以強大的軍事與經濟力量回應才是阻止普丁之道。"
-        },
-        {
-          "title": "世界盃資格賽》官網點名必看12人盧峻翔上榜 這階段對手中、韓3人入列",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5348544",
-          "source": "自由時報",
-          "content": "\n\n\n2027世界盃亞洲區資格賽首輪第二階段賽事本週登場，台灣隊將於26日在主場迎戰南韓，3月1日在菲律賓對決中國。國際籃總（FIBA）世界盃資格賽官網也整理出這階段有機會左右...…"
         }
       ]
     },
@@ -1948,7 +2052,7 @@
     },
     {
       "word": "台南",
-      "count": 54,
+      "count": 55,
       "articles": [
         {
           "title": "好旺！台南這家彩券行初二連開大獎  夫妻參拜後刮中2000萬",
@@ -2014,7 +2118,7 @@
     },
     {
       "word": "政府",
-      "count": 52,
+      "count": 53,
       "articles": [
         {
           "title": "川普關稅遭裁定違法 楊瓊瓔：政府承諾的鉅額投資仍須兌現",
