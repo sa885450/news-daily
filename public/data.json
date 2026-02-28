@@ -1,48 +1,48 @@
 {
-  "updateTime": "2026-02-28T16:00:55.979Z",
-  "fullDateStr": "2026/3/1 · 更新於 00:00:55",
+  "updateTime": "2026-02-28T18:00:55.828Z",
+  "fullDateStr": "2026/3/1 · 更新於 02:00:55",
   "aiResult": {
-    "sentiment_score": -0.15,
+    "sentiment_score": -0.42,
     "dimensions": {
-      "policy": 0,
-      "market": -0.2,
-      "industry": 0.2,
-      "international": -0.7,
-      "technical": -0.1
+      "policy": -0.6,
+      "market": -0.3,
+      "industry": -0.2,
+      "international": -0.9,
+      "technical": -0.3
     },
     "entities": [
-      {
-        "name": "NVIDIA",
-        "sentiment": "neutral",
-        "ticker": "NVDA-US"
-      },
-      {
-        "name": "Microsoft",
-        "sentiment": "neutral",
-        "ticker": "MSFT-US"
-      },
-      {
-        "name": "Meta",
-        "sentiment": "neutral",
-        "ticker": "META-US"
-      },
       {
         "name": "伊朗",
         "sentiment": "negative",
         "ticker": null
       },
       {
-        "name": "Blackwell",
-        "sentiment": "positive",
+        "name": "美國",
+        "sentiment": "negative",
         "ticker": null
       },
       {
-        "name": "Amazon",
-        "sentiment": "neutral",
-        "ticker": "AMZN-US"
+        "name": "以色列",
+        "sentiment": "negative",
+        "ticker": null
+      },
+      {
+        "name": "Lockheed Martin",
+        "sentiment": "positive",
+        "ticker": "LMT"
+      },
+      {
+        "name": "布蘭特原油",
+        "sentiment": "positive",
+        "ticker": "BZ=F"
+      },
+      {
+        "name": "台積電",
+        "sentiment": "negative",
+        "ticker": "2330.TW"
       }
     ],
-    "summary": "<h3>【宏觀報告：戰爭實體化與 AI 資本支出臨界點】</h3><p>今日市場情緒較昨日進一步從<b>「地緣風險溢價」</b>轉向<b>「實體戰爭損害」</b>與<b>「科技投資焦慮」</b>。相比昨日關注的荷姆茲海峽封鎖，今日伊朗宣稱造成美軍傷亡 [ID:0] 使地緣緊張局勢進入不可預測的武裝對抗階段，市場避險情緒由黃金單點支撐擴散至整體避險資產。</p><ul><li><b>戰爭實體化：</b>伊朗宣稱摧毀卡達雷達系統並威脅「神秘武器」[ID:0]，雖美方尚未證實，但恐慌情緒已對全球供應鏈安全造成心理壓制。</li><li><b>AI 估值悖論：</b>輝達 (NVDA) 面臨 Blackwell 產能與 CSP 巨頭資本支出 (Capex) 飽和的雙重檢視 [ID:1]。市場焦慮在於：即便財報優於預期，若無法解答雲端巨頭 ROI 問題，可能觸發獲利了結。</li><li><b>反向指標觀察：</b>今日未見「8zz」或「巴逆逆」等反向指標顯著發言，顯示短線底部訊號尚未浮現，投資操作應保持中性，避開高槓桿部位。</li></ul>",
+    "summary": "<h3>【宏觀報告：從投資焦慮轉向實體衝突的結構性防禦】</h3><p>今日市場情緒與昨日相比發生顯著惡化。昨日重點在於<b>「心理壓制」</b>，而今日則正式進入<b>「雙向實體打擊」</b>階段。伊朗啟動「真實承諾 4」行動並宣稱襲擊 14 處美軍基地 [ID:0]，這標誌著地緣風險已由邊境摩擦演變為區域戰爭風險。</p><ul><li><b>戰爭實體化加劇：</b>不同於昨日的威脅，今日伊朗宣稱擊中美國戰鬥支援艦 [ID:0]，即便美方尚未證實，但對霍爾木茲海峽及中東物流樞紐的物理安全威脅已達臨界點。</li><li><b>大國博弈升級：</b>中俄要求聯合國召開緊急會議 [ID:1]，顯示此衝突已非區域性矛盾，而是演變成多邊外交的角力場，短期內難有降溫跡象。</li><li><b>反向指標觀察：</b>目前社群媒體及「巴逆逆」等指標尚未出現一致性極度恐慌，顯示市場尚未見底。在「8zz」未發出看空信號前，建議保持避險部位。</li></ul><p><b>策略建議：</b>當前應減持對供應鏈敏感的科技板塊，轉向能源與國防工業。重點關注原油價格是否突破區間阻力。</p>",
     "categories": [
       {
         "id": 1,
@@ -50,34 +50,42 @@
       },
       {
         "id": 2,
-        "category": "半導體產業"
+        "category": "能源市場"
       },
       {
         "id": 3,
-        "category": "總體經濟"
+        "category": "宏觀經濟"
       }
     ],
     "sector_stats": {
-      "tech": 0.1,
+      "tech": -0.5,
       "finance": -0.2,
-      "manufacturing": -0.1,
-      "service": 0
+      "manufacturing": -0.4,
+      "service": -0.6
     },
     "events": [
       {
-        "title": "中東衝突進入軍事對抗階段",
-        "summary": "伊朗宣稱對美軍造成實體傷亡並摧毀雷達系統，地緣風險轉化為實體資產損害預期。",
+        "title": "「真實承諾 4」行動：中東全面武裝衝突",
+        "summary": "伊朗針對美軍 14 處基地發動多波次襲擊，並宣稱擊中支援艦，衝突進入不可控階段。",
         "impact": "負面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "輝達財報焦慮與 AI ROI 質疑",
-        "summary": "市場對雲端巨頭龐大資本支出是否能轉化為利潤感到焦慮，NVDA 成績單成為美股最後防線。",
+        "title": "中俄聯手干預：聯合國緊急磋商",
+        "summary": "中俄要求召開安理會會議，試圖透過外交壓力制約美以軍事行動，加劇外交對立。",
         "impact": "中性",
         "related_news_ids": [
           1
+        ]
+      },
+      {
+        "title": "能源供應鏈防禦溢價",
+        "summary": "襲擊涉及巴林、阿聯、科威特等產油國周邊基地，推升市場對原油供應中斷的擔憂。",
+        "impact": "正面",
+        "related_news_ids": [
+          0
         ]
       }
     ],
@@ -88,46 +96,46 @@
         "type": "軍事對抗"
       },
       {
-        "from": "NVIDIA",
-        "to": "Microsoft",
-        "type": "供應鏈需求"
+        "from": "伊朗",
+        "to": "以色列",
+        "type": "報復打擊"
       },
       {
-        "from": "Meta",
-        "to": "NVIDIA",
-        "type": "資本支出投入"
+        "from": "中國",
+        "to": "聯合國",
+        "type": "外交干預"
       },
       {
-        "from": "Blackwell",
-        "to": "NVIDIA",
-        "type": "核心營收動能"
+        "from": "地緣衝突",
+        "to": "布蘭特原油",
+        "type": "推升價格"
       },
       {
-        "from": "中東衝突",
-        "to": "能源價格",
-        "type": "價格驅動"
+        "from": "川普",
+        "to": "伊朗",
+        "type": "政權壓力"
       }
     ]
   },
   "newsData": [
     {
-      "title": "伊朗稱飛彈反擊釀200名美軍傷亡？革命衛隊警告川普：尚未動用「神秘武器」",
-      "url": "https://news.cnyes.com/news/id/6356768",
+      "title": "伊朗稱襲擊14處美軍基地！伊朗外長嗆：川普尋求伊朗政權更替是「不可能的任務」",
+      "url": "https://news.cnyes.com/news/id/6356798",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;在中東局勢急遽升溫之際，伊朗伊斯蘭革命衛隊表示，伊朗飛彈攻擊已致約 200 名美軍傷亡。同時，伊斯蘭革命衛隊還表示，伊朗尚未使用自家「神秘武器」。&lt;/p&gt;\n\n&lt;p&gt;根據伊朗伊斯蘭革命衛隊公共關係部門於當地時間週六（28 日）下午發布的說法，美國與以色列方面發射的多枚飛彈並未擊中既定目標，而是落在伊拉克及部分波斯灣國家的沙漠與市區範圍內。&lt;/p&gt;\n\n&lt;p&gt;伊斯蘭革命衛隊同時宣稱，伊朗當天展開的導彈反擊行動，已造成至少 200 名美軍人員傷亡。&lt;/p&gt;\n\n&lt;p&gt;目前，伊朗官方正透過多種平台與媒體管道，持續對外發布所稱「敵方侵略行動」的最新動態，以及伊方展開的「毀滅性反擊」相關進展。&lt;/p&gt;\n\n&lt;p&gt;截至目前，美方尚未就相關說法作出回應。部分美國媒體稍早報導指出，伊朗當天針對美軍在中東地區的軍事設施展開報復行動，但暫未接獲有關美軍人員傷亡的通報。&lt;/p&gt;\n\n&lt;p&gt;另一方面，伊朗媒體 28 日引述伊朗伊斯蘭革命衛隊的說法稱，美軍部署於卡達的一套雷達系統已遭「",
-      "timeStr": "上午12:00",
+      "content": "&lt;p&gt;伊朗軍方相關人士透露，目前中東地區已有 14 處美軍基地遭到伊朗的襲擊。同時，伊朗伊斯蘭革命衛隊宣佈在海上反擊行動中取得重大戰果。&lt;/p&gt;\n\n&lt;p&gt;美國與以色列於週五（28 日）對外宣布，已透過空中與海上力量對伊朗展開軍事行動。隨後，伊朗對以色列境內目標以及美軍在中東的軍事設施發動反擊。&lt;/p&gt;\n\n&lt;p&gt;同日，伊朗伊斯蘭革命衛隊宣布啟動代號「真實承諾 4」的跨境軍事行動，並表示此舉是為回應美以對伊朗領土的攻擊行為。&lt;/p&gt;\n\n&lt;p&gt;當天，中東多處設有美軍駐軍的基地接連傳出爆炸聲，包括巴林、阿拉伯聯合大公國、科威特、卡達。不過，美國尚未對此作出回應。&lt;/p&gt;\n\n&lt;p&gt;此外，伊斯蘭革命衛隊表示，其海軍部隊已發射多枚飛彈，並成功命中一艘美軍戰鬥支援艦。根據革命衛隊說法，該艦在遭到飛彈攻擊後受損情況相當嚴重。&lt;/p&gt;\n\n&lt;p&gt;革命衛隊同時發出強硬警告，指出美軍在相關海域的其他海上軍事資產，已被納入其飛彈與無人機部隊的預設打擊範圍之內，並強調軍事行動仍將持續推",
+      "timeStr": "上午02:00",
       "relatedArticles": []
     },
     {
-      "title": "輝達財報越亮眼市場越焦慮？《巴隆周刊》揭「兩大隱憂」",
-      "url": "https://news.cnyes.com/news/id/6356558",
+      "title": "美國、以色列開戰伊朗！中國、俄羅斯發聲  要求聯合國召開緊急會議",
+      "url": "https://news.cnyes.com/news/id/6356787",
       "source": "鉅亨網(wd_stock)",
       "category": "地緣政治",
       "thumbnail": null,
-      "content": "&lt;p&gt;在輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NVDA-US&lt;/a&gt;) 公布最新財報前、人工智慧（AI）熱潮持續升溫之際，市場普遍預期這份成績單將成為提振低迷美股的關鍵催化劑，帶動美股展開新一波漲勢。然而，情勢卻比想像的更複雜。&lt;/p&gt;\n\n&lt;p&gt;根據《巴隆周刊》報導，作為 AI 競賽中無可爭議的領跑者，輝達掌握最關鍵的運算核心：Blackwell 處理器，並與多家超大規模雲端服務商簽署合作協議，同時投資 OpenAI 與 Anthropic，穩居全球最炙手可熱技術浪潮的核心位置。&lt;/p&gt;\n\n&lt;p&gt;但也正因如此，輝達如今成為市場焦慮的聚焦點。&lt;/p&gt;\n\n&lt;p&gt;目前壓在投資人心頭的兩大隱憂，都與 AI 投資浪潮密切相關。弔詭的是，即便輝達交出超越預期的財報，放大這些疑慮卻被進一步放大。&lt;/p&gt;\n\n&lt;p&gt;第一個擔憂，來自雲端巨頭龐大的資本支",
-      "timeStr": "上午12:00",
+      "content": "&lt;p&gt;據悉，在美國與以色列對伊朗發動軍事打擊、區域局勢急速升溫之際，俄羅斯與中國要求聯合國安全理事會召開緊急會議審議情勢。同時，雙方也分別發表聲明。&lt;/p&gt;\n\n&lt;p&gt;聯合國安全理事會預計於當地時間週六（28 日）下午 4 時（台灣時間 3 月 1 日凌晨 5 時）舉行臨時會議，針對近期升溫的中東情勢展開討論。據悉，此次緊急磋商是由中國與俄羅斯方面提議召開的。&lt;/p&gt;\n\n&lt;p&gt;28 日，聯合國秘書長古特雷斯就伊朗局勢發表聲明，對當天在中東地區出現的軍事升級表達譴責，並敦促相關各方立刻停止敵對行動，以免情勢持續惡化。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中指出，他對當天中東地區出現的軍事升級深表譴責。聲明提到，美國與以色列對伊朗動用武力，隨後伊朗在區域內展開報復行動，已對國際和平與安全造成衝擊與威脅。&lt;/p&gt;\n\n&lt;p&gt;古特雷斯強調，所有會員國都必須履行其在國際法下的義務，其中包括遵守《聯合國憲章》所確立的原則。憲章明文規定，各國不得以武力威脅或實際使用武力，侵犯他國的領土完整與政治獨立，也不得採",
+      "timeStr": "上午02:00",
       "relatedArticles": []
     }
   ],
@@ -170,19 +178,27 @@
   ],
   "events": [
     {
-      "title": "中東衝突進入軍事對抗階段",
-      "summary": "伊朗宣稱對美軍造成實體傷亡並摧毀雷達系統，地緣風險轉化為實體資產損害預期。",
+      "title": "「真實承諾 4」行動：中東全面武裝衝突",
+      "summary": "伊朗針對美軍 14 處基地發動多波次襲擊，並宣稱擊中支援艦，衝突進入不可控階段。",
       "impact": "負面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "輝達財報焦慮與 AI ROI 質疑",
-      "summary": "市場對雲端巨頭龐大資本支出是否能轉化為利潤感到焦慮，NVDA 成績單成為美股最後防線。",
+      "title": "中俄聯手干預：聯合國緊急磋商",
+      "summary": "中俄要求召開安理會會議，試圖透過外交壓力制約美以軍事行動，加劇外交對立。",
       "impact": "中性",
       "related_news_ids": [
         1
+      ]
+    },
+    {
+      "title": "能源供應鏈防禦溢價",
+      "summary": "襲擊涉及巴林、阿聯、科威特等產油國周邊基地，推升市場對原油供應中斷的擔憂。",
+      "impact": "正面",
+      "related_news_ids": [
+        0
       ]
     }
   ],
@@ -193,24 +209,24 @@
       "type": "軍事對抗"
     },
     {
-      "from": "NVIDIA",
-      "to": "Microsoft",
-      "type": "供應鏈需求"
+      "from": "伊朗",
+      "to": "以色列",
+      "type": "報復打擊"
     },
     {
-      "from": "Meta",
-      "to": "NVIDIA",
-      "type": "資本支出投入"
+      "from": "中國",
+      "to": "聯合國",
+      "type": "外交干預"
     },
     {
-      "from": "Blackwell",
-      "to": "NVIDIA",
-      "type": "核心營收動能"
+      "from": "地緣衝突",
+      "to": "布蘭特原油",
+      "type": "推升價格"
     },
     {
-      "from": "中東衝突",
-      "to": "能源價格",
-      "type": "價格驅動"
+      "from": "川普",
+      "to": "伊朗",
+      "type": "政權壓力"
     }
   ],
   "keywords7d": [
@@ -480,7 +496,7 @@
     },
     {
       "word": "伊朗",
-      "count": 157,
+      "count": 166,
       "articles": [
         {
           "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
@@ -611,6 +627,72 @@
       ]
     },
     {
+      "word": "全球",
+      "count": 130,
+      "articles": [
+        {
+          "title": "川普宣布全球關稅加碼至15％ 比特幣聞訊下挫",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347532",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%，消息一出，全球市值最大的加密貨幣比特幣（Bitcoin）應聲走跌。\n\n\n綜合媒體報導...…"
+        },
+        {
+          "title": "川普對全球徵15%關稅回應高院裁決　經貿陷入新動盪",
+          "url": "https://www.cna.com.tw/news/aopl/202602220011.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者侯姿瑩華盛頓21日專電）美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效，結束一波經濟不穩定，不過，隨著川普又宣布，將改用其他法源向全球各國開徵15%的進口關稅，還將發布全新且符合法律規範的關稅，國際經貿局勢將陷入新一波動盪。"
+        },
+        {
+          "title": "川普：全球關稅增至 15%，將公布全新且合法關稅",
+          "url": "https://finance.technews.tw/2026/02/22/trump-232-301-tariff-15pa/",
+          "source": "TechNews",
+          "content": "美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效後，川普 20 日才簽署一項公告，援引另外的法條對全球各國 [&#8230;]"
+        },
+        {
+          "title": "川普宣布全球關稅加碼至15％ 張育萌酸藍白：有誰堅持「重啟談判」？",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347523",
+          "source": "自由時報",
+          "content": "針對美國總統川普對等關稅被判違法，張育萌今晨接連在臉書發出兩篇文分析，美國最高法院裁定的是「川普引用的《國際緊急經濟權力法》並沒有授權總統徵收關稅」，而不是說「川普徵收的關稅都無...…"
+        },
+        {
+          "title": "川普宣布全球關稅加碼至15％ 網笑：台股禮拜一開盤大禮包",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347624",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%。消息曝光後，引發PTT網友熱烈討論，許多網友高喊「TACO（意指川普總是臨陣退縮（T...…"
+        },
+        {
+          "title": "川普將全球關稅增至15％ 立院國民黨團：賴政府把帳本算清楚",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347661",
+          "source": "自由時報",
+          "content": "美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效後，川普昨天才簽署一項公告，援引另外的法條對全球各國徵收10%進口關稅，不過，他今天又發文宣布，將把全球關稅提高至15％。立...…"
+        },
+        {
+          "title": "一文讀懂特朗普最新關稅措施：他宣佈的最新全球關稅將如何運作？",
+          "url": "https://www.bbc.com/zhongwen/articles/c20zp13zgjro/trad?at_medium=RSS&at_campaign=rss",
+          "source": "BBC中文",
+          "content": "最高法院的裁決引發了人們對能否就違法關稅獲得退款的疑問。爲了反擊大法官的決定，特朗普火速簽署新令，對全球進口商品徵收15%關稅，但豁免關鍵礦物等項目。"
+        },
+        {
+          "title": "三星重奪全球 DRAM 市場霸主地位，都是 HBM4 的功勞",
+          "url": "https://technews.tw/2026/02/22/samsung-got-dram-no1/",
+          "source": "TechNews",
+          "content": "三星電子 22 日宣布成功重奪全球 DRAM 市場第一名，是 2024 年第四季以來首次回歸王者寶座。市場調查 [&#8230;]"
+        },
+        {
+          "title": "大型隕石撞擊古老證據，巴西發現全球第 6 個似曜岩礦區",
+          "url": "https://technews.tw/2026/02/22/geraisites-natural-glass-tektite/",
+          "source": "TechNews",
+          "content": "科學家首次於巴西發現外星天體高能撞擊地球表面後形成的似曜岩礦區。 似曜岩（tektite）又稱衝擊玻璃，一般認 [&#8230;]"
+        },
+        {
+          "title": "全球輸美新關稅15％ 台新新光金經濟學家李鎮宇看傳產優勢降低",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5347768",
+          "source": "自由時報",
+          "content": "\n\n\n美國聯邦最高法院推翻援引國際緊急經濟權力法（IEEPA）實施對等關稅，美國總統川普宣布新關稅上調至15%。台新新光金控首席經濟學家李鎮宇昨日呼籲，不要以為IEEPA被否決...…"
+        }
+      ]
+    },
+    {
       "word": "經典賽",
       "count": 130,
       "articles": [
@@ -673,72 +755,6 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5347986",
           "source": "自由時報",
           "content": "\n\n\n經典賽台灣隊今天繼續在台北大巨蛋與韓職培證英雄進行閉門熱身賽，雖然首局就靠2支安打與3次保送先拿下2分，但前3任投手共投5局被敲9支安打失5分，動用6名投手共被擊出13支...…"
-        }
-      ]
-    },
-    {
-      "word": "全球",
-      "count": 129,
-      "articles": [
-        {
-          "title": "川普宣布全球關稅加碼至15％ 比特幣聞訊下挫",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347532",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%，消息一出，全球市值最大的加密貨幣比特幣（Bitcoin）應聲走跌。\n\n\n綜合媒體報導...…"
-        },
-        {
-          "title": "川普對全球徵15%關稅回應高院裁決　經貿陷入新動盪",
-          "url": "https://www.cna.com.tw/news/aopl/202602220011.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者侯姿瑩華盛頓21日專電）美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效，結束一波經濟不穩定，不過，隨著川普又宣布，將改用其他法源向全球各國開徵15%的進口關稅，還將發布全新且符合法律規範的關稅，國際經貿局勢將陷入新一波動盪。"
-        },
-        {
-          "title": "川普：全球關稅增至 15%，將公布全新且合法關稅",
-          "url": "https://finance.technews.tw/2026/02/22/trump-232-301-tariff-15pa/",
-          "source": "TechNews",
-          "content": "美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效後，川普 20 日才簽署一項公告，援引另外的法條對全球各國 [&#8230;]"
-        },
-        {
-          "title": "川普宣布全球關稅加碼至15％ 張育萌酸藍白：有誰堅持「重啟談判」？",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347523",
-          "source": "自由時報",
-          "content": "針對美國總統川普對等關稅被判違法，張育萌今晨接連在臉書發出兩篇文分析，美國最高法院裁定的是「川普引用的《國際緊急經濟權力法》並沒有授權總統徵收關稅」，而不是說「川普徵收的關稅都無...…"
-        },
-        {
-          "title": "川普宣布全球關稅加碼至15％ 網笑：台股禮拜一開盤大禮包",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347624",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普（Donald Trump）週六（21日）宣布，將全球關稅稅率調高至15%。消息曝光後，引發PTT網友熱烈討論，許多網友高喊「TACO（意指川普總是臨陣退縮（T...…"
-        },
-        {
-          "title": "川普將全球關稅增至15％ 立院國民黨團：賴政府把帳本算清楚",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5347661",
-          "source": "自由時報",
-          "content": "美國最高法院裁定總統川普去年實施廣泛的全球性關稅無效後，川普昨天才簽署一項公告，援引另外的法條對全球各國徵收10%進口關稅，不過，他今天又發文宣布，將把全球關稅提高至15％。立...…"
-        },
-        {
-          "title": "一文讀懂特朗普最新關稅措施：他宣佈的最新全球關稅將如何運作？",
-          "url": "https://www.bbc.com/zhongwen/articles/c20zp13zgjro/trad?at_medium=RSS&at_campaign=rss",
-          "source": "BBC中文",
-          "content": "最高法院的裁決引發了人們對能否就違法關稅獲得退款的疑問。爲了反擊大法官的決定，特朗普火速簽署新令，對全球進口商品徵收15%關稅，但豁免關鍵礦物等項目。"
-        },
-        {
-          "title": "三星重奪全球 DRAM 市場霸主地位，都是 HBM4 的功勞",
-          "url": "https://technews.tw/2026/02/22/samsung-got-dram-no1/",
-          "source": "TechNews",
-          "content": "三星電子 22 日宣布成功重奪全球 DRAM 市場第一名，是 2024 年第四季以來首次回歸王者寶座。市場調查 [&#8230;]"
-        },
-        {
-          "title": "大型隕石撞擊古老證據，巴西發現全球第 6 個似曜岩礦區",
-          "url": "https://technews.tw/2026/02/22/geraisites-natural-glass-tektite/",
-          "source": "TechNews",
-          "content": "科學家首次於巴西發現外星天體高能撞擊地球表面後形成的似曜岩礦區。 似曜岩（tektite）又稱衝擊玻璃，一般認 [&#8230;]"
-        },
-        {
-          "title": "全球輸美新關稅15％ 台新新光金經濟學家李鎮宇看傳產優勢降低",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5347768",
-          "source": "自由時報",
-          "content": "\n\n\n美國聯邦最高法院推翻援引國際緊急經濟權力法（IEEPA）實施對等關稅，美國總統川普宣布新關稅上調至15%。台新新光金控首席經濟學家李鎮宇昨日呼籲，不要以為IEEPA被否決...…"
         }
       ]
     },
@@ -1206,7 +1222,7 @@
     },
     {
       "word": "健康",
-      "count": 89,
+      "count": 90,
       "articles": [
         {
           "title": "健康網》年終、壓歲錢別只存起來 久坐外食族30+健檢清單",
@@ -1734,7 +1750,7 @@
     },
     {
       "word": "最高",
-      "count": 55,
+      "count": 56,
       "articles": [
         {
           "title": "美國最高法院判川普關稅違憲 歐盟、英國、加拿大、墨西哥、德國最新發聲",
@@ -2261,74 +2277,8 @@
       ]
     },
     {
-      "word": "Anthropic",
-      "count": 47,
-      "articles": [
-        {
-          "title": "Anthropic 工程師對 AI 時代的震撼預言，「軟體工程師職位今年開始消失」",
-          "url": "https://technews.tw/2026/02/23/a-top-anthropic-engineer-warns-ai-agents-will-transform-every-computer-based-job-in-america/",
-          "source": "TechNews",
-          "content": "在最近的一次 Podcast 中，Anthropic 首席工程師 Boris Cherny 警告說，能夠操作電 [&#8230;]"
-        },
-        {
-          "title": "軟體工程僅佔近 50% API 呼叫量！Anthropic 報告揭示 AI 代理的未開發金礦",
-          "url": "https://techorange.com/2026/02/23/measuring-ai-agent-autonomy-in-practice/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>AI 代理（AI agents）正快速進入企業應用，但最新數據顯示，這場革命目前仍高度集中在單一產業。根據 Anthropic 最新研究，軟體工程佔其所有 AI 代理工具呼叫量的近一半，而醫療、法律與金融等其他領域幾乎仍處於早期階段。對產業觀察者而言，這代表的是一張尚待開發的產業潛力地圖。 近一半 AI 代理都在寫程式，其他產業幾乎沒被開發 Anthropic 分析其 Claude Code 與公開 API 的數百萬筆人類與 AI 代理互動後發現，軟體工程佔所有代理工具呼叫量的 49.7%，遠高於其他任何領域。 相比之下，其他產業的採用比例明顯偏低。根據 Anthropic 數據，醫療僅佔約 1%，法律為 0.9%，教育為 1.8%，其他 16 個垂直領域也沒有任何一個超過 9%。 Anthropic 同樣指出，在軟體工程之外，代理的使用雖已開始出現在金融、網路安全與商業領域，但仍處於早期階段。這種高度集中現象，代表著 AI 代理目前仍只滲透到少數產業。 「如果我今天要創辦一家公司，我會盯著長條圖中紅色舉行區域，直到看到我的未來。」非營利新聞媒體 Garry’s List 直接將這個現象解讀為商業機會，指出軟體工程佔據一半，而其他市場仍是一片綠地，並形容這代表有 300 個垂直 AI 獨角獸等待被建立。 AI 能力已超前人類信任，企業仍在學習如何使用 Anthropic 的研究也發現，目前 AI 代理的實際使用程度仍落後於其能力。例如，能力測試顯示 Claude 可以完成需要人類近 5 小時的任務，但實際使用中，最長的 99.9 百分位執行時間僅約 42 分鐘。 [&hellip;]</p>\n"
-        },
-        {
-          "title": "Claude Code加入資安掃描新能力，Anthropic開放企業與團隊用戶申請試用",
-          "url": "https://www.ithome.com.tw/news/173997",
-          "source": "iThome",
-          "content": "Anthropic在網頁版Claude Code加入新功能Claude Code Security，主打以自動化方式掃描程式碼庫中的資安漏洞，並提出可供人工審查的修補建議，目前先以研究預覽形式，開放給Enterprise與Team層級用戶申請試用，同時也提供開源儲存庫維護者加速存取申請管道。"
-        },
-        {
-          "title": "IBM暴跌13%成AI恐慌最新受害者 Anthropic程式語言威脅核心業務",
-          "url": "https://news.cnyes.com/news/id/6349923",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《CNBC》報導，國際商業機器 (International Business Machines, IBM)(IBM-US) 股價周一 (23 日) 遭重擊，成為市場認為受到 AI 技術衝擊的最新受害者之一。此前，Anthropic 表示，其 Claude Code 工具可用於現代化仍在使用 COBOL 的舊式系統。&lt;/p&gt;\n\n&lt;p&gt;IBM 股價收盤重挫逾 13%，至每股 223.35 美元。Anthropic 指出，Claude Code 可自動化 COBOL 現代化過程中最複雜的探索與分析工作，而這正是 IBM 的核心業務之一。IBM 長期銷售大型主機系統，專為完善大規模交易處理，而 COBOL 經常被用於這類系統。&lt;/p&gt;\n\n&lt;p&gt;COBOL(Common Business-Oriented Language，通用商業程式語言) 是 1950 年代末開發的主要程式語言，常用於商業資料處理，例如支付處理與零售交易系統。Anthropic 指出，美國約 95% 的 ATM 交易使用 COBOL，使其成為 AI 以更低成本進行顛覆的主要目標。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 周一在部落格文章中寫道，「每天都有數千億行 COBOL 程式碼在實際運行，支撐金融、航空與政府等關鍵系統。儘管如此，真正懂得這門語言的人數卻逐年減少。AI 擅長簡化那些過去讓 COBOL 現代化成本過高的工作。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，Claude Code 可透過跨數千行程式碼建立相依關係地圖、文件化工作流程並識別風險，這些工作「若由人工分析師處理，可能需要數月才能浮現」。&lt;/p&gt;\n\n&lt;p&gt;該部落格文章指出，「舊系統程式碼現代化多年來停滯，原因在於理解舊程式碼的成本高於重寫。AI 翻轉了這個成本結構。」&lt;/p&gt;\n\n&lt;p&gt;這項最新應用案例延續 Anthropic 顛覆舊有程式系統與企業數位轉型的努力。該公司認為，數位轉型進度受阻，部分原因在於開發者生產力下降以及「技術債」增加。所謂技術債，是指軟體開發中採取捷徑所帶來的未來成本，最終會提高企業後續維護負擔。&lt;/p&gt;\n\n&lt;p&gt;IBM 是近期因 AI 恐慌而下跌的最新股票之一。近幾周來，這些疑慮震盪投資人情緒，造成「先賣再說」的波動交易環境。上周五，隨著 Anthropic 為 Claude Code 推出 Claude Code Security 的新功能，可掃描程式碼庫的安全漏洞並找出軟體弱點供人工審查，多家資安公司股價同步重挫，該產業周一繼續承壓。&lt;/p&gt;\n\n&lt;p&gt;周一的拋售使 IBM 股價今年以來累計下跌超過 24%。&lt;/p&gt;\n"
-        },
-        {
-          "title": "美AI新創Anthropic控3中國企業設假帳號 竊取模型數據可能轉為軍用",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5349152",
-          "source": "自由時報",
-          "content": "美國人工智慧（AI）新創公司Anthropic指控，3家中國AI企業設立超過2萬4000個假帳號，使用其Claude模型，以協助自家系統追趕對手。\r\n\r\n華爾街日報報導，An...…"
-        },
-        {
-          "title": "CrowdStrike重挫近10%資安股嚇跌 Anthropic推AI安全工具引疑慮",
-          "url": "https://news.cnyes.com/news/id/6349920",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《路透》報導，CrowdStrike(CRWD-US) 與 Datadog(DDOG-US) 等多家資安公司股價周一 (23 日) 重挫，投資人持續評估 AI 新創 Anthropic 推出新安全工具對產業的潛在影響。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 推出的新功能 Claude Code Security，旨在偵測開源軟體程式庫中的高嚴重性漏洞，並提供修補程式以修復錯誤。&lt;/p&gt;\n\n&lt;p&gt;CrowdStrike 股價重挫 9.8%、Datadog 大跌逾 11%，Zscaler(ZS-US) 跌逾 10%，Fortinet(FTNT-US) 跌幅 5.5%，Okta(OKTA-US) 跌約 6%，Palo Alto Networks(PANW-US) 下跌 3%，SentinelOne(S-US) 則下跌 4.6%。&lt;/p&gt;\n\n&lt;p&gt;近幾個月來，隨著市場憂心 AI 工具能力日益提升，軟體股普遍承壓，尤其是在 Anthropic 為其大型語言模型 Claude 推出外掛功能後，市場視此為該新創邁向「應用層」的重要一步。&lt;/p&gt;\n\n&lt;p&gt;Robert W. Baird 資安與基礎設施分析師 Shrenik Kothari 表示，「我們今天看到的，其實是由恐慌情緒與敘事主導的拋售潮延續。」&lt;/p&gt;\n\n&lt;p&gt;Kothari 指出，Claude Code Security 並不具備即時資安防護功能，例如偵測正在發生的入侵、阻止進行中的攻擊，或管理生產環境中已編譯的軟體元件，這些能力仍由其他專業資安平台提供。&lt;/p&gt;\n\n&lt;p&gt;一些分析師認為，這波拋售反應過度，主要源自一種過於簡化的敘事：即 AI 將使現有資安解決方案失去必要性。&lt;/p&gt;\n\n&lt;p&gt;另一方面，AI 晶片設計商輝達 (Nvidia)(NVDA-US) 周一表示，已與 Akamai(AKAM-US)、Forescout、Palo Alto Networks、Xage Security 及西門子 (Siemens)(SIEGY-US) 合作，以強化工業控制系統的即時資安能力。&lt;/p&gt;\n"
-        },
-        {
-          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
-          "url": "https://news.cnyes.com/news/id/6349922",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
-        },
-        {
-          "title": "Anthropic控3家中企竊取Claude模型數據　恐釀國安風險",
-          "url": "https://www.cna.com.tw/news/ait/202602240018.aspx",
-          "source": "中央社科技",
-          "content": "（中央社舊金山23日綜合外電報導）美國人工智慧公司Anthropic今天表示，已發現3家中國AI公司展開行動，非法擷取其聊天機器人Claude的技術能力，並稱此舉為工業規模的智慧財產權竊取。"
-        },
-        {
-          "title": "IBM 崩  Anthropic 威脅古老程式碼、護城河被鑿穿",
-          "url": "https://technews.tw/2026/02/24/ibm-is-the-latest-ai-casualty/",
-          "source": "TechNews",
-          "content": "AI 技術飛快發展，IBM 成為最新受害者。AI 聊天機器人 Claude 開發新創商 Anthropic 宣 [&#8230;]"
-        },
-        {
-          "title": "Anthropic 控 3 家中企竊取 Claude 模型數據，恐釀國安風險",
-          "url": "https://technews.tw/2026/02/24/detecting-and-preventing-distillation-attacks/",
-          "source": "TechNews",
-          "content": "美國人工智慧公司 Anthropic 今天表示，已發現 3 家中國 AI 公司展開行動，非法擷取其聊天機器人  [&#8230;]"
-        }
-      ]
-    },
-    {
       "word": "以色列",
-      "count": 46,
+      "count": 47,
       "articles": [
         {
           "title": "美大使稱以色列可占全中東　阿拉伯國家同聲撻伐",
@@ -2394,7 +2344,7 @@
     },
     {
       "word": "台南",
-      "count": 46,
+      "count": 47,
       "articles": [
         {
           "title": "台南春節文化場域觀光大爆發   營收近千萬、成長逾5成",
@@ -2455,6 +2405,72 @@
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5349010",
           "source": "自由時報",
           "content": "農曆正月初九「天公生」將至，南市府為支持信仰傳統、兼顧環境永續，特別彙整各大宮廟初九拜天公的破百場活動，鼓勵民眾就近前往參拜，以更友善環境的方式迎接新年的到來。\r\n\r\n市長黃偉...…"
+        }
+      ]
+    },
+    {
+      "word": "Anthropic",
+      "count": 47,
+      "articles": [
+        {
+          "title": "Anthropic 工程師對 AI 時代的震撼預言，「軟體工程師職位今年開始消失」",
+          "url": "https://technews.tw/2026/02/23/a-top-anthropic-engineer-warns-ai-agents-will-transform-every-computer-based-job-in-america/",
+          "source": "TechNews",
+          "content": "在最近的一次 Podcast 中，Anthropic 首席工程師 Boris Cherny 警告說，能夠操作電 [&#8230;]"
+        },
+        {
+          "title": "軟體工程僅佔近 50% API 呼叫量！Anthropic 報告揭示 AI 代理的未開發金礦",
+          "url": "https://techorange.com/2026/02/23/measuring-ai-agent-autonomy-in-practice/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>AI 代理（AI agents）正快速進入企業應用，但最新數據顯示，這場革命目前仍高度集中在單一產業。根據 Anthropic 最新研究，軟體工程佔其所有 AI 代理工具呼叫量的近一半，而醫療、法律與金融等其他領域幾乎仍處於早期階段。對產業觀察者而言，這代表的是一張尚待開發的產業潛力地圖。 近一半 AI 代理都在寫程式，其他產業幾乎沒被開發 Anthropic 分析其 Claude Code 與公開 API 的數百萬筆人類與 AI 代理互動後發現，軟體工程佔所有代理工具呼叫量的 49.7%，遠高於其他任何領域。 相比之下，其他產業的採用比例明顯偏低。根據 Anthropic 數據，醫療僅佔約 1%，法律為 0.9%，教育為 1.8%，其他 16 個垂直領域也沒有任何一個超過 9%。 Anthropic 同樣指出，在軟體工程之外，代理的使用雖已開始出現在金融、網路安全與商業領域，但仍處於早期階段。這種高度集中現象，代表著 AI 代理目前仍只滲透到少數產業。 「如果我今天要創辦一家公司，我會盯著長條圖中紅色舉行區域，直到看到我的未來。」非營利新聞媒體 Garry’s List 直接將這個現象解讀為商業機會，指出軟體工程佔據一半，而其他市場仍是一片綠地，並形容這代表有 300 個垂直 AI 獨角獸等待被建立。 AI 能力已超前人類信任，企業仍在學習如何使用 Anthropic 的研究也發現，目前 AI 代理的實際使用程度仍落後於其能力。例如，能力測試顯示 Claude 可以完成需要人類近 5 小時的任務，但實際使用中，最長的 99.9 百分位執行時間僅約 42 分鐘。 [&hellip;]</p>\n"
+        },
+        {
+          "title": "Claude Code加入資安掃描新能力，Anthropic開放企業與團隊用戶申請試用",
+          "url": "https://www.ithome.com.tw/news/173997",
+          "source": "iThome",
+          "content": "Anthropic在網頁版Claude Code加入新功能Claude Code Security，主打以自動化方式掃描程式碼庫中的資安漏洞，並提出可供人工審查的修補建議，目前先以研究預覽形式，開放給Enterprise與Team層級用戶申請試用，同時也提供開源儲存庫維護者加速存取申請管道。"
+        },
+        {
+          "title": "IBM暴跌13%成AI恐慌最新受害者 Anthropic程式語言威脅核心業務",
+          "url": "https://news.cnyes.com/news/id/6349923",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《CNBC》報導，國際商業機器 (International Business Machines, IBM)(IBM-US) 股價周一 (23 日) 遭重擊，成為市場認為受到 AI 技術衝擊的最新受害者之一。此前，Anthropic 表示，其 Claude Code 工具可用於現代化仍在使用 COBOL 的舊式系統。&lt;/p&gt;\n\n&lt;p&gt;IBM 股價收盤重挫逾 13%，至每股 223.35 美元。Anthropic 指出，Claude Code 可自動化 COBOL 現代化過程中最複雜的探索與分析工作，而這正是 IBM 的核心業務之一。IBM 長期銷售大型主機系統，專為完善大規模交易處理，而 COBOL 經常被用於這類系統。&lt;/p&gt;\n\n&lt;p&gt;COBOL(Common Business-Oriented Language，通用商業程式語言) 是 1950 年代末開發的主要程式語言，常用於商業資料處理，例如支付處理與零售交易系統。Anthropic 指出，美國約 95% 的 ATM 交易使用 COBOL，使其成為 AI 以更低成本進行顛覆的主要目標。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 周一在部落格文章中寫道，「每天都有數千億行 COBOL 程式碼在實際運行，支撐金融、航空與政府等關鍵系統。儘管如此，真正懂得這門語言的人數卻逐年減少。AI 擅長簡化那些過去讓 COBOL 現代化成本過高的工作。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，Claude Code 可透過跨數千行程式碼建立相依關係地圖、文件化工作流程並識別風險，這些工作「若由人工分析師處理，可能需要數月才能浮現」。&lt;/p&gt;\n\n&lt;p&gt;該部落格文章指出，「舊系統程式碼現代化多年來停滯，原因在於理解舊程式碼的成本高於重寫。AI 翻轉了這個成本結構。」&lt;/p&gt;\n\n&lt;p&gt;這項最新應用案例延續 Anthropic 顛覆舊有程式系統與企業數位轉型的努力。該公司認為，數位轉型進度受阻，部分原因在於開發者生產力下降以及「技術債」增加。所謂技術債，是指軟體開發中採取捷徑所帶來的未來成本，最終會提高企業後續維護負擔。&lt;/p&gt;\n\n&lt;p&gt;IBM 是近期因 AI 恐慌而下跌的最新股票之一。近幾周來，這些疑慮震盪投資人情緒，造成「先賣再說」的波動交易環境。上周五，隨著 Anthropic 為 Claude Code 推出 Claude Code Security 的新功能，可掃描程式碼庫的安全漏洞並找出軟體弱點供人工審查，多家資安公司股價同步重挫，該產業周一繼續承壓。&lt;/p&gt;\n\n&lt;p&gt;周一的拋售使 IBM 股價今年以來累計下跌超過 24%。&lt;/p&gt;\n"
+        },
+        {
+          "title": "美AI新創Anthropic控3中國企業設假帳號 竊取模型數據可能轉為軍用",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5349152",
+          "source": "自由時報",
+          "content": "美國人工智慧（AI）新創公司Anthropic指控，3家中國AI企業設立超過2萬4000個假帳號，使用其Claude模型，以協助自家系統追趕對手。\r\n\r\n華爾街日報報導，An...…"
+        },
+        {
+          "title": "CrowdStrike重挫近10%資安股嚇跌 Anthropic推AI安全工具引疑慮",
+          "url": "https://news.cnyes.com/news/id/6349920",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《路透》報導，CrowdStrike(CRWD-US) 與 Datadog(DDOG-US) 等多家資安公司股價周一 (23 日) 重挫，投資人持續評估 AI 新創 Anthropic 推出新安全工具對產業的潛在影響。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 推出的新功能 Claude Code Security，旨在偵測開源軟體程式庫中的高嚴重性漏洞，並提供修補程式以修復錯誤。&lt;/p&gt;\n\n&lt;p&gt;CrowdStrike 股價重挫 9.8%、Datadog 大跌逾 11%，Zscaler(ZS-US) 跌逾 10%，Fortinet(FTNT-US) 跌幅 5.5%，Okta(OKTA-US) 跌約 6%，Palo Alto Networks(PANW-US) 下跌 3%，SentinelOne(S-US) 則下跌 4.6%。&lt;/p&gt;\n\n&lt;p&gt;近幾個月來，隨著市場憂心 AI 工具能力日益提升，軟體股普遍承壓，尤其是在 Anthropic 為其大型語言模型 Claude 推出外掛功能後，市場視此為該新創邁向「應用層」的重要一步。&lt;/p&gt;\n\n&lt;p&gt;Robert W. Baird 資安與基礎設施分析師 Shrenik Kothari 表示，「我們今天看到的，其實是由恐慌情緒與敘事主導的拋售潮延續。」&lt;/p&gt;\n\n&lt;p&gt;Kothari 指出，Claude Code Security 並不具備即時資安防護功能，例如偵測正在發生的入侵、阻止進行中的攻擊，或管理生產環境中已編譯的軟體元件，這些能力仍由其他專業資安平台提供。&lt;/p&gt;\n\n&lt;p&gt;一些分析師認為，這波拋售反應過度，主要源自一種過於簡化的敘事：即 AI 將使現有資安解決方案失去必要性。&lt;/p&gt;\n\n&lt;p&gt;另一方面，AI 晶片設計商輝達 (Nvidia)(NVDA-US) 周一表示，已與 Akamai(AKAM-US)、Forescout、Palo Alto Networks、Xage Security 及西門子 (Siemens)(SIEGY-US) 合作，以強化工業控制系統的即時資安能力。&lt;/p&gt;\n"
+        },
+        {
+          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
+          "url": "https://news.cnyes.com/news/id/6349922",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
+        },
+        {
+          "title": "Anthropic控3家中企竊取Claude模型數據　恐釀國安風險",
+          "url": "https://www.cna.com.tw/news/ait/202602240018.aspx",
+          "source": "中央社科技",
+          "content": "（中央社舊金山23日綜合外電報導）美國人工智慧公司Anthropic今天表示，已發現3家中國AI公司展開行動，非法擷取其聊天機器人Claude的技術能力，並稱此舉為工業規模的智慧財產權竊取。"
+        },
+        {
+          "title": "IBM 崩  Anthropic 威脅古老程式碼、護城河被鑿穿",
+          "url": "https://technews.tw/2026/02/24/ibm-is-the-latest-ai-casualty/",
+          "source": "TechNews",
+          "content": "AI 技術飛快發展，IBM 成為最新受害者。AI 聊天機器人 Claude 開發新創商 Anthropic 宣 [&#8230;]"
+        },
+        {
+          "title": "Anthropic 控 3 家中企竊取 Claude 模型數據，恐釀國安風險",
+          "url": "https://technews.tw/2026/02/24/detecting-and-preventing-distillation-attacks/",
+          "source": "TechNews",
+          "content": "美國人工智慧公司 Anthropic 今天表示，已發現 3 家中國 AI 公司展開行動，非法擷取其聊天機器人  [&#8230;]"
         }
       ]
     },
@@ -2921,6 +2937,72 @@
       ]
     },
     {
+      "word": "交易",
+      "count": 42,
+      "articles": [
+        {
+          "title": "土方亂象一》雙北土方處理費暴漲3倍 建商籲公平交易委員會應徹查",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5348178",
+          "source": "自由時報",
+          "content": "\n\n\n〔調查新聞中心／台北報導〕為解決廢土亂倒問題，今年元旦上路「營建剩餘土石方全流向管理」新制，卻因配套不足，導致全台陷入「土方之亂」，多名建商控訴雙北民營土資場的土方收取處理費用從原先的每立方公尺...…"
+        },
+        {
+          "title": "期交所新春團拜　盼今年交易量衝破4億口",
+          "url": "https://www.cna.com.tw/news/afe/202602230073.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者鍾榮峰台北23日電）台灣期貨交易所今天上午舉行新春團拜，董事長吳自心表示，期盼今年期貨市場達到交易量4億口目標，期貨公會理事長詹正恩說，突破4億口應該沒問題，在各方努力下，「不僅4億口，還要上看5億口」，帶動現場出席貴賓一陣掌聲。"
+        },
+        {
+          "title": "晶睿3/27正式下市、3/18最後交易日 將成台達電100%子公司",
+          "url": "https://news.cnyes.com/news/id/6349607",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;證交所今 (23) 日公告，安控廠晶睿 (3454-TW) 因與台達電 (2308-TW) 進行股份轉換，將成為台達電 100% 持股之子公司。依照證交所營業細則規定，晶睿將於 2026 年 3 月 27 日正式下市，結束其在資本市場掛牌 15 年的歷史。&lt;/p&gt;\n\n&lt;p&gt;根據證交所公告，晶睿上市股票最後交易日為 3 月 18 日，將自 3 月 19 日起停止買賣，停止股東名簿記載變更起迄日期為 3 月 23 日至 3 月 27 日，並於 3 月 27 日終止上市。&lt;/p&gt;\n\n&lt;p&gt;台達電去年 12 月宣布以每股 100 元、總金額約 37.33 億元，取得子公司晶睿 43.12% 股權。台達董事長暨執行長鄭平表示，智慧樓宇是長期看好的趨勢，晶睿加入集團以來，成為在樓宇自動化的關鍵支柱，面對全球市場快速變遷的挑戰與機會，透過更緊密的整合，將能加快決策並進一步提升資源綜效。&lt;/p&gt;\n\n&lt;p&gt;證交所表示，此案符合營業細則第 53 條之 11 規定，經核准後予以公告。對於晶睿的股東而言，股份轉換後的權利義務將依據雙方簽署之股份轉換契約辦理。&lt;/p&gt;\n"
+        },
+        {
+          "title": "公司債未如期償付！永冠-KY明起併案列全額交割、分盤交易",
+          "url": "https://news.cnyes.com/news/id/6349597",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;證交所於今 (23) 日公告，永冠 - KY(1589-TW) 因無法如期償還債權人要求贖回之可轉換公司債，觸及證交所營業細則相關條款，自 2026 年 2 月 24 日起，其上市有價證券將改列為變更交易方法，並採行分盤集合競價，俗稱全額交割併分盤交易。&lt;/p&gt;\n\n&lt;p&gt;證交所指出，永冠能源科技集團有限公司此次因未能如期償付可轉債贖回款項，核有證交所營業細則第 49 條之 1 第 1 項第 7 款及第 49 條之 3 第 1 項第 2 款規定之情事。為了維護市場交易秩序並提醒投資人風險，證交所決定對其採取更嚴格的交易管控。&lt;/p&gt;\n\n&lt;p&gt;永冠自明 (24) 日起打入全額交割股，也就是說，投資人買賣該股票需預收足額款券，同時採取分盤集合競價，透過交易撮合時間拉長，進一步管控流動性風險。&lt;/p&gt;\n\n&lt;p&gt;面對財務壓力，永冠 - KY 先前表示已擬定三大因應措施，希望能確保投資人權益並穩定公司營運，包括優化財務結構、尋求策略性投資人以及加強資金調度。然而，隨著證交所正式祭出處置措施，市場對其後續債務清償進度與營運動能將持續保持高度關注。&lt;/p&gt;\n\n&lt;p&gt;市場法人提醒，KY 公司若出現資金調度缺口導致債券違約，通常會引發市場對其現金流的疑慮。投資人在參與變更交易方法後的股票買賣時，應審慎評估其後續財務報告與債務協商進度。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
+          "url": "https://news.cnyes.com/news/id/6349590",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n"
+        },
+        {
+          "title": "大量科技今起遭處置交易至3/10每5分鐘撮合一次",
+          "url": "https://news.cnyes.com/news/id/6349986",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;AOI 及 PCB 鑽孔、成型設備廠大量科技 (3167-TW) 遭處置交易，交易所公布，大量科技自今 (24) 日起 10 個交易日至 3 月 10 日，採取分盤交易，每 5 分鐘人工撮合一次。&lt;/p&gt;\n\n&lt;p&gt;設備大量科技 2025 年營收 50.78 億元，年增 95.35%，法人估計 2026 年營收將向上挑戰 75 億元，年增 47.7%，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;同時，大量科技董事會也通過對南京大量數控科技有限公司海外上市案，預計在香港聯交所主板上市，大量科技指出，南京大量數控科技所發行上市&nbsp; &nbsp;募集資金淨額，主要將用於補充營運資金；待募集資金到位後，可用於提升產能及業務競爭力，有利於增加集團獲利及股東權益。&lt;/p&gt;\n\n&lt;p&gt;在上市 PCB 廠中，欣興 (3037-TW) 也擬對蘇州 IC 載板廠赴香港掛牌。&lt;/p&gt;\n"
+        },
+        {
+          "title": "永冠公司債償還未如期遭變更交易　股價跳空鎖跌停",
+          "url": "https://www.cna.com.tw/news/afe/202602240038.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者鍾榮峰台北24日電）鑄件大廠永冠-KY因短期營運資金緊縮，無法如期償還債權人要求贖回第4次無擔保轉換公司債，證交所宣布今天起永冠-KY上市股票列為變更交易方法，並採行分盤集合競價交易方式。永冠-KY今天開盤跳空鎖住跌停15.25元，委賣量超過8000張。"
+        },
+        {
+          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
+          "url": "https://news.cnyes.com/news/id/6350506",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "〈房產〉全台2025十大逆勢交易成長生活圈 新北蛋黃區拿下半數席次",
+          "url": "https://news.cnyes.com/news/id/6350630",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;2025 年房市交易量較 2024 年出現明顯萎縮，在量縮的交易格局中仍有少數區域逆勢突圍，根據市調機構統計，全台共有 10 大生活圈 2025 年交易量呈現成長。值得關注的是，上榜區域全數位於蛋黃區，其中並由新北市更奪下半數以上席次，也顯示市中心地段的抗壓性最為顯著。&lt;/p&gt;\n\n&lt;p&gt;591 房屋交易網分析，在信用管制與房貸緊縮的雙重壓力下，市場已告別全面上漲，回歸基本面。能在此時逆勢成長的區域，多具備產業人口支撐、重大建設利多、品牌建商加持或價格優勢等四大關鍵。這也顯示未來房市走向將更趨於個案表現，自住與長期置產需求將高度向具備硬實力的精華地段靠攏。&lt;/p&gt;\n\n&lt;p&gt;統計 2025 年成交量增幅最多的生活圈，第一名為新北中和的遠東世紀廣場科學園區，2024 年成交量僅 221 件，2025 年大幅攀升至 864 件，年增 3 倍，成長幅度居冠。區域受惠新建案「大同新紀元」成交帶動，共挹注 700 筆以上成交量，該區具就業人口支撐，加上新建案長年供給量少，即便整體市場降溫，仍吸引自住與置產族群進場。&lt;/p&gt;\n\n&lt;p&gt;第二名為台南東區平實重劃區，2025 年成交量 376 件，較 2024 年翻倍成長。該區坐擁精華地段，緊鄰南紡購物中心商圈，並受惠捷運藍線及平實轉運站建設題材，成交價坐 5 望 6，區域受到新建案「國城寶實」交易帶動，使該區在南台灣買氣普遍收斂之際，仍展現穩定成交動能。&lt;/p&gt;\n\n&lt;p&gt;接著則是新北新店的新和生活圈，2025 年成交 190 件，較前年成長逾 8 成。該區位於中和與新店交界，6 字頭房價相對具優勢，吸引周邊外溢買盤。而桃園樹仁生活圈則以 5 成的年增幅名列第四，2025 年成交件數 188 件，該區未來有捷運綠線行經，區域受惠桃合特區新案成交帶動，4 字頭親民價格成功吸引首購族目光。&lt;/p&gt;\n\n&lt;p&gt;而在台中西區勤美草悟道生活圈 2025 年成交量 380 件，成長逾 3 成，這區屬台中精華地段，自住與高資產族群支撐力道穩健；即使市場修正，交易量仍穩步成長，房價更衝上 6 字頭，展現核心區抗跌特性。&lt;/p&gt;\n\n&lt;p&gt;第六、第七名則是分別位於板橋的江翠北側重劃區 G 區與溪崑生活圈，2025 年交易量年增約 3 成，江翠北側長期為新北推案熱區，距北市僅一橋之隔，在新建案的成交帶動下交易熱絡，而溪崑生活圈位於板橋、樹林、新莊交界，5 字頭房價相對具競爭力，在自住需求撐盤下維持交易量成長。&lt;/p&gt;\n\n&lt;p&gt;南部方面，高雄市新興區美麗島生活圈 2025 年成交量達 672 件，年增逾 2 成。該區受惠新建案「中山鉑悦」交易帶動，區域擁有雙捷運交會優勢與市中心機能，具備交通與商業題材支撐，在高雄整體房市降溫下展現抗跌量能。&lt;/p&gt;\n\n&lt;p&gt;此外，新北新店央北重劃區 2025 年交易同樣年增 2 成以上，該區受惠品牌建商華固建設新案成交挹注，不僅成交量提升，區域均價也站上 9 字頭。最後，新北新莊迴龍丹鳳生活圈成交量亦成長 1 成以上；該區則受惠捷運與成熟生活機能，吸引雙北首購族進場。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;685&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.1094890510948905&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350630/m/d54643a9971e076ebc97dc92af0a949f.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350630/l/d54643a9971e076ebc97dc92af0a949f.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "美股變投機？槓桿型個股 ETF 九成交易源自散戶",
+          "url": "https://finance.technews.tw/2026/02/24/retail-investors-account-for-90-of-leveraged-stock-etf/",
+          "source": "TechNews",
+          "content": "統計發現，美國的槓桿型單一個股 ETF 中，近九成成交量可追溯至散戶的交易行為，暗示股市變得愈來愈投機。 路透 [&#8230;]"
+        }
+      ]
+    },
+    {
       "word": "焦點股",
       "count": 42,
       "articles": [
@@ -3053,68 +3135,68 @@
       ]
     },
     {
-      "word": "交易",
+      "word": "彰化",
       "count": 41,
       "articles": [
         {
-          "title": "土方亂象一》雙北土方處理費暴漲3倍 建商籲公平交易委員會應徹查",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348178",
+          "title": "激烈4輪PK決勝 彰化慈航宮年度總斗首出爐",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348041",
           "source": "自由時報",
-          "content": "\n\n\n〔調查新聞中心／台北報導〕為解決廢土亂倒問題，今年元旦上路「營建剩餘土石方全流向管理」新制，卻因配套不足，導致全台陷入「土方之亂」，多名建商控訴雙北民營土資場的土方收取處理費用從原先的每立方公尺...…"
+          "content": "農曆春節尾聲的大年初六，邁入第4年的彰化縣竹塘鄉慈航宮「丙午年祈安禮斗法會總斗首擲筊選出儀式」，在觀世音菩薩見證下，來自桃園市中壢區的梁姓男子與彰化縣永靖鄉的傅姓男子競逐總斗首...…"
         },
         {
-          "title": "期交所新春團拜　盼今年交易量衝破4億口",
-          "url": "https://www.cna.com.tw/news/afe/202602230073.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者鍾榮峰台北23日電）台灣期貨交易所今天上午舉行新春團拜，董事長吳自心表示，期盼今年期貨市場達到交易量4億口目標，期貨公會理事長詹正恩說，突破4億口應該沒問題，在各方努力下，「不僅4億口，還要上看5億口」，帶動現場出席貴賓一陣掌聲。"
+          "title": "彰化虎山巖李花、櫻花季入高峰 228連假賞花正是時候",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348201",
+          "source": "自由時報",
+          "content": "時序入春百花盛開！每年2、3月是彰化縣芬園鄉黃花風鈴木及花壇鄉虎山巖李花、櫻花盛開季節，其中虎山巖數百棵李樹大爆發，目前已開約6成，預計228連假大開8成，可望吸引爆滿遊客前來...…"
         },
         {
-          "title": "晶睿3/27正式下市、3/18最後交易日 將成台達電100%子公司",
-          "url": "https://news.cnyes.com/news/id/6349607",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;證交所今 (23) 日公告，安控廠晶睿 (3454-TW) 因與台達電 (2308-TW) 進行股份轉換，將成為台達電 100% 持股之子公司。依照證交所營業細則規定，晶睿將於 2026 年 3 月 27 日正式下市，結束其在資本市場掛牌 15 年的歷史。&lt;/p&gt;\n\n&lt;p&gt;根據證交所公告，晶睿上市股票最後交易日為 3 月 18 日，將自 3 月 19 日起停止買賣，停止股東名簿記載變更起迄日期為 3 月 23 日至 3 月 27 日，並於 3 月 27 日終止上市。&lt;/p&gt;\n\n&lt;p&gt;台達電去年 12 月宣布以每股 100 元、總金額約 37.33 億元，取得子公司晶睿 43.12% 股權。台達董事長暨執行長鄭平表示，智慧樓宇是長期看好的趨勢，晶睿加入集團以來，成為在樓宇自動化的關鍵支柱，面對全球市場快速變遷的挑戰與機會，透過更緊密的整合，將能加快決策並進一步提升資源綜效。&lt;/p&gt;\n\n&lt;p&gt;證交所表示，此案符合營業細則第 53 條之 11 規定，經核准後予以公告。對於晶睿的股東而言，股份轉換後的權利義務將依據雙方簽署之股份轉換契約辦理。&lt;/p&gt;\n"
+          "title": "台中燈會滿地塑膠花！彰化遊客失望批「假發」沒看頭",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348200",
+          "source": "自由時報",
+          "content": "由台中市政府主辦的2026中台灣燈會於中央公園登場，展期至3月3日，9天春節連假吸引大批全國遊客造訪，其中不乏鄰近的彰化民眾。然而，展區內大量使用塑膠材質的「假花、假草、假稻穗...…"
         },
         {
-          "title": "公司債未如期償付！永冠-KY明起併案列全額交割、分盤交易",
-          "url": "https://news.cnyes.com/news/id/6349597",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;證交所於今 (23) 日公告，永冠 - KY(1589-TW) 因無法如期償還債權人要求贖回之可轉換公司債，觸及證交所營業細則相關條款，自 2026 年 2 月 24 日起，其上市有價證券將改列為變更交易方法，並採行分盤集合競價，俗稱全額交割併分盤交易。&lt;/p&gt;\n\n&lt;p&gt;證交所指出，永冠能源科技集團有限公司此次因未能如期償付可轉債贖回款項，核有證交所營業細則第 49 條之 1 第 1 項第 7 款及第 49 條之 3 第 1 項第 2 款規定之情事。為了維護市場交易秩序並提醒投資人風險，證交所決定對其採取更嚴格的交易管控。&lt;/p&gt;\n\n&lt;p&gt;永冠自明 (24) 日起打入全額交割股，也就是說，投資人買賣該股票需預收足額款券，同時採取分盤集合競價，透過交易撮合時間拉長，進一步管控流動性風險。&lt;/p&gt;\n\n&lt;p&gt;面對財務壓力，永冠 - KY 先前表示已擬定三大因應措施，希望能確保投資人權益並穩定公司營運，包括優化財務結構、尋求策略性投資人以及加強資金調度。然而，隨著證交所正式祭出處置措施，市場對其後續債務清償進度與營運動能將持續保持高度關注。&lt;/p&gt;\n\n&lt;p&gt;市場法人提醒，KY 公司若出現資金調度缺口導致債券違約，通常會引發市場對其現金流的疑慮。投資人在參與變更交易方法後的股票買賣時，應審慎評估其後續財務報告與債務協商進度。&lt;/p&gt;\n"
+          "title": "收假注意！彰化小黃春節加價、免費路邊停車 今起恢復正常",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348177",
+          "source": "自由時報",
+          "content": "春節連假告一段落，今天（2月23日）農曆大年初七正式開工，彰化縣政府提醒民眾，春節期間實施的計程車加成計費，以及部分鄉鎮市路邊停車暫停收費的優惠措施，都在昨天深夜（22日）12...…"
         },
         {
-          "title": "大摩警示AI交易風險 轉向新興市場非AI領域與大宗商品",
-          "url": "https://news.cnyes.com/news/id/6349590",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;市場對美國科技巨頭估值過高及資本支出沉重的擔憂日益增加，不安情緒也波及開發中市場，因為在新興市場自 4 月以來 12 兆美元的漲幅中，近乎一半集中在與人工智慧 (AI) 相關的股票。對此，摩根士丹利投資管理 (Morgan Stanley Investment Management) 副首席投資官 Jitania Kandhari 表示，公司正增加對新興市場中與 AI 脫鉤領域的布局，以應對潛在的科技股回檔。&lt;/p&gt;\n\n&lt;p&gt;Kandhari 指出，AI 交易的過度擁擠使得新興市場股票投資組合在拋售發生時顯得極為脆弱。她認為目前 AI 共識已出現裂痕，風險包括估值過高、資金結構不明確、資本支出強度上升，以及技術採用與獲利之間的滯後。她特別強調，「獲利完全滯後於採用」，雖然她預計不會重演網路泡沫破裂，但單一領域的高度集中確實構成了風險。因此，投資者應建構能夠對沖這些弱點的投資組合，尋找與 AI 相關性低、能展現韌性的主題。&lt;/p&gt;\n\n&lt;p&gt;在具體配置上，Kandhari 建議增加對印度、印尼及中國傳統產業的曝險，這些地區的表現此前落後於大盤。此外，由國內改革或資產負債表修復驅動的前沿經濟體也提供了脫離全球科技資金流動的機會。&lt;/p&gt;\n\n&lt;p&gt;在產業方面，她偏好與 AI 相關性有限的行業，包括醫療保健、部分金融領域、AI 供應鏈之外的製造業，以及估值相對科技股已被壓縮的產業。事實上，她去年整年都對美國「科技七巨頭」持減碼立場，主張將資金部署在其他更有潛力的地區與領域。&lt;/p&gt;\n\n&lt;p&gt;儘管對 AI 軟體與服務的獲利感到疑慮，Kandhari 仍看好大宗商品，並提出了「物理 AI」的概念，認為 AI 的基礎建設與電氣化仍需大量消耗銅與稀土。&lt;/p&gt;\n\n&lt;p&gt;展望宏觀環境，她對新興市場保持樂觀。她分析指出，美國高政府債務水平將限制利率的上升空間，形成所謂的「利率上限時代」。在這種結構下，全球美元流動性將得到支撐，進而導致美元走弱，這對新興市場的風險資產而言無疑是一項利多。&lt;/p&gt;\n"
+          "title": "嗆聲民眾嘴裡被塞糖  他起底白營在彰化「家族政治」本質",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348164",
+          "source": "自由時報",
+          "content": "民眾黨主席黃國昌20日前往彰化縣二林仁和宮參拜，並在二林第一公有市場進行掃街時，有工作人員直接拿「未開封的糖」往嗆聲民眾嘴裡塞，相關影片在網路引發熱議。台灣青年世代共好協會理事長...…"
         },
         {
-          "title": "大量科技今起遭處置交易至3/10每5分鐘撮合一次",
-          "url": "https://news.cnyes.com/news/id/6349986",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;AOI 及 PCB 鑽孔、成型設備廠大量科技 (3167-TW) 遭處置交易，交易所公布，大量科技自今 (24) 日起 10 個交易日至 3 月 10 日，採取分盤交易，每 5 分鐘人工撮合一次。&lt;/p&gt;\n\n&lt;p&gt;設備大量科技 2025 年營收 50.78 億元，年增 95.35%，法人估計 2026 年營收將向上挑戰 75 億元，年增 47.7%，再創歷史新高。&lt;/p&gt;\n\n&lt;p&gt;同時，大量科技董事會也通過對南京大量數控科技有限公司海外上市案，預計在香港聯交所主板上市，大量科技指出，南京大量數控科技所發行上市&nbsp; &nbsp;募集資金淨額，主要將用於補充營運資金；待募集資金到位後，可用於提升產能及業務競爭力，有利於增加集團獲利及股東權益。&lt;/p&gt;\n\n&lt;p&gt;在上市 PCB 廠中，欣興 (3037-TW) 也擬對蘇州 IC 載板廠赴香港掛牌。&lt;/p&gt;\n"
+          "title": "國3彰化段7車撞成一團！3人送醫 車流回堵2公里",
+          "url": "https://news.ltn.com.tw/news/society/breakingnews/5348240",
+          "source": "自由時報",
+          "content": "春節過後首個上班日不平靜，國道3號北上194公里彰化市路段今天（23日）上午驚傳連環車禍，有7輛車不明原因發生連環追撞，其中有2至3輛車車體嚴重受損，造成3人受傷，彰化縣消防局...…"
         },
         {
-          "title": "永冠公司債償還未如期遭變更交易　股價跳空鎖跌停",
-          "url": "https://www.cna.com.tw/news/afe/202602240038.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者鍾榮峰台北24日電）鑄件大廠永冠-KY因短期營運資金緊縮，無法如期償還債權人要求贖回第4次無擔保轉換公司債，證交所宣布今天起永冠-KY上市股票列為變更交易方法，並採行分盤集合競價交易方式。永冠-KY今天開盤跳空鎖住跌停15.25元，委賣量超過8000張。"
+          "title": "彰化芳苑漢寶村風機又漏油！灑落堤岸道路 業者調查原因",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348232",
+          "source": "自由時報",
+          "content": "彰化縣芳苑鄉漢寶村境內共有20支大型風機，其中一支在新春期間出現疑似漏油情況，所幸沒有波及經過的遊客或漁民。目前風機公司還在調查漏油原因。\r\n\r\n漢寶村長鄭鵬豐說，他昨天接獲漁...…"
         },
         {
-          "title": "〈房產〉2025年雙北捷運宅交易熱點出爐 這站周邊總價不到700萬元",
-          "url": "https://news.cnyes.com/news/id/6350506",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;房仲業者根據實價登錄資料，彙整 2025 年雙北市捷運站周邊 800 公尺內中古屋熱門交易捷運站前十名。台北市方面，中山國小站以 288 件交易量奪冠，。新北市部分，景安站全年交易量高達 446 件居冠，而雙北價格最親民的捷運站為新北投與淡水站，平均總價分別為 1418 萬元和 653 萬元。&lt;/p&gt;\n\n&lt;p&gt;針對榜上交易最熱絡的中山國小站，永慶房屋研展中心副理陳金萍指出，中山國小站深受購屋族青睞，主要因交通便利、生活機能成熟，且區域內以中小坪數住宅為主，使總價相較其他蛋黃區站點親民，因此買氣持續累積，成為北市捷運宅交易量最突出的站點。&lt;/p&gt;\n\n&lt;p&gt;蛋黃區站點如信義安和、忠孝敦化與國父紀念館站的交易量也名列前 10 名。陳金萍表示，2025 年房市政策趨嚴、成交動能放緩，但這些站點鄰近核心商圈，生活機能高度集中，支撐房市剛性需求，因此吸引自住買盤入場。&lt;/p&gt;\n\n&lt;p&gt;新北市捷運宅交易熱點中，景安站以全年 446 件成交量穩居冠軍，鄰近南勢角、景平與永安市場站交易也相當熱絡。陳金萍指出，中永和區被視為｢新北第一環｣，區域生活機能完備，且房價相較市中心具競爭力，對通勤族與首購族吸引力高，景安站更憑藉中和新蘆線與環狀線雙捷運交會優勢，成為新北市買氣最熱的捷運站。而板橋區共進榜 3 站，包括新埔、新埔民生與江子翠站。陳金萍說明，這些站點位於通往雙北核心區的黃金軸線上，無論台北車站或板橋車站皆可快速抵達，加上鄰近重劃區建案持續開發，住宅選擇多元，因此成為熱門選擇。&lt;/p&gt;\n\n&lt;p&gt;在 2025 年熱銷捷運站中，新北投站和淡水站平均總價分別為 1418 萬元和 653 萬元，是雙北價格最親民的捷運站。陳金萍解釋，這兩站因距離市中心較遠，房價較低，吸引追求生活品質但預算有限的自住族群，而新北投站周遭即為北投區的生活中心，生活機能完整，也不乏有低總價產品；淡水站則因近期淡江大橋、淡海輕軌、淡北道路等重大交通建設發酵帶動買氣。&lt;/p&gt;\n\n&lt;p&gt;2025 年房市在政策緊縮下回歸理性，陳金萍總結，捷運宅因交通與生活機能優勢，持續吸引自住買盤關注。不過購屋族應依自身條件與實際需求審慎評估，才能找到真正符合需求的理想住宅。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/9dfc18c4a1e101093d9203d91a802bc7.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;599&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2687813021702838&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350506/m/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350506/l/1f3f7cfdd5c91bf1b471c1c60467808a.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+          "title": "藍白地方競選困境！ 她點出花蓮、彰化、嘉義市亮紅燈",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348370",
+          "source": "自由時報",
+          "content": "目前各政黨都已開始為2026縣市長大選進行競選行程，政治評論員吳靜怡（Grace Woo）認為藍白在花蓮、彰化、嘉義市的選情都紛紛亮起紅燈，強調「整合能力」才是2026真正的勝負...…"
         },
         {
-          "title": "〈房產〉全台2025十大逆勢交易成長生活圈 新北蛋黃區拿下半數席次",
-          "url": "https://news.cnyes.com/news/id/6350630",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;2025 年房市交易量較 2024 年出現明顯萎縮，在量縮的交易格局中仍有少數區域逆勢突圍，根據市調機構統計，全台共有 10 大生活圈 2025 年交易量呈現成長。值得關注的是，上榜區域全數位於蛋黃區，其中並由新北市更奪下半數以上席次，也顯示市中心地段的抗壓性最為顯著。&lt;/p&gt;\n\n&lt;p&gt;591 房屋交易網分析，在信用管制與房貸緊縮的雙重壓力下，市場已告別全面上漲，回歸基本面。能在此時逆勢成長的區域，多具備產業人口支撐、重大建設利多、品牌建商加持或價格優勢等四大關鍵。這也顯示未來房市走向將更趨於個案表現，自住與長期置產需求將高度向具備硬實力的精華地段靠攏。&lt;/p&gt;\n\n&lt;p&gt;統計 2025 年成交量增幅最多的生活圈，第一名為新北中和的遠東世紀廣場科學園區，2024 年成交量僅 221 件，2025 年大幅攀升至 864 件，年增 3 倍，成長幅度居冠。區域受惠新建案「大同新紀元」成交帶動，共挹注 700 筆以上成交量，該區具就業人口支撐，加上新建案長年供給量少，即便整體市場降溫，仍吸引自住與置產族群進場。&lt;/p&gt;\n\n&lt;p&gt;第二名為台南東區平實重劃區，2025 年成交量 376 件，較 2024 年翻倍成長。該區坐擁精華地段，緊鄰南紡購物中心商圈，並受惠捷運藍線及平實轉運站建設題材，成交價坐 5 望 6，區域受到新建案「國城寶實」交易帶動，使該區在南台灣買氣普遍收斂之際，仍展現穩定成交動能。&lt;/p&gt;\n\n&lt;p&gt;接著則是新北新店的新和生活圈，2025 年成交 190 件，較前年成長逾 8 成。該區位於中和與新店交界，6 字頭房價相對具優勢，吸引周邊外溢買盤。而桃園樹仁生活圈則以 5 成的年增幅名列第四，2025 年成交件數 188 件，該區未來有捷運綠線行經，區域受惠桃合特區新案成交帶動，4 字頭親民價格成功吸引首購族目光。&lt;/p&gt;\n\n&lt;p&gt;而在台中西區勤美草悟道生活圈 2025 年成交量 380 件，成長逾 3 成，這區屬台中精華地段，自住與高資產族群支撐力道穩健；即使市場修正，交易量仍穩步成長，房價更衝上 6 字頭，展現核心區抗跌特性。&lt;/p&gt;\n\n&lt;p&gt;第六、第七名則是分別位於板橋的江翠北側重劃區 G 區與溪崑生活圈，2025 年交易量年增約 3 成，江翠北側長期為新北推案熱區，距北市僅一橋之隔，在新建案的成交帶動下交易熱絡，而溪崑生活圈位於板橋、樹林、新莊交界，5 字頭房價相對具競爭力，在自住需求撐盤下維持交易量成長。&lt;/p&gt;\n\n&lt;p&gt;南部方面，高雄市新興區美麗島生活圈 2025 年成交量達 672 件，年增逾 2 成。該區受惠新建案「中山鉑悦」交易帶動，區域擁有雙捷運交會優勢與市中心機能，具備交通與商業題材支撐，在高雄整體房市降溫下展現抗跌量能。&lt;/p&gt;\n\n&lt;p&gt;此外，新北新店央北重劃區 2025 年交易同樣年增 2 成以上，該區受惠品牌建商華固建設新案成交挹注，不僅成交量提升，區域均價也站上 9 字頭。最後，新北新莊迴龍丹鳳生活圈成交量亦成長 1 成以上；該區則受惠捷運與成熟生活機能，吸引雙北首購族進場。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;685&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.1094890510948905&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6350630/m/d54643a9971e076ebc97dc92af0a949f.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6350630/l/d54643a9971e076ebc97dc92af0a949f.jpg&quot;&gt;&lt;/figure&gt;\n\n&lt;p&gt;&nbsp;&lt;/p&gt;\n"
+          "title": "元宵將近 爌肉飯名店買200盞彰化家扶燈籠送小朋友",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348611",
+          "source": "自由時報",
+          "content": "元宵將近，彰化市排隊名店阿泉爌肉飯老闆謝泊宏向彰化家扶中心購買200盞古早味燈籠，今天（23日）起只要有顧客帶著小朋友來消費，小朋友都可以獲贈1盞燈籠，瞬間化身彰化家扶燈籠代言...…"
         },
         {
-          "title": "美股變投機？槓桿型個股 ETF 九成交易源自散戶",
-          "url": "https://finance.technews.tw/2026/02/24/retail-investors-account-for-90-of-leveraged-stock-etf/",
-          "source": "TechNews",
-          "content": "統計發現，美國的槓桿型單一個股 ETF 中，近九成成交量可追溯至散戶的交易行為，暗示股市變得愈來愈投機。 路透 [&#8230;]"
+          "title": "真花飄香才「真發」！「花在彰化」進尾聲 228壓軸3大主題日來了",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348850",
+          "source": "自由時報",
+          "content": "\r\n\r\n\r\n\r\n真金不怕火煉！彰化縣年度春節走春盛會「2026花在彰化」從大年初一開園到昨天（22日）吸引超過60萬人次造訪，相較於鄰近台中燈會因大量使用塑膠假花、假稻穗造景，...…"
         }
       ]
     },
@@ -3181,72 +3263,6 @@
           "url": "https://news.cnyes.com/news/id/6351527",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對XP Inc - Class A(XP-US)提出目標價估值：中位數由23.18元上修至24.18元，調升幅度4.35%。其中最高估值27.55元，最低估值21.16元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有13位分析師給予XP Inc - Class A評價：積極樂觀10位、保持中立3位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;XP Inc - Class A今(24日)收盤價為21.69元。近5日股價上漲4.35%，標普指數上漲0.02%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
-        }
-      ]
-    },
-    {
-      "word": "彰化",
-      "count": 40,
-      "articles": [
-        {
-          "title": "激烈4輪PK決勝 彰化慈航宮年度總斗首出爐",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348041",
-          "source": "自由時報",
-          "content": "農曆春節尾聲的大年初六，邁入第4年的彰化縣竹塘鄉慈航宮「丙午年祈安禮斗法會總斗首擲筊選出儀式」，在觀世音菩薩見證下，來自桃園市中壢區的梁姓男子與彰化縣永靖鄉的傅姓男子競逐總斗首...…"
-        },
-        {
-          "title": "彰化虎山巖李花、櫻花季入高峰 228連假賞花正是時候",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348201",
-          "source": "自由時報",
-          "content": "時序入春百花盛開！每年2、3月是彰化縣芬園鄉黃花風鈴木及花壇鄉虎山巖李花、櫻花盛開季節，其中虎山巖數百棵李樹大爆發，目前已開約6成，預計228連假大開8成，可望吸引爆滿遊客前來...…"
-        },
-        {
-          "title": "台中燈會滿地塑膠花！彰化遊客失望批「假發」沒看頭",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348200",
-          "source": "自由時報",
-          "content": "由台中市政府主辦的2026中台灣燈會於中央公園登場，展期至3月3日，9天春節連假吸引大批全國遊客造訪，其中不乏鄰近的彰化民眾。然而，展區內大量使用塑膠材質的「假花、假草、假稻穗...…"
-        },
-        {
-          "title": "收假注意！彰化小黃春節加價、免費路邊停車 今起恢復正常",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348177",
-          "source": "自由時報",
-          "content": "春節連假告一段落，今天（2月23日）農曆大年初七正式開工，彰化縣政府提醒民眾，春節期間實施的計程車加成計費，以及部分鄉鎮市路邊停車暫停收費的優惠措施，都在昨天深夜（22日）12...…"
-        },
-        {
-          "title": "嗆聲民眾嘴裡被塞糖  他起底白營在彰化「家族政治」本質",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348164",
-          "source": "自由時報",
-          "content": "民眾黨主席黃國昌20日前往彰化縣二林仁和宮參拜，並在二林第一公有市場進行掃街時，有工作人員直接拿「未開封的糖」往嗆聲民眾嘴裡塞，相關影片在網路引發熱議。台灣青年世代共好協會理事長...…"
-        },
-        {
-          "title": "國3彰化段7車撞成一團！3人送醫 車流回堵2公里",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5348240",
-          "source": "自由時報",
-          "content": "春節過後首個上班日不平靜，國道3號北上194公里彰化市路段今天（23日）上午驚傳連環車禍，有7輛車不明原因發生連環追撞，其中有2至3輛車車體嚴重受損，造成3人受傷，彰化縣消防局...…"
-        },
-        {
-          "title": "彰化芳苑漢寶村風機又漏油！灑落堤岸道路 業者調查原因",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348232",
-          "source": "自由時報",
-          "content": "彰化縣芳苑鄉漢寶村境內共有20支大型風機，其中一支在新春期間出現疑似漏油情況，所幸沒有波及經過的遊客或漁民。目前風機公司還在調查漏油原因。\r\n\r\n漢寶村長鄭鵬豐說，他昨天接獲漁...…"
-        },
-        {
-          "title": "藍白地方競選困境！ 她點出花蓮、彰化、嘉義市亮紅燈",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348370",
-          "source": "自由時報",
-          "content": "目前各政黨都已開始為2026縣市長大選進行競選行程，政治評論員吳靜怡（Grace Woo）認為藍白在花蓮、彰化、嘉義市的選情都紛紛亮起紅燈，強調「整合能力」才是2026真正的勝負...…"
-        },
-        {
-          "title": "元宵將近 爌肉飯名店買200盞彰化家扶燈籠送小朋友",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348611",
-          "source": "自由時報",
-          "content": "元宵將近，彰化市排隊名店阿泉爌肉飯老闆謝泊宏向彰化家扶中心購買200盞古早味燈籠，今天（23日）起只要有顧客帶著小朋友來消費，小朋友都可以獲贈1盞燈籠，瞬間化身彰化家扶燈籠代言...…"
-        },
-        {
-          "title": "真花飄香才「真發」！「花在彰化」進尾聲 228壓軸3大主題日來了",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348850",
-          "source": "自由時報",
-          "content": "\r\n\r\n\r\n\r\n真金不怕火煉！彰化縣年度春節走春盛會「2026花在彰化」從大年初一開園到昨天（22日）吸引超過60萬人次造訪，相較於鄰近台中燈會因大量使用塑膠假花、假稻穗造景，...…"
         }
       ]
     },
