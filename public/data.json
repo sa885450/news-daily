@@ -1,48 +1,48 @@
 {
-  "updateTime": "2026-02-28T18:00:55.828Z",
-  "fullDateStr": "2026/3/1 · 更新於 02:00:55",
+  "updateTime": "2026-02-28T20:00:58.100Z",
+  "fullDateStr": "2026/3/1 · 更新於 04:00:58",
   "aiResult": {
-    "sentiment_score": -0.42,
+    "sentiment_score": -0.55,
     "dimensions": {
-      "policy": -0.6,
-      "market": -0.3,
-      "industry": -0.2,
+      "policy": -0.8,
+      "market": -0.6,
+      "industry": 0.4,
       "international": -0.9,
-      "technical": -0.3
+      "technical": -0.4
     },
     "entities": [
+      {
+        "name": "美國",
+        "sentiment": "negative",
+        "ticker": "SPY"
+      },
       {
         "name": "伊朗",
         "sentiment": "negative",
         "ticker": null
       },
       {
-        "name": "美國",
+        "name": "台灣中油",
+        "sentiment": "neutral",
+        "ticker": null
+      },
+      {
+        "name": "川普",
         "sentiment": "negative",
         "ticker": null
+      },
+      {
+        "name": "液化天然氣",
+        "sentiment": "positive",
+        "ticker": "UNG"
       },
       {
         "name": "以色列",
         "sentiment": "negative",
         "ticker": null
-      },
-      {
-        "name": "Lockheed Martin",
-        "sentiment": "positive",
-        "ticker": "LMT"
-      },
-      {
-        "name": "布蘭特原油",
-        "sentiment": "positive",
-        "ticker": "BZ=F"
-      },
-      {
-        "name": "台積電",
-        "sentiment": "negative",
-        "ticker": "2330.TW"
       }
     ],
-    "summary": "<h3>【宏觀報告：從投資焦慮轉向實體衝突的結構性防禦】</h3><p>今日市場情緒與昨日相比發生顯著惡化。昨日重點在於<b>「心理壓制」</b>，而今日則正式進入<b>「雙向實體打擊」</b>階段。伊朗啟動「真實承諾 4」行動並宣稱襲擊 14 處美軍基地 [ID:0]，這標誌著地緣風險已由邊境摩擦演變為區域戰爭風險。</p><ul><li><b>戰爭實體化加劇：</b>不同於昨日的威脅，今日伊朗宣稱擊中美國戰鬥支援艦 [ID:0]，即便美方尚未證實，但對霍爾木茲海峽及中東物流樞紐的物理安全威脅已達臨界點。</li><li><b>大國博弈升級：</b>中俄要求聯合國召開緊急會議 [ID:1]，顯示此衝突已非區域性矛盾，而是演變成多邊外交的角力場，短期內難有降溫跡象。</li><li><b>反向指標觀察：</b>目前社群媒體及「巴逆逆」等指標尚未出現一致性極度恐慌，顯示市場尚未見底。在「8zz」未發出看空信號前，建議保持避險部位。</li></ul><p><b>策略建議：</b>當前應減持對供應鏈敏感的科技板塊，轉向能源與國防工業。重點關注原油價格是否突破區間阻力。</p>",
+    "summary": "<h3>【宏觀決策報告：實體衝突引發的能源防禦轉向】</h3><p>今日市場情緒與昨日相比呈現明顯惡化，已從單純的投資焦慮演變為<b>「實體供應鏈斷裂風險」</b>。美國啟動「Epic Fury」行動與伊朗「真實承諾 4」形成雙向打擊，市場正定價中東物流樞紐的物理性破壞。</p><ul><li><b>能源通膨壓力：</b>國際 LNG 價格飆升導致台灣中油調漲氣價 3%。雖然調幅受控，但反映出公用事業體吸收成本的能力已趨飽和。</li><li><b>地緣政治溢價：</b>原油價格有衝擊每桶 100 美元的風險，這將結構性地壓制製造業利潤並推升全球通膨預期。</li><li><b>反向指標觀察：</b>今日資料中未見「巴逆逆」等極端反向指標訊號，顯示市場情緒尚未觸底，短期應以<b>「結構性防禦」</b>為主，嚴控能源密集產業風險。</li></ul><p>建議將資產配置由一般消費轉向能源基礎設施與原物料套利標的。</p>",
     "categories": [
       {
         "id": 1,
@@ -58,32 +58,32 @@
       }
     ],
     "sector_stats": {
-      "tech": -0.5,
-      "finance": -0.2,
-      "manufacturing": -0.4,
-      "service": -0.6
+      "tech": -0.6,
+      "finance": -0.3,
+      "manufacturing": -0.5,
+      "service": -0.4
     },
     "events": [
       {
-        "title": "「真實承諾 4」行動：中東全面武裝衝突",
-        "summary": "伊朗針對美軍 14 處基地發動多波次襲擊，並宣稱擊中支援艦，衝突進入不可控階段。",
+        "title": "美伊啟動大規模實體戰爭",
+        "summary": "川普政府發動空襲與伊朗飛彈反擊，雙方進入直接軍事衝突階段。",
         "impact": "負面",
         "related_news_ids": [
           0
         ]
       },
       {
-        "title": "中俄聯手干預：聯合國緊急磋商",
-        "summary": "中俄要求召開安理會會議，試圖透過外交壓力制約美以軍事行動，加劇外交對立。",
-        "impact": "中性",
+        "title": "液化天然氣 (LNG) 全球競價戰",
+        "summary": "低溫需求疊加戰爭風險，導致歐亞各國爭奪 LNG 庫存，價格持續飆升。",
+        "impact": "負面",
         "related_news_ids": [
-          1
+          0
         ]
       },
       {
-        "title": "能源供應鏈防禦溢價",
-        "summary": "襲擊涉及巴林、阿聯、科威特等產油國周邊基地，推升市場對原油供應中斷的擔憂。",
-        "impact": "正面",
+        "title": "國內能源成本轉嫁效應",
+        "summary": "台灣中油宣佈調漲天然氣價，顯示進口成本壓力已向終端民生與工業滲透。",
+        "impact": "中性",
         "related_news_ids": [
           0
         ]
@@ -91,51 +91,41 @@
     ],
     "relations": [
       {
-        "from": "伊朗",
-        "to": "美國",
-        "type": "軍事對抗"
+        "from": "美國",
+        "to": "伊朗",
+        "type": "軍事打擊"
       },
       {
         "from": "伊朗",
-        "to": "以色列",
-        "type": "報復打擊"
+        "to": "液化天然氣",
+        "type": "供應威脅"
       },
       {
-        "from": "中國",
-        "to": "聯合國",
-        "type": "外交干預"
+        "from": "液化天然氣",
+        "to": "台灣中油",
+        "type": "採購成本上升"
       },
       {
-        "from": "地緣衝突",
-        "to": "布蘭特原油",
-        "type": "推升價格"
+        "from": "台灣中油",
+        "to": "一般家庭用戶",
+        "type": "成本轉嫁"
       },
       {
         "from": "川普",
-        "to": "伊朗",
-        "type": "政權壓力"
+        "to": "美國",
+        "type": "政策主導"
       }
     ]
   },
   "newsData": [
     {
-      "title": "伊朗稱襲擊14處美軍基地！伊朗外長嗆：川普尋求伊朗政權更替是「不可能的任務」",
-      "url": "https://news.cnyes.com/news/id/6356798",
-      "source": "鉅亨網(wd_stock)",
+      "title": "美伊開戰引爆能源危機！國際LNG價格飆升 台灣中油天然氣價今起調漲3%",
+      "url": "https://news.cnyes.com/news/id/6356801",
+      "source": "鉅亨網(tw_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;伊朗軍方相關人士透露，目前中東地區已有 14 處美軍基地遭到伊朗的襲擊。同時，伊朗伊斯蘭革命衛隊宣佈在海上反擊行動中取得重大戰果。&lt;/p&gt;\n\n&lt;p&gt;美國與以色列於週五（28 日）對外宣布，已透過空中與海上力量對伊朗展開軍事行動。隨後，伊朗對以色列境內目標以及美軍在中東的軍事設施發動反擊。&lt;/p&gt;\n\n&lt;p&gt;同日，伊朗伊斯蘭革命衛隊宣布啟動代號「真實承諾 4」的跨境軍事行動，並表示此舉是為回應美以對伊朗領土的攻擊行為。&lt;/p&gt;\n\n&lt;p&gt;當天，中東多處設有美軍駐軍的基地接連傳出爆炸聲，包括巴林、阿拉伯聯合大公國、科威特、卡達。不過，美國尚未對此作出回應。&lt;/p&gt;\n\n&lt;p&gt;此外，伊斯蘭革命衛隊表示，其海軍部隊已發射多枚飛彈，並成功命中一艘美軍戰鬥支援艦。根據革命衛隊說法，該艦在遭到飛彈攻擊後受損情況相當嚴重。&lt;/p&gt;\n\n&lt;p&gt;革命衛隊同時發出強硬警告，指出美軍在相關海域的其他海上軍事資產，已被納入其飛彈與無人機部隊的預設打擊範圍之內，並強調軍事行動仍將持續推",
-      "timeStr": "上午02:00",
-      "relatedArticles": []
-    },
-    {
-      "title": "美國、以色列開戰伊朗！中國、俄羅斯發聲  要求聯合國召開緊急會議",
-      "url": "https://news.cnyes.com/news/id/6356787",
-      "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
-      "thumbnail": null,
-      "content": "&lt;p&gt;據悉，在美國與以色列對伊朗發動軍事打擊、區域局勢急速升溫之際，俄羅斯與中國要求聯合國安全理事會召開緊急會議審議情勢。同時，雙方也分別發表聲明。&lt;/p&gt;\n\n&lt;p&gt;聯合國安全理事會預計於當地時間週六（28 日）下午 4 時（台灣時間 3 月 1 日凌晨 5 時）舉行臨時會議，針對近期升溫的中東情勢展開討論。據悉，此次緊急磋商是由中國與俄羅斯方面提議召開的。&lt;/p&gt;\n\n&lt;p&gt;28 日，聯合國秘書長古特雷斯就伊朗局勢發表聲明，對當天在中東地區出現的軍事升級表達譴責，並敦促相關各方立刻停止敵對行動，以免情勢持續惡化。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中指出，他對當天中東地區出現的軍事升級深表譴責。聲明提到，美國與以色列對伊朗動用武力，隨後伊朗在區域內展開報復行動，已對國際和平與安全造成衝擊與威脅。&lt;/p&gt;\n\n&lt;p&gt;古特雷斯強調，所有會員國都必須履行其在國際法下的義務，其中包括遵守《聯合國憲章》所確立的原則。憲章明文規定，各國不得以武力威脅或實際使用武力，侵犯他國的領土完整與政治獨立，也不得採",
-      "timeStr": "上午02:00",
+      "content": "&lt;p&gt;美國與以色列於 28 日聯手對伊朗展開大規模軍事行動，美國總統川普宣布已啟動「大規模作戰行動」（Operation Epic Fury），針對德黑蘭等重要戰略目標發動空襲。受此地緣政治劇震影響，國際能源市場恐慌情緒蔓延，加上近期歐美與東北亞低溫推升用氣需求，導致全球液化天然氣（LNG）價格飆升。台灣中油公司宣布，為適度反映進口氣源成本，115 年 3 月份各類用戶天然氣價格平均調漲 3%，一般家庭用戶每月支出預計微增約 5-7 元。&lt;/p&gt;\n\n&lt;p&gt;根據最新國際戰訊，美軍動員五大軍種參與對伊朗的打擊。以色列國防部也證實對伊朗發動大規模空襲。伊朗方面則展開名為「誠實承諾 4 號」的報復行動，發射飛彈反擊中東地區美軍基地，導致區域油氣供應鏈面臨斷裂風險，市場預估國際油價可能衝擊每桶 100 美元大關。&lt;/p&gt;\n\n&lt;p&gt;中油指出，近期受歐美及東北亞低溫影響，國際市場天然氣需求大增，且因歐洲天然氣存量偏低，歐洲與亞洲國家競相爭購天然氣現貨以回補庫存，帶動全球 LNG 價格上漲，致整體進口氣源成本提高。為配合政府穩定物價政策，民生",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     }
   ],
@@ -178,25 +168,25 @@
   ],
   "events": [
     {
-      "title": "「真實承諾 4」行動：中東全面武裝衝突",
-      "summary": "伊朗針對美軍 14 處基地發動多波次襲擊，並宣稱擊中支援艦，衝突進入不可控階段。",
+      "title": "美伊啟動大規模實體戰爭",
+      "summary": "川普政府發動空襲與伊朗飛彈反擊，雙方進入直接軍事衝突階段。",
       "impact": "負面",
       "related_news_ids": [
         0
       ]
     },
     {
-      "title": "中俄聯手干預：聯合國緊急磋商",
-      "summary": "中俄要求召開安理會會議，試圖透過外交壓力制約美以軍事行動，加劇外交對立。",
-      "impact": "中性",
+      "title": "液化天然氣 (LNG) 全球競價戰",
+      "summary": "低溫需求疊加戰爭風險，導致歐亞各國爭奪 LNG 庫存，價格持續飆升。",
+      "impact": "負面",
       "related_news_ids": [
-        1
+        0
       ]
     },
     {
-      "title": "能源供應鏈防禦溢價",
-      "summary": "襲擊涉及巴林、阿聯、科威特等產油國周邊基地，推升市場對原油供應中斷的擔憂。",
-      "impact": "正面",
+      "title": "國內能源成本轉嫁效應",
+      "summary": "台灣中油宣佈調漲天然氣價，顯示進口成本壓力已向終端民生與工業滲透。",
+      "impact": "中性",
       "related_news_ids": [
         0
       ]
@@ -204,29 +194,29 @@
   ],
   "relations": [
     {
-      "from": "伊朗",
-      "to": "美國",
-      "type": "軍事對抗"
+      "from": "美國",
+      "to": "伊朗",
+      "type": "軍事打擊"
     },
     {
       "from": "伊朗",
-      "to": "以色列",
-      "type": "報復打擊"
+      "to": "液化天然氣",
+      "type": "供應威脅"
     },
     {
-      "from": "中國",
-      "to": "聯合國",
-      "type": "外交干預"
+      "from": "液化天然氣",
+      "to": "台灣中油",
+      "type": "採購成本上升"
     },
     {
-      "from": "地緣衝突",
-      "to": "布蘭特原油",
-      "type": "推升價格"
+      "from": "台灣中油",
+      "to": "一般家庭用戶",
+      "type": "成本轉嫁"
     },
     {
       "from": "川普",
-      "to": "伊朗",
-      "type": "政權壓力"
+      "to": "美國",
+      "type": "政策主導"
     }
   ],
   "keywords7d": [
@@ -496,7 +486,7 @@
     },
     {
       "word": "伊朗",
-      "count": 166,
+      "count": 173,
       "articles": [
         {
           "title": "伊朗宣布：所有歐盟國家海軍、空軍列「恐怖組織」",
@@ -2211,6 +2201,72 @@
       ]
     },
     {
+      "word": "以色列",
+      "count": 48,
+      "articles": [
+        {
+          "title": "美大使稱以色列可占全中東　阿拉伯國家同聲撻伐",
+          "url": "https://www.cna.com.tw/news/aopl/202602220101.aspx",
+          "source": "中央社國際",
+          "content": "（中央社耶路撒冷22日綜合外電報導）美國駐以色列大使赫克比（Mike Huckabee）日前受訪時暗示，根據聖經經文，以色列對一大片中東土地擁有權利，這番言論招致阿拉伯與伊斯蘭國家同聲譴責。"
+        },
+        {
+          "title": "自古以來？美大使拿聖經稱以色列「有權占領全中東」 阿拉伯國家暴怒",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347859",
+          "source": "自由時報",
+          "content": "美國駐以色列大使哈克比（Mike Huckabee）近日在一場訪談中，宣稱依據《聖經》記載，以色列有權占領「幾乎整個中東地區」。此番基於宗教解釋的擴張論調，隨即遭到沙烏地阿拉伯、...…"
+        },
+        {
+          "title": "沙國等14國發聯合聲明 譴責美國駐以色列大使言論",
+          "url": "https://news.cnyes.com/news/id/6348452",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據美國《CNN》、《法新社》等外媒報導，阿聯、埃及、約旦等 14 國及國際組織周日（22 日）發表聯合聲明，譴責美國駐以色列大使赫卡比近日所謂「以色列有權控制整個中東」的言論。&lt;/p&gt;\n\n&lt;p&gt;該聲明由多個國家和國際組織聯合發表，由阿聯牽頭，並得到埃及、約旦、印尼、巴基斯坦、土耳其、沙烏地阿拉伯、卡達、科威特、阿曼、巴林、黎巴嫩、敘利亞、巴勒斯坦以及伊斯蘭合作組織、阿拉伯國家聯盟、海灣合作委員會的支持。&lt;/p&gt;\n\n&lt;p&gt;聲明譴責赫卡比的言論危險，且具有煽動性。&lt;/p&gt;\n\n&lt;p&gt;聲明稱，赫卡比的言論「公然違反國際法」，威脅地區穩定。&lt;/p&gt;\n\n&lt;p&gt;聲明表示，以色列對被佔領的巴勒斯坦領土或任何其他相關土地「不享有任何主權」，並警告，擴張主義言論「只會加劇暴力衝突」，破壞和平努力。&lt;/p&gt;\n\n&lt;p&gt;赫卡比日前在與一名美國媒體人的訪談中聲稱：「若以色列拿下整個中東，那也沒問題」。&lt;/p&gt;\n\n&lt;p&gt;&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
+        },
+        {
+          "title": "美大使稱「以色列根據聖經可占全中東」，阿拉伯國家群起撻伐",
+          "url": "https://www.thenewslens.com/article/264920",
+          "source": "關鍵評論網",
+          "content": "美國駐以色列大使赫克比暗示，以色列可依聖經主張中東土地。此言論引發阿拉伯與伊斯蘭世界同聲譴責，指其危險且具煽動性，破壞區域穩定。"
+        },
+        {
+          "title": "以色列加速擴大西岸屯墾　18國批實質併吞",
+          "url": "https://www.cna.com.tw/news/aopl/202602240050.aspx",
+          "source": "中央社國際",
+          "content": "（中央社利雅德23日綜合外電報導）針對以色列最近批准約旦河西岸土地登記等一連串措施，今天有18個國家發布聲明譴責以色列，指這是企圖併吞西岸土地、破壞巴勒斯坦建國前景。"
+        },
+        {
+          "title": "印度總理莫迪訪以色列　專家：將籲中東勿爆軍事衝突",
+          "url": "https://www.cna.com.tw/news/aopl/202602250189.aspx",
+          "source": "中央社國際",
+          "content": "（中央社耶路撒冷25日綜合外電報導）印度總理莫迪今天抵達以色列，展開為期兩天的訪問，兩國皆視此為深化雙邊關係的契機。隨著區域各國日益擔憂美國與伊朗緊張加劇，有專家認為，莫迪將重申不希望中東地區爆發軍事衝突。"
+        },
+        {
+          "title": "保護記者委員會：2025年全球129記者遇害創紀錄　2/3歸咎於以色列",
+          "url": "https://www.cna.com.tw/news/aopl/202602250292.aspx",
+          "source": "中央社國際",
+          "content": "（中央社紐約25日綜合外電報導）保護記者委員會（CPJ）今天說，2025年全球共有129名記者與媒體工作者遇害，創下歷史新高，其中2/3的死亡事件歸咎於以色列。"
+        },
+        {
+          "title": "MLB》台灣隊主力鄭宗哲再獲上場機會！ 對決經典賽以色列國手",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5351735",
+          "source": "自由時報",
+          "content": "\n\n\n經典賽台灣隊主力打者鄭宗哲今在大聯盟春訓熱身賽再獲上場機會，替補2打數繳白卷，終場所屬球隊紅襪5：3擊敗雙城。\n\n\n24歲的鄭宗哲在休賽季歷經轉隊波折，先後遭海盜、光芒、大...…"
+        },
+        {
+          "title": "經典賽》長打出爐！ 李灝宇170.3KM怪力重擊以色列國手Dean Kremer",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5352948",
+          "source": "自由時報",
+          "content": "\n\n\n老虎隊台灣經典賽好手李灝宇，今天在對陣金鶯的大聯盟春訓熱身賽擔任先發打擊，敲出今年春訓的第一隻長打。\n\n\n李灝宇本戰擔任先發3棒指定打擊，他在3上棒打經典賽以色列國手，上季...…"
+        },
+        {
+          "title": "中東安全風險升高　美國駐以色列大使館允非緊急人員離境",
+          "url": "https://www.cna.com.tw/news/aopl/202602270205.aspx",
+          "source": "中央社國際",
+          "content": "（中央社耶路撒冷27日綜合外電報導）美國駐以色列耶路撒冷大使館今天宣布，有鑑於安全風險，將允許非緊急政府人員及其家屬離開以色列，希望離境者應在商業航班仍可搭乘時離境。"
+        }
+      ]
+    },
+    {
       "word": "兄弟",
       "count": 47,
       "articles": [
@@ -2273,72 +2329,6 @@
           "url": "https://www.cna.com.tw/news/afe/202602240125.aspx",
           "source": "中央社產經",
           "content": "（中央社紐約23日綜合外電報導）消息人士指出，派拉蒙天空之舞（Paramount Skydance）對收購華納兄弟探索集團（Warner Bros Discovery）已提出更新方案，盼能力抗串流巨人Netflix所提報價。"
-        }
-      ]
-    },
-    {
-      "word": "以色列",
-      "count": 47,
-      "articles": [
-        {
-          "title": "美大使稱以色列可占全中東　阿拉伯國家同聲撻伐",
-          "url": "https://www.cna.com.tw/news/aopl/202602220101.aspx",
-          "source": "中央社國際",
-          "content": "（中央社耶路撒冷22日綜合外電報導）美國駐以色列大使赫克比（Mike Huckabee）日前受訪時暗示，根據聖經經文，以色列對一大片中東土地擁有權利，這番言論招致阿拉伯與伊斯蘭國家同聲譴責。"
-        },
-        {
-          "title": "自古以來？美大使拿聖經稱以色列「有權占領全中東」 阿拉伯國家暴怒",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5347859",
-          "source": "自由時報",
-          "content": "美國駐以色列大使哈克比（Mike Huckabee）近日在一場訪談中，宣稱依據《聖經》記載，以色列有權占領「幾乎整個中東地區」。此番基於宗教解釋的擴張論調，隨即遭到沙烏地阿拉伯、...…"
-        },
-        {
-          "title": "沙國等14國發聯合聲明 譴責美國駐以色列大使言論",
-          "url": "https://news.cnyes.com/news/id/6348452",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據美國《CNN》、《法新社》等外媒報導，阿聯、埃及、約旦等 14 國及國際組織周日（22 日）發表聯合聲明，譴責美國駐以色列大使赫卡比近日所謂「以色列有權控制整個中東」的言論。&lt;/p&gt;\n\n&lt;p&gt;該聲明由多個國家和國際組織聯合發表，由阿聯牽頭，並得到埃及、約旦、印尼、巴基斯坦、土耳其、沙烏地阿拉伯、卡達、科威特、阿曼、巴林、黎巴嫩、敘利亞、巴勒斯坦以及伊斯蘭合作組織、阿拉伯國家聯盟、海灣合作委員會的支持。&lt;/p&gt;\n\n&lt;p&gt;聲明譴責赫卡比的言論危險，且具有煽動性。&lt;/p&gt;\n\n&lt;p&gt;聲明稱，赫卡比的言論「公然違反國際法」，威脅地區穩定。&lt;/p&gt;\n\n&lt;p&gt;聲明表示，以色列對被佔領的巴勒斯坦領土或任何其他相關土地「不享有任何主權」，並警告，擴張主義言論「只會加劇暴力衝突」，破壞和平努力。&lt;/p&gt;\n\n&lt;p&gt;赫卡比日前在與一名美國媒體人的訪談中聲稱：「若以色列拿下整個中東，那也沒問題」。&lt;/p&gt;\n\n&lt;p&gt;&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "美大使稱「以色列根據聖經可占全中東」，阿拉伯國家群起撻伐",
-          "url": "https://www.thenewslens.com/article/264920",
-          "source": "關鍵評論網",
-          "content": "美國駐以色列大使赫克比暗示，以色列可依聖經主張中東土地。此言論引發阿拉伯與伊斯蘭世界同聲譴責，指其危險且具煽動性，破壞區域穩定。"
-        },
-        {
-          "title": "以色列加速擴大西岸屯墾　18國批實質併吞",
-          "url": "https://www.cna.com.tw/news/aopl/202602240050.aspx",
-          "source": "中央社國際",
-          "content": "（中央社利雅德23日綜合外電報導）針對以色列最近批准約旦河西岸土地登記等一連串措施，今天有18個國家發布聲明譴責以色列，指這是企圖併吞西岸土地、破壞巴勒斯坦建國前景。"
-        },
-        {
-          "title": "印度總理莫迪訪以色列　專家：將籲中東勿爆軍事衝突",
-          "url": "https://www.cna.com.tw/news/aopl/202602250189.aspx",
-          "source": "中央社國際",
-          "content": "（中央社耶路撒冷25日綜合外電報導）印度總理莫迪今天抵達以色列，展開為期兩天的訪問，兩國皆視此為深化雙邊關係的契機。隨著區域各國日益擔憂美國與伊朗緊張加劇，有專家認為，莫迪將重申不希望中東地區爆發軍事衝突。"
-        },
-        {
-          "title": "保護記者委員會：2025年全球129記者遇害創紀錄　2/3歸咎於以色列",
-          "url": "https://www.cna.com.tw/news/aopl/202602250292.aspx",
-          "source": "中央社國際",
-          "content": "（中央社紐約25日綜合外電報導）保護記者委員會（CPJ）今天說，2025年全球共有129名記者與媒體工作者遇害，創下歷史新高，其中2/3的死亡事件歸咎於以色列。"
-        },
-        {
-          "title": "MLB》台灣隊主力鄭宗哲再獲上場機會！ 對決經典賽以色列國手",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5351735",
-          "source": "自由時報",
-          "content": "\n\n\n經典賽台灣隊主力打者鄭宗哲今在大聯盟春訓熱身賽再獲上場機會，替補2打數繳白卷，終場所屬球隊紅襪5：3擊敗雙城。\n\n\n24歲的鄭宗哲在休賽季歷經轉隊波折，先後遭海盜、光芒、大...…"
-        },
-        {
-          "title": "經典賽》長打出爐！ 李灝宇170.3KM怪力重擊以色列國手Dean Kremer",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5352948",
-          "source": "自由時報",
-          "content": "\n\n\n老虎隊台灣經典賽好手李灝宇，今天在對陣金鶯的大聯盟春訓熱身賽擔任先發打擊，敲出今年春訓的第一隻長打。\n\n\n李灝宇本戰擔任先發3棒指定打擊，他在3上棒打經典賽以色列國手，上季...…"
-        },
-        {
-          "title": "中東安全風險升高　美國駐以色列大使館允非緊急人員離境",
-          "url": "https://www.cna.com.tw/news/aopl/202602270205.aspx",
-          "source": "中央社國際",
-          "content": "（中央社耶路撒冷27日綜合外電報導）美國駐以色列耶路撒冷大使館今天宣布，有鑑於安全風險，將允許非緊急政府人員及其家屬離開以色列，希望離境者應在商業航班仍可搭乘時離境。"
         }
       ]
     },
@@ -3267,6 +3257,138 @@
       ]
     },
     {
+      "word": "TAIPEI",
+      "count": 40,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Australian frigate transits Taiwan Strait unimpeded",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348118",
+          "source": "自由時報",
+          "content": "CLOSELY MONITORED: The guided missile frigate made the transit without incident, but Chinese state m...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Report details efforts to boost defense",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348117",
+          "source": "自由時報",
+          "content": "PREPAREDNESS: Technology research prioritizes uncrewed systems, counter-reconnaissance and surveilla...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Commission amends dual citizenship rules",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348116",
+          "source": "自由時報",
+          "content": "By Chen Yu-fu and Esme Yeh / Staff reporters\r\n\r\nThe Central Election Commission has amended election...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Public urged to switch to electric cars",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348119",
+          "source": "自由時報",
+          "content": "ENCOURAGING SUBSIDIES: Carbon reduction purchase price offsets for electric car replacements could h...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 US trade deficit could pose issue: academic",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348115",
+          "source": "自由時報",
+          "content": "/ Staff writer, with CNA\r\n\r\nTaiwan must act to preempt potential Section 301 investigations as US Pr...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 US tariffs closely monitored, Lai says",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348113",
+          "source": "自由時報",
+          "content": "CHALLENGES AND OPPORTUNITIES:The government has a full grasp of the latest developments and is prepa...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Martial Law-era files declassified: NSB",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349130",
+          "source": "自由時報",
+          "content": "UNCOVERING THE TRUTH: Over 51,000 files have been opened for public access to enable transitional ju...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Local holiday travel more than doubled this year",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349113",
+          "source": "自由時報",
+          "content": "NATURE VIEWS:Many people visited mountain trails, seaside landscapes and old streets, with destinati...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》As schools reopen, CDC urges good hand hygiene",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349112",
+          "source": "自由時報",
+          "content": "FLU WARNING:Although influenza A cases are falling, influenza B infections are rising, indicating pe...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Lai ‘glad’ to deliver address before Legislative Yuan",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349131",
+          "source": "自由時報",
+          "content": "TEA PARTY:The president thanked Speaker Han Kuo-yu for inviting him to give a national affairs repor...…"
+        }
+      ]
+    },
+    {
+      "word": "TIMES",
+      "count": 40,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Australian frigate transits Taiwan Strait unimpeded",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348118",
+          "source": "自由時報",
+          "content": "CLOSELY MONITORED: The guided missile frigate made the transit without incident, but Chinese state m...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Report details efforts to boost defense",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348117",
+          "source": "自由時報",
+          "content": "PREPAREDNESS: Technology research prioritizes uncrewed systems, counter-reconnaissance and surveilla...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Commission amends dual citizenship rules",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348116",
+          "source": "自由時報",
+          "content": "By Chen Yu-fu and Esme Yeh / Staff reporters\r\n\r\nThe Central Election Commission has amended election...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Public urged to switch to electric cars",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348119",
+          "source": "自由時報",
+          "content": "ENCOURAGING SUBSIDIES: Carbon reduction purchase price offsets for electric car replacements could h...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 US trade deficit could pose issue: academic",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348115",
+          "source": "自由時報",
+          "content": "/ Staff writer, with CNA\r\n\r\nTaiwan must act to preempt potential Section 301 investigations as US Pr...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 US tariffs closely monitored, Lai says",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5348113",
+          "source": "自由時報",
+          "content": "CHALLENGES AND OPPORTUNITIES:The government has a full grasp of the latest developments and is prepa...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Martial Law-era files declassified: NSB",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349130",
+          "source": "自由時報",
+          "content": "UNCOVERING THE TRUTH: Over 51,000 files have been opened for public access to enable transitional ju...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Local holiday travel more than doubled this year",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349113",
+          "source": "自由時報",
+          "content": "NATURE VIEWS:Many people visited mountain trails, seaside landscapes and old streets, with destinati...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》As schools reopen, CDC urges good hand hygiene",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349112",
+          "source": "自由時報",
+          "content": "FLU WARNING:Although influenza A cases are falling, influenza B infections are rising, indicating pe...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Lai ‘glad’ to deliver address before Legislative Yuan",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5349131",
+          "source": "自由時報",
+          "content": "TEA PARTY:The president thanked Speaker Han Kuo-yu for inviting him to give a national affairs repor...…"
+        }
+      ]
+    },
+    {
       "word": "輝達",
       "count": 40,
       "articles": [
@@ -3395,138 +3517,6 @@
           "url": "https://ec.ltn.com.tw/article/breakingnews/5349775",
           "source": "自由時報",
           "content": "\n\n\n去年是全台預售屋買氣的寒冷冬天，全年實價揭露總件數近4.24萬件，對比買氣有如炎熱夏天的2024年預售屋揭露總件數、高達13.06萬件，直接少掉約8.82萬件、年減幅逾6...…"
-        }
-      ]
-    },
-    {
-      "word": "全面",
-      "count": 39,
-      "articles": [
-        {
-          "title": "「記憶體市場全面進入賣方時代」SK海力士預警：今年所有客戶的需求無法完全滿足",
-          "url": "https://news.cnyes.com/news/id/6348076",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;南韓記憶體巨擘 SK 海力士上周五 (20 日) 在面向高盛的虛擬投資者會議上釋放明確訊號說：「全球記憶體產業已徹底轉向賣方市場，2026 年價格漲勢將貫穿全年。」&lt;/p&gt;\n\n&lt;p&gt;SK 海力士這項判斷是基於 AI 需求爆發與供應端剛性約束的雙重擠壓。&lt;/p&gt;\n\n&lt;p&gt;根據 SK 海力士揭露，目前 DRAM 及 NAND 快閃記憶體庫存僅餘約 4 周，且所有客戶需求都無法滿足。&lt;/p&gt;\n\n&lt;p&gt;更嚴峻的是，2026 年高頻寬記憶體 (HBM) 產能已提前售罄，標準型 DRAM 的極度短缺正大幅提升供應商議價權，產業鏈已啟動長期合約談判以鎖定未來供應。&lt;/p&gt;\n\n&lt;p&gt;SK 海力士將核心原因歸結為兩點：一是 AI 大模型、高效能運算對記憶體的真實需求持續井噴，遠超產業預期；二是記憶體晶片製造依賴的無塵室空間擴張緩慢，產能爬坡受限，形成「需求 - 供給」差距。&lt;/p&gt;\n\n&lt;p&gt;該公司明確表示，今年所有客戶的需求無法完全滿足，價格「持續上漲已成定局」。&lt;/p&gt;\n\n&lt;p&gt;分析指出，SK 海力士的判斷具有風向球意義。在 AI 驅動的新一輪技術週期中，記憶體從「配角」躍升為算力基礎設施的核心瓶頸，賣方市場特徵恐長期延續，產業鏈上下游的價格博弈與產能爭奪將進一步白熱化。&lt;/p&gt;\n"
-        },
-        {
-          "title": "從Valentino舞台造型到Jacob &amp; Co.雛菊珠寶！GD專屬時尚宇宙全面啟動",
-          "url": "https://istyle.ltn.com.tw/article/39131",
-          "source": "自由時報",
-          "content": "權志龍（G-DRAGON，簡稱：GD）近年以驚人速度擴張個人時尚版圖，從舞台造型、高級珠寶腕錶到日常生活配件，幾乎無所不在。這位向來被視為潮流風向球的巨星，早已跳脫歌手框架，將個人美學轉化為一種可被穿戴、收藏與使用的生活風格，成就一整套「GD式審美」。…"
-        },
-        {
-          "title": "產業內循環投資，成長動能受到檢視，「AI 永動機」啟動，算力投資全面加速",
-          "url": "https://technews.tw/2026/02/22/ai-perpetual-motion/",
-          "source": "TechNews",
-          "content": "自 2022 年底生成式 AI 爆發以來，全球資本市場迅速圍繞 AI 形成新一波投資熱潮。從 GPU 晶片、雲 [&#8230;]"
-        },
-        {
-          "title": "NBA》到底誰看得起？湖人門票全面調漲 上層季票座位要價28萬台幣！",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5347787",
-          "source": "自由時報",
-          "content": "\n\n\n近日有湖人球迷向《ESPN》透露，湖人將在2026-2027賽季調漲門票，且調漲幅度近46%；籃球評論家佩雷斯（Rob Perez）也在社群網站爆料，如果在付款時，沒有全額...…"
-        },
-        {
-          "title": "苗栗7旬歲翁疑閃生物自撞 休旅車全面燃燒成火球",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5347891",
-          "source": "自由時報",
-          "content": "72歲吳姓老翁今天中午1點多駕駛休旅車行經苗栗縣苗28鄉道2.9公里處、西湖鄉路段時，吳翁稱正要閃避前方生物，導致其駕駛的休旅車偏移車道撞到路旁水泥護欄，休旅車因此火星四濺，吳...…"
-        },
-        {
-          "title": "專題3-3 》未來競爭力關鍵，國內頂尖大學全面加速AI教育",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5348098",
-          "source": "自由時報",
-          "content": "美國普渡大學今年秋季起將「AI應用能力」列為全體大學部學生畢業必要條件，引發國內高教界關注。多所大學指出，AI已從專業技能轉向通用素養，但推動方式仍以跨域課程與制度彈性...…"
-        },
-        {
-          "title": "川普祭全面新關稅 歐盟要求美國恪守去年貿易協議",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348132",
-          "source": "自由時報",
-          "content": "在美國聯邦最高法院推翻總統川普的全球關稅，而川普隨後祭出全面性新關稅做為回應後，歐盟執委會22日要求美國必須恪守去年達成的歐美貿易協議條款。\r\n\r\n代表27個成員國進行貿易政...…"
-        },
-        {
-          "title": "川普關稅遭法院推翻，中國：正進行全面評估",
-          "url": "https://technews.tw/2026/02/23/china-evaluate-usa-tariffs/",
-          "source": "TechNews",
-          "content": "美國總統川普動用緊急權力對進口商品加徵關稅的做法遭最高法院推翻，中國商務部今天以未署名的發言人表示，正在對相關 [&#8230;]"
-        },
-        {
-          "title": "「1件不留、1字不遮」 國安局：全面解密移交戒嚴時期政治檔案",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5348592",
-          "source": "自由時報",
-          "content": "國安局今指出，為落實國家轉型正義與政治檔案開放，在歷經1年4個月的自主清查後，已將戒嚴時期政治檔案全數解密，並將實體檔案併同電子影像檔移交國發會檔案局。\r\n\r\n國安局指出，自前...…"
-        },
-        {
-          "title": "川普關稅遭法院推翻，中國：正進行全面評估",
-          "url": "https://finance.technews.tw/2026/02/23/china-evaluate-usa-tariffs/",
-          "source": "TechNews",
-          "content": "美國總統川普動用緊急權力對進口商品加徵關稅的做法遭最高法院推翻，中國商務部今天以未署名的發言人表示，正在對相關 [&#8230;]"
-        }
-      ]
-    },
-    {
-      "word": "金融",
-      "count": 39,
-      "articles": [
-        {
-          "title": "〈馬年景氣展望〉台股大發利市！法人悄悄卡位金融黑馬股 迎年後「股利大紅包」",
-          "url": "https://news.cnyes.com/news/id/6345446",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;2025 年歷經對等關稅、新台幣暴力升值風波，保險業與證券業一度出現亂流，好在下半年股市回神、交投轉熱，匯率也持穩；而銀行業受惠台美利差維持一定水位、財富管理需求強勁，成為金控旗下穩定的獲利引擎，全台 13 家金控 2025 年合計稅後純益衝破 5800 億元大關，寫下歷史次高紀錄。對於廣大的存股族而言，這不僅代表金融股營運韌性十足，更預示著 2026 年即將迎來令人期待的「股利大紅包」，金融股不僅具備配息想像空間，更可在市場震盪中扮演資金避風港的角色。&lt;/p&gt;\n\n&lt;p&gt;美國聯準會 (Fed)2025 年降息步調較市場預期來得慢，使得銀行業普遍表現穩健，仍是獲利主體，放款動能與手續費淨收益持續成長，為配息提供了穩定的現金流基礎。而壽險業今年接軌 IFRS 17 後，雖然會計準則改變，但核心承保利潤 (CSM) 釋放更透明，有助於投資人判斷長期的配息穩定度。&lt;/p&gt;\n\n&lt;p&gt;隨著美債殖利率回檔，過去幾年壓抑金控配息的「其他權益」項目多已顯著回升，這代表過去被限縮的未分配盈餘可望獲得「解鎖」，讓公司更有空間提高盈餘分配率。&lt;/p&gt;\n\n&lt;p&gt;2025 全年成績單揭曉後，不少法人早已提前卡位 2026 年預估殖利率可達&nbsp;5% 以上的標的，日前市場點名具備此潛力的個股包括中信金 (2891-TW)、台新新光金 (2887-TW)、玉山金 (2884-TW)、永豐金 (2890-TW) 及華南金 (2880-TW) 等，元月以來股價漲勢相當強勁，多檔刷新歷史新高。&lt;/p&gt;\n\n&lt;p&gt;台股指數 2025 年底屢屢創新高，集中市場封關市值攀升至 94.36 兆元，日均成交值&nbsp;4160 億元，2026 年指數更是火速站上 3 萬點大關，讓證券公司賺得盆滿缽滿，富邦證、元大證、國泰證、永豐金證等獲利皆創歷史新高，年增率驚人，這類「機會財」極大地挹注了母公司的盈餘。&lt;/p&gt;\n\n&lt;p&gt;除了大型金控外，多檔獨立的證券商、中小型銀行或產險公司在 2025 年同樣大發利市，這類標的通常具有「高配息率」或「股價相對便宜」的特性，2026 年的現金殖利率表現有望比金控更具爆發力。&lt;/p&gt;\n\n&lt;p&gt;台股 2025 年下半年起展開絕地反攻，在自營部操作業務發力下，獨立、中小型券商也成為最強黑馬，包括統一證 (2855-TW)、群益證 (6005-TW)、美好證 (6021-TW)、福邦證 (6026-TW)、康和證 (6016-TW)、宏遠證 (6015-TW) 等，年底獲利普遍大躍進，繳出亮麗成績單，2026 發放股利值得期待。&lt;/p&gt;\n\n&lt;p&gt;台中銀去年稅後純益 90.4 億元，年增 8.8%，EPS 為 1.53 元，再創新高。公司表示，2025 年獲利相對 2024 年更好，基本上股利也會較高，將持續採取穩定的股利政策。上海商銀去年稅後純益 147.9 億元，EPS 為 3.05 元，優於上年的 2.78 元。近四年皆配發現金股利 1.8 元，在全年獲利成長下，股利向上值得期待 ，且不排除九年以來首次配發股票股利。&lt;/p&gt;\n\n&lt;p&gt;中再保 (2851-TW) 為國內再保龍頭，獲利模式極其穩健，2025 年配發 1.9 元現金股利，其殖利率常年居金融股前段班，配發率也普遍超過 5 成，公司目前僅公布去年前三季稅後純益 15.99 億元，EPS 2 元。&lt;/p&gt;\n\n&lt;p&gt;新產 (2850-TW)&nbsp;2025 年前三季累計稅後純益 26.74 億元，EPS 8.46 元，已改寫同期新高，近年配發率持續提升，來到近 7 成高水準，向來是存股族的心頭好。而台產 (2832-TW) 除了本業成長外，去年完成減資，加上市場傳出可望無需再大量提列法定盈餘公積，有助提升配息率，預期最快&nbsp;3 月董事會就會揭曉。&lt;/p&gt;\n\n&lt;p&gt;展望 2026 年，建議投資人採取「由下而上」的策略，首先是關注 EPS 成長性，優先選擇 2025 年獲利創新高的標的；其次要確認配發率，可參考過去 3-5 年的配發水準，剔除一次性獲利占比過高的公司；第三是分批布局，金融股具有抗震防禦屬性，在第二季配息政策公告前，若市場回檔皆是良好的進場點。&lt;/p&gt;\n"
-        },
-        {
-          "title": "義大利首富換人當  金融科技創業家打敗巧克力之王",
-          "url": "https://www.cna.com.tw/news/aopl/202602230020.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者黃雅詩羅馬22日專電）義大利首富寶座換人。據富比世最新調查，作風低調神祕的軟體金融公司ION Group創辦人皮格納塔洛（Andrea Pignataro）成為最新首富，打敗巧克力之王費列羅集團（Ferrero）總裁喬凡尼費列羅（Giovanni Ferrero）。"
-        },
-        {
-          "title": "〈證交所新春團拜〉彭金隆：今年將頒布「金融大回饋」指引 全民共享壯大市場果實",
-          "url": "https://news.cnyes.com/news/id/6348805",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;台股今 (23) 日開紅盤再顯神威！繼蛇年封關站穩 3 萬 3 後，今天多頭加足馬力，早盤一舉飛越&nbsp;34000 點大關。金管會主委彭金隆上午出席證交所新春團拜時，特別繫上喜氣的鮮紅領帶，宣示今年四大面向持續推動亞洲資產管理中心，壯大我國資本市場，並預告今年政策重頭戲「金融大回饋計畫」，將頒布指引，強調在股市屢創佳績之際，金融業應將獲利轉化為社會進步的動力，形成壯大市場的正向循環。&lt;/p&gt;\n\n&lt;p&gt;回顧過去一年，彭金隆高度肯定市場參與者的貢獻，儘管面臨美國關稅政策、全球地緣政治不確定因素，台股依然展現出「強勁的韌性」。&lt;/p&gt;\n\n&lt;p&gt;金管會推動「亞洲資產管理中心」，彭金隆致詞時揭示今年四大精進面向，首先是持續壯大資本市場，已責成證交所等周邊單位成立亞資推動辦公室，透過單一窗口、專屬網站，全力建構資源體系。&lt;/p&gt;\n\n&lt;p&gt;商品多元化方面，目前為止，上市櫃已核准 21 檔主動式 ETF 及 3 檔被動多資產 ETF，並完成台日 ETF 雙掛牌，未來將進一步放寬「未具證券投資信託基金性質」之境外基金&nbsp;99 人限制，吸引私募基金來台。&lt;/p&gt;\n\n&lt;p&gt;其次為亞洲創新籌資平台，金管會已督導證交所與櫃買中心，針對創新經濟、智慧國家及台灣人工智慧島等國家願景，打造創新生態圈，並責成櫃買中心提出「債券市場五年發展計畫」。&lt;/p&gt;\n\n&lt;p&gt;第三為永續資訊揭露及防詐升級，2025 年起全體上市櫃公司均需申報永續報告書，並全面對齊 IFRS 永續揭露準則，深化企業綠色轉型。金管會也將持續強化金融防詐法制及市場宣導，藉由公私部門協力，提升防詐精準度，保護投資人安全。&lt;/p&gt;\n\n&lt;p&gt;第四則為擴大推動金融大回饋計畫，彭金隆表示，在台股屢創新高之際，證券、期貨等金融機構作為政府特許事業，除了追求業績成長，更隱含著「社會託付」的深層意義。金管會今年將正式頒布金融大回饋計畫指引，「我們希望引導回饋理念融入金融機構的核心經營策略，形成市場正向循環。」&lt;/p&gt;\n\n&lt;p&gt;最後，彭金隆打趣地表示，今天出門前選了一條最紅的領帶，就是希望大家今年鴻運當頭！彭金隆也期許，在「金融安全」與「發展創新」的雙核心帶動下，台灣資本市場將在金馬年持續奔騰，產業發展更要駿業宏開。&lt;/p&gt;\n"
-        },
-        {
-          "title": "義大利首富換人當，金融科技創業家打敗巧克力之王",
-          "url": "https://technews.tw/2026/02/23/forbes-italy-richest-andrea-pignataro/",
-          "source": "TechNews",
-          "content": "義大利首富寶座換人。據富比士最新調查，作風低調神祕的軟體金融公司 ION Group 創辦人皮格納塔洛（And [&#8230;]"
-        },
-        {
-          "title": "義大利首富換人當，金融科技創業家打敗巧克力之王",
-          "url": "https://finance.technews.tw/2026/02/23/forbes-italy-richest-andrea-pignataro/",
-          "source": "TechNews",
-          "content": "義大利首富寶座換人。據富比士最新調查，作風低調神祕的軟體金融公司 ION Group 創辦人皮格納塔洛（And [&#8230;]"
-        },
-        {
-          "title": "記憶體榮景推動韓股創新高 李在明趁勢推金融改革",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348413",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕南韓綜合股價指數（KOSPI）今（23日）突破5900點大關，再創歷史新高。數據顯示，2025年全球51個主要國家或地區股市之中，表現最亮眼莫過於南韓股市。韓媒報導，202...…"
-        },
-        {
-          "title": "2月電子期金融期齊漲",
-          "url": "https://www.cna.com.tw/news/afe/202602230137.aspx",
-          "source": "中央社產經",
-          "content": "（中央社台北23日電）台北股市今天上漲167.55點，收33773.26點。2月電子期收2082.6點，上漲1.6點，正價差5.68點；2月金融期收2560點，上漲59點，逆價差3.99點。"
-        },
-        {
-          "title": "56萬存股族小心！這檔金融金馬年遭投信砍逾萬張苦吞第1",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5348838",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕台股金馬年開紅盤，在ABF載板、記憶體扮要角，指數漲167點，收33773點新高，不過，投信則結束連8買，開紅盤首日轉賣超20.23億元，而金融股則淪為大提款機，其中又以逾...…"
-        },
-        {
-          "title": "集保結算所新春團拜 AI與數位化再造金融後台新紀元",
-          "url": "https://news.cnyes.com/news/id/6349452",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;集保結算所今 (23) 日舉辦赤馬年新春團拜，董事長林丙輝表示，將以 AI 技術與創新數位打造雙核心金融後台，並期許集保人都能具備跨領域的思維與赤馬般的衝勁，以「e 馬當先」的氣勢帶領團隊「馬力全開」，共同開創新巔峰。&lt;/p&gt;\n\n&lt;p&gt;面對美國關稅政策變化及 AI 科技更迭等複合挑戰，林丙輝強調務實因應、審慎樂觀，要增強基礎設施的韌性，秉持服務的初衷，堅守誠信的價值，確保金融創新與安全並行，才能在變局中穩健前行。&lt;/p&gt;\n\n&lt;p&gt;集保結算所去年繳出稅後純益近 80 億元，創造每股純益&nbsp;7.88 元的亮眼成績單，股票、期貨、債票券、跨境保管及基金等五大核心業務皆有卓越表現，林丙輝也感謝全體員工的辛勤努力，守護投資人資產，創造傲人佳績；在創新數位服務上，集保也持續規劃 AI 與 RWA 代幣化的營運架構，打造國際級的金融後台。&lt;/p&gt;\n\n&lt;p&gt;面對美國關稅政策變化及 AI 科技更迭等複合挑戰，林丙輝強調務實因應、審慎樂觀，要增強基礎設施的韌性，秉持服務的初衷，堅守誠信的價值，確保金融創新與安全並行，才能在變局中穩健前行。&lt;/p&gt;\n\n&lt;p&gt;此外，集保今年推出首隻吉祥物貓頭鷹「阿鷹」，象徵「睿智洞察、全時守護」，林丙輝表示，這正是集保文化中最重要的傳承價值，目前集保結算所 40 歲以下同仁已占全體 27%，期許各級主管發揮「識途老馬」的領航精神，將豐富經驗轉化為提攜後進的動力。&lt;/p&gt;\n\n&lt;p&gt;林丙輝強調，主管的角色不只要在業務上創新精進，更要具備跨世代理解力與彈性的管理風格，透過建立信任的溝通技巧，將專業的技術與嚴謹的態度傳承，才能確保集保在數位浪潮中屹立不搖。&lt;/p&gt;\n"
-        },
-        {
-          "title": "金融業ESG新標竿！第一金9度入選S&P Global永續年鑑成員 集滿國際3大永續指數肯定",
-          "url": "https://news.cnyes.com/news/id/6349598",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;國際永續評比機構 S&amp;P Global 以 2025 年 CSA 分數（即 DJBIC 指數）為認定標準，公布 2026 年永續年鑑（The Sustainability Yearbook）成員，第一金控獲選排名全球銀行業前 5％，已是第九度入選為永續年鑑成員，ESG（環境、社會、公司治理）執行成果亮眼，卓越表現再獲國際肯定，迄今獲 DJBIC、MSCI 及 FTSE 等三大國際永續指數成分股肯定，也是唯一六度榮獲「國家企業環保獎」最高榮譽「巨擘獎」之金融業。&lt;/p&gt;\n\n&lt;p&gt;朝向 2050 年淨零排放目標邁進的第一金控，依 SBTi 方法訂定近程減碳目標，於 2024 年 6 月獲審查通過，訂定自身營運範疇一、二減碳路徑符合全球升溫不超過 1.5℃之目標，至 2035 年預計較基準年 2022 年減少 63％碳排量，且持續透過自有營運據點取得綠建築標章、設置太陽能分行、擴大綠電採購比重及導入內部碳定價等四大減碳行動，精進氣候治理，截至 2025 年底已累計 41 處據點取得綠建築標章，且已建置 27 間太陽能分行。&lt;/p&gt;\n\n&lt;p&gt;第一金控以科學化資訊管理環境風險，並將政府機關及企業等外部環境資訊納入內部投融資決策，子公司第一銀行於適用赤道原則之貸放及投資案件中，在評估階段導入「ESG 永續應用地圖查詢平台」等環境資訊工具，檢視案件是否與環境敏感區重疊，或可能對自然環境造成衝擊；針對如鋼鐵、半導體、面板等高耗水產業之授信案件，評估其節水措施及水資源管理計畫；另外，鑒於近年國內綠電交易與再生能源布建快速發展，第一金控擴大再生能源永續貸款業務範圍，以實際行動支持民間共同投入。&lt;/p&gt;\n\n&lt;p&gt;在職場福祉方面，第一金控 2018 年底即導入「ISO 45001 職業安全衛生管理系統」，並通過 BSI 英國標準協會驗證，為首家取得 ISO 45001 驗證之公股金融機構；且全面開辦員工持股信託及提供優於法令的結婚、生育津貼及人工好孕假等孕育假別，更領先業界提高生育補助，第三胎起每胎 25 萬元，也連續三年榮獲勞動部職業安全署「健康勞動力永續領航企業」肯定，同時提倡生態保育意識，舉辦環境保護或推展環境教育等活動，以促進生物多樣性及物種復育。&lt;/p&gt;\n\n&lt;p&gt;第一金控不僅獲納入 DJBIC、MSCI 及 FTSE 等三大國際永續指數成分股肯定，也是唯一六度榮獲「國家企業環保獎」最高榮譽「巨擘獎」之金融業，CDP 評比更於氣候、水、森林等三大面向榮獲「3A」，躋身全球 23 強。此外，第一金控統籌成立公股金融事業 ESG 倡議平台，同時也是金管會永續金融先行者聯盟成員，並擔任第 4 屆輪值主席，持續發揮推動永續發展之影響力。&lt;/p&gt;\n\n&lt;p&gt;展望未來，第一金控將持續強化永續治理架構，積極接軌國際規範，提供多元永續金融解決方案，引領產業共同邁向 2050 淨零排放目標，攜手實踐永續發展願景。&lt;/p&gt;\n"
         }
       ]
     }
