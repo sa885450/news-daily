@@ -1,48 +1,53 @@
 {
-  "updateTime": "2026-03-02T20:00:53.688Z",
-  "fullDateStr": "2026/3/3 · 更新於 04:00:53",
+  "updateTime": "2026-03-02T22:00:53.136Z",
+  "fullDateStr": "2026/3/3 · 更新於 06:00:53",
   "aiResult": {
-    "sentiment_score": -0.25,
+    "sentiment_score": 0.05,
     "dimensions": {
       "policy": -0.4,
-      "market": -0.3,
-      "industry": 0.2,
-      "international": -0.7,
-      "technical": -0.1
+      "market": 0.2,
+      "industry": 0.7,
+      "international": -0.9,
+      "technical": 0.3
     },
     "entities": [
       {
-        "name": "Amazon",
-        "sentiment": "negative",
-        "ticker": "AMZN.US"
-      },
-      {
-        "name": "Apple",
-        "sentiment": "negative",
-        "ticker": "AAPL.US"
-      },
-      {
-        "name": "Xiaomi",
-        "sentiment": "negative",
-        "ticker": "1810.HK"
-      },
-      {
-        "name": "OpenAI",
-        "sentiment": "neutral",
-        "ticker": null
-      },
-      {
         "name": "NVIDIA",
-        "sentiment": "neutral",
+        "sentiment": "positive",
         "ticker": "NVDA.US"
       },
       {
-        "name": "Walmart",
+        "name": "Raytheon",
         "sentiment": "positive",
-        "ticker": "WMT.US"
+        "ticker": "RTX.US"
+      },
+      {
+        "name": "GlobalFoundries",
+        "sentiment": "positive",
+        "ticker": "GFS.US"
+      },
+      {
+        "name": "Nokia",
+        "sentiment": "neutral",
+        "ticker": "NOK.US"
+      },
+      {
+        "name": "COSCO SHIPPING",
+        "sentiment": "negative",
+        "ticker": "601919.SS"
+      },
+      {
+        "name": "Microsoft",
+        "sentiment": "positive",
+        "ticker": "MSFT.US"
+      },
+      {
+        "name": "Lattice Semiconductor",
+        "sentiment": "positive",
+        "ticker": "LSCC.US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：從算力壟斷到財務紀律的估值校準】</h3><p>今日市場情緒顯著轉向，延續昨日對通膨復燃的擔憂，並疊加了<b>「AI 資本支出焦慮」</b>與<b>「中東地緣物流斷裂」</b>。相較於昨日 NVIDIA 對 CPO 物理層的戰略佈局，今日市場開始審視亞馬遜 (AMZN) 高達 2,000 億美元的資本支出對自由現金流的侵蝕，顯示 AI 投資已進入從『敘事驅動』轉向『財務回報驗證』的殘酷階段。</p><p><b>關鍵趨勢觀察：</b><br/>1. <b>能源與金屬雙壓：</b>美伊衝突直接威脅荷莫茲海峽，鋁價飆升至月度高點。結合川普 50% 鋁關稅，美國製造業成本將面臨二度衝擊。<br/>2. <b>物流死區化：</b>中東領空關閉與紅海危機使 MWC 參展受阻，蘋果與中國品牌（小米、美團）在當地的營運被迫中斷，科技產品交付週期將大幅拉長。<br/>3. <b>反向指標警告：</b>近期社群指標『巴逆逆』若對 AI 龍頭展現樂觀情緒，配合 Amazon 自由現金流轉負的財務預警，投資者應防範科技股出現結構性修正。建議配置從純 AI 算力轉向具備抗通膨屬性的實體資產或低本益比零售龍頭（如 WMT）。</p>",
+    "summary": "<h3>【宏觀決策報告：地緣震盪下的防禦性轉向與 6G 戰略錨點】</h3><p>今日市場情緒在地緣衝突與科技韌性間達成脆弱平衡。相較於昨日聚焦於<b>「AI 資本支出與財務紀律」</b>，今日焦點轉向<b>「荷姆茲海峽封鎖」</b>引發的物流與能源連鎖反應。雖然以色列對伊朗的空襲一度引發恐慌，但資金並未撤離市場，而是進行了<b>結構性位移</b>：從對利率敏感的旅遊與消費板塊，轉向具備強大現金流的「科技保險箱」（如 NVDA, MSFT）及國防產業（RTX）。</p><p><b>關鍵趨勢觀察：</b><br/>1. <b>AI 戰略延伸至 6G：</b>NVIDIA 與諾基亞、軟銀的結盟顯示 AI 正在定義下一代通訊標準，這將解決昨日提到的算力邊際效應問題，將 AI 從雲端推向物聯網邊緣。<br/>2. <b>物流「封喉」風險：</b>荷姆茲海峽的物流中斷（航運附加費激增至 $3,000 以上）將成為通膨復燃的導火線，這與昨日提到的川普關稅風暴形成「成本推動型通膨」的雙重壓力。<br/>3. <b>避險情緒降維：</b>市場目前尚未出現「巴逆逆」或「8zz」等反向指標的過熱訊號，顯示散戶情緒仍偏審慎，短線底部支撐力道強。</p>",
     "categories": [
       {
         "id": 1,
@@ -50,113 +55,145 @@
       },
       {
         "id": 2,
-        "category": "科技巨頭財報"
+        "category": "半導體"
       },
       {
         "id": 3,
-        "category": "大宗商品"
+        "category": "航運物流"
       }
     ],
     "sector_stats": {
-      "tech": -0.45,
-      "finance": -0.1,
-      "manufacturing": -0.35,
-      "service": -0.2
+      "tech": 0.75,
+      "finance": 0,
+      "manufacturing": -0.2,
+      "service": -0.6
     },
     "events": [
       {
-        "title": "AI 燒錢模式遭遇估值校準",
-        "summary": "亞馬遜預計 2026 年自由現金流轉負，市場對 AI 資本回報率 (ROIC) 失去耐心，引發科技巨頭估值下修。",
+        "title": "中東「封喉」危機與物流通膨",
+        "summary": "荷姆茲海峽受阻導致航運巨頭暫停報價，附加費激增，預期推升全球終端成本。",
         "impact": "負面",
         "related_news_ids": [
-          0
+          0,
+          6
         ]
       },
       {
-        "title": "中東航道危機與鋁供應風暴",
-        "summary": "美伊開火推升鋁價與能源成本，荷莫茲海峽受威脅導致歐洲與美國面臨實體鋁升水壓力。",
-        "impact": "負面",
+        "title": "NVIDIA 佈局 6G AI 通訊標準",
+        "summary": "輝達聯手電信巨頭將 AI 整合進行動網路架構，開闢半導體應用新藍海。",
+        "impact": "正面",
         "related_news_ids": [
-          1,
-          2
+          5
         ]
       },
       {
-        "title": "全球科技物流與商務中斷",
-        "summary": "中東領空關閉重創 MWC 參展與跨國科技運作，蘋果關店與物流延遲增加營運成本。",
-        "impact": "負面",
+        "title": "避險資金流入國防與大市值科技",
+        "summary": "投資人採取「戰時配置」，拋售旅遊股並轉向防護性強的國防與高現金流科技股。",
+        "impact": "正面",
         "related_news_ids": [
-          3
+          0,
+          2,
+          4
         ]
       }
     ],
     "relations": [
       {
-        "from": "Amazon",
-        "to": "OpenAI",
-        "type": "投資與雲端供應合約"
+        "from": "Middle East Conflict",
+        "to": "Oil Prices",
+        "type": "positive_correlation"
       },
       {
-        "from": "中東衝突",
-        "to": "中國能源安全",
-        "type": "供應鏈風險推升"
-      },
-      {
-        "from": "川普政策",
-        "to": "鋁業市場",
-        "type": "關稅成本轉嫁"
-      },
-      {
-        "from": "中東局勢",
-        "to": "小米",
-        "type": "物流與交付延遲"
+        "from": "Hormuz Strait Blockage",
+        "to": "Freight Rates",
+        "type": "supply_chain_disruption"
       },
       {
         "from": "NVIDIA",
-        "to": "Amazon",
-        "type": "資本支出受益者與成本負擔"
+        "to": "Nokia",
+        "type": "strategic_partnership"
+      },
+      {
+        "from": "Oil Prices",
+        "to": "Airlines",
+        "type": "cost_pressure"
+      },
+      {
+        "from": "NVIDIA",
+        "to": "6G Technology",
+        "type": "standard_setting"
       }
     ]
   },
   "newsData": [
     {
-      "title": "AI豪賭受考驗？資本支出壓力下 亞馬遜為何重挫",
-      "url": "https://news.cnyes.com/news/id/6358937",
+      "title": "〈美股盤後〉標普震盪收平 逢低買盤抵銷美伊戰事拋壓",
+      "url": "https://news.cnyes.com/news/id/6359144",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;亞馬遜 (AMZN-US) 在人工智慧 (AI) 競賽中持續重金投入，但市場對這種「燒錢式擴張」的耐心正迅速下降。受龐大資本支出壓力影響，亞馬遜股價 2 月重挫 12%，創下 2022 年 12 月以來最差單月表現，也成為所謂「美股七雄」中表現最弱的一檔。&lt;/p&gt;\n\n&lt;p&gt;儘管公司仍被視為 AI 領域的重要領先者，但華爾街開始質疑，這些投資何時才能轉化為具體回報。隨著資本支出侵蝕自由現金流，加上市場對獲利能見度轉趨保守，投資人對亞馬遜的評價出現明顯轉折。&lt;/p&gt;\n\n&lt;h6&gt;資本支出飆升 自由現金流轉負&lt;/h6&gt;\n\n&lt;p&gt;亞馬遜在 2 月初公布財報時宣布，今年將投入約 2,000 億美元擴建資料中心、晶片與相關設備，大幅提升運算能力。這一數字遠高於市場預期，也壓低了營業利益展望，掩蓋了亞馬遜雲端服務 (AWS) 三年多來最快的單季成長速度。&lt;/p&gt;\n\n&lt;p&gt;此外，公司日前宣布將向 OpenAI 投資 500 億美元；而 OpenAI 也將在既有協議下，未來八年額外向 AWS ",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;美國股市周一 (2 日) 收盤接近平盤，盤中震盪劇烈。由於周末美國與以色列對伊朗發動空襲，股市早盤一度下跌，但隨著投資人逢低買進，盤中多次反彈。&lt;/p&gt;\n\n&lt;p&gt;幾項主要因素推動市場回升：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;美國油價自盤中高點回落，緩解了市場對戰爭可能衝擊美國經濟的憂慮。&lt;/li&gt;\n&lt;li&gt;投資人大舉買進本輪牛市的科技龍頭股，例如輝達 (Nvidia)(NVDA-US) 與微軟(Microsoft)(NVDA-US)，這些現金充裕的公司被認為較能抵禦戰爭帶來的衝擊。&lt;/li&gt;\n&lt;li&gt;歷史經驗顯示，股市往往能逐步消化過往的地緣政治衝突。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;美國與以色列周末對伊朗發動攻擊，擊斃伊朗最高領袖，震撼全球市場。油價飆升，多數海外股市收低。&lt;/p&gt;\n\n&lt;p&gt;然而，在早盤拋售後，美國投資人進場逢低承接，顯示市場普遍預期此次衝突帶來的干擾將有限。&lt;/p&gt;\n\n&lt;p",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "美伊開火最緊張的其實是中國？一條海峽牽動北京戰略算盤",
-      "url": "https://news.cnyes.com/news/id/6359100",
+      "title": "盤中速報 - 怪獸飲料(MNST-US)大跌5.01%，報81.03美元",
+      "url": "https://news.cnyes.com/news/id/6359155",
       "source": "鉅亨網(wd_stock)",
       "category": "地緣政治",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國與以色列對伊朗發動空襲，引發外界從軍事升級風險、核威懾理論與中東地緣政治角度熱烈討論。然而，真正深遠的戰略影響，可能不只發生在中東，而是延伸至亞洲。短期內面臨最直接經濟與戰略考驗的國家，或許是高度依賴全球能源流動的中國。&lt;/p&gt;\n\n&lt;p&gt;中國是全球最大原油進口國，且相當比例原油需經由荷莫茲海峽運輸。即便航道未完全封鎖，只要市場認為該水道可能成為「爭議水域」，保險成本上升、油輪改道與市場預期心理，都足以在實際供應中斷前推升油價。對仍在修復內需與工業動能的中國而言，油價上漲將迅速轉化為製造成本與經濟壓力。&lt;/p&gt;\n\n&lt;h6&gt;短期衝擊：能源依賴暴露風險&lt;/h6&gt;\n\n&lt;p&gt;中國對伊朗與委內瑞拉等受制裁國家的折價原油採購，長期為其帶來成本優勢，但同時也讓部分能源安全與政治風險綁定。若伊朗出口持續受干擾，中國煉油商將被迫在本已緊繃的市場中競逐替代供應。從短期來看，中東動盪帶來的並非戰略紅利，而是真實的經濟壓力。&lt;/p&gt;\n\n&lt;p&gt;此外，美國在短時間內對中國兩個重要石油夥伴採取軍事行動",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;怪獸飲料(MNST-US)截至台北時間03日04:59股價下跌4.27美元，報81.03美元，跌幅5.01%，成交量5,679,773（股），盤中最高價85.10美元、最低價81.02美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.15%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.04%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;怪獸飲料(MNST-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.84%&lt;/li&gt;    &lt;li&gt;近 1 月：+5.62%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.31%",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "中東戰事+關稅雙壓！美國與歐洲鋁供應警報響起",
-      "url": "https://news.cnyes.com/news/id/6359099",
+      "title": "盤中速報 - 雷神科技(RTX-US)大漲5.02%，報212.8美元",
+      "url": "https://news.cnyes.com/news/id/6359152",
       "source": "鉅亨網(wd_stock)",
-      "category": "科技巨頭財報",
+      "category": "半導體",
       "thumbnail": null,
-      "content": "&lt;p&gt;《路透》周一 (2 日) 報導，美國總統川普對伊朗動武，引發外界憂心中東鋁材出口恐長期受阻，對高度仰賴該地區供應的歐洲與美國消費者衝擊尤深。市場人士指出，若衝突持續並波及荷莫茲海峽 (Strait of Hormuz) 這條關鍵航道，鋁價與實體升水恐同步攀升。&lt;/p&gt;\n\n&lt;p&gt;美國與以色列上周六攻擊伊朗，伊朗隨後對美軍基地發動攻擊，升高市場對航運安全的疑慮。法國巴黎銀行 (BNP Paribas) 大宗商品策略師 David Wilson 表示，阿拉伯灣地區鋁冶煉產能約 700 萬公噸，占全球產能約 8%。若該區出貨持續受干擾，對鋁市價格與實體升水的影響將相當顯著，尤其是歐洲市場。&lt;/p&gt;\n\n&lt;p&gt;分析師指出，中東地區約 75% 的鋁產量用於出口。根據 Trade Data Monitor 資料，歐洲去年自中東與埃及進口約 130 萬公噸原鋁與合金鋁，占其總進口量約 21%；美國自中東進口的原鋁與合金鋁約 340 萬公噸，占比近 22%。&lt;/p&gt;\n\n&lt;p&gt;價格方面，倫敦金屬交易所 (LME) 鋁價",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;雷神科技(RTX-US)截至台北時間03日04:57股價上漲10.18美元，報212.80美元，漲幅5.02%，成交量10,083,554（股），盤中最高價212.80美元、最低價208.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.15%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.04%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.46%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.52%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;雷神科技(RTX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.12%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.84%&lt;/li&gt;    &lt;li&gt;近 3 月：+20.",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     },
     {
-      "title": "MWC 2026遭中東戰火攪局！參展團受困杜拜甚至被迫棄展 蘋果關閉數家當地分店",
-      "url": "https://news.cnyes.com/news/id/6358978",
-      "source": "鉅亨網(tech)",
-      "category": "大宗商品",
+      "title": "盤中速報 - 萊迪思半導體(LSCC-US)大漲5.12%，報100.52美元",
+      "url": "https://news.cnyes.com/news/id/6359149",
+      "source": "鉅亨網(wd_stock)",
+      "category": "航運物流",
       "thumbnail": null,
-      "content": "&lt;p&gt;全球最重要行動通訊盛會 MWC 大展周一 (2 日) 本應在巴塞隆納如期登場，吸引世界頂尖科技企業共襄盛舉，但伴隨中東戰雲密布，許多參展商與觀眾行程受阻。&lt;/p&gt;\n\n&lt;p&gt;由於飛往巴塞隆納的航班多經杜拜、多哈等樞紐轉機，但隨著當地領空關閉，大量人員被迫滯留。&lt;/p&gt;\n\n&lt;p&gt;《VisaHQ》周日 (1 日) 引述大會主辦方 GSMA 消息報導指出，受卡達航空、阿聯酋航空等取消或改道影響，來自東南亞、澳洲和南非的多個參展團放棄赴會，旅遊管理業者 CWT 更預估近萬名與會者將延遲 24 小時抵達。不少打算參展的人員也紛紛在社群平台上發文訴苦。&lt;/p&gt;\n\n&lt;p&gt;美伊衝突不僅打亂國際交流，更直接衝擊跨國科技企業的在地運作。蘋果宣布暫時關閉阿拉伯聯合大公國境內全部五家 Apple Store，包括杜拜兩家、阿布達比三家，恢復時間視局勢而定。&lt;/p&gt;\n\n&lt;p&gt;中國電商美團旗下海外外送品牌 Keeta 表示，必要時將暫停部分區域服務，百度蘿蔔快跑也已中止阿聯酋境內的無人駕駛測試與營運。同",
-      "timeStr": "上午04:00",
+      "content": "&lt;p&gt;萊迪思半導體(LSCC-US)截至台北時間03日04:52股價上漲4.9美元，報100.52美元，漲幅5.12%，成交量1,490,723（股），盤中最高價100.52美元、最低價92.33美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.1%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.12%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.44%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;萊迪思半導體(LSCC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.19%&lt;/li&gt;    &lt;li&gt;近 1 月：+18.75%&lt;/li&gt;    &lt;li&gt;近 3 月：+3",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "盤中速報 - 格羅方德(GFS-US)大漲5.01%，報49.93美元",
+      "url": "https://news.cnyes.com/news/id/6359148",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;格羅方德(GFS-US)截至台北時間03日04:52股價上漲2.38美元，報49.93美元，漲幅5.01%，成交量2,976,659（股），盤中最高價49.95美元、最低價46.02美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.13%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.07%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.31%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.47%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;格羅方德(GFS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.94%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.68%&lt;/li&gt;    &lt;li&gt;近 3 月：+32.53%&",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "輝達強攻6G！結盟諾基亞、軟銀  打造AI時代電信新標準",
+      "url": "https://news.cnyes.com/news/id/6357054",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;人工智慧（AI）晶片龍頭輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NVDA-US&lt;/a&gt;) 正積極布局下一代通訊技術，力圖確保即將到來的第六代行動通訊技術（6G）行動網路，能成為 AI 服務與裝置發展的關鍵平台。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，輝達正與多家電信企業合作，包括諾基亞 (&lt;a data-symbol-template=&quot;USS:NOK:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NOK-US&lt;/a&gt;) 、軟銀以及 T-Mobile(&lt;a data-symbol-template=&quot;USS:TMUS:STOCK:COMMON&quot; href=&quot;#&quot;&gt;TMUS-US&lt;/a&gt;) ，共同承諾打造以電腦與軟體為基礎的 6G 行動網路，並透過 AI 技術，更安全且高效地管理無",
+      "timeStr": "上午06:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "中東局勢擾動貨櫃運輸市場 部分航商暫停中東航線接貨",
+      "url": "https://news.cnyes.com/news/id/6358983",
+      "source": "鉅亨網(wd_stock)",
+      "category": "其他",
+      "thumbnail": null,
+      "content": "&lt;p&gt;「我們這邊中東航線已經暫停報價了，歐洲航線與前幾天相比略有上漲。」一名海運貨代人士說。&lt;/p&gt;\n\n&lt;p&gt;據《財聯社》周一（2 日）報導，受中東局勢動盪影響，航運市場亂了。荷姆茲海峽遭「封喉」，油運市場風險溢價推高。&lt;/p&gt;\n\n&lt;p&gt;貨櫃運輸市場方面亦受影響，中東航線部分停擺，部分航商抬升運價；有貨代稱，歐地線乃至非洲航線運價預計將上漲。&lt;/p&gt;\n\n&lt;p&gt;「地緣風險抬升帶動中東航線運價上行，後續出貨節奏仍需關注衝突進展。」中信期貨首席分析師武嘉璐表示。&lt;/p&gt;\n\n&lt;p&gt;數字化國際物流服務商運去哪物流科技集團說，中東航線多數航商選擇暫停接貨，仍有一些航商繼續接貨，但宣布大幅漲價或徵收高額附加費，運價飆升至 6,000 美元 / FEU 左右。&lt;/p&gt;\n\n&lt;p&gt;這將顯著增加物流成本，導致貨主對是否出貨持觀望態度。即便貨主出貨，也需承擔相應高風險。「此外，還有部分航商尚未表態，持觀望態度。仍需關注風險是否進一步升級。」&lt;/p&gt;\n\n&lt;p&gt",
+      "timeStr": "上午06:00",
       "relatedArticles": []
     }
   ],
@@ -199,128 +236,64 @@
   ],
   "events": [
     {
-      "title": "AI 燒錢模式遭遇估值校準",
-      "summary": "亞馬遜預計 2026 年自由現金流轉負，市場對 AI 資本回報率 (ROIC) 失去耐心，引發科技巨頭估值下修。",
+      "title": "中東「封喉」危機與物流通膨",
+      "summary": "荷姆茲海峽受阻導致航運巨頭暫停報價，附加費激增，預期推升全球終端成本。",
       "impact": "負面",
       "related_news_ids": [
-        0
+        0,
+        6
       ]
     },
     {
-      "title": "中東航道危機與鋁供應風暴",
-      "summary": "美伊開火推升鋁價與能源成本，荷莫茲海峽受威脅導致歐洲與美國面臨實體鋁升水壓力。",
-      "impact": "負面",
+      "title": "NVIDIA 佈局 6G AI 通訊標準",
+      "summary": "輝達聯手電信巨頭將 AI 整合進行動網路架構，開闢半導體應用新藍海。",
+      "impact": "正面",
       "related_news_ids": [
-        1,
-        2
+        5
       ]
     },
     {
-      "title": "全球科技物流與商務中斷",
-      "summary": "中東領空關閉重創 MWC 參展與跨國科技運作，蘋果關店與物流延遲增加營運成本。",
-      "impact": "負面",
+      "title": "避險資金流入國防與大市值科技",
+      "summary": "投資人採取「戰時配置」，拋售旅遊股並轉向防護性強的國防與高現金流科技股。",
+      "impact": "正面",
       "related_news_ids": [
-        3
+        0,
+        2,
+        4
       ]
     }
   ],
   "relations": [
     {
-      "from": "Amazon",
-      "to": "OpenAI",
-      "type": "投資與雲端供應合約"
+      "from": "Middle East Conflict",
+      "to": "Oil Prices",
+      "type": "positive_correlation"
     },
     {
-      "from": "中東衝突",
-      "to": "中國能源安全",
-      "type": "供應鏈風險推升"
-    },
-    {
-      "from": "川普政策",
-      "to": "鋁業市場",
-      "type": "關稅成本轉嫁"
-    },
-    {
-      "from": "中東局勢",
-      "to": "小米",
-      "type": "物流與交付延遲"
+      "from": "Hormuz Strait Blockage",
+      "to": "Freight Rates",
+      "type": "supply_chain_disruption"
     },
     {
       "from": "NVIDIA",
-      "to": "Amazon",
-      "type": "資本支出受益者與成本負擔"
+      "to": "Nokia",
+      "type": "strategic_partnership"
+    },
+    {
+      "from": "Oil Prices",
+      "to": "Airlines",
+      "type": "cost_pressure"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "6G Technology",
+      "type": "standard_setting"
     }
   ],
   "keywords7d": [
     {
-      "word": "AI",
-      "count": 426,
-      "articles": [
-        {
-          "title": "AI支出令市場心慌 亞馬遜擬花120億美元建資料中心 股價應聲挫逾2% 月跌逾14%",
-          "url": "https://news.cnyes.com/news/id/6349964",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國電商與雲端巨頭 Amazon.com(亞馬遜)(AMZN-US) 周一 (23 日) 股價收跌 2.3%，此前公司宣布將在美國南部推動大規模基礎建設計畫，擬投資 120 億美元在路易斯安那州西北部建立首批資料中心園區，以強化其雲端運算與人工智慧布局。&lt;/p&gt;\n\n&lt;p&gt;該計畫將落腳於卡多郡與博西爾郡，預計創造 540 個全職直接就業機會，並帶動超過 1,700 個相關職位。儘管投資規模龐大、對地方經濟帶來顯著效益，但市場對於資本支出快速攀升仍存疑慮。過去一個月，亞馬遜股價已累計下跌 14.3%，反映投資人對 AI 相關資本開支過於積極的擔憂。&lt;/p&gt;\n\n&lt;p&gt;亞馬遜全球事務與法務長 David Zapolsky 表示，「亞馬遜對路易斯安那州西北部的 120 億美元投資，將建設支援 AI 與雲端運算的下一代資料中心園區，為當地社區帶來機會。」公司同時承諾，將出資 4 億美元改善公共供水基礎設施，並自行負擔 100% 的公用事業升級成本，以減輕對地方資源的壓力。&lt;/p&gt;\n\n&lt;p&gt;為深化與社區關係，這家總部位於西雅圖的企業亦將設立 25 萬美元的社區基金，由非營利組織 ChangeX 管理，資金將用於推動 STEM 教育及地方環境專案，確保大型工業設施為什里夫波特地區居民帶來實質利益。&lt;/p&gt;\n\n&lt;p&gt;路易斯安那州州長 Jeff Landry 表示，「亞馬遜之所以做出長期承諾，是因為本州具備優質選址、完善基礎建設與勤奮且具技能的勞動力，能支撐下一代科技創新。」州政府預期，該資料中心園區將為學校及關鍵公共服務帶來數以千萬美元計的稅收。&lt;/p&gt;\n\n&lt;p&gt;此次擴張建立在亞馬遜既有的路易斯安那布局之上，目前公司已在當地設有四座物流中心與多項太陽能計畫。儘管地方政府視此為具轉型意義的投資，華爾街仍密切關注，龐大的數位基礎建設支出是否能在短期內轉化為股東回報，成為後續股價走勢的關鍵變數。&lt;/p&gt;\n"
-        },
-        {
-          "title": "反烏托邦AI報告震撼華爾街 支付與軟體股全面承壓",
-          "url": "https://news.cnyes.com/news/id/6349932",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;獨立研究機構 Citrini Research 日前發布情境推演，假設 AI 在 2028 年引發大規模白領裁員、資產管理產業被顛覆並侵蝕稅基，引發市場高度關注，這一篇描繪人工智慧 (AI) 可能重塑經濟版圖的網路文章，意外在市場投下震撼彈，拖累支付與軟體族群週一 (23 日) 全面走弱。&lt;/p&gt;\n\n&lt;p&gt;Citrini Research 發布一份探討 AI 快速發展潛在風險的反烏托邦情境分析，報告設定的情境並非 AI 發展失敗，反而是假設技術進展超出預期，而標普 500 指數 (SPX) 仍可能重挫 38%。&lt;/p&gt;\n\n&lt;p&gt;該報告以 2028 年 6 月為假想時間點，描述 AI 能力快速躍進後，可能引發大規模白領工作流失，並稱之為「全球智慧危機」，並用以檢視 AI 若持續高速擴散，經濟可能面臨的結構性壓力。&lt;/p&gt;\n\n&lt;p&gt;報告推演，自 2025 年底起，代理式程式開發工具將使開發者能在數週內複製中型軟體即服務&nbsp;(SaaS) 產品，進一步壓縮企業軟體定價與續約動能。情境中並假設，ServiceNow 到 2026 年第三季新增 ACV 成長率將由 23% 降至 14%，同時公司將裁員約 15%。&lt;/p&gt;\n\n&lt;p&gt;在消費端，報告認為 AI 代理可持續最佳化購物、旅遊與保險續約決策，進而削弱依賴資訊摩擦的商業模式。其中 DoorDash 被點名為潛在受衝擊較大的平台之一，因 AI 跨平台比價可能瓦解用戶對單一 App 的慣性忠誠。&lt;/p&gt;\n\n&lt;p&gt;該情境進一步假設，到 2028 年 6 月美國失業率可能升至 10.2%，且白領失業將集中於高消費族群，進而對總體需求形成連鎖壓力。報告同時示警，私募信貸市場與私募股權支持的軟體交易可能面臨評價與違約風險，甚至對房貸承作假設構成挑戰。&lt;/p&gt;\n\n&lt;p&gt;儘管不少市場觀察人士與科技業人士認為該文過於悲觀、不切實際，但相關討論迅速在投資圈擴散。&lt;/p&gt;\n\n&lt;p&gt;週一報告點名的多檔個股普遍走弱。其中 DoorDash (DASH-US) 跌幅最深，單日下跌 6.60%，Uber Technologies (UBER-US) 也下跌 4.28%。報告認為，未來競爭對手可利用 AI 程式代理快速推出外送服務，司機透過多平台工具挑單，消費者則由 AI 代理全面比價，將削弱平台品牌黏著度並壓縮利潤空間。&lt;/p&gt;\n\n&lt;p&gt;DoorDash 共同創辦人暨前技術長 Andy Fang 在社群媒體回應表示，代理式商務確實可能為產業帶來轉型，公司也必須持續調整策略，打造對 AI 代理具吸引力的生態系。&lt;/p&gt;\n\n&lt;p&gt;金融支付族群同樣承壓。Citrini 推演指出，若白領就業收縮，American Express (AXP-US) 可能面臨客戶流失與刷卡量下滑，該股週一下跌 7.20%。同時，若 AI 代理在電商交易中尋找更低成本方案，穩定幣可能分流傳統卡片支付。Capital One Financial (COF-US) 下跌 8.84%，Visa (V-US) 下跌 4.53%，Mastercard (MA-US) 下跌 5.77%。&lt;/p&gt;\n\n&lt;p&gt;另類資產管理業者亦出現賣壓。KKR (KKR-US) 慘崩&nbsp;8.89%，Blackstone (BX-US) 下跌 6.23%，Apollo Global Management (APO-US) 急跌 5.00%。報告認為，這些機構透過私募信貸基金持有大量軟體公司部位，若 AI 衝擊產業結構，可能面臨評價壓力。&lt;/p&gt;\n\n&lt;p&gt;瑞穗證券股票交易董事總經理 Daniel O&rsquo;Regan 表示，該報告更像思想實驗而非預測，但發布時機敏感。他指出，市場目前已對 AI 的第二層影響感到不安，而報告提出「若 AI 表現優於預期，副作用可能更劇烈」的論點，足以動搖投資人信心。&lt;/p&gt;\n\n&lt;p&gt;美股週一走弱未必全由該報告引發，關稅不確定性同樣壓抑情緒。不過，市場對 AI 潛在副作用的焦慮持續升溫，最新反應顯示，即便只是一篇假設性文章，也足以引發股價波動。&lt;/p&gt;\n"
-        },
-        {
-          "title": "CrowdStrike重挫近10%資安股嚇跌 Anthropic推AI安全工具引疑慮",
-          "url": "https://news.cnyes.com/news/id/6349920",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《路透》報導，CrowdStrike(CRWD-US) 與 Datadog(DDOG-US) 等多家資安公司股價周一 (23 日) 重挫，投資人持續評估 AI 新創 Anthropic 推出新安全工具對產業的潛在影響。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 推出的新功能 Claude Code Security，旨在偵測開源軟體程式庫中的高嚴重性漏洞，並提供修補程式以修復錯誤。&lt;/p&gt;\n\n&lt;p&gt;CrowdStrike 股價重挫 9.8%、Datadog 大跌逾 11%，Zscaler(ZS-US) 跌逾 10%，Fortinet(FTNT-US) 跌幅 5.5%，Okta(OKTA-US) 跌約 6%，Palo Alto Networks(PANW-US) 下跌 3%，SentinelOne(S-US) 則下跌 4.6%。&lt;/p&gt;\n\n&lt;p&gt;近幾個月來，隨著市場憂心 AI 工具能力日益提升，軟體股普遍承壓，尤其是在 Anthropic 為其大型語言模型 Claude 推出外掛功能後，市場視此為該新創邁向「應用層」的重要一步。&lt;/p&gt;\n\n&lt;p&gt;Robert W. Baird 資安與基礎設施分析師 Shrenik Kothari 表示，「我們今天看到的，其實是由恐慌情緒與敘事主導的拋售潮延續。」&lt;/p&gt;\n\n&lt;p&gt;Kothari 指出，Claude Code Security 並不具備即時資安防護功能，例如偵測正在發生的入侵、阻止進行中的攻擊，或管理生產環境中已編譯的軟體元件，這些能力仍由其他專業資安平台提供。&lt;/p&gt;\n\n&lt;p&gt;一些分析師認為，這波拋售反應過度，主要源自一種過於簡化的敘事：即 AI 將使現有資安解決方案失去必要性。&lt;/p&gt;\n\n&lt;p&gt;另一方面，AI 晶片設計商輝達 (Nvidia)(NVDA-US) 周一表示，已與 Akamai(AKAM-US)、Forescout、Palo Alto Networks、Xage Security 及西門子 (Siemens)(SIEGY-US) 合作，以強化工業控制系統的即時資安能力。&lt;/p&gt;\n"
-        },
-        {
-          "title": "體壇》大人、小孩放年假 AI體適能系統發現規律感、體能顯著流失",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5349157",
-          "source": "自由時報",
-          "content": "\n\n\n春節假期結束，上班族回到工作崗位，幼兒更需要調適生理健康狀態，因為生理與心智仍處於快速發展階段的幼兒而言，這段時間生活節奏的劇烈變動，往往隱藏著不易察覺的發展退化危機。\n...…"
-        },
-        {
-          "title": "美股收盤》關稅與AI夾擊、道瓊大跌逾800點  台積電ADR微跌0.16％",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349165",
-          "source": "自由時報",
-          "content": "\n\n\n投資人擔憂美國關稅措施帶來的不確定性，以及人工智慧（AI）衝擊疑慮，華爾街股市主要指數23日全面收低，其中道瓊工業指數重挫800多點。\n\n\n綜合媒體報導，投資人持續擔憂AI...…"
-        },
-        {
-          "title": "蒸發8300億美元的啟示：AI越熱軟體股越慘，SaaS業如何重建價值護城河？",
-          "url": "https://www.thenewslens.com/article/264938",
-          "source": "關鍵評論網",
-          "content": "AI Agent正侵蝕SaaS按席位計價之基礎，削弱其營收可見性。未來估值取決於能否轉向價值交付，例如將AI整合進工作流程、或與基礎設施綁定長約，以重建商業護城河。"
-        },
-        {
-          "title": "【科技早餐】OpenAI 把 1.4 兆改成 6000 億：AI 算力競賽進入效率時代",
-          "url": "https://techorange.com/2026/02/24/openai-reset-spend-expectation-target-to-600-billion/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊OpenAI 下修 2030 算力目標至 6000 億美元 OpenAI 宣布，將 2030 年累計算力支出目標由原先提及的 1.4 兆美元調整為 6000 億美元，降幅約 57%。公司說明，原數字涵蓋未來八年所有基礎設施投入，新目標僅針對 2030 年前算力部分，統計口徑不同。2025 年全年收入達 131 億美元，超過原訂 100 億美元目標，資金消耗 80 億美元低於預期，ChatGPT 週活躍用戶突破 9 億。 OpenAI 預估 2030 年總收入將突破 2800 億美元，企業端與消費端業務貢獻大致持平。公司指出，透過模型壓縮與混合算力架構，單位算力效率提升逾 30%，算力規劃與收入預期開始對齊，投入與回報的關係更加明確。 ＊「星際之門」進展停滯，OpenAI 啟動多線算力布局 原定總額上看 5000 億美元的「星際之門」（Stargate）資料中心計畫，近期被外媒指出進展停滯。該計畫由軟銀 (SoftBank)、甲骨文（Oracle）與 MGX 支持，但團隊尚未到位，選址與能源整合細節傳出分歧，原本預期快速啟動的 1000 億美元初始部署仍停留在規劃階段。 面對算力需求擴張，OpenAI 已與甲骨文簽署每年逾 300 億美元協議，取得 4.5 吉瓦資料中心容量，並深化與 CoreWeave 合作，同時探索以 [&hellip;]</p>\n"
-        },
-        {
-          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
-          "url": "https://news.cnyes.com/news/id/6349922",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
-        },
-        {
-          "title": "AI取代疑慮與關稅變數夾擊 美股重挫 道瓊跌1.66%",
-          "url": "https://news.cnyes.com/news/id/6350017",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350017/o/7f50a83b2e64fd3b0d20971672726fd8.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p data-start=&quot;29&quot; data-end=&quot;114&quot;&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 受人工智慧（AI）產業衝擊疑慮與關稅政策不確定性雙重影響，美股週一全面走低，三大指數跌幅均超過1%，市場風險情緒明顯降溫。&lt;/p&gt;\n&lt;p data-start=&quot;116&quot; data-end=&quot;204&quot;&gt;道瓊工業指數下跌821.91點，跌幅1.66%，收在48,804.06點；標普500指數下滑1.04%至6,837.75點；那斯達克指數下跌1.13%，收22,627.27點。&lt;/p&gt;\n&lt;h2 data-start=&quot;206&quot; data-end=&quot;223&quot;&gt;AI衝擊疑慮升溫 軟體與金融股領跌&lt;/h2&gt;\n&lt;p data-start=&quot;225&quot; data-end=&quot;299&quot;&gt;盤面賣壓集中在金融與科技族群。標普500金融類股重挫3.3%，軟體相關企業下跌4.3%，反映市場對AI技術可能帶來商業模式重塑與成本結構改變的擔憂。&lt;/p&gt;\n&lt;p data-start=&quot;301&quot; data-end=&quot;402&quot;&gt;U.S. Bank Wealth Management投資策略分析師Tom Hainlin指出，市場對AI的疑問主要集中在兩個層面：成本究竟多高？哪些產業將被顛覆？在答案未明前，投資人傾向「先賣再說」。&lt;/p&gt;\n&lt;p data-start=&quot;404&quot; data-end=&quot;439&quot;&gt;他表示，目前市場反應更多基於「可能發生的情境」，而非已發生的實際數據。&lt;/p&gt;\n&lt;h2 data-start=&quot;441&quot; data-end=&quot;454&quot;&gt;關稅政策反覆 加劇市場不安&lt;/h2&gt;\n&lt;p data-start=&quot;456&quot; data-end=&quot;540&quot;&gt;另一方面，美國最高法院上週以6比3裁定現任總統川普在緊急經濟法下推動對等關稅逾越職權。川普隨後表示將對所有進口商品課徵15%臨時關稅，即便部分國家已與美國達成貿易協議。&lt;/p&gt;\n&lt;p data-start=&quot;542&quot; data-end=&quot;570&quot;&gt;政策反覆令市場對貿易環境穩定性產生疑慮，進一步推高波動。&lt;/p&gt;\n&lt;h2 data-start=&quot;572&quot; data-end=&quot;587&quot;&gt;避險情緒升溫 金價大漲2.6%&lt;/h2&gt;\n&lt;p data-start=&quot;589&quot; data-end=&quot;625&quot;&gt;資金流向顯示明顯避險傾向。黃金價格大漲2.6%，反映投資人降低風險部位。&lt;/p&gt;\n&lt;p data-start=&quot;627&quot; data-end=&quot;683&quot;&gt;Hainlin指出，當中東地緣政治風險、關稅不確定性與AI產業衝擊同時疊加時，投資人自然會重新評估整體風險水準。&lt;/p&gt;\n&lt;h2 data-start=&quot;685&quot; data-end=&quot;699&quot;&gt;暴風雪衝擊 航空與旅遊股走弱&lt;/h2&gt;\n&lt;p data-start=&quot;701&quot; data-end=&quot;784&quot;&gt;此外，美國東北部遭遇強烈冬季風暴，多地降雪超過15英寸。紐約地區機場約89%至98%航班取消，航空與旅遊休閒類股分別下跌3.8%與3.7%，道瓊運輸指數下滑2.9%。&lt;/p&gt;\n&lt;h2 data-start=&quot;786&quot; data-end=&quot;800&quot;&gt;財報季近尾聲 輝達成關鍵變數&lt;/h2&gt;\n&lt;p data-start=&quot;802&quot; data-end=&quot;892&quot;&gt;目前標普500成分股僅剩77家公司尚未公布財報。根據LSEG數據，已公布企業中有73%優於預期，市場目前預估標普500企業整體獲利年增率為13.9%，高於1月1日時預測的8.9%。&lt;/p&gt;\n&lt;p data-start=&quot;894&quot; data-end=&quot;990&quot;&gt;本週市場焦點將落在Nvidia(NVDA-US)財報。由於其為AI晶片龍頭，且在標普500指數中權重接近8%，財報結果可能牽動科技股與整體市場情緒。&lt;/p&gt;\n&lt;p data-start=&quot;992&quot; data-end=&quot;1152&quot;&gt;其他重點企業包括Home Depot(HD-US)、Lowe&amp;#039;s(LOW-US)、Salesforce(CRM-US)與Universal Health Services(UHS-US)。&lt;/p&gt;\n&lt;p data-start=&quot;1154&quot; d"
-        },
-        {
-          "title": "能源即算力》當首批耗電量達 1GW 資料中心問世！電力基礎建設化身 AI 新金礦概念股",
-          "url": "https://finance.technews.tw/2026/02/24/1gw-ai-data-center/",
-          "source": "TechNews",
-          "content": "當 AI 競賽進入白熱化，科技巨頭驚覺「決勝關鍵不僅是 GPU 數量，而是穩定的電力供應」，能源即算力已成為全 [&#8230;]"
-        }
-      ]
-    },
-    {
       "word": "伊朗",
-      "count": 425,
+      "count": 428,
       "articles": [
         {
           "title": "美國與伊朗將恢復談判　國際油價小跌",
@@ -385,8 +358,74 @@
       ]
     },
     {
+      "word": "AI",
+      "count": 427,
+      "articles": [
+        {
+          "title": "AI支出令市場心慌 亞馬遜擬花120億美元建資料中心 股價應聲挫逾2% 月跌逾14%",
+          "url": "https://news.cnyes.com/news/id/6349964",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國電商與雲端巨頭 Amazon.com(亞馬遜)(AMZN-US) 周一 (23 日) 股價收跌 2.3%，此前公司宣布將在美國南部推動大規模基礎建設計畫，擬投資 120 億美元在路易斯安那州西北部建立首批資料中心園區，以強化其雲端運算與人工智慧布局。&lt;/p&gt;\n\n&lt;p&gt;該計畫將落腳於卡多郡與博西爾郡，預計創造 540 個全職直接就業機會，並帶動超過 1,700 個相關職位。儘管投資規模龐大、對地方經濟帶來顯著效益，但市場對於資本支出快速攀升仍存疑慮。過去一個月，亞馬遜股價已累計下跌 14.3%，反映投資人對 AI 相關資本開支過於積極的擔憂。&lt;/p&gt;\n\n&lt;p&gt;亞馬遜全球事務與法務長 David Zapolsky 表示，「亞馬遜對路易斯安那州西北部的 120 億美元投資，將建設支援 AI 與雲端運算的下一代資料中心園區，為當地社區帶來機會。」公司同時承諾，將出資 4 億美元改善公共供水基礎設施，並自行負擔 100% 的公用事業升級成本，以減輕對地方資源的壓力。&lt;/p&gt;\n\n&lt;p&gt;為深化與社區關係，這家總部位於西雅圖的企業亦將設立 25 萬美元的社區基金，由非營利組織 ChangeX 管理，資金將用於推動 STEM 教育及地方環境專案，確保大型工業設施為什里夫波特地區居民帶來實質利益。&lt;/p&gt;\n\n&lt;p&gt;路易斯安那州州長 Jeff Landry 表示，「亞馬遜之所以做出長期承諾，是因為本州具備優質選址、完善基礎建設與勤奮且具技能的勞動力，能支撐下一代科技創新。」州政府預期，該資料中心園區將為學校及關鍵公共服務帶來數以千萬美元計的稅收。&lt;/p&gt;\n\n&lt;p&gt;此次擴張建立在亞馬遜既有的路易斯安那布局之上，目前公司已在當地設有四座物流中心與多項太陽能計畫。儘管地方政府視此為具轉型意義的投資，華爾街仍密切關注，龐大的數位基礎建設支出是否能在短期內轉化為股東回報，成為後續股價走勢的關鍵變數。&lt;/p&gt;\n"
+        },
+        {
+          "title": "反烏托邦AI報告震撼華爾街 支付與軟體股全面承壓",
+          "url": "https://news.cnyes.com/news/id/6349932",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;獨立研究機構 Citrini Research 日前發布情境推演，假設 AI 在 2028 年引發大規模白領裁員、資產管理產業被顛覆並侵蝕稅基，引發市場高度關注，這一篇描繪人工智慧 (AI) 可能重塑經濟版圖的網路文章，意外在市場投下震撼彈，拖累支付與軟體族群週一 (23 日) 全面走弱。&lt;/p&gt;\n\n&lt;p&gt;Citrini Research 發布一份探討 AI 快速發展潛在風險的反烏托邦情境分析，報告設定的情境並非 AI 發展失敗，反而是假設技術進展超出預期，而標普 500 指數 (SPX) 仍可能重挫 38%。&lt;/p&gt;\n\n&lt;p&gt;該報告以 2028 年 6 月為假想時間點，描述 AI 能力快速躍進後，可能引發大規模白領工作流失，並稱之為「全球智慧危機」，並用以檢視 AI 若持續高速擴散，經濟可能面臨的結構性壓力。&lt;/p&gt;\n\n&lt;p&gt;報告推演，自 2025 年底起，代理式程式開發工具將使開發者能在數週內複製中型軟體即服務&nbsp;(SaaS) 產品，進一步壓縮企業軟體定價與續約動能。情境中並假設，ServiceNow 到 2026 年第三季新增 ACV 成長率將由 23% 降至 14%，同時公司將裁員約 15%。&lt;/p&gt;\n\n&lt;p&gt;在消費端，報告認為 AI 代理可持續最佳化購物、旅遊與保險續約決策，進而削弱依賴資訊摩擦的商業模式。其中 DoorDash 被點名為潛在受衝擊較大的平台之一，因 AI 跨平台比價可能瓦解用戶對單一 App 的慣性忠誠。&lt;/p&gt;\n\n&lt;p&gt;該情境進一步假設，到 2028 年 6 月美國失業率可能升至 10.2%，且白領失業將集中於高消費族群，進而對總體需求形成連鎖壓力。報告同時示警，私募信貸市場與私募股權支持的軟體交易可能面臨評價與違約風險，甚至對房貸承作假設構成挑戰。&lt;/p&gt;\n\n&lt;p&gt;儘管不少市場觀察人士與科技業人士認為該文過於悲觀、不切實際，但相關討論迅速在投資圈擴散。&lt;/p&gt;\n\n&lt;p&gt;週一報告點名的多檔個股普遍走弱。其中 DoorDash (DASH-US) 跌幅最深，單日下跌 6.60%，Uber Technologies (UBER-US) 也下跌 4.28%。報告認為，未來競爭對手可利用 AI 程式代理快速推出外送服務，司機透過多平台工具挑單，消費者則由 AI 代理全面比價，將削弱平台品牌黏著度並壓縮利潤空間。&lt;/p&gt;\n\n&lt;p&gt;DoorDash 共同創辦人暨前技術長 Andy Fang 在社群媒體回應表示，代理式商務確實可能為產業帶來轉型，公司也必須持續調整策略，打造對 AI 代理具吸引力的生態系。&lt;/p&gt;\n\n&lt;p&gt;金融支付族群同樣承壓。Citrini 推演指出，若白領就業收縮，American Express (AXP-US) 可能面臨客戶流失與刷卡量下滑，該股週一下跌 7.20%。同時，若 AI 代理在電商交易中尋找更低成本方案，穩定幣可能分流傳統卡片支付。Capital One Financial (COF-US) 下跌 8.84%，Visa (V-US) 下跌 4.53%，Mastercard (MA-US) 下跌 5.77%。&lt;/p&gt;\n\n&lt;p&gt;另類資產管理業者亦出現賣壓。KKR (KKR-US) 慘崩&nbsp;8.89%，Blackstone (BX-US) 下跌 6.23%，Apollo Global Management (APO-US) 急跌 5.00%。報告認為，這些機構透過私募信貸基金持有大量軟體公司部位，若 AI 衝擊產業結構，可能面臨評價壓力。&lt;/p&gt;\n\n&lt;p&gt;瑞穗證券股票交易董事總經理 Daniel O&rsquo;Regan 表示，該報告更像思想實驗而非預測，但發布時機敏感。他指出，市場目前已對 AI 的第二層影響感到不安，而報告提出「若 AI 表現優於預期，副作用可能更劇烈」的論點，足以動搖投資人信心。&lt;/p&gt;\n\n&lt;p&gt;美股週一走弱未必全由該報告引發，關稅不確定性同樣壓抑情緒。不過，市場對 AI 潛在副作用的焦慮持續升溫，最新反應顯示，即便只是一篇假設性文章，也足以引發股價波動。&lt;/p&gt;\n"
+        },
+        {
+          "title": "CrowdStrike重挫近10%資安股嚇跌 Anthropic推AI安全工具引疑慮",
+          "url": "https://news.cnyes.com/news/id/6349920",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《路透》報導，CrowdStrike(CRWD-US) 與 Datadog(DDOG-US) 等多家資安公司股價周一 (23 日) 重挫，投資人持續評估 AI 新創 Anthropic 推出新安全工具對產業的潛在影響。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 推出的新功能 Claude Code Security，旨在偵測開源軟體程式庫中的高嚴重性漏洞，並提供修補程式以修復錯誤。&lt;/p&gt;\n\n&lt;p&gt;CrowdStrike 股價重挫 9.8%、Datadog 大跌逾 11%，Zscaler(ZS-US) 跌逾 10%，Fortinet(FTNT-US) 跌幅 5.5%，Okta(OKTA-US) 跌約 6%，Palo Alto Networks(PANW-US) 下跌 3%，SentinelOne(S-US) 則下跌 4.6%。&lt;/p&gt;\n\n&lt;p&gt;近幾個月來，隨著市場憂心 AI 工具能力日益提升，軟體股普遍承壓，尤其是在 Anthropic 為其大型語言模型 Claude 推出外掛功能後，市場視此為該新創邁向「應用層」的重要一步。&lt;/p&gt;\n\n&lt;p&gt;Robert W. Baird 資安與基礎設施分析師 Shrenik Kothari 表示，「我們今天看到的，其實是由恐慌情緒與敘事主導的拋售潮延續。」&lt;/p&gt;\n\n&lt;p&gt;Kothari 指出，Claude Code Security 並不具備即時資安防護功能，例如偵測正在發生的入侵、阻止進行中的攻擊，或管理生產環境中已編譯的軟體元件，這些能力仍由其他專業資安平台提供。&lt;/p&gt;\n\n&lt;p&gt;一些分析師認為，這波拋售反應過度，主要源自一種過於簡化的敘事：即 AI 將使現有資安解決方案失去必要性。&lt;/p&gt;\n\n&lt;p&gt;另一方面，AI 晶片設計商輝達 (Nvidia)(NVDA-US) 周一表示，已與 Akamai(AKAM-US)、Forescout、Palo Alto Networks、Xage Security 及西門子 (Siemens)(SIEGY-US) 合作，以強化工業控制系統的即時資安能力。&lt;/p&gt;\n"
+        },
+        {
+          "title": "體壇》大人、小孩放年假 AI體適能系統發現規律感、體能顯著流失",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5349157",
+          "source": "自由時報",
+          "content": "\n\n\n春節假期結束，上班族回到工作崗位，幼兒更需要調適生理健康狀態，因為生理與心智仍處於快速發展階段的幼兒而言，這段時間生活節奏的劇烈變動，往往隱藏著不易察覺的發展退化危機。\n...…"
+        },
+        {
+          "title": "美股收盤》關稅與AI夾擊、道瓊大跌逾800點  台積電ADR微跌0.16％",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349165",
+          "source": "自由時報",
+          "content": "\n\n\n投資人擔憂美國關稅措施帶來的不確定性，以及人工智慧（AI）衝擊疑慮，華爾街股市主要指數23日全面收低，其中道瓊工業指數重挫800多點。\n\n\n綜合媒體報導，投資人持續擔憂AI...…"
+        },
+        {
+          "title": "蒸發8300億美元的啟示：AI越熱軟體股越慘，SaaS業如何重建價值護城河？",
+          "url": "https://www.thenewslens.com/article/264938",
+          "source": "關鍵評論網",
+          "content": "AI Agent正侵蝕SaaS按席位計價之基礎，削弱其營收可見性。未來估值取決於能否轉向價值交付，例如將AI整合進工作流程、或與基礎設施綁定長約，以重建商業護城河。"
+        },
+        {
+          "title": "【科技早餐】OpenAI 把 1.4 兆改成 6000 億：AI 算力競賽進入效率時代",
+          "url": "https://techorange.com/2026/02/24/openai-reset-spend-expectation-target-to-600-billion/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>【科技早餐】今天精選 7 則國內外重要科技新聞。 ＊OpenAI 下修 2030 算力目標至 6000 億美元 OpenAI 宣布，將 2030 年累計算力支出目標由原先提及的 1.4 兆美元調整為 6000 億美元，降幅約 57%。公司說明，原數字涵蓋未來八年所有基礎設施投入，新目標僅針對 2030 年前算力部分，統計口徑不同。2025 年全年收入達 131 億美元，超過原訂 100 億美元目標，資金消耗 80 億美元低於預期，ChatGPT 週活躍用戶突破 9 億。 OpenAI 預估 2030 年總收入將突破 2800 億美元，企業端與消費端業務貢獻大致持平。公司指出，透過模型壓縮與混合算力架構，單位算力效率提升逾 30%，算力規劃與收入預期開始對齊，投入與回報的關係更加明確。 ＊「星際之門」進展停滯，OpenAI 啟動多線算力布局 原定總額上看 5000 億美元的「星際之門」（Stargate）資料中心計畫，近期被外媒指出進展停滯。該計畫由軟銀 (SoftBank)、甲骨文（Oracle）與 MGX 支持，但團隊尚未到位，選址與能源整合細節傳出分歧，原本預期快速啟動的 1000 億美元初始部署仍停留在規劃階段。 面對算力需求擴張，OpenAI 已與甲骨文簽署每年逾 300 億美元協議，取得 4.5 吉瓦資料中心容量，並深化與 CoreWeave 合作，同時探索以 [&hellip;]</p>\n"
+        },
+        {
+          "title": "Anthropic指控中國AI公司挖取Claude能力 籲管制晶片出口",
+          "url": "https://news.cnyes.com/news/id/6349922",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《TechCrunch》報導，Anthropic 指控三家中國 AI 公司利用其 Claude AI 模型建立超過 2.4 萬個假帳號，以提升自家模型能力。&lt;/p&gt;\n\n&lt;p&gt;被指控的實驗室包括 DeepSeek、Moonshot AI 與 MiniMax。這些公司據稱透過上述帳號與 Claude 進行超過 1,600 萬次互動，並採用一種稱作「蒸餾 (distillation)」的技術。Anthropic 表示，這些實驗室「鎖定 Claude 最具差異化的能力：代理式推理、工具使用與程式編碼。」&lt;/p&gt;\n\n&lt;p&gt;這些指控出現之際，美國正就如何更嚴格執行先進 AI 晶片出口管制展開辯論，相關政策旨在遏制中國的 AI 發展。&lt;/p&gt;\n\n&lt;p&gt;蒸餾是 AI 實驗室常用的訓練方法，用於在自家模型上建立更小、更便宜的版本，但競爭對手也可能藉此「複製」其他實驗室的成果。本月稍早，OpenAI 向美國眾議院議員提交備忘錄，指控 DeepSeek 利用蒸餾技術模仿其產品。&lt;/p&gt;\n\n&lt;p&gt;DeepSeek 一年前發布開源推理模型 R1 時首次引發關注，該模型以遠低於成本的方式，在效能上幾乎追上美國尖端 AI 實驗室。DeepSeek 預計很快推出最新模型 DeepSeek V4，據報導其在程式編碼方面可超越 Anthropic 的 Claude 與 OpenAI 的 ChatGPT。&lt;/p&gt;\n\n&lt;p&gt;各項攻擊規模有所不同。Anthropic 追蹤到 DeepSeek 超過 15 萬次互動，似乎旨在強化基礎邏輯與對齊能力，特別聚焦於對政策敏感查詢提供符合審查要求的安全替代回應。&lt;/p&gt;\n\n&lt;p&gt;Moonshot AI 有超過 340 萬次互動，鎖定代理式推理與工具使用、程式編碼與資料分析、電腦操作代理開發以及電腦視覺等領域。該公司上月發布新的開源模型 Kimi K2.5 與一個程式編碼代理。&lt;/p&gt;\n\n&lt;p&gt;MiniMax 則進行了 1,300 萬次互動，重點在代理式編碼、工具使用與編排 (orchestration）。Anthropic 表示，在最新 Claude 模型推出時，觀察到 MiniMax 將近一半流量重新導向，以擷取該模型能力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，將持續投資於防禦措施，使蒸餾攻擊更難執行且更易辨識，但同時呼籲「AI 產業、雲端服務供應商與政策制定者協同回應。」&lt;/p&gt;\n\n&lt;p&gt;這些蒸餾攻擊出現之際，美國對中國出口 AI 晶片的政策仍存在激烈爭論。上個月，川普政府正式允許輝達在內的美國企業向中國出口先進 AI 晶片。批評者認為，在全球 AI 主導權競賽的關鍵時刻，放寬出口管制恐提升中國的 AI 算力。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 表示，DeepSeek、MiniMax 與 Moonshot 進行的能力擷取規模「需要使用先進晶片」。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 在部落格中寫道，「因此，蒸餾攻擊進一步強化了出口管制的合理性：限制晶片取得，不僅能限制直接模型訓練，也能降低非法蒸餾的規模。」&lt;/p&gt;\n\n&lt;p&gt;Silverado Policy Accelerator 智庫主席、CrowdStrike 共同創辦人 Dmitri Alperovitch 表示，他對這些攻擊並不意外。&lt;/p&gt;\n\n&lt;p&gt;他談到，「一段時間以來已很明顯，中國 AI 模型快速進步的部分原因，是透過蒸餾從美國先進模型中『竊取』能力。現在我們可以確定這點。這應該讓我們更有理由拒絕向這些公司出售任何 AI 晶片，否則只會讓它們更具優勢。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 也強調，蒸餾不僅威脅削弱美國在 AI 領域的主導地位，還可能造成國家安全風險。其部落格文章寫道，「Anthropic 及其他美國公司建構的系統，能防止政府與非政府行為者利用 AI，例如開發生物武器或進行惡意網路活動。透過非法蒸餾建立的模型，很可能無法保留這些安全防護，意味著危險能力可能在缺乏多數保護機制的情況下擴散。」&lt;/p&gt;\n\n&lt;p&gt;Anthropic 並指出，若威權政府將尖端 AI 用於「攻擊性網路行動、假訊息宣傳與大規模監控」將構成風險。若這些模型被開源，風險更會被放大。&lt;/p&gt;\n"
+        },
+        {
+          "title": "AI取代疑慮與關稅變數夾擊 美股重挫 道瓊跌1.66%",
+          "url": "https://news.cnyes.com/news/id/6350017",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350017/o/7f50a83b2e64fd3b0d20971672726fd8.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p data-start=&quot;29&quot; data-end=&quot;114&quot;&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 受人工智慧（AI）產業衝擊疑慮與關稅政策不確定性雙重影響，美股週一全面走低，三大指數跌幅均超過1%，市場風險情緒明顯降溫。&lt;/p&gt;\n&lt;p data-start=&quot;116&quot; data-end=&quot;204&quot;&gt;道瓊工業指數下跌821.91點，跌幅1.66%，收在48,804.06點；標普500指數下滑1.04%至6,837.75點；那斯達克指數下跌1.13%，收22,627.27點。&lt;/p&gt;\n&lt;h2 data-start=&quot;206&quot; data-end=&quot;223&quot;&gt;AI衝擊疑慮升溫 軟體與金融股領跌&lt;/h2&gt;\n&lt;p data-start=&quot;225&quot; data-end=&quot;299&quot;&gt;盤面賣壓集中在金融與科技族群。標普500金融類股重挫3.3%，軟體相關企業下跌4.3%，反映市場對AI技術可能帶來商業模式重塑與成本結構改變的擔憂。&lt;/p&gt;\n&lt;p data-start=&quot;301&quot; data-end=&quot;402&quot;&gt;U.S. Bank Wealth Management投資策略分析師Tom Hainlin指出，市場對AI的疑問主要集中在兩個層面：成本究竟多高？哪些產業將被顛覆？在答案未明前，投資人傾向「先賣再說」。&lt;/p&gt;\n&lt;p data-start=&quot;404&quot; data-end=&quot;439&quot;&gt;他表示，目前市場反應更多基於「可能發生的情境」，而非已發生的實際數據。&lt;/p&gt;\n&lt;h2 data-start=&quot;441&quot; data-end=&quot;454&quot;&gt;關稅政策反覆 加劇市場不安&lt;/h2&gt;\n&lt;p data-start=&quot;456&quot; data-end=&quot;540&quot;&gt;另一方面，美國最高法院上週以6比3裁定現任總統川普在緊急經濟法下推動對等關稅逾越職權。川普隨後表示將對所有進口商品課徵15%臨時關稅，即便部分國家已與美國達成貿易協議。&lt;/p&gt;\n&lt;p data-start=&quot;542&quot; data-end=&quot;570&quot;&gt;政策反覆令市場對貿易環境穩定性產生疑慮，進一步推高波動。&lt;/p&gt;\n&lt;h2 data-start=&quot;572&quot; data-end=&quot;587&quot;&gt;避險情緒升溫 金價大漲2.6%&lt;/h2&gt;\n&lt;p data-start=&quot;589&quot; data-end=&quot;625&quot;&gt;資金流向顯示明顯避險傾向。黃金價格大漲2.6%，反映投資人降低風險部位。&lt;/p&gt;\n&lt;p data-start=&quot;627&quot; data-end=&quot;683&quot;&gt;Hainlin指出，當中東地緣政治風險、關稅不確定性與AI產業衝擊同時疊加時，投資人自然會重新評估整體風險水準。&lt;/p&gt;\n&lt;h2 data-start=&quot;685&quot; data-end=&quot;699&quot;&gt;暴風雪衝擊 航空與旅遊股走弱&lt;/h2&gt;\n&lt;p data-start=&quot;701&quot; data-end=&quot;784&quot;&gt;此外，美國東北部遭遇強烈冬季風暴，多地降雪超過15英寸。紐約地區機場約89%至98%航班取消，航空與旅遊休閒類股分別下跌3.8%與3.7%，道瓊運輸指數下滑2.9%。&lt;/p&gt;\n&lt;h2 data-start=&quot;786&quot; data-end=&quot;800&quot;&gt;財報季近尾聲 輝達成關鍵變數&lt;/h2&gt;\n&lt;p data-start=&quot;802&quot; data-end=&quot;892&quot;&gt;目前標普500成分股僅剩77家公司尚未公布財報。根據LSEG數據，已公布企業中有73%優於預期，市場目前預估標普500企業整體獲利年增率為13.9%，高於1月1日時預測的8.9%。&lt;/p&gt;\n&lt;p data-start=&quot;894&quot; data-end=&quot;990&quot;&gt;本週市場焦點將落在Nvidia(NVDA-US)財報。由於其為AI晶片龍頭，且在標普500指數中權重接近8%，財報結果可能牽動科技股與整體市場情緒。&lt;/p&gt;\n&lt;p data-start=&quot;992&quot; data-end=&quot;1152&quot;&gt;其他重點企業包括Home Depot(HD-US)、Lowe&amp;#039;s(LOW-US)、Salesforce(CRM-US)與Universal Health Services(UHS-US)。&lt;/p&gt;\n&lt;p data-start=&quot;1154&quot; d"
+        },
+        {
+          "title": "能源即算力》當首批耗電量達 1GW 資料中心問世！電力基礎建設化身 AI 新金礦概念股",
+          "url": "https://finance.technews.tw/2026/02/24/1gw-ai-data-center/",
+          "source": "TechNews",
+          "content": "當 AI 競賽進入白熱化，科技巨頭驚覺「決勝關鍵不僅是 GPU 數量，而是穩定的電力供應」，能源即算力已成為全 [&#8230;]"
+        }
+      ]
+    },
+    {
       "word": "US",
-      "count": 418,
+      "count": 423,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Stellantis N.V(STLA-US)EPS預估下修至-0.6元，預估目標價為9.33元",
@@ -518,7 +557,7 @@
     },
     {
       "word": "美元",
-      "count": 230,
+      "count": 234,
       "articles": [
         {
           "title": "AI支出令市場心慌 亞馬遜擬花120億美元建資料中心 股價應聲挫逾2% 月跌逾14%",
@@ -716,7 +755,7 @@
     },
     {
       "word": "川普",
-      "count": 114,
+      "count": 116,
       "articles": [
         {
           "title": "最高法院攔不住川普？加徵關稅被駁回後川普警告他國：耍花樣將面臨更狠制裁",
@@ -777,6 +816,72 @@
           "url": "https://www.thenewslens.com/article/264966",
           "source": "關鍵評論網",
           "content": "美國總統川普於國情咨文發表前，面臨關稅權遭法院限縮、經濟憂慮加劇等挑戰，使其與共和黨在期中選舉前承受壓力。"
+        }
+      ]
+    },
+    {
+      "word": "中速",
+      "count": 116,
+      "articles": [
+        {
+          "title": "盤中速報 - 集中市場加權指數上漲675.07點至34448.33點，漲幅2%",
+          "url": "https://news.cnyes.com/news/id/6350348",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;截至台北時間24日10:18，集中市場加權指數上漲675.07點（或2%），暫報34448.33點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.5%&lt;/li&gt;&lt;li&gt;近 1 月：+5.67%&lt;/li&gt;&lt;li&gt;近 3 月：+27.76%&lt;/li&gt;&lt;li&gt;近 6 月：+42.12%&lt;/li&gt;&lt;li&gt;今年以來：+16.61%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+5.79%。其中    旺宏(2337-TW)            上漲        9.66%            ;        聯電(2303-TW)            上漲        7.67%            ;        世界(5347-TW)            上漲        5.6%    。&lt;/p&gt;&lt;p&gt;光碟機概念領漲+5.67%。其中    麗升能源(8087-TW)            上漲        9.98%            ;        佳世達(2352-TW)            上漲        1.16%            ;    。&lt;/p&gt;"
+        },
+        {
+          "title": "盤中速報 - 櫃買市場加權指數上漲6.11點至309.94點，漲幅2.01%",
+          "url": "https://news.cnyes.com/news/id/6350436",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;截至台北時間24日11:21，櫃買市場加權指數上漲6.11點（或2.01%），暫報309.94點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+2.06%&lt;/li&gt;&lt;li&gt;近 1 月：+1.53%&lt;/li&gt;&lt;li&gt;近 3 月：+23.52%&lt;/li&gt;&lt;li&gt;近 6 月：+24.45%&lt;/li&gt;&lt;li&gt;今年以來：+9.99%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+6.93%。其中    旺宏(2337-TW)            上漲        9.66%            ;        世界(5347-TW)            上漲        8.4%            ;        聯電(2303-TW)            上漲        7.36%    。&lt;/p&gt;&lt;p&gt;晶圓代工概念領漲+6.16%。其中    新唐(4919-TW)            上漲        9.95%            ;        旺宏(2337-TW)            上漲        9.66%            ;        世界(5347-TW)            上漲        8.4%    。&lt;/p&gt;"
+        },
+        {
+          "title": "盤中速報 - 集中市場加權指數上漲1011.86點至34785.12點，漲幅3%",
+          "url": "https://news.cnyes.com/news/id/6350568",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;截至台北時間24日01:10，集中市場加權指數上漲1011.86點（或3%），暫報34785.12點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.5%&lt;/li&gt;&lt;li&gt;近 1 月：+5.67%&lt;/li&gt;&lt;li&gt;近 3 月：+27.76%&lt;/li&gt;&lt;li&gt;近 6 月：+42.12%&lt;/li&gt;&lt;li&gt;今年以來：+16.61%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+7.38%。其中    世界(5347-TW)            上漲        10%            ;        旺宏(2337-TW)            上漲        9.66%            ;        聯電(2303-TW)            上漲        7.2%    。&lt;/p&gt;&lt;p&gt;晶圓代工概念領漲+6.51%。其中    世界(5347-TW)            上漲        10%            ;        新唐(4919-TW)            上漲        9.95%            ;        旺宏(2337-TW)            上漲        9.66%    。&lt;/p&gt;"
+        },
+        {
+          "title": "盤中速報 - 國際商業機器(IBM-US)大漲5.14%，報234.82美元",
+          "url": "https://news.cnyes.com/news/id/6351570",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;國際商業機器(IBM-US)截至台北時間24日22:43股價上漲11.47美元，報234.82美元，漲幅5.14%，成交量2,689,802（股），盤中最高價234.97美元、最低價223.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.88%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.44%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.27%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;國際商業機器(IBM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.06%&lt;/li&gt;    &lt;li&gt;近 3 月：-12.58%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.22%&lt;/li&gt;    &lt;li&gt;今年以來：-13.18%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 賽富時(CRM-US)大漲5.03%，報187.12美元",
+          "url": "https://news.cnyes.com/news/id/6351567",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;賽富時(CRM-US)截至台北時間24日22:40股價上漲8.96美元，報187.12美元，漲幅5.03%，成交量2,073,207（股），盤中最高價187.22美元、最低價176.28美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.75%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.32%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.7%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;賽富時(CRM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.4%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.81%&lt;/li&gt;    &lt;li&gt;近 3 月：-16.84%&lt;/li&gt;    &lt;li&gt;近 6 月：-25.43%&lt;/li&gt;    &lt;li&gt;今年以來：-30.1%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大漲5.58%，報72.65美元",
+          "url": "https://news.cnyes.com/news/id/6351566",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間24日22:40股價上漲3.84美元，報72.65美元，漲幅5.58%，成交量1,215,376（股），盤中最高價72.65美元、最低價67.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.74%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.32%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-9.95%&lt;/li&gt;    &lt;li&gt;近 1 月：-42.33%&lt;/li&gt;    &lt;li&gt;近 3 月：-48.06%&lt;/li&gt;    &lt;li&gt;近 6 月：-55.51%&lt;/li&gt;    &lt;li&gt;今年以來：-53.14%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 費城半導體大漲1.23%，報8314.27點",
+          "url": "https://news.cnyes.com/news/id/6351565",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;截至台北時間24日10:30，費城半導體上漲100.82點（或1.23%），暫報8314.27點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.93%&lt;/li&gt;&lt;li&gt;近 1 月：+3.21%&lt;/li&gt;&lt;li&gt;近 3 月：+28.21%&lt;/li&gt;&lt;li&gt;近 6 月：+42.73%&lt;/li&gt;&lt;li&gt;今年以來：+15.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以超微半導體(AMD-US)領漲。超微半導體(AMD-US)上漲7.52%；台積電ADR(TSM-US)上漲2.7%；連貫(COHR-US)上漲2.25%；美光科技(MU-US)上漲2.15%；安可(AMKR-US)上漲1.98%。&lt;/p&gt;&lt;p&gt;部分成分股表現相對疲軟，博通(AVGO-US)下跌2.67%；安謀控股公司(ARM-US)下跌1.43%。&lt;/p&gt;"
+        },
+        {
+          "title": "盤中速報 - 超微半導體(AMD-US)大漲7.52%，報211.39美元",
+          "url": "https://news.cnyes.com/news/id/6351553",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;超微半導體(AMD-US)截至台北時間24日22:30股價上漲14.79美元，報211.39美元，漲幅7.52%，成交量11,177,552（股），盤中最高價211.66美元、最低價211.39美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.24%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.23%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.13%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微半導體(AMD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.46%&lt;/li&gt;    &lt;li&gt;近 1 月：-22.92%&lt;/li&gt;    &lt;li&gt;近 3 月：-1.78%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.31%&lt;/li&gt;    &lt;li&gt;今年以來：-6.54%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - Verisk Analytics Inc(VRSK-US)大漲5.06%，報190.78美元",
+          "url": "https://news.cnyes.com/news/id/6351598",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;Verisk Analytics Inc(VRSK-US)截至台北時間24日23:41股價上漲9.18美元，報190.78美元，漲幅5.06%，成交量542,624（股），盤中最高價190.78美元、最低價181.60美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.8%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.85%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.82%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Verisk Analytics Inc(VRSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.71%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.3%&lt;/li&gt;    &lt;li&gt;近 3 月：-18.22%&lt;/li&gt;    &lt;li&gt;近 6 月：-32.67%&lt;/li&gt;    &lt;li&gt;今年以來：-18.41%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - CVS保健(CVS-US)大跌5.14%，報73.04美元",
+          "url": "https://news.cnyes.com/news/id/6351597",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;CVS保健(CVS-US)截至台北時間24日23:37股價下跌3.96美元，報73.04美元，跌幅5.14%，成交量3,131,714（股），盤中最高價76.96美元、最低價73.04美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.79%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.84%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;CVS保健(CVS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.28%&lt;/li&gt;    &lt;li&gt;近 1 月：-7.61%&lt;/li&gt;    &lt;li&gt;近 3 月：-0.56%&lt;/li&gt;    &lt;li&gt;近 6 月：+7.56%&lt;/li&gt;    &lt;li&gt;今年以來：-3.36%&lt;/li&gt;&lt;/ul&gt;"
         }
       ]
     },
@@ -847,74 +952,8 @@
       ]
     },
     {
-      "word": "中速",
-      "count": 112,
-      "articles": [
-        {
-          "title": "盤中速報 - 集中市場加權指數上漲675.07點至34448.33點，漲幅2%",
-          "url": "https://news.cnyes.com/news/id/6350348",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;截至台北時間24日10:18，集中市場加權指數上漲675.07點（或2%），暫報34448.33點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.5%&lt;/li&gt;&lt;li&gt;近 1 月：+5.67%&lt;/li&gt;&lt;li&gt;近 3 月：+27.76%&lt;/li&gt;&lt;li&gt;近 6 月：+42.12%&lt;/li&gt;&lt;li&gt;今年以來：+16.61%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+5.79%。其中    旺宏(2337-TW)            上漲        9.66%            ;        聯電(2303-TW)            上漲        7.67%            ;        世界(5347-TW)            上漲        5.6%    。&lt;/p&gt;&lt;p&gt;光碟機概念領漲+5.67%。其中    麗升能源(8087-TW)            上漲        9.98%            ;        佳世達(2352-TW)            上漲        1.16%            ;    。&lt;/p&gt;"
-        },
-        {
-          "title": "盤中速報 - 櫃買市場加權指數上漲6.11點至309.94點，漲幅2.01%",
-          "url": "https://news.cnyes.com/news/id/6350436",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;截至台北時間24日11:21，櫃買市場加權指數上漲6.11點（或2.01%），暫報309.94點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+2.06%&lt;/li&gt;&lt;li&gt;近 1 月：+1.53%&lt;/li&gt;&lt;li&gt;近 3 月：+23.52%&lt;/li&gt;&lt;li&gt;近 6 月：+24.45%&lt;/li&gt;&lt;li&gt;今年以來：+9.99%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+6.93%。其中    旺宏(2337-TW)            上漲        9.66%            ;        世界(5347-TW)            上漲        8.4%            ;        聯電(2303-TW)            上漲        7.36%    。&lt;/p&gt;&lt;p&gt;晶圓代工概念領漲+6.16%。其中    新唐(4919-TW)            上漲        9.95%            ;        旺宏(2337-TW)            上漲        9.66%            ;        世界(5347-TW)            上漲        8.4%    。&lt;/p&gt;"
-        },
-        {
-          "title": "盤中速報 - 集中市場加權指數上漲1011.86點至34785.12點，漲幅3%",
-          "url": "https://news.cnyes.com/news/id/6350568",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;截至台北時間24日01:10，集中市場加權指數上漲1011.86點（或3%），暫報34785.12點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.5%&lt;/li&gt;&lt;li&gt;近 1 月：+5.67%&lt;/li&gt;&lt;li&gt;近 3 月：+27.76%&lt;/li&gt;&lt;li&gt;近 6 月：+42.12%&lt;/li&gt;&lt;li&gt;今年以來：+16.61%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;轉單利多概念領漲+7.38%。其中    世界(5347-TW)            上漲        10%            ;        旺宏(2337-TW)            上漲        9.66%            ;        聯電(2303-TW)            上漲        7.2%    。&lt;/p&gt;&lt;p&gt;晶圓代工概念領漲+6.51%。其中    世界(5347-TW)            上漲        10%            ;        新唐(4919-TW)            上漲        9.95%            ;        旺宏(2337-TW)            上漲        9.66%    。&lt;/p&gt;"
-        },
-        {
-          "title": "盤中速報 - 國際商業機器(IBM-US)大漲5.14%，報234.82美元",
-          "url": "https://news.cnyes.com/news/id/6351570",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;國際商業機器(IBM-US)截至台北時間24日22:43股價上漲11.47美元，報234.82美元，漲幅5.14%，成交量2,689,802（股），盤中最高價234.97美元、最低價223.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.88%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.44%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.27%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;國際商業機器(IBM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.99%&lt;/li&gt;    &lt;li&gt;近 1 月：-12.06%&lt;/li&gt;    &lt;li&gt;近 3 月：-12.58%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.22%&lt;/li&gt;    &lt;li&gt;今年以來：-13.18%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 賽富時(CRM-US)大漲5.03%，報187.12美元",
-          "url": "https://news.cnyes.com/news/id/6351567",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;賽富時(CRM-US)截至台北時間24日22:40股價上漲8.96美元，報187.12美元，漲幅5.03%，成交量2,073,207（股），盤中最高價187.22美元、最低價176.28美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.75%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.32%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.7%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;賽富時(CRM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.4%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.81%&lt;/li&gt;    &lt;li&gt;近 3 月：-16.84%&lt;/li&gt;    &lt;li&gt;近 6 月：-25.43%&lt;/li&gt;    &lt;li&gt;今年以來：-30.1%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大漲5.58%，報72.65美元",
-          "url": "https://news.cnyes.com/news/id/6351566",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間24日22:40股價上漲3.84美元，報72.65美元，漲幅5.58%，成交量1,215,376（股），盤中最高價72.65美元、最低價67.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.74%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.32%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.64%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-9.95%&lt;/li&gt;    &lt;li&gt;近 1 月：-42.33%&lt;/li&gt;    &lt;li&gt;近 3 月：-48.06%&lt;/li&gt;    &lt;li&gt;近 6 月：-55.51%&lt;/li&gt;    &lt;li&gt;今年以來：-53.14%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 費城半導體大漲1.23%，報8314.27點",
-          "url": "https://news.cnyes.com/news/id/6351565",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;截至台北時間24日10:30，費城半導體上漲100.82點（或1.23%），暫報8314.27點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：+0.93%&lt;/li&gt;&lt;li&gt;近 1 月：+3.21%&lt;/li&gt;&lt;li&gt;近 3 月：+28.21%&lt;/li&gt;&lt;li&gt;近 6 月：+42.73%&lt;/li&gt;&lt;li&gt;今年以來：+15.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以超微半導體(AMD-US)領漲。超微半導體(AMD-US)上漲7.52%；台積電ADR(TSM-US)上漲2.7%；連貫(COHR-US)上漲2.25%；美光科技(MU-US)上漲2.15%；安可(AMKR-US)上漲1.98%。&lt;/p&gt;&lt;p&gt;部分成分股表現相對疲軟，博通(AVGO-US)下跌2.67%；安謀控股公司(ARM-US)下跌1.43%。&lt;/p&gt;"
-        },
-        {
-          "title": "盤中速報 - 超微半導體(AMD-US)大漲7.52%，報211.39美元",
-          "url": "https://news.cnyes.com/news/id/6351553",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;超微半導體(AMD-US)截至台北時間24日22:30股價上漲14.79美元，報211.39美元，漲幅7.52%，成交量11,177,552（股），盤中最高價211.66美元、最低價211.39美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.24%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.23%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.13%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微半導體(AMD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.46%&lt;/li&gt;    &lt;li&gt;近 1 月：-22.92%&lt;/li&gt;    &lt;li&gt;近 3 月：-1.78%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.31%&lt;/li&gt;    &lt;li&gt;今年以來：-6.54%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - Verisk Analytics Inc(VRSK-US)大漲5.06%，報190.78美元",
-          "url": "https://news.cnyes.com/news/id/6351598",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;Verisk Analytics Inc(VRSK-US)截至台北時間24日23:41股價上漲9.18美元，報190.78美元，漲幅5.06%，成交量542,624（股），盤中最高價190.78美元、最低價181.60美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.8%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.85%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.82%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Verisk Analytics Inc(VRSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.71%&lt;/li&gt;    &lt;li&gt;近 1 月：-16.3%&lt;/li&gt;    &lt;li&gt;近 3 月：-18.22%&lt;/li&gt;    &lt;li&gt;近 6 月：-32.67%&lt;/li&gt;    &lt;li&gt;今年以來：-18.41%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - CVS保健(CVS-US)大跌5.14%，報73.04美元",
-          "url": "https://news.cnyes.com/news/id/6351597",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;CVS保健(CVS-US)截至台北時間24日23:37股價下跌3.96美元，報73.04美元，跌幅5.14%，成交量3,131,714（股），盤中最高價76.96美元、最低價73.04美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：+0.79%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：+0.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.84%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;CVS保健(CVS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.28%&lt;/li&gt;    &lt;li&gt;近 1 月：-7.61%&lt;/li&gt;    &lt;li&gt;近 3 月：-0.56%&lt;/li&gt;    &lt;li&gt;近 6 月：+7.56%&lt;/li&gt;    &lt;li&gt;今年以來：-3.36%&lt;/li&gt;&lt;/ul&gt;"
-        }
-      ]
-    },
-    {
       "word": "新高",
-      "count": 96,
+      "count": 97,
       "articles": [
         {
           "title": "國際油價徘徊在半年新高！市場聚焦美伊談判和川普關稅「雙重變數」",
@@ -1111,6 +1150,72 @@
       ]
     },
     {
+      "word": "自由",
+      "count": 86,
+      "articles": [
+        {
+          "title": "自由開講》依法畫線民主止血",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5343089",
+          "source": "自由時報",
+          "content": "\n\n\n民眾黨新科立委李貞秀的國籍爭議，若只被解讀為藍綠或政黨攻防，那是對台灣民主的一種低估。真正的關鍵，不在個人，而在制度是否還站得住腳。\n\n\n\n\n\n內政部長劉世芳表態，在國籍資格尚未釐清前，...…"
+        },
+        {
+          "title": "自由開講》祝福陳光復縣長早日康復",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5348372",
+          "source": "自由時報",
+          "content": "\n\n\n\n\n\n澎湖縣長陳光復是澎湖縣湖西鄉人，父親從事木匠，為讓兒女受更好的教育，在光復縣長還小的時候，父母親就舉家搬遷到高雄市。\n\n\n光復縣長高中以前都在高雄就學，大學才到外地受教育，年輕時...…"
+        },
+        {
+          "title": "記錄「新疆再教育營」的中國青年關恆在美被關押半年後獲釋：「失去自由之後，才更意識到它的重要性」",
+          "url": "https://www.bbc.com/zhongwen/articles/cd6zjll5w75o/trad?at_medium=RSS&at_campaign=rss",
+          "source": "BBC中文",
+          "content": "在被美國移民和海關執法局（ICE）逮捕並拘留了接近半年的時間後，中國公民關恆的庇護申請終於獲得美國移民法官的批准。"
+        },
+        {
+          "title": "自由開講》「對等貿易協定」對台灣經濟發展的重要性",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5348630",
+          "source": "自由時報",
+          "content": "\n\n\n\n\n\n台灣與美國簽署「對等貿易協定」，確立對等關稅15%且不疊加，我輸美2072項產品豁免對等關稅。許多企業都非常高興，也有部分受害產業覺得不好。當然藍白立委是否會刁難審查，更是國人關...…"
+        },
+        {
+          "title": "財富自由》長線潛力股",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349265",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕自由時報電子報新推出《財富自由》頻道，提供最全面的證券財經新聞，精選【長線潛力股】，讓您投資理財更輕鬆！\n\n\n\n…"
+        },
+        {
+          "title": "自由開講》安得廣廈千萬間，社會住宅正是答案",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5337791",
+          "source": "自由時報",
+          "content": "\n\n\n1月22日，台南市長黃偉哲親自率隊勘查小東路社會住宅，逐一檢視建築細部與公共空間配置。從現場觀察，市府專業局處與建築師團隊全程把關，施工品質來自制度運作，而非宣傳語言。此類兼顧設計、機...…"
+        },
+        {
+          "title": "自由開講》台灣政治焦慮全球第一 民意偏好解決問題者",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5338919",
+          "source": "自由時報",
+          "content": "\n\n\n蓋洛普最新發表的《2026年全球民意報告》揭示了令國際社會詫異、卻令台灣人感同身受的數據。台灣有高達50%的民眾將「政治與政府」視為國家首要問題，這項數據不僅位居全球之冠，更是全球中位...…"
+        },
+        {
+          "title": "七巨頭雲端服務商狂燒錢、僅微軟自由現金流續增",
+          "url": "https://finance.technews.tw/2026/02/24/microsoft-stands-out-as-lone-mag-7-hyperscaler-to-increase-fcf-during-ai-capex-splurge-evercore/",
+          "source": "TechNews",
+          "content": "根據統計，在準備大舉進行 AI 基礎建設支出的七巨頭（Magnificent Seven）當中，微軟（Micr [&#8230;]"
+        },
+        {
+          "title": "高鐵春節疏運日均創新高！ 228連假續推LINE看「自由座燈號」",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5349762",
+          "source": "自由時報",
+          "content": "2026台灣高鐵春節疏運昨天順利完成！台灣高鐵公司統計，11天疏運期間（2/13至2/23），共發出2171班次列車，總計疏運旅客逾292.5萬人次，平均每日約26.6萬人次，...…"
+        },
+        {
+          "title": "中國青年關恆記錄「新疆再教育營」在美被關押半年後獲釋：「失去自由之後，才更意識到它的重要性」",
+          "url": "https://www.thenewslens.com/article/264951",
+          "source": "關鍵評論網",
+          "content": "中國公民關恆因記錄新疆「再教育營」赴美申請庇護。其案曾因遭關押引發國際關注，後因紀錄具重要證據價值，庇護申請已獲美國移民法官批准。"
+        }
+      ]
+    },
+    {
       "word": "晶片",
       "count": 86,
       "articles": [
@@ -1239,72 +1344,6 @@
           "url": "https://news.ltn.com.tw/news/life/breakingnews/5349741",
           "source": "自由時報",
           "content": "迎接新年，換車也要跟著「升級」！台南市今年持續推動電動機車補助政策，鼓勵民眾利用春節紅包輕鬆入手電車，享補助、省荷包、還能環保過好年，一舉三得，把握機會別錯過。\r\n\r\n不管是汰...…"
-        }
-      ]
-    },
-    {
-      "word": "自由",
-      "count": 83,
-      "articles": [
-        {
-          "title": "自由開講》依法畫線民主止血",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5343089",
-          "source": "自由時報",
-          "content": "\n\n\n民眾黨新科立委李貞秀的國籍爭議，若只被解讀為藍綠或政黨攻防，那是對台灣民主的一種低估。真正的關鍵，不在個人，而在制度是否還站得住腳。\n\n\n\n\n\n內政部長劉世芳表態，在國籍資格尚未釐清前，...…"
-        },
-        {
-          "title": "自由開講》祝福陳光復縣長早日康復",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5348372",
-          "source": "自由時報",
-          "content": "\n\n\n\n\n\n澎湖縣長陳光復是澎湖縣湖西鄉人，父親從事木匠，為讓兒女受更好的教育，在光復縣長還小的時候，父母親就舉家搬遷到高雄市。\n\n\n光復縣長高中以前都在高雄就學，大學才到外地受教育，年輕時...…"
-        },
-        {
-          "title": "記錄「新疆再教育營」的中國青年關恆在美被關押半年後獲釋：「失去自由之後，才更意識到它的重要性」",
-          "url": "https://www.bbc.com/zhongwen/articles/cd6zjll5w75o/trad?at_medium=RSS&at_campaign=rss",
-          "source": "BBC中文",
-          "content": "在被美國移民和海關執法局（ICE）逮捕並拘留了接近半年的時間後，中國公民關恆的庇護申請終於獲得美國移民法官的批准。"
-        },
-        {
-          "title": "自由開講》「對等貿易協定」對台灣經濟發展的重要性",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5348630",
-          "source": "自由時報",
-          "content": "\n\n\n\n\n\n台灣與美國簽署「對等貿易協定」，確立對等關稅15%且不疊加，我輸美2072項產品豁免對等關稅。許多企業都非常高興，也有部分受害產業覺得不好。當然藍白立委是否會刁難審查，更是國人關...…"
-        },
-        {
-          "title": "財富自由》長線潛力股",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349265",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕自由時報電子報新推出《財富自由》頻道，提供最全面的證券財經新聞，精選【長線潛力股】，讓您投資理財更輕鬆！\n\n\n\n…"
-        },
-        {
-          "title": "自由開講》安得廣廈千萬間，社會住宅正是答案",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5337791",
-          "source": "自由時報",
-          "content": "\n\n\n1月22日，台南市長黃偉哲親自率隊勘查小東路社會住宅，逐一檢視建築細部與公共空間配置。從現場觀察，市府專業局處與建築師團隊全程把關，施工品質來自制度運作，而非宣傳語言。此類兼顧設計、機...…"
-        },
-        {
-          "title": "自由開講》台灣政治焦慮全球第一 民意偏好解決問題者",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5338919",
-          "source": "自由時報",
-          "content": "\n\n\n蓋洛普最新發表的《2026年全球民意報告》揭示了令國際社會詫異、卻令台灣人感同身受的數據。台灣有高達50%的民眾將「政治與政府」視為國家首要問題，這項數據不僅位居全球之冠，更是全球中位...…"
-        },
-        {
-          "title": "七巨頭雲端服務商狂燒錢、僅微軟自由現金流續增",
-          "url": "https://finance.technews.tw/2026/02/24/microsoft-stands-out-as-lone-mag-7-hyperscaler-to-increase-fcf-during-ai-capex-splurge-evercore/",
-          "source": "TechNews",
-          "content": "根據統計，在準備大舉進行 AI 基礎建設支出的七巨頭（Magnificent Seven）當中，微軟（Micr [&#8230;]"
-        },
-        {
-          "title": "高鐵春節疏運日均創新高！ 228連假續推LINE看「自由座燈號」",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5349762",
-          "source": "自由時報",
-          "content": "2026台灣高鐵春節疏運昨天順利完成！台灣高鐵公司統計，11天疏運期間（2/13至2/23），共發出2171班次列車，總計疏運旅客逾292.5萬人次，平均每日約26.6萬人次，...…"
-        },
-        {
-          "title": "中國青年關恆記錄「新疆再教育營」在美被關押半年後獲釋：「失去自由之後，才更意識到它的重要性」",
-          "url": "https://www.thenewslens.com/article/264951",
-          "source": "關鍵評論網",
-          "content": "中國公民關恆因記錄新疆「再教育營」赴美申請庇護。其案曾因遭關押引發國際關注，後因紀錄具重要證據價值，庇護申請已獲美國移民法官批准。"
         }
       ]
     },
@@ -1706,7 +1745,7 @@
     },
     {
       "word": "大跌",
-      "count": 68,
+      "count": 69,
       "articles": [
         {
           "title": "美股收盤》關稅與AI夾擊、道瓊大跌逾800點  台積電ADR微跌0.16％",
@@ -1772,7 +1811,7 @@
     },
     {
       "word": "科技",
-      "count": 67,
+      "count": 68,
       "articles": [
         {
           "title": "【科技早餐】OpenAI 把 1.4 兆改成 6000 億：AI 算力競賽進入效率時代",
@@ -1904,7 +1943,7 @@
     },
     {
       "word": "3月",
-      "count": 53,
+      "count": 54,
       "articles": [
         {
           "title": "3檔主動式ETF近3月反彈完勝大盤 統一00988A狂飆34%封王",
@@ -2761,6 +2800,138 @@
       ]
     },
     {
+      "word": "能源",
+      "count": 43,
+      "articles": [
+        {
+          "title": "拉美再生能源占比近70% 電力結構領先全球 但全面轉型仍待深化",
+          "url": "https://news.cnyes.com/news/id/6350018",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/a8095280f038f4b3ca15cd843d055389.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 在全球淨零排放目標與氣候變遷壓力升溫之下，能源轉型已成為各國政策核心。再生能源指的是在人類生命週期內可自然補充的能源，包括太陽能、風能、海洋能、生質能、水力與地熱等。憑藉遼闊國土與豐富自然資源，拉丁美洲被視為具備成為全球再生能源重要樞紐的潛力市場。&lt;/p&gt;\n&lt;p&gt;截至2024年，拉丁美洲再生能源裝置容量接近366 GW，較十年前成長約86%。目前該區近70%的電力來自再生能源，在全球主要經濟體中屬於高占比結構。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/b99878ecaa734ceef496855657f86df8.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;\n&lt;h2&gt;水力為基礎 太陽能與風電快速崛起&lt;/h2&gt;\n&lt;p&gt;從歷史脈絡來看，水力發電長期是拉美能源結構的核心。位於巴西與巴拉圭邊境的Itaipu Dam於1984年啟用，是全球裝置容量排名第二大的水力發電站。至2024年，拉美水力發電容量約達201 GW，占整體再生能源容量約三分之二。&lt;/p&gt;\n&lt;p&gt;不過，過去十年能源發展重心明顯轉向。自2013年以來，拉美風電裝置容量成長超過六倍；太陽能光電則呈現指數型成長，2024年容量約達86 GW。這波轉變與全球趨勢一致，也反映資本市場與政策工具對風光發電的傾斜。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/0bf5306c1872c529f5af0eac74876b00.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;\n&lt;h2&gt;電力領先 但整體能源仍有落差&lt;/h2&gt;\n&lt;p data-start=&quot;0&quot; data-end=&quot;44&quot;&gt;儘管拉丁美洲在「發電結構」上已高度再生化，但若從更全面的能源使用角度來看，仍有明顯落差。&lt;/p&gt;\n&lt;p data-start=&quot;46&quot; data-end=&quot;137&quot;&gt;所謂「發電結構」，指的是一個國家用來發電的能源來源比例；而「一次能源供應」則涵蓋整體能源使用，包括交通燃料（汽油、柴油）、工業用燃料與發電用能源等，是衡量整體能源依賴結構的重要指標。&lt;/p&gt;\n&lt;p data-start=&quot;139&quot; data-end=&quot;202&quot;&gt;也就是說，即使一個國家的電力大多來自水力或風電，但若交通與工業仍大量使用石油與天然氣，整體一次能源中的再生能源占比仍可能偏低。&lt;/p&gt;\n&lt;p data-start=&quot;204&quot; data-end=&quot;311&quot;&gt;以墨西哥為例，2021年再生能源在一次能源供應中的占比僅略高於12%，顯示其整體能源結構仍以化石燃料為主。阿根廷在2022年發電結構中，再生能源平均占比為13.9%，同樣顯示再生能源在整體能源體系中的滲透率仍有限。&lt;/p&gt;\n&lt;p data-start=&quot;313&quot; data-end=&quot;402&quot;&gt;即便是再生能源比例較高的巴西與巴拉圭，其能源供應也高度依賴大型水力發電。水力雖屬再生能源，但大型水壩工程往往涉及生態破壞、社區遷移與土地使用爭議，因此其永續性在近年逐漸受到質疑。&lt;/p&gt;\n&lt;p data-start=&quot;404&quot; data-end=&quot;516&quot; data-is-last-node=&quot;&quot; data-is-only-node=&quot;&quot;&gt;因此，拉美未來再生能源擴張的重點，正逐步轉向風電與太陽能等環境衝擊相對較小、建置彈性更高的能源形式。同時，如何將再生能源從發電端延伸至交通與工業部門，提升一次能源中的再生占比，將成為拉美能源轉型下一階段的關鍵課題。&lt;/p&gt;\n&lt;h2&gt;投資吸引力仍強 但需跨部門推進&lt;/h2&gt;\n&lt;p&gt;在「後水力時代」下，巴西、智利與阿根廷仍被視為再生能源投資最具吸引力市場。政策支持、拍賣制度與資源條件為成長提供基礎。&lt;/p&gt;\n&lt;p&gt;不過市場普遍認為，拉美能源轉型的真正挑戰在於跨部門整合。&lt;/p&gt;\n&lt;p&gt;雖然電力端已具優勢，但交通與工業部門仍高度依賴化石燃料，尤其石油產品在運輸部門占比仍高。若再生能源未能延伸至電動交通、工業電氣化與分散式發電，整體減碳效益將受到限制。&lt;/p&gt;\n&lt;p&gt;此外，能源轉型亦涉及社會公平。偏遠地區電力基礎建設不足、能源取得不均，仍是區域發展議題。未來政策方向需在擴充裝置容量的同時，強化電網建設與能源可觸及性。&lt;/p&gt;\n\n\n\n\n\n\n\n&lt;p&gt;※ 本文經「優分析」授權轉載，原文出處:&lt;a style=&quot;color:#A9A9A9&quot; rel=&quot;nofollow&quot; hr"
+        },
+        {
+          "title": "能源即算力》天然氣為何再度翻紅？一次看懂發電技術與應用差異",
+          "url": "https://technews.tw/2026/02/24/gas-turbine-gas-engine/",
+          "source": "TechNews",
+          "content": "隨著 AI 運算量快速攀升，資料中心用電需求同步暴增。儘管再生能源是長期方向，但在現階段仍難以穩定提供 24  [&#8230;]"
+        },
+        {
+          "title": "能源即算力》當首批耗電量達 1GW 資料中心問世！電力基礎建設化身 AI 新金礦概念股",
+          "url": "https://finance.technews.tw/2026/02/24/1gw-ai-data-center/",
+          "source": "TechNews",
+          "content": "當 AI 競賽進入白熱化，科技巨頭驚覺「決勝關鍵不僅是 GPU 數量，而是穩定的電力供應」，能源即算力已成為全 [&#8230;]"
+        },
+        {
+          "title": "能源即算力》從拚規格到拚整合：HVDC 正在改寫資料中心電力競局",
+          "url": "https://technews.tw/2026/02/24/hvdc-data-center/",
+          "source": "TechNews",
+          "content": "隨著 AI 算力需求激增，為解決日益嚴峻的能耗挑戰，產業正加速由傳統架構轉 HVDC（高壓直流）供電方案，並積 [&#8230;]"
+        },
+        {
+          "title": "能源即算力》Bloom Energy、台達電紛紛搶進，一次看懂固態氧化物燃料電池 SOFC ？",
+          "url": "https://technews.tw/2026/02/24/sofc-let-get-start-it/",
+          "source": "TechNews",
+          "content": "隨著 AI 算力推升資料中心用電需求，穩定且低碳的電力來源成為產業關鍵課題。在此背景下，固態氧化物燃料電池（S [&#8230;]"
+        },
+        {
+          "title": "能源即算力》散熱卡關、算力白燒，AI 資料中心下一場硬仗：從「搶電」到「省電」",
+          "url": "https://finance.technews.tw/2026/02/24/ai-data-center-saving-power/",
+          "source": "TechNews",
+          "content": "在這個生成式 AI 爆發的時代，要蓋 AI 資料中心，電力幾乎等於入場門票，但拿到電，不代表就能把算力塞滿。  [&#8230;]"
+        },
+        {
+          "title": "能源即算力》有地有機櫃也沒用，AI 資料中心得先搶電再選址",
+          "url": "https://finance.technews.tw/2026/02/24/ai-data-center-power/",
+          "source": "TechNews",
+          "content": "生成式 AI 熱潮把資料中心推上全球基礎建設的第一線，但真正卡住擴張速度的，往往不是土地、不是機櫃，也不是 G [&#8230;]"
+        },
+        {
+          "title": "中國「十五五」能源布局啟動：化石能源提升至 25%、基建投資升溫",
+          "url": "https://technews.tw/2026/02/24/china-energy-policy-renew/",
+          "source": "TechNews",
+          "content": "中國國家能源局表示，2026 年將做為「十五五」規劃開局之年，正式啟動新型能源體系建設，並將非化石能源消費占比 [&#8230;]"
+        },
+        {
+          "title": "中國「十五五」能源布局啟動：化石能源提升至 25%、基建投資升溫",
+          "url": "https://technews.tw/2026/02/24/china-energy-policy-renew/",
+          "source": "TechNews",
+          "content": "中國國家能源局表示，2026 年將做為「十五五」規劃開局之年，正式啟動新型能源體系建設，並將非化石能源消費占比 [&#8230;]"
+        },
+        {
+          "title": "AI 發展只走到一半？聯發科技企業策略與前瞻技術資深處長梁伯嵩用「七層運算架構」拆解算力、能源與應用的真正瓶頸",
+          "url": "https://techorange.com/2026/02/24/cake-mediatek/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>當 AI 成為所有產業都在談的顯學，許多困境卻開始浮現：大家明明都在談 AI，卻往往在談完全不同的層次。例如，馬斯克高談太空資料中心與 GW（十億瓦）級算力藍圖，另一邊半導體與硬體工程師仍被電力、散熱、晶片等現實問題追著跑，這種上下游各說各話的「雞同鴨講」，正是當前 AI 產業最真實的寫照。 為了替這場混亂對話建立共同語言，聯發科技企業策略與前瞻技術資深處長梁伯嵩在近期舉辦的 Cake 2026 半導體電子科技徵才博覽會中，以「AI 運算架構的演進與趨勢」為講題，提出一套包含第一層實體層（Physical Layer）、第二層連結層（Link Layer）、第三層神經網路層（Neural Network Layer）、第四層情境層（Context Layer）、第五層代理層（Agent Layer）、第六層協調層（Orchestrator Layer）與第七層應用層（Application Layer）的 「AI 七層運算架構（7-Layer Model）」。 透過這套模型，梁伯嵩從最底層的實體晶片與運算基礎，一路拆解到模型、代理與應用服務，試圖將當前看似碎片化、彼此錯位的 AI 討論，重新在同一張產業地圖上對齊。 硬體與算力的極限挑戰：AI 正撞上能源天花板 梁伯嵩從架構最底層的實體層（Physical Layer）切入，分析從 2009 年學界以 FPGA 進行加速運算，到 2012 年 AlexNet 時期正式引入 GPU，再到 2015、2016 年 Google TPU 與後續 NVIDIA 的專用晶片相繼問世，AI 的運算單元正在持續演進。然而，單一晶片的擴張始終受限於光罩曝光極限無法無限放大，這也迫使產業把提升算力的重心，轉向機櫃級擴展以及跨資料中心的分散式連接（Scale-Out），藉此將數十萬顆甚至上百萬顆 GPU 串聯起來，以滿足龐大的算力需求。 但算力擴張的背後，真正拉開差距的關鍵並非運算本身，而是能源成本。當算力規模被迫以堆疊與連接的方式擴張，能耗問題便同步被放大，成為無法迴避的結構性瓶頸，這也直接引爆全球性的電力壓力。梁伯嵩特別以人腦作為對比，指出人類大腦僅需消耗約 25 瓦的能量即可運作，而當前龐大的 GPU 運算叢集雖然在運算能力上已逐漸追上人腦，但在能源效率上，卻仍落後人腦數千至數萬倍。 當前，AI [&hellip;]</p>\n"
+        }
+      ]
+    },
+    {
+      "word": "打造",
+      "count": 43,
+      "articles": [
+        {
+          "title": "踩制裁俄國紅線！日經：中國國企助白俄羅斯打造 122 公釐火箭彈產線",
+          "url": "https://technews.tw/2026/02/24/chinese-state-firms-aid-belarus-in-building-122mm-rocket-production-line/",
+          "source": "TechNews",
+          "content": "根據《日經新聞》取得一份內部文件顯示，中國一家國有軍工貿易公司正協助俄羅斯盟友白俄羅斯興建大型武器製造設施，規 [&#8230;]"
+        },
+        {
+          "title": "自民黨大勝解鎖「擴軍封印」：日本自衛隊部署四大反擊武器，打造封鎖第一島鏈「飛彈長城」",
+          "url": "https://www.thenewslens.com/article/264949",
+          "source": "關鍵評論網",
+          "content": "本文概述日本為彌補「專守防衛」之結構性缺陷，正發展以遠程打擊為核心的「反擊能力」。其重點在於部署戰斧、12式升級型飛彈與高速滑翔彈等武器，旨在建立有效的懲罰性嚇阻，扭轉其「有盾無矛」的戰略劣勢。"
+        },
+        {
+          "title": "桃園燈會「馬力食足」農業燈區 獨角飛馬、水蜜桃馬車打造童話世界",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5349276",
+          "source": "自由時報",
+          "content": "「2026桃園燈會－飛馬耀桃園」將於25日晚間6點點燈，除主燈展區外，桃市府農業局結合農藝美學與永續精神，量身打造3米高、18米寬的「馬力食足」主題燈區，包含有獨角飛馬、桃喜馬...…"
+        },
+        {
+          "title": "Toyota 澳洲高層透露下一代「牛魔王」已在開發中！獨立打造搭載 2.0 渦輪",
+          "url": "https://auto.ltn.com.tw/news/30992",
+          "source": "自由時報",
+          "content": "透過建立 Gazoo Racing 部門，讓 Toyota 得以推出一系列高性能車款，其中最具代表性的便是 GR Supra，這款「牛魔王」重新復活也完成豐田章男與恩師成瀨弘的心願，今年正式停產後令許多車迷心心念念，近日 Toyota 澳洲高層指出，新一代車型已處於開發階段，預計 2027 年正式發表。…"
+        },
+        {
+          "title": "新北推動抽水站實務研習結合廉政宣導 透明治理打造防汛韌性城市",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5349476",
+          "source": "自由時報",
+          "content": "新北市水利局為強化防汛整備並提升抽水站操作專業技能，近期辦理年度「水門、抽水站實務操作及理論研習」，規劃3梯次，每梯次為期2天，共147人參訓。課程內容涵蓋設備維護保養、消防安...…"
+        },
+        {
+          "title": "如何利用 Apigee 跨越運維鴻溝，打造穩健的數位價值鏈？",
+          "url": "https://techorange.com/2026/02/24/cloudmile-apigee-poc-api/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+          "source": "科技報橘",
+          "content": "<p>殘酷的現實：為什麼 30% 的 GenAI 專案註定失敗？ 產業研究資料庫 Gartner 近期拋出震撼彈：截至 2025 年，有超過 30% 的 Generative AI 專案在概念驗證(PoC)階段後宣告失敗。這場「創新夭折」背後的頭號殺手，並非模型不夠聰明，而是企業無法承受的運維成本與風險控制缺失。 這組數據的意義，在於打破企業內部的 GenAI 專案人人嚮往、為之狂熱的概念，因為 GenAI 專案自然有其風險和挑戰。許多企業發現，實驗室裡完美的模型，一旦接入真實流量，立刻面臨深不見底的「API 運維鴻溝」，包括：不可預測的 Token 成本、波動劇烈的系統延遲（Latency），以及供應商的速率限制（Rate Limits），讓原本的創新應用瞬間變成昂貴的技術負債。 此刻的決勝關鍵，已不再是誰的模型參數量更大，而是誰能構建一條穩定、可觀測且具備成本效益的「AI數位價值鏈」(AI Digital Value Chain)。 從實驗室落地到商業場景的「智慧路由」 而要跨越從 PoC 到大規模生產環境（Production）的鴻溝，Apigee 扮演了關鍵的「智慧路由」角色。它不僅是 API Gateway，更是企業 AI 治理的中樞神經，特別是在資源分配（Distribution）與 Token 用量限制（Usage Limits）上，協助決策者解決最棘手的營運難題。 1. 精準分配：把好鋼用在刀刃上 透過 API Product 的封裝策略，Apigee 讓企業能精準地控制「誰能使用什麼模型」。企業可以針對內部開發者、合作夥伴或 VIP 客戶設計客製化的服務級別，例如： 這種策略確保高價值的算力資源被高效分配（Distribution）在最關鍵的商業場景裡，進行精準打擊。 2. 強力防禦：拒絕「獨佔資源的惡鄰效應（Noisy Neighbor）」 在防禦層面，Apigee 提供了企業級的速率限制（Rate Limiting）與防範尖峰流量（Spike [&hellip;]</p>\n"
+        },
+        {
+          "title": "華碩前進 GTC，次世代液冷解決方案助攻國網中心打造全台第一 AI 超級電腦",
+          "url": "https://finance.technews.tw/2026/02/24/2026-gtc-asus/",
+          "source": "TechNews",
+          "content": "隨著 AI 等高效能運算工作負載激增，運算密度、功耗需求逐漸超出傳統氣冷所能應付的極限，華碩插旗次世代散熱版圖 [&#8230;]"
+        },
+        {
+          "title": "誠品生活攜手北水處　公館商圈打造近3000坪據點",
+          "url": "https://www.cna.com.tw/news/afe/202602240224.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者江明晏台北24日電）誠品生活今天公告，取得不動產使用權資產，將進駐位於公館商圈台北自來水事業處新規劃「水園區新天地」，預計興建的3棟「公館多目標綜合大樓」，並由誠品打造近3000坪店點。"
+        },
+        {
+          "title": "華碩前進GTC 亮相輝達rubin NVL72液冷解決方案 助攻國網中心打造AI超級電腦",
+          "url": "https://news.cnyes.com/news/id/6350957",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;隨著 AI 等高效能運算工作負載激增，運算密度、功耗需求逐漸超出傳統氣冷所能應付的極限，華碩 (2357-TW) 憑藉深厚的硬體研發底蘊，插旗次世代散熱版圖，推出全方位液冷解決方案，將為新一代 NVIDIA Vera Rubin NVL72 系統架構資料中心提供最佳化熱管理功能，預計於 3/16-3/19，以鑽石級贊助商身分出席在美國聖荷西舉行 2026 NVIDIA GTC 大會，首度展示此強大的液冷生態系統。&lt;/p&gt;\n\n&lt;p&gt;華碩針對最新 AI 運算密度而生的液冷解決方案，包括：Direct-to-Chip (D2C)、列間 CDU&nbsp;冷卻及混合式配置在內之產品組合，可快速且有效排解高性能 CPU、GPU 與高密度加速器機架產生的熱能，以大幅降低能耗、PUE 與 TCO。&lt;/p&gt;\n\n&lt;p&gt;華碩表示，公司液冷解決方案採用 Schneider Electric、Vertiv 等策略合作夥伴架構，另搭配來自 Auras Technology、Cooler Master 及其他產業領導者的精密元件，確保在大規模應用下，維持絕佳穩定性及效能，同時橫掃全球 2,156 項 SPEC CPU&reg; 紀錄與 248 項 MLPerf&trade;冠軍，穩踞產業領先地位。&lt;/p&gt;\n\n&lt;p&gt;有關華碩液冷實力的最佳實證，莫過於近期為台灣國家高速網路與計算中心 (NCHC) 打造的旗艦級部署，其結合 Nano4 NVIDIA HGX&trade;&nbsp;H200 叢集與最新 NVIDIA GB200 NVL72 系統，為台灣首座採用此架構的全液冷 AI 超級電腦，並透過 DLC 直接液冷技術，將 PUE 值精準控制在 1.18 的超高水準，在提供極致算力的同時，亦實現永續能源管理的政策與承諾。&lt;/p&gt;\n"
+        },
+        {
+          "title": "配合桃園燈會 桃園舊城串聯館舍打造光影展演夜遊",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350016",
+          "source": "自由時報",
+          "content": "「2026桃園燈會」以「飛馬耀桃園」自2月25日至3月8日於虎頭山創新園區、南崁溪水岸及三民運動公園打造光影展演與多元體驗活動，配合燈會期間人潮匯聚，市府文化局同步串聯舊城區多...…"
+        }
+      ]
+    },
+    {
       "word": "咨文",
       "count": 43,
       "articles": [
@@ -3091,134 +3262,68 @@
       ]
     },
     {
-      "word": "能源",
-      "count": 42,
+      "word": "警告",
+      "count": 41,
       "articles": [
         {
-          "title": "拉美再生能源占比近70% 電力結構領先全球 但全面轉型仍待深化",
-          "url": "https://news.cnyes.com/news/id/6350018",
+          "title": "最高法院攔不住川普？加徵關稅被駁回後川普警告他國：耍花樣將面臨更狠制裁",
+          "url": "https://finance.technews.tw/2026/02/24/trump-ieepa-tariffs/",
+          "source": "TechNews",
+          "content": "美國總統川普根據國際緊急經濟權力法（IEEPA）對進口商品加徵關稅的做法，上週遭最高法院否定，雖然各國不太可能 [&#8230;]"
+        },
+        {
+          "title": "ChatGPT 快要實裝成人模式？程式碼出現「Citron」代號和 18+ 警告",
+          "url": "https://technews.tw/2026/02/24/chatgpts-citron-mode-revealed-as-adult-mode-in-code/",
+          "source": "TechNews",
+          "content": "開發者 Tibor Blaho 在 ChatGPT 網頁版程式碼發現「Citron Mode Enabled」 [&#8230;]"
+        },
+        {
+          "title": "勿前往！美國國務院發布黎巴嫩最高級別旅行警告",
+          "url": "https://news.cnyes.com/news/id/6349985",
           "source": "鉅亨網(wd_stock)",
-          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/a8095280f038f4b3ca15cd843d055389.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p&gt;2026年02月24日（優分析／產業數據中心報導）⸺ 在全球淨零排放目標與氣候變遷壓力升溫之下，能源轉型已成為各國政策核心。再生能源指的是在人類生命週期內可自然補充的能源，包括太陽能、風能、海洋能、生質能、水力與地熱等。憑藉遼闊國土與豐富自然資源，拉丁美洲被視為具備成為全球再生能源重要樞紐的潛力市場。&lt;/p&gt;\n&lt;p&gt;截至2024年，拉丁美洲再生能源裝置容量接近366 GW，較十年前成長約86%。目前該區近70%的電力來自再生能源，在全球主要經濟體中屬於高占比結構。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/b99878ecaa734ceef496855657f86df8.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;\n&lt;h2&gt;水力為基礎 太陽能與風電快速崛起&lt;/h2&gt;\n&lt;p&gt;從歷史脈絡來看，水力發電長期是拉美能源結構的核心。位於巴西與巴拉圭邊境的Itaipu Dam於1984年啟用，是全球裝置容量排名第二大的水力發電站。至2024年，拉美水力發電容量約達201 GW，占整體再生能源容量約三分之二。&lt;/p&gt;\n&lt;p&gt;不過，過去十年能源發展重心明顯轉向。自2013年以來，拉美風電裝置容量成長超過六倍；太陽能光電則呈現指數型成長，2024年容量約達86 GW。這波轉變與全球趨勢一致，也反映資本市場與政策工具對風光發電的傾斜。&lt;/p&gt;\n&lt;p&gt;&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6350018/o/0bf5306c1872c529f5af0eac74876b00.jpg&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;\n&lt;h2&gt;電力領先 但整體能源仍有落差&lt;/h2&gt;\n&lt;p data-start=&quot;0&quot; data-end=&quot;44&quot;&gt;儘管拉丁美洲在「發電結構」上已高度再生化，但若從更全面的能源使用角度來看，仍有明顯落差。&lt;/p&gt;\n&lt;p data-start=&quot;46&quot; data-end=&quot;137&quot;&gt;所謂「發電結構」，指的是一個國家用來發電的能源來源比例；而「一次能源供應」則涵蓋整體能源使用，包括交通燃料（汽油、柴油）、工業用燃料與發電用能源等，是衡量整體能源依賴結構的重要指標。&lt;/p&gt;\n&lt;p data-start=&quot;139&quot; data-end=&quot;202&quot;&gt;也就是說，即使一個國家的電力大多來自水力或風電，但若交通與工業仍大量使用石油與天然氣，整體一次能源中的再生能源占比仍可能偏低。&lt;/p&gt;\n&lt;p data-start=&quot;204&quot; data-end=&quot;311&quot;&gt;以墨西哥為例，2021年再生能源在一次能源供應中的占比僅略高於12%，顯示其整體能源結構仍以化石燃料為主。阿根廷在2022年發電結構中，再生能源平均占比為13.9%，同樣顯示再生能源在整體能源體系中的滲透率仍有限。&lt;/p&gt;\n&lt;p data-start=&quot;313&quot; data-end=&quot;402&quot;&gt;即便是再生能源比例較高的巴西與巴拉圭，其能源供應也高度依賴大型水力發電。水力雖屬再生能源，但大型水壩工程往往涉及生態破壞、社區遷移與土地使用爭議，因此其永續性在近年逐漸受到質疑。&lt;/p&gt;\n&lt;p data-start=&quot;404&quot; data-end=&quot;516&quot; data-is-last-node=&quot;&quot; data-is-only-node=&quot;&quot;&gt;因此，拉美未來再生能源擴張的重點，正逐步轉向風電與太陽能等環境衝擊相對較小、建置彈性更高的能源形式。同時，如何將再生能源從發電端延伸至交通與工業部門，提升一次能源中的再生占比，將成為拉美能源轉型下一階段的關鍵課題。&lt;/p&gt;\n&lt;h2&gt;投資吸引力仍強 但需跨部門推進&lt;/h2&gt;\n&lt;p&gt;在「後水力時代」下，巴西、智利與阿根廷仍被視為再生能源投資最具吸引力市場。政策支持、拍賣制度與資源條件為成長提供基礎。&lt;/p&gt;\n&lt;p&gt;不過市場普遍認為，拉美能源轉型的真正挑戰在於跨部門整合。&lt;/p&gt;\n&lt;p&gt;雖然電力端已具優勢，但交通與工業部門仍高度依賴化石燃料，尤其石油產品在運輸部門占比仍高。若再生能源未能延伸至電動交通、工業電氣化與分散式發電，整體減碳效益將受到限制。&lt;/p&gt;\n&lt;p&gt;此外，能源轉型亦涉及社會公平。偏遠地區電力基礎建設不足、能源取得不均，仍是區域發展議題。未來政策方向需在擴充裝置容量的同時，強化電網建設與能源可觸及性。&lt;/p&gt;\n\n\n\n\n\n\n\n&lt;p&gt;※ 本文經「優分析」授權轉載，原文出處:&lt;a style=&quot;color:#A9A9A9&quot; rel=&quot;nofollow&quot; hr"
+          "content": "&lt;p&gt;美國國務院周一（23 日）將對黎巴嫩的旅行警告調升為「第四級：勿前往」，這是美國國務院有關旅行建議的最高級別警告。&lt;/p&gt;\n\n&lt;p&gt;美國國務院稱，鑑於「犯罪、恐怖主義、社會動盪、綁架、未爆地雷以及武裝衝突風險」等因素，建議美國公民不要前往黎巴嫩，部分地區尤其是邊境附近風險更高。&lt;/p&gt;\n\n&lt;p&gt;美國國務院同日還以黎巴嫩首都貝魯特安全形勢為由，下令美國駐黎巴嫩大使館非緊急政府工作人員及家屬撤離。&lt;/p&gt;\n\n&lt;p&gt;美方表示，使館人員未經事先批准不得進行個人出行，並稱可能因安全問題或威脅變化，在幾乎不提前通知的情況下進一步收緊對美方人員出行限制。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
         },
         {
-          "title": "能源即算力》天然氣為何再度翻紅？一次看懂發電技術與應用差異",
-          "url": "https://technews.tw/2026/02/24/gas-turbine-gas-engine/",
-          "source": "TechNews",
-          "content": "隨著 AI 運算量快速攀升，資料中心用電需求同步暴增。儘管再生能源是長期方向，但在現階段仍難以穩定提供 24  [&#8230;]"
+          "title": "企業回本不到百日！花旗前高管警告：AI機器人替代潮降臨 未來幾十年數量超過勞動人口",
+          "url": "https://news.cnyes.com/news/id/6350021",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;花旗前創新部門負責人 Rob Garlick 最新警告，企業管理層對利潤的極致追求正推動 AI 加速取代人類勞動力，史上最大規模替代潮已經降臨。&lt;/p&gt;\n\n&lt;p&gt;Garlick 在接受《CNBC》訪問時直言：「AI 將以更低成本完成更多任務，人類終將被淘汰。」&lt;/p&gt;\n\n&lt;p&gt;他在新書《人工智慧：混亂還是富足？ 》中預測，2035 年全球 AI 機器人數量將突破 13 億台，2050 年更飆升至 40 億台，遠超過屆時的全球勞動人口總和。&lt;/p&gt;\n\n&lt;p&gt;更重要的是成本優勢，一台售價 1.5 萬美元的機器人替代時薪 41 美元的工作，僅需 3.8 週回本，即便替代最低時薪 7.25 美元崗位，回本週期也不超過半年。&lt;/p&gt;\n\n&lt;p&gt;麥肯錫全球管理合夥人 Bob Sternfels 揭露，該公司 AI 智能體數量一年內從 3000 個激增至 2 萬個，預計 18 個月後將與 4 萬名員工數量持平。&lt;/p&gt;\n\n&lt;p&gt;微軟報告也顯示，80% 企業打算在未來 18 個月深度整合 AI 智能體，這類可自主決策的軟體正大規模滲透職場。&lt;/p&gt;\n\n&lt;p&gt;根據諮詢機構最新數據，去年美國近 5.5 萬起裁員事件中，AI 成為關鍵因素。亞馬遜等企業藉 AI 之名削減數千職缺，IMF 總裁喬治艾娃更疾呼 AI 正如海嘯衝擊勞動力市場，多數國家尚未做好準備。&lt;/p&gt;\n\n&lt;p&gt;特斯拉執行長馬斯克更預言 AI 將在今年底超越人類智慧，機器人數量在他描繪的未來圖景中將涵蓋所有人類需求，商品服務因極度充裕而近乎免費。&lt;/p&gt;\n\n&lt;p&gt;面對風暴，輝達執行長黃仁勳則給予一線希望，稱 AI 熱潮將創造六位數年薪的技術崗位，帶動水管工、電工等傳統工種升級轉型。&lt;/p&gt;\n\n&lt;p&gt;然而，當機器人回本週期不到百日，人類如何在效率碾壓中守住價值座標？這場關乎生存的競賽，答案仍在迷霧之中。&lt;/p&gt;\n"
         },
         {
-          "title": "能源即算力》當首批耗電量達 1GW 資料中心問世！電力基礎建設化身 AI 新金礦概念股",
-          "url": "https://finance.technews.tw/2026/02/24/1gw-ai-data-center/",
-          "source": "TechNews",
-          "content": "當 AI 競賽進入白熱化，科技巨頭驚覺「決勝關鍵不僅是 GPU 數量，而是穩定的電力供應」，能源即算力已成為全 [&#8230;]"
+          "title": "川普警告各國別趁機「耍花招」 否則將面臨更高關稅",
+          "url": "https://news.cnyes.com/news/id/6349953",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;在美國最高法院上周五裁定撤銷「對等關稅」後，美國總統川普周一 (23 日) 向各個貿易夥伴發出嚴厲警告：若有任何國家企圖背棄近期與美國達成的貿易協議，都將面臨依其他法源祭出、稅率更高的關稅制裁。&lt;/p&gt;\n\n&lt;h6&gt;川普警告「後果自負」&nbsp;&lt;/h6&gt;\n\n&lt;p&gt;川普周一在社群平台 Truth Social 發布多篇貼文，把矛頭指向那些可能因最高法院裁決而蠢蠢欲動的國家。&lt;/p&gt;\n\n&lt;p&gt;他說：「任何想要利用那個荒謬的最高法院裁決來『耍花招』的國家，特別是那些多年來、甚至幾十年來都在『敲詐』美國的國家，將會面臨比近期協議更高、更嚴酷的關稅。後果自負 (BUYER BEWARE!!!)」&lt;/p&gt;\n\n&lt;p&gt;雖然最高法院判定川普援引《國際緊急經濟權力法》(IEEPA) 課徵關稅屬違憲越權，但川普主張，此判決反而確認他能透過「更強大、更令人生厭且具法律確定性」的方式，來動用其他法律授權並課徵關稅。&lt;/p&gt;\n\n&lt;p&gt;此外，他還暗示可能對貿易夥伴加收「許可費」(license fees)，但尚未透露具體細節。&lt;/p&gt;\n\n&lt;h6&gt;15% 全球臨時關稅周二生效 歐盟暫緩貿易協議表決&lt;/h6&gt;\n\n&lt;p&gt;為了在法律空窗期維持壓力，川普已根據《1974 年貿易法》第 122 條，於本周二 (24 日) 凌晨 0 時 01 分起正式開徵為期 150 天的全球臨時關稅。稅率最初定在 10%，但川普已在上周六迅速調升至 122 條款法定上限的 15%。&lt;/p&gt;\n\n&lt;p&gt;這項舉動已在國際間引發連鎖反應：歐洲議會周一宣布暫緩對美貿易協議的表決。根據原本的協議，部分歐盟商品可豁免 15% 關稅，換取歐盟撤除對美國工業商品的關稅，但目前雙方互信已受影響。&lt;/p&gt;\n\n&lt;p&gt;此外，中國敦促華府取消關稅措施，而印度則宣布推遲原定的貿易談判。&lt;/p&gt;\n\n&lt;p&gt;由於貿易戰不確定性重燃，美股周一全面收跌，道瓊工業指數下跌 1.65%，標普 500 跌 1.02%，那斯達克綜合指數則跌 1.01%。&lt;/p&gt;\n\n&lt;p&gt;對等關稅遭判違憲之後，也啟動了預料將曠時費日且混亂的退稅程序。目前 22 位民主黨籍參議員已提案，要求川普政府在 180 天內，退還已依 IEEPA 條款收到的約 1750 億美元關稅稅款。&lt;/p&gt;\n"
         },
         {
-          "title": "能源即算力》從拚規格到拚整合：HVDC 正在改寫資料中心電力競局",
-          "url": "https://technews.tw/2026/02/24/hvdc-data-center/",
-          "source": "TechNews",
-          "content": "隨著 AI 算力需求激增，為解決日益嚴峻的能耗挑戰，產業正加速由傳統架構轉 HVDC（高壓直流）供電方案，並積 [&#8230;]"
+          "title": "美軍高層警告攻伊朗風險　川普否認並稱輕易取勝",
+          "url": "https://www.cna.com.tw/news/aopl/202602240049.aspx",
+          "source": "中央社國際",
+          "content": "（中央社華盛頓23日綜合外電報導）多家媒體報導，美軍最高將領警告對伊朗展開重大軍事行動存有風險。美國總統川普今天對此否認，同時表示美國在任何戰爭中都能「輕易」擊敗伊朗。"
         },
         {
-          "title": "能源即算力》Bloom Energy、台達電紛紛搶進，一次看懂固態氧化物燃料電池 SOFC ？",
-          "url": "https://technews.tw/2026/02/24/sofc-let-get-start-it/",
-          "source": "TechNews",
-          "content": "隨著 AI 算力推升資料中心用電需求，穩定且低碳的電力來源成為產業關鍵課題。在此背景下，固態氧化物燃料電池（S [&#8230;]"
-        },
-        {
-          "title": "能源即算力》散熱卡關、算力白燒，AI 資料中心下一場硬仗：從「搶電」到「省電」",
-          "url": "https://finance.technews.tw/2026/02/24/ai-data-center-saving-power/",
-          "source": "TechNews",
-          "content": "在這個生成式 AI 爆發的時代，要蓋 AI 資料中心，電力幾乎等於入場門票，但拿到電，不代表就能把算力塞滿。  [&#8230;]"
-        },
-        {
-          "title": "能源即算力》有地有機櫃也沒用，AI 資料中心得先搶電再選址",
-          "url": "https://finance.technews.tw/2026/02/24/ai-data-center-power/",
-          "source": "TechNews",
-          "content": "生成式 AI 熱潮把資料中心推上全球基礎建設的第一線，但真正卡住擴張速度的，往往不是土地、不是機櫃，也不是 G [&#8230;]"
-        },
-        {
-          "title": "中國「十五五」能源布局啟動：化石能源提升至 25%、基建投資升溫",
-          "url": "https://technews.tw/2026/02/24/china-energy-policy-renew/",
-          "source": "TechNews",
-          "content": "中國國家能源局表示，2026 年將做為「十五五」規劃開局之年，正式啟動新型能源體系建設，並將非化石能源消費占比 [&#8230;]"
-        },
-        {
-          "title": "中國「十五五」能源布局啟動：化石能源提升至 25%、基建投資升溫",
-          "url": "https://technews.tw/2026/02/24/china-energy-policy-renew/",
-          "source": "TechNews",
-          "content": "中國國家能源局表示，2026 年將做為「十五五」規劃開局之年，正式啟動新型能源體系建設，並將非化石能源消費占比 [&#8230;]"
-        },
-        {
-          "title": "AI 發展只走到一半？聯發科技企業策略與前瞻技術資深處長梁伯嵩用「七層運算架構」拆解算力、能源與應用的真正瓶頸",
-          "url": "https://techorange.com/2026/02/24/cake-mediatek/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>當 AI 成為所有產業都在談的顯學，許多困境卻開始浮現：大家明明都在談 AI，卻往往在談完全不同的層次。例如，馬斯克高談太空資料中心與 GW（十億瓦）級算力藍圖，另一邊半導體與硬體工程師仍被電力、散熱、晶片等現實問題追著跑，這種上下游各說各話的「雞同鴨講」，正是當前 AI 產業最真實的寫照。 為了替這場混亂對話建立共同語言，聯發科技企業策略與前瞻技術資深處長梁伯嵩在近期舉辦的 Cake 2026 半導體電子科技徵才博覽會中，以「AI 運算架構的演進與趨勢」為講題，提出一套包含第一層實體層（Physical Layer）、第二層連結層（Link Layer）、第三層神經網路層（Neural Network Layer）、第四層情境層（Context Layer）、第五層代理層（Agent Layer）、第六層協調層（Orchestrator Layer）與第七層應用層（Application Layer）的 「AI 七層運算架構（7-Layer Model）」。 透過這套模型，梁伯嵩從最底層的實體晶片與運算基礎，一路拆解到模型、代理與應用服務，試圖將當前看似碎片化、彼此錯位的 AI 討論，重新在同一張產業地圖上對齊。 硬體與算力的極限挑戰：AI 正撞上能源天花板 梁伯嵩從架構最底層的實體層（Physical Layer）切入，分析從 2009 年學界以 FPGA 進行加速運算，到 2012 年 AlexNet 時期正式引入 GPU，再到 2015、2016 年 Google TPU 與後續 NVIDIA 的專用晶片相繼問世，AI 的運算單元正在持續演進。然而，單一晶片的擴張始終受限於光罩曝光極限無法無限放大，這也迫使產業把提升算力的重心，轉向機櫃級擴展以及跨資料中心的分散式連接（Scale-Out），藉此將數十萬顆甚至上百萬顆 GPU 串聯起來，以滿足龐大的算力需求。 但算力擴張的背後，真正拉開差距的關鍵並非運算本身，而是能源成本。當算力規模被迫以堆疊與連接的方式擴張，能耗問題便同步被放大，成為無法迴避的結構性瓶頸，這也直接引爆全球性的電力壓力。梁伯嵩特別以人腦作為對比，指出人類大腦僅需消耗約 25 瓦的能量即可運作，而當前龐大的 GPU 運算叢集雖然在運算能力上已逐漸追上人腦，但在能源效率上，卻仍落後人腦數千至數萬倍。 當前，AI [&hellip;]</p>\n"
-        }
-      ]
-    },
-    {
-      "word": "打造",
-      "count": 42,
-      "articles": [
-        {
-          "title": "踩制裁俄國紅線！日經：中國國企助白俄羅斯打造 122 公釐火箭彈產線",
-          "url": "https://technews.tw/2026/02/24/chinese-state-firms-aid-belarus-in-building-122mm-rocket-production-line/",
-          "source": "TechNews",
-          "content": "根據《日經新聞》取得一份內部文件顯示，中國一家國有軍工貿易公司正協助俄羅斯盟友白俄羅斯興建大型武器製造設施，規 [&#8230;]"
-        },
-        {
-          "title": "自民黨大勝解鎖「擴軍封印」：日本自衛隊部署四大反擊武器，打造封鎖第一島鏈「飛彈長城」",
-          "url": "https://www.thenewslens.com/article/264949",
-          "source": "關鍵評論網",
-          "content": "本文概述日本為彌補「專守防衛」之結構性缺陷，正發展以遠程打擊為核心的「反擊能力」。其重點在於部署戰斧、12式升級型飛彈與高速滑翔彈等武器，旨在建立有效的懲罰性嚇阻，扭轉其「有盾無矛」的戰略劣勢。"
-        },
-        {
-          "title": "桃園燈會「馬力食足」農業燈區 獨角飛馬、水蜜桃馬車打造童話世界",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5349276",
+          "title": "黑天鵝作者警告：AI市場波動將加劇 軟體恐出現破產潮",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5349303",
           "source": "自由時報",
-          "content": "「2026桃園燈會－飛馬耀桃園」將於25日晚間6點點燈，除主燈展區外，桃市府農業局結合農藝美學與永續精神，量身打造3米高、18米寬的「馬力食足」主題燈區，包含有獨角飛馬、桃喜馬...…"
+          "content": "\n\n\n〔財經頻道／綜合報導〕《黑天鵝》作者塔勒布（Nassim Taleb）警告，隨著AI驅動的上漲行情進入更加脆弱的階段，市場波動將加劇，軟體產業可能出現破產，投資人需要做好準備。\n\n\n《彭博》報導...…"
         },
         {
-          "title": "Toyota 澳洲高層透露下一代「牛魔王」已在開發中！獨立打造搭載 2.0 渦輪",
-          "url": "https://auto.ltn.com.tw/news/30992",
+          "title": "矽谷不能再裝睡！紐時警告：一旦台灣晶片斷供 美經濟會瞬間斷氣",
+          "url": "https://news.cnyes.com/news/id/6350664",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《紐約時報》報導指出，隨著兩岸局勢日益緊迫，美國國家安全官員在華盛頓與矽谷的秘密簡報中提出嚴厲警告：一旦中國封鎖台灣，島內晶片供應鏈將遭到扼殺，屆時美國科技業恐將癱瘓，進而引發全球性的經濟災難。&lt;/p&gt;\n\n&lt;p&gt;多年來，美國聯邦官員致力於推動矽谷擺脫對台灣的依賴，這個面積與馬里蘭州相仿的島國，掌握著全球九成高階電腦晶片的產量。&lt;/p&gt;\n\n&lt;p&gt;美國現任與前任政府皆試圖降低對台依賴。拜登政府以《CHIPS 法案》提供 500 億美元補貼，鼓勵晶片製造回流；川普政府則以關稅威脅，要求企業提高在美採購與生產比重。儘管手段各異，但背後的急迫感如出一轍。&lt;/p&gt;\n\n&lt;p&gt;然而，無論補貼、警告或施壓，都未能從根本改變產業結構。美國科技公司仍高度依賴台灣供應鏈，因其成本較低、技術領先且產能穩定。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;台灣成全球經濟「單點失效」風險&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;美國財政部長貝森特在達沃斯論壇直言，全球 97% 的高階晶片集中在台灣，是世界經濟最大的「單點失效風險」。若台灣遭封鎖或產能被摧毀，將是「經濟末日」。&lt;/p&gt;\n\n&lt;p&gt;一份 2022 年由美國半導體產業協會委託撰寫的機密報告指出，若台灣晶片供應被切斷，將引發自大蕭條以來最嚴重的經濟危機。美國 GDP 恐萎縮 11%，幅度為 2008 年金融危機的兩倍；中國經濟下滑幅度更高達 16%。&lt;/p&gt;\n\n&lt;p&gt;同時，全球經濟損失可能超過 10 兆美元。雖然部分大型科技公司可憑庫存支撐數月，但最終仍將無法運作。&lt;/p&gt;\n\n&lt;p&gt;《紐約時報》指出，過去，美國對台灣的承諾多基於地緣政治與民主價值，但現在台灣已成為美國經濟生存的命脈，尤其在驅動股市與成長的人工智慧（AI）浪潮中，幾乎所有核心晶片都源自台灣。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;高成本與技術差距 讓企業遲遲不願轉向&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;然而，將供應鏈移出台灣絕非易事。美國科技業過去一直因利潤考量而採取觀望態度，因為在美製造晶片的成本高出台灣 25% 以上，且勞動力與許可流程繁瑣。&lt;/p&gt;\n\n&lt;p&gt;此外，台積電 (&lt;a data-symbol-template=&quot;USS:TSM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;TSM-US&lt;/a&gt;) (&lt;a data-symbol-template=&quot;TWS:2330:STOCK:COMMON&quot; href=&quot;#&quot;&gt;2330-TW&lt;/a&gt;) 始終堅持將最先進的技術留在台灣，使美國新廠的製程往往落後一代。為了打破僵局，川普政府採取了極為強勢的干預模式。&lt;/p&gt;\n\n&lt;p&gt;商務部長盧特尼克（Howard Lutnick）近期頻繁接觸科技巨頭與台積電高層，並將關稅作為談判籌碼，警告不向美廠下單的企業可能面臨高額稅率。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;投資湧現 但供應鏈重組仍需多年&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;在強大政策壓力下，產業格局正緩慢發生轉移。全球市值最高企業輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NVDA-US&lt;/a&gt;) 已承諾從台積電亞利桑那州新廠採購晶片，而台積電亦在美國政府施壓下，同意將在美投資額增加至 1500 億美元，並計劃於 2028 年前增建多座工廠。&lt;/p&gt;\n\n&lt;p&gt;與此同時，陷入經營困境的英特爾 (&lt;a data-symbol-template=&quot;USS:INTC:STOCK:COMMON&quot; href=&quot;#&quot;&gt;INTC-US&lt;/a&gt;) 也被迫與政府達成協議，出讓部分股權以換取補助金，並尋求與台積電合作的可能性，以維持其作為美國領先製造商的地位。&lt;/p&gt;\n\n&lt;p&gt;儘管投資浪潮湧現，但專家提醒，要達到真正的供應鏈韌性仍需數年時間。到 2030 年，美國在全球半導體產能中的佔比預計僅能提升至 10% 左右。&lt;/p&gt;\n\n&lt;p&gt;即便台積電近日在鳳凰城揭幕了首片在美生產的 AI 晶片晶圓，並被譽為歷史性時刻，但該晶片實際上仍需送往台灣進行後端封裝才能完工。&lt;/p&gt;\n\n&lt;p&gt;這說明了台美供應鏈結構性的深度耦合，在短期內，美國經濟的命脈依然緊緊聯繫在台灣海峽的穩定之上。&lt;/p&gt;\n"
+        },
+        {
+          "title": "是中國嗎？川普警告對「玩弄花招」貿易國課更高關稅、要做極其可怕的事",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5350228",
           "source": "自由時報",
-          "content": "透過建立 Gazoo Racing 部門，讓 Toyota 得以推出一系列高性能車款，其中最具代表性的便是 GR Supra，這款「牛魔王」重新復活也完成豐田章男與恩師成瀨弘的心願，今年正式停產後令許多車迷心心念念，近日 Toyota 澳洲高層指出，新一代車型已處於開發階段，預計 2027 年正式發表。…"
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普警告各國，在最高法院駁回其緊急關稅後，不要放棄最近與美國達成的貿易協議，並表示，他將根據不同的貿易法對這些國家徵收更高的關稅。\n\n\n川普在社群媒體貼文中表示，他...…"
         },
         {
-          "title": "新北推動抽水站實務研習結合廉政宣導 透明治理打造防汛韌性城市",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5349476",
-          "source": "自由時報",
-          "content": "新北市水利局為強化防汛整備並提升抽水站操作專業技能，近期辦理年度「水門、抽水站實務操作及理論研習」，規劃3梯次，每梯次為期2天，共147人參訓。課程內容涵蓋設備維護保養、消防安...…"
-        },
-        {
-          "title": "如何利用 Apigee 跨越運維鴻溝，打造穩健的數位價值鏈？",
-          "url": "https://techorange.com/2026/02/24/cloudmile-apigee-poc-api/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-          "source": "科技報橘",
-          "content": "<p>殘酷的現實：為什麼 30% 的 GenAI 專案註定失敗？ 產業研究資料庫 Gartner 近期拋出震撼彈：截至 2025 年，有超過 30% 的 Generative AI 專案在概念驗證(PoC)階段後宣告失敗。這場「創新夭折」背後的頭號殺手，並非模型不夠聰明，而是企業無法承受的運維成本與風險控制缺失。 這組數據的意義，在於打破企業內部的 GenAI 專案人人嚮往、為之狂熱的概念，因為 GenAI 專案自然有其風險和挑戰。許多企業發現，實驗室裡完美的模型，一旦接入真實流量，立刻面臨深不見底的「API 運維鴻溝」，包括：不可預測的 Token 成本、波動劇烈的系統延遲（Latency），以及供應商的速率限制（Rate Limits），讓原本的創新應用瞬間變成昂貴的技術負債。 此刻的決勝關鍵，已不再是誰的模型參數量更大，而是誰能構建一條穩定、可觀測且具備成本效益的「AI數位價值鏈」(AI Digital Value Chain)。 從實驗室落地到商業場景的「智慧路由」 而要跨越從 PoC 到大規模生產環境（Production）的鴻溝，Apigee 扮演了關鍵的「智慧路由」角色。它不僅是 API Gateway，更是企業 AI 治理的中樞神經，特別是在資源分配（Distribution）與 Token 用量限制（Usage Limits）上，協助決策者解決最棘手的營運難題。 1. 精準分配：把好鋼用在刀刃上 透過 API Product 的封裝策略，Apigee 讓企業能精準地控制「誰能使用什麼模型」。企業可以針對內部開發者、合作夥伴或 VIP 客戶設計客製化的服務級別，例如： 這種策略確保高價值的算力資源被高效分配（Distribution）在最關鍵的商業場景裡，進行精準打擊。 2. 強力防禦：拒絕「獨佔資源的惡鄰效應（Noisy Neighbor）」 在防禦層面，Apigee 提供了企業級的速率限制（Rate Limiting）與防範尖峰流量（Spike [&hellip;]</p>\n"
-        },
-        {
-          "title": "華碩前進 GTC，次世代液冷解決方案助攻國網中心打造全台第一 AI 超級電腦",
-          "url": "https://finance.technews.tw/2026/02/24/2026-gtc-asus/",
-          "source": "TechNews",
-          "content": "隨著 AI 等高效能運算工作負載激增，運算密度、功耗需求逐漸超出傳統氣冷所能應付的極限，華碩插旗次世代散熱版圖 [&#8230;]"
-        },
-        {
-          "title": "誠品生活攜手北水處　公館商圈打造近3000坪據點",
-          "url": "https://www.cna.com.tw/news/afe/202602240224.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者江明晏台北24日電）誠品生活今天公告，取得不動產使用權資產，將進駐位於公館商圈台北自來水事業處新規劃「水園區新天地」，預計興建的3棟「公館多目標綜合大樓」，並由誠品打造近3000坪店點。"
-        },
-        {
-          "title": "華碩前進GTC 亮相輝達rubin NVL72液冷解決方案 助攻國網中心打造AI超級電腦",
-          "url": "https://news.cnyes.com/news/id/6350957",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;隨著 AI 等高效能運算工作負載激增，運算密度、功耗需求逐漸超出傳統氣冷所能應付的極限，華碩 (2357-TW) 憑藉深厚的硬體研發底蘊，插旗次世代散熱版圖，推出全方位液冷解決方案，將為新一代 NVIDIA Vera Rubin NVL72 系統架構資料中心提供最佳化熱管理功能，預計於 3/16-3/19，以鑽石級贊助商身分出席在美國聖荷西舉行 2026 NVIDIA GTC 大會，首度展示此強大的液冷生態系統。&lt;/p&gt;\n\n&lt;p&gt;華碩針對最新 AI 運算密度而生的液冷解決方案，包括：Direct-to-Chip (D2C)、列間 CDU&nbsp;冷卻及混合式配置在內之產品組合，可快速且有效排解高性能 CPU、GPU 與高密度加速器機架產生的熱能，以大幅降低能耗、PUE 與 TCO。&lt;/p&gt;\n\n&lt;p&gt;華碩表示，公司液冷解決方案採用 Schneider Electric、Vertiv 等策略合作夥伴架構，另搭配來自 Auras Technology、Cooler Master 及其他產業領導者的精密元件，確保在大規模應用下，維持絕佳穩定性及效能，同時橫掃全球 2,156 項 SPEC CPU&reg; 紀錄與 248 項 MLPerf&trade;冠軍，穩踞產業領先地位。&lt;/p&gt;\n\n&lt;p&gt;有關華碩液冷實力的最佳實證，莫過於近期為台灣國家高速網路與計算中心 (NCHC) 打造的旗艦級部署，其結合 Nano4 NVIDIA HGX&trade;&nbsp;H200 叢集與最新 NVIDIA GB200 NVL72 系統，為台灣首座採用此架構的全液冷 AI 超級電腦，並透過 DLC 直接液冷技術，將 PUE 值精準控制在 1.18 的超高水準，在提供極致算力的同時，亦實現永續能源管理的政策與承諾。&lt;/p&gt;\n"
-        },
-        {
-          "title": "配合桃園燈會 桃園舊城串聯館舍打造光影展演夜遊",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350016",
-          "source": "自由時報",
-          "content": "「2026桃園燈會」以「飛馬耀桃園」自2月25日至3月8日於虎頭山創新園區、南崁溪水岸及三民運動公園打造光影展演與多元體驗活動，配合燈會期間人潮匯聚，市府文化局同步串聯舊城區多...…"
+          "title": "「大賣空」貝瑞警告：輝達恐重演1920年代無線電股崩盤慘劇",
+          "url": "https://news.cnyes.com/news/id/6351295",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;曾精準預測美國房地產泡沫的《大賣空》原型人物貝瑞 (Michael Burry) 近日再度對市場發出強烈警告。他指出，當前由輝達 (NVDA-US) 引領的 AI 熱潮，其發展路徑可能與 1920 年代的「無線電狂熱」極為相似，並最終走向崩潰。&lt;/p&gt;\n\n&lt;p&gt;貝瑞在社群媒體 X 上指出，1920 年代的投資熱潮聚焦於美國無線電公司 (RCA)，這家公司股價在當時一度飆升近 200 倍，成為市場最耀眼的明星。然而，隨著泡沫破裂，RCA 的股價從 1929 年 9 月的 114.75 美元，一路崩跌至 1932 年 5 月的 2.625 美元，降幅高達 98%。&lt;/p&gt;\n\n&lt;p&gt;貝瑞特別強調，即便投資者正確預測了無線電技術將在未來半個世紀占據主導地位，但在 1920 年代追高 RCA 的人依然會賠得體無完膚。他以此暗示，即便 AI 確實是未來的科技趨勢，但輝達目前的漲勢未必能為長期投資者保證獲利。&lt;/p&gt;\n\n&lt;p&gt;除了股價泡沫，貝瑞也對科技巨頭龐大的 AI 相關資本支出提出質疑。他直接點名微軟 (MSFT-US)、Meta(META-US)、Google 母公司 Alphabet(GOOGL-US) 與亞馬遜 (AMZN-US)，質問這種類似「軍備競賽」的 AI 資料中心建設投入何時才會停止。&lt;/p&gt;\n\n&lt;p&gt;他指出，這類基礎設施投資正大量消耗企業的現金流，並導致借貸規模以前所未有的方式增加。貝瑞甚至質疑，部分企業是否正在調整會計核算方式，以減輕因支出過大而面臨的盈利壓力。&lt;/p&gt;\n\n&lt;p&gt;貝瑞進一步提醒，即便擁有領先地位，這種優勢也可能在激烈的市場競爭中迅速被削弱。他引用巴菲特 (Warren Buffett) 曾投資百貨公司 Hochschild-Kohn 的失敗經驗，指出即便企業投入鉅資升級，若競爭對手迅速追趕，原有的領先地位將難以轉化為持久的競爭優勢。&lt;/p&gt;\n\n&lt;p&gt;隨著輝達即將公布第四季財報，貝瑞的這番言論無疑為市場投下了不確定性。雖然輝達目前的股價趨勢在短中長期均顯強勁，但根據分析評級，其目前的價值評級偏弱，顯示市場對其高估值的擔憂正在升溫。&lt;/p&gt;\n"
         }
       ]
     },
@@ -3285,72 +3390,6 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5351346",
           "source": "自由時報",
           "content": "\n\n\n軟銀球星山川穗高昨抵達台灣找餐廳吃飯時不慎踩雷，在社群媒體上PO文表示「好難吃」，不過中信兄弟球星陳俊秀透露有帶他去吃飯，並透露，「山川其實還滿喜歡台灣的。」\n\n\n山川穗...…"
-        }
-      ]
-    },
-    {
-      "word": "警告",
-      "count": 40,
-      "articles": [
-        {
-          "title": "最高法院攔不住川普？加徵關稅被駁回後川普警告他國：耍花樣將面臨更狠制裁",
-          "url": "https://finance.technews.tw/2026/02/24/trump-ieepa-tariffs/",
-          "source": "TechNews",
-          "content": "美國總統川普根據國際緊急經濟權力法（IEEPA）對進口商品加徵關稅的做法，上週遭最高法院否定，雖然各國不太可能 [&#8230;]"
-        },
-        {
-          "title": "ChatGPT 快要實裝成人模式？程式碼出現「Citron」代號和 18+ 警告",
-          "url": "https://technews.tw/2026/02/24/chatgpts-citron-mode-revealed-as-adult-mode-in-code/",
-          "source": "TechNews",
-          "content": "開發者 Tibor Blaho 在 ChatGPT 網頁版程式碼發現「Citron Mode Enabled」 [&#8230;]"
-        },
-        {
-          "title": "勿前往！美國國務院發布黎巴嫩最高級別旅行警告",
-          "url": "https://news.cnyes.com/news/id/6349985",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國國務院周一（23 日）將對黎巴嫩的旅行警告調升為「第四級：勿前往」，這是美國國務院有關旅行建議的最高級別警告。&lt;/p&gt;\n\n&lt;p&gt;美國國務院稱，鑑於「犯罪、恐怖主義、社會動盪、綁架、未爆地雷以及武裝衝突風險」等因素，建議美國公民不要前往黎巴嫩，部分地區尤其是邊境附近風險更高。&lt;/p&gt;\n\n&lt;p&gt;美國國務院同日還以黎巴嫩首都貝魯特安全形勢為由，下令美國駐黎巴嫩大使館非緊急政府工作人員及家屬撤離。&lt;/p&gt;\n\n&lt;p&gt;美方表示，使館人員未經事先批准不得進行個人出行，並稱可能因安全問題或威脅變化，在幾乎不提前通知的情況下進一步收緊對美方人員出行限制。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "企業回本不到百日！花旗前高管警告：AI機器人替代潮降臨 未來幾十年數量超過勞動人口",
-          "url": "https://news.cnyes.com/news/id/6350021",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;花旗前創新部門負責人 Rob Garlick 最新警告，企業管理層對利潤的極致追求正推動 AI 加速取代人類勞動力，史上最大規模替代潮已經降臨。&lt;/p&gt;\n\n&lt;p&gt;Garlick 在接受《CNBC》訪問時直言：「AI 將以更低成本完成更多任務，人類終將被淘汰。」&lt;/p&gt;\n\n&lt;p&gt;他在新書《人工智慧：混亂還是富足？ 》中預測，2035 年全球 AI 機器人數量將突破 13 億台，2050 年更飆升至 40 億台，遠超過屆時的全球勞動人口總和。&lt;/p&gt;\n\n&lt;p&gt;更重要的是成本優勢，一台售價 1.5 萬美元的機器人替代時薪 41 美元的工作，僅需 3.8 週回本，即便替代最低時薪 7.25 美元崗位，回本週期也不超過半年。&lt;/p&gt;\n\n&lt;p&gt;麥肯錫全球管理合夥人 Bob Sternfels 揭露，該公司 AI 智能體數量一年內從 3000 個激增至 2 萬個，預計 18 個月後將與 4 萬名員工數量持平。&lt;/p&gt;\n\n&lt;p&gt;微軟報告也顯示，80% 企業打算在未來 18 個月深度整合 AI 智能體，這類可自主決策的軟體正大規模滲透職場。&lt;/p&gt;\n\n&lt;p&gt;根據諮詢機構最新數據，去年美國近 5.5 萬起裁員事件中，AI 成為關鍵因素。亞馬遜等企業藉 AI 之名削減數千職缺，IMF 總裁喬治艾娃更疾呼 AI 正如海嘯衝擊勞動力市場，多數國家尚未做好準備。&lt;/p&gt;\n\n&lt;p&gt;特斯拉執行長馬斯克更預言 AI 將在今年底超越人類智慧，機器人數量在他描繪的未來圖景中將涵蓋所有人類需求，商品服務因極度充裕而近乎免費。&lt;/p&gt;\n\n&lt;p&gt;面對風暴，輝達執行長黃仁勳則給予一線希望，稱 AI 熱潮將創造六位數年薪的技術崗位，帶動水管工、電工等傳統工種升級轉型。&lt;/p&gt;\n\n&lt;p&gt;然而，當機器人回本週期不到百日，人類如何在效率碾壓中守住價值座標？這場關乎生存的競賽，答案仍在迷霧之中。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普警告各國別趁機「耍花招」 否則將面臨更高關稅",
-          "url": "https://news.cnyes.com/news/id/6349953",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;在美國最高法院上周五裁定撤銷「對等關稅」後，美國總統川普周一 (23 日) 向各個貿易夥伴發出嚴厲警告：若有任何國家企圖背棄近期與美國達成的貿易協議，都將面臨依其他法源祭出、稅率更高的關稅制裁。&lt;/p&gt;\n\n&lt;h6&gt;川普警告「後果自負」&nbsp;&lt;/h6&gt;\n\n&lt;p&gt;川普周一在社群平台 Truth Social 發布多篇貼文，把矛頭指向那些可能因最高法院裁決而蠢蠢欲動的國家。&lt;/p&gt;\n\n&lt;p&gt;他說：「任何想要利用那個荒謬的最高法院裁決來『耍花招』的國家，特別是那些多年來、甚至幾十年來都在『敲詐』美國的國家，將會面臨比近期協議更高、更嚴酷的關稅。後果自負 (BUYER BEWARE!!!)」&lt;/p&gt;\n\n&lt;p&gt;雖然最高法院判定川普援引《國際緊急經濟權力法》(IEEPA) 課徵關稅屬違憲越權，但川普主張，此判決反而確認他能透過「更強大、更令人生厭且具法律確定性」的方式，來動用其他法律授權並課徵關稅。&lt;/p&gt;\n\n&lt;p&gt;此外，他還暗示可能對貿易夥伴加收「許可費」(license fees)，但尚未透露具體細節。&lt;/p&gt;\n\n&lt;h6&gt;15% 全球臨時關稅周二生效 歐盟暫緩貿易協議表決&lt;/h6&gt;\n\n&lt;p&gt;為了在法律空窗期維持壓力，川普已根據《1974 年貿易法》第 122 條，於本周二 (24 日) 凌晨 0 時 01 分起正式開徵為期 150 天的全球臨時關稅。稅率最初定在 10%，但川普已在上周六迅速調升至 122 條款法定上限的 15%。&lt;/p&gt;\n\n&lt;p&gt;這項舉動已在國際間引發連鎖反應：歐洲議會周一宣布暫緩對美貿易協議的表決。根據原本的協議，部分歐盟商品可豁免 15% 關稅，換取歐盟撤除對美國工業商品的關稅，但目前雙方互信已受影響。&lt;/p&gt;\n\n&lt;p&gt;此外，中國敦促華府取消關稅措施，而印度則宣布推遲原定的貿易談判。&lt;/p&gt;\n\n&lt;p&gt;由於貿易戰不確定性重燃，美股周一全面收跌，道瓊工業指數下跌 1.65%，標普 500 跌 1.02%，那斯達克綜合指數則跌 1.01%。&lt;/p&gt;\n\n&lt;p&gt;對等關稅遭判違憲之後，也啟動了預料將曠時費日且混亂的退稅程序。目前 22 位民主黨籍參議員已提案，要求川普政府在 180 天內，退還已依 IEEPA 條款收到的約 1750 億美元關稅稅款。&lt;/p&gt;\n"
-        },
-        {
-          "title": "美軍高層警告攻伊朗風險　川普否認並稱輕易取勝",
-          "url": "https://www.cna.com.tw/news/aopl/202602240049.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓23日綜合外電報導）多家媒體報導，美軍最高將領警告對伊朗展開重大軍事行動存有風險。美國總統川普今天對此否認，同時表示美國在任何戰爭中都能「輕易」擊敗伊朗。"
-        },
-        {
-          "title": "黑天鵝作者警告：AI市場波動將加劇 軟體恐出現破產潮",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5349303",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕《黑天鵝》作者塔勒布（Nassim Taleb）警告，隨著AI驅動的上漲行情進入更加脆弱的階段，市場波動將加劇，軟體產業可能出現破產，投資人需要做好準備。\n\n\n《彭博》報導...…"
-        },
-        {
-          "title": "矽谷不能再裝睡！紐時警告：一旦台灣晶片斷供 美經濟會瞬間斷氣",
-          "url": "https://news.cnyes.com/news/id/6350664",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《紐約時報》報導指出，隨著兩岸局勢日益緊迫，美國國家安全官員在華盛頓與矽谷的秘密簡報中提出嚴厲警告：一旦中國封鎖台灣，島內晶片供應鏈將遭到扼殺，屆時美國科技業恐將癱瘓，進而引發全球性的經濟災難。&lt;/p&gt;\n\n&lt;p&gt;多年來，美國聯邦官員致力於推動矽谷擺脫對台灣的依賴，這個面積與馬里蘭州相仿的島國，掌握著全球九成高階電腦晶片的產量。&lt;/p&gt;\n\n&lt;p&gt;美國現任與前任政府皆試圖降低對台依賴。拜登政府以《CHIPS 法案》提供 500 億美元補貼，鼓勵晶片製造回流；川普政府則以關稅威脅，要求企業提高在美採購與生產比重。儘管手段各異，但背後的急迫感如出一轍。&lt;/p&gt;\n\n&lt;p&gt;然而，無論補貼、警告或施壓，都未能從根本改變產業結構。美國科技公司仍高度依賴台灣供應鏈，因其成本較低、技術領先且產能穩定。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;台灣成全球經濟「單點失效」風險&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;美國財政部長貝森特在達沃斯論壇直言，全球 97% 的高階晶片集中在台灣，是世界經濟最大的「單點失效風險」。若台灣遭封鎖或產能被摧毀，將是「經濟末日」。&lt;/p&gt;\n\n&lt;p&gt;一份 2022 年由美國半導體產業協會委託撰寫的機密報告指出，若台灣晶片供應被切斷，將引發自大蕭條以來最嚴重的經濟危機。美國 GDP 恐萎縮 11%，幅度為 2008 年金融危機的兩倍；中國經濟下滑幅度更高達 16%。&lt;/p&gt;\n\n&lt;p&gt;同時，全球經濟損失可能超過 10 兆美元。雖然部分大型科技公司可憑庫存支撐數月，但最終仍將無法運作。&lt;/p&gt;\n\n&lt;p&gt;《紐約時報》指出，過去，美國對台灣的承諾多基於地緣政治與民主價值，但現在台灣已成為美國經濟生存的命脈，尤其在驅動股市與成長的人工智慧（AI）浪潮中，幾乎所有核心晶片都源自台灣。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;高成本與技術差距 讓企業遲遲不願轉向&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;然而，將供應鏈移出台灣絕非易事。美國科技業過去一直因利潤考量而採取觀望態度，因為在美製造晶片的成本高出台灣 25% 以上，且勞動力與許可流程繁瑣。&lt;/p&gt;\n\n&lt;p&gt;此外，台積電 (&lt;a data-symbol-template=&quot;USS:TSM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;TSM-US&lt;/a&gt;) (&lt;a data-symbol-template=&quot;TWS:2330:STOCK:COMMON&quot; href=&quot;#&quot;&gt;2330-TW&lt;/a&gt;) 始終堅持將最先進的技術留在台灣，使美國新廠的製程往往落後一代。為了打破僵局，川普政府採取了極為強勢的干預模式。&lt;/p&gt;\n\n&lt;p&gt;商務部長盧特尼克（Howard Lutnick）近期頻繁接觸科技巨頭與台積電高層，並將關稅作為談判籌碼，警告不向美廠下單的企業可能面臨高額稅率。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;投資湧現 但供應鏈重組仍需多年&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;在強大政策壓力下，產業格局正緩慢發生轉移。全球市值最高企業輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;NVDA-US&lt;/a&gt;) 已承諾從台積電亞利桑那州新廠採購晶片，而台積電亦在美國政府施壓下，同意將在美投資額增加至 1500 億美元，並計劃於 2028 年前增建多座工廠。&lt;/p&gt;\n\n&lt;p&gt;與此同時，陷入經營困境的英特爾 (&lt;a data-symbol-template=&quot;USS:INTC:STOCK:COMMON&quot; href=&quot;#&quot;&gt;INTC-US&lt;/a&gt;) 也被迫與政府達成協議，出讓部分股權以換取補助金，並尋求與台積電合作的可能性，以維持其作為美國領先製造商的地位。&lt;/p&gt;\n\n&lt;p&gt;儘管投資浪潮湧現，但專家提醒，要達到真正的供應鏈韌性仍需數年時間。到 2030 年，美國在全球半導體產能中的佔比預計僅能提升至 10% 左右。&lt;/p&gt;\n\n&lt;p&gt;即便台積電近日在鳳凰城揭幕了首片在美生產的 AI 晶片晶圓，並被譽為歷史性時刻，但該晶片實際上仍需送往台灣進行後端封裝才能完工。&lt;/p&gt;\n\n&lt;p&gt;這說明了台美供應鏈結構性的深度耦合，在短期內，美國經濟的命脈依然緊緊聯繫在台灣海峽的穩定之上。&lt;/p&gt;\n"
-        },
-        {
-          "title": "是中國嗎？川普警告對「玩弄花招」貿易國課更高關稅、要做極其可怕的事",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5350228",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國總統川普警告各國，在最高法院駁回其緊急關稅後，不要放棄最近與美國達成的貿易協議，並表示，他將根據不同的貿易法對這些國家徵收更高的關稅。\n\n\n川普在社群媒體貼文中表示，他...…"
-        },
-        {
-          "title": "「大賣空」貝瑞警告：輝達恐重演1920年代無線電股崩盤慘劇",
-          "url": "https://news.cnyes.com/news/id/6351295",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;曾精準預測美國房地產泡沫的《大賣空》原型人物貝瑞 (Michael Burry) 近日再度對市場發出強烈警告。他指出，當前由輝達 (NVDA-US) 引領的 AI 熱潮，其發展路徑可能與 1920 年代的「無線電狂熱」極為相似，並最終走向崩潰。&lt;/p&gt;\n\n&lt;p&gt;貝瑞在社群媒體 X 上指出，1920 年代的投資熱潮聚焦於美國無線電公司 (RCA)，這家公司股價在當時一度飆升近 200 倍，成為市場最耀眼的明星。然而，隨著泡沫破裂，RCA 的股價從 1929 年 9 月的 114.75 美元，一路崩跌至 1932 年 5 月的 2.625 美元，降幅高達 98%。&lt;/p&gt;\n\n&lt;p&gt;貝瑞特別強調，即便投資者正確預測了無線電技術將在未來半個世紀占據主導地位，但在 1920 年代追高 RCA 的人依然會賠得體無完膚。他以此暗示，即便 AI 確實是未來的科技趨勢，但輝達目前的漲勢未必能為長期投資者保證獲利。&lt;/p&gt;\n\n&lt;p&gt;除了股價泡沫，貝瑞也對科技巨頭龐大的 AI 相關資本支出提出質疑。他直接點名微軟 (MSFT-US)、Meta(META-US)、Google 母公司 Alphabet(GOOGL-US) 與亞馬遜 (AMZN-US)，質問這種類似「軍備競賽」的 AI 資料中心建設投入何時才會停止。&lt;/p&gt;\n\n&lt;p&gt;他指出，這類基礎設施投資正大量消耗企業的現金流，並導致借貸規模以前所未有的方式增加。貝瑞甚至質疑，部分企業是否正在調整會計核算方式，以減輕因支出過大而面臨的盈利壓力。&lt;/p&gt;\n\n&lt;p&gt;貝瑞進一步提醒，即便擁有領先地位，這種優勢也可能在激烈的市場競爭中迅速被削弱。他引用巴菲特 (Warren Buffett) 曾投資百貨公司 Hochschild-Kohn 的失敗經驗，指出即便企業投入鉅資升級，若競爭對手迅速追趕，原有的領先地位將難以轉化為持久的競爭優勢。&lt;/p&gt;\n\n&lt;p&gt;隨著輝達即將公布第四季財報，貝瑞的這番言論無疑為市場投下了不確定性。雖然輝達目前的股價趨勢在短中長期均顯強勁，但根據分析評級，其目前的價值評級偏弱，顯示市場對其高估值的擔憂正在升溫。&lt;/p&gt;\n"
         }
       ]
     },
