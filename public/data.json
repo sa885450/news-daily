@@ -1,480 +1,223 @@
 {
-  "updateTime": "2026-03-03T16:03:25.885Z",
-  "fullDateStr": "2026/3/4 · 更新於 00:03:25",
+  "updateTime": "2026-03-03T20:00:58.485Z",
+  "fullDateStr": "2026/3/4 · 更新於 04:00:58",
   "aiResult": {
-    "sentiment_score": -0.85,
+    "sentiment_score": -0.42,
     "dimensions": {
-      "policy": 0.2,
-      "market": -0.9,
-      "industry": -0.5,
-      "international": -0.95,
-      "technical": -0.85
+      "policy": -0.7,
+      "market": -0.5,
+      "industry": -0.3,
+      "international": -0.8,
+      "technical": -0.4
     },
     "entities": [
       {
-        "name": "台積電ADR",
+        "name": "芯源系統",
         "sentiment": "negative",
-        "ticker": "TSM-US"
+        "ticker": "MPWR.US"
       },
       {
-        "name": "蘋果",
+        "name": "Atlassian",
+        "sentiment": "positive",
+        "ticker": "TEAM.US"
+      },
+      {
+        "name": "Workday",
+        "sentiment": "positive",
+        "ticker": "WDAY.US"
+      },
+      {
+        "name": "HF Sinclair",
+        "sentiment": "positive",
+        "ticker": "DINO.US"
+      },
+      {
+        "name": "Anthropic",
+        "sentiment": "negative",
+        "ticker": null
+      },
+      {
+        "name": "OpenAI",
         "sentiment": "neutral",
-        "ticker": "AAPL-US"
+        "ticker": null
       },
       {
-        "name": "美光科技",
+        "name": "費城半導體指數",
         "sentiment": "negative",
-        "ticker": "MU-US"
-      },
-      {
-        "name": "目標百貨",
-        "sentiment": "positive",
-        "ticker": "TGT-US"
-      },
-      {
-        "name": "宏碁",
-        "sentiment": "positive",
-        "ticker": "2353.TW"
-      },
-      {
-        "name": "超微半導體",
-        "sentiment": "negative",
-        "ticker": "AMD-US"
-      },
-      {
-        "name": "英特爾",
-        "sentiment": "negative",
-        "ticker": "INTC-US"
+        "ticker": "SOX"
       }
     ],
-    "summary": "<h3>【大師深度決策：在能源火海中，佈局「信賴價值」的折扣期】</h3><p>今日市場情緒與昨日相比，已從<b>「流動性擠兌」</b>演變為深層的<b>「滯脹憂慮」</b>。相較於昨日台股爆量重挫，今日美股與費半指數（ID:24）出現無差別式拋售，主因為中東衝突推升布蘭特原油升破 85 美元，導致通膨預期回歸（ID:13, 34）。</p><p><b>1. 逆勢價值核心：</b>儘管半導體龍頭如台積電（ID:31）、美光（ID:30）跌幅慘重，但蘋果卻選在此時推出 <b>M5 晶片</b>（ID:33），顯示終端 AI PC 的硬體升級週期並未受戰火阻斷，這就是典型的「短期情緒干擾長線成長」。</p><p><b>2. 安全邊際觀察：</b>台灣經濟部宣布五大信賴產業產值創高（ID:0），並編列 250 億預算補助研發，這為本土供應鏈提供了實質的下行保護。值得注意，市場反向指標 <b>8zz（巴逆逆）</b> 若開始哀號遍野，往往預示短線情緒已達冰點。</p><p><b>3. 投資建議：</b>目前是「體質篩選期」。零售龍頭目標百貨（ID:10）逆勢大漲，顯示內需韌性。投資者應專注於 2025 年先進製程占比提升至 45% 的半導體關鍵設備股，利用市場對地緣政治的非理性恐慌，分批建立具備強大護城河的倉位。</p>",
+    "summary": "<h3>【大師深度決策：在關稅與 AI 倫理風暴中，鎖定「被誤傷的軟體價值」】</h3><p>今日市場情緒從昨日的<b>「滯脹憂慮」</b>進一步惡化為<b>「政策不確定性恐慌」</b>。川普政府宣布將在五個月內重啟關稅調查（ID:0），這對全球供應鏈是二次重擊，導致費半指數（ID:1）慘跌 4.17%，半導體績優股如芯源系統（MPWR）出現 5% 以上的無差別拋售。然而，這正是<b>逆勢價值投資</b>的黃金窗口。</p><p><b>1. 逆勢價值核心：</b>與半導體的血流成河不同，雲端軟體股如 Atlassian（ID:3）與 Workday（ID:6）逆勢大漲 5%，顯示資金正從硬體設備轉向具有高黏著度的 SaaS 平台。此外，HF Sinclair（ID:5）獲分析師上修 EPS，反映能源板塊仍是地緣政治動盪下的防禦首選。</p><p><b>2. 關鍵預警：</b>華爾街多頭目前呈現「爆表自滿」（ID:2），若市場公認的反向指標<b>「8zz/巴逆逆」</b>在此刻與大眾同步看好，投資人應警惕短線仍有回測支撐的風險。真正的<b>安全邊際</b>在於那些營運不受軍事 AI 禁令（ID:4, 8）影響、且具備關稅豁免潛力的內需型企業。</p><p><b>3. 結論：</b>目前市場正處於「硬體出清、軟體接棒」的估值修正期。操作上應避開關稅風暴中心的硬體製造，轉向現金流穩定的軟體服務與能源特許行業。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體"
+        "category": "貿易政策"
       },
       {
         "id": 2,
-        "category": "地緣政治"
+        "category": "半導體"
       },
       {
         "id": 3,
-        "category": "電子消費品"
+        "category": "人工智慧"
+      },
+      {
+        "id": 4,
+        "category": "雲端運算"
       }
     ],
     "sector_stats": {
-      "tech": -0.9,
-      "finance": -0.5,
-      "manufacturing": -0.4,
-      "service": -0.2
+      "tech": -0.65,
+      "finance": -0.2,
+      "manufacturing": -0.5,
+      "service": 0.3
     },
     "events": [
       {
-        "title": "中東衝突引發能源與通膨雙殺",
-        "summary": "伊朗戰事升級導致油氣價格暴漲，市場大幅下修聯準會降息預期，美元資產成為避險唯一去向。",
+        "title": "川普關稅五個月重啟計畫",
+        "summary": "川普政府繞過法院裁定，利用 301 與 232 條款建立長期關稅框架，引發全球貿易夥伴（如歐盟）高度戒備。",
         "impact": "負面",
         "related_news_ids": [
-          13,
-          34
+          0
         ]
       },
       {
-        "title": "費城半導體集體估值修正",
-        "summary": "以美光、台積電為首的 AI 權值股因避險情緒大跌，費半跌破 4%，技術面出現嚴重受損。",
-        "impact": "負面",
+        "title": "軍事 AI 倫理與採購分歧",
+        "summary": "Anthropic 因監控紅線問題與國防部破局，而 OpenAI 則透過修改合約文字切入美軍供應鏈，反映 AI 產業的政策分化。",
+        "impact": "中性",
         "related_news_ids": [
-          2,
-          24,
-          30,
-          31
+          4,
+          8
         ]
       },
       {
-        "title": "蘋果 M5 晶片發表與硬體升級潮",
-        "summary": "蘋果無視市場恐慌發表全新 M5 系列晶片筆電，強化 AI 效能，可望支撐下半年供應鏈訂單。",
-        "impact": "正面",
+        "title": "費半無差別殺盤與軟體股脫鉤",
+        "summary": "半導體指數受政策打擊重挫，但雲端 SaaS 企業（TEAM, WDAY）出現強勁反彈，資金板塊挪移明顯。",
+        "impact": "中性",
         "related_news_ids": [
-          33
+          1,
+          3,
+          6
         ]
       }
     ],
     "relations": [
       {
-        "from": "中東衝突",
-        "to": "能源價格",
-        "type": "推升影響"
+        "from": "川普政府",
+        "to": "歐盟",
+        "type": "政策施壓"
       },
       {
-        "from": "蘋果",
-        "to": "台積電ADR",
-        "type": "供應鏈合作 (M5晶片代工)"
+        "from": "OpenAI",
+        "to": "美國國防部",
+        "type": "供應鏈合作"
       },
       {
-        "from": "台灣政府",
-        "to": "無人機產業",
-        "type": "政策補助與認證支援"
+        "from": "Anthropic",
+        "to": "美國國防部",
+        "type": "合約破局"
       },
       {
-        "from": "能源價格",
-        "to": "聯準會降息預期",
-        "type": "反向抑制"
+        "from": "川普政府",
+        "to": "Anthropic",
+        "type": "政策制裁"
       },
       {
-        "from": "宏碁",
-        "to": "台北捷運",
-        "type": "技術應用導入"
+        "from": "費城半導體指數",
+        "to": "芯源系統",
+        "type": "指數成分連動"
       }
     ]
   },
   "newsData": [
     {
-      "title": "5大信賴產業「成績單」：2025年先進製程產值占比45%創新高 無人機產值飆2.5倍",
-      "url": "https://news.cnyes.com/news/id/6361071",
-      "source": "鉅亨網(tw_stock)",
+      "title": "最高法院擋不住？川普關稅翻盤術 5個月內再出招",
+      "url": "https://news.cnyes.com/news/id/6361278",
+      "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;經濟部產業發展署署長邱求慧於今（3）日新春記者會表示，2025 年半導體先進製程產值占比已達 45% 創新高，產發署將持續推動關鍵設備自主化。去年在無人機、AI 應用及區域均衡發展上有顯著成效，其中無人機產值成長超過 2.5 倍，並成功串聯台美產業認證。面對碳費與關稅挑戰，已編列 250 億預算補助企業研發與設備換新，並完成產創條例修法，上限調高至 20 億元。今年持續聚焦弱勢偏鄉協助與促進企業創投投資新創，落實五大信賴產業與 AI 雙軸轉型。&lt;/p&gt;\n\n&lt;p&gt;產業發展署舉辦新春記者會，除分享過去一年同仁齊心協力累積的成果，並明確揭示今年的工作重點。邱求慧強調，產發署將持續秉持落實五大信賴產業、AI 推動產業雙軸轉型、協助傳統產業永續經營以及促進國內區域均衡等四大施政理念，做好產業最堅實的後盾，協助企業在多變的國際局勢中穩健前行。&lt;/p&gt;\n\n&lt;p&gt;在半導體產業發展方面，2025 年先進製程產值占比提升至 45%，產發署將持續推動關鍵設備材料自主化，強化台灣在全球供應鏈的不可替代性。無人機產業在 2025 年也展現強勁動能",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;美國貿易代表葛里爾 (Jamieson Greer) 周二 (3 日) 表示，美國將在五個月內完成多項貿易調查，為總統川普重建關稅制度鋪路，並取代日前遭聯邦最高法院推翻的部分關稅措施。這是白宮首度針對重建關稅架構提出較明確時程。&lt;/p&gt;\n\n&lt;p&gt;葛里爾是在川普與德國總理梅爾茨 (Friedrich Merz) 於白宮會晤時作出上述表示。他指出，在最高法院 2 月 20 日裁定後，川普已依據《1974 年貿易法》第 122 條實施全球 10% 基準關稅，該措施在未經國會批准下最長可維持 150 天。葛里爾說，在這段五個月期限屆滿前，美方將完成相關調查，為後續關稅措施奠定法律基礎。&lt;/p&gt;\n\n&lt;p&gt;葛里爾表示，政府將依據《1974 年貿易法》第 301 條展開調查，該條款允許白宮針對被認定限制美國商務的外國不公平貿易行為加徵關稅。他強調，美方需要檢視並調查各國的不公平貿易作法，以確保美國經濟安全。目前美方已對中國、巴西與尼加拉瓜啟動 301 調查，但葛里爾未說明其他可能納入對象的國家。&lt;/p&gt;\n\n&lt;p&gt",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 宣偉(SHW-US)大跌5.05%，報338.13美元",
-      "url": "https://news.cnyes.com/news/id/6361225",
+      "title": "盤中速報 - 芯源系統(MPWR-US)大跌5.12%，報1084.05美元",
+      "url": "https://news.cnyes.com/news/id/6361288",
+      "source": "鉅亨網(wd_stock)",
+      "category": "貿易政策",
+      "thumbnail": null,
+      "content": "&lt;p&gt;芯源系統(MPWR-US)截至台北時間04日03:10股價下跌58.53美元，報1084.05美元，跌幅5.12%，成交量309,651（股），盤中最高價1130.18美元、最低價1082.66美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.79%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.88%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.17%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;芯源系統(MPWR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.98%&lt;/li&gt;    &lt;li&gt;近 1 月：-2.6%&lt;/li&gt;    &lt;li&gt;近 3 月：+20",
+      "timeStr": "上午04:00",
+      "relatedArticles": []
+    },
+    {
+      "title": "華爾街多頭未退場 仍看好標普500今年漲10%",
+      "url": "https://news.cnyes.com/news/id/6360882",
       "source": "鉅亨網(wd_stock)",
       "category": "半導體",
       "thumbnail": null,
-      "content": "&lt;p&gt;宣偉(SHW-US)截至台北時間03日23:40股價下跌17.97美元，報338.13美元，跌幅5.05%，成交量314,932（股），盤中最高價347.99美元、最低價337.89美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.27%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.2%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.43%&lt;/li&gt;&lt;li&gt;費城半導體指數：-5.49%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;宣偉(SHW-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.46%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.75%&lt;/li&gt;    &lt;li&gt;近 3 月：+7.44%&lt;/l",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;儘管今年以來市場歷經地緣政治動盪、通膨壓力與人工智慧 (AI) 產業變局等多重衝擊，華爾街多頭依舊按兵不動。標普 500 指數年初至今幾乎原地踏步，但多數策略師仍預估，至 2026 年底指數將較目前水準上漲約 10%，與年初時的預測幾乎一致。&lt;/p&gt;\n\n&lt;p&gt;根據美國銀行 (BAC-US) 彙整的賣方情緒指標，策略師對股票的配置權重亦未出現明顯調整。即使美國近期對伊朗開戰、能源價格急升，也尚未讓追蹤名單內的策略師轉趨保守。&lt;/p&gt;\n\n&lt;h6&gt;多頭押注經濟與獲利動能&lt;/h6&gt;\n\n&lt;p&gt;華爾街的樂觀基礎，建立在對美國經濟維持高於平均水準成長，以及企業獲利持續擴張的預期之上。富國銀行投資研究所 (Wells Fargo Investment Institute) 全球股票與實質資產主管薩馬納 (Sameer Samana) 指出，目前總體經濟與企業基本面似乎尚未受到地緣政治明顯衝擊。&lt;/p&gt;\n\n&lt;p&gt;不過他也提醒，若伊朗衝突導致油價在數月甚至數季內維持高檔，恐對全球經濟與企業獲利",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 超微半導體(AMD-US)大跌5%，報188.68美元",
-      "url": "https://news.cnyes.com/news/id/6361222",
+      "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大漲5.03%，報77.51美元",
+      "url": "https://news.cnyes.com/news/id/6361283",
       "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
+      "category": "人工智慧",
       "thumbnail": null,
-      "content": "&lt;p&gt;超微半導體(AMD-US)截至台北時間03日23:26股價下跌9.94美元，報188.68美元，跌幅5%，成交量9,988,400（股），盤中最高價193.64美元、最低價188.56美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.4%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.25%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.68%&lt;/li&gt;&lt;li&gt;費城半導體指數：-5.66%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微半導體(AMD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.84%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.7%&lt;/li&gt;    &lt;li&gt;近 3 月：-6.98%&l",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間04日02:34股價上漲3.71美元，報77.51美元，漲幅5.03%，成交量3,333,327（股），盤中最高價77.53美元、最低價71.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.73%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.79%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.56%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+9.18%&lt;/li&gt;    &lt;li",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 邁威爾科技(MRVL-US)大跌5.01%，報76.81美元",
-      "url": "https://news.cnyes.com/news/id/6361221",
+      "title": "Anthropic爭議未歇！川普下令停用 Claude卻仍在軍中運作",
+      "url": "https://news.cnyes.com/news/id/6361267",
       "source": "鉅亨網(wd_stock)",
-      "category": "電子消費品",
+      "category": "雲端運算",
       "thumbnail": null,
-      "content": "&lt;p&gt;邁威爾科技(MRVL-US)截至台北時間03日23:25股價下跌4.05美元，報76.81美元，跌幅5.01%，成交量3,154,633（股），盤中最高價78.96美元、最低價76.81美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.42%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.66%&lt;/li&gt;&lt;li&gt;費城半導體指數：-5.5%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;邁威爾科技(MRVL-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.01%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.85%&lt;/li&gt;    &lt;li&gt;近 3 月：-12.06",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;《CBS News》周二 (4 日) 援引兩名知情人士消息報導，美軍上周末對伊朗的軍事行動中，使用了 Anthropic 旗下的 Claude 人工智慧 (AI) 模型，且目前仍在持續使用。五角大廈未對外說明該 AI 工具的具體部署方式，但此舉發生之際，川普政府才剛下令聯邦機構全面停止使用 Anthropic 技術，雙方關係因合約爭議急轉直下。&lt;/p&gt;\n\n&lt;p&gt;爭議核心在於 Anthropic 要求在合約中設下明確「紅線」，禁止軍方利用 Claude 進行對美國公民的大規模監控，或用於完全自主的致命武器系統。五角大廈則主張，應保留將 Claude 用於「所有合法用途」的權限，並認為相關疑慮並不具實質性，因為對美國人進行大規模監控本就違法，軍方內部政策亦限制使用完全自主武器。&lt;/p&gt;\n\n&lt;p&gt;國防部首席技術長麥可 (Emil Michael) 日前接受《CBS News》訪問時表示，「在某種程度上，你必須相信軍方會做正確的事。」他指出，國防部目前主要利用 Claude 進行文件整合分析，以及提升後勤與供應鏈效率等任務。&l",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大跌5.09%，報410.92美元",
-      "url": "https://news.cnyes.com/news/id/6361218",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間03日23:20股價下跌22.06美元，報410.92美元，跌幅5.09%，成交量866,303（股），盤中最高價422.80美元、最低價410.08美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.48%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.38%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.4%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.84%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+14.23%&lt;/li&gt;    &lt;li&gt;近 1 月：-9.99%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 超微電腦(SMCI-US)大跌5.04%，報30.23美元",
-      "url": "https://news.cnyes.com/news/id/6361217",
+      "title": "鉅亨速報 - Factset 最新調查：HF Sinclair Corp.(DINO-US)EPS預估上修至4.27元，預估目標價為60.00元",
+      "url": "https://news.cnyes.com/news/id/6361275",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;超微電腦(SMCI-US)截至台北時間03日23:19股價下跌1.61美元，報30.23美元，跌幅5.04%，成交量6,501,186（股），盤中最高價31.00美元、最低價30.22美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.49%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.38%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.41%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.92%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;超微電腦(SMCI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.47%&lt;/li&gt;    &lt;li&gt;近 1 月：+9.02%&lt;/li&gt;    &lt;li&gt;近 3 月：-1.61%&",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對HF Sinclair Corp.(DINO-US)做出2026年EPS預估：中位數由4.13元上修至4.27元，其中最高估值6.4元，最低估值2.55元，預估目標價為60.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 卡特彼勒(CAT-US)大跌5.01%，報714.64美元",
-      "url": "https://news.cnyes.com/news/id/6361216",
+      "title": "盤中速報 - Workday公司(WDAY-US)大漲5.01%，報140.73美元",
+      "url": "https://news.cnyes.com/news/id/6361271",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;卡特彼勒(CAT-US)截至台北時間03日23:16股價下跌37.68美元，報714.64美元，跌幅5.01%，成交量784,275（股），盤中最高價731.67美元、最低價714.37美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.5%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-2.37%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.59%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;卡特彼勒(CAT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.8%&lt;/li&gt;    &lt;li&gt;近 1 月：+7.51%&lt;/li&gt;    &lt;li&gt;近 3 月：+27.53%&l",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;Workday公司(WDAY-US)截至台北時間04日02:00股價上漲6.72美元，報140.73美元，漲幅5.01%，成交量2,905,380（股），盤中最高價140.80美元、最低價132.70美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.12%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.22%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.45%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.06%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Workday公司(WDAY-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-22.85%&lt;/li&gt;    &lt;li&gt",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 恩智浦半導體(NXPI-US)大跌5.09%，報213.33美元",
-      "url": "https://news.cnyes.com/news/id/6361195",
+      "title": "鉅亨速報 - Factset 最新調查：Tempus AI, Inc. Class ATEM-US的目標價調降至77.5元，幅度約3.13%",
+      "url": "https://news.cnyes.com/news/id/6361270",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;恩智浦半導體(NXPI-US)截至台北時間03日22:49股價下跌11.43美元，報213.33美元，跌幅5.09%，成交量243,291（股），盤中最高價219.44美元、最低價213.33美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.19%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.98%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.43%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;恩智浦半導體(NXPI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.8%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.76%&lt;/li&gt;    &lt;li&gt;近 3 月：+5",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對Tempus AI, Inc. Class A(TEM-US)提出目標價估值：中位數由80元下修至77.5元，調降幅度3.13%。其中最高估值100元，最低估值58元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有18位分析師給予Tempus AI, Inc. Class A評價：積極樂觀10位、保持中立8位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Tempus AI, Inc. Class A今(4日)收盤價為51.41元。近5日股價下跌3.13%，標普指數上漲0.64%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 安森美半導體(ON-US)大跌5.03%，報63.14美元",
-      "url": "https://news.cnyes.com/news/id/6361184",
+      "title": "OpenAI軍方合約改寫 監控紅線成AI政策試金石",
+      "url": "https://news.cnyes.com/news/id/6361231",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;安森美半導體(ON-US)截至台北時間03日22:43股價下跌3.34美元，報63.14美元，跌幅5.03%，成交量605,548（股），盤中最高價64.03美元、最低價63.13美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.18%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2.02%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.46%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安森美半導體(ON-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-4.3%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.04%&lt;/li&gt;    &lt;li&gt;近 3 月：+29.14%&lt",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 安謀控股公司(ARM-US)大跌5.28%，報117.8美元",
-      "url": "https://news.cnyes.com/news/id/6361183",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;安謀控股公司(ARM-US)截至台北時間03日22:42股價下跌6.57美元，報117.80美元，跌幅5.28%，成交量548,386（股），盤中最高價120.33美元、最低價117.70美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.07%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.76%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.88%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.34%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安謀控股公司(ARM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.96%&lt;/li&gt;    &lt;li&gt;近 1 月：+19.19%&lt;/li&gt;    &lt;li&gt;近 3 月：-6.",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 目標百貨(TGT-US)大漲5.06%，報118.9美元",
-      "url": "https://news.cnyes.com/news/id/6361182",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;目標百貨(TGT-US)截至台北時間03日22:40股價上漲5.73美元，報118.90美元，漲幅5.06%，成交量1,273,708（股），盤中最高價118.97美元、最低價115.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.17%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.84%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.12%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;目標百貨(TGT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.4%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.89%&lt;/li&gt;    &lt;li&gt;近 3 月：+25.78%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 萊迪思半導體(LSCC-US)大跌5.34%，報95.34美元",
-      "url": "https://news.cnyes.com/news/id/6361181",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;萊迪思半導體(LSCC-US)截至台北時間03日22:40股價下跌5.38美元，報95.34美元，跌幅5.34%，成交量98,335（股），盤中最高價97.06美元、最低價95.34美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.17%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.83%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.15%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;萊迪思半導體(LSCC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.09%&lt;/li&gt;    &lt;li&gt;近 1 月：+15.33%&lt;/li&gt;    &lt;li&gt;近 3 月：+33.9",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 數據狗(DDOG-US)大跌5.14%，報105.4美元",
-      "url": "https://news.cnyes.com/news/id/6361180",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間03日22:39股價下跌5.71美元，報105.40美元，跌幅5.14%，成交量363,725（股），盤中最高價107.63美元、最低價105.40美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.14%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.93%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.7%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.77%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+9.11%&lt;/li&gt;    &lt;li&gt;近 1 月：-13.24%&lt;/li&gt;    &lt;li&gt;近 3 月：-28.45%&",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "〈美股早盤〉中東戰火延燒、股債雙殺！主要指數開盤重挫",
-      "url": "https://news.cnyes.com/news/id/6360881",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美股主要指數周二 (3 日) 開盤走低，中東戰事擴大推升能源價格與通膨疑慮，市場風險情緒轉趨保守。標普 500 指數下挫 2%，逼近去年 12 月以來低點，布蘭特原油一度升破每桶 85 美元，加劇對全球燃料供應受阻的擔憂。股債同步走跌，航空股重挫，僅能源與國防類股相對抗跌。隨著油價飆升削弱央行壓抑通膨的空間，交易員下修對聯準會 (Fed) 未來降息的押注。&lt;/p&gt;\n\n&lt;p&gt;截稿前，&lt;a href=&quot;https://invest.cnyes.com/index/GI/DJI&quot;&gt;道瓊工業指數&lt;/a&gt;跌逾 1,100 點或近 2.3%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/IXIC&quot;&gt;那斯達克綜合指數&lt;/a&gt;跌逾 480 點或近 2.1%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/INX&quot;&gt;標普 500 指數&lt;/a&gt;跌近 2.1%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 星座能源(CEG-US)大跌5.04%，報310.67美元",
-      "url": "https://news.cnyes.com/news/id/6361178",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;星座能源(CEG-US)截至台北時間03日22:33股價下跌16.49美元，報310.67美元，跌幅5.04%，成交量222,411（股），盤中最高價320.01美元、最低價310.25美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.69%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.47%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.9%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.44%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;星座能源(CEG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+12.28%&lt;/li&gt;    &lt;li&gt;近 1 月：+21.78%&lt;/li&gt;    &lt;li&gt;近 3 月：-9.29%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 科林研發(LRCX-US)大跌5.04%，報219.37美元",
-      "url": "https://news.cnyes.com/news/id/6361177",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;科林研發(LRCX-US)截至台北時間03日22:32股價下跌11.64美元，報219.37美元，跌幅5.04%，成交量526,723（股），盤中最高價224.12美元、最低價219.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.66%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.53%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.84%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.54%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科林研發(LRCX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.46%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.52%&lt;/li&gt;    &lt;li&gt;近 3 月：+47.8",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 科磊(KLAC-US)大跌5.13%，報1456.21美元",
-      "url": "https://news.cnyes.com/news/id/6361176",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;科磊(KLAC-US)截至台北時間03日22:31股價下跌78.75美元，報1456.21美元，跌幅5.13%，成交量50,279（股），盤中最高價1482.97美元、最低價1450.79美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.65%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.8%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.4%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科磊(KLAC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.48%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+28.13%&l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 格羅方德(GFS-US)大跌5.25%，報47.25美元",
-      "url": "https://news.cnyes.com/news/id/6361175",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;格羅方德(GFS-US)截至台北時間03日22:31股價下跌2.62美元，報47.25美元，跌幅5.25%，成交量94,685（股），盤中最高價48.14美元、最低價47.24美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.65%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.57%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.8%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.4%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;格羅方德(GFS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+3.01%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.73%&lt;/li&gt;    &lt;li&gt;近 3 月：+28.06%&lt;/l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 艾司摩爾(ASML-US)大跌5.1%，報1350.92美元",
-      "url": "https://news.cnyes.com/news/id/6361174",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;艾司摩爾(ASML-US)截至台北時間03日22:31股價下跌72.62美元，報1350.92美元，跌幅5.1%，成交量181,772（股），盤中最高價1357.91美元、最低價1350.82美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.6%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.54%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.8%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.41%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;艾司摩爾(ASML-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.64%&lt;/li&gt;    &lt;li&gt;近 3 月：+30.8",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 英特格(ENTG-US)大跌5.47%，報128.09美元",
-      "url": "https://news.cnyes.com/news/id/6361173",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;英特格(ENTG-US)截至台北時間03日22:31股價下跌7.41美元，報128.09美元，跌幅5.47%，成交量98,640（股），盤中最高價129.91美元、最低價127.65美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.6%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.54%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.8%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.41%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特格(ENTG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.91%&lt;/li&gt;    &lt;li&gt;近 1 月：+10.86%&lt;/li&gt;    &lt;li&gt;近 3 月：+65.94%&lt",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 和康電訊(MTSI-US)大跌5.03%，報245.55美元",
-      "url": "https://news.cnyes.com/news/id/6361172",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;和康電訊(MTSI-US)截至台北時間03日22:31股價下跌13美元，報245.55美元，跌幅5.03%，成交量16,365（股），盤中最高價250.00美元、最低價245.55美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.53%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.77%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.42%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;和康電訊(MTSI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.56%&lt;/li&gt;    &lt;li&gt;近 3 月：+39.46%&l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 連貫(COHR-US)大跌5.17%，報283.47美元",
-      "url": "https://news.cnyes.com/news/id/6361171",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;連貫(COHR-US)截至台北時間03日22:30股價下跌15.44美元，報283.47美元，跌幅5.17%，成交量561,685（股），盤中最高價290.50美元、最低價283.31美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.81%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.75%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.01%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;連貫(COHR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.03%&lt;/li&gt;    &lt;li&gt;近 1 月：+16.4%&lt;/li&gt;    &lt;li&gt;近 3 月：+57.03%&l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.75%，報205.52美元",
-      "url": "https://news.cnyes.com/news/id/6361170",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;Onto Innovation Inc.(ONTO-US)截至台北時間03日22:30股價下跌12.53美元，報205.52美元，跌幅5.75%，成交量19,585（股），盤中最高價210.00美元、最低價205.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.8%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.72%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.85%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.09%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Onto Innovation Inc.(ONTO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.24%&lt;/li&gt;    &lt;li&gt;近 1 月：+6.65%&lt;/l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 安可(AMKR-US)大跌5.26%，報45.3美元",
-      "url": "https://news.cnyes.com/news/id/6361169",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;安可(AMKR-US)截至台北時間03日22:30股價下跌2.52美元，報45.30美元，跌幅5.26%，成交量324,032（股），盤中最高價46.04美元、最低價45.20美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.81%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.93%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.99%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.59%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.79%&lt;/li&gt;    &lt;li&gt;近 3 月：+17.64%&lt;/l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 費城半導體大跌4.05%，報7807.41點",
-      "url": "https://news.cnyes.com/news/id/6361168",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;截至台北時間03日10:30，費城半導體下跌329.95點（或4.05%），暫報7807.41點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-0.93%&lt;/li&gt;&lt;li&gt;近 1 月：+0.04%&lt;/li&gt;&lt;li&gt;近 3 月：+13.82%&lt;/li&gt;&lt;li&gt;近 6 月：+45.17%&lt;/li&gt;&lt;li&gt;今年以來：+14.88%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以美光科技(MU-US)領跌。美光科技(MU-US)下跌7.8%；英特爾(INTC-US)下跌6.51%；泰瑞達(TER-US)下跌5.74%；應用材料(AMAT-US)下跌5.48%；台積電ADR(TSM-US)下跌5.14%。&lt;/p&gt;",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 莫德納(MRNA-US)大跌5.19%，報50.11美元",
-      "url": "https://news.cnyes.com/news/id/6361167",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;莫德納(MRNA-US)截至台北時間03日22:30股價下跌2.74美元，報50.11美元，跌幅5.19%，成交量383,230（股），盤中最高價50.56美元、最低價50.01美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.99%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;莫德納(MRNA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+25.9%&lt;/li&gt;    &lt;li&gt;近 3 月：+122.65%&lt;",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 英特爾(INTC-US)大跌6.51%，報42.54美元",
-      "url": "https://news.cnyes.com/news/id/6361166",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;英特爾(INTC-US)截至台北時間03日22:30股價下跌2.96美元，報42.54美元，跌幅6.51%，成交量5,345,331（股），盤中最高價43.36美元、最低價42.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-2%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特爾(INTC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.54%&lt;/li&gt;    &lt;li&gt;近 1 月：-6.56%&lt;/li&gt;    &lt;li&gt;近 3 月：+4.92%&lt;/li",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 應用材料(AMAT-US)大跌5.48%，報351.77美元",
-      "url": "https://news.cnyes.com/news/id/6361165",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;應用材料(AMAT-US)截至台北時間03日22:30股價下跌20.41美元，報351.77美元，跌幅5.48%，成交量133,787（股），盤中最高價351.77美元、最低價350.90美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.87%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.81%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;應用材料(AMAT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.33%&lt;/li&gt;    &lt;li&gt;近 1 月：+13.37%&lt;/li&gt;    &lt;li&gt;近 3 月：+40.",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 美卡多(MELI-US)大跌5.12%，報1686美元",
-      "url": "https://news.cnyes.com/news/id/6361164",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美卡多(MELI-US)截至台北時間03日22:30股價下跌91美元，報1686.00美元，跌幅5.12%，成交量43,630（股），盤中最高價1690.20美元、最低價1686.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.85%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.82%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美卡多(MELI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.73%&lt;/li&gt;    &lt;li&gt;近 1 月：-18.15%&lt;/li&gt;    &lt;li&gt;近 3 月：-16.94%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - MongoDB公司(MDB-US)大跌28.14%，報233.56美元",
-      "url": "https://news.cnyes.com/news/id/6361163",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間03日22:30股價下跌91.45美元，報233.56美元，跌幅28.14%，成交量689,653（股），盤中最高價234.47美元、最低價233.56美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+7.56%&lt;/li&gt;    &lt;li&gt;近 1 月：-11.86%&lt;/li&gt;    &lt;li&gt;近 ",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 美光科技(MU-US)大跌6.44%，報386.11美元",
-      "url": "https://news.cnyes.com/news/id/6361162",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美光科技(MU-US)截至台北時間03日22:30股價下跌26.56美元，報386.11美元，跌幅6.44%，成交量2,460,198（股），盤中最高價386.55美元、最低價386.10美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.78%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美光科技(MU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.04%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.81%&lt;/li&gt;    &lt;li&gt;近 3 月：+72.19%",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 台積電ADR(TSM-US)大跌5.1%，報350.3美元",
-      "url": "https://news.cnyes.com/news/id/6361161",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;台積電ADR(TSM-US)截至台北時間03日22:30股價下跌18.82美元，報350.30美元，跌幅5.1%，成交量832,473（股），盤中最高價350.50美元、最低價349.50美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.78%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;台積電ADR(TSM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.23%&lt;/li&gt;    &lt;li&gt;近 1 月：+9.73%&lt;/li&gt;    &lt;li&gt;近 3 月：+28.",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 泰瑞達(TER-US)大跌5.46%，報308.04美元",
-      "url": "https://news.cnyes.com/news/id/6361160",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間03日22:30股價下跌17.79美元，報308.04美元，跌幅5.46%，成交量72,401（股），盤中最高價308.51美元、最低價308.04美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.76%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.48%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.48%&lt;/li&gt;    &lt;li&gt;近 1 月：+28.25%&lt;/li&gt;    &lt;li&gt;近 3 月：+68.49%&l",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "M5來了！蘋果全面升級MacBook Air與Pro AI效能大幅提升",
-      "url": "https://news.cnyes.com/news/id/6361117",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;蘋果 (AAPL-US) 周二 (3 日) 發表新一代 MacBook 產品線，更新 MacBook Air 與 MacBook Pro 兩大主力筆電系列，全面搭載最新 M5 晶片，盼在全球個人電腦 (PC) 市場需求放緩之際提振銷售動能。此次 MacBook Air 配備 M5 晶片，MacBook Pro 則首度導入更高階的 M5 Pro 與 M5 Max 版本，同步推出兩款新 Studio Display 螢幕，其中一款亮度顯著提升。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;圖：蘋果官網&quot; data-height=&quot;459&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.6557734204793029&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6361117/m/a95fa72670b0dae905a163cac68caf71.jpg&quot; data-",
-      "timeStr": "上午12:03",
-      "relatedArticles": []
-    },
-    {
-      "title": "通膨陰影再現！美元霸氣反彈 料創近一年最大兩日漲幅",
-      "url": "https://news.cnyes.com/news/id/6361070",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美元在中東戰事升溫與通膨疑慮升高帶動下強勢反彈，朝近一年來最大兩日漲幅邁進。彭博美元即期指數周二 (3 日) 上漲 0.8%，可望創下去年 4 月以來最強連續兩日表現。當時市場正逐步消化美國總統川普關稅政策引發的初期震盪。與此同時，10 年期美債殖利率上升 7 個基點，觸及三周高點，顯示市場下修對降息的預期。&lt;/p&gt;\n\n&lt;p&gt;隨著伊朗衝突擴大，能源價格飆升推高通膨預期，進一步支撐美元走勢。原油價格升破每桶 85 美元，創 2024 年 7 月以來新高；歐洲天然氣價格飆漲逾 40%，來到 2023 年以來高點。能源成本上揚加劇市場對物價壓力回溫的擔憂，促使資金轉向美元等避險資產。&lt;/p&gt;\n\n&lt;p&gt;在此背景下，交易員明顯縮減對聯準會 (Fed) 年底前降息的押注。貨幣市場目前僅預期今年降息約 37 個基點，低於上周五的 60 個基點。利率預期降溫，也帶動美元需求進一步增強。&lt;/p&gt;\n\n&lt;p&gt;選擇權市場亦反映現貨走勢變化。投資人如今需支付溢價來避險美元全面上漲風險，與幾天前市場對美元方向仍處於觀望態度形",
-      "timeStr": "上午12:03",
+      "content": "&lt;p&gt;OpenAI 日前與美國國防部達成合作協議，將旗下人工智慧 (AI) 模型導入機密軍事作業系統，但消息公布後旋即引發「大規模監控」疑慮與外界反彈。面對輿論壓力，OpenAI 執行長阿特曼 (Sam Altman) 坦言倉促宣布協議「看起來投機又草率」，並與國防部協商補強合約文字，明確禁止其系統被用於對美國公民的國內監控。&lt;/p&gt;\n\n&lt;p&gt;這場風波不僅凸顯 AI 技術進入國安體系的敏感性，也透露 AI 公司在法律、倫理與商業現實之間的拉鋸。&lt;/p&gt;\n\n&lt;h6&gt;補強條款：明確排除國內監控與 NSA&lt;/h6&gt;\n\n&lt;p&gt;OpenAI 原先表示，這份合約設有比過往機密 AI 部署更嚴格的防護機制。但在批評聲浪升高後，公司與國防部新增明確條文，規定 AI 系統「不得故意用於對美國公民或國民進行國內監控」，包括不得透過商業取得的個資進行追蹤、監視或監測。&lt;/p&gt;\n\n&lt;p&gt;更新後的條款亦強調，相關使用須符合《美國憲法第四修正案》、《1947 年國家安全法》與《1978 年海外情報監控法》(",
+      "timeStr": "上午04:00",
       "relatedArticles": []
     }
   ],
@@ -517,65 +260,64 @@
   ],
   "events": [
     {
-      "title": "中東衝突引發能源與通膨雙殺",
-      "summary": "伊朗戰事升級導致油氣價格暴漲，市場大幅下修聯準會降息預期，美元資產成為避險唯一去向。",
+      "title": "川普關稅五個月重啟計畫",
+      "summary": "川普政府繞過法院裁定，利用 301 與 232 條款建立長期關稅框架，引發全球貿易夥伴（如歐盟）高度戒備。",
       "impact": "負面",
       "related_news_ids": [
-        13,
-        34
+        0
       ]
     },
     {
-      "title": "費城半導體集體估值修正",
-      "summary": "以美光、台積電為首的 AI 權值股因避險情緒大跌，費半跌破 4%，技術面出現嚴重受損。",
-      "impact": "負面",
+      "title": "軍事 AI 倫理與採購分歧",
+      "summary": "Anthropic 因監控紅線問題與國防部破局，而 OpenAI 則透過修改合約文字切入美軍供應鏈，反映 AI 產業的政策分化。",
+      "impact": "中性",
       "related_news_ids": [
-        2,
-        24,
-        30,
-        31
+        4,
+        8
       ]
     },
     {
-      "title": "蘋果 M5 晶片發表與硬體升級潮",
-      "summary": "蘋果無視市場恐慌發表全新 M5 系列晶片筆電，強化 AI 效能，可望支撐下半年供應鏈訂單。",
-      "impact": "正面",
+      "title": "費半無差別殺盤與軟體股脫鉤",
+      "summary": "半導體指數受政策打擊重挫，但雲端 SaaS 企業（TEAM, WDAY）出現強勁反彈，資金板塊挪移明顯。",
+      "impact": "中性",
       "related_news_ids": [
-        33
+        1,
+        3,
+        6
       ]
     }
   ],
   "relations": [
     {
-      "from": "中東衝突",
-      "to": "能源價格",
-      "type": "推升影響"
+      "from": "川普政府",
+      "to": "歐盟",
+      "type": "政策施壓"
     },
     {
-      "from": "蘋果",
-      "to": "台積電ADR",
-      "type": "供應鏈合作 (M5晶片代工)"
+      "from": "OpenAI",
+      "to": "美國國防部",
+      "type": "供應鏈合作"
     },
     {
-      "from": "台灣政府",
-      "to": "無人機產業",
-      "type": "政策補助與認證支援"
+      "from": "Anthropic",
+      "to": "美國國防部",
+      "type": "合約破局"
     },
     {
-      "from": "能源價格",
-      "to": "聯準會降息預期",
-      "type": "反向抑制"
+      "from": "川普政府",
+      "to": "Anthropic",
+      "type": "政策制裁"
     },
     {
-      "from": "宏碁",
-      "to": "台北捷運",
-      "type": "技術應用導入"
+      "from": "費城半導體指數",
+      "to": "芯源系統",
+      "type": "指數成分連動"
     }
   ],
   "keywords7d": [
     {
       "word": "伊朗",
-      "count": 512,
+      "count": 521,
       "articles": [
         {
           "title": "伊朗外長：與美方達成核協議指日可待",
@@ -641,7 +383,7 @@
     },
     {
       "word": "US",
-      "count": 425,
+      "count": 436,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：富達全國資訊服務FIS-US的目標價調降至72.5元，幅度約10.49%",
@@ -707,7 +449,7 @@
     },
     {
       "word": "AI",
-      "count": 403,
+      "count": 405,
       "articles": [
         {
           "title": "AMD飆近9%與Meta擴大AI合作 分析師：對輝達衝擊有限",
@@ -773,7 +515,7 @@
     },
     {
       "word": "EPS",
-      "count": 260,
+      "count": 265,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：GFL Environmental Inc. (Sub Voting)(GFL-US)EPS預估上修至0.69元，預估目標價為58.53元",
@@ -839,7 +581,7 @@
     },
     {
       "word": "美元",
-      "count": 240,
+      "count": 243,
       "articles": [
         {
           "title": "華納收購戰白熱化 派拉蒙加碼至每股31美元 願甩Netflix 21億美元分手費",
@@ -905,7 +647,7 @@
     },
     {
       "word": "經典賽",
-      "count": 144,
+      "count": 145,
       "articles": [
         {
           "title": "經典賽》專轟日、韓強投  澳洲「雙捕」有夠會打",
@@ -971,7 +713,7 @@
     },
     {
       "word": "中速",
-      "count": 132,
+      "count": 135,
       "articles": [
         {
           "title": "盤中速報 - Paypal控股(PYPL-US)大漲5.11%，報46.3美元",
@@ -1103,7 +845,7 @@
     },
     {
       "word": "川普",
-      "count": 108,
+      "count": 109,
       "articles": [
         {
           "title": "川普拿國際收支危機為由祭122條款加稅 經濟學家舉市場為例這樣說",
@@ -1301,7 +1043,7 @@
     },
     {
       "word": "大跌",
-      "count": 98,
+      "count": 101,
       "articles": [
         {
           "title": "盤中速報 - Workday公司(WDAY-US)大跌8.5%，報119.16美元",
@@ -1367,7 +1109,7 @@
     },
     {
       "word": "以色列",
-      "count": 93,
+      "count": 95,
       "articles": [
         {
           "title": "印度總理莫迪訪以色列　專家：將籲中東勿爆軍事衝突",
@@ -1428,6 +1170,72 @@
           "url": "https://news.ltn.com.tw/news/world/breakingnews/5353832",
           "source": "自由時報",
           "content": "美國總統川普今天指出，他對伊朗在談判中的立場感到不滿，但尚未決定是否要動武。由於中東局勢緊張，德國「強烈」建議國民勿前往以色列，土耳其也取消多班飛往德黑蘭航班。\n\n綜合法新社報導，川普對記者...…"
+        }
+      ]
+    },
+    {
+      "word": "健康",
+      "count": 87,
+      "articles": [
+        {
+          "title": "健康網》家中長輩21項警訊 網紅醫：恐認知障礙前兆",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5343391",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕我國進入超高齡社會，對於家中長輩的日常行為，哪些是正常老化，哪些是失智症或其他認知功能障礙的早期警訊，需要特別觀察。專研老年醫學的網紅醫師雷斯麗（Lesley Kernis...…"
+        },
+        {
+          "title": "健康網》為什麼吃素膽固醇仍飆高？ 營養師揪3大地雷食物",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5348954",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕不少素食族看到自己膽固醇飆高，都覺得奇怪，明明沒有吃動物性食物，為什麼仍有紅字？營養師謝宜芳指出，素食者雖然沒有吃動物性的食物，日常的選擇仍可能誤入陷阱，她提醒3大飽和脂肪...…"
+        },
+        {
+          "title": "健康醫療網》海外生病掛急診「被建議轉診或住院」別急返台 醫揭2點：風險很高",
+          "url": "https://talk.ltn.com.tw/article/breakingnews/5340731",
+          "source": "自由時報",
+          "content": "\n\n\n近逢女星大S（徐熙媛）因病逝世滿一周年，南韓綜藝節目《名人生老病死的秘密》（셀럽병사의 비밀）揭露她過世前幾天的身體變化，原來她在症狀惡化後，想回台灣治療，卻在前往機場的路上心臟驟...…"
+        },
+        {
+          "title": "健康網》30萬人數據曝光！ 「這體型」糖尿病風險狂飆6倍",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5349813",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕別被BMI騙了，泡芙人小心恐誤觸「隱形胖」地雷！恆新復健科診所醫師王思恒指出，最新發表於《JAMA》的研究分析超過30萬人資料顯示，若採用新的肥胖定義標準，亞洲族群的肥胖盛...…"
+        },
+        {
+          "title": "健康網》門診塞爆！醫：3病毒齊發 學童開學就病假1週",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5350744",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕春節後適逢開學，各類病毒齊發！小兒科醫師王韋力在臉書粉專「威力醫師的育兒週記-王韋力」提醒，近期門診有大量高燒個案，流感、諾羅與腸病毒較為活躍，呼籲家長提高警覺。\n\n\n王韋...…"
+        },
+        {
+          "title": "健康網》手抖就是巴金森氏病？ 醫授3步驟自我判斷",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5349883",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕台大醫院神經部醫師朱永載指出，手抖與顫抖的差別，臨床上通常會先問診與觀察，了解顫抖「什麼時候出現」以及「出現在哪些部位」，再搭配神經學檢查，必要時安排抽血或影像檢查，以釐清...…"
+        },
+        {
+          "title": "健康網》沒血便也會中鏢 醫分析「右側大腸癌」風險",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5341622",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕一位5旬中年男性，沒有明顯不適，也沒有任何腸胃道症狀，由於從未做過大腸鏡檢查而就醫。日日晴內科診所院長傅家駒指出，經過進一步檢查竟驚覺，在升結腸末端，看到了大腸癌，且肝臟有...…"
+        },
+        {
+          "title": "健康網》前主播吳中純56歲治療僅1月辭世 淋巴癌奪命關鍵一次看",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5351223",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕前主播吳中純罹患淋巴癌今（25）日於台大醫院辭世，享年56歲，她的夫婿也是前體育主播梅聖旻在臉書上發文，證實吳中純已癌逝。根據台灣癌症基金會指出，淋巴癌的發病，最早期的症狀...…"
+        },
+        {
+          "title": "健康網》腎結石老是長不停！ 研究揭細菌藏石頭作怪",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5350841",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕明明每天喝很多水、飲食也很小心，腎結石卻還是一再找上門？不少患者都有「怎麼又長了」的無力感。亞洲大學附屬醫院腹膜透析室主任林軒任表示，據統計顯示，全球約每11人就有1人曾罹...…"
+        },
+        {
+          "title": "健康網》減肥族必看！ 200克只有50大卡的清爽食材是它",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5351297",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕每到冬末春初，正是口感清脆的春筍上市季節，享用也正當時。胸腔暨重症醫學科醫師黃軒表示，竹筍不僅熱量低，富含膳食纖維、鉀與植物甾醇，對腸道、血脂與血壓調節也都有所助益。不過，...…"
         }
       ]
     },
@@ -1494,72 +1302,6 @@
           "url": "https://news.cnyes.com/news/id/6352263",
           "source": "鉅亨網(tw_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對中砂(1560-TW)提出目標價估值：中位數由440元上修至485元，調升幅度10.23%。其中最高估值500元，最低估值370元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有7位分析師給予中砂(1560-TW)評價：積極樂觀7位、保持中立0位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;中砂(1560-TW)今(25日)收盤價為494.5元。近5日股價上漲17.18%，相關電機機械近5日上漲1.92%，集中市場加權指數上漲3.26%，股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
-        }
-      ]
-    },
-    {
-      "word": "健康",
-      "count": 86,
-      "articles": [
-        {
-          "title": "健康網》家中長輩21項警訊 網紅醫：恐認知障礙前兆",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5343391",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕我國進入超高齡社會，對於家中長輩的日常行為，哪些是正常老化，哪些是失智症或其他認知功能障礙的早期警訊，需要特別觀察。專研老年醫學的網紅醫師雷斯麗（Lesley Kernis...…"
-        },
-        {
-          "title": "健康網》為什麼吃素膽固醇仍飆高？ 營養師揪3大地雷食物",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5348954",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕不少素食族看到自己膽固醇飆高，都覺得奇怪，明明沒有吃動物性食物，為什麼仍有紅字？營養師謝宜芳指出，素食者雖然沒有吃動物性的食物，日常的選擇仍可能誤入陷阱，她提醒3大飽和脂肪...…"
-        },
-        {
-          "title": "健康醫療網》海外生病掛急診「被建議轉診或住院」別急返台 醫揭2點：風險很高",
-          "url": "https://talk.ltn.com.tw/article/breakingnews/5340731",
-          "source": "自由時報",
-          "content": "\n\n\n近逢女星大S（徐熙媛）因病逝世滿一周年，南韓綜藝節目《名人生老病死的秘密》（셀럽병사의 비밀）揭露她過世前幾天的身體變化，原來她在症狀惡化後，想回台灣治療，卻在前往機場的路上心臟驟...…"
-        },
-        {
-          "title": "健康網》30萬人數據曝光！ 「這體型」糖尿病風險狂飆6倍",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5349813",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕別被BMI騙了，泡芙人小心恐誤觸「隱形胖」地雷！恆新復健科診所醫師王思恒指出，最新發表於《JAMA》的研究分析超過30萬人資料顯示，若採用新的肥胖定義標準，亞洲族群的肥胖盛...…"
-        },
-        {
-          "title": "健康網》門診塞爆！醫：3病毒齊發 學童開學就病假1週",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5350744",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕春節後適逢開學，各類病毒齊發！小兒科醫師王韋力在臉書粉專「威力醫師的育兒週記-王韋力」提醒，近期門診有大量高燒個案，流感、諾羅與腸病毒較為活躍，呼籲家長提高警覺。\n\n\n王韋...…"
-        },
-        {
-          "title": "健康網》手抖就是巴金森氏病？ 醫授3步驟自我判斷",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5349883",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕台大醫院神經部醫師朱永載指出，手抖與顫抖的差別，臨床上通常會先問診與觀察，了解顫抖「什麼時候出現」以及「出現在哪些部位」，再搭配神經學檢查，必要時安排抽血或影像檢查，以釐清...…"
-        },
-        {
-          "title": "健康網》沒血便也會中鏢 醫分析「右側大腸癌」風險",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5341622",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕一位5旬中年男性，沒有明顯不適，也沒有任何腸胃道症狀，由於從未做過大腸鏡檢查而就醫。日日晴內科診所院長傅家駒指出，經過進一步檢查竟驚覺，在升結腸末端，看到了大腸癌，且肝臟有...…"
-        },
-        {
-          "title": "健康網》前主播吳中純56歲治療僅1月辭世 淋巴癌奪命關鍵一次看",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5351223",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕前主播吳中純罹患淋巴癌今（25）日於台大醫院辭世，享年56歲，她的夫婿也是前體育主播梅聖旻在臉書上發文，證實吳中純已癌逝。根據台灣癌症基金會指出，淋巴癌的發病，最早期的症狀...…"
-        },
-        {
-          "title": "健康網》腎結石老是長不停！ 研究揭細菌藏石頭作怪",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5350841",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕明明每天喝很多水、飲食也很小心，腎結石卻還是一再找上門？不少患者都有「怎麼又長了」的無力感。亞洲大學附屬醫院腹膜透析室主任林軒任表示，據統計顯示，全球約每11人就有1人曾罹...…"
-        },
-        {
-          "title": "健康網》減肥族必看！ 200克只有50大卡的清爽食材是它",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5351297",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕每到冬末春初，正是口感清脆的春筍上市季節，享用也正當時。胸腔暨重症醫學科醫師黃軒表示，竹筍不僅熱量低，富含膳食纖維、鉀與植物甾醇，對腸道、血脂與血壓調節也都有所助益。不過，...…"
         }
       ]
     },
@@ -1697,7 +1439,7 @@
     },
     {
       "word": "最高",
-      "count": 78,
+      "count": 80,
       "articles": [
         {
           "title": "美伊對峙！中東油輪運費飆漲 衝上2020年以來最高",
@@ -1961,7 +1703,7 @@
     },
     {
       "word": "科技",
-      "count": 63,
+      "count": 64,
       "articles": [
         {
           "title": "金融科技大戲上演 Stripe傳評估收購 PayPal股價暴漲近7%",
@@ -2027,7 +1769,7 @@
     },
     {
       "word": "高雄",
-      "count": 62,
+      "count": 64,
       "articles": [
         {
           "title": "高雄冬日遊樂園實境打怪   4隻「超巨獸」壓軸現身",
@@ -2290,6 +2032,204 @@
       ]
     },
     {
+      "word": "TAIPEI",
+      "count": 50,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》Trump-Takaichi meeting good for Taiwan: Izumi",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351656",
+          "source": "自由時報",
+          "content": "POSITIVE DEVELOPMENT:Japan and the US are expected to hold in-depth discussions on Taiwan-related is...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Taiwanese fire dancer impresses UK show’s jury",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351659",
+          "source": "自由時報",
+          "content": "‘YEARS OF EFFORT’:‘I hope the warmth of the fire from Taiwan will light up the whole world,’ Yang Li...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》TSMC market cap swells to US$2tn on rally",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351650",
+          "source": "自由時報",
+          "content": "BIG SPENDERS: Foreign investors bought the most Taiwan equities since 2005, signaling confidence tha...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Tech, reforms to bolster military: Lai",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351649",
+          "source": "自由時報",
+          "content": "WHOLE OF SOCIETY: The determination to fight for free and democratic institutions must be ingrained ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Taipei initiative to subsidize flexible hours for parents",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351652",
+          "source": "自由時報",
+          "content": "By Gang Meng-lin and Jonathan Chin / Staff reporters, with staff writer\r\n\r\nTaipei Mayor Chiang Wan-a...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Farmers indicted over hiding swine fever outbreak",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351657",
+          "source": "自由時報",
+          "content": "Staff writer, with CNA\r\n\r\nProsecutors yesterday indicted a father and son for falsifying evidence to...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Missiles on Yonaguni set for 2031",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351655",
+          "source": "自由時報",
+          "content": "AFP, TOKYO\r\n\r\nThe Japanese government plans to deploy surface-to-air missiles on one of its remote w...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai honors baseball home run legend Sadaharu Oh",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352880",
+          "source": "自由時報",
+          "content": "/ Staff writer, with CNA\r\n\r\n\r\nPresident William Lai （賴清德） yesterday conferred the Order of Brilliant...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Computer and IT service sector posts record-high revenue",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352886",
+          "source": "自由時報",
+          "content": "AI BOOM: The adoption of Industry 4.0 and increased demand for cross-border operations from major ch...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Premier Cho issues caution over Li Zhenxiu",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352877",
+          "source": "自由時報",
+          "content": "DOUBT REMAINS: The MAC deputy minister said all agencies must comply with Cho’s warning not to share...…"
+        }
+      ]
+    },
+    {
+      "word": "TIMES",
+      "count": 50,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》Trump-Takaichi meeting good for Taiwan: Izumi",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351656",
+          "source": "自由時報",
+          "content": "POSITIVE DEVELOPMENT:Japan and the US are expected to hold in-depth discussions on Taiwan-related is...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Taiwanese fire dancer impresses UK show’s jury",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351659",
+          "source": "自由時報",
+          "content": "‘YEARS OF EFFORT’:‘I hope the warmth of the fire from Taiwan will light up the whole world,’ Yang Li...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》TSMC market cap swells to US$2tn on rally",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351650",
+          "source": "自由時報",
+          "content": "BIG SPENDERS: Foreign investors bought the most Taiwan equities since 2005, signaling confidence tha...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Tech, reforms to bolster military: Lai",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351649",
+          "source": "自由時報",
+          "content": "WHOLE OF SOCIETY: The determination to fight for free and democratic institutions must be ingrained ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Taipei initiative to subsidize flexible hours for parents",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351652",
+          "source": "自由時報",
+          "content": "By Gang Meng-lin and Jonathan Chin / Staff reporters, with staff writer\r\n\r\nTaipei Mayor Chiang Wan-a...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Farmers indicted over hiding swine fever outbreak",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351657",
+          "source": "自由時報",
+          "content": "Staff writer, with CNA\r\n\r\nProsecutors yesterday indicted a father and son for falsifying evidence to...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Missiles on Yonaguni set for 2031",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351655",
+          "source": "自由時報",
+          "content": "AFP, TOKYO\r\n\r\nThe Japanese government plans to deploy surface-to-air missiles on one of its remote w...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai honors baseball home run legend Sadaharu Oh",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352880",
+          "source": "自由時報",
+          "content": "/ Staff writer, with CNA\r\n\r\n\r\nPresident William Lai （賴清德） yesterday conferred the Order of Brilliant...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Computer and IT service sector posts record-high revenue",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352886",
+          "source": "自由時報",
+          "content": "AI BOOM: The adoption of Industry 4.0 and increased demand for cross-border operations from major ch...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》Premier Cho issues caution over Li Zhenxiu",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352877",
+          "source": "自由時報",
+          "content": "DOUBT REMAINS: The MAC deputy minister said all agencies must comply with Cho’s warning not to share...…"
+        }
+      ]
+    },
+    {
+      "word": "台南",
+      "count": 49,
+      "articles": [
+        {
+          "title": "台南七股科工區招商有成 最快下半年廠商投產  帶動安南區3字頭輕豪宅崛起",
+          "url": "https://estate.ltn.com.tw/article/27014",
+          "source": "自由時報",
+          "content": "南市七股科技工業區自113年辦理土地租售以來，招商成果持續亮眼，截至115年1月底，累計已有38家廠商完成購地，目前已有18家陸續通過景觀審查及取得建築執照，並已有3家施工建廠中，最快115年下半年即可投入生產。市調顯示，七股科工區持續開發，可望吸引逾290億元投資、帶來逾6千個就業機會，提高周圍區域的房屋租購需求，也對安南區3字頭輕豪宅市場發展，將形成正面助益效果。…"
+        },
+        {
+          "title": "台南3水庫蓄水率不到5成  力推再生水穩定枯水期供水",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350873",
+          "source": "自由時報",
+          "content": "目前時序進入南部傳統枯水期，台南曾文、烏山頭及南化水庫3座主要水庫的總蓄水率已降到五成以下。台南市水利局表示，除了節流之外，南市府全力推動再生水的利用量，目前永康、仁德及安平3...…"
+        },
+        {
+          "title": "拔蘿蔔裝滿1袋150元 台南將軍胡蘿蔔節2/27、28登場",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350875",
+          "source": "自由時報",
+          "content": "「胡蘿蔔的故鄉」台南將軍區種植的胡蘿蔔，年後開始採收，將軍區農會將在2月27、28日舉辦將軍胡蘿蔔節「斑芝花開-蘿蔔庄田園體驗活動」，下田拔胡蘿蔔只要150元，裝滿1大袋為止。...…"
+        },
+        {
+          "title": "台南女中、台南二中學測成績亮眼 4科高分學生表現突出",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350991",
+          "source": "自由時報",
+          "content": "115學年度大學學測今（25）日放榜，台南女中與台南二中學生再度展現優異實力。台南女中今年共有3名學生4科總級分達60級分，其中兩人6科全滿級分；4科總級分55級分以上有48人...…"
+        },
+        {
+          "title": "台南女中、台南二中學測成績亮眼 4科高分學生表現突出",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350991",
+          "source": "自由時報",
+          "content": "115學年度大學學測今（25）日放榜，台南女中與台南二中學生再度展現優異實力。台南女中今年共有3名學生4科總級分達60級分，其中兩人6科全滿級分；4科總級分55級分以上有48人...…"
+        },
+        {
+          "title": "新春「霧」語！台南水道添兩座公共藝術迎賓",
+          "url": "https://news.ltn.com.tw/news/art/breakingnews/5351074",
+          "source": "自由時報",
+          "content": "\n\n\n列為國定古蹟的台南山上花園水道博物館，增添了兩座大型公共藝術，包含「水語森林」與「唧筒象」，啟動後，霧氣繚繞，重現水源地氛圍，已是走春新地標，農曆年節期間，試運轉順利，二...…"
+        },
+        {
+          "title": "台南南化22:17發生規模3.9地震 4縣市有感 最大震度2級",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351635",
+          "source": "自由時報",
+          "content": "台南市南化區今天晚上22時17分發生芮氏規模3.9有感地震，最大震度在高雄市甲仙及臺南市楠西為2級。\r\n\r\n根據中央氣象署資料顯示，今天晚上22時17分在台南市南化區發生芮氏規模...…"
+        },
+        {
+          "title": "10個月來台3次太狂！日透明系歌手MV藏台南彩蛋",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5351693",
+          "source": "自由時報",
+          "content": "日本透明系創作女聲川西奈月，短短10個月內3度來台，從台中、台北唱到台南，舞台規模一場比一場大。更狂的是，她竟然「順便」在台灣拍了兩支MV，效率高到讓粉絲直呼：「妳是來出差的吧...…"
+        },
+        {
+          "title": "情緒教育入校園 台南親師生攜手打造友善學習環境",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351838",
+          "source": "自由時報",
+          "content": "南市推動友善校園再升級，啟動「建立與社區、醫療機構合作網絡計畫」，這次由協進國小、德高國小、新進國小、後壁國中及土城高中等5校率先參與，各校結合自身特色與學生需求，發展貼近校園...…"
+        },
+        {
+          "title": "台南東山碧軒寺觀音佛祖回駕 碧雲寺湧入信眾",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351835",
+          "source": "自由時報",
+          "content": "國家重要民俗東山迎佛祖，碧軒寺觀音佛祖今日凌晨從碧雲寺回駕，台南市長黃偉哲與大批信眾前往奉送啟程，沿古香路護駕返碧軒寺。\r\n\r\n今日零時13分，觀音佛祖「正二媽」返回東山碧軒寺...…"
+        }
+      ]
+    },
+    {
       "word": "政府",
       "count": 49,
       "articles": [
@@ -2352,72 +2292,6 @@
           "url": "https://news.cnyes.com/news/id/6353742",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;紐約聯準銀行最新研究顯示，全球關鍵利率「自然利率」正顯著上升，核心驅動因素也許是美債吸引力下降。&lt;/p&gt;\n\n&lt;p&gt;自然利率是指經濟充分就業、通膨穩定時的短期利率基準，對央行制訂政策利率有重要參考價值，Fed 主席鮑爾曾將其比作「水手航行依賴的恆星」。&lt;/p&gt;\n\n&lt;p&gt;研究人員在部落格上發文指出，自 2019 年以來，美國及已開發經濟體的自然利率已經上升約 1 個百分點，其中投資人對美債安全性和流動性的興趣減弱，可能貢獻大約一半的升幅。&lt;/p&gt;\n\n&lt;p&gt;這一現象體現在美國公司債利差縮小，當政府債券不再被視為絕對安全資產，資金轉向公司債，推高整體利率中樞，背後原因也許跟已開發國家政府債務激增有直接關係。&lt;/p&gt;\n\n&lt;p&gt;研究也顯示，除債券吸引力下降外，後疫情時代自然利率上升也受到多重因素推動，如 AI 驅動的生產力成長前景改善、人口老化下債務與 GDP 比率攀升，以及對全球軍費支出增加的預期。&lt;/p&gt;\n\n&lt;p&gt;紐約聯準銀行分析指出，1990 年至 2019 年間，投資者對安全資產的偏好曾持續壓低政府債殖利率，帶動自然利率下行，但當前趨勢已徹底逆轉。&lt;/p&gt;\n\n&lt;p&gt;儘管自然利率是理論概念，但其變化直接影響央行決策。研究人員強調，這項指標上升意味著經濟潛在成長動能增強，也可能預示著長期利率中樞上移。&lt;/p&gt;\n\n&lt;p&gt;隨著全球經濟結構調整深化，自然利率的後續走勢將持續牽動貨幣政策走向。&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
-      "word": "台南",
-      "count": 48,
-      "articles": [
-        {
-          "title": "台南七股科工區招商有成 最快下半年廠商投產  帶動安南區3字頭輕豪宅崛起",
-          "url": "https://estate.ltn.com.tw/article/27014",
-          "source": "自由時報",
-          "content": "南市七股科技工業區自113年辦理土地租售以來，招商成果持續亮眼，截至115年1月底，累計已有38家廠商完成購地，目前已有18家陸續通過景觀審查及取得建築執照，並已有3家施工建廠中，最快115年下半年即可投入生產。市調顯示，七股科工區持續開發，可望吸引逾290億元投資、帶來逾6千個就業機會，提高周圍區域的房屋租購需求，也對安南區3字頭輕豪宅市場發展，將形成正面助益效果。…"
-        },
-        {
-          "title": "台南3水庫蓄水率不到5成  力推再生水穩定枯水期供水",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350873",
-          "source": "自由時報",
-          "content": "目前時序進入南部傳統枯水期，台南曾文、烏山頭及南化水庫3座主要水庫的總蓄水率已降到五成以下。台南市水利局表示，除了節流之外，南市府全力推動再生水的利用量，目前永康、仁德及安平3...…"
-        },
-        {
-          "title": "拔蘿蔔裝滿1袋150元 台南將軍胡蘿蔔節2/27、28登場",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350875",
-          "source": "自由時報",
-          "content": "「胡蘿蔔的故鄉」台南將軍區種植的胡蘿蔔，年後開始採收，將軍區農會將在2月27、28日舉辦將軍胡蘿蔔節「斑芝花開-蘿蔔庄田園體驗活動」，下田拔胡蘿蔔只要150元，裝滿1大袋為止。...…"
-        },
-        {
-          "title": "台南女中、台南二中學測成績亮眼 4科高分學生表現突出",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350991",
-          "source": "自由時報",
-          "content": "115學年度大學學測今（25）日放榜，台南女中與台南二中學生再度展現優異實力。台南女中今年共有3名學生4科總級分達60級分，其中兩人6科全滿級分；4科總級分55級分以上有48人...…"
-        },
-        {
-          "title": "台南女中、台南二中學測成績亮眼 4科高分學生表現突出",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350991",
-          "source": "自由時報",
-          "content": "115學年度大學學測今（25）日放榜，台南女中與台南二中學生再度展現優異實力。台南女中今年共有3名學生4科總級分達60級分，其中兩人6科全滿級分；4科總級分55級分以上有48人...…"
-        },
-        {
-          "title": "新春「霧」語！台南水道添兩座公共藝術迎賓",
-          "url": "https://news.ltn.com.tw/news/art/breakingnews/5351074",
-          "source": "自由時報",
-          "content": "\n\n\n列為國定古蹟的台南山上花園水道博物館，增添了兩座大型公共藝術，包含「水語森林」與「唧筒象」，啟動後，霧氣繚繞，重現水源地氛圍，已是走春新地標，農曆年節期間，試運轉順利，二...…"
-        },
-        {
-          "title": "台南南化22:17發生規模3.9地震 4縣市有感 最大震度2級",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351635",
-          "source": "自由時報",
-          "content": "台南市南化區今天晚上22時17分發生芮氏規模3.9有感地震，最大震度在高雄市甲仙及臺南市楠西為2級。\r\n\r\n根據中央氣象署資料顯示，今天晚上22時17分在台南市南化區發生芮氏規模...…"
-        },
-        {
-          "title": "10個月來台3次太狂！日透明系歌手MV藏台南彩蛋",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5351693",
-          "source": "自由時報",
-          "content": "日本透明系創作女聲川西奈月，短短10個月內3度來台，從台中、台北唱到台南，舞台規模一場比一場大。更狂的是，她竟然「順便」在台灣拍了兩支MV，效率高到讓粉絲直呼：「妳是來出差的吧...…"
-        },
-        {
-          "title": "情緒教育入校園 台南親師生攜手打造友善學習環境",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351838",
-          "source": "自由時報",
-          "content": "南市推動友善校園再升級，啟動「建立與社區、醫療機構合作網絡計畫」，這次由協進國小、德高國小、新進國小、後壁國中及土城高中等5校率先參與，各校結合自身特色與學生需求，發展貼近校園...…"
-        },
-        {
-          "title": "台南東山碧軒寺觀音佛祖回駕 碧雲寺湧入信眾",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351835",
-          "source": "自由時報",
-          "content": "國家重要民俗東山迎佛祖，碧軒寺觀音佛祖今日凌晨從碧雲寺回駕，台南市長黃偉哲與大批信眾前往奉送啟程，沿古香路護駕返碧軒寺。\r\n\r\n今日零時13分，觀音佛祖「正二媽」返回東山碧軒寺...…"
         }
       ]
     },
@@ -2554,6 +2428,72 @@
       ]
     },
     {
+      "word": "交易",
+      "count": 45,
+      "articles": [
+        {
+          "title": "「反AI交易」火熱上演 這些股票正在擊敗AI概念股",
+          "url": "https://news.cnyes.com/news/id/6351740",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;在人工智慧（AI）革命衝擊下，重挫的軟體類股遭投資人拋售，資金轉而流向較不易被 AI 顛覆的標的。根據高盛的觀察，這類被稱為「HALO」的投資概念正逐漸發酵。&lt;/p&gt;\n\n&lt;p&gt;HALO 意即「高資本重資產且低淘汰率」（Heavy Assets and Low Obsolescence），因其難以被 AI 輕易取代的特性，近期表現大幅優於大盤。&lt;/p&gt;\n\n&lt;p&gt;所謂的「HALO」型企業，是指仰賴大規模資本投入以生產商品或服務，且在 AI 時代仍能保持營運優勢、不致輕易退出市場的產業，如航太、汽車製造、食品飲料及半導體設備等。隨著軟體即服務（SaaS）類股持續崩跌、甚至被稱為「軟體末日」，HALO 企業成為市場避風港。&lt;/p&gt;\n\n&lt;p&gt;高盛分析師週二 (24 日) 報告指出，自 2025 年以來，其追蹤的一籃子歐洲資本密集型企業，績效已較資本輕資產企業（如媒體、零售、商業服務與軟體）高出 35%。&lt;/p&gt;\n\n&lt;p&gt;在資本密集型名單中，包括 Airbus、BMW、Volkswagen、Nestle、Diageo 與 ASML；相對地，資本輕資產企業則包括 SAP、Dassault Systemes 與 Sage Group 等軟體公司。&lt;/p&gt;\n\n&lt;p&gt;過去，資本輕資產企業通常享有較高本益比，理由在於軟體公司資產負擔較輕、資本效率較佳。然而，如今市場憂心 Anthropic 的 Claude、OpenAI 的 ChatGPT，以及 Alphabet 旗下 Gemini 等生成式 AI 工具，可能取代部分傳統軟體功能，導致估值邏輯改變。&lt;/p&gt;\n\n&lt;p&gt;高盛指出，兩類股票目前估值水準已趨於接近，顯示投資人正重新評價「韌性」與實體經濟資產的戰略價值。市場開始獎勵產能、網絡、基礎建設與工程複雜度等難以複製的資產。&lt;/p&gt;\n\n&lt;p&gt;市場分析強調，投資人現在更偏好具備高生產力、密集網絡、關鍵基礎設施及複雜工程技術的企業，因為這些資產的護城河極高，競爭對手難以複製。&lt;/p&gt;\n\n&lt;p&gt;在美股市場中，同樣可見 HALO 交易模式的足跡。例如，航太巨擘波音 (&lt;a data-symbol-template=&quot;USS:BA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;BA-US&lt;/a&gt;) 儘管面臨挑戰，今年股價仍累計上漲 8%，過去一年漲幅更超過三成。民生消費龍頭如可口可樂 (&lt;a data-symbol-template=&quot;USS:KO:STOCK:COMMON&quot; href=&quot;#&quot;&gt;KO-US&lt;/a&gt;) 、百事可樂 (&lt;a data-symbol-template=&quot;USS:PEP:STOCK:COMMON&quot; href=&quot;#&quot;&gt;PEP-US&lt;/a&gt;) 、Mondelez(&lt;a data-symbol-template=&quot;USS:MDLZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MDLZ-US&lt;/a&gt;) 及好時 (&lt;a data-symbol-template=&quot;USS:HSY:STOCK:COMMON&quot; href=&quot;#&quot;&gt;HSY-US&lt;/a&gt;) 今年以來也有 13% 到 25% 的漲幅。&lt;/p&gt;\n\n&lt;p&gt;在半導體領域，當軟體股哀鴻遍野之時，硬體設備商卻逆勢走強。iShares 半導體 ETF 今年上漲逾 20%，過去一年更飆升 65% 以上，主要推動力來自美光科技 (&lt;a data-symbol-template=&quot;USS:MU:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MU-US&lt;/a&gt;) 、超微半導體 (&lt;a data-symbol-template=&quot;USS:AMD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMD-US&lt;/a&gt;) 以及應用材料 (&lt;a data-symbol-template=&quot;USS:AMAT:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMAT-US&lt;/a&gt;) 與科林研發 (&lt;a data-symbol-template=&quot;USS:LRCX:STOCK:COMMON&quot; href=&quot;#&quot;&gt;LRCX-US&lt;/a&gt;) 等設備大廠。&lt;/p&gt;\n\n&lt;p&gt;資產管理公司駿利亨德森（Janus Henderson）的經理人團隊提醒，市場對 AI 的熱情，可能導致部分營收有限、產品甚至要到 2030 年後才能落地的科技股估值過高，本益比甚至來到營收的 50 倍。&lt;/p&gt;\n\n&lt;p&gt;他們認為，AI 引發的產業顛覆並非線性發展，投資人必須更具選擇性，在不同領域中尋找真正的獲利者。&lt;/p&gt;\n\n&lt;p&gt;金融服務商 B2PRIME 集團執行董事 Eugenia Mykuliak 則預期，HALO 概念股的漲勢才剛開始。她認為，在經歷兩年來近乎瘋狂的 AI 熱潮後，市場尋求獲利調節與多元布局是合理且必要的。&lt;/p&gt;\n\n&lt;p&gt;在 AI 技術全面滲透勞動力市場的過程中，資金將持續流向那些具有實體資產與非數位基礎、且被視為營運最穩定的傳統"
+        },
+        {
+          "title": "NBA》被老鷹交易後改坐客隊休息室 楊恩逗趣回應：要習慣一下",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5350710",
+          "source": "自由時報",
+          "content": "\n\n\n巫師今天作客迎戰老鷹，也是4屆明星球員楊恩（Trae Young）被交易後首次回到老東家，受訪時還逗趣表示感覺很奇怪，需要再習慣一下。\n\n\n亞特蘭大老鷹在1月8日將楊恩交易...…"
+        },
+        {
+          "title": "房仲：2千萬成台北購屋門檻　成屋交易占比高於預售",
+          "url": "https://www.cna.com.tw/news/afe/202602250237.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者何秀玲台北25日電）永慶房屋表示，近年房價總價不斷墊高，新台幣2000萬元已漸成台北市購屋主流門檻，預售屋甚至更高，彙整2025年實價登錄資料，對比各行政區2000萬元內預售屋與成屋交易狀況，預售屋交易稀少，成屋在各區交易占比普遍高出許多。"
+        },
+        {
+          "title": "日本公平交易委員會突擊搜查微軟日本辦公室",
+          "url": "https://news.cnyes.com/news/id/6353197",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;日本公平交易委員會 (JFTC) 周三 (25 日) 對位於東京都港區的日本微軟 (MSFT-US) 辦公室發動突擊搜查。據媒體報導，監管機構懷疑，微軟涉嫌違反《獨占禁止法》中的「交易妨礙」與「附拘束條件交易」，利用其軟體市場的優勢地位，不當限制雲端運算市場的競爭。&lt;/p&gt;\n\n&lt;p&gt;調查重點在於微軟如何推廣其雲端平台 Azure。微軟被指控限制其核心產品 (如 Windows Server、Microsoft 365、Word 及 Teams) 在競爭對手 (如亞馬遜 AWS 或 Google Cloud) 的雲端平台上使用。若用戶想在非 Azure 平台運行這些軟體，微軟涉嫌開出極高額的授權費用，或設定極為嚴苛的條件，變相強制客戶轉往 Azure。&lt;/p&gt;\n\n&lt;p&gt;隨著生成式 AI 的需求激增，日本雲端市場預計在 2029 年規模將翻倍至 19 兆日元。監管機構擔憂，微軟若利用其作業系統的支配地位進行「圍牆花園」式的經營，將損害企業、中小企業及自治體選擇雲端服務的自由，進而推升營運成本並扭曲市場競爭。&lt;/p&gt;\n\n&lt;p&gt;這是微軟日本法人自 1998 年以來，時隔 28 年再次面臨突擊搜查。此舉反映出日本政府正與歐盟、英國等國際監管趨勢接軌，積極遏制大型科技公司的壟斷勢力。&lt;/p&gt;\n\n&lt;p&gt;日本微軟對此表示，將全面配合公平交易委員會的調查。JFTC 後續將分析查扣資料並詢問相關人員，若確認違法，可能對微軟採取進一步的行政處分或罰款。&lt;/p&gt;\n"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：交易台TTD-US的目標價調降至42.5元，幅度約15%",
+          "url": "https://news.cnyes.com/news/id/6353369",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共28位分析師，對交易台(TTD-US)提出目標價估值：中位數由50元下修至42.5元，調降幅度15%。其中最高估值85元，最低估值23元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有36位分析師給予交易台評價：積極樂觀19位、保持中立14位、保守悲觀3位。&lt;/p&gt;&lt;p&gt;交易台今(25日)收盤價為24.94元。近5日股價下跌15%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "敦泰2/26起暫停交易　將召開記者會說明",
+          "url": "https://www.cna.com.tw/news/afe/202602250370.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹25日電）面板驅動IC廠敦泰因有重大訊息待公布，經證交所同意自2月26日起暫停交易，預計26日下午2時召開重大訊息說明記者會說明。"
+        },
+        {
+          "title": "2/26  重大提醒，您務必要小心(只有更誇張)(真的油洗洗)(最後一哩路)(3個交易日過後)｜Winson2004",
+          "url": "https://www.wearn.com/bbs/t1219881.html",
+          "source": "聚財網",
+          "content": "\n\n宣傳 挺我的網址 https://wearn.tw/f/112086\n\n\n\n"
+        },
+        {
+          "title": "「傻錢」成美股關鍵力量！散戶交易規模衝5.4兆美元 年增近47%創歷史新高",
+          "url": "https://news.cnyes.com/news/id/6353648",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;長期以來，部分華爾街人士將散戶投資人貶稱為「傻錢」，認為他們偏好追逐熱門題材與短線趨勢，而忽視企業基本面，或在市場劇烈波動時反應遲緩。&lt;/p&gt;\n\n&lt;p&gt;然而，最新數據顯示，散戶在市場中的影響力與績效已大幅提升。根據獨立數據與研究機構 Vanda Research 統計，2025 年散戶在股票與 ETF 市場的交易規模高達 5.4 兆美元，較前一年大增近 47%，創下至少自 2014 年以來新高。&lt;/p&gt;\n\n&lt;p&gt;該機構分析指出，去年散戶資金流向所帶來的整體收益表現，甚至超越兩檔最受歡迎的專業管理指數型基金，分別為追蹤標普 500 指數的 SPDR S&amp;P 500 ETF Trust 與追蹤納斯達克 100 指數的 Invesco QQQ Trust。&lt;/p&gt;\n\n&lt;p&gt;在加州阿納海姆去年 11 月舉行的一場投資者教育活動上，Charles Schwab 首席交易與衍生品策略師喬 &middot; 馬佐拉表示：「我個人希望打破『散戶是傻錢』的謬論，因為他們已經不再是傻錢。」該活動吸引約 800 名客戶參與。&lt;/p&gt;\n\n&lt;p&gt;過去多數美國投資人透過 401(k) 退休帳戶等受託管理基金間接投資市場，但近十年間，行動交易應用程式興起、零佣金制度普及、社群媒體投資社群壯大以及線上研究工具完善，推動自主投資風潮。新冠疫情期間的封鎖措施成為轉捩點，大批新手投資人透過 Robinhood Markets 等平台進場，掀起「網紅股」熱潮，GameStop 與 AMC Entertainment 股價一度飆升。&lt;/p&gt;\n\n&lt;p&gt;在整體市場環境方面，自 2015 年以來，基準 S&amp;P 500 僅出現三次年度虧損，長期多頭走勢為散戶創造有利條件。JPMorgan Chase 報告顯示，截至去年年初，將資金從支票帳戶轉入投資帳戶的人數創 2021 年以來新高，2023 年至 2025 年初期間，個人投資者流入市場的資金規模增加約 50%。&lt;/p&gt;\n\n&lt;p&gt;盈透證券首席策略師史蒂夫 &middot; 索斯尼克指出，市場影響力已出現結構性轉變，「如果足夠多的螞蟻聚在一起，也能撬動一根巨木。」&lt;/p&gt;\n\n&lt;p&gt;去年 4 月，美國總統川普宣布比市場預期更嚴厲的關稅措施後，標普 500 指數在兩個交易日內暴跌逾 10%，創下自 2020 年疫情崩盤以來最大兩日跌幅。根據 Vanda Research 數據，散戶在那兩天合計買入逾 50 億美元股票，成為主要逢低承接力量。去年 10 月 10 日，川普再度威脅對中國「大幅提高關稅」，市場單日下跌 2.7%，散戶亦迎來全年最大規模逢低買入日之一。&lt;/p&gt;\n\n&lt;p&gt;今年散戶動能仍未減弱。摩根大通數據顯示，上月散戶月滾動交易量創歷史新高，特別是在 1 月最後一周標普 500 創新高之際交易尤為活躍。Vanda Research 指出，上月散戶還大舉買入創紀錄規模的白銀 ETF，推動白銀價格升至歷史高點。&lt;/p&gt;\n\n&lt;p&gt;嘉信理財對數百萬名客戶交易行為分析顯示，1 月散戶為股票淨買入方，其中微軟 (MSFT-US)、Netflix (NFLX-US) 與特斯拉 (TSLA-US) 為最受歡迎標的。&lt;/p&gt;\n\n&lt;p&gt;除股票與 ETF 外，散戶亦積極參與風險較高的選擇權交易。Vanda Research 數據顯示，去年散戶在選擇權市場交易規模約 6,500 億美元，自 2019 年以來基本維持穩定上升趨勢。&lt;/p&gt;\n\n&lt;p&gt;市場分析人士指出，逢低買入策略在多頭環境下為不少散戶帶來可觀回報，但也可能讓部分投資人忽視風險管理。索斯尼克警告，對部分人而言，逢低買入已近乎機械式操作，若市場環境轉變，風險將迅速放大。&lt;/p&gt;\n\n&lt;p&gt;部分散戶則在短線操作與長期配置間尋求平衡。有投資人將 50% 資產配置於 SPDR S&amp;P 500 ETF Trust，並以微盤股進行短線交易，其主動交易帳戶在去年前 11 個月上漲約 20%。但當大型科技股於年底回檔、標普 500 於 12 月下跌時，也有投資人選擇暫停交易、觀望市場走勢。&lt;/p&gt;\n\n&lt;p&gt;隨著散戶資金規模創新高，且在市場波動時展現承接力量，「傻錢」標籤正逐漸被改寫。&lt;/p&gt;\n"
+        },
+        {
+          "title": "AI「恐慌交易」席捲今年市場 五大產業首當其衝",
+          "url": "https://news.cnyes.com/news/id/6353639",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《Yahoo Finance》報導，數周以來，投資人愈發擔心 AI 進展過快，可能對標普 500 指數中一些最具代表性的企業商業模式造成重大衝擊。&lt;/p&gt;\n\n&lt;p&gt;上個月始於軟體股的拋售，已迅速擴散至其他產業，因市場憂心 AI 可能削弱傳統軟體訂價模式，或取代經紀與顧問等按服務收費的業務。&lt;/p&gt;\n\n&lt;p&gt;Purpose Investments 首席市場策略師 Craig Basinger 本月稍早寫道，「一顆破壞球正從一個產業擺盪到另一產業，人們稱之為『AI 恐慌交易』(AI Scare Trade)。」&lt;/p&gt;\n\n&lt;p&gt;周一，Citrini Research 在 Substack 發文進一步加深這種情緒，指出隨著任務被自動化，中產階級白領工作可能面臨大規模消失的風險。&lt;/p&gt;\n\n&lt;p&gt;Sevens Report 創辦人 Tom Essaye 周二表示，「短期來看，投資人現在必須面對的是 AI 情緒轉差的問題。」&lt;/p&gt;\n\n&lt;p&gt;以下是這波交易如何展開，以及受創最重的產業。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;軟體領域&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;AI 帶動的股市裂痕最早出現在企業軟體領域。投資人擔心 Anthropic 快速發展的 AI 工具可能降低對數據分析與研究的需求，威脅傳統軟體以訂閱為核心的商業模式。&lt;/p&gt;\n\n&lt;p&gt;Salesforce(CRM-US) 今年迄今股價下跌 28%，Adobe(ADBE-US) 同期下跌 25%，市場擔心 AI 將削弱這家創意軟體公司的訂價能力。人資與工作流程平台 ServiceNow(NOW-US) 則下跌 30%。&lt;/p&gt;\n\n&lt;p&gt;同時，Workday(WDAY-US) 周三跌至五年低點，此前公司營收預測不如預期，其執行長試圖消除 AI 顛覆的疑慮。&lt;/p&gt;\n\n&lt;p&gt;華爾街分析師認為，這波拋售反應過度。但即使 Anthropic 宣布推出一系列與 AI 工具相關的軟體合作夥伴，科技軟體產業 ETF(IGV) 今年仍下跌 24%。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 周一推出可自動更新金融與政府領域舊有程式碼的工具，此類工作傳統上需要昂貴的顧問服務，進一步加劇賣壓。&lt;/p&gt;\n\n&lt;p&gt;投資人認為此項進展可能威脅 IBM(IBM-US) 的營收來源。該雲端與軟體巨頭在經歷 25 年來最嚴重單日跌幅後，股價於周二反彈。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;資安公司&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;自 Anthropic 於 2 月 20 日推出新的安全工具後，資安類股承壓，包括 CrowdStrike(CRWD-US)、Zscaler(ZS-US) 與 Cloudflare(NET-US) 股價均受影響。&lt;/p&gt;\n\n&lt;p&gt;周一隨著市場對 AI 顛覆的疑慮擴散，這些個股跌勢進一步擴大。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;金融服務&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;本月推出一款 AI 稅務工具，允許顧問為客戶量身訂做策略後，財富管理類股大跌，包括嘉信理財 (Charles Schwab)(SCHW-US) 與 Raymond James(RJF-US)。&lt;/p&gt;\n\n&lt;p&gt;該工具引發市場擔憂，自動化可能壓縮該產業原本收取的高額顧問費。&lt;/p&gt;\n\n&lt;p&gt;信用評等與數據分析公司也表現疲弱。標普全球 (SPGI-US) 與穆迪 (MCO-US) 承壓，市場擔心 AI 驅動的分析平台最終可能與傳統訂閱制數據服務競爭。&lt;/p&gt;\n\n&lt;p&gt;此外，美國運通 (American Express)(AXP-US) 周一下跌逾 6%，因 Citrini Research 推測 AI 相關失業將上升，削弱信用卡公司的客戶基礎。&lt;/p&gt;\n\n&lt;p&gt;銀行股摩根大通 (JPM-US)、花旗 (C-US) 與摩根士丹利 (MS-US) 也在悲觀情境發布後單日下跌逾 4%。&lt;/p&gt;\n\n&lt;p&gt;不過，摩根大通執行長戴蒙 (Jamie Dimon) 周一表示，美國最大銀行更可能是 AI 的受惠者，而非受害者。「在我看來，我們將成為贏家。我們一直有利用科技為客戶提供更好服務的策略，而且我們做得相當不錯。」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;房地產服務&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;本月稍早，投資人開始拋售房地產相關股票，因擔心 Anthropic 為 Claude 模型推出法律與文件處理外掛後，AI 工具可能簡化房產估值、市場研究及租售媒合流程。&lt;/p&gt;\n\n&lt;p&gt;分析師指出，不僅高費用、勞力密集的產權查詢與法律談判成本可能下降，也可能因工作機會減少而導致實體辦公室需求大幅下滑。&lt;/p&gt;\n\n&lt;p&gt;商用不動產公司 CBRE(CBRE-US)、仲量聯行 (Jones Lang LaSalle)(JLL-US) 與 Cushman &amp; Wakefield(CWK-US) 雖自本月初大跌後反彈，但今年仍呈現下跌。&lt;/p&g"
+        },
+        {
+          "title": "台泥處分海螺水泥7687.5萬股 交易金額約78億元",
+          "url": "https://news.cnyes.com/news/id/6353773",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;台泥 (1101-TW) 公告，子公司 TCC International Limited 處分海螺水泥 (00914-HK)7687.5 萬股，每股平均價格約港幣 25.43 元，交易總金額約港幣 19.55 億元 (約新台幣 78.2 億元)。&lt;/p&gt;\n\n&lt;p&gt;台泥表示，此次處分海螺水泥股份目的為資金規劃，本次處分為出售透過其他綜合損益按公允價值衡量之金融資產，處分結果將計入資產負債表之權益項下，並不影響本公司當期損益。&lt;/p&gt;\n\n&lt;p&gt;此次處分後，TCC International Limited 對海螺水泥持股降至 3832.5 萬股，累計投資金額為港幣 9.74 億元。&lt;/p&gt;\n\n&lt;p&gt;台泥近期因應資金規劃，積極處分轉投資持股，先前相繼處分中鼎 (9933-TW)、飛宏 (2457-TW)、台新新光金 (2887-TW)、中國海螺創業控股 (00586-HK)、İş Portf&ouml;y Birinci Para Piyasası Serbest (TL) Fon 等。&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
       "word": "合作",
       "count": 44,
       "articles": [
@@ -2686,68 +2626,68 @@
       ]
     },
     {
-      "word": "交易",
+      "word": "能源",
       "count": 44,
       "articles": [
         {
-          "title": "「反AI交易」火熱上演 這些股票正在擊敗AI概念股",
-          "url": "https://news.cnyes.com/news/id/6351740",
+          "title": "美最高法院推翻全球關稅，儲能與再生能源短期受惠",
+          "url": "https://technews.tw/2026/02/25/trump-new-tariff-mean-to-climate-tech/",
+          "source": "TechNews",
+          "content": "根據彭博社報導，美國最高法院推翻總統川普先前實施的全球性關稅措施，為部分再生能源與儲能技術帶來短期利多，有助於 [&#8230;]"
+        },
+        {
+          "title": "日立能源導入新型功率半導體，瞄準 AI 與高壓電網應用",
+          "url": "https://technews.tw/2026/02/25/hitachi-silicon-power-semiconductor/",
+          "source": "TechNews",
+          "content": "日立能源宣布與 Pakal Technologies 合作，將新一代 IGTO(t)™ 矽功率開關導入 ≥3. [&#8230;]"
+        },
+        {
+          "title": "美最高法院推翻全球關稅，儲能與再生能源短期受惠",
+          "url": "https://finance.technews.tw/2026/02/25/trump-new-tariff-mean-to-climate-tech/",
+          "source": "TechNews",
+          "content": "根據彭博社報導，美國最高法院推翻總統川普先前實施的全球性關稅措施，為部分再生能源與儲能技術帶來短期利多，有助於 [&#8230;]"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：NRG能源公司(NRG-US)EPS預估上修至9.39元，預估目標價為206.00元",
+          "url": "https://news.cnyes.com/news/id/6353376",
           "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;在人工智慧（AI）革命衝擊下，重挫的軟體類股遭投資人拋售，資金轉而流向較不易被 AI 顛覆的標的。根據高盛的觀察，這類被稱為「HALO」的投資概念正逐漸發酵。&lt;/p&gt;\n\n&lt;p&gt;HALO 意即「高資本重資產且低淘汰率」（Heavy Assets and Low Obsolescence），因其難以被 AI 輕易取代的特性，近期表現大幅優於大盤。&lt;/p&gt;\n\n&lt;p&gt;所謂的「HALO」型企業，是指仰賴大規模資本投入以生產商品或服務，且在 AI 時代仍能保持營運優勢、不致輕易退出市場的產業，如航太、汽車製造、食品飲料及半導體設備等。隨著軟體即服務（SaaS）類股持續崩跌、甚至被稱為「軟體末日」，HALO 企業成為市場避風港。&lt;/p&gt;\n\n&lt;p&gt;高盛分析師週二 (24 日) 報告指出，自 2025 年以來，其追蹤的一籃子歐洲資本密集型企業，績效已較資本輕資產企業（如媒體、零售、商業服務與軟體）高出 35%。&lt;/p&gt;\n\n&lt;p&gt;在資本密集型名單中，包括 Airbus、BMW、Volkswagen、Nestle、Diageo 與 ASML；相對地，資本輕資產企業則包括 SAP、Dassault Systemes 與 Sage Group 等軟體公司。&lt;/p&gt;\n\n&lt;p&gt;過去，資本輕資產企業通常享有較高本益比，理由在於軟體公司資產負擔較輕、資本效率較佳。然而，如今市場憂心 Anthropic 的 Claude、OpenAI 的 ChatGPT，以及 Alphabet 旗下 Gemini 等生成式 AI 工具，可能取代部分傳統軟體功能，導致估值邏輯改變。&lt;/p&gt;\n\n&lt;p&gt;高盛指出，兩類股票目前估值水準已趨於接近，顯示投資人正重新評價「韌性」與實體經濟資產的戰略價值。市場開始獎勵產能、網絡、基礎建設與工程複雜度等難以複製的資產。&lt;/p&gt;\n\n&lt;p&gt;市場分析強調，投資人現在更偏好具備高生產力、密集網絡、關鍵基礎設施及複雜工程技術的企業，因為這些資產的護城河極高，競爭對手難以複製。&lt;/p&gt;\n\n&lt;p&gt;在美股市場中，同樣可見 HALO 交易模式的足跡。例如，航太巨擘波音 (&lt;a data-symbol-template=&quot;USS:BA:STOCK:COMMON&quot; href=&quot;#&quot;&gt;BA-US&lt;/a&gt;) 儘管面臨挑戰，今年股價仍累計上漲 8%，過去一年漲幅更超過三成。民生消費龍頭如可口可樂 (&lt;a data-symbol-template=&quot;USS:KO:STOCK:COMMON&quot; href=&quot;#&quot;&gt;KO-US&lt;/a&gt;) 、百事可樂 (&lt;a data-symbol-template=&quot;USS:PEP:STOCK:COMMON&quot; href=&quot;#&quot;&gt;PEP-US&lt;/a&gt;) 、Mondelez(&lt;a data-symbol-template=&quot;USS:MDLZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MDLZ-US&lt;/a&gt;) 及好時 (&lt;a data-symbol-template=&quot;USS:HSY:STOCK:COMMON&quot; href=&quot;#&quot;&gt;HSY-US&lt;/a&gt;) 今年以來也有 13% 到 25% 的漲幅。&lt;/p&gt;\n\n&lt;p&gt;在半導體領域，當軟體股哀鴻遍野之時，硬體設備商卻逆勢走強。iShares 半導體 ETF 今年上漲逾 20%，過去一年更飆升 65% 以上，主要推動力來自美光科技 (&lt;a data-symbol-template=&quot;USS:MU:STOCK:COMMON&quot; href=&quot;#&quot;&gt;MU-US&lt;/a&gt;) 、超微半導體 (&lt;a data-symbol-template=&quot;USS:AMD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMD-US&lt;/a&gt;) 以及應用材料 (&lt;a data-symbol-template=&quot;USS:AMAT:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMAT-US&lt;/a&gt;) 與科林研發 (&lt;a data-symbol-template=&quot;USS:LRCX:STOCK:COMMON&quot; href=&quot;#&quot;&gt;LRCX-US&lt;/a&gt;) 等設備大廠。&lt;/p&gt;\n\n&lt;p&gt;資產管理公司駿利亨德森（Janus Henderson）的經理人團隊提醒，市場對 AI 的熱情，可能導致部分營收有限、產品甚至要到 2030 年後才能落地的科技股估值過高，本益比甚至來到營收的 50 倍。&lt;/p&gt;\n\n&lt;p&gt;他們認為，AI 引發的產業顛覆並非線性發展，投資人必須更具選擇性，在不同領域中尋找真正的獲利者。&lt;/p&gt;\n\n&lt;p&gt;金融服務商 B2PRIME 集團執行董事 Eugenia Mykuliak 則預期，HALO 概念股的漲勢才剛開始。她認為，在經歷兩年來近乎瘋狂的 AI 熱潮後，市場尋求獲利調節與多元布局是合理且必要的。&lt;/p&gt;\n\n&lt;p&gt;在 AI 技術全面滲透勞動力市場的過程中，資金將持續流向那些具有實體資產與非數位基礎、且被視為營運最穩定的傳統"
+          "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對NRG能源公司(NRG-US)做出2026年EPS預估：中位數由8.86元上修至9.39元，其中最高估值9.8元，最低估值7.43元，預估目標價為206.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;9.8(9.8)&lt;/td&gt;&lt;td&gt;13.92&lt;/td&gt;&lt;td&gt;15.27&lt;/td&gt;&lt;td&gt;17.47&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;7.43(7.43)&lt;/td&gt;&lt;td&gt;8.85&lt;/td&gt;&lt;td&gt;11.31&lt;/td&gt;&lt;td&gt;12.44&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;9.08(8.77)&lt;/td&gt;&lt;td&gt;11.22&lt;/td&gt;&lt;td&gt;13.16&lt;/td&gt;&lt;td&gt;14.55&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;9.39(8.86)&lt;/td&gt;&lt;td&gt;11.23&lt;/td&gt;&lt;td&gt;13.06&lt;/td&gt;&lt;td&gt;14.65&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;469.20億&lt;/td&gt;&lt;td&gt;545.09億&lt;/td&gt;&lt;td&gt;650.92億&lt;/td&gt;&lt;td&gt;381.09億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;297.31億&lt;/td&gt;&lt;td&gt;301.14億&lt;/td&gt;&lt;td&gt;303.56億&lt;/td&gt;&lt;td&gt;305.57億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;356.44億&lt;/td&gt;&lt;td&gt;373.39億&lt;/td&gt;&lt;td&gt;434.38億&lt;/td&gt;&lt;td&gt;343.33億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;333.14億&lt;/td&gt;&lt;td&gt;349.69億&lt;/td&gt;&lt;td&gt;391.52億&lt;/td&gt;&lt;td&gt;343.33億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;8.93&lt;/td&gt"
         },
         {
-          "title": "NBA》被老鷹交易後改坐客隊休息室 楊恩逗趣回應：要習慣一下",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5350710",
-          "source": "自由時報",
-          "content": "\n\n\n巫師今天作客迎戰老鷹，也是4屆明星球員楊恩（Trae Young）被交易後首次回到老東家，受訪時還逗趣表示感覺很奇怪，需要再習慣一下。\n\n\n亞特蘭大老鷹在1月8日將楊恩交易...…"
+          "title": "鉅亨速報 - Factset 最新調查：星座能源(CEG-US)EPS預估上修至11.72元，預估目標價為408.00元",
+          "url": "https://news.cnyes.com/news/id/6353360",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共16位分析師，對星座能源(CEG-US)做出2026年EPS預估：中位數由11.43元上修至11.72元，其中最高估值13.25元，最低估值9.07元，預估目標價為408.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;13.25(13.25)&lt;/td&gt;&lt;td&gt;16.36&lt;/td&gt;&lt;td&gt;20.19&lt;/td&gt;&lt;td&gt;22.22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;9.07(9.07)&lt;/td&gt;&lt;td&gt;11.02&lt;/td&gt;&lt;td&gt;12.43&lt;/td&gt;&lt;td&gt;13.42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;11.7(11.67)&lt;/td&gt;&lt;td&gt;13.69&lt;/td&gt;&lt;td&gt;16.28&lt;/td&gt;&lt;td&gt;17.86&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;11.72(11.43)&lt;/td&gt;&lt;td&gt;13.5&lt;/td&gt;&lt;td&gt;16.39&lt;/td&gt;&lt;td&gt;18.13&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;410.15億&lt;/td&gt;&lt;td&gt;415.70億&lt;/td&gt;&lt;td&gt;436.56億&lt;/td&gt;&lt;td&gt;406.59億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;218.09億&lt;/td&gt;&lt;td&gt;231.79億&lt;/td&gt;&lt;td&gt;268.51億&lt;/td&gt;&lt;td&gt;273.06億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;293.09億&lt;/td&gt;&lt;td&gt;307.59億&lt;/td&gt;&lt;td&gt;327.96億&lt;/td&gt;&lt;td&gt;322.79億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;278.33億&lt;/td&gt;&lt;td&gt;288.13億&lt;/td&gt;&lt;td&gt;311.05億&lt;/td&gt;&lt;td&gt;321.25億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;-0.63&"
         },
         {
-          "title": "房仲：2千萬成台北購屋門檻　成屋交易占比高於預售",
-          "url": "https://www.cna.com.tw/news/afe/202602250237.aspx",
+          "title": "鉅亨速報 - Factset 最新調查：道明尼能源D-US的目標價調升至67元，幅度約3.08%",
+          "url": "https://news.cnyes.com/news/id/6353287",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對道明尼能源(D-US)提出目標價估值：中位數由65元上修至67元，調升幅度3.08%。其中最高估值69元，最低估值60元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有19位分析師給予道明尼能源評價：積極樂觀2位、保持中立14位、保守悲觀3位。&lt;/p&gt;&lt;p&gt;道明尼能源今(25日)收盤價為63.74元。近5日股價下跌3.08%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "再生能源新角，Google 資料中心押注新型儲能電池",
+          "url": "https://technews.tw/2026/02/26/google-iron-air-battery/",
+          "source": "TechNews",
+          "content": "Google 週二宣布，將在明尼蘇達州興建首座資料中心，並以總計 1.9GW 的潔淨電力做為能源基礎，其中包括 [&#8230;]"
+        },
+        {
+          "title": "盤中速報 - 星座能源(CEG-US)大跌5.03%，報309.45美元",
+          "url": "https://news.cnyes.com/news/id/6355705",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;星座能源(CEG-US)截至台北時間26日23:18股價下跌16.39美元，報309.45美元，跌幅5.03%，成交量759,096（股），盤中最高價324.92美元、最低價309.45美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.38%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.11%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.61%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.27%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;星座能源(CEG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.32%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.16%&lt;/li&gt;    &lt;li&gt;近 3 月：-11.08%&lt;/li&gt;    &lt;li&gt;近 6 月：+0.63%&lt;/li&gt;    &lt;li&gt;今年以來：-11.5%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "中油：台中廠四期擴建計畫　盼保育與能源轉型雙贏",
+          "url": "https://www.cna.com.tw/news/afe/202602270198.aspx",
           "source": "中央社產經",
-          "content": "（中央社記者何秀玲台北25日電）永慶房屋表示，近年房價總價不斷墊高，新台幣2000萬元已漸成台北市購屋主流門檻，預售屋甚至更高，彙整2025年實價登錄資料，對比各行政區2000萬元內預售屋與成屋交易狀況，預售屋交易稀少，成屋在各區交易占比普遍高出許多。"
+          "content": "（中央社記者潘姿羽台北27日電）台灣中油公司配合國家能源轉型政策，推動台中液化天然氣廠港外擴建（四期）計畫。環團憂心工程影響中華白海豚生態，中油今天發布新聞稿指出，開發階段將遵守環境影響評估法及野生動物保育法等相關法規，將影響降至最低，落實生態與經濟共榮的目標。"
         },
         {
-          "title": "日本公平交易委員會突擊搜查微軟日本辦公室",
-          "url": "https://news.cnyes.com/news/id/6353197",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;日本公平交易委員會 (JFTC) 周三 (25 日) 對位於東京都港區的日本微軟 (MSFT-US) 辦公室發動突擊搜查。據媒體報導，監管機構懷疑，微軟涉嫌違反《獨占禁止法》中的「交易妨礙」與「附拘束條件交易」，利用其軟體市場的優勢地位，不當限制雲端運算市場的競爭。&lt;/p&gt;\n\n&lt;p&gt;調查重點在於微軟如何推廣其雲端平台 Azure。微軟被指控限制其核心產品 (如 Windows Server、Microsoft 365、Word 及 Teams) 在競爭對手 (如亞馬遜 AWS 或 Google Cloud) 的雲端平台上使用。若用戶想在非 Azure 平台運行這些軟體，微軟涉嫌開出極高額的授權費用，或設定極為嚴苛的條件，變相強制客戶轉往 Azure。&lt;/p&gt;\n\n&lt;p&gt;隨著生成式 AI 的需求激增，日本雲端市場預計在 2029 年規模將翻倍至 19 兆日元。監管機構擔憂，微軟若利用其作業系統的支配地位進行「圍牆花園」式的經營，將損害企業、中小企業及自治體選擇雲端服務的自由，進而推升營運成本並扭曲市場競爭。&lt;/p&gt;\n\n&lt;p&gt;這是微軟日本法人自 1998 年以來，時隔 28 年再次面臨突擊搜查。此舉反映出日本政府正與歐盟、英國等國際監管趨勢接軌，積極遏制大型科技公司的壟斷勢力。&lt;/p&gt;\n\n&lt;p&gt;日本微軟對此表示，將全面配合公平交易委員會的調查。JFTC 後續將分析查扣資料並詢問相關人員，若確認違法，可能對微軟採取進一步的行政處分或罰款。&lt;/p&gt;\n"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：交易台TTD-US的目標價調降至42.5元，幅度約15%",
-          "url": "https://news.cnyes.com/news/id/6353369",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共28位分析師，對交易台(TTD-US)提出目標價估值：中位數由50元下修至42.5元，調降幅度15%。其中最高估值85元，最低估值23元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有36位分析師給予交易台評價：積極樂觀19位、保持中立14位、保守悲觀3位。&lt;/p&gt;&lt;p&gt;交易台今(25日)收盤價為24.94元。近5日股價下跌15%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
-        },
-        {
-          "title": "敦泰2/26起暫停交易　將召開記者會說明",
-          "url": "https://www.cna.com.tw/news/afe/202602250370.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹25日電）面板驅動IC廠敦泰因有重大訊息待公布，經證交所同意自2月26日起暫停交易，預計26日下午2時召開重大訊息說明記者會說明。"
-        },
-        {
-          "title": "2/26  重大提醒，您務必要小心(只有更誇張)(真的油洗洗)(最後一哩路)(3個交易日過後)｜Winson2004",
-          "url": "https://www.wearn.com/bbs/t1219881.html",
-          "source": "聚財網",
-          "content": "\n\n宣傳 挺我的網址 https://wearn.tw/f/112086\n\n\n\n"
-        },
-        {
-          "title": "「傻錢」成美股關鍵力量！散戶交易規模衝5.4兆美元 年增近47%創歷史新高",
-          "url": "https://news.cnyes.com/news/id/6353648",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;長期以來，部分華爾街人士將散戶投資人貶稱為「傻錢」，認為他們偏好追逐熱門題材與短線趨勢，而忽視企業基本面，或在市場劇烈波動時反應遲緩。&lt;/p&gt;\n\n&lt;p&gt;然而，最新數據顯示，散戶在市場中的影響力與績效已大幅提升。根據獨立數據與研究機構 Vanda Research 統計，2025 年散戶在股票與 ETF 市場的交易規模高達 5.4 兆美元，較前一年大增近 47%，創下至少自 2014 年以來新高。&lt;/p&gt;\n\n&lt;p&gt;該機構分析指出，去年散戶資金流向所帶來的整體收益表現，甚至超越兩檔最受歡迎的專業管理指數型基金，分別為追蹤標普 500 指數的 SPDR S&amp;P 500 ETF Trust 與追蹤納斯達克 100 指數的 Invesco QQQ Trust。&lt;/p&gt;\n\n&lt;p&gt;在加州阿納海姆去年 11 月舉行的一場投資者教育活動上，Charles Schwab 首席交易與衍生品策略師喬 &middot; 馬佐拉表示：「我個人希望打破『散戶是傻錢』的謬論，因為他們已經不再是傻錢。」該活動吸引約 800 名客戶參與。&lt;/p&gt;\n\n&lt;p&gt;過去多數美國投資人透過 401(k) 退休帳戶等受託管理基金間接投資市場，但近十年間，行動交易應用程式興起、零佣金制度普及、社群媒體投資社群壯大以及線上研究工具完善，推動自主投資風潮。新冠疫情期間的封鎖措施成為轉捩點，大批新手投資人透過 Robinhood Markets 等平台進場，掀起「網紅股」熱潮，GameStop 與 AMC Entertainment 股價一度飆升。&lt;/p&gt;\n\n&lt;p&gt;在整體市場環境方面，自 2015 年以來，基準 S&amp;P 500 僅出現三次年度虧損，長期多頭走勢為散戶創造有利條件。JPMorgan Chase 報告顯示，截至去年年初，將資金從支票帳戶轉入投資帳戶的人數創 2021 年以來新高，2023 年至 2025 年初期間，個人投資者流入市場的資金規模增加約 50%。&lt;/p&gt;\n\n&lt;p&gt;盈透證券首席策略師史蒂夫 &middot; 索斯尼克指出，市場影響力已出現結構性轉變，「如果足夠多的螞蟻聚在一起，也能撬動一根巨木。」&lt;/p&gt;\n\n&lt;p&gt;去年 4 月，美國總統川普宣布比市場預期更嚴厲的關稅措施後，標普 500 指數在兩個交易日內暴跌逾 10%，創下自 2020 年疫情崩盤以來最大兩日跌幅。根據 Vanda Research 數據，散戶在那兩天合計買入逾 50 億美元股票，成為主要逢低承接力量。去年 10 月 10 日，川普再度威脅對中國「大幅提高關稅」，市場單日下跌 2.7%，散戶亦迎來全年最大規模逢低買入日之一。&lt;/p&gt;\n\n&lt;p&gt;今年散戶動能仍未減弱。摩根大通數據顯示，上月散戶月滾動交易量創歷史新高，特別是在 1 月最後一周標普 500 創新高之際交易尤為活躍。Vanda Research 指出，上月散戶還大舉買入創紀錄規模的白銀 ETF，推動白銀價格升至歷史高點。&lt;/p&gt;\n\n&lt;p&gt;嘉信理財對數百萬名客戶交易行為分析顯示，1 月散戶為股票淨買入方，其中微軟 (MSFT-US)、Netflix (NFLX-US) 與特斯拉 (TSLA-US) 為最受歡迎標的。&lt;/p&gt;\n\n&lt;p&gt;除股票與 ETF 外，散戶亦積極參與風險較高的選擇權交易。Vanda Research 數據顯示，去年散戶在選擇權市場交易規模約 6,500 億美元，自 2019 年以來基本維持穩定上升趨勢。&lt;/p&gt;\n\n&lt;p&gt;市場分析人士指出，逢低買入策略在多頭環境下為不少散戶帶來可觀回報，但也可能讓部分投資人忽視風險管理。索斯尼克警告，對部分人而言，逢低買入已近乎機械式操作，若市場環境轉變，風險將迅速放大。&lt;/p&gt;\n\n&lt;p&gt;部分散戶則在短線操作與長期配置間尋求平衡。有投資人將 50% 資產配置於 SPDR S&amp;P 500 ETF Trust，並以微盤股進行短線交易，其主動交易帳戶在去年前 11 個月上漲約 20%。但當大型科技股於年底回檔、標普 500 於 12 月下跌時，也有投資人選擇暫停交易、觀望市場走勢。&lt;/p&gt;\n\n&lt;p&gt;隨著散戶資金規模創新高，且在市場波動時展現承接力量，「傻錢」標籤正逐漸被改寫。&lt;/p&gt;\n"
-        },
-        {
-          "title": "AI「恐慌交易」席捲今年市場 五大產業首當其衝",
-          "url": "https://news.cnyes.com/news/id/6353639",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《Yahoo Finance》報導，數周以來，投資人愈發擔心 AI 進展過快，可能對標普 500 指數中一些最具代表性的企業商業模式造成重大衝擊。&lt;/p&gt;\n\n&lt;p&gt;上個月始於軟體股的拋售，已迅速擴散至其他產業，因市場憂心 AI 可能削弱傳統軟體訂價模式，或取代經紀與顧問等按服務收費的業務。&lt;/p&gt;\n\n&lt;p&gt;Purpose Investments 首席市場策略師 Craig Basinger 本月稍早寫道，「一顆破壞球正從一個產業擺盪到另一產業，人們稱之為『AI 恐慌交易』(AI Scare Trade)。」&lt;/p&gt;\n\n&lt;p&gt;周一，Citrini Research 在 Substack 發文進一步加深這種情緒，指出隨著任務被自動化，中產階級白領工作可能面臨大規模消失的風險。&lt;/p&gt;\n\n&lt;p&gt;Sevens Report 創辦人 Tom Essaye 周二表示，「短期來看，投資人現在必須面對的是 AI 情緒轉差的問題。」&lt;/p&gt;\n\n&lt;p&gt;以下是這波交易如何展開，以及受創最重的產業。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;軟體領域&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;AI 帶動的股市裂痕最早出現在企業軟體領域。投資人擔心 Anthropic 快速發展的 AI 工具可能降低對數據分析與研究的需求，威脅傳統軟體以訂閱為核心的商業模式。&lt;/p&gt;\n\n&lt;p&gt;Salesforce(CRM-US) 今年迄今股價下跌 28%，Adobe(ADBE-US) 同期下跌 25%，市場擔心 AI 將削弱這家創意軟體公司的訂價能力。人資與工作流程平台 ServiceNow(NOW-US) 則下跌 30%。&lt;/p&gt;\n\n&lt;p&gt;同時，Workday(WDAY-US) 周三跌至五年低點，此前公司營收預測不如預期，其執行長試圖消除 AI 顛覆的疑慮。&lt;/p&gt;\n\n&lt;p&gt;華爾街分析師認為，這波拋售反應過度。但即使 Anthropic 宣布推出一系列與 AI 工具相關的軟體合作夥伴，科技軟體產業 ETF(IGV) 今年仍下跌 24%。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 周一推出可自動更新金融與政府領域舊有程式碼的工具，此類工作傳統上需要昂貴的顧問服務，進一步加劇賣壓。&lt;/p&gt;\n\n&lt;p&gt;投資人認為此項進展可能威脅 IBM(IBM-US) 的營收來源。該雲端與軟體巨頭在經歷 25 年來最嚴重單日跌幅後，股價於周二反彈。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;資安公司&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;自 Anthropic 於 2 月 20 日推出新的安全工具後，資安類股承壓，包括 CrowdStrike(CRWD-US)、Zscaler(ZS-US) 與 Cloudflare(NET-US) 股價均受影響。&lt;/p&gt;\n\n&lt;p&gt;周一隨著市場對 AI 顛覆的疑慮擴散，這些個股跌勢進一步擴大。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;金融服務&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;本月推出一款 AI 稅務工具，允許顧問為客戶量身訂做策略後，財富管理類股大跌，包括嘉信理財 (Charles Schwab)(SCHW-US) 與 Raymond James(RJF-US)。&lt;/p&gt;\n\n&lt;p&gt;該工具引發市場擔憂，自動化可能壓縮該產業原本收取的高額顧問費。&lt;/p&gt;\n\n&lt;p&gt;信用評等與數據分析公司也表現疲弱。標普全球 (SPGI-US) 與穆迪 (MCO-US) 承壓，市場擔心 AI 驅動的分析平台最終可能與傳統訂閱制數據服務競爭。&lt;/p&gt;\n\n&lt;p&gt;此外，美國運通 (American Express)(AXP-US) 周一下跌逾 6%，因 Citrini Research 推測 AI 相關失業將上升，削弱信用卡公司的客戶基礎。&lt;/p&gt;\n\n&lt;p&gt;銀行股摩根大通 (JPM-US)、花旗 (C-US) 與摩根士丹利 (MS-US) 也在悲觀情境發布後單日下跌逾 4%。&lt;/p&gt;\n\n&lt;p&gt;不過，摩根大通執行長戴蒙 (Jamie Dimon) 周一表示，美國最大銀行更可能是 AI 的受惠者，而非受害者。「在我看來，我們將成為贏家。我們一直有利用科技為客戶提供更好服務的策略，而且我們做得相當不錯。」&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;房地產服務&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;本月稍早，投資人開始拋售房地產相關股票，因擔心 Anthropic 為 Claude 模型推出法律與文件處理外掛後，AI 工具可能簡化房產估值、市場研究及租售媒合流程。&lt;/p&gt;\n\n&lt;p&gt;分析師指出，不僅高費用、勞力密集的產權查詢與法律談判成本可能下降，也可能因工作機會減少而導致實體辦公室需求大幅下滑。&lt;/p&gt;\n\n&lt;p&gt;商用不動產公司 CBRE(CBRE-US)、仲量聯行 (Jones Lang LaSalle)(JLL-US) 與 Cushman &amp; Wakefield(CWK-US) 雖自本月初大跌後反彈，但今年仍呈現下跌。&lt;/p&g"
-        },
-        {
-          "title": "台泥處分海螺水泥7687.5萬股 交易金額約78億元",
-          "url": "https://news.cnyes.com/news/id/6353773",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;台泥 (1101-TW) 公告，子公司 TCC International Limited 處分海螺水泥 (00914-HK)7687.5 萬股，每股平均價格約港幣 25.43 元，交易總金額約港幣 19.55 億元 (約新台幣 78.2 億元)。&lt;/p&gt;\n\n&lt;p&gt;台泥表示，此次處分海螺水泥股份目的為資金規劃，本次處分為出售透過其他綜合損益按公允價值衡量之金融資產，處分結果將計入資產負債表之權益項下，並不影響本公司當期損益。&lt;/p&gt;\n\n&lt;p&gt;此次處分後，TCC International Limited 對海螺水泥持股降至 3832.5 萬股，累計投資金額為港幣 9.74 億元。&lt;/p&gt;\n\n&lt;p&gt;台泥近期因應資金規劃，積極處分轉投資持股，先前相繼處分中鼎 (9933-TW)、飛宏 (2457-TW)、台新新光金 (2887-TW)、中國海螺創業控股 (00586-HK)、İş Portf&ouml;y Birinci Para Piyasası Serbest (TL) Fon 等。&lt;/p&gt;\n"
+          "title": "川普德州造勢談能源　未表態參議員初選偏好人選",
+          "url": "https://www.cna.com.tw/news/aopl/202602280078.aspx",
+          "source": "中央社國際",
+          "content": "（中央社德州聖體城27日綜合外電報導）美國總統川普今天在德州南部宣傳他的經濟與化石燃料政見，但不願透露在德州即將舉行的聯邦參議員共和黨初選中，他將支持3名參選人中的哪一人。"
         }
       ]
     },
@@ -2818,140 +2758,8 @@
       ]
     },
     {
-      "word": "TAIPEI",
-      "count": 43,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》Trump-Takaichi meeting good for Taiwan: Izumi",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351656",
-          "source": "自由時報",
-          "content": "POSITIVE DEVELOPMENT:Japan and the US are expected to hold in-depth discussions on Taiwan-related is...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Taiwanese fire dancer impresses UK show’s jury",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351659",
-          "source": "自由時報",
-          "content": "‘YEARS OF EFFORT’:‘I hope the warmth of the fire from Taiwan will light up the whole world,’ Yang Li...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》TSMC market cap swells to US$2tn on rally",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351650",
-          "source": "自由時報",
-          "content": "BIG SPENDERS: Foreign investors bought the most Taiwan equities since 2005, signaling confidence tha...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Tech, reforms to bolster military: Lai",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351649",
-          "source": "自由時報",
-          "content": "WHOLE OF SOCIETY: The determination to fight for free and democratic institutions must be ingrained ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Taipei initiative to subsidize flexible hours for parents",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351652",
-          "source": "自由時報",
-          "content": "By Gang Meng-lin and Jonathan Chin / Staff reporters, with staff writer\r\n\r\nTaipei Mayor Chiang Wan-a...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Farmers indicted over hiding swine fever outbreak",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351657",
-          "source": "自由時報",
-          "content": "Staff writer, with CNA\r\n\r\nProsecutors yesterday indicted a father and son for falsifying evidence to...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Missiles on Yonaguni set for 2031",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351655",
-          "source": "自由時報",
-          "content": "AFP, TOKYO\r\n\r\nThe Japanese government plans to deploy surface-to-air missiles on one of its remote w...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai honors baseball home run legend Sadaharu Oh",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352880",
-          "source": "自由時報",
-          "content": "/ Staff writer, with CNA\r\n\r\n\r\nPresident William Lai （賴清德） yesterday conferred the Order of Brilliant...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Computer and IT service sector posts record-high revenue",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352886",
-          "source": "自由時報",
-          "content": "AI BOOM: The adoption of Industry 4.0 and increased demand for cross-border operations from major ch...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Premier Cho issues caution over Li Zhenxiu",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352877",
-          "source": "自由時報",
-          "content": "DOUBT REMAINS: The MAC deputy minister said all agencies must comply with Cho’s warning not to share...…"
-        }
-      ]
-    },
-    {
-      "word": "TIMES",
-      "count": 43,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》Trump-Takaichi meeting good for Taiwan: Izumi",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351656",
-          "source": "自由時報",
-          "content": "POSITIVE DEVELOPMENT:Japan and the US are expected to hold in-depth discussions on Taiwan-related is...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Taiwanese fire dancer impresses UK show’s jury",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351659",
-          "source": "自由時報",
-          "content": "‘YEARS OF EFFORT’:‘I hope the warmth of the fire from Taiwan will light up the whole world,’ Yang Li...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》TSMC market cap swells to US$2tn on rally",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351650",
-          "source": "自由時報",
-          "content": "BIG SPENDERS: Foreign investors bought the most Taiwan equities since 2005, signaling confidence tha...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Tech, reforms to bolster military: Lai",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351649",
-          "source": "自由時報",
-          "content": "WHOLE OF SOCIETY: The determination to fight for free and democratic institutions must be ingrained ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Taipei initiative to subsidize flexible hours for parents",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351652",
-          "source": "自由時報",
-          "content": "By Gang Meng-lin and Jonathan Chin / Staff reporters, with staff writer\r\n\r\nTaipei Mayor Chiang Wan-a...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Farmers indicted over hiding swine fever outbreak",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351657",
-          "source": "自由時報",
-          "content": "Staff writer, with CNA\r\n\r\nProsecutors yesterday indicted a father and son for falsifying evidence to...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Missiles on Yonaguni set for 2031",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5351655",
-          "source": "自由時報",
-          "content": "AFP, TOKYO\r\n\r\nThe Japanese government plans to deploy surface-to-air missiles on one of its remote w...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai honors baseball home run legend Sadaharu Oh",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352880",
-          "source": "自由時報",
-          "content": "/ Staff writer, with CNA\r\n\r\n\r\nPresident William Lai （賴清德） yesterday conferred the Order of Brilliant...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Computer and IT service sector posts record-high revenue",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352886",
-          "source": "自由時報",
-          "content": "AI BOOM: The adoption of Industry 4.0 and increased demand for cross-border operations from major ch...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》Premier Cho issues caution over Li Zhenxiu",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5352877",
-          "source": "自由時報",
-          "content": "DOUBT REMAINS: The MAC deputy minister said all agencies must comply with Cho’s warning not to share...…"
-        }
-      ]
-    },
-    {
       "word": "Anthropic",
-      "count": 42,
+      "count": 43,
       "articles": [
         {
           "title": "【科技早餐】2.4 萬假帳號、1600 萬次對話：Anthropic 控 DeepSeek 蒸餾攻擊",
@@ -3017,7 +2825,7 @@
     },
     {
       "word": "股市",
-      "count": 42,
+      "count": 43,
       "articles": [
         {
           "title": "這次不談貧富差距，馬克贊迪：股市與現實日益脫節",
@@ -3082,74 +2890,8 @@
       ]
     },
     {
-      "word": "能源",
-      "count": 42,
-      "articles": [
-        {
-          "title": "美最高法院推翻全球關稅，儲能與再生能源短期受惠",
-          "url": "https://technews.tw/2026/02/25/trump-new-tariff-mean-to-climate-tech/",
-          "source": "TechNews",
-          "content": "根據彭博社報導，美國最高法院推翻總統川普先前實施的全球性關稅措施，為部分再生能源與儲能技術帶來短期利多，有助於 [&#8230;]"
-        },
-        {
-          "title": "日立能源導入新型功率半導體，瞄準 AI 與高壓電網應用",
-          "url": "https://technews.tw/2026/02/25/hitachi-silicon-power-semiconductor/",
-          "source": "TechNews",
-          "content": "日立能源宣布與 Pakal Technologies 合作，將新一代 IGTO(t)™ 矽功率開關導入 ≥3. [&#8230;]"
-        },
-        {
-          "title": "美最高法院推翻全球關稅，儲能與再生能源短期受惠",
-          "url": "https://finance.technews.tw/2026/02/25/trump-new-tariff-mean-to-climate-tech/",
-          "source": "TechNews",
-          "content": "根據彭博社報導，美國最高法院推翻總統川普先前實施的全球性關稅措施，為部分再生能源與儲能技術帶來短期利多，有助於 [&#8230;]"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：NRG能源公司(NRG-US)EPS預估上修至9.39元，預估目標價為206.00元",
-          "url": "https://news.cnyes.com/news/id/6353376",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對NRG能源公司(NRG-US)做出2026年EPS預估：中位數由8.86元上修至9.39元，其中最高估值9.8元，最低估值7.43元，預估目標價為206.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;9.8(9.8)&lt;/td&gt;&lt;td&gt;13.92&lt;/td&gt;&lt;td&gt;15.27&lt;/td&gt;&lt;td&gt;17.47&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;7.43(7.43)&lt;/td&gt;&lt;td&gt;8.85&lt;/td&gt;&lt;td&gt;11.31&lt;/td&gt;&lt;td&gt;12.44&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;9.08(8.77)&lt;/td&gt;&lt;td&gt;11.22&lt;/td&gt;&lt;td&gt;13.16&lt;/td&gt;&lt;td&gt;14.55&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;9.39(8.86)&lt;/td&gt;&lt;td&gt;11.23&lt;/td&gt;&lt;td&gt;13.06&lt;/td&gt;&lt;td&gt;14.65&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;469.20億&lt;/td&gt;&lt;td&gt;545.09億&lt;/td&gt;&lt;td&gt;650.92億&lt;/td&gt;&lt;td&gt;381.09億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;297.31億&lt;/td&gt;&lt;td&gt;301.14億&lt;/td&gt;&lt;td&gt;303.56億&lt;/td&gt;&lt;td&gt;305.57億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;356.44億&lt;/td&gt;&lt;td&gt;373.39億&lt;/td&gt;&lt;td&gt;434.38億&lt;/td&gt;&lt;td&gt;343.33億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;333.14億&lt;/td&gt;&lt;td&gt;349.69億&lt;/td&gt;&lt;td&gt;391.52億&lt;/td&gt;&lt;td&gt;343.33億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;8.93&lt;/td&gt"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：星座能源(CEG-US)EPS預估上修至11.72元，預估目標價為408.00元",
-          "url": "https://news.cnyes.com/news/id/6353360",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共16位分析師，對星座能源(CEG-US)做出2026年EPS預估：中位數由11.43元上修至11.72元，其中最高估值13.25元，最低估值9.07元，預估目標價為408.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;13.25(13.25)&lt;/td&gt;&lt;td&gt;16.36&lt;/td&gt;&lt;td&gt;20.19&lt;/td&gt;&lt;td&gt;22.22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;9.07(9.07)&lt;/td&gt;&lt;td&gt;11.02&lt;/td&gt;&lt;td&gt;12.43&lt;/td&gt;&lt;td&gt;13.42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;11.7(11.67)&lt;/td&gt;&lt;td&gt;13.69&lt;/td&gt;&lt;td&gt;16.28&lt;/td&gt;&lt;td&gt;17.86&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;11.72(11.43)&lt;/td&gt;&lt;td&gt;13.5&lt;/td&gt;&lt;td&gt;16.39&lt;/td&gt;&lt;td&gt;18.13&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;410.15億&lt;/td&gt;&lt;td&gt;415.70億&lt;/td&gt;&lt;td&gt;436.56億&lt;/td&gt;&lt;td&gt;406.59億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;218.09億&lt;/td&gt;&lt;td&gt;231.79億&lt;/td&gt;&lt;td&gt;268.51億&lt;/td&gt;&lt;td&gt;273.06億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;293.09億&lt;/td&gt;&lt;td&gt;307.59億&lt;/td&gt;&lt;td&gt;327.96億&lt;/td&gt;&lt;td&gt;322.79億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;278.33億&lt;/td&gt;&lt;td&gt;288.13億&lt;/td&gt;&lt;td&gt;311.05億&lt;/td&gt;&lt;td&gt;321.25億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;-0.63&"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：道明尼能源D-US的目標價調升至67元，幅度約3.08%",
-          "url": "https://news.cnyes.com/news/id/6353287",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對道明尼能源(D-US)提出目標價估值：中位數由65元上修至67元，調升幅度3.08%。其中最高估值69元，最低估值60元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有19位分析師給予道明尼能源評價：積極樂觀2位、保持中立14位、保守悲觀3位。&lt;/p&gt;&lt;p&gt;道明尼能源今(25日)收盤價為63.74元。近5日股價下跌3.08%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
-        },
-        {
-          "title": "再生能源新角，Google 資料中心押注新型儲能電池",
-          "url": "https://technews.tw/2026/02/26/google-iron-air-battery/",
-          "source": "TechNews",
-          "content": "Google 週二宣布，將在明尼蘇達州興建首座資料中心，並以總計 1.9GW 的潔淨電力做為能源基礎，其中包括 [&#8230;]"
-        },
-        {
-          "title": "盤中速報 - 星座能源(CEG-US)大跌5.03%，報309.45美元",
-          "url": "https://news.cnyes.com/news/id/6355705",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;星座能源(CEG-US)截至台北時間26日23:18股價下跌16.39美元，報309.45美元，跌幅5.03%，成交量759,096（股），盤中最高價324.92美元、最低價309.45美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.38%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.11%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.61%&lt;/li&gt;&lt;li&gt;費城半導體指數：-4.27%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;星座能源(CEG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+6.32%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.16%&lt;/li&gt;    &lt;li&gt;近 3 月：-11.08%&lt;/li&gt;    &lt;li&gt;近 6 月：+0.63%&lt;/li&gt;    &lt;li&gt;今年以來：-11.5%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "中油：台中廠四期擴建計畫　盼保育與能源轉型雙贏",
-          "url": "https://www.cna.com.tw/news/afe/202602270198.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者潘姿羽台北27日電）台灣中油公司配合國家能源轉型政策，推動台中液化天然氣廠港外擴建（四期）計畫。環團憂心工程影響中華白海豚生態，中油今天發布新聞稿指出，開發階段將遵守環境影響評估法及野生動物保育法等相關法規，將影響降至最低，落實生態與經濟共榮的目標。"
-        },
-        {
-          "title": "川普德州造勢談能源　未表態參議員初選偏好人選",
-          "url": "https://www.cna.com.tw/news/aopl/202602280078.aspx",
-          "source": "中央社國際",
-          "content": "（中央社德州聖體城27日綜合外電報導）美國總統川普今天在德州南部宣傳他的經濟與化石燃料政見，但不願透露在德州即將舉行的聯邦參議員共和黨初選中，他將支持3名參選人中的哪一人。"
-        }
-      ]
-    },
-    {
       "word": "Class",
-      "count": 41,
+      "count": 43,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Tempus AI, Inc. Class A(TEM-US)EPS預估下修至-0.22元，預估目標價為82.50元",
@@ -3210,6 +2952,72 @@
           "url": "https://news.cnyes.com/news/id/6355529",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;根據FactSet最新調查，共14位分析師，對TKO Group Holdings Inc - Class A(TKO-US)做出2026年EPS預估：中位數由5.73元上修至5.99元，其中最高估值9.24元，最低估值2.04元，預估目標價為234.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;9.24(8.64)&lt;/td&gt;&lt;td&gt;10.94&lt;/td&gt;&lt;td&gt;9.76&lt;/td&gt;&lt;td&gt;10.44&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2.04(2.04)&lt;/td&gt;&lt;td&gt;2.28&lt;/td&gt;&lt;td&gt;2.61&lt;/td&gt;&lt;td&gt;2.92&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;5.73(5.45)&lt;/td&gt;&lt;td&gt;6.41&lt;/td&gt;&lt;td&gt;7.94&lt;/td&gt;&lt;td&gt;6.91&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;5.99(5.73)&lt;/td&gt;&lt;td&gt;6.75&lt;/td&gt;&lt;td&gt;9.19&lt;/td&gt;&lt;td&gt;7.36&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;60.98億&lt;/td&gt;&lt;td&gt;62.20億&lt;/td&gt;&lt;td&gt;81.95億&lt;/td&gt;&lt;td&gt;69.63億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;57.67億&lt;/td&gt;&lt;td&gt;56.86億&lt;/td&gt;&lt;td&gt;66.96億&lt;/td&gt;&lt;td&gt;65.19億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;59.22億&lt;/td&gt;&lt;td&gt;59.30億&lt;/td&gt;&lt;td&gt;75.95億&lt;/td&gt;&lt;td&gt;66.87億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;59.28億&lt;/td&gt;&lt;td&gt;59.40億&lt;/td&gt;&lt;td&gt;77.12億&lt;/td&gt;&lt;td&gt;65.78億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;2.32&lt;/td&gt;&lt;td&gt;2.63&lt;/td&gt;&lt;td&gt;-0.43&lt"
+        }
+      ]
+    },
+    {
+      "word": "哈米尼",
+      "count": 41,
+      "articles": [
+        {
+          "title": "以色列攻擊伊朗 比特幣暴跌！15分鐘30億元瞬間蒸發 哈米尼被轉至安全地方",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5354243",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕以色列對伊朗發動攻擊後，比特幣暴跌，15分鐘內導致1億美元（台幣31.4億元）的多頭部位被清算。\n\n\n以色列發動了一次被其稱為預防性飛彈攻擊，德黑蘭傳來巨大的爆炸聲。受以色...…"
+        },
+        {
+          "title": "（不斷更新）美國以色列正式攻擊伊朗：哈米尼即將垮台？油價是否會飆升？三個QA一次看懂",
+          "url": "https://www.thenewslens.com/article/265138",
+          "source": "關鍵評論網",
+          "content": "以色列與美國今天對伊朗發動空襲，美國官員稱這次攻擊的規模將遠大於去年6月的以伊戰爭。此次行動美軍總共集結兩艘航空母艦、若干艘海軍驅逐艦和50多架戰鬥機。\n\n《關鍵評論網》將持續更新戰事動向，並用三個QA帶您一次掌握衝突的來龍去脈。"
+        },
+        {
+          "title": "哈米尼在哪裡？伊朗最高領導人住所驚悚照片曝光",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5354579",
+          "source": "自由時報",
+          "content": "\n\n\n〔財經頻道／綜合報導〕美國與以色列聯合對伊朗發動突襲，一張新的衛星照片顯示，伊朗最高領袖哈米尼的住所遭到破壞，這是美國和以色列週六在德黑蘭發動的最新襲擊的一部分。\n\n\n這張由《紐約時報》發布、空...…"
+        },
+        {
+          "title": "川普稱伊朗最高領袖身亡 哈米尼四位親屬據稱也身亡",
+          "url": "https://news.cnyes.com/news/id/6356852",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國總統川普周六（28 日）在社交媒體 Truth Social 上發文表示，伊朗最高領袖哈米尼已身亡。&lt;/p&gt;\n\n&lt;p&gt;川普說，哈米尼「無法逃脫我們高度精密的情報和追蹤系統」，再加上美軍與以色列的密切合作，他和與他一同身亡的其他領導人都無地遁逃。&lt;/p&gt;\n\n&lt;p&gt;以色列總理尼坦雅胡周六晚間也表示，「越來越多跡象」表明哈米尼「已不在人世」。&lt;/p&gt;\n\n&lt;p&gt;據《法新社》報導，尼坦雅胡說道：「今天上午，在一次強而有力的突襲中，暴君哈米尼位在德黑蘭市中心的官邸園區已被摧毀&hellip;... 愈來愈多跡象顯示，這名暴君已不在人世。」&lt;/p&gt;\n\n&lt;p&gt;接近伊朗最高領袖官邸的知情人士透露，哈米尼的女兒、女婿和孫女死亡，哈米尼的一位兒媳在周六上午的襲擊中死亡。&lt;/p&gt;\n\n&lt;p&gt;在美國和以色列對伊朗發動襲擊後，美國聯邦調查局反恐和反情報部門已在全國範圍內進入高度戒備狀態。&lt;/p&gt;\n"
+        },
+        {
+          "title": "哈米尼已死 流亡王儲：伊朗伊斯蘭共和國將被掃進歷史垃圾堆",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354693",
+          "source": "自由時報",
+          "content": "美國與以色列2月28日針對伊朗發動大規模軍事打擊，美國總統川普宣布伊朗最高領袖哈米尼（Ali Khamenei）已經在空襲中死亡。流亡海外的伊朗末代王儲芮沙‧巴勒維（Reza P...…"
+        },
+        {
+          "title": "哈米尼死於美以空襲　32年鐵腕統治伊朗畫下句號",
+          "url": "https://www.cna.com.tw/news/aopl/202603010058.aspx",
+          "source": "中央社國際",
+          "content": "（中央社華盛頓1日綜合外電報導）86歲的伊朗最高領袖哈米尼（Ayatollah Ali Khamenei）於美國、以色列發動的攻擊中喪生。擔任最高領袖30多年間，哈米尼在國內鎮壓異議人士，並堅守對美國和以色列的敵意。"
+        },
+        {
+          "title": "哈米尼身亡！ 伊朗革命衛隊揚言發動「史上最猛烈攻勢」 劍指美以",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354786",
+          "source": "自由時報",
+          "content": "伊朗國營電視台正式確認最高領袖哈米尼（Ayatollah Ali Khamenei）的死訊後，伊朗精銳軍事組織伊斯蘭革命衛隊（IRGC）隨即發布官方聲明，揚言將對以色列與美國駐...…"
+        },
+        {
+          "title": "逮捕馬杜羅、斬首哈米尼：川普發起「週末戰爭」，如何精準重塑世界秩序？",
+          "url": "https://www.thenewslens.com/article/265148",
+          "source": "關鍵評論網",
+          "content": "本文剖析川普的「週末戰爭」新戰略：利用週末發動精準突襲，速戰速決以降低金融市場衝擊。此舉不僅重塑地緣政治，其背後更劍指中國的能源安全與「一帶一路」戰略佈局，使其成為最大輸家。"
+        },
+        {
+          "title": "哈米尼身亡　伊朗總統與2官員組3人小組領導過渡",
+          "url": "https://www.cna.com.tw/news/aopl/202603010083.aspx",
+          "source": "中央社國際",
+          "content": "（中央社德黑蘭1日綜合外電報導）伊朗國營電視台今天報導，在最高領袖哈米尼於美國、以色列發動的攻擊中喪生後，伊朗總統裴澤斯基安和另外兩名高層官員將在過渡期間領導國家。"
+        },
+        {
+          "title": "哈米尼死後展開報復！伊朗飛彈襲捲杜拜 帆船飯店遭碎片擊中起火",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5355049",
+          "source": "自由時報",
+          "content": "伊朗向以色列及多個波斯灣國家發射飛彈與無人機發射飛彈與無人機，展開大規模軍事報復。此項行動是針對其最高領袖哈米尼（Ayatollah Ali Khamenei）先前遭美以空襲身...…"
         }
       ]
     },
@@ -3610,72 +3418,6 @@
       ]
     },
     {
-      "word": "哈米尼",
-      "count": 39,
-      "articles": [
-        {
-          "title": "以色列攻擊伊朗 比特幣暴跌！15分鐘30億元瞬間蒸發 哈米尼被轉至安全地方",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5354243",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕以色列對伊朗發動攻擊後，比特幣暴跌，15分鐘內導致1億美元（台幣31.4億元）的多頭部位被清算。\n\n\n以色列發動了一次被其稱為預防性飛彈攻擊，德黑蘭傳來巨大的爆炸聲。受以色...…"
-        },
-        {
-          "title": "（不斷更新）美國以色列正式攻擊伊朗：哈米尼即將垮台？油價是否會飆升？三個QA一次看懂",
-          "url": "https://www.thenewslens.com/article/265138",
-          "source": "關鍵評論網",
-          "content": "以色列與美國今天對伊朗發動空襲，美國官員稱這次攻擊的規模將遠大於去年6月的以伊戰爭。此次行動美軍總共集結兩艘航空母艦、若干艘海軍驅逐艦和50多架戰鬥機。\n\n《關鍵評論網》將持續更新戰事動向，並用三個QA帶您一次掌握衝突的來龍去脈。"
-        },
-        {
-          "title": "哈米尼在哪裡？伊朗最高領導人住所驚悚照片曝光",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5354579",
-          "source": "自由時報",
-          "content": "\n\n\n〔財經頻道／綜合報導〕美國與以色列聯合對伊朗發動突襲，一張新的衛星照片顯示，伊朗最高領袖哈米尼的住所遭到破壞，這是美國和以色列週六在德黑蘭發動的最新襲擊的一部分。\n\n\n這張由《紐約時報》發布、空...…"
-        },
-        {
-          "title": "川普稱伊朗最高領袖身亡 哈米尼四位親屬據稱也身亡",
-          "url": "https://news.cnyes.com/news/id/6356852",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普周六（28 日）在社交媒體 Truth Social 上發文表示，伊朗最高領袖哈米尼已身亡。&lt;/p&gt;\n\n&lt;p&gt;川普說，哈米尼「無法逃脫我們高度精密的情報和追蹤系統」，再加上美軍與以色列的密切合作，他和與他一同身亡的其他領導人都無地遁逃。&lt;/p&gt;\n\n&lt;p&gt;以色列總理尼坦雅胡周六晚間也表示，「越來越多跡象」表明哈米尼「已不在人世」。&lt;/p&gt;\n\n&lt;p&gt;據《法新社》報導，尼坦雅胡說道：「今天上午，在一次強而有力的突襲中，暴君哈米尼位在德黑蘭市中心的官邸園區已被摧毀&hellip;... 愈來愈多跡象顯示，這名暴君已不在人世。」&lt;/p&gt;\n\n&lt;p&gt;接近伊朗最高領袖官邸的知情人士透露，哈米尼的女兒、女婿和孫女死亡，哈米尼的一位兒媳在周六上午的襲擊中死亡。&lt;/p&gt;\n\n&lt;p&gt;在美國和以色列對伊朗發動襲擊後，美國聯邦調查局反恐和反情報部門已在全國範圍內進入高度戒備狀態。&lt;/p&gt;\n"
-        },
-        {
-          "title": "哈米尼已死 流亡王儲：伊朗伊斯蘭共和國將被掃進歷史垃圾堆",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354693",
-          "source": "自由時報",
-          "content": "美國與以色列2月28日針對伊朗發動大規模軍事打擊，美國總統川普宣布伊朗最高領袖哈米尼（Ali Khamenei）已經在空襲中死亡。流亡海外的伊朗末代王儲芮沙‧巴勒維（Reza P...…"
-        },
-        {
-          "title": "哈米尼死於美以空襲　32年鐵腕統治伊朗畫下句號",
-          "url": "https://www.cna.com.tw/news/aopl/202603010058.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓1日綜合外電報導）86歲的伊朗最高領袖哈米尼（Ayatollah Ali Khamenei）於美國、以色列發動的攻擊中喪生。擔任最高領袖30多年間，哈米尼在國內鎮壓異議人士，並堅守對美國和以色列的敵意。"
-        },
-        {
-          "title": "哈米尼身亡！ 伊朗革命衛隊揚言發動「史上最猛烈攻勢」 劍指美以",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354786",
-          "source": "自由時報",
-          "content": "伊朗國營電視台正式確認最高領袖哈米尼（Ayatollah Ali Khamenei）的死訊後，伊朗精銳軍事組織伊斯蘭革命衛隊（IRGC）隨即發布官方聲明，揚言將對以色列與美國駐...…"
-        },
-        {
-          "title": "逮捕馬杜羅、斬首哈米尼：川普發起「週末戰爭」，如何精準重塑世界秩序？",
-          "url": "https://www.thenewslens.com/article/265148",
-          "source": "關鍵評論網",
-          "content": "本文剖析川普的「週末戰爭」新戰略：利用週末發動精準突襲，速戰速決以降低金融市場衝擊。此舉不僅重塑地緣政治，其背後更劍指中國的能源安全與「一帶一路」戰略佈局，使其成為最大輸家。"
-        },
-        {
-          "title": "哈米尼身亡　伊朗總統與2官員組3人小組領導過渡",
-          "url": "https://www.cna.com.tw/news/aopl/202603010083.aspx",
-          "source": "中央社國際",
-          "content": "（中央社德黑蘭1日綜合外電報導）伊朗國營電視台今天報導，在最高領袖哈米尼於美國、以色列發動的攻擊中喪生後，伊朗總統裴澤斯基安和另外兩名高層官員將在過渡期間領導國家。"
-        },
-        {
-          "title": "哈米尼死後展開報復！伊朗飛彈襲捲杜拜 帆船飯店遭碎片擊中起火",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5355049",
-          "source": "自由時報",
-          "content": "伊朗向以色列及多個波斯灣國家發射飛彈與無人機發射飛彈與無人機，展開大規模軍事報復。此項行動是針對其最高領袖哈米尼（Ayatollah Ali Khamenei）先前遭美以空襲身...…"
-        }
-      ]
-    },
-    {
       "word": "輝達",
       "count": 38,
       "articles": [
@@ -3808,68 +3550,68 @@
       ]
     },
     {
-      "word": "咨文",
-      "count": 37,
+      "word": "元宵",
+      "count": 38,
       "articles": [
         {
-          "title": "〈美股盤後〉川普國情咨文前 AMD飆漲超8% 那指費半回彈超1%",
-          "url": "https://news.cnyes.com/news/id/6351606",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美股週二 (24 日) 全面收高，道瓊工業指數勁揚逾 350 點，市場對人工智慧(AI) 衝擊企業軟體產業的疑慮暫時降溫，帶動科技與軟體類股出現跌深反彈。&lt;/p&gt;\n\n&lt;p&gt;標普 500 指數收漲 0.77%，那斯達克綜合指數回升 1.04%，費城半導體指數升幅達 1.45%，道瓊指數收紅 370.44 點。&lt;/p&gt;\n\n&lt;p&gt;因宣布與 Meta 擴大合作，AMD 飆升超 8%，家得寶財報 (HD-US) 優於預期、股價勁揚超 2% 至每股 384.48 美元，成為支撐道瓊的重要動能；前一交易日因 AI 疑慮重挫的 IBM (IBM-US) 也回穩走高。&lt;/p&gt;\n\n&lt;p&gt;美國總統川普週二稍晚將發表第二任期首場國情咨文，他已預告內容將以「史上最強經濟」為主軸，市場則聚焦其政策訊號。&lt;/p&gt;\n\n&lt;p&gt;川普於 21 日援引《貿易法》第 122 條，宣布對所有進入美國的商品加徵 15% 關稅，為期 150 天，相關措施已於週二正式生效。&lt;/p&gt;\n\n&lt;p&gt;伊朗與美國預計週四在日內瓦舉行第三輪核談判。隨著華府尋求終結伊朗核計畫，市場對軍事衝突風險的關注升溫。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;美股週二 (24 日) 主要指數表現：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;道瓊工業指數上漲 370.44 點，或 0.76%，收 49,174.50 點。&lt;/li&gt;\n&lt;li&gt;那斯達克指數上漲 236.41 點，或 1.05%，收 22,863.68 點。&lt;/li&gt;\n&lt;li&gt;S&amp;P 500 指數上漲 52.32 點，或 0.77%，收 6,890.07 點。&lt;/li&gt;\n&lt;li&gt;費城半導體指數上漲 118.887 &nbsp;點，或 1.45%，收 8,332.343 點。&lt;/li&gt;\n&lt;li&gt;NYSE FANG+ 指數上漲 79.14 點，或 0.56%，收 14,183.26 點。&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;Q&quot; data-height=&quot;444&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7117117117117118&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6351606/m/a42586e831a6d09a3c28909757e21047.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg&quot; srcset=&quot;https://cimg.cnyes.cool/prod/news/6351606/l/a42586e831a6d09a3c28909757e21047.jpg 1x,https://cimg.cnyes.cool/prod/news/6351606/xl/a42586e831a6d09a3c28909757e21047.jpg 2x,https://cimg.cnyes.cool/prod/news/6351606/xxl/a42586e831a6d09a3c28909757e21047.jpg 3x&quot;&gt;\n&lt;figcaption&gt;標普 11 大板塊多數收紅，由非必需消費、工業與資訊科技領漲，能源與醫療保健逆勢收黑。(圖：finviz)&nbsp;&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;焦點個股&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;p&gt;NYSE FANG+ 指數中的科技五大巨頭漲多跌少。Meta (META-US) 漲 0.32%；蘋果 (AAPL-US) 上漲 2.24%；Alphabet (GOOGL-US) 跌 0.19%；微軟 (MSFT-US) 上漲 1.18%；亞馬遜 (AMZN-US) 上漲 1.60%。&lt;/p&gt;\n\n&lt;p&gt;費城半導體族群表現強勢。AMD (AMD-US) 飆升 8.77%；博通 (AVGO-US) 下跌 1.47%；輝達 (NVDA-US) 漲 0.68%；應用材料 (AMAT-US) 上漲 1.17%；高通 (QCOM-US) 上漲 3.11%；美光 (MU-US) 跌 0.70%。&lt;/p&gt;\n\n&lt;p&gt;台股 ADR 全面收高。台積電 ADR (TSM-US) 大漲 4.25%；日月光 ADR (ASX-US) 大漲 5.71%；聯電 ADR (UMC-US) 強漲 4.80%；中華電信 ADR (CHT-US) 上漲 1.61%。&lt;/p&gt;\n\n&lt;h6&gt;企業新聞&lt;/h6&gt;\n\n&lt;p&gt;AMD (AMD-US) 飆升超 8% 引領晶片股亮眼表現。Meta (META-US) 與 AMD 簽署多年合作協議，Meta 計畫在未來 5 年內向超微採購 AI 晶片，總價值上看 600 億美元；作為合作條件之一，Meta 同時取得認股權證，未來可購買 AMD 最多約 10% 的股權。&lt;/p&gt;\n\n"
-        },
-        {
-          "title": "川普國情咨文演講：美國從委內瑞拉獲得超過8,000萬桶石油",
-          "url": "https://news.cnyes.com/news/id/6352099",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普周二（24 日）在國情咨文演講中表示，美國從委內瑞拉獲得超過 8,000 萬桶石油，委內瑞拉是美國的新夥伴和朋友。&lt;/p&gt;\n\n&lt;p&gt;川普說，美國的石油產量上升，石油日產量增加逾 60 萬桶，天然氣產量也處於歷史最高水準。&lt;/p&gt;\n\n&lt;p&gt;川普在國情咨文講話中提到通膨 「大幅回落」，已經壓低核心通膨率，並大力宣揚經濟成長成果。&lt;/p&gt;\n\n&lt;p&gt;川普表示，低利率將解決房地產市場問題，抵押貸款利率為四年來最低。他提到想保護房價，就保持房價上漲。&lt;br&gt;\n&nbsp;&lt;/p&gt;\n"
-        },
-        {
-          "title": "艾普斯坦受害者將赴國會旁聽國情咨文　籲徹查涉案權貴",
-          "url": "https://www.cna.com.tw/news/aopl/202602250031.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓24日綜合外電報導）美國總統川普今天將在國會發表國情咨文演說，國會議員表示，已故性犯罪富豪艾普斯坦的受害者將到場旁聽，並要求當局就其性販運網絡展開全面調查並究責。"
-        },
-        {
-          "title": "川普發表國情咨文演講 數十人缺席",
-          "url": "https://news.cnyes.com/news/id/6352223",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普周二（24 日）在國會發表第二個任期首次國情咨文演講，他在講話中首先提及了邊境安全、移民、經濟、犯罪問題等議題。&lt;/p&gt;\n\n&lt;p&gt;有數十名民主黨議員缺席川普的演講。眾議院民主黨領袖傑弗里斯日前要求民主黨議員要嘛以「沉默抗議」方式出席，要嘛參加其他活動。&lt;/p&gt;\n\n&lt;p&gt;20 多名議員此前表示周二晚會參加在華盛頓國家廣場舉行的一場名為「人民國情咨文」的集會。&lt;/p&gt;\n\n&lt;p&gt;川普此次演講正值關稅和移民兩大關鍵政策接連遭受挫折之際。美國最高法院上周五公布判定，認定美國《國際緊急經濟權力法》沒有授權總統徵收大規模關稅，川普隨後簽署行政令終止部分關稅措施。&lt;/p&gt;\n\n&lt;p&gt;在此之前，由於聯邦移民執法人員在明尼蘇達州暴力執法槍殺兩名美國公民，國會民主和共和兩黨未能在國土安全部臨時撥款問題上達成共識，國土安全部於 14 日開始陷入部分停擺。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普國情咨文演講：關稅提振美股 道瓊提前漲破5萬點",
-          "url": "https://news.cnyes.com/news/id/6352134",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普周二（24 日）在國情咨文演講中表示，關稅提振了股市，美股道瓊指數提前漲破 5 萬點大關，他說最高法院關於關稅的判定非常令人遺憾。&lt;/p&gt;\n\n&lt;p&gt;川普稱，美國從委內瑞拉獲得超過 8,000 萬桶石油，委內瑞拉是美國的新夥伴和朋友。&lt;/p&gt;\n\n&lt;p&gt;川普說，美國的石油產量上升，石油日產量增加逾 60 萬桶，天然氣產量也處於歷史最高水準。&lt;/p&gt;\n\n&lt;p&gt;川普在國情咨文講話中提到通膨 「大幅回落」，已經壓低核心通膨率，並大力宣揚經濟成長成果。&lt;/p&gt;\n\n&lt;p&gt;川普表示，低利率將解決房地產市場問題，抵押貸款利率為四年來最低。他提到想保護房價，就保持房價上漲。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普國情咨文演說鬧場　議員揮非裔非猿猴標語",
-          "url": "https://www.cna.com.tw/news/aopl/202602250101.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓24日綜合外電報導）美國總統川普今天發表國情咨文演說時，一名民主黨國會議員因舉起「非裔非猿猴！」的標語而被驅逐出場。他的標語影射川普社群媒體帳號曾發布針對歐巴馬夫婦的種族歧視影片。"
-        },
-        {
-          "title": "出席川普國情咨文演說 黎智英愛女促營救父親",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350774",
+          "title": "水里2/27元宵大咖開唱！中正路改徒步區 大車分流交管",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350638",
           "source": "自由時報",
-          "content": "美國總統川普的國情咨文演說24日正式登場，遭重判入獄的香港壹傳媒創辦人黎智英之女黎采（Claire Lai），以聯邦眾議院議長強生（Mike Johnson）貴賓的身分親自出席...…"
+          "content": "南投水里鄉公所2月27日晚間將在市區中正路舉辦「哩馬來水里宵」元宵晚會，將有詹雅雯、王識賢等大咖開唱，由於地點緊鄰省道台16線，屆時中正路將改為行人徒步區，車輛禁止進入，轄區集...…"
         },
         {
-          "title": "川普國情咨文表揚金牌冰球隊　宣布頒勳章給守門員",
-          "url": "https://www.cna.com.tw/news/aopl/202602250104.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者林宏翰華盛頓24日專電）美國總統川普今天發表國情咨文演講，冬季奧運奪金的男子冰球代表隊現身，他宣布將頒發「總統自由獎章」給美國隊奪金關鍵的守門員海勒拜克。"
-        },
-        {
-          "title": "川普國情咨文稱迎跨世代轉變　國內外挑戰仍嚴峻[影]",
-          "url": "https://www.cna.com.tw/news/aopl/202602250102.aspx",
-          "source": "中央社國際",
-          "content": "（中央社華盛頓24日綜合外電報導）美國總統川普今天在國會發表國情咨文演說，稱第2任期執政首年迎來了「跨世代轉變」，隨著關鍵期中選舉逼近，他正試圖扭轉低迷民調，同時應對國內外日益嚴峻的挑戰。"
-        },
-        {
-          "title": "危機逼近！ 川普國情咨文稱伊朗正研發可打擊美國飛彈",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5350871",
+          "title": "彰化3/7雙會模式鬧元宵  踩街、晚會藝人開唱再衝一波",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5350822",
           "source": "自由時報",
-          "content": "美國總統川普24日在國情咨文中表示，伊朗正試圖研發能夠打擊美國的飛彈，並指責伊朗試圖重建其核計劃。\r\n\r\n根據《法新社》報導，川普在國情咨文中說「他們已經研發出能夠威脅歐洲和我...…"
+          "content": "今天正逢大年初九「天公生」，雖然各行各業早已開工上班多日，但在國人傳統觀念中，沒過完元宵節就不算過完年。彰化市公所今年春節期間，憑藉永樂民族商圈與陳稜小西商圈的「雙商圈模式」，...…"
+        },
+        {
+          "title": "新竹過好年元宵晚會2/27登場 可領RODY小提燈",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351170",
+          "source": "自由時報",
+          "content": "新竹市2026新竹過好年－RODY跳跳迎新年系列活動最高潮的元宵晚會本週五（27日）晚上在新竹火車站前廣場登場，除可領取RODY小提燈，還有多組人氣歌手演出，邀市民來舊城區賞燈...…"
+        },
+        {
+          "title": "網傳「元宵停課讓學生抬轎」 台東高中曝苦衷：僅第8節停課",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351285",
+          "source": "自由時報",
+          "content": "台東元宵神明遶境盛事臨近，社群平台上近日因一張台東高中的公告掀起熱烈討論。網友瘋傳校方將於3月3日與4日暫停第8節課，更有學生以「全台唯一停課讓學生去抬轎」為傲，戲稱這是東中人...…"
+        },
+        {
+          "title": "潮州3/1提燈遊庄迎元宵節 送千份馬年燈籠鑰匙圈",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351626",
+          "source": "自由時報",
+          "content": "每逢元宵節，屏東縣潮州鎮都會舉辦「提燈遊庄」迎接小過年，公所今年特別設計以信仰中心的「三山國王廟」的燈籠鑰匙圈，邀請社區老師開工作坊指導鄉親自製竹編提燈，同時邀請民眾3月1日晚...…"
+        },
+        {
+          "title": "元宵小過年「財氣福祿」全收！ 「15大禁忌」千萬別碰",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5351611",
+          "source": "自由時報",
+          "content": "\n\n\n〔娛樂頻道／綜合報導〕下週三即將迎來元宵節，這一天也被稱為「上元節」或「小過年」，除了應景吃湯圓（元宵）象徵「花好月圓、闔家團圓」，有些「禁忌」也須避一下，以免財氣、福祿受到影響。\n\n\n塔羅暨占...…"
+        },
+        {
+          "title": "貪食元宵導致腹脹  中醫「消食順氣茶」助消食順氣",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5351812",
+          "source": "自由時報",
+          "content": "\n\n\n50歲王女士平時喜食甜食，有次更一口氣吃了7顆包餡大湯圓，導致連續幾天胃部泛酸、脹氣不適，向中醫師求診，中醫師依照其脾胃虛弱的體質，給予健脾理氣的中藥及飲食建議，治療後，...…"
+        },
+        {
+          "title": "彰化家扶中心元宵古仔燈義賣 「老担」明起連賣5天",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5351866",
+          "source": "自由時報",
+          "content": "最強「老担」來了！彰化家扶中心元宵義賣古仔燈堂堂邁入第31年，去年募到300多萬元來幫助家扶兒，其中，募款火力最強的就是彰化市民族路與曉陽路口的「老担」，「老担」今年將於明天（...…"
+        },
+        {
+          "title": "苗栗後龍慈雲宮慶元宵 3/1至3/3「攻炮城」拿金幣",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5352142",
+          "source": "自由時報",
+          "content": "逾200年歷史的苗栗縣後龍鎮慈雲宮慶元宵「攻炮城」活動，過往吸引不少民眾挑戰丟擲鞭炮試手氣，慈雲宮廟方今天與苗栗縣政府宣布，今年慈雲宮慶元宵「攻炮城」活動將於3月1日至3月3日...…"
+        },
+        {
+          "title": "澎湖白沙赤崁文衡聖帝殿慶元宵 30000斤米包龜亮相",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5352319",
+          "source": "自由時報",
+          "content": "連續3年元宵都推出30000斤九層塔米包龜的白沙赤崁後壁宮文衡聖帝殿，今年元宵同樣推出重達30000台斤米包龜，現已堆疊完成正式亮相，歡迎大家前往參觀，列入今年元宵走廟的口袋名...…"
         }
       ]
     }
