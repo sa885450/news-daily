@@ -1,181 +1,164 @@
 {
-  "updateTime": "2026-03-04T20:06:22.673Z",
-  "fullDateStr": "2026/3/5 · 更新於 04:06:22",
+  "updateTime": "2026-03-04T22:01:05.293Z",
+  "fullDateStr": "2026/3/5 · 更新於 06:01:05",
   "aiResult": {
-    "sentiment_score": 0.35,
+    "sentiment_score": -0.15,
     "dimensions": {
-      "policy": 0.1,
-      "market": 0.4,
+      "policy": 0.3,
+      "market": -0.5,
       "industry": 0.7,
-      "international": -0.2,
-      "technical": 0.5
+      "international": 0.4,
+      "technical": -0.2
     },
     "entities": [
       {
-        "name": "NVIDIA",
-        "sentiment": "Positive",
-        "ticker": "NVDA.US"
+        "name": "台積電",
+        "sentiment": "negative",
+        "ticker": "2330.TW"
       },
       {
-        "name": "Intel",
-        "sentiment": "Positive",
-        "ticker": "INTC.US"
+        "name": "南亞科",
+        "sentiment": "positive",
+        "ticker": "2408.TW"
       },
       {
-        "name": "OpenAI",
-        "sentiment": "Positive",
-        "ticker": null
+        "name": "Coinbase",
+        "sentiment": "positive",
+        "ticker": "COIN.US"
       },
       {
-        "name": "Anthropic",
-        "sentiment": "Neutral",
-        "ticker": null
+        "name": "摩根大通",
+        "sentiment": "negative",
+        "ticker": "JPM.US"
       },
       {
-        "name": "Federal Reserve",
-        "sentiment": "Neutral",
-        "ticker": null
-      },
-      {
-        "name": "Amazon",
-        "sentiment": "Neutral",
-        "ticker": "AMZN.US"
+        "name": "鴻海",
+        "sentiment": "negative",
+        "ticker": "2317.TW"
       }
     ],
-    "summary": "<h3>【宏觀報告：AI 資本進入收割期，政策博弈加劇】</h3><p>接續昨日<b>「巴逆逆」</b>看好後引發的暴跌，今日市場如預期進入<b>「技術性修復」</b>。這再次驗證了市場在極端情緒指標（反向指標）作用下，短線容易出現與基本面背離的超跌，而這正是結構性 Alpha 的佈局點。</p><p><b>核心策略觀察：</b></p><ul><li><b>AI 投資轉向下半場：</b>NVIDIA 對 OpenAI 的 300 億美元投資標誌著私募融資的終曲，AI 獨角獸正集體轉向 <b>IPO 階段</b>。這對市場流動性將是雙面刃，短期提升估值，中長期需檢驗獲利能力。</li><li><b>Intel 策略靈活性：</b>Intel (INTC) 考慮開放 18A 代工，顯示管理層正以更務實的商業邏輯取代單純的技術執念，市場對此給予 6.5% 的積極回饋。</li><li><b>聯準會獨立性風險：</b>川普提名華許 (Warsh) 且鮑爾受查，政治對貨幣政策的干預轉強。雖然理事米蘭釋放降息 4 次的鴿派訊號，但<b>政治溢價</b>將開始計入美元與美債波動中。</li></ul><p><b>反指標提醒：</b>昨日「巴逆逆」看好導致市場大跌，今日雖有反彈，但政治干預 Fed 之不確定性仍存，建議持股比例維持中性，以績優權值股作為修復核心。</p>",
+    "summary": "<h3>【宏觀報告：情緒超跌後的基石修復】</h3><p>接續昨日<b>「巴逆逆」</b>看好引發的崩跌，台股經歷單周三日跌逾 2500 點的極端恐慌。然而，從 1 月外銷訂單年增 60.1% 的數據來看，<b>AI 驅動的基本面並未動搖</b>，市場正處於「情緒超跌」與「基本面過熱」的收斂期。</p><ul><li><b>反向指標觀察：</b>「巴逆逆」昨日看好後市場旋即崩跌，今日市場正進行技術性止穩。外資雖大規模提款權值股，卻轉身布局 <b>DRAM 記憶體族群</b>，顯示資金正進行結構性換手，而非全面撤離。</li><li><b>關稅政策轉機：</b>美聯邦法院裁定停止 IEEPA 關稅，這將直接緩解進口商壓力，對全球供應鏈而言是重大的<b>成本利多</b>。</li><li><b>金融體系新戰場：</b>川普轉向支持穩定幣收益，引發傳統銀行業（如 JPM）對存款流失的恐慌，這標誌著金融資本將面臨<b>結構性的再分配</b>。</li></ul><p><b>策略建議：</b>短線避開受外資提款的高權值標的，利用市場超跌佈局 115 年 1 月接單強勁的 AI 半導體及報價調漲的記憶體板塊。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "AI 產業動態"
+        "category": "總體經濟"
       },
       {
         "id": 2,
-        "category": "貨幣政策"
+        "category": "數位資產"
       },
       {
         "id": 3,
-        "category": "地緣政治風險"
+        "category": "半導體產業"
       }
     ],
     "sector_stats": {
-      "tech": 0.75,
-      "finance": 0.1,
-      "manufacturing": 0.4,
-      "service": 0.2
+      "tech": 0.5,
+      "finance": -0.4,
+      "manufacturing": 0.3,
+      "service": 0.1
     },
     "events": [
       {
-        "title": "AI 巨頭 IPO 潮啟動與資本重組",
-        "summary": "NVIDIA 投資 OpenAI 進入最終章，兩大 AI 領頭羊計畫 IPO，改變 AI 投資鏈的出場模式。",
+        "title": "台股極端恐慌與基本面背離",
+        "summary": "指數三日崩跌兩千五百點，但 1 月外銷訂單創歷史新高且 AI 需求強勁，顯示市場正進行劇烈的籌碼清洗。",
+        "impact": "中性偏正面 (結構性低點現蹤)",
+        "related_news_ids": [
+          0
+        ]
+      },
+      {
+        "title": "美元避險情緒降溫",
+        "summary": "中東局勢傳出談判訊號，美元指數回落，市場風險偏好有回暖跡象。",
         "impact": "正面",
         "related_news_ids": [
-          0,
+          1
+        ]
+      },
+      {
+        "title": "川普關稅政策司法受挫",
+        "summary": "貿易法院法官要求退還違法關稅，緩解進口商成本，對製造業與貿易商是重大利多。",
+        "impact": "正面",
+        "related_news_ids": [
           2
         ]
       },
       {
-        "title": "聯準會領導權之爭與政治干預",
-        "summary": "川普提名華許接任主席，且鮑爾因行政原因受查，挑戰 Fed 獨立性。",
-        "impact": "負面",
+        "title": "穩定幣收益引爆金融存貸款爭奪戰",
+        "summary": "川普與 Coinbase 結盟推動立法，穩定幣高息優勢威脅傳統銀行存款穩定性，金融體系面臨變革。",
+        "impact": "負面 (對傳統銀行業)",
         "related_news_ids": [
-          3,
-          1
-        ]
-      },
-      {
-        "title": "Intel 晶圓代工策略轉型",
-        "summary": "Intel 重新評估 18A 先進製程對外開放，挑戰現有代工市場格局並帶動股價反彈。",
-        "impact": "正面",
-        "related_news_ids": [
-          4
-        ]
-      },
-      {
-        "title": "中東局勢對降息路徑的擾動",
-        "summary": "伊朗衝突雖推升油價，但 Fed 官員認為核心通膨受控，維持今年降息 4 次預期。",
-        "impact": "中性",
-        "related_news_ids": [
-          1
+          3
         ]
       }
     ],
     "relations": [
       {
-        "from": "NVIDIA",
-        "to": "OpenAI",
-        "type": "股權投資與算力供應"
+        "from": "川普",
+        "to": "Coinbase",
+        "type": "政策盟友"
       },
       {
-        "from": "Intel",
-        "to": "TSMC",
-        "type": "代工訂單競爭"
+        "from": "穩定幣",
+        "to": "摩根大通",
+        "type": "資金競爭"
       },
       {
-        "from": "Amazon",
-        "to": "Anthropic",
-        "type": "戰略投資與雲端合作"
+        "from": "AI 需求",
+        "to": "資通信產品",
+        "type": "出口驅動"
       },
       {
-        "from": "Trump",
-        "to": "Federal Reserve",
-        "type": "行政干預與人事變動"
+        "from": "外資",
+        "to": "台積電",
+        "type": "資金流出/提款"
       },
       {
-        "from": "Anthropic",
-        "to": "Pentagon",
-        "type": "政策限制與技術用途衝突"
+        "from": "外資",
+        "to": "南亞科",
+        "type": "低位吸籌"
       }
     ]
   },
   "newsData": [
     {
-      "title": "OpenAI衝IPO！黃仁勳：輝達300億美元投資恐成「最後一次」",
-      "url": "https://news.cnyes.com/news/id/6363993",
-      "source": "鉅亨網(wd_stock)",
+      "title": "〈台股盤前要聞〉3天崩跌2586點搶反彈、天然氣3月底前供應無虞、Q2 DRAM將跳漲",
+      "url": "https://news.cnyes.com/news/id/6349844",
+      "source": "鉅亨網(tw_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;綜合外媒周三 (4 日) 報導，輝達 (NVDA-US) 執行長黃仁勳表示，公司對人工智慧 (AI) 公司 OpenAI 的最新投資，可能是最後一次大規模入股，主因是 OpenAI 正朝首次公開發行 (IPO) 邁進，最快可能在今年底上市。&lt;/p&gt;\n\n&lt;p&gt;黃仁勳周三在摩根士丹利科技、媒體與電信 (TMT) 會議上指出，輝達先前曾與 OpenAI 討論高達 1,000 億美元的投資機會，但隨著 OpenAI 計畫上市，這項構想「大概不在選項之內」。&lt;/p&gt;\n\n&lt;p&gt;他說：「我認為投資 OpenAI1,000 億美元的機會，大概不太可能發生，因為他們將要上市。」黃仁勳並補充，這次投資「可能是我們最後一次有機會投資這樣具有重大影響力的公司」。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 上周宣布完成 1,100 億美元融資，並在交易中獲得約 7,300 億美元估值。輝達在此輪融資中投入 300 億美元，亞馬遜 (AMZN-US) 則承諾投資 500 億美元，日本軟銀投資 300 億美元。這筆交易也是輝達至今對新創企",
-      "timeStr": "上午04:06",
+      "content": "&lt;h6&gt;3/5 台股盤前要聞&lt;/h6&gt;\n\n&lt;p&gt;1. 台股 4 日開低走低，除了台積電等電子權值股壓盤，熱門族群賣壓同樣沉重，終場收在最低點 32828.88 點，下挫 1494.77 點，創史上第 3 大跌點，一舉摜破 3 萬 3 整數關卡及月線大關，成交量也爆出 1 兆 325 億元，本周連續三天累計下跌高達 2586 點。&lt;/p&gt;\n\n&lt;p&gt;2. 外資 4 日大賣台股 964 億元，為歷史第 3 大賣超金額，尤其瞄準台積電與鴻海進行提款，兩檔合計達 6.2 萬張，但持續低接記憶體族群，大買旺宏、華邦電與南亞科三檔，合計張數超過 10.9 萬張。&lt;/p&gt;\n\n&lt;p&gt;3. 台北股匯市避險情緒濃厚，不僅&lt;a href=&quot;https://invest.cnyes.com/index/TWS/TSE01&quot;&gt;加權指數&lt;/a&gt; 4 日暴跌多達 1494.77 點，&lt;a href=&quot;https://invest.cnyes.com/forex/detail/",
+      "timeStr": "上午06:01",
       "relatedArticles": []
     },
     {
-      "title": "Fed理事米蘭：伊朗衝突不影響降息路徑 今年仍應降息4次",
-      "url": "https://news.cnyes.com/news/id/6363959",
+      "title": "〈紐約匯市〉美元自數月高點回落 中東局勢轉趨樂觀",
+      "url": "https://news.cnyes.com/news/id/6364037",
       "source": "鉅亨網(wd_stock)",
-      "category": "AI 產業動態",
+      "category": "總體經濟",
       "thumbnail": null,
-      "content": "&lt;p&gt;聯準會 (Fed) 理事米蘭 (Stephen Miran) 周三 (4 日) 接受《彭博》訪問時表示，美國與伊朗的軍事衝突雖然帶來新的不確定性，但不足以改變聯準會今年持續降息的政策方向。他認為能源價格上漲對核心通膨的影響有限，而就業市場仍顯示需要貨幣政策支持。&lt;/p&gt;\n\n&lt;p&gt;米蘭指出，衝突推升油價確實可能帶動整體通膨上升，但傳導至核心通膨的證據相當有限，因此他認為目前情勢尚不足以改變貨幣政策路徑。他重申，聯準會今年應降息約 1 個百分點，也就是進行四次各 25 個基點的降息，使利率逐步回到接近中性水準。&lt;/p&gt;\n\n&lt;p&gt;目前聯準會政策利率區間為 3.5% 至 3.75%。部分較為鷹派的官員認為，該水準已接近中性利率，但米蘭認為實際中性利率仍低於同僚的判斷，因此政策仍有進一步放鬆的空間。&lt;/p&gt;\n\n&lt;h6&gt;能源衝擊有限 米蘭認為通膨風險可控&lt;/h6&gt;\n\n&lt;p&gt;米蘭表示，當前情勢與 2022 年俄羅斯入侵烏克蘭時不同。當時全球能源與大宗商品價格飆升，推升廣泛通膨壓力；但目前",
-      "timeStr": "上午04:06",
+      "content": "&lt;p&gt;美元周三 (4 日) 下跌，自前一交易日觸及的數月高點回落，隨著市場對中東衝突可能比先前預期更快結束的希望升溫，投資人解除避險部位。&lt;/p&gt;\n\n&lt;p&gt;紐約尾盤，追蹤美元兌六種主要貨幣的美元指數 (DXY) 下跌 0.3%，報 98.83，稍早曾觸及去年 11 月 28 日以來最高水準。&lt;/p&gt;\n\n&lt;p&gt;市場情緒改善，部分來自《紐約時報》周三的報導。報導指出，伊朗情報部已向美國中央情報局 (CIA) 釋出訊號，表示願意探索透過談判結束戰爭的可能性，消息來源為知情官員。&lt;/p&gt;\n\n&lt;p&gt;該報導提振市場風險偏好，並對美元造成壓力。&lt;/p&gt;\n\n&lt;p&gt;Moneycorp 交易與結構性產品主管 Eugene Epstein 表示，「我們看到整體市場的風險情緒略有改善，主要是新聞標題驅動，外匯市場也不例外。基本上，市場正在回吐本周稍早因避險需求而出現的部分漲幅。」&lt;/p&gt;\n\n&lt;p&gt;他補充稱，「伊朗衝突顯然還沒有結束，我們仍在等待更多資訊，觀察局勢如何發展。在此之前",
+      "timeStr": "上午06:01",
       "relatedArticles": []
     },
     {
-      "title": "Anthropic與五角大廈僵局加劇 傳投資人急出手降溫",
-      "url": "https://news.cnyes.com/news/id/6363971",
+      "title": "美聯邦貿易法官下令 停止對進口商計算IEEPA關稅",
+      "url": "https://news.cnyes.com/news/id/6364032",
       "source": "鉅亨網(wd_stock)",
-      "category": "貨幣政策",
+      "category": "數位資產",
       "thumbnail": null,
-      "content": "&lt;p&gt;《路透》周三 (4 日) 獨家報導，人工智慧 (AI) 公司 Anthropic 與美國國防部之間的爭議持續升溫，部分主要投資人正積極出面協調，希望緩解與五角大廈的緊張關係，避免衝突進一步衝擊公司業務。知情人士指出，投資人擔心若爭端持續擴大，可能對 Anthropic 的企業客戶與未來募資造成嚴重影響。&lt;/p&gt;\n\n&lt;p&gt;消息人士表示，Anthropic 執行長阿莫戴 (Dario Amodei) 近日已就此事與多名重要投資人及合作夥伴討論，包括亞馬遜 (AMZN-US) 執行長賈西 (Andy Jassy)。創投機構 Lightspeed 與 Iconiq 等投資人也與 Anthropic 高層保持聯繫。一些投資人甚至透過與川普政府的聯繫管道，希望協助降低衝突。&lt;/p&gt;\n\n&lt;p&gt;目前各方討論的焦點，是避免美國政府將 Anthropic 的 AI 技術列為所有五角大廈承包商不得使用的系統。知情人士指出，Anthropic 與五角大廈仍在進行部分對話，但談判內容尚不清楚。&lt;/p&gt;\n\n&lt;h6&gt;AI 軍事",
-      "timeStr": "上午04:06",
+      "content": "&lt;p&gt;美國國際貿易法院法官 Richard Eaton 週三 (4 日) 要求川普政府加快向進口商退還關稅的進度，相關關稅已在上個月被美國最高法院裁定為違法。&lt;/p&gt;\n\n&lt;p&gt;在一場涉及企業申請退還關稅的聽證會上，Eaton 表示，關稅退款程序應該相對簡單明確，要求美國海關與邊境保護局 (CBP) 停止對進口商計算 IEEPA 關稅。他同時安排週五再次舉行聽證會，要求政府說明處理進度。&lt;/p&gt;\n\n&lt;p&gt;美國最高法院於 2026 年 2 月 20 日以 6 比 3 裁定，川普政府援引《國際緊急經濟權力法》(IEEPA) 對全球課徵「對等關稅」屬濫用行政權力，因該法未授權總統行使國會的「稅收權」，宣告相關關稅措施無效。&lt;/p&gt;\n\n&lt;p&gt;目前已有超過 2,000 家企業向美國國際貿易法院提出訴訟，要求退還此前繳納的關稅。&lt;/p&gt;\n\n&lt;p&gt;這場聽證會上，當司法部律師表示政府尚未正式確定對退款問題的立場時，Eaton 明顯表現出不耐指出，最高法院已經對此做出裁決，川普政府的立場其實已經非常",
+      "timeStr": "上午06:01",
       "relatedArticles": []
     },
     {
-      "title": "川普正式提名華許接替鮑爾 聯準會人事案送交參議院",
-      "url": "https://news.cnyes.com/news/id/6363976",
+      "title": "穩定幣收益大戰：川普倒戈加密貨幣陣營 銀行急喊危險：金融體系血液將被抽乾",
+      "url": "https://news.cnyes.com/news/id/6363897",
       "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治風險",
+      "category": "半導體產業",
       "thumbnail": null,
-      "content": "&lt;p&gt;《CNBC》報導，美國總統川普周三 (4 日) 正式提名前聯準會 (Fed) 理事華許 (Kevin Warsh) 出任聯準會主席，若提名獲參議院通過，華許將接替現任主席鮑爾(Jerome Powell)，任期四年。&lt;/p&gt;\n\n&lt;p&gt;白宮在周三發布的聲明中表示，川普已將提名文件正式送交參議院審議。這項程序距離川普首次公開表示希望由華許出任聯準會主席，已相隔一個多月。&lt;/p&gt;\n\n&lt;p&gt;不過，這項提名在國會仍面臨政治阻力。共和黨參議員提里斯 (Thom Tillis) 表示，在華盛頓聯邦檢察官辦公室對鮑爾展開的刑事調查結束之前，他將阻止華許的提名進入參議院表決程序。提利斯的立場可能使提名案無法交由參議院全院審議。&lt;/p&gt;\n\n&lt;p&gt;鮑爾今年 1 月中旬表示，他正因華盛頓聯準會總部翻修案接受調查。該工程預算約為 25 億美元，而調查也涉及他就該項目向參議院作證的內容。鮑爾同時指出，面臨刑事指控的威脅與他和其他聯準會官員拒絕配合川普要求更快降息的立場有關。&lt;/p&gt;\n\n&lt;p&gt;川普政府與",
-      "timeStr": "上午04:06",
-      "relatedArticles": []
-    },
-    {
-      "title": "英特爾重新評估18A製程 陳立武考慮對外開放代工",
-      "url": "https://news.cnyes.com/news/id/6363975",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;《路透》報導，英特爾 (INTC-US) 財務長辛斯納 (David Zinsner) 周三 (5 日) 表示，執行長陳立武 (Lip-Bu Tan) 正重新評估公司 18A 先進製程的定位，開始考慮將這項技術提供給外部客戶。這一態度轉變，可能意味著英特爾在晶圓代工策略上的重要調整。&lt;/p&gt;\n\n&lt;p&gt;消息公布後，英特爾股價周三上漲 6.52%，每股暫報 45.91 美元，在整體晶片股上揚的帶動下表現強勁。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-height=&quot;571&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.2259194395796849&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6363975/m/45e5d5ccdcb78f53de3981aea3e54c94.jpg&quot; data-width=&quot;700&quot; src=&qu",
-      "timeStr": "上午04:06",
+      "content": "&lt;p&gt;美媒《Politico》報導，美國總統川普周二 (3 日) 在白宮私下會見加密貨幣交易所 Coinbase 執行長 Brian Armstrong，隨後公開批評大型銀行阻撓一項關鍵數位資產法案，讓 Coinbase 瞬間成為美國加密貨幣攻防戰的核心。&lt;/p&gt;\n\n&lt;p&gt;這場會面發生在川普在 Truth Social 發文前，他在文中敦促國會推進加密貨幣立法，並要求銀行「與加密貨幣業界達成好協議」，文中更警告稱近《GENIUS 法案》正面臨「銀行的威脅與破壞」，呼應了 Coinbase 長期以來的主張。&lt;/p&gt;\n\n&lt;p&gt;爭議核心圍繞穩定幣獎勵機制，像 Coinbase 這類平台，目前為客戶持有特定穩定幣提供約 3.5% 的年化收益，遠高於傳統銀行支票帳戶不到 0.1% 的利率。&lt;/p&gt;\n\n&lt;p&gt;川普在周二晚間的貼文中，進一步向銀行施壓，要求它們在穩定幣收益問題上讓步。&lt;/p&gt;\n\n&lt;p&gt;上述爭議也牽動《CLARITY 法案》的立法進程，該法案是與《GENIUS 法案》配套、旨在為",
+      "timeStr": "上午06:01",
       "relatedArticles": []
     }
   ],
@@ -218,71 +201,69 @@
   ],
   "events": [
     {
-      "title": "AI 巨頭 IPO 潮啟動與資本重組",
-      "summary": "NVIDIA 投資 OpenAI 進入最終章，兩大 AI 領頭羊計畫 IPO，改變 AI 投資鏈的出場模式。",
+      "title": "台股極端恐慌與基本面背離",
+      "summary": "指數三日崩跌兩千五百點，但 1 月外銷訂單創歷史新高且 AI 需求強勁，顯示市場正進行劇烈的籌碼清洗。",
+      "impact": "中性偏正面 (結構性低點現蹤)",
+      "related_news_ids": [
+        0
+      ]
+    },
+    {
+      "title": "美元避險情緒降溫",
+      "summary": "中東局勢傳出談判訊號，美元指數回落，市場風險偏好有回暖跡象。",
       "impact": "正面",
       "related_news_ids": [
-        0,
+        1
+      ]
+    },
+    {
+      "title": "川普關稅政策司法受挫",
+      "summary": "貿易法院法官要求退還違法關稅，緩解進口商成本，對製造業與貿易商是重大利多。",
+      "impact": "正面",
+      "related_news_ids": [
         2
       ]
     },
     {
-      "title": "聯準會領導權之爭與政治干預",
-      "summary": "川普提名華許接任主席，且鮑爾因行政原因受查，挑戰 Fed 獨立性。",
-      "impact": "負面",
+      "title": "穩定幣收益引爆金融存貸款爭奪戰",
+      "summary": "川普與 Coinbase 結盟推動立法，穩定幣高息優勢威脅傳統銀行存款穩定性，金融體系面臨變革。",
+      "impact": "負面 (對傳統銀行業)",
       "related_news_ids": [
-        3,
-        1
-      ]
-    },
-    {
-      "title": "Intel 晶圓代工策略轉型",
-      "summary": "Intel 重新評估 18A 先進製程對外開放，挑戰現有代工市場格局並帶動股價反彈。",
-      "impact": "正面",
-      "related_news_ids": [
-        4
-      ]
-    },
-    {
-      "title": "中東局勢對降息路徑的擾動",
-      "summary": "伊朗衝突雖推升油價，但 Fed 官員認為核心通膨受控，維持今年降息 4 次預期。",
-      "impact": "中性",
-      "related_news_ids": [
-        1
+        3
       ]
     }
   ],
   "relations": [
     {
-      "from": "NVIDIA",
-      "to": "OpenAI",
-      "type": "股權投資與算力供應"
+      "from": "川普",
+      "to": "Coinbase",
+      "type": "政策盟友"
     },
     {
-      "from": "Intel",
-      "to": "TSMC",
-      "type": "代工訂單競爭"
+      "from": "穩定幣",
+      "to": "摩根大通",
+      "type": "資金競爭"
     },
     {
-      "from": "Amazon",
-      "to": "Anthropic",
-      "type": "戰略投資與雲端合作"
+      "from": "AI 需求",
+      "to": "資通信產品",
+      "type": "出口驅動"
     },
     {
-      "from": "Trump",
-      "to": "Federal Reserve",
-      "type": "行政干預與人事變動"
+      "from": "外資",
+      "to": "台積電",
+      "type": "資金流出/提款"
     },
     {
-      "from": "Anthropic",
-      "to": "Pentagon",
-      "type": "政策限制與技術用途衝突"
+      "from": "外資",
+      "to": "南亞科",
+      "type": "低位吸籌"
     }
   ],
   "keywords7d": [
     {
       "word": "伊朗",
-      "count": 621,
+      "count": 630,
       "articles": [
         {
           "title": "憂美國攻擊伊朗！路透：沙烏地已提高石油產量防止斷供",
@@ -414,7 +395,7 @@
     },
     {
       "word": "AI",
-      "count": 371,
+      "count": 372,
       "articles": [
         {
           "title": "強化AI戰略 Google吸收登月計畫機器人團隊Intrinsic 升為核心業務",
@@ -546,7 +527,7 @@
     },
     {
       "word": "美元",
-      "count": 230,
+      "count": 233,
       "articles": [
         {
           "title": "「傻錢」成美股關鍵力量！散戶交易規模衝5.4兆美元 年增近47%創歷史新高",
@@ -744,7 +725,7 @@
     },
     {
       "word": "以色列",
-      "count": 115,
+      "count": 119,
       "articles": [
         {
           "title": "MLB》台灣隊主力鄭宗哲再獲上場機會！ 對決經典賽以色列國手",
@@ -876,7 +857,7 @@
     },
     {
       "word": "川普",
-      "count": 108,
+      "count": 109,
       "articles": [
         {
           "title": "川普政府遣返無證移民至第三國　聯邦法官裁定違法",
@@ -1074,7 +1055,7 @@
     },
     {
       "word": "最高",
-      "count": 90,
+      "count": 92,
       "articles": [
         {
           "title": "戲院音浪衝到最高點！國家級警報狂響 交織電影音效有夠共感",
@@ -1337,6 +1318,72 @@
       ]
     },
     {
+      "word": "世界",
+      "count": 75,
+      "articles": [
+        {
+          "title": "投資人面臨殘酷現實：AI若真的改變世界 失業海嘯也是真的",
+          "url": "https://news.cnyes.com/news/id/6352082",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;全球各界正不遺餘力地投入龐大資金與心血發展人工智慧（AI），無非是認定這項技術將徹底改變世界。然而如果成真，其背後的代價我們是否已經做好了準備？&lt;/p&gt;\n\n&lt;p&gt;上週末，一則由 Citrini Research 發布的深度分析文章在網路瘋傳，並在週一引發華爾街科技股的拋售潮。該文不單是在探討 AI 發展的假說，更直指「一旦預言成真，人類將面臨巨大麻煩」的危機感。&lt;/p&gt;\n\n&lt;p&gt;儘管 AI 擁護者抨擊此觀點為「AI 末日論」，並試圖反駁其極端的情境假設，但若跳脫細節，轉而審視大局，就會發現一個冷酷的事實：如果各界所承諾的 AI 遠景真的實現，其對全球經濟與勞動力市場的衝擊將是毀滅性的。&lt;/p&gt;\n\n&lt;p&gt;事實上，「大規模失業」並非反對者的危言聳聽，反而是 AI 支持論述中的核心邏輯。&lt;/p&gt;\n\n&lt;p&gt;正因看好 AI 能取代大量人力成本，科技巨頭才願意砸下天文數字的投資，這也正是 Anthropic 與 OpenAI 這些新創公司分別獲得 3,800 億美元與 8,500 億美元驚人估值的基礎。&lt;/p&gt;\n\n&lt;p&gt;這些公司若要在未來掛牌上市後撐起如此龐大的估值，唯一路徑就是產生深遠的影響力；除了縮短新藥開發週期等造福人類的創新外，其價值極大部分將來自於讓電腦接手目前由人類完成的工作。&lt;/p&gt;\n\n&lt;p&gt;這種發展模式不存在「只要紅利、不要陣痛」的選項。近期市場開始意識到 AI 可能重創企業軟體產業，導致如 IBM 等公司股價重挫，而這僅僅是開端。&lt;/p&gt;\n\n&lt;p&gt;無論是律師、顧問、編劇，甚至是卡車司機，幾乎所有產業都將面臨同樣的衝擊。甚至連 OpenAI 執行長奧特曼都曾坦言，部分職業類別將徹底消失；Anthropic 執行長阿莫戴的預測則更為悲觀，認為 AI 將抹殺半數初階白領工作，並導致失業率飆升。&lt;/p&gt;\n\n&lt;p&gt;儘管華爾街近期的股價波動顯示投資大眾仍在樂觀與恐懼間搖擺，但基本的結構性問題並未消失。AI 的表現越符合預期、越能兌現其技術承諾，對人類工作型態的衝擊就越劇烈。&lt;/p&gt;\n\n&lt;p&gt;面對這場數位革命，無論人們選擇抱持樂觀展望或深陷焦慮，這都將是無法迴避的共同挑戰。&lt;/p&gt;\n"
+        },
+        {
+          "title": "世界工時排名　瑞士每週35小時居歐洲之冠",
+          "url": "https://www.cna.com.tw/news/aopl/202602260021.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者郭芳君蘇黎世26日專電）瑞士每週工時接近35小時，居歐洲之冠，而在全球最短工時排行榜中名列第46位。據研究，工時較短的國家，其居民往往也最感幸福。在荷蘭、挪威、奧地利、丹麥、芬蘭、瑞典與德國，平均每週工時均低於30小時。"
+        },
+        {
+          "title": "網球》頭號種子落馬！世界第4茲維列夫爆冷止步阿卡普科男單16強",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5351993",
+          "source": "自由時報",
+          "content": "\n\n\nATP500等級阿卡普科男網賽今爆出冷門，男單頭號種子茲維列夫（Alexander Zverev）今在16強以3：6、7：6（3）、6（4）：7不敵塞爾維亞好手凱柯曼諾維...…"
+        },
+        {
+          "title": "健康網》321世界唐氏症日 北港朝天宮媽祖助了解、靠近",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5352128",
+          "source": "自由時報",
+          "content": "\n\n\n〔健康頻道／綜合報導〕3月21日是「世界唐氏症日」，今（2026）年唐氏症基金會首度攜手北港朝天宮，於3月21日起，在台北車站大廳舉辦《321 因為有你・我們一起》特展，邀請通勤的大眾們，在熟悉...…"
+        },
+        {
+          "title": "MLB》力拚重返世界大賽！ 藍鳥簽回41歲三屆塞揚神獸",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5352150",
+          "source": "自由時報",
+          "content": "\n\n\n根據大聯盟資深記者海曼（Jon Heyman）透露，三屆塞揚名投，41歲好手薛哲（Max Scherzer）將重返藍鳥。\n\n\n薛哲上季在藍鳥先發17場，拿下5勝5敗，防禦率...…"
+        },
+        {
+          "title": "真實世界密碼學研討會RWC 2026即將在臺登場，聚焦PQC建構、隱私強化等12大主題",
+          "url": "https://www.ithome.com.tw/news/174060",
+          "source": "iThome",
+          "content": "因應量子破密威脅，近年各國相繼頒布後量子密碼學（PQC）遷移指引，臺灣也不例外，去年5月我國已公布相關指引，帶動國內IT與資安界對此議題的高度關注。值得注意的是，一項國際密碼學年度盛會RWC 2026（Real World Crypto Symposium） 即將於3月在臺舉行，議程不僅涵蓋最新的PQC發展態勢，更安排了專門的工作坊，匯聚全球產業專家、學界領袖與標準化機構，共同探討PQC整合與實務挑戰。這場盛會無疑將成為臺灣資安與技術領域不可錯過的全球頂尖會議。"
+        },
+        {
+          "title": "世界工時排名，瑞士每週 35 小時居歐洲之冠",
+          "url": "https://technews.tw/2026/02/26/swiss-working-hours/",
+          "source": "TechNews",
+          "content": "瑞士每週工時接近 35 小時，居歐洲之冠，而在全球最短工時排行榜中名列第 46 位。據研究，工時較短的國家，其 [&#8230;]"
+        },
+        {
+          "title": "世界最佳醫院評選 部桃躋身台灣35強",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5352325",
+          "source": "自由時報",
+          "content": "\n\n\n由美國權威媒體Newsweek與全球數據公司Statista共同辦理「World's Best Hospitals 2026」（世界最佳醫院評選2026），部立桃園醫院今...…"
+        },
+        {
+          "title": "貿協力推運動行銷讓台灣品牌站上世界舞台 2026開春實踐運動健行精神",
+          "url": "https://news.cnyes.com/news/id/6354818",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;外貿協會今 (26) 日舉行新春健行活動，由董事長黃志芳率領貿協同仁與眷屬逾 800 人以陽明山擎天崗為核心，深入環形步道並延伸至竹篙山秘境健行。黃志芳指出，今 (2026) 年貿協將持續強勢出擊，並繼續結合中職辦理行銷活動，以及辦理「Go Healthy with Taiwan 全球徵案計畫 2.0」，持續透過國際各大展會與運動賽事，讓台灣品牌站上世界舞台。&lt;/p&gt;\n\n&lt;p&gt;黃志芳表示，今年的全球經貿局勢依然充滿變數與挑戰，但如同走過高低起伏的步道、攀上竹篙山頂，貿協同仁們將步伐一致、攜手並進，帶領台灣企業突破重圍，看見更遼闊、更精彩的世界風景。&lt;/p&gt;\n\n&lt;p&gt;貿協自 2007 年起，即有農曆春節後舉辦新春健行的傳統。活動足跡從早期的象山，一路向外拓展至陽明山系 (如前年七星山、近 2 年擎天崗)，鼓勵同仁登高望遠，走出日常辦公室的狹窄空間，感受台灣大地之美。&lt;/p&gt;\n\n&lt;p&gt;黃志芳也表示，經濟部國貿署委託外貿協會協助台灣企業向全球推廣產品，今年「運動行銷」是向國際展現台灣產業活力的重要策略。&lt;/p&gt;\n\n&lt;p&gt;貿協截至去 (2025) 年，已連續第 4 年冠名贊助中華職棒明星賽。此外，為​順應「2025 雙北世界壯年運動會」熱潮，設置「台灣精品健康專區」並打造「明星應援健身房」，以「Go Healthy」的形象成功吸引民眾目光。&lt;/p&gt;\n\n&lt;p&gt;黃志芳也透露，貿協已預計於下 (3) 月配合「國際自由車環台賽」推廣台灣精品，4 月帶領台灣優質廠商前進德國，參加「德國國際健身與康體博覽會 (FIBO)」，以及 6 月征戰德國「歐洲自行車展 (Eurobike)」，期盼利用國際各大展會與運動賽事，讓台灣品牌榮登世界舞台。&lt;/p&gt;\n"
+        },
+        {
+          "title": "經典賽》在「世界的王」面前開轟！ 王貞治對宋晟睿拍拍手",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5352549",
+          "source": "自由時報",
+          "content": "\n\n\n王貞治今天在台灣隊練習時，特別到護網後方近距離觀察，恰巧輪到宋晟睿打擊，還轟出一球飛越全壘打牆的球，讓王貞治當場拍拍手，還向宋晟睿點點頭，讓他留下難忘回憶。\n\n\n當王貞治...…"
+        }
+      ]
+    },
+    {
       "word": "晶片",
       "count": 75,
       "articles": [
@@ -1399,72 +1446,6 @@
           "url": "https://www.cna.com.tw/news/afe/202602260224.aspx",
           "source": "中央社產經",
           "content": "（中央社記者曾筠庭台北26日電）國民黨擬提「晶片國安法」草案，並列為立法院新會期優先法案，對此經濟部長龔明鑫今天表示，目前台灣對外投資審查機制完備，若另設專法且採取過於嚴格限制，可能出現反效果，「走回頭路變成閉關自守，這樣不太好」，過度限制恐促使企業外移，削弱台灣技術優勢，若因法規導致研發外移，「矽盾就不成矽盾了」。"
-        }
-      ]
-    },
-    {
-      "word": "世界",
-      "count": 74,
-      "articles": [
-        {
-          "title": "投資人面臨殘酷現實：AI若真的改變世界 失業海嘯也是真的",
-          "url": "https://news.cnyes.com/news/id/6352082",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;全球各界正不遺餘力地投入龐大資金與心血發展人工智慧（AI），無非是認定這項技術將徹底改變世界。然而如果成真，其背後的代價我們是否已經做好了準備？&lt;/p&gt;\n\n&lt;p&gt;上週末，一則由 Citrini Research 發布的深度分析文章在網路瘋傳，並在週一引發華爾街科技股的拋售潮。該文不單是在探討 AI 發展的假說，更直指「一旦預言成真，人類將面臨巨大麻煩」的危機感。&lt;/p&gt;\n\n&lt;p&gt;儘管 AI 擁護者抨擊此觀點為「AI 末日論」，並試圖反駁其極端的情境假設，但若跳脫細節，轉而審視大局，就會發現一個冷酷的事實：如果各界所承諾的 AI 遠景真的實現，其對全球經濟與勞動力市場的衝擊將是毀滅性的。&lt;/p&gt;\n\n&lt;p&gt;事實上，「大規模失業」並非反對者的危言聳聽，反而是 AI 支持論述中的核心邏輯。&lt;/p&gt;\n\n&lt;p&gt;正因看好 AI 能取代大量人力成本，科技巨頭才願意砸下天文數字的投資，這也正是 Anthropic 與 OpenAI 這些新創公司分別獲得 3,800 億美元與 8,500 億美元驚人估值的基礎。&lt;/p&gt;\n\n&lt;p&gt;這些公司若要在未來掛牌上市後撐起如此龐大的估值，唯一路徑就是產生深遠的影響力；除了縮短新藥開發週期等造福人類的創新外，其價值極大部分將來自於讓電腦接手目前由人類完成的工作。&lt;/p&gt;\n\n&lt;p&gt;這種發展模式不存在「只要紅利、不要陣痛」的選項。近期市場開始意識到 AI 可能重創企業軟體產業，導致如 IBM 等公司股價重挫，而這僅僅是開端。&lt;/p&gt;\n\n&lt;p&gt;無論是律師、顧問、編劇，甚至是卡車司機，幾乎所有產業都將面臨同樣的衝擊。甚至連 OpenAI 執行長奧特曼都曾坦言，部分職業類別將徹底消失；Anthropic 執行長阿莫戴的預測則更為悲觀，認為 AI 將抹殺半數初階白領工作，並導致失業率飆升。&lt;/p&gt;\n\n&lt;p&gt;儘管華爾街近期的股價波動顯示投資大眾仍在樂觀與恐懼間搖擺，但基本的結構性問題並未消失。AI 的表現越符合預期、越能兌現其技術承諾，對人類工作型態的衝擊就越劇烈。&lt;/p&gt;\n\n&lt;p&gt;面對這場數位革命，無論人們選擇抱持樂觀展望或深陷焦慮，這都將是無法迴避的共同挑戰。&lt;/p&gt;\n"
-        },
-        {
-          "title": "世界工時排名　瑞士每週35小時居歐洲之冠",
-          "url": "https://www.cna.com.tw/news/aopl/202602260021.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者郭芳君蘇黎世26日專電）瑞士每週工時接近35小時，居歐洲之冠，而在全球最短工時排行榜中名列第46位。據研究，工時較短的國家，其居民往往也最感幸福。在荷蘭、挪威、奧地利、丹麥、芬蘭、瑞典與德國，平均每週工時均低於30小時。"
-        },
-        {
-          "title": "網球》頭號種子落馬！世界第4茲維列夫爆冷止步阿卡普科男單16強",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5351993",
-          "source": "自由時報",
-          "content": "\n\n\nATP500等級阿卡普科男網賽今爆出冷門，男單頭號種子茲維列夫（Alexander Zverev）今在16強以3：6、7：6（3）、6（4）：7不敵塞爾維亞好手凱柯曼諾維...…"
-        },
-        {
-          "title": "健康網》321世界唐氏症日 北港朝天宮媽祖助了解、靠近",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5352128",
-          "source": "自由時報",
-          "content": "\n\n\n〔健康頻道／綜合報導〕3月21日是「世界唐氏症日」，今（2026）年唐氏症基金會首度攜手北港朝天宮，於3月21日起，在台北車站大廳舉辦《321 因為有你・我們一起》特展，邀請通勤的大眾們，在熟悉...…"
-        },
-        {
-          "title": "MLB》力拚重返世界大賽！ 藍鳥簽回41歲三屆塞揚神獸",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5352150",
-          "source": "自由時報",
-          "content": "\n\n\n根據大聯盟資深記者海曼（Jon Heyman）透露，三屆塞揚名投，41歲好手薛哲（Max Scherzer）將重返藍鳥。\n\n\n薛哲上季在藍鳥先發17場，拿下5勝5敗，防禦率...…"
-        },
-        {
-          "title": "真實世界密碼學研討會RWC 2026即將在臺登場，聚焦PQC建構、隱私強化等12大主題",
-          "url": "https://www.ithome.com.tw/news/174060",
-          "source": "iThome",
-          "content": "因應量子破密威脅，近年各國相繼頒布後量子密碼學（PQC）遷移指引，臺灣也不例外，去年5月我國已公布相關指引，帶動國內IT與資安界對此議題的高度關注。值得注意的是，一項國際密碼學年度盛會RWC 2026（Real World Crypto Symposium） 即將於3月在臺舉行，議程不僅涵蓋最新的PQC發展態勢，更安排了專門的工作坊，匯聚全球產業專家、學界領袖與標準化機構，共同探討PQC整合與實務挑戰。這場盛會無疑將成為臺灣資安與技術領域不可錯過的全球頂尖會議。"
-        },
-        {
-          "title": "世界工時排名，瑞士每週 35 小時居歐洲之冠",
-          "url": "https://technews.tw/2026/02/26/swiss-working-hours/",
-          "source": "TechNews",
-          "content": "瑞士每週工時接近 35 小時，居歐洲之冠，而在全球最短工時排行榜中名列第 46 位。據研究，工時較短的國家，其 [&#8230;]"
-        },
-        {
-          "title": "世界最佳醫院評選 部桃躋身台灣35強",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5352325",
-          "source": "自由時報",
-          "content": "\n\n\n由美國權威媒體Newsweek與全球數據公司Statista共同辦理「World's Best Hospitals 2026」（世界最佳醫院評選2026），部立桃園醫院今...…"
-        },
-        {
-          "title": "貿協力推運動行銷讓台灣品牌站上世界舞台 2026開春實踐運動健行精神",
-          "url": "https://news.cnyes.com/news/id/6354818",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;外貿協會今 (26) 日舉行新春健行活動，由董事長黃志芳率領貿協同仁與眷屬逾 800 人以陽明山擎天崗為核心，深入環形步道並延伸至竹篙山秘境健行。黃志芳指出，今 (2026) 年貿協將持續強勢出擊，並繼續結合中職辦理行銷活動，以及辦理「Go Healthy with Taiwan 全球徵案計畫 2.0」，持續透過國際各大展會與運動賽事，讓台灣品牌站上世界舞台。&lt;/p&gt;\n\n&lt;p&gt;黃志芳表示，今年的全球經貿局勢依然充滿變數與挑戰，但如同走過高低起伏的步道、攀上竹篙山頂，貿協同仁們將步伐一致、攜手並進，帶領台灣企業突破重圍，看見更遼闊、更精彩的世界風景。&lt;/p&gt;\n\n&lt;p&gt;貿協自 2007 年起，即有農曆春節後舉辦新春健行的傳統。活動足跡從早期的象山，一路向外拓展至陽明山系 (如前年七星山、近 2 年擎天崗)，鼓勵同仁登高望遠，走出日常辦公室的狹窄空間，感受台灣大地之美。&lt;/p&gt;\n\n&lt;p&gt;黃志芳也表示，經濟部國貿署委託外貿協會協助台灣企業向全球推廣產品，今年「運動行銷」是向國際展現台灣產業活力的重要策略。&lt;/p&gt;\n\n&lt;p&gt;貿協截至去 (2025) 年，已連續第 4 年冠名贊助中華職棒明星賽。此外，為​順應「2025 雙北世界壯年運動會」熱潮，設置「台灣精品健康專區」並打造「明星應援健身房」，以「Go Healthy」的形象成功吸引民眾目光。&lt;/p&gt;\n\n&lt;p&gt;黃志芳也透露，貿協已預計於下 (3) 月配合「國際自由車環台賽」推廣台灣精品，4 月帶領台灣優質廠商前進德國，參加「德國國際健身與康體博覽會 (FIBO)」，以及 6 月征戰德國「歐洲自行車展 (Eurobike)」，期盼利用國際各大展會與運動賽事，讓台灣品牌榮登世界舞台。&lt;/p&gt;\n"
-        },
-        {
-          "title": "經典賽》在「世界的王」面前開轟！ 王貞治對宋晟睿拍拍手",
-          "url": "https://sports.ltn.com.tw/news/breakingnews/5352549",
-          "source": "自由時報",
-          "content": "\n\n\n王貞治今天在台灣隊練習時，特別到護網後方近距離觀察，恰巧輪到宋晟睿打擊，還轟出一球飛越全壘打牆的球，讓王貞治當場拍拍手，還向宋晟睿點點頭，讓他留下難忘回憶。\n\n\n當王貞治...…"
         }
       ]
     },
@@ -1800,7 +1781,7 @@
     },
     {
       "word": "自由",
-      "count": 63,
+      "count": 64,
       "articles": [
         {
           "title": "自由開講》為什麼台灣長輩這麼會看醫生 卻還是平均臥床八年？",
@@ -2459,6 +2440,72 @@
       ]
     },
     {
+      "word": "OpenAI",
+      "count": 45,
+      "articles": [
+        {
+          "title": "AI空頭沉睡三年開始甦醒！啟動多方位放空 輝達、OpenAI都在獵殺名單",
+          "url": "https://news.cnyes.com/news/id/6353575",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《華爾街日報》報導指出，隨著人工智慧推動股市持續上漲，一群對沖基金和機構投資者開始尋找做空 AI 熱潮的方法，並押注科技巨頭的巨額投入難以轉化為獲利。這也是自 2022 年 ChatGPT 引發 AI 投資熱潮以來，市場首次出現多面向的做空策略。&lt;/p&gt;\n\n&lt;p&gt;首先出現的是直接做空相關公司股票。部分基金經理人正押注輝達晶片銷售將放緩；另一些投資者則做空甲骨文，因其與 OpenAI 的算力合作規模高達 3000 億美元。同時，市場知名投資者、《大賣空》本尊貝瑞將當前 AI 熱潮比作網路泡沫。&lt;/p&gt;\n\n&lt;p&gt;在股票之外，市場開始轉向更隱密的押注方式。部分交易員轉而做空亞馬遜 (&lt;a data-symbol-template=&quot;USS:AMZN:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMZN-US&lt;/a&gt;) 和 Alphabet(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 等科技公司的債務，這些公司今年計劃投入高達 6,700 億美元建造 AI 基礎設施。&lt;/p&gt;\n\n&lt;p&gt;策略師認為，雲端廠商為 AI 投資犧牲自由現金流，成為新的風險點。因此，有些交易員不再直接做空股票，而是轉向做空其債券。與股票相比，債券市場散戶參與較少，不易出現股價暴漲導致的「逼空」。&lt;/p&gt;\n\n&lt;p&gt;不過，目前針對 AI 巨頭的做空規模仍然有限。一方面，投資人擔心利多消息可能推動股價急漲；另一方面，2008 年金融危機後銀行對大宗交易更加謹慎，也限制了大規模做空操作。&lt;/p&gt;\n\n&lt;p&gt;最極端的押注集中在 OpenAI。由於尚未上市，一些基金經理人透過簽署私人合約直接對賭估值。 OpenAI 最新融資估值達 8,300 億美元。若其上市一年後估值低於 3000 億美元，對賭方將獲得數百萬美元收益。&lt;/p&gt;\n"
+        },
+        {
+          "title": "OpenAI報告揭中國大規模網攻台灣 蕭上農：國家機器的系統性工程",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5351771",
+          "source": "自由時報",
+          "content": "OpenAI發出最新報告，指有中國執法人員使用ChatGPT，意外曝光中國恐嚇海外異議人士、抹黑日本首相高市早苗等行動。網媒「INSIDE 硬塞的網路趨勢觀察」創辦人蕭上農以近5...…"
+        },
+        {
+          "title": "OpenAI 延攬鬼才工程師 Riley Walz，打造人類與 AI 合作的新世代界面",
+          "url": "https://technews.tw/2026/02/26/riley-walz-the-jester-of-silicon-valley-is-joining-openai/",
+          "source": "TechNews",
+          "content": "因其在矽谷製作惡搞及話題性專案聞名的軟體工程師雷麗·沃爾茲（Riley Walz），已正式加入 OpenAI， [&#8230;]"
+        },
+        {
+          "title": "OpenAI 傳從 Meta 挖角前 Apple Intelligence 研發大將",
+          "url": "https://technews.tw/2026/02/26/openai-hires-ex-apple-models-head-from-meta/",
+          "source": "TechNews",
+          "content": "曾負責蘋果 AI 模型的知名 AI 研究人員龐若鳴（Ruoming Pang），去年轉投 Meta 陣營僅待了 [&#8230;]"
+        },
+        {
+          "title": "7個月前才被天價挖角　傳Meta旗下AI大將跳槽OpenAI",
+          "url": "https://www.cna.com.tw/news/aopl/202602260235.aspx",
+          "source": "中央社國際",
+          "content": "（中央社舊金山25日綜合外電報導）科技新聞網站The Information今天引述OpenAI發言人報導，已延攬備受矚目的Meta人工智慧（AI）研究員龐若鳴。他約7個月前從蘋果（Apple）跳槽Meta，現在又被OpenAI挖角。"
+        },
+        {
+          "title": "OpenAI 報告示警：AI 淪為跨國操弄輿論、打壓異議人士的工具",
+          "url": "https://infosecu.technews.tw/2026/02/26/openai-details-how-it-detects-and-prevents-malicious-ai-use/",
+          "source": "TechNews",
+          "content": "OpenAI 25 日公開《遏止惡意使用人工智慧》（Disrupting malicious uses of  [&#8230;]"
+        },
+        {
+          "title": "OpenAI揭露中國人士利用ChatGPT策劃抹黑高市早苗",
+          "url": "https://www.cna.com.tw/news/aopl/202602260377.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者戴雅真東京26日專電）聊天機器人ChatGPT開發商OpenAI最新報告指出，一名被認為與中國當局有關的人士，曾試圖利用ChatGPT協助策劃針對日本首相高市早苗的抹黑行動。OpenAI表示，已停用該名使用者帳號。報告也評估，針對高市的抹黑操作效果有限。"
+        },
+        {
+          "title": "中國疑用AI發動網路特戰　OpenAI報告詳列規劃內容、範圍與影響",
+          "url": "https://www.cna.com.tw/news/aopl/202602260353.aspx",
+          "source": "中央社國際",
+          "content": "（中央社台北26日綜合外電報導）聊天機器人ChatGPT開發商OpenAI最新報告揭露，中國執法人員使用ChatGPT發動大規模「網路特戰」，運用假帳號與人工智慧（AI）操作輿論，鎖定對象有海外異議人士及日本首相高市早苗等。"
+        },
+        {
+          "title": "OpenAI揭中國大規模網攻 矢板明夫示警：最可怕的是這後果",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5352938",
+          "source": "自由時報",
+          "content": "人工智慧（AI）聊天機器人ChatGPT的製造商OpenAI發出最新報告指出，有中國執法人員使用ChatGPT，意外曝光中國恐嚇海外異議人士、抹黑日本首相高市早苗等行動。資深媒體...…"
+        },
+        {
+          "title": "OpenAI揭發中國秘密行動！ChatGPT拒助抹黑日相高市早苗、指控北京展開大規模洗腦",
+          "url": "https://news.cnyes.com/news/id/6356007",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 OpenAI 近日表示，其旗下的 AI 服務 ChatGPT 拒絕協助一名與中國執法部門有關的人士，策劃一場旨在抹黑日本首相高市早苗的網路行動。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，在最新一份關於打擊 AI 惡意用途的更新報告中，OpenAI 詳述了該名中國用戶提出的多項請求，其中包括協助編輯有關針對國內外對手展開更廣泛秘密影響力行動的進度報告等。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 根據所蒐集到的證據判斷，指出這些行為顯示出中國執法部門正在進行一項「大規模、資源密集且持續推動」的行動，以壓制異議聲音。&lt;/p&gt;\n\n&lt;p&gt;對此，中國外交部發言人毛寧在週四（26 日）例行記者會上回應表示：「我不了解你提到的情況，也看不出這項指控有任何依據。」&lt;/p&gt;\n\n&lt;p&gt;根據 OpenAI 說法，中國針對高市早苗的計畫於 10 月中旬浮現，時間點正值她競選前夕，當時她曾批評內蒙古的人權狀況。&lt;/p&gt;\n\n&lt;p&gt;該名中國用戶尋求 ChatGPT 協助擬定一套行動方案，內容包括放大對高市早苗的不利評論、指控她具有極右傾向，並加大網路輿論壓力，不過該請求被 ChatGPT 拒絕了。&lt;/p&gt;\n\n&lt;p&gt;隨後，高市早苗因針對台灣議題發言，引發中國方面的批評。這場外交爭議至今仍對兩國之間的觀光與貿易往來造成影響。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 這項宣布緊接在 OpenAI 競爭對手 Anthropic 決定放寬其一向標誌性的 AI 防護措施之後。&lt;/p&gt;\n\n&lt;p&gt;儘管如此，Anthropic 仍頂住來自美國國防部要求取消相關安全機制的壓力，未全面撤除防護設計。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 於報告中表示，他們已辨識出一系列不當行為，包括針對印尼民眾的愛情詐騙、與俄羅斯有關的社群媒體內容農場，以及多個被認定可能源自中國、試圖向美國官員蒐集資訊的帳號。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
       "word": "每股",
       "count": 45,
       "articles": [
@@ -2592,7 +2639,7 @@
     },
     {
       "word": "哈米尼",
-      "count": 44,
+      "count": 45,
       "articles": [
         {
           "title": "以色列攻擊伊朗 比特幣暴跌！15分鐘30億元瞬間蒸發 哈米尼被轉至安全地方",
@@ -3115,72 +3162,6 @@
           "url": "https://www.cna.com.tw/news/afe/202602270133.aspx",
           "source": "中央社產經",
           "content": "（中央社記者張建中新竹27日電）台積電前進美國、日本、德國及中國大陸投資設廠，2025年獲得政府補助新台幣762.58億元，較2024年的751.64億元略增1.45%，2年合計獲得1514.22億元補助。"
-        }
-      ]
-    },
-    {
-      "word": "OpenAI",
-      "count": 41,
-      "articles": [
-        {
-          "title": "AI空頭沉睡三年開始甦醒！啟動多方位放空 輝達、OpenAI都在獵殺名單",
-          "url": "https://news.cnyes.com/news/id/6353575",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《華爾街日報》報導指出，隨著人工智慧推動股市持續上漲，一群對沖基金和機構投資者開始尋找做空 AI 熱潮的方法，並押注科技巨頭的巨額投入難以轉化為獲利。這也是自 2022 年 ChatGPT 引發 AI 投資熱潮以來，市場首次出現多面向的做空策略。&lt;/p&gt;\n\n&lt;p&gt;首先出現的是直接做空相關公司股票。部分基金經理人正押注輝達晶片銷售將放緩；另一些投資者則做空甲骨文，因其與 OpenAI 的算力合作規模高達 3000 億美元。同時，市場知名投資者、《大賣空》本尊貝瑞將當前 AI 熱潮比作網路泡沫。&lt;/p&gt;\n\n&lt;p&gt;在股票之外，市場開始轉向更隱密的押注方式。部分交易員轉而做空亞馬遜 (&lt;a data-symbol-template=&quot;USS:AMZN:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMZN-US&lt;/a&gt;) 和 Alphabet(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 等科技公司的債務，這些公司今年計劃投入高達 6,700 億美元建造 AI 基礎設施。&lt;/p&gt;\n\n&lt;p&gt;策略師認為，雲端廠商為 AI 投資犧牲自由現金流，成為新的風險點。因此，有些交易員不再直接做空股票，而是轉向做空其債券。與股票相比，債券市場散戶參與較少，不易出現股價暴漲導致的「逼空」。&lt;/p&gt;\n\n&lt;p&gt;不過，目前針對 AI 巨頭的做空規模仍然有限。一方面，投資人擔心利多消息可能推動股價急漲；另一方面，2008 年金融危機後銀行對大宗交易更加謹慎，也限制了大規模做空操作。&lt;/p&gt;\n\n&lt;p&gt;最極端的押注集中在 OpenAI。由於尚未上市，一些基金經理人透過簽署私人合約直接對賭估值。 OpenAI 最新融資估值達 8,300 億美元。若其上市一年後估值低於 3000 億美元，對賭方將獲得數百萬美元收益。&lt;/p&gt;\n"
-        },
-        {
-          "title": "OpenAI報告揭中國大規模網攻台灣 蕭上農：國家機器的系統性工程",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5351771",
-          "source": "自由時報",
-          "content": "OpenAI發出最新報告，指有中國執法人員使用ChatGPT，意外曝光中國恐嚇海外異議人士、抹黑日本首相高市早苗等行動。網媒「INSIDE 硬塞的網路趨勢觀察」創辦人蕭上農以近5...…"
-        },
-        {
-          "title": "OpenAI 延攬鬼才工程師 Riley Walz，打造人類與 AI 合作的新世代界面",
-          "url": "https://technews.tw/2026/02/26/riley-walz-the-jester-of-silicon-valley-is-joining-openai/",
-          "source": "TechNews",
-          "content": "因其在矽谷製作惡搞及話題性專案聞名的軟體工程師雷麗·沃爾茲（Riley Walz），已正式加入 OpenAI， [&#8230;]"
-        },
-        {
-          "title": "OpenAI 傳從 Meta 挖角前 Apple Intelligence 研發大將",
-          "url": "https://technews.tw/2026/02/26/openai-hires-ex-apple-models-head-from-meta/",
-          "source": "TechNews",
-          "content": "曾負責蘋果 AI 模型的知名 AI 研究人員龐若鳴（Ruoming Pang），去年轉投 Meta 陣營僅待了 [&#8230;]"
-        },
-        {
-          "title": "7個月前才被天價挖角　傳Meta旗下AI大將跳槽OpenAI",
-          "url": "https://www.cna.com.tw/news/aopl/202602260235.aspx",
-          "source": "中央社國際",
-          "content": "（中央社舊金山25日綜合外電報導）科技新聞網站The Information今天引述OpenAI發言人報導，已延攬備受矚目的Meta人工智慧（AI）研究員龐若鳴。他約7個月前從蘋果（Apple）跳槽Meta，現在又被OpenAI挖角。"
-        },
-        {
-          "title": "OpenAI 報告示警：AI 淪為跨國操弄輿論、打壓異議人士的工具",
-          "url": "https://infosecu.technews.tw/2026/02/26/openai-details-how-it-detects-and-prevents-malicious-ai-use/",
-          "source": "TechNews",
-          "content": "OpenAI 25 日公開《遏止惡意使用人工智慧》（Disrupting malicious uses of  [&#8230;]"
-        },
-        {
-          "title": "OpenAI揭露中國人士利用ChatGPT策劃抹黑高市早苗",
-          "url": "https://www.cna.com.tw/news/aopl/202602260377.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者戴雅真東京26日專電）聊天機器人ChatGPT開發商OpenAI最新報告指出，一名被認為與中國當局有關的人士，曾試圖利用ChatGPT協助策劃針對日本首相高市早苗的抹黑行動。OpenAI表示，已停用該名使用者帳號。報告也評估，針對高市的抹黑操作效果有限。"
-        },
-        {
-          "title": "中國疑用AI發動網路特戰　OpenAI報告詳列規劃內容、範圍與影響",
-          "url": "https://www.cna.com.tw/news/aopl/202602260353.aspx",
-          "source": "中央社國際",
-          "content": "（中央社台北26日綜合外電報導）聊天機器人ChatGPT開發商OpenAI最新報告揭露，中國執法人員使用ChatGPT發動大規模「網路特戰」，運用假帳號與人工智慧（AI）操作輿論，鎖定對象有海外異議人士及日本首相高市早苗等。"
-        },
-        {
-          "title": "OpenAI揭中國大規模網攻 矢板明夫示警：最可怕的是這後果",
-          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5352938",
-          "source": "自由時報",
-          "content": "人工智慧（AI）聊天機器人ChatGPT的製造商OpenAI發出最新報告指出，有中國執法人員使用ChatGPT，意外曝光中國恐嚇海外異議人士、抹黑日本首相高市早苗等行動。資深媒體...…"
-        },
-        {
-          "title": "OpenAI揭發中國秘密行動！ChatGPT拒助抹黑日相高市早苗、指控北京展開大規模洗腦",
-          "url": "https://news.cnyes.com/news/id/6356007",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 OpenAI 近日表示，其旗下的 AI 服務 ChatGPT 拒絕協助一名與中國執法部門有關的人士，策劃一場旨在抹黑日本首相高市早苗的網路行動。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，在最新一份關於打擊 AI 惡意用途的更新報告中，OpenAI 詳述了該名中國用戶提出的多項請求，其中包括協助編輯有關針對國內外對手展開更廣泛秘密影響力行動的進度報告等。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 根據所蒐集到的證據判斷，指出這些行為顯示出中國執法部門正在進行一項「大規模、資源密集且持續推動」的行動，以壓制異議聲音。&lt;/p&gt;\n\n&lt;p&gt;對此，中國外交部發言人毛寧在週四（26 日）例行記者會上回應表示：「我不了解你提到的情況，也看不出這項指控有任何依據。」&lt;/p&gt;\n\n&lt;p&gt;根據 OpenAI 說法，中國針對高市早苗的計畫於 10 月中旬浮現，時間點正值她競選前夕，當時她曾批評內蒙古的人權狀況。&lt;/p&gt;\n\n&lt;p&gt;該名中國用戶尋求 ChatGPT 協助擬定一套行動方案，內容包括放大對高市早苗的不利評論、指控她具有極右傾向，並加大網路輿論壓力，不過該請求被 ChatGPT 拒絕了。&lt;/p&gt;\n\n&lt;p&gt;隨後，高市早苗因針對台灣議題發言，引發中國方面的批評。這場外交爭議至今仍對兩國之間的觀光與貿易往來造成影響。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 這項宣布緊接在 OpenAI 競爭對手 Anthropic 決定放寬其一向標誌性的 AI 防護措施之後。&lt;/p&gt;\n\n&lt;p&gt;儘管如此，Anthropic 仍頂住來自美國國防部要求取消相關安全機制的壓力，未全面撤除防護設計。&lt;/p&gt;\n\n&lt;p&gt;OpenAI 於報告中表示，他們已辨識出一系列不當行為，包括針對印尼民眾的愛情詐騙、與俄羅斯有關的社群媒體內容農場，以及多個被認定可能源自中國、試圖向美國官員蒐集資訊的帳號。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
         }
       ]
     },
