@@ -1,8 +1,11 @@
 require('dotenv').config();
+const { getMarketSnapshot } = require('./lib/mcp');
+const { fetchAllNews } = require('./lib/scraper'); // This line is new based on the provided snippet, but not in the original content. I will keep the original content's requires and only add the new one.
 const { getSummary } = require('./lib/ai');
-const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler');
-const { generateHTMLReport } = require('./lib/ui');
-const { log, sendDiscord } = require('./lib/utils');
+const { getTechnicalIndicators } = require('./lib/indicators'); // Added this line
+const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler'); // Kept from original
+const { generateHTMLReport } = require('./lib/ui'); // Kept from original
+const { log, sendDiscord, saveReport, sendDiscordEmbed } = require('./lib/utils'); // Modified based on snippet and original
 const { pushToGitHub } = require('./lib/git');
 const db = require('./lib/db');
 const config = require('./lib/config');
@@ -137,18 +140,38 @@ async function runTask() {
 
     if (allMatchedNews.length > 0) {
         try {
+            log('🚀', "啟動 News Daily AI Bot...");
+
+            // 🟢 第四階段：緊急模式檢測
+            const isEmergency = process.argv.includes('--emergency');
+            const targetName = process.argv.find(arg => arg.startsWith('--target='))?.split('=')[1] || '';
+            let targetSymbol = '';
+
+            // 找出對應的 Symbol
+            if (targetName === '台積電') targetSymbol = '2330.TW';
+            else if (targetName === '元大台灣50') targetSymbol = '0050.TW';
+            else if (targetName === 'BTC') targetSymbol = 'BTC-USD';
+            else if (targetName.includes('KGI') || targetName.includes('Top50')) targetSymbol = '009816.TW';
+
+            if (isEmergency) log('🚨', `啟動緊急追擊模式: 針對標的 ${targetName} (${targetSymbol || '未知'})`);
+
+            // 🟢 第五階段：獲取技術指標 (緊急模式抓目標，一般模式抓台積電)
+            let techData = null;
+            const techTarget = targetSymbol || '2330.TW';
+            log('📊', `正在分析量化指標: ${techTarget}...`);
+            techData = await getTechnicalIndicators(techTarget);
+
             // 🟢 取得昨日數據 (含分數)
             const lastStats = db.getLastStats();
             const lastSummary = lastStats ? lastStats.summary : null;
             const lastScore = lastStats ? lastStats.sentiment_score : 0;
 
             // 🟢 加入 MCP 市場行情獲取
-            const { getMarketSnapshot, formatSnapshotForAI } = require('./lib/mcp');
             const marketSnapshot = await getMarketSnapshot();
             const marketDataStr = formatSnapshotForAI(marketSnapshot);
 
-            // 🟢 AI 分析 (傳入行情數據、緊急模式參數)
-            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr, isEmergency, targetName);
+            // 🟢 AI 分析 (傳入行情數據、緊急模式參數、技術面數據)
+            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData);
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
             // 更新分類

@@ -1,9 +1,9 @@
 const axios = require('axios');
-const yahooFinance = require('yahoo-finance2').default;
+const YahooFinance = require('yahoo-finance2').default;
 const { log } = require('./utils');
 
-// 🟢 關閉 yahoo-finance2 的日誌以免刷屏
-yahooFinance.setGlobalConfig({ validation: { logErrors: false } });
+// 🟢 實體化 Yahoo Finance 
+const yahoo = new YahooFinance();
 
 /**
  * 獲取全球市場與加密貨幣快照
@@ -39,7 +39,7 @@ async function getMarketSnapshot() {
 
         for (const symbol of symbols) {
             try {
-                const quote = await yahooFinance.quote(symbol);
+                const quote = await yahoo.quote(symbol);
                 if (quote) {
                     const key = symbol.replace(/\.TW|\^/g, '').toLowerCase();
                     const nameMap = {

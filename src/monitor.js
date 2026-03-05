@@ -1,4 +1,5 @@
 const { getMarketSnapshot } = require('./lib/mcp');
+const { getTechnicalIndicators } = require('./lib/indicators');
 const { log, sendDiscordEmbed } = require('./lib/utils');
 const config = require('./lib/config');
 const fs = require('fs');
@@ -41,26 +42,31 @@ async function runMonitor() {
 
             if (!currentPrice || isNaN(currentPrice)) continue;
 
+            // 🟢 第五階段：實時獲取技術指標
+            const tech = await getTechnicalIndicators(target.symbol || '');
+            const rsiStr = tech ? `${tech.rsi} (${tech.rsi < 30 ? '超賣🔥' : tech.rsi > 70 ? '超買❄️' : '中性'})` : '計算中';
+
             const changeRate = ((currentPrice - lastPrice) / lastPrice) * 100;
             const threshold = getThreshold(target.symbol || '');
 
-            log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (門檻: ${threshold}%, 當前: ${changeRate.toFixed(2)}%)`);
+            log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (RSI: ${tech?.rsi || '?'}, 當前: ${changeRate.toFixed(2)}%)`);
 
-            // 異動偵測邏輯
-            if (changeRate <= threshold && (now - lastAlertAt > COOL_DOWN_MS)) {
+            // 異動偵測邏輯 (跌破門檻 OR RSI 極度超賣)
+            if ((changeRate <= threshold || (tech && tech.rsi < 20)) && (now - lastAlertAt > COOL_DOWN_MS)) {
                 log('🚨', `觸發預警: ${target.name}`);
 
-                const isDrop = changeRate < 0;
+                const isOpportunity = tech && tech.rsi < 30; // RSI 低位通常是機會
                 const embed = {
-                    title: `🏮 市場移動預警: ${target.name}`,
-                    description: `偵測到標的 **${target.name}** 出現顯著波動。`,
-                    color: isDrop ? 15158332 : 3066993, // 紅色 : 綠色 (Discord Color Code)
+                    title: `${isOpportunity ? '💎 潛在進場機會' : '🏮 市場移動預警'}: ${target.name}`,
+                    description: `偵測到 **${target.name}** 出現顯著波動或指標轉折。`,
+                    color: isOpportunity ? 3066993 : 15158332, // 綠色 (機會) : 紅色 (風險)
                     fields: [
                         { name: '當前價格', value: `**$${currentPrice.toLocaleString()}**`, inline: true },
                         { name: '波動幅度', value: `**${changeRate.toFixed(2)}%**`, inline: true },
-                        { name: '門檻觸發', value: `${threshold}%`, inline: true }
+                        { name: 'RSI 強弱', value: `**${rsiStr}**`, inline: true },
+                        { name: '均線趨勢', value: tech ? `${tech.trend === 'BULL' ? '🟢多頭' : '🔴空頭'} (MA20: ${tech.ma20})` : '未知', inline: false }
                     ],
-                    footer: { text: "AI 財經監控終端 v8.8.0" },
+                    footer: { text: "AI 財經監控終端 v9.0.0 | 多維度策略版" },
                     timestamp: new Date().toISOString()
                 };
 

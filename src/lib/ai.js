@@ -157,7 +157,7 @@ function getPersona(lastScore) {
     return "你是一位【宏觀避險基金經理人】。市場情緒中性，請平衡分析多空因素，尋找結構性的成長機會。";
 }
 
-async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '') {
+async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '', techData = null) {
     const blob = newsData.map((n, i) => {
         const content = n.content || n.title || "無內文";
         return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 1000)}...`;
@@ -165,7 +165,17 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0, marketDat
 
     const persona = getPersona(lastScore);
 
-    // 🟢 緊急模式特別指令
+    // 🟢 技術指標注入
+    let technicalPrompt = "";
+    if (techData && techData.symbol) {
+        technicalPrompt = `📊 **技術面快照 [${techData.symbol}]**：
+- **當前價格**: ${techData.price}
+- **RSI (14)**: ${techData.rsi} (${techData.rsi < 30 ? '🔥超賣/買進信號' : techData.rsi > 70 ? '❄️超買/賣出信號' : '中性'})
+- **均線**: MA5: ${techData.ma5}, MA20: ${techData.ma20} (${techData.trend === 'BULL' ? '🟢多頭趨勢' : '🔴空頭趨勢'})
+- **策略指令**: 請結合以上技術指標與新聞情緒，在報告中給予具體的應對建議（如：建議觀望、分批加碼、減碼）。`;
+    }
+
+    // 🟢 緊急模式與技術分析聯動指令
     const emergencyPrompt = isEmergency
         ? `🚨 **緊急報警追蹤**：目前系統監測到 **${targetName}** 出現重大異動！請從以下新聞中，特別針對該標的進行深度挖掘，分析其波動原因、市場情緒，並評估對大盤的後續影響。`
         : "";
@@ -181,6 +191,8 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0, marketDat
 請閱讀新聞並產出深度決策報告。請務必依據 schema 格式精確回傳。
 
 ${emergencyPrompt}
+
+${technicalPrompt}
 
 ${marketPrompt}
 
