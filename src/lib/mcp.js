@@ -53,11 +53,11 @@ function formatSnapshotForAI(snapshot) {
     if (!snapshot || !snapshot.crypto) return '';
 
     let text = "\n📊 **當前市場行情參考**：\n";
-    if (snapshot.crypto.btc) {
-        text += `- 比特幣 (BTC): $${snapshot.crypto.btc.usd.toLocaleString()} USD (${snapshot.crypto.btc.change.toFixed(2)}%)\n`;
+    if (snapshot.crypto.btc && snapshot.crypto.btc.price) {
+        text += `- 比特幣 (BTC): $${snapshot.crypto.btc.price.toLocaleString()} USD (${(snapshot.crypto.btc.change || 0).toFixed(2)}%)\n`;
     }
-    if (snapshot.crypto.eth) {
-        text += `- 乙太幣 (ETH): $${snapshot.crypto.eth.usd.toLocaleString()} USD (${snapshot.crypto.eth.change.toFixed(2)}%)\n`;
+    if (snapshot.crypto.eth && snapshot.crypto.eth.price) {
+        text += `- 乙太幣 (ETH): $${snapshot.crypto.eth.price.toLocaleString()} USD (${(snapshot.crypto.eth.change || 0).toFixed(2)}%)\n`;
     }
     return text;
 }
