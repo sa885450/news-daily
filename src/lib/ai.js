@@ -163,9 +163,7 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
 }
 
 function getPersona(lastScore) {
-    if (lastScore <= -0.5) return "你是一位【逆勢價值投資大師】。市場極度恐慌，請專注於尋找被錯殺的績優股，並強調長期持有的安全邊際。";
-    if (lastScore >= 0.5) return "你是一位【風險控管專家】。市場極度貪婪，請警告潛在的泡沫風險，建議適度獲利了結，並關注防禦性資產。";
-    return "你是一位【宏觀避險基金經理人】。市場情緒中性，請平衡分析多空因素，尋找結構性的成長機會。";
+    return "你是一位【AI 戰術執行官】(AI Tactical Operator)。你的語氣冷靜、極簡、數據導向。嚴禁使用任何「投資顧問」或「投顧老師」的花哨術語（如：穩健獲利、入袋為安、帶你上天堂等）。你只提供冷酷的戰術指令與風險解析。";
 }
 
 async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '', techData = null) {
@@ -221,9 +219,12 @@ ${contextPrompt}
 2. **relations**: 
    - 請從大盤趨勢與新聞脈絡中，識別出實體間的「動態關聯」(供應鏈、競爭、政策影響等)。格式為 {from, to, type}。
 
-3. **tactical_advice (v9.1.0 重點)**:
-   - 請根據新聞情緒、行情數據與技術指標，給出單一且明確的「執行建議」。
-   - **position_size**: 請給出具體的比例建議 (如：建議動用 20% 現金儲備進場)。
+3. **tactical_advice (v9.2.1 戰術執行版)**:
+   - **長期核心資產方針**: 標的 \`0050.TW\` 與 \`2330.TW\` 為「10年長期持有」，除非新聞顯示公司基本面徹底瓦解，否則不建議「清倉」。
+   - **危機處理 (Long Accumulation)**: 當 RSI < 30 或情緒極度悲觀時，優先評估是否給予「戰術性加碼」指令。
+   - **避險指令 (Gold Hedge)**: 若市場系統性風險爆發 (股、幣雙跌)，請偵測黃金期貨 (GC=F) 走勢，評估是否建議資金轉入黃金避險。
+   - **禁用話術**: 絕對禁止使用投顧老師的語氣。改用「指令：[內容]」、「依據：[數據]」、「倉位：[比例]」等直白格式。
+   - **position_size**: 請給出具體的比例建議 (如：建議動用 20% 現金儲備進場/轉入黃金)。
    - **confidence**: 必須綜合基本面與技術面的背離情況給分。
 
 新聞資料：

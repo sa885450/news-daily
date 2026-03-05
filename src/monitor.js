@@ -10,7 +10,7 @@ const MONITOR_STATE_FILE = path.join(__dirname, '../data/monitor_state.json');
 
 // 🟢 第三階段優化：差異化門檻
 function getThreshold(symbol) {
-    if (symbol.startsWith('^')) return -1.0; // 指數類跌 1% 預警
+    if (symbol.startsWith('^') || symbol.includes('=F')) return -1.0; // 指數與黃金類跌 1% 預警
     if (symbol.includes('.TW')) return -2.0; // 盤中個股跌 2% 預警
     return -5.0; // 加密貨幣波動大，跌 5% 預警
 }

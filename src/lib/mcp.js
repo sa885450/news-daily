@@ -35,19 +35,20 @@ async function getMarketSnapshot() {
 
         // 2. 傳統金融 (Yahoo Finance)
         log('📈', '正在同步 Yahoo Finance 全球指標...');
-        const symbols = ['^TWII', '^GSPC', '2330.TW', '0050.TW', '009816.TW'];
+        const symbols = ['^TWII', '^GSPC', '2330.TW', '0050.TW', '009816.TW', 'GC=F'];
 
         for (const symbol of symbols) {
             try {
                 const quote = await yahoo.quote(symbol);
                 if (quote) {
-                    const key = symbol.replace(/\.TW|\^/g, '').toLowerCase();
+                    const key = symbol.replace(/\.TW|\^|=F/g, '').toLowerCase();
                     const nameMap = {
                         'twii': '台股加權',
                         'gspc': 'S&P 500',
                         '2330': '台積電',
                         '0050': '元大台灣50',
-                        '009816': '凱基台灣Top50'
+                        '009816': '凱基台灣Top50',
+                        'gc': '黃金期貨'
                     };
 
                     snapshot.traditional[key] = {
@@ -79,11 +80,21 @@ function formatSnapshotForAI(snapshot) {
 
     let text = "\n📊 **當前市場行情參考**：\n";
     if (snapshot.crypto.btc && snapshot.crypto.btc.price) {
-        text += `- 比特幣 (BTC): $${snapshot.crypto.btc.price.toLocaleString()} USD (${(snapshot.crypto.btc.change || 0).toFixed(2)}%)\n`;
+        text += `- 比特幣 (BTC): $${snapshot.crypto.btc.price.toLocaleString()} (${(snapshot.crypto.btc.change || 0).toFixed(2)}%)\n`;
     }
-    if (snapshot.crypto.eth && snapshot.crypto.eth.price) {
-        text += `- 乙太幣 (ETH): $${snapshot.crypto.eth.price.toLocaleString()} USD (${(snapshot.crypto.eth.change || 0).toFixed(2)}%)\n`;
+
+    // 🟢 v9.2.1: 專注避險與長期核心資產
+    const trad = snapshot.traditional || {};
+    if (trad.gc) {
+        text += `- 黃金期貨 (GC=F): $${trad.gc.price.toLocaleString()} (${(trad.gc.change || 0).toFixed(2)}%) [避險狀態參考]\n`;
     }
+    if (trad.twii) {
+        text += `- 台股加權 (TWII): ${trad.twii.price.toLocaleString()} (${(trad.twii.change || 0).toFixed(2)}%)\n`;
+    }
+    if (trad.gspc) {
+        text += `- S&P 500 (US): ${trad.gspc.price.toLocaleString()} (${(trad.gspc.change || 0).toFixed(2)}%)\n`;
+    }
+
     return text;
 }
 
