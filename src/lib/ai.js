@@ -91,9 +91,20 @@ const reportSchema = {
                 },
                 required: ["from", "to", "type"]
             }
+        },
+        tactical_advice: {
+            type: SchemaType.OBJECT,
+            description: "戰術執行建議 (v9.1.0)",
+            properties: {
+                action: { type: SchemaType.STRING, description: "建議行動 (強力買入/分批加碼/觀望/分批減碼/強力賣出)" },
+                confidence: { type: SchemaType.NUMBER, description: "信賴程度 (0-100)" },
+                position_size: { type: SchemaType.STRING, description: "建議投入倉位比例 (如: 5-10% 總資金)" },
+                rationale: { type: SchemaType.STRING, description: "戰術一句話摘要" }
+            },
+            required: ["action", "confidence", "position_size", "rationale"]
         }
     },
-    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events", "relations"]
+    required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events", "relations", "tactical_advice"]
 };
 
 async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
@@ -209,6 +220,11 @@ ${contextPrompt}
 
 2. **relations**: 
    - 請從大盤趨勢與新聞脈絡中，識別出實體間的「動態關聯」(供應鏈、競爭、政策影響等)。格式為 {from, to, type}。
+
+3. **tactical_advice (v9.1.0 重點)**:
+   - 請根據新聞情緒、行情數據與技術指標，給出單一且明確的「執行建議」。
+   - **position_size**: 請給出具體的比例建議 (如：建議動用 20% 現金儲備進場)。
+   - **confidence**: 必須綜合基本面與技術面的背離情況給分。
 
 新聞資料：
 ${blob}

@@ -1,11 +1,10 @@
 require('dotenv').config();
-const { getMarketSnapshot } = require('./lib/mcp');
-const { fetchAllNews } = require('./lib/scraper'); // This line is new based on the provided snippet, but not in the original content. I will keep the original content's requires and only add the new one.
+const { getMarketSnapshot, formatSnapshotForAI } = require('./lib/mcp');
 const { getSummary } = require('./lib/ai');
-const { getTechnicalIndicators } = require('./lib/indicators'); // Added this line
-const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler'); // Kept from original
-const { generateHTMLReport } = require('./lib/ui'); // Kept from original
-const { log, sendDiscord, saveReport, sendDiscordEmbed } = require('./lib/utils'); // Modified based on snippet and original
+const { getTechnicalIndicators } = require('./lib/indicators');
+const { fetchRSS, fetchContent, fetchCnyesAPI } = require('./lib/crawler');
+const { generateHTMLReport } = require('./lib/ui');
+const { log, sendDiscord, saveReport, sendDiscordEmbed } = require('./lib/utils');
 const { pushToGitHub } = require('./lib/git');
 const db = require('./lib/db');
 const config = require('./lib/config');
@@ -231,11 +230,19 @@ async function runTask() {
                     .map(e => e.ticker ? `**${e.name}(${e.ticker})**` : e.name)
                     .join(', ');
 
+                const tactical = aiResult.tactical_advice || {};
+                const advisoryIcon = tactical.action?.includes('買') ? '💰' : tactical.action?.includes('賣') ? '📦' : '⚖️';
+
                 const discordMsg = `
 # ${title}
 ---
 **今日情緒**: ${sentimentIcon} ${aiResult.sentiment_score}
 **關注焦點**: ${entityTags || '無'}
+
+## 🎯 **戰術執行建議 (v9.1.0)**
+- **建議行動**: ${advisoryIcon} **${tactical.action || '觀望'}** (信心: ${tactical.confidence || 0}%)
+- **建議倉位**: **${tactical.position_size || '不建議進場'}**
+- **戰術金律**: ${tactical.rationale || '無'}
 
 ## 📝 **重點摘要**
 ${cleanSummary}
