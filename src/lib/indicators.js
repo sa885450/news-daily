@@ -1,5 +1,9 @@
 const YahooFinance = require('yahoo-finance2').default;
-const yahoo = new YahooFinance();
+// 🟢 跳過驗證錯誤並關閉所有不必要的通知
+const yahoo = new YahooFinance({
+    validation: { logErrors: false },
+    suppressNotices: ['yahooSurvey', 'ripHistorical']
+});
 
 /**
  * 計算 RSI (相對強弱指標)
@@ -7,12 +11,12 @@ const yahoo = new YahooFinance();
  * @returns {Number} RSI 數值
  */
 function calculateRSI(prices) {
-    if (prices.length < 15) return 50; // 數據不足，回傳中性值
+    if (prices.length < 15) return 50;
 
     let gains = 0;
     let losses = 0;
 
-    for (let i = 1; i < 15; i++) {
+    for (let i = 1; i < prices.length; i++) {
         const diff = prices[i] - prices[i - 1];
         if (diff >= 0) gains += diff;
         else losses -= diff;
@@ -29,18 +33,25 @@ function calculateRSI(prices) {
  * @returns {Promise<Object>} 指標物件
  */
 async function getTechnicalIndicators(symbol) {
+    if (!symbol) return null;
     try {
         const endDate = new Date();
         const startDate = new Date();
-        startDate.setDate(endDate.getDate() - 30); // 獲取 30 天歷史
+        startDate.setDate(endDate.getDate() - 60); // 獲取 60 天歷史，確保扣除假日後足夠計算 20MA
 
-        const history = await yahoo.historical(symbol, {
+        // 🟢 升級：使用 chart() 代替已廢棄的 historical()，減少日誌噪音
+        const result = await yahoo.chart(symbol, {
             period1: startDate,
             period2: endDate,
             interval: '1d'
         });
 
-        if (!history || history.length < 20) return null;
+        const history = result.quotes;
+
+        if (!history || history.length < 20) {
+            // console.error(`[DEBUG] ${symbol} 歷史數據不足: ${history?.length || 0}`);
+            return null;
+        }
 
         const closePrices = history.map(h => h.close).filter(p => p != null);
         const latestPrice = closePrices[closePrices.length - 1];
