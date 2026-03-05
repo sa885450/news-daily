@@ -25,12 +25,13 @@ async function getMarketSnapshot() {
             };
         }
 
-        // 2. 傳統金融快照 (模擬核心指數 / 匯率)
+        // 2. 傳統金融快照 (模擬核心指數 / 匯率 / 定點標的)
         snapshot.traditional = {
-            twii: { name: '台股加權', price: '23,256', change: 1.25, symbol: '^TWII' },
-            spx: { name: 'S&P 500', price: '5,890', change: -0.32, symbol: '^GSPC' },
-            usdtwd: { name: '美元/台幣', price: '32.14', change: 0.12, symbol: 'USDTWD' },
-            jpyusd: { name: '日圓/美元', price: '150.2', change: -0.45, symbol: 'JPYUSD' }
+            twii: { name: '台股加權', price: 23256, change: 1.25, symbol: '^TWII' },
+            spx: { name: 'S&P 500', price: 5890, change: -0.32, symbol: '^GSPC' },
+            t2330: { name: '台積電', price: 1050, change: 2.15, symbol: '2330.TW' },
+            t0050: { name: '元大台灣50', price: 195.4, change: 1.12, symbol: '0050.TW' },
+            t009816: { name: '凱基台灣Top50', price: 15.2, change: 0.85, symbol: '009816.TW' }
         };
 
         log('✅', '市場數據獲取成功');

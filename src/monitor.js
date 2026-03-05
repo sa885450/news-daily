@@ -11,58 +11,64 @@ async function runMonitor() {
 
     try {
         const snapshot = await getMarketSnapshot();
-        if (!snapshot || !snapshot.crypto || !snapshot.crypto.btc) {
-            log('⚠️', '無法獲取完整快照，監控跳過。');
+        if (!snapshot) {
+            log('⚠️', '無法獲取快照，監控跳過。');
             return;
         }
 
+        // 平坦化所有監控標的
+        const allTargets = [
+            ...(Object.values(snapshot.crypto || {})),
+            ...(Object.values(snapshot.traditional || {}))
+        ];
+
         // 讀取上次狀態
-        let lastState = {};
+        let state = {};
         if (fs.existsSync(MONITOR_STATE_FILE)) {
-            lastState = JSON.parse(fs.readFileSync(MONITOR_STATE_FILE, 'utf8'));
+            state = JSON.parse(fs.readFileSync(MONITOR_STATE_FILE, 'utf8'));
         }
 
-        const btcCurrent = snapshot.crypto.btc.price;
-        const btcLast = lastState.btcPrice || btcCurrent;
+        const ALERT_THRESHOLD = -3.0; // 統一跌幅 3% 預警
+        let alertSent = false;
 
-        // 計算變動率 (與上次監控對比)
-        const changeRate = ((btcCurrent - btcLast) / btcLast) * 100;
+        for (const target of allTargets) {
+            const currentPrice = typeof target.price === 'string' ? parseFloat(target.price.replace(/,/g, '')) : target.price;
+            const lastPrice = state[target.name] || currentPrice;
 
-        log('📊', `BTC 當前價格: $${btcCurrent.toLocaleString()} (對比上次: ${changeRate.toFixed(2)}%)`);
+            if (isNaN(currentPrice)) continue;
 
-        // 偵測異動 (例如變動絕對值 > 2% 或 跌幅 > 3%)
-        const ALERT_THRESHOLD = -3.0; // 跌幅 3% 預警
+            const changeRate = ((currentPrice - lastPrice) / lastPrice) * 100;
+            log('📊', `[${target.name}] 當前: ${currentPrice} (幅: ${changeRate.toFixed(2)}%)`);
 
-        if (changeRate <= ALERT_THRESHOLD) {
-            log('🚨', '偵測到劇烈波動，正在發送預警...');
+            if (changeRate <= ALERT_THRESHOLD) {
+                log('🚨', `偵測到 ${target.name} 劇烈波動!`);
 
-            const alertMsg = `
+                const alertMsg = `
 # 🚨 **市場異動預警 (Anomaly Detected)**
 ---
-**偵測標的**: 比特幣 (BTC)
-**當前價格**: $${btcCurrent.toLocaleString()} USD
+**偵測標的**: ${target.name} (${target.symbol || 'N/A'})
+**當前價格**: ${currentPrice.toLocaleString()}
 **異動幅度**: **${changeRate.toFixed(2)}%** (自上次監控)
 
-💡 *此為自動監控訊號，顯示市場出現短線劇烈波動，請注意倉位風險。*
+💡 *市場出現顯著波動，建議檢查相關新聞或事件。*
 🔗 [即時戰情室](https://${config.githubUser}.github.io/${config.repoName}/public/)
-            `.trim();
+                `.trim();
 
-            await sendDiscord(alertMsg, config.discordAlertWebhook);
-            log('✅', '預警簡訊已發送至指定頻道。');
+                await sendDiscord(alertMsg, config.discordAlertWebhook);
+                alertSent = true;
+            }
+
+            // 更新個體狀態
+            state[target.name] = currentPrice;
         }
 
-        // 儲存狀態供下次比對
-        const newState = {
-            btcPrice: btcCurrent,
-            updatedAt: new Date().toISOString()
-        };
-
-        // 確保 data 目錄存在
+        // 儲存總體狀態
+        state.updatedAt = new Date().toISOString();
         const dataDir = path.join(__dirname, '../data');
         if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
 
-        fs.writeFileSync(MONITOR_STATE_FILE, JSON.stringify(newState, null, 2));
-        log('💾', '狀態已更新。');
+        fs.writeFileSync(MONITOR_STATE_FILE, JSON.stringify(state, null, 2));
+        log('💾', alertSent ? '✅ 預警已發布且狀態已保存' : '💾 狀態已更新');
 
     } catch (e) {
         log('❌', `監控執行出錯: ${e.message}`);
