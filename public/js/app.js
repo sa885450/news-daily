@@ -32,6 +32,7 @@ async function init() {
         appData = await response.json();
 
         renderHeader();
+        renderMarketTicker(); // 🟢 v8.4.0
         renderSummary();
         renderCharts();
         renderKeywordsCloud();
@@ -68,6 +69,45 @@ function renderHeader() {
             #${e.name}${e.ticker ? `<span class="text-xs ml-1 opacity-70">(${e.ticker})</span>` : ''}
         </button>
     `).join('');
+}
+
+function renderMarketTicker() {
+    const container = document.getElementById('market-ticker');
+    const snapshot = appData.market_snapshot;
+    if (!snapshot) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    const items = [
+        ...(Object.values(snapshot.traditional || {})),
+        ...(Object.values(snapshot.crypto || {}))
+    ];
+
+    if (items.length === 0) {
+        container.classList.add('hidden');
+        return;
+    }
+
+    container.classList.remove('hidden');
+    container.innerHTML = items.map(item => {
+        const isUp = item.change > 0;
+        const colorClass = isUp ? 'text-red-500' : (item.change < 0 ? 'text-green-500' : 'text-slate-400');
+        const bgColorClass = isUp ? 'bg-red-50 dark:bg-red-900/10' : (item.change < 0 ? 'bg-green-50 dark:bg-green-900/10' : 'bg-slate-50 dark:bg-slate-800/50');
+        const arrow = isUp ? '▲' : (item.change < 0 ? '▼' : '▬');
+
+        return `
+            <div class="flex-shrink-0 flex items-center gap-3 px-4 py-2 ${bgColorClass} rounded-xl border border-white/50 dark:border-slate-700/50 shadow-sm transition-transform hover:scale-105 cursor-default group">
+                <div class="flex flex-col">
+                    <span class="text-[10px] font-black text-slate-400 uppercase tracking-tighter">${item.name}</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="text-sm font-bold text-slate-700 dark:text-slate-200">${typeof item.price === 'number' ? item.price.toLocaleString() : item.price}</span>
+                        <span class="text-[11px] font-black ${colorClass}">${arrow} ${Math.abs(item.change).toFixed(2)}%</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 function renderSummary() {

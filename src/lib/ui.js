@@ -9,7 +9,7 @@ const { log } = require('./utils');
 /**
  * v6.0.0 CSR 重構：產出數據 JSON 代替 HTML
  */
-async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = [], events = [], relations = []) {
+async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartData = [], keywords7d = [], events = [], relations = [], marketSnapshot = null) {
     ensureDir(publicDir);
     ensureDir(path.join(publicDir, 'data'));
 
@@ -22,6 +22,7 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
     const dataPackage = {
         updateTime: dateObj.toISOString(),
         fullDateStr: `${dateObj.toLocaleDateString('zh-TW')} · 更新於 ${dateObj.toLocaleTimeString('zh-TW', { hour12: false })}`,
+        market_snapshot: marketSnapshot, // 🟢 v8.4.0: 引入 MCP 市場行情
         aiResult: {
             ...aiResult,
             sentiment_score: aiResult.sentiment_score || 0,

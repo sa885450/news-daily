@@ -193,7 +193,7 @@ async function runTask() {
                 clusteredNews.push(mainNews);
             }
 
-            generateHTMLReport(aiResult, clusteredNews, keywordStats, recentStats, keywords7d, aiResult.events, aiResult.relations);
+            generateHTMLReport(aiResult, clusteredNews, keywordStats, recentStats, keywords7d, aiResult.events, aiResult.relations, marketSnapshot);
 
             // 發送 Discord
             try {
