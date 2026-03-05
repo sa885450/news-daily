@@ -67,10 +67,21 @@ async function sendDiscord(content, webhookUrl = discordWebhook) {
     }
 }
 
+async function sendDiscordEmbed(embed, webhookUrl = discordWebhook) {
+    if (!webhookUrl) return;
+
+    try {
+        await axios.post(webhookUrl, { embeds: [embed] });
+    } catch (e) {
+        const errMsg = e.response ? `Status ${e.response.status}` : e.message;
+        log('❌', `Discord Embed 發送失敗: ${errMsg}`);
+    }
+}
+
 async function sendDiscordError(errorMsg) {
     if (!discordWebhook) return;
     const content = `🚨 **AI 處理嚴重錯誤** 🚨\n\`\`\`\n${errorMsg}\n\`\`\``;
     await sendDiscord(content);
 }
 
-module.exports = { log, sleep, ensureDir, sendDiscord, sendDiscordError };
+module.exports = { log, sleep, ensureDir, sendDiscord, sendDiscordEmbed, sendDiscordError };

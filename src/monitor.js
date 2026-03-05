@@ -1,79 +1,96 @@
 const { getMarketSnapshot } = require('./lib/mcp');
-const { log, sendDiscord } = require('./lib/utils');
+const { log, sendDiscordEmbed } = require('./lib/utils');
 const config = require('./lib/config');
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
 
 const MONITOR_STATE_FILE = path.join(__dirname, '../data/monitor_state.json');
 
+// 🟢 第三階段優化：差異化門檻
+function getThreshold(symbol) {
+    if (symbol.startsWith('^')) return -1.0; // 指數類跌 1% 預警
+    if (symbol.includes('.TW')) return -2.0; // 盤中個股跌 2% 預警
+    return -5.0; // 加密貨幣波動大，跌 5% 預警
+}
+
 async function runMonitor() {
-    log('📡', '啟動輕量級監控任務...');
+    log('📡', '啟動專業級監控衛星...');
 
     try {
         const snapshot = await getMarketSnapshot();
-        if (!snapshot) {
-            log('⚠️', '無法獲取快照，監控跳過。');
-            return;
-        }
+        if (!snapshot) return;
 
-        // 平坦化所有監控標的
         const allTargets = [
             ...(Object.values(snapshot.crypto || {})),
             ...(Object.values(snapshot.traditional || {}))
         ];
 
-        // 讀取上次狀態
         let state = {};
         if (fs.existsSync(MONITOR_STATE_FILE)) {
             state = JSON.parse(fs.readFileSync(MONITOR_STATE_FILE, 'utf8'));
         }
 
-        const ALERT_THRESHOLD = -3.0; // 統一跌幅 3% 預警
-        let alertSent = false;
+        const now = Date.now();
+        const COOL_DOWN_MS = 3600000; // 1 小時冷卻
 
         for (const target of allTargets) {
-            const currentPrice = typeof target.price === 'string' ? parseFloat(target.price.replace(/,/g, '')) : target.price;
-            const lastPrice = state[target.name] || currentPrice;
+            const currentPrice = target.price;
+            const lastPrice = state[target.name]?.price || currentPrice;
+            const lastAlertAt = state[target.name]?.lastAlertAt || 0;
 
-            if (isNaN(currentPrice)) continue;
+            if (!currentPrice || isNaN(currentPrice)) continue;
 
             const changeRate = ((currentPrice - lastPrice) / lastPrice) * 100;
-            log('📊', `[${target.name}] 當前: ${currentPrice} (幅: ${changeRate.toFixed(2)}%)`);
+            const threshold = getThreshold(target.symbol || '');
 
-            if (changeRate <= ALERT_THRESHOLD) {
-                log('🚨', `偵測到 ${target.name} 劇烈波動!`);
+            log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (門檻: ${threshold}%, 當前: ${changeRate.toFixed(2)}%)`);
 
-                const alertMsg = `
-# 🚨 **市場異動預警 (Anomaly Detected)**
----
-**偵測標的**: ${target.name} (${target.symbol || 'N/A'})
-**當前價格**: ${currentPrice.toLocaleString()}
-**異動幅度**: **${changeRate.toFixed(2)}%** (自上次監控)
+            // 異動偵測邏輯
+            if (changeRate <= threshold && (now - lastAlertAt > COOL_DOWN_MS)) {
+                log('🚨', `觸發預警: ${target.name}`);
 
-💡 *市場出現顯著波動，建議檢查相關新聞或事件。*
-🔗 [即時戰情室](https://${config.githubUser}.github.io/${config.repoName}/public/)
-                `.trim();
+                const isDrop = changeRate < 0;
+                const embed = {
+                    title: `🏮 市場移動預警: ${target.name}`,
+                    description: `偵測到標的 **${target.name}** 出現顯著波動。`,
+                    color: isDrop ? 15158332 : 3066993, // 紅色 : 綠色 (Discord Color Code)
+                    fields: [
+                        { name: '當前價格', value: `**$${currentPrice.toLocaleString()}**`, inline: true },
+                        { name: '波動幅度', value: `**${changeRate.toFixed(2)}%**`, inline: true },
+                        { name: '門檻觸發', value: `${threshold}%`, inline: true }
+                    ],
+                    footer: { text: "AI 財經監控終端 v8.8.0" },
+                    timestamp: new Date().toISOString()
+                };
 
-                await sendDiscord(alertMsg, config.discordAlertWebhook);
-                alertSent = true;
+                await sendDiscordEmbed(embed, config.discordAlertWebhook);
+
+                // 儲存警報時間
+                state[target.name] = { price: currentPrice, lastAlertAt: now };
+
+                // 🟢 智慧聯動：如果跌幅劇烈 (<-3.0% 或 指數跌 > 1%)，主動觸發 AI 分析
+                if (changeRate <= -3.0 || (target.symbol.startsWith('^') && changeRate <= -1.0)) {
+                    log('🧠', '啟動 AI 智慧追擊分析...');
+                    exec(`node src/index.js --emergency --target="${target.name}"`, (err) => {
+                        if (err) log('❌', `AI 聯動失敗: ${err.message}`);
+                    });
+                }
+            } else {
+                // 僅更新價格，不重置警報時間
+                state[target.name] = {
+                    price: currentPrice,
+                    lastAlertAt: lastAlertAt
+                };
             }
-
-            // 更新個體狀態
-            state[target.name] = currentPrice;
         }
 
-        // 儲存總體狀態
-        state.updatedAt = new Date().toISOString();
-        const dataDir = path.join(__dirname, '../data');
-        if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
-
         fs.writeFileSync(MONITOR_STATE_FILE, JSON.stringify(state, null, 2));
-        log('💾', alertSent ? '✅ 預警已發布且狀態已保存' : '💾 狀態已更新');
+        log('💾', '所有標的巡邏完畢，狀態已存檔。');
 
     } catch (e) {
-        log('❌', `監控執行出錯: ${e.message}`);
+        log('❌', `監控程序異常: ${e.message}`);
     }
 }
 
-// 執行
 runMonitor();

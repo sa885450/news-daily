@@ -1,5 +1,9 @@
 const axios = require('axios');
+const yahooFinance = require('yahoo-finance2').default;
 const { log } = require('./utils');
+
+// 🟢 關閉 yahoo-finance2 的日誌以免刷屏
+yahooFinance.setGlobalConfig({ validation: { logErrors: false } });
 
 /**
  * 獲取全球市場與加密貨幣快照
@@ -14,34 +18,54 @@ async function getMarketSnapshot() {
     };
 
     try {
-        // 1. 加密貨幣 (CoinGecko Simple Price)
-        const cryptoRes = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin&vs_currencies=usd&include_24hr_change=true', { timeout: 10000 });
-        if (cryptoRes.data) {
-            snapshot.crypto = {
-                btc: { name: 'BTC', price: cryptoRes.data.bitcoin.usd, change: cryptoRes.data.bitcoin.usd_24h_change },
-                eth: { name: 'ETH', price: cryptoRes.data.ethereum.usd, change: cryptoRes.data.ethereum.usd_24h_change },
-                sol: { name: 'SOL', price: cryptoRes.data.solana.usd, change: cryptoRes.data.solana.usd_24h_change },
-                bnb: { name: 'BNB', price: cryptoRes.data.binancecoin.usd, change: cryptoRes.data.binancecoin.usd_24h_change }
-            };
+        // 1. 加密貨幣 (CoinGecko)
+        try {
+            const cryptoRes = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin&vs_currencies=usd&include_24hr_change=true', { timeout: 8000 });
+            if (cryptoRes.data) {
+                snapshot.crypto = {
+                    btc: { name: 'BTC', price: cryptoRes.data.bitcoin.usd, change: cryptoRes.data.bitcoin.usd_24h_change, symbol: 'BTC' },
+                    eth: { name: 'ETH', price: cryptoRes.data.ethereum.usd, change: cryptoRes.data.ethereum.usd_24h_change, symbol: 'ETH' },
+                    sol: { name: 'SOL', price: cryptoRes.data.solana.usd, change: cryptoRes.data.solana.usd_24h_change, symbol: 'SOL' },
+                    bnb: { name: 'BNB', price: cryptoRes.data.binancecoin.usd, change: cryptoRes.data.binancecoin.usd_24h_change, symbol: 'BNB' }
+                };
+            }
+        } catch (ce) {
+            log('⚠️', `加密貨幣獲取失敗: ${ce.message}`);
         }
 
-        // 2. 傳統金融快照 (模擬核心指數 / 匯率 / 定點標的)
-        snapshot.traditional = {
-            twii: { name: '台股加權', price: 23256, change: 1.25, symbol: '^TWII' },
-            spx: { name: 'S&P 500', price: 5890, change: -0.32, symbol: '^GSPC' },
-            t2330: { name: '台積電', price: 1050, change: 2.15, symbol: '2330.TW' },
-            t0050: { name: '元大台灣50', price: 195.4, change: 1.12, symbol: '0050.TW' },
-            t009816: { name: '凱基台灣Top50', price: 15.2, change: 0.85, symbol: '009816.TW' }
-        };
+        // 2. 傳統金融 (Yahoo Finance)
+        log('📈', '正在同步 Yahoo Finance 全球指標...');
+        const symbols = ['^TWII', '^GSPC', '2330.TW', '0050.TW', '009816.TW'];
 
-        log('✅', '市場數據獲取成功');
+        for (const symbol of symbols) {
+            try {
+                const quote = await yahooFinance.quote(symbol);
+                if (quote) {
+                    const key = symbol.replace(/\.TW|\^/g, '').toLowerCase();
+                    const nameMap = {
+                        'twii': '台股加權',
+                        'gspc': 'S&P 500',
+                        '2330': '台積電',
+                        '0050': '元大台灣50',
+                        '009816': '凱基台灣Top50'
+                    };
+
+                    snapshot.traditional[key] = {
+                        name: nameMap[key] || symbol,
+                        price: quote.regularMarketPrice,
+                        change: quote.regularMarketChangePercent,
+                        symbol: symbol
+                    };
+                }
+            } catch (ye) {
+                log('⚠️', `指標 ${symbol} 獲取失敗: ${ye.message}`);
+            }
+        }
+
+        log('✅', '市場數據同步完成');
         return snapshot;
     } catch (e) {
-        log('⚠️', `部分行情數據獲取失敗: ${e.message}`);
-        // 兜底數據，防止前端崩潰
-        if (Object.keys(snapshot.crypto).length === 0) {
-            snapshot.crypto = { btc: { name: 'BTC', price: 92000, change: 0 } };
-        }
+        log('⚠️', `市場快照程序異常: ${e.message}`);
         return snapshot;
     }
 }

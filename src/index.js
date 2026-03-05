@@ -147,8 +147,8 @@ async function runTask() {
             const marketSnapshot = await getMarketSnapshot();
             const marketDataStr = formatSnapshotForAI(marketSnapshot);
 
-            // 🟢 AI 分析 (傳入行情數據)
-            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr);
+            // 🟢 AI 分析 (傳入行情數據、緊急模式參數)
+            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr, isEmergency, targetName);
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
             // 更新分類
@@ -201,6 +201,7 @@ async function runTask() {
                 const sentimentIcon = aiResult.sentiment_score > 0 ? '🔥' : '❄️';
                 const cleanSummary = (aiResult.summary || "無摘要").replace(/<[^>]*>/g, '').substring(0, 800) + '...';
                 const reportUrl = `https://${config.githubUser}.github.io/${config.repoName}/public/`;
+                const title = isEmergency ? `🚨 **緊急異動深度分析** (${targetName})` : `📅 **AI 每日新聞快報** (${dateStr})`;
 
                 // 🟢 在 Discord 訊息加入關鍵實體代碼
                 const entityTags = (aiResult.entities || [])
@@ -208,7 +209,7 @@ async function runTask() {
                     .join(', ');
 
                 const discordMsg = `
-# 📅 **AI 每日新聞快報** (${dateStr})
+# ${title}
 ---
 **今日情緒**: ${sentimentIcon} ${aiResult.sentiment_score}
 **關注焦點**: ${entityTags || '無'}

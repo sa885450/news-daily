@@ -157,13 +157,19 @@ function getPersona(lastScore) {
     return "你是一位【宏觀避險基金經理人】。市場情緒中性，請平衡分析多空因素，尋找結構性的成長機會。";
 }
 
-async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null) {
+async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '') {
     const blob = newsData.map((n, i) => {
         const content = n.content || n.title || "無內文";
         return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 1000)}...`;
     }).join('\n\n---\n\n');
 
     const persona = getPersona(lastScore);
+
+    // 🟢 緊急模式特別指令
+    const emergencyPrompt = isEmergency
+        ? `🚨 **緊急報警追蹤**：目前系統監測到 **${targetName}** 出現重大異動！請從以下新聞中，特別針對該標的進行深度挖掘，分析其波動原因、市場情緒，並評估對大盤的後續影響。`
+        : "";
+
     const contextPrompt = lastSummary
         ? `🔍 **增量分析**：昨日重點為「${lastSummary.substring(0, 300)}...」。請比較今日變化。`
         : `🔍 **初始分析**：建立基準。`;
@@ -173,6 +179,8 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0, marketDat
 
     const prompt = `${persona}
 請閱讀新聞並產出深度決策報告。請務必依據 schema 格式精確回傳。
+
+${emergencyPrompt}
 
 ${marketPrompt}
 
