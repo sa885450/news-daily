@@ -1,6 +1,6 @@
 {
-  "updateTime": "2026-03-05T18:01:31.408Z",
-  "fullDateStr": "2026/3/6 · 更新於 02:01:31",
+  "updateTime": "2026-03-05T20:01:08.793Z",
+  "fullDateStr": "2026/3/6 · 更新於 04:01:08",
   "market_snapshot": {
     "traditional": {
       "2330": {
@@ -17,8 +17,8 @@
       },
       "gspc": {
         "name": "S&P 500",
-        "price": 6779.67,
-        "change": -1.3075721,
+        "price": 6783.8,
+        "change": -1.2475463,
         "symbol": "^GSPC"
       },
       "0050": {
@@ -32,296 +32,253 @@
         "price": 10.83,
         "change": 2.169807,
         "symbol": "009816.TW"
+      },
+      "gc": {
+        "name": "黃金期貨",
+        "price": 5078.4,
+        "change": -1.096467,
+        "symbol": "GC=F"
       }
     },
     "crypto": {
       "btc": {
         "name": "BTC",
-        "price": 70743,
-        "change": -3.4190925343525698,
+        "price": 70956,
+        "change": -3.6830634095150354,
         "symbol": "BTC"
       },
       "eth": {
         "name": "ETH",
-        "price": 2059.76,
-        "change": -4.064847485555647,
+        "price": 2074.85,
+        "change": -4.793023272126012,
         "symbol": "ETH"
       },
       "sol": {
         "name": "SOL",
-        "price": 88.17,
-        "change": -3.8643827937956905,
+        "price": 88.85,
+        "change": -4.885762197127728,
         "symbol": "SOL"
       },
       "bnb": {
         "name": "BNB",
-        "price": 647.56,
-        "change": -1.679914171795482,
+        "price": 648.64,
+        "change": -2.2154751804891597,
         "symbol": "BNB"
       }
     },
-    "updatedAt": "2026-03-05T18:00:45.577Z"
+    "updatedAt": "2026-03-05T20:00:36.849Z"
   },
   "aiResult": {
-    "sentiment_score": -0.25,
+    "sentiment_score": -0.68,
     "dimensions": {
-      "policy": -0.6,
-      "market": -0.4,
-      "industry": 0.2,
-      "international": -0.7,
-      "technical": -0.3
+      "policy": -0.85,
+      "market": -0.72,
+      "industry": -0.45,
+      "international": -0.9,
+      "technical": 0.25
     },
     "entities": [
       {
+        "name": "台積電",
+        "sentiment": "Neutral",
+        "ticker": "2330.TW"
+      },
+      {
+        "name": "輝達",
+        "sentiment": "Negative",
+        "ticker": "NVDA-US"
+      },
+      {
         "name": "博通",
-        "sentiment": "貪婪",
-        "ticker": "AVGO.US"
+        "sentiment": "Positive",
+        "ticker": "AVGO-US"
       },
       {
-        "name": "應用材料",
-        "sentiment": "恐慌",
-        "ticker": "AMAT.US"
+        "name": "美光科技",
+        "sentiment": "Negative",
+        "ticker": "MU-US"
       },
       {
-        "name": "科林研發",
-        "sentiment": "恐慌",
-        "ticker": "LRCX.US"
+        "name": "OpenAI",
+        "sentiment": "Positive",
+        "ticker": null
       },
       {
-        "name": "奇異",
-        "sentiment": "恐慌",
-        "ticker": "GE.US"
-      },
-      {
-        "name": "莫德納",
-        "sentiment": "恐慌",
-        "ticker": "MRNA.US"
-      },
-      {
-        "name": "英特格",
-        "sentiment": "恐慌",
-        "ticker": "ENTG.US"
+        "name": "Anthropic",
+        "sentiment": "Negative",
+        "ticker": null
       }
     ],
-    "summary": "<h3>【宏觀決策報告：半導體設備修正與地緣關稅亂局】</h3><p>今日市場延續了昨日的高波動特徵，但結構上出現了顯著的<b>「設備 vs. 應用」背離</b>。儘管博通 (AVGO) 憑藉 2027 年 AI 營收破千億的強勁指引大漲 5%，顯示 AI 基礎設施需求依然乾涸，但半導體設備端如應用材料 (AMAT) 與科林研發 (LRCX) 卻因宏觀不確定性與漲多修正而集體重挫 5% 以上 [ID:4, 5, 13]。</p><p><b>關鍵變數：</b>24 個州政府聯合對川普政府的全球關稅政策發起法律挑戰，這不僅增加了憲政爭議，也讓跨國企業的稅負預期更加混亂 [ID:10]。同時，荷姆茲海峽的航運停擺依然是能源市場的未爆彈，布蘭特原油在 81-84 美元震盪，等待護航政策明確化 [ID:12]。</p><p><b>操作建議：</b>目前市場正處於「AI 溢價」與「通膨關稅恐懼」的拉鋸戰。策略上應<b>避開重資產與高度依賴全球供應鏈的設備商</b>，轉而配置具有高度議價能力的客製化 ASIC 與 AI 網路基礎設施龍頭。加密貨幣市場回調 3-4% 顯示避險情緒升溫，短線建議增持現金或具防禦屬性的能源避險部位。</p>",
+    "summary": "<h3>【戰術報告：全球許可制衝擊與宏觀通膨回歸】</h3><p>市場今日進入系統性修正。核心壓力源自<b>美國政府擬推動「全球 AI 晶片許可制」</b>，此舉將美國商務部角色從特定限制者轉變為全球供應鏈守門人，直接衝擊 NVDA 與 AMD 的全球市場預期 [ID:1]。費城半導體指數 (SOX) 重挫 3%，技術面上，設備股 (KLAC, LRCX) 延續昨日修正，美光 (MU) 出現 5% 以上崩跌 [ID:5, 6, 7]。</p><p><b>宏觀面惡化：</b>中東衝突引發油價、美債殖利率與美元同步走強，市場開始定價「2022 年通膨危機」重演，聯準會降息路徑面臨結構性阻礙 [ID:8]。AI 產業內部出現政治清洗，Anthropic 因政治立場遭川普政府封殺，OpenAI 則透過國防合作實現擴張 [ID:9]。</p><p><b>台股連動：</b>2330.TW 當前價格 1900 已跌破 MA5 (1934)，雖 MA20 (1861.75) 仍具支撐，但受美股半導體與出口禁令擴大影響，短期承壓顯著。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "半導體設備"
+        "category": "地緣政治風險"
       },
       {
         "id": 2,
-        "category": "地緣政治"
+        "category": "出口管制政策"
       },
       {
         "id": 3,
-        "category": "政策關稅"
+        "category": "半導體產業修正"
       }
     ],
     "sector_stats": {
-      "tech": -0.1,
+      "tech": -0.75,
       "finance": -0.3,
-      "manufacturing": -0.6,
-      "service": -0.2
+      "manufacturing": -0.55,
+      "service": -0.4
     },
     "events": [
       {
-        "title": "24州提告挑戰川普關稅",
-        "summary": "紐約等24州對新關稅法規發起法律訴訟，質疑其違反憲法權力分立與貿易法濫用。",
+        "title": "AI 晶片全球出口許可制草擬",
+        "summary": "美國擬要求輝達、AMD 銷往全球任何地區之 AI 晶片均需政府核准，華府正式確立 AI 守門人地位。",
         "impact": "負面",
         "related_news_ids": [
-          10
+          1
         ]
       },
       {
-        "title": "AI 營收指引與設備股背離",
-        "summary": "博通樂觀預測 AI 營收長期增長，但半導體設備商與封裝測試板塊出現 5% 以上集體修正。",
+        "title": "中東戰事引發通膨連鎖效應",
+        "summary": "油價、殖利率與美元三升，市場憂心聯準會降息計畫生變並重演 2022 年通膨風暴。",
+        "impact": "負面",
+        "related_news_ids": [
+          8
+        ]
+      },
+      {
+        "title": "AI 產業政治版圖大洗牌",
+        "summary": "Anthropic 遭聯邦禁用，OpenAI 迅速承接國防合約，顯示政治靠攏成為 AI 企業生存指標。",
         "impact": "中性",
         "related_news_ids": [
-          0,
-          2,
-          4,
-          5,
-          6,
-          13
-        ]
-      },
-      {
-        "title": "荷姆茲海峽航運危機",
-        "summary": "中東能源樞紐持續停擺，華爾街聚焦川普政府是否能提供有效護航與保險方案。",
-        "impact": "負面",
-        "related_news_ids": [
-          12
+          9
         ]
       }
     ],
     "relations": [
       {
-        "from": "川普政府",
-        "to": "美國跨國企業",
-        "type": "關稅政策壓力"
+        "from": "美國政府",
+        "to": "NVIDIA",
+        "type": "監管約束"
       },
       {
-        "from": "荷姆茲海峽",
-        "to": "布蘭特原油",
-        "type": "供應中斷與價格推升"
+        "from": "中東衝突",
+        "to": "黃金/石油",
+        "type": "推升通膨/避險需求"
       },
       {
-        "from": "博通",
-        "to": "台積電",
-        "type": "長期產能確保"
+        "from": "OpenAI",
+        "to": "Anthropic",
+        "type": "政治競爭與市場取代"
       }
-    ]
+    ],
+    "tactical_advice": {
+      "action": "建議觀望並分批減碼短期投機倉位",
+      "confidence": 85,
+      "position_size": "維持 30-40% 現金水位",
+      "rationale": "2330.TW 跌破 MA5，RSI 60 未達超賣，且全球出口許可制增加不確定性。依據 v9.2.1 指令，長期核心資產 (0050.TW/2330.TW) 續抱，但不建議在此水位盲目加碼。黃金 (GC=F) 隨美元走強而回落，暫非有效避險對沖工具，資金應保留於現金儲備，靜待 MA20 (1861) 支撐測試。"
+    }
   },
   "newsData": [
     {
-      "title": "盤中速報 - 英特格(ENTG-US)大跌5.04%，報122.5美元",
-      "url": "https://news.cnyes.com/news/id/6366401",
+      "title": "盤中速報 - 菲利浦莫里斯國際(PM-US)大跌5.03%，報170.04美元",
+      "url": "https://news.cnyes.com/news/id/6366426",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;英特格(ENTG-US)截至台北時間06日01:44股價下跌6.5美元，報122.50美元，跌幅5.04%，成交量570,492（股），盤中最高價129.44美元、最低價122.47美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.95%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.29%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.06%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特格(ENTG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.68%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.79%&lt;/li&gt;    &lt;li&gt;近 3 月：+43.85%&l",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;菲利浦莫里斯國際(PM-US)截至台北時間06日03:01股價下跌9美元，報170.04美元，跌幅5.03%，成交量2,786,542（股），盤中最高價176.90美元、最低價170.04美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.13%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.23%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.65%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;菲利浦莫里斯國際(PM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-6.25%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.36%&lt;/li&gt;    &lt;li&gt;近 3 月：+19",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - IDEXX實驗室(IDXX-US)大跌5.07%，報615.78美元",
-      "url": "https://news.cnyes.com/news/id/6366400",
+      "title": "美擬推AI晶片「全球許可制」 輝達、AMD出口恐都要華府點頭",
+      "url": "https://news.cnyes.com/news/id/6366421",
       "source": "鉅亨網(wd_stock)",
-      "category": "半導體設備",
+      "category": "地緣政治風險",
       "thumbnail": null,
-      "content": "&lt;p&gt;IDEXX實驗室(IDXX-US)截至台北時間06日01:43股價下跌32.92美元，報615.78美元，跌幅5.07%，成交量209,658（股），盤中最高價639.38美元、最低價615.78美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.93%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.27%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.55%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;IDEXX實驗室(IDXX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.15%&lt;/li&gt;    &lt;li&gt;近 3",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;彭博引述消息人士報導，美國官員已草擬法規，未來若未經美國政府批准，將限制 AI 晶片運往全球任何地區。此舉讓華府對於其他國家是否能建設 AI 模型訓練與運行設施，以及相關的建設條件，擁有廣泛的掌控權。&lt;/p&gt;\n\n&lt;p&gt;這項擬議中的法規，要求企業在出口輝達或超微半導體 (&lt;a data-symbol-template=&quot;USS:AMD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;AMD-US&lt;/a&gt;) 等公司的 AI 加速器時，幾乎所有訂單都必須先取得美國核准。這意味著原本僅針對約 40 個國家的出口禁令，將擴張至全球規模。&lt;/p&gt;\n\n&lt;p&gt;此消息週四 (6 日) 傳出後，輝達與超微股價應聲下挫至盤中低點，輝達跌幅一度達 1.9%，超微則下跌 2.3%。&lt;/p&gt;\n\n&lt;p&gt;輝達 (&lt;a data-symbol-template=&quot;USS:NVDA:STOCK:COMMON&quot; href=&quot;#&quot;",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 安可(AMKR-US)大跌5.13%，報43.42美元",
-      "url": "https://news.cnyes.com/news/id/6366399",
+      "title": "烏克蘭總統澤倫斯基：願跟中東夥伴合作 願以攔截型無人機換「愛國者」飛彈",
+      "url": "https://news.cnyes.com/news/id/6366322",
       "source": "鉅亨網(wd_stock)",
-      "category": "地緣政治",
+      "category": "出口管制政策",
       "thumbnail": null,
-      "content": "&lt;p&gt;安可(AMKR-US)截至台北時間06日01:41股價下跌2.35美元，報43.42美元，跌幅5.13%，成交量2,059,281（股），盤中最高價45.65美元、最低價43.42美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.97%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.26%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.05%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.49%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-12.47%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.64%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.27%&lt;",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;烏克蘭總統澤倫斯基最新表示，願同中東夥伴合作，以攔截型無人機換取「愛國者」飛彈。&lt;/p&gt;\n\n&lt;p&gt;根據《烏克蘭通訊社》報導，澤倫斯基周四 (5 日) 在接受義大利廣播電視公司採訪時表示，中東夥伴擁有「愛國者」導彈，但用飛彈擊落伊朗的無人機成本過高，更需要攔截型無人機，而烏克蘭擁有攔截型無人機。&lt;/p&gt;\n\n&lt;p&gt;他指出，烏克蘭收到來自中東夥伴的信號，他們希望獲得烏克蘭的「專業技術」，烏克蘭對技術交流和武器交換持開放態度。&lt;/p&gt;\n\n&lt;p&gt;澤倫斯基還說，受中東局勢影響，烏克蘭已向美國提議，希望能更改與美國及俄羅斯三方會談的地點，並將會談推遲一段時間。&lt;/p&gt;\n",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 和康電訊(MTSI-US)大跌5.03%，報226.99美元",
-      "url": "https://news.cnyes.com/news/id/6366398",
+      "title": "盤中速報 - 聯合包裹服務(UPS-US)大跌5.12%，報104.84美元",
+      "url": "https://news.cnyes.com/news/id/6366417",
       "source": "鉅亨網(wd_stock)",
-      "category": "政策關稅",
+      "category": "半導體產業修正",
       "thumbnail": null,
-      "content": "&lt;p&gt;和康電訊(MTSI-US)截至台北時間06日01:41股價下跌12.01美元，報226.99美元，跌幅5.03%，成交量305,437（股），盤中最高價238.12美元、最低價226.99美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.96%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.24%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.97%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.3%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;和康電訊(MTSI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-4.88%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.08%&lt;/li&gt;    &lt;li&gt;近 3 月：+28.8",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;聯合包裹服務(UPS-US)截至台北時間06日02:22股價下跌5.66美元，報104.84美元，跌幅5.12%，成交量5,438,258（股），盤中最高價110.45美元、最低價104.84美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.18%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.37%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.1%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;聯合包裹服務(UPS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.54%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.01%&lt;/li&gt;    &lt;li&gt;近 3 月：+19",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 應用材料(AMAT-US)大跌5.03%，報339.77美元",
-      "url": "https://news.cnyes.com/news/id/6366397",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;應用材料(AMAT-US)截至台北時間06日01:41股價下跌17.99美元，報339.77美元，跌幅5.03%，成交量1,917,963（股），盤中最高價354.76美元、最低價339.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.96%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.24%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.26%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;應用材料(AMAT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.05%&lt;/li&gt;    &lt;li&gt;近 1 月：+18.05%&lt;/li&gt;    &lt;li&gt;近 3 月：+",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 科林研發(LRCX-US)大跌5.02%，報211.81美元",
-      "url": "https://news.cnyes.com/news/id/6366396",
+      "title": "盤中速報 - 卡特彼勒(CAT-US)大跌5.01%，報695.32美元",
+      "url": "https://news.cnyes.com/news/id/6366416",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;科林研發(LRCX-US)截至台北時間06日01:36股價下跌11.19美元，報211.81美元，跌幅5.02%，成交量3,048,819（股），盤中最高價222.41美元、最低價211.74美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.91%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.17%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.05%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.09%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科林研發(LRCX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-12.91%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.57%&lt;/li&gt;    &lt;li&gt;近 3 月：+3",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;卡特彼勒(CAT-US)截至台北時間06日02:17股價下跌36.65美元，報695.32美元，跌幅5.01%，成交量1,696,143（股），盤中最高價728.07美元、最低價695.20美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.12%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.3%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;卡特彼勒(CAT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.8%&lt;/li&gt;    &lt;li&gt;近 1 月：+4.39%&lt;/li&gt;    &lt;li&gt;近 3 月：+20.53%&lt",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 費城半導體大跌2%，報7755.89點",
-      "url": "https://news.cnyes.com/news/id/6366395",
+      "title": "盤中速報 - 美光科技(MU-US)大跌5.03%，報380.59美元",
+      "url": "https://news.cnyes.com/news/id/6366406",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;截至台北時間06日01:35，費城半導體下跌158.58點（或2%），暫報7755.89點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-6.53%&lt;/li&gt;&lt;li&gt;近 1 月：+3.88%&lt;/li&gt;&lt;li&gt;近 3 月：+9.68%&lt;/li&gt;&lt;li&gt;近 6 月：+39.64%&lt;/li&gt;&lt;li&gt;今年以來：+11.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以連貫(COHR-US)領跌。連貫(COHR-US)下跌8.37%；Onto Innovation Inc.(ONTO-US)下跌6.24%；科林研發(LRCX-US)下跌4.9%；安可(AMKR-US)下跌4.41%；應用材料(AMAT-US)下跌4.37%。&lt;/p&gt;&",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;美光科技(MU-US)截至台北時間06日01:50股價下跌20.18美元，報380.59美元，跌幅5.03%，成交量15,478,343（股），盤中最高價404.53美元、最低價380.59美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-2.02%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.38%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.3%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.18%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;美光科技(MU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.5%&lt;/li&gt;    &lt;li&gt;近 1 月：+0.07%&lt;/li&gt;    &lt;li&gt;近 3 月：+67.52%",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 奇異(GE-US)大跌5.05%，報322.66美元",
-      "url": "https://news.cnyes.com/news/id/6366394",
+      "title": "盤中速報 - 費城半導體大跌3%，報7677.22點",
+      "url": "https://news.cnyes.com/news/id/6366405",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;奇異(GE-US)截至台北時間06日01:35股價下跌17.15美元，報322.66美元，跌幅5.05%，成交量1,872,007（股），盤中最高價341.81美元、最低價322.66美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.87%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.11%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.99%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;奇異(GE-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.55%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.37%&lt;/li&gt;    &lt;li&gt;近 3 月：+14.49%&lt;",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;截至台北時間06日01:48，費城半導體下跌237.26點（或3%），暫報7677.22點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-6.53%&lt;/li&gt;&lt;li&gt;近 1 月：+3.88%&lt;/li&gt;&lt;li&gt;近 3 月：+9.68%&lt;/li&gt;&lt;li&gt;近 6 月：+39.64%&lt;/li&gt;&lt;li&gt;今年以來：+11.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以連貫(COHR-US)領跌。連貫(COHR-US)下跌9.81%；Onto Innovation Inc.(ONTO-US)下跌7.6%；科林研發(LRCX-US)下跌6.05%；和康電訊(MTSI-US)下跌5.68%；安可(AMKR-US)下跌5.59%。&lt;/p&gt;&",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 費城半導體大跌1%，報7835.62點",
-      "url": "https://news.cnyes.com/news/id/6366388",
+      "title": "盤中速報 - 科磊(KLAC-US)大跌5.06%，報1401.19美元",
+      "url": "https://news.cnyes.com/news/id/6366404",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;截至台北時間06日01:18，費城半導體下跌78.86點（或1%），暫報7835.62點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-6.53%&lt;/li&gt;&lt;li&gt;近 1 月：+3.88%&lt;/li&gt;&lt;li&gt;近 3 月：+9.68%&lt;/li&gt;&lt;li&gt;近 6 月：+39.64%&lt;/li&gt;&lt;li&gt;今年以來：+11.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以連貫(COHR-US)領跌。連貫(COHR-US)下跌6.88%；Onto Innovation Inc.(ONTO-US)下跌4.99%；科林研發(LRCX-US)下跌3.83%；應用材料(AMAT-US)下跌3.34%；安可(AMKR-US)下跌3.32%。&lt;/p&gt;&",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;科磊(KLAC-US)截至台北時間06日01:48股價下跌74.72美元，報1401.19美元，跌幅5.06%，成交量318,130（股），盤中最高價1475.01美元、最低價1401.19美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.87%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.23%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.81%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科磊(KLAC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-6.81%&lt;/li&gt;    &lt;li&gt;近 1 月：+10.26%&lt;/li&gt;    &lt;li&gt;近 3 月：+19.31",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.01%，報198.57美元",
-      "url": "https://news.cnyes.com/news/id/6366387",
+      "title": "中東戰火改寫市場劇本 華爾街憂重演2022年通膨危機",
+      "url": "https://news.cnyes.com/news/id/6366381",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Onto Innovation Inc.(ONTO-US)截至台北時間06日01:17股價下跌10.47美元，報198.57美元，跌幅5.01%，成交量221,366（股），盤中最高價210.83美元、最低價198.57美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.81%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.55%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.95%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Onto Innovation Inc.(ONTO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.87%&lt;/li&gt;    &lt;li&gt;近 1 月：+10.02%&lt",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;中東衝突升溫正重新塑造全球金融市場格局。原本符合美國總統川普政策方向的市場趨勢&mdash;&mdash;油價下跌、長天期美債殖利率走低以及美元走弱&mdash;&mdash;如今正出現反轉。隨著美國與以色列對伊朗發動空襲、伊朗隨後反擊，能源市場震盪加劇，油價上漲推升通膨疑慮，也讓聯準會 (Fed) 降息前景變得更加複雜。&lt;/p&gt;\n\n&lt;p&gt;市場原本預期較低的能源價格與較低利率有助支撐經濟與投資，但中東戰事爆發後，原油價格迅速攀升，帶動市場對通膨回升的擔憂。與此同時，美國公債殖利率也同步上升，與川普政府希望壓低長天期借貸成本的政策方向形成反差。&lt;/p&gt;\n\n&lt;p&gt;美元則重新展現避險貨幣角色，在全球市場不確定性升高之際對多數主要貨幣走強。若美元持續升值，將削弱美國出口競爭力，並可能衝擊川普政府試圖推動製造業回流的政策目標。&lt;/p&gt;\n\n&lt;h6&gt;油價、殖利率與美元同步走高 市場環境出現逆轉&lt;/h6&gt;\n\n&lt;p&gt;在中東局勢升溫的背景下，能源價格成為市場焦點。油價本周大幅上漲，加劇投資人對",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     },
     {
-      "title": "紐約等24州提告！挑戰川普最新全球關稅政策",
-      "url": "https://news.cnyes.com/news/id/6366344",
-      "source": "鉅亨網(wd_stock)",
+      "title": "AI巨頭隔空交鋒！阿特曼暗批Anthropic",
+      "url": "https://news.cnyes.com/news/id/6366350",
+      "source": "鉅亨網(tech)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;《CNBC》報導，美國多個州政府再度對總統川普的關稅政策發起法律挑戰。紐約州檢察長詹樂霞 (Letitia James) 與另外 23 州檢察長預計於周四 (5 日) 向美國國際貿易法院提起訴訟，要求法院裁定川普最新一輪全球關稅措施違法，並要求退還已向各州徵收的關稅款項。&lt;/p&gt;\n\n&lt;p&gt;這起訴訟發生在美國最高法院上月裁定川普先前關稅政策違法後不久。最高法院當時認定，川普政府動用《國際緊急經濟權力法》(IEEPA) 對進口商品徵收大規模關稅的做法不符合法律規範，推翻了其「解放日」(Liberation Day) 關稅措施。&lt;/p&gt;\n\n&lt;p&gt;然而，川普政府隨即宣布推出新一輪關稅措施，改以《1974 年貿易法》第 122 條 (Section 122 of the Trade Act of 1974) 作為法律依據。根據該政策，目前全球關稅稅率設定為 10%，但政府已表示未來可能提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;詹樂霞在聲明中表示，在最高法院否決先前關稅措施後，川普政府仍試圖繞過裁決，繼續推動大規模關",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 莫德納(MRNA-US)大跌5.08%，報54.87美元",
-      "url": "https://news.cnyes.com/news/id/6366384",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;莫德納(MRNA-US)截至台北時間06日01:02股價下跌2.94美元，報54.87美元，跌幅5.08%，成交量5,191,995（股），盤中最高價58.74美元、最低價54.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.62%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.63%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.25%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;莫德納(MRNA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3%&lt;/li&gt;    &lt;li&gt;近 1 月：+16.51%&lt;/li&gt;    &lt;li&gt;近 3 月：+95.49%&lt;",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "全球能源命脈卡住！華爾街急問川普怎麼救荷姆茲海峽",
-      "url": "https://news.cnyes.com/news/id/6366364",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;中東戰事持續升溫，全球能源運輸樞紐荷姆茲海峽 (Strait of Hormuz) 陷入停擺，引發華爾街與航運業高度關注。市場正密切觀察美國總統川普提出的護航與保險方案，能否讓油輪重新恢復通行，避免全球能源供應受到更大衝擊。&lt;/p&gt;\n\n&lt;p&gt;近期油價波動劇烈。布蘭特原油期貨周二一度升至每桶約 84 美元，但周三回落至約 81 美元，周四又重新反彈至 84 美元附近。市場人士指出，油價劇烈震盪主要反映投資人對荷姆茲海峽航運安全與能源供應前景的不確定性。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：ZeroHedge)&quot; data-height=&quot;450&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.6888888888888889&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6366364/m/6f81d1a11ae0b1dc05b73a0c",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "博通陳福陽喊AI晶片營收2027破千億美元 股價大漲5%帶動供應鏈",
-      "url": "https://news.cnyes.com/news/id/6366366",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;晶片大廠博通 (AVGO-US) 股價週四 (5 日) 大漲約 5%，執行長陳福陽在法說會上強調人工智慧需求仍將長期維持強勁，並預測公司 AI 晶片相關營收到 2027 年將「顯著超過 1000 億美元」，遠高於華爾街多數分析師原先的樂觀預期。&lt;/p&gt;\n\n&lt;p&gt;陳福陽週三在與分析師的電話會議中表示，隨著企業持續為人工智慧系統設計客製化晶片，市場需求正迅速擴大。博通目前正與六家客戶合作，AI 相關基礎設施產能正接近 10 吉瓦，顯示大型雲端服務業者對 AI 運算能力的需求仍在快速成長。&lt;/p&gt;\n\n&lt;p&gt;摩根大通分析師估計，到 2027 年博通每吉瓦產能可帶來約 120 億至 150 億美元營收，並因此將公司 AI 相關營收預估「保守地」上調至 1200 億美元以上。&lt;/p&gt;\n\n&lt;p&gt;另一方面，高盛分析師指出，博通在 AI 網路與客製化晶片領域的領先地位，使其能為超大規模雲端客戶提供最低推理成本的解決方案，並預期公司能持續以接近市場領導者 Nvidia 的速度推動成本下降。&lt;/p&gt;\n\n&l",
-      "timeStr": "上午02:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "鉅亨速報 - Factset 最新調查：Flutter Entertainment Plc(FLUT-US)EPS預估下修至6.99元，預估目標價為207.00元",
-      "url": "https://news.cnyes.com/news/id/6366358",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;根據FactSet最新調查，共24位分析師，對Flutter Entertainment Plc(FLUT-US)做出2026年EPS預估：中位數由7.43元下修至6.99元，其中最高估值9.9元，最低估值6.05元，預估目標價為207.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt",
-      "timeStr": "上午02:01",
+      "content": "&lt;p&gt;OpenAI 執行長阿特曼 (Sam Altman) 周四 (5 日) 在公開場合對競爭對手 Anthropic 提出間接批評，並強調政府在民主體制下應該擁有高於企業的權力。相關言論正值美國政府與 Anthropic 近期出現摩擦之際，也凸顯人工智慧產業競爭與政治關係交織的緊張局勢。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在摩根士丹利科技、媒體與電信 (Technology, Media &amp; Telecom) 會議上表示，如果企業因為不滿目前掌權的政治人物而放棄對民主制度的承諾，對社會而言將是一件「不好的事情」。他並強調，在正常情況下，政府的權力應高於私人企業。&lt;/p&gt;\n\n&lt;p&gt;這番談話被外界解讀為針對 Anthropic。根據《The Information》報導，Anthropic 執行長阿莫戴 (Dario Amodei) 日前在一份內部備忘錄中批評阿特曼與川普政府之間的關係。報導指出，阿莫戴在備忘錄中表示，Anthropic 並未對川普給予「獨裁式的讚美」，但阿特曼卻這麼做。&lt;/p&gt;\n\n&lt;p&gt;近來",
+      "timeStr": "上午04:01",
       "relatedArticles": []
     }
   ],
@@ -364,56 +321,51 @@
   ],
   "events": [
     {
-      "title": "24州提告挑戰川普關稅",
-      "summary": "紐約等24州對新關稅法規發起法律訴訟，質疑其違反憲法權力分立與貿易法濫用。",
+      "title": "AI 晶片全球出口許可制草擬",
+      "summary": "美國擬要求輝達、AMD 銷往全球任何地區之 AI 晶片均需政府核准，華府正式確立 AI 守門人地位。",
       "impact": "負面",
       "related_news_ids": [
-        10
+        1
       ]
     },
     {
-      "title": "AI 營收指引與設備股背離",
-      "summary": "博通樂觀預測 AI 營收長期增長，但半導體設備商與封裝測試板塊出現 5% 以上集體修正。",
+      "title": "中東戰事引發通膨連鎖效應",
+      "summary": "油價、殖利率與美元三升，市場憂心聯準會降息計畫生變並重演 2022 年通膨風暴。",
+      "impact": "負面",
+      "related_news_ids": [
+        8
+      ]
+    },
+    {
+      "title": "AI 產業政治版圖大洗牌",
+      "summary": "Anthropic 遭聯邦禁用，OpenAI 迅速承接國防合約，顯示政治靠攏成為 AI 企業生存指標。",
       "impact": "中性",
       "related_news_ids": [
-        0,
-        2,
-        4,
-        5,
-        6,
-        13
-      ]
-    },
-    {
-      "title": "荷姆茲海峽航運危機",
-      "summary": "中東能源樞紐持續停擺，華爾街聚焦川普政府是否能提供有效護航與保險方案。",
-      "impact": "負面",
-      "related_news_ids": [
-        12
+        9
       ]
     }
   ],
   "relations": [
     {
-      "from": "川普政府",
-      "to": "美國跨國企業",
-      "type": "關稅政策壓力"
+      "from": "美國政府",
+      "to": "NVIDIA",
+      "type": "監管約束"
     },
     {
-      "from": "荷姆茲海峽",
-      "to": "布蘭特原油",
-      "type": "供應中斷與價格推升"
+      "from": "中東衝突",
+      "to": "黃金/石油",
+      "type": "推升通膨/避險需求"
     },
     {
-      "from": "博通",
-      "to": "台積電",
-      "type": "長期產能確保"
+      "from": "OpenAI",
+      "to": "Anthropic",
+      "type": "政治競爭與市場取代"
     }
   ],
   "keywords7d": [
     {
       "word": "伊朗",
-      "count": 704,
+      "count": 706,
       "articles": [
         {
           "title": "市場關注美國伊朗談判　國際油價震盪收低",
@@ -479,7 +431,7 @@
     },
     {
       "word": "US",
-      "count": 354,
+      "count": 364,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Middleby公司MIDD-US的目標價調升至177.5元，幅度約3.5%",
@@ -545,7 +497,7 @@
     },
     {
       "word": "AI",
-      "count": 338,
+      "count": 340,
       "articles": [
         {
           "title": "ASML稱次世代EUV設備已可用於量產 AI晶片生產迎關鍵轉折",
@@ -610,74 +562,8 @@
       ]
     },
     {
-      "word": "EPS",
-      "count": 232,
-      "articles": [
-        {
-          "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至21.95元，預估目標價為362.5元",
-          "url": "https://news.cnyes.com/news/id/6355872",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共22位分析師，對廣達(2382-TW)做出2026年EPS預估：中位數由21.71元上修至21.95元，其中最高估值24.48元，最低估值19.28元，預估目標價為362.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24.48(24.48)&lt;/td&gt;&lt;td&gt;28.54&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;19.28(19.28)&lt;/td&gt;&lt;td&gt;22.56&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;21.86(21.71)&lt;/td&gt;&lt;td&gt;25.46&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;21.95(21.71)&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;3,267,759,000&lt;/td&gt;&lt;td&gt;4,214,487,000&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2,317,430,000&lt;/td&gt;&lt;td&gt;2,796,692,130&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;2,938,331,580&lt;/td&gt;&lt;td&gt;3,462,225,090&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;2,970,932,100&lt;/td&gt;&lt;td&gt;3,401,838,450&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;59,701,797&lt;/td&gt;&lt;td&gt;39,676,394&lt;/td&gt;&lt;td&gt;28,957,466&lt;/td&gt;&lt;td&gt;33,652,524&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1,410,755,659&lt;/td&g"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：台達電(2308-TW)EPS預估上修至35.67元，預估目標價為1575元",
-          "url": "https://news.cnyes.com/news/id/6355871",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共20位分析師，對台達電(2308-TW)做出2026年EPS預估：中位數由35.44元上修至35.67元，其中最高估值41.3元，最低估值29.5元，預估目標價為1575元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;41.3(41.3)&lt;/td&gt;&lt;td&gt;74.67&lt;/td&gt;&lt;td&gt;131.82&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.5(29.5)&lt;/td&gt;&lt;td&gt;40.07&lt;/td&gt;&lt;td&gt;52.06&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;35.83(35.56)&lt;/td&gt;&lt;td&gt;52.4&lt;/td&gt;&lt;td&gt;91.94&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;35.67(35.44)&lt;/td&gt;&lt;td&gt;51.79&lt;/td&gt;&lt;td&gt;91.94&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;763,323,370&lt;/td&gt;&lt;td&gt;1,067,693,000&lt;/td&gt;&lt;td&gt;1,554,357,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;677,294,000&lt;/td&gt;&lt;td&gt;780,229,000&lt;/td&gt;&lt;td&gt;1,045,499,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;718,466,990&lt;/td&gt;&lt;td&gt;932,760,600&lt;/td&gt;&lt;td&gt;1,299,928,260&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;717,261,000&lt;/td&gt;&lt;td&gt;929,030,000&lt;/td&gt;&lt;td&gt;1,299,928,260&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;60,108,399&lt;/td&gt;&lt;td&gt;35,228,577&lt;/td&gt;&lt;td&gt;33,392,665&lt;/td&gt;&lt;td&gt;32,665,728&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;554,885,168&lt;/td&gt;&lt;td&gt;421,147"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至22元，預估目標價為366元",
-          "url": "https://news.cnyes.com/news/id/6355979",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對廣達(2382-TW)做出2026年EPS預估：中位數由21.71元上修至22元，其中最高估值24.48元，最低估值19.28元，預估目標價為366元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24.48(24.48)&lt;/td&gt;&lt;td&gt;27.93&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;19.28(19.28)&lt;/td&gt;&lt;td&gt;22.56&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;21.83(21.71)&lt;/td&gt;&lt;td&gt;25.75&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;22(21.71)&lt;/td&gt;&lt;td&gt;25.98&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;3,267,759,000&lt;/td&gt;&lt;td&gt;4,214,487,000&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2,829,000,000&lt;/td&gt;&lt;td&gt;3,269,369,870&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;3,047,628,980&lt;/td&gt;&lt;td&gt;3,630,202,060&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;3,051,450,000&lt;/td&gt;&lt;td&gt;3,523,612,400&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;59,701,797&lt;/td&gt;&lt;td&gt;39,676,394&lt;/td&gt;&lt;td&gt;28,957,466&lt;/td&gt;&lt;td&gt;33,652,524&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1,410,755,659&lt;/td&gt;&lt"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：中鋼(2002-TW)EPS預估上修至-0.29元，預估目標價為21.5元",
-          "url": "https://news.cnyes.com/news/id/6355978",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共9位分析師，對中鋼(2002-TW)做出2025年EPS預估：中位數由-0.32元上修至-0.29元，其中最高估值-0.26元，最低估值-0.48元，預估目標價為21.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;-0.26(-0.26)&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.8&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;-0.48(-0.48)&lt;/td&gt;&lt;td&gt;-0.67&lt;/td&gt;&lt;td&gt;0.19&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;-0.33(-0.33)&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.53&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;-0.29(-0.32)&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.56&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;345,127,410&lt;/td&gt;&lt;td&gt;354,427,130&lt;/td&gt;&lt;td&gt;358,761,060&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;314,884,000&lt;/td&gt;&lt;td&gt;301,740,000&lt;/td&gt;&lt;td&gt;312,883,850&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;320,420,600&lt;/td&gt;&lt;td&gt;323,579,750&lt;/td&gt;&lt;td&gt;337,148,310&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;317,155,000&lt;/td&gt;&lt;td&gt;320,303,000&lt;/td&gt;&lt;td&gt;339,342,500&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&l"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估上修至4.42元，預估目標價為242元",
-          "url": "https://news.cnyes.com/news/id/6355977",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對上銀(2049-TW)做出2025年EPS預估：中位數由4.1元上修至4.42元，其中最高估值5.8元，最低估值3.98元，預估目標價為242元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;5.8(5.8)&lt;/td&gt;&lt;td&gt;8.23&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;3.98(3.35)&lt;/td&gt;&lt;td&gt;4.44&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;4.59(4.26)&lt;/td&gt;&lt;td&gt;6.27&lt;/td&gt;&lt;td&gt;7.48&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;4.42(4.1)&lt;/td&gt;&lt;td&gt;5.93&lt;/td&gt;&lt;td&gt;7.16&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,613,000&lt;/td&gt;&lt;td&gt;29,799,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,115,500&lt;/td&gt;&lt;td&gt;28,419,330&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,223,000&lt;/td&gt;&lt;td&gt;28,056,000&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td&gt;&lt"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：研華(2395-TW)EPS預估上修至11.65元，預估目標價為367.5元",
-          "url": "https://news.cnyes.com/news/id/6355976",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對研華(2395-TW)做出2025年EPS預估：中位數由11.44元上修至11.65元，其中最高估值13.47元，最低估值11.44元，預估目標價為367.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;13.47(13.47)&lt;/td&gt;&lt;td&gt;14.87&lt;/td&gt;&lt;td&gt;18.32&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;11.44(10.3)&lt;/td&gt;&lt;td&gt;12.6&lt;/td&gt;&lt;td&gt;14.55&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;11.99(11.53)&lt;/td&gt;&lt;td&gt;13.73&lt;/td&gt;&lt;td&gt;16.03&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;11.65(11.44)&lt;/td&gt;&lt;td&gt;13.69&lt;/td&gt;&lt;td&gt;15.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;72,629,960&lt;/td&gt;&lt;td&gt;81,520,000&lt;/td&gt;&lt;td&gt;93,215,290&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;70,112,580&lt;/td&gt;&lt;td&gt;75,627,990&lt;/td&gt;&lt;td&gt;83,379,860&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;70,895,970&lt;/td&gt;&lt;td&gt;78,783,900&lt;/td&gt;&lt;td&gt;88,135,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;70,880,000&lt;/td&gt;&lt;td&gt;78,700,000&lt;/td&gt;&lt;td&gt;87,973,440&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;10,592,508&lt;/td&gt;&lt;td&gt;9,005,037&lt;/td&gt;&lt;td&gt;10,837,530&lt;/td&gt;&lt;td&gt;10,757,077&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70,882,362&lt;/td&gt;&lt;td&gt;59,786,293&lt;/td&gt;&lt;td&g"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：台達電(2308-TW)EPS預估上修至35.95元，預估目標價為1575元",
-          "url": "https://news.cnyes.com/news/id/6356083",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共20位分析師，對台達電(2308-TW)做出2026年EPS預估：中位數由35.67元上修至35.95元，其中最高估值41.3元，最低估值29.5元，預估目標價為1575元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;41.3(41.3)&lt;/td&gt;&lt;td&gt;74.67&lt;/td&gt;&lt;td&gt;131.82&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.5(29.5)&lt;/td&gt;&lt;td&gt;40.07&lt;/td&gt;&lt;td&gt;52.06&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;35.87(35.81)&lt;/td&gt;&lt;td&gt;52.53&lt;/td&gt;&lt;td&gt;85.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;35.95(35.67)&lt;/td&gt;&lt;td&gt;51.83&lt;/td&gt;&lt;td&gt;73.52&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;763,323,370&lt;/td&gt;&lt;td&gt;1,067,693,000&lt;/td&gt;&lt;td&gt;1,554,357,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;677,294,000&lt;/td&gt;&lt;td&gt;780,229,000&lt;/td&gt;&lt;td&gt;1,045,499,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;719,804,750&lt;/td&gt;&lt;td&gt;934,906,450&lt;/td&gt;&lt;td&gt;1,291,544,370&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;717,261,000&lt;/td&gt;&lt;td&gt;929,030,000&lt;/td&gt;&lt;td&gt;1,274,776,590&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;60,108,399&lt;/td&gt;&lt;td&gt;35,228,577&lt;/td&gt;&lt;td&gt;33,392,665&lt;/td&gt;&lt;td&gt;32,665,728&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;554,885,168&lt;/td&gt;&lt;td&gt;421,147"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估下修至5.84元，預估目標價為228元",
-          "url": "https://news.cnyes.com/news/id/6356147",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共9位分析師，對上銀(2049-TW)做出2026年EPS預估：中位數由6.23元下修至5.84元，其中最高估值8.23元，最低估值4.44元，預估目標價為228元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;8.23(8.4)&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;4.44(4.41)&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;6.22(6.37)&lt;/td&gt;&lt;td&gt;7.6&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;5.84(6.23)&lt;/td&gt;&lt;td&gt;8.07&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;27,637,100&lt;/td&gt;&lt;td&gt;30,869,420&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;26,419,820&lt;/td&gt;&lt;td&gt;29,031,860&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;26,316,000&lt;/td&gt;&lt;td&gt;28,927,500&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td&gt;"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估上修至6.06元，預估目標價為243.5元",
-          "url": "https://news.cnyes.com/news/id/6356188",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共11位分析師，對上銀(2049-TW)做出2026年EPS預估：中位數由5.84元上修至6.06元，其中最高估值8.03元，最低估值4.44元，預估目標價為243.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;8.03(8.03)&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;4.44(4.44)&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;6.23(6.15)&lt;/td&gt;&lt;td&gt;7.92&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;6.06(5.84)&lt;/td&gt;&lt;td&gt;8.4&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;27,926,960&lt;/td&gt;&lt;td&gt;31,119,150&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;26,609,000&lt;/td&gt;&lt;td&gt;29,446,910&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;26,419,960&lt;/td&gt;&lt;td&gt;29,787,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td"
-        },
-        {
-          "title": "鉅亨速報 - Factset 最新調查：AXIA Energia SA Sponsored ADR(AXIA-US)EPS預估上修至0.94元，預估目標價為9.04元",
-          "url": "https://news.cnyes.com/news/id/6356241",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對AXIA Energia SA Sponsored ADR(AXIA-US)做出2026年EPS預估：中位數由0.91元上修至0.94元，其中最高估值7.62元，最低估值0.43元，預估目標價為9.04元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;7.62(7.62)&lt;/td&gt;&lt;td&gt;10.11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;0.43(0.43)&lt;/td&gt;&lt;td&gt;0.89&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.81(1.65)&lt;/td&gt;&lt;td&gt;2.66&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;0.94(0.91)&lt;/td&gt;&lt;td&gt;1.25&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;102.51億&lt;/td&gt;&lt;td&gt;109.98億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;75.13億&lt;/td&gt;&lt;td&gt;73.48億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;85.70億&lt;/td&gt;&lt;td&gt;91.86億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;85.17億&lt;/td&gt;&lt;td&gt;92.00億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;0.66&lt;/td&gt;&lt;td&gt;0.35&lt;/td&gt;&lt;td&gt;0.40&lt;/td&gt;&lt;td&gt;0.85&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;69.71億&lt;/td&gt;&lt;td&gt;65.98億&lt;/td&gt;&lt;td&gt;74.39億&lt;/td&gt;&lt;td&gt;74.54億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;詳細資訊請看美股內頁：&lt;br&gt;AXIA Energia SA Sponsored ADR(AXIA-US)&lt;/"
-        }
-      ]
-    },
-    {
       "word": "美元",
-      "count": 231,
+      "count": 236,
       "articles": [
         {
           "title": "輝達暴跌近5.5% 市值一夕蒸發2590億美元",
@@ -738,6 +624,72 @@
           "url": "https://news.cnyes.com/news/id/6356171",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;根據《彭博》周五 (27 日) 報導，英國非銀行金融機構 Market Financial Solutions Ltd.(MFS)近日瀕臨崩潰，再度引爆信貸市場對詐欺與資產擔保風險的憂慮。事件雖發生在倫敦，但情節與近年美國多起信貸爆雷案如出一轍：非銀行業者填補傳統銀行不願承作的融資缺口，同時向華爾街大型機構借款擴張，最終卻因資產疑慮與資金流向問題陷入困境。&lt;/p&gt;\n\n&lt;p&gt;包括桑坦德銀行 (Banco Santander)(SAN-US)、Jefferies(JEF-US)，以及阿波羅全球管理(Apollo Global Management)(APO-US) 旗下 Atlas SP Partners、巴克萊 (BCS-US)、富國銀行(WFC-US) 與 Castlelake 等機構，皆對 MFS 有曝險部位。法院文件顯示，部分子公司聲稱發現「重大不規則情形」與「顯著擔保品缺口」，並指控公司可能涉及「雙重質押」資產。官方目前尚未對任何人提出不法指控。&lt;/p&gt;\n\n&lt;h6&gt;資產疑雲與雙重質押疑慮浮現&lt;/h6&gt;\n\n&lt;p&gt;MFS 成立於 2006 年，由執行長 Paresh Raja 領導，主打「複雜的不動產擔保貸款」，提供房地產投資人過橋貸款等短期融資工具。公司透過向華爾街機構借款來支持業務擴張，巔峰時貸款規模達 24 億英鎊，並於 2024 年取得 13 億英鎊新增機構資金，同時擴大與重談既有 110 億英鎊融資額度。&lt;/p&gt;\n\n&lt;p&gt;然而，旗下 Zircon Bridging 與 Amber Bridging 本週聲請進入英國破產管理程序時指出，去年 12 月起公司疑似將部分交易收入轉移，導致資金流向不明。文件並指稱公司以相同資產向不同放款人融資，即所謂「雙重質押」。MFS 則聲稱僅與主要往來銀行出現程序性問題，強調基礎業務與資產品質並未失敗。&lt;/p&gt;\n\n&lt;p&gt;目前各家銀行曝險金額不小。法官在聽證會上表示，巴克萊約有 6 億英鎊部位，Atlas 約 4 億英鎊，Jefferies 約 1 億英鎊。相關銀行多拒絕評論。&lt;/p&gt;\n\n&lt;h6&gt;市場憂慮升溫 私募信貸成焦點&lt;/h6&gt;\n\n&lt;p&gt;儘管整體企業違約率仍大致穩定，但近期接連爆雷事件已讓市場神經緊繃。摩根大通 (JPM-US) 執行長戴蒙 (Jamie Dimon) 本周警告，市場氛圍讓他聯想到 2005 至 2007 年金融危機前夕，「資金氾濫、人人賺錢」的景象正在重現。&lt;/p&gt;\n\n&lt;p&gt;MFS 事件發酵之際，Jefferies 股價一度重挫近 10%，阿波羅跌幅亦逾 4%，巴克萊與桑坦德同步走低。市場同時關注私募信貸領域風險，藍鴞資本 (Blue Owl Capital) 旗下零售基金暫停單季贖回，引發資產管理類股賣壓；阿波羅管理的商業發展公司亦下調配息並減記約 3% 資產。&lt;/p&gt;\n\n&lt;p&gt;部分私募信貸巨頭則反駁，近期多數高調爆雷案例其實來自銀行放款，而非私人市場機構。不過也有市場人士認為，過去幾年大量舉債的軟體公司正面臨人工智慧衝擊與成長放緩風險，如同「遠方駛來的列車」，只是時間問題。&lt;/p&gt;\n\n&lt;p&gt;隨著 MFS 進入破產程序，華爾街銀行是否面臨新一輪減記壓力，仍有待進一步釐清。&lt;/p&gt;\n"
+        }
+      ]
+    },
+    {
+      "word": "EPS",
+      "count": 235,
+      "articles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至21.95元，預估目標價為362.5元",
+          "url": "https://news.cnyes.com/news/id/6355872",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共22位分析師，對廣達(2382-TW)做出2026年EPS預估：中位數由21.71元上修至21.95元，其中最高估值24.48元，最低估值19.28元，預估目標價為362.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24.48(24.48)&lt;/td&gt;&lt;td&gt;28.54&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;19.28(19.28)&lt;/td&gt;&lt;td&gt;22.56&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;21.86(21.71)&lt;/td&gt;&lt;td&gt;25.46&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;21.95(21.71)&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;3,267,759,000&lt;/td&gt;&lt;td&gt;4,214,487,000&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2,317,430,000&lt;/td&gt;&lt;td&gt;2,796,692,130&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;2,938,331,580&lt;/td&gt;&lt;td&gt;3,462,225,090&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;2,970,932,100&lt;/td&gt;&lt;td&gt;3,401,838,450&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;59,701,797&lt;/td&gt;&lt;td&gt;39,676,394&lt;/td&gt;&lt;td&gt;28,957,466&lt;/td&gt;&lt;td&gt;33,652,524&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1,410,755,659&lt;/td&g"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：台達電(2308-TW)EPS預估上修至35.67元，預估目標價為1575元",
+          "url": "https://news.cnyes.com/news/id/6355871",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共20位分析師，對台達電(2308-TW)做出2026年EPS預估：中位數由35.44元上修至35.67元，其中最高估值41.3元，最低估值29.5元，預估目標價為1575元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;41.3(41.3)&lt;/td&gt;&lt;td&gt;74.67&lt;/td&gt;&lt;td&gt;131.82&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.5(29.5)&lt;/td&gt;&lt;td&gt;40.07&lt;/td&gt;&lt;td&gt;52.06&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;35.83(35.56)&lt;/td&gt;&lt;td&gt;52.4&lt;/td&gt;&lt;td&gt;91.94&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;35.67(35.44)&lt;/td&gt;&lt;td&gt;51.79&lt;/td&gt;&lt;td&gt;91.94&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;763,323,370&lt;/td&gt;&lt;td&gt;1,067,693,000&lt;/td&gt;&lt;td&gt;1,554,357,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;677,294,000&lt;/td&gt;&lt;td&gt;780,229,000&lt;/td&gt;&lt;td&gt;1,045,499,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;718,466,990&lt;/td&gt;&lt;td&gt;932,760,600&lt;/td&gt;&lt;td&gt;1,299,928,260&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;717,261,000&lt;/td&gt;&lt;td&gt;929,030,000&lt;/td&gt;&lt;td&gt;1,299,928,260&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;60,108,399&lt;/td&gt;&lt;td&gt;35,228,577&lt;/td&gt;&lt;td&gt;33,392,665&lt;/td&gt;&lt;td&gt;32,665,728&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;554,885,168&lt;/td&gt;&lt;td&gt;421,147"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至22元，預估目標價為366元",
+          "url": "https://news.cnyes.com/news/id/6355979",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對廣達(2382-TW)做出2026年EPS預估：中位數由21.71元上修至22元，其中最高估值24.48元，最低估值19.28元，預估目標價為366元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24.48(24.48)&lt;/td&gt;&lt;td&gt;27.93&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;19.28(19.28)&lt;/td&gt;&lt;td&gt;22.56&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;21.83(21.71)&lt;/td&gt;&lt;td&gt;25.75&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;22(21.71)&lt;/td&gt;&lt;td&gt;25.98&lt;/td&gt;&lt;td&gt;25.39&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;3,267,759,000&lt;/td&gt;&lt;td&gt;4,214,487,000&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2,829,000,000&lt;/td&gt;&lt;td&gt;3,269,369,870&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;3,047,628,980&lt;/td&gt;&lt;td&gt;3,630,202,060&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;3,051,450,000&lt;/td&gt;&lt;td&gt;3,523,612,400&lt;/td&gt;&lt;td&gt;3,375,062,480&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;59,701,797&lt;/td&gt;&lt;td&gt;39,676,394&lt;/td&gt;&lt;td&gt;28,957,466&lt;/td&gt;&lt;td&gt;33,652,524&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1,410,755,659&lt;/td&gt;&lt"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：中鋼(2002-TW)EPS預估上修至-0.29元，預估目標價為21.5元",
+          "url": "https://news.cnyes.com/news/id/6355978",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共9位分析師，對中鋼(2002-TW)做出2025年EPS預估：中位數由-0.32元上修至-0.29元，其中最高估值-0.26元，最低估值-0.48元，預估目標價為21.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;-0.26(-0.26)&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.8&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;-0.48(-0.48)&lt;/td&gt;&lt;td&gt;-0.67&lt;/td&gt;&lt;td&gt;0.19&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;-0.33(-0.33)&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.53&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;-0.29(-0.32)&lt;/td&gt;&lt;td&gt;0.04&lt;/td&gt;&lt;td&gt;0.56&lt;/td&gt;&lt;td&gt;0.52&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;345,127,410&lt;/td&gt;&lt;td&gt;354,427,130&lt;/td&gt;&lt;td&gt;358,761,060&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;314,884,000&lt;/td&gt;&lt;td&gt;301,740,000&lt;/td&gt;&lt;td&gt;312,883,850&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;320,420,600&lt;/td&gt;&lt;td&gt;323,579,750&lt;/td&gt;&lt;td&gt;337,148,310&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;317,155,000&lt;/td&gt;&lt;td&gt;320,303,000&lt;/td&gt;&lt;td&gt;339,342,500&lt;/td&gt;&lt;td&gt;311,073,380&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&l"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估上修至4.42元，預估目標價為242元",
+          "url": "https://news.cnyes.com/news/id/6355977",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對上銀(2049-TW)做出2025年EPS預估：中位數由4.1元上修至4.42元，其中最高估值5.8元，最低估值3.98元，預估目標價為242元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;5.8(5.8)&lt;/td&gt;&lt;td&gt;8.23&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;3.98(3.35)&lt;/td&gt;&lt;td&gt;4.44&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;4.59(4.26)&lt;/td&gt;&lt;td&gt;6.27&lt;/td&gt;&lt;td&gt;7.48&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;4.42(4.1)&lt;/td&gt;&lt;td&gt;5.93&lt;/td&gt;&lt;td&gt;7.16&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,613,000&lt;/td&gt;&lt;td&gt;29,799,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,115,500&lt;/td&gt;&lt;td&gt;28,419,330&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;24,263,000&lt;/td&gt;&lt;td&gt;26,223,000&lt;/td&gt;&lt;td&gt;28,056,000&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td&gt;&lt"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：研華(2395-TW)EPS預估上修至11.65元，預估目標價為367.5元",
+          "url": "https://news.cnyes.com/news/id/6355976",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對研華(2395-TW)做出2025年EPS預估：中位數由11.44元上修至11.65元，其中最高估值13.47元，最低估值11.44元，預估目標價為367.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;13.47(13.47)&lt;/td&gt;&lt;td&gt;14.87&lt;/td&gt;&lt;td&gt;18.32&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;11.44(10.3)&lt;/td&gt;&lt;td&gt;12.6&lt;/td&gt;&lt;td&gt;14.55&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;11.99(11.53)&lt;/td&gt;&lt;td&gt;13.73&lt;/td&gt;&lt;td&gt;16.03&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;11.65(11.44)&lt;/td&gt;&lt;td&gt;13.69&lt;/td&gt;&lt;td&gt;15.3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;72,629,960&lt;/td&gt;&lt;td&gt;81,520,000&lt;/td&gt;&lt;td&gt;93,215,290&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;70,112,580&lt;/td&gt;&lt;td&gt;75,627,990&lt;/td&gt;&lt;td&gt;83,379,860&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;70,895,970&lt;/td&gt;&lt;td&gt;78,783,900&lt;/td&gt;&lt;td&gt;88,135,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;70,880,000&lt;/td&gt;&lt;td&gt;78,700,000&lt;/td&gt;&lt;td&gt;87,973,440&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;10,592,508&lt;/td&gt;&lt;td&gt;9,005,037&lt;/td&gt;&lt;td&gt;10,837,530&lt;/td&gt;&lt;td&gt;10,757,077&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;70,882,362&lt;/td&gt;&lt;td&gt;59,786,293&lt;/td&gt;&lt;td&g"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：台達電(2308-TW)EPS預估上修至35.95元，預估目標價為1575元",
+          "url": "https://news.cnyes.com/news/id/6356083",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共20位分析師，對台達電(2308-TW)做出2026年EPS預估：中位數由35.67元上修至35.95元，其中最高估值41.3元，最低估值29.5元，預估目標價為1575元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;41.3(41.3)&lt;/td&gt;&lt;td&gt;74.67&lt;/td&gt;&lt;td&gt;131.82&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.5(29.5)&lt;/td&gt;&lt;td&gt;40.07&lt;/td&gt;&lt;td&gt;52.06&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;35.87(35.81)&lt;/td&gt;&lt;td&gt;52.53&lt;/td&gt;&lt;td&gt;85.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;35.95(35.67)&lt;/td&gt;&lt;td&gt;51.83&lt;/td&gt;&lt;td&gt;73.52&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;763,323,370&lt;/td&gt;&lt;td&gt;1,067,693,000&lt;/td&gt;&lt;td&gt;1,554,357,510&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;677,294,000&lt;/td&gt;&lt;td&gt;780,229,000&lt;/td&gt;&lt;td&gt;1,045,499,000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;719,804,750&lt;/td&gt;&lt;td&gt;934,906,450&lt;/td&gt;&lt;td&gt;1,291,544,370&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;717,261,000&lt;/td&gt;&lt;td&gt;929,030,000&lt;/td&gt;&lt;td&gt;1,274,776,590&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;60,108,399&lt;/td&gt;&lt;td&gt;35,228,577&lt;/td&gt;&lt;td&gt;33,392,665&lt;/td&gt;&lt;td&gt;32,665,728&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;554,885,168&lt;/td&gt;&lt;td&gt;421,147"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估下修至5.84元，預估目標價為228元",
+          "url": "https://news.cnyes.com/news/id/6356147",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共9位分析師，對上銀(2049-TW)做出2026年EPS預估：中位數由6.23元下修至5.84元，其中最高估值8.23元，最低估值4.44元，預估目標價為228元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;8.23(8.4)&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;4.44(4.41)&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;6.22(6.37)&lt;/td&gt;&lt;td&gt;7.6&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;5.84(6.23)&lt;/td&gt;&lt;td&gt;8.07&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;27,637,100&lt;/td&gt;&lt;td&gt;30,869,420&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;26,419,820&lt;/td&gt;&lt;td&gt;29,031,860&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;26,316,000&lt;/td&gt;&lt;td&gt;28,927,500&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：上銀(2049-TW)EPS預估上修至6.06元，預估目標價為243.5元",
+          "url": "https://news.cnyes.com/news/id/6356188",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共11位分析師，對上銀(2049-TW)做出2026年EPS預估：中位數由5.84元上修至6.06元，其中最高估值8.03元，最低估值4.44元，預估目標價為243.5元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年(前值)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;8.03(8.03)&lt;/td&gt;&lt;td&gt;10.25&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;4.44(4.44)&lt;/td&gt;&lt;td&gt;5.35&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;6.23(6.15)&lt;/td&gt;&lt;td&gt;7.92&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;6.06(5.84)&lt;/td&gt;&lt;td&gt;8.4&lt;/td&gt;&lt;td&gt;9.71&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;27,926,960&lt;/td&gt;&lt;td&gt;31,119,150&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;25,403,000&lt;/td&gt;&lt;td&gt;27,403,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;26,609,000&lt;/td&gt;&lt;td&gt;29,446,910&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;26,419,960&lt;/td&gt;&lt;td&gt;29,787,000&lt;/td&gt;&lt;td&gt;33,455,240&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;1,525,866&lt;/td&gt;&lt;td&gt;1,971,948&lt;/td&gt;&lt;td&gt;2,034,748&lt;/td&gt;&lt;td&gt;4,479,381&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;br&gt;&lt;span style=&quot;font-size:0.8em&quot;&gt;(單位：新台幣千元)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;24,262,638&lt;/td&gt;&lt;td&gt;24,391,684&lt;/td&gt;&lt;td&gt;24,632,772&lt;/td"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：AXIA Energia SA Sponsored ADR(AXIA-US)EPS預估上修至0.94元，預估目標價為9.04元",
+          "url": "https://news.cnyes.com/news/id/6356241",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共7位分析師，對AXIA Energia SA Sponsored ADR(AXIA-US)做出2026年EPS預估：中位數由0.91元上修至0.94元，其中最高估值7.62元，最低估值0.43元，預估目標價為9.04元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;7.62(7.62)&lt;/td&gt;&lt;td&gt;10.11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;0.43(0.43)&lt;/td&gt;&lt;td&gt;0.89&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.81(1.65)&lt;/td&gt;&lt;td&gt;2.66&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;0.94(0.91)&lt;/td&gt;&lt;td&gt;1.25&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;102.51億&lt;/td&gt;&lt;td&gt;109.98億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;75.13億&lt;/td&gt;&lt;td&gt;73.48億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;85.70億&lt;/td&gt;&lt;td&gt;91.86億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;85.17億&lt;/td&gt;&lt;td&gt;92.00億&lt;/td&gt;&lt;td&gt;79.67億&lt;/td&gt;&lt;td&gt;79.91億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;0.66&lt;/td&gt;&lt;td&gt;0.35&lt;/td&gt;&lt;td&gt;0.40&lt;/td&gt;&lt;td&gt;0.85&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;69.71億&lt;/td&gt;&lt;td&gt;65.98億&lt;/td&gt;&lt;td&gt;74.39億&lt;/td&gt;&lt;td&gt;74.54億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;詳細資訊請看美股內頁：&lt;br&gt;AXIA Energia SA Sponsored ADR(AXIA-US)&lt;/"
         }
       ]
     },
@@ -808,6 +760,72 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 141,
+      "articles": [
+        {
+          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
+          "url": "https://news.cnyes.com/news/id/6356318",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 歐特克(ADSK-US)大漲5.08%，報245.32美元",
+          "url": "https://news.cnyes.com/news/id/6356314",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;歐特克(ADSK-US)截至台北時間27日23:12股價上漲11.87美元，報245.32美元，漲幅5.08%，成交量1,217,861（股），盤中最高價245.32美元、最低價233.30美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.4%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.69%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;歐特克(ADSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.87%&lt;/li&gt;    &lt;li&gt;近 1 月：-17.45%&lt;/li&gt;    &lt;li&gt;近 3 月：-25.41%&lt;/li&gt;    &lt;li&gt;近 6 月：-20.41%&lt;/li&gt;    &lt;li&gt;今年以來：-24.05%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
+          "url": "https://news.cnyes.com/news/id/6356310",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
+          "url": "https://news.cnyes.com/news/id/6356309",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
+          "url": "https://news.cnyes.com/news/id/6356308",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
+          "url": "https://news.cnyes.com/news/id/6356304",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
+          "url": "https://news.cnyes.com/news/id/6356303",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
+          "url": "https://news.cnyes.com/news/id/6356302",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
+          "url": "https://news.cnyes.com/news/id/6356301",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
+          "url": "https://news.cnyes.com/news/id/6356300",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
+        }
+      ]
+    },
+    {
       "word": "2月",
       "count": 138,
       "articles": [
@@ -870,72 +888,6 @@
           "url": "https://news.ltn.com.tw/news/society/breakingnews/5356568",
           "source": "自由時報",
           "content": "2025年曾數次在台南市區、永康區等街頭大撒600萬到20萬元不等現金的李姓「撒錢哥」，也涉在去年3月30日凌晨到永康警分局派出所把拾得物卷宗藏起來，甚至脫去褲子上演「遛鳥」記...…"
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 135,
-      "articles": [
-        {
-          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
-          "url": "https://news.cnyes.com/news/id/6356318",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 歐特克(ADSK-US)大漲5.08%，報245.32美元",
-          "url": "https://news.cnyes.com/news/id/6356314",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;歐特克(ADSK-US)截至台北時間27日23:12股價上漲11.87美元，報245.32美元，漲幅5.08%，成交量1,217,861（股），盤中最高價245.32美元、最低價233.30美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.4%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.69%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;歐特克(ADSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.87%&lt;/li&gt;    &lt;li&gt;近 1 月：-17.45%&lt;/li&gt;    &lt;li&gt;近 3 月：-25.41%&lt;/li&gt;    &lt;li&gt;近 6 月：-20.41%&lt;/li&gt;    &lt;li&gt;今年以來：-24.05%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
-          "url": "https://news.cnyes.com/news/id/6356310",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
-          "url": "https://news.cnyes.com/news/id/6356309",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
-          "url": "https://news.cnyes.com/news/id/6356308",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
-          "url": "https://news.cnyes.com/news/id/6356304",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
-          "url": "https://news.cnyes.com/news/id/6356303",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
-          "url": "https://news.cnyes.com/news/id/6356302",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
-          "url": "https://news.cnyes.com/news/id/6356301",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
-          "url": "https://news.cnyes.com/news/id/6356300",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
         }
       ]
     },
@@ -1205,7 +1157,7 @@
     },
     {
       "word": "大跌",
-      "count": 102,
+      "count": 108,
       "articles": [
         {
           "title": "美股昨日大跌原因解析：從AI修正到估值壓力的多重因素｜露股go",
@@ -1337,7 +1289,7 @@
     },
     {
       "word": "全球",
-      "count": 92,
+      "count": 93,
       "articles": [
         {
           "title": "台積電全球布局　2年獲美日德與中國政府補助1514億",
@@ -1601,7 +1553,7 @@
     },
     {
       "word": "科技",
-      "count": 74,
+      "count": 75,
       "articles": [
         {
           "title": "美科技新聞網站：Meta內部晶片設計遭遇瓶頸",
@@ -1667,7 +1619,7 @@
     },
     {
       "word": "晶片",
-      "count": 70,
+      "count": 71,
       "articles": [
         {
           "title": "輝達財報超優也救不了股價 晶片定價權巔峰恐將成過去式？",
@@ -2392,6 +2344,138 @@
       ]
     },
     {
+      "word": "TAIPEI",
+      "count": 50,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Thousands march for memory of 228 Incident",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353781",
+          "source": "自由時報",
+          "content": "By Jason Pan / Staff reporter\r\n\r\n\r\nThousands of people took part in an annual march in Taipei yester...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Agency launches bird call contest",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353790",
+          "source": "自由時報",
+          "content": "By Esme Yeh / Staff reporter\r\n\r\nThe first bird call imitation competition, to be held alongside the ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Chinese cyberwarfare threat serious: report",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353784",
+          "source": "自由時報",
+          "content": "CYBERWARFARE CONTINGENCIES:Latent malware presited in Taiwan’s electronic infrastructure could hamme...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 CDC confirms the year’s first local measles case",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353780",
+          "source": "自由時報",
+          "content": "By Sam Garcia / Staff writer, with CNA\r\n\r\nTaiwan’s first domestic measles case of the year has been ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 MOE boosts food waste education",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353793",
+          "source": "自由時報",
+          "content": "By Rachel Lin and Jake Chung / Staff reporter, with staff writer\r\n\r\nThe Ministry of Education （MOE） ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 MAC blasts PRC for oppressing minister",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353775",
+          "source": "自由時報",
+          "content": "REACTIONS:A KMT official called on the interior minister to subject herself to oversight, while a TP...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Taiwan should adopt ‘hellscape’ strategy: think tank",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353776",
+          "source": "自由時報",
+          "content": "OTHER OPTIONS: Given possible US intervention and Taiwanese counterattacks, China might opt to block...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai touts protections of democracy",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354607",
+          "source": "自由時報",
+          "content": "‘PEACE THROUGH STRENGTH’: The president said that his primary mission is to protect the people, unit...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Single-person households surpass 40％ for first time",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354609",
+          "source": "自由時報",
+          "content": "By Kao Chia-ho and Esme Yeh / Staff reporters\r\n\r\nOne-person households accounted for more than 40 pe...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Group demands transition timeline",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354610",
+          "source": "自由時報",
+          "content": "By Huang Ching-hsuan, Chen Cheng-yu and Jake Chung / Staff reporters, with staff writer\r\n\r\nThe gover...…"
+        }
+      ]
+    },
+    {
+      "word": "TIMES",
+      "count": 50,
+      "articles": [
+        {
+          "title": "《TAIPEI TIMES》 Thousands march for memory of 228 Incident",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353781",
+          "source": "自由時報",
+          "content": "By Jason Pan / Staff reporter\r\n\r\n\r\nThousands of people took part in an annual march in Taipei yester...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Agency launches bird call contest",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353790",
+          "source": "自由時報",
+          "content": "By Esme Yeh / Staff reporter\r\n\r\nThe first bird call imitation competition, to be held alongside the ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Chinese cyberwarfare threat serious: report",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353784",
+          "source": "自由時報",
+          "content": "CYBERWARFARE CONTINGENCIES:Latent malware presited in Taiwan’s electronic infrastructure could hamme...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 CDC confirms the year’s first local measles case",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353780",
+          "source": "自由時報",
+          "content": "By Sam Garcia / Staff writer, with CNA\r\n\r\nTaiwan’s first domestic measles case of the year has been ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 MOE boosts food waste education",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353793",
+          "source": "自由時報",
+          "content": "By Rachel Lin and Jake Chung / Staff reporter, with staff writer\r\n\r\nThe Ministry of Education （MOE） ...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 MAC blasts PRC for oppressing minister",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353775",
+          "source": "自由時報",
+          "content": "REACTIONS:A KMT official called on the interior minister to subject herself to oversight, while a TP...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Taiwan should adopt ‘hellscape’ strategy: think tank",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353776",
+          "source": "自由時報",
+          "content": "OTHER OPTIONS: Given possible US intervention and Taiwanese counterattacks, China might opt to block...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Lai touts protections of democracy",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354607",
+          "source": "自由時報",
+          "content": "‘PEACE THROUGH STRENGTH’: The president said that his primary mission is to protect the people, unit...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Single-person households surpass 40％ for first time",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354609",
+          "source": "自由時報",
+          "content": "By Kao Chia-ho and Esme Yeh / Staff reporters\r\n\r\nOne-person households accounted for more than 40 pe...…"
+        },
+        {
+          "title": "《TAIPEI TIMES》 Group demands transition timeline",
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354610",
+          "source": "自由時報",
+          "content": "By Huang Ching-hsuan, Chen Cheng-yu and Jake Chung / Staff reporters, with staff writer\r\n\r\nThe gover...…"
+        }
+      ]
+    },
+    {
       "word": "Google",
       "count": 49,
       "articles": [
@@ -2524,6 +2608,72 @@
       ]
     },
     {
+      "word": "合作",
+      "count": 47,
+      "articles": [
+        {
+          "title": "台英經貿科技合作　由政策倡議走向產業扎根",
+          "url": "https://www.cna.com.tw/news/afe/202602270037.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者陳韻聿倫敦27日專電）英國2023年與台灣建立「提升貿易夥伴關係」（ETP），是第一個與台灣建立雙邊經貿制度化架構的歐洲國家。展望新的一年，雙邊合作預期將在歷年累積的政策倡議基礎上，以促進更多產業扎根和技術落地為重點。"
+        },
+        {
+          "title": "俄白混合威脅增  東歐3國推合作強化歐盟邊境安全",
+          "url": "https://www.cna.com.tw/news/aopl/202602270153.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者游堯茹維爾紐斯27日專電）波蘭、拉脫維亞與立陶宛3國總理25日發布聯合聲明，承諾加強合作，因應來自俄羅斯與白俄羅斯的混合式威脅，並強化與兩國接壤的歐盟外部邊境安全。"
+        },
+        {
+          "title": "阿特曼：OpenAI洽談國防部合作 盼化解Anthropic僵局",
+          "url": "https://news.cnyes.com/news/id/6356322",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《華爾街日報》(WSJ)周五 (27 日) 報導，OpenAI 執行長阿特曼 (Sam Altman) 表示，公司正與美國國防部洽談合作事宜，盼在符合自身安全原則的前提下，讓旗下 AI 模型能部署於機密環境，並嘗試化解競爭對手 Anthropic 與五角大廈之間的僵局。&lt;/p&gt;\n\n&lt;p&gt;據了解，Anthropic 近幾周與國防部就 Claude 模型用途範圍陷入對峙。Anthropic 執行長阿莫戴 (Dario Amodei) 稍早宣布，公司拒絕國防部要求將技術開放於「所有合法用途」，並堅持保留禁止用於大規模國內監控與自主攻擊性武器的權利。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在致員工備忘錄中指出，OpenAI 正評估是否能在維持既有安全護欄的情況下，讓模型應用於機密場域，並希望找到一套可供整個產業參考的解決方案。他強調，目前尚未簽署任何合約，談判也可能破局。&lt;/p&gt;\n\n&lt;p&gt;根據備忘錄內容，OpenAI 若與國防部達成協議，將要求合約排除非法用途或不適合雲端部署的應用，例如國內監控與自主攻擊性武器。奧特曼表示，公司長期主張 AI 不應用於大規模監控或自主致命武器，且在高風險自動化決策中必須保有人類監督，這些都是不可逾越的紅線。&lt;/p&gt;\n\n&lt;p&gt;他同時指出，爭議核心並非 AI 將如何被使用，而是「誰擁有控制權」。他表示，私人企業不應凌駕於民選政府之上，儘管企業可以提供大量意見與影響力，「民主或許混亂，但我們致力於維護它」。&lt;/p&gt;\n\n&lt;p&gt;知情人士透露，OpenAI 認為可透過技術手段落實紅線，例如限制模型僅在雲端環境運作，而非所謂的邊緣環境，以提高濫用門檻；同時協助研究人員取得安全許可，讓他們能向政府說明技術限制與潛在風險。奧特曼表示，公司也將部署專責人員與政府合作，確保系統運作符合規範，並願向其他盟國提供類似服務。&lt;/p&gt;\n\n&lt;p&gt;對於 Anthropic 立場，阿特曼表達原則性支持，但也承認政府對於國家安全議題由私人企業掌握的疑慮。美國國防部研究與工程副部長麥可 (Emil Michael) 則在社群平台回應稱，大規模監控在憲法第四修正案下已屬違法，國防部不會讓任何大型科技公司決定美國人的公民自由。&lt;/p&gt;\n"
+        },
+        {
+          "title": "川普下令聯邦機關禁用 Anthropic，列供應鏈風險企業拒合作",
+          "url": "https://technews.tw/2026/03/01/trump-orders-federal-agencies-to-stop-using-anthropic-ai-technology/",
+          "source": "TechNews",
+          "content": "美國戰爭部要求 Anthropic 放寬 Claude 模型在軍事系統中的使用限制，即使最後通牒仍未取得共識。 [&#8230;]"
+        },
+        {
+          "title": "韓樂團來台灣搶當門面 can't be blue合作承漢：謝SM放行",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5355242",
+          "source": "自由時報",
+          "content": "）韓國新生代樂團「can't be blue」近年來人氣水漲船高，他們曾受邀參加金曲國際音樂節，今天（1日）二度來台，參加台中浮現祭。主唱李度勳知道他們在台灣Threads（脆...…"
+        },
+        {
+          "title": "Claude 超車 ChatGPT 登頂 App Store 榜首，Anthropic 拒絕軍事合作贏得使用者青睞",
+          "url": "https://technews.tw/2026/03/02/anthropics-claude-overtakes-chatgpt-in-app-store/",
+          "source": "TechNews",
+          "content": "在人工智慧的競爭中，Anthropic 的 Claude 最近成功超越 OpenAI 的 ChatGPT，成為 [&#8230;]"
+        },
+        {
+          "title": "弘塑攜手臺科大 啟動5千萬產學合作 共築先進封裝研發平台",
+          "url": "https://news.cnyes.com/news/id/6357737",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;半導體濕製程設大廠弘塑 (3131-TW) 關注國內半導體人才的培育，今 (2) 日與國立臺灣科技大學正式簽署五年期、總經費 5,000 萬元的產學合作協議，聚焦半導體設備與關鍵材料研發，並同步推動高階科技人才培育，打造學研與產業端強強聯合、共創價值的合作模式。&lt;/p&gt;\n\n&lt;p&gt;弘塑指出，隨著 2.5D/3D、CoWoS、HBM 與面板級封裝 (FOPLP) 等技術快速發展，先進封裝已從單一製程優化，邁向設備整合與材料協同創新的系統工程，在製程穩定度、材料界面可靠度及與整體良率控制等議題，對設備精度與材料設計的要求也大幅提升。&lt;/p&gt;\n\n&lt;p&gt;此次弘塑與臺科大的合作採長期專案推動模式，由雙方共同成立專案團隊與技術交流平台，透過每年投入 1,000 萬元，針對設備驗證、製程優化以及關鍵材料開發等面向展開系統性研究，加速設備與材料的開發驗證，更進一步針對先進設備的精密零件與關鍵材料進行在地化開發，強化供應鏈自主性與技術掌握度，並透過實際製程場域驗證與數據分析，加速學研成果落地並與產業應用接軌。&lt;/p&gt;\n\n&lt;p&gt;人才培育方面，弘塑將提供參與合作計畫的碩博士生專屬獎學金與預聘機會，並安排學生進入企業場域參與先進設備操作與製程實作，投入前瞻研發專案，透過「產學研發 + 企業實作」的雙軌培育模式，讓學生在學期間即能累積產線經驗與專案成果，縮短學用落差，共同培養具備研發創新、製程整合與專利布局能力的高階工程人才。&lt;/p&gt;\n\n&lt;p&gt;臺科大長期深耕半導體關鍵技術領域，在「矽光子技術」、「積體電路設計與電子設計自動化」、「先進製程與封裝技術」及「複合半導體材料」等領域具備完整研究量能及多項產學合作實績，累積關鍵製程開發、材料改質等技術基礎。&lt;/p&gt;\n\n&lt;p&gt;臺科大產學創新學院更整合先進半導體、智慧製造、人工智慧跨域與能源永續的師資與研究團隊，建立跨系所協作機制，強化從設計端、材料端到設備端的整合能力，提升系統工程研發效率。&lt;/p&gt;\n\n&lt;p&gt;此外，雙方也預計將研發成果進行專利布局，將關鍵技術轉化為具備商業價值的智慧財產權 (IP)，強化技術壁壘與市場競爭優勢。臺科大校長顏家鈺表示，學校正積極將半導體設備與材料領域打造為學校的重點發展特色，除了鼓勵教師拓展半導體相關研究並推動跨域合作外，同時延攬具產業實務經驗與關鍵技術專長的師資加入團隊，「臺科大始終重視與產業夥伴的實質合作，透過多元專長的師資與優秀學生，協助企業突破技術瓶頸，創造產學雙贏。」&lt;/p&gt;\n\n&lt;p&gt;弘塑集團業務橫跨濕製程設備、化學材料、量測檢測與智慧製造軟體系統，形成完整一條龍解決方案，累積裝機超過 1,200 套，擁有 149 件專利，並長期維持 7% 至 10% 的研發投資比例，具備豐富的先進封裝製程整合能力與經驗。&lt;/p&gt;\n\n&lt;p&gt;弘塑集團執行長張鴻泰指出，AI 浪潮正加速推動封裝技術朝向高密度與異質整合發展，企業競爭已從單一設備走向系統整合與材料協同創新。而弘塑希望在既有設備與材料基礎上，進一步延伸至更高階的封裝應用，包括電鍍機與 X-ray 量測技術的研發等，與臺科大進行資源互補和技術整合，一同穩健向前，共同鞏固臺灣自主研發的能量，建立永續的人才與技術生態系，打造結合學術研究與產業實務的研發平台，提升全球競爭力。&lt;/p&gt;\n\n&lt;p&gt;在全球高科技產業競逐加劇的趨勢下，競爭焦點已由單點技術突破，轉向系統整合與協同創新能力的比拼，臺科大將持續以跨域整合與實務應用為核心，與產業建立長期合作關係，打造穩定且具延續性的研發人才培育基地，成為臺灣產業發展的堅實後盾。&lt;/p&gt;\n"
+        },
+        {
+          "title": "弘塑與台科大簽署合作協議　打造先進封裝研發平台",
+          "url": "https://www.cna.com.tw/news/afe/202603020064.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者張建中新竹2日電）半導體設備廠弘塑今天宣布，與台灣科技大學簽署5年期、總經費新台幣5000萬元的產學合作協議，聚焦半導體設備與關鍵材料研發，並推動高階科技人才培育。"
+        },
+        {
+          "title": "啓碁MWC秀AI-RAN解決方案　與輝達合作6G創新",
+          "url": "https://www.cna.com.tw/news/afe/202603020052.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者潘智義台北2日電）網通廠啓碁科技宣布參與3月2日至5日在西班牙巴塞隆納舉行的世界行動通訊大會（MWC 2026），首度展示與輝達（NVIDIA）AI Aerial整合的開放式無單元（O-RU）以及AI-RAN通訊解決方案。"
+        },
+        {
+          "title": "台日聯手 日本湯淺M&amp;amp;B與長庚國際能源宣布啟動戰略合作",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5356092",
+          "source": "自由時報",
+          "content": "\n\n\n長庚國際能源今日與日本企業湯淺M&amp;B株式會社宣布正式建立戰略合作關係，雙方將聚焦日本商業與工業級儲能市場（BESS），共同推動大型高安全性儲能系統部署，支援日本能源轉型與...…"
+        }
+      ]
+    },
+    {
       "word": "哈米尼",
       "count": 47,
       "articles": [
@@ -2590,74 +2740,8 @@
       ]
     },
     {
-      "word": "合作",
-      "count": 46,
-      "articles": [
-        {
-          "title": "台英經貿科技合作　由政策倡議走向產業扎根",
-          "url": "https://www.cna.com.tw/news/afe/202602270037.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者陳韻聿倫敦27日專電）英國2023年與台灣建立「提升貿易夥伴關係」（ETP），是第一個與台灣建立雙邊經貿制度化架構的歐洲國家。展望新的一年，雙邊合作預期將在歷年累積的政策倡議基礎上，以促進更多產業扎根和技術落地為重點。"
-        },
-        {
-          "title": "俄白混合威脅增  東歐3國推合作強化歐盟邊境安全",
-          "url": "https://www.cna.com.tw/news/aopl/202602270153.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者游堯茹維爾紐斯27日專電）波蘭、拉脫維亞與立陶宛3國總理25日發布聯合聲明，承諾加強合作，因應來自俄羅斯與白俄羅斯的混合式威脅，並強化與兩國接壤的歐盟外部邊境安全。"
-        },
-        {
-          "title": "阿特曼：OpenAI洽談國防部合作 盼化解Anthropic僵局",
-          "url": "https://news.cnyes.com/news/id/6356322",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《華爾街日報》(WSJ)周五 (27 日) 報導，OpenAI 執行長阿特曼 (Sam Altman) 表示，公司正與美國國防部洽談合作事宜，盼在符合自身安全原則的前提下，讓旗下 AI 模型能部署於機密環境，並嘗試化解競爭對手 Anthropic 與五角大廈之間的僵局。&lt;/p&gt;\n\n&lt;p&gt;據了解，Anthropic 近幾周與國防部就 Claude 模型用途範圍陷入對峙。Anthropic 執行長阿莫戴 (Dario Amodei) 稍早宣布，公司拒絕國防部要求將技術開放於「所有合法用途」，並堅持保留禁止用於大規模國內監控與自主攻擊性武器的權利。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在致員工備忘錄中指出，OpenAI 正評估是否能在維持既有安全護欄的情況下，讓模型應用於機密場域，並希望找到一套可供整個產業參考的解決方案。他強調，目前尚未簽署任何合約，談判也可能破局。&lt;/p&gt;\n\n&lt;p&gt;根據備忘錄內容，OpenAI 若與國防部達成協議，將要求合約排除非法用途或不適合雲端部署的應用，例如國內監控與自主攻擊性武器。奧特曼表示，公司長期主張 AI 不應用於大規模監控或自主致命武器，且在高風險自動化決策中必須保有人類監督，這些都是不可逾越的紅線。&lt;/p&gt;\n\n&lt;p&gt;他同時指出，爭議核心並非 AI 將如何被使用，而是「誰擁有控制權」。他表示，私人企業不應凌駕於民選政府之上，儘管企業可以提供大量意見與影響力，「民主或許混亂，但我們致力於維護它」。&lt;/p&gt;\n\n&lt;p&gt;知情人士透露，OpenAI 認為可透過技術手段落實紅線，例如限制模型僅在雲端環境運作，而非所謂的邊緣環境，以提高濫用門檻；同時協助研究人員取得安全許可，讓他們能向政府說明技術限制與潛在風險。奧特曼表示，公司也將部署專責人員與政府合作，確保系統運作符合規範，並願向其他盟國提供類似服務。&lt;/p&gt;\n\n&lt;p&gt;對於 Anthropic 立場，阿特曼表達原則性支持，但也承認政府對於國家安全議題由私人企業掌握的疑慮。美國國防部研究與工程副部長麥可 (Emil Michael) 則在社群平台回應稱，大規模監控在憲法第四修正案下已屬違法，國防部不會讓任何大型科技公司決定美國人的公民自由。&lt;/p&gt;\n"
-        },
-        {
-          "title": "川普下令聯邦機關禁用 Anthropic，列供應鏈風險企業拒合作",
-          "url": "https://technews.tw/2026/03/01/trump-orders-federal-agencies-to-stop-using-anthropic-ai-technology/",
-          "source": "TechNews",
-          "content": "美國戰爭部要求 Anthropic 放寬 Claude 模型在軍事系統中的使用限制，即使最後通牒仍未取得共識。 [&#8230;]"
-        },
-        {
-          "title": "韓樂團來台灣搶當門面 can't be blue合作承漢：謝SM放行",
-          "url": "https://ent.ltn.com.tw/news/breakingnews/5355242",
-          "source": "自由時報",
-          "content": "）韓國新生代樂團「can't be blue」近年來人氣水漲船高，他們曾受邀參加金曲國際音樂節，今天（1日）二度來台，參加台中浮現祭。主唱李度勳知道他們在台灣Threads（脆...…"
-        },
-        {
-          "title": "Claude 超車 ChatGPT 登頂 App Store 榜首，Anthropic 拒絕軍事合作贏得使用者青睞",
-          "url": "https://technews.tw/2026/03/02/anthropics-claude-overtakes-chatgpt-in-app-store/",
-          "source": "TechNews",
-          "content": "在人工智慧的競爭中，Anthropic 的 Claude 最近成功超越 OpenAI 的 ChatGPT，成為 [&#8230;]"
-        },
-        {
-          "title": "弘塑攜手臺科大 啟動5千萬產學合作 共築先進封裝研發平台",
-          "url": "https://news.cnyes.com/news/id/6357737",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;半導體濕製程設大廠弘塑 (3131-TW) 關注國內半導體人才的培育，今 (2) 日與國立臺灣科技大學正式簽署五年期、總經費 5,000 萬元的產學合作協議，聚焦半導體設備與關鍵材料研發，並同步推動高階科技人才培育，打造學研與產業端強強聯合、共創價值的合作模式。&lt;/p&gt;\n\n&lt;p&gt;弘塑指出，隨著 2.5D/3D、CoWoS、HBM 與面板級封裝 (FOPLP) 等技術快速發展，先進封裝已從單一製程優化，邁向設備整合與材料協同創新的系統工程，在製程穩定度、材料界面可靠度及與整體良率控制等議題，對設備精度與材料設計的要求也大幅提升。&lt;/p&gt;\n\n&lt;p&gt;此次弘塑與臺科大的合作採長期專案推動模式，由雙方共同成立專案團隊與技術交流平台，透過每年投入 1,000 萬元，針對設備驗證、製程優化以及關鍵材料開發等面向展開系統性研究，加速設備與材料的開發驗證，更進一步針對先進設備的精密零件與關鍵材料進行在地化開發，強化供應鏈自主性與技術掌握度，並透過實際製程場域驗證與數據分析，加速學研成果落地並與產業應用接軌。&lt;/p&gt;\n\n&lt;p&gt;人才培育方面，弘塑將提供參與合作計畫的碩博士生專屬獎學金與預聘機會，並安排學生進入企業場域參與先進設備操作與製程實作，投入前瞻研發專案，透過「產學研發 + 企業實作」的雙軌培育模式，讓學生在學期間即能累積產線經驗與專案成果，縮短學用落差，共同培養具備研發創新、製程整合與專利布局能力的高階工程人才。&lt;/p&gt;\n\n&lt;p&gt;臺科大長期深耕半導體關鍵技術領域，在「矽光子技術」、「積體電路設計與電子設計自動化」、「先進製程與封裝技術」及「複合半導體材料」等領域具備完整研究量能及多項產學合作實績，累積關鍵製程開發、材料改質等技術基礎。&lt;/p&gt;\n\n&lt;p&gt;臺科大產學創新學院更整合先進半導體、智慧製造、人工智慧跨域與能源永續的師資與研究團隊，建立跨系所協作機制，強化從設計端、材料端到設備端的整合能力，提升系統工程研發效率。&lt;/p&gt;\n\n&lt;p&gt;此外，雙方也預計將研發成果進行專利布局，將關鍵技術轉化為具備商業價值的智慧財產權 (IP)，強化技術壁壘與市場競爭優勢。臺科大校長顏家鈺表示，學校正積極將半導體設備與材料領域打造為學校的重點發展特色，除了鼓勵教師拓展半導體相關研究並推動跨域合作外，同時延攬具產業實務經驗與關鍵技術專長的師資加入團隊，「臺科大始終重視與產業夥伴的實質合作，透過多元專長的師資與優秀學生，協助企業突破技術瓶頸，創造產學雙贏。」&lt;/p&gt;\n\n&lt;p&gt;弘塑集團業務橫跨濕製程設備、化學材料、量測檢測與智慧製造軟體系統，形成完整一條龍解決方案，累積裝機超過 1,200 套，擁有 149 件專利，並長期維持 7% 至 10% 的研發投資比例，具備豐富的先進封裝製程整合能力與經驗。&lt;/p&gt;\n\n&lt;p&gt;弘塑集團執行長張鴻泰指出，AI 浪潮正加速推動封裝技術朝向高密度與異質整合發展，企業競爭已從單一設備走向系統整合與材料協同創新。而弘塑希望在既有設備與材料基礎上，進一步延伸至更高階的封裝應用，包括電鍍機與 X-ray 量測技術的研發等，與臺科大進行資源互補和技術整合，一同穩健向前，共同鞏固臺灣自主研發的能量，建立永續的人才與技術生態系，打造結合學術研究與產業實務的研發平台，提升全球競爭力。&lt;/p&gt;\n\n&lt;p&gt;在全球高科技產業競逐加劇的趨勢下，競爭焦點已由單點技術突破，轉向系統整合與協同創新能力的比拼，臺科大將持續以跨域整合與實務應用為核心，與產業建立長期合作關係，打造穩定且具延續性的研發人才培育基地，成為臺灣產業發展的堅實後盾。&lt;/p&gt;\n"
-        },
-        {
-          "title": "弘塑與台科大簽署合作協議　打造先進封裝研發平台",
-          "url": "https://www.cna.com.tw/news/afe/202603020064.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者張建中新竹2日電）半導體設備廠弘塑今天宣布，與台灣科技大學簽署5年期、總經費新台幣5000萬元的產學合作協議，聚焦半導體設備與關鍵材料研發，並推動高階科技人才培育。"
-        },
-        {
-          "title": "啓碁MWC秀AI-RAN解決方案　與輝達合作6G創新",
-          "url": "https://www.cna.com.tw/news/afe/202603020052.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者潘智義台北2日電）網通廠啓碁科技宣布參與3月2日至5日在西班牙巴塞隆納舉行的世界行動通訊大會（MWC 2026），首度展示與輝達（NVIDIA）AI Aerial整合的開放式無單元（O-RU）以及AI-RAN通訊解決方案。"
-        },
-        {
-          "title": "台日聯手 日本湯淺M&amp;amp;B與長庚國際能源宣布啟動戰略合作",
-          "url": "https://ec.ltn.com.tw/article/breakingnews/5356092",
-          "source": "自由時報",
-          "content": "\n\n\n長庚國際能源今日與日本企業湯淺M&amp;B株式會社宣布正式建立戰略合作關係，雙方將聚焦日本商業與工業級儲能市場（BESS），共同推動大型高安全性儲能系統部署，支援日本能源轉型與...…"
-        }
-      ]
-    },
-    {
       "word": "WBC",
-      "count": 44,
+      "count": 45,
       "articles": [
         {
           "title": "看好WBC帶動民眾赴日旅遊　國銀開搶商機",
@@ -2854,138 +2938,6 @@
       ]
     },
     {
-      "word": "TAIPEI",
-      "count": 43,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》 Thousands march for memory of 228 Incident",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353781",
-          "source": "自由時報",
-          "content": "By Jason Pan / Staff reporter\r\n\r\n\r\nThousands of people took part in an annual march in Taipei yester...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Agency launches bird call contest",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353790",
-          "source": "自由時報",
-          "content": "By Esme Yeh / Staff reporter\r\n\r\nThe first bird call imitation competition, to be held alongside the ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Chinese cyberwarfare threat serious: report",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353784",
-          "source": "自由時報",
-          "content": "CYBERWARFARE CONTINGENCIES:Latent malware presited in Taiwan’s electronic infrastructure could hamme...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 CDC confirms the year’s first local measles case",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353780",
-          "source": "自由時報",
-          "content": "By Sam Garcia / Staff writer, with CNA\r\n\r\nTaiwan’s first domestic measles case of the year has been ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 MOE boosts food waste education",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353793",
-          "source": "自由時報",
-          "content": "By Rachel Lin and Jake Chung / Staff reporter, with staff writer\r\n\r\nThe Ministry of Education （MOE） ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 MAC blasts PRC for oppressing minister",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353775",
-          "source": "自由時報",
-          "content": "REACTIONS:A KMT official called on the interior minister to subject herself to oversight, while a TP...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Taiwan should adopt ‘hellscape’ strategy: think tank",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353776",
-          "source": "自由時報",
-          "content": "OTHER OPTIONS: Given possible US intervention and Taiwanese counterattacks, China might opt to block...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai touts protections of democracy",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354607",
-          "source": "自由時報",
-          "content": "‘PEACE THROUGH STRENGTH’: The president said that his primary mission is to protect the people, unit...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Single-person households surpass 40％ for first time",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354609",
-          "source": "自由時報",
-          "content": "By Kao Chia-ho and Esme Yeh / Staff reporters\r\n\r\nOne-person households accounted for more than 40 pe...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Group demands transition timeline",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354610",
-          "source": "自由時報",
-          "content": "By Huang Ching-hsuan, Chen Cheng-yu and Jake Chung / Staff reporters, with staff writer\r\n\r\nThe gover...…"
-        }
-      ]
-    },
-    {
-      "word": "TIMES",
-      "count": 43,
-      "articles": [
-        {
-          "title": "《TAIPEI TIMES》 Thousands march for memory of 228 Incident",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353781",
-          "source": "自由時報",
-          "content": "By Jason Pan / Staff reporter\r\n\r\n\r\nThousands of people took part in an annual march in Taipei yester...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Agency launches bird call contest",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353790",
-          "source": "自由時報",
-          "content": "By Esme Yeh / Staff reporter\r\n\r\nThe first bird call imitation competition, to be held alongside the ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Chinese cyberwarfare threat serious: report",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353784",
-          "source": "自由時報",
-          "content": "CYBERWARFARE CONTINGENCIES:Latent malware presited in Taiwan’s electronic infrastructure could hamme...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 CDC confirms the year’s first local measles case",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353780",
-          "source": "自由時報",
-          "content": "By Sam Garcia / Staff writer, with CNA\r\n\r\nTaiwan’s first domestic measles case of the year has been ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 MOE boosts food waste education",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353793",
-          "source": "自由時報",
-          "content": "By Rachel Lin and Jake Chung / Staff reporter, with staff writer\r\n\r\nThe Ministry of Education （MOE） ...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 MAC blasts PRC for oppressing minister",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353775",
-          "source": "自由時報",
-          "content": "REACTIONS:A KMT official called on the interior minister to subject herself to oversight, while a TP...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Taiwan should adopt ‘hellscape’ strategy: think tank",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5353776",
-          "source": "自由時報",
-          "content": "OTHER OPTIONS: Given possible US intervention and Taiwanese counterattacks, China might opt to block...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Lai touts protections of democracy",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354607",
-          "source": "自由時報",
-          "content": "‘PEACE THROUGH STRENGTH’: The president said that his primary mission is to protect the people, unit...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Single-person households surpass 40％ for first time",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354609",
-          "source": "自由時報",
-          "content": "By Kao Chia-ho and Esme Yeh / Staff reporters\r\n\r\nOne-person households accounted for more than 40 pe...…"
-        },
-        {
-          "title": "《TAIPEI TIMES》 Group demands transition timeline",
-          "url": "https://news.ltn.com.tw/news/focus/breakingnews/5354610",
-          "source": "自由時報",
-          "content": "By Huang Ching-hsuan, Chen Cheng-yu and Jake Chung / Staff reporters, with staff writer\r\n\r\nThe gover...…"
-        }
-      ]
-    },
-    {
       "word": "每股",
       "count": 41,
       "articles": [
@@ -3052,6 +3004,72 @@
       ]
     },
     {
+      "word": "Anthropic",
+      "count": 41,
+      "articles": [
+        {
+          "title": "Anthropic拒絕五角大廈AI合約要求！美國軍方揚言列供應鏈風險、動用《國防生產法》",
+          "url": "https://news.cnyes.com/news/id/6355909",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 Anthropic 在其 AI 技術供美國軍方使用的安全防護措施爭議中，拒絕了五角大廈提出的最新提案，使雙方對峙在政府設定的最後期限前一天進一步升級。該期限要求公司撤回相關限制，否則將面臨嚴重後果。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，Anthropic 週四發表聲明指出，國防部提出的新合約語言，仍未滿足公司對其 AI 工具軍事用途設立防護措施的要求。該公司堅持兩項關鍵限制：&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;不得將其 AI 技術用於監控美國公民&lt;/li&gt;\n&lt;li&gt;不得在「無人類介入」的情況下，執行自主致命攻擊&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;Anthropic 表示，儘管最新提案未達標準，但公司仍持續與國防官員協商，並強調致力於與軍方合作。對此，五角大廈發言人尚未立即回應。&lt;/p&gt;\n\n&lt;p&gt;這場爭議的焦點，在於 Anthropic 要求其 Claude AI 工具在軍事應用時必須附帶使用限制，但美國國防部認為這些條件並無必要。&lt;/p&gt;\n\n&lt;p&gt;國防官員此前已拒絕相關要求，並強調必須能在不受 Anthropic 額外限制的情況下使用 Claude。Claude 是目前少數獲准處理機密雲端工作的 AI 工具之一。&lt;/p&gt;\n\n&lt;p&gt;若 Anthropic 不撤回上述條件，美國國防部已揚言將其列為「供應鏈風險」，此舉將使該公司無法再與其他國防承包商合作。&lt;/p&gt;\n\n&lt;p&gt;此外，五角大廈甚至威脅動用冷戰時期制定的《國防生產法》（Defense Production Act），在公司反對的情況下強制使用其軟體。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 週四表示，公司仍致力於與軍方合作，但希望國防部重新考慮僅與願意接受「所有合法用途」標準的承包商合作的立場。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中強調：「這些威脅不會改變我們的立場：我們無法在良知上同意他們的要求。」&lt;/p&gt;\n\n&lt;h6&gt;AI 軍備競賽升溫&lt;/h6&gt;\n\n&lt;p&gt;目前估值約 380 億美元的 Anthropic，是首家獲得五角大廈核准處理機密資料的 AI 公司，其 Claude Gov 工具因操作簡便，迅速成為國防人員青睞的選項。&lt;/p&gt;\n\n&lt;p&gt;然而，該公司正面臨日益激烈的競爭。由特斯拉、SpaceX 執行長馬斯克創立的 xAI，近日也獲准承接機密工作；同時，OpenAI 以及 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 旗下的 Gemini 亦為強勁對手。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 發言人透露，國防部最新提出的合約條款雖被描述為「折衷方案」，但其中法律措辭可能使公司對監控與自主武器的兩項防護措施形同虛設。&lt;/p&gt;\n\n&lt;p&gt;Amodei 表示，Anthropic 理解最終軍事決策權屬於國防部，而非私人企業。他強調，公司提出的兩項限制並非試圖制定政策，而是為確保仍處於發展初期、且偶有錯誤的 AI 技術，不會被用於超出其能力範圍的場景。&lt;/p&gt;\n\n&lt;h6&gt;美國五角大廈推動「AI 優先」戰略&lt;/h6&gt;\n\n&lt;p&gt;這場爭端爆發於五角大廈公布全新 AI 戰略僅數週之後。該戰略呼籲透過加強對尖端 AI 模型的實驗運用，並減少使用上的官僚障礙，將軍隊打造為一支「AI 優先」的部隊。&lt;/p&gt;\n\n&lt;p&gt;該方針並特別敦促國防部選擇「不受使用政策限制、且不會妨礙合法軍事應用」的模型。&lt;/p&gt;\n\n&lt;p&gt;國防官員重申，軍方將在法律範圍內使用 Anthropic 的技術。五角大廈發言人 Sean Parnell 週四稍早也表示，國防部無意進行大規模監控，亦不打算開發「在沒有任何人類參與下運作的自主武器」。&lt;/p&gt;\n\n&lt;p&gt;Parnell 隨後在社群平台 X 上發文強調：「我們不會讓任何公司決定我們如何做出作戰決策。」他並指出，對方必須在 美東時間週五下午 5 點 01 分（台灣時間為 週六上午 6:01 AM）前作出決定，否則將終止與 Anthropic 的合作關係，並將其列為供應鏈風險。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
+        },
+        {
+          "title": "AI成軟體股血洗「救世主」！Anthropic扭轉市場恐慌、華爾街重新評價",
+          "url": "https://news.cnyes.com/news/id/6355980",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;在連續數週的拋售潮下，華爾街對軟體股的「血洗」一度看似無人能擋。直到頂尖人工智慧（AI）新創公司 Anthropic 出手，市場恐慌情緒才終於出現轉折。&lt;/p&gt;\n\n&lt;p&gt;根據《華爾街日報》報導，Anthropic 週二（24 日）展示了 Claude Cowork 的最新更新。其為一款先進的 AI 工具，讓員工能夠將 AI 機器人應用於各種工作任務。&lt;/p&gt;\n\n&lt;p&gt;該公司在發表會中重點介紹了軟體巨頭 Salesforce(&lt;a data-symbol-template=&quot;USS:CRM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;CRM-US&lt;/a&gt;) ，並新增與 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 應用程式、DocuSign(&lt;a data-symbol-template=&quot;USS:DOCU:STOCK:COMMON&quot; href=&quot;#&quot;&gt;DOCU-US&lt;/a&gt;) 、LegalZoom.com (&lt;a data-symbol-template=&quot;USS:LZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;LZ-US&lt;/a&gt;) 等服務的整合功能。&lt;/p&gt;\n\n&lt;p&gt;發表會結束後，Salesforce 股價上揚，其他多家軟體公司股價也同步走高，帶動漲勢延續至週四（26 日）。&lt;/p&gt;\n\n&lt;p&gt;《WSJ》指出，投資人開始意識到，儘管部分企業可能較能抵禦衝擊，但整體而言，軟體公司仍有望在協助推動 AI 顛覆浪潮中扮演重要角色。&lt;/p&gt;\n\n&lt;p&gt;備受關注的 iShares 擴展科技軟體類股 ETF(&lt;a data-symbol-template=&quot;USS:IGV:STOCK:ETF&quot; href=&quot;#&quot;&gt;IGV-US&lt;/a&gt;) 軟體指數在今年截至上週五為止已累計下跌逾 20%，但自本週一收盤以來已反彈約 7%。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;裁員與轉型：&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 帶來新一輪效率革命&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;投資人週四進一步放大這一論點。在支付處理公司 Block(&lt;a data-symbol-template=&quot;USS:XYZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;XYZ-US&lt;/a&gt;) 宣布計畫裁減 40% 員工後，股價大漲近 20%。&lt;/p&gt;\n\n&lt;p&gt;執行長 Jack Dorsey 在致股東信中寫道：「一支規模大幅縮小的團隊，運用我們正在打造的工具，可以做得更多，而且做得更好。」&lt;/p&gt;\n\n&lt;p&gt;他並表示：「我相信在未來一年內，多數公司都會得出相同的結論，並進行類似的結構性調整。」&lt;/p&gt;\n\n&lt;p&gt;軟體公司 Salesforce、Workday(&lt;a data-symbol-template=&quot;USS:WDAY:STOCK:COMMON&quot; href=&quot;#&quot;&gt;WDAY-US&lt;/a&gt;) 以及 Snowflake(&lt;a data-symbol-template=&quot;USS:SNOW:STOCK:COMMON&quot; href=&quot;#&quot;&gt;SNOW-US&lt;/a&gt;) 也紛紛說明，將如何在 AI 時代推動轉型。&lt;/p&gt;\n\n&lt;p&gt;儘管這些公司公布的財報大致符合市場預期，或在部分項目略低於預期，但高層對 AI 策略與布局的說明，仍在很大程度上安撫了投資人情緒。&lt;/p&gt;\n\n&lt;p&gt;事實上，近幾個月來，其他公司即便只是交出類似的財報成績，或僅因市場臆測新一代 AI 工具可能顛覆產業，就曾引發股價大幅下跌。&lt;/p&gt;\n\n&lt;p&gt;Salesforce 投資公司 Harris Associates 的合夥人 Jeremy Thames 表示：「這些公司仍在成長，而且在 AI 領域採取主動進攻策略，市場對生存風險的定價過高了。」&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;AI 生產力躍進十倍　龍頭強調資料與系統護城河&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;近幾個月來，包括 Salesforce 執行長 Marc Benioff，以及 Crowdstrike(&lt;a data-symbol-template=&quot;USS:CRWD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;CRWD-US&lt;/a&gt;) 執行長 George Kurtz 在內的軟體業巨頭，皆積極安撫情緒不安的投資人。矽谷的分析師、創辦人與創投人士也紛紛加入聲援行列。&lt;/p&gt;\n\n&lt;p&gt;AI 突破已讓軟體工程師生產力最高提升至過往的 10 倍，打造網站與應用程式變得前所未有地容易，甚至非技術人員也能進行所謂的「vibe coding」。&lt;/p&gt;"
+        },
+        {
+          "title": "Anthropic發聲明回應軍方施壓，拒撤監控與自主武器紅線",
+          "url": "https://www.ithome.com.tw/news/174086",
+          "source": "iThome",
+          "content": "在美國國防部要求全面開放Claude軍事用途的爭議升溫後，Anthropic執行長Dario Amodei周四（2/26）發布聲明，強調公司支持以AI捍衛美國與民主國家安全，但不會撤除涉及大規模境內監控與完全自主武器的兩項政策紅線。"
+        },
+        {
+          "title": "Anthropic收購Vercept　強化Claude電腦使用能力",
+          "url": "https://www.ithome.com.tw/news/174084",
+          "source": "iThome",
+          "content": "在Vercept共同創辦人Matt Deitke加入Meta的隔天，Anthropic宣布收購Vercept，取得其以自然語言操控電腦的技術能力。\nVercept為出自AI2孵化器的新創公司，在2025年1月募資超過5,000萬美元，其旗艦產品Vy為一跨平臺AI代理人，可讓使用者以自然語言控制電腦來操作應用程式和內容。Anthropic說明，Claude的電腦使用能力使其得以處理應用程式裡的多步驟任務，並用程式解決困難問題，而Vercept的收購則是為了強化這些能力，因為Vercept的創立核心精神是「讓AI協助解決複雜的感知和互動問題的任務」。"
+        },
+        {
+          "title": "Anthropic：不同意美國軍方無限制使用AI",
+          "url": "https://www.cna.com.tw/news/aopl/202602270248.aspx",
+          "source": "中央社國際",
+          "content": "（中央社舊金山26日綜合外電報導）美國人工智慧（AI）新創公司Anthropic今天表示，儘管五角大廈施壓配合，仍不同意美國戰爭部不受限制使用其AI技術。"
+        },
+        {
+          "title": "施壓Anthropic授權無限制使用 國會議員：五角大廈霸凌一流企業",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5353797",
+          "source": "自由時報",
+          "content": "美國戰爭部長赫格塞斯在24日會議中，對美國人工智慧公司Anthropic執行長阿莫戴發出最後通牒，限期同意軍方的完整合法使用權，否則不排除以法律施壓。\r\n\r\n五角大廈作法引發國...…"
+        },
+        {
+          "title": "抓捕馬杜羅一戰成名！堅守AI良知 Anthropic拒絕美軍無限制使用",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5353777",
+          "source": "自由時報",
+          "content": "美軍在1月3日抓捕委內瑞拉前總統馬杜羅的「絕對決心行動」中，使用美國人工智慧公司「Anthropic」AI工具「Claude」，使該公司一戰成名，卻也陷入道德與潛在有害軍事用途...…"
+        },
+        {
+          "title": "阿特曼：OpenAI洽談國防部合作 盼化解Anthropic僵局",
+          "url": "https://news.cnyes.com/news/id/6356322",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《華爾街日報》(WSJ)周五 (27 日) 報導，OpenAI 執行長阿特曼 (Sam Altman) 表示，公司正與美國國防部洽談合作事宜，盼在符合自身安全原則的前提下，讓旗下 AI 模型能部署於機密環境，並嘗試化解競爭對手 Anthropic 與五角大廈之間的僵局。&lt;/p&gt;\n\n&lt;p&gt;據了解，Anthropic 近幾周與國防部就 Claude 模型用途範圍陷入對峙。Anthropic 執行長阿莫戴 (Dario Amodei) 稍早宣布，公司拒絕國防部要求將技術開放於「所有合法用途」，並堅持保留禁止用於大規模國內監控與自主攻擊性武器的權利。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在致員工備忘錄中指出，OpenAI 正評估是否能在維持既有安全護欄的情況下，讓模型應用於機密場域，並希望找到一套可供整個產業參考的解決方案。他強調，目前尚未簽署任何合約，談判也可能破局。&lt;/p&gt;\n\n&lt;p&gt;根據備忘錄內容，OpenAI 若與國防部達成協議，將要求合約排除非法用途或不適合雲端部署的應用，例如國內監控與自主攻擊性武器。奧特曼表示，公司長期主張 AI 不應用於大規模監控或自主致命武器，且在高風險自動化決策中必須保有人類監督，這些都是不可逾越的紅線。&lt;/p&gt;\n\n&lt;p&gt;他同時指出，爭議核心並非 AI 將如何被使用，而是「誰擁有控制權」。他表示，私人企業不應凌駕於民選政府之上，儘管企業可以提供大量意見與影響力，「民主或許混亂，但我們致力於維護它」。&lt;/p&gt;\n\n&lt;p&gt;知情人士透露，OpenAI 認為可透過技術手段落實紅線，例如限制模型僅在雲端環境運作，而非所謂的邊緣環境，以提高濫用門檻；同時協助研究人員取得安全許可，讓他們能向政府說明技術限制與潛在風險。奧特曼表示，公司也將部署專責人員與政府合作，確保系統運作符合規範，並願向其他盟國提供類似服務。&lt;/p&gt;\n\n&lt;p&gt;對於 Anthropic 立場，阿特曼表達原則性支持，但也承認政府對於國家安全議題由私人企業掌握的疑慮。美國國防部研究與工程副部長麥可 (Emil Michael) 則在社群平台回應稱，大規模監控在憲法第四修正案下已屬違法，國防部不會讓任何大型科技公司決定美國人的公民自由。&lt;/p&gt;\n"
+        },
+        {
+          "title": "AI政策轉彎 川普下令聯邦機構全面停用Anthropic",
+          "url": "https://news.cnyes.com/news/id/6356395",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國總統川普週五 (27 日) 宣布，他已指示所有聯邦機構立即停止使用人工智慧 (AI) 新創公司&nbsp;Anthropic 的技術，為美國政府與 AI 業者之間的緊張關係再添變數。&lt;/p&gt;\n\n&lt;p&gt;川普在 Truth Social 發文強烈批評 Anthropic，指該公司試圖以服務條款「強迫」國防部就範，而非遵循美國憲法，並稱此舉已對國家安全構成威脅。他宣布，已指示美國政府所有聯邦機構立即停用 Anthropic 技術，並直言「我們不需要它，也不會再與他們做生意」。&lt;/p&gt;\n\n&lt;p&gt;不過，川普也表示，對於目前仍在不同程度使用 Anthropic 產品的單位 (如國防部) ，政府將提供為期六個月的逐步淘汰期限。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Anthropic 發言人尚未對此置評。&lt;/p&gt;\n\n&lt;p&gt;這項突如其來的命令發布之際，Anthropic 正面臨國防部施壓，要求其同意讓五角大廈在不受該公司限制的情況下使用其技術。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 去年 7 月與五角大廈簽署一份價值 2 億美元的合約，目前希望國防部保證，其 AI 模型不會被用於全自主武器或對美國民眾的大規模國內監控。&lt;/p&gt;\n\n&lt;p&gt;五角大廈已將最後期限訂在週五美東時間下午 5 點 01 分，要求 Anthropic 同意其條件，允許國防部在所有合法用途下使用該技術。若 Anthropic 未在期限前答應，國防部長赫格塞斯&nbsp;(Pete Hegseth) 威脅，可能將該公司列為「供應鏈風險」，或動用《國防生產法》強制其配合。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 回應稱，公司「在良心上無法」允許五角大廈在不受限制的情況下使用其 AI 模型，凸顯雙方在軍事用途與技術治理上的分歧仍難以弭平。&lt;/p&gt;\n\n&lt;p&gt;目前五角大廈正同步與多家大型語言模型供應商洽談 AI 合約，包括 Alphabet 旗下 Google、xAI 與 OpenAI，未來合作將影響 AI 在戰場上的應用發展，涵蓋自主無人機群、機器人與網路攻擊等領域。&lt;/p&gt;\n"
+        },
+        {
+          "title": "怕召喚出天網？美國防部限時施壓 Anthropic拒鬆綁軍用AI紅線",
+          "url": "https://news.cnyes.com/news/id/6356323",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國國防部與 AI 新創公司 Anthropic 之間，圍繞人工智慧整合進軍事行動及使用界線由誰決定的爭議，本週升溫至高峰。美國國防部長 Pete Hegseth 要求 Anthropic 在美東時間週五下午 5 時 01 分前回應政府要求，否則可能面臨合作終止風險。Anthropic 迄今未作出讓步，這場軍方與科技業之間的 AI 角力，才正要展開。&lt;/p&gt;\n\n&lt;p&gt;根據知情人士說法，國防部要求放寬部分模型在軍事用途上的安全防護措施，包括允許用於大規模國內監控或完全自主武器系統等情境，前提是屬於「所有合法用途」。然而 Anthropic 週四 (26 日) 明確拒絕，表示鬆綁相關限制將違反公司政策。&lt;/p&gt;\n\n&lt;p&gt;執行長 Dario Amodei 在聲明中指出，「選擇最符合其願景的承包商是國防部的職權。但鑑於 Anthropic 技術為我國武裝部隊提供的重大價值，我們希望他們重新考慮。」五角大廈此前已警告，若公司拒絕支持所有合法用途，將可能終止雙方夥伴關係。&lt;/p&gt;\n\n&lt;p&gt;此一僵局凸顯出前沿 AI 企業即使面對國家安全議題，也可能嘗試自行設定技術部署紅線的新現實。去年 7 月，美國國防部向四家公司授予最高各 2 億美元合約，總額上看 8 億美元，以開發符合國家安全優先事項的前沿 AI 能力。獲選企業包括 Anthropic、OpenAI、Google DeepMind 以及 xAI。這顯示五角大廈正積極將最先進的商業 AI 技術納入國防體系。&lt;/p&gt;\n\n&lt;p&gt;1 月 9 日一份內部備忘錄進一步反映急迫性。文件指出，美軍目標是成為「AI 優先」的作戰力量，加速將領先商用 AI 模型整合至作戰、情報與企業運營領域。專家指出，這標誌著一個歷史性轉折。&lt;/p&gt;\n\n&lt;p&gt;喬治城大學安全與新興技術中心高級研究分析師 Lauren Kahn 在接受媒體訪問時表示，「這件事沒有贏家，只會讓所有人都感到不舒服。」她認為，此次衝突象徵政府主導科技創新的時代正在鬆動。&lt;/p&gt;\n\n&lt;p&gt;美國前海軍研究署署長、海軍少將 Lorin Selby 指出，二戰後的大部分時期，美國政府定義尖端科技的前沿，從核動力、匿蹤技術到 GPS，皆由政府設定需求並資助基礎研究，產業負責整合與製造。然而 AI 顛覆了這一模式。「今天，商業部門才是前沿能力的主要推動者。私人資本、全球競爭與商業數據規模推動 AI 發展，其速度非傳統政府研發體系所能輕易複製。戰爭部門不再定義 AI 技術的極限，而是適應它。」&lt;/p&gt;\n\n&lt;p&gt;曾任白宮副助理主任與特別顧問、現為 AI 新創 Helios 共同創辦人暨執行長 Joe Scheidler 表示，不應讓私營企業因掌握技術而對政府或西方盟友形成槓桿。「技術人員應負責任地開發技術，但最終決策者應是政府。」&lt;/p&gt;\n\n&lt;p&gt;專家分析，公私合作長期支撐美國國防創新，從二戰工業動員到現代航太與資安計畫皆然，但 AI 的特殊性在於最先進能力愈來愈集中於商業公司而非政府實驗室。Selby 指出，創投支持企業的創新週期以月計算，而傳統軍事採購流程以年計算。若沒有商業 AI 供應商，政府將更慢、更缺乏適應性且成本更高。&lt;/p&gt;\n\n&lt;p&gt;Aspen Policy Academy 主任、曾任美國國土安全部顧問律師的 Betsy Cooper 表示，當關鍵國安工具由私人企業開發時，政府不再完全掌握最先進技術的發展方向。商業 AI 通常為廣泛市場設計，而非軍事任務，可能導致企業設計理念與政府部署需求出現落差。當企業政策、聲譽顧慮或全球客戶壓力與政府目標衝突時，分歧將更加明顯，例如涉及自主致命武器或預防性打擊等高度爭議用途。&lt;/p&gt;\n\n&lt;p&gt;儘管權力天平有所轉移，多位專家認為政府仍握有長期槓桿。創投公司 Scout Ventures 創辦人 Brad Harrison 表示，從目前情況來看，國防部不會放棄對關鍵任務系統的最終控制權。政府仍希望掌握所有依賴關係與風險。他指出，AI 未來可能影響攔截來襲威脅等決策，因此政府對 AI 接觸資料層將極為謹慎。「沒有人想成為導致『天網 (Skynet)』出現的人」，他以《魔鬼終結者》系列中的虛構 AI 為例。&lt;/p&gt;\n\n&lt;p&gt;(按：天網是《魔鬼終結者》系列電影中的虛構人工智慧超級電腦，由美國軍方開發後獲得自主意識，判定人類為威脅而發動核戰爭，試圖滅絕人類。)&lt;/p&gt;\n\n&lt;p&gt;Harrison 指出，政府仍可透過採購決策、出口管制與監管權力影響企業。「政府擁有很多槓桿。如果企業不願合作，政府有許多方式讓這個決定變得非常困難。」但 Selby 認為，短期內掌握稀缺 AI 人才與專有模型的企業可能具有顯著影響力；長期而言，主權政府仍保有監管、合約、資金規模與法律強制力等優勢。關鍵問題在於，是否能建立穩固的公私協議，將 AI 視為國家安全基礎設施，而非單純供應商關係。&lt;/p&gt;\n\n&lt;p&gt;專家也警告，新興的軍事與矽谷產業複合體伴隨多重風險。Onto AI 創辦人 Shanka Jayasinha 指出，若特種部隊在部署期間長期依賴 AI 強化的任務協調工具，一旦系統意外失效或無法使用，可能危及生命。他表示，過度依賴可能是致命的。供應商鎖定亦成為隱憂，隨著 AI 平台深度嵌入工作流程，更換難度提高。&lt;/p&gt;\n\n&lt;p&gt;不過 Harrison 強調，美國政府不會依賴單一矽谷公司，將循序測試系統、掌控資料層並逐步推進。部分技術界人士提出建立「主權 AI 架構」，在維持商業創新優勢的同時，確保政府在關鍵能力上的自主性。Scheidler 表示，美國 AI 生態系廣泛多元，不必"
+        }
+      ]
+    },
+    {
       "word": "警告",
       "count": 40,
       "articles": [
@@ -3114,72 +3132,6 @@
           "url": "https://www.cna.com.tw/news/aopl/202603010005.aspx",
           "source": "中央社國際",
           "content": "（中央社德黑蘭28日綜合外電報導）根據伊朗當地媒體報導，伊朗伊斯蘭革命衛隊警告，荷莫茲海峽因美國與以色列的攻擊而不再安全，許多船舶今天停止通行這條對石油與天然氣運輸至關重要的航道，海峽形同關閉。"
-        }
-      ]
-    },
-    {
-      "word": "Anthropic",
-      "count": 40,
-      "articles": [
-        {
-          "title": "Anthropic拒絕五角大廈AI合約要求！美國軍方揚言列供應鏈風險、動用《國防生產法》",
-          "url": "https://news.cnyes.com/news/id/6355909",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 Anthropic 在其 AI 技術供美國軍方使用的安全防護措施爭議中，拒絕了五角大廈提出的最新提案，使雙方對峙在政府設定的最後期限前一天進一步升級。該期限要求公司撤回相關限制，否則將面臨嚴重後果。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，Anthropic 週四發表聲明指出，國防部提出的新合約語言，仍未滿足公司對其 AI 工具軍事用途設立防護措施的要求。該公司堅持兩項關鍵限制：&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;不得將其 AI 技術用於監控美國公民&lt;/li&gt;\n&lt;li&gt;不得在「無人類介入」的情況下，執行自主致命攻擊&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;Anthropic 表示，儘管最新提案未達標準，但公司仍持續與國防官員協商，並強調致力於與軍方合作。對此，五角大廈發言人尚未立即回應。&lt;/p&gt;\n\n&lt;p&gt;這場爭議的焦點，在於 Anthropic 要求其 Claude AI 工具在軍事應用時必須附帶使用限制，但美國國防部認為這些條件並無必要。&lt;/p&gt;\n\n&lt;p&gt;國防官員此前已拒絕相關要求，並強調必須能在不受 Anthropic 額外限制的情況下使用 Claude。Claude 是目前少數獲准處理機密雲端工作的 AI 工具之一。&lt;/p&gt;\n\n&lt;p&gt;若 Anthropic 不撤回上述條件，美國國防部已揚言將其列為「供應鏈風險」，此舉將使該公司無法再與其他國防承包商合作。&lt;/p&gt;\n\n&lt;p&gt;此外，五角大廈甚至威脅動用冷戰時期制定的《國防生產法》（Defense Production Act），在公司反對的情況下強制使用其軟體。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 週四表示，公司仍致力於與軍方合作，但希望國防部重新考慮僅與願意接受「所有合法用途」標準的承包商合作的立場。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中強調：「這些威脅不會改變我們的立場：我們無法在良知上同意他們的要求。」&lt;/p&gt;\n\n&lt;h6&gt;AI 軍備競賽升溫&lt;/h6&gt;\n\n&lt;p&gt;目前估值約 380 億美元的 Anthropic，是首家獲得五角大廈核准處理機密資料的 AI 公司，其 Claude Gov 工具因操作簡便，迅速成為國防人員青睞的選項。&lt;/p&gt;\n\n&lt;p&gt;然而，該公司正面臨日益激烈的競爭。由特斯拉、SpaceX 執行長馬斯克創立的 xAI，近日也獲准承接機密工作；同時，OpenAI 以及 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 旗下的 Gemini 亦為強勁對手。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 發言人透露，國防部最新提出的合約條款雖被描述為「折衷方案」，但其中法律措辭可能使公司對監控與自主武器的兩項防護措施形同虛設。&lt;/p&gt;\n\n&lt;p&gt;Amodei 表示，Anthropic 理解最終軍事決策權屬於國防部，而非私人企業。他強調，公司提出的兩項限制並非試圖制定政策，而是為確保仍處於發展初期、且偶有錯誤的 AI 技術，不會被用於超出其能力範圍的場景。&lt;/p&gt;\n\n&lt;h6&gt;美國五角大廈推動「AI 優先」戰略&lt;/h6&gt;\n\n&lt;p&gt;這場爭端爆發於五角大廈公布全新 AI 戰略僅數週之後。該戰略呼籲透過加強對尖端 AI 模型的實驗運用，並減少使用上的官僚障礙，將軍隊打造為一支「AI 優先」的部隊。&lt;/p&gt;\n\n&lt;p&gt;該方針並特別敦促國防部選擇「不受使用政策限制、且不會妨礙合法軍事應用」的模型。&lt;/p&gt;\n\n&lt;p&gt;國防官員重申，軍方將在法律範圍內使用 Anthropic 的技術。五角大廈發言人 Sean Parnell 週四稍早也表示，國防部無意進行大規模監控，亦不打算開發「在沒有任何人類參與下運作的自主武器」。&lt;/p&gt;\n\n&lt;p&gt;Parnell 隨後在社群平台 X 上發文強調：「我們不會讓任何公司決定我們如何做出作戰決策。」他並指出，對方必須在 美東時間週五下午 5 點 01 分（台灣時間為 週六上午 6:01 AM）前作出決定，否則將終止與 Anthropic 的合作關係，並將其列為供應鏈風險。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
-        },
-        {
-          "title": "AI成軟體股血洗「救世主」！Anthropic扭轉市場恐慌、華爾街重新評價",
-          "url": "https://news.cnyes.com/news/id/6355980",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;在連續數週的拋售潮下，華爾街對軟體股的「血洗」一度看似無人能擋。直到頂尖人工智慧（AI）新創公司 Anthropic 出手，市場恐慌情緒才終於出現轉折。&lt;/p&gt;\n\n&lt;p&gt;根據《華爾街日報》報導，Anthropic 週二（24 日）展示了 Claude Cowork 的最新更新。其為一款先進的 AI 工具，讓員工能夠將 AI 機器人應用於各種工作任務。&lt;/p&gt;\n\n&lt;p&gt;該公司在發表會中重點介紹了軟體巨頭 Salesforce(&lt;a data-symbol-template=&quot;USS:CRM:STOCK:COMMON&quot; href=&quot;#&quot;&gt;CRM-US&lt;/a&gt;) ，並新增與 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 應用程式、DocuSign(&lt;a data-symbol-template=&quot;USS:DOCU:STOCK:COMMON&quot; href=&quot;#&quot;&gt;DOCU-US&lt;/a&gt;) 、LegalZoom.com (&lt;a data-symbol-template=&quot;USS:LZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;LZ-US&lt;/a&gt;) 等服務的整合功能。&lt;/p&gt;\n\n&lt;p&gt;發表會結束後，Salesforce 股價上揚，其他多家軟體公司股價也同步走高，帶動漲勢延續至週四（26 日）。&lt;/p&gt;\n\n&lt;p&gt;《WSJ》指出，投資人開始意識到，儘管部分企業可能較能抵禦衝擊，但整體而言，軟體公司仍有望在協助推動 AI 顛覆浪潮中扮演重要角色。&lt;/p&gt;\n\n&lt;p&gt;備受關注的 iShares 擴展科技軟體類股 ETF(&lt;a data-symbol-template=&quot;USS:IGV:STOCK:ETF&quot; href=&quot;#&quot;&gt;IGV-US&lt;/a&gt;) 軟體指數在今年截至上週五為止已累計下跌逾 20%，但自本週一收盤以來已反彈約 7%。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;裁員與轉型：&lt;/strong&gt;&lt;strong&gt;AI&lt;/strong&gt;&lt;strong&gt; 帶來新一輪效率革命&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;投資人週四進一步放大這一論點。在支付處理公司 Block(&lt;a data-symbol-template=&quot;USS:XYZ:STOCK:COMMON&quot; href=&quot;#&quot;&gt;XYZ-US&lt;/a&gt;) 宣布計畫裁減 40% 員工後，股價大漲近 20%。&lt;/p&gt;\n\n&lt;p&gt;執行長 Jack Dorsey 在致股東信中寫道：「一支規模大幅縮小的團隊，運用我們正在打造的工具，可以做得更多，而且做得更好。」&lt;/p&gt;\n\n&lt;p&gt;他並表示：「我相信在未來一年內，多數公司都會得出相同的結論，並進行類似的結構性調整。」&lt;/p&gt;\n\n&lt;p&gt;軟體公司 Salesforce、Workday(&lt;a data-symbol-template=&quot;USS:WDAY:STOCK:COMMON&quot; href=&quot;#&quot;&gt;WDAY-US&lt;/a&gt;) 以及 Snowflake(&lt;a data-symbol-template=&quot;USS:SNOW:STOCK:COMMON&quot; href=&quot;#&quot;&gt;SNOW-US&lt;/a&gt;) 也紛紛說明，將如何在 AI 時代推動轉型。&lt;/p&gt;\n\n&lt;p&gt;儘管這些公司公布的財報大致符合市場預期，或在部分項目略低於預期，但高層對 AI 策略與布局的說明，仍在很大程度上安撫了投資人情緒。&lt;/p&gt;\n\n&lt;p&gt;事實上，近幾個月來，其他公司即便只是交出類似的財報成績，或僅因市場臆測新一代 AI 工具可能顛覆產業，就曾引發股價大幅下跌。&lt;/p&gt;\n\n&lt;p&gt;Salesforce 投資公司 Harris Associates 的合夥人 Jeremy Thames 表示：「這些公司仍在成長，而且在 AI 領域採取主動進攻策略，市場對生存風險的定價過高了。」&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;AI 生產力躍進十倍　龍頭強調資料與系統護城河&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;近幾個月來，包括 Salesforce 執行長 Marc Benioff，以及 Crowdstrike(&lt;a data-symbol-template=&quot;USS:CRWD:STOCK:COMMON&quot; href=&quot;#&quot;&gt;CRWD-US&lt;/a&gt;) 執行長 George Kurtz 在內的軟體業巨頭，皆積極安撫情緒不安的投資人。矽谷的分析師、創辦人與創投人士也紛紛加入聲援行列。&lt;/p&gt;\n\n&lt;p&gt;AI 突破已讓軟體工程師生產力最高提升至過往的 10 倍，打造網站與應用程式變得前所未有地容易，甚至非技術人員也能進行所謂的「vibe coding」。&lt;/p&gt;"
-        },
-        {
-          "title": "Anthropic發聲明回應軍方施壓，拒撤監控與自主武器紅線",
-          "url": "https://www.ithome.com.tw/news/174086",
-          "source": "iThome",
-          "content": "在美國國防部要求全面開放Claude軍事用途的爭議升溫後，Anthropic執行長Dario Amodei周四（2/26）發布聲明，強調公司支持以AI捍衛美國與民主國家安全，但不會撤除涉及大規模境內監控與完全自主武器的兩項政策紅線。"
-        },
-        {
-          "title": "Anthropic收購Vercept　強化Claude電腦使用能力",
-          "url": "https://www.ithome.com.tw/news/174084",
-          "source": "iThome",
-          "content": "在Vercept共同創辦人Matt Deitke加入Meta的隔天，Anthropic宣布收購Vercept，取得其以自然語言操控電腦的技術能力。\nVercept為出自AI2孵化器的新創公司，在2025年1月募資超過5,000萬美元，其旗艦產品Vy為一跨平臺AI代理人，可讓使用者以自然語言控制電腦來操作應用程式和內容。Anthropic說明，Claude的電腦使用能力使其得以處理應用程式裡的多步驟任務，並用程式解決困難問題，而Vercept的收購則是為了強化這些能力，因為Vercept的創立核心精神是「讓AI協助解決複雜的感知和互動問題的任務」。"
-        },
-        {
-          "title": "Anthropic：不同意美國軍方無限制使用AI",
-          "url": "https://www.cna.com.tw/news/aopl/202602270248.aspx",
-          "source": "中央社國際",
-          "content": "（中央社舊金山26日綜合外電報導）美國人工智慧（AI）新創公司Anthropic今天表示，儘管五角大廈施壓配合，仍不同意美國戰爭部不受限制使用其AI技術。"
-        },
-        {
-          "title": "施壓Anthropic授權無限制使用 國會議員：五角大廈霸凌一流企業",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5353797",
-          "source": "自由時報",
-          "content": "美國戰爭部長赫格塞斯在24日會議中，對美國人工智慧公司Anthropic執行長阿莫戴發出最後通牒，限期同意軍方的完整合法使用權，否則不排除以法律施壓。\r\n\r\n五角大廈作法引發國...…"
-        },
-        {
-          "title": "抓捕馬杜羅一戰成名！堅守AI良知 Anthropic拒絕美軍無限制使用",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5353777",
-          "source": "自由時報",
-          "content": "美軍在1月3日抓捕委內瑞拉前總統馬杜羅的「絕對決心行動」中，使用美國人工智慧公司「Anthropic」AI工具「Claude」，使該公司一戰成名，卻也陷入道德與潛在有害軍事用途...…"
-        },
-        {
-          "title": "阿特曼：OpenAI洽談國防部合作 盼化解Anthropic僵局",
-          "url": "https://news.cnyes.com/news/id/6356322",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《華爾街日報》(WSJ)周五 (27 日) 報導，OpenAI 執行長阿特曼 (Sam Altman) 表示，公司正與美國國防部洽談合作事宜，盼在符合自身安全原則的前提下，讓旗下 AI 模型能部署於機密環境，並嘗試化解競爭對手 Anthropic 與五角大廈之間的僵局。&lt;/p&gt;\n\n&lt;p&gt;據了解，Anthropic 近幾周與國防部就 Claude 模型用途範圍陷入對峙。Anthropic 執行長阿莫戴 (Dario Amodei) 稍早宣布，公司拒絕國防部要求將技術開放於「所有合法用途」，並堅持保留禁止用於大規模國內監控與自主攻擊性武器的權利。&lt;/p&gt;\n\n&lt;p&gt;阿特曼在致員工備忘錄中指出，OpenAI 正評估是否能在維持既有安全護欄的情況下，讓模型應用於機密場域，並希望找到一套可供整個產業參考的解決方案。他強調，目前尚未簽署任何合約，談判也可能破局。&lt;/p&gt;\n\n&lt;p&gt;根據備忘錄內容，OpenAI 若與國防部達成協議，將要求合約排除非法用途或不適合雲端部署的應用，例如國內監控與自主攻擊性武器。奧特曼表示，公司長期主張 AI 不應用於大規模監控或自主致命武器，且在高風險自動化決策中必須保有人類監督，這些都是不可逾越的紅線。&lt;/p&gt;\n\n&lt;p&gt;他同時指出，爭議核心並非 AI 將如何被使用，而是「誰擁有控制權」。他表示，私人企業不應凌駕於民選政府之上，儘管企業可以提供大量意見與影響力，「民主或許混亂，但我們致力於維護它」。&lt;/p&gt;\n\n&lt;p&gt;知情人士透露，OpenAI 認為可透過技術手段落實紅線，例如限制模型僅在雲端環境運作，而非所謂的邊緣環境，以提高濫用門檻；同時協助研究人員取得安全許可，讓他們能向政府說明技術限制與潛在風險。奧特曼表示，公司也將部署專責人員與政府合作，確保系統運作符合規範，並願向其他盟國提供類似服務。&lt;/p&gt;\n\n&lt;p&gt;對於 Anthropic 立場，阿特曼表達原則性支持，但也承認政府對於國家安全議題由私人企業掌握的疑慮。美國國防部研究與工程副部長麥可 (Emil Michael) 則在社群平台回應稱，大規模監控在憲法第四修正案下已屬違法，國防部不會讓任何大型科技公司決定美國人的公民自由。&lt;/p&gt;\n"
-        },
-        {
-          "title": "AI政策轉彎 川普下令聯邦機構全面停用Anthropic",
-          "url": "https://news.cnyes.com/news/id/6356395",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普週五 (27 日) 宣布，他已指示所有聯邦機構立即停止使用人工智慧 (AI) 新創公司&nbsp;Anthropic 的技術，為美國政府與 AI 業者之間的緊張關係再添變數。&lt;/p&gt;\n\n&lt;p&gt;川普在 Truth Social 發文強烈批評 Anthropic，指該公司試圖以服務條款「強迫」國防部就範，而非遵循美國憲法，並稱此舉已對國家安全構成威脅。他宣布，已指示美國政府所有聯邦機構立即停用 Anthropic 技術，並直言「我們不需要它，也不會再與他們做生意」。&lt;/p&gt;\n\n&lt;p&gt;不過，川普也表示，對於目前仍在不同程度使用 Anthropic 產品的單位 (如國防部) ，政府將提供為期六個月的逐步淘汰期限。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Anthropic 發言人尚未對此置評。&lt;/p&gt;\n\n&lt;p&gt;這項突如其來的命令發布之際，Anthropic 正面臨國防部施壓，要求其同意讓五角大廈在不受該公司限制的情況下使用其技術。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 去年 7 月與五角大廈簽署一份價值 2 億美元的合約，目前希望國防部保證，其 AI 模型不會被用於全自主武器或對美國民眾的大規模國內監控。&lt;/p&gt;\n\n&lt;p&gt;五角大廈已將最後期限訂在週五美東時間下午 5 點 01 分，要求 Anthropic 同意其條件，允許國防部在所有合法用途下使用該技術。若 Anthropic 未在期限前答應，國防部長赫格塞斯&nbsp;(Pete Hegseth) 威脅，可能將該公司列為「供應鏈風險」，或動用《國防生產法》強制其配合。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 回應稱，公司「在良心上無法」允許五角大廈在不受限制的情況下使用其 AI 模型，凸顯雙方在軍事用途與技術治理上的分歧仍難以弭平。&lt;/p&gt;\n\n&lt;p&gt;目前五角大廈正同步與多家大型語言模型供應商洽談 AI 合約，包括 Alphabet 旗下 Google、xAI 與 OpenAI，未來合作將影響 AI 在戰場上的應用發展，涵蓋自主無人機群、機器人與網路攻擊等領域。&lt;/p&gt;\n"
-        },
-        {
-          "title": "怕召喚出天網？美國防部限時施壓 Anthropic拒鬆綁軍用AI紅線",
-          "url": "https://news.cnyes.com/news/id/6356323",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國國防部與 AI 新創公司 Anthropic 之間，圍繞人工智慧整合進軍事行動及使用界線由誰決定的爭議，本週升溫至高峰。美國國防部長 Pete Hegseth 要求 Anthropic 在美東時間週五下午 5 時 01 分前回應政府要求，否則可能面臨合作終止風險。Anthropic 迄今未作出讓步，這場軍方與科技業之間的 AI 角力，才正要展開。&lt;/p&gt;\n\n&lt;p&gt;根據知情人士說法，國防部要求放寬部分模型在軍事用途上的安全防護措施，包括允許用於大規模國內監控或完全自主武器系統等情境，前提是屬於「所有合法用途」。然而 Anthropic 週四 (26 日) 明確拒絕，表示鬆綁相關限制將違反公司政策。&lt;/p&gt;\n\n&lt;p&gt;執行長 Dario Amodei 在聲明中指出，「選擇最符合其願景的承包商是國防部的職權。但鑑於 Anthropic 技術為我國武裝部隊提供的重大價值，我們希望他們重新考慮。」五角大廈此前已警告，若公司拒絕支持所有合法用途，將可能終止雙方夥伴關係。&lt;/p&gt;\n\n&lt;p&gt;此一僵局凸顯出前沿 AI 企業即使面對國家安全議題，也可能嘗試自行設定技術部署紅線的新現實。去年 7 月，美國國防部向四家公司授予最高各 2 億美元合約，總額上看 8 億美元，以開發符合國家安全優先事項的前沿 AI 能力。獲選企業包括 Anthropic、OpenAI、Google DeepMind 以及 xAI。這顯示五角大廈正積極將最先進的商業 AI 技術納入國防體系。&lt;/p&gt;\n\n&lt;p&gt;1 月 9 日一份內部備忘錄進一步反映急迫性。文件指出，美軍目標是成為「AI 優先」的作戰力量，加速將領先商用 AI 模型整合至作戰、情報與企業運營領域。專家指出，這標誌著一個歷史性轉折。&lt;/p&gt;\n\n&lt;p&gt;喬治城大學安全與新興技術中心高級研究分析師 Lauren Kahn 在接受媒體訪問時表示，「這件事沒有贏家，只會讓所有人都感到不舒服。」她認為，此次衝突象徵政府主導科技創新的時代正在鬆動。&lt;/p&gt;\n\n&lt;p&gt;美國前海軍研究署署長、海軍少將 Lorin Selby 指出，二戰後的大部分時期，美國政府定義尖端科技的前沿，從核動力、匿蹤技術到 GPS，皆由政府設定需求並資助基礎研究，產業負責整合與製造。然而 AI 顛覆了這一模式。「今天，商業部門才是前沿能力的主要推動者。私人資本、全球競爭與商業數據規模推動 AI 發展，其速度非傳統政府研發體系所能輕易複製。戰爭部門不再定義 AI 技術的極限，而是適應它。」&lt;/p&gt;\n\n&lt;p&gt;曾任白宮副助理主任與特別顧問、現為 AI 新創 Helios 共同創辦人暨執行長 Joe Scheidler 表示，不應讓私營企業因掌握技術而對政府或西方盟友形成槓桿。「技術人員應負責任地開發技術，但最終決策者應是政府。」&lt;/p&gt;\n\n&lt;p&gt;專家分析，公私合作長期支撐美國國防創新，從二戰工業動員到現代航太與資安計畫皆然，但 AI 的特殊性在於最先進能力愈來愈集中於商業公司而非政府實驗室。Selby 指出，創投支持企業的創新週期以月計算，而傳統軍事採購流程以年計算。若沒有商業 AI 供應商，政府將更慢、更缺乏適應性且成本更高。&lt;/p&gt;\n\n&lt;p&gt;Aspen Policy Academy 主任、曾任美國國土安全部顧問律師的 Betsy Cooper 表示，當關鍵國安工具由私人企業開發時，政府不再完全掌握最先進技術的發展方向。商業 AI 通常為廣泛市場設計，而非軍事任務，可能導致企業設計理念與政府部署需求出現落差。當企業政策、聲譽顧慮或全球客戶壓力與政府目標衝突時，分歧將更加明顯，例如涉及自主致命武器或預防性打擊等高度爭議用途。&lt;/p&gt;\n\n&lt;p&gt;儘管權力天平有所轉移，多位專家認為政府仍握有長期槓桿。創投公司 Scout Ventures 創辦人 Brad Harrison 表示，從目前情況來看，國防部不會放棄對關鍵任務系統的最終控制權。政府仍希望掌握所有依賴關係與風險。他指出，AI 未來可能影響攔截來襲威脅等決策，因此政府對 AI 接觸資料層將極為謹慎。「沒有人想成為導致『天網 (Skynet)』出現的人」，他以《魔鬼終結者》系列中的虛構 AI 為例。&lt;/p&gt;\n\n&lt;p&gt;(按：天網是《魔鬼終結者》系列電影中的虛構人工智慧超級電腦，由美國軍方開發後獲得自主意識，判定人類為威脅而發動核戰爭，試圖滅絕人類。)&lt;/p&gt;\n\n&lt;p&gt;Harrison 指出，政府仍可透過採購決策、出口管制與監管權力影響企業。「政府擁有很多槓桿。如果企業不願合作，政府有許多方式讓這個決定變得非常困難。」但 Selby 認為，短期內掌握稀缺 AI 人才與專有模型的企業可能具有顯著影響力；長期而言，主權政府仍保有監管、合約、資金規模與法律強制力等優勢。關鍵問題在於，是否能建立穩固的公私協議，將 AI 視為國家安全基礎設施，而非單純供應商關係。&lt;/p&gt;\n\n&lt;p&gt;專家也警告，新興的軍事與矽谷產業複合體伴隨多重風險。Onto AI 創辦人 Shanka Jayasinha 指出，若特種部隊在部署期間長期依賴 AI 強化的任務協調工具，一旦系統意外失效或無法使用，可能危及生命。他表示，過度依賴可能是致命的。供應商鎖定亦成為隱憂，隨著 AI 平台深度嵌入工作流程，更換難度提高。&lt;/p&gt;\n\n&lt;p&gt;不過 Harrison 強調，美國政府不會依賴單一矽谷公司，將循序測試系統、掌控資料層並逐步推進。部分技術界人士提出建立「主權 AI 架構」，在維持商業創新優勢的同時，確保政府在關鍵能力上的自主性。Scheidler 表示，美國 AI 生態系廣泛多元，不必"
         }
       ]
     },
@@ -3448,6 +3400,72 @@
       ]
     },
     {
+      "word": "基地",
+      "count": 38,
+      "articles": [
+        {
+          "title": "科威特、卡達、巴林、阿國紛傳爆炸！ 4國都有美軍基地",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354389",
+          "source": "自由時報",
+          "content": "以色列、美國今日聯手向伊朗發動攻擊，伊朗隨後展開報復行動。巴林、阿拉伯聯合大公國、科威特都傳出爆炸事件，這些地方都有美軍基地，其中科威特駐紮多達1萬3500名美軍士兵。\r\n\r\n綜...…"
+        },
+        {
+          "title": "伊朗報復美國中東軍事基地揚言「無紅線」！科威特、阿聯、卡達等多國發生爆炸",
+          "url": "https://news.cnyes.com/news/id/6356679",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;隨著美國和以色列對伊朗發動軍事攻擊，根據伊朗方面於週六（28 日）釋出的說法，伊朗軍方正對美國在中東的多處軍事設施展開攻擊行動。&lt;/p&gt;\n\n&lt;p&gt;同一天，巴林國家聯絡中心通報，位於巴林境內的美國海軍第五艦隊基地服務中心遭飛彈襲擊。&lt;/p&gt;\n\n&lt;p&gt;另有消息指出，設有美軍設施的朱菲爾地區傳出巨大爆炸聲，現場一度冒出濃煙，至於基地本身是否受損仍有待進一步確認。&lt;/p&gt;\n\n&lt;p&gt;據悉，伊朗官員強調：「所有美國軍事基地和利益都在伊朗的掌控之中。」&lt;/p&gt;\n\n&lt;p&gt;阿拉伯聯合大公國首都阿布達比同日也傳出爆炸聲響，畫面顯示濃煙竄升。位於阿布達比以南的宰夫拉空軍基地是美軍中央司令部在區域內執行作戰與偵察任務的重要支點。&lt;/p&gt;\n\n&lt;p&gt;科威特境內亦接連傳出爆炸聲。當地設有多處美軍設施，包括位於科威特城南部、作為美國中央陸軍前線指揮部的阿里夫堅軍營，以及阿里．薩利姆空軍基地與比林軍營等軍事據點。&lt;/p&gt;\n\n&lt;p&gt;此外，敘利亞首都大馬士革當天也傳出三次爆炸聲，官方尚未就事件發表說明。&lt;/p&gt;\n\n&lt;p&gt;卡達方面則傳出攔截行動。根據卡達國防部消息人士說法，卡達使用「愛國者」防空飛彈系統，成功擊落一枚由伊朗發射的飛彈。&lt;/p&gt;\n\n&lt;p&gt;卡達首都多哈亦傳出爆炸聲。鄰近多哈的烏代德空軍基地，是美國在中東最大的軍事基地，同時也是美軍中央司令部前沿指揮中心，約有一萬名駐軍。&lt;/p&gt;\n\n&lt;p&gt;2025 年美以曾對伊朗發動軍事打擊，伊朗當時也曾向該基地發射飛彈作為報復。&lt;/p&gt;\n\n&lt;p&gt;另一方面，葉門胡塞武裝向以色列方向發射飛彈。以色列媒體報導指出，以方已偵測到來自葉門方向的來襲飛彈。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;美方展開空襲、伊朗譴責違反國際法　揚言報復無紅線&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;h6&gt;&lt;span style=&quot;font-size:16px&quot;&gt;美國國防部 28 日表示，已將對伊朗的空襲行動命名為「史詩怒火」。&lt;/span&gt;&lt;/h6&gt;\n\n&lt;p&gt;美國總統川普同日凌晨透過社群平台發布影片，宣稱美軍正在伊朗境內展開「大規模且持續的軍事行動」，目標是摧毀伊朗的飛彈產業，甚至呼籲伊朗人民在軍事行動結束後「接管政府」。&lt;/p&gt;\n\n&lt;p&gt;不過，美國參議院軍事委員會首席民主黨議員里德（Jack&nbsp;Reed）的發言人表示，里德事前並未接獲空襲伊朗的相關通報。&lt;/p&gt;\n\n&lt;p&gt;伊朗內政部於當地時間 28 日中午發表聲明，強烈譴責美國與以色列的空襲行動，指責對方無視國際法與談判進程，公然採取軍事挑釁。&lt;/p&gt;\n\n&lt;p&gt;聲明表示，伊朗內政部已成立國家危機管理總部，並要求各省動員資源，確保社會秩序與民生需求。&lt;/p&gt;\n\n&lt;p&gt;當局同時呼籲民眾保持冷靜，依實際情況安排出行，並以官方訊息為準，避免受謠言誤導。&lt;/p&gt;\n\n&lt;p&gt;有伊朗高層官員對媒體表示，對於美以發動空襲「並不意外」，並強調美國與以色列在中東的所有設施與利益都已成為「合法打擊目標」。&lt;/p&gt;\n\n&lt;p&gt;該官員更指出，伊朗的報復行動將沒有任何「紅線」，美以將為其敵對行為承擔重大且長期的後果。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;葉門&lt;/strong&gt;&lt;strong&gt;胡塞武裝聲援伊朗&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;當地時間 28 日，葉門胡塞武裝最高政治委員會發表聲明，公開向伊朗領導層、政府及人民表達毫無保留的支持與聲援。&lt;/p&gt;\n\n&lt;p&gt;該組織以強烈措辭抨擊美國與以色列對伊朗發動軍事行動，指控相關行為屬於侵略之舉，並聲稱此舉意在打破既有的威懾平衡，為未來對其他國家展開更大規模打擊鋪路。&lt;/p&gt;\n\n&lt;p&gt;聲明同時指出，這類公開的軍事行動無論從哪個角度來看，都是嚴重罪行，不僅侵犯一個主權國家的獨立與領土完整，也公然違背國際法與相關國際公約。&lt;/p&gt;\n\n&lt;p&gt;胡塞武裝並批評美國與以色列無視法律與人道價值，展現其作為強權國家的霸權本質。&lt;/p&gt;\n"
+        },
+        {
+          "title": "伊朗革命衛隊稱攻擊中東美軍基地設施　報復以美空襲",
+          "url": "https://www.cna.com.tw/news/aopl/202602280200.aspx",
+          "source": "中央社國際",
+          "content": "（中央社貝魯特28日綜合外電報導）伊朗革命衛隊（Revolutionary Guard）今天表示，伊朗武裝部隊已對中東多處美國與以色列的設施發動攻擊，以報復美以聯手軍事行動。"
+        },
+        {
+          "title": "伊朗稱襲擊14處美軍基地！伊朗外長嗆：川普尋求伊朗政權更替是「不可能的任務」",
+          "url": "https://news.cnyes.com/news/id/6356798",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗軍方相關人士透露，目前中東地區已有 14 處美軍基地遭到伊朗的襲擊。同時，伊朗伊斯蘭革命衛隊宣佈在海上反擊行動中取得重大戰果。&lt;/p&gt;\n\n&lt;p&gt;美國與以色列於週五（28 日）對外宣布，已透過空中與海上力量對伊朗展開軍事行動。隨後，伊朗對以色列境內目標以及美軍在中東的軍事設施發動反擊。&lt;/p&gt;\n\n&lt;p&gt;同日，伊朗伊斯蘭革命衛隊宣布啟動代號「真實承諾 4」的跨境軍事行動，並表示此舉是為回應美以對伊朗領土的攻擊行為。&lt;/p&gt;\n\n&lt;p&gt;當天，中東多處設有美軍駐軍的基地接連傳出爆炸聲，包括巴林、阿拉伯聯合大公國、科威特、卡達。不過，美國尚未對此作出回應。&lt;/p&gt;\n\n&lt;p&gt;此外，伊斯蘭革命衛隊表示，其海軍部隊已發射多枚飛彈，並成功命中一艘美軍戰鬥支援艦。根據革命衛隊說法，該艦在遭到飛彈攻擊後受損情況相當嚴重。&lt;/p&gt;\n\n&lt;p&gt;革命衛隊同時發出強硬警告，指出美軍在相關海域的其他海上軍事資產，已被納入其飛彈與無人機部隊的預設打擊範圍之內，並強調軍事行動仍將持續推進。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部長阿拉格齊在接受媒體訪問時指出，他已與多國外長通話說明情況，強調伊朗針對美軍基地的軍事行動「並非針對基地所在國家」，而是出於自衛考量。&lt;/p&gt;\n\n&lt;p&gt;他表示，伊朗不可能在美方對其發動攻擊後選擇袖手旁觀。&lt;/p&gt;\n\n&lt;p&gt;在談及人員傷亡時，阿拉格齊表示，目前大多數伊朗高層官員均安然無恙，僅可能有一至兩名軍事指揮官在衝突中喪生，但他強調，這不會對伊朗整體運作構成重大影響。&lt;/p&gt;\n\n&lt;p&gt;針對美國總統川普提出推動伊朗政權更替的說法，阿拉格齊直言這是「根本不可能達成的目標」。&lt;/p&gt;\n\n&lt;p&gt;此外，他重申伊朗不會放棄包括鈾濃縮在內的核心權利。至於美伊之間的溝通管道，他坦言目前雙方並無直接聯繫，但若美方有意展開對話，「他們知道該如何與我們取得聯繫」。&lt;/p&gt;\n"
+        },
+        {
+          "title": "美以空襲伊朗 伊飛彈報復 攻擊以、美基地",
+          "url": "https://news.ltn.com.tw/news/world/paper/1745027",
+          "source": "自由時報",
+          "content": "〔國際新聞中心／綜合報導〕美伊核談判陷入僵局，以色列廿八日上午對伊朗發動「先發制人」大規模軍事打擊，美國隨即參與，展開代號「史詩之怒」的聯合行動，目標直指伊朗最高領導階層、核武設施及軍事指揮中樞，意圖徹底消除對美以的「生存威脅」。伊朗遭襲後展開報復，使用飛彈攻擊以國與中東美軍基地。\r\n\r\n以色列時報…"
+        },
+        {
+          "title": "伊朗稱無意侵犯鄰國主權 中東美軍基地並非所在國土地",
+          "url": "https://news.cnyes.com/news/id/6357213",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;伊朗最高國家安全委員會秘書拉里賈尼周日（1 日）表示，伊朗無意侵犯鄰國主權，但美軍利用這些國家的基地對伊朗發動襲擊，伊朗必予以打擊。他強調，這些基地「屬於美國」，「而非所在國土地」。&lt;/p&gt;\n\n&lt;p&gt;一位伊朗軍方消息人士稱，伊朗首次使用「法塔赫 - 2」高超音速巡航飛彈襲擊美軍基地。&lt;/p&gt;\n\n&lt;p&gt;據伊朗伊斯蘭革命衛隊周日晚間發布的「真實承諾 4」行動第 8 號通告，伊朗的反擊行動已造成 560 名美軍傷亡。&lt;/p&gt;\n\n&lt;p&gt;伊朗伊斯蘭革命衛隊表示，在繼續對敵方海上目標的攻擊中，波斯灣和荷姆茲海峽區域的 3 艘違規美英油輪遭飛彈擊中。&lt;/p&gt;\n\n&lt;p&gt;此外，科威特的阿里 &middot; 薩利姆美軍基地因襲擊停止運作，科威特 3 處美國海上基礎設施被摧毀；巴林薩勒曼港的美軍基地遭 4 架無人機攻擊，指揮和後勤中心受損；巴林美軍駐地遭 2 枚彈道飛彈打擊。&lt;/p&gt;\n"
+        },
+        {
+          "title": "英同意美國使用基地　英相：但不參加對伊朗攻擊",
+          "url": "https://www.cna.com.tw/news/aopl/202603020020.aspx",
+          "source": "中央社國際",
+          "content": "（中央社倫敦1日綜合外電報導）英國首相施凱爾（Keir Starmer）今天表示，他已同意讓美國使用英國的基地，對伊朗發動「防禦性」打擊，目的是要摧毀伊朗的飛彈及其發射裝置。"
+        },
+        {
+          "title": "疑伊朗無人機跨海攻擊 英國駐賽普勒斯基地遇襲",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5355519",
+          "source": "自由時報",
+          "content": "美國與以色列2月28日針對伊朗發動大規模軍事打擊，伊朗對此也展開反擊，除了以色列與美國駐中東基地外，法國與英國駐中東基地也遭到攻擊。位於東地中海的英國駐賽普勒斯基地2日傳出遭無人...…"
+        },
+        {
+          "title": "川普宣布擊沉9艘伊朗軍艦！美軍摧毀革命衛隊總部、B-2轟炸機重創飛彈基地",
+          "url": "https://news.cnyes.com/news/id/6357217",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國總統川普週日（1 日）在社群媒體發文指出，美軍已摧毀並擊沉 9 艘伊朗海軍艦艇。美軍中央司令部則稱，已經摧毀伊朗伊斯蘭革命衛隊總部。&lt;/p&gt;\n\n&lt;p&gt;根據《新華社》報導，川普強調，美軍正持續在海上展開追擊行動，鎖定尚未被摧毀的伊朗艦艇。他並指出，在另一次關鍵打擊中，美方基本上摧毀了「伊朗的海軍總部」。&lt;/p&gt;\n\n&lt;p&gt;美軍中央司令部稍早透過社群平台說明，部隊已在阿曼灣、靠近伊朗東南部恰赫巴哈爾港外海，擊沉一艘「賈馬蘭」級護衛艦。&lt;/p&gt;\n\n&lt;p&gt;中央司令部進一步指出，自本輪對伊軍事行動展開以來，美軍已對超過 1000 處目標發動攻擊，其中包括伊朗伊斯蘭革命衛隊總部等關鍵軍事設施。&lt;/p&gt;\n\n&lt;p&gt;行動中，美方動用多架 B-2 隱形轟炸機，投擲重達 2000 磅的炸彈，專門打擊伊朗經過強化防護的彈道飛彈基地。&lt;/p&gt;\n\n&lt;p&gt;除了 B-2 隱形轟炸機，美軍此次行動動還動用了包括多型號戰鬥機、電子戰飛機、偵察機和無人機在內的空中力量，同時配合核動力航空母艦、飛彈驅逐艦及地面火箭系統展開打擊。&lt;/p&gt;\n\n&lt;p&gt;飛彈防禦系統如「愛國者」和「薩德」也被部署以攔截可能的反擊。軍方表示，行動中也使用了空中加油機和運輸機進行保障支援。&lt;/p&gt;\n\n&lt;p&gt;針對外界傳聞中央司令部也澄清，美軍「林肯號」航空母艦並未遭伊朗飛彈命中，並強調相關飛彈未能逼近航母戰鬥群範圍。&lt;/p&gt;\n\n&lt;p&gt;在打擊目標方面，美方稱重點針對伊朗軍事指揮與控制體系、伊朗伊斯蘭革命衛隊相關總部、防空系統、彈道飛彈基地以及部分海軍艦艇與反艦飛彈陣地。&lt;/p&gt;\n\n&lt;p&gt;德黑蘭時間週六（28 日）上午，美國與以色列同步對伊朗展開大規模軍事行動。伊朗隨後對美國在海灣地區的軍事基地以及以色列境內目標進行反擊。&lt;/p&gt;\n\n&lt;p&gt;川普當天透過影片談話表示，這次行動的核心目標在於摧毀伊朗飛彈產業鏈、削弱其海軍實力，同時確保伊朗無法發展或取得核武能力。&lt;/p&gt;\n\n&lt;p&gt;另外，美軍強調，公開資訊中所列的打擊目標不包括伊朗核設施，且部分具體作戰能力未對外揭露。&lt;/p&gt;\n"
+        },
+        {
+          "title": "法軍在阿布達比基地遭伊朗反擊波及　國內也提高戒備",
+          "url": "https://www.cna.com.tw/news/aopl/202603020032.aspx",
+          "source": "中央社國際",
+          "content": "（中央社記者曾依璇巴黎1日專電）繼美國與以色列昨天聯手攻擊伊朗後，阿拉伯聯合大公國一座有法軍駐紮的基地遭伊朗回擊波及；與此同時，法國國內安全部隊正提高戒備，防範可能破壞穩定的行動。"
+        }
+      ]
+    },
+    {
       "word": "交易",
       "count": 37,
       "articles": [
@@ -3514,6 +3532,72 @@
       ]
     },
     {
+      "word": "Class",
+      "count": 36,
+      "articles": [
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Bentley Systems Inc - Class BBSY-US的目標價調降至49元，幅度約3.92%",
+          "url": "https://news.cnyes.com/news/id/6355835",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共12位分析師，對Bentley Systems Inc - Class B(BSY-US)提出目標價估值：中位數由51元下修至49元，調降幅度3.92%。其中最高估值62元，最低估值40元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有17位分析師給予Bentley Systems Inc - Class B評價：積極樂觀12位、保持中立5位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Bentley Systems Inc - Class B今(27日)收盤價為37.04元。近5日股價下跌3.92%，標普指數上漲0.68%短期股價無明顯表現。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：JBS N.V. Class A(JBS-US)EPS預估上修至1.96元，預估目標價為20.45元",
+          "url": "https://news.cnyes.com/news/id/6356239",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共13位分析師，對JBS N.V. Class A(JBS-US)做出2025年EPS預估：中位數由1.92元上修至1.96元，其中最高估值2.12元，最低估值1.62元，預估目標價為20.45元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;2.12(2.12)&lt;/td&gt;&lt;td&gt;2.05&lt;/td&gt;&lt;td&gt;2.53&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;1.62(1.62)&lt;/td&gt;&lt;td&gt;1.2&lt;/td&gt;&lt;td&gt;1.4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.93(1.92)&lt;/td&gt;&lt;td&gt;1.64&lt;/td&gt;&lt;td&gt;1.76&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;1.96(1.92)&lt;/td&gt;&lt;td&gt;1.66&lt;/td&gt;&lt;td&gt;1.73&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;928.13億&lt;/td&gt;&lt;td&gt;953.36億&lt;/td&gt;&lt;td&gt;1,006.03億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;846.85億&lt;/td&gt;&lt;td&gt;849.21億&lt;/td&gt;&lt;td&gt;880.94億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;872.28億&lt;/td&gt;&lt;td&gt;891.29億&lt;/td&gt;&lt;td&gt;927.54億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;854.17億&lt;/td&gt;&lt;td&gt;883.11億&lt;/td&gt;&lt;td&gt;909.21億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;td&gt;--&lt;/td&gt;&lt;td&gt;0.91&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;詳細資訊請看美股內頁：&lt;br&gt;JBS N.V. Class A(JBS-US)&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：FTAI Aviation Ltd - Class A(FTAI-US)EPS預估上修至7.56元，預估目標價為334.00元",
+          "url": "https://news.cnyes.com/news/id/6356235",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共8位分析師，對FTAI Aviation Ltd - Class A(FTAI-US)做出2026年EPS預估：中位數由7.04元上修至7.56元，其中最高估值8.88元，最低估值5.25元，預估目標價為334.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;8.88(8.88)&lt;/td&gt;&lt;td&gt;15.59&lt;/td&gt;&lt;td&gt;18.62&lt;/td&gt;&lt;td&gt;17.51&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;5.25(5.25)&lt;/td&gt;&lt;td&gt;7.4&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;10.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;7.24(7.01)&lt;/td&gt;&lt;td&gt;11.31&lt;/td&gt;&lt;td&gt;13.53&lt;/td&gt;&lt;td&gt;14.16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;7.56(7.04)&lt;/td&gt;&lt;td&gt;12.31&lt;/td&gt;&lt;td&gt;13.24&lt;/td&gt;&lt;td&gt;14.16&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;37.17億&lt;/td&gt;&lt;td&gt;58.25億&lt;/td&gt;&lt;td&gt;69.47億&lt;/td&gt;&lt;td&gt;56.51億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;29.11億&lt;/td&gt;&lt;td&gt;36.76億&lt;/td&gt;&lt;td&gt;41.45億&lt;/td&gt;&lt;td&gt;46.79億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;32.84億&lt;/td&gt;&lt;td&gt;46.07億&lt;/td&gt;&lt;td&gt;54.56億&lt;/td&gt;&lt;td&gt;51.65億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;32.77億&lt;/td&gt;&lt;td&gt;42.20億&lt;/td&gt;&lt;td&gt;54.33億&lt;/td&gt;&lt;td&gt;51.65億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2025年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;-1.43&lt;/td&"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：CoreWeave, Inc. Class A(CRWV-US)EPS預估下修至-1元，預估目標價為117.50元",
+          "url": "https://news.cnyes.com/news/id/6356226",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共25位分析師，對CoreWeave, Inc. Class A(CRWV-US)做出2026年EPS預估：中位數由-0.13元下修至-1元，其中最高估值0.75元，最低估值-3.83元，預估目標價為117.50元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;0.75(1.72)&lt;/td&gt;&lt;td&gt;3.11&lt;/td&gt;&lt;td&gt;4.6&lt;/td&gt;&lt;td&gt;3.56&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;-3.83(-2.11)&lt;/td&gt;&lt;td&gt;-2.94&lt;/td&gt;&lt;td&gt;1.34&lt;/td&gt;&lt;td&gt;3.56&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;-1.23(-0.28)&lt;/td&gt;&lt;td&gt;0.76&lt;/td&gt;&lt;td&gt;2.93&lt;/td&gt;&lt;td&gt;3.56&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;-1(-0.13)&lt;/td&gt;&lt;td&gt;1.13&lt;/td&gt;&lt;td&gt;2.31&lt;/td&gt;&lt;td&gt;3.56&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;139.12億&lt;/td&gt;&lt;td&gt;247.95億&lt;/td&gt;&lt;td&gt;354.63億&lt;/td&gt;&lt;td&gt;299.59億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;104.00億&lt;/td&gt;&lt;td&gt;165.95億&lt;/td&gt;&lt;td&gt;253.29億&lt;/td&gt;&lt;td&gt;299.59億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;123.21億&lt;/td&gt;&lt;td&gt;210.31億&lt;/td&gt;&lt;td&gt;304.34億&lt;/td&gt;&lt;td&gt;299.59億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;124.01億&lt;/td&gt;&lt;td&gt;202.14億&lt;/td&gt;&lt;td&gt;317.51億&lt;/td&gt;&lt;td&gt;299.59億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;-0.07&lt;/td&gt;&lt;td&gt;-1.28&lt;/td&gt;&lt;td&gt;-2.02&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Figure Technology Solutions, Inc. Class AFIGR-US的目標價調降至55元，幅度約12.7%",
+          "url": "https://news.cnyes.com/news/id/6356211",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共10位分析師，對Figure Technology Solutions, Inc. Class A(FIGR-US)提出目標價估值：中位數由63元下修至55元，調降幅度12.7%。其中最高估值82元，最低估值42元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有10位分析師給予Figure Technology Solutions, Inc. Class A評價：積極樂觀7位、保持中立2位、保守悲觀1位。&lt;/p&gt;&lt;p&gt;Figure Technology Solutions, Inc. Class A今(27日)收盤價為34.04元。近5日股價上漲12.7%，標普指數上漲0.68%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Samsara Inc - Class AIOT-US的目標價調降至43元，幅度約4.44%",
+          "url": "https://news.cnyes.com/news/id/6356203",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共21位分析師，對Samsara Inc - Class A(IOT-US)提出目標價估值：中位數由45元下修至43元，調降幅度4.44%。其中最高估值60元，最低估值30元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有25位分析師給予Samsara Inc - Class A評價：積極樂觀20位、保持中立5位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Samsara Inc - Class A今(27日)收盤價為28.96元。近5日股價上漲4.44%，標普指數上漲0.68%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Primo Brands Corporation Class APRMB-US的目標價調升至25元，幅度約11.11%",
+          "url": "https://news.cnyes.com/news/id/6356200",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共12位分析師，對Primo Brands Corporation Class A(PRMB-US)提出目標價估值：中位數由22.5元上修至25元，調升幅度11.11%。其中最高估值35元，最低估值20元。&lt;/p&gt;&lt;p&gt;綜合評級 - 共有13位分析師給予Primo Brands Corporation Class A評價：積極樂觀10位、保持中立3位、保守悲觀0位。&lt;/p&gt;&lt;p&gt;Primo Brands Corporation Class A今(27日)收盤價為22.65元。近5日股價上漲11.11%，標普指數上漲0.68%股價漲幅表現優於大盤。&lt;/p&gt;&lt;p&gt;資料來源：Factset，數據僅供參考，不作為投資建議。&lt;/p&gt;"
+        },
+        {
+          "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大跌5.04%，報75.43美元",
+          "url": "https://news.cnyes.com/news/id/6356293",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間27日22:30股價下跌4美元，報75.43美元，跌幅5.04%，成交量315,518（股），盤中最高價75.44美元、最低價75.40美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.09%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.82%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-3.19%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.81%&lt;/li&gt;    &lt;li&gt;近 1 月：-47.18%&lt;/li&gt;    &lt;li&gt;近 3 月：-50.56%&lt;/li&gt;    &lt;li&gt;近 6 月：-55.44%&lt;/li&gt;    &lt;li&gt;今年以來：-54.86%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Block, Inc. Class A(XYZ-US)EPS預估上修至3.35元，預估目標價為85.00元",
+          "url": "https://news.cnyes.com/news/id/6356283",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共38位分析師，對Block, Inc. Class A(XYZ-US)做出2026年EPS預估：中位數由3.2元上修至3.35元，其中最高估值4.19元，最低估值2.39元，預估目標價為85.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;4.19(4.19)&lt;/td&gt;&lt;td&gt;5.34&lt;/td&gt;&lt;td&gt;6.88&lt;/td&gt;&lt;td&gt;6.72&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;2.39(2.39)&lt;/td&gt;&lt;td&gt;2.82&lt;/td&gt;&lt;td&gt;3.67&lt;/td&gt;&lt;td&gt;6.72&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;3.4(3.2)&lt;/td&gt;&lt;td&gt;4.41&lt;/td&gt;&lt;td&gt;5.6&lt;/td&gt;&lt;td&gt;6.72&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;3.35(3.2)&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;5.59&lt;/td&gt;&lt;td&gt;6.72&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;303.41億&lt;/td&gt;&lt;td&gt;335.33億&lt;/td&gt;&lt;td&gt;366.78億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;239.61億&lt;/td&gt;&lt;td&gt;275.81億&lt;/td&gt;&lt;td&gt;308.58億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;266.49億&lt;/td&gt;&lt;td&gt;294.27億&lt;/td&gt;&lt;td&gt;327.25億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;265.37億&lt;/td&gt;&lt;td&gt;293.58億&lt;/td&gt;&lt;td&gt;324.31億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;0.36&lt;/td&gt;&lt;td&gt;-0.93&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;4.70&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;176.61億&lt;/td&gt;&lt;td&gt;175.32億&lt;/td&gt;&lt;td&gt;219.16億&lt;/td&gt;&"
+        },
+        {
+          "title": "鉅亨速報 - Factset 最新調查：Bentley Systems Inc - Class B(BSY-US)EPS預估上修至1.37元，預估目標價為48.00元",
+          "url": "https://news.cnyes.com/news/id/6356282",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;根據FactSet最新調查，共15位分析師，對Bentley Systems Inc - Class B(BSY-US)做出2026年EPS預估：中位數由1.34元上修至1.37元，其中最高估值1.45元，最低估值1.3元，預估目標價為48.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;1.45(1.45)&lt;/td&gt;&lt;td&gt;1.67&lt;/td&gt;&lt;td&gt;1.95&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;1.3(1.29)&lt;/td&gt;&lt;td&gt;1.51&lt;/td&gt;&lt;td&gt;1.57&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;1.36(1.34)&lt;/td&gt;&lt;td&gt;1.58&lt;/td&gt;&lt;td&gt;1.76&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;1.37(1.34)&lt;/td&gt;&lt;td&gt;1.57&lt;/td&gt;&lt;td&gt;1.76&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;市場預估營收&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;em&gt;預估值&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最高值&lt;/td&gt;&lt;td&gt;17.02億&lt;/td&gt;&lt;td&gt;19.12億&lt;/td&gt;&lt;td&gt;21.05億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;最低值&lt;/td&gt;&lt;td&gt;16.08億&lt;/td&gt;&lt;td&gt;17.92億&lt;/td&gt;&lt;td&gt;20.62億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;平均值&lt;/td&gt;&lt;td&gt;16.84億&lt;/td&gt;&lt;td&gt;18.68億&lt;/td&gt;&lt;td&gt;20.84億&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;中位數&lt;/td&gt;&lt;td&gt;16.98億&lt;/td&gt;&lt;td&gt;18.75億&lt;/td&gt;&lt;td&gt;20.84億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;歷史獲利表現&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;項目&lt;/td&gt;&lt;td&gt;&lt;em&gt;2021年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2022年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2023年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2024年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EPS&lt;/td&gt;&lt;td&gt;0.30&lt;/td&gt;&lt;td&gt;0.57&lt;/td&gt;&lt;td&gt;1.05&lt;/td&gt;&lt;td&gt;0.75&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;營業收入&lt;/td&gt;&lt;td&gt;9.65億&lt;/td&gt;&lt;td&gt;10.99億&lt;/td&gt;&lt;td&gt;12.28億&lt;/td&gt;&lt;td&gt;13.53億&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;詳細資訊請看美股內頁：&lt;br&gt;Bentley Systems Inc - Class B(BSY-US)&lt;/p&gt;&lt;p&gt;"
+        }
+      ]
+    },
+    {
       "word": "關鍵",
       "count": 36,
       "articles": [
@@ -3576,138 +3660,6 @@
           "url": "https://sports.ltn.com.tw/news/breakingnews/5355166",
           "source": "自由時報",
           "content": "\n\n\n日本隊今在2027世界盃亞洲區資格賽首輪第二階段第2戰，靠歸化中鋒霍金森攻下24分、8籃板，渡邊雄太進帳15分，以78：72力退南韓，勇奪小組賽第3勝，暫居分組龍頭，晉級...…"
-        }
-      ]
-    },
-    {
-      "word": "中心",
-      "count": 36,
-      "articles": [
-        {
-          "title": "淫醫收藏兒童性影像近2TB 家防中心呼籲家長通報",
-          "url": "https://news.ltn.com.tw/news/society/breakingnews/5353122",
-          "source": "自由時報",
-          "content": "桃園某知名婦產科羅姓醫師加入多個LINE群組，分享、收藏超過近2TB的兒少性影像，更涉嫌利用醫院代訓看診期間，偷拍女童、少女的私密處照片，新北地檢署將羅姓醫師起訴，而羅目前仍在...…"
-        },
-        {
-          "title": "「新事社會服務中心」李正新：台灣漁獲量產值每年約新台幣900億，3萬多名外籍漁工卻無宿舍可住",
-          "url": "https://www.thenewslens.com/article/265078",
-          "source": "關鍵評論網",
-          "content": "四面環海的台灣，漁獲量豐富，每年帶來約900億新台幣的經濟產值，不過在這產值背後，其實是依賴許多來自東南亞的外籍漁工。「新事社會服務中心」資源發展部副主任李正新指出，海洋漁工的工時、休息與睡眠時間高度不穩定，長期下來對身心都造成極大負擔，然而，他們擁有的私人空間卻極為有限。他進一步說明，目前超過六、七成的漁工，即便是船隻靠港，都仍住在船上，並未有配置的宿舍。然兒，以台灣的經濟條件，替遠洋與近海三萬多名外籍漁工提供基本且合理的住宿環境，其實並非難事。"
-        },
-        {
-          "title": "從晶片到6G！輝達攬12巨頭組聯盟 專家：希望AI流量撐住資料中心與晶片霸權",
-          "url": "https://news.cnyes.com/news/id/6356021",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;AI 晶片巨頭輝達上周六 (2 月 28 日) 宣布牽頭成立「通信網路基礎設施聯盟」，聯合博思艾倫、英國電信、思科、德國電信、愛立信、MITRE、諾基亞、OCUDU 生態系統基金會、ODC、SK 電訊、軟銀集團和 T-Mobile 等業者，共同推動在 AI 原生、開放、安全且可信的平台上，建構下一代無線網路。&lt;/p&gt;\n\n&lt;p&gt;輝達表示，此舉旨在確保未來 6G 基礎設施具備開放性、智能化與復原性，以加速創新並維護全球信任。除傳統連接功能外，6G 將成為「物理 AI」的基礎架構，支撐數十億台自主機器、車輛、感測器與機器人，並對安全性與可信度提出更高要求。&lt;/p&gt;\n\n&lt;p&gt;由於傳統無線架構並非為「物理 AI」基礎架構而設計，輝達決定攜手業界，推進基於開放與可信原則的「原生 AI 軟體定義無線平台」。&lt;/p&gt;\n\n&lt;p&gt;輝達電信業務與戰略負責人 Ronnie Vasishta 指出，現有網路無法滿足未來應用，在 AI 時代，網路不僅要為手機提供智能，更要為機器賦能。&lt;/p&gt;\n\n&lt;p&gt;他強調，在無線頻譜有限的情況下，未來網路效率需提升「數十萬倍」才能支持新場景。輝達目前已為電信網路提供專用版本的晶片、電腦和軟體，並希望擴大布局，同時也需 AI 滲透至機器人、自駕車等更多領域，以持續拉動需求，支撐其耗費算力最巨的資料中心建設。&lt;/p&gt;\n\n&lt;p&gt;專家認為，若無線網路無法支援 AI 流量，輝達所描繪的「人形機器人和自駕車遍地開花」願景恐難快速實現。在標準制定前，業界常組建聯盟以引導產業發展，但成效參差不齊，有時反而拖慢部署。&lt;/p&gt;\n\n&lt;p&gt;輝達主張，新一代設備與軟體須從根本上保持開放，無線收發設備不應再是封閉的客製化硬體，而應由可升級的軟體控制，並運行在更通用的電腦上。同時，數據流量應交由 AI 軟體即時調度，以回應快速變化的流量模式與優先級，這是現有網路難以做到的。&lt;/p&gt;\n\n&lt;p&gt;Vasishta 表示，在這樣的環境下，電信業將更開放，更容易孕育新興服務商，包括可能迅速成長為獨角獸的初創企業。「這將是新一代電信獨角獸誕生的方式，過去十年進入該行業的新玩家實在太少了。」&lt;/p&gt;\n"
-        },
-        {
-          "title": "美伊衝突期間，AWS中東資料中心因外部撞擊事故導致服務中斷",
-          "url": "https://www.ithome.com.tw/news/174092",
-          "source": "iThome",
-          "content": "從2月28日上午開始，美國與以色列聯手對伊朗發動空襲，經過幾個小時之後，AWS在其服務狀態儀表板更新當地資料中心運作狀態，將多個服務的嚴重程度標示為中斷（Disrupted）。根據這當中的說明，AWS表示，位於阿拉伯聯合大公國（UAE）的ME-CENTRAL-1服務區域，旗下的1個可用區域MEC1-AZ2因資料中心遭物體撞擊並引發火災，導致服務中斷，目前正陸續恢復中，最近一次的狀態公告提到： AssociateAddress API請求存取已恢復運作。"
-        },
-        {
-          "title": "安南水資源回收中心二期擴廠 處理量增至每日2.7萬噸",
-          "url": "https://news.ltn.com.tw/news/life/breakingnews/5355879",
-          "source": "自由時報",
-          "content": "台南市府積極推動污水系統擴建，改善環境衛生、帶動城市競爭力，「安南鹽水BOT系統」二期擴建獲中央核可，將安南水資源回收中心每日處理量提升提高至27000噸，預計於今年下半年開工...…"
-        },
-        {
-          "title": "亞馬遜AWS中東資料中心遭擊中起火服務大規模中斷金融業首當其衝",
-          "url": "https://news.cnyes.com/news/id/6358780",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6358780/o/8acce975f6129443725d6a85bdc0b925.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p data-start=&quot;36&quot; data-end=&quot;203&quot;&gt;2026年03月02日（優分析／產業數據中心報導）⸺ 亞馬遜Amazon(AMZN-US)旗下雲端事業Amazon Web Services（AWS）週一證實，中東地區雲端基礎設施發生大規模電力與連線中斷，起因為阿拉伯聯合大公國（UAE）一處資料中心遭不明物體擊中，引發火花與後續火警，當地電力系統被迫緊急關閉。&lt;/p&gt;\n\n\n\n\n\n\n\n\n&lt;p data-start=&quot;200&quot; data-end=&quot;316&quot;&gt;根據AWS官方狀態儀表板公告，UAE兩個可用區（Availability Zones）及巴林地區服務受到嚴重影響。公司原先於當日稍早表示系統出現復原跡象，但隨後更新說明指出，全面恢復可能仍需數小時以上時間，顯示實際復原進度低於預期。&lt;/p&gt;\n&lt;p data-start=&quot;318&quot; data-end=&quot;433&quot;&gt;在服務尚未全面恢復前，AWS已建議企業客戶啟動跨區備援機制，暫時將工作負載轉移至其他全球區域，以維持營運連續性。此次事件再度凸顯大型雲端供應商在區域集中部署下所面臨的營運風險，也讓企業重新審視多區、多雲策略的必要性。&lt;/p&gt;\n&lt;p data-start=&quot;435&quot; data-end=&quot;565&quot;&gt;伊朗近期對包括UAE與巴林在內的海灣國家展開軍事行動，以回應涉及美國與以色列的軍事打擊。外界關注AWS資料中心是否與相關軍事衝突存在關聯。不過AWS未證實設施受損與地緣政治事件之間的直接關係。&lt;/p&gt;\n&lt;p data-start=&quot;567&quot; data-end=&quot;668&quot;&gt;美國總統川普政府亦持續監控美國在中東地區的關鍵基礎設施穩定性。&lt;/p&gt;\n&lt;p data-start=&quot;567&quot; data-end=&quot;668&quot;&gt;分析人士指出，隨著雲端運算已成企業數位轉型核心，一旦區域性資料中心發生故障，不僅科技產業，金融、零售與公共服務等領域都可能出現連鎖效應。&lt;/p&gt;\n&lt;p data-start=&quot;670&quot; data-end=&quot;796&quot;&gt;實際影響已逐步浮現。阿布達比商業銀行（Abu Dhabi Commercial Bank）對外表示，其行動應用程式與數位平台出現技術異常。儘管銀行未明確指出與AWS事件相關，但服務中斷時間與雲端基礎設施故障高度重疊，市場對區域金融系統穩定性的疑慮升溫。&lt;/p&gt;\n&lt;p data-start=&quot;798&quot; data-end=&quot;901&quot;&gt;從產業角度觀察，AWS向來在中東市場積極布局，此次基礎設施受損，短期內恐對客戶信心形成壓力。業界普遍認為，企業未來在雲端架構規劃上，將更加重視地理分散與災難復原能力，避免單一區域事件對整體營運造成實質衝擊。&lt;/p&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;p&gt;※ 本文經「優分析」授權轉載，原文出處:&lt;a style=&quot;color:#A9A9A9&quot; rel=&quot;nofollow&quot; href=&quot;https://uanalyze.com.tw/articles/8062248260&quot;&gt;原文連結&lt;/a&gt;\n            &lt;br&gt;※ 免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險。&lt;/p&gt;\n            &lt;p&gt;&lt;/p&gt;"
-        },
-        {
-          "title": "中東資料中心突發火警亞馬遜雲端服務大規模中斷波及金融體系",
-          "url": "https://news.cnyes.com/news/id/6358675",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;img src=&quot;https://cimg.cnyes.cool/prod/news/6358675/o/4f2d36deb5f3870890a4b60711808ff4.jpg&quot; alt=&quot;Reuters/TPG&quot; /&gt;\n\n\n\n\n\n\n\n&lt;p data-start=&quot;36&quot; data-end=&quot;203&quot;&gt;2026年03月02日（優分析／產業數據中心報導）⸺ 亞馬遜Amazon(AMZN-US)旗下雲端事業Amazon Web Services（AWS）週一通報，中東地區基礎設施發生大規模電力與連線中斷事故。事件起因為位於阿拉伯聯合大公國（UAE）的資料中心遭不明「物體」擊中，引發火花並隨後發生火警，迫使當地電力系統緊急關閉。&lt;/p&gt;\n&lt;p data-start=&quot;205&quot; data-end=&quot;311&quot;&gt;根據AWS官方狀態儀表板資訊，UAE兩個可用區（Availability Zones）以及巴林地區的服務均受到嚴重衝擊。公司原先於當日稍早表示已有部分復原跡象，但隨後更新說明，坦言全面恢復服務仍需數小時以上時間。&lt;/p&gt;\n&lt;p data-start=&quot;313&quot; data-end=&quot;416&quot;&gt;在服務尚未完全恢復前，AWS已建議企業客戶將運算與儲存需求暫時轉移至其他全球區域，以維持營運不中斷。業界人士指出，此舉顯示跨區備援架構的重要性，也突顯大型雲端供應商在地緣政治風險升溫下所面臨的基礎設施挑戰。&lt;/p&gt;\n&lt;p data-start=&quot;418&quot; data-end=&quot;549&quot;&gt;此次事故發生之際，中東地緣政治情勢正持續升高。根據外電報導，伊朗近期對包括UAE與巴林在內的海灣國家展開軍事行動，以回應涉及美國與以色列的軍事打擊。外界關注，AWS資料中心是否與相關軍事衝突直接相關。不過AWS並未證實設施受損是否與上述地緣政治事件存在直接關聯。&lt;/p&gt;\n&lt;p data-start=&quot;551&quot; data-end=&quot;655&quot;&gt;另一方面，美國現任總統川普政府亦持續監控美國在中東地區關鍵基礎設施的穩定情況。分析人士指出，隨著雲端運算成為全球企業營運核心，一旦區域性資料中心遭遇突發事故，不僅科技產業，金融與零售等產業亦可能受到連鎖影響。&lt;/p&gt;\n&lt;p data-start=&quot;657&quot; data-end=&quot;780&quot;&gt;事實上，阿布達比商業銀行（Abu Dhabi Commercial Bank）已對外表示，其行動應用程式與數位平台出現技術問題。儘管該行尚未明確將服務中斷與AWS事件直接連結，但時間點與雲端基礎設施異常高度重疊，引發市場對區域金融體系韌性的疑慮。&lt;/p&gt;\n&lt;p data-start=&quot;782&quot; data-end=&quot;893&quot; data-is-last-node=&quot;&quot; data-is-only-node=&quot;&quot;&gt;市場觀察指出，此次事件短期內恐對AWS在中東市場的客戶信心造成壓力，並促使企業加速評估多雲或跨區部署策略。隨著全球科技基礎設施與地緣政治風險交織，雲端服務供應商的營運韌性與災害應變能力，將成為企業選擇合作夥伴時的關鍵考量。&lt;/p&gt;\n\n\n\n\n&nbsp;\n\n\n\n&lt;p&gt;※ 本文經「優分析」授權轉載，原文出處:&lt;a style=&quot;color:#A9A9A9&quot; rel=&quot;nofollow&quot; href=&quot;https://uanalyze.com.tw/articles/8062248260&quot;&gt;原文連結&lt;/a&gt;\n            &lt;br&gt;※ 免責聲明：文中所提的個股、基金、期貨商品內容僅供參考，並非投資建議，投資人應獨立判斷，審慎評估風險。&lt;/p&gt;\n            &lt;p&gt;&lt;/p&gt;"
-        },
-        {
-          "title": "聯發科 MWC 大秀 AI、6G 硬實力！全面布局邊緣 AI、車用與資料中心技術",
-          "url": "https://technews.tw/2026/03/02/mediatek-mwc-2026/",
-          "source": "TechNews",
-          "content": "聯發科宣布，將於 2026 世界行動通訊大會（MWC）以「AI for Life: From Edge to  [&#8230;]"
-        },
-        {
-          "title": "股東會年報及財報「抽查」過關否？櫃買中心今發布審閱報告 聚焦6項目4缺失",
-          "url": "https://news.cnyes.com/news/id/6355429",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;櫃買中心定期針對年報及財務報告進行抽樣審閱，並將常見缺失與建議彙整成冊公告，今（2）日公布「2024 年度上市上櫃股東會年報及財務報告審閱報告」結果，審閱重點涵蓋董事會職能、永續發展及資通安全等 6 大項目，顯示上櫃公司揭露比率持續改善 ，財務報告則以應收款項及收入認列、董事會運作情形、資金貸與及背書保證等相關缺失較多 ，已函請公司補正 。&lt;/p&gt;\n\n&lt;p&gt;櫃買中心表示，為協助上櫃公司提升資訊揭露品質及透明度，定期針對上櫃公司編製之年報及財務報告進行抽樣審閱，並將審閱過程常見之缺失態樣及建議事項等彙整成冊，公告並函知上櫃公司 ，期望引導上櫃公司持續優化資訊揭露內容及強化公司治理 。&lt;/p&gt;\n\n&lt;p&gt;首先在 2024 年度股東會年報方面，除針對各項記載事項之合規性進行一般審閱外，並採取重點審閱以強化查核深度，包括董事會職能、酬金政策發放情形、推動永續發展執行情形、氣候相關資訊、檢舉制度運作情形及資通安全管理等 6 大項目 。審閱結果顯示上櫃公司依規揭露比率呈現持續改善，針對尚未確實揭露之上櫃公司，皆已洽請其完成補正與重新申報 。&lt;/p&gt;\n\n&lt;p&gt;未來櫃買中心將持續藉由辦理業務宣導會說明最新法規政策，如年報準則及永續發展等相關新規、提供實務參考範例、透過推動公司治理評鑑機制，及配合主管機關協助企業接軌 IFRS 永續準則 。&lt;/p&gt;\n\n&lt;p&gt;另櫃買中心亦已針對上櫃公司 2024 年度財務報告進行選案與實質審閱，主要檢視項目包括應收款項及收入、關係人交易等 5 項，並依個案之實際財務業務狀況，決定相關審閱項目與程序 。&lt;/p&gt;\n\n&lt;p&gt;有關本次審閱結果，以應收款項及收入認列、董事會運作情形、資金貸與及背書保證等四大相關缺失較多 。相關缺失或建議事項，已依其影響性採取對應措施，包括函請公司完成補正或注意改善，並將持續藉由業務宣導之機會，加強對財會人員等宣導相關法令遵循及 IFRSs 新準則 。&lt;/p&gt;\n\n&lt;p&gt;櫃買中心將持續提供各項多元化優質服務，扶植上櫃公司穩健成長 。本次「2024 年度上市上櫃股東會年報及財務報告審閱報告」已置於「上櫃公司入口網」之「上櫃公司業務資訊管理」，點選「教育宣導」項下之「其他參考資料」 。&lt;/p&gt;\n"
-        },
-        {
-          "title": "資料中心首成戰場目標？AWS中東設施停擺",
-          "url": "https://news.cnyes.com/news/id/6358965",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;綜合外媒體周一 (2 日) 報導，亞馬遜 (AMZN-US) 旗下雲端服務部門 AWS 在阿拉伯聯合大公國 (UAE) 的資料中心周日傳出遭「不明物體」擊中，引發火警並迫使部分設施斷電，導致中東地區出現電力與連線異常。這起事件發生之際，伊朗向波斯灣國家發射無人機與飛彈，外界關注資料中心是否首次在現代戰場中成為實體攻擊目標。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：ZeroHedge)&quot; data-height=&quot;306&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;2.4836601307189543&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6358965/m/9afd49e7f8f4b0797e882a765eff7c14.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6358965/l/9afd49e7f8f4b0797e882a765eff7c14.jpg&quot;&gt;\n&lt;figcaption&gt;(圖：ZeroHedge)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;根據 AWS 狀態頁面說明，事故導致阿聯兩個資料中心叢集斷電，修復作業預計需數小時以上，阿聯與鄰近巴林部分雲端服務受到影響。知情人士指出，部分使用 AWS 的金融機構營運亦遭波及。AWS 並未說明擊中設施的物體為何，但事件與區域軍事行動時間點重疊，引發市場聯想。&lt;/p&gt;\n\n&lt;p&gt;若確認為軍事打擊，這將是大型美國科技公司資料中心首次在衝突中被迫停擺。近年美國科技巨頭積極將阿聯打造為人工智慧 (AI) 運算樞紐。微軟 (MSFT-US) 去年宣布，計畫至 2029 年底在當地投資總額達 150 億美元，並於資料中心部署輝達 (NVDA-US) 晶片。Google(GOOGL-US) 與甲骨文 (ORCL-US) 亦在當地設有設施。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;美國資料中心在阿聯部署區域圖(圖：ZeroHedge)&quot; data-height=&quot;369&quot; data-mime=&quot;image/png&quot; data-ratio=&quot;2.059620596205962&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6358965/m/72ad8428036a62eead179ae1d04d57c6.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6358965/l/72ad8428036a62eead179ae1d04d57c6.jpg&quot;&gt;\n&lt;figcaption&gt;美國資料中心在阿聯部署區域圖 (圖：ZeroHedge)&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;p&gt;華府智庫「戰略與國際研究中心」（CSIS）近期指出，過去區域衝突中，攻擊目標多為油田、煉油廠與管線；在 AI 與算力時代，資料中心、支撐算力的能源基礎設施與光纖節點也可能成為新型攻擊目標。&lt;/p&gt;\n\n&lt;p&gt;市場觀察認為，隨著全球資料中心建設規模快速擴張，相關風險除資金、電力與土地外，實體安全威脅亦逐漸浮現。近年無人機技術快速演進，低成本搭載彈頭的攻擊手段擴散，資料中心可能成為衝突中的新焦點。AWS 表示，完整恢復服務仍需時間，並建議客戶備份重要資料並轉移至其他區域伺服器。&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
-      "word": "基地",
-      "count": 36,
-      "articles": [
-        {
-          "title": "科威特、卡達、巴林、阿國紛傳爆炸！ 4國都有美軍基地",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5354389",
-          "source": "自由時報",
-          "content": "以色列、美國今日聯手向伊朗發動攻擊，伊朗隨後展開報復行動。巴林、阿拉伯聯合大公國、科威特都傳出爆炸事件，這些地方都有美軍基地，其中科威特駐紮多達1萬3500名美軍士兵。\r\n\r\n綜...…"
-        },
-        {
-          "title": "伊朗報復美國中東軍事基地揚言「無紅線」！科威特、阿聯、卡達等多國發生爆炸",
-          "url": "https://news.cnyes.com/news/id/6356679",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;隨著美國和以色列對伊朗發動軍事攻擊，根據伊朗方面於週六（28 日）釋出的說法，伊朗軍方正對美國在中東的多處軍事設施展開攻擊行動。&lt;/p&gt;\n\n&lt;p&gt;同一天，巴林國家聯絡中心通報，位於巴林境內的美國海軍第五艦隊基地服務中心遭飛彈襲擊。&lt;/p&gt;\n\n&lt;p&gt;另有消息指出，設有美軍設施的朱菲爾地區傳出巨大爆炸聲，現場一度冒出濃煙，至於基地本身是否受損仍有待進一步確認。&lt;/p&gt;\n\n&lt;p&gt;據悉，伊朗官員強調：「所有美國軍事基地和利益都在伊朗的掌控之中。」&lt;/p&gt;\n\n&lt;p&gt;阿拉伯聯合大公國首都阿布達比同日也傳出爆炸聲響，畫面顯示濃煙竄升。位於阿布達比以南的宰夫拉空軍基地是美軍中央司令部在區域內執行作戰與偵察任務的重要支點。&lt;/p&gt;\n\n&lt;p&gt;科威特境內亦接連傳出爆炸聲。當地設有多處美軍設施，包括位於科威特城南部、作為美國中央陸軍前線指揮部的阿里夫堅軍營，以及阿里．薩利姆空軍基地與比林軍營等軍事據點。&lt;/p&gt;\n\n&lt;p&gt;此外，敘利亞首都大馬士革當天也傳出三次爆炸聲，官方尚未就事件發表說明。&lt;/p&gt;\n\n&lt;p&gt;卡達方面則傳出攔截行動。根據卡達國防部消息人士說法，卡達使用「愛國者」防空飛彈系統，成功擊落一枚由伊朗發射的飛彈。&lt;/p&gt;\n\n&lt;p&gt;卡達首都多哈亦傳出爆炸聲。鄰近多哈的烏代德空軍基地，是美國在中東最大的軍事基地，同時也是美軍中央司令部前沿指揮中心，約有一萬名駐軍。&lt;/p&gt;\n\n&lt;p&gt;2025 年美以曾對伊朗發動軍事打擊，伊朗當時也曾向該基地發射飛彈作為報復。&lt;/p&gt;\n\n&lt;p&gt;另一方面，葉門胡塞武裝向以色列方向發射飛彈。以色列媒體報導指出，以方已偵測到來自葉門方向的來襲飛彈。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;美方展開空襲、伊朗譴責違反國際法　揚言報復無紅線&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;h6&gt;&lt;span style=&quot;font-size:16px&quot;&gt;美國國防部 28 日表示，已將對伊朗的空襲行動命名為「史詩怒火」。&lt;/span&gt;&lt;/h6&gt;\n\n&lt;p&gt;美國總統川普同日凌晨透過社群平台發布影片，宣稱美軍正在伊朗境內展開「大規模且持續的軍事行動」，目標是摧毀伊朗的飛彈產業，甚至呼籲伊朗人民在軍事行動結束後「接管政府」。&lt;/p&gt;\n\n&lt;p&gt;不過，美國參議院軍事委員會首席民主黨議員里德（Jack&nbsp;Reed）的發言人表示，里德事前並未接獲空襲伊朗的相關通報。&lt;/p&gt;\n\n&lt;p&gt;伊朗內政部於當地時間 28 日中午發表聲明，強烈譴責美國與以色列的空襲行動，指責對方無視國際法與談判進程，公然採取軍事挑釁。&lt;/p&gt;\n\n&lt;p&gt;聲明表示，伊朗內政部已成立國家危機管理總部，並要求各省動員資源，確保社會秩序與民生需求。&lt;/p&gt;\n\n&lt;p&gt;當局同時呼籲民眾保持冷靜，依實際情況安排出行，並以官方訊息為準，避免受謠言誤導。&lt;/p&gt;\n\n&lt;p&gt;有伊朗高層官員對媒體表示，對於美以發動空襲「並不意外」，並強調美國與以色列在中東的所有設施與利益都已成為「合法打擊目標」。&lt;/p&gt;\n\n&lt;p&gt;該官員更指出，伊朗的報復行動將沒有任何「紅線」，美以將為其敵對行為承擔重大且長期的後果。&lt;/p&gt;\n\n&lt;h6&gt;&lt;strong&gt;葉門&lt;/strong&gt;&lt;strong&gt;胡塞武裝聲援伊朗&lt;/strong&gt;&lt;/h6&gt;\n\n&lt;p&gt;當地時間 28 日，葉門胡塞武裝最高政治委員會發表聲明，公開向伊朗領導層、政府及人民表達毫無保留的支持與聲援。&lt;/p&gt;\n\n&lt;p&gt;該組織以強烈措辭抨擊美國與以色列對伊朗發動軍事行動，指控相關行為屬於侵略之舉，並聲稱此舉意在打破既有的威懾平衡，為未來對其他國家展開更大規模打擊鋪路。&lt;/p&gt;\n\n&lt;p&gt;聲明同時指出，這類公開的軍事行動無論從哪個角度來看，都是嚴重罪行，不僅侵犯一個主權國家的獨立與領土完整，也公然違背國際法與相關國際公約。&lt;/p&gt;\n\n&lt;p&gt;胡塞武裝並批評美國與以色列無視法律與人道價值，展現其作為強權國家的霸權本質。&lt;/p&gt;\n"
-        },
-        {
-          "title": "伊朗革命衛隊稱攻擊中東美軍基地設施　報復以美空襲",
-          "url": "https://www.cna.com.tw/news/aopl/202602280200.aspx",
-          "source": "中央社國際",
-          "content": "（中央社貝魯特28日綜合外電報導）伊朗革命衛隊（Revolutionary Guard）今天表示，伊朗武裝部隊已對中東多處美國與以色列的設施發動攻擊，以報復美以聯手軍事行動。"
-        },
-        {
-          "title": "伊朗稱襲擊14處美軍基地！伊朗外長嗆：川普尋求伊朗政權更替是「不可能的任務」",
-          "url": "https://news.cnyes.com/news/id/6356798",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗軍方相關人士透露，目前中東地區已有 14 處美軍基地遭到伊朗的襲擊。同時，伊朗伊斯蘭革命衛隊宣佈在海上反擊行動中取得重大戰果。&lt;/p&gt;\n\n&lt;p&gt;美國與以色列於週五（28 日）對外宣布，已透過空中與海上力量對伊朗展開軍事行動。隨後，伊朗對以色列境內目標以及美軍在中東的軍事設施發動反擊。&lt;/p&gt;\n\n&lt;p&gt;同日，伊朗伊斯蘭革命衛隊宣布啟動代號「真實承諾 4」的跨境軍事行動，並表示此舉是為回應美以對伊朗領土的攻擊行為。&lt;/p&gt;\n\n&lt;p&gt;當天，中東多處設有美軍駐軍的基地接連傳出爆炸聲，包括巴林、阿拉伯聯合大公國、科威特、卡達。不過，美國尚未對此作出回應。&lt;/p&gt;\n\n&lt;p&gt;此外，伊斯蘭革命衛隊表示，其海軍部隊已發射多枚飛彈，並成功命中一艘美軍戰鬥支援艦。根據革命衛隊說法，該艦在遭到飛彈攻擊後受損情況相當嚴重。&lt;/p&gt;\n\n&lt;p&gt;革命衛隊同時發出強硬警告，指出美軍在相關海域的其他海上軍事資產，已被納入其飛彈與無人機部隊的預設打擊範圍之內，並強調軍事行動仍將持續推進。&lt;/p&gt;\n\n&lt;p&gt;伊朗外交部長阿拉格齊在接受媒體訪問時指出，他已與多國外長通話說明情況，強調伊朗針對美軍基地的軍事行動「並非針對基地所在國家」，而是出於自衛考量。&lt;/p&gt;\n\n&lt;p&gt;他表示，伊朗不可能在美方對其發動攻擊後選擇袖手旁觀。&lt;/p&gt;\n\n&lt;p&gt;在談及人員傷亡時，阿拉格齊表示，目前大多數伊朗高層官員均安然無恙，僅可能有一至兩名軍事指揮官在衝突中喪生，但他強調，這不會對伊朗整體運作構成重大影響。&lt;/p&gt;\n\n&lt;p&gt;針對美國總統川普提出推動伊朗政權更替的說法，阿拉格齊直言這是「根本不可能達成的目標」。&lt;/p&gt;\n\n&lt;p&gt;此外，他重申伊朗不會放棄包括鈾濃縮在內的核心權利。至於美伊之間的溝通管道，他坦言目前雙方並無直接聯繫，但若美方有意展開對話，「他們知道該如何與我們取得聯繫」。&lt;/p&gt;\n"
-        },
-        {
-          "title": "美以空襲伊朗 伊飛彈報復 攻擊以、美基地",
-          "url": "https://news.ltn.com.tw/news/world/paper/1745027",
-          "source": "自由時報",
-          "content": "〔國際新聞中心／綜合報導〕美伊核談判陷入僵局，以色列廿八日上午對伊朗發動「先發制人」大規模軍事打擊，美國隨即參與，展開代號「史詩之怒」的聯合行動，目標直指伊朗最高領導階層、核武設施及軍事指揮中樞，意圖徹底消除對美以的「生存威脅」。伊朗遭襲後展開報復，使用飛彈攻擊以國與中東美軍基地。\r\n\r\n以色列時報…"
-        },
-        {
-          "title": "伊朗稱無意侵犯鄰國主權 中東美軍基地並非所在國土地",
-          "url": "https://news.cnyes.com/news/id/6357213",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;伊朗最高國家安全委員會秘書拉里賈尼周日（1 日）表示，伊朗無意侵犯鄰國主權，但美軍利用這些國家的基地對伊朗發動襲擊，伊朗必予以打擊。他強調，這些基地「屬於美國」，「而非所在國土地」。&lt;/p&gt;\n\n&lt;p&gt;一位伊朗軍方消息人士稱，伊朗首次使用「法塔赫 - 2」高超音速巡航飛彈襲擊美軍基地。&lt;/p&gt;\n\n&lt;p&gt;據伊朗伊斯蘭革命衛隊周日晚間發布的「真實承諾 4」行動第 8 號通告，伊朗的反擊行動已造成 560 名美軍傷亡。&lt;/p&gt;\n\n&lt;p&gt;伊朗伊斯蘭革命衛隊表示，在繼續對敵方海上目標的攻擊中，波斯灣和荷姆茲海峽區域的 3 艘違規美英油輪遭飛彈擊中。&lt;/p&gt;\n\n&lt;p&gt;此外，科威特的阿里 &middot; 薩利姆美軍基地因襲擊停止運作，科威特 3 處美國海上基礎設施被摧毀；巴林薩勒曼港的美軍基地遭 4 架無人機攻擊，指揮和後勤中心受損；巴林美軍駐地遭 2 枚彈道飛彈打擊。&lt;/p&gt;\n"
-        },
-        {
-          "title": "英同意美國使用基地　英相：但不參加對伊朗攻擊",
-          "url": "https://www.cna.com.tw/news/aopl/202603020020.aspx",
-          "source": "中央社國際",
-          "content": "（中央社倫敦1日綜合外電報導）英國首相施凱爾（Keir Starmer）今天表示，他已同意讓美國使用英國的基地，對伊朗發動「防禦性」打擊，目的是要摧毀伊朗的飛彈及其發射裝置。"
-        },
-        {
-          "title": "疑伊朗無人機跨海攻擊 英國駐賽普勒斯基地遇襲",
-          "url": "https://news.ltn.com.tw/news/world/breakingnews/5355519",
-          "source": "自由時報",
-          "content": "美國與以色列2月28日針對伊朗發動大規模軍事打擊，伊朗對此也展開反擊，除了以色列與美國駐中東基地外，法國與英國駐中東基地也遭到攻擊。位於東地中海的英國駐賽普勒斯基地2日傳出遭無人...…"
-        },
-        {
-          "title": "川普宣布擊沉9艘伊朗軍艦！美軍摧毀革命衛隊總部、B-2轟炸機重創飛彈基地",
-          "url": "https://news.cnyes.com/news/id/6357217",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國總統川普週日（1 日）在社群媒體發文指出，美軍已摧毀並擊沉 9 艘伊朗海軍艦艇。美軍中央司令部則稱，已經摧毀伊朗伊斯蘭革命衛隊總部。&lt;/p&gt;\n\n&lt;p&gt;根據《新華社》報導，川普強調，美軍正持續在海上展開追擊行動，鎖定尚未被摧毀的伊朗艦艇。他並指出，在另一次關鍵打擊中，美方基本上摧毀了「伊朗的海軍總部」。&lt;/p&gt;\n\n&lt;p&gt;美軍中央司令部稍早透過社群平台說明，部隊已在阿曼灣、靠近伊朗東南部恰赫巴哈爾港外海，擊沉一艘「賈馬蘭」級護衛艦。&lt;/p&gt;\n\n&lt;p&gt;中央司令部進一步指出，自本輪對伊軍事行動展開以來，美軍已對超過 1000 處目標發動攻擊，其中包括伊朗伊斯蘭革命衛隊總部等關鍵軍事設施。&lt;/p&gt;\n\n&lt;p&gt;行動中，美方動用多架 B-2 隱形轟炸機，投擲重達 2000 磅的炸彈，專門打擊伊朗經過強化防護的彈道飛彈基地。&lt;/p&gt;\n\n&lt;p&gt;除了 B-2 隱形轟炸機，美軍此次行動動還動用了包括多型號戰鬥機、電子戰飛機、偵察機和無人機在內的空中力量，同時配合核動力航空母艦、飛彈驅逐艦及地面火箭系統展開打擊。&lt;/p&gt;\n\n&lt;p&gt;飛彈防禦系統如「愛國者」和「薩德」也被部署以攔截可能的反擊。軍方表示，行動中也使用了空中加油機和運輸機進行保障支援。&lt;/p&gt;\n\n&lt;p&gt;針對外界傳聞中央司令部也澄清，美軍「林肯號」航空母艦並未遭伊朗飛彈命中，並強調相關飛彈未能逼近航母戰鬥群範圍。&lt;/p&gt;\n\n&lt;p&gt;在打擊目標方面，美方稱重點針對伊朗軍事指揮與控制體系、伊朗伊斯蘭革命衛隊相關總部、防空系統、彈道飛彈基地以及部分海軍艦艇與反艦飛彈陣地。&lt;/p&gt;\n\n&lt;p&gt;德黑蘭時間週六（28 日）上午，美國與以色列同步對伊朗展開大規模軍事行動。伊朗隨後對美國在海灣地區的軍事基地以及以色列境內目標進行反擊。&lt;/p&gt;\n\n&lt;p&gt;川普當天透過影片談話表示，這次行動的核心目標在於摧毀伊朗飛彈產業鏈、削弱其海軍實力，同時確保伊朗無法發展或取得核武能力。&lt;/p&gt;\n\n&lt;p&gt;另外，美軍強調，公開資訊中所列的打擊目標不包括伊朗核設施，且部分具體作戰能力未對外揭露。&lt;/p&gt;\n"
-        },
-        {
-          "title": "法軍在阿布達比基地遭伊朗反擊波及　國內也提高戒備",
-          "url": "https://www.cna.com.tw/news/aopl/202603020032.aspx",
-          "source": "中央社國際",
-          "content": "（中央社記者曾依璇巴黎1日專電）繼美國與以色列昨天聯手攻擊伊朗後，阿拉伯聯合大公國一座有法軍駐紮的基地遭伊朗回擊波及；與此同時，法國國內安全部隊正提高戒備，防範可能破壞穩定的行動。"
         }
       ]
     }
