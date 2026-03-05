@@ -142,8 +142,13 @@ async function runTask() {
             const lastSummary = lastStats ? lastStats.summary : null;
             const lastScore = lastStats ? lastStats.sentiment_score : 0;
 
-            // 🟢 AI 分析 (傳入 lastScore 觸發自適應 Persona)
-            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore);
+            // 🟢 加入 MCP 市場行情獲取
+            const { getMarketSnapshot, formatSnapshotForAI } = require('./lib/mcp');
+            const marketSnapshot = await getMarketSnapshot();
+            const marketDataStr = formatSnapshotForAI(marketSnapshot);
+
+            // 🟢 AI 分析 (傳入行情數據)
+            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr);
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
             // 更新分類

@@ -157,7 +157,7 @@ function getPersona(lastScore) {
     return "你是一位【宏觀避險基金經理人】。市場情緒中性，請平衡分析多空因素，尋找結構性的成長機會。";
 }
 
-async function getSummary(newsData, lastSummary = null, lastScore = 0) {
+async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null) {
     const blob = newsData.map((n, i) => {
         const content = n.content || n.title || "無內文";
         return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 1000)}...`;
@@ -168,15 +168,20 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0) {
         ? `🔍 **增量分析**：昨日重點為「${lastSummary.substring(0, 300)}...」。請比較今日變化。`
         : `🔍 **初始分析**：建立基準。`;
 
+    // 注入行情數據
+    const marketPrompt = marketData ? marketData : "";
+
     const prompt = `${persona}
 請閱讀新聞並產出深度決策報告。請務必依據 schema 格式精確回傳。
+
+${marketPrompt}
 
 ${contextPrompt}
 
 **欄位說明補充**：
 - sector_stats: 評估四大板塊情緒 (-1.0 ~ 1.0)。
 - entities: 提取 5-8 個關鍵實體，並嘗試附上 ticker (如 2330.TW)。
-- summary: 請使用 HTML 格式，包含重點標註。
+- summary: 請使用 HTML 格式，包含重點標註與行情對齊分析。
 
 **核心任務**：
 1. **events**: 
