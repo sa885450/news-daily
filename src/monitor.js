@@ -52,8 +52,8 @@ async function runMonitor() {
             log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (RSI: ${tech?.rsi || '?'}, 當前: ${changeRate.toFixed(2)}%)`);
 
             // 異動偵測邏輯 (跌破門檻 OR RSI 極度超賣 OR RSI 極度超買)
-            const isOverbought = tech && tech.rsi > 75;
-            const isOversold = tech && tech.rsi < 25;
+            const isOverbought = tech && tech.rsi >= 75;
+            const isOversold = tech && tech.rsi <= 25;
             const isAbnormalDrop = changeRate <= threshold;
 
             if ((isAbnormalDrop || isOversold || isOverbought) && (now - lastAlertAt > COOL_DOWN_MS)) {
@@ -83,7 +83,7 @@ async function runMonitor() {
                         { name: 'RSI 強弱', value: `**${rsiStr}**`, inline: true },
                         { name: '均線趨勢', value: tech ? `${tech.trend === 'BULL' ? '🟢多頭' : '🔴空頭'} (MA20: ${tech.ma20})` : '未知', inline: false }
                     ],
-                    footer: { text: "AI 財經監控終端 v9.1.0 | 戰術建議版" },
+                    footer: { text: "AI 財經監控終端 v9.3.0 | 每日快照版" },
                     timestamp: new Date().toISOString()
                 };
 
@@ -108,11 +108,59 @@ async function runMonitor() {
             }
         }
 
+        // 🟢 v9.3.0: 每日正午健康快照邏輯
+        await checkAndSendDailySnapshot(allTargets, state);
+
         fs.writeFileSync(MONITOR_STATE_FILE, JSON.stringify(state, null, 2));
         log('💾', '所有標的巡邏完畢，狀態已存檔。');
 
     } catch (e) {
         log('❌', `監控程序異常: ${e.message}`);
+    }
+}
+
+/**
+ * 每日正午發送健康快照 (僅開市日)
+ */
+async function checkAndSendDailySnapshot(targets, state) {
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+
+    // 僅限週一到週五 (1-5)，且在 12 點時段
+    if (day >= 1 && day <= 5 && hour === 12) {
+        const todayStr = now.toISOString().split('T')[0];
+        if (state.lastDailySnapshotAt === todayStr) return; // 今日已發送
+
+        log('📊', '正在產生每日正午健康快照...');
+
+        // 篩選核心標的 (0050, 2330, BTC, 黃金)
+        const coreSymbols = ['2330.TW', '0050.TW', 'BTC', 'GC=F'];
+        const coreDatas = targets.filter(t => coreSymbols.includes(t.symbol) || coreSymbols.includes(t.name));
+
+        const fields = await Promise.all(coreDatas.map(async t => {
+            const tech = await getTechnicalIndicators(t.symbol || '');
+            const rsiVal = tech ? tech.rsi : '?';
+            const rsiStatus = tech ? (tech.rsi < 30 ? '🔥' : tech.rsi > 70 ? '❄️' : '⚖️') : '';
+            return {
+                name: `${t.name}`,
+                value: `價格: **$${t.price.toLocaleString()}**\nRSI: **${rsiVal}** ${rsiStatus}`,
+                inline: true
+            };
+        }));
+
+        const embed = {
+            title: `☀️ 每日市場健康快照 (${todayStr})`,
+            description: "這是您的每日資產體溫表，協助您掌握長線佈局時機。",
+            color: 3447003, // 藍色 (科技感)
+            fields: fields,
+            footer: { text: "AI 財經監控終端 v9.3.0 | 每日快照版" },
+            timestamp: now.toISOString()
+        };
+
+        await sendDiscordEmbed(embed, config.discordAlertWebhook);
+        state.lastDailySnapshotAt = todayStr;
+        log('✅', '每日健康快照已發送至 Discord。');
     }
 }
 
