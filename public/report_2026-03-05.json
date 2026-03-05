@@ -1,6 +1,6 @@
 {
-  "updateTime": "2026-03-05T16:01:44.341Z",
-  "fullDateStr": "2026/3/6 · 更新於 00:01:44",
+  "updateTime": "2026-03-05T18:01:31.408Z",
+  "fullDateStr": "2026/3/6 · 更新於 02:01:31",
   "market_snapshot": {
     "traditional": {
       "2330": {
@@ -17,8 +17,8 @@
       },
       "gspc": {
         "name": "S&P 500",
-        "price": 6836.54,
-        "change": -0.47983077,
+        "price": 6779.67,
+        "change": -1.3075721,
         "symbol": "^GSPC"
       },
       "0050": {
@@ -37,339 +37,291 @@
     "crypto": {
       "btc": {
         "name": "BTC",
-        "price": 71562,
-        "change": -2.4966698931443148,
+        "price": 70743,
+        "change": -3.4190925343525698,
         "symbol": "BTC"
       },
       "eth": {
         "name": "ETH",
-        "price": 2083.14,
-        "change": -3.1275907952645863,
+        "price": 2059.76,
+        "change": -4.064847485555647,
         "symbol": "ETH"
       },
       "sol": {
         "name": "SOL",
-        "price": 89.51,
-        "change": -3.102456351012423,
+        "price": 88.17,
+        "change": -3.8643827937956905,
         "symbol": "SOL"
       },
       "bnb": {
         "name": "BNB",
-        "price": 652.3,
-        "change": -1.1144520591886031,
+        "price": 647.56,
+        "change": -1.679914171795482,
         "symbol": "BNB"
       }
     },
-    "updatedAt": "2026-03-05T16:00:46.660Z"
+    "updatedAt": "2026-03-05T18:00:45.577Z"
   },
   "aiResult": {
-    "sentiment_score": 0.05,
+    "sentiment_score": -0.25,
     "dimensions": {
-      "policy": -0.3,
-      "market": 0.2,
-      "industry": 0.5,
+      "policy": -0.6,
+      "market": -0.4,
+      "industry": 0.2,
       "international": -0.7,
-      "technical": 0.1
+      "technical": -0.3
     },
     "entities": [
       {
         "name": "博通",
-        "sentiment": "positive",
+        "sentiment": "貪婪",
         "ticker": "AVGO.US"
       },
       {
-        "name": "英特爾",
-        "sentiment": "negative",
-        "ticker": "INTC.US"
+        "name": "應用材料",
+        "sentiment": "恐慌",
+        "ticker": "AMAT.US"
       },
       {
-        "name": "伊朗",
-        "sentiment": "negative",
-        "ticker": null
+        "name": "科林研發",
+        "sentiment": "恐慌",
+        "ticker": "LRCX.US"
       },
       {
-        "name": "賽富時",
-        "sentiment": "positive",
-        "ticker": "CRM.US"
+        "name": "奇異",
+        "sentiment": "恐慌",
+        "ticker": "GE.US"
       },
       {
-        "name": "盛美半導體",
-        "sentiment": "negative",
-        "ticker": "ACRM.US"
+        "name": "莫德納",
+        "sentiment": "恐慌",
+        "ticker": "MRNA.US"
       },
       {
-        "name": "聯準會",
-        "sentiment": "neutral",
-        "ticker": null
-      },
-      {
-        "name": "交易台",
-        "sentiment": "positive",
-        "ticker": "TTD.US"
+        "name": "英特格",
+        "sentiment": "恐慌",
+        "ticker": "ENTG.US"
       }
     ],
-    "summary": "<h3>【宏觀決策報告：能源通膨與軟體成長的結構性對沖】</h3><p>今日市場情緒呈現顯著的分化特徵。一方面，<b>中東能源斷鏈風險</b>急遽升溫，伊朗攻擊油輪導致 WTI 原油突破 78 美元，這直接引發了對二度通膨的恐懼，並驅動美國 10 年期公債殖利率攀升 [ID:0, 17]；另一方面，美股<b>科技成長股表現出極強的抗跌性與韌性</b>，特別是博通 (AVGO) 與多個 SaaS 板塊（如 CRM, TTD）在震盪中錄得 5% 以上的漲幅，顯示資金正在進行「高品質成長性避險」。</p><p>操作策略上，市場正從情緒修復轉向嚴格的<b>產能實證</b>。聯準會官員巴金的發言暗示，若油價衝擊具備持續性，降息路徑將面臨修正 [ID:8]。然而，就業數據的強韌（初領失業金人數 21.3 萬）為美股提供了基本面支撐 [ID:18]。投資者應關注半導體設備鏈中的<b>國安合規性風險</b>，英特爾因 ACM 設備案受調查，預示著美中科技脫鉤將深入至底層供應鏈 [ID:1]。</p>",
+    "summary": "<h3>【宏觀決策報告：半導體設備修正與地緣關稅亂局】</h3><p>今日市場延續了昨日的高波動特徵，但結構上出現了顯著的<b>「設備 vs. 應用」背離</b>。儘管博通 (AVGO) 憑藉 2027 年 AI 營收破千億的強勁指引大漲 5%，顯示 AI 基礎設施需求依然乾涸，但半導體設備端如應用材料 (AMAT) 與科林研發 (LRCX) 卻因宏觀不確定性與漲多修正而集體重挫 5% 以上 [ID:4, 5, 13]。</p><p><b>關鍵變數：</b>24 個州政府聯合對川普政府的全球關稅政策發起法律挑戰，這不僅增加了憲政爭議，也讓跨國企業的稅負預期更加混亂 [ID:10]。同時，荷姆茲海峽的航運停擺依然是能源市場的未爆彈，布蘭特原油在 81-84 美元震盪，等待護航政策明確化 [ID:12]。</p><p><b>操作建議：</b>目前市場正處於「AI 溢價」與「通膨關稅恐懼」的拉鋸戰。策略上應<b>避開重資產與高度依賴全球供應鏈的設備商</b>，轉而配置具有高度議價能力的客製化 ASIC 與 AI 網路基礎設施龍頭。加密貨幣市場回調 3-4% 顯示避險情緒升溫，短線建議增持現金或具防禦屬性的能源避險部位。</p>",
     "categories": [
       {
         "id": 1,
-        "category": "能源安全"
+        "category": "半導體設備"
       },
       {
         "id": 2,
-        "category": "科技成長"
+        "category": "地緣政治"
       },
       {
         "id": 3,
-        "category": "地緣政治"
+        "category": "政策關稅"
       }
     ],
     "sector_stats": {
-      "tech": 0.6,
-      "finance": -0.2,
-      "manufacturing": 0.1,
-      "service": 0.3
+      "tech": -0.1,
+      "finance": -0.3,
+      "manufacturing": -0.6,
+      "service": -0.2
     },
     "events": [
       {
-        "title": "中東能源運輸斷鏈危機",
-        "summary": "伊朗攻擊油輪並威脅封鎖荷姆茲海峽，推動國際油價周漲幅逼近 15%，加劇全球通膨壓力。",
+        "title": "24州提告挑戰川普關稅",
+        "summary": "紐約等24州對新關稅法規發起法律訴訟，質疑其違反憲法權力分立與貿易法濫用。",
         "impact": "負面",
         "related_news_ids": [
-          0,
-          17
+          10
         ]
       },
       {
-        "title": "SaaS 與 AI 軟體股結構性噴發",
-        "summary": "儘管大盤受壓，CRM, TTD 等軟體龍頭因業績預期與 AI 轉型實績逆勢暴漲，成為市場避風港。",
-        "impact": "正面",
-        "related_news_ids": [
-          2,
-          11,
-          16
-        ]
-      },
-      {
-        "title": "半導體設備國安審查升級",
-        "summary": "英特爾因測試具有中資背景的 ACM 設備遭國會質疑，顯示美方對晶片供應鏈的監管已延伸至非直接生產流程。",
+        "title": "AI 營收指引與設備股背離",
+        "summary": "博通樂觀預測 AI 營收長期增長，但半導體設備商與封裝測試板塊出現 5% 以上集體修正。",
         "impact": "中性",
         "related_news_ids": [
-          1
+          0,
+          2,
+          4,
+          5,
+          6,
+          13
+        ]
+      },
+      {
+        "title": "荷姆茲海峽航運危機",
+        "summary": "中東能源樞紐持續停擺，華爾街聚焦川普政府是否能提供有效護航與保險方案。",
+        "impact": "負面",
+        "related_news_ids": [
+          12
         ]
       }
     ],
     "relations": [
       {
-        "from": "伊朗",
-        "to": "國際油價",
-        "type": "供應鏈衝擊"
+        "from": "川普政府",
+        "to": "美國跨國企業",
+        "type": "關稅政策壓力"
       },
       {
-        "from": "英特爾",
-        "to": "盛美半導體",
-        "type": "監管風險"
-      },
-      {
-        "from": "聯準會",
-        "to": "市場流動性",
-        "type": "政策傳導"
+        "from": "荷姆茲海峽",
+        "to": "布蘭特原油",
+        "type": "供應中斷與價格推升"
       },
       {
         "from": "博通",
-        "to": "AI 基礎設施",
-        "type": "需求驅動"
+        "to": "台積電",
+        "type": "長期產能確保"
       }
     ]
   },
   "newsData": [
     {
-      "title": "伊朗宣稱攻擊油輪 國際油價升至去年6月以來新高",
-      "url": "https://news.cnyes.com/news/id/6366295",
+      "title": "盤中速報 - 英特格(ENTG-US)大跌5.04%，報122.5美元",
+      "url": "https://news.cnyes.com/news/id/6366401",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國原油價格周四 (5 日) 一度升至 2025 年 6 月以來最高水準，主要因伊朗宣稱對一艘油輪發動攻擊，市場對中東能源供應安全的擔憂迅速升溫，推動國際油價大幅上揚。&lt;/p&gt;\n\n&lt;p&gt;截稿前，紐約西德州中級原油 (WTI) 最新上漲 5.02%，每桶上漲 3.75 美元至 78.41 美元，盤中一度突破 78 美元；全球基準布蘭特原油則上漲 3.19%，每桶上漲 2.60 美元至 84.01 美元。本周以來油價累計漲幅已接近 15%，反映市場對中東局勢升溫的高度敏感。&lt;/p&gt;\n\n&lt;p&gt;伊朗官方媒體報導指出，伊朗以飛彈攻擊一艘油輪。此前伊朗革命衛隊已下令關閉荷姆茲海峽 (Strait of Hormuz)，並威脅將攻擊通過該海域的油輪，使全球能源運輸面臨重大風險。&lt;/p&gt;\n\n&lt;p&gt;英國海軍周四亦通報，在伊拉克領海停泊的一艘油輪附近發生大規模爆炸。船長表示看到一艘小型船隻迅速離開現場，目前船員均安全，且未傳出起火事故。&lt;/p&gt;\n\n&lt;p&gt;自美國與以色列對伊朗展開軍事行動後，荷姆",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;英特格(ENTG-US)截至台北時間06日01:44股價下跌6.5美元，報122.50美元，跌幅5.04%，成交量570,492（股），盤中最高價129.44美元、最低價122.47美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.95%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.29%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.06%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;英特格(ENTG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.68%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.79%&lt;/li&gt;    &lt;li&gt;近 3 月：+43.85%&l",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "英特爾與ACM合作引兩黨議員警示 國安疑慮升溫",
-      "url": "https://news.cnyes.com/news/id/6364909",
+      "title": "盤中速報 - IDEXX實驗室(IDXX-US)大跌5.07%，報615.78美元",
+      "url": "https://news.cnyes.com/news/id/6366400",
       "source": "鉅亨網(wd_stock)",
-      "category": "能源安全",
+      "category": "半導體設備",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國跨黨派國會議員周三 (4 日) 針對英特爾 (INTC-US) 提出國安疑慮，理由是該公司正在測試盛美半導體 (ACM Research)(ACRM-US) 的晶片生產設備，後者有中資背景且子公司仍在美國商務部黑名單上，擔憂英特爾的敏感資訊可能在測試過程中被洩露出去。&lt;/p&gt;\n\n&lt;p&gt;ACM 生產晶片製造設備，總部在美國加州並於那斯達克掛牌上市，但與中國有深厚關係，且有兩家海外子公司在 2024 年因國安理由遭制裁。&lt;/p&gt;\n\n&lt;p&gt;對英特爾施壓的議員以民主黨的華倫 (Elizabeth Warren) 和共和黨的 Tom Cotton 為首，他們指出，ACM 的客戶包括一些遭美國制裁的企業，如長江存儲 (YMTC)、長鑫存儲 (CXMT) 和中芯國際 (SMIC) 等。&lt;/p&gt;\n\n&lt;p&gt;這群跨黨派議員在致英特爾執行長陳立武的信中說：「ACM 若在英特爾設施內運作，可能接觸到最先進的晶片製造流程，這可能大幅提升 ACM 以及中國軍方相關企業的產品品質與競爭力。」&lt;/p&gt;\n\n&lt;",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;IDEXX實驗室(IDXX-US)截至台北時間06日01:43股價下跌32.92美元，報615.78美元，跌幅5.07%，成交量209,658（股），盤中最高價639.38美元、最低價615.78美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.93%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.27%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.04%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.55%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;IDEXX實驗室(IDXX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.15%&lt;/li&gt;    &lt;li&gt;近 3",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 賽富時(CRM-US)大漲5.02%，報202.78美元",
-      "url": "https://news.cnyes.com/news/id/6366323",
-      "source": "鉅亨網(wd_stock)",
-      "category": "科技成長",
-      "thumbnail": null,
-      "content": "&lt;p&gt;賽富時(CRM-US)截至台北時間05日23:09股價上漲9.7美元，報202.78美元，漲幅5.02%，成交量2,775,409（股），盤中最高價202.78美元、最低價194.24美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.98%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.19%&lt;/li&gt;&lt;li&gt;NASDAQ指數：0%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.26%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;賽富時(CRM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.24%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.7%&lt;/li&gt;    &lt;li&gt;近 3 月：-20.78%&lt;/li",
-      "timeStr": "上午12:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 博通(AVGO-US)大漲5.01%，報333.43美元",
-      "url": "https://news.cnyes.com/news/id/6366320",
+      "title": "盤中速報 - 安可(AMKR-US)大跌5.13%，報43.42美元",
+      "url": "https://news.cnyes.com/news/id/6366399",
       "source": "鉅亨網(wd_stock)",
       "category": "地緣政治",
       "thumbnail": null,
-      "content": "&lt;p&gt;博通(AVGO-US)截至台北時間05日23:00股價上漲15.9美元，報333.43美元，漲幅5.01%，成交量15,499,911（股），盤中最高價333.50美元、最低價323.03美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.81%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.17%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.27%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.56%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;博通(AVGO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-5.56%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.88%&lt;/li&gt;    &lt;li&gt;近 3 月：-17.63%",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;安可(AMKR-US)截至台北時間06日01:41股價下跌2.35美元，報43.42美元，跌幅5.13%，成交量2,059,281（股），盤中最高價45.65美元、最低價43.42美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.97%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.26%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.05%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.49%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-12.47%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.64%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.27%&lt;",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 格羅方德(GFS-US)大漲5.02%，報49.96美元",
-      "url": "https://news.cnyes.com/news/id/6366308",
+      "title": "盤中速報 - 和康電訊(MTSI-US)大跌5.03%，報226.99美元",
+      "url": "https://news.cnyes.com/news/id/6366398",
       "source": "鉅亨網(wd_stock)",
-      "category": "其他",
+      "category": "政策關稅",
       "thumbnail": null,
-      "content": "&lt;p&gt;格羅方德(GFS-US)截至台北時間05日22:58股價上漲2.39美元，報49.96美元，漲幅5.02%，成交量423,751（股），盤中最高價49.96美元、最低價47.57美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.71%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.11%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.42%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;格羅方德(GFS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3.36%&lt;/li&gt;    &lt;li&gt;近 1 月：+14.89%&lt;/li&gt;    &lt;li&gt;近 3 月：+25.65%&lt",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;和康電訊(MTSI-US)截至台北時間06日01:41股價下跌12.01美元，報226.99美元，跌幅5.03%，成交量305,437（股），盤中最高價238.12美元、最低價226.99美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.96%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.24%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.97%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.3%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;和康電訊(MTSI-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-4.88%&lt;/li&gt;    &lt;li&gt;近 1 月：+12.08%&lt;/li&gt;    &lt;li&gt;近 3 月：+28.8",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 直覺(INTU-US)大漲5%，報462.15美元",
-      "url": "https://news.cnyes.com/news/id/6366307",
+      "title": "盤中速報 - 應用材料(AMAT-US)大跌5.03%，報339.77美元",
+      "url": "https://news.cnyes.com/news/id/6366397",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;直覺(INTU-US)截至台北時間05日22:57股價上漲22.01美元，報462.15美元，漲幅5%，成交量788,557（股），盤中最高價462.15美元、最低價438.93美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.6%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.06%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.03%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.21%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;直覺(INTU-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+13.67%&lt;/li&gt;    &lt;li&gt;近 1 月：-2.76%&lt;/li&gt;    &lt;li&gt;近 3 月：-34.65%&lt;/",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;應用材料(AMAT-US)截至台北時間06日01:41股價下跌17.99美元，報339.77美元，跌幅5.03%，成交量1,917,963（股），盤中最高價354.76美元、最低價339.63美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.96%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.24%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.94%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.26%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;應用材料(AMAT-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.05%&lt;/li&gt;    &lt;li&gt;近 1 月：+18.05%&lt;/li&gt;    &lt;li&gt;近 3 月：+",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Applovin Corp - Class A(APP-US)大漲5.07%，報507.27美元",
-      "url": "https://news.cnyes.com/news/id/6366306",
+      "title": "盤中速報 - 科林研發(LRCX-US)大跌5.02%，報211.81美元",
+      "url": "https://news.cnyes.com/news/id/6366396",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Applovin Corp - Class A(APP-US)截至台北時間05日22:54股價上漲24.46美元，報507.27美元，漲幅5.07%，成交量1,235,459（股），盤中最高價507.27美元、最低價484.75美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.05%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+0.01%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.02%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Applovin Corp - Class A(APP-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.09%&lt;/li&gt;    &lt;li&gt;近 1 月：+13.",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;科林研發(LRCX-US)截至台北時間06日01:36股價下跌11.19美元，報211.81美元，跌幅5.02%，成交量3,048,819（股），盤中最高價222.41美元、最低價211.74美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.91%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.17%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.05%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.09%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;科林研發(LRCX-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-12.91%&lt;/li&gt;    &lt;li&gt;近 1 月：+3.57%&lt;/li&gt;    &lt;li&gt;近 3 月：+3",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Crowdstrike控股(CRWD-US)大漲5.03%，報428.18美元",
-      "url": "https://news.cnyes.com/news/id/6366305",
+      "title": "盤中速報 - 費城半導體大跌2%，報7755.89點",
+      "url": "https://news.cnyes.com/news/id/6366395",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Crowdstrike控股(CRWD-US)截至台北時間05日22:51股價上漲20.5美元，報428.18美元，漲幅5.03%，成交量1,035,988（股），盤中最高價428.26美元、最低價407.00美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.78%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.24%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.01%&lt;/li&gt;&lt;li&gt;費城半導體指數：+0.03%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Crowdstrike控股(CRWD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+7.74%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.76%&lt;/li&gt;    &l",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;截至台北時間06日01:35，費城半導體下跌158.58點（或2%），暫報7755.89點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-6.53%&lt;/li&gt;&lt;li&gt;近 1 月：+3.88%&lt;/li&gt;&lt;li&gt;近 3 月：+9.68%&lt;/li&gt;&lt;li&gt;近 6 月：+39.64%&lt;/li&gt;&lt;li&gt;今年以來：+11.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以連貫(COHR-US)領跌。連貫(COHR-US)下跌8.37%；Onto Innovation Inc.(ONTO-US)下跌6.24%；科林研發(LRCX-US)下跌4.9%；安可(AMKR-US)下跌4.41%；應用材料(AMAT-US)下跌4.37%。&lt;/p&gt;&",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "油價飆升會逼Fed出手？巴金這樣說",
-      "url": "https://news.cnyes.com/news/id/6366272",
+      "title": "盤中速報 - 奇異(GE-US)大跌5.05%，報322.66美元",
+      "url": "https://news.cnyes.com/news/id/6366394",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;美國聯準會 (Fed) 里奇蒙聯準銀行總裁巴金 (Tom Barkin) 表示，中東戰事對美國經濟造成的衝擊時間長短，將決定聯準會的政策反應。他指出，若能源價格上漲只是短期衝擊，貨幣政策通常會選擇「忽略」；但若衝擊持續時間較長，則可能需要更審慎的政策回應。&lt;/p&gt;\n\n&lt;p&gt;巴金周四 (5 日) 接受《彭博電視》採訪時表示，油價上漲顯然具有通膨效果。按照教科書式的貨幣政策，如果只是短暫衝擊，央行通常會選擇不立即反應；但若衝擊長期存在，就不能忽視，決策官員未來將需要評估這類影響的持續性。&lt;/p&gt;\n\n&lt;p&gt;聯準會下一次政策會議將於 3 月 17 日至 18 日舉行。官員先前已暗示，在通膨尚未取得更多進展之前，可能連續第二次維持利率不變。聯準會偏好的通膨指標&mdash;&mdash;個人消費支出 (PCE) 物價指數&mdash;&mdash;去年 12 月年升 2.9%，仍明顯高於 2% 的政策目標。&lt;/p&gt;\n\n&lt;p&gt;巴金表示，近期數據顯示通膨連續數月維持在相對較高水準，這讓決策官員更難認定通膨問題已",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;奇異(GE-US)截至台北時間06日01:35股價下跌17.15美元，報322.66美元，跌幅5.05%，成交量1,872,007（股），盤中最高價341.81美元、最低價322.66美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.87%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1.11%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.99%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;奇異(GE-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-2.55%&lt;/li&gt;    &lt;li&gt;近 1 月：+8.37%&lt;/li&gt;    &lt;li&gt;近 3 月：+14.49%&lt;",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 數據狗(DDOG-US)大漲5.16%，報124.44美元",
-      "url": "https://news.cnyes.com/news/id/6366296",
+      "title": "盤中速報 - 費城半導體大跌1%，報7835.62點",
+      "url": "https://news.cnyes.com/news/id/6366388",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間05日22:40股價上漲6.11美元，報124.44美元，漲幅5.16%，成交量401,204（股），盤中最高價124.56美元、最低價118.55美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.86%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.43%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.23%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.59%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.31%&lt;/li&gt;    &lt;li&gt;近 1 月：-3.41%&lt;/li&gt;    &lt;li&gt;近 3 月：-26.95%&",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;截至台北時間06日01:18，費城半導體下跌78.86點（或1%），暫報7835.62點。&lt;/p&gt;&lt;p&gt;&lt;em&gt;歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;近 1 週：-6.53%&lt;/li&gt;&lt;li&gt;近 1 月：+3.88%&lt;/li&gt;&lt;li&gt;近 3 月：+9.68%&lt;/li&gt;&lt;li&gt;近 6 月：+39.64%&lt;/li&gt;&lt;li&gt;今年以來：+11.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;焦點個股&lt;/em&gt;&lt;/p&gt;&lt;p&gt;費城半導體成分股以連貫(COHR-US)領跌。連貫(COHR-US)下跌6.88%；Onto Innovation Inc.(ONTO-US)下跌4.99%；科林研發(LRCX-US)下跌3.83%；應用材料(AMAT-US)下跌3.34%；安可(AMKR-US)下跌3.32%。&lt;/p&gt;&",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - MongoDB公司(MDB-US)大漲5.01%，報260.43美元",
-      "url": "https://news.cnyes.com/news/id/6366294",
+      "title": "盤中速報 - Onto Innovation Inc.(ONTO-US)大跌5.01%，報198.57美元",
+      "url": "https://news.cnyes.com/news/id/6366387",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間05日22:36股價上漲12.42美元，報260.43美元，漲幅5.01%，成交量250,456（股），盤中最高價260.43美元、最低價249.87美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.67%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.32%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.09%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-19.77%&lt;/li&gt;    &lt;li&gt;近 1 月：-25.14%&lt;/li&gt;    &lt;li&gt;近",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;Onto Innovation Inc.(ONTO-US)截至台北時間06日01:17股價下跌10.47美元，報198.57美元，跌幅5.01%，成交量221,366（股），盤中最高價210.83美元、最低價198.57美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.81%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.55%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.95%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Onto Innovation Inc.(ONTO-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-7.87%&lt;/li&gt;    &lt;li&gt;近 1 月：+10.02%&lt",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - Atlassian Corporation - Class A(TEAM-US)大漲5.01%，報80.66美元",
-      "url": "https://news.cnyes.com/news/id/6366292",
+      "title": "紐約等24州提告！挑戰川普最新全球關稅政策",
+      "url": "https://news.cnyes.com/news/id/6366344",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;Atlassian Corporation - Class A(TEAM-US)截至台北時間05日22:33股價上漲3.85美元，報80.66美元，漲幅5.01%，成交量293,608（股），盤中最高價80.66美元、最低價77.76美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.49%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.17%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.34%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.54%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Atlassian Corporation - Class A(TEAM-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+7.09%&lt;/li&gt;    &lt;li&g",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;《CNBC》報導，美國多個州政府再度對總統川普的關稅政策發起法律挑戰。紐約州檢察長詹樂霞 (Letitia James) 與另外 23 州檢察長預計於周四 (5 日) 向美國國際貿易法院提起訴訟，要求法院裁定川普最新一輪全球關稅措施違法，並要求退還已向各州徵收的關稅款項。&lt;/p&gt;\n\n&lt;p&gt;這起訴訟發生在美國最高法院上月裁定川普先前關稅政策違法後不久。最高法院當時認定，川普政府動用《國際緊急經濟權力法》(IEEPA) 對進口商品徵收大規模關稅的做法不符合法律規範，推翻了其「解放日」(Liberation Day) 關稅措施。&lt;/p&gt;\n\n&lt;p&gt;然而，川普政府隨即宣布推出新一輪關稅措施，改以《1974 年貿易法》第 122 條 (Section 122 of the Trade Act of 1974) 作為法律依據。根據該政策，目前全球關稅稅率設定為 10%，但政府已表示未來可能提高至 15%。&lt;/p&gt;\n\n&lt;p&gt;詹樂霞在聲明中表示，在最高法院否決先前關稅措施後，川普政府仍試圖繞過裁決，繼續推動大規模關",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - DoorDash公司(DASH-US)大漲5.53%，報187.58美元",
-      "url": "https://news.cnyes.com/news/id/6366291",
+      "title": "盤中速報 - 莫德納(MRNA-US)大跌5.08%，報54.87美元",
+      "url": "https://news.cnyes.com/news/id/6366384",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;DoorDash公司(DASH-US)截至台北時間05日22:30股價上漲9.83美元，報187.58美元，漲幅5.53%，成交量191,736（股），盤中最高價187.58美元、最低價184.07美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.18%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.4%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.43%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;DoorDash公司(DASH-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+1.39%&lt;/li&gt;    &lt;li&gt;近 1 月：-10.4%&lt;/li&gt;    &lt;li&gt;近",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;莫德納(MRNA-US)截至台北時間06日01:02股價下跌2.94美元，報54.87美元，跌幅5.08%，成交量5,191,995（股），盤中最高價58.74美元、最低價54.85美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.62%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.63%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.25%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;莫德納(MRNA-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-3%&lt;/li&gt;    &lt;li&gt;近 1 月：+16.51%&lt;/li&gt;    &lt;li&gt;近 3 月：+95.49%&lt;",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 陶氏(DOW-US)大漲5.46%，報34.11美元",
-      "url": "https://news.cnyes.com/news/id/6366290",
+      "title": "全球能源命脈卡住！華爾街急問川普怎麼救荷姆茲海峽",
+      "url": "https://news.cnyes.com/news/id/6366364",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;陶氏(DOW-US)截至台北時間05日22:30股價上漲1.77美元，報34.11美元，漲幅5.46%，成交量696,507（股），盤中最高價34.12美元、最低價33.21美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.18%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.4%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.4%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;陶氏(DOW-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+2.4%&lt;/li&gt;    &lt;li&gt;近 1 月：-5.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+34.41%&lt;/li&gt;",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;中東戰事持續升溫，全球能源運輸樞紐荷姆茲海峽 (Strait of Hormuz) 陷入停擺，引發華爾街與航運業高度關注。市場正密切觀察美國總統川普提出的護航與保險方案，能否讓油輪重新恢復通行，避免全球能源供應受到更大衝擊。&lt;/p&gt;\n\n&lt;p&gt;近期油價波動劇烈。布蘭特原油期貨周二一度升至每桶約 84 美元，但周三回落至約 81 美元，周四又重新反彈至 84 美元附近。市場人士指出，油價劇烈震盪主要反映投資人對荷姆茲海峽航運安全與能源供應前景的不確定性。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：ZeroHedge)&quot; data-height=&quot;450&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.6888888888888889&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6366364/m/6f81d1a11ae0b1dc05b73a0c",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 連貫(COHR-US)大跌5%，報261.11美元",
-      "url": "https://news.cnyes.com/news/id/6366289",
+      "title": "博通陳福陽喊AI晶片營收2027破千億美元 股價大漲5%帶動供應鏈",
+      "url": "https://news.cnyes.com/news/id/6366366",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;連貫(COHR-US)截至台北時間05日22:30股價下跌13.75美元，報261.11美元，跌幅5%，成交量418,977（股），盤中最高價265.56美元、最低價259.96美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.21%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.49%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.53%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;連貫(COHR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+4.82%&lt;/li&gt;    &lt;li&gt;近 1 月：+33.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+58.34%&lt;",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;晶片大廠博通 (AVGO-US) 股價週四 (5 日) 大漲約 5%，執行長陳福陽在法說會上強調人工智慧需求仍將長期維持強勁，並預測公司 AI 晶片相關營收到 2027 年將「顯著超過 1000 億美元」，遠高於華爾街多數分析師原先的樂觀預期。&lt;/p&gt;\n\n&lt;p&gt;陳福陽週三在與分析師的電話會議中表示，隨著企業持續為人工智慧系統設計客製化晶片，市場需求正迅速擴大。博通目前正與六家客戶合作，AI 相關基礎設施產能正接近 10 吉瓦，顯示大型雲端服務業者對 AI 運算能力的需求仍在快速成長。&lt;/p&gt;\n\n&lt;p&gt;摩根大通分析師估計，到 2027 年博通每吉瓦產能可帶來約 120 億至 150 億美元營收，並因此將公司 AI 相關營收預估「保守地」上調至 1200 億美元以上。&lt;/p&gt;\n\n&lt;p&gt;另一方面，高盛分析師指出，博通在 AI 網路與客製化晶片領域的領先地位，使其能為超大規模雲端客戶提供最低推理成本的解決方案，並預期公司能持續以接近市場領導者 Nvidia 的速度推動成本下降。&lt;/p&gt;\n\n&l",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     },
     {
-      "title": "盤中速報 - 繽客控股(BKNG-US)大漲5.14%，報4472.2美元",
-      "url": "https://news.cnyes.com/news/id/6366288",
+      "title": "鉅亨速報 - Factset 最新調查：Flutter Entertainment Plc(FLUT-US)EPS預估下修至6.99元，預估目標價為207.00元",
+      "url": "https://news.cnyes.com/news/id/6366358",
       "source": "鉅亨網(wd_stock)",
       "category": "其他",
       "thumbnail": null,
-      "content": "&lt;p&gt;繽客控股(BKNG-US)截至台北時間05日22:30股價上漲218.62美元，報4472.20美元，漲幅5.14%，成交量25,970（股），盤中最高價4514.89美元、最低價4472.20美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.57%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.22%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;繽客控股(BKNG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.22%&lt;/li&gt;    &lt;li&gt;近 1 月：-9.84%&lt;/li&gt;    &lt;li&gt;近 3 月：-1",
-      "timeStr": "上午12:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "盤中速報 - 交易台(TTD-US)大漲25.27%，報31.53美元",
-      "url": "https://news.cnyes.com/news/id/6366285",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;交易台(TTD-US)截至台北時間05日22:30股價上漲6.36美元，報31.53美元，漲幅25.27%，成交量7,678,719（股），盤中最高價31.53美元、最低價31.46美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-0.52%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.19%&lt;/li&gt;&lt;li&gt;NASDAQ指數：+1.29%&lt;/li&gt;&lt;li&gt;費城半導體指數：+1.93%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.64%&lt;/li&gt;    &lt;li&gt;近 1 月：-8.32%&lt;/li&gt;    &lt;li&gt;近 3 月：-36.47%&lt",
-      "timeStr": "上午12:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "〈美股早盤〉油價衝高、美債殖利率攀升 主要指數開低",
-      "url": "https://news.cnyes.com/news/id/6365959",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;美股主要指數周四 (月 5 日) 開盤走低，延續近期震盪走勢。中東戰事推升國際油價，布蘭特原油升破每桶 84 美元，加劇市場對通膨回升的疑慮，同時美國就業市場數據顯示韌性，使市場下修聯準會 (Fed) 降息預期，美國公債殖利率上揚，拖累股市表現。前一交易日上漲後，投資人轉趨觀望，道瓊工業指數開盤一度下跌約 300 點，標普 500 指數亦回吐部分漲幅，市場持續聚焦美伊衝突與能源市場動向。&lt;/p&gt;\n\n&lt;p&gt;截稿前，&lt;a href=&quot;https://invest.cnyes.com/index/GI/DJI&quot;&gt;道瓊工業指數&lt;/a&gt;跌逾 360 點或近 0.8%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/IXIC&quot;&gt;那斯達克綜合指數&lt;/a&gt;跌逾 40 點或近 0.2%，&lt;a href=&quot;https://invest.cnyes.com/index/GI/INX&quot;&gt;標普 500 指數&lt;",
-      "timeStr": "上午12:01",
-      "relatedArticles": []
-    },
-    {
-      "title": "美國就業續穩！上周初領失業金人數維持21.3萬 2月企業裁員大減55%",
-      "url": "https://news.cnyes.com/news/id/6365960",
-      "source": "鉅亨網(wd_stock)",
-      "category": "其他",
-      "thumbnail": null,
-      "content": "&lt;p&gt;綜合外媒報導，美國最新數據顯示，就業市場整體仍維持穩定。美國勞工部 (DOL) 周四 (5 日) 公布，截至 2 月 28 日當周，初領失業金人數經季節調整後為 21.3 萬人，與前一周持平，略低於經濟學家預估的 21.5 萬人，顯示裁員水準仍處於歷史低檔區間。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img alt=&quot;(圖：ZeroHedge)&quot; data-height=&quot;447&quot; data-mime=&quot;image/jpeg&quot; data-ratio=&quot;1.7002237136465324&quot; data-src-m=&quot;https://cimg.cnyes.cool/prod/news/6365960/m/505c6626cdb86d7e8c950629dd124990.jpg&quot; data-width=&quot;760&quot; src=&quot;https://cimg.cnyes.cool/prod/news/6365960/l/505c6626",
-      "timeStr": "上午12:01",
+      "content": "&lt;p&gt;根據FactSet最新調查，共24位分析師，對Flutter Entertainment Plc(FLUT-US)做出2026年EPS預估：中位數由7.43元下修至6.99元，其中最高估值9.9元，最低估值6.05元，預估目標價為207.00元。&lt;/p&gt;&lt;p&gt;※本篇提及EPS與營收的單位均為「美元」&lt;/p&gt;&lt;p&gt;&lt;em&gt;市場預估EPS&lt;/em&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;預估值&lt;/td&gt;&lt;td&gt;&lt;em&gt;2026年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2027年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2028年&lt;/em&gt;&lt;/td&gt;&lt;td&gt;&lt;em&gt;2029年&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt",
+      "timeStr": "上午02:01",
       "relatedArticles": []
     }
   ],
@@ -412,59 +364,56 @@
   ],
   "events": [
     {
-      "title": "中東能源運輸斷鏈危機",
-      "summary": "伊朗攻擊油輪並威脅封鎖荷姆茲海峽，推動國際油價周漲幅逼近 15%，加劇全球通膨壓力。",
+      "title": "24州提告挑戰川普關稅",
+      "summary": "紐約等24州對新關稅法規發起法律訴訟，質疑其違反憲法權力分立與貿易法濫用。",
       "impact": "負面",
       "related_news_ids": [
-        0,
-        17
+        10
       ]
     },
     {
-      "title": "SaaS 與 AI 軟體股結構性噴發",
-      "summary": "儘管大盤受壓，CRM, TTD 等軟體龍頭因業績預期與 AI 轉型實績逆勢暴漲，成為市場避風港。",
-      "impact": "正面",
-      "related_news_ids": [
-        2,
-        11,
-        16
-      ]
-    },
-    {
-      "title": "半導體設備國安審查升級",
-      "summary": "英特爾因測試具有中資背景的 ACM 設備遭國會質疑，顯示美方對晶片供應鏈的監管已延伸至非直接生產流程。",
+      "title": "AI 營收指引與設備股背離",
+      "summary": "博通樂觀預測 AI 營收長期增長，但半導體設備商與封裝測試板塊出現 5% 以上集體修正。",
       "impact": "中性",
       "related_news_ids": [
-        1
+        0,
+        2,
+        4,
+        5,
+        6,
+        13
+      ]
+    },
+    {
+      "title": "荷姆茲海峽航運危機",
+      "summary": "中東能源樞紐持續停擺，華爾街聚焦川普政府是否能提供有效護航與保險方案。",
+      "impact": "負面",
+      "related_news_ids": [
+        12
       ]
     }
   ],
   "relations": [
     {
-      "from": "伊朗",
-      "to": "國際油價",
-      "type": "供應鏈衝擊"
+      "from": "川普政府",
+      "to": "美國跨國企業",
+      "type": "關稅政策壓力"
     },
     {
-      "from": "英特爾",
-      "to": "盛美半導體",
-      "type": "監管風險"
-    },
-    {
-      "from": "聯準會",
-      "to": "市場流動性",
-      "type": "政策傳導"
+      "from": "荷姆茲海峽",
+      "to": "布蘭特原油",
+      "type": "供應中斷與價格推升"
     },
     {
       "from": "博通",
-      "to": "AI 基礎設施",
-      "type": "需求驅動"
+      "to": "台積電",
+      "type": "長期產能確保"
     }
   ],
   "keywords7d": [
     {
       "word": "伊朗",
-      "count": 701,
+      "count": 704,
       "articles": [
         {
           "title": "市場關注美國伊朗談判　國際油價震盪收低",
@@ -529,74 +478,8 @@
       ]
     },
     {
-      "word": "AI",
-      "count": 337,
-      "articles": [
-        {
-          "title": "ASML稱次世代EUV設備已可用於量產 AI晶片生產迎關鍵轉折",
-          "url": "https://news.cnyes.com/news/id/6355837",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;據《路透》報導，艾司摩爾 (ASML Holding)(ASML-US) 一名高層表示，該公司次世代晶片製造設備已準備好供製造商開始啟動量產，對晶片產業而言是一大重要里程碑。&lt;/p&gt;\n\n&lt;p&gt;這家荷蘭公司生產全球唯一商用的極紫外光微影 (EUV) 設備，為晶片製造商的關鍵核心設備。ASML 數據顯示，這款新設備將協助台積電 (2330-TW)(TSM-US) 與英特爾 (Intel)(INTC-US) 等晶片廠，透過簡化多個昂貴且複雜的製程步驟，生產更強大且更高效的晶片。&lt;/p&gt;\n\n&lt;p&gt;ASML 技術長 Marco Pieters 周三向路透表示，公司計劃在周四於聖荷西 (San Jose) 舉行的技術會議上公布這些數據，象徵一項關鍵里程碑。&lt;/p&gt;\n\n&lt;p&gt;開發這套昂貴的次世代設備歷時多年，期間晶片製造商一直在評估何時開始導入量產在經濟上才具合理性。&lt;/p&gt;\n\n&lt;p&gt;但隨著現有世代 EUV 設備在製造複雜 AI 晶片方面逐漸逼近技術極限，次世代機台&mdash;&mdash;稱為 High-NA EUV(高數值孔徑極紫外光) 設備&mdash;&mdash;對 AI 產業至關重要，可協助提升如 OpenAI 的 ChatGPT 等聊天機器人的能力，也讓晶片廠能按計畫推出 AI 晶片，以滿足快速飆升的需求。&lt;/p&gt;\n\n&lt;p&gt;這些新設備單價約 4 億美元，是初代 EUV 機台的兩倍。&lt;/p&gt;\n\n&lt;p&gt;Pieters 表示，ASML 數據顯示，High-NA EUV 設備目前停機時間有限，已生產出 50 萬片如餐盤大小的矽晶圓，並能繪製足夠精細的圖案以形成晶片電路。這三項數據綜合顯示，設備已具備供製造商使用的成熟度。&lt;/p&gt;\n\n&lt;p&gt;他指出，「我認為現在正處於一個關鍵時機，可以檢視已完成的學習循環量。」他所指的是客戶對設備進行的測試次數。&lt;/p&gt;\n\n&lt;p&gt;儘管技術上已準備就緒，但企業仍需 2 至 3 年時間進行足夠的測試與開發，才能將其整合至實際製造流程中。&lt;/p&gt;\n\n&lt;p&gt;Pieters 表示，「(晶片製造商) 已具備驗證這些設備所需的全部知識。」&lt;/p&gt;\n\n&lt;p&gt;他也指出，目前設備的可用率約達 80%，公司目標在年底前提升至 90%。ASML 即將公布的成像數據，足以說服客戶以單一道 High-NA 製程，取代舊世代設備所需的多個步驟。設備已處理的 50 萬片晶圓，也讓公司得以排除許多初期問題。&lt;/p&gt;\n"
-        },
-        {
-          "title": "護國神山台積電「產業風向球」重點整理，快速掌握成長動能、資本支出、AI趨勢與風險(一)",
-          "url": "https://news.cnyes.com/news/id/6355133",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;綜合近三個月市場動態、法人研究觀點與產業趨勢邏輯，針對護國神山&lt;strong&gt;「台積電&lt;/strong&gt;&lt;strong&gt; (2330-TW)&lt;/strong&gt;&lt;strong&gt;」對台股指數的影響推演、受惠最大供應鏈族群排序、外資目標價區間合理性分析&lt;/strong&gt;等重點整理，快速掌握成長動能、資本支出、AI 趨勢與風險。&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;一、&lt;/strong&gt;&lt;strong&gt;Q4&lt;/strong&gt;&lt;strong&gt; 財報創高：雙率登頂、&lt;/strong&gt;&lt;strong&gt;EPS&lt;/strong&gt;&lt;strong&gt; 再締新猷&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;營收&lt;/strong&gt;：1 兆 460 億元（美元 337.3 億），年增 20.5%（美元年增 25.5%）&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;毛利率&lt;/strong&gt;：62.3%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt; 營益率&lt;/strong&gt;：54%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;EPS&lt;/strong&gt;：19.5 元（全年 EPS 66.25 元）&lt;/li&gt;\n&lt;li&gt;成長主因：&lt;strong&gt;3&lt;/strong&gt;&lt;strong&gt; 奈米&lt;/strong&gt;&lt;strong&gt; /5&lt;/strong&gt;&lt;strong&gt; 奈米放量、稼動率提升、匯率有利&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;結論：獲利品質佳，先進製程議價能力強。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;二、&lt;/strong&gt;&lt;strong&gt;2026&lt;/strong&gt;&lt;strong&gt; 年&lt;/strong&gt;&lt;strong&gt; Q1&lt;/strong&gt;&lt;strong&gt; 展望：淡季不淡、續創高&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;營收&lt;/strong&gt;：346&ndash;358 億美元（中值 352 億），季增約 4.4%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt; 毛利率&lt;/strong&gt;：63&ndash;65%（挑戰 65%）&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;營益率&lt;/strong&gt;：54&ndash;56%&lt;/li&gt;\n&lt;li&gt; 匯率假設：1 美元 = 31.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;在傳統淡季仍創新高，顯示&lt;strong&gt; AI&lt;/strong&gt;&lt;strong&gt; 需求強勁且急迫&lt;/strong&gt;。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;三、&lt;/strong&gt;&lt;strong&gt;2026&lt;/strong&gt;&lt;strong&gt; 全年展望：美元營收年增近&lt;/strong&gt;&lt;strong&gt; 30%&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2025 年美元營收：1,224 億美元（+35.9%）&lt;/li&gt;\n&lt;li&gt;2026 年預估：&lt;strong&gt;年增近&lt;/strong&gt;&lt;strong&gt; 30%&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt; 晶圓製造 2.0 產業年增估 14%，台積電將&lt;strong&gt;持續超越產業成長&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;長期目標上修：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2024&ndash;2029 年營收 CAGR 由~ 20% &rarr; &lt;strong&gt;近&lt;/strong&gt;&lt;strong&gt; 25%&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;AI 加速器 CAGR 由~ 45% &rarr; &lt;strong&gt;54&ndash;59%&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;AI 不只存在，而是「結構性成長引擎」。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;四、資本支出飆新高：&lt;/strong&gt;&lt;strong&gt;520&ndash;560&lt;/strong&gt;&lt;strong&gt; 億美元&lt;/strong&gt;&lt;"
-        },
-        {
-          "title": "傳Meta租用Google TPU 簽數十億美元AI晶片協議",
-          "url": "https://news.cnyes.com/news/id/6355862",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;《The Information》週四 (26 日) 引述知情人士報導，Alphabet 旗下 Google 已與 Meta Platforms (META-US) 簽署一項為期多年的人工智慧 (AI) 晶片合作協議，金額達數十億美元，顯示大型科技公司對 AI 算力需求持續升溫。&lt;/p&gt;\n\n&lt;p&gt;報導指出，Meta 將透過這項合作租用 Google 自研的 TPU (Tensor Processing Unit) 晶片，用於訓練與部署新一代 AI 模型。&lt;/p&gt;\n\n&lt;p&gt;這也意味著 Google 正積極將自家 AI 硬體能力對外商業化，試圖在由輝達 (NVDA-US) 主導的 AI 加速器市場中擴大影響力。&lt;/p&gt;\n\n&lt;p&gt;知情人士表示，Meta 近年持續加大 AI 基礎設施投資，同時也在分散晶片供應來源，以降低對單一 GPU 供應商的依賴。此次導入 Google TPU，被視為其多元算力策略的重要一步。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Google 與 Meta 均未對相關報導發表正式回應。&lt;/p&gt;\n\n&lt;p&gt;路透近期分析指出，在輝達晶片供應持續吃緊、交期拉長之際，企業透過 Google Cloud 直接租用 TPU，正逐漸成為可行的替代方案。再加上 Meta 正大舉投資建置美國 AI 資料中心，使此一選項的商業吸引力進一步提升。&lt;/p&gt;\n\n&lt;p&gt;法人指出，若 Meta 擴大採用 Google TPU 架構，台灣 AI 供應鏈可望全面受惠，其中以台積電 (2330-TW)、聯發科(2454-TW)、世芯 - KY(3661-TW)、台達電(2308-TW) 最受關注，ABF 載板龍頭欣興(3037-TW) 亦被市場點名。&lt;/p&gt;\n"
-        },
-        {
-          "title": "AI晶片量產迎新里程　ASML將推新一代EUV設備",
-          "url": "https://www.cna.com.tw/news/ait/202602270025.aspx",
-          "source": "中央社科技",
-          "content": "（中央社加州聖荷西26日綜合外電報導）荷蘭半導體生產設備製造商艾司摩爾控股公司（ASML Holding NV）高層告訴路透社，公司新一代晶片製造設備已準備好供製造商開始大規模投入使用，對晶片業來說是一大步。"
-        },
-        {
-          "title": "〈熱門股〉耀登單周強漲逾27％ 衛星地面終端、AI題材雙點火",
-          "url": "https://news.cnyes.com/news/id/6250425",
-          "source": "鉅亨網(tw_stock)",
-          "content": "&lt;p&gt;射頻天線廠耀登 (3138-TW) 科技受惠低軌衛星與人工智慧題材發酵，本周股價表現亮眼，26 日由黑轉紅，攻上漲停價 198 元，周漲幅 27.3%，周成交量 27109 張。&lt;/p&gt;\n\n&lt;p&gt;耀登今年 1 月合併營收為 1.16 億元，年增 10.88 ％ 。雖然第 1 季為產業傳統淡季，預計營運表現為全年相對低點，但公司看好後續隨著衛星產品開發完成與各項業務推進，全年營運有望呈現逐季成長態勢 。&lt;/p&gt;\n\n&lt;p&gt;公司規劃參與 2026 年 3 月在巴塞隆納舉辦的 MWC 大會，並將首度公開研發完成的 Ka 頻段陣列天線模組 。耀登表示，目前相關產品已具備標準化規格，將依客戶需求接案，預計在 2026 年底完成新一代衛星地面使用者終端標準品開發 。&lt;/p&gt;\n\n&lt;p&gt;隨著國際通訊標準正式推動非地面網路標準化，高頻衛星通訊已成為次世代寬頻通訊的重要發展方向 。耀登指出，全球衛星業者陸續啟動星系擴建計畫，對地面接收設備與通訊系統整合需求大幅增加，帶動整體產業鏈商機逐步浮現 。&lt;/p&gt;\n\n&lt;p&gt;除衛星業務外，受惠於 AI 應用發展及政策推動，資安檢測與永續相關業務需求也持續增加 。未來公司將推動雙頻段產品線並行發展，積極對接國際衛星營運商與系統整合夥伴，掌握次世代通訊升級浪潮。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-cnyeschart=&quot;cnyeschart&quot; src=&quot;https://so.cnyes.com/mobilechart/MobileChart.aspx?markettype=twstock&amp;charttype1=kchart&amp;stockcode=3138&amp;imgwidth=580&amp;imgheight=500&amp;bgcolor=2&quot;&gt;\n&lt;figcaption&gt;耀登日 K 線圖&lt;/figcaption&gt;\n&lt;/figure&gt;\n"
-        },
-        {
-          "title": "Anthropic拒絕五角大廈AI合約要求！美國軍方揚言列供應鏈風險、動用《國防生產法》",
-          "url": "https://news.cnyes.com/news/id/6355909",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 Anthropic 在其 AI 技術供美國軍方使用的安全防護措施爭議中，拒絕了五角大廈提出的最新提案，使雙方對峙在政府設定的最後期限前一天進一步升級。該期限要求公司撤回相關限制，否則將面臨嚴重後果。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，Anthropic 週四發表聲明指出，國防部提出的新合約語言，仍未滿足公司對其 AI 工具軍事用途設立防護措施的要求。該公司堅持兩項關鍵限制：&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;不得將其 AI 技術用於監控美國公民&lt;/li&gt;\n&lt;li&gt;不得在「無人類介入」的情況下，執行自主致命攻擊&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;Anthropic 表示，儘管最新提案未達標準，但公司仍持續與國防官員協商，並強調致力於與軍方合作。對此，五角大廈發言人尚未立即回應。&lt;/p&gt;\n\n&lt;p&gt;這場爭議的焦點，在於 Anthropic 要求其 Claude AI 工具在軍事應用時必須附帶使用限制，但美國國防部認為這些條件並無必要。&lt;/p&gt;\n\n&lt;p&gt;國防官員此前已拒絕相關要求，並強調必須能在不受 Anthropic 額外限制的情況下使用 Claude。Claude 是目前少數獲准處理機密雲端工作的 AI 工具之一。&lt;/p&gt;\n\n&lt;p&gt;若 Anthropic 不撤回上述條件，美國國防部已揚言將其列為「供應鏈風險」，此舉將使該公司無法再與其他國防承包商合作。&lt;/p&gt;\n\n&lt;p&gt;此外，五角大廈甚至威脅動用冷戰時期制定的《國防生產法》（Defense Production Act），在公司反對的情況下強制使用其軟體。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 週四表示，公司仍致力於與軍方合作，但希望國防部重新考慮僅與願意接受「所有合法用途」標準的承包商合作的立場。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中強調：「這些威脅不會改變我們的立場：我們無法在良知上同意他們的要求。」&lt;/p&gt;\n\n&lt;h6&gt;AI 軍備競賽升溫&lt;/h6&gt;\n\n&lt;p&gt;目前估值約 380 億美元的 Anthropic，是首家獲得五角大廈核准處理機密資料的 AI 公司，其 Claude Gov 工具因操作簡便，迅速成為國防人員青睞的選項。&lt;/p&gt;\n\n&lt;p&gt;然而，該公司正面臨日益激烈的競爭。由特斯拉、SpaceX 執行長馬斯克創立的 xAI，近日也獲准承接機密工作；同時，OpenAI 以及 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 旗下的 Gemini 亦為強勁對手。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 發言人透露，國防部最新提出的合約條款雖被描述為「折衷方案」，但其中法律措辭可能使公司對監控與自主武器的兩項防護措施形同虛設。&lt;/p&gt;\n\n&lt;p&gt;Amodei 表示，Anthropic 理解最終軍事決策權屬於國防部，而非私人企業。他強調，公司提出的兩項限制並非試圖制定政策，而是為確保仍處於發展初期、且偶有錯誤的 AI 技術，不會被用於超出其能力範圍的場景。&lt;/p&gt;\n\n&lt;h6&gt;美國五角大廈推動「AI 優先」戰略&lt;/h6&gt;\n\n&lt;p&gt;這場爭端爆發於五角大廈公布全新 AI 戰略僅數週之後。該戰略呼籲透過加強對尖端 AI 模型的實驗運用，並減少使用上的官僚障礙，將軍隊打造為一支「AI 優先」的部隊。&lt;/p&gt;\n\n&lt;p&gt;該方針並特別敦促國防部選擇「不受使用政策限制、且不會妨礙合法軍事應用」的模型。&lt;/p&gt;\n\n&lt;p&gt;國防官員重申，軍方將在法律範圍內使用 Anthropic 的技術。五角大廈發言人 Sean Parnell 週四稍早也表示，國防部無意進行大規模監控，亦不打算開發「在沒有任何人類參與下運作的自主武器」。&lt;/p&gt;\n\n&lt;p&gt;Parnell 隨後在社群平台 X 上發文強調：「我們不會讓任何公司決定我們如何做出作戰決策。」他並指出，對方必須在 美東時間週五下午 5 點 01 分（台灣時間為 週六上午 6:01 AM）前作出決定，否則將終止與 Anthropic 的合作關係，並將其列為供應鏈風險。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
-        },
-        {
-          "title": "傳Meta簽數十億美元協議　向Google租用AI晶片",
-          "url": "https://www.cna.com.tw/news/aopl/202602270075.aspx",
-          "source": "中央社產經",
-          "content": "（中央社墨西哥市26日綜合外電報導）科技新聞網站The Information今天引述知情人士說法報導，Meta Platforms已與Google簽署一項價值數十億美元的協議，將租用Google的人工智慧（AI）晶片，以開發新的AI模型。"
-        },
-        {
-          "title": "AI太旺出口狂飆　主計總處估115年超額儲蓄衝破8兆元",
-          "url": "https://www.cna.com.tw/news/afe/202602270042.aspx",
-          "source": "中央社產經",
-          "content": "（中央社記者潘姿羽台北27日電）人工智慧（AI）狂潮來襲，台灣半導體、資通訊產業受惠，出口屢創新高。根據主計總處最新預測，在去年的高基期之下，115年經濟成長率仍有7.71%的亮眼表現，但龐大經常帳順差也讓今年超額儲蓄衝破新台幣8兆元大關，超額儲蓄率跳升至26.03%，雙雙改寫新高。"
-        },
-        {
-          "title": "AI 取代進入倒數？金融科技巨頭一次裁員近半",
-          "url": "https://technews.tw/2026/02/27/block-is-cutting-half-the-employee/",
-          "source": "TechNews",
-          "content": "綜合外電報導，金融科技公司 Block 宣布大規模裁員，將組織規模從超過 1 萬人縮減至不到 6,000 人， [&#8230;]"
-        },
-        {
-          "title": "AI 走進家庭照護，我們真的準備好了嗎？",
-          "url": "https://technews.tw/2026/02/27/ai-home-care/",
-          "source": "TechNews",
-          "content": "面對失智、慢性病與長照壓力，越來越多家庭開始將 AI 當成整理醫療資訊、安排用藥、協助判讀檢查報告的幫手。真正 [&#8230;]"
-        }
-      ]
-    },
-    {
       "word": "US",
-      "count": 337,
+      "count": 354,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：Middleby公司MIDD-US的目標價調升至177.5元，幅度約3.5%",
@@ -661,8 +544,74 @@
       ]
     },
     {
+      "word": "AI",
+      "count": 338,
+      "articles": [
+        {
+          "title": "ASML稱次世代EUV設備已可用於量產 AI晶片生產迎關鍵轉折",
+          "url": "https://news.cnyes.com/news/id/6355837",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;據《路透》報導，艾司摩爾 (ASML Holding)(ASML-US) 一名高層表示，該公司次世代晶片製造設備已準備好供製造商開始啟動量產，對晶片產業而言是一大重要里程碑。&lt;/p&gt;\n\n&lt;p&gt;這家荷蘭公司生產全球唯一商用的極紫外光微影 (EUV) 設備，為晶片製造商的關鍵核心設備。ASML 數據顯示，這款新設備將協助台積電 (2330-TW)(TSM-US) 與英特爾 (Intel)(INTC-US) 等晶片廠，透過簡化多個昂貴且複雜的製程步驟，生產更強大且更高效的晶片。&lt;/p&gt;\n\n&lt;p&gt;ASML 技術長 Marco Pieters 周三向路透表示，公司計劃在周四於聖荷西 (San Jose) 舉行的技術會議上公布這些數據，象徵一項關鍵里程碑。&lt;/p&gt;\n\n&lt;p&gt;開發這套昂貴的次世代設備歷時多年，期間晶片製造商一直在評估何時開始導入量產在經濟上才具合理性。&lt;/p&gt;\n\n&lt;p&gt;但隨著現有世代 EUV 設備在製造複雜 AI 晶片方面逐漸逼近技術極限，次世代機台&mdash;&mdash;稱為 High-NA EUV(高數值孔徑極紫外光) 設備&mdash;&mdash;對 AI 產業至關重要，可協助提升如 OpenAI 的 ChatGPT 等聊天機器人的能力，也讓晶片廠能按計畫推出 AI 晶片，以滿足快速飆升的需求。&lt;/p&gt;\n\n&lt;p&gt;這些新設備單價約 4 億美元，是初代 EUV 機台的兩倍。&lt;/p&gt;\n\n&lt;p&gt;Pieters 表示，ASML 數據顯示，High-NA EUV 設備目前停機時間有限，已生產出 50 萬片如餐盤大小的矽晶圓，並能繪製足夠精細的圖案以形成晶片電路。這三項數據綜合顯示，設備已具備供製造商使用的成熟度。&lt;/p&gt;\n\n&lt;p&gt;他指出，「我認為現在正處於一個關鍵時機，可以檢視已完成的學習循環量。」他所指的是客戶對設備進行的測試次數。&lt;/p&gt;\n\n&lt;p&gt;儘管技術上已準備就緒，但企業仍需 2 至 3 年時間進行足夠的測試與開發，才能將其整合至實際製造流程中。&lt;/p&gt;\n\n&lt;p&gt;Pieters 表示，「(晶片製造商) 已具備驗證這些設備所需的全部知識。」&lt;/p&gt;\n\n&lt;p&gt;他也指出，目前設備的可用率約達 80%，公司目標在年底前提升至 90%。ASML 即將公布的成像數據，足以說服客戶以單一道 High-NA 製程，取代舊世代設備所需的多個步驟。設備已處理的 50 萬片晶圓，也讓公司得以排除許多初期問題。&lt;/p&gt;\n"
+        },
+        {
+          "title": "護國神山台積電「產業風向球」重點整理，快速掌握成長動能、資本支出、AI趨勢與風險(一)",
+          "url": "https://news.cnyes.com/news/id/6355133",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;綜合近三個月市場動態、法人研究觀點與產業趨勢邏輯，針對護國神山&lt;strong&gt;「台積電&lt;/strong&gt;&lt;strong&gt; (2330-TW)&lt;/strong&gt;&lt;strong&gt;」對台股指數的影響推演、受惠最大供應鏈族群排序、外資目標價區間合理性分析&lt;/strong&gt;等重點整理，快速掌握成長動能、資本支出、AI 趨勢與風險。&lt;/p&gt;\n\n&lt;p&gt;注意：以下是合理性模型，不是價格保證，請務必搭配資金管理與停損策略。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;一、&lt;/strong&gt;&lt;strong&gt;Q4&lt;/strong&gt;&lt;strong&gt; 財報創高：雙率登頂、&lt;/strong&gt;&lt;strong&gt;EPS&lt;/strong&gt;&lt;strong&gt; 再締新猷&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;營收&lt;/strong&gt;：1 兆 460 億元（美元 337.3 億），年增 20.5%（美元年增 25.5%）&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;毛利率&lt;/strong&gt;：62.3%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt; 營益率&lt;/strong&gt;：54%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;EPS&lt;/strong&gt;：19.5 元（全年 EPS 66.25 元）&lt;/li&gt;\n&lt;li&gt;成長主因：&lt;strong&gt;3&lt;/strong&gt;&lt;strong&gt; 奈米&lt;/strong&gt;&lt;strong&gt; /5&lt;/strong&gt;&lt;strong&gt; 奈米放量、稼動率提升、匯率有利&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;結論：獲利品質佳，先進製程議價能力強。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;二、&lt;/strong&gt;&lt;strong&gt;2026&lt;/strong&gt;&lt;strong&gt; 年&lt;/strong&gt;&lt;strong&gt; Q1&lt;/strong&gt;&lt;strong&gt; 展望：淡季不淡、續創高&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;營收&lt;/strong&gt;：346&ndash;358 億美元（中值 352 億），季增約 4.4%&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt; 毛利率&lt;/strong&gt;：63&ndash;65%（挑戰 65%）&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;營益率&lt;/strong&gt;：54&ndash;56%&lt;/li&gt;\n&lt;li&gt; 匯率假設：1 美元 = 31.6 元&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;在傳統淡季仍創新高，顯示&lt;strong&gt; AI&lt;/strong&gt;&lt;strong&gt; 需求強勁且急迫&lt;/strong&gt;。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;三、&lt;/strong&gt;&lt;strong&gt;2026&lt;/strong&gt;&lt;strong&gt; 全年展望：美元營收年增近&lt;/strong&gt;&lt;strong&gt; 30%&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2025 年美元營收：1,224 億美元（+35.9%）&lt;/li&gt;\n&lt;li&gt;2026 年預估：&lt;strong&gt;年增近&lt;/strong&gt;&lt;strong&gt; 30%&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt; 晶圓製造 2.0 產業年增估 14%，台積電將&lt;strong&gt;持續超越產業成長&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;長期目標上修：&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;2024&ndash;2029 年營收 CAGR 由~ 20% &rarr; &lt;strong&gt;近&lt;/strong&gt;&lt;strong&gt; 25%&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;AI 加速器 CAGR 由~ 45% &rarr; &lt;strong&gt;54&ndash;59%&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&nbsp;AI 不只存在，而是「結構性成長引擎」。&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;四、資本支出飆新高：&lt;/strong&gt;&lt;strong&gt;520&ndash;560&lt;/strong&gt;&lt;strong&gt; 億美元&lt;/strong&gt;&lt;"
+        },
+        {
+          "title": "傳Meta租用Google TPU 簽數十億美元AI晶片協議",
+          "url": "https://news.cnyes.com/news/id/6355862",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;《The Information》週四 (26 日) 引述知情人士報導，Alphabet 旗下 Google 已與 Meta Platforms (META-US) 簽署一項為期多年的人工智慧 (AI) 晶片合作協議，金額達數十億美元，顯示大型科技公司對 AI 算力需求持續升溫。&lt;/p&gt;\n\n&lt;p&gt;報導指出，Meta 將透過這項合作租用 Google 自研的 TPU (Tensor Processing Unit) 晶片，用於訓練與部署新一代 AI 模型。&lt;/p&gt;\n\n&lt;p&gt;這也意味著 Google 正積極將自家 AI 硬體能力對外商業化，試圖在由輝達 (NVDA-US) 主導的 AI 加速器市場中擴大影響力。&lt;/p&gt;\n\n&lt;p&gt;知情人士表示，Meta 近年持續加大 AI 基礎設施投資，同時也在分散晶片供應來源，以降低對單一 GPU 供應商的依賴。此次導入 Google TPU，被視為其多元算力策略的重要一步。&lt;/p&gt;\n\n&lt;p&gt;截至目前，Google 與 Meta 均未對相關報導發表正式回應。&lt;/p&gt;\n\n&lt;p&gt;路透近期分析指出，在輝達晶片供應持續吃緊、交期拉長之際，企業透過 Google Cloud 直接租用 TPU，正逐漸成為可行的替代方案。再加上 Meta 正大舉投資建置美國 AI 資料中心，使此一選項的商業吸引力進一步提升。&lt;/p&gt;\n\n&lt;p&gt;法人指出，若 Meta 擴大採用 Google TPU 架構，台灣 AI 供應鏈可望全面受惠，其中以台積電 (2330-TW)、聯發科(2454-TW)、世芯 - KY(3661-TW)、台達電(2308-TW) 最受關注，ABF 載板龍頭欣興(3037-TW) 亦被市場點名。&lt;/p&gt;\n"
+        },
+        {
+          "title": "AI晶片量產迎新里程　ASML將推新一代EUV設備",
+          "url": "https://www.cna.com.tw/news/ait/202602270025.aspx",
+          "source": "中央社科技",
+          "content": "（中央社加州聖荷西26日綜合外電報導）荷蘭半導體生產設備製造商艾司摩爾控股公司（ASML Holding NV）高層告訴路透社，公司新一代晶片製造設備已準備好供製造商開始大規模投入使用，對晶片業來說是一大步。"
+        },
+        {
+          "title": "〈熱門股〉耀登單周強漲逾27％ 衛星地面終端、AI題材雙點火",
+          "url": "https://news.cnyes.com/news/id/6250425",
+          "source": "鉅亨網(tw_stock)",
+          "content": "&lt;p&gt;射頻天線廠耀登 (3138-TW) 科技受惠低軌衛星與人工智慧題材發酵，本周股價表現亮眼，26 日由黑轉紅，攻上漲停價 198 元，周漲幅 27.3%，周成交量 27109 張。&lt;/p&gt;\n\n&lt;p&gt;耀登今年 1 月合併營收為 1.16 億元，年增 10.88 ％ 。雖然第 1 季為產業傳統淡季，預計營運表現為全年相對低點，但公司看好後續隨著衛星產品開發完成與各項業務推進，全年營運有望呈現逐季成長態勢 。&lt;/p&gt;\n\n&lt;p&gt;公司規劃參與 2026 年 3 月在巴塞隆納舉辦的 MWC 大會，並將首度公開研發完成的 Ka 頻段陣列天線模組 。耀登表示，目前相關產品已具備標準化規格，將依客戶需求接案，預計在 2026 年底完成新一代衛星地面使用者終端標準品開發 。&lt;/p&gt;\n\n&lt;p&gt;隨著國際通訊標準正式推動非地面網路標準化，高頻衛星通訊已成為次世代寬頻通訊的重要發展方向 。耀登指出，全球衛星業者陸續啟動星系擴建計畫，對地面接收設備與通訊系統整合需求大幅增加，帶動整體產業鏈商機逐步浮現 。&lt;/p&gt;\n\n&lt;p&gt;除衛星業務外，受惠於 AI 應用發展及政策推動，資安檢測與永續相關業務需求也持續增加 。未來公司將推動雙頻段產品線並行發展，積極對接國際衛星營運商與系統整合夥伴，掌握次世代通訊升級浪潮。&lt;/p&gt;\n\n&lt;figure&gt;&lt;img data-cnyeschart=&quot;cnyeschart&quot; src=&quot;https://so.cnyes.com/mobilechart/MobileChart.aspx?markettype=twstock&amp;charttype1=kchart&amp;stockcode=3138&amp;imgwidth=580&amp;imgheight=500&amp;bgcolor=2&quot;&gt;\n&lt;figcaption&gt;耀登日 K 線圖&lt;/figcaption&gt;\n&lt;/figure&gt;\n"
+        },
+        {
+          "title": "Anthropic拒絕五角大廈AI合約要求！美國軍方揚言列供應鏈風險、動用《國防生產法》",
+          "url": "https://news.cnyes.com/news/id/6355909",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;美國人工智慧（AI）新創公司 Anthropic 在其 AI 技術供美國軍方使用的安全防護措施爭議中，拒絕了五角大廈提出的最新提案，使雙方對峙在政府設定的最後期限前一天進一步升級。該期限要求公司撤回相關限制，否則將面臨嚴重後果。&lt;/p&gt;\n\n&lt;p&gt;根據《彭博》報導，Anthropic 週四發表聲明指出，國防部提出的新合約語言，仍未滿足公司對其 AI 工具軍事用途設立防護措施的要求。該公司堅持兩項關鍵限制：&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;不得將其 AI 技術用於監控美國公民&lt;/li&gt;\n&lt;li&gt;不得在「無人類介入」的情況下，執行自主致命攻擊&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;Anthropic 表示，儘管最新提案未達標準，但公司仍持續與國防官員協商，並強調致力於與軍方合作。對此，五角大廈發言人尚未立即回應。&lt;/p&gt;\n\n&lt;p&gt;這場爭議的焦點，在於 Anthropic 要求其 Claude AI 工具在軍事應用時必須附帶使用限制，但美國國防部認為這些條件並無必要。&lt;/p&gt;\n\n&lt;p&gt;國防官員此前已拒絕相關要求，並強調必須能在不受 Anthropic 額外限制的情況下使用 Claude。Claude 是目前少數獲准處理機密雲端工作的 AI 工具之一。&lt;/p&gt;\n\n&lt;p&gt;若 Anthropic 不撤回上述條件，美國國防部已揚言將其列為「供應鏈風險」，此舉將使該公司無法再與其他國防承包商合作。&lt;/p&gt;\n\n&lt;p&gt;此外，五角大廈甚至威脅動用冷戰時期制定的《國防生產法》（Defense Production Act），在公司反對的情況下強制使用其軟體。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 執行長 Dario Amodei 週四表示，公司仍致力於與軍方合作，但希望國防部重新考慮僅與願意接受「所有合法用途」標準的承包商合作的立場。&lt;/p&gt;\n\n&lt;p&gt;他在聲明中強調：「這些威脅不會改變我們的立場：我們無法在良知上同意他們的要求。」&lt;/p&gt;\n\n&lt;h6&gt;AI 軍備競賽升溫&lt;/h6&gt;\n\n&lt;p&gt;目前估值約 380 億美元的 Anthropic，是首家獲得五角大廈核准處理機密資料的 AI 公司，其 Claude Gov 工具因操作簡便，迅速成為國防人員青睞的選項。&lt;/p&gt;\n\n&lt;p&gt;然而，該公司正面臨日益激烈的競爭。由特斯拉、SpaceX 執行長馬斯克創立的 xAI，近日也獲准承接機密工作；同時，OpenAI 以及 Google(&lt;a data-symbol-template=&quot;USS:GOOGL:STOCK:COMMON&quot; href=&quot;#&quot;&gt;GOOGL-US&lt;/a&gt;) 旗下的 Gemini 亦為強勁對手。&lt;/p&gt;\n\n&lt;p&gt;Anthropic 發言人透露，國防部最新提出的合約條款雖被描述為「折衷方案」，但其中法律措辭可能使公司對監控與自主武器的兩項防護措施形同虛設。&lt;/p&gt;\n\n&lt;p&gt;Amodei 表示，Anthropic 理解最終軍事決策權屬於國防部，而非私人企業。他強調，公司提出的兩項限制並非試圖制定政策，而是為確保仍處於發展初期、且偶有錯誤的 AI 技術，不會被用於超出其能力範圍的場景。&lt;/p&gt;\n\n&lt;h6&gt;美國五角大廈推動「AI 優先」戰略&lt;/h6&gt;\n\n&lt;p&gt;這場爭端爆發於五角大廈公布全新 AI 戰略僅數週之後。該戰略呼籲透過加強對尖端 AI 模型的實驗運用，並減少使用上的官僚障礙，將軍隊打造為一支「AI 優先」的部隊。&lt;/p&gt;\n\n&lt;p&gt;該方針並特別敦促國防部選擇「不受使用政策限制、且不會妨礙合法軍事應用」的模型。&lt;/p&gt;\n\n&lt;p&gt;國防官員重申，軍方將在法律範圍內使用 Anthropic 的技術。五角大廈發言人 Sean Parnell 週四稍早也表示，國防部無意進行大規模監控，亦不打算開發「在沒有任何人類參與下運作的自主武器」。&lt;/p&gt;\n\n&lt;p&gt;Parnell 隨後在社群平台 X 上發文強調：「我們不會讓任何公司決定我們如何做出作戰決策。」他並指出，對方必須在 美東時間週五下午 5 點 01 分（台灣時間為 週六上午 6:01 AM）前作出決定，否則將終止與 Anthropic 的合作關係，並將其列為供應鏈風險。&lt;/p&gt;\n\n&lt;p class=&quot;warning&quot;&gt;（本文不開放合作夥伴轉載）&lt;/p&gt;\n"
+        },
+        {
+          "title": "傳Meta簽數十億美元協議　向Google租用AI晶片",
+          "url": "https://www.cna.com.tw/news/aopl/202602270075.aspx",
+          "source": "中央社產經",
+          "content": "（中央社墨西哥市26日綜合外電報導）科技新聞網站The Information今天引述知情人士說法報導，Meta Platforms已與Google簽署一項價值數十億美元的協議，將租用Google的人工智慧（AI）晶片，以開發新的AI模型。"
+        },
+        {
+          "title": "AI太旺出口狂飆　主計總處估115年超額儲蓄衝破8兆元",
+          "url": "https://www.cna.com.tw/news/afe/202602270042.aspx",
+          "source": "中央社產經",
+          "content": "（中央社記者潘姿羽台北27日電）人工智慧（AI）狂潮來襲，台灣半導體、資通訊產業受惠，出口屢創新高。根據主計總處最新預測，在去年的高基期之下，115年經濟成長率仍有7.71%的亮眼表現，但龐大經常帳順差也讓今年超額儲蓄衝破新台幣8兆元大關，超額儲蓄率跳升至26.03%，雙雙改寫新高。"
+        },
+        {
+          "title": "AI 取代進入倒數？金融科技巨頭一次裁員近半",
+          "url": "https://technews.tw/2026/02/27/block-is-cutting-half-the-employee/",
+          "source": "TechNews",
+          "content": "綜合外電報導，金融科技公司 Block 宣布大規模裁員，將組織規模從超過 1 萬人縮減至不到 6,000 人， [&#8230;]"
+        },
+        {
+          "title": "AI 走進家庭照護，我們真的準備好了嗎？",
+          "url": "https://technews.tw/2026/02/27/ai-home-care/",
+          "source": "TechNews",
+          "content": "面對失智、慢性病與長照壓力，越來越多家庭開始將 AI 當成整理醫療資訊、安排用藥、協助判讀檢查報告的幫手。真正 [&#8230;]"
+        }
+      ]
+    },
+    {
       "word": "EPS",
-      "count": 225,
+      "count": 232,
       "articles": [
         {
           "title": "鉅亨速報 - Factset 最新調查：廣達(2382-TW)EPS預估上修至21.95元，預估目標價為362.5元",
@@ -728,7 +677,7 @@
     },
     {
       "word": "美元",
-      "count": 221,
+      "count": 231,
       "articles": [
         {
           "title": "輝達暴跌近5.5% 市值一夕蒸發2590億美元",
@@ -794,7 +743,7 @@
     },
     {
       "word": "經典賽",
-      "count": 186,
+      "count": 187,
       "articles": [
         {
           "title": "經典賽》長打出爐！ 李灝宇170.3KM怪力重擊以色列國手Dean Kremer",
@@ -925,8 +874,74 @@
       ]
     },
     {
+      "word": "中速",
+      "count": 135,
+      "articles": [
+        {
+          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
+          "url": "https://news.cnyes.com/news/id/6356318",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 歐特克(ADSK-US)大漲5.08%，報245.32美元",
+          "url": "https://news.cnyes.com/news/id/6356314",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;歐特克(ADSK-US)截至台北時間27日23:12股價上漲11.87美元，報245.32美元，漲幅5.08%，成交量1,217,861（股），盤中最高價245.32美元、最低價233.30美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.4%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.69%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;歐特克(ADSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.87%&lt;/li&gt;    &lt;li&gt;近 1 月：-17.45%&lt;/li&gt;    &lt;li&gt;近 3 月：-25.41%&lt;/li&gt;    &lt;li&gt;近 6 月：-20.41%&lt;/li&gt;    &lt;li&gt;今年以來：-24.05%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
+          "url": "https://news.cnyes.com/news/id/6356310",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
+          "url": "https://news.cnyes.com/news/id/6356309",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
+          "url": "https://news.cnyes.com/news/id/6356308",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
+          "url": "https://news.cnyes.com/news/id/6356304",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
+          "url": "https://news.cnyes.com/news/id/6356303",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
+          "url": "https://news.cnyes.com/news/id/6356302",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
+          "url": "https://news.cnyes.com/news/id/6356301",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
+          "url": "https://news.cnyes.com/news/id/6356300",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
+        }
+      ]
+    },
+    {
       "word": "營收",
-      "count": 132,
+      "count": 133,
       "articles": [
         {
           "title": "〈財報〉「輝達親兒子」CoreWeave盤後重挫8% 營收倍增但虧損擴大、財測失利 ",
@@ -1053,72 +1068,6 @@
           "url": "https://news.cnyes.com/news/id/6356609",
           "source": "鉅亨網(wd_stock)",
           "content": "&lt;p&gt;以色列國防部長卡茨表示，以色列已經對伊朗發動「先發制人打擊」，關閉領空，全國進入緊急狀態。&lt;/p&gt;\n\n&lt;p&gt;以色列國防軍說，以色列全境響起警報，直接向手機裝置發送預警指示，要求民眾停留在避難所附近，不要前往機場，為可能發生的飛彈襲擊做好準備。&lt;/p&gt;\n\n&lt;p&gt;以色列衛生部指示各醫院將住院病患轉移到隔離區，醫療系統進入戰時狀態。&lt;/p&gt;\n\n&lt;p&gt;據巴勒斯坦聖城報周六（28 日）報導，一名以色列政府官員稱，以色列正在準備第一階段密集強力聯合進攻，共四天。&lt;/p&gt;\n\n&lt;p&gt;初步報告顯示，美國和以色列的轟炸目標是伊朗德黑蘭的總統府和政府大樓。截至目前大約 30 個伊朗境內目標遭到襲擊，包括伊朗總統府和伊朗情報與國家安全部。&lt;/p&gt;\n\n&lt;p&gt;以色列方面消息稱，伊朗政府所有高階官員都是襲擊目標。&lt;/p&gt;\n\n&lt;p&gt;一名以色列安全官員說，對伊朗的襲擊是以色列和美國共同行動的結果。據路透社周六報導，美國官員稱，美國正從空中和海上打擊伊朗。&lt;/p&gt;\n\n&lt;p&gt;一名美國官員表示，這不是小規模打擊，預計這次攻擊將比去年 6 月美國對伊朗核設施的襲擊要大得多。&lt;/p&gt;\n\n&lt;p&gt;以色列安全部門消息人士稱，以色列和美國過去 24 小時評估認為，與伊朗沒有談判的可能，所以發動此次打擊。&lt;/p&gt;\n\n&lt;p&gt;美國駐卡達大使館要求所有工作人員就地避難，建議當地所有美國人也這樣做，直到另行通知。&lt;/p&gt;\n\n&lt;p&gt;據卡達阿拉伯電視台周六報導，伊朗首都德黑蘭市中心發生爆炸。&nbsp;伊朗法爾斯通訊社說多枚飛彈擊中德黑蘭市中心多處目標。伊朗最高領袖辦公室附近遭襲。德黑蘭證券交易所暫停交易。&lt;/p&gt;\n\n&lt;p&gt;伊朗官員表示，伊方正在為報復行動做準備，本次報復行動將是「毀滅性」。&lt;/p&gt;\n\n&lt;p&gt;據伊朗邁赫爾通訊社周六報導，伊朗議會國家安全和外交政策委員會主席易卜拉欣 &middot; 阿齊茲說：「我們（伊朗）警告過你們（以色列），現在你們開啟這條道路，結局已不再由你們掌控。」&lt;/p&gt;\n"
-        }
-      ]
-    },
-    {
-      "word": "中速",
-      "count": 123,
-      "articles": [
-        {
-          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
-          "url": "https://news.cnyes.com/news/id/6356318",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 歐特克(ADSK-US)大漲5.08%，報245.32美元",
-          "url": "https://news.cnyes.com/news/id/6356314",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;歐特克(ADSK-US)截至台北時間27日23:12股價上漲11.87美元，報245.32美元，漲幅5.08%，成交量1,217,861（股），盤中最高價245.32美元、最低價233.30美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.4%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.74%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.69%&lt;/li&gt;&lt;li&gt;費城半導體指數：-0.74%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;歐特克(ADSK-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.87%&lt;/li&gt;    &lt;li&gt;近 1 月：-17.45%&lt;/li&gt;    &lt;li&gt;近 3 月：-25.41%&lt;/li&gt;    &lt;li&gt;近 6 月：-20.41%&lt;/li&gt;    &lt;li&gt;今年以來：-24.05%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
-          "url": "https://news.cnyes.com/news/id/6356310",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
-          "url": "https://news.cnyes.com/news/id/6356309",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
-          "url": "https://news.cnyes.com/news/id/6356308",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
-          "url": "https://news.cnyes.com/news/id/6356304",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
-          "url": "https://news.cnyes.com/news/id/6356303",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
-          "url": "https://news.cnyes.com/news/id/6356302",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
-          "url": "https://news.cnyes.com/news/id/6356301",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
-          "url": "https://news.cnyes.com/news/id/6356300",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
         }
       ]
     },
@@ -1255,8 +1204,74 @@
       ]
     },
     {
+      "word": "大跌",
+      "count": 102,
+      "articles": [
+        {
+          "title": "美股昨日大跌原因解析：從AI修正到估值壓力的多重因素｜露股go",
+          "url": "https://www.wearn.com/bbs/t1220045.html",
+          "source": "聚財網",
+          "content": "\n\n昨天美股明顯回檔，市場討論熱烈。但若排除情緒化解讀，從盤面結構與資金流向觀察，這並非單一突發利空造成的崩跌，而是高估值板塊在預期修正下所引發的集中賣壓。\n\n\n\n指數與板塊表現：科技權值股承壓\n\n當日三大指數同步走低，其中以科技權重較高的 NASDAQ Composite 跌幅相對明顯，顯示賣壓集中在成長股與科技族群。S&P 500 同步回落，但跌勢主要來自大型權值股拖累。\n\n"
+        },
+        {
+          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
+          "url": "https://news.cnyes.com/news/id/6356318",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
+          "url": "https://news.cnyes.com/news/id/6356310",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
+          "url": "https://news.cnyes.com/news/id/6356309",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
+          "url": "https://news.cnyes.com/news/id/6356308",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
+          "url": "https://news.cnyes.com/news/id/6356304",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
+          "url": "https://news.cnyes.com/news/id/6356303",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
+          "url": "https://news.cnyes.com/news/id/6356302",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
+          "url": "https://news.cnyes.com/news/id/6356301",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
+        },
+        {
+          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
+          "url": "https://news.cnyes.com/news/id/6356300",
+          "source": "鉅亨網(wd_stock)",
+          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
+        }
+      ]
+    },
+    {
       "word": "最高",
-      "count": 91,
+      "count": 93,
       "articles": [
         {
           "title": "機車騎上嘉縣台82線 最高可罰6000元",
@@ -1322,7 +1337,7 @@
     },
     {
       "word": "全球",
-      "count": 90,
+      "count": 92,
       "articles": [
         {
           "title": "台積電全球布局　2年獲美日德與中國政府補助1514億",
@@ -1383,72 +1398,6 @@
           "url": "https://health.ltn.com.tw/article/breakingnews/5354017",
           "source": "自由時報",
           "content": "\n\n\n日本千葉市川動植物園的小獼猴「Punch君」，出生後遭母親棄養，由飼育員接手照顧，牠總是緊抓紅毛猩猩玩偶撒嬌、抱著不放，並學習融入群體，畫面可愛又讓人心疼，戳中全球網友的...…"
-        }
-      ]
-    },
-    {
-      "word": "大跌",
-      "count": 90,
-      "articles": [
-        {
-          "title": "美股昨日大跌原因解析：從AI修正到估值壓力的多重因素｜露股go",
-          "url": "https://www.wearn.com/bbs/t1220045.html",
-          "source": "聚財網",
-          "content": "\n\n昨天美股明顯回檔，市場討論熱烈。但若排除情緒化解讀，從盤面結構與資金流向觀察，這並非單一突發利空造成的崩跌，而是高估值板塊在預期修正下所引發的集中賣壓。\n\n\n\n指數與板塊表現：科技權值股承壓\n\n當日三大指數同步走低，其中以科技權重較高的 NASDAQ Composite 跌幅相對明顯，顯示賣壓集中在成長股與科技族群。S&P 500 同步回落，但跌勢主要來自大型權值股拖累。\n\n"
-        },
-        {
-          "title": "盤中速報 - 富國銀行(WFC-US)大跌5.01%，報81.98美元",
-          "url": "https://news.cnyes.com/news/id/6356318",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;富國銀行(WFC-US)截至台北時間27日23:21股價下跌4.33美元，報81.98美元，跌幅5.01%，成交量3,857,064（股），盤中最高價84.82美元、最低價81.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.37%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.75%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-0.81%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.13%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;富國銀行(WFC-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.92%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.47%&lt;/li&gt;    &lt;li&gt;近 3 月：+1.4%&lt;/li&gt;    &lt;li&gt;近 6 月：+6.44%&lt;/li&gt;    &lt;li&gt;今年以來：-6.91%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 安可(AMKR-US)大跌5.04%，報46.08美元",
-          "url": "https://news.cnyes.com/news/id/6356310",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;安可(AMKR-US)截至台北時間27日22:59股價下跌2.45美元，報46.08美元，跌幅5.04%，成交量290,607（股），盤中最高價47.25美元、最低價46.05美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.54%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.8%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.17%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.96%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;安可(AMKR-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+5.38%&lt;/li&gt;    &lt;li&gt;近 1 月：+1.09%&lt;/li&gt;    &lt;li&gt;近 3 月：+45.88%&lt;/li&gt;    &lt;li&gt;近 6 月：+109.11%&lt;/li&gt;    &lt;li&gt;今年以來：+29.03%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 泰瑞達(TER-US)大跌5.03%，報315.98美元",
-          "url": "https://news.cnyes.com/news/id/6356309",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;泰瑞達(TER-US)截至台北時間27日22:53股價下跌16.72美元，報315.98美元，跌幅5.03%，成交量476,057（股），盤中最高價324.68美元、最低價315.97美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.59%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.94%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.07%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.86%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;泰瑞達(TER-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：+47.93%&lt;/li&gt;    &lt;li&gt;近 3 月：+91.11%&lt;/li&gt;    &lt;li&gt;近 6 月：+189.04%&lt;/li&gt;    &lt;li&gt;今年以來：+77.11%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 高盛集團(GS-US)大跌5.02%，報882.32美元",
-          "url": "https://news.cnyes.com/news/id/6356308",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;高盛集團(GS-US)截至台北時間27日22:47股價下跌46.68美元，報882.32美元，跌幅5.02%，成交量407,144（股），盤中最高價916.25美元、最低價882.32美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.61%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.92%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.18%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.78%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;高盛集團(GS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：+0.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-1.12%&lt;/li&gt;    &lt;li&gt;近 3 月：+12.91%&lt;/li&gt;    &lt;li&gt;近 6 月：+23.02%&lt;/li&gt;    &lt;li&gt;今年以來：+4.82%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 摩根士丹利(MS-US)大跌5.05%，報168.53美元",
-          "url": "https://news.cnyes.com/news/id/6356304",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;摩根士丹利(MS-US)截至台北時間27日22:44股價下跌8.96美元，報168.53美元，跌幅5.05%，成交量615,211（股），盤中最高價174.13美元、最低價168.53美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.51%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.86%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.36%&lt;/li&gt;&lt;li&gt;費城半導體指數：-2.07%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;摩根士丹利(MS-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.37%&lt;/li&gt;    &lt;li&gt;近 1 月：-4.48%&lt;/li&gt;    &lt;li&gt;近 3 月：+3.45%&lt;/li&gt;    &lt;li&gt;近 6 月：+16.62%&lt;/li&gt;    &lt;li&gt;今年以來：-2.14%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 花旗集團(C-US)大跌5.01%，報110.37美元",
-          "url": "https://news.cnyes.com/news/id/6356303",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;花旗集團(C-US)截至台北時間27日22:41股價下跌5.83美元，報110.37美元，跌幅5.01%，成交量1,443,992（股），盤中最高價113.18美元、最低價110.27美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.45%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.96%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.16%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.69%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;花旗集團(C-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-1.05%&lt;/li&gt;    &lt;li&gt;近 1 月：-0.42%&lt;/li&gt;    &lt;li&gt;近 3 月：+11.55%&lt;/li&gt;    &lt;li&gt;近 6 月：+19.45%&lt;/li&gt;    &lt;li&gt;今年以來：-2.01%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - MongoDB公司(MDB-US)大跌5.03%，報319.67美元",
-          "url": "https://news.cnyes.com/news/id/6356302",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;MongoDB公司(MDB-US)截至台北時間27日22:40股價下跌16.94美元，報319.67美元，跌幅5.03%，成交量122,535（股），盤中最高價331.30美元、最低價319.67美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.97%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.14%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.6%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;MongoDB公司(MDB-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-11.49%&lt;/li&gt;    &lt;li&gt;近 1 月：-23.43%&lt;/li&gt;    &lt;li&gt;近 3 月：-3.46%&lt;/li&gt;    &lt;li&gt;近 6 月：+46.96%&lt;/li&gt;    &lt;li&gt;今年以來：-24.95%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 數據狗(DDOG-US)大跌5.1%，報110.52美元",
-          "url": "https://news.cnyes.com/news/id/6356301",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;數據狗(DDOG-US)截至台北時間27日22:40股價下跌5.94美元，報110.52美元，跌幅5.1%，成交量337,140（股），盤中最高價113.47美元、最低價110.52美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.46%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-1%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.1%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.57%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;數據狗(DDOG-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-8.52%&lt;/li&gt;    &lt;li&gt;近 1 月：-19.31%&lt;/li&gt;    &lt;li&gt;近 3 月：-30.35%&lt;/li&gt;    &lt;li&gt;近 6 月：-12.65%&lt;/li&gt;    &lt;li&gt;今年以來：-18.87%&lt;/li&gt;&lt;/ul&gt;"
-        },
-        {
-          "title": "盤中速報 - 交易台(TTD-US)大跌5.09%，報22.73美元",
-          "url": "https://news.cnyes.com/news/id/6356300",
-          "source": "鉅亨網(wd_stock)",
-          "content": "&lt;p&gt;交易台(TTD-US)截至台北時間27日22:36股價下跌1.22美元，報22.73美元，跌幅5.09%，成交量1,494,116（股），盤中最高價23.51美元、最低價22.72美元。&lt;/p&gt;&lt;p&gt;&lt;em&gt;美股指數盤中表現&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;道瓊指數：-1.3%&lt;/li&gt;&lt;li&gt;S&amp;amp;P 500指數：-0.9%&lt;/li&gt;&lt;li&gt;NASDAQ指數：-1.19%&lt;/li&gt;&lt;li&gt;費城半導體指數：-1.68%&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;交易台(TTD-US)歷史漲跌幅&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;近 1 週：-0.32%&lt;/li&gt;    &lt;li&gt;近 1 月：-26.01%&lt;/li&gt;    &lt;li&gt;近 3 月：-35.67%&lt;/li&gt;    &lt;li&gt;近 6 月：-51.82%&lt;/li&gt;    &lt;li&gt;今年以來：-33.72%&lt;/li&gt;&lt;/ul&gt;"
         }
       ]
     },
@@ -1718,7 +1667,7 @@
     },
     {
       "word": "晶片",
-      "count": 69,
+      "count": 70,
       "articles": [
         {
           "title": "輝達財報超優也救不了股價 晶片定價權巔峰恐將成過去式？",
@@ -1916,7 +1865,7 @@
     },
     {
       "word": "能源",
-      "count": 63,
+      "count": 64,
       "articles": [
         {
           "title": "中油：台中廠四期擴建計畫　盼保育與能源轉型雙贏",
@@ -2180,7 +2129,7 @@
     },
     {
       "word": "3月",
-      "count": 53,
+      "count": 54,
       "articles": [
         {
           "title": "「入住古蹟」不是夢！ 台南321巷藝術聚落3月起閉園整備",
