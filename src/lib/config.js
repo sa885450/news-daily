@@ -9,6 +9,7 @@ module.exports = {
     // 🟢 新增：週報專用金鑰 (若未設定，則 fallback 回主金鑰)
     geminiWeeklyKey: process.env.GEMINI_WEEKLY_API_KEY || process.env.GEMINI_API_KEY,
     discordWebhook: process.env.DISCORD_WEBHOOK_URL,
+    discordAlertWebhook: process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
 
     // 新聞來源與關鍵字
     sources: process.env.NEWS_SOURCES ? JSON.parse(process.env.NEWS_SOURCES) : [],

@@ -46,8 +46,8 @@ function ensureDir(dirPath) {
     }
 }
 
-async function sendDiscord(content) {
-    if (!discordWebhook) {
+async function sendDiscord(content, webhookUrl = discordWebhook) {
+    if (!webhookUrl) {
         log('⚠️', '未設定 DISCORD_WEBHOOK_URL，跳過發送通知。');
         return;
     }
@@ -56,7 +56,7 @@ async function sendDiscord(content) {
         const chunks = content.match(/[\s\S]{1,1900}/g) || [];
 
         for (const [index, chunk] of chunks.entries()) {
-            await axios.post(discordWebhook, { content: chunk });
+            await axios.post(webhookUrl, { content: chunk });
             await sleep(1000);
         }
 

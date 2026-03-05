@@ -40,6 +40,7 @@ async function init() {
         renderTimeline(); // 🟢 v7.2.0
         renderGraph();    // 🟢 v8.0.0
         renderNewsPage();
+        startRealtimeTicker(); // 🟢 v8.6.0: 啟動實時更新定時器
 
         // 初始主題
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -108,6 +109,40 @@ function renderMarketTicker() {
             </div>
         `;
     }).join('');
+}
+
+// 🟢 v8.6.0: 瀏覽器端實時行情更新
+function startRealtimeTicker() {
+    // 每 2 分鐘刷新一次
+    setInterval(async () => {
+        console.log('🔄 正在同步最新市場報價 (Client-side)...');
+        const updatedCrypto = await fetchExternalPrices();
+        if (updatedCrypto && appData.market_snapshot) {
+            // 合併數據
+            appData.market_snapshot.crypto = {
+                ...appData.market_snapshot.crypto,
+                ...updatedCrypto
+            };
+            renderMarketTicker();
+            console.log('✨ 報價已更新');
+        }
+    }, 120000);
+}
+
+async function fetchExternalPrices() {
+    try {
+        const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin&vs_currencies=usd&include_24hr_change=true');
+        const data = await res.json();
+        return {
+            btc: { name: 'BTC', price: data.bitcoin.usd, change: data.bitcoin.usd_24h_change },
+            eth: { name: 'ETH', price: data.ethereum.usd, change: data.ethereum.usd_24h_change },
+            sol: { name: 'SOL', price: data.solana.usd, change: data.solana.usd_24h_change },
+            bnb: { name: 'BNB', price: data.binancecoin.usd, change: data.binancecoin.usd_24h_change }
+        };
+    } catch (e) {
+        console.warn('行情刷新失敗:', e);
+        return null;
+    }
 }
 
 function renderSummary() {
