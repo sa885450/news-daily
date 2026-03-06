@@ -343,24 +343,35 @@ ${cleanSummary}
 async function runJin10Task() {
     if (isTaskRunning) return; // 避免與主任務衝突
 
-    log('📡', `啟動金十特快同步 (v13.1.3)...`);
+    log('📡', `啟動金十特快同步 (v${version})...`);
 
     // 1. 金十數據同步
     if (config.enableJin10) {
         try {
             const jin10 = require('./lib/jin10');
-            const flashNews = await jin10.fetchFlashNews(5);
+            const flashNews = await jin10.fetchFlashNews(10); // 🟢 v13.1.8: 抓取 10 則以擴大覆蓋
             let importantCount = 0;
+            let newCount = 0;
+            let skipCount = 0;
 
             for (const news of flashNews) {
-                // 不論重要與否，全部存入資料庫
+                const url = news.link || `https://www.jin10.com/${news.id}`;
+
+                // 🟢 v13.1.8: 加入 URL 去重 - 跳過已存在的快訊
+                if (db.isAlreadyRead(url)) {
+                    skipCount++;
+                    continue;
+                }
+
+                // 存入資料庫
                 db.saveArticle(
                     `[金十] ${news.content.substring(0, 50)}...`,
-                    news.link || `https://www.jin10.com/${news.id}`,
+                    url,
                     '金十數據',
                     '即時快訊',
                     news.content
                 );
+                newCount++;
 
                 if (news.isImportant) {
                     importantCount++;
@@ -370,13 +381,14 @@ async function runJin10Task() {
                             title: "🌍 金十全球實時快訊 (重要)",
                             description: news.content,
                             color: 15844367, // 金色
-                            footer: { text: "金十數據 | 實時偵測系統 v13.1.3" },
+                            footer: { text: `金十數據 | 實時偵測系統 v${version}` },
                             timestamp: new Date().toISOString()
                         }, config.discordMonitorWebhook);
                     }
                 }
             }
-            log('✅', `金十同步完成: 抓取 ${flashNews.length} 則, 重要 ${importantCount} 則`);
+            // 🟢 v13.1.8: 詳細日誌
+            log('✅', `金十同步完成: 抓取 ${flashNews.length} 則 → 新增 ${newCount} 筆 / 跳過重複 ${skipCount} 筆 / 重要 ${importantCount} 筆`);
             await jin10.close();
         } catch (je) {
             log('❌', `金十特快執行失敗: ${je.message}`);
