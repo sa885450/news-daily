@@ -6,8 +6,9 @@ const cron = require('node-cron');
 /**
  * 🌕 v11.1.0: 戰術評級演算法
  * 結合 RSI, 趨勢與波段位置給出評價
+ * 🟢 v11.3.0: 注入持倉成本維度 (智慧單)
  */
-function getTacticalGrade(tech, buy5) {
+function getTacticalGrade(tech, buy5, costInfo = null) {
     const { rsi, trend, price, minLow } = tech;
     let score = 50; // 基準分
     let rationale = [];
@@ -27,6 +28,12 @@ function getTacticalGrade(tech, buy5) {
         rationale.push('接近 20 日強支撐區🎯');
     }
 
+    // 4. v11.3.0: 持倉成本連動 (智慧單買點)
+    if (costInfo && price < costInfo.costAt99) {
+        score += 15;
+        rationale.push('觸及成本 -1% (低於均價)💎');
+    }
+
     // 評級判定
     if (score >= 80) return { grade: 'S+', title: '極度低估 / 強力擊球區', color: 3066993, confidence: score, note: rationale.join(' + ') };
     if (score >= 65) return { grade: 'A', title: '健康回撤 / 穩健佈局', color: 3447003, confidence: score, note: rationale.join(' + ') };
@@ -35,9 +42,10 @@ function getTacticalGrade(tech, buy5) {
 }
 
 async function generateTacticalReport() {
-    log('🌅', '開始產生【帶有靈魂】的早盤戰術報告 (v11.1.0)...');
+    log('🌅', '開始產生【帶有靈魂】的早盤戰術報告 (v11.3.0)...');
 
     const symbols = config.tacticalSymbols.split(',').map(s => s.trim());
+    const myCosts = config.myCosts;
 
     try {
         const results = await Promise.all(symbols.map(async (symbol) => {
@@ -48,7 +56,18 @@ async function generateTacticalReport() {
             const buy5 = tech.prevClose * 0.95;
             const draw5 = tech.maxHigh * 0.95;
 
-            const evaluation = getTacticalGrade(tech, buy5);
+            // 🟢 v11.3.0: 成本計算
+            const myCostPrice = myCosts[symbol];
+            let costInfo = null;
+            if (myCostPrice) {
+                costInfo = {
+                    cost: myCostPrice,
+                    costAt99: myCostPrice * 0.99,
+                    pnl: ((tech.price - myCostPrice) / myCostPrice * 100).toFixed(2)
+                };
+            }
+
+            const evaluation = getTacticalGrade(tech, buy5, costInfo);
 
             return {
                 name: symbol,
@@ -57,6 +76,7 @@ async function generateTacticalReport() {
                 peak: tech.maxHigh,
                 support: tech.minLow,
                 rsi: tech.rsi,
+                costInfo,
                 evaluation
             };
         }));
@@ -65,22 +85,35 @@ async function generateTacticalReport() {
         if (activeResults.length === 0) return;
 
         for (const r of activeResults) {
+            const fields = [
+                { name: '🎯 執行指令 (-3% / -5%)', value: `建議 A (買): \`${r.buy3.toLocaleString()}\`\n建議 B (接): \`${r.buy5.toLocaleString()}\``, inline: true },
+                { name: '🏔️ 壓力/支撐', value: `60日高點: \`${r.peak.toLocaleString()}\`\n20日支撐: \`${r.support.toLocaleString()}\``, inline: true }
+            ];
+
+            // 🟢 v11.3.0: 插入個人成本欄位
+            if (r.costInfo) {
+                fields.push({
+                    name: '💼 持倉成本與智慧單 (Cost-Basis)',
+                    value: `當前成本: \`${r.costInfo.cost.toLocaleString()}\` (實時損益: ${r.costInfo.pnl}%)\n` +
+                        `智慧買點 (-1%): **${r.costInfo.costAt99.toLocaleString()}**`,
+                    inline: false
+                });
+            }
+
+            fields.push({ name: '🧠 戰術分析', value: `依據：**${r.evaluation.note}**\n信心值：\`${r.evaluation.confidence}%\``, inline: false });
+
             const embed = {
                 title: `🛡️ 戰術評級：[ ${r.evaluation.grade} ] - ${r.evaluation.title}`,
                 description: `標的：**${r.name}** | 當前價: **$${r.price.toLocaleString()}** (RSI: ${r.rsi})`,
                 color: r.evaluation.color,
-                fields: [
-                    { name: '🎯 執行指令', value: `建議 A (-3%): \`${r.buy3.toLocaleString()}\`\n建議 B (-5%): \`${r.buy5.toLocaleString()}\``, inline: true },
-                    { name: '🏔️ 壓力/支撐', value: `60日高點: \`${r.peak.toLocaleString()}\`\n20日支撐: \`${r.support.toLocaleString()}\``, inline: true },
-                    { name: '🧠 戰術分析', value: `依據：**${r.evaluation.note}**\n信心指數：\`${r.evaluation.confidence}%\``, inline: false }
-                ],
-                footer: { text: "AI 戰術終端 v11.1.0 | 靈魂評分系統" },
+                fields: fields,
+                footer: { text: "AI 戰術終端 v11.3.0 | 持倉成本對齊系統" },
                 timestamp: new Date().toISOString()
             };
             await sendDiscordEmbed(embed, config.discordAlertWebhook);
         }
 
-        log('✅', '【帶有靈魂】的戰術報告已分發。');
+        log('✅', '【持倉成本對齊】戰術報告已分發。');
 
     } catch (e) {
         log('❌', `戰術報告產生失敗: ${e.message}`);

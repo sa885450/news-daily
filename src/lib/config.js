@@ -13,6 +13,12 @@ module.exports = {
     geminiWeeklyKey: process.env.GEMINI_WEEKLY_API_KEY || process.env.GEMINI_API_KEY,
     // 🟢 v11.1.0: 戰術報告標的配置 (從環境變數讀取，或使用預設)
     tacticalSymbols: (process.env.TACTICAL_SYMBOLS || '2330.TW,0050.TW,BTC-USD,GC=F'),
+    // 🟢 v11.3.0: 持倉成本配置 (格式: "2330.TW:980,0050.TW:185")
+    myCosts: (process.env.MY_COSTS || "").split(',').reduce((acc, item) => {
+        const [symbol, cost] = item.split(':');
+        if (symbol && cost) acc[symbol.trim()] = parseFloat(cost);
+        return acc;
+    }, {}),
     discordWebhook: process.env.DISCORD_WEBHOOK_URL,
     discordAlertWebhook: process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
 
