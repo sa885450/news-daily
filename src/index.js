@@ -284,9 +284,54 @@ ${cleanSummary}
 
         } catch (err) { log('❌', `處理失敗: ${err.message}`); }
     } else {
-        log('💤', "無新新聞增量，僅執行金十同步與全景報表更新。");
-    }
+        log('💤', "無新新聞增量。正在整合最新金十與歷史庫存產出全景報表...");
+        // 🟢 v13.1.4: 確保空窗期也能發布真實 AI 混合報表
+        try {
+            const historyNews = db.getRecentArticles(2, 150);
+            if (historyNews && historyNews.length > 0) {
+                const displayKeywordStats = calculateKeywordStats(historyNews);
+                const clusteredNews = [];
+                const processedIndices = new Set();
+                const stringSimilarity = require('string-similarity');
 
+                for (let i = 0; i < historyNews.length; i++) {
+                    if (processedIndices.has(i)) continue;
+                    const mainNews = { ...historyNews[i], relatedArticles: [] };
+                    processedIndices.add(i);
+                    for (let j = i + 1; j < historyNews.length; j++) {
+                        if (processedIndices.has(j)) continue;
+                        if (stringSimilarity.compareTwoStrings(historyNews[i].title, historyNews[j].title) > 0.7) {
+                            mainNews.relatedArticles.push({
+                                title: historyNews[j].title,
+                                url: historyNews[j].url,
+                                source: historyNews[j].source,
+                                thumbnail: historyNews[j].thumbnail
+                            });
+                            processedIndices.add(j);
+                        }
+                    }
+                    clusteredNews.push(mainNews);
+                }
+
+                const marketSnapshot = await getMarketSnapshot();
+                const lastStats = db.getLastStats();
+
+                // 重建上一把的 AI 狀態，避免圖譜與事件被洗掉
+                const aiResult = {
+                    sentiment_score: lastStats?.sentiment_score || 0,
+                    summary: (lastStats?.summary || "") + `<p><small><i>(註：本時段無新 RSS 新聞，但已匯入最新金十快訊。本報表為前次 AI 戰略分析之延續)</i></small></p>`,
+                    events: lastStats?.events ? JSON.parse(lastStats.events) : [],
+                    relations: lastStats?.relations ? JSON.parse(lastStats.relations) : [],
+                    tactical_advice: lastStats?.tactical_advice ? JSON.parse(lastStats.tactical_advice) : null
+                };
+
+                generateHTMLReport(aiResult, clusteredNews, displayKeywordStats, db.getRecentStats(7), analyze7DayKeywords(7), aiResult.events, aiResult.relations, marketSnapshot);
+                pushToGitHub();
+            }
+        } catch (ue) {
+            log('⚠️', `空窗期全景報表更新失敗: ${ue.message}`);
+        }
+    }
 
     isTaskRunning = false;
 }
@@ -336,47 +381,6 @@ async function runJin10Task() {
         } catch (je) {
             log('❌', `金十特快執行失敗: ${je.message}`);
         }
-    }
-
-    // 2. 更新前端「2小時全景報表」 (確保前端隨時有最新資料)
-    try {
-        const historyNews = db.getRecentArticles(2, 150);
-        if (historyNews && historyNews.length > 0) {
-            const displayKeywordStats = calculateKeywordStats(historyNews);
-            const clusteredNews = [];
-            const processedIndices = new Set();
-            const stringSimilarity = require('string-similarity');
-
-            for (let i = 0; i < historyNews.length; i++) {
-                if (processedIndices.has(i)) continue;
-                const mainNews = { ...historyNews[i], relatedArticles: [] };
-                processedIndices.add(i);
-                for (let j = i + 1; j < historyNews.length; j++) {
-                    if (processedIndices.has(j)) continue;
-                    if (stringSimilarity.compareTwoStrings(historyNews[i].title, historyNews[j].title) > 0.7) {
-                        mainNews.relatedArticles.push({
-                            title: historyNews[j].title,
-                            url: historyNews[j].url,
-                            source: historyNews[j].source,
-                            thumbnail: historyNews[j].thumbnail
-                        });
-                        processedIndices.add(j);
-                    }
-                }
-                clusteredNews.push(mainNews);
-            }
-
-            const marketSnapshot = await getMarketSnapshot();
-            const lastStats = db.getLastStats();
-            const fakeAiResult = {
-                sentiment_score: lastStats?.sentiment_score || 0,
-                summary: (lastStats?.summary || "") + `<p><small><i>(註：本時段資料已更新至 ${new Date().toLocaleTimeString()}，包含最新金十快訊)</i></small></p>`
-            };
-            generateHTMLReport(fakeAiResult, clusteredNews, displayKeywordStats, db.getRecentStats(7), analyze7DayKeywords(7), [], [], marketSnapshot);
-            pushToGitHub();
-        }
-    } catch (ue) {
-        log('⚠️', `全景報表更新失敗: ${ue.message}`);
     }
 }
 
