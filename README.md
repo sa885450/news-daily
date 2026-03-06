@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.2.0 (金十 CSS Selector 根本修復) 🔥
+- **🔬 診斷驅動修復**: 執行 Playwright 診斷腳本，正式確認原有的 `.jin-flash-item-container` selector 指向錯誤的 DOM 區塊，導致每次都抓到相同的舊文章，真正的即時快訊流完全未被捕獲。
+- **✅ 修正 selector**: 將快訊列表 selector 從 `.jin-flash-item-container` 更正為**正確的 `.jin-flash-item`**（共 29 個快訊元素），時間 selector 改為 `.item-time`，內文 selector 改為 `.flash-text`。
+- **📦 版本同步**: 版本號跳至 13.2.0（重大功能修復）。
+
 ### v13.1.9 (金十快取修復與診斷強化)
 - **🔄 強制清除快取**: 修正 Playwright browser context 重用導致金十頁面被快取的問題。現在每次抓取前強制重建 browser context，確保讀取到最新頁面。
 - **🕐 時間戳診斷日誌**: 在每次金十同步時，額外印出頁面上「最新一則快訊的時間」，讓老大能即時確認抓到的是否為最新內容而非過期快取。

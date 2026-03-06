@@ -37,12 +37,13 @@ class Jin10Service {
             await this.page.waitForTimeout(5000);
 
             const news = await this.page.evaluate((max) => {
-                const items = Array.from(document.querySelectorAll('.jin-flash-item-container'));
+                // 🟢 v13.2.0: 修正為正確 selector (由診斷腳本確認)
+                const items = Array.from(document.querySelectorAll('.jin-flash-item'));
                 return items.slice(0, max).map(item => {
-                    const time = item.querySelector('.jin-flash-time')?.innerText || '';
-                    const textEl = item.querySelector('.jin-flash-text') || item.querySelector('.jin-flash-item-title') || item;
+                    const time = item.querySelector('.item-time')?.innerText?.trim() || '';
+                    const textEl = item.querySelector('.flash-text') || item.querySelector('.flash-remark') || item;
                     const content = textEl ? textEl.innerText.replace(/\s+/g, ' ').trim() : '';
-                    const isImportant = !!item.querySelector('.jin-flash-star-ranking') || item.classList.contains('is-important');
+                    const isImportant = item.classList.contains('is-important');
                     const link = item.querySelector('a')?.href || '';
                     const id = `jin10_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
                     return { id, time, content, isImportant, link };
