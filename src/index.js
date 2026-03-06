@@ -279,6 +279,16 @@ ${cleanSummary}
                     for (const news of flashNews) {
                         if (news.isImportant) {
                             log('⭐', `[金十精華] ${news.content.substring(0, 100)}`);
+
+                            // 🟢 v13.0.2: 存入資料庫以便 monitor.js 關聯分析
+                            db.saveArticle(
+                                `[金十] ${news.content.substring(0, 50)}...`,
+                                news.link || `https://www.jin10.com/${news.id}`,
+                                '金十數據',
+                                '即時快訊',
+                                news.content
+                            );
+
                             if (config.discordMonitorWebhook) {
                                 await sendDiscordEmbed({
                                     title: "🌍 金十全球實時快訊 (重要)",
