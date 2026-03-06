@@ -54,10 +54,15 @@ async function getTechnicalIndicators(symbol) {
 
         const closePrices = history.map(h => h.close).filter(p => p != null);
         const highPrices = history.map(h => h.high).filter(p => p != null);
+        const volumes = history.map(h => h.volume).filter(v => v != null);
 
         if (closePrices.length === 0) return null;
 
         const latestPrice = closePrices[closePrices.length - 1];
+        const latestVolume = volumes.length > 0 ? volumes[volumes.length - 1] : 0;
+        const avgVolume = volumes.length >= 20 ? volumes.slice(-20).reduce((a, b) => a + b, 0) / 20 : latestVolume;
+        const volumeRatio = avgVolume > 0 ? (latestVolume / avgVolume) : 1;
+
         const maxHigh60 = highPrices.length > 0 ? Math.max(...highPrices) : latestPrice;
         const minLow20 = closePrices.length > 0 ? Math.min(...closePrices.slice(-20)) : latestPrice;
 
@@ -74,9 +79,11 @@ async function getTechnicalIndicators(symbol) {
         return {
             symbol,
             price: latestPrice,
-            prevClose: latestPrice, // 8:30 AM 時，latestPrice 即為前一交易日收盤
-            maxHigh: maxHigh60,      // 波段最高點
-            minLow: minLow20,        // 20日支撐點
+            prevClose: latestPrice,
+            volume: latestVolume,
+            volumeRatio: parseFloat(volumeRatio.toFixed(2)),
+            maxHigh: maxHigh60,
+            minLow: minLow20,
             ma5: parseFloat(ma5.toFixed(2)),
             ma20: parseFloat(ma20.toFixed(2)),
             rsi: parseFloat(rsi.toFixed(2)),

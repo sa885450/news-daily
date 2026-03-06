@@ -20,7 +20,9 @@ module.exports = {
         return acc;
     }, {}),
     discordWebhook: process.env.DISCORD_WEBHOOK_URL,
-    discordAlertWebhook: process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
+    // 🟢 v12.0.0: 三頻道分流 Webhook
+    discordTacticalWebhook: process.env.DISCORD_TACTICAL_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
+    discordMonitorWebhook: process.env.DISCORD_MONITOR_WEBHOOK_URL || process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
 
     // 新聞來源與關鍵字
     sources: process.env.NEWS_SOURCES ? JSON.parse(process.env.NEWS_SOURCES) : [],
@@ -51,5 +53,8 @@ module.exports = {
 
     // GitHub Pages
     githubUser: "sa885450",
-    repoName: "news-daily"
+    repoName: "news-daily",
+    // 🟢 v13.0.0: 金十數據整合
+    enableJin10: process.env.ENABLE_JIN10_MONITOR !== 'false',
+    jin10Interval: parseInt(process.env.JIN10_CHRONO_MINUTES || '5')
 };

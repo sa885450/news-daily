@@ -2,21 +2,45 @@ const { getMarketSnapshot } = require('./lib/mcp');
 const { getTechnicalIndicators } = require('./lib/indicators');
 const { log, sendDiscordEmbed } = require('./lib/utils');
 const config = require('./lib/config');
+const db = require('./lib/db');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
 const MONITOR_STATE_FILE = path.join(__dirname, '../data/monitor_state.json');
 
-// 🟢 第三階段優化：差異化門檻
+// 🟢 差異化門檻 (v12.0.1 恢復)
 function getThreshold(symbol) {
+    if (!symbol) return -2.0;
     if (symbol.startsWith('^') || symbol.includes('=F')) return -1.0; // 指數與黃金類跌 1% 預警
     if (symbol.includes('.TW')) return -2.0; // 盤中個股跌 2% 預警
     return -5.0; // 加密貨幣波動大，跌 5% 預警
 }
 
+// 🟢 v12.0.0: 三級警報門檻與權重判斷
+function evaluateAlertLevel(target, tech, changeRate) {
+    if (!tech) return { level: 'NONE', color: 0, score: 0 };
+
+    let score = 0;
+    const threshold = getThreshold(target.symbol);
+    const isAbnormalDrop = changeRate <= threshold;
+    const isHeavyVolume = tech.volumeRatio >= 2.0;
+    const isRSIExtremes = tech.rsi <= 25 || tech.rsi >= 75;
+
+    if (isAbnormalDrop) score += 2;
+    if (isHeavyVolume) score += 2;
+    if (isRSIExtremes) score += 1;
+    if (tech.trend === 'BEAR' && changeRate < 0) score += 1;
+
+    if (score >= 5) return { level: 'RED', color: 15158332, label: '🚨 垂直打擊 (緊急風險)' };
+    if (score >= 3) return { level: 'ORANGE', color: 15844367, label: '🟠 進階預警 (趨勢轉折)' };
+    if (score >= 1) return { level: 'YELLOW', color: 3447003, label: '🟡 一般預告 (標的異動)' };
+
+    return { level: 'NONE', color: 0, score };
+}
+
 async function runMonitor() {
-    log('📡', '啟動專業級監控衛星...');
+    log('📡', '啟動專業級監控衛星 v12.0.1...');
 
     try {
         const snapshot = await getMarketSnapshot();
@@ -33,7 +57,7 @@ async function runMonitor() {
         }
 
         const now = Date.now();
-        const COOL_DOWN_MS = 3600000; // 1 小時冷卻
+        const COOL_DOWN_MS = 3600000;
 
         for (const target of allTargets) {
             const currentPrice = target.price;
@@ -42,77 +66,58 @@ async function runMonitor() {
 
             if (!currentPrice || isNaN(currentPrice)) continue;
 
-            // 🟢 第五階段：實時獲取技術指標
             const tech = await getTechnicalIndicators(target.symbol || '');
-            const rsiStr = tech ? `${tech.rsi} (${tech.rsi < 30 ? '超賣🔥' : tech.rsi > 70 ? '超買❄️' : '中性'})` : '計算中';
-
             const changeRate = ((currentPrice - lastPrice) / lastPrice) * 100;
-            const threshold = getThreshold(target.symbol || '');
+            const alert = evaluateAlertLevel(target, tech, changeRate);
 
-            log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (RSI: ${tech?.rsi || '?'}, 當前: ${changeRate.toFixed(2)}%)`);
+            log('📊', `[${target.name}] $${currentPrice.toLocaleString()} (VolRatio: ${tech?.volumeRatio || '?'}, RSI: ${tech?.rsi || '?'})`);
 
-            // 異動偵測邏輯 (跌破門檻 OR RSI 極度超賣 OR RSI 極度超買)
-            const isOverbought = tech && tech.rsi >= 75;
-            const isOversold = tech && tech.rsi <= 25;
-            const isAbnormalDrop = changeRate <= threshold;
+            if (alert.level !== 'NONE' && (now - lastAlertAt > COOL_DOWN_MS)) {
+                log('🚨', `觸發 ${alert.level} 級預警: ${target.name}`);
 
-            if ((isAbnormalDrop || isOversold || isOverbought) && (now - lastAlertAt > COOL_DOWN_MS)) {
-                log('🚨', `觸發預警: ${target.name} (RSI: ${tech?.rsi})`);
-
-                let title = `🏮 市場移動預警: ${target.name}`;
-                let color = 15158332; // 默認紅色 (風險)
-                let description = `偵測到 **${target.name}** 出現顯著波動。`;
-
-                if (isOversold) {
-                    title = `💎 潛在進場機會: ${target.name}`;
-                    color = 3066993; // 綠色
-                    description = `指標顯示 **超賣**，數值為 ${tech.rsi}，可能存在支撐。`;
-                } else if (isOverbought) {
-                    title = `📦 建議獲利了結/減碼: ${target.name}`;
-                    color = 15844367; // 黃色/橙色
-                    description = `指標顯示 **超買**，數值為 ${tech.rsi}，需注意回測風險。`;
-                }
+                // 🟢 關聯近期新聞 (整合戰術直覺)
+                let newsContext = "";
+                try {
+                    const recentNews = db.getRecentNewsForSymbol ? db.getRecentNewsForSymbol(target.symbol, target.name, 4) : [];
+                    if (recentNews.length > 0) {
+                        newsContext = "\n\n**🔍 近期相關新聞**:\n" + recentNews.map(n => `• ${n.title}`).join('\n');
+                    }
+                } catch (ne) { }
 
                 const embed = {
-                    title: title,
-                    description: description,
-                    color: color,
+                    title: `${alert.label}: ${target.name}`,
+                    description: `偵測到 **${target.name}** 出現技術面異動。${newsContext}`,
+                    color: alert.color,
                     fields: [
                         { name: '當前價格', value: `**$${currentPrice.toLocaleString()}**`, inline: true },
                         { name: '波動幅度', value: `**${changeRate.toFixed(2)}%**`, inline: true },
-                        { name: 'RSI 強弱', value: `**${rsiStr}**`, inline: true },
-                        { name: '均線趨勢', value: tech ? `${tech.trend === 'BULL' ? '🟢多頭' : '🔴空頭'} (MA20: ${tech.ma20})` : '未知', inline: false }
+                        { name: '成交量比', value: `**${tech?.volumeRatio || '?'}x**`, inline: true },
+                        { name: 'RSI 強弱', value: `**${tech?.rsi || '?'}**`, inline: true },
+                        { name: '均線趨勢', value: tech ? `${tech.trend === 'BULL' ? '🟢多頭' : '🔴空頭'} (MA20: ${tech.ma20})` : '未知', inline: true }
                     ],
-                    footer: { text: "AI 財經監控終端 v10.0.0 | 旗艦分流版" },
+                    footer: { text: "AI 財經監控衛星 v12.0.1 | 專業告警頻道" },
                     timestamp: new Date().toISOString()
                 };
 
-                await sendDiscordEmbed(embed, config.discordAlertWebhook);
+                // 🟢 發送至「告警專屬頻道」
+                await sendDiscordEmbed(embed, config.discordMonitorWebhook);
 
-                // 儲存警報時間
                 state[target.name] = { price: currentPrice, lastAlertAt: now };
 
-                // 🟢 智慧聯動：如果跌幅劇烈 (<-3.0% 或 指數跌 > 1%)，主動觸發 AI 分析
-                if (changeRate <= -3.0 || (target.symbol.startsWith('^') && changeRate <= -1.0)) {
-                    log('🧠', '啟動 AI 智慧追擊分析...');
+                // 打擊分析聯動 (僅限 RED 等級)
+                if (alert.level === 'RED') {
                     exec(`node src/index.js --emergency --target="${target.name}"`, (err) => {
                         if (err) log('❌', `AI 聯動失敗: ${err.message}`);
                     });
                 }
             } else {
-                // 僅更新價格，不重置警報時間
-                state[target.name] = {
-                    price: currentPrice,
-                    lastAlertAt: lastAlertAt
-                };
+                state[target.name] = { price: currentPrice, lastAlertAt: lastAlertAt };
             }
         }
 
-        // 🟢 v9.3.0: 每日正午健康快照邏輯
         await checkAndSendDailySnapshot(allTargets, state);
-
         fs.writeFileSync(MONITOR_STATE_FILE, JSON.stringify(state, null, 2));
-        log('💾', '所有標的巡邏完畢，狀態已存檔。');
+        log('💾', '巡邏完畢。');
 
     } catch (e) {
         log('❌', `監控程序異常: ${e.message}`);
@@ -135,7 +140,7 @@ async function checkAndSendDailySnapshot(targets, state) {
         log('📊', '正在產生每日正午健康快照...');
 
         // 篩選核心標的 (0050, 2330, BTC, 黃金)
-        const coreSymbols = ['2330.TW', '0050.TW', 'BTC', 'GC=F'];
+        const coreSymbols = ['2330.TW', '0050.TW', 'BTC-USD', 'GC=F'];
         const coreDatas = targets.filter(t => coreSymbols.includes(t.symbol) || coreSymbols.includes(t.name));
 
         const fields = await Promise.all(coreDatas.map(async t => {
@@ -154,11 +159,11 @@ async function checkAndSendDailySnapshot(targets, state) {
             description: "這是您的每日資產體溫表，協助您掌握長線佈局時機。",
             color: 3447003, // 藍色 (科技感)
             fields: fields,
-            footer: { text: "AI 財經監控終端 v9.3.0 | 每日快照版" },
+            footer: { text: "AI 財經監控終端 v12.0.1 | 健康快照版" },
             timestamp: now.toISOString()
         };
 
-        await sendDiscordEmbed(embed, config.discordAlertWebhook);
+        await sendDiscordEmbed(embed, config.discordMonitorWebhook);
         state.lastDailySnapshotAt = todayStr;
         log('✅', '每日健康快照已發送至 Discord。');
     }

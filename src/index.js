@@ -271,6 +271,31 @@ ${cleanSummary}
             pushToGitHub();
             log('✅', "任務圓滿完成！");
 
+            // 🟢 v13.0.0: 金十數據同步 (驗證先行後正式接通)
+            if (config.enableJin10) {
+                try {
+                    const jin10 = require('./lib/jin10');
+                    const flashNews = await jin10.fetchFlashNews(5);
+                    for (const news of flashNews) {
+                        if (news.isImportant) {
+                            log('⭐', `[金十精華] ${news.content.substring(0, 100)}`);
+                            if (config.discordMonitorWebhook) {
+                                await sendDiscordEmbed({
+                                    title: "🌍 金十全球實時快訊 (重要)",
+                                    description: news.content,
+                                    color: 15844367, // 金色
+                                    footer: { text: "金十數據 | 實時偵測系統 v13.0.0" },
+                                    timestamp: new Date().toISOString()
+                                }, config.discordMonitorWebhook);
+                            }
+                        }
+                    }
+                    await jin10.close(); // 釋放瀏覽器資源
+                } catch (je) {
+                    log('❌', `金十整合執行失敗: ${je.message}`);
+                }
+            }
+
         } catch (err) { log('❌', `處理失敗: ${err.message}`); }
     } else {
         log('💤', "無新新聞。");
