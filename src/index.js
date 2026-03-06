@@ -32,7 +32,14 @@ function calculateKeywordStats(newsData) {
     return filteredStats;
 }
 
+let isTaskRunning = false;
+
 async function runTask() {
+    if (isTaskRunning) {
+        log('⚠️', '任務正在執行中，跳過本次重複觸發。');
+        return;
+    }
+    isTaskRunning = true;
     log('🚀', `啟動排程任務 (v${version})...`);
 
     try {
@@ -268,6 +275,7 @@ ${cleanSummary}
     } else {
         log('💤', "無新新聞。");
     }
+    isTaskRunning = false;
 }
 
 // 🕰️ 自動排程任務
