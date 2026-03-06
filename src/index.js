@@ -341,6 +341,18 @@ ${cleanSummary}
  * 獨立於 AI 深度日報，負責高頻率同步國際快訊與更新前端報表
  */
 async function runJin10Task() {
+    // 🟢 v13.2.2: 絕對優先權避讓邏輯
+    const now = new Date();
+    const min = now.getMinutes();
+    const hour = now.getHours();
+
+    // 如果即將進入兩小時一次的主任務(整點)，金十特快主動避讓 2 分鐘（前 1 分 + 整點當刻）
+    // 確保主任務啟動時，Playwright 不會佔用 CPU/記憶體或發生 Git 競爭
+    if (hour % 2 === 0 && (min === 0 || min === 59)) {
+        log('💤', '接近兩小時主任務時間，金十特快主動避讓以釋放資源...');
+        return;
+    }
+
     if (isTaskRunning) return; // 避免與主任務衝突
 
     log('📡', `啟動金十特快同步 (v${version})...`);
