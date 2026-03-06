@@ -354,6 +354,12 @@ async function runJin10Task() {
             let newCount = 0;
             let skipCount = 0;
 
+            // 🟢 v13.1.9: 診斷日誌 - 顯示頁面上最新快訊的時間，確認抓取是否為最新頁面
+            if (flashNews.length > 0) {
+                const latestTime = flashNews[0].time || '(無時間)';
+                log('🕐', `金十頁面最新快訊時間: [${latestTime}] (共 ${flashNews.length} 則)`);
+            }
+
             for (const news of flashNews) {
                 const url = news.link || `https://www.jin10.com/${news.id}`;
 

@@ -24,6 +24,11 @@ class Jin10Service {
 
     async fetchFlashNews(limit = 10) {
         try {
+            // 🟢 v13.1.9: 每次重建 context 強制清除快取，避免看到舊頁面
+            if (this.browser) {
+                await this.browser.close().catch(() => { });
+                this.browser = null;
+            }
             await this.init();
             log('📡', '正在透過模擬瀏覽器同步金十快訊...');
 
@@ -39,19 +44,16 @@ class Jin10Service {
                     const content = textEl ? textEl.innerText.replace(/\s+/g, ' ').trim() : '';
                     const isImportant = !!item.querySelector('.jin-flash-star-ranking') || item.classList.contains('is-important');
                     const link = item.querySelector('a')?.href || '';
-
-                    // 隨機產生一個暫時 ID 作為重複檢查用 (或使用時間+內容雜湊)
                     const id = `jin10_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
-
                     return { id, time, content, isImportant, link };
                 });
             }, limit);
 
-            // 🟢 v13.1.5: 廣告過濾 - 排除金十自家廣告與無效快訊
+            // 🟢 v13.1.9: 廣告過濾 - 排除金十自家廣告與無效快訊
             const adKeywords = ['广告', '推廣', 'TradingHero', '推出行情', 'AppStore', 'Google Play'];
             const filtered = news.filter(n => {
-                if (!n.content || n.content.length < 15) return false; // 過短的無效快訊
-                return !adKeywords.some(kw => n.content.includes(kw)); // 含廣告字眼的丟掉
+                if (!n.content || n.content.length < 15) return false;
+                return !adKeywords.some(kw => n.content.includes(kw));
             });
 
             if (news.length !== filtered.length) {
