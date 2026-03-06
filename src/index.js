@@ -287,13 +287,28 @@ ${cleanSummary}
         log('💤', "無新新聞增量，僅執行金十同步與全景報表更新。");
     }
 
-    // 🟢 v13.1.2: 金十數據同步 (移出增量判定區塊，使其獨立運算)
+
+    isTaskRunning = false;
+}
+
+/**
+ * 🟢 v13.1.3: 金十數據獨立特快排程
+ * 獨立於 AI 深度日報，負責高頻率同步國際快訊與更新前端報表
+ */
+async function runJin10Task() {
+    if (isTaskRunning) return; // 避免與主任務衝突
+
+    log('📡', `啟動金十特快同步 (v13.1.3)...`);
+
+    // 1. 金十數據同步
     if (config.enableJin10) {
         try {
             const jin10 = require('./lib/jin10');
             const flashNews = await jin10.fetchFlashNews(5);
+            let importantCount = 0;
+
             for (const news of flashNews) {
-                // 🟢 v13.1.2: 不論重要與否，全部存入資料庫以供前端「2小時全景報表」展現多元來源
+                // 不論重要與否，全部存入資料庫
                 db.saveArticle(
                     `[金十] ${news.content.substring(0, 50)}...`,
                     news.link || `https://www.jin10.com/${news.id}`,
@@ -303,25 +318,27 @@ ${cleanSummary}
                 );
 
                 if (news.isImportant) {
+                    importantCount++;
                     log('⭐', `[金十重要] ${news.content.substring(0, 100)}`);
                     if (config.discordMonitorWebhook) {
                         await sendDiscordEmbed({
                             title: "🌍 金十全球實時快訊 (重要)",
                             description: news.content,
                             color: 15844367, // 金色
-                            footer: { text: "金十數據 | 實時偵測系統 v13.1.2" },
+                            footer: { text: "金十數據 | 實時偵測系統 v13.1.3" },
                             timestamp: new Date().toISOString()
                         }, config.discordMonitorWebhook);
                     }
                 }
             }
+            log('✅', `金十同步完成: 抓取 ${flashNews.length} 則, 重要 ${importantCount} 則`);
             await jin10.close();
         } catch (je) {
-            log('❌', `金十整合執行失敗: ${je.message}`);
+            log('❌', `金十特快執行失敗: ${je.message}`);
         }
     }
 
-    // 🟢 v13.1.2: 即便無新新聞，也定期更新前端「2小時全景報表」
+    // 2. 更新前端「2小時全景報表」 (確保前端隨時有最新資料)
     try {
         const historyNews = db.getRecentArticles(2, 150);
         if (historyNews && historyNews.length > 0) {
@@ -348,12 +365,12 @@ ${cleanSummary}
                 }
                 clusteredNews.push(mainNews);
             }
-            // 獲取最新的行情快照與上一份 AI 摘要
+
             const marketSnapshot = await getMarketSnapshot();
             const lastStats = db.getLastStats();
             const fakeAiResult = {
                 sentiment_score: lastStats?.sentiment_score || 0,
-                summary: (lastStats?.summary || "") + "<p><small><i>(註：本時段無新新聞，顯示為歷史快照庫存)</i></small></p>"
+                summary: (lastStats?.summary || "") + `<p><small><i>(註：本時段資料已更新至 ${new Date().toLocaleTimeString()}，包含最新金十快訊)</i></small></p>`
             };
             generateHTMLReport(fakeAiResult, clusteredNews, displayKeywordStats, db.getRecentStats(7), analyze7DayKeywords(7), [], [], marketSnapshot);
             pushToGitHub();
@@ -361,17 +378,21 @@ ${cleanSummary}
     } catch (ue) {
         log('⚠️', `全景報表更新失敗: ${ue.message}`);
     }
-
-    isTaskRunning = false;
 }
 
-// 🕰️ 自動排程任務
+// 🕰️ 排程設定
 const cronSchedule = process.env.CRON_SCHEDULE || '0 * * * *';
-log('🕰️', `新聞機器人啟動 v${version} (排程: ${cronSchedule})`);
+log('🕰️', `新聞機器人啟動 v${version} (主排程: ${cronSchedule})`);
 cron.schedule(cronSchedule, () => runTask());
 
-// 🟢 v9.3.1: 支援 CLI 立即觸發 (用於 --emergency 或手動刷新)
+// 🕰️ v13.1.3: 獨立金十特快排程 (每 5 分鐘或依設定)
+const jin10Cron = `*/${config.jin10Interval} * * * *`;
+log('🕰️', `金十特快線啟動 (排程: ${jin10Cron})`);
+cron.schedule(jin10Cron, () => runJin10Task());
+
+// 🟢 支援 CLI 立即觸發
 if (process.argv.includes('--now') || process.argv.includes('--emergency')) {
-    log('⚡', "偵測到立即執行指令，正在啟動任務...");
+    log('⚡', "偵測到立即執行指令...");
     runTask();
+    runJin10Task();
 }
