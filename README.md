@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.1.6 (Git Push 競態條件修復)
+- **🔒 互斥鎖保護**: 在 `lib/git.js` 加入全域 `_isGitPushing` 旗標，確保同一時刻只有一個 Git 操作佔用倉庫，防止多個排程（主日報 + 空窗備援）同時 `git add/commit` 造成 `confused by unstable object` 的倉庫對象損壞。
+- **🔧 自動修復**: 偵測到 `unstable object` 錯誤時，自動執行 `git gc --prune=now` 進行倉庫 GC 修復，確保下次排程可正常運作。
+- **📦 版本同步**: 更新 `package.json` 版本號至 13.1.6。
+
 ### v13.1.5 (金十廣告過濾)
 - **🚫 廣告清道夫**: 在 `jin10.js` 加入關鍵字過濾（`广告`、`推廣`、`TradingHero` 等），確保自家廣告不會污染資料庫與前端報表。
 - **📦 版本同步**: 更新 `package.json` 版本號至 13.1.5。
