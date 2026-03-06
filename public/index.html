@@ -76,6 +76,30 @@
     </div>
 
     <div class="max-w-6xl mx-auto px-4 pt-10 relative">
+        <header class="mb-10 animate-fade">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <div
+                            class="w-10 h-10 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-200">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">AI 智能新聞儀表板</h1>
+                    </div>
+                    <p class="text-slate-400 dark:text-slate-500 font-bold flex items-center gap-2">
+                        <span id="report-date" class="text-indigo-500">載入中...</span>
+                        <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                        <span class="uppercase tracking-widest text-[10px]">智捷戰情室 v9.3.2</span>
+                    </p>
+                </div>
+                <!-- 🟢 v7.0.0: AI 關鍵實體熱詞區 -->
+                <div id="ai-entities" class="flex flex-wrap gap-2 md:justify-end max-w-md">
+                    <!-- 由 app.js 動態填充 -->
+                </div>
+            </div>
         </header>
 
         <!-- 🟢 v8.4.0: 市場行情橫幅 (Market Ticker) -->

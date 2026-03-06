@@ -78,7 +78,8 @@ function analyze7DayKeywords(days = 7) {
                         title: article.title,
                         url: article.url,
                         source: article.source,
-                        content: article.content
+                        // 🟢 v9.3.1: 數據脫水，避免資料包過大且降低非法字元風險
+                        content: (article.content || "").replace(/[\x00-\x1F\x7F-\x9F]/g, "").substring(0, 200)
                     });
                 }
             }

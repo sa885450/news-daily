@@ -53,14 +53,16 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
 
     try {
         const jsonStr = JSON.stringify(dataPackage, null, 2);
+        // 🟢 v9.3.1: 增加安全防護，過濾非法控制字元（預防瀏覽器 JSON.parse 失敗）
+        const safeJsonStr = jsonStr.replace(/[\x00-\x1F\x7F-\x9F]/g, "");
 
         // 1. 更新主數據檔案 (data.json)
-        fs.writeFileSync(dataPath, jsonStr, 'utf8');
+        fs.writeFileSync(dataPath, safeJsonStr, 'utf8');
 
         // 2. 更新歷史數據檔案 (用於未來回溯)
-        fs.writeFileSync(historyPath, jsonStr, 'utf8');
+        fs.writeFileSync(historyPath, safeJsonStr, 'utf8');
 
-        log('📦', `CSR 資料包(v6.0.0) 已產出: public/data.json (Size: ${(jsonStr.length / 1024).toFixed(2)} KB)`);
+        log('📦', `CSR 資料包(v9.3.1) 已產出: public/data.json (Size: ${(safeJsonStr.length / 1024).toFixed(2)} KB)`);
 
         return { filePath: dataPath, fileName: 'data.json' };
     } catch (err) {

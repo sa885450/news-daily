@@ -59,10 +59,13 @@ function renderHeader() {
     const d = new Date(appData.updateTime);
     const datePart = d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
     const timePart = d.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
-    document.getElementById('report-date').textContent = `${datePart} ${timePart}`;
+
+    const dateEl = document.getElementById('report-date');
+    if (dateEl) dateEl.textContent = `${datePart} ${timePart}`;
 
     // AI 實體
     const container = document.getElementById('ai-entities');
+    if (!container) return;
     const entities = appData.aiResult.entities || [];
     container.innerHTML = entities.map(e => `
         <button onclick="${e.ticker ? `openChartModal('${e.ticker}', '${e.name}')` : `searchKeyword('${e.name}')`}"

@@ -265,6 +265,13 @@ ${cleanSummary}
     }
 }
 
+// 🕰️ 自動排程任務
 const cronSchedule = process.env.CRON_SCHEDULE || '0 * * * *';
 log('🕰️', `新聞機器人啟動 v${version} (排程: ${cronSchedule})`);
 cron.schedule(cronSchedule, () => runTask());
+
+// 🟢 v9.3.1: 支援 CLI 立即觸發 (用於 --emergency 或手動刷新)
+if (process.argv.includes('--now') || process.argv.includes('--emergency')) {
+    log('⚡', "偵測到立即執行指令，正在啟動任務...");
+    runTask();
+}
