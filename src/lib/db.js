@@ -85,6 +85,8 @@ const getKeywordHistoryStmt = db.prepare(`
 module.exports = {
   isAlreadyRead: (url) => !!checkUrlStmt.get(url),
   saveArticle: (title, url, source, category = '其他', content = null, thumbnail = null) => {
+    // 🟢 v13.3.1: 防禦性檢查 - 拒絕存入無意義的 javascript 偽連結
+    if (!url || url.startsWith('javascript:')) return;
     try { insertArticleStmt.run(title, url, source, category, content, thumbnail); } catch (e) { }
   },
   saveDailyStats: (score, summary, sectorStats = null, dimensions = null, events = null, relations = null, tacticalAdvice = null) => {
@@ -139,5 +141,11 @@ module.exports = {
 
   // 🟢 導出：關鍵字歷史
   getKeywordHistory: (keyword) => getKeywordHistoryStmt.all(`%${keyword}%`, `%${keyword}%`),
-  getKeywordLifecycle: (keyword) => getKeywordHistoryStmt.all(`%${keyword}%`, `%${keyword}%`) // Alias for compatibility
+  getKeywordLifecycle: (keyword) => getKeywordHistoryStmt.all(`%${keyword}%`, `%${keyword}%`), // Alias for compatibility
+
+  // 🟢 v13.3.1: 清理舊世代殘留垃圾數據
+  cleanTrashData: () => {
+    const r = db.prepare("DELETE FROM articles WHERE url LIKE 'javascript:%' OR url IS NULL OR url = ''").run();
+    return r.changes;
+  }
 };

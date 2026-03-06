@@ -49,7 +49,9 @@ class Jin10Service {
                     // 改用「時間 + 內容前 20 字」產生穩定唯一 ID
                     const stableKey = (time + '_' + content.replace(/\s/g, '').substring(0, 20))
                         .replace(/[^\w\u4e00-\u9fa5]/g, '');
-                    const link = `https://jin10.com/flash/${stableKey || Date.now()}`;
+
+                    // 🟢 v13.3.1: 雙重保險 - 確保產出的 link 不會是無效字串
+                    const link = stableKey ? `https://jin10.com/flash/${stableKey}` : null;
 
                     const id = `jin10_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
                     return { id, time, content, isImportant, link };
