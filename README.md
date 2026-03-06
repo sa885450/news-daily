@@ -22,6 +22,12 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.2.1 (金十 URL 唯一識別鍵根本修復) 🔥
+- **🔑 根本原因**: 金十快訊頁面的 `<a>` 連結全部指向分享按鈕假連結（`javascript:void('openShare')`），所有快訊共用同一 URL，`isAlreadyRead` 第一則存入後，後續 10 則全部被誤判為「已存在」而跳過。
+- **✅ 修復邏輯**: 移除對頁面 `<a href>` 的依賴，改用「快訊時間 + 內容前 20 字」產生穩定唯一識別鍵，確保每則快訊有獨立且可重複識別的 URL。
+- **🗑️ DB 清理**: 清除資料庫中 2 筆使用舊廢棄 URL 方案存入的金十數據（含 1 筆廣告）。
+- **📦 版本同步**: 更新 `package.json` 版本號至 13.2.1。
+
 ### v13.2.0 (金十 CSS Selector 根本修復) 🔥
 - **🔬 診斷驅動修復**: 執行 Playwright 診斷腳本，正式確認原有的 `.jin-flash-item-container` selector 指向錯誤的 DOM 區塊，導致每次都抓到相同的舊文章，真正的即時快訊流完全未被捕獲。
 - **✅ 修正 selector**: 將快訊列表 selector 從 `.jin-flash-item-container` 更正為**正確的 `.jin-flash-item`**（共 29 個快訊元素），時間 selector 改為 `.item-time`，內文 selector 改為 `.flash-text`。

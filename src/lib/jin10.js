@@ -44,7 +44,13 @@ class Jin10Service {
                     const textEl = item.querySelector('.flash-text') || item.querySelector('.flash-remark') || item;
                     const content = textEl ? textEl.innerText.replace(/\s+/g, ' ').trim() : '';
                     const isImportant = item.classList.contains('is-important');
-                    const link = item.querySelector('a')?.href || '';
+
+                    // 🟢 v13.2.1: 不再拉頁面 href（全部是分享按鈕假連結）
+                    // 改用「時間 + 內容前 20 字」產生穩定唯一 ID
+                    const stableKey = (time + '_' + content.replace(/\s/g, '').substring(0, 20))
+                        .replace(/[^\w\u4e00-\u9fa5]/g, '');
+                    const link = `https://jin10.com/flash/${stableKey || Date.now()}`;
+
                     const id = `jin10_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`;
                     return { id, time, content, isImportant, link };
                 });
