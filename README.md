@@ -22,6 +22,13 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.1.7 (Gemini 模型全面升級)
+- **🚀 模型升級**: 根據 Google 官方廢棄公告，將 AI 模型候選清單從廢棄的 `gemini-1.5-flash` / `gemini-2.0-flash` 全面升級至現役的 `gemini-2.5-flash` 系列，解決每次主排程觸發時出現的 AI 模型 404 失敗問題。
+  - 第一順位 (主力)：`gemini-2.5-flash` — 最新、速度快、成本優
+  - 第二順位 (備援)：`gemini-2.5-flash-lite` — 輕量備用
+  - 第三順位 (保底)：`gemini-1.5-flash-latest` — 最後防線
+- **📦 版本同步**: 更新 `package.json` 版本號至 13.1.7。
+
 ### v13.1.6 (Git Push 競態條件修復)
 - **🔒 互斥鎖保護**: 在 `lib/git.js` 加入全域 `_isGitPushing` 旗標，確保同一時刻只有一個 Git 操作佔用倉庫，防止多個排程（主日報 + 空窗備援）同時 `git add/commit` 造成 `confused by unstable object` 的倉庫對象損壞。
 - **🔧 自動修復**: 偵測到 `unstable object` 錯誤時，自動執行 `git gc --prune=now` 進行倉庫 GC 修復，確保下次排程可正常運作。
