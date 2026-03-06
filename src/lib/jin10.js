@@ -47,7 +47,18 @@ class Jin10Service {
                 });
             }, limit);
 
-            return news;
+            // 🟢 v13.1.5: 廣告過濾 - 排除金十自家廣告與無效快訊
+            const adKeywords = ['广告', '推廣', 'TradingHero', '推出行情', 'AppStore', 'Google Play'];
+            const filtered = news.filter(n => {
+                if (!n.content || n.content.length < 15) return false; // 過短的無效快訊
+                return !adKeywords.some(kw => n.content.includes(kw)); // 含廣告字眼的丟掉
+            });
+
+            if (news.length !== filtered.length) {
+                log('🚫', `金十廣告過濾: 已排除 ${news.length - filtered.length} 則廣告/無效快訊`);
+            }
+
+            return filtered;
         } catch (e) {
             log('❌', `金十抓取異常: ${e.message}`);
             return [];
