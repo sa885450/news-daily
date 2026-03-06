@@ -185,41 +185,52 @@ async function runTask() {
             const aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
-            // 更新分類
+            // 🟢 v13.1.0: 更新分類並回寫資料庫
             const catMap = {};
             if (aiResult.categories) {
                 aiResult.categories.forEach(c => { if (c.id !== undefined) catMap[c.id] = c.category; });
-                allMatchedNews.forEach((n, i) => { n.category = catMap[i] || "其他"; });
+                allMatchedNews.forEach((n, i) => {
+                    n.category = catMap[i] || "其他";
+                    if (n.category !== "其他") {
+                        db.updateArticleCategory(n.url, n.category);
+                    }
+                });
             }
 
             db.saveDailyStats(aiResult.sentiment_score, aiResult.summary);
             const recentStats = db.getRecentStats(7);
             const keywords7d = analyze7DayKeywords(7);
 
-            const keywordStats = calculateKeywordStats(allMatchedNews);
+            // 🟢 v13.1.0: 改為從資料庫撈取過去 2 小時內的歷史庫存，確保前端新聞來源多元化
+            let displayNews = db.getRecentArticles(2, 150);
+            if (!displayNews || displayNews.length === 0) {
+                displayNews = allMatchedNews; // 若資料庫查無資料，退回使用當次增量
+            }
 
-            // 🟢 v5.0.0: 新聞聚類與去重 (Clustering)
+            // 使用顯示用的新聞重新計算關鍵字統計，讓畫面標籤正確
+            const displayKeywordStats = calculateKeywordStats(displayNews);
+
+            // 🟢 v13.1.0: 新聞聚類與去重改對 displayNews 執行
             const clusteredNews = [];
             const processedIndices = new Set();
 
-            for (let i = 0; i < allMatchedNews.length; i++) {
+            for (let i = 0; i < displayNews.length; i++) {
                 if (processedIndices.has(i)) continue;
 
-                const mainNews = { ...allMatchedNews[i], relatedArticles: [] };
+                const mainNews = { ...displayNews[i], relatedArticles: [] };
                 processedIndices.add(i);
 
-
-                for (let j = i + 1; j < allMatchedNews.length; j++) {
+                for (let j = i + 1; j < displayNews.length; j++) {
                     if (processedIndices.has(j)) continue;
 
-                    const similarity = stringSimilarity.compareTwoStrings(allMatchedNews[i].title, allMatchedNews[j].title);
+                    const similarity = stringSimilarity.compareTwoStrings(displayNews[i].title, displayNews[j].title);
                     if (similarity > 0.7) {
                         mainNews.relatedArticles.push({
-                            title: allMatchedNews[j].title,
-                            url: allMatchedNews[j].url,
-                            source: allMatchedNews[j].source,
-                            content: allMatchedNews[j].content,
-                            thumbnail: allMatchedNews[j].thumbnail // 🟢 v7.0.1
+                            title: displayNews[j].title,
+                            url: displayNews[j].url,
+                            source: displayNews[j].source,
+                            content: displayNews[j].content,
+                            thumbnail: displayNews[j].thumbnail
                         });
                         processedIndices.add(j);
                     }
@@ -227,7 +238,7 @@ async function runTask() {
                 clusteredNews.push(mainNews);
             }
 
-            generateHTMLReport(aiResult, clusteredNews, keywordStats, recentStats, keywords7d, aiResult.events, aiResult.relations, marketSnapshot);
+            generateHTMLReport(aiResult, clusteredNews, displayKeywordStats, recentStats, keywords7d, aiResult.events, aiResult.relations, marketSnapshot);
 
             // 發送 Discord
             try {

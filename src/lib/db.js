@@ -90,6 +90,18 @@ module.exports = {
   },
   getWeeklyArticles: () => getWeeklyArticlesStmt.all(),
 
+  // 🟢 v13.1.0: 前端多元化顯示支援
+  getRecentArticles: (hours, limit) => {
+    try {
+      return db.prepare(`SELECT * FROM articles WHERE created_at >= datetime('now', '-${hours} hours') ORDER BY created_at DESC LIMIT ?`).all(limit);
+    } catch (e) {
+      return [];
+    }
+  },
+  updateArticleCategory: (url, category) => {
+    try { db.prepare(`UPDATE articles SET category = ? WHERE url = ?`).run(category, url); } catch (e) { }
+  },
+
   // 🟢 導出：關鍵字歷史
   getKeywordHistory: (keyword) => getKeywordHistoryStmt.all(`%${keyword}%`, `%${keyword}%`),
   getKeywordLifecycle: (keyword) => getKeywordHistoryStmt.all(`%${keyword}%`, `%${keyword}%`) // Alias for compatibility
