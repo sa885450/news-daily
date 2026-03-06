@@ -48,24 +48,35 @@ async function getTechnicalIndicators(symbol) {
 
         const history = result.quotes;
 
-        if (!history || history.length < 20) {
-            // console.error(`[DEBUG] ${symbol} 歷史數據不足: ${history?.length || 0}`);
+        if (!history || history.length === 0) {
             return null;
         }
 
         const closePrices = history.map(h => h.close).filter(p => p != null);
+        const highPrices = history.map(h => h.high).filter(p => p != null);
+
+        if (closePrices.length === 0) return null;
+
         const latestPrice = closePrices[closePrices.length - 1];
+        const maxHigh60 = highPrices.length > 0 ? Math.max(...highPrices) : latestPrice;
+        const minLow20 = closePrices.length > 0 ? Math.min(...closePrices.slice(-20)) : latestPrice;
 
-        // MA 計算 (5日, 20日)
-        const ma5 = closePrices.slice(-5).reduce((a, b) => a + b, 0) / 5;
-        const ma20 = closePrices.slice(-20).reduce((a, b) => a + b, 0) / 20;
+        // MA 計算 (支援資料不足時自動截斷)
+        const ma5Len = Math.min(closePrices.length, 5);
+        const ma20Len = Math.min(closePrices.length, 20);
 
-        // RSI (14日)
-        const rsi = calculateRSI(closePrices.slice(-15));
+        const ma5 = closePrices.slice(-ma5Len).reduce((a, b) => a + b, 0) / ma5Len;
+        const ma20 = closePrices.slice(-ma20Len).reduce((a, b) => a + b, 0) / ma20Len;
+
+        // RSI (至少需要 2 點計算，否則預設 50)
+        const rsi = closePrices.length >= 2 ? calculateRSI(closePrices.slice(-15)) : 50;
 
         return {
             symbol,
             price: latestPrice,
+            prevClose: latestPrice, // 8:30 AM 時，latestPrice 即為前一交易日收盤
+            maxHigh: maxHigh60,      // 波段最高點
+            minLow: minLow20,        // 20日支撐點
             ma5: parseFloat(ma5.toFixed(2)),
             ma20: parseFloat(ma20.toFixed(2)),
             rsi: parseFloat(rsi.toFixed(2)),

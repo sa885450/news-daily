@@ -83,7 +83,7 @@ async function runMonitor() {
                         { name: 'RSI 強弱', value: `**${rsiStr}**`, inline: true },
                         { name: '均線趨勢', value: tech ? `${tech.trend === 'BULL' ? '🟢多頭' : '🔴空頭'} (MA20: ${tech.ma20})` : '未知', inline: false }
                     ],
-                    footer: { text: "AI 財經監控終端 v9.3.0 | 每日快照版" },
+                    footer: { text: "AI 財經監控終端 v10.0.0 | 旗艦分流版" },
                     timestamp: new Date().toISOString()
                 };
 

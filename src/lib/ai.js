@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold, SchemaType } = require("@google/generative-ai");
-const { geminiKey, geminiWeeklyKey, modelCandidates } = require('./config');
+const { geminiKey, geminiKeys, geminiStrategicKey, geminiWeeklyKey, modelCandidates } = require('./config');
 const { sleep, sendDiscordError } = require('./utils');
 
 const safetySettings = [
@@ -106,13 +106,59 @@ const reportSchema = {
     },
     required: ["sentiment_score", "dimensions", "entities", "summary", "categories", "sector_stats", "events", "relations", "tactical_advice"]
 };
+/**
+ * 🟢 v10.0.0: 多金鑰管理員 (Key Manager)
+ * 負責金鑰輪詢、冷卻管理與任務路由
+ */
+class KeyManager {
+    constructor(keys) {
+        this.keys = keys.length > 0 ? keys : [geminiKey];
+        this.currentIndex = 0;
+        this.cooldowns = new Map(); // key -> resumeTime
+    }
+
+    getNextAvailableKey() {
+        const now = Date.now();
+        let checkedCount = 0;
+
+        while (checkedCount < this.keys.length) {
+            const key = this.keys[this.currentIndex];
+            const resumeTime = this.cooldowns.get(key) || 0;
+
+            if (now >= resumeTime) {
+                return key;
+            }
+
+            // 嘗試下一個
+            this.currentIndex = (this.currentIndex + 1) % this.keys.length;
+            checkedCount++;
+        }
+
+        // 若全部都在冷卻，回傳當前這個並等待
+        return this.keys[this.currentIndex];
+    }
+
+    markCooldown(key, seconds = 60) {
+        console.warn(`💊 Key [${key.substring(0, 8)}...] entering cooldown for ${seconds}s`);
+        this.cooldowns.set(key, Date.now() + seconds * 1000);
+        this.rotate();
+    }
+
+    rotate() {
+        this.currentIndex = (this.currentIndex + 1) % this.keys.length;
+    }
+}
+
+const keyManager = new KeyManager(geminiKeys);
 
 async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
-    const activeKey = customKey || geminiKey;
-    const genAI = new GoogleGenerativeAI(activeKey);
     let lastError = null;
 
     for (let attempt = 1; attempt <= retryCount; attempt++) {
+        // 🟢 優先選用可用金鑰
+        const activeKey = customKey || keyManager.getNextAvailableKey();
+        const genAI = new GoogleGenerativeAI(activeKey);
+
         for (const modelName of modelCandidates) {
             try {
                 const config = {
@@ -123,7 +169,6 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                     }
                 };
 
-                // 🟢 v4.5.0: 導入原生 JSON Schema
                 if (isJson) {
                     config.generationConfig.responseSchema = reportSchema;
                 }
@@ -141,8 +186,13 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                 const isRateLimit = e.message && (e.message.includes("429") || e.message.includes("Too Many Requests"));
 
                 if (isRateLimit) {
-                    console.warn(`⏳ ${modelName} Rate Limit (429). Waiting 10s...`);
-                    await sleep(10000);
+                    console.warn(`⏳ ${modelName} Rate Limit (429) detected.`);
+                    if (!customKey) {
+                        keyManager.markCooldown(activeKey, 60); // 標記該金鑰冷卻
+                        break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
+                    } else {
+                        await sleep(10000);
+                    }
                 } else {
                     console.warn(`⚠️ ${modelName} Error: ${e.message}`);
                 }
@@ -150,13 +200,13 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
         }
 
         if (attempt < retryCount) {
-            const waitTime = 3000 * Math.pow(2, attempt - 1);
-            console.log(`⏳ API Retry ${attempt}/${retryCount}, waiting ${waitTime}ms...`);
+            const waitTime = 2000;
+            console.log(` API Retry ${attempt}/${retryCount}...`);
             await sleep(waitTime);
         }
     }
 
-    const finalErrorMsg = `AI 模型全數失敗 (Retry: ${retryCount})\nLast Error: ${lastError ? lastError.message : "Unknown"}`;
+    const finalErrorMsg = `AI 模型全數失敗 (使用金鑰池仍無法完成任務)\nLast Error: ${lastError ? lastError.message : "Unknown"}`;
     console.error(`❌ ${finalErrorMsg}`);
     await sendDiscordError(finalErrorMsg);
     throw new Error(finalErrorMsg);
@@ -166,8 +216,14 @@ function getPersona(lastScore) {
     return "你是一位【AI 戰術執行官】(AI Tactical Operator)。你的語氣冷靜、極簡、數據導向。嚴禁使用任何「投資顧問」或「投顧老師」的花哨術語（如：穩健獲利、入袋為安、帶你上天堂等）。你只提供冷酷的戰術指令與風險解析。";
 }
 
-async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '', techData = null) {
-    const blob = newsData.map((n, i) => {
+async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '', techData = null, mode = 'deep') {
+    // 🟢 v10.0.0: 分流處理邏輯
+    const isLite = mode === 'lite';
+
+    const blob = newsData.slice(0, isLite ? 10 : 50).map((n, i) => {
+        // Lite 模式只傳標題與來源，省下大量 Token
+        if (isLite) return `[ID:${i}] [來源: ${n.source}] ${n.title}`;
+
         const content = n.content || n.title || "無內文";
         return `[ID:${i}] [來源: ${n.source}] ${n.title}\n${content.substring(0, 1000)}...`;
     }).join('\n\n---\n\n');
@@ -184,27 +240,29 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0, marketDat
 - **策略指令**: 請結合以上技術指標與新聞情緒，在報告中給予具體的應對建議（如：建議觀望、分批加碼、減碼）。`;
     }
 
+    const taskTypePrompt = isLite
+        ? `⚡ **輕量任務 (Lite Mode)**：目前的分析重點在於「快節奏行情快照」。請快速掃描標題與指標，給出精簡的當前情緒與戰術判斷，摘要部分可保留適中長度。`
+        : `🧠 **深度任務 (Deep Mode)**：此為正式日報分析。請進行全方位的深度挖掘，分析新聞脈絡、實體關聯與長期戰略影響。`;
+
     // 🟢 緊急模式與技術分析聯動指令
     const emergencyPrompt = isEmergency
-        ? `🚨 **緊急報警追蹤**：目前系統監測到 **${targetName}** 出現重大異動！請從以下新聞中，特別針對該標的進行深度挖掘，分析其波動原因、市場情緒，並評估對大盤的後續影響。`
+        ? `🚨 **緊急報警追蹤**：目前系統監測到 **${targetName}** 出現重大異動！請從以下新聞中，特別針對該標的進行深度挖掘。`
         : "";
 
     const contextPrompt = lastSummary
-        ? `🔍 **增量分析**：昨日重點為「${lastSummary.substring(0, 300)}...」。請比較今日變化。`
+        ? `🔍 **增量分析**：昨日重點為「${lastSummary.substring(0, 300)}...」。`
         : `🔍 **初始分析**：建立基準。`;
 
     // 注入行情數據
     const marketPrompt = marketData ? marketData : "";
 
     const prompt = `${persona}
-請閱讀新聞並產出深度決策報告。請務必依據 schema 格式精確回傳。
+${taskTypePrompt}
+請讀取資料產出報告。請務必依據 schema 格式回傳。
 
 ${emergencyPrompt}
-
 ${technicalPrompt}
-
-${marketPrompt}
-
+${marketData ? marketData : ""}
 ${contextPrompt}
 
 **欄位說明補充**：
@@ -213,25 +271,22 @@ ${contextPrompt}
 - summary: 請使用 HTML 格式，包含重點標註與行情對齊分析。
 
 **核心任務**：
-1. **events**: 
-   - 請從所有新聞中歸納出 3-5 個「重大市場趨勢事件」。每個事件需包含一個有力標題、一段核心解析、對市場的影響評估，以及對應的新聞 ID 列表。即使新聞很多，也請精確合併。
-
-2. **relations**: 
-   - 請從大盤趨勢與新聞脈絡中，識別出實體間的「動態關聯」(供應鏈、競爭、政策影響等)。格式為 {from, to, type}。
-
-3. **tactical_advice (v9.2.1 戰術執行版)**:
-   - **長期核心資產方針**: 標的 \`0050.TW\` 與 \`2330.TW\` 為「10年長期持有」，除非新聞顯示公司基本面徹底瓦解，否則不建議「清倉」。
-   - **危機處理 (Long Accumulation)**: 當 RSI < 30 或情緒極度悲觀時，優先評估是否給予「戰術性加碼」指令。
-   - **避險指令 (Gold Hedge)**: 若市場系統性風險爆發 (股、幣雙跌)，請偵測黃金期貨 (GC=F) 走勢，評估是否建議資金轉入黃金避險。
-   - **禁用話術**: 絕對禁止使用投顧老師的語氣。改用「指令：[內容]」、「依據：[數據]」、「倉位：[比例]」等直白格式。
+1. **events**: 歸納出「重大市場趨勢事件」。
+2. **relations**: 識別實體間的動態關聯。
+3. **tactical_advice (v10.0.0 分流版)**:
+   - **長期核心資產方針**: 標的 \`0050.TW\` 與 \`2330.TW\` 為「10年長期持有」。
+   - **危機處理**: 當 RSI < 30 或情緒極度悲觀時，評估「戰術性加碼」。
+   - **避險指令**: 若風險爆發，偵測黃金期貨 (GC=F) 走勢。
+   - **禁用話術**: 絕對禁止使用投顧老師語氣。
    - **position_size**: 請給出具體的比例建議 (如：建議動用 20% 現金儲備進場/轉入黃金)。
    - **confidence**: 必須綜合基本面與技術面的背離情況給分。
 
-新聞資料：
+新聞資料 (${isLite ? '標題模式' : '內文模式'})：
 ${blob}
 `;
 
-    return await callGemini(prompt, true);
+    const finalKey = isLite ? null : geminiStrategicKey;
+    return await callGemini(prompt, true, finalKey);
 }
 
 async function getWeeklySummary(newsData) {

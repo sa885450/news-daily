@@ -6,8 +6,13 @@ const rootDir = path.resolve(__dirname, '../../');
 module.exports = {
     // API Keys
     geminiKey: process.env.GEMINI_API_KEY,
+    geminiKeys: (process.env.GEMINI_KEY_POOL || process.env.GEMINI_API_KEY || "").split(/[,,;]/).map(k => k.trim()).filter(k => k),
+    // 🟢 v10.0.0: 深度戰略專用金鑰 (Deep Mode)
+    geminiStrategicKey: process.env.GEMINI_STRATEGIC_KEY || process.env.GEMINI_API_KEY,
     // 🟢 新增：週報專用金鑰 (若未設定，則 fallback 回主金鑰)
     geminiWeeklyKey: process.env.GEMINI_WEEKLY_API_KEY || process.env.GEMINI_API_KEY,
+    // 🟢 v11.1.0: 戰術報告標的配置 (從環境變數讀取，或使用預設)
+    tacticalSymbols: (process.env.TACTICAL_SYMBOLS || '2330.TW,0050.TW,BTC-USD,GC=F'),
     discordWebhook: process.env.DISCORD_WEBHOOK_URL,
     discordAlertWebhook: process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
 
@@ -35,6 +40,7 @@ module.exports = {
     // 路徑設定
     gitPath: process.env.GIT_EXECUTABLE_PATH || '"C:\\Program Files\\Git\\cmd\\git.exe"',
     dbPath: path.join(rootDir, 'data', 'news_bot.db'),
+    crawlerDbPath: path.join(rootDir, 'data', 'crawler.db'),
     publicDir: path.join(rootDir, 'public'),
 
     // GitHub Pages

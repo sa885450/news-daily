@@ -9,6 +9,7 @@ const { pushToGitHub } = require('./lib/git');
 const db = require('./lib/db');
 const config = require('./lib/config');
 const { analyze7DayKeywords } = require('./lib/keywords');
+const { rankAndFilter } = require('./lib/filter'); // 🟢 v10.1.0 過濾官
 const stringSimilarity = require('string-similarity');
 const cron = require('node-cron');
 const { version } = require('../package.json');
@@ -169,8 +170,12 @@ async function runTask() {
             const marketSnapshot = await getMarketSnapshot();
             const marketDataStr = formatSnapshotForAI(marketSnapshot);
 
-            // 🟢 AI 分析 (傳入行情數據、緊急模式參數、技術面數據)
-            const aiResult = await getSummary(allMatchedNews.slice(0, 50), lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData);
+            // 🟢 v10.1.0: 啟動過濾官模式，從符合關鍵字的新聞中選出最精銳的 15 則餵給 AI
+            const eliteNews = rankAndFilter(allMatchedNews, 15);
+            log('🕵️', `過濾官已過濾: 共 ${allMatchedNews.length} 則 -> 選出精銳 ${eliteNews.length} 則`);
+
+            // 🟢 AI 分析 (傳入精銳新聞、行情數據、緊急模式參數、技術面數據，明確指定 deep 模式)
+            const aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
             log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
 
             // 更新分類
