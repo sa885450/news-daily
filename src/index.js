@@ -282,45 +282,86 @@ ${cleanSummary}
             pushToGitHub();
             log('✅', "任務圓滿完成！");
 
-            // 🟢 v13.0.0: 金十數據同步 (驗證先行後正式接通)
-            if (config.enableJin10) {
-                try {
-                    const jin10 = require('./lib/jin10');
-                    const flashNews = await jin10.fetchFlashNews(5);
-                    for (const news of flashNews) {
-                        if (news.isImportant) {
-                            log('⭐', `[金十精華] ${news.content.substring(0, 100)}`);
-
-                            // 🟢 v13.0.2: 存入資料庫以便 monitor.js 關聯分析
-                            db.saveArticle(
-                                `[金十] ${news.content.substring(0, 50)}...`,
-                                news.link || `https://www.jin10.com/${news.id}`,
-                                '金十數據',
-                                '即時快訊',
-                                news.content
-                            );
-
-                            if (config.discordMonitorWebhook) {
-                                await sendDiscordEmbed({
-                                    title: "🌍 金十全球實時快訊 (重要)",
-                                    description: news.content,
-                                    color: 15844367, // 金色
-                                    footer: { text: "金十數據 | 實時偵測系統 v13.0.0" },
-                                    timestamp: new Date().toISOString()
-                                }, config.discordMonitorWebhook);
-                            }
-                        }
-                    }
-                    await jin10.close(); // 釋放瀏覽器資源
-                } catch (je) {
-                    log('❌', `金十整合執行失敗: ${je.message}`);
-                }
-            }
-
         } catch (err) { log('❌', `處理失敗: ${err.message}`); }
     } else {
-        log('💤', "無新新聞。");
+        log('💤', "無新新聞增量，僅執行金十同步與全景報表更新。");
     }
+
+    // 🟢 v13.1.2: 金十數據同步 (移出增量判定區塊，使其獨立運算)
+    if (config.enableJin10) {
+        try {
+            const jin10 = require('./lib/jin10');
+            const flashNews = await jin10.fetchFlashNews(5);
+            for (const news of flashNews) {
+                // 🟢 v13.1.2: 不論重要與否，全部存入資料庫以供前端「2小時全景報表」展現多元來源
+                db.saveArticle(
+                    `[金十] ${news.content.substring(0, 50)}...`,
+                    news.link || `https://www.jin10.com/${news.id}`,
+                    '金十數據',
+                    '即時快訊',
+                    news.content
+                );
+
+                if (news.isImportant) {
+                    log('⭐', `[金十重要] ${news.content.substring(0, 100)}`);
+                    if (config.discordMonitorWebhook) {
+                        await sendDiscordEmbed({
+                            title: "🌍 金十全球實時快訊 (重要)",
+                            description: news.content,
+                            color: 15844367, // 金色
+                            footer: { text: "金十數據 | 實時偵測系統 v13.1.2" },
+                            timestamp: new Date().toISOString()
+                        }, config.discordMonitorWebhook);
+                    }
+                }
+            }
+            await jin10.close();
+        } catch (je) {
+            log('❌', `金十整合執行失敗: ${je.message}`);
+        }
+    }
+
+    // 🟢 v13.1.2: 即便無新新聞，也定期更新前端「2小時全景報表」
+    try {
+        const historyNews = db.getRecentArticles(2, 150);
+        if (historyNews && historyNews.length > 0) {
+            const displayKeywordStats = calculateKeywordStats(historyNews);
+            const clusteredNews = [];
+            const processedIndices = new Set();
+            const stringSimilarity = require('string-similarity');
+
+            for (let i = 0; i < historyNews.length; i++) {
+                if (processedIndices.has(i)) continue;
+                const mainNews = { ...historyNews[i], relatedArticles: [] };
+                processedIndices.add(i);
+                for (let j = i + 1; j < historyNews.length; j++) {
+                    if (processedIndices.has(j)) continue;
+                    if (stringSimilarity.compareTwoStrings(historyNews[i].title, historyNews[j].title) > 0.7) {
+                        mainNews.relatedArticles.push({
+                            title: historyNews[j].title,
+                            url: historyNews[j].url,
+                            source: historyNews[j].source,
+                            thumbnail: historyNews[j].thumbnail
+                        });
+                        processedIndices.add(j);
+                    }
+                }
+                clusteredNews.push(mainNews);
+            }
+            // 獲取最新的行情快照與上一份 AI 摘要
+            const marketSnapshot = await getMarketSnapshot();
+            const lastStats = db.getLastStats();
+            const fakeAiResult = {
+                sentiment_score: lastStats?.sentiment_score || 0,
+                summary: (lastStats?.summary || "") + "<p><small><i>(註：本時段無新新聞，顯示為歷史快照庫存)</i></small></p>"
+            };
+            generateHTMLReport(fakeAiResult, clusteredNews, displayKeywordStats, db.getRecentStats(7), analyze7DayKeywords(7), [], [], marketSnapshot);
+            pushToGitHub();
+        }
+    } catch (ue) {
+        log('⚠️', `全景報表更新失敗: ${ue.message}`);
+    }
+
     isTaskRunning = false;
 }
 
