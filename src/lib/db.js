@@ -18,15 +18,19 @@ db.exec(`
     date TEXT PRIMARY KEY, 
     sentiment_score REAL,
     summary TEXT,
-    sector_stats TEXT, -- JSON format: { "tech": 0.5, "finance": 0.2 ... }
+    sector_stats TEXT, -- JSON format
+    dimensions TEXT,   -- 🟢 v13.3.0 新增: 五力分析 JSON
+    events TEXT,       -- 🟢 v13.3.0 新增: 重大事件 JSON
+    relations TEXT,    -- 🟢 v13.3.0 新增: 知識圖譜 JSON
+    tactical_advice TEXT, -- 🟢 v13.3.0 新增: 戰術建議 JSON
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
 `);
 
-// 🟢 Migration: Add sector_stats column (v5.x legacy)
-try {
-  db.prepare('ALTER TABLE daily_stats ADD COLUMN sector_stats TEXT').run();
-} catch (e) { }
+// 🟢 Migration: v13.3.0 新增數據持久化欄位
+['sector_stats', 'dimensions', 'events', 'relations', 'tactical_advice'].forEach(col => {
+  try { db.prepare(`ALTER TABLE daily_stats ADD COLUMN ${col} TEXT`).run(); } catch (e) { }
+});
 
 // 🟢 Migration: Add content column (v5.x legacy)
 try {
@@ -51,9 +55,20 @@ const insertArticleStmt = db.prepare(`
     thumbnail = CASE WHEN excluded.thumbnail IS NOT NULL THEN excluded.thumbnail ELSE articles.thumbnail END,
     category = CASE WHEN excluded.category != '其他' THEN excluded.category ELSE articles.category END
 `);
-const insertStatsStmt = db.prepare(`INSERT INTO daily_stats (date, sentiment_score, summary, sector_stats) VALUES (?, ?, ?, ?) ON CONFLICT(date) DO UPDATE SET sentiment_score = excluded.sentiment_score, summary = excluded.summary, sector_stats = excluded.sector_stats`);
+const insertStatsStmt = db.prepare(`
+  INSERT INTO daily_stats (date, sentiment_score, summary, sector_stats, dimensions, events, relations, tactical_advice) 
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?) 
+  ON CONFLICT(date) DO UPDATE SET 
+    sentiment_score = excluded.sentiment_score, 
+    summary = excluded.summary, 
+    sector_stats = excluded.sector_stats,
+    dimensions = excluded.dimensions,
+    events = excluded.events,
+    relations = excluded.relations,
+    tactical_advice = excluded.tactical_advice
+`);
 const getRecentStatsStmt = db.prepare('SELECT date, sentiment_score, sector_stats FROM daily_stats ORDER BY date ASC LIMIT ?');
-const getLastSummaryStmt = db.prepare('SELECT summary, sentiment_score FROM daily_stats ORDER BY date DESC LIMIT 1');
+const getLastSummaryStmt = db.prepare('SELECT * FROM daily_stats ORDER BY date DESC LIMIT 1');
 
 // ... (Rest of existing statements)
 
@@ -72,15 +87,35 @@ module.exports = {
   saveArticle: (title, url, source, category = '其他', content = null, thumbnail = null) => {
     try { insertArticleStmt.run(title, url, source, category, content, thumbnail); } catch (e) { }
   },
-  saveDailyStats: (score, summary, sectorStats = null) => {
+  saveDailyStats: (score, summary, sectorStats = null, dimensions = null, events = null, relations = null, tacticalAdvice = null) => {
     const today = new Date().toISOString().split('T')[0];
-    insertStatsStmt.run(today, score, summary, sectorStats ? JSON.stringify(sectorStats) : null);
+    insertStatsStmt.run(
+      today,
+      score,
+      summary,
+      sectorStats ? JSON.stringify(sectorStats) : null,
+      dimensions ? JSON.stringify(dimensions) : null,
+      events ? JSON.stringify(events) : null,
+      relations ? JSON.stringify(relations) : null,
+      tacticalAdvice ? JSON.stringify(tacticalAdvice) : null
+    );
   },
   getRecentStats: (days = 7) => getRecentStatsStmt.all(days).map(r => ({
     ...r,
     sector_stats: r.sector_stats ? JSON.parse(r.sector_stats) : null
   })),
-  getLastStats: () => getLastSummaryStmt.get(),
+  getLastStats: () => {
+    const row = getLastSummaryStmt.get();
+    if (!row) return null;
+    return {
+      ...row,
+      sector_stats: row.sector_stats ? JSON.parse(row.sector_stats) : null,
+      dimensions: row.dimensions ? JSON.parse(row.dimensions) : null,
+      events: row.events ? JSON.parse(row.events) : null,
+      relations: row.relations ? JSON.parse(row.relations) : null,
+      tactical_advice: row.tactical_advice ? JSON.parse(row.tactical_advice) : null
+    };
+  },
   getLastSummary: () => {
     const row = getLastSummaryStmt.get();
     return row ? row.summary : null;

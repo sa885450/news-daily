@@ -197,7 +197,15 @@ async function runTask() {
                 });
             }
 
-            db.saveDailyStats(aiResult.sentiment_score, aiResult.summary);
+            db.saveDailyStats(
+                aiResult.sentiment_score,
+                aiResult.summary,
+                aiResult.sector_stats,
+                aiResult.dimensions,
+                aiResult.events,
+                aiResult.relations,
+                aiResult.tactical_advice
+            );
             const recentStats = db.getRecentStats(7);
             const keywords7d = analyze7DayKeywords(7);
 
@@ -320,9 +328,11 @@ ${cleanSummary}
                 const aiResult = {
                     sentiment_score: lastStats?.sentiment_score || 0,
                     summary: (lastStats?.summary || "") + `<p><small><i>(註：本時段無新 RSS 新聞，但已匯入最新金十快訊。本報表為前次 AI 戰略分析之延續)</i></small></p>`,
-                    events: lastStats?.events ? JSON.parse(lastStats.events) : [],
-                    relations: lastStats?.relations ? JSON.parse(lastStats.relations) : [],
-                    tactical_advice: lastStats?.tactical_advice ? JSON.parse(lastStats.tactical_advice) : null
+                    dimensions: lastStats?.dimensions || null, // 🟢 v13.3.0 補全五力分析
+                    sector_stats: lastStats?.sector_stats || null, // 🟢 v13.3.0 補全板塊情緒
+                    events: lastStats?.events || [],
+                    relations: lastStats?.relations || [],
+                    tactical_advice: lastStats?.tactical_advice || null
                 };
 
                 generateHTMLReport(aiResult, clusteredNews, displayKeywordStats, db.getRecentStats(7), analyze7DayKeywords(7), aiResult.events, aiResult.relations, marketSnapshot);
