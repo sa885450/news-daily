@@ -16,7 +16,8 @@ function pushToGitHub() {
     log('📤', "正在執行 Git Push...");
 
     try {
-        execSync(`"${gitPath}" add "${dbPath}" "${publicDir}"`, { windowsHide: true, stdio: 'ignore' });
+        // v13.7.11 修復：不再寫死檔案名，改用 add . 讓 .gitignore 生效過濾掉 *.db，解決鎖定阻擋問題
+        execSync(`"${gitPath}" add .`, { windowsHide: true, stdio: 'ignore' });
         execSync(`"${gitPath}" commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`, { windowsHide: true, stdio: 'ignore' });
         execSync(`"${gitPath}" push origin main`, { windowsHide: true, stdio: 'ignore' });
         log('✅', 'Git Push 成功！網站已更新。');

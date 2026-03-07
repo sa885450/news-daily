@@ -22,6 +22,8 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.7.11 (主線系統排錯計畫 - System Fix) 🔧
+- **🔧 Git 鎖定修復**: 修正 `git.js` 寫死檔案路徑導致略過 `.gitignore` 規範的問題，根除 SQLite 資料庫 (`news_bot.db`) 在主線執行時阻礙 Git Push 的錯誤。
 ### v13.7.9 (熱修復 - Hotfix) 🩹
 - **🩹 系統修復**: 修復 v13.7.8 中 `getADRChange` 模組引入遺漏問題，恢復戰術報告正常生成。
 ### v13.7.8 (預期開盤價連動與攤平效率保護 - Smart Expectation) 🔮💰
