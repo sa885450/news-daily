@@ -226,10 +226,15 @@ function renderRadarChart() {
 
     if (radarChart) radarChart.destroy();
 
+    const labelMap = {
+        "Policy": "政策", "Liquidity": "資金", "Industry": "產業", "International": "國際", "Technology": "技術",
+        "政策": "政策", "資金": "資金", "產業": "產業", "國際": "國際", "技術": "技術"
+    };
+
     radarChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: Object.keys(dims),
+            labels: Object.keys(dims).map(k => labelMap[k] || k),
             datasets: [{
                 data: Object.values(dims),
                 backgroundColor: 'rgba(99, 102, 241, 0.2)',
@@ -256,10 +261,15 @@ function renderSectorChart() {
 
     const colors = Object.values(sectors).map(v => v >= 0 ? '#ef4444' : '#22c55e');
 
+    const labelMap = {
+        "Technology": "科技", "Finance": "金融", "Energy": "能源", "TradInd": "傳產", "Service": "服務", "Crypto": "加密",
+        "科技": "科技", "金融": "金融", "傳產": "傳產", "服務": "服務", "加密": "加密", "國際": "國際"
+    };
+
     sectorChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: Object.keys(sectors),
+            labels: Object.keys(sectors).map(k => labelMap[k] || k),
             datasets: [{
                 data: Object.values(sectors),
                 backgroundColor: colors,
@@ -378,14 +388,14 @@ function renderNewsPage(append = false) {
                 <div class="p-8 flex flex-col flex-grow">
                     <div class="flex items-center gap-2 mb-4">
                         <span class="px-3 py-1 ${categoryColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-sm">${news.category || '一般'}</span>
-                        <span class="px-3 py-1 ${sentimentColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-sm">${isBullish ? 'BULLISH' : 'BEARISH'}</span>
+                        <span class="px-3 py-1 ${sentimentColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-sm">${isBullish ? '看多' : '看空'}</span>
                         <span class="ml-auto text-[10px] font-bold text-slate-400 uppercase tracking-widest">${news.source} · ${news.timeStr || ''}</span>
                     </div>
                     <h3 class="text-xl font-black text-slate-800 dark:text-slate-100 mb-4 leading-tight">${news.title}</h3>
                     <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-4 mb-6 flex-grow leading-relaxed">${news.content || ''}</p>
                     <div class="mt-auto flex items-center justify-between pt-6 border-t border-slate-50 dark:border-slate-700">
                         <a href="${news.url}" target="_blank" class="text-indigo-600 dark:text-indigo-400 text-xs font-black uppercase tracking-widest hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                            READ SOURCE
+                            閱讀來源
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                         </a>
                     </div>
