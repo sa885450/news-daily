@@ -34,7 +34,7 @@ function formatAsEmbed(title, results, isNight = false) {
                 `支撐: 月線 \`${r.levels.A.toLocaleString()}\` / 季線 \`${r.levels.C.toLocaleString()}\``,
                 `🎯 **金字塔分層**: ${levelStr}`,
                 r.costInfo ? `⚖️ **加碼後新成本**: \`${r.costInfo.newBase.toLocaleString()}\`` : '',
-                `📝 診斷: *${r.evaluation.rationale}*`
+                `🤖 **智慧單指令**: \`設置 ${r.evaluation.orderPrice.toLocaleString()} 智慧單 (${r.evaluation.orderName})\``
             ].filter(l => l).join('\n'),
             inline: false
         });
@@ -61,28 +61,29 @@ function getTacticalGrade(tech, costInfo) {
     const levelC = ma60;
 
     let grade = 'B (觀望)';
-    let rationale = '目前處於區間波動，建議等待支撐位。';
+    let orderPrice = levelA;
+    let orderName = '層級 A:月線';
 
     if (price <= levelC) {
         grade = 'S (重錘)';
-        rationale = '股價已觸及季線「黃金坑」，長線無腦加碼區。';
+        orderPrice = levelC * 0.98; // 季線已破，往下 2% 找支撐點
+        orderName = '層級 C:季線下探';
     } else if (price <= levelB) {
         grade = 'A (撿寶)';
-        rationale = '月線超跌 5%，市場出現恐慌性甜甜價。';
+        orderPrice = levelC;
+        orderName = '層級 C:季線金位';
     } else if (price <= levelA) {
-        if (rsi < 45) {
-            grade = 'A+ (止跌)';
-            rationale = '回測月線且 RSI 低檔，止跌訊號觀察中。';
-        } else {
-            grade = 'A (回補)';
-            rationale = '觸及月線支撐，常態性分批回補點。';
-        }
-    } else if (price > levelA * 1.05) {
-        grade = 'C (警戒)';
-        rationale = '股價正乖離過大，嚴禁追高，靜待回測。';
+        grade = 'A (回補)';
+        orderPrice = levelB;
+        orderName = '層級 B:超跌 5%';
+    } else {
+        // 價格在月線上方，下單指令設在月線
+        grade = price > levelA * 1.05 ? 'C (警戒)' : 'B (觀望)';
+        orderPrice = levelA;
+        orderName = '層級 A:月線回測';
     }
 
-    return { grade, rationale, levels: { A: levelA, B: levelB, C: levelC } };
+    return { grade, orderPrice, orderName, levels: { A: levelA, B: levelB, C: levelC } };
 }
 
 async function generateTacticalReport() {
