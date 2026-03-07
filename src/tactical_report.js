@@ -4,53 +4,53 @@ const config = require('./lib/config');
 const cron = require('node-cron');
 
 /**
- * 🌕 v13.5.0: 戰術晚報與全面表格化重構
- * 1. 實現 23:00 的深夜發報 (納入美股開盤分析)
- * 2. 實現台股/全球股分流發送且全表格化
+ * 🛡️ v13.7.4: 戰術報告視覺大改造 (Embed 格式)
+ * 1. 徹底捨棄不穩定的 Markdown/ASCII 表格
+ * 2. 採用 Discord Embed (富文本卡片) 渲染
+ * 3. 實作晨晚報動態色彩分流
  */
 
-// 🟢 輔助函數：將資料格式化為 Markdown 表格
-// 🟢 輔助函數：將資料格式化為 Discord ASCII 表格 (v13.7.3)
-function formatAsTable(title, results, isNight = false) {
-    let output = `### ${title}\n`;
-    output += isNight ? `> *🌙 晚報：次日智慧單整備 (分析點：美股開盤趨勢)*\n\n` : `> *☀️ 晨報：盤前戰術最後校準*\n\n`;
+// 🟢 輔助函數：將資料格式化為 Discord Embed 戰術卡片 (v13.7.4)
+function formatAsEmbed(title, results, isNight = false) {
+    const embed = {
+        title: `🛡️ ${title}`,
+        description: isNight ? "🌙 **晚報：次日智慧單整備** (美股開盤趨勢)" : "☀️ **晨報：盤前戰術最後校準**",
+        color: isNight ? 3447003 : 15844367, // 深藍 (夜) / 金色 (晨)
+        fields: [],
+        timestamp: new Date().toISOString(),
+        footer: { text: "智捷戰術核心 v13.7.4" }
+    };
 
-    // 定義欄位與寬度 (固定寬度以利對齊)
-    const cols = [
-        { label: '標的', width: 10 },
-        { label: '現價', width: 10 },
-        { label: '月線(A)', width: 10 },
-        { label: '季線(C)', width: 10 },
-        { label: '評級', width: 6 }
-    ];
-
-    let table = '```\n';
-
-    // 1. 標頭
-    table += cols.map(c => c.label.padEnd(c.width)).join(' | ') + '\n';
-    table += cols.map(c => '-'.repeat(c.width)).join('-|-') + '\n';
-
-    // 2. 資料行
+    // 1. 各標的戰術詳細欄位
     results.forEach(r => {
-        const row = [
-            r.name.substring(0, 10).padEnd(10),
-            r.price.toLocaleString().padEnd(10),
-            r.levels.A.toLocaleString().padEnd(10),
-            r.levels.C.toLocaleString().padEnd(10),
-            r.evaluation.grade.split(' ')[0].padEnd(6)
-        ];
-        table += row.join(' | ') + '\n';
+        const trendIcon = r.price > r.levels.A ? '📈' : '📉';
+        const pnlStr = r.costInfo ? ` (持倉損益: ${r.costInfo.pnl}%)` : '';
+        const levelStr = `1️⃣月:**${r.levels.A.toLocaleString()}** | 2️⃣跌:**${r.levels.B.toLocaleString()}** | 3️⃣季:**${r.levels.C.toLocaleString()}**`;
+
+        embed.fields.push({
+            name: `🔹 **${r.name}** [${r.evaluation.grade}]`,
+            value: [
+                `現價: \`${r.price.toLocaleString()}\` ${trendIcon}${pnlStr}`,
+                `支撐: 月線 \`${r.levels.A.toLocaleString()}\` / 季線 \`${r.levels.C.toLocaleString()}\``,
+                `🎯 **金字塔分層**: ${levelStr}`,
+                r.costInfo ? `⚖️ **加碼後新成本**: \`${r.costInfo.newBase.toLocaleString()}\`` : '',
+                `📝 診斷: *${r.evaluation.rationale}*`
+            ].filter(l => l).join('\n'),
+            inline: false
+        });
     });
 
-    // 3. 補充三層金字塔詳情 (避免表格過寬)
-    table += '\n【三層金字塔詳情】\n';
-    results.forEach(r => {
-        const costStr = r.costInfo ? ` (新成本預估: ${r.costInfo.newBase.toLocaleString()})` : '';
-        table += `${r.name.padEnd(10)}: 1:${r.levels.A.toLocaleString()} / 2:${r.levels.B.toLocaleString()} / 3:${r.levels.C.toLocaleString()}${costStr}\n`;
+    // 2. 盤前劇本演練
+    embed.fields.push({
+        name: "🎭 **盤前量化劇本演練**",
+        value: [
+            "🟢 **強勢回檔**: 開盤 > 月線 → 取消低位單，月線防守。",
+            "🟡 **正常修正**: 開盤 介於 MA20~B 點 → 維持佈單。",
+            "🔴 **恐慌破位**: 開盤 < 季線 → 下修買點至 C 點金位。"
+        ].join('\n')
     });
 
-    table += '```\n';
-    return output + table;
+    return embed;
 }
 
 // 🟢 核心邏輯：三層金字塔評級系統 (v13.7.0)
@@ -85,19 +85,9 @@ function getTacticalGrade(tech, costInfo) {
     return { grade, rationale, levels: { A: levelA, B: levelB, C: levelC } };
 }
 
-function generatePlaybook(results) {
-    let playbook = `\n### 🎭 盤前劇本演練 (量化情境對策)\n`;
-    playbook += `| 劇本 | 條件設定 | 建議動作 |\n`;
-    playbook += `| :--- | :--- | :--- |\n`;
-    playbook += `| **強勢回檔** | 開盤 > 月線 (MA20) | 取消低位智慧單，改為月線附近防守進場。 |\n`;
-    playbook += `| **正常修正** | 開盤 介於 MA20 ~ MA20*0.95 | 維持原定金字塔 第一層/第二層 佈單。 |\n`;
-    playbook += `| **恐慌破位** | 開盤 < 季線 (MA60) | **全面下修買點 A 到 C**，季線下方才是真正的重錘區。 |\n\n`;
-    return playbook;
-}
-
 async function generateTacticalReport() {
     const isNight = new Date().getHours() >= 21;
-    log('🌅', `開始產生【全面表格化】戰術報告 (v13.5.0) [時段: ${isNight ? '深夜' : '晨間'}]...`);
+    log('🌅', `開始產生【戰術卡片】報告 (v13.7.4) [時段: ${isNight ? '深夜' : '晨間'}]...`);
 
     const symbols = config.tacticalSymbols.split(',').map(s => s.trim());
     const myCosts = config.myCosts;
@@ -140,22 +130,20 @@ async function generateTacticalReport() {
         const twStocks = activeResults.filter(r => r.name.endsWith('.TW'));
         const globalAssets = activeResults.filter(r => !r.name.endsWith('.TW'));
 
-        // 🟢 1. 發送台股戰報
+        // 🟢 1. 發送台股戰報 Embed
         if (twStocks.length > 0) {
-            let twTable = formatAsTable("🛡️ 台股戰術特快 (TW)", twStocks, isNight);
-            twTable += generatePlaybook(twStocks);
-            await sendDiscord(twTable, config.discordTacticalWebhook);
+            const twEmbed = formatAsEmbed("台股戰術特快 (TW)", twStocks, isNight);
+            await sendDiscordEmbed(twEmbed, config.discordTacticalWebhook);
             await sleep(1000);
         }
 
-        // 🟢 2. 發送全球/美股/加密貨幣戰報
+        // 🟢 2. 發送全球/美股戰報 Embed
         if (globalAssets.length > 0) {
-            let globalTable = formatAsTable("🌍 全球資產戰報 (Global)", globalAssets, isNight);
-            globalTable += generatePlaybook(globalAssets);
-            await sendDiscord(globalTable, config.discordTacticalWebhook);
+            const globalEmbed = formatAsEmbed("全球資產戰報 (Global)", globalAssets, isNight);
+            await sendDiscordEmbed(globalEmbed, config.discordTacticalWebhook);
         }
 
-        log('✅', '【全面表格化】戰術報告已分發。');
+        log('✅', '【戰術卡片】報告已分發。');
 
     } catch (e) {
         log('❌', `戰術報告產生失敗: ${e.message}`);
