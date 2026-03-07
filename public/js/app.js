@@ -1,5 +1,6 @@
 /**
- * v6.0.0: News Daily CSR Core (JavaScript)
+ * v13.5.4: News Daily CSR Core (JavaScript)
+ * 支援市場走馬燈、AI 戰術建議與多維度圖表
  */
 
 let appData = null;
@@ -9,600 +10,444 @@ let displayedCount = 0;
 const PAGE_SIZE = 12;
 let speaking = false;
 
-// 🟢 初始化入口
+// 🟢 v13.5.4: 初始化
 async function init() {
-    // 🟢 v7.0.0: 增加本地協定檢查 (解決使用者直接點擊 index.html 的困擾)
-    if (window.location.protocol === 'file:') {
-        const errorMsg = `
-            <div class="bg-amber-50 border-l-4 border-amber-400 p-4 mb-6">
-                <div class="flex">
-                    <div class="flex-shrink-0"><span class="text-amber-400">⚠️</span></div>
-                    <div class="ml-3">
-                        <p class="text-sm text-amber-700 font-bold">本地存取限制</p>
-                        <p class="text-xs text-amber-600">由於瀏覽器安全限制 (CORS)，請在終端機執行 <b>npm run ui</b> 啟動服務後，再瀏覽 <b>http://localhost:3003</b>。</p>
-                    </div>
-                </div>
-            </div>`;
-        document.getElementById('summary-content').innerHTML = errorMsg;
-        document.getElementById('report-date').textContent = "本地協定受限";
-    }
-
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('data.json?t=' + Date.now());
         appData = await response.json();
 
-        renderHeader();
-        renderMarketTicker(); // 🟢 v8.4.0
-        renderSummary();
-        renderCharts();
-        renderKeywordsCloud();
-        renderCategories();
-        renderTimeline(); // 🟢 v7.2.0
-        renderGraph();    // 🟢 v8.0.0
-        renderNewsPage();
-        startRealtimeTicker(); // 🟢 v8.6.0: 啟動實時更新定時器
+        if (!appData) throw new Error("Data load failed");
 
-        // 初始主題
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-            updateCharts();
-        }
+        // 更新基本資訊
+        document.getElementById('report-date').textContent = `${appData.date} · 更新於 ${appData.time || '--:--'}`;
+
+        // 渲染走馬燈
+        renderTicker();
+
+        // 渲染 AI 實體標籤
+        renderAIEntities();
+
+        // 渲染 AI 摘要與戰術建議
+        renderSummary();
+
+        // 渲染分類按鈕
+        renderCategories();
+
+        // 渲染圖表
+        renderCharts();
+
+        // 渲染知識圖譜
+        renderKnowledgeGraph();
+
+        // 初始渲染新聞
+        renderNewsPage();
+
+        // 監聽滾動以支援加載更多 (可選)
     } catch (e) {
-        console.error("Initialization Failed:", e);
-        document.getElementById('summary-content').innerHTML = `❌ 資料載入失敗，請確認 <b>data.json</b> 是否存在且格式正確。`;
+        console.error("Init Error:", e);
+        document.getElementById('summary-content').innerHTML = `
+            <div class="p-4 bg-red-50 text-red-600 rounded-2xl border border-red-100">
+                <h3 class="font-bold">數據載入失敗</h3>
+                <p class="text-sm">${e.message}</p>
+            </div>
+        `;
     }
 }
 
-// --- 渲染元件 ---
+// 🟢 v8.4.0: 渲染市場走馬燈
+function renderTicker() {
+    const ticker = document.getElementById('market-ticker');
+    const content = document.getElementById('ticker-content');
+    if (!appData.market_snapshot || appData.market_snapshot.length === 0) {
+        ticker.classList.add('hidden');
+        return;
+    }
 
-function renderHeader() {
-    const d = new Date(appData.updateTime);
-    const datePart = d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
-    const timePart = d.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false });
+    ticker.classList.remove('hidden');
+    const items = appData.market_snapshot.map(item => {
+        const isUp = item.change && !item.change.startsWith('-');
+        const color = isUp ? 'text-red-500' : 'text-green-500';
+        return `
+            <div class="flex items-center gap-2 px-6 border-r border-slate-100 dark:border-slate-800 whitespace-nowrap cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors py-1" onclick="openChart('${item.symbol}')">
+                <span class="font-black text-slate-800 dark:text-slate-200">${item.name}</span>
+                <span class="font-mono font-bold ${color}">${item.price}</span>
+                <span class="text-[10px] font-bold ${color}">${item.change || ''}</span>
+            </div>
+        `;
+    }).join('');
 
-    const dateEl = document.getElementById('report-date');
-    if (dateEl) dateEl.textContent = `${datePart} ${timePart}`;
+    // 複製兩份以實現無縫滾動
+    content.innerHTML = items + items;
+}
 
-    // AI 實體
+// 🟢 v2.4.0: 渲染 AI 實體
+function renderAIEntities() {
     const container = document.getElementById('ai-entities');
-    if (!container) return;
-    const entities = appData.aiResult.entities || [];
-    container.innerHTML = entities.map(e => `
-        <button onclick="${e.ticker ? `openChartModal('${e.ticker}', '${e.name}')` : `searchKeyword('${e.name}')`}"
-            class="px-3 py-1 bg-white dark:bg-slate-800 border-indigo-100 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 border rounded-md text-sm font-bold hover:opacity-80 transition-colors shadow-sm">
-            #${e.name}${e.ticker ? `<span class="text-xs ml-1 opacity-70">(${e.ticker})</span>` : ''}
-        </button>
+    const entities = appData.aiResult?.entities || [];
+    if (entities.length === 0) return;
+
+    container.innerHTML = entities.slice(0, 5).map(e => `
+        <span onclick="handleSearch('${e}')" class="px-3 py-1 bg-white/10 hover:bg-white/30 rounded-full text-xs font-bold cursor-pointer transition-all border border-white/10">
+            #${e}
+        </span>
     `).join('');
 }
 
-function renderMarketTicker() {
-    const container = document.getElementById('market-ticker');
-    const snapshot = appData.market_snapshot;
-    if (!snapshot) {
-        container.classList.add('hidden');
-        return;
-    }
-
-    const items = [
-        ...(Object.values(snapshot.traditional || {})),
-        ...(Object.values(snapshot.crypto || {}))
-    ];
-
-    if (items.length === 0) {
-        container.classList.add('hidden');
-        return;
-    }
-
-    container.classList.remove('hidden');
-    container.innerHTML = items.map(item => {
-        const isUp = item.change > 0;
-        const colorClass = isUp ? 'text-red-500' : (item.change < 0 ? 'text-green-500' : 'text-slate-400');
-        const bgColorClass = isUp ? 'bg-red-50 dark:bg-red-900/10' : (item.change < 0 ? 'bg-green-50 dark:bg-green-900/10' : 'bg-slate-50 dark:bg-slate-800/50');
-        const arrow = isUp ? '▲' : (item.change < 0 ? '▼' : '▬');
-
-        return `
-            <div class="flex-shrink-0 flex items-center gap-3 px-4 py-2 ${bgColorClass} rounded-xl border border-white/50 dark:border-slate-700/50 shadow-sm transition-transform hover:scale-105 cursor-default group">
-                <div class="flex flex-col">
-                    <span class="text-[10px] font-black text-slate-400 uppercase tracking-tighter">${item.name}</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="text-sm font-bold text-slate-700 dark:text-slate-200">${typeof item.price === 'number' ? item.price.toLocaleString() : item.price}</span>
-                        <span class="text-[11px] font-black ${colorClass}">${arrow} ${Math.abs(item.change).toFixed(2)}%</span>
-                    </div>
-                </div>
-            </div>
-        `;
-    }).join('');
-}
-
-// 🟢 v8.6.0: 瀏覽器端實時行情更新
-function startRealtimeTicker() {
-    // 每 2 分鐘刷新一次
-    setInterval(async () => {
-        console.log('🔄 正在同步最新市場報價 (Client-side)...');
-        const updatedCrypto = await fetchExternalPrices();
-        if (updatedCrypto && appData.market_snapshot) {
-            // 合併數據
-            appData.market_snapshot.crypto = {
-                ...appData.market_snapshot.crypto,
-                ...updatedCrypto
-            };
-            renderMarketTicker();
-            console.log('✨ 報價已更新');
-        }
-    }, 120000);
-}
-
-async function fetchExternalPrices() {
-    try {
-        const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,binancecoin&vs_currencies=usd&include_24hr_change=true');
-        const data = await res.json();
-        return {
-            btc: { name: 'BTC', price: data.bitcoin.usd, change: data.bitcoin.usd_24h_change },
-            eth: { name: 'ETH', price: data.ethereum.usd, change: data.ethereum.usd_24h_change },
-            sol: { name: 'SOL', price: data.solana.usd, change: data.solana.usd_24h_change },
-            bnb: { name: 'BNB', price: data.binancecoin.usd, change: data.binancecoin.usd_24h_change }
-        };
-    } catch (e) {
-        console.warn('行情刷新失敗:', e);
-        return null;
-    }
-}
-
+// 🟢 v13.5.0: 渲染 AI 摘要與戰術建議
 function renderSummary() {
-    const content = appData.aiResult.summary || "無摘要內容";
-    document.getElementById('summary-content').innerHTML = content.replace(/\n/g, '<br>');
+    const summaryBox = document.getElementById('summary-content');
+    const badge = document.getElementById('sentiment-badge');
+    const tacticalBox = document.getElementById('tactical-advice-box');
 
-    // 情緒數值
-    const scoreVal = document.getElementById('today-sentiment-value');
-    const score = appData.aiResult.sentiment_score;
-    scoreVal.textContent = score;
-    // 🟢 v7.3.0: 紅漲綠跌校正
-    scoreVal.className = score > 0 ? 'text-red-500' : (score < 0 ? 'text-green-500' : 'text-slate-400');
-}
+    const result = appData.aiResult || {};
 
-function renderTimeline() {
-    const container = document.getElementById('ai-timeline-container');
-    const timeline = document.getElementById('ai-timeline');
-    const events = appData.events || [];
+    // 設定情緒勳章
+    const score = result.sentiment_score || 0;
+    let badgeClass = 'bg-slate-100 text-slate-500';
+    let badgeText = '中立';
 
-    if (events.length === 0) {
-        container.classList.add('hidden');
-        return;
+    if (score >= 0.3) {
+        badgeClass = 'bg-red-500 text-white';
+        badgeText = '極度樂觀';
+    } else if (score > 0) {
+        badgeClass = 'bg-red-100 text-red-600';
+        badgeText = '偏多';
+    } else if (score <= -0.3) {
+        badgeClass = 'bg-green-500 text-white';
+        badgeText = '極度恐慌';
+    } else if (score < 0) {
+        badgeClass = 'bg-green-100 text-green-600';
+        badgeText = '偏空';
     }
 
-    container.classList.remove('hidden');
-    timeline.innerHTML = events.map(e => {
-        // 🟢 v7.3.0: 紅漲綠跌校正
-        const impactColor = e.impact === '正面' ? 'text-red-500' : (e.impact === '負面' ? 'text-green-500' : 'text-slate-400');
-        const borderColor = e.impact === '正面' ? 'border-red-100 dark:border-red-900/30' : (e.impact === '負面' ? 'border-green-100 dark:border-green-900/30' : 'border-slate-100 dark:border-slate-800');
+    badge.className = `ml-auto px-4 py-1 rounded-full text-xs font-black uppercase tracking-wider ${badgeClass}`;
+    badge.textContent = badgeText;
 
-        return `
-            <div class="p-4 bg-slate-50/50 dark:bg-slate-800/30 rounded-xl border ${borderColor} transition-all hover:bg-white dark:hover:bg-slate-800 group">
-                <div class="flex items-start justify-between gap-4">
-                    <div class="flex-grow">
-                        <div class="flex items-center gap-2 mb-1">
-                            <span class="text-xs font-black ${impactColor} tracking-widest uppercase">[${e.impact || '中性'}]</span>
-                            <h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 transition-colors">${e.title}</h4>
-                        </div>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">${e.summary}</p>
-                    </div>
-                </div>
+    // 格式化摘要內容 (處理換行)
+    const summaryHtml = (result.summary || "今日暫無深度分析資料。")
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/\n/g, '<br>');
+    summaryBox.innerHTML = `<p>${summaryHtml}</p>`;
+
+    // 渲染戰術建議 (v13.5.0)
+    if (result.tactical_advice) {
+        tacticalBox.classList.remove('hidden');
+        tacticalBox.innerHTML = `
+            <div class="flex items-center gap-2 mb-2 text-indigo-600 dark:text-indigo-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <h4 class="font-black text-sm uppercase tracking-tighter">AI 戰術執行建議</h4>
             </div>
+            <p class="text-sm text-slate-600 dark:text-slate-400 italic">${result.tactical_advice}</p>
         `;
-    }).join('');
-}
-
-function renderGraph() {
-    const container = document.getElementById('ai-graph-container');
-    const graphDiv = document.getElementById('ai-graph');
-    const relations = appData.relations || [];
-
-    if (relations.length === 0) {
-        container.classList.add('hidden');
-        return;
     }
-
-    container.classList.remove('hidden');
-
-    // 1. 準備節點與連線
-    const nodesMap = new Map();
-    const edges = [];
-
-    relations.forEach(r => {
-        if (!nodesMap.has(r.from)) nodesMap.set(r.from, { id: r.from, label: r.from, color: '#ef4444' });
-        if (!nodesMap.has(r.to)) nodesMap.set(r.to, { id: r.to, label: r.to, color: '#3b82f6' });
-        edges.push({ from: r.from, to: r.to, label: r.type, font: { size: 10, align: 'top' }, arrows: 'to' });
-    });
-
-    const data = {
-        nodes: Array.from(nodesMap.values()),
-        edges: edges
-    };
-
-    const options = {
-        layout: { hierarchical: false },
-        physics: {
-            enabled: true,
-            barnesHut: { gravitationalConstant: -2000, centralGravity: 0.3, springLength: 95 }
-        },
-        nodes: {
-            shape: 'dot',
-            size: 16,
-            font: { color: document.documentElement.classList.contains('dark') ? '#f1f5f9' : '#1e293b', size: 12, face: 'Inter' },
-            borderWidth: 2,
-            shadow: true
-        },
-        edges: {
-            color: { color: '#94a3b8', highlight: '#ef4444' },
-            width: 1,
-            shadow: true,
-            smooth: { type: 'continuous' }
-        }
-    };
-
-    // 2. 渲染 (Vis.js Network)
-    new vis.Network(graphDiv, data, options);
 }
 
+// 渲染分類按鈕
 function renderCategories() {
-    const container = document.getElementById('category-filters');
-    const news = appData.newsData || [];
-    const cats = ['全部', ...new Set(news.map(n => n.category || '其他'))];
+    const container = document.getElementById('category-btns');
+    const categories = ['科技', '金融', '傳產', '政治', '國際', '加密'];
 
-    container.innerHTML = cats.map(cat => `
-        <button onclick="filterCategory('${cat}')" data-filter="${cat}"
-            class="filter-btn px-5 py-2 rounded-full text-sm font-bold border transition-all duration-300 transform active:scale-95 shadow-sm ${cat === '全部' ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700'}">
+    container.innerHTML = categories.map(cat => `
+        <button onclick="setCategory('${cat}')" data-cat="${cat}" 
+            class="cat-btn px-4 py-3 rounded-2xl text-sm font-bold transition-all bg-white dark:bg-slate-800 text-slate-500 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-indigo-500">
             ${cat}
         </button>
     `).join('');
 }
 
-function renderNewsPage() {
-    const grid = document.getElementById('news-grid');
-    const container = document.getElementById('load-more-container');
-    const news = appData.newsData || [];
-
-    // 預先過濾
-    const filtered = news.filter(n => {
-        const lower = currentSearch.toLowerCase();
-        const matchCat = (currentCategory === '全部' || (n.category || '其他') === currentCategory);
-        const matchSearch = !currentSearch || (n.title || '').toLowerCase().includes(lower) || (n.content || '').toLowerCase().includes(lower);
-        return matchCat && matchSearch;
-    });
-
-    const nextBatch = filtered.slice(displayedCount, displayedCount + PAGE_SIZE);
-
-    nextBatch.forEach(n => {
-        const card = document.createElement('div');
-        card.className = "news-card animate-fade bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 flex flex-col overflow-hidden";
-
-        const hasImg = !!n.thumbnail;
-        const imgHtml = hasImg ? `
-            <div class="relative h-40 w-full overflow-hidden group">
-                <img src="${n.thumbnail}" alt="news" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.parentElement.style.display='none'">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
-                <div class="absolute bottom-3 left-4">
-                    <span class="px-2 py-0.5 bg-indigo-600 text-white text-[10px] font-bold rounded uppercase tracking-widest">${n.category || '其他'}</span>
-                </div>
-            </div>
-        ` : '';
-
-        const relatedHtml = n.relatedArticles && n.relatedArticles.length > 0
-            ? `<div class="mt-2 flex flex-wrap gap-1">
-                <span class="text-[9px] font-bold text-slate-400">其他來源:</span>
-                ${n.relatedArticles.map(r => `<span class="px-1.5 py-0.5 bg-slate-50 dark:bg-slate-700 text-slate-500 dark:text-slate-400 text-[9px] rounded-md border border-slate-100 dark:border-slate-600 font-medium">${r.source}</span>`).join('')}
-               </div>`
-            : '';
-
-        card.innerHTML = `
-            ${imgHtml}
-            <div class="p-6 flex-grow flex flex-col justify-between">
-                <div>
-                    ${!hasImg ? `
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-[11px] font-black rounded-full uppercase tracking-widest border border-indigo-100 dark:border-indigo-900/50">${n.category || '其他'}</span>
-                        <span class="text-slate-400 text-xs">${n.timeStr || ''}</span>
-                    </div>` : `
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="text-slate-400 text-[10px] font-bold uppercase tracking-tight">${n.source}</span>
-                        <span class="text-slate-400 text-[10px]">${n.timeStr || ''}</span>
-                    </div>`}
-                    <h3 class="text-slate-800 dark:text-slate-100 font-bold leading-snug text-lg mb-3 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer line-clamp-2" onclick="handlePreview(this)">${n.title}</h3>
-                    ${!hasImg ? `<div class="text-xs text-slate-400 font-medium mb-2 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mr-2"></span>${n.source}</div>` : ''}
-                    ${relatedHtml}
-                </div>
-                <div class="pt-4 border-t border-slate-50 dark:border-slate-700 flex justify-between items-center mt-4">
-                    <button onclick="handlePreview(this)" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-indigo-500 transition-colors">
-                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>預覽內容
-                    </button>
-                    <a href="${n.url}" target="_blank" class="inline-flex items-center text-sm font-bold text-indigo-500 hover:text-indigo-700">閱讀全文
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                    </a>
-                </div>
-            </div>
-        `;
-        // 儲存原始資料供 Modal 使用
-        card._rawData = n;
-        grid.appendChild(card);
-    });
-
-    displayedCount += nextBatch.length;
-    container.classList.toggle('hidden', displayedCount >= filtered.length);
+// 🟢 v13.3.0: 渲染圖表
+function renderCharts() {
+    renderSentimentChart();
+    renderRadarChart();
+    renderSectorChart();
+    renderWordCloud();
 }
 
-// --- 圖表邏輯 ---
-
-function renderCharts() {
-    const colors = getThemeColors();
-    const stats = appData.recentStats || [];
-    const labels = stats.map(s => s.date.slice(5));
-    const scores = stats.map(s => s.sentiment_score);
-
+function renderSentimentChart() {
     const ctx = document.getElementById('sentimentChart').getContext('2d');
+    const stats = appData.recentStats || [];
+
+    if (sentimentChart) sentimentChart.destroy();
+
     sentimentChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels,
+            labels: stats.map(s => s.date.split('-').slice(1).join('/')),
             datasets: [{
-                label: '情緒指數',
-                data: scores,
-                borderColor: '#ef4444', // 🟢 v7.3.0: 紅色
-                backgroundColor: 'rgba(239, 68, 68, 0.1)', // 🟢 v7.3.0: 紅色
-                borderWidth: 3,
-                pointRadius: 5,
-                fill: true,
-                tension: 0.4
+                label: '情緒分數',
+                data: stats.map(s => s.score),
+                borderColor: '#6366f1',
+                backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                borderWidth: 4,
+                tension: 0.4,
+                pointRadius: 4,
+                fill: true
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
             scales: {
-                y: { min: -1, max: 1, grid: { color: colors.grid }, ticks: { color: colors.text } },
-                x: { grid: { display: false }, ticks: { color: colors.text } }
-            },
-            plugins: { legend: { display: false } }
+                y: { min: -1, max: 1, grid: { color: 'rgba(0,0,0,0.05)' } },
+                x: { grid: { display: false } }
+            }
         }
     });
+}
 
-    const radarCtx = document.getElementById('radarChart').getContext('2d');
-    const dim = appData.aiResult.dimensions || { policy: 0, market: 0, industry: 0, international: 0, technical: 0 };
-    radarChart = new Chart(radarCtx, {
+function renderRadarChart() {
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    const dims = appData.aiResult?.dimensions || { "政策": 0.5, "資金": 0.5, "產業": 0.5, "國際": 0.5, "技術": 0.5 };
+
+    if (radarChart) radarChart.destroy();
+
+    radarChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ['政策', '資金', '基本面', '國際', '技術'],
+            labels: Object.keys(dims),
             datasets: [{
-                label: '今日強度',
-                data: [dim.policy, dim.market, dim.industry, dim.international, dim.technical],
-                fill: true,
-                backgroundColor: 'rgba(79, 70, 229, 0.2)',
-                borderColor: 'rgb(79, 70, 229)'
+                data: Object.values(dims),
+                backgroundColor: 'rgba(99, 102, 241, 0.2)',
+                borderColor: '#6366f1',
+                pointBackgroundColor: '#6366f1'
             }]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
             scales: {
-                r: {
-                    angleLines: { color: colors.grid },
-                    grid: { color: colors.grid },
-                    pointLabels: { font: { size: 12, weight: 'bold' }, color: colors.text },
-                    suggestedMin: 0, suggestedMax: 1, ticks: { display: false }
-                }
-            },
-            plugins: { legend: { display: false } }
+                r: { min: 0, max: 1, ticks: { display: false } }
+            }
         }
     });
+}
 
-    const sectorCtx = document.getElementById('sectorChart').getContext('2d');
-    const s = appData.aiResult.sector_stats || { tech: 0, finance: 0, manufacturing: 0, service: 0 };
-    sectorChart = new Chart(sectorCtx, {
+function renderSectorChart() {
+    const ctx = document.getElementById('sectorChart').getContext('2d');
+    const sectors = appData.aiResult?.sector_stats || { "科技": 0.1, "金融": 0.1, "傳產": 0.1, "服務": 0.1 };
+
+    if (sectorChart) sectorChart.destroy();
+
+    const colors = Object.values(sectors).map(v => v >= 0 ? '#ef4444' : '#22c55e');
+
+    sectorChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['科技/半導體', '金融', '傳產/製造', '服務/消費'],
+            labels: Object.keys(sectors),
             datasets: [{
-                label: '板塊情緒',
-                data: [s.tech, s.finance, s.manufacturing, s.service],
-                backgroundColor: [
-                    s.tech > 0 ? '#ef4444' : '#22c55e',
-                    s.finance > 0 ? '#ef4444' : '#22c55e',
-                    s.manufacturing > 0 ? '#ef4444' : '#22c55e',
-                    s.service > 0 ? '#ef4444' : '#22c55e'
-                ],
-                borderRadius: 6
+                data: Object.values(sectors),
+                backgroundColor: colors,
+                borderRadius: 8
             }]
         },
         options: {
             indexAxis: 'y',
             responsive: true,
             maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
             scales: {
-                x: { min: -1, max: 1, grid: { color: colors.grid }, ticks: { color: colors.text } },
-                y: { grid: { display: false }, ticks: { color: colors.text } }
-            },
-            plugins: { legend: { display: false } }
+                x: { min: -1, max: 1, grid: { color: 'rgba(0,0,0,0.05)' } }
+            }
         }
     });
 }
 
-function renderKeywordsCloud() {
-    const k7d = appData.keywords7d || [];
-    if (k7d.length === 0) return;
+// 渲染熱詞雲
+function renderWordCloud() {
+    const canvas = document.getElementById('keyword-cloud');
+    const keywords = appData.keywords || [];
+    if (keywords.length === 0) return;
 
-    const section = document.getElementById('buzzword-section');
-    section.classList.remove('hidden');
-
-    const cloudData = k7d.map(k => [k.word, k.count]);
-    const canvas = document.getElementById('wordCloudCanvas');
-    const width = canvas.parentElement.offsetWidth - 48;
-    canvas.width = width;
-    canvas.height = 350;
+    const list = keywords.slice(0, 30).map(k => [k.word, k.count * 5 + 10]);
 
     WordCloud(canvas, {
-        list: cloudData,
-        gridSize: 12,
-        weightFactor: size => Math.pow(size, 0.7) * (width / 400),
-        fontFamily: 'Noto Sans TC, sans-serif',
-        color: () => ['#4f46e5', '#6366f1', '#818cf8', '#a5b4fc', '#4338ca'][Math.floor(Math.random() * 5)],
-        rotateRatio: 0.3,
-        rotationSteps: 2,
+        list: list,
+        weightFactor: 1,
+        fontFamily: 'Inter, Noto Sans TC',
+        color: (word, weight) => weight > 30 ? '#6366f1' : '#94a3b8',
+        rotateRatio: 0,
         backgroundColor: 'transparent',
-        click: (item) => {
-            const word = item[0];
-            showKeywordArticles(word);
+        click: (item) => handleSearch(item[0])
+    });
+}
+
+// 🟢 v8.0.0: 市場勢力圖 (Vis-network)
+function renderKnowledgeGraph() {
+    const container = document.getElementById('vis-network');
+    const relations = appData.aiResult?.relations || [];
+
+    if (relations.length === 0) {
+        container.innerHTML = '<div class="flex items-center justify-center h-full text-slate-400 text-xs">暫無關聯數據</div>';
+        return;
+    }
+
+    const nodes = new Set();
+    const edges = [];
+
+    relations.forEach(rel => {
+        nodes.add(rel.source);
+        nodes.add(rel.target);
+        edges.push({ from: rel.source, to: rel.target, label: rel.type, font: { size: 10 } });
+    });
+
+    const data = {
+        nodes: Array.from(nodes).map(n => ({ id: n, label: n, color: '#e0e7ff', shadow: true })),
+        edges: edges
+    };
+
+    const options = {
+        nodes: { shape: 'dot', size: 16, font: { size: 12, face: 'Noto Sans TC' }, borderWidth: 2 },
+        edges: { width: 1, color: '#94a3b8', arrows: { to: { enabled: true, scaleFactor: 0.5 } } },
+        physics: { enabled: true, stabilization: true }
+    };
+
+    new vis.Network(container, data, options);
+}
+
+// 新聞分頁渲染
+function renderNewsPage(append = false) {
+    const grid = document.getElementById('news-grid');
+    if (!append) {
+        grid.innerHTML = '';
+        displayedCount = 0;
+    }
+
+    const filtered = filterNews();
+    const slice = filtered.slice(displayedCount, displayedCount + PAGE_SIZE);
+
+    if (slice.length === 0 && !append) {
+        grid.innerHTML = `
+            <div class="col-span-full py-20 text-center">
+                <div class="text-slate-300 mb-4">
+                    <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="text-slate-500 font-bold">找不到相符的新聞報導</h3>
+            </div>
+        `;
+        document.getElementById('load-more-trigger').classList.add('hidden');
+        return;
+    }
+
+    const html = slice.map((news, idx) => {
+        const isBullish = news.sentiment >= 0;
+        const sentimentColor = isBullish ? 'bg-red-500' : 'bg-green-500';
+        const categoryColor = news.category === '金融' ? 'bg-indigo-500' : (news.category === '科技' ? 'bg-blue-500' : 'bg-slate-500');
+
+        return `
+            <div class="news-card bg-white dark:bg-slate-800 rounded-[2.5rem] overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col group animate-fade" style="animation-delay: ${idx * 0.05}s">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="${news.thumbnail || 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop'}" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                         onerror="this.src='https://images.unsplash.com/photo-1611974715853-2b8ef9a3d136?w=800&auto=format&fit=crop'">
+                    <div class="absolute top-4 left-4 flex gap-2">
+                        <span class="px-3 py-1 ${categoryColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-lg">${news.category || '一般'}</span>
+                        <span class="px-3 py-1 ${sentimentColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-lg">${isBullish ? 'BULLISH' : 'BEARISH'}</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">${news.source} · ${news.time}</div>
+                    <h3 class="text-lg font-black text-slate-800 dark:text-slate-100 mb-3 leading-tight line-clamp-2">${news.title}</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-6 flex-grow">${news.summary || news.description || ''}</p>
+                    <div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                        <a href="${news.url}" target="_blank" class="text-indigo-600 dark:text-indigo-400 text-xs font-black uppercase tracking-widest hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                            READ SOURCE
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    if (append) {
+        grid.insertAdjacentHTML('beforeend', html);
+    } else {
+        grid.innerHTML = html;
+    }
+
+    displayedCount += slice.length;
+
+    if (displayedCount >= filtered.length) {
+        document.getElementById('load-more-trigger').classList.add('hidden');
+    } else {
+        document.getElementById('load-more-trigger').classList.remove('hidden');
+    }
+}
+
+// 過濾邏輯
+function filterNews() {
+    return appData.articles.filter(n => {
+        const matchCat = currentCategory === '全部' || n.category === currentCategory;
+        const matchSearch = !currentSearch || n.title.includes(currentSearch) || (n.summary && n.summary.includes(currentSearch));
+        return matchCat && matchSearch;
+    });
+}
+
+// 互動函數
+function setCategory(cat) {
+    currentCategory = cat;
+    document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+            btn.classList.add('bg-indigo-600', 'text-white', 'shadow-md', 'active-cat');
+            btn.classList.remove('bg-white', 'dark:bg-slate-800', 'text-slate-500');
+        } else {
+            btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-md', 'active-cat');
+            btn.classList.add('bg-white', 'dark:bg-slate-800', 'text-slate-500');
         }
     });
-}
-
-// --- 互動功能 ---
-
-function filterCategory(cat) {
-    currentCategory = cat;
-    displayedCount = 0;
-    document.getElementById('news-grid').innerHTML = '';
-
-    // UI 反饋
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        const active = btn.dataset.filter === cat;
-        btn.classList.toggle('bg-indigo-600', active);
-        btn.classList.toggle('text-white', active);
-    });
-
     renderNewsPage();
 }
 
-function searchNews(val) {
-    currentSearch = val.trim();
-    displayedCount = 0;
-    document.getElementById('news-grid').innerHTML = '';
+function handleSearch(val) {
+    currentSearch = val;
+    document.getElementById('search-input').value = val;
     renderNewsPage();
 }
 
-function searchKeyword(k) {
-    document.getElementById('search-input').value = k;
-    searchNews(k);
-    filterCategory('全部');
-    document.getElementById('news-grid').scrollIntoView({ behavior: 'smooth' });
+function toggleTheme() {
+    document.documentElement.classList.toggle('dark');
 }
 
-function loadMoreNews() { renderNewsPage(); }
-
-function handlePreview(btn) {
-    const card = btn.closest('.news-card');
-    const n = card._rawData;
-    if (!n) return;
-
-    const modal = document.getElementById('contentModal');
-    const inner = modal.querySelector('div');
-
-    document.getElementById('modalTitle').textContent = n.title;
-    document.getElementById('modalSource').textContent = n.source;
-    document.getElementById('modalFullLink').href = n.url;
-
-    // 解碼 HTML 實體 + 換行轉換
-    const txt = document.createElement("textarea");
-    txt.innerHTML = n.content || '無內文資訊';
-    document.getElementById('modalText').innerHTML = txt.value.replace(/\n/g, '<br>');
-
-    modal.classList.remove('hidden');
-    setTimeout(() => {
-        modal.classList.remove('opacity-0');
-        inner.classList.remove('scale-95');
-    }, 10);
-}
-
-function closeContentModal() {
-    const modal = document.getElementById('contentModal');
-    modal.classList.add('opacity-0');
-    modal.querySelector('div').classList.add('scale-95');
-    setTimeout(() => modal.classList.add('hidden'), 300);
-}
-
-const keywordMap = () => appData.keywords7d.reduce((acc, curr) => { acc[curr.word] = curr.articles; return acc; }, {});
-
-function showKeywordArticles(word) {
-    const articles = appData.keywords7d.find(k => k.word === word)?.articles || [];
-    const modal = document.getElementById('keywordArticlesModal');
-    const list = document.getElementById('kwModalList');
-
-    document.getElementById('kwModalTitle').innerHTML = `🔥 <span class="text-indigo-600">${word}</span> 相關新聞`;
-    list.innerHTML = articles.map(a => `
-        <div class="group p-4 mb-2 bg-slate-50 dark:bg-slate-700/50 hover:bg-indigo-50 border border-slate-100 dark:border-slate-600 hover:border-indigo-200 rounded-2xl cursor-pointer transition-all"
-             onclick="openModalFromArticle('${a.title.replace(/'/g, "\\'")}', '${(a.content || '').replace(/'/g, "\\'")}', '${a.url}', '${a.source}')">
-            <div class="text-[10px] font-black text-slate-400 mb-1">${a.source}</div>
-            <h4 class="text-slate-700 dark:text-slate-200 font-bold group-hover:text-indigo-600 transition-colors line-clamp-2">${a.title}</h4>
-        </div>
-    `).join('') || '<div class="p-8 text-center text-slate-400">暫無相關新聞</div>';
+// Chart Modal
+function openChart(symbol) {
+    const modal = document.getElementById('chartModal');
+    const container = document.getElementById('tradingview-container');
+    const title = document.getElementById('chartModalTitle');
+    const subtitle = document.getElementById('chartModalSubtitle');
 
     modal.classList.remove('hidden');
     setTimeout(() => {
         modal.classList.remove('opacity-0');
         modal.querySelector('div').classList.remove('scale-95');
     }, 10);
-}
 
-function openModalFromArticle(t, c, u, s) {
-    // 橋接器：讓列表點擊也能開預覽
-    const mockBtn = { closest: () => ({ _rawData: { title: t, content: c, url: u, source: s } }) };
-    handlePreview(mockBtn);
-}
+    title.textContent = `即時盤勢分析: ${symbol}`;
+    subtitle.textContent = `Symbol: ${symbol}`;
+    container.innerHTML = '';
 
-function closeKeywordModal() {
-    const modal = document.getElementById('keywordArticlesModal');
-    modal.classList.add('opacity-0');
-    modal.querySelector('div').classList.add('scale-95');
-    setTimeout(() => modal.classList.add('hidden'), 300);
-}
-
-// --- 工具 ---
-
-function getThemeColors() {
-    const isDark = document.documentElement.classList.contains('dark');
-    return {
-        text: isDark ? '#94a3b8' : '#475569',
-        grid: isDark ? '#1e293b' : '#f1f5f9'
-    };
-}
-
-function toggleDarkMode() {
-    const isDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    updateCharts();
-}
-
-function updateCharts() {
-    const colors = getThemeColors();
-    [sentimentChart, radarChart, sectorChart].forEach(chart => {
-        if (!chart) return;
-        if (chart.options.scales) {
-            Object.values(chart.options.scales).forEach(s => {
-                if (s.grid) s.grid.color = colors.grid;
-                if (s.ticks) s.ticks.color = colors.text;
-                if (s.pointLabels) s.pointLabels.color = colors.text;
-            });
-        }
-        chart.update();
+    new TradingView.widget({
+        "autosize": true,
+        "symbol": symbol,
+        "interval": "D",
+        "timezone": "Asia/Taipei",
+        "theme": document.documentElement.classList.contains('dark') ? "dark" : "light",
+        "style": "1",
+        "locale": "zh_TW",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "hide_side_toolbar": false,
+        "allow_symbol_change": true,
+        "container_id": "tradingview-container"
     });
 }
 
-function toggleSpeech() {
-    if (speaking) {
-        window.speechSynthesis.cancel();
-        speaking = false;
-        document.getElementById('ttsBtn').classList.remove('bg-red-50', 'text-red-600');
-    } else {
-        const text = document.getElementById('summary-content').textContent;
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'zh-TW';
-        u.onend = () => {
-            speaking = false;
-            document.getElementById('ttsBtn').classList.remove('bg-red-50', 'text-red-600');
-        };
-        window.speechSynthesis.speak(u);
-        speaking = true;
-        document.getElementById('ttsBtn').classList.add('bg-red-50', 'text-red-600');
-    }
+function closeChartModal() {
+    const modal = document.getElementById('chartModal');
+    modal.classList.add('opacity-0');
+    modal.querySelector('div').classList.add('scale-95');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
 }
-
-// Init
-init();

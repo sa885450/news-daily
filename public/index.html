@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 智能儀表板 - v7.0.0 (智捷戰情室)</title>
+    <title>AI 智能儀表板 - v13.5.4 (智捷戰報)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
@@ -53,249 +53,209 @@
         }
 
         .dark ::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 10px;
+            background: #475569;
+            border-radius: 4px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+
+        /* 🟢 v8.4.0: Market Ticker Animations */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .ticker-wrapper {
+            display: flex;
+            width: max-content;
+            animation: scroll 60s linear infinite;
+        }
+
+        .ticker-wrapper:hover {
+            animation-play-state: paused;
         }
     </style>
 </head>
 
-<body class="bg-[#f8fafc] dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen pb-20">
-    <!-- 🟢 v6.0.0 (CSR): 靜態外殼 -->
-    <div class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3">
-        <button onclick="toggleDarkMode()"
-            class="p-4 bg-white dark:bg-slate-800 rounded-full shadow-2xl border border-slate-200 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 hover:scale-110 transition-transform">
-            <svg class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg>
-            <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-        </button>
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300">
+    <!-- 🟢 v8.4.0: Market Ticker (走馬燈) -->
+    <div id="market-ticker"
+        class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 overflow-hidden py-2 sticky top-0 z-[100] backdrop-blur-md bg-opacity-80 hidden">
+        <div class="ticker-wrapper" id="ticker-content">
+            <!-- Ticker items will be injected here -->
+        </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-4 pt-10 relative">
-        <header class="mb-10 animate-fade">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
-                    <div class="flex items-center gap-3 mb-2">
-                        <div
-                            class="w-10 h-10 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-200">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                        </div>
-                        <h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">AI 智能新聞儀表板</h1>
-                    </div>
-                    <p class="text-slate-400 dark:text-slate-500 font-bold flex items-center gap-2">
-                        <span id="report-date" class="text-indigo-500">載入中...</span>
-                        <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
-                        <span class="uppercase tracking-widest text-[10px]">智捷戰情室 v13.3.2</span>
-                    </p>
-                </div>
-                <!-- 🟢 v7.0.0: AI 關鍵實體熱詞區 -->
-                <div id="ai-entities" class="flex flex-wrap gap-2 md:justify-end max-w-md">
-                    <!-- 由 app.js 動態填充 -->
-                </div>
-            </div>
-        </header>
-
-        <!-- 🟢 v8.4.0: 市場行情橫幅 (Market Ticker) -->
-        <div id="market-ticker" class="mt-4 mb-2 flex gap-3 overflow-x-auto pb-2 scrollbar-hide animate-fade">
-            <!-- 由 app.js 動態填充 -->
-        </div>
-
-        <!-- 🟢 v7.2.0: AI 趨勢追蹤 (事件聚類) -->
-        <div id="ai-timeline-container" class="mt-8 hidden">
-            <div class="flex items-center gap-2 mb-4">
-                <div class="p-1.5 bg-indigo-500 rounded text-white mt-1">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <!-- Header -->
+    <header class="bg-indigo-600 dark:bg-indigo-900 text-white p-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="p-3 bg-white/20 rounded-2xl backdrop-blur-md">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
-                <h3 class="text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-widest">今日 AI 趨勢追蹤
-                </h3>
-            </div>
-            <div id="ai-timeline" class="space-y-4">
-                <!-- Events will be injected here -->
-            </div>
-        </div>
-
-
-        <section class="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade">
-            <div
-                class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-bold text-slate-700 dark:text-slate-200 flex items-center"><span
-                            class="mr-2">📈</span>
-                        市場情緒走勢</h3>
-                    <div
-                        class="text-xs font-bold px-2 py-1 rounded bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400">
-                        今日: <span id="today-sentiment-value" class="text-base">--</span>
-                    </div>
-                </div>
-                <div class="h-64 w-full"><canvas id="sentimentChart"></canvas></div>
-            </div>
-            <div
-                class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700 flex flex-col">
-                <h3 class="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4 flex items-center"><span
-                        class="mr-2">🧭</span>
-                    五力分析</h3>
-                <div class="flex-grow relative"><canvas id="radarChart"></canvas></div>
-            </div>
-            <div
-                class="md:col-span-3 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-md border border-slate-100 dark:border-slate-700">
-                <h3 class="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4 flex items-center"><span
-                        class="mr-2">📊</span>
-                    板塊情緒分布 (Sector Sentiment)</h3>
-                <div class="h-48 w-full"><canvas id="sectorChart"></canvas></div>
-            </div>
-        </section>
-
-        <div class="sticky top-4 z-50 mb-10">
-            <div
-                class="flex flex-col md:flex-row items-center justify-center gap-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/50 dark:border-slate-700 w-fit mx-auto">
-                <div id="category-filters" class="flex flex-wrap gap-2 justify-center">
-                    <!-- 由 app.js 動態填充 -->
-                </div>
-                <div class="relative w-full md:w-48 transition-all focus-within:w-64">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </div>
-                    <input type="text" id="search-input" oninput="searchNews(this.value)"
-                        class="block w-full p-2 pl-10 text-sm text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-full bg-slate-50 dark:bg-slate-900 focus:ring-indigo-500 focus:border-indigo-500 focus:bg-white dark:focus:bg-slate-800 transition-all shadow-inner"
-                        placeholder="搜尋新聞...">
+                <div>
+                    <h1 class="text-3xl font-black tracking-tighter">AI 智捷戰報 <span
+                            class="text-xs font-normal opacity-60">v13.5.4</span></h1>
+                    <p class="text-indigo-100/70 text-sm font-medium" id="report-date">正在載入戰情數據...</p>
                 </div>
             </div>
-        </div>
-
-        <section class="mb-12 animate-fade">
-            <div
-                class="bg-white dark:bg-slate-800 rounded-[2rem] p-8 md:p-10 shadow-xl border border-indigo-50 dark:border-slate-700 relative overflow-hidden">
-                <button onclick="toggleSpeech()" id="ttsBtn"
-                    class="absolute top-6 right-6 p-2 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 transition-colors z-20"
-                    title="朗讀摘要">
-                    <svg id="ttsIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z">
-                        </path>
-                    </svg>
-                </button>
-                <div class="relative z-10 prose prose-indigo dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed text-lg"
-                    id="summary-content">
-                    AI 摘要載入中...
-                </div>
+            <div class="flex items-center gap-3" id="ai-entities">
+                <!-- AI entities will be injected here -->
             </div>
-        </section>
-
-        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-6 animate-fade"
-            style="animation-delay: 0.1s;">
-            <!-- 由 app.js 分頁呈現 -->
-        </div>
-
-        <div id="load-more-container" class="flex justify-center pb-12 animate-fade hidden">
-            <button onclick="loadMoreNews()"
-                class="px-8 py-3 bg-white dark:bg-slate-800 border-2 border-indigo-100 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 font-black rounded-2xl hover:bg-indigo-50 dark:hover:bg-slate-700 transition-all shadow-lg active:scale-95">
-                載入更多新聞 ...
+            <button onclick="toggleTheme()"
+                class="p-2 bg-white/10 hover:bg-white/20 rounded-xl transition-all border border-white/20">
+                <svg id="theme-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path class="sun" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.071 16.071l.707.707M7.757 7.757l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z">
+                    </path>
+                </svg>
             </button>
         </div>
+    </header>
 
-        <section id="buzzword-section" class="mb-12 animate-fade hidden" style="animation-delay: 0.3s;">
-            <h3 class="text-xl font-black text-slate-800 dark:text-white mb-4 flex items-center"><span
-                    class="text-2xl mr-2">📅</span> 7日市場熱詞 (Buzzword Cloud)</h3>
+    <main class="max-w-7xl mx-auto p-4 md:p-8 space-y-8">
+        <!-- 核心統計區 (Dashboard Stats) -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- 今日 AI 戰術報告 (Summary Card) -->
             <div
-                class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center">
-                <canvas id="wordCloudCanvas" class="w-full max-w-4xl h-[350px] cursor-pointer"></canvas>
+                class="lg:col-span-2 bg-white dark:bg-slate-800 rounded-[2.5rem] p-8 shadow-xl border border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl text-indigo-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-black text-slate-800 dark:text-slate-100">今日 AI 戰術回報</h2>
+                    <span id="sentiment-badge"
+                        class="ml-auto px-4 py-1 rounded-full text-xs font-black uppercase tracking-wider">Loading</span>
+                </div>
+                <div id="summary-content"
+                    class="prose dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 leading-relaxed space-y-4">
+                    <!-- AI Summary injected here -->
+                    <div class="animate-pulse space-y-3">
+                        <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded w-3/4"></div>
+                        <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                        <div class="h-4 bg-slate-200 dark:bg-slate-700 rounded w-5/6"></div>
+                    </div>
+                </div>
+
+                <!-- 🟢 v13.5.0: Tactical Advice Section -->
+                <div id="tactical-advice-box"
+                    class="mt-8 p-6 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700 hidden">
+                    <!-- Tactical advice injected here -->
+                </div>
+            </div>
+
+            <!-- 分析圖表區 (Charts Column) -->
+            <div class="space-y-6">
+                <!-- 走勢圖 -->
                 <div
-                    class="mt-4 flex flex-wrap gap-2 justify-center opacity-60 text-xs font-bold text-slate-400 dark:text-slate-500">
-                    💡 點擊熱詞查看趨勢或搜尋新聞
+                    class="bg-white dark:bg-slate-800 rounded-[2.5rem] p-6 shadow-xl border border-slate-100 dark:border-slate-700 h-64">
+                    <h3 class="text-sm font-bold text-slate-400 mb-4 uppercase tracking-widest">情緒走勢 (Sentiment)</h3>
+                    <canvas id="sentimentChart"></canvas>
                 </div>
-            </div>
-        </section>
-
-        <!-- 🟢 v8.4.0: 勢力地圖 (搬移至此) -->
-        <div id="ai-graph-container" class="mb-12 hidden animate-fade">
-            <div class="flex items-center gap-2 mb-4">
-                <div class="p-1.5 bg-rose-500 rounded text-white mt-1">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
-                        </path>
-                    </svg>
+                <!-- 雷達圖 -->
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-[2.5rem] p-6 shadow-xl border border-slate-100 dark:border-slate-700 h-64">
+                    <h3 class="text-sm font-bold text-slate-400 mb-2 uppercase tracking-widest">五力分析 (Radar)</h3>
+                    <canvas id="radarChart"></canvas>
                 </div>
-                <h3 class="text-sm font-black text-slate-800 dark:text-slate-100 uppercase tracking-widest">市場勢力地圖
-                    (Knowledge Graph)</h3>
-            </div>
-            <div id="ai-graph"
-                class="h-[500px] w-full bg-white dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-inner overflow-hidden">
-                <!-- Graph will be rendered here -->
+                <!-- 板塊圖 -->
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-[2.5rem] p-6 shadow-xl border border-slate-100 dark:border-slate-700 h-64">
+                    <h3 class="text-sm font-bold text-slate-400 mb-2 uppercase tracking-widest">板塊情緒 (Sectors)</h3>
+                    <canvas id="sectorChart"></canvas>
+                </div>
             </div>
         </div>
 
-        <footer
-            class="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-400 dark:text-slate-500 text-sm font-medium">
-            自動化生成系統 · Powered by Gemini 2.5 & CSR Engine (v6.0.0)
-        </footer>
-    </div>
-
-    <!-- Modals (Same as before but with ID targets) -->
-    <div id="contentModal"
-        class="fixed inset-0 bg-black/60 z-[110] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
-        <div
-            class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl w-full max-w-2xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
-            <div class="p-8 pb-4 flex justify-between items-start">
-                <div>
-                    <div id="modalSource" class="text-[10px] font-black text-indigo-500 uppercase tracking-widest mb-2">
-                        新聞來源</div>
-                    <h3 class="text-2xl font-black text-slate-800 dark:text-slate-100 leading-tight" id="modalTitle">
-                        標題載入中...</h3>
-                </div>
-                <button onclick="closeContentModal()"
-                    class="p-2 bg-slate-100 dark:bg-slate-700 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-            <div class="px-8 py-4 max-h-[60vh] overflow-y-auto text-slate-600 dark:text-slate-300 leading-relaxed text-lg"
-                id="modalText">內容載入中...</div>
+        <!-- 熱詞雲與勢力圖 (Interactive Row) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- 勢力圖 (Knowledge Graph) -->
             <div
-                class="p-8 pt-4 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700 flex justify-end">
-                <a id="modalFullLink" href="#" target="_blank"
-                    class="px-6 py-2.5 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200">閱讀全文</a>
+                class="bg-white dark:bg-slate-800 rounded-[2.5rem] p-8 shadow-xl border border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-black text-slate-800 dark:text-slate-100">市場勢力圖</h2>
+                </div>
+                <div id="vis-network"
+                    class="w-full h-[400px] bg-slate-50 dark:bg-slate-900/50 rounded-3xl overflow-hidden"></div>
+            </div>
+
+            <!-- 熱詞雲 (Word Cloud) -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-[2.5rem] p-8 shadow-xl border border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-xl text-orange-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-black text-slate-800 dark:text-slate-100">市場情緒熱評</h2>
+                </div>
+                <div id="keyword-cloud-container" class="w-full h-[400px] relative">
+                    <canvas id="keyword-cloud" class="w-full h-full"></canvas>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Keyword Articles Modal -->
-    <div id="keywordArticlesModal"
-        class="fixed inset-0 bg-black/60 z-[105] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
-        <div
-            class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl w-full max-w-xl mx-4 overflow-hidden transform scale-95 transition-all duration-300">
-            <div class="p-8 pb-4 flex justify-between items-center border-b border-slate-50 dark:border-slate-700">
-                <h3 class="text-xl font-black text-slate-800 dark:text-slate-100" id="kwModalTitle">相關新聞列表</h3>
-                <button onclick="closeKeywordModal()"
-                    class="p-2 bg-slate-100 dark:bg-slate-700 rounded-full text-slate-400 hover:bg-red-100 hover:text-red-500 transition-all">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
+        <!-- 導航與篩選 (News Feed Toolbar) -->
+        <div class="sticky top-20 z-50 py-4">
+            <div
+                class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-[2rem] p-2 shadow-lg border border-white dark:border-slate-700 flex flex-wrap items-center gap-2 overflow-x-auto no-scrollbar">
+                <button onclick="setCategory('全部')" data-cat="全部"
+                    class="cat-btn px-6 py-3 rounded-2xl text-sm font-bold transition-all bg-indigo-600 text-white shadow-md active-cat">全部消息</button>
+                <div class="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-2"></div>
+                <div id="category-btns" class="flex gap-2">
+                    <!-- Dynamic categories -->
+                </div>
+                <div class="ml-auto relative flex items-center">
+                    <div class="absolute left-4 text-slate-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="search-input" oninput="handleSearch(this.value)" placeholder="搜尋報導或實體..."
+                        class="pl-12 pr-6 py-3 bg-slate-100 dark:bg-slate-900 rounded-2xl text-sm border-none focus:ring-2 focus:ring-indigo-500 w-64 transition-all">
+                </div>
             </div>
-            <div class="p-4 max-h-[50vh] overflow-y-auto" id="kwModalList"></div>
-            <div class="p-6 bg-slate-50 dark:bg-slate-900/50 text-center text-xs text-slate-400 font-bold">💡
-                點擊標題即可顯示預覽內容</div>
         </div>
-    </div>
 
-    <!-- TradingView Chart Modal -->
+        <!-- 新聞列表 (News Grid) -->
+        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- News cards will be injected here -->
+        </div>
+
+        <!-- 分頁加載 (Lazy Load) -->
+        <div id="load-more-trigger" class="py-12 flex justify-center">
+            <button onclick="renderNewsPage(true)"
+                class="px-8 py-3 bg-white dark:bg-slate-800 rounded-2xl shadow-md text-slate-500 font-bold hover:text-indigo-600 transition-all border border-slate-100 dark:border-slate-700">
+                加載更多報導
+            </button>
+        </div>
+    </main>
+
+    <!-- 🟢 v7.1.0: TradingView Widget (Modal) -->
     <div id="chartModal"
         class="fixed inset-0 bg-black/80 z-[120] hidden flex items-center justify-center backdrop-blur-md opacity-0 transition-all duration-300">
         <div
@@ -334,6 +294,10 @@
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script src="js/chart-widget.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // 初始化
+        window.onload = init;
+    </script>
 </body>
 
 </html>

@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.4 (AI 404 修復與前端儀表板大換血) 🛡️🚀
+- **🤖 AI 模型備援強化**: 在 `config.js` 中擴展 `modelCandidates` 清單，加入 `gemini-1.5-flash` 正式版並保留 `latest` 型號，徹底解決 404 報錯。
+- **🖼️ 前端視覺同調 (v13 對齊)**: 全面重構 `index.html` 與 `app.js`。修復了前端版號停留在 v7.0.0 的問題，現在已能正確解析並呈現 v13 的「市場走馬燈」、「五力雷達圖」及「AI 戰術建議」。
+- **📦 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.3 (Windows CMD 彈窗終極根除版) 🛡️🚫
 - **⚡ Git 執行環境隔離**: 修改 `lib/git.js`，在 `execSync` 中注入 `stdio: 'ignore'` 並修正路徑包裹格式。這能防止 Node.js 在調用外部指令時嘗試分配控制台管道引發的閃爍。
 - **🤫 瀏覽器深度隱形**: 優化 `jin10.js` 的 Playwright 啟動配置，加入座標外定位 (`window-position`) 與環境變數抑制標籤，確保 Chromium 驅動進程 100% 靜默。
