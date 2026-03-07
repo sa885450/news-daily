@@ -4,45 +4,36 @@ const config = require('./lib/config');
 const cron = require('node-cron');
 
 /**
- * 🌕 v11.1.0: 戰術評級演算法
- * 結合 RSI, 趨勢與波段位置給出評價
- * 🟢 v11.3.0: 注入持倉成本維度 (智慧單)
+ * 🌕 v13.5.0: 戰術晚報與全面表格化重構
+ * 1. 實現 23:00 的深夜發報 (納入美股開盤分析)
+ * 2. 實現台股/全球股分流發送且全表格化
  */
-function getTacticalGrade(tech, buy5, costInfo = null) {
-    const { rsi, trend, price, minLow } = tech;
-    let score = 50; // 基準分
-    let rationale = [];
 
-    // 1. 強弱勢檢查
-    if (rsi < 30) { score += 20; rationale.push('超賣強反彈🔥'); }
-    if (rsi > 70) { score -= 20; rationale.push('超買需避險❄️'); }
-
-    // 2. 趨勢檢查
-    if (trend === 'BULL') { score += 10; rationale.push('多頭格局'); }
-    else { score -= 10; rationale.push('空頭壓制'); }
-
-    // 3. 支撐位對齊 (關鍵位一鍵對齊)
-    const distToSupport = Math.abs((buy5 - minLow) / minLow);
-    if (distToSupport < 0.02) {
-        score += 15;
-        rationale.push('接近 20 日強支撐區🎯');
+// 🟢 輔助函數：將資料格式化為 Markdown 表格
+function formatAsTable(title, results, isNight = false) {
+    let header = `### ${title}\n`;
+    if (isNight) {
+        header += `> *🌙 次日智慧單整備版 (分析點：美股開盤趨勢)*\n\n`;
+    } else {
+        header += `> *☀️ 盤前戰術最後確認*\n\n`;
     }
 
-    // 4. v11.3.0: 持倉成本連動 (智慧單買點)
-    if (costInfo && price < costInfo.costAt99) {
-        score += 15;
-        rationale.push('觸及成本 -1% (低於均價)💎');
-    }
+    let table = `| 標的 | 當前價 | RSI | 指令/智慧單建議 | 評級 |\n`;
+    table += `| :--- | :--- | :--- | :--- | :--- |\n`;
 
-    // 評級判定
-    if (score >= 80) return { grade: 'S+', title: '極度低估 / 強力擊球區', color: 3066993, confidence: score, note: rationale.join(' + ') };
-    if (score >= 65) return { grade: 'A', title: '健康回撤 / 穩健佈局', color: 3447003, confidence: score, note: rationale.join(' + ') };
-    if (score >= 45) return { grade: 'B', title: '常規波動 / 分批測試', color: 15844367, confidence: score, note: rationale.join(' + ') || '盤整觀望' };
-    return { grade: 'C', title: '高點盤整 / 慎防拉回', color: 15158332, confidence: score, note: rationale.join(' + ') };
+    results.forEach(r => {
+        const orderInfo = r.costInfo
+            ? `建倉:**${r.costInfo.costAt99.toLocaleString()}**`
+            : `接:**${r.buy5.toLocaleString()}**`;
+        table += `| **${r.name}** | ${r.price.toLocaleString()} | ${r.rsi} | ${orderInfo} | **${r.evaluation.grade}** |\n`;
+    });
+
+    return header + table + `\n---\n`;
 }
 
 async function generateTacticalReport() {
-    log('🌅', '開始產生【帶有靈魂】的早盤戰術報告 (v11.3.0)...');
+    const isNight = new Date().getHours() >= 21;
+    log('🌅', `開始產生【全面表格化】戰術報告 (v13.5.0) [時段: ${isNight ? '深夜' : '晨間'}]...`);
 
     const symbols = config.tacticalSymbols.split(',').map(s => s.trim());
     const myCosts = config.myCosts;
@@ -52,11 +43,7 @@ async function generateTacticalReport() {
             const tech = await getTechnicalIndicators(symbol);
             if (!tech) return null;
 
-            const buy3 = tech.prevClose * 0.97;
             const buy5 = tech.prevClose * 0.95;
-            const draw5 = tech.maxHigh * 0.95;
-
-            // 🟢 v11.3.0: 成本計算
             const myCostPrice = myCosts[symbol];
             let costInfo = null;
             if (myCostPrice) {
@@ -72,9 +59,7 @@ async function generateTacticalReport() {
             return {
                 name: symbol,
                 price: tech.price,
-                buy3, buy5, draw5,
-                peak: tech.maxHigh,
-                support: tech.minLow,
+                buy5,
                 rsi: tech.rsi,
                 costInfo,
                 evaluation
@@ -84,43 +69,37 @@ async function generateTacticalReport() {
         const activeResults = results.filter(r => r !== null);
         if (activeResults.length === 0) return;
 
-        for (const r of activeResults) {
-            const fields = [
-                { name: '🎯 執行指令 (-3% / -5%)', value: `建議 A (買): \`${r.buy3.toLocaleString()}\`\n建議 B (接): \`${r.buy5.toLocaleString()}\``, inline: true },
-                { name: '🏔️ 壓力/支撐', value: `60日高點: \`${r.peak.toLocaleString()}\`\n20日支撐: \`${r.support.toLocaleString()}\``, inline: true }
-            ];
+        // 🟢 分類：台股 (.TW) 與 全球/其他
+        const twStocks = activeResults.filter(r => r.name.endsWith('.TW'));
+        const globalAssets = activeResults.filter(r => !r.name.endsWith('.TW'));
 
-            // 🟢 v11.3.0: 插入個人成本欄位
-            if (r.costInfo) {
-                fields.push({
-                    name: '💼 持倉成本與智慧單 (Cost-Basis)',
-                    value: `當前成本: \`${r.costInfo.cost.toLocaleString()}\` (實時損益: ${r.costInfo.pnl}%)\n` +
-                        `智慧買點 (-1%): **${r.costInfo.costAt99.toLocaleString()}**`,
-                    inline: false
-                });
-            }
-
-            fields.push({ name: '🧠 戰術分析', value: `依據：**${r.evaluation.note}**\n信心值：\`${r.evaluation.confidence}%\``, inline: false });
-
-            const embed = {
-                title: `🛡️ 戰術評級：[ ${r.evaluation.grade} ] - ${r.evaluation.title}`,
-                description: `標的：**${r.name}** | 當前價: **$${r.price.toLocaleString()}** (RSI: ${r.rsi})`,
-                color: r.evaluation.color,
-                fields: fields,
-                footer: { text: "AI 戰術終端 v11.3.0 | 持倉成本對齊系統" },
-                timestamp: new Date().toISOString()
-            };
-            await sendDiscordEmbed(embed, config.discordAlertWebhook);
+        // 🟢 1. 發送台股戰報
+        if (twStocks.length > 0) {
+            const twTable = formatAsTable("🛡️ 台股戰術特快 (TW)", twStocks, isNight);
+            await sendDiscord(twTable, config.discordAlertWebhook);
+            await sleep(1000);
         }
 
-        log('✅', '【持倉成本對齊】戰術報告已分發。');
+        // 🟢 2. 發送全球/美股/加密貨幣戰報
+        if (globalAssets.length > 0) {
+            const globalTable = formatAsTable("🌍 全球資產戰報 (Global)", globalAssets, isNight);
+            await sendDiscord(globalTable, config.discordAlertWebhook);
+        }
+
+        log('✅', '【全面表格化】戰術報告已分發。');
 
     } catch (e) {
         log('❌', `戰術報告產生失敗: ${e.message}`);
     }
 }
 
-// 🕰️ 排程：週一至週五 08:30 (開盤前)
+// 🕰️ 排程：
+// 1. 每日 23:00 (🌙 晚報預發 - 智慧單對齊)
+cron.schedule('0 23 * * *', () => generateTacticalReport());
+
+// 2. 週一至週五 08:30 (☀️ 晨報 - 開盤最後點校)
 cron.schedule('30 8 * * 1-5', () => generateTacticalReport());
 
 if (process.argv.includes('--now')) generateTacticalReport();
+
+module.exports = { generateTacticalReport };
