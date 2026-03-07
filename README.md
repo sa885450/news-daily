@@ -22,6 +22,9 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.7.12 (儀表板 UI 異常修復計畫) 🛠️
+- **🛠️ UI 顯示修復**: 修復儀表板上四個關鍵區塊的顯示異常。包含: 將物件型態的 `tactical_advice` 正確轉換成 HTML; 修正情緒走勢圖表中 `score` 與 `sentiment_score` 的欄位屬性對應; 正規化熱詞雲 `keywords7d` 在極高頻率下的字體覆蓋錯誤; 兼容 `relations` 關聯網路圖中 `from/to` 與 `source/target` 屬性的屬性替換。
+
 ### v13.7.11 (主線系統排錯計畫 - System Fix) 🔧
 - **🔧 Git 鎖定修復**: 修正 `git.js` 寫死檔案路徑導致略過 `.gitignore` 規範的問題，根除 SQLite 資料庫 (`news_bot.db`) 在主線執行時阻礙 Git Push 的錯誤。
 ### v13.7.9 (熱修復 - Hotfix) 🩹

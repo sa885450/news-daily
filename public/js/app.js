@@ -142,12 +142,22 @@ function renderSummary() {
     // 渲染戰術建議 (v13.5.0)
     if (result.tactical_advice) {
         tacticalBox.classList.remove('hidden');
+        let adviceContent = '';
+        if (typeof result.tactical_advice === 'object' && result.tactical_advice !== null) {
+            const ta = result.tactical_advice;
+            adviceContent = `<strong>建議行動：</strong> ${ta.action || '無'} (信心度: ${ta.confidence || 0}%)<br>
+                             <strong>建議倉位：</strong> ${ta.position_size || '未提供'}<br>
+                             <strong>戰略理由：</strong> ${ta.rationale || '無'}`;
+        } else {
+            adviceContent = result.tactical_advice || "今日無特別戰術建議。";
+        }
+
         tacticalBox.innerHTML = `
             <div class="flex items-center gap-2 mb-2 text-indigo-600 dark:text-indigo-400">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 <h4 class="font-black text-sm uppercase tracking-tighter">AI 戰術執行建議</h4>
             </div>
-            <p class="text-sm text-slate-600 dark:text-slate-400 italic">${result.tactical_advice}</p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 italic" id="tactical_advice">${adviceContent}</p>
         `;
     }
 }
@@ -185,7 +195,7 @@ function renderSentimentChart() {
             labels: stats.map(s => s.date.split('-').slice(1).join('/')),
             datasets: [{
                 label: '情緒分數',
-                data: stats.map(s => s.score),
+                data: stats.map(s => s.sentiment_score ?? 0),
                 borderColor: '#6366f1',
                 backgroundColor: 'rgba(99, 102, 241, 0.1)',
                 borderWidth: 4,
@@ -268,9 +278,20 @@ function renderSectorChart() {
 function renderWordCloud() {
     const canvas = document.getElementById('keyword-cloud');
     const keywords = appData.keywords7d || [];
-    if (keywords.length === 0) return;
+    if (keywords.length === 0) {
+        canvas.innerHTML = '<div class="flex items-center justify-center h-full text-slate-400 text-xs">暫無熱詞數據</div>';
+        return;
+    }
 
-    const list = keywords.slice(0, 30).map(k => [k.word, k.count * 5 + 10]);
+    const maxCount = Math.max(...keywords.map(k => k.count), 1);
+    const minCount = Math.min(...keywords.map(k => k.count), 0);
+    const list = keywords.slice(0, 50).map(k => {
+        let weight = 15;
+        if (maxCount > minCount) {
+            weight = 15 + ((k.count - minCount) / (maxCount - minCount)) * 45;
+        }
+        return [k.word, weight];
+    });
 
     WordCloud(canvas, {
         list: list,
@@ -297,11 +318,14 @@ function renderKnowledgeGraph() {
     const edges = [];
 
     relations.forEach(rel => {
-        nodes.add(rel.source);
-        nodes.add(rel.target);
-        edges.push({ from: rel.source, to: rel.target, label: rel.type, font: { size: 10 } });
+        const source = rel.from || rel.source;
+        const target = rel.to || rel.target;
+        if (source && target) {
+            nodes.add(source);
+            nodes.add(target);
+            edges.push({ from: source, to: target, label: rel.type, font: { size: 10 } });
+        }
     });
-
     const data = {
         nodes: Array.from(nodes).map(n => ({ id: n, label: n, color: '#e0e7ff', shadow: true })),
         edges: edges
