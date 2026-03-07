@@ -96,11 +96,15 @@ function renderAIEntities() {
     const entities = appData.aiResult?.entities || [];
     if (entities.length === 0) return;
 
-    container.innerHTML = entities.slice(0, 5).map(e => `
-        <span onclick="handleSearch('${e}')" class="px-3 py-1 bg-white/10 hover:bg-white/30 rounded-full text-xs font-bold cursor-pointer transition-all border border-white/10">
-            #${e}
+    container.innerHTML = entities.slice(0, 5).map(e => {
+        const entityName = typeof e === 'string' ? e : (e.name || '');
+        if (!entityName) return '';
+        return `
+        <span onclick="handleSearch('${entityName}')" class="px-3 py-1 bg-white/10 hover:bg-white/30 rounded-full text-xs font-bold cursor-pointer transition-all border border-white/10">
+            #${entityName}
         </span>
-    `).join('');
+    `;
+    }).join('');
 }
 
 // 🟢 v13.5.0: 渲染 AI 摘要與戰術建議

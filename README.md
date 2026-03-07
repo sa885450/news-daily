@@ -22,7 +22,9 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
-### v13.7.12 (儀表板 UI 異常修復計畫) 🛠️
+### v13.7.13 (標題區塊 AI 標籤顯示修復) 🏷️
+- **🏷️ AI 實體標籤修復**: 修正儀表板標題列右側的 AI 實體標籤 (AI Entities) 顯示為 `#[object Object]` 的問題。這肇因於後端資料結構由字串陣列升級為包含名稱與情緒波動的物件陣列（`name`, `sentiment`, `ticker`），導致舊版前端直接渲染物件而發生錯誤。修復後已能正確顯示實體名稱並維持原本的一鍵搜尋功能。
+
 - **🛠️ UI 顯示修復**: 修復儀表板上四個關鍵區塊的顯示異常。包含: 將物件型態的 `tactical_advice` 正確轉換成 HTML; 修正情緒走勢圖表中 `score` 與 `sentiment_score` 的欄位屬性對應; 正規化熱詞雲 `keywords7d` 在極高頻率下的字體覆蓋錯誤; 兼容 `relations` 關聯網路圖中 `from/to` 與 `source/target` 屬性的屬性替換。
 
 ### v13.7.11 (主線系統排錯計畫 - System Fix) 🔧
