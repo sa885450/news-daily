@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.2 (5 分鐘週期的 Git 彈窗根除) 🚫🥷
+- **🛠️ Git 靜默化強化**: 針對 `lib/git.js` 所有的 `execSync` 調用加入 `windowsHide: true`。這解決了金十數據同步後自動推送到 GitHub 時彈出的黑視窗。
+- **🤫 Playwright 深度靜默**: 在啟動參數中停用信號攔截器（SIGINT/SIGTERM），減少背景驅動程式與視窗系統的互動。
+- **🏷️ 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.1 (徹底隱藏 CMD 視窗修復) 🤫🛡️
 - **🚫 視窗抑制強化**: 在 `monitor.js` 的 `exec` 聯動指令中加入 `windowsHide: true` 選項，徹底解決 Windows 環境下彈出 CMD 黑視窗的問題。
 - **🤫 爬蟲靜默升級**: 優化 `jin10.js` 的 Playwright 參數，增加 `--disable-gpu` 及視窗隱藏環境隔離，確保抓取過程完全透明。

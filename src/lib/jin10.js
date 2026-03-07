@@ -20,6 +20,9 @@ class Jin10Service {
             // 🟢 v13.4.0: 強化隱藏視窗參數
             this.browser = await chromium.launch({
                 headless: true,
+                handleSIGINT: false,
+                handleSIGTERM: false,
+                handleSIGHUP: false,
                 args: [
                     '--no-sandbox',
                     '--disable-setuid-sandbox',
