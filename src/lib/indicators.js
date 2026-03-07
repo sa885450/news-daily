@@ -96,4 +96,25 @@ async function getTechnicalIndicators(symbol) {
     }
 }
 
-module.exports = { getTechnicalIndicators };
+// 🟢 v13.7.8 新增：直接抓取 ADR 變化率 (規避 v3 套件報錯)
+async function getADRChange(symbol = 'TSM') {
+    try {
+        const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?region=US&lang=en-US&includePrePost=false&interval=1d&useYfid=true&range=2d`;
+        const res = await fetch(url);
+        const data = await res.json();
+        const result = data.chart.result[0];
+        if (!result) return 0;
+
+        const closes = result.indicators.quote[0].close;
+        if (closes && closes.length >= 2) {
+            const current = closes[closes.length - 1];
+            const prev = closes[closes.length - 2];
+            return (current - prev) / prev;
+        }
+    } catch (e) {
+        console.error(`獲取 ${symbol} ADR 變化失敗:`, e.message);
+    }
+    return 0;
+}
+
+module.exports = { getTechnicalIndicators, getADRChange };

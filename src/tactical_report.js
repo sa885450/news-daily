@@ -27,14 +27,17 @@ function formatAsEmbed(title, results, isNight = false) {
         const pnlStr = r.costInfo ? ` (持倉損益: ${r.costInfo.pnl}%)` : '';
         const levelStr = `1️⃣月:**${r.levels.A.toLocaleString()}** | 2️⃣跌:**${r.levels.B.toLocaleString()}** | 3️⃣季:**${r.levels.C.toLocaleString()}**`;
 
+        const expectedStr = r.evaluation.adrChange ? ` (預期開盤: \`${r.evaluation.expectedOpen.toLocaleString()}\`)` : '';
+        const actionStr = r.evaluation.isAborted ? `🚨 **暫停買入**: 成本 \`${(r.costInfo ? r.costInfo.cost : 0).toLocaleString()}\` 過高` : `🤖 **智慧單指令**: \`設置 ${parseFloat(r.evaluation.orderPrice.toFixed(2)).toLocaleString()} 觸價單 (${r.evaluation.orderName})\``;
+
         embed.fields.push({
             name: `🔹 **${r.name}** [${r.evaluation.grade}]`,
             value: [
-                `現價: \`${r.price.toLocaleString()}\` ${trendIcon}${pnlStr}`,
+                `現價: \`${r.price.toLocaleString()}\` ${trendIcon}${pnlStr}${expectedStr}`,
                 `支撐: 月線 \`${r.levels.A.toLocaleString()}\` / 季線 \`${r.levels.C.toLocaleString()}\``,
                 `🎯 **金字塔分層**: ${levelStr}`,
-                r.costInfo ? `⚖️ **加碼後新成本**: \`${r.costInfo.newBase.toLocaleString()}\`` : '',
-                `🤖 **智慧單指令**: \`設置 ${r.evaluation.orderPrice.toLocaleString()} 智慧單 (${r.evaluation.orderName})\``
+                r.costInfo ? `⚖️ **加碼後預測均價**: \`${parseFloat(r.costInfo.newBase.toFixed(2)).toLocaleString()}\`` : '',
+                actionStr
             ].filter(l => l).join('\n'),
             inline: false
         });
@@ -53,8 +56,9 @@ function formatAsEmbed(title, results, isNight = false) {
     return embed;
 }
 
-// 🟢 核心邏輯：三層金字塔評級系統 (v13.7.0)
-function getTacticalGrade(tech, costInfo) {
+// 🟢 核心邏輯：三層金字塔評級系統 (v13.7.8 升級版)
+// 引入 adrChange 用以計算 Expected Open，並在買點無利可圖時進行中止判斷 (Abort)
+function getTacticalGrade(tech, costInfo, adrChange = 0) {
     const { price, ma20, ma60, rsi } = tech;
     const levelA = ma20;
     const levelB = ma20 * 0.95;
@@ -63,6 +67,9 @@ function getTacticalGrade(tech, costInfo) {
     let grade = 'B (觀望)';
     let orderPrice = levelA;
     let orderName = '層級 A:月線';
+
+    // 🟢 v13.7.8: 預期的開盤價 (基於 ADR 跌幅)
+    const expectedOpen = price * (1 + adrChange);
 
     const myCostPrice = costInfo ? costInfo.cost : null;
 
@@ -79,27 +86,32 @@ function getTacticalGrade(tech, costInfo) {
         orderPrice = levelB * 1.005; // 月線下 5% 之上緣
         orderName = '層級 B:月下 5%';
     } else {
-        // 🟢 v13.7.6: 價格在月線上方，執行「墊高買點」策略
+        // 🟢 v13.7.8: 根據計畫書，改為預期開盤價與月線防守的連動
         grade = price > levelA * 1.05 ? 'C (警戒)' : 'B (觀望)';
 
-        // 1. 決定基準價 (現價與均價之小者)
-        const upper = myCostPrice ? Math.min(price, myCostPrice) : price;
-
-        // 2. 計算 1.5% 緩衝買點
-        let target = upper * 0.985;
-
-        // 3. 確保不低於月線 (應該月線以上)
-        if (target < levelA) {
-            target = levelA * 1.005; // 墊高在月線上緣
-            orderName = '智取單:月線上緣';
-        } else {
-            orderName = '智取單:成本補位';
-        }
-
-        orderPrice = target;
+        // Sweet Point A 邏輯：取預期開盤與月線防守之最大值 (優先保證成交)
+        orderPrice = Math.max(levelA + 3, expectedOpen);
+        orderName = '智取單:開盤連動';
     }
 
-    return { grade, orderPrice, orderName, levels: { A: levelA, B: levelB, C: levelC } };
+    // 🟢 攤平效率保護 (Efficiency Check)
+    let isAborted = false;
+    if (myCostPrice && orderPrice >= myCostPrice) {
+        grade = 'C (中止)';
+        orderPrice = myCostPrice; // 強制將買線天花板設在均價
+        orderName = '🚨 成本過高，暫停買入';
+        isAborted = true;
+    }
+
+    return {
+        grade,
+        orderPrice,
+        orderName,
+        isAborted,
+        adrChange,
+        expectedOpen,
+        levels: { A: levelA, B: levelB, C: levelC }
+    };
 }
 
 async function generateTacticalReport() {
@@ -114,15 +126,21 @@ async function generateTacticalReport() {
             const tech = await getTechnicalIndicators(symbol);
             if (!tech) return null;
 
+            // 🟢 v13.7.8 獲取對等 ADR 數值 (目前僅針對 2330.TW 取得 TSM)
+            let adrVal = 0;
+            if (symbol === '2330.TW') {
+                adrVal = await getADRChange('TSM');
+            }
+
             const myCostPrice = myCosts[symbol];
             let costInfo = null;
 
             // 實作金字塔位階評級
-            const evaluation = getTacticalGrade(tech);
+            const evaluation = getTacticalGrade(tech, costInfo ? { cost: myCostPrice } : (myCostPrice ? { cost: myCostPrice } : null), adrVal);
 
             if (myCostPrice) {
                 // 試算買入一層後的加碼效率 (假設 1:1 稀釋)
-                const targetBuyPrice = evaluation.levels.A;
+                const targetBuyPrice = evaluation.orderPrice;
                 costInfo = {
                     cost: myCostPrice,
                     newBase: (myCostPrice + targetBuyPrice) / 2,
