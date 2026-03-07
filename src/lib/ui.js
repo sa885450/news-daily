@@ -20,6 +20,8 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
 
     // 🔍 整合 CSR 數據包
     const dataPackage = {
+        date: dateObj.toLocaleDateString('zh-TW'),
+        time: dateObj.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: false }),
         updateTime: dateObj.toISOString(),
         fullDateStr: `${dateObj.toLocaleDateString('zh-TW')} · 更新於 ${dateObj.toLocaleTimeString('zh-TW', { hour12: false })}`,
         market_snapshot: marketSnapshot, // 🟢 v8.4.0: 引入 MCP 市場行情

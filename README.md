@@ -22,6 +22,14 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.9 (前端數據同步與視覺深度修復) 🎨📊
+- **📊 數據結構對齊**: 修正 `app.js` 以正確處理 `market_snapshot` 物件，解決 `map is not a function` 之關鍵報錯，恢復市場走馬燈功能。
+- **🖼️ 顯示邏輯校正**: 
+  - 修正新聞列表數據來源（由 `articles` 改為 `newsData`）。
+  - 對齊新聞卡片摘要欄位與熱詞雲數據源 (`keywords7d`)。
+- **🏷️ legacy 欄位補全**: 在 `ui.js` 產出的 JSON 中補回 `date` 與 `time` 欄位，確保前端 Header 資訊正常顯示。
+- **📦 版本同步**: 更新 `package.json` 與 `index.html` 版號。
+
 ### v13.5.8 (缺失引用修復) 🛠️🐛
 - **🐞 引用錯誤修復**: 修復 `jin10.js` 中因引用 `config.browserPath` 但未載入 `config` 模組導致的 `ReferenceError`。
 - **📦 版本同步**: 更新 `package.json` 版本號。

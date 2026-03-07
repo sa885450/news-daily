@@ -58,20 +58,30 @@ async function init() {
 function renderTicker() {
     const ticker = document.getElementById('market-ticker');
     const content = document.getElementById('ticker-content');
-    if (!appData.market_snapshot || appData.market_snapshot.length === 0) {
+    // 🟢 v13.5.9: 修正物件遍歷邏輯 (Object to Array)
+    const snapshotObj = appData.market_snapshot || {};
+    const flatItems = [
+        ...Object.values(snapshotObj.traditional || {}),
+        ...Object.values(snapshotObj.crypto || {})
+    ];
+
+    if (flatItems.length === 0) {
         ticker.classList.add('hidden');
         return;
     }
 
     ticker.classList.remove('hidden');
-    const items = appData.market_snapshot.map(item => {
-        const isUp = item.change && !item.change.startsWith('-');
+    const items = flatItems.map(item => {
+        const isUp = item.change && (typeof item.change === 'string' ? !item.change.startsWith('-') : item.change >= 0);
         const color = isUp ? 'text-red-500' : 'text-green-500';
+        const priceStr = typeof item.price === 'number' ? item.price.toLocaleString() : (item.price || '--');
+        const changeStr = typeof item.change === 'number' ? item.change.toFixed(2) + '%' : (item.change || '');
+
         return `
             <div class="flex items-center gap-2 px-6 border-r border-slate-100 dark:border-slate-800 whitespace-nowrap cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors py-1" onclick="openChart('${item.symbol}')">
                 <span class="font-black text-slate-800 dark:text-slate-200">${item.name}</span>
-                <span class="font-mono font-bold ${color}">${item.price}</span>
-                <span class="text-[10px] font-bold ${color}">${item.change || ''}</span>
+                <span class="font-mono font-bold ${color}">${priceStr}</span>
+                <span class="text-[10px] font-bold ${color}">${changeStr}</span>
             </div>
         `;
     }).join('');
@@ -257,7 +267,7 @@ function renderSectorChart() {
 // 渲染熱詞雲
 function renderWordCloud() {
     const canvas = document.getElementById('keyword-cloud');
-    const keywords = appData.keywords || [];
+    const keywords = appData.keywords7d || [];
     if (keywords.length === 0) return;
 
     const list = keywords.slice(0, 30).map(k => [k.word, k.count * 5 + 10]);
@@ -347,9 +357,9 @@ function renderNewsPage(append = false) {
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">${news.source} · ${news.time}</div>
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">${news.source} · ${news.timeStr || ''}</div>
                     <h3 class="text-lg font-black text-slate-800 dark:text-slate-100 mb-3 leading-tight line-clamp-2">${news.title}</h3>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-6 flex-grow">${news.summary || news.description || ''}</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-6 flex-grow">${news.content || ''}</p>
                     <div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
                         <a href="${news.url}" target="_blank" class="text-indigo-600 dark:text-indigo-400 text-xs font-black uppercase tracking-widest hover:translate-x-1 transition-transform inline-flex items-center gap-1">
                             READ SOURCE
@@ -378,7 +388,8 @@ function renderNewsPage(append = false) {
 
 // 過濾邏輯
 function filterNews() {
-    return appData.articles.filter(n => {
+    const articles = appData.newsData || [];
+    return articles.filter(n => {
         const matchCat = currentCategory === '全部' || n.category === currentCategory;
         const matchSearch = !currentSearch || n.title.includes(currentSearch) || (n.summary && n.summary.includes(currentSearch));
         return matchCat && matchSearch;
