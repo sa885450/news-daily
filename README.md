@@ -22,6 +22,10 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.7.2 (Discord 表格渲染修復) 🛠️📉
+- **📉 語法修正**: 修正 Markdown 表格單元格內誤用 `|` 符號的問題，改用 `/` 分隔位階建議，恢復 Discord 的表格視覺化效果。
+- **📦 版本同步**: 更新 `package.json`、`README.md` 版號至 v13.7.2。
+
 ### v13.7.1 (戰術報告定向修正 & 表格優化) 🛡️📡
 - **📡 Webhook 定向修正**: 修正晨報與晚報引用錯誤 Webhook 變數的問題，確保報告準確發送至 `DISCORD_TACTICAL_WEBHOOK_URL` 頻道。
 - **📊 Discord 表格優化**: 移除表格中的 `<br>` HTML 標籤（Discord 不支援），優化在 Discord 行動端與桌面端的表格對齊效果。

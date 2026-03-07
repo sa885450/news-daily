@@ -22,7 +22,7 @@ function formatAsTable(title, results, isNight = false) {
             `1: ${r.levels.A.toLocaleString()}`,
             `2: ${r.levels.B.toLocaleString()}`,
             `3: ${r.levels.C.toLocaleString()}`
-        ].join(' | ');
+        ].join(' / ');
 
         const newCost = r.costInfo ? r.costInfo.newBase.toLocaleString() : '--';
         const priceDiff = r.price > r.levels.A ? `+${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%` : `${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%`;
