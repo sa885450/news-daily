@@ -31,7 +31,7 @@ module.exports = {
     excludeRegex: (process.env.EXCLUDE_KEYWORDS || "").split(',').map(k => new RegExp(k.trim(), 'i')).filter(r => r.source !== "(?:)"),
 
     // AI 模型設定 (🟢 v13.3.2: 修正為 2.0 正式版型號)
-    modelCandidates: ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-flash-latest", "gemini-2.0-flash-lite-preview-0205"],
+    modelCandidates: ["gemini-1.5-flash-latest", "gemini-2.0-flash", "gemini-2.0-flash-lite-preview-0205"],
     similarityThreshold: parseFloat(process.env.SIMILARITY_THRESHOLD) || 0.8,
 
     // 爬蟲偽裝 Headers
@@ -46,7 +46,7 @@ module.exports = {
     },
 
     // 路徑設定
-    gitPath: process.env.GIT_EXECUTABLE_PATH || 'C:\\Program Files\\Git\\cmd\\git.exe',
+    gitPath: process.env.GIT_EXECUTABLE_PATH || 'C:\\Program Files\\Git\\bin\\git.exe',
     dbPath: path.join(rootDir, 'data', 'news_bot.db'),
     crawlerDbPath: path.join(rootDir, 'data', 'crawler.db'),
     publicDir: path.join(rootDir, 'public'),

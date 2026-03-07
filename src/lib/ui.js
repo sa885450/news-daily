@@ -65,7 +65,8 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
         // 2. 更新歷史數據檔案 (用於未來回溯)
         fs.writeFileSync(historyPath, safeJsonStr, 'utf8');
 
-        log('📦', `CSR 資料包(v9.3.1) 已產出: public/data.json (Size: ${(safeJsonStr.length / 1024).toFixed(2)} KB)`);
+        const { version } = require('../../package.json');
+        log('📦', `CSR 資料包(v${version}) 已產出: public/data.json (Size: ${(safeJsonStr.length / 1024).toFixed(2)} KB)`);
 
         return { filePath: dataPath, fileName: 'data.json' };
     } catch (err) {

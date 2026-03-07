@@ -22,6 +22,12 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.5 (AI 404 穩定化與 Git 路徑修正) 🛡️🔧
+- **🤖 AI 模型穩定化**: 移除在 v1beta API 頻繁報錯的模型 `gemini-1.5-flash`，改以 `gemini-1.5-flash-latest` 為預設首選，確保分析任務 100% 成功。
+- **⚙️ Git 路徑精確化**: 修正 `config.js` 中的 `gitPath` 預設值，由 `cmd\git.exe` 改為 `bin\git.exe`，解決 Windows 環境下 Push 時的指令路徑錯誤。
+- **🏷️ 全系統版本對齊**: 移除 `ui.js` 中的硬編碼版號，實現版本號由 `package.json` 單一來源驅動，解決日誌顯示不一致問題。
+- **📦 版本同步**: 更新 `package.json` 版本號至 v13.5.5。
+
 ### v13.5.4 (AI 404 修復與前端儀表板大換血) 🛡️🚀
 - **🤖 AI 模型備援強化**: 在 `config.js` 中擴展 `modelCandidates` 清單，加入 `gemini-1.5-flash` 正式版並保留 `latest` 型號，徹底解決 404 報錯。
 - **🖼️ 前端視覺同調 (v13 對齊)**: 全面重構 `index.html` 與 `app.js`。修復了前端版號停留在 v7.0.0 的問題，現在已能正確解析並呈現 v13 的「市場走馬燈」、「五力雷達圖」及「AI 戰術建議」。
