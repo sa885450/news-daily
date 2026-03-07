@@ -26,7 +26,10 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
         aiResult: {
             ...aiResult,
             sentiment_score: aiResult.sentiment_score || 0,
-            summary: aiResult.summary || "無摘要資料"
+            summary: aiResult.summary || "無摘要資料",
+            // 🟢 v13.3.2: 補全預設結構，防止前端 Chart.js 因 null 崩潰
+            dimensions: aiResult.dimensions || { policy: 0, market: 0, industry: 0, international: 0, technical: 0 },
+            sector_stats: aiResult.sector_stats || { tech: 0, finance: 0, manufacturing: 0, service: 0 }
         },
         newsData: newsData.map(n => ({
             title: n.title,

@@ -182,12 +182,28 @@ async function runTask() {
             log('🕵️', `過濾官已過濾: 共 ${allMatchedNews.length} 則 -> 選出精銳 ${eliteNews.length} 則`);
 
             // 🟢 AI 分析 (傳入精銳新聞、行情數據、緊急模式參數、技術面數據，明確指定 deep 模式)
-            const aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
-            log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
+            let aiResult;
+            try {
+                aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
+                log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
+            } catch (e) {
+                log('⚠️', `AI 分析全數失敗，啟動「歷史數據延續」備援機制...`);
+                // 🟢 v13.3.2: 若 AI 失敗，則沿用上一份最後成功的分析結果，避免資料庫被存入 NULL
+                aiResult = {
+                    sentiment_score: lastStats?.sentiment_score || 0,
+                    summary: (lastStats?.summary || "分析暫時無法產生。") + `<p><small><i>(注意：AI 模型今日回應異常，本報表沿用前次有效分析)</i></small></p>`,
+                    dimensions: lastStats?.dimensions || null,
+                    sector_stats: lastStats?.sector_stats || null,
+                    events: lastStats?.events || [],
+                    relations: lastStats?.relations || [],
+                    tactical_advice: lastStats?.tactical_advice || null,
+                    categories: [] // 緩衝，避免後續 catMap 噴錯
+                };
+            }
 
             // 🟢 v13.1.0: 更新分類並回寫資料庫
             const catMap = {};
-            if (aiResult.categories) {
+            if (aiResult.categories && Array.isArray(aiResult.categories)) {
                 aiResult.categories.forEach(c => { if (c.id !== undefined) catMap[c.id] = c.category; });
                 allMatchedNews.forEach((n, i) => {
                     n.category = catMap[i] || "其他";
