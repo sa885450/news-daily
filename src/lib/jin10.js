@@ -1,4 +1,5 @@
 const { chromium } = require('playwright');
+const config = require('./config');
 const { log } = require('./utils');
 const OpenCC = require('opencc-js');
 
