@@ -347,20 +347,15 @@ function renderNewsPage(append = false) {
 
         return `
             <div class="news-card bg-white dark:bg-slate-800 rounded-[2.5rem] overflow-hidden shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col group animate-fade" style="animation-delay: ${idx * 0.05}s">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="${news.thumbnail || 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop'}" 
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                         onerror="this.src='https://images.unsplash.com/photo-1611974715853-2b8ef9a3d136?w=800&auto=format&fit=crop'">
-                    <div class="absolute top-4 left-4 flex gap-2">
-                        <span class="px-3 py-1 ${categoryColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-lg">${news.category || '一般'}</span>
-                        <span class="px-3 py-1 ${sentimentColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-lg">${isBullish ? 'BULLISH' : 'BEARISH'}</span>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-3 py-1 ${categoryColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-sm">${news.category || '一般'}</span>
+                        <span class="px-3 py-1 ${sentimentColor} text-white text-[10px] font-black rounded-lg uppercase tracking-widest shadow-sm">${isBullish ? 'BULLISH' : 'BEARISH'}</span>
+                        <span class="ml-auto text-[10px] font-bold text-slate-400 uppercase tracking-widest">${news.source} · ${news.timeStr || ''}</span>
                     </div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">${news.source} · ${news.timeStr || ''}</div>
-                    <h3 class="text-lg font-black text-slate-800 dark:text-slate-100 mb-3 leading-tight line-clamp-2">${news.title}</h3>
-                    <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-3 mb-6 flex-grow">${news.content || ''}</p>
-                    <div class="mt-auto flex items-center justify-between pt-4 border-t border-slate-50 dark:border-slate-700">
+                    <h3 class="text-xl font-black text-slate-800 dark:text-slate-100 mb-4 leading-tight">${news.title}</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-4 mb-6 flex-grow leading-relaxed">${news.content || ''}</p>
+                    <div class="mt-auto flex items-center justify-between pt-6 border-t border-slate-50 dark:border-slate-700">
                         <a href="${news.url}" target="_blank" class="text-indigo-600 dark:text-indigo-400 text-xs font-black uppercase tracking-widest hover:translate-x-1 transition-transform inline-flex items-center gap-1">
                             READ SOURCE
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>

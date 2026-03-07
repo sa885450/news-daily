@@ -1,6 +1,6 @@
 {
   "name": "news",
-  "version": "13.5.9",
+  "version": "13.6.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {

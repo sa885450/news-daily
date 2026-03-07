@@ -53,7 +53,7 @@ async function generateHTMLReport(aiResult, newsData, keywordStats = {}, chartDa
         recentStats: chartData,
         events: events || [],
         relations: relations || [],
-        keywords7d: keywords7d || []
+        keywords7d: keywords7d || [] // 🟢 v13.6.0: 確保引用正確變數名稱
     };
 
     try {
