@@ -94,13 +94,17 @@ function getTacticalGrade(tech, costInfo, adrChange = 0) {
         orderName = '智取單:開盤連動';
     }
 
-    // 🟢 攤平效率保護 (Efficiency Check)
+    // 🟢 v13.7.10: 優化攤平效率保護 (提供合理低位區參考價，而非暫停買入)
     let isAborted = false;
     if (myCostPrice && orderPrice >= myCostPrice) {
-        grade = 'C (中止)';
-        orderPrice = myCostPrice; // 強制將買線天花板設在均價
-        orderName = '🚨 成本過高，暫停買入';
-        isAborted = true;
+        // 如果原本算出的甜甜價 > 用戶均價，代表沒有攤平效果或者追高。
+        // 取消 Abort 強制中止，改為給予「成本過關參考價」 (如成本的 0.985，即跌 1.5% 後才接)
+        const suggestedPrice = myCostPrice * 0.985;
+        // 確保這個參考價有一定合理性，不低於季線防衛底部
+        orderPrice = Math.max(suggestedPrice, levelC);
+        orderName = '智取單:成本極限前緣';
+        grade = 'C (超限補位)';
+        // isAborted 保留給非常極端的例外，在此情境停用
     }
 
     return {
