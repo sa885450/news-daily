@@ -156,6 +156,7 @@ async function runTask() {
 
             // 找出對應的 Symbol
             if (targetName === '台積電') targetSymbol = '2330.TW';
+            else if (targetName === 'TSM') targetSymbol = 'TSM';
             else if (targetName === '元大台灣50') targetSymbol = '0050.TW';
             else if (targetName === 'BTC') targetSymbol = 'BTC-USD';
             else if (targetName.includes('KGI') || targetName.includes('Top50')) targetSymbol = '009816.TW';

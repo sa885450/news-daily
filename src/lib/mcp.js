@@ -35,7 +35,7 @@ async function getMarketSnapshot() {
 
         // 2. 傳統金融 (Yahoo Finance)
         log('📈', '正在同步 Yahoo Finance 全球指標...');
-        const symbols = ['^TWII', '^GSPC', '2330.TW', '0050.TW', '009816.TW', 'GC=F'];
+        const symbols = ['^TWII', '^GSPC', '2330.TW', 'TSM', '0050.TW', '009816.TW', 'GC=F'];
 
         for (const symbol of symbols) {
             try {
@@ -45,6 +45,7 @@ async function getMarketSnapshot() {
                     const nameMap = {
                         'twii': '台股加權',
                         'gspc': 'S&P 500',
+                        'tsm': '台積電 ADR',
                         '2330': '台積電',
                         '0050': '元大台灣50',
                         '009816': '凱基台灣Top50',
@@ -93,6 +94,9 @@ function formatSnapshotForAI(snapshot) {
     }
     if (trad.gspc) {
         text += `- S&P 500 (US): ${trad.gspc.price.toLocaleString()} (${(trad.gspc.change || 0).toFixed(2)}%)\n`;
+    }
+    if (trad.tsm) {
+        text += `- 台積電 ADR (TSM): $${trad.tsm.price.toLocaleString()} (${(trad.tsm.change || 0).toFixed(2)}%)\n`;
     }
 
     return text;
