@@ -37,7 +37,7 @@ async function getTechnicalIndicators(symbol) {
     try {
         const endDate = new Date();
         const startDate = new Date();
-        startDate.setDate(endDate.getDate() - 60); // 獲取 60 天歷史，確保扣除假日後足夠計算 20MA
+        startDate.setDate(endDate.getDate() - 100); // 🟢 v13.7.0: 獲取 100 天歷史，確保穩定計算 MA60 (季線)
 
         // 🟢 升級：使用 chart() 代替已廢棄的 historical()，減少日誌噪音
         const result = await yahoo.chart(symbol, {
@@ -66,12 +66,13 @@ async function getTechnicalIndicators(symbol) {
         const maxHigh60 = highPrices.length > 0 ? Math.max(...highPrices) : latestPrice;
         const minLow20 = closePrices.length > 0 ? Math.min(...closePrices.slice(-20)) : latestPrice;
 
-        // MA 計算 (支援資料不足時自動截斷)
         const ma5Len = Math.min(closePrices.length, 5);
         const ma20Len = Math.min(closePrices.length, 20);
+        const ma60Len = Math.min(closePrices.length, 60);
 
         const ma5 = closePrices.slice(-ma5Len).reduce((a, b) => a + b, 0) / ma5Len;
         const ma20 = closePrices.slice(-ma20Len).reduce((a, b) => a + b, 0) / ma20Len;
+        const ma60 = closePrices.slice(-ma60Len).reduce((a, b) => a + b, 0) / ma60Len;
 
         // RSI (至少需要 2 點計算，否則預設 50)
         const rsi = closePrices.length >= 2 ? calculateRSI(closePrices.slice(-15)) : 50;
@@ -86,6 +87,7 @@ async function getTechnicalIndicators(symbol) {
             minLow: minLow20,
             ma5: parseFloat(ma5.toFixed(2)),
             ma20: parseFloat(ma20.toFixed(2)),
+            ma60: parseFloat(ma60.toFixed(2)),
             rsi: parseFloat(rsi.toFixed(2)),
             trend: latestPrice > ma20 ? 'BULL' : 'BEAR'
         };
