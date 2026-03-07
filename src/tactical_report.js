@@ -10,27 +10,47 @@ const cron = require('node-cron');
  */
 
 // 🟢 輔助函數：將資料格式化為 Markdown 表格
+// 🟢 輔助函數：將資料格式化為 Discord ASCII 表格 (v13.7.3)
 function formatAsTable(title, results, isNight = false) {
-    let header = `### ${title}\n`;
-    header += isNight ? `> *🌙 晚報：次日智慧單整備 (分析點：美股開盤趨勢)*\n\n` : `> *☀️ 晨報：盤前戰術最後校準*\n\n`;
+    let output = `### ${title}\n`;
+    output += isNight ? `> *🌙 晚報：次日智慧單整備 (分析點：美股開盤趨勢)*\n\n` : `> *☀️ 晨報：盤前戰術最後校準*\n\n`;
 
-    let table = `| 標的 | 當前價 | 月線(MA20) | 季線(MA60) | 三層金字塔建議 | 買入後新成本 | 評級 |\n`;
-    table += `| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n`;
+    // 定義欄位與寬度 (固定寬度以利對齊)
+    const cols = [
+        { label: '標的', width: 10 },
+        { label: '現價', width: 10 },
+        { label: '月線(A)', width: 10 },
+        { label: '季線(C)', width: 10 },
+        { label: '評級', width: 6 }
+    ];
 
+    let table = '```\n';
+
+    // 1. 標頭
+    table += cols.map(c => c.label.padEnd(c.width)).join(' | ') + '\n';
+    table += cols.map(c => '-'.repeat(c.width)).join('-|-') + '\n';
+
+    // 2. 資料行
     results.forEach(r => {
-        const levels = [
-            `1: ${r.levels.A.toLocaleString()}`,
-            `2: ${r.levels.B.toLocaleString()}`,
-            `3: ${r.levels.C.toLocaleString()}`
-        ].join(' / ');
-
-        const newCost = r.costInfo ? r.costInfo.newBase.toLocaleString() : '--';
-        const priceDiff = r.price > r.levels.A ? `+${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%` : `${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%`;
-
-        table += `| **${r.name}** | ${r.price.toLocaleString()} (${priceDiff}) | ${r.levels.A.toLocaleString()} | ${r.levels.C.toLocaleString()} | ${levels} | ${newCost} | **${r.evaluation.grade}** |\n`;
+        const row = [
+            r.name.substring(0, 10).padEnd(10),
+            r.price.toLocaleString().padEnd(10),
+            r.levels.A.toLocaleString().padEnd(10),
+            r.levels.C.toLocaleString().padEnd(10),
+            r.evaluation.grade.split(' ')[0].padEnd(6)
+        ];
+        table += row.join(' | ') + '\n';
     });
 
-    return header + table + `\n`;
+    // 3. 補充三層金字塔詳情 (避免表格過寬)
+    table += '\n【三層金字塔詳情】\n';
+    results.forEach(r => {
+        const costStr = r.costInfo ? ` (新成本預估: ${r.costInfo.newBase.toLocaleString()})` : '';
+        table += `${r.name.padEnd(10)}: 1:${r.levels.A.toLocaleString()} / 2:${r.levels.B.toLocaleString()} / 3:${r.levels.C.toLocaleString()}${costStr}\n`;
+    });
+
+    table += '```\n';
+    return output + table;
 }
 
 // 🟢 核心邏輯：三層金字塔評級系統 (v13.7.0)
