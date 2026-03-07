@@ -64,23 +64,39 @@ function getTacticalGrade(tech, costInfo) {
     let orderPrice = levelA;
     let orderName = '層級 A:月線';
 
+    const myCostPrice = costInfo ? costInfo.cost : null;
+
     if (price <= levelC) {
         grade = 'S (重錘)';
         orderPrice = levelC * 0.98; // 季線已破，往下 2% 找支撐點
         orderName = '層級 C:季線下探';
     } else if (price <= levelB) {
         grade = 'A (撿寶)';
-        orderPrice = levelC;
+        orderPrice = levelC * 1.005; // 季線上緣
         orderName = '層級 C:季線金位';
     } else if (price <= levelA) {
         grade = 'A (回補)';
-        orderPrice = levelB;
-        orderName = '層級 B:超跌 5%';
+        orderPrice = levelB * 1.005; // 月線下 5% 之上緣
+        orderName = '層級 B:月下 5%';
     } else {
-        // 價格在月線上方，下單指令設在月線
+        // 🟢 v13.7.6: 價格在月線上方，執行「墊高買點」策略
         grade = price > levelA * 1.05 ? 'C (警戒)' : 'B (觀望)';
-        orderPrice = levelA;
-        orderName = '層級 A:月線回測';
+
+        // 1. 決定基準價 (現價與均價之小者)
+        const upper = myCostPrice ? Math.min(price, myCostPrice) : price;
+
+        // 2. 計算 1.5% 緩衝買點
+        let target = upper * 0.985;
+
+        // 3. 確保不低於月線 (應該月線以上)
+        if (target < levelA) {
+            target = levelA * 1.005; // 墊高在月線上緣
+            orderName = '智取單:月線上緣';
+        } else {
+            orderName = '智取單:成本補位';
+        }
+
+        orderPrice = target;
     }
 
     return { grade, orderPrice, orderName, levels: { A: levelA, B: levelB, C: levelC } };
