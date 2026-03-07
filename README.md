@@ -22,6 +22,10 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.6 (AI 模型清單對齊與穩定化) 🤖🛡️
+- **🤖 經驗法則模型清單**: 依照用戶提供的成功經驗，將 `modelCandidates` 調整為 `["gemini-1.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]`。
+- **📦 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.5 (AI 404 穩定化與 Git 路徑修正) 🛡️🔧
 - **🤖 AI 模型穩定化**: 移除在 v1beta API 頻繁報錯的模型 `gemini-1.5-flash`，改以 `gemini-1.5-flash-latest` 為預設首選，確保分析任務 100% 成功。
 - **⚙️ Git 路徑精確化**: 修正 `config.js` 中的 `gitPath` 預設值，由 `cmd\git.exe` 改為 `bin\git.exe`，解決 Windows 環境下 Push 時的指令路徑錯誤。
