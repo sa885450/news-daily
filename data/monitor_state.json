@@ -2,15 +2,15 @@
   "btcPrice": 92000,
   "updatedAt": "2026-03-05T14:15:00.846Z",
   "BTC": {
-    "price": 68387,
+    "price": 68365,
     "lastAlertAt": 1772828102046
   },
   "ETH": {
-    "price": 1982.94,
+    "price": 1983.06,
     "lastAlertAt": 1772850302275
   },
   "SOL": {
-    "price": 84.71,
+    "price": 84.73,
     "lastAlertAt": 0
   },
   "BNB": {

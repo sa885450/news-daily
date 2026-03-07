@@ -16,9 +16,9 @@ function pushToGitHub() {
     log('📤', "正在執行 Git Push...");
 
     try {
-        execSync(`${gitPath} add "${dbPath}" "${publicDir}"`, { windowsHide: true });
-        execSync(`${gitPath} commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`, { windowsHide: true });
-        execSync(`${gitPath} push origin main`, { windowsHide: true });
+        execSync(`"${gitPath}" add "${dbPath}" "${publicDir}"`, { windowsHide: true, stdio: 'ignore' });
+        execSync(`"${gitPath}" commit -m "🤖 Local Bot Update: ${new Date().toLocaleString()}"`, { windowsHide: true, stdio: 'ignore' });
+        execSync(`"${gitPath}" push origin main`, { windowsHide: true, stdio: 'ignore' });
         log('✅', 'Git Push 成功！網站已更新。');
     } catch (error) {
         const stdoutMsg = error.stdout ? error.stdout.toString() : '';
@@ -31,7 +31,7 @@ function pushToGitHub() {
             // 🟢 v13.1.6: 倉庫對象損壞自動修復
             log('🔧', `Git 倉庫對象異常，嘗試自動修復 (git gc)...`);
             try {
-                execSync(`${gitPath} gc --prune=now`, { windowsHide: true });
+                execSync(`"${gitPath}" gc --prune=now`, { windowsHide: true, stdio: 'ignore' });
                 log('✅', 'Git gc 修復完成，下次排程將重試。');
             } catch (gcErr) {
                 log('❌', `Git gc 修復失敗: ${gcErr.message}`);

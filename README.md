@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.3 (Windows CMD 彈窗終極根除版) 🛡️🚫
+- **⚡ Git 執行環境隔離**: 修改 `lib/git.js`，在 `execSync` 中注入 `stdio: 'ignore'` 並修正路徑包裹格式。這能防止 Node.js 在調用外部指令時嘗試分配控制台管道引發的閃爍。
+- **🤫 瀏覽器深度隱形**: 優化 `jin10.js` 的 Playwright 啟動配置，加入座標外定位 (`window-position`) 與環境變數抑制標籤，確保 Chromium 驅動進程 100% 靜默。
+- **🏷️ 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.2 (5 分鐘週期的 Git 彈窗根除) 🚫🥷
 - **🛠️ Git 靜默化強化**: 針對 `lib/git.js` 所有的 `execSync` 調用加入 `windowsHide: true`。這解決了金十數據同步後自動推送到 GitHub 時彈出的黑視窗。
 - **🤫 Playwright 深度靜默**: 在啟動參數中停用信號攔截器（SIGINT/SIGTERM），減少背景驅動程式與視窗系統的互動。

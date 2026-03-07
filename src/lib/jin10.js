@@ -18,22 +18,30 @@ class Jin10Service {
     async init() {
         if (!this.browser) {
             // 🟢 v13.4.0: 強化隱藏視窗參數
+            // 🟢 v13.5.3: 終極防護：注入進程環境變數並完全抑制視窗分配
             this.browser = await chromium.launch({
                 headless: true,
                 handleSIGINT: false,
                 handleSIGTERM: false,
                 handleSIGHUP: false,
+                env: {
+                    ...process.env,
+                    PLAYWRIGHT_SKIP_BROWSER_GC: '1',
+                    ELECTRON_RUN_AS_NODE: '1'
+                },
                 args: [
                     '--no-sandbox',
                     '--disable-setuid-sandbox',
                     '--disable-dev-shm-usage',
                     '--disable-accelerated-2d-canvas',
-                    '--disable-gpu', // 🟢 v13.5.1: 強化隱藏視窗
+                    '--disable-gpu',
                     '--no-first-run',
                     '--no-zygote',
-                    '--single-process', // Windows 下減少進程開銷
+                    '--single-process',
                     '--hide-scrollbars',
-                    '--mute-audio'
+                    '--mute-audio',
+                    '--window-position=-10000,-10000', // 強制把視窗丟到座標外
+                    '--window-size=10,10'
                 ]
             });
             this.context = await this.browser.newContext({

@@ -46,7 +46,7 @@ module.exports = {
     },
 
     // 路徑設定
-    gitPath: process.env.GIT_EXECUTABLE_PATH || '"C:\\Program Files\\Git\\cmd\\git.exe"',
+    gitPath: process.env.GIT_EXECUTABLE_PATH || 'C:\\Program Files\\Git\\cmd\\git.exe',
     dbPath: path.join(rootDir, 'data', 'news_bot.db'),
     crawlerDbPath: path.join(rootDir, 'data', 'crawler.db'),
     publicDir: path.join(rootDir, 'public'),
