@@ -19,15 +19,15 @@ function formatAsTable(title, results, isNight = false) {
 
     results.forEach(r => {
         const levels = [
-            `1️⃣ 月線:**${r.levels.A.toLocaleString()}**`,
-            `2️⃣ 超跌:**${r.levels.B.toLocaleString()}**`,
-            `3️⃣ 季線:**${r.levels.C.toLocaleString()}**`
-        ].join('<br>');
+            `1: ${r.levels.A.toLocaleString()}`,
+            `2: ${r.levels.B.toLocaleString()}`,
+            `3: ${r.levels.C.toLocaleString()}`
+        ].join(' | ');
 
-        const newCost = r.costInfo ? `⬇️ **${r.costInfo.newBase.toLocaleString()}**` : '--';
-        const priceDiff = r.price > r.levels.A ? `📈 +${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%` : `📉 ${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%`;
+        const newCost = r.costInfo ? r.costInfo.newBase.toLocaleString() : '--';
+        const priceDiff = r.price > r.levels.A ? `+${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%` : `${((r.price - r.levels.A) / r.levels.A * 100).toFixed(1)}%`;
 
-        table += `| **${r.name}** | ${r.price.toLocaleString()}<br>${priceDiff} | ${r.levels.A.toLocaleString()} | ${r.levels.C.toLocaleString()} | ${levels} | ${newCost} | **${r.evaluation.grade}** |\n`;
+        table += `| **${r.name}** | ${r.price.toLocaleString()} (${priceDiff}) | ${r.levels.A.toLocaleString()} | ${r.levels.C.toLocaleString()} | ${levels} | ${newCost} | **${r.evaluation.grade}** |\n`;
     });
 
     return header + table + `\n`;
@@ -124,7 +124,7 @@ async function generateTacticalReport() {
         if (twStocks.length > 0) {
             let twTable = formatAsTable("🛡️ 台股戰術特快 (TW)", twStocks, isNight);
             twTable += generatePlaybook(twStocks);
-            await sendDiscord(twTable, config.discordAlertWebhook);
+            await sendDiscord(twTable, config.discordTacticalWebhook);
             await sleep(1000);
         }
 
@@ -132,7 +132,7 @@ async function generateTacticalReport() {
         if (globalAssets.length > 0) {
             let globalTable = formatAsTable("🌍 全球資產戰報 (Global)", globalAssets, isNight);
             globalTable += generatePlaybook(globalAssets);
-            await sendDiscord(globalTable, config.discordAlertWebhook);
+            await sendDiscord(globalTable, config.discordTacticalWebhook);
         }
 
         log('✅', '【全面表格化】戰術報告已分發。');
