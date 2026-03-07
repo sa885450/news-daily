@@ -22,6 +22,10 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.7 (5 分鐘 CMD 彈窗終極根除) 🛡️🥷
+- **🕷️ 瀏覽器啟動硬化**: 在 `config.js` 中顯式指定 Playwright 的 Chromium 絕對路徑，並修改 `jin10.js` 採用 `executablePath` 啟動。這能避開 Playwright 自動搜尋引起的系統 Shell 介入，徹底消除每 5 分鐘出現一次的黑框 CMD 視窗。
+- **📦 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.6 (AI 模型清單對齊與穩定化) 🤖🛡️
 - **🤖 經驗法則模型清單**: 依照用戶提供的成功經驗，將 `modelCandidates` 調整為 `["gemini-1.5-flash", "gemini-2.0-flash", "gemini-flash-latest"]`。
 - **📦 版本同步**: 更新 `package.json` 版本號。

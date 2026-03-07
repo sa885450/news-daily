@@ -50,6 +50,8 @@ module.exports = {
     dbPath: path.join(rootDir, 'data', 'news_bot.db'),
     crawlerDbPath: path.join(rootDir, 'data', 'crawler.db'),
     publicDir: path.join(rootDir, 'public'),
+    // 🟢 v13.5.7: 硬化瀏覽器啟動路徑，根除 CMD 彈窗
+    browserPath: 'C:\\Users\\NEWID\\AppData\\Local\\ms-playwright\\chromium-1208\\chrome-win64\\chrome.exe',
 
     // GitHub Pages
     githubUser: "sa885450",

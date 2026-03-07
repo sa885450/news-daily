@@ -20,6 +20,7 @@ class Jin10Service {
             // 🟢 v13.4.0: 強化隱藏視窗參數
             // 🟢 v13.5.3: 終極防護：注入進程環境變數並完全抑制視窗分配
             this.browser = await chromium.launch({
+                executablePath: config.browserPath,
                 headless: true,
                 handleSIGINT: false,
                 handleSIGTERM: false,
