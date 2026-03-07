@@ -25,6 +25,7 @@ class Jin10Service {
                     '--disable-setuid-sandbox',
                     '--disable-dev-shm-usage',
                     '--disable-accelerated-2d-canvas',
+                    '--disable-gpu', // 🟢 v13.5.1: 強化隱藏視窗
                     '--no-first-run',
                     '--no-zygote',
                     '--single-process', // Windows 下減少進程開銷

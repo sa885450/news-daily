@@ -22,6 +22,11 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.5.1 (徹底隱藏 CMD 視窗修復) 🤫🛡️
+- **🚫 視窗抑制強化**: 在 `monitor.js` 的 `exec` 聯動指令中加入 `windowsHide: true` 選項，徹底解決 Windows 環境下彈出 CMD 黑視窗的問題。
+- **🤫 爬蟲靜默升級**: 優化 `jin10.js` 的 Playwright 參數，增加 `--disable-gpu` 及視窗隱藏環境隔離，確保抓取過程完全透明。
+- **🏷️ 版本同步**: 更新 `package.json` 版本號。
+
 ### v13.5.0 (戰術晚報預發與 Discord 全面表格化) 🌙📊
 - **📈 戰術晚報預發**: 在 `tactical_report.js` 中新增每日 `23:00` 排程。納入美股開盤後的前一小時波段分析，方便用戶睡前預設次日台股智慧單。
 - **📋 格式全面進化**: 捨棄原有 Embed 卡片，Discord 輸出改為 **Markdown 表格格式**。

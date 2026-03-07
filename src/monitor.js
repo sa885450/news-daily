@@ -106,7 +106,7 @@ async function runMonitor() {
 
                 // 打擊分析聯動 (僅限 RED 等級)
                 if (alert.level === 'RED') {
-                    exec(`node src/index.js --emergency --target="${target.name}"`, (err) => {
+                    exec(`node src/index.js --emergency --target="${target.name}"`, { windowsHide: true }, (err) => {
                         if (err) log('❌', `AI 聯動失敗: ${err.message}`);
                     });
                 }
