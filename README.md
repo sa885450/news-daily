@@ -22,6 +22,8 @@ news-daily/
 ```
 
 ## 📝 更新日誌 (Changelog)
+### v13.7.9 (熱修復 - Hotfix) 🩹
+- **🩹 系統修復**: 修復 v13.7.8 中 `getADRChange` 模組引入遺漏問題，恢復戰術報告正常生成。
 ### v13.7.8 (預期開盤價連動與攤平效率保護 - Smart Expectation) 🔮💰
 - **🔮 ADR 預期開盤**: 實作 `getADRChange` 抓取 TSM 作為指標，由 ADR 跌幅推算台積電預估開盤價。
 - **📈 甜甜價演算進化**: `SweetPointA` 改由 `Math.max(ma20 + 3, expectedOpen)` 取代舊有邏輯，優先保障成交權與防禦月線。

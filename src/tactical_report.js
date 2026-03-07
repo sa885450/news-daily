@@ -1,4 +1,4 @@
-const { getTechnicalIndicators } = require('./lib/indicators');
+const { getTechnicalIndicators, getADRChange } = require('./lib/indicators');
 const { log, sendDiscord, sendDiscordEmbed, sleep } = require('./lib/utils');
 const config = require('./lib/config');
 const cron = require('node-cron');
