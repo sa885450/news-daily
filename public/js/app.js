@@ -227,8 +227,12 @@ function renderRadarChart() {
     if (radarChart) radarChart.destroy();
 
     const labelMap = {
-        "Policy": "政策", "Liquidity": "資金", "Industry": "產業", "International": "國際", "Technology": "技術",
-        "政策": "政策", "資金": "資金", "產業": "產業", "國際": "國際", "技術": "技術"
+        "policy": "政策", "Policy": "政策",
+        "market": "市場", "Market": "市場",
+        "industry": "產業", "Industry": "產業",
+        "international": "國際", "International": "國際",
+        "technical": "技術", "Technical": "技術",
+        "liquidity": "資金", "Liquidity": "資金"
     };
 
     radarChart = new Chart(ctx, {
@@ -262,8 +266,13 @@ function renderSectorChart() {
     const colors = Object.values(sectors).map(v => v >= 0 ? '#ef4444' : '#22c55e');
 
     const labelMap = {
-        "Technology": "科技", "Finance": "金融", "Energy": "能源", "TradInd": "傳產", "Service": "服務", "Crypto": "加密",
-        "科技": "科技", "金融": "金融", "傳產": "傳產", "服務": "服務", "加密": "加密", "國際": "國際"
+        "tech": "科技", "Technology": "科技",
+        "finance": "金融", "Finance": "金融",
+        "energy": "能源", "Energy": "能源",
+        "manufacturing": "傳產", "TradInd": "傳產",
+        "service": "服務", "Service": "服務",
+        "crypto": "加密", "Crypto": "加密",
+        "international": "國際", "國際": "國際"
     };
 
     sectorChart = new Chart(ctx, {
