@@ -153,60 +153,78 @@ const keyManager = new KeyManager(geminiKeys);
 
 async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
     let lastError = null;
+    let usingCustomKey = !!customKey;
 
-    for (let attempt = 1; attempt <= retryCount; attempt++) {
-        // 🟢 優先選用可用金鑰
-        const activeKey = customKey || keyManager.getNextAvailableKey();
-        const genAI = new GoogleGenerativeAI(activeKey);
+    // 🟢 v13.7.16: 分段嘗試。如果有自訂金鑰，先試自訂金鑰；失敗後再試金鑰池。
+    const maxPhases = usingCustomKey ? 2 : 1;
 
-        for (const modelName of modelCandidates) {
-            try {
-                const config = {
-                    model: modelName,
-                    safetySettings,
-                    generationConfig: {
-                        responseMimeType: isJson ? "application/json" : "text/plain",
-                    }
-                };
+    for (let phase = 1; phase <= maxPhases; phase++) {
+        const currentCustomKey = phase === 1 && usingCustomKey ? customKey : null;
 
-                if (isJson) {
-                    config.generationConfig.responseSchema = reportSchema;
-                }
-
-                const model = genAI.getGenerativeModel(config);
-                const result = await model.generateContent(prompt);
-                const response = await result.response;
-                const text = response.text();
-
-                if (!text) throw new Error("Safety Blocked (Empty Response)");
-                return isJson ? JSON.parse(text) : text;
-
-            } catch (e) {
-                lastError = e;
-                const isRateLimit = e.message && (e.message.includes("429") || e.message.includes("Too Many Requests"));
-
-                if (isRateLimit) {
-                    console.warn(`⏳ ${modelName} Rate Limit (429) detected.`);
-                    if (!customKey) {
-                        keyManager.markCooldown(activeKey, 60); // 標記該金鑰冷卻
-                        break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
-                    } else {
-                        await sleep(10000);
-                    }
-                } else {
-                    console.warn(`⚠️ ${modelName} Error: ${e.message}`);
-                }
-            }
+        if (phase === 2) {
+            console.warn(`\n[Fallback] ⚠️ 專屬金鑰 (Strategic) 失敗達 ${retryCount} 次，正在降級使用【常規金鑰池 (Key Pool)】進行最後備援重試...`);
+            lastError = null; // 重置錯誤，避免混淆兩個階段的報錯
         }
 
-        if (attempt < retryCount) {
-            const waitTime = 2000;
-            console.log(` API Retry ${attempt}/${retryCount}...`);
-            await sleep(waitTime);
+        for (let attempt = 1; attempt <= retryCount; attempt++) {
+            // 🟢 優先選用當前階段的金鑰
+            const activeKey = currentCustomKey || keyManager.getNextAvailableKey();
+            const genAI = new GoogleGenerativeAI(activeKey);
+
+            for (const modelName of modelCandidates) {
+                try {
+                    const config = {
+                        model: modelName,
+                        safetySettings,
+                        generationConfig: {
+                            responseMimeType: isJson ? "application/json" : "text/plain",
+                        }
+                    };
+
+                    if (isJson) {
+                        config.generationConfig.responseSchema = reportSchema;
+                    }
+
+                    const model = genAI.getGenerativeModel(config);
+                    const result = await model.generateContent(prompt);
+                    const response = await result.response;
+                    const text = response.text();
+
+                    if (!text) throw new Error("Safety Blocked (Empty Response)");
+                    return isJson ? JSON.parse(text) : text;
+
+                } catch (e) {
+                    lastError = e;
+                    const isRateLimit = e.message && (e.message.includes("429") || e.message.includes("Too Many Requests"));
+                    const isServerOverloaded = e.message && (e.message.includes("503") || e.message.includes("Service Unavailable") || e.message.includes("500"));
+
+                    if (isRateLimit) {
+                        console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
+                        if (!currentCustomKey) {
+                            keyManager.markCooldown(activeKey, 60); // 標記該金鑰冷卻
+                            break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
+                        } else {
+                            await sleep(10000);
+                        }
+                    } else if (isServerOverloaded) {
+                        console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);
+                    } else {
+                        console.warn(`⚠️ ${modelName} 未知錯誤: ${e.message.substring(0, 100)}...`);
+                    }
+                }
+            }
+
+            if (attempt < retryCount) {
+                // 🟢 v13.7.16: 加入指數退避 (Exponential Backoff)，避免在 503 時連續狂敲 api
+                const waitTime = attempt === 1 ? 2000 : attempt === 2 ? 5000 : 10000;
+                console.log(` API Retry Phase[${phase}/${maxPhases}] 嘗試[${attempt}/${retryCount}] (Wait ${waitTime / 1000}s)...`);
+                await sleep(waitTime);
+            }
         }
     }
 
-    const finalErrorMsg = `AI 模型全數失敗 (使用金鑰池仍無法完成任務)\nLast Error: ${lastError ? lastError.message : "Unknown"}`;
+    const errorContext = usingCustomKey ? "專屬金鑰與金鑰池皆已" : "金鑰池";
+    const finalErrorMsg = `AI 模型全數失敗 (${errorContext}耗盡)\nLast Error: ${lastError ? lastError.message : "Unknown"}`;
     console.error(`❌ ${finalErrorMsg}`);
     await sendDiscordError(finalErrorMsg);
     throw new Error(finalErrorMsg);
