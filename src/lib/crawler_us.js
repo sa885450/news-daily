@@ -1,5 +1,5 @@
 const YahooFinance = require('yahoo-finance2').default;
-const yahooFinance = new YahooFinance();
+const yahooFinance = new YahooFinance({ suppressNotices: ['yahooSurvey'] });
 
 const { log } = require('./utils');
 
@@ -9,23 +9,27 @@ const { log } = require('./utils');
  */
 async function getUSMarketSnapshot() {
     log('📈', '正在抓取美股盤後快照 (指數、VIX、ADR)...');
-    
+
     const symbols = [
         '^DJI',    // 道瓊工業指數
         '^GSPC',   // S&P 500
         '^IXIC',   // 納斯達克綜合指數
         '^VIX',    // 恐慌指數
         'TSM',     // 台積電 ADR
-        'UMC',     // 聯電 ADR
         'NVDA',    // 輝達 (AI 風向標)
-        'BTC-USD', // 比特幣 (風險情緒指標)
+        'DX-Y.NYB',// 美元指數 (DXY)
+        'GC=F',    // 黃金期貨
+        'CL=F',    // 原油期貨
+        'BTC-USD', // 比特幣
+        'ETH-USD', // 以太幣
     ];
+
 
     const snapshot = {};
 
     try {
         const quotes = await yahooFinance.quote(symbols);
-        
+
         quotes.forEach(q => {
             snapshot[q.symbol] = {
                 price: q.regularMarketPrice,
@@ -50,11 +54,14 @@ function formatUSSnapshotForAI(snapshot) {
     if (!snapshot) return "無法取得美股快照數據。";
 
     let text = "📊 **【美股盤後快照與關鍵數據】**\n";
-    
+
     const groups = [
         { title: "四大指數與情緒", symbols: ['^DJI', '^GSPC', '^IXIC', '^VIX'] },
-        { title: "關鍵標的與 ADR", symbols: ['TSM', 'UMC', 'NVDA', 'BTC-USD'] }
+        { title: "總經與避險資產", symbols: ['DX-Y.NYB', 'GC=F', 'CL=F'] },
+        { title: "風險資產 (加密貨幣)", symbols: ['BTC-USD', 'ETH-USD'] },
+        { title: "關鍵個股與 ADR", symbols: ['TSM', 'NVDA'] }
     ];
+
 
     groups.forEach(group => {
         text += `\n[${group.title}]\n`;
