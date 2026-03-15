@@ -342,4 +342,35 @@ ${finalBlob}`;
     return await callGemini(finalPrompt, true, geminiWeeklyKey);
 }
 
-module.exports = { getSummary, getWeeklySummary };
+async function getMorningSummary(briefingData) {
+    const persona = getPersona(0);
+    const { market_snapshot_formatted, overnight_news } = briefingData;
+
+    // 將隔夜新聞格式化
+    const newsBlob = overnight_news.map((n, i) => `[ID:${i}] [${n.time.substring(11, 16)}] [${n.source}] ${n.title}`).join('\n');
+
+    const prompt = `${persona}
+🚨 **盤前晨報任務 (Morning Briefing)**：此為每日 06:30 提供給交易員的盤前摘要。
+請融合「美股盤後快照」與「隔夜重大新聞」，產出極簡、具高度戰術指導意義的報告。
+
+請務必依據 schema 格式回傳 JSON。
+
+${market_snapshot_formatted}
+
+**隔夜市場情報 (過去 12 小時)**：
+${newsBlob}
+
+**分析重點與欄位要求**：
+1. **summary**: 請以 HTML 格式簡短總結昨夜美股表現主軸（如：科技股領跌、通膨數據激勵等），並明確指出對今日「台股開盤」的可能影響（對照 TSM ADR 表現）。
+2. **sentiment_score**: 結合 VIX 漲跌與新聞情緒，給出今日開盤的恐慌/貪婪分數 (-1.0 ~ 1.0)。
+3. **events**: 條列 2-3 個昨夜最關鍵的總經或個股事件。
+4. **tactical_advice**: 針對今日台股開盤給予明確的「開盤戰術」（如：開低走高機率大可分批承接、建議開盤先觀望避險等）。
+
+嚴禁廢話，字字珠璣。
+`;
+
+    // 晨報任務對精準度要求高，強制使用 Strategic Key (深思模式)
+    return await callGemini(prompt, true, geminiStrategicKey);
+}
+
+module.exports = { getSummary, getWeeklySummary, getMorningSummary };
