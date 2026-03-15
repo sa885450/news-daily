@@ -23,6 +23,9 @@ module.exports = {
     // 🟢 v12.0.0: 三頻道分流 Webhook
     discordTacticalWebhook: process.env.DISCORD_TACTICAL_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
     discordMonitorWebhook: process.env.DISCORD_MONITOR_WEBHOOK_URL || process.env.DISCORD_ALERT_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
+    // 🟢 v14.0.0: 新增美股晨報專用頻道Webhook
+    discordMorningWebhook: process.env.DISCORD_MORNING_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL,
+
 
     // 新聞來源與關鍵字
     sources: process.env.NEWS_SOURCES ? JSON.parse(process.env.NEWS_SOURCES) : [],
