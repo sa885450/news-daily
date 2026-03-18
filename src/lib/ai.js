@@ -231,8 +231,9 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
 }
 
 function getPersona(lastScore) {
-    return "你是一位【AI 戰術執行官】(AI Tactical Operator)。你的語氣冷靜、極簡、數據導向。嚴禁使用任何「投資顧問」或「投顧老師」的花哨術語（如：穩健獲利、入袋為安、帶你上天堂等）。你只提供冷酷的戰術指令與風險解析。";
+    return "你是一位【首席市場情報分析師】 (Chief Intelligence Analyst)。你的語氣冷靜、專業、資訊密度高。你的任務是從大量雜亂的新聞流中提煉出關鍵的「情報價值」，幫助決策者掌握全球市場動向。嚴禁使用投顧老師的花哨術語。";
 }
+
 
 async function getSummary(newsData, lastSummary = null, lastScore = 0, marketData = null, isEmergency = false, targetName = '', techData = null, mode = 'deep') {
     // 🟢 v10.0.0: 分流處理邏輯
@@ -271,9 +272,6 @@ async function getSummary(newsData, lastSummary = null, lastScore = 0, marketDat
         ? `🔍 **增量分析**：昨日重點為「${lastSummary.substring(0, 300)}...」。`
         : `🔍 **初始分析**：建立基準。`;
 
-    // 注入行情數據
-    const marketPrompt = marketData ? marketData : "";
-
     const prompt = `${persona}
 ${taskTypePrompt}
 請讀取資料產出報告。請務必依據 schema 格式回傳。
@@ -283,25 +281,25 @@ ${technicalPrompt}
 ${marketData ? marketData : ""}
 ${contextPrompt}
 
-**欄位說明補充**：
-- sector_stats: 評估四大板塊情緒 (-1.0 ~ 1.0)。
-- entities: 提取 5-8 個關鍵實體，並嘗試附上 ticker (如 2330.TW)。
-- summary: 請使用 HTML 格式，包含重點標註與行情對齊分析。
-
-**核心任務**：
-1. **events**: 歸納出「重大市場趨勢事件」。
-2. **relations**: 識別實體間的動態關聯。
-3. **tactical_advice (v10.0.0 分流版)**:
-   - **長期核心資產方針**: 標的 \`0050.TW\` 與 \`2330.TW\` 為「10年長期持有」。
-   - **危機處理**: 當 RSI < 30 或情緒極度悲觀時，評估「戰術性加碼」。
-   - **避險指令**: 若風險爆發，偵測黃金期貨 (GC=F) 走勢。
-   - **禁用話術**: 絕對禁止使用投顧老師語氣。
-   - **position_size**: 請給出具體的比例建議 (如：建議動用 20% 現金儲備進場/轉入黃金)。
-   - **confidence**: 必須綜合基本面與技術面的背離情況給分。
+**核心任務 (優先順序)**：
+1. **summary (情報精華)**：
+   - 請以 **HTML 格式** 撰寫一份結構化的情報摘要。
+   - **重中之重**：你不再只是回報買賣點，而是要歸納出昨夜/今日的「關鍵敘事」與「情報內涵」。
+   - 請區分為以下結構：
+     - <h3>🌍 宏觀政經脈動</h3>：歸納聯準會、地緣政治、核心經濟數據 (CPI/PCE) 等。
+     - <h3>🏢 產業/財報掃描</h3>：歸納科技股動向、半導體供應鏈、核心企業 (AAPL/NVDA/TSMC) 異動。
+     - <h3>📊 核心數據摘要</h3>：列出報告內提到的具體數據點。
+   - 摘要中需引用具體公司 Ticker。
+2. **events**: 歸納出「重大市場趨勢事件」。
+3. **tactical_advice (行動附錄)**:
+   - 針對 \`0050.TW\` 與 \`2330.TW\` 給予戰術指引。
+   - **注意**：這僅作為報告的「執行參考」，不應在 summary 中佔據主導篇幅。
+4. **relations**: 識別實體間的動態關聯。
 
 新聞資料 (${isLite ? '標題模式' : '內文模式'})：
 ${blob}
 `;
+
 
     const finalKey = isLite ? null : geminiStrategicKey;
     return await callGemini(prompt, true, finalKey);
@@ -342,4 +340,39 @@ ${finalBlob}`;
     return await callGemini(finalPrompt, true, geminiWeeklyKey);
 }
 
-module.exports = { getSummary, getWeeklySummary };
+async function getMorningSummary(briefingData) {
+    const persona = getPersona(0);
+    const { market_snapshot_formatted, overnight_news } = briefingData;
+
+    // 將隔夜新聞格式化
+    const newsBlob = overnight_news.map((n, i) => `[ID:${i}] [${n.time.substring(11, 16)}] [${n.source}] ${n.title}`).join('\n');
+
+    const prompt = `${persona}
+🚨 **盤前晨報任務 (Morning Briefing)**：此為每日 06:30 提供給交易員的盤前摘要。
+請融合「美股盤後快照」與「隔夜重大新聞」，產出極簡、具高度戰術指導意義的報告。
+
+特別注意市場連動邏輯：
+- **風險先行指標**：分析比特幣 (BTC) 與以太幣 (ETH) 的表現。若幣圈在清晨時段出現顯著下跌，通常預示今日美股及台股電子盤的風險偏好收縮，請在戰術建議中提出警示。
+- **總經環境**：觀察美元指數 (DXY) 是否強彈（通常對股市壓力較大）以及黃金、原油的避險/通膨信號。
+
+請務必依據 schema 格式回傳 JSON。
+
+${market_snapshot_formatted}
+
+**隔夜市場情報 (過去 12 小時)**：
+${newsBlob}
+
+**分析重點與欄位要求**：
+1. **summary**: 請以 HTML 格式簡短總結昨夜美股表現主軸（如：科技股領跌、通膨數據激勵等），並明確指出對今日「台股開盤」的可能影響（對照 TSM ADR 表現）。
+2. **sentiment_score**: 結合 VIX 漲跌與新聞情緒，給出今日開盤的恐慌/貪婪分數 (-1.0 ~ 1.0)。
+3. **events**: 條列 2-3 個昨夜最關鍵的總經或個股事件。
+4. **tactical_advice**: 針對今日台股開盤給予明確的「開盤戰術」（如：開低走高機率大可分批承接、建議開盤先觀望避險等）。
+
+嚴禁廢話，字字珠璣。
+`;
+
+    // 晨報任務對精準度要求高，強制使用 Strategic Key (深思模式)
+    return await callGemini(prompt, true, geminiStrategicKey);
+}
+
+module.exports = { getSummary, getWeeklySummary, getMorningSummary };
