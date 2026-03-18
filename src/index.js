@@ -145,9 +145,18 @@ async function runTask() {
 
     log('📊', `新增符合關鍵字新聞: ${allMatchedNews.length} 則`);
 
-    if (allMatchedNews.length > 0) {
+    // 🟢 v14.2.0: 4 小時回推資料窗口與 50 則節流門檻
+    const ANALYSIS_WINDOW_HOURS = 4;
+    const MIN_NEWS_THRESHOLD = 50;
+    
+    // 從資料庫撈出過去 4 小時的所有精華 (可能包含前幾批抓到的)
+    const recentArticles = db.getRecentArticles(ANALYSIS_WINDOW_HOURS, 150);
+    log('🗄️', `從資料庫回推 ${ANALYSIS_WINDOW_HOURS} 小時資料，共 ${recentArticles.length} 則新聞`);
+
+    if (recentArticles.length > 0) {
         try {
             log('🚀', "啟動 News Daily AI Bot...");
+
 
             // 🟢 第四階段：緊急模式檢測
             const isEmergency = process.argv.includes('--emergency');
@@ -178,29 +187,53 @@ async function runTask() {
             const marketSnapshot = await getMarketSnapshot();
             const marketDataStr = formatSnapshotForAI(marketSnapshot);
 
-            // 🟢 v10.1.0: 啟動過濾官模式，從符合關鍵字的新聞中選出最精銳的 15 則餵給 AI
-            const eliteNews = rankAndFilter(allMatchedNews, 15);
-            log('🕵️', `過濾官已過濾: 共 ${allMatchedNews.length} 則 -> 選出精銳 ${eliteNews.length} 則`);
+            // 🟢 v14.2.0: 啟動過濾官模式，從 4 小時窗口選出最精銳的 25 則餵給 AI
+            const eliteNews = rankAndFilter(recentArticles, 25);
+            log('🕵️', `過濾官已過濾: 窗口內 ${recentArticles.length} 則 -> 選出精銳 ${eliteNews.length} 則`);
 
-            // 🟢 AI 分析 (傳入精銳新聞、行情數據、緊急模式參數、技術面數據，明確指定 deep 模式)
+            // 🟢 AI 分析與節流門檻判定
             let aiResult;
-            try {
-                aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
-                log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
-            } catch (e) {
-                log('⚠️', `AI 分析全數失敗，啟動「歷史數據延續」備援機制...`);
-                // 🟢 v13.3.2: 若 AI 失敗，則沿用上一份最後成功的分析結果，避免資料庫被存入 NULL
+            
+            if (recentArticles.length < MIN_NEWS_THRESHOLD) {
+                // 節流模式：不足 50 則不呼叫 AI，使用演算法簡報
+                log('📉', `新聞量 (${recentArticles.length}) 未達門檻 ${MIN_NEWS_THRESHOLD}，啟動「演算法簡報」節流模式...`);
+                
+                const topNewsList = eliteNews.slice(0, 8).map(n => `<li><b>[${n.source}]</b> ${n.title}</li>`).join('');
                 aiResult = {
-                    sentiment_score: lastStats?.sentiment_score || 0,
-                    summary: (lastStats?.summary || "分析暫時無法產生。") + `<p><small><i>(注意：AI 模型今日回應異常，本報表沿用前次有效分析)</i></small></p>`,
-                    dimensions: lastStats?.dimensions || null,
-                    sector_stats: lastStats?.sector_stats || null,
-                    events: lastStats?.events || [],
-                    relations: lastStats?.relations || [],
-                    tactical_advice: lastStats?.tactical_advice || null,
-                    categories: [] // 緩衝，避免後續 catMap 噴錯
+                    sentiment_score: 0.1, // 中性偏多預設
+                    summary: `<h3>📰 4 小時重點掃描</h3><ul>${topNewsList}</ul><p><small><i>(備註：當前時段消息面較清淡，系統自動啟用節流模式，僅透過演算法列出重點。)</i></small></p>`,
+                    dimensions: { policy: 0.5, capital: 0.5, industry: 0.5, international: 0.5, tech: 0.5 },
+                    sector_stats: { tech: 0, finance: 0, energy: 0, general: 0 },
+                    events: eliteNews.slice(0, 3).map(n => ({ title: n.title, summary: "演算法提取之重點事件。", impact: "中性" })),
+                    relations: [],
+                    tactical_advice: { 
+                        action: "區間觀望", 
+                        confidence: 60, 
+                        rationale: "當前消息量較少，市場缺乏明確驅動方向。建議依照既有趨勢操作。",
+                        position_size: "維持現狀"
+                    }
                 };
+            } else {
+                // 深度分析模式：正式呼叫 AI
+                try {
+                    aiResult = await getSummary(eliteNews, lastSummary, lastScore, marketDataStr, isEmergency, targetName, techData, 'deep');
+                    log('🧠', `AI 分析完成。今日情緒指數: ${aiResult.sentiment_score}`);
+                } catch (e) {
+                    log('⚠️', `AI 分析全數失敗，啟動「歷史數據延續」備援機制...`);
+                    // 🟢 v13.3.2: 若 AI 失敗，則沿用上一份最後成功的分析結果，避免資料庫被存入 NULL
+                    aiResult = {
+                        sentiment_score: lastStats?.sentiment_score || 0,
+                        summary: (lastStats?.summary || "分析暫時無法產生。") + `<p><small><i>(注意：AI 模型今日回應異常，本報表沿用前次有效分析)</i></small></p>`,
+                        dimensions: lastStats?.dimensions || null,
+                        sector_stats: lastStats?.sector_stats || null,
+                        events: lastStats?.events || [],
+                        relations: lastStats?.relations || [],
+                        tactical_advice: lastStats?.tactical_advice || null,
+                        categories: [] // 緩衝，避免後續 catMap 噴錯
+                    };
+                }
             }
+
 
             // 🟢 v13.1.0: 更新分類並回寫資料庫
             const catMap = {};
@@ -226,11 +259,12 @@ async function runTask() {
             const recentStats = db.getRecentStats(7);
             const keywords7d = analyze7DayKeywords(7);
 
-            // 🟢 v13.1.0: 改為從資料庫撈取過去 2 小時內的歷史庫存，確保前端新聞來源多元化
-            let displayNews = db.getRecentArticles(2, 150);
+            // 🟢 v13.1.0: 改為從資料庫撈取過去 4 小時內的歷史庫存 (對其排程窗口)
+            let displayNews = db.getRecentArticles(4, 150);
             if (!displayNews || displayNews.length === 0) {
                 displayNews = allMatchedNews; // 若資料庫查無資料，退回使用當次增量
             }
+
 
             // 使用顯示用的新聞重新計算關鍵字統計，讓畫面標籤正確
             const displayKeywordStats = calculateKeywordStats(displayNews);
@@ -312,7 +346,8 @@ ${cleanSummary}
         log('💤', "無新新聞增量。正在整合最新金十與歷史庫存產出全景報表...");
         // 🟢 v13.1.4: 確保空窗期也能發布真實 AI 混合報表
         try {
-            const historyNews = db.getRecentArticles(2, 150);
+            const historyNews = db.getRecentArticles(4, 150);
+
             if (historyNews && historyNews.length > 0) {
                 const displayKeywordStats = calculateKeywordStats(historyNews);
                 const clusteredNews = [];

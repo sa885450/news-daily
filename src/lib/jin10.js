@@ -42,6 +42,24 @@ class Jin10Service {
                     '--single-process',
                     '--hide-scrollbars',
                     '--mute-audio',
+                    '--disable-background-networking',
+                    '--disable-background-timer-throttling',
+                    '--disable-backgrounding-occluded-windows',
+                    '--disable-breakpad',
+                    '--disable-component-update',
+                    '--disable-domain-reliability',
+                    '--disable-extensions',
+                    '--disable-features=AudioServiceOutOfProcess',
+                    '--disable-hang-monitor',
+                    '--disable-ipc-flooding-protection',
+                    '--disable-notifications',
+                    '--disable-offer-store-unmasked-wallet-cards',
+                    '--disable-popup-blocking',
+                    '--disable-print-preview',
+                    '--disable-prompt-on-repost',
+                    '--disable-renderer-backgrounding',
+                    '--disable-speech-api',
+                    '--disable-sync',
                     '--window-position=-10000,-10000', // 強制把視窗丟到座標外
                     '--window-size=10,10'
                 ]
@@ -83,15 +101,19 @@ class Jin10Service {
             }, limit);
 
             // 🟢 v13.4.0: 廣告過濾與「繁體化轉換」
-            const adKeywords = ['广告', '推廣', 'TradingHero', '推出行情', 'AppStore', 'Google Play'];
+            // 🟢 v14.2.0: 新增「國內」、「我國」排除 (通常指中國新聞)
+            const adKeywords = ['廣告', '推廣', 'TradingHero', '推出行情', 'AppStore', 'Google Play', '國內', '我國'];
             const filtered = news.filter(n => {
                 if (!n.content || n.content.length < 15) return false;
-                return !adKeywords.some(kw => n.content.includes(kw));
+                // 檢查是否包含任何排除關鍵字
+                const hasExclude = adKeywords.some(kw => n.content.includes(kw));
+                return !hasExclude;
             }).map(n => ({
                 ...n,
                 // 🟢 執行轉繁體
                 content: this.converter(n.content)
             }));
+
 
             if (news.length !== filtered.length) {
                 log('🚫', `金十廣告過濾: 已排除 ${news.length - filtered.length} 則廣告/無效快訊`);
