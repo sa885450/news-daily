@@ -216,27 +216,24 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
 
                     if (isRateLimit) {
                         const isDailyLimit = e.message && e.message.includes("PerDay");
-                        const cooldownTime = isDailyLimit ? 43200 : 60; // 每日非長效限額給予 60s 冷卻
 
                         if (isDailyLimit) {
                             console.error(`🚨 ${modelName} 偵測到「每日限額 (Daily Quota)」已耗盡！`);
-                            quota.markDead(activeKey, modelName); // 🟢 v14.6.0: 立即標記檔案熔斷
+                            quota.markDead(activeKey, modelName); 
+                            continue; // 🟢 v14.6.2: 關鍵！切換至下一個候選模型 (如 1.5-flash-8b)，不跳開此 Key
                         } else {
                             console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
                         }
 
                         if (!currentCustomKey) {
-                            keyManager.markCooldown(activeKey, cooldownTime); // 標記該金鑰冷卻 (12小時或60秒)
+                            keyManager.markCooldown(activeKey, 60); // 一般 429 標記 1 分鐘冷卻
                             break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
                         } else {
-                            // 🟢 v14.4.0: 專屬金鑰 (Strategic) 觸發 429 時，等待時間加長 (30s)
-                            if (isDailyLimit) {
-                                console.log(`💊 [Strategic Key] 偵測到每日極限，立即標記並進入 Fallback 階段...`);
-                                break; // 跳出 modelCandidates，嘗試下一把 Key (或下一個 Phase)
-                            }
+                            // 🟢 專屬金鑰 (Strategic) 觸發 429 (RPM/TPM) 時，等待時間加長 (30s)
                             const customWait = attempt * 30000;
-                            console.log(`💊 [Strategic Key] 限流中，等待 ${customWait / 1000}s 後重試...`);
+                            console.log(`💊 [Strategic Key] 觸發 RPM/TPM 限流，等待 ${customWait / 1000}s 後重試...`);
                             await sleep(customWait);
+                            // 這裡不 break，會在下一次 attempt 重新嘗試同一個 modelName
                         }
                     } else if (isServerOverloaded) {
                         console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);

@@ -21,6 +21,9 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.6.2 (模型級配額備援優化) 🔄
+- **🔄 模型自動降級**: 修復 `ai.js` 的中斷邏輯。當 `2.0-flash` 觸發每日限額時，現在會自動嘗試同一金鑰下的 `1.5-flash` 系列，而不直接放棄該金鑰，極大化單一金鑰的生存率。
+
 ### v14.6.1 (Hotfix) 🚑
 - **🐛 修復回歸錯誤**: 補回 `ai.js` 缺失的 `@google/generative-ai` 常數定義，解決 `HarmCategory is not defined` 導致的啟動失敗。
 
