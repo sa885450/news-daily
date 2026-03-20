@@ -1,3 +1,4 @@
+const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold, SchemaType } = require("@google/generative-ai");
 const { geminiKey, geminiKeys, geminiStrategicKey, geminiWeeklyKey, modelCandidates } = require('./config');
 const { sleep, sendDiscordError } = require('./utils');
 const quota = require('./quota'); // 🟢 v14.6.0: 全域配額守門員

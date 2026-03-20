@@ -21,6 +21,9 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.6.1 (Hotfix) 🚑
+- **🐛 修復回歸錯誤**: 補回 `ai.js` 缺失的 `@google/generative-ai` 常數定義，解決 `HarmCategory is not defined` 導致的啟動失敗。
+
 ### v14.6.0 (全域配額守門員與極致節流方案) 🧤🛡️
 - **🧤 全域配額守門員 (Global Quota Keeper)**: 新增 `src/lib/quota.js`。透過檔案系統 (`quota_state.json`) 實現跨進程 (PM2) 共享 API 配額耗盡狀態。一旦某金鑰觸發每日上限，所有實例將立即同步熔斷，杜絕重複無效重試。
 - **📉 AI 啟動門檻上調**: 將 `index.js` 的 AI 分析啟動門檻由 50 則上調至 **100 則**。
