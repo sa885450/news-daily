@@ -145,9 +145,9 @@ async function runTask() {
 
     log('📊', `新增符合關鍵字新聞: ${allMatchedNews.length} 則`);
 
-    // 🟢 v14.2.0: 4 小時回推資料窗口與 50 則節流門檻
+    // 🟢 v14.6.0: 4 小時回推資料窗口與 100 則節流門檻 (上調以保護配額)
     const ANALYSIS_WINDOW_HOURS = 4;
-    const MIN_NEWS_THRESHOLD = 50;
+    const MIN_NEWS_THRESHOLD = 100;
     
     // 從資料庫撈出過去 4 小時的所有精華 (可能包含前幾批抓到的)
     const recentArticles = db.getRecentArticles(ANALYSIS_WINDOW_HOURS, 150);
@@ -194,9 +194,17 @@ async function runTask() {
             // 🟢 AI 分析與節流門檻判定
             let aiResult;
             
-            if (recentArticles.length < MIN_NEWS_THRESHOLD) {
-                // 節流模式：不足 50 則不呼叫 AI，使用演算法簡報
-                log('📉', `新聞量 (${recentArticles.length}) 未達門檻 ${MIN_NEWS_THRESHOLD}，啟動「演算法簡報」節流模式...`);
+            // 🟢 v14.6.0: 高峰期配額避讓 (Quota Reservation)
+            // 凌晨 04:00 - 08:30 是晨報關鍵期，非緊急模式下 index.js 主動降級為演算法簡報，保護配額給 06:30 晨報
+            const now = new Date();
+            const hour = now.getHours();
+            const min = now.getMinutes();
+            const isMorningBuffer = (hour > 4 || (hour === 4 && min >= 0)) && (hour < 8 || (hour === 8 && min <= 30));
+
+            if (recentArticles.length < MIN_NEWS_THRESHOLD || (isMorningBuffer && !isEmergency)) {
+                // 節流模式：不足 100 則或處於晨報保護期且非緊急，不呼叫 AI
+                const reason = isMorningBuffer ? "「晨報配額保護期」" : `新聞量 (${recentArticles.length}) 未達門門檻 ${MIN_NEWS_THRESHOLD}`;
+                log('📉', `啟動「演算法簡報」節流模式 (原因: ${reason})...`);
                 
                 const topNewsList = eliteNews.slice(0, 8).map(n => `<li><b>[${n.source}]</b> ${n.title}</li>`).join('');
                 aiResult = {

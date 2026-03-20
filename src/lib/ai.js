@@ -1,6 +1,6 @@
-const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold, SchemaType } = require("@google/generative-ai");
 const { geminiKey, geminiKeys, geminiStrategicKey, geminiWeeklyKey, modelCandidates } = require('./config');
 const { sleep, sendDiscordError } = require('./utils');
+const quota = require('./quota'); // 🟢 v14.6.0: 全域配額守門員
 
 const safetySettings = [
     { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
@@ -159,9 +159,10 @@ class KeyManager {
 
 const keyManager = new KeyManager(geminiKeys);
 
-async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3) {
+async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3, overrideModels = null) {
     let lastError = null;
     let usingCustomKey = !!customKey;
+    const activeModelCandidates = overrideModels || modelCandidates;
 
     // 🟢 v13.7.16: 分段嘗試。如果有自訂金鑰，先試自訂金鑰；失敗後再試金鑰池。
     const maxPhases = usingCustomKey ? 2 : 1;
@@ -179,7 +180,13 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
             const activeKey = currentCustomKey || keyManager.getNextAvailableKey();
             const genAI = new GoogleGenerativeAI(activeKey);
 
-            for (const modelName of modelCandidates) {
+            for (const modelName of activeModelCandidates) {
+                // 🟢 v14.6.0: 檢查該金鑰+模型組合是否已全域熔斷
+                if (quota.isDead(activeKey, modelName)) {
+                    // console.log(`⏩ [Skipping] ${modelName} @ ${activeKey.substring(0,8)}... (已無每日配額)`);
+                    continue; 
+                }
+
                 try {
                     const config = {
                         model: modelName,
@@ -208,23 +215,27 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
 
                     if (isRateLimit) {
                         const isDailyLimit = e.message && e.message.includes("PerDay");
-                        const cooldownTime = isDailyLimit ? 43200 : 60; // 每日限額給予 12 小時冷卻
+                        const cooldownTime = isDailyLimit ? 43200 : 60; // 每日非長效限額給予 60s 冷卻
 
                         if (isDailyLimit) {
                             console.error(`🚨 ${modelName} 偵測到「每日限額 (Daily Quota)」已耗盡！`);
+                            quota.markDead(activeKey, modelName); // 🟢 v14.6.0: 立即標記檔案熔斷
                         } else {
                             console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
                         }
 
                         if (!currentCustomKey) {
-                            keyManager.markCooldown(activeKey, cooldownTime); // 標記該金鑰冷卻
+                            keyManager.markCooldown(activeKey, cooldownTime); // 標記該金鑰冷卻 (12小時或60秒)
                             break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
                         } else {
-                            // 🟢 v14.4.0: 專屬金鑰 (Strategic) 觸發 429 時，等待時間加長 (30s)，給予配額更多恢復時間
+                            // 🟢 v14.4.0: 專屬金鑰 (Strategic) 觸發 429 時，等待時間加長 (30s)
+                            if (isDailyLimit) {
+                                console.log(`💊 [Strategic Key] 偵測到每日極限，立即標記並進入 Fallback 階段...`);
+                                break; // 跳出 modelCandidates，嘗試下一把 Key (或下一個 Phase)
+                            }
                             const customWait = attempt * 30000;
                             console.log(`💊 [Strategic Key] 限流中，等待 ${customWait / 1000}s 後重試...`);
                             await sleep(customWait);
-                            if (isDailyLimit) break; // 如果是每日限額，別在 Strategic Key 浪費時間了，直接 fallback
                         }
                     } else if (isServerOverloaded) {
                         console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);
@@ -322,7 +333,14 @@ ${blob}
 
 
     const finalKey = isLite ? null : geminiStrategicKey;
-    return await callGemini(prompt, true, finalKey);
+    
+    // 🟢 v14.6.0: 緊急模式下強制模型降級至 1.5-flash-8b 節省高級配額
+    let modelList = null;
+    if (isEmergency) {
+        modelList = ["gemini-1.5-flash-8b", "gemini-1.5-flash", "gemini-2.0-flash"];
+    }
+
+    return await callGemini(prompt, true, finalKey, 3, modelList);
 }
 
 async function getWeeklySummary(newsData) {
