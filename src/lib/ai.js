@@ -204,7 +204,10 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                             keyManager.markCooldown(activeKey, 60); // 標記該金鑰冷卻
                             break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
                         } else {
-                            await sleep(10000);
+                            // 🟢 v14.4.0: 專屬金鑰 (Strategic) 觸發 429 時，等待時間加長 (30s)，給予配額更多恢復時間
+                            const customWait = attempt * 30000;
+                            console.log(`💊 [Strategic Key] 限流中，等待 ${customWait / 1000}s 後重試...`);
+                            await sleep(customWait);
                         }
                     } else if (isServerOverloaded) {
                         console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);

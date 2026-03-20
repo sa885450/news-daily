@@ -12,7 +12,7 @@ async function getMorningBriefingData() {
 
     // 2. 從資料庫撈出最近 12 小時內的新聞與情報
     // 包含昨夜所有金十快訊與重要 RSS 新聞
-    const overnightNews = db.getRecentArticles(12, 100);
+    const overnightNews = db.getRecentArticles(12, 40);
 
     return {
         timestamp: new Date().toISOString(),

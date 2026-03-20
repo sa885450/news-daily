@@ -33,8 +33,8 @@ module.exports = {
     includeRegex: (process.env.KEYWORDS || "").split(',').map(k => new RegExp(k.trim(), 'i')).filter(r => r.source !== "(?:)"),
     excludeRegex: (process.env.EXCLUDE_KEYWORDS || "").split(',').map(k => new RegExp(k.trim(), 'i')).filter(r => r.source !== "(?:)"),
 
-    // AI 模型設定 (🟢 v13.7.7: 移除下架之 1.5-flash)
-    modelCandidates: ["gemini-2.0-flash", "gemini-2.0-flash-exp", "gemini-flash-latest"],
+    // AI 模型設定 (🟢 v14.4.0: 移除實驗性 exp 模型，優先使用 2.0-flash 穩定版)
+    modelCandidates: ["gemini-2.0-flash", "gemini-1.5-flash-8b", "gemini-1.5-flash"],
     similarityThreshold: parseFloat(process.env.SIMILARITY_THRESHOLD) || 0.8,
 
     // 爬蟲偽裝 Headers

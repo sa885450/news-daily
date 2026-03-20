@@ -14,6 +14,7 @@ db.exec(`
     thumbnail TEXT, -- 🟢 v7.0.1 新增：縮圖 URL
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
+  CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at DESC);
   CREATE TABLE IF NOT EXISTS daily_stats (
     date TEXT PRIMARY KEY, 
     sentiment_score REAL,
