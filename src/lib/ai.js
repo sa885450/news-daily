@@ -113,6 +113,8 @@ const reportSchema = {
 class KeyManager {
     constructor(keys) {
         this.keys = keys.length > 0 ? keys : [geminiKey];
+        // 🟢 v14.5.0: 隨機打亂金鑰順序，平均每日配額負載
+        this.keys.sort(() => Math.random() - 0.5);
         this.currentIndex = 0;
         this.cooldowns = new Map(); // key -> resumeTime
     }
@@ -139,7 +141,13 @@ class KeyManager {
     }
 
     markCooldown(key, seconds = 60) {
-        console.warn(`💊 Key [${key.substring(0, 8)}...] entering cooldown for ${seconds}s`);
+        // 🟢 v14.5.0: 支援長效冷卻 (Circuit Breaker)
+        const displayKey = key.substring(0, 8);
+        if (seconds > 3600) {
+            console.error(`🚨 [Circuit Breaker] Key [${displayKey}...] 觸發每日限額熔斷，冷卻 ${Math.round(seconds / 3600)} 小時。`);
+        } else {
+            console.warn(`💊 Key [${displayKey}...] entering cooldown for ${seconds}s`);
+        }
         this.cooldowns.set(key, Date.now() + seconds * 1000);
         this.rotate();
     }
@@ -199,15 +207,24 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                     const isServerOverloaded = e.message && (e.message.includes("503") || e.message.includes("Service Unavailable") || e.message.includes("500"));
 
                     if (isRateLimit) {
-                        console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
+                        const isDailyLimit = e.message && e.message.includes("PerDay");
+                        const cooldownTime = isDailyLimit ? 43200 : 60; // 每日限額給予 12 小時冷卻
+
+                        if (isDailyLimit) {
+                            console.error(`🚨 ${modelName} 偵測到「每日限額 (Daily Quota)」已耗盡！`);
+                        } else {
+                            console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
+                        }
+
                         if (!currentCustomKey) {
-                            keyManager.markCooldown(activeKey, 60); // 標記該金鑰冷卻
+                            keyManager.markCooldown(activeKey, cooldownTime); // 標記該金鑰冷卻
                             break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
                         } else {
                             // 🟢 v14.4.0: 專屬金鑰 (Strategic) 觸發 429 時，等待時間加長 (30s)，給予配額更多恢復時間
                             const customWait = attempt * 30000;
                             console.log(`💊 [Strategic Key] 限流中，等待 ${customWait / 1000}s 後重試...`);
                             await sleep(customWait);
+                            if (isDailyLimit) break; // 如果是每日限額，別在 Strategic Key 浪費時間了，直接 fallback
                         }
                     } else if (isServerOverloaded) {
                         console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);
