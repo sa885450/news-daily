@@ -2,19 +2,19 @@
   "btcPrice": 92000,
   "updatedAt": "2026-03-05T14:15:00.846Z",
   "BTC": {
-    "price": 70681,
+    "price": 70707,
     "lastAlertAt": 1774028102150
   },
   "ETH": {
-    "price": 2153.42,
+    "price": 2154.69,
     "lastAlertAt": 1773062402096
   },
   "SOL": {
-    "price": 90.41,
+    "price": 90.5,
     "lastAlertAt": 0
   },
   "BNB": {
-    "price": 642.28,
+    "price": 642.64,
     "lastAlertAt": 0
   },
   "台股加權": {

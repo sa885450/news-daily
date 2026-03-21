@@ -104,12 +104,14 @@ async function runMonitor() {
 
                 state[target.name] = { price: currentPrice, lastAlertAt: now };
 
-                // 打擊分析聯動 (僅限 RED 等級)
+                // 🟢 v14.7.0: 關閉 AI 緊急聯動，以極致節省每日配額
+                /*
                 if (alert.level === 'RED') {
                     exec(`node src/index.js --emergency --target="${target.name}"`, { windowsHide: true }, (err) => {
                         if (err) log('❌', `AI 聯動失敗: ${err.message}`);
                     });
                 }
+                */
             } else {
                 state[target.name] = { price: currentPrice, lastAlertAt: lastAlertAt };
             }
