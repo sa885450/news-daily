@@ -21,6 +21,9 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.7.3 (門神跳過日誌優化) ⏩🛡️
+- **🛡️ 門神透明化**: 當 `Global Quota Keeper` 介入並跳過已耗盡的模型/金鑰時，現在會顯示 `⏩ [QuotaKeeper] 跳過「已熔斷」金鑰` 提示。解決了用戶在配額耗盡時看不到 429 報錯而產生的「AI 莫名靜默」困惑。
+
 ### v14.7.2 (模型清單修正與診斷功能) 🧪🛠️
 - **🧪 深度診斷發現**: 經 `scripts/list_all_models.js` 實測，部分 API Key 在 `v1beta` 下僅授權別名 (如 `gemini-flash-latest`) 而非 versioned 具名系列 (如 `gemini-1.5-flash`)。這解釋了舊版本中的 404 備援失敗。
 - **🧬 模型名單校準**: 更新候選名單為 `["gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.0-flash-lite", "gemini-flash-latest", "gemini-pro-latest"]`，確保跨代、跨別名的全面支援。

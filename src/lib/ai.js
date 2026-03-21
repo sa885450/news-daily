@@ -85,7 +85,11 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
             const genAI = new GoogleGenerativeAI(activeKey);
 
             for (const modelName of activeModelCandidates) {
-                if (quota.isDead(activeKey, modelName)) continue;
+                // 🟢 v14.7.3: 偵測該金鑰+模型組合是否已全域熔斷 (並給予跳過日誌)
+                if (quota.isDead(activeKey, modelName)) {
+                    process.stdout.write(`⏩ [QuotaKeeper] 跳過「已熔斷」金鑰: ${activeKey.substring(0,8)}... @ ${modelName}\r`);
+                    continue; 
+                }
 
                 try {
                     const config = {
