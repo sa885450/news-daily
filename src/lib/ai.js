@@ -160,10 +160,16 @@ class KeyManager {
 
 const keyManager = new KeyManager(geminiKeys);
 
-async function callGemini(prompt, isJson = true, customKey = null, retryCount = 3, overrideModels = null) {
+async function callGemini(prompt, isJson = true, customKey = null, retryCount = 1, overrideModels = null) {
     let lastError = null;
     let usingCustomKey = !!customKey;
     const activeModelCandidates = overrideModels || modelCandidates;
+
+    // 🟢 v14.7.1: 全域總量保護 (每日 6000 次請求熔斷，保護 6 Key 預算)
+    if (quota.getDailyCount() > 6000) {
+        log('🛑', '全域每日請求總量已達 6000 次安全上限，停止 AI 調用以保護配額。');
+        throw new Error("Global Daily Quota Protection Triggered");
+    }
 
     // 🟢 v13.7.16: 分段嘗試。如果有自訂金鑰，先試自訂金鑰；失敗後再試金鑰池。
     const maxPhases = usingCustomKey ? 2 : 1;
@@ -220,20 +226,19 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                         if (isDailyLimit) {
                             console.error(`🚨 ${modelName} 偵測到「每日限額 (Daily Quota)」已耗盡！`);
                             quota.markDead(activeKey, modelName); 
-                            continue; // 🟢 v14.6.2: 關鍵！切換至下一個候選模型 (如 1.5-flash-8b)，不跳開此 Key
+                            continue; // 切換至下一個候選模型
                         } else {
                             console.warn(`⏳ ${modelName} 觸發 Rate Limit (429) 限流保護。`);
+                            quota.markTempLimit(activeKey, modelName, 60); // 🟢 v14.7.1: 全域同步 RPM 冷卻 (60s)
                         }
 
                         if (!currentCustomKey) {
-                            keyManager.markCooldown(activeKey, 60); // 一般 429 標記 1 分鐘冷卻
-                            break; // 換下一個金鑰重試 (跳出 modelCandidates 迴圈)
+                            keyManager.markCooldown(activeKey, 60); 
+                            break; // 換下一個金鑰重試
                         } else {
-                            // 🟢 專屬金鑰 (Strategic) 觸發 429 (RPM/TPM) 時，等待時間加長 (30s)
-                            const customWait = attempt * 30000;
-                            console.log(`💊 [Strategic Key] 觸發 RPM/TPM 限流，等待 ${customWait / 1000}s 後重試...`);
-                            await sleep(customWait);
-                            // 這裡不 break，會在下一次 attempt 重新嘗試同一個 modelName
+                            // 專屬金鑰 (Strategic) 觸發 429 (RPM) 時，跳過此次嘗試，進入下階段 (Fallback)
+                            log('💊', `[Strategic Key] 觸發 RPM 限制，全域標記並跳過...`);
+                            break; 
                         }
                     } else if (isServerOverloaded) {
                         console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 100)}...`);
@@ -338,7 +343,7 @@ ${blob}
         modelList = ["gemini-1.5-flash-8b", "gemini-1.5-flash", "gemini-2.0-flash"];
     }
 
-    return await callGemini(prompt, true, finalKey, 3, modelList);
+    return await callGemini(prompt, true, finalKey, 1, modelList);
 }
 
 async function getWeeklySummary(newsData) {

@@ -4,71 +4,100 @@ const path = require('path');
 const STATE_FILE = path.join(__dirname, '../../data/quota_state.json');
 
 /**
- * v14.6.0 全域配額門神
- * 負責跨進程 (PM2) 追蹤每日配額耗盡狀態
+ * v14.7.1 全域配額門神 (Global Quota Keeper)
+ * 負責跨進程 (PM2) 共享 API 配額狀態與 RPM 防撞同步
  */
 class QuotaManager {
     constructor() {
-        this.state = this._load();
+        this.state = this.load();
     }
 
-    _load() {
+    load() {
         try {
             if (fs.existsSync(STATE_FILE)) {
                 const data = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-                // 清理過期的標記 (超過 24 小時的)
                 const now = Date.now();
-                const freshState = {};
-                for (const [key, val] of Object.entries(data)) {
-                    if (val.deadUntil && val.deadUntil > now) {
-                        freshState[key] = val;
+                
+                // 初步檢查日期，若跨日則重置
+                const today = new Date().toISOString().split('T')[0];
+                if (data.lastDate !== today) {
+                    return { lastDate: today, dailyCount: 0, deadKeys: {}, cooldowns: {} };
+                }
+
+                // 清理過期的短效冷卻
+                if (data.cooldowns) {
+                    for (const [id, until] of Object.entries(data.cooldowns)) {
+                        if (until < now) delete data.cooldowns[id];
                     }
                 }
-                return freshState;
+                return data;
             }
         } catch (e) {
-            console.error(`⚠️ QuotaManager: 讀取狀態檔案失敗: ${e.message}`);
+            // console.error(`⚠️ QuotaManager: 讀取狀態失敗: ${e.message}`);
         }
-        return {};
+        const today = new Date().toISOString().split('T')[0];
+        return { lastDate: today, dailyCount: 0, deadKeys: {}, cooldowns: {} };
     }
 
-    _save() {
+    save() {
         try {
             const dir = path.dirname(STATE_FILE);
             if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
             fs.writeFileSync(STATE_FILE, JSON.stringify(this.state, null, 2));
         } catch (e) {
-            console.error(`⚠️ QuotaManager: 儲存狀態檔案失敗: ${e.message}`);
+            // console.error(`⚠️ QuotaManager: 儲存狀態失敗: ${e.message}`);
         }
     }
 
-    /**
-     * 檢查特定 Key + Model 組合是否已被宣告今日死亡
-     */
-    isDead(apiKey, modelName) {
-        this.state = this._load(); // 每次檢查都重讀一次，確保跨進程同步
-        const id = `${apiKey.substring(0, 8)}:${modelName}`;
-        const record = this.state[id];
-        if (record && record.deadUntil > Date.now()) {
-            return true;
-        }
+    isDead(key, model) {
+        this.state = this.load();
+        const id = `${key.substring(0, 8)}_${model}`;
+        
+        // 1. 檢查永久熔斷 (12小時)
+        const deadUntil = this.state.deadKeys?.[id];
+        if (deadUntil && Date.now() < deadUntil) return true;
+
+        // 2. 檢查短效 RPM 冷卻 (60秒) - v14.7.1
+        const coolUntil = this.state.cooldowns?.[id];
+        if (coolUntil && Date.now() < coolUntil) return true;
+
         return false;
     }
 
-    /**
-     * 標記特定 Key + Model 組合今日耗盡
-     * @param {string} apiKey 
-     * @param {string} modelName 
-     * @param {number} hours 冷卻小時數 (預設 12)
-     */
-    markDead(apiKey, modelName, hours = 12) {
-        const id = `${apiKey.substring(0, 8)}:${modelName}`;
-        this.state[id] = {
-            deadUntil: Date.now() + hours * 3600 * 1000,
-            markedAt: new Date().toISOString()
-        };
-        this._save();
-        console.error(`🚨 [QuotaKeeper] 標記全域熔斷: ${modelName} @ Key[${apiKey.substring(0, 8)}...]，持續 ${hours} 小時`);
+    markDead(key, model) {
+        this.state = this.load();
+        const id = `${key.substring(0, 8)}_${model}`;
+        if (!this.state.deadKeys) this.state.deadKeys = {};
+        this.state.deadKeys[id] = Date.now() + (12 * 60 * 60 * 1000);
+        this.incrementCount();
+        this.save();
+        console.log(`🚨 [QuotaKeeper] 標記全域熔斷: ${model} @ Key[${key.substring(0, 8)}...]，持續 12 小時`);
+    }
+
+    markTempLimit(key, model, seconds = 60) {
+        this.state = this.load();
+        if (!this.state.cooldowns) this.state.cooldowns = {};
+        const id = `${key.substring(0, 8)}_${model}`;
+        this.state.cooldowns[id] = Date.now() + (seconds * 1000);
+        this.incrementCount();
+        this.save();
+        console.log(`⏳ [QuotaKeeper] 標記全域短效冷卻 (RPM): ${model} @ Key[${key.substring(0, 8)}...]，持續 ${seconds}s`);
+    }
+
+    incrementCount() {
+        const today = new Date().toISOString().split('T')[0];
+        if (this.state.lastDate !== today) {
+            this.state.lastDate = today;
+            this.state.dailyCount = 0;
+            this.state.deadKeys = {};
+            this.state.cooldowns = {};
+        }
+        this.state.dailyCount = (this.state.dailyCount || 0) + 1;
+    }
+
+    getDailyCount() {
+        this.state = this.load();
+        return this.state.dailyCount || 0;
     }
 }
 
