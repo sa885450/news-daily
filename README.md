@@ -21,6 +21,10 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.9.0 (GitHub Models 整合測試版) 🛡️🧪
+- **🛡️ 跨平台備援預埋**: 針對 Google 配額不穩定問題，預留了 GitHub Models (GPT-4o-mini) 的三階段跳轉邏輯。
+- **🧪 增強版診斷工具**: `scripts/verify_keys.js` 現在支援 GitHub Token 驗證。只需在 `.env` 中添加 `GITHUB_MODELS_TOKEN`，即可測試跨平台備援的連線狀態。
+
 ### v14.8.0 (監控預警開關與噪音過濾) 📉🔕
 - **🔕 預警噪音控制**: 新增環境變數 `ENABLE_MONITOR_ALERTS`。當設為 `false` 時，系統將自動過濾 🟠 (進階預警) 與 🟡 (一般預告)，僅在發生 🚨 (垂直打擊) 等核心風險時發送通知。適合在震盪市況下開啟以減少訊息干擾。
 

@@ -35,6 +35,35 @@ async function verify() {
              else console.log(`❌ ${msg.substring(0, 30)}`);
         }
     }
+    // 🟢 v14.9.0 GitHub Models 串接測試 (預留)
+    const ghToken = process.env.GITHUB_MODELS_TOKEN;
+    if (ghToken) {
+        console.log('\n🧪 偵測到 GitHub Token，正在驗證 GitHub Models (GPT-4o-mini)...');
+        try {
+            const response = await fetch("https://models.inference.ai.azure.com/chat/completions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${ghToken}`
+                },
+                body: JSON.stringify({
+                    messages: [{ role: "user", content: "Say hello and confirm you are GPT-4o-mini" }],
+                    model: "gpt-4o-mini",
+                    max_tokens: 50
+                })
+            });
+            const data = await response.json();
+            if (response.ok) {
+                console.log(`  ✅ GitHub Models 連線成功: "${data.choices[0].message.content.trim()}"`);
+            } else {
+                console.log(`  ❌ GitHub Models 回傳錯誤 (${response.status}): ${JSON.stringify(data)}`);
+            }
+        } catch (err) {
+            console.log(`  ❌ GitHub Models 連線失敗: ${err.message}`);
+        }
+    } else {
+        console.log('\n💡 提示: 若要測試 GitHub Models 備援，請在 .env 中設定 GITHUB_MODELS_TOKEN');
+    }
 }
 
 verify();
