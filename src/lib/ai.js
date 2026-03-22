@@ -158,6 +158,25 @@ async function getAnalysis(prompt, isJson = true) {
     return await callGemini(prompt, isJson);
 }
 
+// 🟢 v14.9.2: 恢復 getSummary 接口以對接 index.js
+async function getSummary(newsData, lastSummary, lastScore, marketSnapshotStr, isEmergency, targetName, techData, mode = 'deep') {
+    const newsJson = JSON.stringify(newsData);
+    const techStr = techData ? `技術指標: ${JSON.stringify(techData)}` : '';
+    const emergencyPrompt = isEmergency ? `🚨 緊急分析標的: ${targetName}\n` : '';
+
+    const prompt = `您是一位專業的資深財經分析師。請根據以下市場數據與新聞生成一份深度分析報告 (JSON 格式)。
+${emergencyPrompt}
+昨日摘要回顧: ${lastSummary || '無'}
+昨日情緒分數: ${lastScore}
+${techStr}
+市場即時快照: ${marketSnapshotStr}
+
+待分析新聞數據 (共 ${newsData.length} 則):
+${newsJson}`;
+
+    return await callGemini(prompt, true);
+}
+
 async function getMorningSummary(newsData) {
     const prompt = `請分析以下美股市場新聞並生成一份晨報摘要 (JSON 格式)：\n\n${JSON.stringify(newsData)}`;
     const finalKey = geminiStrategicKey;
@@ -172,6 +191,7 @@ async function getWeeklySummary(newsData) {
 
 module.exports = {
     getAnalysis,
+    getSummary,
     getMorningSummary,
     getWeeklySummary,
     callGemini
