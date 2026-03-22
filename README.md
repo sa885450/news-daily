@@ -21,6 +21,10 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.9.3 (修正 AI 輸出 Schema 與欄位對齊) 🧬💎
+- **🧬 Schema 完整化**: 重構 `src/lib/ai.js` 中的 JSON Schema，補全缺失的 `sentiment_score`, `dimensions`, `sector_stats`, `events` 等核心欄位，徹底解決 Discord 訊息中出現 `undefined` 的問題。
+- **💎 數據過濾優化**: 確保 `entities` 欄位能正確回傳，對應 Discord 腳註中的「關注焦點」。
+
 ### v14.9.2 (緊急修復 AI 接口缺失) 🛠️🚨
 - **🛠️ 接口回填**: 修復 `src/lib/ai.js` 在 v14.7.2 重構中誤刪 `getSummary` 函數的問題，恢復主程式 `index.js` 的 AI 分析調用能力。
 - **🚨 修正分析失敗假象**: 解決金鑰正常但分析顯示「全數失敗」的 Bug。

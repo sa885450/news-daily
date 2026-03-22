@@ -17,18 +17,80 @@ const safetySettings = [
  */
 const modelCandidates = ["gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.0-flash-lite", "gemini-flash-latest", "gemini-pro-latest"];
 
+// 🟢 v14.9.3: 修正 Schema 以對接 index.js 與 morning.js 的欄位需求
 const reportSchema = {
-  description: "Financial market news analysis and tactical report",
-  type: "object",
-  properties: {
-    title: { type: "string" },
-    sentiment: { type: "string", enum: ["BULLISH", "BEARISH", "NEUTRAL"] },
-    summary: { type: "string" },
-    impact_level: { type: "number", minimum: 1, maximum: 5 },
-    keywords: { type: "array", items: { type: "string" } },
-    tactical_advice: { type: "string" }
-  },
-  required: ["title", "sentiment", "summary", "impact_level", "keywords", "tactical_advice"]
+    description: "Financial market news analysis and tactical report",
+    type: "object",
+    properties: {
+        sentiment_score: { type: "number", description: "市場情緒指數 (-1 到 1)" },
+        summary: { type: "string", description: "HTML 格式的深度摘要" },
+        dimensions: {
+            type: "object",
+            properties: {
+                policy: { type: "number" },
+                capital: { type: "number" },
+                industry: { type: "number" },
+                international: { type: "number" },
+                tech: { type: "number" }
+            },
+            required: ["policy", "capital", "industry", "international", "tech"]
+        },
+        sector_stats: {
+            type: "object",
+            properties: {
+                tech: { type: "number" },
+                finance: { type: "number" },
+                energy: { type: "number" },
+                general: { type: "number" }
+            },
+            required: ["tech", "finance", "energy", "general"]
+        },
+        events: {
+            type: "array",
+            items: {
+                type: "object",
+                properties: {
+                    title: { type: "string" },
+                    summary: { type: "string" },
+                    impact: { type: "string", enum: ["正面", "負面", "中性"] }
+                },
+                required: ["title", "summary", "impact"]
+            }
+        },
+        relations: {
+            type: "array",
+            items: {
+                type: "object",
+                properties: {
+                    source: { type: "string" },
+                    target: { type: "string" },
+                    type: { type: "string" }
+                },
+                required: ["source", "target", "type"]
+            }
+        },
+        tactical_advice: {
+            type: "object",
+            properties: {
+                action: { type: "string" },
+                confidence: { type: "number" },
+                rationale: { type: "string" },
+                position_size: { type: "string" }
+            },
+            required: ["action", "confidence", "rationale", "position_size"]
+        },
+        entities: {
+            type: "array",
+            items: {
+                type: "object",
+                properties: {
+                    name: { type: "string" },
+                    ticker: { type: "string" }
+                }
+            }
+        }
+    },
+    required: ["sentiment_score", "summary", "dimensions", "sector_stats", "events", "relations", "tactical_advice"]
 };
 
 class KeyManager {
