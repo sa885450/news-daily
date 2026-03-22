@@ -61,5 +61,7 @@ module.exports = {
     repoName: "news-daily",
     // 🟢 v13.0.0: 金十數據整合
     enableJin10: process.env.ENABLE_JIN10_MONITOR !== 'false',
-    jin10Interval: parseInt(process.env.JIN10_CHRONO_MINUTES || '5')
+    jin10Interval: parseInt(process.env.JIN10_CHRONO_MINUTES || '5'),
+    // 🟢 v14.8.0: 監控預警開關 (預設開啟，設為 false 可過濾非緊急噪音)
+    enableMonitorAlerts: process.env.ENABLE_MONITOR_ALERTS !== 'false'
 };

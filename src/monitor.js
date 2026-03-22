@@ -33,6 +33,12 @@ function evaluateAlertLevel(target, tech, changeRate) {
     if (tech.trend === 'BEAR' && changeRate < 0) score += 1;
 
     if (score >= 5) return { level: 'RED', color: 15158332, label: '🚨 垂直打擊 (緊急風險)' };
+    
+    // 🟢 v14.8.0: 噪音過濾邏輯 (若開關關閉，隱藏非緊急的橘/黃警報)
+    if (!config.enableMonitorAlerts) {
+        return { level: 'NONE', color: 0, score };
+    }
+
     if (score >= 3) return { level: 'ORANGE', color: 15844367, label: '🟠 進階預警 (趨勢轉折)' };
     if (score >= 1) return { level: 'YELLOW', color: 3447003, label: '🟡 一般預告 (標的異動)' };
 
