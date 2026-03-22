@@ -21,6 +21,9 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.9.1 (全池金鑰診斷優化) 🩺🛰️
+- **🛰️ 診斷範圍擴大**: 修正 `verify_keys.js` 僅測試首把金鑰的邏輯，現在會自動遍歷 `GEMINI_KEY_POOL` 與 `STRATEGIC_KEY` 中的 **所有金鑰**，提供完整的配額地圖。
+
 ### v14.9.0 (GitHub Models 整合測試版) 🛡️🧪
 - **🛡️ 跨平台備援預埋**: 針對 Google 配額不穩定問題，預留了 GitHub Models (GPT-4o-mini) 的三階段跳轉邏輯。
 - **🧪 增強版診斷工具**: `scripts/verify_keys.js` 現在支援 GitHub Token 驗證。只需在 `.env` 中添加 `GITHUB_MODELS_TOKEN`，即可測試跨平台備援的連線狀態。
