@@ -21,6 +21,10 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v14.9.4 (解除時段性強制節流) 🔓🚀
+- **🔓 節流策略調整**: 移除 `src/index.js` 中 04:00 - 08:30 的硬編碼「晨報保護期」限縮邏輯。
+- **🚀 報表完整性提升**: 確保主程式在低頻率執行時（如 8 小時一次），即使落在清晨時段也能產出完整的 AI 深度分析，不再強制降級為演算法簡報。
+
 ### v14.9.3 (修正 AI 輸出 Schema 與欄位對齊) 🧬💎
 - **🧬 Schema 完整化**: 重構 `src/lib/ai.js` 中的 JSON Schema，補全缺失的 `sentiment_score`, `dimensions`, `sector_stats`, `events` 等核心欄位，徹底解決 Discord 訊息中出現 `undefined` 的問題。
 - **💎 數據過濾優化**: 確保 `entities` 欄位能正確回傳，對應 Discord 腳註中的「關注焦點」。

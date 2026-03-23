@@ -194,16 +194,9 @@ async function runTask() {
             // 🟢 AI 分析與節流門檻判定
             let aiResult;
             
-            // 🟢 v14.6.0: 高峰期配額避讓 (Quota Reservation)
-            // 凌晨 04:00 - 08:30 是晨報關鍵期，非緊急模式下 index.js 主動降級為演算法簡報，保護配額給 06:30 晨報
-            const now = new Date();
-            const hour = now.getHours();
-            const min = now.getMinutes();
-            const isMorningBuffer = (hour > 4 || (hour === 4 && min >= 0)) && (hour < 8 || (hour === 8 && min <= 30));
-
-            if (recentArticles.length < MIN_NEWS_THRESHOLD || (isMorningBuffer && !isEmergency)) {
-                // 節流模式：不足 100 則或處於晨報保護期且非緊急，不呼叫 AI
-                const reason = isMorningBuffer ? "「晨報配額保護期」" : `新聞量 (${recentArticles.length}) 未達門門檻 ${MIN_NEWS_THRESHOLD}`;
+            if (recentArticles.length < MIN_NEWS_THRESHOLD && !isEmergency) {
+                // 節流模式：不足 100 則且非緊急，不呼叫 AI
+                const reason = `新聞量 (${recentArticles.length}) 未達門門檻 ${MIN_NEWS_THRESHOLD}`;
                 log('📉', `啟動「演算法簡報」節流模式 (原因: ${reason})...`);
                 
                 const topNewsList = eliteNews.slice(0, 8).map(n => `<li><b>[${n.source}]</b> ${n.title}</li>`).join('');
