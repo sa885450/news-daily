@@ -11,10 +11,12 @@ db.exec(`
     source TEXT, 
     category TEXT, 
     content TEXT, 
-    thumbnail TEXT, -- 🟢 v7.0.1 新增：縮圖 URL
+    thumbnail TEXT, 
+    is_important INTEGER DEFAULT 0, -- 🟢 v15.1.0 新增：重要性標記 (0/1)
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
   CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at DESC);
+  CREATE INDEX IF NOT EXISTS idx_articles_important ON articles(is_important) WHERE is_important = 1;
   CREATE TABLE IF NOT EXISTS daily_stats (
     date TEXT PRIMARY KEY, 
     sentiment_score REAL,
@@ -43,10 +45,15 @@ try {
   db.prepare('ALTER TABLE articles ADD COLUMN thumbnail TEXT').run();
 } catch (e) { }
 
+// 🟢 Migration: Add is_important column to articles (v15.1.0)
+try {
+  db.prepare('ALTER TABLE articles ADD COLUMN is_important INTEGER DEFAULT 0').run();
+} catch (e) { }
+
 const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
 const insertArticleStmt = db.prepare(`
-  INSERT INTO articles (title, url, source, category, content, thumbnail) 
-  VALUES (?, ?, ?, ?, ?, ?)
+  INSERT INTO articles (title, url, source, category, content, thumbnail, is_important) 
+  VALUES (?, ?, ?, ?, ?, ?, ?)
   ON CONFLICT(url) DO UPDATE SET
     content = CASE 
       WHEN length(excluded.content) > length(articles.content) OR articles.content IS NULL 
@@ -54,7 +61,8 @@ const insertArticleStmt = db.prepare(`
       ELSE articles.content 
     END,
     thumbnail = CASE WHEN excluded.thumbnail IS NOT NULL THEN excluded.thumbnail ELSE articles.thumbnail END,
-    category = CASE WHEN excluded.category != '其他' THEN excluded.category ELSE articles.category END
+    category = CASE WHEN excluded.category != '其他' THEN excluded.category ELSE articles.category END,
+    is_important = CASE WHEN excluded.is_important = 1 THEN 1 ELSE articles.is_important END
 `);
 const insertStatsStmt = db.prepare(`
   INSERT INTO daily_stats (date, sentiment_score, summary, sector_stats, dimensions, events, relations, tactical_advice) 
@@ -85,10 +93,10 @@ const getKeywordHistoryStmt = db.prepare(`
 
 module.exports = {
   isAlreadyRead: (url) => !!checkUrlStmt.get(url),
-  saveArticle: (title, url, source, category = '其他', content = null, thumbnail = null) => {
+  saveArticle: (title, url, source, category = '其他', content = null, thumbnail = null, isImportant = 0) => {
     // 🟢 v13.3.1: 防禦性檢查 - 拒絕存入無意義的 javascript 偽連結
     if (!url || url.startsWith('javascript:')) return;
-    try { insertArticleStmt.run(title, url, source, category, content, thumbnail); } catch (e) { }
+    try { insertArticleStmt.run(title, url, source, category, content, thumbnail, isImportant ? 1 : 0); } catch (e) { }
   },
   saveDailyStats: (score, summary, sectorStats = null, dimensions = null, events = null, relations = null, tacticalAdvice = null) => {
     const today = new Date().toISOString().split('T')[0];

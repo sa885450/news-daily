@@ -450,7 +450,9 @@ async function runJin10Task() {
                     url,
                     '金十數據',
                     '即時快訊',
-                    news.content
+                    news.content,
+                    null,
+                    news.isImportant
                 );
                 newCount++;
 

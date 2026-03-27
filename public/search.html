@@ -236,6 +236,13 @@
             </select>
         </div>
 
+        <div class="filter-group" style="flex-direction: row; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <input type="checkbox" id="importantToggle" style="width: auto; cursor: pointer;">
+            <label for="importantToggle" style="font-size: 0.85rem; color: #fbbf24; cursor: pointer; font-weight: 600;">
+                ⭐ 僅看重要情報
+            </label>
+        </div>
+
         <button class="btn-search" onclick="fetchNews()">
             <i data-lucide="search" size="18"></i>
             啟動精準檢索
@@ -297,8 +304,9 @@
             const cat = document.getElementById('categorySelect').value;
             const limit = document.getElementById('limitSelect').value;
             const order = document.getElementById('orderSelect').value;
+            const important = document.getElementById('importantToggle').checked ? '1' : '0';
 
-            const params = new URLSearchParams({ q, source, category: cat, limit, order });
+            const params = new URLSearchParams({ q, source, category: cat, limit, order, important });
             
             try {
                 const res = await fetch(`${API_BASE}/news?${params}`);
