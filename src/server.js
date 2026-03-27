@@ -59,7 +59,7 @@ app.get('/api/news', (req, res) => {
 /**
  * API: 取得元數據 (來源與分類清單)
  */
-app.get('/api/meta', (req) => {
+app.get('/api/meta', (req, res) => {
     try {
         const sources = db.prepare("SELECT DISTINCT source FROM articles").all().map(r => r.source);
         const categories = db.prepare("SELECT DISTINCT category FROM articles").all().map(r => r.category);
