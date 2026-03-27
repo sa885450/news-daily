@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/api/news', (req, res) => {
     try {
         const { q, source, category, start, end, limit = 50, offset = 0, order = 'desc' } = req.query;
-        let query = "SELECT * FROM articles WHERE 1=1";
+        let query = "SELECT *, strftime('%Y-%m-%dT%H:%M:%SZ', created_at) as created_at FROM articles WHERE 1=1";
         const params = [];
 
         if (q) {
