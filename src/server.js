@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, '../public')));
  */
 app.get('/api/news', (req, res) => {
     try {
-        const { q, source, category, start, end, limit = 50, offset = 0, order = 'desc', important } = req.query;
+        const { q, source, category, start, end, limit = 50, offset = 0, order = 'desc', important, exclude } = req.query;
         let query = "SELECT *, strftime('%Y-%m-%dT%H:%M:%SZ', created_at) as created_at FROM articles WHERE 1=1";
         const params = [];
 
@@ -28,6 +28,9 @@ app.get('/api/news', (req, res) => {
         }
         if (important === '1') {
             query += " AND is_important = 1";
+        }
+        if (exclude === 'jin10') {
+            query += " AND source != '金十數據'";
         }
         if (source) {
             query += " AND source = ?";

@@ -236,6 +236,13 @@
             </select>
         </div>
 
+        <div class="filter-group" style="flex-direction: row; align-items: center; gap: 0.5rem; cursor: pointer; margin-bottom: 0.25rem;">
+            <input type="checkbox" id="excludeJin10Toggle" style="width: auto; cursor: pointer;">
+            <label for="excludeJin10Toggle" style="font-size: 0.85rem; color: #ef4444; cursor: pointer; font-weight: 00;">
+                🚫 隱藏金十數據
+            </label>
+        </div>
+
         <div class="filter-group" style="flex-direction: row; align-items: center; gap: 0.5rem; cursor: pointer;">
             <input type="checkbox" id="importantToggle" style="width: auto; cursor: pointer;">
             <label for="importantToggle" style="font-size: 0.85rem; color: #fbbf24; cursor: pointer; font-weight: 600;">
@@ -305,8 +312,9 @@
             const limit = document.getElementById('limitSelect').value;
             const order = document.getElementById('orderSelect').value;
             const important = document.getElementById('importantToggle').checked ? '1' : '0';
+            const exclude = document.getElementById('excludeJin10Toggle').checked ? 'jin10' : '';
 
-            const params = new URLSearchParams({ q, source, category: cat, limit, order, important });
+            const params = new URLSearchParams({ q, source, category: cat, limit, order, important, exclude });
             
             try {
                 const res = await fetch(`${API_BASE}/news?${params}`);
