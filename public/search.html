@@ -228,6 +228,14 @@
             </select>
         </div>
 
+        <div class="filter-group">
+            <label class="filter-label">排序方式</label>
+            <select id="orderSelect">
+                <option value="desc">最新優先 (Newest)</option>
+                <option value="asc">最早優先 (Oldest)</option>
+            </select>
+        </div>
+
         <button class="btn-search" onclick="fetchNews()">
             <i data-lucide="search" size="18"></i>
             啟動精準檢索
@@ -288,8 +296,9 @@
             const source = document.getElementById('sourceSelect').value;
             const cat = document.getElementById('categorySelect').value;
             const limit = document.getElementById('limitSelect').value;
+            const order = document.getElementById('orderSelect').value;
 
-            const params = new URLSearchParams({ q, source, category: cat, limit });
+            const params = new URLSearchParams({ q, source, category: cat, limit, order });
             
             try {
                 const res = await fetch(`${API_BASE}/news?${params}`);

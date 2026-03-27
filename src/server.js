@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, '../public')));
  */
 app.get('/api/news', (req, res) => {
     try {
-        const { q, source, category, start, end, limit = 50, offset = 0 } = req.query;
+        const { q, source, category, start, end, limit = 50, offset = 0, order = 'desc' } = req.query;
         let query = "SELECT * FROM articles WHERE 1=1";
         const params = [];
 
@@ -46,7 +46,8 @@ app.get('/api/news', (req, res) => {
         const countQuery = query.replace("SELECT *", "SELECT COUNT(*) as total");
         const total = db.prepare(countQuery).get(...params).total;
 
-        query += " ORDER BY created_at DESC LIMIT ? OFFSET ?";
+        const sortOrder = order.toLowerCase() === 'asc' ? 'ASC' : 'DESC';
+        query += ` ORDER BY created_at ${sortOrder} LIMIT ? OFFSET ?`;
         params.push(parseInt(limit), parseInt(offset));
 
         const data = db.prepare(query).all(...params);
