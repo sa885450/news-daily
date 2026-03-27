@@ -2,23 +2,23 @@
   "btcPrice": 92000,
   "updatedAt": "2026-03-05T14:15:00.846Z",
   "BTC": {
-    "price": 68791,
+    "price": 68463,
     "lastAlertAt": 1774028102150
   },
   "ETH": {
-    "price": 2059.33,
+    "price": 2064.84,
     "lastAlertAt": 1773062402096
   },
   "SOL": {
-    "price": 86.43,
+    "price": 85.88,
     "lastAlertAt": 0
   },
   "BNB": {
-    "price": 628.92,
+    "price": 628.04,
     "lastAlertAt": 0
   },
   "台股加權": {
-    "price": 33337.62,
+    "price": 33112.59,
     "lastAlertAt": 1773986102527
   },
   "S&P 500": {
@@ -26,22 +26,22 @@
     "lastAlertAt": 1774033802475
   },
   "台積電": {
-    "price": 1840,
+    "price": 1820,
     "lastAlertAt": 1773984602426
   },
   "元大台灣50": {
-    "price": 75.8,
+    "price": 75,
     "lastAlertAt": 1773982802846
   },
   "凱基台灣Top50": {
-    "price": 10.74,
+    "price": 10.67,
     "lastAlertAt": 1773983102217
   },
   "黃金期貨": {
-    "price": 4391.4,
+    "price": 4479,
     "lastAlertAt": 1774265402360
   },
-  "lastDailySnapshotAt": "2026-03-26",
+  "lastDailySnapshotAt": "2026-03-27",
   "台積電 ADR": {
     "price": 326.11,
     "lastAlertAt": 1774037102193
