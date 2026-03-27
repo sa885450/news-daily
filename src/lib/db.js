@@ -3,6 +3,7 @@ const { dbPath } = require('./config');
 
 const db = new Database(dbPath);
 
+// 1️⃣ 第一階段：建立基礎資料表 (如果不存在)
 db.exec(`
   CREATE TABLE IF NOT EXISTS articles (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -12,44 +13,41 @@ db.exec(`
     category TEXT, 
     content TEXT, 
     thumbnail TEXT, 
-    is_important INTEGER DEFAULT 0, -- 🟢 v15.1.0 新增：重要性標記 (0/1)
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
-  CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at DESC);
-  CREATE INDEX IF NOT EXISTS idx_articles_important ON articles(is_important) WHERE is_important = 1;
   CREATE TABLE IF NOT EXISTS daily_stats (
     date TEXT PRIMARY KEY, 
     sentiment_score REAL,
     summary TEXT,
-    sector_stats TEXT, -- JSON format
-    dimensions TEXT,   -- 🟢 v13.3.0 新增: 五力分析 JSON
-    events TEXT,       -- 🟢 v13.3.0 新增: 重大事件 JSON
-    relations TEXT,    -- 🟢 v13.3.0 新增: 知識圖譜 JSON
-    tactical_advice TEXT, -- 🟢 v13.3.0 新增: 戰術建議 JSON
+    sector_stats TEXT,
+    dimensions TEXT,
+    events TEXT,
+    relations TEXT,
+    tactical_advice TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
 `);
 
-// 🟢 Migration: v13.3.0 新增數據持久化欄位
+// 2️⃣ 第二階段：執行欄位遷移 (針對舊資料表擴充)
+// 🟢 Migration: articles 新增 content, thumbnail (舊版本相容)
+try { db.prepare('ALTER TABLE articles ADD COLUMN content TEXT').run(); } catch (e) { }
+try { db.prepare('ALTER TABLE articles ADD COLUMN thumbnail TEXT').run(); } catch (e) { }
+
+// 🟢 Migration: articles 新增 is_important (v15.1.0)
+try { db.prepare('ALTER TABLE articles ADD COLUMN is_important INTEGER DEFAULT 0').run(); } catch (e) { }
+
+// 🟢 Migration: daily_stats 新增持久化欄位 (v13.3.0)
 ['sector_stats', 'dimensions', 'events', 'relations', 'tactical_advice'].forEach(col => {
   try { db.prepare(`ALTER TABLE daily_stats ADD COLUMN ${col} TEXT`).run(); } catch (e) { }
 });
 
-// 🟢 Migration: Add content column (v5.x legacy)
-try {
-  db.prepare('ALTER TABLE articles ADD COLUMN content TEXT').run();
-} catch (e) { }
+// 3️⃣ 第三階段：建立索引 (確保欄位已存在)
+db.exec(`
+  CREATE INDEX IF NOT EXISTS idx_articles_created_at ON articles(created_at DESC);
+  CREATE INDEX IF NOT EXISTS idx_articles_important ON articles(is_important) WHERE is_important = 1;
+`);
 
-// 🟢 Migration: Add thumbnail column to articles (v7.0.1)
-try {
-  db.prepare('ALTER TABLE articles ADD COLUMN thumbnail TEXT').run();
-} catch (e) { }
-
-// 🟢 Migration: Add is_important column to articles (v15.1.0)
-try {
-  db.prepare('ALTER TABLE articles ADD COLUMN is_important INTEGER DEFAULT 0').run();
-} catch (e) { }
-
+// 4️⃣ 第四階段：準備 SQL 預編譯語句
 const checkUrlStmt = db.prepare('SELECT id FROM articles WHERE url = ?');
 const insertArticleStmt = db.prepare(`
   INSERT INTO articles (title, url, source, category, content, thumbnail, is_important) 
@@ -78,8 +76,6 @@ const insertStatsStmt = db.prepare(`
 `);
 const getRecentStatsStmt = db.prepare('SELECT date, sentiment_score, sector_stats FROM daily_stats ORDER BY date ASC LIMIT ?');
 const getLastSummaryStmt = db.prepare('SELECT * FROM daily_stats ORDER BY date DESC LIMIT 1');
-
-// ... (Rest of existing statements)
 
 // 🟢 新增：取得關鍵字歷史熱度 (過去 30 天)
 const getKeywordHistoryStmt = db.prepare(`
@@ -134,7 +130,17 @@ module.exports = {
   cleanupOldArticles: () => {
     return db.prepare("DELETE FROM articles WHERE created_at < date('now', '-30 days')").run();
   },
-  getWeeklyArticles: () => getWeeklyArticlesStmt.all(),
+  getWeeklyArticles: () => {
+    try {
+      return db.prepare(`
+        SELECT * FROM articles 
+        WHERE created_at >= date('now', '-7 days') 
+        ORDER BY created_at DESC
+      `).all();
+    } catch (e) {
+      return [];
+    }
+  },
 
   // 🟢 v13.1.0: 前端多元化顯示支援
   getRecentArticles: (hours, limit) => {
