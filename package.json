@@ -1,6 +1,6 @@
 {
   "name": "news",
-  "version": "14.9.4",
+  "version": "15.0.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "node src/index.js",
     "morning": "node src/morning.js",
     "morning:now": "node src/morning.js --now",
-    "ui": "npx serve public -l 3003",
+    "ui": "node src/server.js",
     "rebuild": "node scripts/rebuild_views.js",
     "fix-ejs": "node scripts/fix_ejs.js"
   },
@@ -21,8 +21,10 @@
     "@mozilla/readability": "^0.6.0",
     "axios": "^1.13.5",
     "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
     "dotenv": "^17.2.4",
     "ejs": "^4.0.1",
+    "express": "^5.2.1",
     "jsdom": "^28.0.0",
     "node-cron": "^4.2.1",
     "opencc-js": "^1.0.5",
