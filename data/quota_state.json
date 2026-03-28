@@ -1,9 +1,8 @@
 {
-  "lastDate": "2026-03-27",
-  "dailyCount": 3,
+  "lastDate": "2026-03-28",
+  "dailyCount": 1,
   "deadKeys": {
-    "AIzaSyC6_gemini-2.0-flash": 1774670430539,
-    "AIzaSyB7_gemini-2.0-flash": 1774641629268
+    "AIzaSyB7_gemini-2.0-flash": 1774699225755
   },
   "cooldowns": {}
 }
