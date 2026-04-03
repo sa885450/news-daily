@@ -63,5 +63,8 @@ module.exports = {
     enableJin10: process.env.ENABLE_JIN10_MONITOR !== 'false',
     jin10Interval: parseInt(process.env.JIN10_CHRONO_MINUTES || '5'),
     // 🟢 v14.8.0: 監控預警開關 (預設開啟，設為 false 可過濾非緊急噪音)
-    enableMonitorAlerts: process.env.ENABLE_MONITOR_ALERTS !== 'false'
+    enableMonitorAlerts: process.env.ENABLE_MONITOR_ALERTS !== 'false',
+    // 🟢 v15.3.0: 模型手動開關
+    enable20Flash: process.env.ENABLE_GEMINI_2_0_FLASH !== 'false',
+    enable20Lite: process.env.ENABLE_GEMINI_2_0_LITE !== 'false'
 };

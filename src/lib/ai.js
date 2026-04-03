@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@google/generative-ai");
-const { geminiKeys, geminiStrategicKey, modelCandidates: defaultModelCandidates } = require('./config');
+const { geminiKeys, geminiStrategicKey, modelCandidates: defaultModelCandidates, enable20Flash, enable20Lite } = require('./config');
 const { sleep, log } = require('./utils');
 const quota = require('./quota');
 
@@ -11,11 +11,16 @@ const safetySettings = [
 ];
 
 /**
- * v14.7.2 模型候選清單 (依據診斷結果優化)
- * 1.5 系列具名模型報 404，改用別名 flash-latest/pro-latest
- * 發現金鑰具備 2.5 系列權限，納入備援
+ * v15.3.0 模型候選清單 (依據環境變數動態過濾)
+ * 允許手動禁用經常用盡配額的 2.0 系列
  */
-const modelCandidates = ["gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.0-flash-lite", "gemini-flash-latest", "gemini-pro-latest"];
+const modelCandidates = [
+    enable20Flash && "gemini-2.0-flash",
+    "gemini-2.5-flash",
+    enable20Lite && "gemini-2.0-flash-lite",
+    "gemini-flash-latest",
+    "gemini-pro-latest"
+].filter(Boolean);
 
 // 🟢 v14.9.3: 修正 Schema 以對接 index.js 與 morning.js 的欄位需求
 const reportSchema = {
@@ -242,7 +247,11 @@ ${newsJson}`;
 async function getMorningSummary(newsData) {
     const prompt = `請分析以下美股市場新聞並生成一份晨報摘要 (JSON 格式)：\n\n${JSON.stringify(newsData)}`;
     const finalKey = geminiStrategicKey;
-    const modelList = ["gemini-2.0-flash", "gemini-2.5-flash", "gemini-flash-latest"];
+    const modelList = [
+        enable20Flash && "gemini-2.0-flash",
+        "gemini-2.5-flash",
+        "gemini-flash-latest"
+    ].filter(Boolean);
     return await callGemini(prompt, true, finalKey, 1, modelList);
 }
 

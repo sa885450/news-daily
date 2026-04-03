@@ -1,17 +1,17 @@
-require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+const { enable20Flash, enable20Lite } = require('../src/lib/config');
 
 const pool = (process.env.GEMINI_KEY_POOL || "").split(/[,,;]/).map(k => k.trim()).filter(k => k);
 const strategic = process.env.GEMINI_STRATEGIC_KEY ? [process.env.GEMINI_STRATEGIC_KEY.trim()] : [];
 const allKeys = [...new Set([...pool, ...strategic])];
 
-// 測試 REST API 掃出的真實名稱
-const newCandidates = [
-    "gemini-2.0-flash",
-    "gemini-2.5-flash",
-    "gemini-2.0-flash-lite",
-    "gemini-flash-latest",
-    "gemini-pro-latest"
+// 測試模型清單與開關狀態
+const modelConfig = [
+    { name: "gemini-2.0-flash", enabled: enable20Flash },
+    { name: "gemini-2.5-flash", enabled: true },
+    { name: "gemini-2.0-flash-lite", enabled: enable20Lite },
+    { name: "gemini-flash-latest", enabled: true },
+    { name: "gemini-pro-latest", enabled: true }
 ];
 
 async function verify() {
@@ -19,10 +19,16 @@ async function verify() {
         const genAI = new GoogleGenerativeAI(key);
         console.log(`\n🧪 正在驗證金鑰 (Key: ${key.substring(0,8)}...)...`);
 
-        for (const m of newCandidates) {
-            process.stdout.write(`  🎯 測試 [${m.padEnd(25)}] : `);
+        for (const m of modelConfig) {
+            process.stdout.write(`  🎯 測試 [${m.name.padEnd(25)}] : `);
+            
+            if (!m.enabled) {
+                console.log("💤 已手動禁用 (休息中)");
+                continue;
+            }
+
             try {
-                const model = genAI.getGenerativeModel({ model: m });
+                const model = genAI.getGenerativeModel({ model: m.name });
                 const result = await model.generateContent("Hi");
                 const r = await result.response;
                 if (r.text()) console.log("✅ 成功！");
