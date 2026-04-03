@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const { enable20Flash, enable20Lite } = require('../src/lib/config');
+const { enable20Flash, enable25Flash, enable20Lite, enableFlashLatest, enableProLatest } = require('../src/lib/config');
 
 const pool = (process.env.GEMINI_KEY_POOL || "").split(/[,,;]/).map(k => k.trim()).filter(k => k);
 const strategic = process.env.GEMINI_STRATEGIC_KEY ? [process.env.GEMINI_STRATEGIC_KEY.trim()] : [];
@@ -8,10 +8,10 @@ const allKeys = [...new Set([...pool, ...strategic])];
 // 測試模型清單與開關狀態
 const modelConfig = [
     { name: "gemini-2.0-flash", enabled: enable20Flash },
-    { name: "gemini-2.5-flash", enabled: true },
+    { name: "gemini-2.5-flash", enabled: enable25Flash },
     { name: "gemini-2.0-flash-lite", enabled: enable20Lite },
-    { name: "gemini-flash-latest", enabled: true },
-    { name: "gemini-pro-latest", enabled: true }
+    { name: "gemini-flash-latest", enabled: enableFlashLatest },
+    { name: "gemini-pro-latest", enabled: enableProLatest }
 ];
 
 async function verify() {

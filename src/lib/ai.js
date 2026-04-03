@@ -1,5 +1,5 @@
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@google/generative-ai");
-const { geminiKeys, geminiStrategicKey, modelCandidates: defaultModelCandidates, enable20Flash, enable20Lite } = require('./config');
+const { geminiKeys, geminiStrategicKey, modelCandidates: defaultModelCandidates, enable20Flash, enable25Flash, enable20Lite, enableFlashLatest, enableProLatest } = require('./config');
 const { sleep, log } = require('./utils');
 const quota = require('./quota');
 
@@ -16,10 +16,10 @@ const safetySettings = [
  */
 const modelCandidates = [
     enable20Flash && "gemini-2.0-flash",
-    "gemini-2.5-flash",
+    enable25Flash && "gemini-2.5-flash",
     enable20Lite && "gemini-2.0-flash-lite",
-    "gemini-flash-latest",
-    "gemini-pro-latest"
+    enableFlashLatest && "gemini-flash-latest",
+    enableProLatest && "gemini-pro-latest"
 ].filter(Boolean);
 
 // 🟢 v14.9.3: 修正 Schema 以對接 index.js 與 morning.js 的欄位需求
@@ -249,8 +249,8 @@ async function getMorningSummary(newsData) {
     const finalKey = geminiStrategicKey;
     const modelList = [
         enable20Flash && "gemini-2.0-flash",
-        "gemini-2.5-flash",
-        "gemini-flash-latest"
+        enable25Flash && "gemini-2.5-flash",
+        enableFlashLatest && "gemini-flash-latest"
     ].filter(Boolean);
     return await callGemini(prompt, true, finalKey, 1, modelList);
 }

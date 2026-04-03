@@ -21,6 +21,10 @@ news-daily/
 └── README.md          # 📄 專案說明書
 ```
 
+### v15.3.1 (全陣列模型手動開關) 🎛️💤
+- **🎛️ 模型開關擴大**: 將手動開關機制從原本的 2.0-flash 系列擴大至 `gemini-2.5-flash`、`gemini-flash-latest` 與 `gemini-pro-latest` 全陣列。
+- **💤 預設限額保護**: 針對頻繁額滿的 `gemini-pro-latest` 預設設為 false 禁用，確保持續穩定的配額調度。
+
 ### v15.3.0 (型號手動開關與限額保護) 💤🛡️
 - **💤 模型手動開關**: 新增環境變數 `ENABLE_GEMINI_2_0_FLASH` 與 `ENABLE_GEMINI_2_0_LITE`。當模型頻繁達到 RPD (Daily Quota) 時，可手動設為 `false` 讓特定型號完全休息，避免無謂的嘗試。
 - **🛡️ 診斷工具同步**: 更新 `scripts/verify_keys.js`，在驗證時會自動標註 `💤 已手動禁用 (休息中)`，確保診斷結果符合當前配置。
