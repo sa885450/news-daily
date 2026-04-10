@@ -1,14 +1,9 @@
 {
-  "lastDate": "2026-04-09",
-  "dailyCount": 7,
+  "lastDate": "2026-04-10",
+  "dailyCount": 2,
   "deadKeys": {
-    "AIzaSyAh_gemini-2.0-flash": 1775736032681,
-    "AIzaSyAh_gemini-2.0-flash-lite": 1775736065343,
-    "AIzaSyC6_gemini-2.0-flash": 1775764834340,
-    "AIzaSyC6_gemini-2.0-flash-lite": 1775764836196,
-    "AIzaSyB7_gemini-2.0-flash": 1775793633394,
-    "AIzaSyB7_gemini-2.0-flash-lite": 1775793635129,
-    "AIzaSyB7_gemini-pro-latest": 1775793672719
+    "AIzaSyCg_gemini-2.0-flash": 1775822428877,
+    "AIzaSyCg_gemini-2.0-flash-lite": 1775822430477
   },
   "cooldowns": {}
 }
