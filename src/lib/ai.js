@@ -147,16 +147,21 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
             lastError = null;
         }
 
-        for (let attempt = 1; attempt <= retryCount; attempt++) {
-            const activeKey = currentCustomKey || keyManager.getNextAvailableKey();
-            const genAI = new GoogleGenerativeAI(activeKey);
-
-            for (const modelName of activeModelCandidates) {
-                // 🟢 v14.7.3: 偵測該金鑰+模型組合是否已全域熔斷 (並給予跳過日誌)
+        // 🟢 v15.5.0: 調用矩陣重構 - 模型優先，遍歷金鑰
+        for (const modelName of activeModelCandidates) {
+            // 單一模型最大換 Key 次數，限制為 3 次或金鑰池長度
+            const maxKeySwaps = currentCustomKey ? 1 : Math.min(3, geminiKeys.length);
+            
+            for (let attempt = 1; attempt <= maxKeySwaps; attempt++) {
+                const activeKey = currentCustomKey || keyManager.getNextAvailableKey();
+                
+                // 偵測該金鑰+模型組合是否已全域熔斷
                 if (quota.isDead(activeKey, modelName)) {
-                    process.stdout.write(`⏩ [QuotaKeeper] 跳過「已熔斷」金鑰: ${activeKey.substring(0,8)}... @ ${modelName}\r`);
+                    process.stdout.write(`⏩ [QuotaKeeper] 跳過「已熔斷」組合: ${activeKey.substring(0,8)}... @ ${modelName}\r`);
                     continue; 
                 }
+
+                const genAI = new GoogleGenerativeAI(activeKey);
 
                 try {
                     const config = {
@@ -186,35 +191,30 @@ async function callGemini(prompt, isJson = true, customKey = null, retryCount = 
                     if (isRateLimit) {
                         const isDailyLimit = e.message && (e.message.includes("PerDay") || e.message.includes("quota"));
                         if (isDailyLimit) {
-                            console.error(`🚨 ${modelName} 偵測到「每日限額 (Daily Quota)」已耗盡！`);
+                            console.error(`🚨 ${modelName} @ Key[${activeKey.substring(0,8)}] 每日限額已耗盡！`);
                             quota.markDead(activeKey, modelName); 
+                            // 換下一個 Key 嘗試相同的模型
                             continue; 
                         } else {
-                            console.warn(`⏳ ${modelName} 觸發 RPM 限流 (429) 保護。`);
+                            console.warn(`⏳ ${modelName} @ Key[${activeKey.substring(0,8)}] 觸發 RPM 限流。將 Key 放入冷卻並換 Key 重試...`);
+                            keyManager.markCooldown(activeKey, 60);
                             quota.markTempLimit(activeKey, modelName, 60); 
-                        }
-                        if (!currentCustomKey) {
-                            keyManager.markCooldown(activeKey, 60); 
-                            break; 
-                        } else {
-                            log('💊', `[Strategic Key] 觸發 429 限流，全域標記並改道備援...`);
-                            break; 
+                            continue;
                         }
                     } else if (isNotFound) {
-                        console.warn(`❌ ${modelName} 模型無效 (404) 或未獲授權，跳過。`);
-                        continue; 
+                        console.warn(`❌ ${modelName} 在 Key[${activeKey.substring(0,8)}] 無效 (404)，跳過此模型。`);
+                        break; // 跳出 attempt 循環，嘗試下一個模型
                     } else if (isServerOverloaded) {
-                        console.warn(`🔥 ${modelName} 伺服器高負載 (503/500): ${e.message.substring(0, 50)}...`);
+                        const waitTime = attempt * 2000;
+                        console.warn(`🔥 ${modelName} 伺服器高負載 (503/500)，等待 ${waitTime/1000}s 後換 Key 重試...`);
+                        await sleep(waitTime);
+                        continue; // 換 Key 重試
                     } else {
                         console.warn(`⚠️ ${modelName} 未知錯誤 ${statusCode || ''}: ${e.message.substring(0, 50)}...`);
+                        // 未知錯誤也嘗試換 Key 一次
+                        if (attempt < maxKeySwaps) continue;
                     }
                 }
-            }
-
-            if (attempt < retryCount) {
-                const waitTime = attempt * 2000;
-                console.log(` API Retry Phase[${phase}/${maxPhases}] 嘗試[${attempt}/${retryCount}] (Wait ${waitTime / 1000}s)...`);
-                await sleep(waitTime);
             }
         }
     }
